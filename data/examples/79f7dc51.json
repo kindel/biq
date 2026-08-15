@@ -1,0 +1,238 @@
+{
+  "question": "Tell me about a time when you had a low performing individual on your team. How did you deliver feedback? Did their performance improve?",
+  "competency": "Hire and Develop the Best (coaching underperformance, feedback delivery)",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a teammate missing deadlines on shared tasks. I asked if we could talk after standup and said the delays were blocking the rest of us. I offered to pair on the next ticket so I could see where the friction was."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "Performance improved after two weeks. The teammate started finishing tickets on time and we hit the milestone. I checked in weekly after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a low performing individual on your team. How did you deliver feedback? Did their performance improve?",
+        "Role: new grad on 4-person project team",
+        "Situation: peer missing deadlines, blocking sprint",
+        "Action: private conversation + offered to pair",
+        "Outcome: tickets on time within 2 weeks, milestone hit",
+        "Quote: \"I said the delays were blocking the rest of us\"",
+        "Follow-up: How did you decide what to say? \"I kept it to the impact on the team, not personal\""
+      ],
+      "raiseFeedback": "Candidate described a clear, scoped example of giving direct feedback to a peer on a small project. The story stayed at the individual-contributor level and showed they owned the conversation and followed up. Performance improved measurably. This meets the bar for junior because it demonstrates willingness to address issues early and track the result rather than avoiding the conversation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was someone on the team who was slow. I mentioned it to my manager and they handled it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever speak with the person directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I didn't want to make it awkward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Role: new grad",
+        "Situation: peer slow on deliverables",
+        "Action: escalated to manager only",
+        "Outcome: no direct feedback given",
+        "Quote: \"I didn't want to make it awkward\"",
+        "Follow-up: What was the impact on the team? \"We just worked around it\""
+      ],
+      "lowerFeedback": "Candidate avoided delivering feedback themselves and relied on escalation. No evidence of attempting a direct conversation or measuring change. This lowers the bar for junior because the competency requires showing ownership of development conversations even at the individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a mid-level engineer whose code reviews were consistently late, affecting two other teams. I scheduled a 1:1 and shared the specific data: average 4-day turnaround versus the 2-day SLA. We agreed on a weekly check-in and I connected them with a reviewer from another team for calibration."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "After six weeks their average dropped to 1.8 days. The other teams stopped escalating and the engineer later became a go-to reviewer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Role: senior IC owning cross-team feature",
+        "Situation: one engineer slowing two dependent teams",
+        "Action: data-driven 1:1 + introduced peer calibration",
+        "Outcome: turnaround improved from 4 days to 1.8 days",
+        "Quote: \"I shared the specific data: average 4-day turnaround\"",
+        "Follow-up: How did you handle resistance? \"They pushed back at first so we looked at actual PR timestamps together\""
+      ],
+      "raiseFeedback": "Candidate gave a concrete example with measurable impact across teams and used data to make feedback objective. They created a lightweight process (weekly check-ins, peer calibration) and tracked improvement over six weeks. This raises the bar for senior because it shows influence without authority and sustained follow-through rather than a single conversation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had someone whose velocity was low. I gave them feedback in the next 1:1 and told them to pick up the pace."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. They left the team a few months later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Role: senior IC",
+        "Situation: low velocity teammate",
+        "Action: told them to pick up the pace in 1:1",
+        "Outcome: no improvement, person left",
+        "Quote: \"I told them to pick up the pace\"",
+        "Follow-up: What data or examples did you share? \"I didn't pull specific numbers\""
+      ],
+      "lowerFeedback": "Candidate delivered vague feedback without data or follow-up structure. No measurable improvement occurred. This lowers the bar for senior because expectations at this level include using concrete examples and creating conditions for improvement rather than one-off statements."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my directs was missing sprint commitments repeatedly. I pulled their last four sprints, showed the gap between committed and delivered points, and asked what support they needed. We created a 30-day plan with smaller stories and daily check-ins for the first two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "They hit 80% of commitments in the next sprint and sustained it. I documented everything in case we needed to move to a PIP."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Role: engineering manager of 8-person team",
+        "Situation: direct missing commitments over multiple sprints",
+        "Action: data review + 30-day plan with daily check-ins",
+        "Outcome: improved to 80% commitment hit rate",
+        "Quote: \"I pulled their last four sprints and showed the gap\"",
+        "Follow-up: Did you involve anyone else? \"I looped in my manager early for visibility\""
+      ],
+      "raiseFeedback": "Candidate used specific performance data, created a structured improvement plan, and documented the process. The direct showed sustained improvement. This raises the bar for manager because it demonstrates systematic coaching, early escalation awareness, and clear ownership of team outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a low performer. I gave them feedback a few times but nothing really changed so I started managing them out."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the feedback sound like?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told them their work wasn't meeting expectations and to try harder."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Role: EM",
+        "Situation: underperforming direct",
+        "Action: repeated vague feedback",
+        "Outcome: moved to manage-out without documented plan",
+        "Quote: \"I told them their work wasn't meeting expectations\"",
+        "Follow-up: Did you set measurable goals? \"Not really, it was more general\""
+      ],
+      "lowerFeedback": "Candidate relied on repeated vague statements without a documented plan or measurable goals. The story ends in manage-out without evidence of genuine development effort. This lowers the bar for manager because the competency requires structured coaching attempts before exit decisions."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a director whose org was consistently missing quarterly goals. I sat down with their skip and the data across three quarters, then had a direct conversation with the director about whether the role still fit. We agreed on a transition plan and I spent time helping them find an individual-contributor path inside the company."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "The org's on-time delivery went from 60% to 92% within two quarters after the change. The director stayed and contributed in a different role."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Role: VP leading 200-person org",
+        "Situation: director-level underperformance affecting multiple teams",
+        "Action: data review with skip + honest role-fit conversation + internal transition support",
+        "Outcome: org delivery improved from 60% to 92%",
+        "Quote: \"I sat down with their skip and the data across three quarters\"",
+        "Follow-up: How did you balance development versus business needs? \"I gave them six weeks to decide on the transition while protecting the team\""
+      ],
+      "raiseFeedback": "Candidate handled a senior-level performance issue with clear data, involved the right stakeholders, and created an outcome that preserved both business results and the individual's dignity. The org-level metric improved. This raises the bar for exec because it shows strategic judgment on role fit and long-term talent placement rather than repeated coaching attempts.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a leader who wasn't delivering. After a couple of conversations I replaced them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What conversations happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told them the numbers were off and we needed change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Role: VP",
+        "Situation: underperforming leader",
+        "Action: a couple of conversations then replacement",
+        "Outcome: leader replaced",
+        "Quote: \"I told them the numbers were off\"",
+        "Follow-up: Did you explore internal options? \"No, it was a clean exit\""
+      ],
+      "lowerFeedback": "Candidate moved quickly to replacement without evidence of structured development support or exploration of role fit. No org-level improvement story is tied to the action. This lowers the bar for exec because expectations include thoughtful talent decisions that balance business needs with development and retention options."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of specific performance data",
+      "junior": "Mentions impact on team or sprint",
+      "senior": "Shows cross-team metrics and SLAs",
+      "manager": "Tracks multi-sprint trends with direct",
+      "exec": "Uses multi-quarter org data for role-fit decisions"
+    },
+    {
+      "signal": "Follow-up structure",
+      "junior": "Simple weekly check-ins",
+      "senior": "Introduces peer calibration process",
+      "manager": "Creates 30-day plan with daily check-ins",
+      "exec": "Sets transition timeline with stakeholder involvement"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Task completion within 2 weeks",
+      "senior": "Turnaround time improved from 4 to 1.8 days",
+      "manager": "Commitment hit rate rose to 80%",
+      "exec": "Org delivery improved from 60% to 92%"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single peer on project team",
+      "senior": "Two dependent teams",
+      "manager": "Own team of 8",
+      "exec": "Director-level org of multiple teams"
+    }
+  ],
+  "kind": "lp"
+}

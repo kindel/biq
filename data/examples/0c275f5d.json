@@ -1,0 +1,237 @@
+{
+  "question": "Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+  "competency": "Ownership & Accountability",
+  "principle": "Ownership & Accountability",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a feature team and noticed our test data was stale, causing flaky builds that slowed everyone. I wrote a small script to refresh it nightly and added it to the pipeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you shipped the script?"
+        },
+        {
+          "role": "candidate",
+          "text": "It cut our false failures by 40%. My manager asked me to document it so the next intern could maintain it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Junior dev noticed stale test data causing flakiness in their squad's builds.",
+        "Built and integrated a nightly refresh script without being asked.",
+        "Outcome: 40% drop in false failures; documented for handoff.",
+        "Quote: \"I just wanted our builds to stop wasting my time.\"",
+        "Follow-up: Asked about post-ship impact and handoff; candidate described manager request to document."
+      ],
+      "raiseFeedback": "Raises the bar for junior Ownership & Accountability. The candidate owned an unassigned local tooling gap in their own build pipeline and shipped a durable fix. Quote: \"I just wanted our builds to stop wasting my time.\" The result was measurable within their squad and they accepted the follow-up task of documenting for the next person. This shows individual ownership plus coachability on handoff. Biggest strength is following through without escalation; the gap is that scope stayed inside one team's CI rather than surfacing a broader pattern.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw the test data was old but figured the infra team would handle it eventually."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you raise it with anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in standup once but nothing changed so I just worked around it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Noticed stale test data but assumed infra team would fix.",
+        "Mentioned once in standup; no follow-up when nothing happened.",
+        "Outcome: Continued working around the flakiness.",
+        "Quote: \"I figured someone else owned it.\"",
+        "Follow-up: Asked if they escalated or took any action; candidate stopped at the single mention."
+      ],
+      "lowerFeedback": "Lowers the bar for junior Ownership & Accountability. The candidate identified the same data issue but stopped after one standup mention and chose to work around it. Quote: \"I figured someone else owned it.\" No evidence of personal follow-through or escalation. This shows the candidate waiting for others rather than owning the local impact on their own builds. Biggest gap is lack of initiative on a fix that was within their scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two squads were duplicating customer profile logic because the shared service was undocumented. I mapped the overlap, wrote a proposal, and got both teams to converge on one implementation."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 30-minute sync with the two tech leads, showed the duplication metrics, and offered to own the migration for the first service."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Senior noticed duplicate profile logic across two squads due to undocumented shared service.",
+        "Mapped duplication, created proposal, secured cross-team alignment.",
+        "Outcome: Both teams converged; candidate owned first migration.",
+        "Quote: \"I showed the duplication numbers and offered to do the first cut.\"",
+        "Follow-up: Asked how influence happened without authority; candidate described running a joint sync and offering to lead migration."
+      ],
+      "raiseFeedback": "Raises the bar for senior Ownership & Accountability. The candidate spotted cross-team duplication that no one had quantified and drove convergence by creating a lightweight proposal and offering personal migration work. Quote: \"I showed the duplication numbers and offered to do the first cut.\" They used data and willingness to do the work to gain influence. This produced a durable reduction in duplicated code across squads. Biggest strength is combining diagnosis with execution offer; the remaining gap is that metrics were not tracked after migration completed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed two teams were duplicating profile code but the shared service owner never responded to my email."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I documented the duplication in a wiki page and moved on to my assigned features."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Identified duplicate profile logic across squads.",
+        "Sent one email to shared service owner; no reply.",
+        "Outcome: Posted wiki note then returned to assigned work.",
+        "Quote: \"I documented it and moved on.\"",
+        "Follow-up: Asked about further action after no reply; candidate stopped at documentation."
+      ],
+      "lowerFeedback": "Lowers the bar for senior Ownership & Accountability. The candidate correctly identified cross-team duplication but treated a single unanswered email as the end of their responsibility. Quote: \"I documented it and moved on.\" No attempt to find another path to influence or to offer any execution help. This left the duplication in place while the candidate returned to individual features. Biggest gap is treating influence as a one-shot activity rather than sustained ownership."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team kept missing release dates because onboarding docs were outdated. I assigned an engineer to update them as a stretch goal and created a review cadence with the previous new hires."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineer's initial resistance?"
+        },
+        {
+          "role": "candidate",
+          "text": "We talked about the impact on team velocity and I paired with them on the first section so they could see the value."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Manager noticed repeated release delays tied to poor onboarding docs.",
+        "Assigned update as stretch goal with review cadence using recent hires.",
+        "Outcome: Docs refreshed; release predictability improved.",
+        "Quote: \"I paired on the first section so they could see the value.\"",
+        "Follow-up: Asked how resistance was handled; candidate described pairing and linking to team metrics."
+      ],
+      "raiseFeedback": "Raises the bar for manager Ownership & Accountability. The candidate owned a recurring team-level process failure and turned it into a development opportunity by assigning a stretch goal plus structured review. Quote: \"I paired on the first section so they could see the value.\" They stayed involved enough to overcome resistance and tied the work to measurable release predictability. This shows leverage through the team rather than solo heroics. Biggest strength is connecting the fix to both delivery and growth; the gap is lack of data on how long the improvement lasted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Onboarding docs were bad so I told the team to update them when they had time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. We were heads-down on features so it never got done."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Recognized onboarding docs caused repeated delays.",
+        "Told team to update when they had time.",
+        "Outcome: No progress; feature work took priority.",
+        "Quote: \"We were heads-down on features so it never got done.\"",
+        "Follow-up: Asked if any follow-up occurred; candidate confirmed no further action."
+      ],
+      "lowerFeedback": "Lowers the bar for manager Ownership & Accountability. The candidate identified a team-level blocker but delegated without structure or follow-up. Quote: \"We were heads-down on features so it never got done.\" No evidence of creating accountability mechanisms or protecting time for the work. The problem remained and the team continued missing dates. Biggest gap is absence of manager leverage on a known process failure."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing enterprise deals because our pricing model didn't account for usage spikes. I commissioned a cross-org analysis, presented the revenue impact to the ELT, and sponsored a new consumption-based tier that launched in two quarters."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two smaller product bets by one quarter to free the pricing and finance teams for the analysis and rollout."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Exec spotted enterprise deal losses tied to rigid pricing model.",
+        "Drove cross-org analysis and ELT proposal for new consumption tier.",
+        "Outcome: Tier launched in two quarters after delaying other bets.",
+        "Quote: \"We delayed two smaller product bets by one quarter.\"",
+        "Follow-up: Asked about scope trade-offs; candidate described deliberate delay of other initiatives."
+      ],
+      "raiseFeedback": "Raises the bar for exec Ownership & Accountability. The candidate identified a strategic pricing gap affecting enterprise revenue, built the business case, and made explicit portfolio trade-offs to resource the solution. Quote: \"We delayed two smaller product bets by one quarter.\" They owned the end-to-end outcome including ELT alignment and launch timeline. This demonstrates long-term thinking and willingness to deprioritize other work. Biggest strength is connecting customer problem to org-level decision rights; the remaining gap is that post-launch retention metrics were not mentioned.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing deals on pricing but the product team said they didn't have bandwidth to change the model."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you take any further steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "I raised it in the quarterly business review and left it with the product org."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+        "Identified enterprise pricing as cause of lost deals.",
+        "Raised once with product team; cited bandwidth constraint.",
+        "Outcome: Escalated to QBR and handed off entirely.",
+        "Quote: \"I raised it in the quarterly business review and left it with the product org.\"",
+        "Follow-up: Asked about further ownership; candidate confirmed full handoff after one escalation."
+      ],
+      "lowerFeedback": "Lowers the bar for exec Ownership & Accountability. The candidate correctly diagnosed a revenue-impacting pricing issue but treated a single handoff plus QBR mention as sufficient. Quote: \"I raised it in the quarterly business review and left it with the product org.\" No evidence of sustained sponsorship, trade-off decisions, or personal accountability for the outcome. The problem stayed unaddressed. Biggest gap is lack of executive ownership on a strategic business lever."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Problem scope",
+      "junior": "Local to own work or squad CI",
+      "senior": "Cross-team duplication with metrics",
+      "manager": "Team process failure affecting delivery",
+      "exec": "Org-level revenue impact with portfolio trade-offs"
+    },
+    {
+      "signal": "How influence occurred",
+      "junior": "Direct execution and handoff",
+      "senior": "Data + offer to do first migration",
+      "manager": "Stretch goal plus pairing",
+      "exec": "ELT proposal and explicit deprioritization"
+    },
+    {
+      "signal": "Follow-through after resistance or no reply",
+      "junior": "Documented for next person",
+      "senior": "Ran joint sync instead of stopping at email",
+      "manager": "Paired to overcome resistance",
+      "exec": "Made scope trade-offs to create capacity"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "None beyond individual task",
+      "senior": "Reduced duplication across two squads",
+      "manager": "Turned fix into growth for engineer",
+      "exec": "Changed pricing model and delayed other bets"
+    },
+    {
+      "signal": "Metrics cited",
+      "junior": "40% drop in false failures",
+      "senior": "Duplication numbers shown to leads",
+      "manager": "Release predictability improved",
+      "exec": "Enterprise deal losses quantified"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,236 @@
+{
+  "question": "Tell me about a time you owned a mistake or failure completely (even if others shared responsibility). What did you do next?",
+  "competency": "Ownership & Accountability",
+  "principle": "Ownership & Accountability",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I missed a code review deadline on a small feature because I underestimated the edge cases. I told my manager the same day, fixed the issues over the weekend, and wrote a short doc on how I would estimate better next time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you sent the doc?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager used it in the next team meeting and I started pairing on estimates for two sprints."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Junior dev, missed code review deadline on own task",
+        "- Owned it same day, worked weekend, wrote estimation doc",
+        "- Quote: \"I told my manager the same day\"",
+        "Follow-up: Used doc in team meeting and started pairing on estimates"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership & Accountability at junior level. The candidate described a fully individual-scope failure on a code review deadline and took immediate personal action by notifying the manager the same day and working the weekend. The quote \"I told my manager the same day\" shows direct accountability without deflection. Follow-through included writing an estimation doc that was later adopted by the team and pairing on future estimates. This demonstrates coachability and learning from feedback on their own work. The single biggest strength is closing the loop with visible process change rather than stopping at apology.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The test suite was flaky so my feature broke in prod. I fixed my part once the infra team stabilized the environment."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything after the fix?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the flakiness was not my code."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Blamed flaky tests owned by infra team",
+        "- Only fixed own part after environment stabilized",
+        "- Quote: \"the flakiness was not my code\"",
+        "Follow-up: No further action or reflection reported"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership & Accountability at junior level. The candidate attributed the production break to flaky tests owned by another team and only fixed their portion after the environment was stabilized by others. The quote \"the flakiness was not my code\" shows externalization rather than full ownership of the outcome. No follow-up actions such as root-cause notes or process changes were taken. This signals limited coachability on individual work. The single biggest gap is absence of personal accountability or learning steps after the incident."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team API change I drove caused two partner teams' dashboards to break. I posted the full incident in the shared channel, rolled back my change, and coordinated the fix across all three teams over the next week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the partner teams' concerns?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled 1:1s with each lead, shared the rollback timeline, and added a compatibility layer they requested."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Senior, cross-team API change broke partner dashboards",
+        "- Posted incident publicly, rolled back, coordinated fix across teams",
+        "- Quote: \"I posted the full incident in the shared channel\"",
+        "Follow-up: 1:1s with leads, added requested compatibility layer"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership & Accountability at senior level. The candidate owned a cross-team API change that broke partner dashboards, posted the full incident publicly, executed the rollback, and coordinated the multi-team fix. The quote \"I posted the full incident in the shared channel\" illustrates influence without authority. Follow-up actions included 1:1s with partner leads and adding a compatibility layer they requested. This shows clear metrics of impact (three teams affected) and raising the bar for others by modeling transparency. The single biggest strength is extending ownership beyond their own code to the full downstream effect.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The API change I suggested had some issues for other teams. I updated the design doc after they complained."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do right after the break?"
+        },
+        {
+          "role": "candidate",
+          "text": "I waited for them to file tickets so I had the details."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Waited for other teams to file tickets before acting",
+        "- Only updated design doc after complaints",
+        "- Quote: \"I waited for them to file tickets\"",
+        "Follow-up: No proactive coordination or rollback mentioned"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership & Accountability at senior level. The candidate waited for partner teams to file tickets before taking any action and only updated the design doc after complaints arrived. The quote \"I waited for them to file tickets\" reveals reactive rather than proactive ownership on a cross-team change. No rollback, public incident post, or direct coordination occurred. This indicates limited influence without authority and no evidence of raising standards for other teams. The single biggest gap is treating the failure as someone else's problem to surface rather than owning the end-to-end impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team missed a quarterly reliability target because I had not pushed back hard enough on scope. I took the miss in the leadership review, redistributed load for the next quarter, and started weekly 1:1s focused on risk surfacing."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond to the redistribution?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers later told me they appreciated the clearer priorities and we hit the next target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Manager owned team missing reliability target due to scope",
+        "- Took miss in leadership review, redistributed load, added risk 1:1s",
+        "- Quote: \"I took the miss in the leadership review\"",
+        "Follow-up: Engineers reported clearer priorities and hit next target"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership & Accountability at manager level. The candidate owned a team-level reliability miss caused by insufficient scope pushback, presented the miss themselves in the leadership review, and changed team processes with redistributed load and weekly risk-focused 1:1s. The quote \"I took the miss in the leadership review\" demonstrates owning team outcomes. Follow-through produced measurable improvement when engineers reported clearer priorities and the team hit the next target. This shows leverage through the team and handling of underperformance via process changes. The single biggest strength is converting personal accountability into sustained team-level improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team missed the target because two people were out. I explained the headcount issue to leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything in how the team works?"
+        },
+        {
+          "role": "candidate",
+          "text": "We asked for more headcount in the next planning cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Attributed miss to absences rather than own decisions",
+        "- Explained issue to leadership, requested more headcount",
+        "- Quote: \"I explained the headcount issue to leadership\"",
+        "Follow-up: No internal process changes described"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership & Accountability at manager level. The candidate attributed the reliability miss to two people being out and explained the headcount issue to leadership instead of addressing their own scope decisions. The quote \"I explained the headcount issue to leadership\" shows external framing rather than owning team outcomes. No changes to team processes, risk surfacing, or load distribution were made. This signals limited ability to create leverage through the team or handle underperformance. The single biggest gap is treating the failure as a resourcing problem instead of a leadership one."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We bet the annual plan on a new market entry that underperformed by 40 percent. I presented the full miss to the board, canceled two related product lines, and redirected the freed resources into the core business that delivered the revised target."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you communicate internally?"
+        },
+        {
+          "role": "candidate",
+          "text": "I held all-hands explaining the pivot and protected the teams whose work was cut from any stigma so they could re-staff quickly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Exec owned 40% underperformance on market entry bet",
+        "- Presented to board, canceled product lines, redirected resources",
+        "- Quote: \"I presented the full miss to the board\"",
+        "Follow-up: All-hands on pivot, protected cut teams from stigma"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership & Accountability at exec level. The candidate owned a 40 percent underperformance on a major market-entry bet, presented the full miss directly to the board, canceled two product lines, and redirected resources to hit the revised target. The quote \"I presented the full miss to the board\" reflects strategic judgment under high ambiguity. Follow-up actions included an all-hands explaining the pivot and protecting affected teams from stigma to enable quick re-staffing. This demonstrates long-term thinking and org-level leverage rather than heroics. The single biggest strength is converting a business-level failure into a deliberate resource reallocation with visible cultural safeguards.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The market entry did not meet expectations. We adjusted the forecast in the next planning round."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you tell the board?"
+        },
+        {
+          "role": "candidate",
+          "text": "We highlighted the external market conditions that changed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you owned a mistake or failure completely. What did you do next?",
+        "- Attributed miss to external market conditions",
+        "- Only adjusted forecast, no resource or product changes",
+        "- Quote: \"We highlighted the external market conditions that changed\"",
+        "Follow-up: No internal all-hands or cultural actions described"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership & Accountability at exec level. The candidate attributed the market-entry miss to external conditions and only adjusted the forecast without canceling products or redirecting resources. The quote \"We highlighted the external market conditions that changed\" indicates strategic deflection rather than ownership of the business-level decision. No org-wide communication or trade-off execution occurred. This signals limited long-term thinking and absence of leverage at scale. The single biggest gap is failing to convert the failure into decisive strategic action."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task or deadline",
+      "senior": "Cross-team impact with metrics",
+      "manager": "Team outcome and process change",
+      "exec": "Business-level bet and resource reallocation"
+    },
+    {
+      "signal": "Follow-through actions",
+      "junior": "Personal fix plus doc or pairing",
+      "senior": "Rollback plus partner coordination",
+      "manager": "Leadership review plus team 1:1s",
+      "exec": "Board presentation plus org pivot"
+    },
+    {
+      "signal": "Externalization risk",
+      "junior": "Blaming infra or tests",
+      "senior": "Waiting for tickets from partners",
+      "manager": "Citing absences or headcount",
+      "exec": "Citing market conditions"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Estimation doc adopted by team",
+      "senior": "Compatibility layer added after feedback",
+      "manager": "Engineers report clearer priorities",
+      "exec": "Protected cut teams from stigma"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Asked manager for help",
+      "senior": "Posted in shared channel",
+      "manager": "Redistributed load",
+      "exec": "All-hands and resource shift"
+    },
+    {
+      "signal": "Time horizon",
+      "junior": "Next sprint or two",
+      "senior": "Next quarter coordination",
+      "manager": "Next target cycle",
+      "exec": "Annual plan revision"
+    }
+  ],
+  "kind": "competency"
+}

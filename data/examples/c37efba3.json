@@ -1,0 +1,177 @@
+{
+  "question": "Give me an example of a time when you were able to deliver an important project under a tight deadline. What sacrifices did you have to make to meet the deadline? How did they impact the final deliverable? What was the final outcome?",
+  "competency": "Deliver Results",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I owned the backend migration for our team's reporting feature. The exec asked for it two weeks early for a customer demo. I cut scope on two nice-to-have filters and worked two late nights to finish testing. The demo ran cleanly and the customer signed. Follow-up: How did you decide what to cut? I checked with my manager on the priority list and dropped the filters that weren't in the demo script."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the final deliverable look like compared to the original plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "It had the core queries and dashboard but skipped the advanced export options. We added those two weeks later with no customer complaints."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of delivering under tight deadline, sacrifices, impact, outcome",
+        "- Junior IC, owned migration for reporting feature",
+        "- Cut two filters after checking priority with manager",
+        "- Worked two late nights; demo succeeded and customer signed",
+        "Quote: 'I checked with my manager on the priority list'",
+        "Follow-up: How did you decide what to cut? -> Manager alignment + later added scope"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at junior level. The candidate described owning a concrete migration, proactively aligning on scope cuts with their manager, and delivering a working demo that closed a customer. Quote: 'I checked with my manager on the priority list and dropped the filters that weren't in the demo script.' The story shows local ownership and coachability rather than heroics. The main gap is limited evidence of learning loops after the fact, but that is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a tight deadline on a feature and I stayed late a few nights. I had to skip some tests but we got it out. Follow-up: What was the impact on the deliverable? It had a couple bugs that we fixed the next sprint. Outcome: The team was happy it shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: tight deadline example, sacrifices, impact, outcome",
+        "- Stayed late, skipped tests",
+        "- Couple bugs fixed next sprint",
+        "Quote: 'we got it out'",
+        "Follow-up: impact? -> vague 'couple bugs', no ownership of trade-off decision"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at junior level. The candidate gave a vague story about staying late and skipping tests without showing how they chose what to sacrifice or coordinated with anyone. Quote: 'we got it out.' No clear metrics or reflection on whether the bugs were acceptable. The biggest gap is absence of ownership or proactive scope management."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team needed a new auth service in six weeks to unblock two product teams. I negotiated to drop one integration and reused an existing library, then coordinated with three teams on the rollout plan. We hit the date and adoption reached 80% in the first month. Follow-up: What was the quality trade-off? We accepted a narrower initial integration surface; the other teams added their connectors post-launch with no production issues."
+        }
+      ],
+      "raiseNotes": [
+        "Q: tight deadline, sacrifices, impact, outcome",
+        "- Senior, unblocked two product teams with auth service",
+        "- Dropped one integration, reused library, cross-team rollout",
+        "- 80% adoption in first month",
+        "Quote: 'coordinated with three teams on the rollout plan'",
+        "Follow-up: quality trade-off? -> narrower surface, added later cleanly"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at senior level. The candidate showed cross-team influence by aligning three teams on rollout and making a deliberate scope trade-off that still met the hard date. Quote: 'coordinated with three teams on the rollout plan.' Clear metric of 80% adoption and evidence that the sacrifice did not create downstream problems. The story demonstrates leverage beyond individual contribution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed the team hard on a shared service deadline and we shipped on time. I had to work weekends myself. Follow-up: What trade-offs did the team make? We deprioritized some monitoring we added back later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: tight deadline example",
+        "- Pushed team, worked weekends personally",
+        "- Monitoring added back later",
+        "Quote: 'I had to work weekends myself'",
+        "Follow-up: team trade-offs? -> vague, no cross-team evidence or metrics"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at senior level. The candidate defaulted to personal heroics ('worked weekends myself') without showing influence on other teams or clear scope decisions. Quote: 'We deprioritized some monitoring.' No adoption or quality metrics and no evidence the sacrifice was evaluated for long-term impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had to deliver a compliance feature in four weeks or lose a renewal. I reallocated two engineers from a roadmap project, set daily check-ins, and protected the team from extra asks. We met the date, the renewal closed, and the deferred project only slipped two weeks. Follow-up: How did you handle the reallocated engineers' original work? I reset expectations with the other stakeholder and had a plan to catch up after the deadline."
+        }
+      ],
+      "raiseNotes": [
+        "Q: tight deadline, sacrifices, impact, outcome",
+        "- Manager, reallocated two engineers for compliance feature",
+        "- Daily check-ins, protected team, renewal closed",
+        "- Deferred project slipped only two weeks",
+        "Quote: 'I reset expectations with the other stakeholder'",
+        "Follow-up: handling original work? -> stakeholder reset + catch-up plan"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at manager level. The candidate demonstrated team leverage by reallocating resources, protecting focus, and managing stakeholder expectations on the deferred work. Quote: 'I reset expectations with the other stakeholder and had a plan to catch up.' The outcome tied directly to a revenue renewal with controlled downstream impact. Shows ownership of team outcomes rather than individual output.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team the deadline was non-negotiable and we shipped. Some people worked extra hours. Follow-up: What did you do to support the team? I brought in food a couple nights."
+        }
+      ],
+      "lowerNotes": [
+        "Q: tight deadline delivery",
+        "- Told team deadline non-negotiable",
+        "- Brought in food",
+        "Quote: 'Some people worked extra hours'",
+        "Follow-up: support? -> surface-level gesture, no reallocation or expectation management"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at manager level. The candidate relied on directing the team without showing resource trade-offs or stakeholder management. Quote: 'I brought in food a couple nights.' No evidence of protecting the team long-term or measuring impact on team health or other deliverables."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a regulatory deadline that threatened a $40M product line. I made the call to pause two growth initiatives, moved three teams onto the compliance work, and accepted a three-month delay on a new market entry. The product stayed live, we avoided fines, and the delayed market launch was recovered the following quarter with a stronger offering. Follow-up: How did you decide which initiatives to pause? I modeled revenue impact and risk with the CFO and product leads before committing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: tight deadline at org level",
+        "- Exec, $40M product line at risk",
+        "- Paused two growth initiatives, moved three teams",
+        "- Avoided fines, recovered market entry next quarter",
+        "Quote: 'I modeled revenue impact and risk with the CFO'",
+        "Follow-up: decision process? -> data-driven with finance and product"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at exec level. The candidate made a strategic, data-informed trade-off across multiple teams and a $40M line of business. Quote: 'I modeled revenue impact and risk with the CFO and product leads.' The story shows long-term thinking by recovering the delayed initiative with an improved offering. Demonstrates org-level judgment rather than local heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a big compliance deadline and I told the org to focus on it. We shipped and avoided issues. Follow-up: What did you deprioritize? A few roadmap items that we picked back up later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: org-level tight deadline",
+        "- Told org to focus",
+        "- Avoided issues",
+        "Quote: 'A few roadmap items that we picked back up later'",
+        "Follow-up: what was deprioritized? -> vague, no modeling or quantified trade-offs"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at exec level. The candidate gave a high-level directive without evidence of strategic analysis or quantified trade-offs. Quote: 'A few roadmap items that we picked back up later.' No metrics on business impact or how the decision affected long-term plans."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task with manager check-in",
+      "senior": "Cross-team coordination and reuse decisions",
+      "manager": "Resource reallocation across own team and stakeholders",
+      "exec": "Org-level initiative pauses with CFO modeling"
+    },
+    {
+      "signal": "Handling of trade-offs",
+      "junior": "Checked priority list with manager before cutting scope",
+      "senior": "Narrowed integration surface, added later with no issues",
+      "manager": "Protected team focus, reset expectations on deferred work",
+      "exec": "Modeled revenue and risk before pausing growth bets"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Local ownership and later follow-up",
+      "senior": "Enabled two product teams, 80% adoption",
+      "manager": "Renewal closed while limiting slip to two weeks",
+      "exec": "Preserved $40M line and recovered market entry stronger"
+    },
+    {
+      "signal": "Reflection on quality impact",
+      "junior": "Added skipped features post-demo with no complaints",
+      "senior": "No production issues after narrower launch",
+      "manager": "Controlled downstream project slip",
+      "exec": "Avoided fines and improved delayed offering"
+    },
+    {
+      "signal": "Metrics and outcomes",
+      "junior": "Demo succeeded, customer signed",
+      "senior": "80% adoption in first month",
+      "manager": "Renewal closed on time",
+      "exec": "$40M line protected, quarter recovery"
+    }
+  ],
+  "kind": "lp"
+}

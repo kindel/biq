@@ -1,0 +1,226 @@
+{
+  "question": "Tell me about a time you came up with the vision for a team, product, or strategic initiative when there wasn't a guiding vision. What was it? How did you gain buy-in and drive execution?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our small feature team had no clear direction after a reorg, so I proposed we focus on reducing onboarding friction for new users based on support ticket trends. I shared a one-pager with the three main pain points and a simple success metric of cutting time-to-first-value by 30%. After getting feedback from the PM, I ran a two-week experiment on one flow and presented the results in a team sync."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers were skeptical so I asked them to review the data themselves. Once they saw the ticket volume, they helped scope the changes. We shipped the update and saw a 22% drop in related tickets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Junior candidate described proposing onboarding friction reduction for their feature team",
+        "- Created one-pager with pain points and 30% time-to-value target",
+        "- Ran 2-week experiment after PM feedback and presented results",
+        "Quote: 'Two engineers were skeptical so I asked them to review the data themselves'",
+        "Follow-up: Asked how they handled initial resistance; candidate explained sharing raw tickets"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. The candidate identified an unguided gap in their own feature area and turned support data into a focused proposal with a measurable target. They incorporated feedback from the PM before testing and addressed peer skepticism by sharing evidence rather than pushing authority. Execution stayed within individual scope yet delivered a 22% ticket reduction. Biggest strength is the willingness to create and test a local vision when none existed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our team didn't have a vision so I waited for the manager to set one. When nothing came I just focused on my assigned tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever try to propose anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once in a retro but no one followed up so I dropped it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Candidate said they waited for manager to provide direction",
+        "- Mentioned the issue once in retro with no follow-up",
+        "Quote: 'I just focused on my assigned tickets'",
+        "Follow-up: Asked if they attempted any proposal; response was minimal effort"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at junior level. The candidate took no ownership of creating even a local vision and defaulted to waiting for leadership. A single retro mention without follow-up shows limited initiative. No evidence of proposing a direction, testing ideas, or driving any outcome. The core gap is absence of proactive vision-setting behavior even at individual scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product teams were working on overlapping customer workflows with no shared direction after a platform split. I mapped the customer journey across both teams and proposed a unified self-serve analytics vision with a north-star metric of activation rate. I ran working sessions with leads from both teams to refine the scope and secured a joint pilot on one customer segment."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get cross-team alignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared early data showing 40% of users dropped between the two surfaces. After the pilot showed 15% activation lift, both teams adopted the shared roadmap."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Senior candidate aligned two overlapping product teams post-split",
+        "- Proposed unified self-serve analytics vision with activation rate north star",
+        "- Ran cross-team working sessions and joint pilot on one segment",
+        "Quote: 'I shared early data showing 40% of users dropped'",
+        "Follow-up: Asked about alignment approach; candidate described using drop-off data"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at senior level. The candidate spotted an unguided gap across two teams and created a unifying vision anchored to a customer metric. They drove alignment through working sessions and evidence rather than mandate, then validated with a measurable pilot that produced a 15% lift. Influence stayed within senior scope while delivering cross-team impact. Biggest strength is translating ambiguity into a shared, testable direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw the two teams were duplicating work so I wrote up a vision doc and sent it to both leads. They didn't respond so I moved on to my own team's priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or adjust the proposal?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pinged once in Slack but didn't have time to chase it further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Candidate created a vision doc for two duplicating teams",
+        "- Sent it once with minimal follow-up and then deprioritized",
+        "Quote: 'They didn't respond so I moved on'",
+        "Follow-up: Asked about persistence; candidate cited time constraints"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at senior level. The candidate identified a cross-team issue but treated the vision as a one-time document rather than driving iterative alignment. Minimal follow-up after no response shows limited influence without authority. No pilot or measurable outcome resulted. The main gap is lack of persistence and adaptation needed to turn a proposal into executed cross-team impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team of eight had no clear charter after a reorg and morale was dropping. I defined a vision focused on becoming the internal platform for experiment velocity, with a goal of enabling other teams to ship tests 3x faster. I ran a team offsite to co-create the mission, then worked with two peer managers to get their teams to adopt our tooling as early users."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle differing opinions inside the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "We surfaced concerns in the offsite and adjusted the scope to keep a core deliverable every quarter while still targeting the 3x metric."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Manager defined platform-for-experiment-velocity vision for team of eight post-reorg",
+        "- Used offsite to co-create mission and aligned two peer teams as early adopters",
+        "- Adjusted scope after team input while keeping 3x velocity target",
+        "Quote: 'We surfaced concerns in the offsite and adjusted the scope'",
+        "Follow-up: Asked about internal disagreement; candidate described quarterly deliverable compromise"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at manager level. The candidate created a team-level vision that addressed both internal direction and external leverage by enabling other teams. They involved the team in shaping the vision and made trade-offs to maintain momentum. Early-adopter partnerships produced cross-team leverage without direct authority. Biggest strength is turning ambiguity into a team-owned mission with measurable external impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the reorg I told the team we needed a new vision and asked everyone to submit ideas. We never converged so we kept working on whatever came from leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you drive any decision or pilot?"
+        },
+        {
+          "role": "candidate",
+          "text": "I facilitated a couple of meetings but the group couldn't agree so I let it drop."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Manager asked team for vision ideas post-reorg",
+        "- Facilitated meetings but no convergence or pilot",
+        "Quote: 'We never converged so we kept working on whatever came from leadership'",
+        "Follow-up: Asked about driving decisions; candidate stopped after disagreement"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at manager level. The candidate delegated vision creation without providing a starting point or making decisions when the team diverged. No pilot or external leverage was attempted. Lack of ownership over outcomes meant the team remained without direction. The core gap is failure to synthesize input into an actionable team vision."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The company had no north star for the enterprise segment after missing growth targets two quarters in a row. I proposed shifting from feature-led sales to a vertical solutions strategy targeting healthcare and finance, projecting $40M incremental revenue in 18 months. I aligned the exec team through a series of scenario workshops using win-rate and deal-size data, then restructured two go-to-market pods to test the approach in Q3."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused two horizontal feature investments to free capacity, accepting short-term feature gaps in exchange for focused vertical proof points."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Exec proposed vertical solutions strategy for enterprise after missed targets",
+        "- Used scenario workshops with win-rate data to align exec team",
+        "- Restructured GTM pods and paused horizontal features for vertical focus",
+        "Quote: 'We paused two horizontal feature investments to free capacity'",
+        "Follow-up: Asked about trade-offs; candidate described accepting short-term feature gaps"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at exec level. The candidate defined a business-level strategic shift from horizontal to vertical solutions when growth stalled. They used data-driven workshops to gain alignment at the highest level and made explicit resource trade-offs to enable a focused test. The vision addressed long-term positioning with a quantified revenue target. Biggest strength is strategic judgment under ambiguity with clear leverage through org changes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were missing enterprise targets so I suggested we needed a new strategy. I asked strategy to put together options but the leadership team couldn't decide which direction to take."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you push for a decision or test?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the options deck but didn't advocate for one path because the data was mixed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you came up with the vision...",
+        "- Exec noted missed targets and asked strategy for options",
+        "- Presented deck but did not advocate or run a test",
+        "Quote: 'I didn't advocate for one path because the data was mixed'",
+        "Follow-up: Asked about decision-making; candidate avoided committing"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at exec level. The candidate identified the need for a new direction but stopped at presenting options without synthesizing a recommended path or driving a test. No trade-offs were framed or executed. Absence of strategic judgment and willingness to make bets under ambiguity is the primary gap."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of vision",
+      "junior": "Local feature or workflow",
+      "senior": "Cross-team product area",
+      "manager": "Team charter with external leverage",
+      "exec": "Business-level strategic shift"
+    },
+    {
+      "signal": "Buy-in approach",
+      "junior": "Shared data with peers and incorporated feedback",
+      "senior": "Working sessions using customer data",
+      "manager": "Co-created mission then aligned peer managers",
+      "exec": "Scenario workshops with exec team and quantified trade-offs"
+    },
+    {
+      "signal": "Execution ownership",
+      "junior": "Ran own 2-week experiment",
+      "senior": "Joint pilot with measurable lift",
+      "manager": "Restructured pods and delivered quarterly outcomes",
+      "exec": "Org changes and paused investments for focused test"
+    },
+    {
+      "signal": "Handling ambiguity",
+      "junior": "Proposed direction when none existed",
+      "senior": "Unified overlapping workstreams",
+      "manager": "Created team mission post-reorg",
+      "exec": "Defined new GTM strategy after missed targets"
+    }
+  ],
+  "kind": "lp"
+}

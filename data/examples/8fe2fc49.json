@@ -1,0 +1,233 @@
+{
+  "question": "Tell me about a time you drove an improvement to a process, product, or way of working.",
+  "competency": "Initiative, Drive & Proactivity",
+  "principle": "Initiative, Drive & Proactivity",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our weekly status report took 4 hours to compile manually each week. I built a simple script to pull the data automatically and shared it with the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you shared it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teammates started using it and gave feedback on edge cases. I iterated once and it cut the time to 30 minutes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Individual scope: automated own + team status report",
+        "- Action: wrote script, shared, iterated on feedback",
+        "- Outcome: time reduced from 4h to 30min",
+        "Quote: 'I noticed... and shared it with the team'",
+        "Follow-up: Asked about adoption; candidate described one round of iteration"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a local inefficiency in their own workflow and took ownership to automate it without being asked. They shared the change and incorporated one round of teammate feedback, showing coachability. The impact stayed within the team but delivered a clear, measurable time saving. This matches the expected level of individual ownership and learning from input. Biggest strength is proactive spotting of friction and closing the loop on feedback rather than stopping at the first version.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager asked me to update the status report template so I did that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you see any other process issues you could have fixed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just did what was assigned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Reactive: only updated template when manager assigned it",
+        "- No follow-up actions or suggestions",
+        "Quote: 'I just did what was assigned'",
+        "Follow-up: Probe on other ideas; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate only acted after explicit direction and showed no evidence of scanning for other improvements. They did not own the outcome beyond the assigned task or seek feedback. This signals low initiative and limited ownership of their immediate environment. The single biggest gap is absence of any self-started action."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams were duplicating API contract reviews. I proposed a shared review checklist and ran a pilot across both squads for one quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the time they were spending and got their lead to co-own the pilot. After three months the duplicated reviews dropped by 60%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Cross-team scope: unified API review process",
+        "- Influence: used data to recruit other lead as co-owner",
+        "- Outcome: 60% reduction in duplicated effort",
+        "Quote: 'I proposed a shared review checklist and ran a pilot'",
+        "Follow-up: Adoption mechanics; candidate described using metrics to gain buy-in"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate spotted duplicated work across teams and drove a shared process change by influencing without authority. They used concrete data to recruit a peer lead and measured the result after three months. This demonstrates the expected cross-team impact and ability to create leverage beyond their own team. The biggest strength is turning an observation into a measurable, adopted improvement through collaboration rather than mandate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I improved the build script in my service so deploys were faster for my team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect any other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it was just for us."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Stayed within single team boundary",
+        "- No attempt to scale or influence others",
+        "Quote: 'It was just for us'",
+        "Follow-up: Cross-team angle; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The improvement remained local and the candidate made no effort to identify or address similar friction elsewhere. Senior-level expectations include driving change across boundaries and using influence to gain adoption. The core gap is lack of outward scope and measurable broader impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending too much time on manual QA handoffs. I introduced a new definition of done and trained the team on it, then tracked the reduction in rework tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about the engineer who kept skipping the new steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had a direct conversation, paired them with a peer for two sprints, and the rework rate for their tickets fell from 35% to 8%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Team-level process change with training and tracking",
+        "- Handled underperformance through coaching",
+        "- Outcome: rework reduced, specific engineer improved",
+        "Quote: 'I introduced a new definition of done and trained the team'",
+        "Follow-up: Underperformer case; candidate described coaching and metrics"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate owned a team process change, created leverage through training, and directly addressed an underperformer with coaching and measurement. They tracked the outcome at both team and individual levels. This aligns with expectations for developing people and owning team results rather than doing the work themselves. The biggest strength is combining process design with accountability for adoption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we should do better code reviews but didn't have time to enforce it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the quality change?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed about the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Announced change but no follow-through or tracking",
+        "- No handling of inconsistent adoption",
+        "Quote: 'I told the team we should do better... but didn't have time'",
+        "Follow-up: Results; candidate reported no change"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate delegated the change without providing structure, training, or accountability. Team outcomes did not move. Manager-level evaluation focuses on whether the leader creates leverage and addresses gaps in execution. The primary gap is absence of ownership for team results."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing deals because sales and product had misaligned roadmaps. I created a quarterly joint planning ritual with clear owners and metrics, which we scaled to three regions over 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deprioritized two smaller features to free capacity for the planning process; win rate on enterprise deals rose 12 points."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Org-level impact: aligned sales and product planning",
+        "- Strategic trade-offs and multi-region rollout",
+        "- Outcome: 12-point win-rate lift",
+        "Quote: 'I created a quarterly joint planning ritual... scaled to three regions'",
+        "Follow-up: Trade-offs; candidate described deprioritization decision"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate identified a business-level misalignment, designed a new operating rhythm, and drove adoption across regions while making explicit trade-offs. They tied the change to a measurable commercial outcome. This shows the strategic judgment and long-term leverage expected at this level. The biggest strength is connecting a process change to revenue impact and sustaining it at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my directs to improve cross-team coordination but left the details to them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business result?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was mixed; some teams improved, others did not."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you drove an improvement...",
+        "- Delegated without strategic framing or metrics",
+        "- No personal ownership of outcome or trade-offs",
+        "Quote: 'I asked my directs to improve... but left the details'",
+        "Follow-up: Business impact; candidate had only anecdotal results"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate did not personally shape the approach or own the results, resulting in inconsistent adoption. Executive expectations center on strategic judgment, clear trade-offs, and org-wide leverage. The core gap is lack of direct accountability for business-level outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Local workflow or single team",
+      "senior": "Cross-team or multi-squad",
+      "manager": "Team process + people development",
+      "exec": "Org or business-level operating rhythm"
+    },
+    {
+      "signal": "How change was initiated",
+      "junior": "Self-identified friction",
+      "senior": "Data-driven proposal to peers",
+      "manager": "Designed process and trained team",
+      "exec": "Strategic ritual with explicit trade-offs"
+    },
+    {
+      "signal": "Handling resistance or gaps",
+      "junior": "Iterated on peer feedback",
+      "senior": "Used metrics to gain buy-in",
+      "manager": "Direct coaching conversation",
+      "exec": "Deprioritized other work to enable change"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Time saved (hours)",
+      "senior": "% reduction in duplicated effort",
+      "manager": "Rework rate per engineer",
+      "exec": "Win-rate lift tied to revenue"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Shared script with teammates",
+      "senior": "Co-owned pilot with another lead",
+      "manager": "Trained team and addressed underperformer",
+      "exec": "Scaled to three regions over 18 months"
+    }
+  ],
+  "kind": "competency"
+}

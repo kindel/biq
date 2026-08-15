@@ -1,0 +1,254 @@
+{
+  "question": "Describe a situation where you had to give direct or critical feedback to someone who was resistant.",
+  "competency": "Conflict Resolution & Difficult Interpersonal Situations",
+  "principle": "Conflict Resolution & Difficult Interpersonal Situations",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project, a peer kept missing code review deadlines. I pulled them aside after standup and said the delays were blocking my work and the team SLA. They pushed back saying their other tasks came first. I asked what would help and we agreed on a shared checklist. They still missed one deadline but then started meeting them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel delivering it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Nervous, but I practiced what I would say first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to give direct or critical feedback to someone who was resistant.",
+        "Individual contributor scope: peer on shared task",
+        "Action: scheduled short 1:1, stated impact, asked for their constraints",
+        "Outcome: one miss then consistent improvement; \"I practiced what I would say first\"",
+        "Follow-up: Did you check in later? Yes, after two weeks they thanked me for the clarity."
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned delivering feedback on their own work rather than escalating. They prepared, stated concrete impact, and adapted when resistance appeared. The modest outcome (one continued miss then improvement) fits the expected local scope. Biggest strength is willingness to practice and follow up instead of avoiding the conversation.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned in a group chat that reviews were late. They didn't reply so I just did the work myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever speak to them directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I didn't want to make it awkward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to give direct or critical feedback to someone who was resistant.",
+        "Avoided direct conversation entirely",
+        "Action: passive group message then completed the work solo",
+        "Outcome: issue unresolved; \"I didn't want to make it awkward\"",
+        "Follow-up: What happened on the next project? Same pattern repeated."
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate chose a passive channel and then absorbed the impact rather than addressing resistance. No evidence of attempting direct feedback or learning from the situation. The core gap is lack of ownership over interpersonal friction that affected their own deliverables."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "A senior engineer on another team kept rejecting my PRs with vague comments. I booked time, showed the pattern of three recent reviews, and said the lack of specificity was slowing our shared service rollout by two weeks. They argued the code quality was low. I asked for their top two quality criteria and we aligned on them. After that their reviews became actionable and the rollout hit the revised date."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused only on the business impact we both cared about rather than personal style."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to give direct or critical feedback to someone who was resistant.",
+        "Cross-team scope: senior on another team blocking shared rollout",
+        "Action: data-driven 1:1, tied feedback to mutual metric, co-created criteria",
+        "Outcome: reviews improved, rollout recovered; \"focused only on the business impact we both cared about\"",
+        "Follow-up: Did this change the relationship long-term? We now co-review designs proactively."
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used concrete data and a shared metric to address resistance across team boundaries. They converted pushback into joint criteria instead of winning the argument. The result shows influence without authority and measurable impact on a cross-team deliverable. Biggest strength is the shift from vague complaints to aligned standards.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "I told the other team lead their engineer was being difficult in reviews. They said they'd handle it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not much, the reviews stayed slow so we worked around them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to give direct or critical feedback to someone who was resistant.",
+        "Delegated to the other lead instead of engaging directly",
+        "Action: complained upward then accepted status quo",
+        "Outcome: no improvement; worked around the problem",
+        "Follow-up: Did you ever speak with the engineer? No."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate avoided direct conversation with the resistant party and relied on escalation that produced no change. No attempt to find shared goals or measure impact. The core gap is treating cross-team friction as someone else's problem rather than exercising influence."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "One of my directs was consistently late on deliverables and defensive in retros. In our 1:1 I showed the last four sprint data, linked it to team velocity, and said the pattern was affecting promotion cases for the whole team. They pushed back hard. We agreed on a 30-day experiment with weekly check-ins and a clear definition of done. Velocity recovered 15% and the person later asked for help on prioritization."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the defensiveness?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stayed on the data and the team outcome, not their intent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to give direct or critical feedback to someone who was resistant.",
+        "Manager scope: direct report affecting team metrics",
+        "Action: used sprint data, tied to team promotion cases, ran 30-day experiment",
+        "Outcome: 15% velocity recovery and improved collaboration; \"stayed on the data and the team outcome\"",
+        "Follow-up: Did the person improve long-term? Yes, they became a reliable reviewer for juniors."
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate connected individual behavior to team-level outcomes and created a structured experiment rather than a one-time conversation. Resistance was met with data and joint accountability. The result includes both metric improvement and development of the individual. Biggest strength is treating feedback as a team-leverage tool instead of a personal correction.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "I sent them a written warning after the third missed deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you have a conversation first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried once but they got upset so I went to HR."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to give direct feedback to someone who was resistant.",
+        "Skipped direct coaching in favor of formal process",
+        "Action: one attempt then escalated to written warning",
+        "Outcome: compliance but no development; \"they got upset so I went to HR\"",
+        "Follow-up: How is the person performing now? Still on a PIP."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate moved quickly to formal documentation instead of investing in direct coaching or joint problem-solving. No evidence of developing the person or protecting team outcomes through leadership. The core gap is using process as a substitute for managing resistance."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "A peer VP kept undermining a reorg decision in staff meetings. I met them 1:1, laid out the three business risks their public dissent was creating, and said the leadership team needed alignment or we would lose the board's support for the next funding round. They disagreed on the risks. We mapped the risks together and agreed I would own the communication to the board while they owned execution messaging. The reorg landed without board pushback and attrition in the affected org stayed flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect on the relationship?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now run joint planning sessions; the friction became a forcing function for clearer decision rights."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to give direct feedback to someone resistant.",
+        "Org-level scope: peer VP creating strategic risk",
+        "Action: framed around board funding and org stability, co-created ownership split",
+        "Outcome: clean reorg landing and stable attrition; \"friction became a forcing function for clearer decision rights\"",
+        "Follow-up: Did this pattern recur with others? We now have a standing exec alignment ritual."
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate addressed resistance at the peer-VP level by connecting it to board-level consequences and org health. They converted conflict into clarified decision rights rather than forcing agreement. The result shows strategic judgment and long-term leverage on leadership dynamics. Biggest strength is treating the difficult conversation as an opportunity to strengthen the broader leadership system.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you gave direct feedback to someone resistant."
+        },
+        {
+          "role": "candidate",
+          "text": "I raised it in the exec offsite and let the CEO address it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever speak with the VP directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't see a path that wouldn't damage the relationship."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to give direct feedback to someone resistant.",
+        "Avoided direct peer conversation, escalated to CEO",
+        "Action: public mention in offsite hoping for top-down fix",
+        "Outcome: no personal resolution; \"didn't see a path that wouldn't damage the relationship\"",
+        "Follow-up: How did the reorg ultimately go? It took longer and created confusion."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate deferred a peer-level conflict to the CEO instead of exercising direct influence. No attempt to find mutual strategic ground or protect org outcomes through personal leadership. The core gap is avoiding high-stakes ambiguity that execs are expected to resolve."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Direct engagement vs avoidance",
+      "junior": "Raises: attempts 1:1 despite nerves; Lowers: uses group chat then avoids",
+      "senior": "Raises: books time with resistant peer; Lowers: complains to their lead",
+      "manager": "Raises: runs structured 1:1 with data; Lowers: jumps to written warning",
+      "exec": "Raises: frames around board risk and co-owns solution; Lowers: surfaces in offsite hoping CEO fixes"
+    },
+    {
+      "signal": "Use of shared outcomes",
+      "junior": "Raises: links to own blocked work; Lowers: no shared metric",
+      "senior": "Raises: ties to rollout date both teams own; Lowers: no joint goal",
+      "manager": "Raises: connects to team velocity and promotions; Lowers: treats as individual issue",
+      "exec": "Raises: maps to funding round and attrition; Lowers: no org-level framing"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Raises: asks for constraints and adapts; Lowers: stops at first awkwardness",
+      "senior": "Raises: turns pushback into co-created criteria; Lowers: accepts status quo",
+      "manager": "Raises: runs 30-day experiment; Lowers: escalates after one try",
+      "exec": "Raises: converts dissent into decision-rights clarity; Lowers: avoids direct conversation"
+    },
+    {
+      "signal": "Long-term leverage",
+      "junior": "Raises: follows up and sees sustained change; Lowers: issue repeats",
+      "senior": "Raises: relationship improves to proactive collaboration; Lowers: works around problem",
+      "manager": "Raises: person becomes reviewer for juniors; Lowers: remains on PIP",
+      "exec": "Raises: creates standing alignment ritual; Lowers: reorg takes longer with confusion"
+    }
+  ],
+  "kind": "competency"
+}

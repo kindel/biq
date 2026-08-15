@@ -1,0 +1,245 @@
+{
+  "question": "Give me an example of a time where there was a big bug, outage, or product failure. What happened? What did you do? What was the outcome?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout service went down for 45 minutes after a config change I pushed. I noticed the alerts, rolled back immediately, then wrote a post-mortem with the exact diff that caused it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the post-mortem change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a required peer review step for any config touching prod. I also started running a local validation script before every deploy."
+        }
+      ],
+      "raiseNotes": [
+        "Q: big bug/outage example",
+        "Role: new grad on payments team",
+        "Situation: misapplied config change took checkout offline 45 min",
+        "Actions: spotted alert, rolled back in 8 min, wrote detailed post-mortem",
+        "Outcome: added peer review gate and local validation script",
+        "Quote: 'I treated the post-mortem as a way to prevent the same mistake, not just close the ticket'",
+        "Follow-up: how did you get the review process adopted? - escalated to my manager and showed the exact diff that would have caught it"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at the junior level. The candidate owned the full incident from detection through remediation and process fix without waiting for senior intervention. The concrete quote about treating the post-mortem as prevention rather than closure shows early ownership of quality. The outcome (new peer review gate plus local validation) demonstrates learning applied beyond the immediate fix. Biggest strength is the willingness to add friction to their own workflow after a mistake.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had an outage on the login page. I was on call so I paged the team and waited for the senior engineer to fix it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the incident?"
+        },
+        {
+          "role": "candidate",
+          "text": "I updated the ticket with the timeline and moved on to my next task."
+        }
+      ],
+      "lowerNotes": [
+        "Q: big bug/outage example",
+        "Role: junior dev",
+        "Situation: login outage while on call",
+        "Actions: paged senior engineer, updated ticket with timeline",
+        "Outcome: handed off and closed ticket",
+        "Quote: 'I waited for the senior to fix it'",
+        "Follow-up: did you look at the root cause? - no, that was handled by the on-call lead"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The candidate treated the incident as something to hand off rather than own end-to-end. No evidence of personal follow-up or process improvement after the fact. The quote shows reliance on others without taking initiative on the fix or prevention. Biggest gap is absence of any learning or ownership beyond basic on-call hygiene."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team's change to our shared cache layer caused 20% of search queries to return stale results for four hours. I coordinated the rollback across both teams and then drove a cross-team review of all cache invalidation paths."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to prioritize the review?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the exact customer impact numbers and offered to pair on the fix so it didn't block their roadmap."
+        }
+      ],
+      "raiseNotes": [
+        "Q: big bug/outage example",
+        "Role: senior on search platform",
+        "Situation: partner change caused stale results affecting 20% queries for 4 hours",
+        "Actions: coordinated rollback, drove cross-team invalidation review",
+        "Outcome: both teams adopted stricter cache contract tests",
+        "Quote: 'I showed them the customer impact numbers and offered to pair'",
+        "Follow-up: what metric improved after the review? - cache hit rate variance dropped 60% in the following quarter"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at the senior level. The candidate took ownership of an outage caused by another team and converted it into a durable cross-team process change. The quote about pairing to avoid blocking the partner team's roadmap shows influence without authority. Concrete outcome (60% reduction in cache variance) ties the action to measurable quality. Biggest strength is turning a failure into shared standards rather than just a one-time fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our search results went stale after a partner deploy. I rolled back our side and filed a ticket for the other team to investigate."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change in how the teams work together?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the ticket got assigned but I moved on to my next project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: big bug/outage example",
+        "Role: senior engineer",
+        "Situation: stale search results from partner change",
+        "Actions: rolled back own service, filed ticket for partner team",
+        "Outcome: ticket filed, no follow-up",
+        "Quote: 'the ticket got assigned but I moved on'",
+        "Follow-up: any lasting process change? - no"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The candidate stopped at the immediate rollback and a ticket instead of driving prevention across teams. No evidence of metrics or sustained influence on the partner team. The quote reveals the incident was treated as someone else's problem once the ticket was filed. Biggest gap is lack of ownership for the broader quality system that allowed the outage."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our recommendation service had a silent data corruption bug that affected 8% of users for two weeks before detection. I had the team run a full audit, then instituted weekly data-quality reviews and made the on-call rotation own a monthly data sanity check."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineer who introduced the bug?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used it as a coaching moment: we walked through the missing test together and added a required data-diff step to their checklist."
+        }
+      ],
+      "raiseNotes": [
+        "Q: big bug/outage example",
+        "Role: engineering manager of recs team",
+        "Situation: silent corruption bug affected 8% users for 2 weeks",
+        "Actions: led team audit, added weekly data-quality reviews and monthly sanity checks",
+        "Outcome: zero similar incidents in next 9 months",
+        "Quote: 'I used it as a coaching moment and added a required data-diff step'",
+        "Follow-up: how did the team respond to the new reviews? - initially resistant, but after first catch they saw the value"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at the manager level. The candidate turned a multi-week undetected bug into team-level process changes and used the incident for coaching rather than blame. The quote shows deliberate development of the responsible engineer. Outcome (zero similar incidents in 9 months) demonstrates sustained leverage through the team. Biggest strength is building quality mechanisms that outlast the immediate fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a data bug that went undetected for two weeks. I had the team fix it and reminded everyone to be more careful with data changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any process changes after?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent an email about double-checking data diffs."
+        }
+      ],
+      "lowerNotes": [
+        "Q: big bug/outage example",
+        "Role: engineering manager",
+        "Situation: undetected data corruption for 2 weeks",
+        "Actions: had team fix it, sent reminder email",
+        "Outcome: no structural change",
+        "Quote: 'I sent an email about double-checking'",
+        "Follow-up: did the email lead to any checklist or review? - no, just the one-time note"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The manager relied on a one-time email instead of creating durable team processes or using the incident for coaching. No metrics or follow-up mechanisms were put in place. The quote reveals a lightweight response that did not raise team standards. Biggest gap is failure to leverage the team or own long-term quality outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A pricing engine miscalculation cost us $4.2M in over-discounting over six weeks. I commissioned an independent audit, restructured the pricing org to separate change approval from implementation, and tied 30% of the pricing team's bonus to a new accuracy SLA."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make on velocity?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a 15% slower release cadence for pricing changes in exchange for the accuracy SLA. The finance team agreed after seeing the audit numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: big bug/outage example",
+        "Role: VP of platform",
+        "Situation: pricing engine error cost $4.2M over 6 weeks",
+        "Actions: independent audit, restructured approval process, tied bonuses to accuracy SLA",
+        "Outcome: pricing accuracy improved to 99.7%, $4.2M recovered in prevented loss",
+        "Quote: 'We accepted a 15% slower release cadence in exchange for the accuracy SLA'",
+        "Follow-up: how did you get finance and product aligned on the velocity trade-off? - presented audit findings in joint review, let them set the SLA target"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at the exec level. The candidate treated a material financial loss as an opportunity to redesign org structure and incentives rather than just fixing the bug. The quote about accepting a deliberate velocity trade-off shows strategic judgment and cross-functional alignment. Outcome (99.7% accuracy and prevented loss) ties the changes to business results. Biggest strength is using the failure to create lasting organizational guardrails.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We lost several million from a pricing bug. I asked the team to add more tests and moved on to the next priority."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any org or incentive changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it in the quarterly review but didn't change headcount or bonuses."
+        }
+      ],
+      "lowerNotes": [
+        "Q: big bug/outage example",
+        "Role: VP",
+        "Situation: pricing bug caused several million loss",
+        "Actions: asked team to add more tests",
+        "Outcome: no structural or incentive changes",
+        "Quote: 'We discussed it in the quarterly review but didn't change anything'",
+        "Follow-up: why no org changes? - it was treated as an execution issue"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The executive response stayed at the level of 'add more tests' without addressing root organizational incentives or approval structures. No evidence of strategic trade-offs or long-term guardrails. The quote shows the incident was closed as a one-off execution problem. Biggest gap is absence of leverage or business-level ownership of quality."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of root cause and prevention",
+      "junior": "Owns personal mistake and adds local guardrail",
+      "senior": "Drives cross-team process after partner-caused issue",
+      "manager": "Creates recurring team rituals and coaches individuals",
+      "exec": "Redesigns org structure and ties incentives to quality SLA"
+    },
+    {
+      "signal": "Willingness to add friction for quality",
+      "junior": "Adds peer review to own deploys",
+      "senior": "Offers to pair so partner team adopts stricter tests",
+      "manager": "Institutes weekly data reviews despite initial resistance",
+      "exec": "Accepts 15% slower cadence for accuracy SLA"
+    },
+    {
+      "signal": "Use of metrics to drive standards",
+      "junior": "Shows exact diff that would have caught the bug",
+      "senior": "Tracks 60% reduction in cache variance post-fix",
+      "manager": "Zero similar incidents in 9 months",
+      "exec": "Moves pricing accuracy to 99.7% and quantifies prevented loss"
+    },
+    {
+      "signal": "Handling of the responsible party",
+      "junior": "Focuses on own learning",
+      "senior": "Influences without authority",
+      "manager": "Uses incident as coaching moment",
+      "exec": "Restructures approval paths rather than blame"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual workflow change",
+      "senior": "Cross-team contract and tests",
+      "manager": "Team rituals and bonus alignment",
+      "exec": "Org redesign and finance partnership"
+    }
+  ],
+  "kind": "lp"
+}

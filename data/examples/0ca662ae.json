@@ -1,0 +1,237 @@
+{
+  "question": "Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+  "competency": "Problem-Solving & Analytical Thinking",
+  "principle": "Problem-Solving & Analytical Thinking",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a login bug that only happened for new users. Instead of rewriting the auth flow, I asked the support rep three clarifying questions about the exact error messages and device types they were seeing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn from those questions?"
+        },
+        {
+          "role": "candidate",
+          "text": "Turned out it was a timezone parsing issue on mobile only. I fixed it in two hours instead of a week of refactoring."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: login bug affecting new users only",
+        "Actions: asked support rep about error messages and device types before coding",
+        "Outcome: identified timezone parsing issue, fixed in 2 hours",
+        "Quote: \"I fixed it in two hours instead of a week of refactoring.\"",
+        "Follow-up: Asked what was learned from the questions; candidate explained root cause discovery"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate demonstrated Problem-Solving & Analytical Thinking by pausing to gather specifics instead of starting a refactor. Story shows they asked support about error messages and device types, which revealed a timezone parsing issue on mobile. Quote highlights the time savings: \"I fixed it in two hours instead of a week of refactoring.\" This matches junior expectations of owning individual work and learning from targeted questions. Biggest strength is clear ownership of the discovery process rather than assuming a large code change was needed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a slow query in the dashboard. I just added an index and it got faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ask any questions first about usage patterns or data volume?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just tried the index and it worked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: slow dashboard query",
+        "Actions: added index without prior questions",
+        "Outcome: query got faster but no evidence of root cause exploration",
+        "Quote: \"I just tried the index and it worked.\"",
+        "Follow-up: Asked about usage questions; candidate admitted none were asked"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate jumped straight to adding an index on a slow query without asking clarifying questions, showing limited Problem-Solving & Analytical Thinking. Story lacks any detail on what was learned or why the index was the right approach. Quote \"I just tried the index and it worked\" confirms reactive rather than inquisitive behavior. This falls short of junior expectations around coachability and owning the full problem definition. Biggest gap is absence of evidence that questions changed the outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Cross-team latency complaints were blamed on our service. Before proposing changes, I asked the consuming teams about their retry logic and traffic patterns."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after those questions?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discovered their clients were retrying aggressively on 5xx. Coordinated a backoff change that cut our p99 by 40% without touching our code."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: cross-team latency blamed on candidate's service",
+        "Actions: asked consuming teams about retry logic and traffic patterns",
+        "Outcome: found aggressive retries, coordinated backoff change, p99 down 40%",
+        "Quote: \"Coordinated a backoff change that cut our p99 by 40% without touching our code.\"",
+        "Follow-up: Asked what changed; candidate explained root cause was client-side"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate showed Problem-Solving & Analytical Thinking by questioning other teams on retry logic and traffic patterns instead of immediately optimizing their own service. Story produced a cross-team coordination that reduced p99 by 40% with no code changes. Quote demonstrates influence without authority and measurable impact. Aligns with senior scope of cross-team work and clear metrics. Biggest strength is using questions to shift ownership to the actual root cause.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Teams complained about latency so I optimized our database queries and added caching."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check how other teams were calling the service?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed the issue was on our side so I focused there."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: cross-team latency complaints",
+        "Actions: optimized queries and added caching without external questions",
+        "Outcome: some improvement but no cross-team diagnosis",
+        "Quote: \"I assumed the issue was on our side so I focused there.\"",
+        "Follow-up: Asked about checking other teams; candidate admitted assumption"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate defaulted to optimizing queries and caching without asking consuming teams about their usage, limiting Problem-Solving & Analytical Thinking to local scope. Story shows assumption-driven work rather than investigation. Quote \"I assumed the issue was on our side\" reveals missing influence across teams. Does not meet senior expectations for cross-team impact or metrics tied to root cause. Biggest gap is lack of evidence that better questions produced leverage beyond their own service."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was consistently missing feature deadlines. Instead of adding process, I asked each engineer what information they lacked at the start of a ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "We found product specs were missing edge cases. I worked with the PM to add a checklist and team on-time delivery rose from 60% to 85%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: team missing feature deadlines",
+        "Actions: asked engineers what information they lacked at ticket start",
+        "Outcome: identified missing edge cases in specs, added checklist with PM, delivery from 60% to 85%",
+        "Quote: \"team on-time delivery rose from 60% to 85%.\"",
+        "Follow-up: Asked team impact; candidate described process change via questions"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate applied Problem-Solving & Analytical Thinking by questioning engineers about missing information instead of imposing new processes. Story led to a spec checklist that improved team delivery from 60% to 85%. Quote ties the outcome directly to team-level leverage. Meets manager expectations around creating leverage through the team and owning team outcomes. Biggest strength is using questions to surface systemic gaps and drive cross-functional fixes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Deadlines were slipping so I added daily standups and stricter estimates."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ask the team what was causing the slips?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the changes based on what I saw in the metrics."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: team missing deadlines",
+        "Actions: added standups and stricter estimates without team input",
+        "Outcome: process change but no root cause from questions",
+        "Quote: \"I made the changes based on what I saw in the metrics.\"",
+        "Follow-up: Asked if team was questioned; candidate said changes were metric-driven"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate imposed standups and estimates on deadline slips without asking engineers for their perspective, showing weak Problem-Solving & Analytical Thinking at the team level. Story lacks any diagnostic step or resulting team ownership. Quote \"I made the changes based on what I saw in the metrics\" indicates top-down decisions. Falls short of manager expectations for developing people and creating leverage. Biggest gap is no evidence that questions were used to improve team outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Revenue was flat despite new market expansion. Before setting new targets, I asked regional leaders what customer segments were actually buying and why adoption lagged in two regions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What strategic shift resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "Questions revealed we were selling to the wrong segment in Europe. We pivoted positioning and saw 3x pipeline in six months while deprioritizing two underperforming regions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: flat revenue in market expansion",
+        "Actions: asked regional leaders about buying segments and adoption lags",
+        "Outcome: identified wrong segment in Europe, pivoted positioning, 3x pipeline in six months",
+        "Quote: \"We pivoted positioning and saw 3x pipeline in six months while deprioritizing two underperforming regions.\"",
+        "Follow-up: Asked strategic shift; candidate explained deprioritization decision"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate demonstrated Problem-Solving & Analytical Thinking by questioning regional leaders on segments and adoption before setting targets, avoiding premature resource allocation. Story produced a positioning pivot and deprioritization that drove 3x pipeline. Quote shows long-term strategic judgment and trade-offs at org level. Fits exec expectations for high ambiguity and business impact. Biggest strength is using questions to make data-informed bets on where to double down versus exit.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Revenue was flat so we increased marketing spend across all regions."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ask leaders about segment differences first?"
+        },
+        {
+          "role": "candidate",
+          "text": "We moved quickly on the assumption that more spend would solve it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+        "Situation: flat revenue in expansion",
+        "Actions: increased marketing spend without regional questions",
+        "Outcome: broad spend increase with no targeted diagnosis",
+        "Quote: \"We moved quickly on the assumption that more spend would solve it.\"",
+        "Follow-up: Asked about segment questions; candidate admitted quick assumption"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate increased marketing spend across regions without asking leaders about segment differences, reflecting limited Problem-Solving & Analytical Thinking at the strategic level. Story shows assumption-based action instead of investigation. Quote \"We moved quickly on the assumption\" highlights absence of trade-off analysis. Does not meet exec expectations for long-term thinking or org-level judgment. Biggest gap is lack of evidence that questions shaped resource allocation decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of questions asked",
+      "junior": "Individual task details",
+      "senior": "Cross-team usage patterns",
+      "manager": "Team information gaps",
+      "exec": "Regional/segment strategy"
+    },
+    {
+      "signal": "Outcome metrics",
+      "junior": "Hours saved on fix",
+      "senior": "p99 latency or delivery %",
+      "manager": "Team delivery rate",
+      "exec": "Pipeline or revenue shift"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Own work only",
+      "senior": "Coordinated with peers",
+      "manager": "Changed team process",
+      "exec": "Org-level pivot and deprioritization"
+    },
+    {
+      "signal": "Root cause depth",
+      "junior": "Single clarifying question set",
+      "senior": "Client behavior discovery",
+      "manager": "Spec quality issue",
+      "exec": "Wrong segment identification"
+    },
+    {
+      "signal": "Decision quality",
+      "junior": "Avoided unnecessary refactor",
+      "senior": "No code change needed",
+      "manager": "Checklist vs new process",
+      "exec": "Trade-off on regions"
+    }
+  ],
+  "kind": "competency"
+}

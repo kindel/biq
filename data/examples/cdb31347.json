@@ -1,0 +1,263 @@
+{
+  "question": "Tell me about a time when you or your team were more than half way to meeting a goal when you realized it may not be the right goal or may have unintended consequences. What was the situation? What did you do? What was the outcome? Looking back, would you have done anything differently?",
+  "competency": "Deliver Results + Adaptability",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a dashboard to hit 95% data freshness SLA for my team. At 60% complete I noticed the metric would encourage ignoring edge cases that mattered for downstream systems."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged it to my mentor, proposed a narrower scope with a note on the trade-off, and shipped the revised version in two weeks. Freshness hit 92% but no breakage occurred."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have written the risk down earlier instead of waiting for the 60% mark."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: Individual contributor on internal dashboard",
+        "Situation: 60% done, noticed SLA would create downstream breakage",
+        "Action: Raised to mentor, narrowed scope, added trade-off note",
+        "Outcome: 92% freshness, zero incidents",
+        "Quote: \"I flagged it... proposed a narrower scope\"",
+        "Follow-up: Would you do anything differently? -> Would document risk sooner"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for a junior. The candidate owned an individual deliverable, recognized an unintended consequence before shipping, and adjusted with help. Quote shows they escalated appropriately rather than freezing. They still delivered a usable result even if below original target. The reflection shows coachability. Biggest strength is recognizing the mismatch and acting before completion; the gap is that the example stays entirely within their own work with no broader visibility.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were building the dashboard and the freshness number looked good so we kept going. At the end some teams complained but the SLA was met."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider changing the goal?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the goal was set at the start so we just finished it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: IC on dashboard project",
+        "Situation: Hit original freshness target",
+        "Action: Continued without adjustment despite later complaints",
+        "Outcome: SLA met but downstream issues surfaced",
+        "Quote: \"the goal was set at the start so we just finished it\"",
+        "Follow-up: Did you consider changing? -> No"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for a junior. The candidate completed the stated goal but showed no ownership when negative signals appeared. They did not pause, escalate, or adapt the approach. Quote reveals rigid adherence to the original plan rather than results-oriented thinking. No evidence of learning or future adjustment. The single biggest gap is treating goal completion as success even when consequences emerged."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was on track to launch a new checkout flow that would improve conversion by 8%. Midway I saw it would increase support tickets for two partner teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled data on ticket volume, shared it with the partner leads, and got agreement to add a lightweight self-service path. We launched with 6% conversion lift and flat support load."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have run the cross-team impact check two weeks earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: Senior owning checkout launch",
+        "Situation: 8% conversion goal would spike partner support load",
+        "Action: Quantified impact, aligned with two teams, added self-service fix",
+        "Outcome: 6% lift with no support increase",
+        "Quote: \"I pulled data... got agreement to add a lightweight path\"",
+        "Follow-up: Would you change anything? -> Run impact check earlier"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for a senior. The candidate identified an unintended cross-team consequence, used data to influence without authority, and adjusted the goal to protect overall results. Quote demonstrates proactive coordination rather than heroics. They accepted a slightly lower primary metric to avoid negative side effects. Reflection shows awareness of timing. Biggest strength is balancing multiple stakeholders; the minor gap is that the example does not yet show teaching others how to do the same check.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were halfway through the checkout project when someone mentioned support might go up. We decided to launch anyway because conversion was the tracked metric."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after launch?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets rose and we had to do a follow-up project to fix it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: Senior on checkout flow",
+        "Situation: Conversion goal risked support spike",
+        "Action: Noted the issue but continued with original plan",
+        "Outcome: Conversion hit but created follow-up work",
+        "Quote: \"We decided to launch anyway because conversion was the tracked metric\"",
+        "Follow-up: What happened after? -> Created extra project"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for a senior. The candidate recognized the risk but chose not to adjust the goal or coordinate with partners. Quote shows prioritization of the tracked number over actual system health. Result required a second project to clean up the mess. No evidence of influence or trade-off decisions. The single biggest gap is treating the stated goal as fixed even when evidence showed it would create downstream cost."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was 70% through a migration that would cut costs 15%. I realized it would degrade debuggability for two other orgs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actions did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paused the migration, had my leads run a joint review with the affected teams, and we changed the rollout order plus added logging. We still hit 12% savings with no increase in incident MTTR."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I explicitly told them pausing was the right call and used it as an example in our next retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: Manager leading cost migration",
+        "Situation: 15% savings goal would hurt debuggability for peer orgs",
+        "Action: Paused work, ran joint review, changed sequence and added logging",
+        "Outcome: 12% savings, MTTR flat",
+        "Quote: \"I explicitly told them pausing was the right call\"",
+        "Follow-up: How did you handle the team? -> Used as retro example"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for a manager. The candidate protected broader org outcomes by pausing their team's goal and involving peer teams. Quote shows they modeled the right behavior for their reports. They still delivered meaningful savings while avoiding negative side effects. The retro example demonstrates investment in team learning. Biggest strength is treating team results as part of larger system health; the gap is that the story does not yet cover developing a direct report who missed the signal themselves.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was pushing the migration hard. When the debuggability concern came up I told them to finish the migration first and we would address it later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the savings number but spent the next quarter dealing with incidents from the other teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: Manager of migration team",
+        "Situation: Savings goal risked debuggability",
+        "Action: Instructed team to finish first, address later",
+        "Outcome: Savings hit but created quarter of incidents",
+        "Quote: \"I told them to finish the migration first\"",
+        "Follow-up: What was the result? -> Spent next quarter on incidents"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for a manager. The candidate directed the team to hit the number despite known risks to other groups. Quote reveals prioritization of local goal over org impact. Result created sustained operational cost. No evidence of coaching the team on how to surface trade-offs. The single biggest gap is failing to adjust the goal or protect downstream teams when the signal appeared."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were six months into a company-wide efficiency program targeting 20% cost reduction. Data showed it would slow product velocity in two key business units by 30%."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reset the program target to 12%, carved out protected headcount for the affected units, and shifted the remaining savings to lower-risk areas. Product velocity recovered within one quarter while we still captured 11% cost reduction."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the board the original goal created an unacceptable strategic risk and laid out the revised plan with clear metrics."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: Exec running company efficiency program",
+        "Situation: 20% cost target would cut product velocity 30%",
+        "Action: Reset target to 12%, protected key teams, redirected savings",
+        "Outcome: 11% reduction, velocity recovered in one quarter",
+        "Quote: \"I told the board the original goal created an unacceptable strategic risk\"",
+        "Follow-up: How did you communicate? -> Reset with board and new metrics"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for an exec. The candidate identified a strategic unintended consequence at program scale and made a deliberate trade-off that protected long-term business health. Quote shows they owned the decision publicly with the board. They still delivered substantial savings while reversing the velocity damage. Reflection is embedded in the revised metrics. Biggest strength is strategic judgment on goal reset; the gap is that the example does not detail how they developed other leaders to spot similar risks earlier.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The efficiency program was on track for 20%. When velocity concerns surfaced I asked the teams to find workarounds and kept the original target."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened over the next year?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the cost number but two product lines missed their roadmap commitments and revenue growth slowed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized a goal might be wrong midway",
+        "Role: Exec on efficiency program",
+        "Situation: 20% cost goal risked product velocity",
+        "Action: Pushed teams to work around the issue",
+        "Outcome: Cost target met but revenue growth slowed",
+        "Quote: \"I asked the teams to find workarounds and kept the original target\"",
+        "Follow-up: What happened over the next year? -> Missed roadmap and slower growth"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for an exec. The candidate maintained the original target despite clear evidence of strategic damage. Quote shows delegation of the problem rather than ownership of the goal adjustment. Result produced measurable revenue impact. No evidence of long-term thinking or board-level recalibration. The single biggest gap is allowing a local efficiency goal to override broader business outcomes without intervention."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognizes goal mismatch",
+      "junior": "Flags issue and escalates to mentor",
+      "senior": "Quantifies cross-team impact and aligns partners",
+      "manager": "Pauses team work and runs joint review",
+      "exec": "Resets program target and briefs board"
+    },
+    {
+      "signal": "Adjusts goal vs. pushes through",
+      "junior": "Narrows scope and ships revised version",
+      "senior": "Adds self-service path to protect both metrics",
+      "manager": "Changes rollout order and adds logging",
+      "exec": "Lowers target and protects key teams"
+    },
+    {
+      "signal": "Owns outcome and reflects",
+      "junior": "Accepts 92% result and notes earlier documentation",
+      "senior": "Accepts 6% lift and would run check earlier",
+      "manager": "Models pause decision in retro",
+      "exec": "Publicly resets goal with new metrics"
+    }
+  ],
+  "kind": "lp"
+}

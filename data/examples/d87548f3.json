@@ -1,0 +1,269 @@
+{
+  "question": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+  "competency": "Problem-Solving & Analytical Thinking (Cross-domain application)",
+  "principle": "Problem-Solving & Analytical Thinking",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "In my first internship on the backend team, we had a latency spike in our API that standard profiling didn't explain. I remembered a stats class where we used simple queuing theory to model wait times, so I pulled in an M/M/1 approximation from operations research and ran a quick spreadsheet model on our request rates. It pointed to a hidden bottleneck in the connection pool. We tuned the pool size and latency dropped 40 ms on average."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you validate the model?"
+        },
+        {
+          "role": "candidate",
+          "text": "I compared the predicted queue lengths against actual thread dumps we captured during the spike. The numbers lined up within 15 percent, so the team trusted the change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: Backend intern; Situation: unexplained API latency spike",
+        "Action: recalled queuing theory from stats class, built M/M/1 spreadsheet model",
+        "Outcome: identified connection-pool bottleneck, 40 ms improvement",
+        "Quote: 'The numbers lined up within 15 percent, so the team trusted the change.'",
+        "Follow-up: How did you validate the model? Compared against thread dumps."
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate pulled a queuing-theory model from a stats class into a backend performance issue. They applied the method themselves, validated it against real data, and the fix moved a measurable metric. This shows ownership of their own learning and willingness to import tools rather than waiting for a senior to suggest the approach. The validation step against thread dumps demonstrates analytical rigor appropriate for 0-2 years experience. Biggest strength is the direct link from external concept to local result without overclaiming scope.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a bug in the UI where dates were formatting wrong. I asked my roommate who studies design for help with the CSS and it looked better after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the root cause you found?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just a CSS thing, nothing deeper really."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: Junior dev; Situation: date formatting in UI",
+        "Action: asked roommate for CSS help",
+        "Outcome: 'looked better'",
+        "Quote: 'It was just a CSS thing, nothing deeper really.'",
+        "Follow-up: What was the root cause? No technical diagnosis or method imported."
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The example stays at the level of asking a non-engineer for styling advice rather than importing an analytical method. No evidence of the candidate learning or applying a technique themselves, and the outcome is described only as 'looked better' with no measurable impact. The follow-up reveals they did not diagnose the actual formatting bug. This signals limited ownership of cross-domain problem solving at the individual-contributor level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "Our payments service was seeing rising fraud false positives that hurt conversion. I had read about signal-detection theory in a psychology paper on medical diagnostics, so I adapted the ROC curve approach to tune our fraud thresholds across two teams. We reduced false positives by 18 percent while keeping fraud catch rate flat, and the payments and risk teams adopted the same curve method for future experiments."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to use it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week shadow test showing the lift on their metrics and presented it in their weekly sync rather than mandating the change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: Senior backend; Situation: rising fraud false positives hurting conversion",
+        "Action: imported ROC curves from signal-detection theory, ran shadow test across teams",
+        "Outcome: 18 percent false-positive drop, both teams adopted the method",
+        "Quote: 'I ran a two-week shadow test showing the lift on their metrics.'",
+        "Follow-up: How did you get the other team to use it? Presented data in their sync."
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate imported signal-detection theory to reframe a cross-team fraud-tuning problem and produced a shared method that two teams continued using. The 18 percent improvement is tied to a concrete business metric and the influence step was data-driven rather than authority-based. This meets the expectation of cross-team impact and raising the bar for others through reusable technique. Biggest strength is the combination of external method plus measurable, adopted outcome.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a scaling issue so I read a blog post on caching strategies from a different company and suggested we try their approach. It helped a bit."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any other team adopt the approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was mostly for our service."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: Senior engineer; Situation: scaling issue",
+        "Action: read a blog post and suggested the caching pattern",
+        "Outcome: 'helped a bit'",
+        "Quote: 'Not really, it was mostly for our service.'",
+        "Follow-up: Did any other team adopt the approach? No evidence of influence."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The example is limited to reading a blog and applying it locally with only vague improvement. No cross-team influence or reusable method was created, and the follow-up confirms the work stayed within one service. This falls short of the cross-team impact and raising-others expectation for 3-7 years experience."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "My team was missing quarterly reliability targets because on-call load was burning people out. I borrowed the idea of 'premortem' exercises from decision-science research and ran them with the team plus two adjacent service owners. We surfaced hidden dependencies and shifted two high-risk handoffs to shared runbooks. On-call pages dropped 30 percent and the other managers started running their own premortems."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who resisted the extra meeting time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as a one-time two-hour investment and showed the prior quarter's page data; two skeptics later volunteered to facilitate the next session."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: Engineering manager; Situation: missed reliability targets due to on-call burnout",
+        "Action: imported premortem method from decision science, ran cross-team session",
+        "Outcome: 30 percent page reduction, adjacent managers adopted the practice",
+        "Quote: 'two skeptics later volunteered to facilitate the next session.'",
+        "Follow-up: How did you handle resistance? Used data and limited time investment."
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate applied a decision-science technique to improve team sustainability and created leverage by spreading the method to peer teams. The 30 percent reduction in pages is a team-level outcome, and the resistance-handling detail shows people development rather than top-down mandate. This demonstrates creating leverage through the team and raising standards across boundaries. Biggest strength is the sustained adoption by other managers.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "Our deployment process was slow so I read a book on lean manufacturing and told the team to adopt value-stream mapping. It took a while to get traction."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team own the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly drove the sessions myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: Engineering manager; Situation: slow deployments",
+        "Action: read lean book and directed value-stream mapping",
+        "Outcome: 'took a while to get traction'",
+        "Quote: 'I mostly drove the sessions myself.'",
+        "Follow-up: Did the team own the outcome? Manager-led, limited team ownership."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The example shows the manager importing a method but driving it personally rather than building team capability. No evidence of underperformance handling or sustainable team leverage, and the outcome lacks a clear metric. This signals the candidate is still acting as a senior individual contributor instead of developing the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "We were debating whether to build or buy a new observability platform while facing flat headcount. I adapted real-options valuation from corporate finance to model the decision as staged investments with exit points. The framework showed we should prototype two vendors for 90 days before committing. This avoided a $4M platform purchase and let us reallocate two headcount to a higher-priority product area the following year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the CFO and engineering leads aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran the model in their language\u2014NPV ranges and headcount delta\u2014rather than technical features, and we updated it live in the steering meeting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: VP Engineering; Situation: build-vs-buy observability decision under flat headcount",
+        "Action: imported real-options valuation from finance, modeled staged investments",
+        "Outcome: avoided $4M spend, freed two headcount for product work",
+        "Quote: 'I ran the model in their language\u2014NPV ranges and headcount delta.'",
+        "Follow-up: How did you get the CFO and engineering leads aligned? Used finance framing in steering meeting."
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate applied real-options valuation from finance to a high-ambiguity platform decision, producing a clear trade-off that protected headcount and budget. Alignment was achieved by translating the method into CFO-relevant terms rather than technical preference. This shows strategic judgment and long-term leverage at org scale. Biggest strength is the direct tie from external framework to avoided spend and reallocated resources.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem."
+        },
+        {
+          "role": "candidate",
+          "text": "We needed better forecasting so I asked our finance partner to share their spreadsheet template and we used it for capacity planning."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "It gave us a more consistent view, though the actual numbers didn't change much."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+        "Role: VP; Situation: inconsistent capacity planning",
+        "Action: borrowed finance spreadsheet template",
+        "Outcome: 'more consistent view' with little change in numbers",
+        "Quote: 'though the actual numbers didn't change much.'",
+        "Follow-up: What was the business impact? No clear strategic trade-off or leverage."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The example reduces to borrowing a template without adapting a method or surfacing new strategic options. No evidence of high-ambiguity judgment or org-level trade-offs, and the outcome is described as 'more consistent' with negligible business movement. This lacks the long-term, leverage-oriented thinking expected at the executive level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of example",
+      "junior": "Individual task with local metric",
+      "senior": "Cross-team method adoption",
+      "manager": "Team sustainability + peer manager adoption",
+      "exec": "Org-level capital/headcount decision"
+    },
+    {
+      "signal": "Method import depth",
+      "junior": "Applied simple model and validated",
+      "senior": "Adapted ROC curves, ran shadow test",
+      "manager": "Premortem exercise with resistance handling",
+      "exec": "Real-options valuation translated to finance language"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Data comparison convinced own team",
+      "senior": "Presented lift in peer-team sync",
+      "manager": "Limited-time investment + data won skeptics",
+      "exec": "NPV framing in steering meeting"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Own service improvement",
+      "senior": "Shared method across teams",
+      "manager": "30 percent page reduction + ongoing use",
+      "exec": "Avoided $4M and reallocated two headcount"
+    },
+    {
+      "signal": "Level calibration gap",
+      "junior": "No external method or validation",
+      "senior": "Stayed inside one service",
+      "manager": "Manager drove the work personally",
+      "exec": "Only template sharing, no strategic trade-off"
+    }
+  ],
+  "kind": "competency"
+}

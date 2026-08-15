@@ -1,0 +1,233 @@
+{
+  "question": "Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+  "competency": "Teamwork & Collaboration",
+  "principle": "Teamwork & Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a feature team where the backend devs were in India and design was in Seattle. We had a hard launch date and a last-minute API change came in at 6pm my time. I set up a 7am call the next day, documented the delta in a shared doc, and pinged everyone in Slack with clear owners and due times."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when the India team pushed back on the timeline?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my manager for a quick sync, clarified the must-have vs nice-to-have, and we dropped two non-critical fields. The change shipped on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "Candidate described 3-location feature launch with 12-hour time gap and late API change.",
+        "Action: created shared doc, scheduled overlapping call, negotiated scope with manager.",
+        "Quote: 'I asked my manager for a quick sync and we dropped two non-critical fields.'",
+        "Outcome: shipped on original date.",
+        "Follow-up: How did you confirm the India team understood the new scope? They confirmed in writing before starting."
+      ],
+      "raiseFeedback": "Raises the bar for junior. The story shows ownership of local coordination and quick escalation when blocked. The candidate owned documenting the change and adjusting scope after manager input rather than pushing the deadline. Biggest strength is the explicit follow-up to confirm understanding across time zones.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had people in different time zones and the deadline was tight so I just emailed the updated requirements to everyone and waited for replies."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the work get done on time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the India team started a day late because they missed the email thread."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "Candidate sent one email with new requirements across time zones.",
+        "No follow-up call or confirmation step mentioned.",
+        "Outcome: India team started a day late and missed deadline.",
+        "Follow-up: What would you do differently? 'Maybe send another email.'"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate relied on a single email with no overlap call or confirmation loop, resulting in a full day slip. The follow-up answer shows limited reflection on proactive steps. Main gap is absence of ownership for cross-time-zone handoff."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing in London and engineering in two US sites needed to align on a campaign that required backend changes. With only two weeks and a hard external date, I ran daily 30-min standups across the three zones, created a shared RACI, and flagged a dependency conflict between the London creative and US infra team early."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you resolve the conflict without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the two leads into a 15-min call, showed the impact on the launch date, and they agreed to a phased rollout. The campaign launched on schedule with 98% of planned features."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "Three-site campaign with marketing and two engineering teams, two-week window.",
+        "Actions: daily overlap standups, RACI, early dependency flag, 15-min conflict resolution call.",
+        "Quote: 'I pulled the two leads into a 15-min call and they agreed to a phased rollout.'",
+        "Outcome: launched on schedule with 98% scope.",
+        "Follow-up: What metric showed the coordination worked? On-time launch and zero P1s post-launch."
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove cross-functional and cross-site alignment using lightweight rituals and surfaced a dependency before it became blocking. Influence without authority is shown through data on launch impact rather than escalation. Biggest strength is the concrete outcome tied to the coordination steps.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I scheduled a weekly sync across the three teams and sent status updates in between."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result on the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We missed the external date by four days because a dependency surfaced late."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "Weekly sync and status emails across three teams.",
+        "No daily overlap or early conflict detection.",
+        "Outcome: missed external date by four days.",
+        "Follow-up: Why did the dependency surface late? 'The teams didn't update the doc in time.'"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Weekly cadence and passive updates were insufficient for a two-week pressured window, allowing a dependency to surface too late. The candidate did not demonstrate influence to increase overlap or create shared visibility. Main gap is lack of proactive cross-team mechanisms."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two of my teams, one in Bangalore and one in Austin, had to deliver a shared platform migration under a customer commitment. I aligned the managers on a single priority list, shifted one team's on-call rotation to create overlap hours, and ran a weekly retro to surface blockers early."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the manager who resisted changing on-call?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the data on missed handoffs and offered to take the first two overlap shifts myself. The manager agreed and we reduced escalations by half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "Bangalore and Austin platform teams, customer deadline, on-call conflict.",
+        "Actions: aligned managers on priorities, adjusted rotations for overlap, weekly retro, took shifts to model behavior.",
+        "Quote: 'I showed the data on missed handoffs and offered to take the first two overlap shifts myself.'",
+        "Outcome: reduced escalations by half and met commitment.",
+        "Follow-up: How did you measure team sustainability after? Burnout survey scores stayed flat."
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate created leverage by aligning two managers, adjusting team processes, and modeling the overlap behavior personally. Outcome includes both delivery and sustainability metrics. Biggest strength is using data to resolve resistance rather than top-down mandate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told both managers the priority and asked them to coordinate their teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They kept missing each other in time zones and we had to ask the customer for an extension."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "Delegated coordination to two managers without further support.",
+        "No process change or overlap created.",
+        "Outcome: missed commitment and needed customer extension.",
+        "Follow-up: What would you do next time? 'Check in more often.'"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Simply telling managers to coordinate without creating mechanisms or removing friction led to a missed commitment. The candidate did not step in to create overlap or resolve the time-zone issue. Main gap is lack of active team-level leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our EU and APAC product orgs were both building overlapping capabilities under a single board-level deadline. I created a joint steering group with clear decision rights, shifted investment from one region to fund a shared platform team, and accepted a three-month delay in one market to protect the global timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide which market to delay?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used revenue and strategic fit data; the smaller market accepted the trade-off once they saw the platform would accelerate their next two releases."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "EU and APAC orgs, overlapping work, board deadline, investment trade-off.",
+        "Actions: joint steering group, funded shared platform, accepted market delay based on data.",
+        "Quote: 'I used revenue and strategic fit data; the smaller market accepted the trade-off.'",
+        "Outcome: global timeline protected and platform now used by both regions.",
+        "Follow-up: What was the long-term leverage? Platform reduced duplicate work by 40% in following year."
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made an org-level investment trade-off and used data to gain buy-in from the delayed market. Scope shows strategic judgment across regions rather than heroics. Biggest strength is the clear link between the decision and sustained platform leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the two regional VPs to align their roadmaps and report progress monthly."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did duplication get resolved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not fully; both teams continued building similar features and we had to reconcile them after launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+        "Delegated alignment to regional VPs with monthly reporting.",
+        "No investment shift or decision-rights change.",
+        "Outcome: post-launch reconciliation required.",
+        "Follow-up: What was the cost of reconciliation? Two teams spent six weeks merging code."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Monthly reporting without structural changes allowed duplication to continue until after launch. The candidate did not make the necessary investment or priority trade-offs at the org level. Main gap is absence of strategic leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of coordination",
+      "junior": "Single feature with 3 locations",
+      "senior": "Cross-functional campaign across 3 sites",
+      "manager": "Two teams in different regions with process change",
+      "exec": "Org-level investment and market trade-off"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Escalation to manager + doc",
+      "senior": "Data-driven peer call",
+      "manager": "Aligned managers + modeled behavior",
+      "exec": "Steering group + data-backed priority shift"
+    },
+    {
+      "signal": "Time-zone handling",
+      "junior": "One overlap call",
+      "senior": "Daily 30-min standups",
+      "manager": "Shifted on-call rotation",
+      "exec": "Joint steering with async + sync mix"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Local feature shipped",
+      "senior": "Campaign on schedule",
+      "manager": "Commitment met + sustainability flat",
+      "exec": "Global timeline + 40% future reduction"
+    },
+    {
+      "signal": "Reflection shown",
+      "junior": "Confirmed understanding in writing",
+      "senior": "Tracked on-time launch and zero P1s",
+      "manager": "Burnout scores unchanged",
+      "exec": "Platform leverage measured next year"
+    }
+  ],
+  "kind": "competency"
+}

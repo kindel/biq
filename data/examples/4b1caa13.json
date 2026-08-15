@@ -1,0 +1,255 @@
+{
+  "question": "Tell me about the most difficult interaction you had at work. What happened? How did you handle it? What was the outcome?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My first code review with a senior engineer who flagged a security issue in my feature. I felt defensive because the deadline was tight."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a 15-min call, asked him to walk through the risk, then rewrote the auth logic and added tests. Outcome: feature shipped on time and he later asked me to review his changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about the feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told him directly that the initial comment felt abrupt, and we agreed on clearer comments going forward."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most difficult interaction",
+        "Situation: senior flagged security bug in first feature",
+        "Action: asked for walkthrough, rewrote code, gave direct feedback on review style",
+        "Outcome: shipped on time, mutual review relationship",
+        "Quote: 'I told him the comment felt abrupt'",
+        "Follow-up: asked how they handled the emotion - owned defensiveness and repaired"
+      ],
+      "raiseFeedback": "Candidate described a concrete peer conflict over code quality. They initiated a direct conversation to understand the risk and later surfaced their own reaction to the feedback style. This shows early ownership of both the technical fix and the relationship. The outcome included continued collaboration rather than avoidance. At junior level this demonstrates the core of earning trust through transparency and follow-through on small scope. Biggest strength is willingness to name the interpersonal issue instead of just fixing the code.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A teammate kept changing requirements on a shared doc and I just stopped updating it after the third time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to them?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I mentioned it in standup once. The project lead eventually reassigned the task."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most difficult interaction",
+        "Situation: teammate changed requirements repeatedly",
+        "Action: stopped updating doc, passive mention in standup",
+        "Outcome: task reassigned by lead",
+        "Quote: 'I just stopped updating it'",
+        "Follow-up: asked if they sought feedback - no direct conversation attempted"
+      ],
+      "lowerFeedback": "Candidate avoided direct conversation and let the work degrade until someone else intervened. No attempt to clarify intent or repair the working relationship. At junior level this signals low ownership of their own interactions. The outcome relied on escalation rather than resolution. Biggest gap is absence of any effort to earn trust through direct, respectful communication."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A product manager on another team publicly questioned our API design in a planning meeting after we had already aligned offline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stayed in the meeting, restated the prior agreement, then asked to schedule a follow-up with both teams. In the 1:1 I showed the data that drove our choice and invited their constraints."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They joined our next design review and the API shipped without further friction. We now run joint planning every quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most difficult interaction",
+        "Situation: PM challenged API decision in public after private alignment",
+        "Action: de-escalated in room, then held 1:1 with data and invited constraints",
+        "Outcome: joint reviews established",
+        "Quote: 'I restated the prior agreement then scheduled the follow-up'",
+        "Follow-up: asked about cross-team leverage - now quarterly planning"
+      ],
+      "raiseFeedback": "Candidate handled a public challenge by protecting the relationship in the moment and then investing in a private resolution with data. The result created ongoing cross-team process rather than one-off firefighting. At senior level this shows influence without authority and the ability to turn conflict into durable trust. Biggest strength is converting a one-time disagreement into repeated collaboration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "An adjacent team kept promising data we needed but never delivered. I escalated to my manager after two missed dates."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you speak with their lead directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a couple emails. Escalation was faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most difficult interaction",
+        "Situation: dependency team missed commitments",
+        "Action: emails then manager escalation",
+        "Outcome: not stated beyond escalation",
+        "Quote: 'Escalation was faster'",
+        "Follow-up: asked about direct outreach - limited to email only"
+      ],
+      "lowerFeedback": "Candidate defaulted to escalation instead of building a direct working relationship with the other team. No evidence of attempting to understand their constraints or creating shared accountability. At senior level this lowers the bar because cross-team influence is expected. Biggest gap is reliance on hierarchy rather than earning trust through direct engagement."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my engineers repeatedly missed deadlines and the team started losing confidence in him."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had a direct conversation with clear examples, offered pairing support, and set a 30-day check-in. When improvement was insufficient I moved him to a different project with a new mentor and documented the performance plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "The rest of the team saw that issues were addressed transparently. Two people later told me they appreciated the clarity."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most difficult interaction",
+        "Situation: underperforming engineer eroding team trust",
+        "Action: direct feedback, support plan, then role adjustment with documentation",
+        "Outcome: team gained confidence in leadership",
+        "Quote: 'Two people told me they appreciated the clarity'",
+        "Follow-up: asked how they handled the person's reaction - clear documentation and support offered"
+      ],
+      "raiseFeedback": "Candidate addressed underperformance directly with the individual while protecting team trust through transparency. They combined coaching with eventual structural change and documented the process. At manager level this demonstrates the ability to earn trust from both the underperformer and the broader team. Biggest strength is balancing empathy with accountability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A low performer kept missing commits so I redistributed their work quietly to protect the launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the person know why?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned workload in their next 1:1 but didn't go deeper."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most difficult interaction",
+        "Situation: repeated misses by one engineer",
+        "Action: quietly redistributed work",
+        "Outcome: launch protected but no direct conversation",
+        "Quote: 'I mentioned workload in their next 1:1'",
+        "Follow-up: asked about documentation or team visibility - none"
+      ],
+      "lowerFeedback": "Candidate avoided the difficult conversation and handled the issue through silent reallocation. No performance documentation or clear feedback to the individual. At manager level this erodes trust because the team sees problems being hidden rather than solved. Biggest gap is failure to model direct, respectful accountability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our CFO questioned a major re-org I proposed because it reduced their headcount visibility."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a private session, shared the three-year cost model and customer impact data, then adjusted the proposal to keep a dotted-line reporting line to finance. We presented the revised plan together."
+        },
+        {
+          "role": "interviewer",
+          "text": "Broader outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The re-org went through with CFO sponsorship. Two years later the same leader cited it as the model for how finance and product should partner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most difficult interaction",
+        "Situation: CFO blocked re-org over control concerns",
+        "Action: 1:1 with data, incorporated their constraint, co-presented",
+        "Outcome: CFO became sponsor; became org model",
+        "Quote: 'We presented the revised plan together'",
+        "Follow-up: asked about long-term leverage - cited two years later as partnership model"
+      ],
+      "raiseFeedback": "Candidate turned a senior stakeholder conflict into alignment by addressing the underlying control concern with data and structural compromise. The result created lasting cross-functional sponsorship rather than a one-time win. At exec level this shows strategic judgment in high-ambiguity settings and the ability to earn trust at the org boundary. Biggest strength is converting opposition into durable partnership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board pushed back on a pricing change. I had the team prepare more slides and we eventually got approval after three meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you meet the board members individually?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we handled it in the formal sessions."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most difficult interaction",
+        "Situation: board resistance to pricing strategy",
+        "Action: more slides in formal meetings",
+        "Outcome: eventual approval after three meetings",
+        "Quote: 'We handled it in the formal sessions'",
+        "Follow-up: asked about 1:1 stakeholder work - none done"
+      ],
+      "lowerFeedback": "Candidate stayed within formal channels and responded with volume of material rather than targeted relationship work. No evidence of understanding individual board concerns or building private alignment. At exec level this lowers the bar because strategic change requires earning trust outside the room. Biggest gap is absence of proactive stakeholder engagement."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Direct vs indirect handling",
+      "junior": "Raises: initiated 1:1 after public flag. Lowers: stopped updating doc",
+      "senior": "Raises: de-escalated then 1:1 with data. Lowers: emails then escalation",
+      "manager": "Raises: direct feedback + documented plan. Lowers: silent redistribution",
+      "exec": "Raises: private session + co-presented. Lowers: more slides in formal meetings"
+    },
+    {
+      "signal": "Outcome durability",
+      "junior": "Raises: ongoing mutual reviews. Lowers: task reassigned",
+      "senior": "Raises: quarterly joint planning. Lowers: no lasting fix",
+      "manager": "Raises: team cited clarity. Lowers: no team visibility",
+      "exec": "Raises: became org model two years later. Lowers: one-time approval"
+    },
+    {
+      "signal": "Scope of trust earned",
+      "junior": "Individual peer relationship",
+      "senior": "Cross-team process",
+      "manager": "Team-wide perception of fairness",
+      "exec": "Org-level stakeholder partnership"
+    }
+  ],
+  "kind": "lp"
+}

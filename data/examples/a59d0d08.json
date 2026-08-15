@@ -1,0 +1,244 @@
+{
+  "question": "Give me an example of a time you provided feedback to develop the strengths of someone on your team. Were you able to positively impact their performance?",
+  "competency": "Hire and Develop the Best (Coaching and Feedback)",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a new teammate was strong at debugging but hesitant to share ideas in standups. After a 1:1 I told him his bug fixes were consistently the cleanest on the team and suggested he start presenting one fix per week. He started doing it and two months later led a small knowledge-share session."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you say in the feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said the specific examples of his fixes and asked what was holding him back from speaking up. He said he felt junior so I offered to review his notes beforehand for the first two times."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: new grad mentoring another new grad on first project",
+        "Action: specific positive example + offered to review notes",
+        "Outcome: teammate led one knowledge-share session",
+        "Quote: 'his bug fixes were consistently the cleanest'",
+        "Follow-up: Asked for exact words used; candidate gave concrete phrasing and support offered"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a strength (debugging) in a peer and gave targeted positive feedback that led to a visible behavior change. Quote about 'cleanest fixes' shows specificity rather than generic praise. The offer to review notes demonstrates ownership of the development process at an individual level. Biggest strength is the direct link between the feedback and the teammate presenting, which matches the expected scope for 0-2 years experience.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told a teammate they should speak up more in meetings because they had good ideas."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the ideas were good or measure any change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just thought they were smart so I mentioned it once. They didn't really change but I tried."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: peer on first project",
+        "Action: generic suggestion to speak up",
+        "Outcome: no observed change",
+        "Quote: 'they had good ideas'",
+        "Follow-up: Probing for measurement; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Feedback was vague ('speak up more') with no specific examples of the strength or follow-up support. No evidence of impact or even attempt to track change. The candidate shows awareness that feedback should happen but lacks the concrete delivery or ownership needed even at entry level. Biggest gap is absence of any result tied to the conversation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A mid-level engineer on another team was excellent at incident response but avoided design reviews. I pulled data from three incidents he led and in a 1:1 showed how his calm triage directly reduced MTTR. I suggested he co-lead the next design review with me and offered to handle the first half. Three months later he ran two reviews independently and the team adopted one of his patterns."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the cross-team visibility?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was on the on-call rotation with him so I had the raw data. I asked his manager first to make sure it was okay."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: senior influencing mid-level on another team",
+        "Action: used incident data + co-led first review",
+        "Outcome: teammate ran two reviews independently; pattern adopted",
+        "Quote: 'his calm triage directly reduced MTTR'",
+        "Follow-up: Asked about cross-team access; candidate described asking manager and using shared on-call data"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate leveraged shared operational data to surface a hidden strength and created a low-risk practice opportunity that produced measurable team adoption. The step of checking with the other manager shows appropriate influence without authority. Biggest strength is the clear before-and-after behavior change plus downstream team impact, which exceeds individual scope expectations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I gave feedback to someone on another team about presenting more. I think it helped a bit."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data or follow-up did you use?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just mentioned it in passing after a meeting. Not sure if anything changed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: senior to peer on another team",
+        "Action: casual mention after a meeting",
+        "Outcome: 'not sure if anything changed'",
+        "Quote: 'I think it helped a bit'",
+        "Follow-up: Probing for data or follow-up; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Feedback was opportunistic and untracked with no attempt to measure impact or create practice opportunities. The candidate did not demonstrate the cross-team influence or concrete coaching expected at 3-7 years. Biggest gap is lack of ownership over the outcome."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my directs was strong at execution but weak at delegating, which capped her team's growth. I collected examples from her last two projects showing where she had done the work herself and the resulting team bandwidth issues. In the next 1:1 I asked her to pick one task per project to fully hand off and we reviewed the handoff plan together. Six months later her team shipped two features she had not touched and her own velocity stayed flat while team output rose 30%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle resistance?"
+        },
+        {
+          "role": "candidate",
+          "text": "She was worried about quality so we agreed on a review checkpoint after the first handoff. It worked and we removed the checkpoint after two cycles."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: manager coaching direct on delegation",
+        "Action: used project examples + structured handoff plan with checkpoint",
+        "Outcome: team output +30%, manager velocity flat",
+        "Quote: 'pick one task per project to fully hand off'",
+        "Follow-up: Asked about resistance; candidate described quality concern and checkpoint mechanism"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used concrete project data to address a scaling limitation, created a supported practice loop, and produced a clear team-level metric. The checkpoint mechanism shows thoughtful risk management while developing the manager skill. Biggest strength is the focus on team leverage rather than individual heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told one of my reports they needed to delegate more. We talked about it a few times but it didn't really move the needle."
+        },
+        {
+          "role": "interviewer",
+          "text": "What support or measurement did you put in place?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just reminded them in 1:1s. No specific plan."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: manager to direct",
+        "Action: repeated reminders in 1:1s",
+        "Outcome: 'didn't really move the needle'",
+        "Quote: 'they needed to delegate more'",
+        "Follow-up: Probing for structure; candidate had no plan or metrics"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Feedback remained at the level of repeated advice without scaffolding or measurement. No evidence of creating leverage through the team. Biggest gap is treating development as conversation rather than a managed process with clear expectations and tracking."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our principal engineer was a strong technical strategist but avoided org-level influence, which limited how broadly her patterns were adopted. I shared anonymized promotion and impact data showing that principals who influenced two or more teams advanced faster. We agreed she would sponsor one cross-org design system decision per quarter and I protected two hours per week on her calendar. Within nine months three teams had adopted her patterns and she was promoted to distinguished."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you accept?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted slower delivery on one of her projects for two quarters. The org-level leverage was worth it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: exec developing principal",
+        "Action: used promotion data + protected time + quarterly sponsorship goal",
+        "Outcome: three teams adopted patterns; promotion to distinguished",
+        "Quote: 'sponsor one cross-org design system decision per quarter'",
+        "Follow-up: Asked about trade-off; candidate named explicit delivery cost for two quarters"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate used org-level signals (promotion data) to motivate a strategic behavior change, created structural support (calendar protection), and accepted a short-term delivery trade-off for long-term leverage. The outcome scaled beyond the individual to multiple teams. Biggest strength is the explicit strategic judgment and willingness to trade short-term output for org capability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged a senior leader to mentor more broadly. It helped a little."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structures or trade-offs did you create?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in our quarterly review. No formal plan."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you provided feedback to develop the strengths of someone on your team.",
+        "Role: exec to senior leader",
+        "Action: mentioned in quarterly review",
+        "Outcome: 'helped a little'",
+        "Quote: 'mentor more broadly'",
+        "Follow-up: Probing for structures; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Feedback was high-level with no structural support, measurement, or acknowledgment of trade-offs. The candidate did not demonstrate the org-level leverage or long-term thinking required at executive scope. Biggest gap is absence of strategic framing or willingness to invest resources."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Specificity of feedback given",
+      "junior": "Names exact strength (cleanest bug fixes) and offers concrete support",
+      "senior": "Uses incident data to quantify strength (MTTR)",
+      "manager": "Uses project examples to show delegation gap",
+      "exec": "Uses promotion data to show influence gap"
+    },
+    {
+      "signal": "Scope of impact targeted",
+      "junior": "Peer presents once",
+      "senior": "Cross-team pattern adopted",
+      "manager": "Team output +30%",
+      "exec": "Three teams + promotion"
+    },
+    {
+      "signal": "Follow-through mechanism",
+      "junior": "Offered to review notes",
+      "senior": "Co-led first review",
+      "manager": "Handoff plan with checkpoint",
+      "exec": "Protected calendar time + quarterly goal"
+    },
+    {
+      "signal": "Willingness to accept trade-offs",
+      "junior": "N/A at this level",
+      "senior": "N/A at this level",
+      "manager": "N/A at this level",
+      "exec": "Accepted slower delivery for two quarters"
+    },
+    {
+      "signal": "Measurement of result",
+      "junior": "One knowledge-share session",
+      "senior": "Two independent reviews",
+      "manager": "Team output metric",
+      "exec": "Adoptions + promotion"
+    },
+    {
+      "signal": "Evidence of coachability in candidate",
+      "junior": "Describes exact words used when asked",
+      "senior": "Checked with other manager first",
+      "manager": "Iterated checkpoint based on feedback",
+      "exec": "Named explicit trade-off when probed"
+    }
+  ],
+  "kind": "lp"
+}

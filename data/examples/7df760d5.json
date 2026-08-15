@@ -1,0 +1,262 @@
+{
+  "question": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+  "competency": "Hire and Develop the Best (Coaching and Feedback)",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "A new hire on my team kept missing edge cases in their PRs. I noticed after two reviews where the same pattern caused bugs in staging. I sat with them and walked through how I think about test coverage for our service. We did it twice more over the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Their PR rejection rate dropped from about 40% to under 10% in the following month. They started catching similar issues themselves and even flagged one in someone else's code."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: new teammate missing edge cases in PRs",
+        "Action: sat down twice, walked through test coverage thinking",
+        "Outcome: rejection rate 40% to <10%, teammate started catching issues independently",
+        "Quote: \"We did it twice more over the next sprint\"",
+        "Follow-up: Asked for result - concrete drop and behavior change observed"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a clear skill gap in a teammate's work and took direct action to address it. They described starting the coaching after seeing repeated PR issues and followed up with two sessions focused on test coverage. The outcome included a measurable drop in rejection rate from 40% to under 10% plus the teammate beginning to catch issues independently. This shows ownership of local team quality and willingness to invest time in a peer. The biggest strength is the specific before-and-after metric tied to the coaching.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was someone on the team who was struggling a bit with their tasks. I tried to help them understand the requirements better."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually do and what changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave them some tips during standup and they seemed to do better after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: teammate struggling with tasks",
+        "Action: gave tips during standup",
+        "Outcome: \"seemed to do better\"",
+        "Quote: \"I tried to help them understand the requirements better\"",
+        "Follow-up: Pressed for specifics - no concrete actions or measurable result"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story lacks any observable trigger or structured coaching approach. The candidate only mentions giving tips in standup with an outcome described as \"seemed to do better,\" offering no evidence of impact. This shows passive rather than deliberate development of a teammate. The main gap is absence of specific actions taken or any result that can be verified. At junior level we expect at least local ownership of helping a peer improve with some observable change."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "An engineer on another team was repeatedly missing deadlines on shared API work. I had no authority over them but their delays were blocking my service launch. I asked if they wanted to pair on planning the next two milestones."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that go?"
+        },
+        {
+          "role": "candidate",
+          "text": "We met weekly for six weeks. They improved their breakdown of work and hit the next two deadlines. Their manager later asked me to help another person on the team with similar issues."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: cross-team engineer missing deadlines blocking launch",
+        "Action: offered to pair on milestone planning, weekly meetings for six weeks",
+        "Outcome: hit next two deadlines; other team requested same coaching",
+        "Quote: \"Their manager later asked me to help another person\"",
+        "Follow-up: Asked how it went - evidence of sustained change and expanded scope"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate saw a cross-team dependency problem and initiated coaching without formal authority. They structured weekly planning sessions over six weeks that produced on-time delivery for the next milestones. The outcome extended beyond the individual when the other manager requested help for a second person. This demonstrates influence without authority and measurable impact on shared deliverables. The biggest strength is turning a blocking issue into repeatable coaching that scaled to another teammate.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Someone from another team was having trouble with their estimates. I mentioned a few things that had worked for me."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really sure, we didn't work together much after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: cross-team estimation issues",
+        "Action: mentioned a few things that worked",
+        "Outcome: unsure, no follow-up",
+        "Quote: \"I mentioned a few things that had worked for me\"",
+        "Follow-up: Checked for change - no sustained engagement or result"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate noticed a cross-team issue but responded with one-off advice and no follow-through. There is no evidence of structured coaching or any measurable improvement in the other person's work. At senior level we look for influence across teams and clear outcomes; this story shows neither. The main gap is lack of ownership to drive a real change beyond an initial comment."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "One of my reports was strong technically but avoided giving feedback in code reviews. This was creating quality issues and tension with two peers. I started with a direct conversation using specific examples from recent reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "We set a goal of leaving at least two substantive comments per review. I reviewed their comments weekly for a month and gave feedback on the feedback. The quality issues dropped and the two peers both noted improvement in retros."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: report avoiding code review feedback, causing team tension",
+        "Action: direct conversation with examples, set goal of two comments per review, weekly calibration",
+        "Outcome: quality issues dropped, peers noted improvement in retro",
+        "Quote: \"I reviewed their comments weekly for a month\"",
+        "Follow-up: Asked what happened next - structured plan and peer-visible result"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate addressed a clear performance gap that was affecting team dynamics and delivery quality. They used specific examples to start the conversation, set a measurable goal, and provided ongoing calibration for a month. The result included reduced quality issues and positive peer feedback in retros. This shows deliberate people development and willingness to handle uncomfortable feedback. The biggest strength is linking individual coaching to observable team-level improvement.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had someone who wasn't very proactive. I told them they needed to speak up more in meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reminded them a couple times but didn't see much change so I just assigned them more defined tasks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: report not proactive",
+        "Action: told them to speak up more",
+        "Outcome: no change, shifted to more defined tasks instead",
+        "Quote: \"I reminded them a couple times but didn't see much change\"",
+        "Follow-up: Checked follow-up approach - coaching abandoned for task reassignment"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate identified a behavioral gap but used only verbal reminders without structure or support. When no change occurred they gave up and adjusted the person's work instead of continuing development. At manager level we expect persistence in coaching with clear goals and tracking. The main gap is treating coaching as a one-time conversation rather than an ongoing investment in the person's growth."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our new director of product was struggling to influence engineering priorities. This was slowing two major initiatives. I started monthly 1:1s focused on how they framed trade-offs and built coalitions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "After four months they successfully drove prioritization for the next quarter without my involvement. Two other directors later asked for similar sessions and we turned it into a quarterly leadership forum on cross-functional influence."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: new director struggling to influence engineering, slowing initiatives",
+        "Action: monthly 1:1s on trade-off framing and coalition building",
+        "Outcome: drove next quarter independently; scaled to quarterly forum for other directors",
+        "Quote: \"we turned it into a quarterly leadership forum\"",
+        "Follow-up: Asked for longer-term effect - sustained independence plus org-level scaling"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate identified a strategic capability gap at the director level that was blocking business initiatives. They invested in targeted monthly coaching on influence skills that produced independent success after four months. The impact scaled when the approach became a quarterly forum for multiple leaders. This reflects long-term thinking about organizational capability rather than one-off fixes. The biggest strength is converting individual coaching into a repeatable leadership development mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "One of my VPs was having trouble with their team morale. I suggested they spend more time with their directs."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you stay involved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I had bigger org issues to focus on so I let them handle it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+        "Situation: VP with team morale issues",
+        "Action: suggested more time with directs",
+        "Outcome: no follow-up, candidate moved on",
+        "Quote: \"I let them handle it\"",
+        "Follow-up: Checked ongoing involvement - coaching dropped for higher-priority items"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate noted a leadership issue but provided only high-level advice and did not follow through. At executive level we expect sustained investment in developing senior leaders and creating scalable mechanisms. This story shows neither persistence nor organizational leverage. The main gap is treating development as a low-priority suggestion rather than a core responsibility."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Trigger for coaching",
+      "junior": "Notices local quality issue and acts",
+      "senior": "Sees cross-team blocker and initiates without authority",
+      "manager": "Addresses behavioral gap affecting team dynamics",
+      "exec": "Identifies strategic capability gap blocking initiatives"
+    },
+    {
+      "signal": "Structure and follow-up",
+      "junior": "Two focused sessions with clear topic",
+      "senior": "Weekly planning meetings over six weeks",
+      "manager": "Goal setting plus weekly calibration for a month",
+      "exec": "Monthly 1:1s for four months then scales"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "PR rejection rate drop and independent behavior",
+      "senior": "Deadlines met and request to coach second person",
+      "manager": "Quality issues reduced and peer retro feedback",
+      "exec": "Director succeeds independently and forum created"
+    },
+    {
+      "signal": "Level of influence",
+      "junior": "Peer or new hire on own team",
+      "senior": "Cross-team individual, no authority",
+      "manager": "Direct report with team impact",
+      "exec": "Director level, org-wide scaling"
+    }
+  ],
+  "kind": "lp"
+}

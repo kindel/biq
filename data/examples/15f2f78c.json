@@ -1,0 +1,258 @@
+{
+  "question": "Describe a time when you influenced and drove new thinking and innovation out of your team. Give an example of how your approach led to a specific innovation.",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed our test data setup was manual and error-prone. I proposed a simple script to auto-generate fixtures after seeing a teammate struggle with it twice."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the team to try it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the script in our standup, asked for feedback, and offered to own fixes. Two people started using it the next sprint and we cut setup time by about 30 minutes per run."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when it broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "It failed on a new edge case. I fixed it the same day and added a note in the README so others wouldn't hit it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Proposed auto-fixture script after seeing teammate pain",
+        "Shared in standup, asked for input, owned fixes",
+        "Outcome: 30 min saved per run, two teammates adopted",
+        "Quote: 'I offered to own fixes'",
+        "Follow-up: What happened when it broke? Fixed same day and documented"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at junior level. Candidate identified a local friction, built a small solution, and got initial adoption by sharing and owning follow-through. Quote: 'I showed the script in our standup, asked for feedback.' This demonstrates ownership and coachability rather than waiting for direction. The scope stays appropriately individual yet shows early simplification thinking. Biggest gap is lack of broader team process change, which is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager asked us to try a new tool for logging so we switched and it worked better."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your role in deciding to use it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just started using it after the team decided. I didn't suggest anything new myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Team switched to new logging tool after manager request",
+        "Candidate followed the decision, no personal contribution",
+        "No evidence of suggesting or driving the change",
+        "Follow-up: What was your role? 'I just started using it'"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at junior level. The story shows only compliance with an existing decision rather than any attempt to simplify or invent. Candidate explicitly states they did not suggest anything new. This misses even basic ownership of spotting friction and proposing a fix. No learning or iteration is described. Biggest gap is absence of any proactive simplification behavior."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams kept duplicating effort on a shared config service. I ran a short spike to combine the configs into one library and showed both teams the duplicated code paths."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I invited the other team's tech lead to review the spike results and let them own the final integration. We shipped the shared library in the next quarter and cut config-related bugs by half."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you discuss?"
+        },
+        {
+          "role": "candidate",
+          "text": "We agreed to keep two thin wrappers for backward compatibility so neither team had to refactor everything at once."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Identified duplicated config effort across two teams",
+        "Ran spike, shared data, invited other lead to own integration",
+        "Outcome: shared library shipped, config bugs cut 50%",
+        "Quote: 'let them own the final integration'",
+        "Follow-up: What trade-offs? Kept thin wrappers for compatibility"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at senior level. Candidate spotted cross-team duplication, drove a simplification through a spike and shared ownership, and delivered measurable reduction in bugs. Quote: 'let them own the final integration' shows influence without authority. Trade-off discussion around wrappers demonstrates pragmatic simplification. Scope and metrics fit the 3-7 year expectation. Biggest strength is the concrete outcome tied to reduced duplication.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we use a new open-source library for our config needs and the team tried it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this reduce any duplication or change how the broader org worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was mostly within our squad and the other team kept their own approach."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Suggested new library for config",
+        "Adoption stayed inside one squad",
+        "No cross-team simplification or measurable impact",
+        "Follow-up: Did this reduce duplication? No, other team kept separate approach"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at senior level. The change remained local with no evidence of influencing other teams or reducing duplication. Candidate could not articulate broader impact or trade-offs. This falls short of the cross-team influence expected at this level. No metrics or sustained simplification shown. Biggest gap is lack of driving new thinking beyond a single team suggestion."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending too much time on manual release checks. I had them run a two-week experiment to automate the top three checks and then reviewed results with them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineer who resisted the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked him to own the risk assessment for the remaining manual checks so his concerns shaped the rollout. After two quarters the team reduced release time by 40% and two engineers took the automation pattern to other services."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term leverage?"
+        },
+        {
+          "role": "candidate",
+          "text": "The pattern became a template other teams copied, so my team didn't have to support every new service."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Ran experiment to automate release checks after noticing time sink",
+        "Gave resistant engineer ownership of risk assessment",
+        "Outcome: 40% faster releases, pattern spread to other teams",
+        "Quote: 'asked him to own the risk assessment'",
+        "Follow-up: What was the long-term leverage? Became reusable template"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at manager level. Candidate created team-level leverage by running an experiment and converting resistance into ownership, resulting in both time savings and a reusable pattern. Quote: 'asked him to own the risk assessment' shows development of people while driving simplification. The spread to other teams demonstrates organizational impact through the team. Biggest strength is turning a local problem into reusable leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we needed to automate releases and assigned the work to one engineer."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond or improve their own process?"
+        },
+        {
+          "role": "candidate",
+          "text": "They completed the task but no one else picked up the pattern and we still do some manual checks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Directed automation of releases",
+        "Work completed but no team ownership or spread",
+        "No evidence of developing others or creating leverage",
+        "Follow-up: How did the team respond? Completed task, pattern not adopted"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at manager level. The approach was directive with no effort to develop team thinking or create reusable leverage. Outcome stayed narrow and manual checks persisted. Candidate did not address underperformance or coach the team toward ownership. Biggest gap is lack of team-level innovation culture or sustained simplification."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were building three separate internal platforms with overlapping capabilities. I commissioned a small tiger team to define a single platform abstraction and made the case to the ELT to pause two of the efforts."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface to the leadership team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed that continuing all three would cost an extra 18 engineers over two years with no additional customer value. We consolidated to one platform and redeployed the saved headcount to a new product area."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the leaders whose projects were paused?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave each of them joint ownership of the consolidated roadmap so their teams saw continuity rather than cancellation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Identified three overlapping internal platforms",
+        "Commissioned tiger team and made ELT case to consolidate",
+        "Outcome: one platform, 18 engineers redeployed",
+        "Quote: 'gave each of them joint ownership of the consolidated roadmap'",
+        "Follow-up: What trade-offs? Showed 18-engineer cost over two years"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at exec level. Candidate identified high-ambiguity duplication at org scale, drove strategic consolidation through data and influence, and created leverage by redeploying headcount. Quote: 'gave each of them joint ownership' shows judgment in managing stakeholders. The decision balanced short-term disruption against long-term efficiency. Biggest strength is business-level impact rather than heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each team to look for ways to simplify their own roadmaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any org-level duplication get addressed?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few small wins happened inside teams but the three platforms continued in parallel."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you influenced and drove new thinking and innovation out of your team.",
+        "Asked teams to simplify their roadmaps locally",
+        "No org-level consolidation occurred",
+        "Three platforms continued without change",
+        "Follow-up: Did any org-level duplication get addressed? No"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at exec level. The approach stayed at the level of suggestion without strategic judgment or org-wide action. No measurable simplification or resource leverage resulted. Candidate did not surface trade-offs or drive alignment at the leadership level. Biggest gap is absence of high-ambiguity decision making or long-term organizational impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of innovation",
+      "junior": "Individual task or small script",
+      "senior": "Cross-team duplication with metrics",
+      "manager": "Team process with reusable pattern and people development",
+      "exec": "Org-level platform consolidation and headcount redeployment"
+    },
+    {
+      "signal": "How thinking was driven",
+      "junior": "Shared idea and owned fixes after feedback",
+      "senior": "Spike data plus shared ownership with peer lead",
+      "manager": "Experiment plus converted resistance into ownership",
+      "exec": "Tiger team plus ELT case with stakeholder continuity"
+    },
+    {
+      "signal": "Evidence of simplification",
+      "junior": "Reduced local setup time",
+      "senior": "Cut duplicated code and bugs",
+      "manager": "Faster releases and template spread",
+      "exec": "Consolidated three platforms, redeployed 18 engineers"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asked for input in standup",
+      "senior": "Invited other lead to own integration",
+      "manager": "Gave resistant engineer risk ownership",
+      "exec": "Joint roadmap ownership for paused project leads"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,265 @@
+{
+  "question": "Tell me about a time when you realized you needed a deeper level of subject matter expertise to do your job well. What did you do about it? What was the outcome? Is there anything you would have done differently?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was building a simple reporting dashboard but kept hitting errors with the SQL joins. I realized my basic knowledge wasn't enough."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my mentor for the right resources, then spent evenings going through the internal SQL course and practicing on sample datasets for two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The dashboard shipped on time and I caught two data issues the team had missed. If I had started the course earlier I could have finished faster."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you needed deeper expertise",
+        "Realized SQL gaps while building dashboard",
+        "Asked mentor, completed internal course + practice",
+        "Outcome: shipped on time, caught data issues",
+        "Quote: 'I caught two data issues the team had missed'",
+        "Follow-up: Would do course earlier; acknowledged timeline impact"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for a junior. The candidate identified a clear skill gap on an individual task, sought the right resource, and completed structured practice that directly improved the deliverable. Quote shows they connected the learning to a concrete result. The reflection on timing demonstrates coachability. Biggest strength is ownership of their own upskilling without waiting to be told.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was working on a feature and realized I didn't know the backend framework well enough so I asked the senior dev for help every time I got stuck."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything to build the knowledge yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just relied on code reviews and their answers. It worked out in the end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Time you needed deeper expertise",
+        "Asked senior repeatedly instead of building knowledge",
+        "No self-directed learning described",
+        "Outcome: 'It worked out'",
+        "Follow-up: No plan or reflection on building expertise"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for a junior. The candidate recognized the gap but defaulted to repeated help-seeking rather than taking ownership of learning. No evidence of structured effort or measurable improvement in their own capability. The outcome statement is vague and passive. Biggest gap is lack of initiative to close the skill gap independently."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "While leading a cross-team migration I realized our team lacked depth in distributed systems patterns that were causing repeated design debates."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled together a short reading list and ran three lunch-and-learns for both teams, then created a one-page decision guide that we used on the next two services."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and reflection?"
+        },
+        {
+          "role": "candidate",
+          "text": "Design reviews sped up by about 30 percent and two other teams adopted the guide. I would have started the sessions two weeks earlier to give people more time to read before applying it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Time needed deeper expertise",
+        "Identified distributed systems gap during cross-team migration",
+        "Created and ran lunch-and-learns plus decision guide",
+        "Outcome: 30% faster reviews, two teams adopted guide",
+        "Quote: 'Design reviews sped up by about 30 percent'",
+        "Follow-up: Would start earlier; shows timeline awareness"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for a senior. The candidate turned a personal knowledge gap into shared team learning that crossed team boundaries and produced a reusable artifact. The 30 percent metric and adoption by other teams show measurable influence without authority. Reflection on timing is concrete. Biggest strength is converting individual learning into leverage for multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a project I realized I needed to understand the new caching layer better so I read the docs and asked a couple of questions in the team channel."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change anything for the broader team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it mostly helped me finish my part. Others were still debating the same issues later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Time needed deeper expertise",
+        "Read docs and asked questions in channel",
+        "Learning stayed individual",
+        "Outcome: Helped finish own work; no team impact",
+        "Follow-up: No attempt to scale or share the knowledge"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for a senior. The candidate addressed their own gap through basic self-study but made no effort to share or institutionalize the learning. Result stayed local to one person's tasks. No evidence of cross-team influence or raising the bar for others. Biggest gap is treating expertise as a personal fix rather than a team asset."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After two engineers on my team struggled with production incidents I realized the team lacked depth in incident forensics and post-mortem rigor."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I partnered with another manager to run a four-week study group, brought in two SREs as coaches, and made post-mortem templates mandatory with review by a rotating peer."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mean time to resolve dropped 25 percent over the next quarter and two of my engineers later led sessions for other teams. I would have included a metrics review step earlier to track which practices actually moved the needle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Time needed deeper expertise",
+        "Identified forensics gap after repeated incidents on team",
+        "Built cross-manager study group + templates + coaching",
+        "Outcome: 25% MTTR drop, two engineers teaching others",
+        "Quote: 'Mean time to resolve dropped 25 percent'",
+        "Follow-up: Would add metrics review earlier"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for a manager. The candidate diagnosed a team-level skill gap from incident data, created a scalable program with another team, and produced both measurable results and new internal teachers. The 25 percent MTTR improvement and peer adoption demonstrate leverage. Reflection shows systems thinking. Biggest strength is turning a team weakness into an organizational capability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed my team was weak on data modeling so I sent everyone a link to an online course and checked in monthly on progress."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of people finished the course but we still saw the same modeling issues in reviews six months later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Time needed deeper expertise",
+        "Sent link to course and did monthly check-ins",
+        "No structured program or accountability",
+        "Outcome: Some completion but no change in review quality",
+        "Follow-up: No adjustment or deeper intervention"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for a manager. The candidate delegated learning to individuals via a passive link with minimal follow-up. No evidence of creating team-level mechanisms or tracking impact on actual work. Persistent issues six months later show the approach did not scale or stick. Biggest gap is lack of ownership for building team capability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As we scaled into a new vertical I saw our leadership team lacked depth in regulatory risk modeling which was becoming a blocker for two major deals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I hired a domain expert as a consultant for six months, embedded her with the deals team, and required every exec to review one real regulatory case study per quarter with the expert."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and reflection?"
+        },
+        {
+          "role": "candidate",
+          "text": "We closed both deals and the board later asked us to extend the program company-wide. I would have brought the expert in three months sooner and made the case-study reviews start immediately rather than waiting for the first quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Time needed deeper expertise",
+        "Identified regulatory risk gap at exec level during scaling",
+        "Hired embedded expert + quarterly case reviews for all execs",
+        "Outcome: Closed two deals, board expanded program",
+        "Quote: 'The board later asked us to extend the program company-wide'",
+        "Follow-up: Would start reviews immediately and hire earlier"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for an exec. The candidate identified a strategic expertise gap affecting revenue, created an executive-level learning mechanism, and drove org-wide adoption via board request. Deal closures and program expansion show business-level impact. Reflection on timing is precise. Biggest strength is using personal learning to remove a multi-quarter business constraint.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I realized our exec team needed better understanding of emerging AI risks so I forwarded a few articles and suggested people read them before the next offsite."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change how the team operated?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few people mentioned the articles but we didn't change any decisions or processes as a result."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Time needed deeper expertise",
+        "Forwarded articles ahead of offsite",
+        "No structured program or follow-through",
+        "Outcome: No change in decisions or processes",
+        "Follow-up: No attempt to embed learning into strategy"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for an exec. The candidate treated a strategic knowledge gap with passive distribution of reading material and no mechanism for application. No evidence of business impact or org-level change. The outcome explicitly states decisions remained unchanged. Biggest gap is failing to convert awareness into strategic action or leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of gap identified",
+      "junior": "Individual task or tool",
+      "senior": "Cross-team process or pattern",
+      "manager": "Team capability and metrics",
+      "exec": "Business or regulatory constraint"
+    },
+    {
+      "signal": "Method of learning",
+      "junior": "Self-study or mentor resources",
+      "senior": "Created shared sessions or artifacts",
+      "manager": "Built program with accountability",
+      "exec": "Embedded expert + executive rituals"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Personal deliverable improved",
+      "senior": "Time saved or adoption by peers",
+      "manager": "Team metric moved (e.g. MTTR)",
+      "exec": "Deal closed or board-level expansion"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Timing of own action",
+      "senior": "When to involve others",
+      "manager": "Metrics tracking and iteration",
+      "exec": "Hiring and rollout sequencing"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "None expected",
+      "senior": "Reusable guide or sessions",
+      "manager": "New internal teachers",
+      "exec": "Company-wide program"
+    }
+  ],
+  "kind": "lp"
+}

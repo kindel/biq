@@ -1,0 +1,245 @@
+{
+  "question": "Describe a situation where you achieved a goal with limited resources or support.",
+  "competency": "Initiative, Drive & Proactivity",
+  "principle": "Initiative, Drive & Proactivity",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to deliver a customer onboarding dashboard in two weeks with only one other engineer and no dedicated designer. I broke the scope into a minimal viable version, reused existing UI components, and paired with the other engineer daily to unblock each other."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the PM kept adding requests?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a quick trade-off meeting, showed the impact on the timeline, and got agreement to park two features until after launch. We shipped on time and the adoption rate hit 40% in the first month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: New grad on small feature team",
+        "Situation: Two-week dashboard with no designer and one peer",
+        "Actions: Scoped MVP, reused components, daily pairing, pushed back on scope creep",
+        "Outcome: Shipped on time, 40% adoption",
+        "Quote: \"I scheduled a quick trade-off meeting and got agreement to park two features.\"",
+        "Follow-up: Asked about PM requests; candidate described explicit negotiation and timeline trade-off."
+      ],
+      "raiseFeedback": "Raises the bar on Initiative for a junior. The candidate owned a concrete delivery constraint and actively managed scope instead of waiting for help. Quote: \"I scheduled a quick trade-off meeting and got agreement to park two features.\" The story stays within individual scope, which is appropriate, and shows they learned to negotiate rather than just execute. Biggest strength is the direct link between their action and the on-time outcome without external rescue.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me to build the dashboard but we only had two weeks and no designer. I worked late every night and copied some old screens."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to cut?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just did what I could and hoped the PM would be okay with it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: New grad",
+        "Situation: Two-week dashboard, limited help",
+        "Actions: Worked late, copied old screens",
+        "Outcome: Shipped (no metrics)",
+        "Quote: \"I just did what I could and hoped the PM would be okay with it.\"",
+        "Follow-up: Probing scope decisions; candidate showed no proactive negotiation or prioritization."
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate describes long hours but no evidence of deliberate scoping, reuse, or influencing stakeholders. Quote: \"I just did what I could and hoped the PM would be okay with it.\" This signals passive execution rather than initiative. The outcome lacks any measurable result, making it hard to see ownership or learning. Main gap is absence of any attempt to shape the constraints instead of simply enduring them."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team needed to migrate three services to a new infra platform in one quarter with only two full-time engineers and no extra budget. I created a lightweight migration playbook, recruited two engineers from adjacent teams by showing them the long-term reliability win, and ran weekly office hours to spread knowledge."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to prioritize this?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied it to their own on-call pain and got their managers to agree to a shared OKR. We finished two weeks early and reduced incident volume by 35%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: Senior engineer on infra migration",
+        "Situation: Three-service migration in one quarter, only two dedicated engineers",
+        "Actions: Built playbook, influenced two adjacent teams via shared OKR, ran office hours",
+        "Outcome: Finished early, 35% incident reduction",
+        "Quote: \"I tied it to their own on-call pain and got their managers to agree to a shared OKR.\"",
+        "Follow-up: How influence happened; candidate explained concrete value proposition and OKR alignment."
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate created leverage across teams without authority by linking the work to others' pain points. Quote: \"I tied it to their own on-call pain and got their managers to agree to a shared OKR.\" The story shows cross-team influence and a clear metric. Biggest strength is turning resource scarcity into a forcing function for broader adoption rather than just completing the narrow task.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to migrate the services but only two of us were assigned. I stayed late and did most of the work myself so the deadline wouldn't slip."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone else help?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just powered through it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: Senior engineer",
+        "Situation: Migration with only two people",
+        "Actions: Worked extra hours personally",
+        "Outcome: Deadline met (no metrics or collaboration)",
+        "Quote: \"I just powered through it.\"",
+        "Follow-up: Probing influence; candidate showed no attempt to recruit or align others."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate relied on personal heroics instead of creating leverage or influence. Quote: \"I just powered through it.\" No evidence of cross-team impact or lasting process change. The story stays at the individual-contributor level without the expected senior behaviors of recruiting help or aligning priorities. Main gap is treating resource constraints as a personal endurance test rather than an opportunity to drive broader ownership."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team of six had to launch a new self-serve reporting feature in six weeks while two senior engineers were on leave. I restructured the project into four thin vertical slices, assigned each slice to a pair that included a junior, and created a lightweight review cadence so I could unblock without becoming a bottleneck."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the skill gaps?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paired each junior with a stronger engineer for the first two weeks and ran a daily 15-minute sync focused only on blockers. We launched on time and the feature is now used by 60% of customers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: Engineering manager",
+        "Situation: Six-week launch with two seniors out",
+        "Actions: Split into vertical slices, paired juniors with seniors, daily blocker syncs",
+        "Outcome: On-time launch, 60% customer usage",
+        "Quote: \"I paired each junior with a stronger engineer for the first two weeks and ran a daily 15-minute sync.\"",
+        "Follow-up: Skill gaps; candidate described explicit pairing and focused rituals."
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate created team leverage by redistributing work and deliberately developing juniors under constraint. Quote: \"I paired each junior with a stronger engineer for the first two weeks and ran a daily 15-minute sync.\" The outcome includes both delivery and usage metrics. Biggest strength is turning a headcount gap into a structured development opportunity instead of shielding the team or lowering expectations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two seniors were out so I asked the remaining team to work harder and I reviewed all the code myself to keep quality up."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the juniors grow during this?"
+        },
+        {
+          "role": "candidate",
+          "text": "They mostly executed the tasks I gave them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: Engineering manager",
+        "Situation: Launch with seniors absent",
+        "Actions: Asked team to work harder, reviewed everything personally",
+        "Outcome: Launched (no team development or metrics)",
+        "Quote: \"They mostly executed the tasks I gave them.\"",
+        "Follow-up: Junior development; candidate showed no deliberate coaching or delegation."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate protected quality through personal oversight rather than building team capability. Quote: \"They mostly executed the tasks I gave them.\" No evidence of developing people or creating sustainable processes under constraint. The story centers the manager as the hero instead of showing how the team was set up to succeed with less. Main gap is lack of leverage through others."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to hit a new enterprise compliance certification in nine months while the company was still burning cash and headcount was frozen. I redirected two platform teams toward a shared compliance layer instead of duplicating work, negotiated a phased rollout with sales so we could generate revenue before full completion, and used the certification as the forcing function to retire three legacy systems."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a narrower initial customer segment for the first six months to fund the remaining work. The certification closed a $12M pipeline and we retired the legacy systems six months ahead of the original plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: VP/Director level",
+        "Situation: Nine-month compliance goal under cash and headcount constraints",
+        "Actions: Consolidated platform work, phased sales rollout, used certification to retire legacy systems",
+        "Outcome: $12M pipeline closed, legacy retirement six months early",
+        "Quote: \"We accepted a narrower initial customer segment for the first six months to fund the remaining work.\"",
+        "Follow-up: Business trade-off; candidate tied technical decision to revenue timing and legacy reduction."
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made explicit strategic trade-offs across product, engineering, and sales to create leverage from scarce resources. Quote: \"We accepted a narrower initial customer segment for the first six months to fund the remaining work.\" The outcome links technical work to measurable revenue and long-term simplification. Biggest strength is treating the constraint as a catalyst for org-level simplification rather than negotiating for more resources.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had no extra headcount so I told the teams to prioritize the compliance work and deprioritize everything else."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how the org operated?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just worked on compliance until it was done."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you achieved a goal with limited resources or support.",
+        "Role: VP/Director",
+        "Situation: Compliance goal with headcount freeze",
+        "Actions: Told teams to prioritize compliance",
+        "Outcome: Work completed (no strategic shifts or metrics)",
+        "Quote: \"We just worked on compliance until it was done.\"",
+        "Follow-up: Org change; candidate showed no portfolio trade-offs or long-term leverage."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate issued a priority change without redesigning how work gets done or creating lasting leverage. Quote: \"We just worked on compliance until it was done.\" No evidence of strategic judgment, cross-org alignment, or using the constraint to simplify the broader portfolio. The story remains tactical rather than showing the expected executive pattern of turning scarcity into structural advantage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of the goal",
+      "junior": "Individual feature or task",
+      "senior": "Multi-team or cross-org effort",
+      "manager": "Team outcome with people development",
+      "exec": "Org or business-level impact with strategic trade-offs"
+    },
+    {
+      "signal": "Handling of constraints",
+      "junior": "Personal scoping and pushback",
+      "senior": "Influence without authority and playbook creation",
+      "manager": "Restructuring work and coaching rituals",
+      "exec": "Portfolio decisions and revenue timing"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Minimal; own work only",
+      "senior": "Recruited adjacent engineers via shared OKRs",
+      "manager": "Paired juniors and created daily unblock rituals",
+      "exec": "Consolidated platform teams and phased sales rollout"
+    },
+    {
+      "signal": "Metrics or outcomes",
+      "junior": "Local adoption or on-time delivery",
+      "senior": "Incident reduction or cross-team velocity",
+      "manager": "Feature usage and team capability growth",
+      "exec": "Pipeline closed and legacy system retirement"
+    },
+    {
+      "signal": "Follow-up response quality",
+      "junior": "Shows negotiation on scope",
+      "senior": "Explains value proposition used to align others",
+      "manager": "Describes explicit coaching mechanics",
+      "exec": "Links technical choices to business funding decisions"
+    }
+  ],
+  "kind": "competency"
+}

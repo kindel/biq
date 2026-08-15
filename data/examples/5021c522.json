@@ -1,0 +1,229 @@
+{
+  "question": "Give an example of building or assembling a team from scratch (or significantly reshaping one).",
+  "competency": "Leadership & Influence",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "For my capstone project I needed three more people with specific skills after two dropped. I posted in the department Slack and interviewed four candidates in two days, picking based on availability and one prior class project."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when one new member wasn't pulling weight?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set up a quick 1:1, clarified the deliverable, and offered to pair on the tricky part. They finished their section on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "Recruited via Slack after two dropouts; ran short interviews",
+        "Picked for availability + one prior deliverable",
+        "Quote: \"I set up a quick 1:1 and offered to pair\"",
+        "Follow-up: Underperformer handled via direct conversation and pairing; section delivered"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate took ownership of a small gap in their project team by posting, screening quickly, and following up on performance. Quote shows direct action on the underperformer rather than waiting for the professor. Story stays within individual scope but demonstrates coachability and local results. Biggest strength is closing the loop on the performance issue without escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our group project needed more people so the TA added two. I just worked with whoever showed up."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you have any input on who joined or how the work was split?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the TA handled it and I focused on my part."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "TA added members; candidate had no input",
+        "Focused only on own part",
+        "Quote: \"I just worked with whoever showed up\"",
+        "Follow-up: No action taken on team composition or performance"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Candidate describes a situation where someone else assembled the team and they stayed within their individual task. No evidence of initiative to influence membership or address gaps. Story lacks even local ownership. Biggest gap is absence of any proactive step on team assembly or dynamics."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team was missing mobile coverage so I wrote the job description, ran sourcing on LinkedIn, and convinced two strong ICs from another org to interview. One joined after I mapped their growth path to our roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the cross-org pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the OKR gap and offered to backfill their critical path work for the first quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "Sourced and closed one external hire plus one internal transfer for mobile gap",
+        "Used OKR language and temporary backfill to gain cross-org support",
+        "Quote: \"I shared the OKR gap and offered to backfill\"",
+        "Follow-up: Trade offered to reduce friction; hire started within two months"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate identified a capability gap, ran sourcing, and used influence without authority by trading short-term support for a transfer. Concrete quote shows they addressed stakeholder concerns with a specific offer rather than escalation. Impact stayed within one team but crossed org boundaries. Biggest strength is the explicit trade that produced a measurable staffing win.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed a backend person so I asked my manager to open a req. HR posted it and we eventually got someone."
+        },
+        {
+          "role": "interviewer",
+          "text": "What role did you play in shaping the role or finding candidates?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed resumes when they came in but didn't source or interview until the final round."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "Manager opened req; candidate waited for HR pipeline",
+        "Reviewed resumes only; no sourcing or early interviews",
+        "Quote: \"I reviewed resumes when they came in\"",
+        "Follow-up: No cross-team influence or proactive steps described"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Candidate relied entirely on manager and HR to assemble the team and limited their involvement to late-stage resume review. No evidence of cross-team influence or shaping the search. Story shows passive participation rather than ownership of the outcome. Biggest gap is lack of any action that accelerated or improved the hire."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I took over the support engineering team it had six people and high attrition. I ran a skills matrix, created three new senior IC roles, hired two externally, and promoted one internal. Attrition dropped to one in the next year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the two people who weren't ready for the new roles?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave clear growth plans with 90-day check-ins and moved one to a better-fit team after they asked."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "Inherited 6-person team with high attrition; ran skills matrix",
+        "Created senior roles, hired two, promoted one; attrition fell",
+        "Quote: \"I gave clear growth plans with 90-day check-ins\"",
+        "Follow-up: One person moved to different team after discussion; team stabilized"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate owned team outcomes by diagnosing skill gaps, creating new roles, and managing both hiring and internal mobility. Quote demonstrates direct development conversations and handling of underperformance through structured plans. Results include measurable attrition reduction. Biggest strength is combining external hiring with internal development to stabilize the team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My director told me to grow the team from four to eight. I submitted the headcount request and waited for approvals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the people already on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I kept the same structure and just added bodies as they came in."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "Director directed growth; candidate submitted req and waited",
+        "No change to existing structure or roles",
+        "Quote: \"I kept the same structure and just added bodies\"",
+        "Follow-up: No evidence of role design or performance management"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Candidate treated team growth as a paperwork exercise and made no changes to roles or development. No ownership of existing team composition or outcomes. Story shows delegation of the entire problem upward. Biggest gap is absence of any people-development or structural decisions."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed a new data platform org to support three product lines. I defined the initial 12-person structure, pulled two senior leaders from existing teams, hired a director externally, and set a 18-month roadmap that traded off short-term feature work for platform leverage."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on the product side?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted a two-quarter delay on one analytics feature so the new team could deliver reusable pipelines instead."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "Built new 12-person data platform org across three product lines",
+        "Internal transfers plus external director hire; 18-month roadmap",
+        "Quote: \"I accepted a two-quarter delay on one analytics feature\"",
+        "Follow-up: Explicit business trade-off accepted for long-term leverage"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate made strategic org design decisions at business scale, including leader transfers and a clear multi-quarter trade-off. Quote shows willingness to accept visible product delay for platform leverage. Impact spans multiple teams and sets direction for 18 months. Biggest strength is the explicit linkage between team structure and business outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted a new AI group so we posted for a VP and started interviewing."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the scope or who would report where?"
+        },
+        {
+          "role": "candidate",
+          "text": "I let the new VP figure out the structure once they joined."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of building or assembling a team from scratch.",
+        "Board request led to VP search; no pre-defined scope",
+        "Deferred structure decisions to incoming VP",
+        "Quote: \"I let the new VP figure out the structure\"",
+        "Follow-up: No strategic trade-offs or org-level decisions described"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Candidate treated org creation as filling a box rather than designing scope or making trade-offs. Deferred all structural decisions. Story shows no long-term thinking or business linkage. Biggest gap is lack of any strategic judgment on how the new team would integrate or deliver value."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of team impact",
+      "junior": "Individual project or class team",
+      "senior": "One team plus cross-org influence",
+      "manager": "Own team outcomes and development",
+      "exec": "Org or multi-team structure with business trade-offs"
+    },
+    {
+      "signal": "Handling underperformance",
+      "junior": "Direct 1:1 and pairing on task",
+      "senior": "Growth plan or role adjustment",
+      "manager": "Structured plans plus mobility decisions",
+      "exec": "Role design that prevents repeated issues"
+    },
+    {
+      "signal": "Use of influence without authority",
+      "junior": "Rarely needed at this level",
+      "senior": "Trade offers to other teams for transfers",
+      "manager": "Role creation and internal promotions",
+      "exec": "Accepting product delays for platform leverage"
+    },
+    {
+      "signal": "Evidence of metrics or outcomes",
+      "junior": "Task completed on time",
+      "senior": "Hire closed in two months",
+      "manager": "Attrition reduced from high to one",
+      "exec": "18-month roadmap with explicit trade-off"
+    },
+    {
+      "signal": "Ownership vs. delegation",
+      "junior": "Candidate runs the small search",
+      "senior": "Candidate sources and negotiates",
+      "manager": "Candidate designs roles and plans",
+      "exec": "Candidate sets scope and accepts business cost"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,237 @@
+{
+  "question": "Describe a project where the timeline felt unrealistic. How did you handle it?",
+  "competency": "Time Management, Prioritization & Organization",
+  "principle": "Time Management, Prioritization & Organization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a small internal dashboard that leadership wanted in two weeks. The scope felt too big for my experience level so I listed every task, flagged the ones I had never done, and asked my mentor for a quick review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after the conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "We cut two nice-to-have charts and I paired with a senior engineer on the data pipeline for the first two days. I finished the core version on time and learned how to estimate data work better."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: new grad on internal dashboard",
+        "Broke scope into tasks, flagged unknowns, asked mentor",
+        "Cut two charts, paired on pipeline, shipped core version",
+        "Quote: \"I learned how to estimate data work better\"",
+        "Follow-up: Asked what changed; candidate described specific scope cut and pairing"
+      ],
+      "raiseFeedback": "Raises the bar on Time Management for a junior. Candidate broke the work into tasks, identified skill gaps, and used mentor input to adjust scope rather than working in isolation. The concrete action of cutting two charts and pairing on the pipeline shows they can prioritize under pressure. Quote about learning estimation indicates coachability. Biggest strength is turning an unrealistic timeline into a learning loop instead of missing the date.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The PM gave me a two-week deadline for a dashboard. I just started coding and worked late most nights but still missed a couple of features."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to anyone about the scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I wanted to show I could handle it. I delivered most of it but had to drop the charts at the end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: new grad on dashboard",
+        "Started coding without breaking down work or seeking input",
+        "Worked late, missed features, dropped charts at end",
+        "Quote: \"I wanted to show I could handle it\"",
+        "Follow-up: Asked about talking to anyone; candidate admitted no escalation"
+      ],
+      "lowerFeedback": "Lowers the bar on Time Management for a junior. Candidate did not decompose the work or surface risks early, choosing to work longer hours instead. The decision to avoid asking for help because they \"wanted to show\" they could handle it reveals a gap in prioritization and coachability. No evidence of adjusting scope or learning from the outcome. Biggest gap is treating an unrealistic timeline as a personal endurance test rather than a signal to clarify and negotiate."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing needed a new campaign analytics page in three weeks across two teams. I mapped dependencies, realized the data contract work would slip, and ran a quick trade-off session with the other team lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We agreed to ship a v1 with cached data and a clear migration plan. Both teams hit the date and the page drove a 12% lift in campaign reporting usage in the first month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: senior on cross-team analytics page",
+        "Mapped dependencies, spotted data contract risk, ran trade-off session",
+        "Agreed on v1 with cached data plus migration plan",
+        "Quote: \"drove a 12% lift in campaign reporting usage\"",
+        "Follow-up: Outcome; candidate gave measurable result and cross-team alignment"
+      ],
+      "raiseFeedback": "Raises the bar on Time Management for a senior. Candidate proactively mapped cross-team dependencies and initiated a trade-off discussion instead of accepting the date. The decision to ship cached data with a migration plan shows clear prioritization that protected the deadline. Measurable outcome of 12% usage lift ties the prioritization choice to business value. Biggest strength is using influence without authority to adjust scope across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a three-week deadline for a campaign page that touched two teams. I pushed my team to work weekends and we got the main queries done but the other team missed their part."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you discuss the risk with the other lead?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a couple of emails but kept focus on my side. We launched late and had to explain the delay to marketing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: senior on cross-team page",
+        "Pushed own team to weekends without addressing external dependency",
+        "Sent emails but no real alignment, launched late",
+        "Quote: \"kept focus on my side\"",
+        "Follow-up: Asked about discussing risk; candidate stayed within own team"
+      ],
+      "lowerFeedback": "Lowers the bar on Time Management for a senior. Candidate defaulted to increasing effort on their own team rather than surfacing and resolving the cross-team dependency early. Limited follow-up beyond email shows weak influence without authority. Result was a late launch and post-mortem explanation instead of proactive scope adjustment. Biggest gap is failing to treat the unrealistic timeline as a shared problem requiring coordination."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was asked to deliver a new self-serve reporting feature in four weeks while also supporting an acquisition integration. I ran a capacity review, identified two engineers who could be loaned out, and proposed a phased rollout to the director."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "We moved one person temporarily and set clear expectations on what the v1 would contain. The team delivered the core feature on time and the loaned engineer returned with new context that helped the integration work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: manager balancing feature and integration",
+        "Ran capacity review, identified loan opportunity, proposed phased rollout",
+        "Moved one person, set v1 expectations, delivered on time",
+        "Quote: \"loaned engineer returned with new context\"",
+        "Follow-up: Team reaction; candidate described clear expectations and positive side effect"
+      ],
+      "raiseFeedback": "Raises the bar on Time Management for a manager. Candidate used capacity planning to surface trade-offs and negotiated a temporary resource shift instead of overloading the team. The phased rollout and explicit v1 definition protected delivery while creating a secondary benefit for the integration work. Evidence of setting expectations shows team-level prioritization skill. Biggest strength is creating leverage through resource reallocation rather than asking the team to absorb everything.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership wanted a new reporting feature in four weeks on top of the acquisition work. I told the team we would have to do both and asked them to prioritize after hours when needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust any commitments?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. We missed the feature date and had some burnout on the integration side as well."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: manager on dual workstreams",
+        "Told team to do both without capacity changes",
+        "No commitment adjustments, missed date and burnout",
+        "Quote: \"asked them to prioritize after hours\"",
+        "Follow-up: Asked about adjusting commitments; candidate made none"
+      ],
+      "lowerFeedback": "Lowers the bar on Time Management for a manager. Candidate passed the unrealistic timeline directly to the team without exploring resource shifts or scope changes. Requesting after-hours work as the solution indicates lack of leverage through planning. Result was both a missed date and burnout, showing the manager did not own team outcomes. Biggest gap is treating prioritization as a team execution issue rather than a leadership decision on trade-offs."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted a new enterprise tier live in one quarter while we were still integrating a recent acquisition. I modeled the revenue impact of delaying versus de-scoping other initiatives and recommended pausing two smaller bets to free product and eng capacity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped the tier on time, added $4M in ARR, and the paused bets were later restarted with clearer priorities. The acquisition integration also stayed on track because we had protected focus."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: exec balancing board request and acquisition",
+        "Modeled revenue impact, recommended pausing two bets",
+        "Shipped on time, $4M ARR, restarted bets later with clarity",
+        "Quote: \"protected focus\" for acquisition",
+        "Follow-up: Long-term effect; candidate tied decision to sustained org capacity"
+      ],
+      "raiseFeedback": "Raises the bar on Time Management for an exec. Candidate used revenue modeling to make a strategic trade-off rather than accepting the board timeline at face value. Pausing two smaller bets protected both the new tier and the acquisition integration, demonstrating long-term thinking. The $4M ARR outcome and ability to restart paused work later show judgment on where to apply leverage. Biggest strength is converting an unrealistic timeline into an org-level prioritization decision with measurable business results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board pushed for an enterprise tier in one quarter during the acquisition. I added it to the roadmap and asked the teams to figure out how to fit everything in."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that play out over the quarter?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched late, the acquisition work slipped, and we had to explain the misses in the next board meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where the timeline felt unrealistic. How did you handle it?",
+        "Role: exec on board-driven tier",
+        "Added to roadmap without trade-offs or modeling",
+        "Launched late, acquisition slipped, explained in next meeting",
+        "Quote: \"asked the teams to figure out how to fit everything in\"",
+        "Follow-up: How it played out; candidate described dual slips and board explanation"
+      ],
+      "lowerFeedback": "Lowers the bar on Time Management for an exec. Candidate accepted the board request without modeling trade-offs or protecting existing commitments such as the acquisition. Delegating the \"how\" to teams without providing strategic direction led to both initiatives slipping. The need to explain misses in the next board meeting indicates weak ownership of long-term capacity. Biggest gap is failing to make the hard prioritization calls at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task breakdown and mentor input",
+      "senior": "Cross-team dependency management",
+      "manager": "Team capacity and resource shifts",
+      "exec": "Org-level trade-offs and revenue modeling"
+    },
+    {
+      "signal": "Approach to unrealistic timeline",
+      "junior": "Ask for help and cut scope",
+      "senior": "Run trade-off sessions with peers",
+      "manager": "Capacity review and phased commitments",
+      "exec": "Strategic modeling and pausing initiatives"
+    },
+    {
+      "signal": "Evidence of prioritization",
+      "junior": "Cut two charts after mentor chat",
+      "senior": "v1 with cached data plus migration",
+      "manager": "Loaned one engineer with clear v1",
+      "exec": "Paused two bets to protect $4M ARR"
+    },
+    {
+      "signal": "Learning or iteration",
+      "junior": "Improved estimation skills",
+      "senior": "Measurable usage lift post-launch",
+      "manager": "Loaned engineer brought back useful context",
+      "exec": "Restarted paused work with clearer priorities"
+    },
+    {
+      "signal": "Risk of heroics or burnout",
+      "junior": "Worked late vs. asking early",
+      "senior": "Weekend pushes without coordination",
+      "manager": "After-hours request without trade-offs",
+      "exec": "No modeling led to dual slips"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+  "competency": "Conflict Resolution & Difficult Interpersonal Situations",
+  "principle": "Conflict Resolution & Difficult Interpersonal Situations",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A client got upset when a report I delivered had a formatting error that made one section unreadable. I apologized, fixed it same day, and walked them through the correction on a quick call."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the root cause from their perspective?"
+        },
+        {
+          "role": "candidate",
+          "text": "They felt I hadn't double-checked before sending. I owned that and added a checklist for future sends."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Junior analyst, client flagged formatting error in report",
+        "- Owned mistake immediately, fixed same day, added personal checklist",
+        "- Quote: 'I apologized and walked them through the fix on a call'",
+        "Follow-up: root cause? - 'They felt I hadn't double-checked; I owned it'"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate took direct ownership of their own deliverable and repaired the relationship through quick action and a repeatable personal process. Quote shows clear accountability without deflection. This matches the level expectation of local scope and coachability on individual work. The follow-up response demonstrates learning that can be applied immediately. Biggest strength is the absence of blame and focus on personal fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The client was mad about a late report but it wasn't really my fault because the data team was slow."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to fix the relationship?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told them I'd follow up but then the project moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Blamed data team for late report",
+        "- No clear repair action taken beyond 'I'll follow up'",
+        "- Quote: 'It wasn't really my fault'",
+        "Follow-up: relationship fix? - 'Project moved on'"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Candidate deflected responsibility to another team instead of owning their role in the handoff. No evidence of proactive repair or follow-through once the issue surfaced. The follow-up response shows the relationship was allowed to drift rather than being addressed. This signals weak ownership of individual work. Biggest gap is absence of any concrete action to rebuild trust."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A key partner team pushed back on a shared roadmap because our timelines conflicted with their launch. I set up a joint working session, surfaced the trade-offs, and we landed on a phased delivery that met both needs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought data on customer impact and let their PM own the final sequencing decision."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Senior IC, partner team blocked shared roadmap over timeline clash",
+        "- Facilitated joint session, used customer data to align on phased approach",
+        "- Quote: 'I let their PM own the final sequencing'",
+        "Follow-up: influence without authority? - 'Brought data and let them decide'"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used data and facilitation to resolve cross-team conflict while preserving the external relationship. Quote illustrates influence without authority by letting the partner retain decision rights. Outcome shows measurable alignment on delivery rather than heroics. This fits senior scope of cross-team impact. Biggest strength is turning a blocked relationship into a collaborative plan with clear trade-offs surfaced.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The client disagreed with our priorities so I escalated to my manager to handle it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to resolve it directly first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent an email explaining our position but didn't get a response so I moved it up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Escalated immediately instead of engaging directly",
+        "- Only action was one email with no follow-up attempt",
+        "- Quote: 'I escalated to my manager to handle it'",
+        "Follow-up: direct resolution? - 'Sent email but moved it up'"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Candidate defaulted to escalation rather than attempting to influence the stakeholder directly. The single email shows limited effort to understand the client's constraints or find common ground. Follow-up confirms no sustained attempt at resolution. This misses the senior expectation of cross-team influence. Biggest gap is treating escalation as the first step instead of a last resort."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A client threatened to pull budget after repeated missed SLAs from my team. I had the team own the root-cause analysis, then met the client with a revised operating rhythm and one team member shadowing support calls."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the underperformer on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I moved the weakest link to a different account and paired them with a mentor while the rest of the team stabilized the relationship."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Manager, client threatened budget pull after SLA misses",
+        "- Led team RCA, introduced new operating rhythm and shadowing",
+        "- Quote: 'Moved the weakest link to a different account with a mentor'",
+        "Follow-up: underperformer? - 'Paired with mentor while team stabilized'"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate leveraged the team to diagnose and fix the process while personally managing the client relationship. Quote shows willingness to reassign people to protect the account without avoiding the performance issue. Outcome created leverage through both process change and people development. This aligns with manager scope of owning team outcomes. Biggest strength is combining client repair with internal accountability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The client was unhappy so I took over all their calls myself to make sure nothing else went wrong."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the team that caused the issues?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have time to coach them so I just handled it directly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Manager took over all client interactions personally",
+        "- No coaching or process change for the team",
+        "- Quote: 'I took over all their calls myself'",
+        "Follow-up: team issues? - 'Didn't have time to coach'"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Candidate absorbed the work rather than developing the team or fixing the underlying process. Quote reveals avoidance of coaching conversations. No evidence of creating leverage or addressing underperformance. This misses the manager expectation of building team capability. Biggest gap is heroics that mask rather than resolve the root cause."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A major enterprise client threatened to exit after a product change broke their workflow. I led a cross-org steering group, negotiated a custom bridge solution, and used the incident to reset our enterprise roadmap prioritization process."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We retained the account and the new prioritization model prevented two similar escalations the following quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Exec, enterprise client exit threat after product change",
+        "- Created cross-org steering group and negotiated bridge solution",
+        "- Quote: 'Used the incident to reset our enterprise roadmap prioritization'",
+        "Follow-up: long-term impact? - 'Retained account and prevented two similar escalations'"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate converted a relationship-threatening conflict into an org-level process improvement with measurable downstream effects. Quote shows strategic judgment by turning a single incident into a durable prioritization change. Scope spans multiple teams and long-term business risk. This fits exec expectations of org impact and trade-off decisions. Biggest strength is systemic leverage rather than one-off rescue.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I flew out to meet the client and reassured them we would fix the issue in the next release."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change how we engage enterprise accounts going forward?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was a one-time situation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+        "- Exec handled via personal visit and promise of future fix",
+        "- No org-level process or roadmap change resulted",
+        "- Quote: 'It was a one-time situation'",
+        "Follow-up: forward change? - 'Not really'"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Candidate relied on personal intervention without driving any structural or strategic adjustment. Quote explicitly frames the event as isolated rather than a signal for broader change. No evidence of long-term thinking or org leverage. This misses the exec expectation of business-level impact. Biggest gap is absence of systemic learning or trade-off decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of repair",
+      "junior": "Takes personal action on own deliverable",
+      "senior": "Facilitates direct resolution across teams",
+      "manager": "Uses team process changes plus people moves",
+      "exec": "Converts incident into org-wide prioritization change"
+    },
+    {
+      "signal": "Handling of underperformance",
+      "junior": "N/A at this scope",
+      "senior": "N/A at this scope",
+      "manager": "Reassigns and mentors to protect account",
+      "exec": "N/A at this scope"
+    },
+    {
+      "signal": "Long-term leverage",
+      "junior": "Adds personal checklist",
+      "senior": "Creates repeatable cross-team alignment",
+      "manager": "New operating rhythm for team",
+      "exec": "Resets enterprise roadmap process"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual deliverable",
+      "senior": "Cross-team roadmap",
+      "manager": "Team outcomes and client budget",
+      "exec": "Org-level roadmap and multiple accounts"
+    }
+  ],
+  "kind": "competency"
+}

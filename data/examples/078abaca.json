@@ -1,0 +1,230 @@
+{
+  "question": "Walk me through how you handled incomplete data and a real deadline. What did you decide? What was the outcome?",
+  "competency": "Are Right, A Lot",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a customer report due in two days but the usage logs were only 60% complete. I pulled the last three weeks of data we did have, flagged the gaps, and ran a quick backfill using the prior month average. My manager suggested I also reach out to the data team for any raw files they might have missed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "They found an extra day of logs. I updated the report, noted the remaining uncertainty in the executive summary, and shipped it on time. The team used it to prioritize a fix that later reduced support tickets by 12%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: customer report due in 2 days, 60% logs",
+        "Action: used available data + average backfill, asked manager for help",
+        "Outcome: updated with extra day found, shipped on time, 12% ticket reduction",
+        "Quote: 'I noted the remaining uncertainty in the executive summary'",
+        "Follow-up: Asked what happened after manager suggestion; candidate incorporated input and delivered"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for junior level. The candidate owned an individual deliverable under time pressure by combining partial data with a reasonable proxy while surfacing uncertainty. Quote: 'I noted the remaining uncertainty in the executive summary.' This shows appropriate judgment and coachability when the manager suggested checking with the data team. The outcome tied directly to a measurable support improvement. Biggest strength is the willingness to ship with documented gaps rather than delay or guess without transparency.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The data was incomplete so I waited until the full set came in. It arrived the day after the deadline so we missed it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider using partial data or asking anyone for help?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to be wrong so I just waited."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: report due, logs incomplete",
+        "Action: waited for complete data set",
+        "Outcome: missed deadline",
+        "Quote: 'I didn't want to be wrong so I just waited'",
+        "Follow-up: Asked about partial data or asking for help; candidate showed no initiative"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for junior level. The candidate chose inaction over using available data or seeking input, resulting in a missed deadline. Quote: 'I didn't want to be wrong so I just waited.' This reflects risk aversion rather than pragmatic judgment with incomplete information. No evidence of ownership or attempts to move forward with what existed. Biggest gap is the absence of any proactive steps despite a clear time constraint."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed a migration timeline but our telemetry only covered 70% of services. I ran a quick correlation against error rates from the prior quarter, proposed a phased rollout starting with the best-covered services, and shared the confidence intervals with both teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other teams respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "One pushed back on the timeline. I pulled the raw queries in a shared doc and we adjusted the order together. We launched on schedule and saw a 25% drop in post-migration incidents versus the last release."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: migration timeline needed across teams, 70% telemetry",
+        "Action: correlated with error rates, proposed phased approach with confidence intervals",
+        "Outcome: adjusted with input, launched on schedule, 25% fewer incidents",
+        "Quote: 'I pulled the raw queries in a shared doc and we adjusted the order together'",
+        "Follow-up: Asked how other teams responded; candidate showed influence without authority"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for senior level. The candidate made a defensible call on partial data by using historical correlation and explicitly sharing uncertainty ranges with stakeholders. Quote: 'I pulled the raw queries in a shared doc and we adjusted the order together.' This demonstrates cross-team influence and willingness to iterate based on new input. The result was a measurable improvement in launch quality. Biggest strength is balancing speed with transparency instead of overclaiming certainty.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told both teams we couldn't commit to a date until the data was complete. They kept asking so I eventually gave a date based on my best guess."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome of that guess?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit two unexpected issues and slipped by three weeks. The teams were unhappy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: cross-team migration timeline, incomplete telemetry",
+        "Action: delayed then gave a best-guess date",
+        "Outcome: slipped three weeks, teams unhappy",
+        "Quote: 'I eventually gave a date based on my best guess'",
+        "Follow-up: Asked about outcome; candidate showed lack of structured judgment"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for senior level. The candidate avoided making a structured recommendation from available data and later defaulted to an unsupported guess. Quote: 'I eventually gave a date based on my best guess.' This created misalignment and a three-week slip. No evidence of using proxies or sharing assumptions with stakeholders. Biggest gap is the failure to drive a decision with incomplete information while still influencing cross-team plans."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had to set quarterly goals with only partial customer feedback data. I asked two engineers to build a quick sampling model and had the TPM run a risk assessment on the top three options. We presented the data limitations and our recommended path to the leadership team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle differing opinions on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "One senior engineer wanted to wait. I had them own the sampling work so they saw the limits of waiting. We aligned on a recommendation that used the partial data and shipped goals on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: quarterly goals with partial customer data",
+        "Action: delegated sampling model and risk assessment, presented limitations",
+        "Outcome: aligned team, shipped on time",
+        "Quote: 'I had them own the sampling work so they saw the limits of waiting'",
+        "Follow-up: Asked about differing opinions; candidate developed team member through ownership"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for manager level. The candidate created leverage by assigning targeted analysis to the team and used the exercise to coach an engineer who wanted to wait. Quote: 'I had them own the sampling work so they saw the limits of waiting.' This produced a timely recommendation that acknowledged data gaps. The approach turned an individual decision into a team learning opportunity. Biggest strength is developing judgment in others while still meeting the deadline.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I made the call myself on the goals because the data was messy and I didn't want the team debating it. We missed a couple of key customer segments."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were fine with it. I told them I would handle the ambiguity."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: quarterly goals, partial data",
+        "Action: decided alone to avoid team debate",
+        "Outcome: missed key segments",
+        "Quote: 'I told them I would handle the ambiguity'",
+        "Follow-up: Asked about team reaction; candidate showed no development focus"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for manager level. The candidate centralized the decision rather than building team capability to work with incomplete data. Quote: 'I told them I would handle the ambiguity.' This led to missing important customer segments. No evidence of coaching or creating leverage through others. Biggest gap is treating the situation as personal heroics instead of a chance to raise the team's judgment."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a board-level decision on entering a new market with only six weeks of early funnel data. I commissioned a small external benchmark study, ran scenario modeling on three possible outcomes, and framed the recommendation around the range of expected returns rather than a single point estimate."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "The model showed we could lose 8-12M if adoption lagged, but the upside justified the bet. I recommended a limited pilot with an explicit kill switch at 90 days. The board approved and we exited cleanly when the signal didn't hold."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: board market entry decision, six weeks of data",
+        "Action: external benchmark, scenario modeling, range-based recommendation with kill switch",
+        "Outcome: approved, exited cleanly after 90 days",
+        "Quote: 'I recommended a limited pilot with an explicit kill switch at 90 days'",
+        "Follow-up: Asked about trade-offs; candidate showed long-term strategic framing"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for exec level. The candidate structured high-ambiguity input into clear scenarios and protected downside with a time-boxed pilot. Quote: 'I recommended a limited pilot with an explicit kill switch at 90 days.' This allowed the organization to test without overcommitting resources. The decision incorporated external data and explicit risk ranges. Biggest strength is turning incomplete information into a controlled strategic experiment with clear exit criteria.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The data was too thin so I recommended we pass on the market entirely. The team later found another way in and we lost first-mover position."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis supported passing?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't run any additional modeling. It just felt too risky given what we had."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through how you handled incomplete data and a real deadline.",
+        "Situation: board-level market decision",
+        "Action: recommended passing without further analysis",
+        "Outcome: lost first-mover position",
+        "Quote: 'I didn't run any additional modeling. It just felt too risky'",
+        "Follow-up: Asked what analysis supported the call; candidate showed no structured approach"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for exec level. The candidate defaulted to a conservative stance without building additional signal or framing options. Quote: 'I didn't run any additional modeling. It just felt too risky.' This resulted in ceding market position. No evidence of scenario planning or creating asymmetric bets. Biggest gap is the absence of strategic judgment tools when data was sparse and stakes were high."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of partial data",
+      "junior": "Uses available data + simple proxy",
+      "senior": "Correlates with historical signals and shares ranges",
+      "manager": "Delegates analysis and coaches on limits of waiting",
+      "exec": "Commissions external benchmarks and models scenarios with kill switches"
+    },
+    {
+      "signal": "Handling uncertainty",
+      "junior": "Documents gaps in summary",
+      "senior": "Shares confidence intervals with stakeholders",
+      "manager": "Turns uncertainty into team learning exercise",
+      "exec": "Frames as range of returns and time-boxed tests"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asks manager for input",
+      "senior": "Aligns cross-team via shared queries",
+      "manager": "Assigns ownership to skeptical engineer",
+      "exec": "Presents board with explicit exit criteria"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Ships on time with local impact",
+      "senior": "Delivers cross-team result with metrics",
+      "manager": "Meets deadline while developing judgment",
+      "exec": "Protects org downside while testing strategy"
+    }
+  ],
+  "kind": "lp"
+}

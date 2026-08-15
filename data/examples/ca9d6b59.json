@@ -1,0 +1,233 @@
+{
+  "question": "Describe a time you had to persist through a long, difficult, or demotivating project to see it through.",
+  "competency": "Resilience, Handling Failure & Learning Agility",
+  "principle": "Resilience, Handling Failure & Learning Agility",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My first internship project was migrating a legacy reporting script to a new internal tool. It took four months instead of the planned six weeks because the data schemas kept changing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What kept you going when it felt endless?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started tracking small wins each week and asked my mentor for a weekly check-in. By the end I had a working pipeline and documented the gotchas so the next person wouldn't hit the same issues."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Junior intern: legacy script migration, 4 months vs 6 weeks planned",
+        "- Weekly mentor check-ins and small-win tracking",
+        "- Outcome: delivered pipeline + handover doc",
+        "Quote: \"I started tracking small wins each week\"",
+        "Follow-up: How did you handle the changing schemas? - Refactored tests twice, asked for clarification after second change"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned an individual deliverable that stretched beyond the original estimate and used a simple process (weekly check-ins) to stay on track. Concrete quote about tracking small wins shows self-awareness rather than heroics. The follow-up reveals they adapted after repeated schema changes instead of just complaining. Main gap is limited scope, which is expected at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was this project that dragged on for months. I kept working on it but it was pretty boring."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it difficult and how did you push through?"
+        },
+        {
+          "role": "candidate",
+          "text": "The requirements kept shifting so I just waited for them to settle before finishing the last part."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Vague: \"dragged on for months\", \"pretty boring\"",
+        "- No actions taken to regain momentum",
+        "- Outcome: waited for requirements to settle",
+        "Follow-up: What did you do when scope changed? - \"Waited\""
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Story lacks any concrete actions or ownership; the candidate essentially describes waiting rather than persisting. No evidence of learning or adapting to the shifting requirements. At junior level we look for coachability and basic ownership of one's own work; neither appears here."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to replace a core billing component that touched three other teams. The first two attempts failed in staging and the team was losing steam after six months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep momentum across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set up a shared dashboard with weekly reliability metrics and rotated on-call duties so no single team felt stuck. We shipped a narrowed v1 after eight months that cut billing errors by 40%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Senior: core billing replacement, 3 teams, 2 failed staging attempts",
+        "- Shared dashboard + rotated on-call to distribute load",
+        "- Outcome: v1 shipped at 8 months, 40% error reduction",
+        "Quote: \"I set up a shared dashboard with weekly reliability metrics\"",
+        "Follow-up: What changed after the second failure? - Narrowed scope and added cross-team review"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Shows cross-team influence without authority through a practical mechanism (shared dashboard and rotation) rather than mandates. Clear before/after metric (40% error drop) and evidence of adjusting scope after failure. The story stays grounded in one project without claiming to have saved the company.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Billing rewrite took longer than expected. I kept reminding people of the deadline but progress was slow."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the motivation drop?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent status updates and hoped the other teams would pick up the pace."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Vague timeline and no specific actions beyond reminders",
+        "- Relied on hope that other teams would accelerate",
+        "- No metrics or adaptation described",
+        "Follow-up: What did you change after slow progress? - \"Sent more updates\""
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Candidate describes broadcasting status rather than creating leverage across teams. No visible adaptation after repeated delays and no measurable outcome. At senior level we expect influence without authority and clearer evidence of adjusting approach; neither is present."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team inherited a two-year platform migration that had already missed three deadlines. Morale was low and two engineers were looking to transfer."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about the underperformance and morale?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reset scope with the stakeholders, paired the struggling engineers with clearer milestones, and celebrated each completed slice. We finished the migration in 11 months and both engineers stayed and later led sub-projects."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Manager: inherited 2-year migration, 3 missed deadlines, low morale",
+        "- Reset scope, paired engineers with milestones, celebrated slices",
+        "- Outcome: finished in 11 months, retained 2 engineers who later led work",
+        "Quote: \"paired the struggling engineers with clearer milestones\"",
+        "Follow-up: How did you handle the engineers wanting to leave? - One-on-ones + visible progress"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Focuses on team outcomes and developing people rather than personal heroics. Concrete actions (scope reset, pairing, celebration rituals) directly addressed both delivery and retention. Result shows leverage: two engineers stayed and grew. Story is specific without exaggeration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The migration was behind so I pushed the team harder and tracked hours more closely."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple people left but we eventually shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Pushed harder and tracked hours instead of changing approach",
+        "- Result: attrition but eventual delivery",
+        "- No evidence of developing people or adjusting leadership",
+        "Follow-up: What support did you give the team? - \"Tracked hours more closely\""
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Approach of increasing pressure without changing process or supporting the team led to attrition. No demonstration of creating leverage through others or handling underperformance constructively. At manager level we expect ownership of team health and outcomes; this shows the opposite."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We bet the business on a multi-year infrastructure shift that hit major technical and regulatory blockers after 18 months. The board was questioning the investment."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide whether to continue or pivot?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a structured review with finance and engineering leads, narrowed the scope to the highest-ROI markets, and secured a phased funding model. The revised program delivered positive ROI in year three and became the template for future platform bets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Exec: multi-year infra shift, 18-month blockers, board pressure",
+        "- Structured review + narrowed scope + phased funding",
+        "- Outcome: positive ROI in year 3, became internal template",
+        "Quote: \"narrowed the scope to the highest-ROI markets\"",
+        "Follow-up: What trade-offs did you make with the board? - Accepted smaller initial markets for continued funding"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Demonstrates strategic judgment under ambiguity: used data-driven review to make scope and funding trade-offs rather than doubling down or canceling. Long-term thinking visible in turning the revised program into a reusable template. Focus stays on business leverage, not personal endurance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The big infrastructure program ran into issues but we kept the original plan and eventually got it done."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed when the board pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "I defended the original timeline and asked for more resources."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had to persist through a long, difficult, or demotivating project.",
+        "- Stuck to original plan despite blockers",
+        "- Response to board: defend timeline and request more resources",
+        "- No evidence of strategic re-evaluation or trade-offs",
+        "Follow-up: How did you adjust priorities? - \"Kept the original plan\""
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Shows persistence without strategic judgment; defending the original plan instead of making trade-offs under board pressure. No visible long-term thinking or leverage created for the organization. At exec level we look for high-ambiguity decisions and business-level impact; neither appears."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of story",
+      "junior": "Individual task or internship project",
+      "senior": "Cross-team technical program with metrics",
+      "manager": "Team delivery + retention and development",
+      "exec": "Business-level bet with board and funding decisions"
+    },
+    {
+      "signal": "Response to setbacks",
+      "junior": "Asked mentor, tracked small wins",
+      "senior": "Built shared visibility and rotated load",
+      "manager": "Reset scope and paired people with milestones",
+      "exec": "Ran structured review and adjusted funding model"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Documented gotchas for next person",
+      "senior": "Narrowed scope after second failure",
+      "manager": "Engineers later led sub-projects",
+      "exec": "Program became template for future bets"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Weekly check-ins with mentor",
+      "senior": "Dashboard and on-call rotation",
+      "manager": "One-on-ones and celebration rituals",
+      "exec": "Phased funding and ROI framing with board"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Delivered pipeline + handover doc",
+      "senior": "40% error reduction",
+      "manager": "11-month delivery, 2 retentions",
+      "exec": "Positive ROI in year 3"
+    }
+  ],
+  "kind": "competency"
+}

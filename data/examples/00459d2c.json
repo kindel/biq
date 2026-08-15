@@ -1,0 +1,255 @@
+{
+  "question": "Give an example of handling confidential or sensitive information under pressure.",
+  "competency": "Integrity, Ethics & Trust",
+  "principle": "Integrity, Ethics & Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer support ticket had PII attached. My manager was out and the customer was escalating. I flagged it to the on-call privacy lead instead of trying to resolve it myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the pressure?"
+        },
+        {
+          "role": "candidate",
+          "text": "The customer threatened to post on social and my shift lead wanted me to just delete the attachment and close the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you escalated?"
+        },
+        {
+          "role": "candidate",
+          "text": "The privacy lead took it, I documented the ticket number and my actions, and later my manager said I did the right thing by not touching the data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: L2 support agent; Situation: PII in ticket with manager OOO and customer threatening social post",
+        "Action: Escalated to on-call privacy lead instead of deleting or closing",
+        "Outcome: Ticket handed off, documented actions, manager later confirmed correct call",
+        "Quote: \"I didn't want to touch the data so I just passed it up\"",
+        "Follow-up: Asked what pressure looked like - shift lead wanted quick close; candidate still escalated"
+      ],
+      "raiseFeedback": "The story shows the candidate recognized the boundary around PII and chose escalation over local resolution. They did not attempt to solve it themselves despite pressure from the shift lead. Documentation of the handoff was a small but clear ownership move. The outcome was local but the decision aligned with policy. Biggest strength is willingness to slow down under time pressure rather than delete the attachment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a ticket with salary info. The customer was yelling so I just redacted it in the ticket and closed it to stop the escalation."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who did you tell?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told my manager the next day when she was back. She said it was fine since I redacted it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: L2 support; Situation: Salary data visible in ticket, customer escalating",
+        "Action: Redacted and closed ticket themselves without escalation",
+        "Outcome: Told manager next day; manager said it was okay",
+        "Quote: \"I just redacted it and closed it to stop the escalation\"",
+        "Follow-up: No real-time escalation; treated as individual fix"
+      ],
+      "lowerFeedback": "The candidate handled sensitive data directly instead of escalating, even though they had an on-call path available. The decision was driven by de-escalating the customer rather than policy. Telling the manager the next day shows some awareness but after the fact. The story stays at the individual ticket level with no reflection on risk. Biggest gap is treating confidential data as something they could redact and close without involving the right owner."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering asked for production logs that contained customer emails to debug a billing issue. I pushed back and offered a sanitized subset plus a privacy review."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did engineering react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They said it would slow them down. I looped in the security team and we agreed on a redacted export that still let them find the bug."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for the relationship?"
+        },
+        {
+          "role": "candidate",
+          "text": "Engineering later thanked us because the redacted data was enough and we avoided a potential incident."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: Senior backend engineer; Situation: Eng request for prod logs with customer emails for urgent debug",
+        "Action: Refused full access, offered sanitized subset and brought in security",
+        "Outcome: Redacted export worked, bug found, no incident, Eng later positive",
+        "Quote: \"I pushed back and offered a sanitized subset plus a privacy review\"",
+        "Follow-up: Asked about pushback from Eng - candidate held the line and found workable middle path"
+      ],
+      "raiseFeedback": "The candidate set a clear boundary on full log access and created an alternative that still unblocked the team. They involved the right function (security) rather than negotiating alone. The result protected customer data while allowing the debug to proceed. Influence without authority is visible in how they handled the pushback. Biggest strength is turning a potential data exposure into a controlled, documented process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering needed logs fast for a billing outage. I gave them a link to the prod logs with a note to only look at the relevant time window."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone review that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in the post-mortem. Security said we should have redacted but nothing bad happened so it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: Senior backend; Situation: Urgent billing debug needing prod logs with emails",
+        "Action: Shared full prod log link with time-window note",
+        "Outcome: Debug succeeded; post-mortem note from security but no real consequence",
+        "Quote: \"I gave them a link to the prod logs with a note to only look at the relevant time window\"",
+        "Follow-up: No pre-approval or redaction; treated as acceptable risk"
+      ],
+      "lowerFeedback": "The candidate shared production logs containing customer emails without redaction or prior approval from security. The decision prioritized speed over policy and only surfaced in the post-mortem. While the immediate goal was met, the approach created unnecessary exposure. The story shows limited ownership of the data boundary. Biggest gap is treating sensitive access as an engineering judgment call rather than a cross-functional one."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my engineers was under pressure from execs to share unreviewed customer survey data with a partner. I told the team we would not release it until legal signed off, even if it delayed the partnership meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the execs respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed hard. I brought the legal opinion to the next leadership sync and we agreed to a delayed but compliant release."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you tell the engineer?"
+        },
+        {
+          "role": "candidate",
+          "text": "I explained the risk and that protecting the data was part of their job, not just mine. They later used the same reasoning with another request."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: Eng manager; Situation: Exec pressure to share unreviewed survey data with partner",
+        "Action: Blocked release until legal approval, brought opinion to leadership sync",
+        "Outcome: Delayed but compliant release; engineer later applied same standard",
+        "Quote: \"I told the team we would not release it until legal signed off\"",
+        "Follow-up: Asked how they coached the engineer - candidate used it as teaching moment on boundaries"
+      ],
+      "raiseFeedback": "The manager protected the data boundary despite direct exec pressure and turned the incident into a coaching opportunity. They owned the decision publicly in the leadership sync rather than letting the team absorb the risk. The engineer later applied the same standard, showing leverage. The story demonstrates both protecting the company and developing the team. Biggest strength is using a high-pressure moment to model and teach the right behavior.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had survey data the partner wanted. Exec was pushing so I let the engineer send a version with names removed but no legal review."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why skip legal?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were already late on the partnership and I didn't want to slow things more. It was mostly anonymized anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: Eng manager; Situation: Exec pressure on survey data for partner",
+        "Action: Allowed partial send without legal review to avoid delay",
+        "Outcome: Data sent; no immediate issue reported",
+        "Quote: \"I let the engineer send a version with names removed but no legal review\"",
+        "Follow-up: Decision driven by timeline; no coaching on why the boundary mattered"
+      ],
+      "lowerFeedback": "The manager allowed data to leave without the required legal review because of timeline pressure from execs. The decision was made at the team level without escalation. No coaching occurred on why the process existed. The story shows the manager prioritizing speed over compliance. Biggest gap is failing to model or enforce the integrity standard under external pressure."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We discovered an old acquisition still had unencrypted customer records in a legacy system. The board wanted to announce the integration immediately. I delayed the announcement two weeks and funded a dedicated cleanup team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the board reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were unhappy about the delay. I walked them through the regulatory exposure and the cost of a breach versus two weeks of schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle internal communication?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the integration team the delay was my call and why, then gave them the resources to finish the encryption work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: VP / exec; Situation: Legacy acquisition data unencrypted, board pushing for fast integration announcement",
+        "Action: Delayed announcement, funded cleanup team, took ownership in front of board and team",
+        "Outcome: Data encrypted before announcement; regulatory risk avoided",
+        "Quote: \"I delayed the announcement two weeks and funded a dedicated cleanup team\"",
+        "Follow-up: Asked about board pushback - candidate used risk framing and owned the decision"
+      ],
+      "raiseFeedback": "The executive chose regulatory and customer protection over a board-driven timeline and funded the fix at company expense. They took visible ownership both upward and downward rather than delegating the risk. The two-week delay was a clear trade-off made with eyes open. Long-term thinking is evident in preventing a potential breach post-announcement. Biggest strength is willingness to absorb short-term business pressure to protect the company at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the acquisition we found unencrypted records. We rushed the encryption work and announced on the original date to keep momentum with investors."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who approved moving forward with the announcement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I signed off after the team said they had encrypted the highest-risk buckets. We disclosed the rest in the next quarterly review."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of handling confidential or sensitive information under pressure.",
+        "Role: VP / exec; Situation: Unencrypted legacy data discovered pre-announcement",
+        "Action: Accelerated encryption on high-risk items and announced on schedule",
+        "Outcome: Announcement happened; remaining items disclosed later in quarterly",
+        "Quote: \"We rushed the encryption work and announced on the original date\"",
+        "Follow-up: Decision prioritized investor timeline over full remediation"
+      ],
+      "lowerFeedback": "The executive allowed the announcement to proceed before full remediation to protect the integration timeline. The decision was framed as acceptable risk on the highest-priority buckets. No mention of board or legal involvement in the risk acceptance. The story shows business momentum overriding a complete fix. Biggest gap is treating customer data exposure as a schedule trade-off rather than a non-negotiable."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Escalation vs local fix",
+      "junior": "Raises when escalates immediately; lowers when fixes alone",
+      "senior": "Raises when creates cross-team process; lowers when shares without approval",
+      "manager": "Raises when enforces process and coaches team; lowers when allows team to bypass",
+      "exec": "Raises when absorbs timeline hit at org level; lowers when accepts partial remediation for momentum"
+    },
+    {
+      "signal": "Ownership under external pressure",
+      "junior": "Raises when follows policy despite manager/shift lead pressure; lowers when prioritizes quick close",
+      "senior": "Raises when negotiates alternative with security; lowers when shares full access",
+      "manager": "Raises when blocks release and brings legal opinion to leadership; lowers when skips review to avoid delay",
+      "exec": "Raises when delays announcement and funds cleanup; lowers when announces before full fix"
+    },
+    {
+      "signal": "Teaching or leverage",
+      "junior": "Not expected at this level",
+      "senior": "Not primary signal",
+      "manager": "Raises when engineer later applies same standard; lowers when no coaching occurs",
+      "exec": "Raises when takes visible ownership both up and down; lowers when delegates risk acceptance"
+    }
+  ],
+  "kind": "competency"
+}

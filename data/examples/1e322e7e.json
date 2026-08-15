@@ -1,0 +1,237 @@
+{
+  "question": "Describe a time when you felt really strongly about something on a project but the team decided to go in a different direction. How hard did you press the issue? How did you approach that project afterward?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first feature, I wanted to use a new library for validation because our regex was brittle. I wrote a one-page comparison and shared it in standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team chose to keep the existing approach. I asked two clarifying questions about risk, then switched and finished the task on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was disappointed but logged the idea for the next refactor and moved on."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Junior dev pushed new validation lib with one-page doc",
+        "Asked two questions then committed",
+        "Quote: \"I logged it for the next refactor and finished the task\"",
+        "Follow-up: how did you feel? \u2192 moved on without lingering"
+      ],
+      "raiseFeedback": "The candidate described a clear individual-scope disagreement on a small feature. They escalated once with a short written comparison and stopped after the decision. The story shows they completed the work without visible resentment. This meets the bar for junior because ownership stayed local and they demonstrated coachability. The main gap is lack of any follow-up action that benefited the team later. Biggest strength is the clean handoff after the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought the regex approach was risky so I brought it up in standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team change direction?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, they kept it. I just did what they asked but mentioned it a couple more times in retro."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Brought up regex risk once in standup",
+        "Kept mentioning it in later retros",
+        "Quote: \"I just did what they asked but mentioned it a couple more times\"",
+        "Follow-up: outcome? \u2192 no visible commitment shown"
+      ],
+      "lowerFeedback": "The candidate surfaced a concern but provided no evidence of pressing with data or alternatives. After the decision they continued raising the same point in retros, showing incomplete commitment. For a junior this signals weak follow-through on Disagree and Commit. The story stays at the level of repeated verbal complaints rather than documented input followed by execution. Biggest gap is the absence of any sign they moved on productively."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I believed our checkout flow needed a full A/B test before launch. I wrote a short RFC and met with the PM and two other senior engineers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How far did you take it?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the team chose to launch without the test I documented the risk in the ticket, helped ship the change, and later used the data we did collect to propose a targeted follow-up experiment that shipped in the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Senior pushed for A/B test on checkout via RFC and cross-team meetings",
+        "After decision documented risk then helped ship",
+        "Quote: \"I helped ship the change and proposed a targeted follow-up experiment\"",
+        "Follow-up: what was the result? \u2192 follow-up experiment shipped next quarter"
+      ],
+      "raiseFeedback": "The candidate escalated a cross-team technical risk with an RFC and direct conversations, then fully committed once the call was made. They later converted the disagreement into a measurable follow-up win. This raises the bar for senior because influence stayed without authority and produced later impact. The concrete outcome (shipped experiment) shows both backbone and commitment. Biggest strength is turning the disagreement into team-level learning.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought we should run an A/B test on checkout. I said so in the planning meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on my other work and let the team own the launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Mentioned A/B test need in planning meeting",
+        "After decision stepped back entirely",
+        "Quote: \"I focused on my other work\"",
+        "Follow-up: any later action? \u2192 none described"
+      ],
+      "lowerFeedback": "The candidate raised the concern once but showed no written artifact or follow-up conversations. After the decision they disengaged rather than supporting execution. For senior level this lowers the bar because Disagree and Commit requires both visible advocacy and continued ownership. The story lacks any evidence of cross-team influence or later contribution from the disagreement. Biggest gap is the clean withdrawal instead of productive commitment."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to deprecate an internal tool that two other teams still relied on. I pushed for a six-month migration plan with clear owners."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the final call?"
+        },
+        {
+          "role": "candidate",
+          "text": "After leadership chose a three-month timeline I assigned the work to my team, protected their scope, and ran weekly check-ins so we hit the date without surprises for the other teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Manager advocated six-month migration for internal tool",
+        "After shorter timeline assigned work and ran check-ins",
+        "Quote: \"I protected their scope and we hit the date without surprises\"",
+        "Follow-up: how did other teams respond? \u2192 no escalations reported"
+      ],
+      "raiseFeedback": "The candidate advocated for a longer timeline that protected team health and then fully owned the accelerated outcome. They used their position to create leverage through clear ownership and check-ins. This raises the bar for manager because the story shows both backbone on resourcing and successful team delivery under constraint. The absence of downstream complaints indicates real commitment. Biggest strength is converting personal disagreement into coordinated team execution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted a longer migration window but leadership picked three months. I told my team to make it work."
+        },
+        {
+          "role": "interviewer",
+          "text": "What support did you give them?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stayed out of their way so they could focus."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Pushed for longer timeline then accepted three months",
+        "Told team to deliver and stepped back",
+        "Quote: \"I stayed out of their way\"",
+        "Follow-up: team outcome? \u2192 not described"
+      ],
+      "lowerFeedback": "The candidate voiced a resourcing concern but provided no evidence of structured advocacy or written alternatives. After the decision they delegated without ongoing support or risk management. For a manager this lowers the bar because Disagree and Commit includes creating leverage for the team through active ownership. The story shows passive acceptance rather than turning the constraint into a managed team win. Biggest gap is lack of visible leadership after the call."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I believed we should delay the new market launch by one quarter to fix reliability gaps. I brought data to the staff meeting and asked for a formal risk review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "Leadership chose to launch on the original date. I publicly committed in the all-hands, redirected two platform teams to on-call rotation, and used the post-launch incident data to justify a follow-on reliability investment that reduced outages 40 percent the next year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Exec pushed for quarter delay on market launch with data",
+        "After go decision publicly committed and redirected teams",
+        "Quote: \"I redirected two platform teams and used the data to justify later investment\"",
+        "Follow-up: business result? \u2192 40 percent outage reduction next year"
+      ],
+      "raiseFeedback": "The candidate escalated a strategic business risk with data and a formal review request, then fully aligned the organization once the decision was made. They converted the disagreement into a later multi-team investment that delivered measurable reliability gains. This raises the bar for exec because the scope is org-level, the commitment was public, and the outcome created long-term leverage. The 40 percent reduction shows strategic judgment turned into results. Biggest strength is using the disagreement to drive sustained investment rather than heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I recommended delaying the launch for reliability but the company chose to ship. I focused on my own org afterward."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any later action?"
+        },
+        {
+          "role": "candidate",
+          "text": "We dealt with the incidents as they came."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time you felt strongly but team went other way",
+        "Recommended delay then accepted launch decision",
+        "Focused on own org post-decision",
+        "Quote: \"We dealt with the incidents as they came\"",
+        "Follow-up: any org-level follow-up? \u2192 none shown"
+      ],
+      "lowerFeedback": "The candidate surfaced a strategic concern but offered no evidence of broad data or cross-org alignment efforts. After the decision they narrowed focus to their own org instead of driving company-wide commitment. For an exec this lowers the bar because Disagree and Commit at this level requires public alignment plus creation of long-term org leverage. The story ends with reactive incident handling rather than turning the outcome into strategic improvement. Biggest gap is absence of any sustained business-level impact from the disagreement."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Advocacy method",
+      "junior": "One written comparison + verbal questions",
+      "senior": "RFC plus targeted 1:1s",
+      "manager": "Written plan with owners presented to leadership",
+      "exec": "Data-driven risk review at staff level"
+    },
+    {
+      "signal": "Commitment behavior",
+      "junior": "Finished assigned task and logged idea",
+      "senior": "Shipped change then proposed follow-up experiment",
+      "manager": "Assigned work, protected scope, ran check-ins",
+      "exec": "Public all-hands commitment plus resource redirection"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature",
+      "senior": "Cross-team technical decision",
+      "manager": "Team delivery under constraint",
+      "exec": "Org-level market launch and later investment"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Idea saved for future refactor",
+      "senior": "Follow-up experiment shipped next quarter",
+      "manager": "No downstream complaints from partner teams",
+      "exec": "40 percent outage reduction the following year"
+    },
+    {
+      "signal": "Risk of lingering disagreement",
+      "junior": "Low - moved on after two questions",
+      "senior": "Low - converted to later win",
+      "manager": "Low - active ownership shown",
+      "exec": "Low - public alignment plus measurable follow-through"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,308 @@
+{
+  "question": "Give me an example of a calculated risk that you have taken where speed was critical. What was the situation and how did you handle it? What steps did you take to mitigate the risk? What was the outcome? Knowing what you know now, would you have done anything differently?",
+  "competency": "Bias for Action",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our staging deploy was failing on a Friday afternoon and the feature was due Monday. I checked the logs, saw a config mismatch I had introduced, and decided to hotfix it live after a quick peer review instead of waiting for the full test cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to reduce the chance of breaking prod?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a feature flag so we could roll back in under a minute, wrote a one-page rollback runbook, and pinged the on-call before pushing. It worked and we hit the deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have flagged the config change in the PR earlier so the risk was visible sooner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: staging fail Friday, Monday deadline, own config bug",
+        "Actions: added flag, rollback runbook, notified on-call, quick peer review",
+        "Outcome: deployed successfully, met date",
+        "Quote: \"I would have flagged the config change in the PR earlier\"",
+        "Follow-up: mitigation steps - described flag and runbook"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at junior level. The candidate owned a self-introduced issue and chose speed with a reversible change rather than waiting. The feature-flag and runbook steps show they thought about blast radius even at individual scope. The reflection quote demonstrates coachability without defensiveness. Biggest strength is the concrete mitigation paired with a clear learning point.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a tight deadline so I just pushed the change on Friday hoping the tests would catch it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you reduce the risk of that push?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really have time for extra steps. It ended up fine."
+        },
+        {
+          "role": "interviewer",
+          "text": "Anything you would do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe ask for help next time but I was trying to be fast."
+        }
+      ],
+      "lowerNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: vague mention of deadline pressure",
+        "Actions: pushed without mitigation or review",
+        "Outcome: \"it ended up fine\"",
+        "Quote: \"I didn't really have time for extra steps\"",
+        "Follow-up: mitigation - no concrete steps described"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action. The candidate took an unreviewed change under time pressure without describing any mitigation. Outcome is stated as luck rather than controlled result. Reflection stays generic and does not show learning about how to balance speed with safety. Main gap is absence of reversible steps or communication."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed a shared service change before a customer launch in three days. I proposed we ship a minimal version behind a flag and run a limited canary instead of the full rollout plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What risk controls did you put in place?"
+        },
+        {
+          "role": "candidate",
+          "text": "I got written sign-off from both team leads, set error-budget alerts at 0.5 percent, and prepared a one-command rollback. The canary caught a latency spike we fixed in two hours and we launched on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved the on-call rotation earlier so they had the rollback command in their runbook before the canary started."
+        }
+      ],
+      "raiseNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: cross-team dependency blocking customer launch",
+        "Actions: minimal version + flag, dual sign-off, error-budget alerts, rollback prep",
+        "Outcome: caught latency issue, launched on schedule",
+        "Quote: \"I would have involved the on-call rotation earlier\"",
+        "Follow-up: mitigation - sign-off, alerts, rollback command"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at senior level. The candidate drove a cross-team decision with explicit controls and measurable guardrails. The canary plus rollback preparation shows influence without authority and attention to operational risk. Reflection identifies a concrete process improvement. Biggest strength is the combination of speed, coordination, and reversible design.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to ship early because the PM was pushing hard. We skipped the extra review and hoped nothing would break."
+        },
+        {
+          "role": "interviewer",
+          "text": "What steps reduced the downside?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had the usual tests and I told the other team to watch metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably get more people to agree before doing it again."
+        }
+      ],
+      "lowerNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: PM pressure, vague cross-team need",
+        "Actions: skipped review, relied on usual tests",
+        "Outcome: not stated clearly",
+        "Quote: \"We had the usual tests and I told the other team to watch metrics\"",
+        "Follow-up: mitigation - no concrete controls beyond standard process"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action. The story centers on external pressure rather than a deliberate calculation. Mitigation stayed at the default test suite with no added guardrails or rollback plan. Reflection is high-level and does not tie back to specific controls that could have been added. Main gap is lack of cross-team coordination mechanics or measurable risk limits."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team needed to unblock a partner integration two weeks before a quarterly target. I authorized a scoped prototype with a two-day timebox and daily check-ins instead of the normal three-week process."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you protect the team and the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "I required the prototype to run in a separate environment, set explicit success criteria, and assigned a senior engineer to pair with the junior owner. We hit the criteria on day two and promoted the code after a fast review."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have documented the decision in the team wiki so future managers could reuse the pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: team blocked on partner integration, quarterly target at risk",
+        "Actions: two-day timebox, separate env, success criteria, senior pairing",
+        "Outcome: met criteria day two, promoted after fast review",
+        "Quote: \"I would have documented the decision in the team wiki\"",
+        "Follow-up: mitigation - timebox, env isolation, criteria, pairing"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at manager level. The candidate created team leverage by defining clear boundaries and pairing to develop the junior engineer. The separate environment and success criteria protected the broader system while still moving fast. Reflection shows intent to institutionalize the approach. Biggest strength is balancing speed, risk controls, and people development.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team to just work faster on the integration because the date mattered."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to contain risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked in every day and hoped they would surface issues."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe set clearer expectations up front."
+        }
+      ],
+      "lowerNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: integration deadline pressure",
+        "Actions: told team to work faster, daily check-ins",
+        "Outcome: not described",
+        "Quote: \"I checked in every day and hoped they would surface issues\"",
+        "Follow-up: mitigation - relied on hope and basic check-ins"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action. The manager provided no structural guardrails or timebox, leaving risk management to daily hope. No evidence of developing the team or creating reusable process. Reflection stays vague and does not connect to concrete levers the manager could have pulled. Main gap is absence of team-level risk controls or outcome ownership."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a regulatory change that would have delayed a product line by four months. I approved a parallel workstream with a small tiger team and a hard stop after three weeks if metrics did not improve."
+        },
+        {
+          "role": "interviewer",
+          "text": "What org-level controls did you apply?"
+        },
+        {
+          "role": "candidate",
+          "text": "I required weekly CFO and legal review, ring-fenced budget, and a pre-agreed pivot-or-kill decision framework. The team found a compliant path in 18 days and we avoided the delay."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have published the decision framework company-wide so other leaders could apply it without recreating the governance."
+        }
+      ],
+      "raiseNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: regulatory change threatening multi-month product delay",
+        "Actions: parallel tiger team, 3-week hard stop, weekly CFO/legal review, pivot-or-kill framework",
+        "Outcome: compliant path found in 18 days, delay avoided",
+        "Quote: \"I would have published the decision framework company-wide\"",
+        "Follow-up: mitigation - governance cadence, budget ring-fence, kill criteria"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at exec level. The candidate made a high-ambiguity call with explicit org-level governance and financial controls. The pivot-or-kill framework and cross-functional reviews demonstrate strategic judgment and leverage beyond heroics. Reflection focuses on scaling the pattern. Biggest strength is the combination of speed, clear trade-off criteria, and institutional learning.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed the teams to find a faster path because the delay was unacceptable."
+        },
+        {
+          "role": "interviewer",
+          "text": "What controls did you put in place at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked for weekly updates and made it clear the date could not slip."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I might have involved legal earlier in the process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: calculated risk with speed critical",
+        "Situation: regulatory delay risk",
+        "Actions: told teams to move faster, weekly updates",
+        "Outcome: not stated",
+        "Quote: \"I asked for weekly updates and made it clear the date could not slip\"",
+        "Follow-up: mitigation - status reporting only, no structural controls"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action. The executive relied on pressure and status reporting without defining decision rights, budget limits, or kill criteria. No evidence of org-level leverage or strategic trade-off framing. Reflection is reactive rather than systemic. Main gap is lack of repeatable governance or long-term organizational capability building."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of risk taken",
+      "junior": "Individual code change with flag",
+      "senior": "Cross-team minimal viable change",
+      "manager": "Team timebox with pairing",
+      "exec": "Org parallel workstream with kill criteria"
+    },
+    {
+      "signal": "Mitigation mechanisms",
+      "junior": "Feature flag + rollback runbook",
+      "senior": "Error budgets + dual sign-off",
+      "manager": "Separate env + success criteria",
+      "exec": "Weekly exec review + pivot-or-kill framework"
+    },
+    {
+      "signal": "Speed driver",
+      "junior": "Personal deadline ownership",
+      "senior": "Launch blocker across teams",
+      "manager": "Quarterly target at risk",
+      "exec": "Regulatory product delay"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Would flag earlier in PR",
+      "senior": "Would involve on-call sooner",
+      "manager": "Would document pattern in wiki",
+      "exec": "Would publish framework company-wide"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Met Monday deadline",
+      "senior": "Launched on schedule after fixing latency",
+      "manager": "Met criteria in two days",
+      "exec": "Avoided four-month delay"
+    },
+    {
+      "signal": "Influence shown",
+      "junior": "Peer review request",
+      "senior": "Team lead sign-off",
+      "manager": "Senior pairing for junior",
+      "exec": "CFO and legal governance"
+    }
+  ],
+  "kind": "lp"
+}

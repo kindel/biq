@@ -1,0 +1,214 @@
+{
+  "question": "Tell me about a time when you helped one of your team members develop their career. How did you help that team member? What was the result?",
+  "competency": "Hire and Develop the Best (Coaching and career growth)",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When a new engineer joined my team, I noticed they struggled with our code review process. I paired with them on three reviews, gave specific feedback on how to write clearer comments, and checked in weekly for a month."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They went from having reviews rejected to getting their first PR merged without changes, and later said the sessions helped them feel confident enough to start reviewing others' code."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "Paired on code reviews for new hire, gave targeted feedback on comments, weekly check-ins for a month",
+        "Quote: 'They went from rejected reviews to merging without changes'",
+        "Follow-up: Asked for outcome - new hire started reviewing others' work"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate took direct ownership of helping a peer improve a concrete skill through repeated pairing and feedback. Story shows local impact with a clear before-and-after on review quality. The follow-up confirms the result was sustained enough for the new hire to contribute back. Biggest strength is the specific, repeatable actions rather than vague encouragement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told a teammate they should take some online courses to grow."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or see any result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I was busy with my own work so I just mentioned it once."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "Suggested online courses to a teammate, no follow-up",
+        "Quote: 'I was busy with my own work'",
+        "Follow-up: No measurable result observed"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The action was a single, passive suggestion with zero follow-through. Candidate explicitly prioritized their own work over supporting the teammate. No evidence of ownership or learning from the interaction. Biggest gap is treating development as a one-off comment instead of an active responsibility."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A mid-level engineer on another team wanted to move into distributed systems work. I created a six-month stretch project that pulled from both teams, met bi-weekly to unblock them, and connected them with two senior engineers for design reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "They led a small service migration, got promoted the next cycle, and now owns part of the new area."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "Built cross-team stretch project, bi-weekly coaching, connected to reviewers",
+        "Quote: 'They led a service migration and got promoted'",
+        "Follow-up: Confirmed promotion and ownership transfer"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate used influence across teams to create a real growth opportunity rather than just advice. Actions included project design, regular coaching, and network connections. Result includes both promotion and sustained ownership. Biggest strength is the measurable career outcome tied to the candidate's direct involvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I gave someone on another team advice about what skills they needed for promotion."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything beyond the conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just shared my opinion during a hallway chat and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "One hallway conversation giving promotion advice, no further action",
+        "Quote: 'I just shared my opinion'",
+        "Follow-up: No follow-up or outcome tracked"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate stayed at the level of casual advice without creating any structural opportunity or follow-up. Story shows no cross-team leverage or sustained support. Biggest gap is the absence of any concrete mechanism or result beyond a single conversation."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my engineers was inconsistent on delivery and at risk of a low rating. I built a 90-day plan with clear milestones, weekly 1:1s focused on process, paired them with a strong peer for shadowing, and adjusted scope to build confidence."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They hit every milestone, improved to solid ratings, and two quarters later was leading a small feature area."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "Created 90-day plan for inconsistent performer, weekly coaching, peer shadowing, scope adjustment",
+        "Quote: 'They improved to solid ratings and later led a feature area'",
+        "Follow-up: Two-quarter timeline and ownership increase"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate owned the full cycle of identifying risk, creating a structured plan, providing ongoing support, and adjusting scope. Result moved the person from underperformance to expanded ownership. Biggest strength is the combination of accountability and development that produced a sustained turnaround.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told a struggling team member they needed to improve and sent them some articles."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you create any plan or check progress?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in our next 1:1 but didn't track anything specific."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "Gave articles to struggling engineer, no plan or tracking",
+        "Quote: 'I mentioned it in our next 1:1 but didn't track'",
+        "Follow-up: No structured follow-up or outcome"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The response shows minimal intervention with no plan, milestones, or accountability. Candidate delegated development entirely to the individual and external content. Biggest gap is the lack of manager ownership over team member growth outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our retention data showed high-potential engineers leaving after three years due to unclear growth paths. I sponsored an org-wide career framework with defined ladders, manager training on development conversations, and a quarterly review cadence for promotion slates."
+        },
+        {
+          "role": "interviewer",
+          "text": "Impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Voluntary attrition in that cohort dropped 18% over two years and internal promotion rate increased from 22% to 35%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "Built org-wide career framework and manager training in response to retention data",
+        "Quote: 'Attrition dropped 18% and promotion rate rose to 35%'",
+        "Follow-up: Two-year timeline with org-level metrics"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate identified a systemic issue through data, designed scalable mechanisms, and drove adoption across the organization. Result is measured at the org level with clear before-and-after metrics. Biggest strength is turning individual development into a repeatable system with business impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged my directs to spend more time on career conversations with their teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you put any structure or measurement in place?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought it up in staff meetings a few times but left the details to each manager."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you helped one of your team members develop their career.",
+        "Verbal encouragement to directs on career talks, no structure or metrics",
+        "Quote: 'I brought it up in staff meetings a few times'",
+        "Follow-up: No system or measured outcome"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate relied on verbal direction without creating any scalable process or accountability. Story stays at the level of suggestion rather than org design. Biggest gap is the absence of leverage or measurable change at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of action",
+      "junior": "Local pairing or suggestion",
+      "senior": "Cross-team project or advice",
+      "manager": "Team-level plan and accountability",
+      "exec": "Org-wide framework and metrics"
+    },
+    {
+      "signal": "Follow-through mechanism",
+      "junior": "Weekly check-ins",
+      "senior": "Bi-weekly coaching plus network",
+      "manager": "90-day milestones with 1:1s",
+      "exec": "Quarterly promotion reviews and training"
+    },
+    {
+      "signal": "Result ownership",
+      "junior": "Individual skill improvement",
+      "senior": "Promotion for one person",
+      "manager": "Turnaround plus expanded ownership",
+      "exec": "Org attrition and promotion rate change"
+    },
+    {
+      "signal": "Use of data or structure",
+      "junior": "None required",
+      "senior": "Stretch project definition",
+      "manager": "Milestone plan",
+      "exec": "Retention data driving framework design"
+    }
+  ],
+  "kind": "lp"
+}

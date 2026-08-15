@@ -1,0 +1,221 @@
+{
+  "question": "Tell me about someone you hired that you thought complemented your skills. How did you coach an individual in areas where you have a weakness?",
+  "competency": "Hire and Develop the Best",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I hired a contractor for a small feature who was strong in testing frameworks I was weak on. I paired with them on the first two tickets and asked them to walk me through their approach so I could learn it too."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for that person?"
+        },
+        {
+          "role": "candidate",
+          "text": "They got extended for another project and later converted. I still use the framework they introduced."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Hired contractor to cover testing gap on small feature; paired on first tickets and had them teach approach.",
+        "\"They got extended and later converted; I still use the framework.\"",
+        "Follow-up: Asked for outcome - described extension and personal learning."
+      ],
+      "raiseFeedback": "Raises the bar for junior. The story shows the candidate recognized a personal skill gap and hired to fill it rather than avoiding the area. They took concrete action by pairing and asking the hire to teach them. The outcome included extension and conversion of the hire plus lasting adoption by the candidate. This demonstrates early ownership of development even at individual scope. Biggest strength is the simple loop of hiring for complement then learning from the person hired.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I worked with a new grad on my team who was good at documentation. I mostly let them handle docs while I focused on coding."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you coach them?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed their docs a couple times and gave feedback on formatting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Described new grad good at docs; candidate focused on coding and only reviewed formatting.",
+        "No clear hiring story or coaching tied to own weakness.",
+        "Follow-up: Probing coaching - stayed at surface-level review only."
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate did not describe hiring or deliberately choosing someone to complement a weakness. Coaching was limited to passive review with no evidence of helping the individual grow or learning from them. The story stays at task assignment rather than development. Biggest gap is absence of any intentional coaching or recognition of how the hire addressed the candidate's own limitations."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a cross-team project I hired a backend engineer whose strength was in distributed systems design where I was weaker. I set up weekly design reviews where they led the first sessions and I asked clarifying questions to build my understanding."
+        },
+        {
+          "role": "interviewer",
+          "text": "What measurable impact did this have?"
+        },
+        {
+          "role": "candidate",
+          "text": "The system scaled better than prior versions and the engineer later led a similar effort on another team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Hired backend engineer for distributed systems gap on cross-team project; ran weekly design reviews they led.",
+        "\"The system scaled better and the engineer later led a similar effort on another team.\"",
+        "Follow-up: Asked for metrics - cited scaling improvement and later leadership by the hire."
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate hired specifically to close a personal technical gap and created a structured coaching rhythm that also benefited the broader project. Influence without authority is visible in the cross-team setting and the hire later took on larger scope. Concrete outcome includes improved system scaling. Biggest strength is linking the hire's development directly to both project results and the candidate's own growth.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I brought in a specialist for a performance issue because the team asked for help. I mostly stayed out of their way so they could do their thing."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you develop that person?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure they had the tickets they needed and checked in monthly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Brought in specialist at team request for performance work; stayed out of the way and checked in monthly.",
+        "No personal coaching or link to candidate's own skill development.",
+        "Follow-up: Probing development - only logistical support described."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Hiring was reactive to team request rather than strategic choice to complement the candidate's gaps. Coaching reduced to ticket assignment and infrequent check-ins with no evidence of skill transfer or raising the individual. No cross-team influence or measurable outcome tied to the hire. Biggest gap is lack of intentional development or personal learning from the person brought in."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I hired a people manager for my team whose strength was operational discipline where I tended to move fast and break things. I had them own process improvements and we did monthly one-on-ones focused on how they influenced the team without authority."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team change?"
+        },
+        {
+          "role": "candidate",
+          "text": "On-call incidents dropped 40 percent and two engineers on the team were promoted within the year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Hired ops-strong manager to balance candidate's speed bias; monthly 1:1s on influence without authority.",
+        "\"Incidents dropped 40 percent and two engineers promoted.\"",
+        "Follow-up: Asked for team-level outcome - cited metrics and promotions."
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate deliberately hired to offset a personal leadership weakness and created a coaching cadence focused on the new manager's growth area. Team-level leverage is clear through reduced incidents and promotions. The story shows ownership of team outcomes rather than heroics. Biggest strength is using the hire to create sustained team capability and development for others.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I hired a strong IC to help with delivery velocity. I told them to focus on their own code and I handled the rest of the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What coaching did you provide?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave them stretch assignments when they asked for them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Hired IC for velocity; kept them focused on individual code and handled team matters personally.",
+        "Coaching limited to stretch assignments only when requested.",
+        "Follow-up: Probing coaching - no structured development or team leverage described."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Hiring was framed around individual output rather than complementing a leadership gap. The candidate retained all team leadership instead of developing the new hire. Coaching was passive and request-driven. No team outcome metrics or evidence of raising others. Biggest gap is failure to use the hire to build team leverage or address the candidate's own management weaknesses."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "At the org level I hired a VP of Infrastructure whose operational rigor offset my bias toward rapid feature expansion. I coached them on navigating product trade-offs by having them present options to the leadership team with clear risk and cost framing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reduced infrastructure spend by 25 percent while maintaining release cadence, and the VP was later promoted to run a larger org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Hired VP Infrastructure to balance speed bias; coached via leadership presentations on trade-offs.",
+        "\"Reduced spend 25 percent while keeping cadence; VP promoted to larger org.\"",
+        "Follow-up: Asked for business outcome - cited cost reduction, sustained velocity, and succession."
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made a strategic hire at the VP level to counter a personal decision-making bias and created a coaching mechanism that developed the hire's executive presence. Org-level leverage appears in sustained release pace alongside major cost reduction. The story shows long-term thinking through the later promotion of the hire. Biggest strength is linking the hire directly to both business metrics and organizational capability building.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I brought in an experienced leader to run a new function because the business needed it. I focused on setting the vision and let them execute."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you develop that leader?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave them feedback after quarterly reviews."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about someone you hired that complemented your skills and how you coached them in your weakness areas.",
+        "Hired leader for new function at business request; stayed at vision level and gave quarterly feedback.",
+        "No coaching tied to candidate's weaknesses or strategic development of the hire.",
+        "Follow-up: Probing development - only reactive quarterly feedback described."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Hiring appears driven by business need rather than deliberate complement to the candidate's strategic gaps. Coaching is infrequent and not structured around the hire's growth or the candidate's development areas. No clear trade-off decisions or long-term org impact shown. Biggest gap is absence of personal strategic judgment or leverage through developing senior leaders."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognizing own skill gaps",
+      "junior": "Names a concrete technical gap and hires to close it",
+      "senior": "Hires for cross-team technical gap and learns from hire",
+      "manager": "Hires to offset leadership bias and builds team process",
+      "exec": "Hires at VP level to counter org decision bias"
+    },
+    {
+      "signal": "Structured coaching actions",
+      "junior": "Pairs and asks hire to teach",
+      "senior": "Runs weekly design reviews led by hire",
+      "manager": "Monthly 1:1s on influence skills",
+      "exec": "Coaches via leadership trade-off presentations"
+    },
+    {
+      "signal": "Outcome for the individual hired",
+      "junior": "Extended and converted",
+      "senior": "Led similar effort on another team",
+      "manager": "Two engineers promoted under their process",
+      "exec": "Promoted to run larger org"
+    },
+    {
+      "signal": "Business or team leverage",
+      "junior": "Candidate adopts new framework",
+      "senior": "System scales better",
+      "manager": "40 percent drop in incidents",
+      "exec": "25 percent cost reduction with maintained cadence"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Personal learning persists",
+      "senior": "Hire takes on broader scope",
+      "manager": "Sustained team promotions",
+      "exec": "Succession and org-level capability"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,293 @@
+{
+  "question": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "A ticket for updating our internal API docs had sat for four months. I noticed it while onboarding a new teammate who kept asking the same questions. I claimed it, rewrote the sections on auth flows, added examples, and got it reviewed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide to take it instead of just answering the questions yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "The questions kept coming up in Slack. Fixing it once meant the next three people wouldn't need to ask. I also asked my manager if the time was okay since it wasn't on my sprint board."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it was actually used after?"
+        },
+        {
+          "role": "candidate",
+          "text": "The new hires stopped asking those questions and one of them left a comment on the doc saying it saved them a day."
+        }
+      ],
+      "raiseNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Junior dev noticed stale API docs ticket open 4 months",
+        "Claimed it during onboarding friction, added auth examples",
+        "Asked manager before pulling time from sprint",
+        "Outcome: new hires stopped repeating questions; doc comment cited time saved",
+        "Follow-up: Why take ownership vs just answering? - Said it scaled for future people"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified an unowned doc gap that directly slowed onboarding, claimed the ticket without being asked, and verified downstream impact through reduced questions. Quote: 'Fixing it once meant the next three people wouldn't need to ask.' This shows clear individual ownership and learning from repeated friction rather than treating it as someone else's problem. Biggest strength is proactive follow-through on a low-visibility item without manager prompting.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was a small bug in the test setup script that kept failing on my machine. I fixed it so my tests would run."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was anyone else blocked by it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was just my local env. My mentor suggested the fix."
+        }
+      ],
+      "lowerNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Candidate fixed a local test script bug",
+        "Only affected their machine",
+        "Fix suggested by mentor",
+        "No broader impact or initiative shown",
+        "Follow-up: Was anyone else blocked? - No"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story describes fixing a personal environment issue that did not affect others and required mentor direction. Quote: 'it was just my local env.' This reflects task completion rather than ownership of something abandoned. The core gap is lack of initiative to identify or address items outside immediate personal scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our shared retry library had been flagged as risky for two quarters. No team owned the migration. I pulled the usage data, wrote a migration plan, convinced three service owners to adopt the new version in their next sprint, and drove the cutover."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team said they had higher priorities. I showed them their p99 latency numbers tied to the old library and offered to pair on the change."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Error rates from that path dropped 40% across the three services; we retired the old library entirely."
+        }
+      ],
+      "raiseNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Senior identified unowned retry library risk open 2 quarters",
+        "Drove cross-team migration with data and pairing offer",
+        "Pushed back on priority objections with latency evidence",
+        "Outcome: 40% error drop, old library retired",
+        "Follow-up: What resistance? - Offered to pair and showed numbers"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate surfaced an unowned cross-service risk, created a migration plan, influenced three teams without authority, and delivered a 40% error reduction. Quote: 'I showed them their p99 latency numbers tied to the old library.' This demonstrates ownership that spans teams plus concrete metrics. Biggest strength is turning a stalled item into measurable platform improvement through influence.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "I finished a feature my teammate had started but then went on leave. I just wrapped up the last two stories."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change scope or approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I kept it to the original plan so it wouldn't slip further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Candidate completed teammate's feature during leave",
+        "Stayed strictly to original scope",
+        "No cross-team or unowned work",
+        "Outcome: feature shipped on original timeline",
+        "Follow-up: Did you change scope? - No"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The story is limited to completing assigned work left by a teammate with no expansion of scope or influence. Quote: 'I kept it to the original plan.' This shows continuity rather than ownership of something abandoned. The gap is absence of initiative beyond immediate team deliverables."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our on-call rotation had high burnout and no clear escalation path. I created a new tiered model, got buy-in from the other managers, trained two new leads, and handed it off after the first quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the managers who pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two thought it added overhead. I ran a 30-day pilot on one team showing reduced escalations to seniors and then shared the data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the original problem?"
+        },
+        {
+          "role": "candidate",
+          "text": "Burnout survey scores improved 25 points and senior engineers reported fewer 2am pages."
+        }
+      ],
+      "raiseNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Manager owned on-call burnout problem no one else addressed",
+        "Built new tiered model and trained leads",
+        "Used 30-day pilot data to overcome resistance",
+        "Outcome: 25-point burnout improvement, fewer senior pages",
+        "Follow-up: How handle pushback? - Pilot with data"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate identified an org-level process gap causing burnout, designed and piloted a solution, influenced peer managers with data, and transferred ownership after proving results. Quote: 'I ran a 30-day pilot on one team showing reduced escalations.' This shows ownership of team health outcomes through leverage rather than personal heroics. Biggest strength is creating sustainable structure and measuring impact.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "I noticed our quarterly planning deck was always late so I started reminding the team leads two weeks early."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change the outcome long term?"
+        },
+        {
+          "role": "candidate",
+          "text": "It helped for that quarter but the next one slipped again."
+        }
+      ],
+      "lowerNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Manager sent early reminders for planning deck",
+        "Temporary fix only",
+        "No process change or delegation",
+        "Outcome reverted next quarter",
+        "Follow-up: Did this change long term? - No"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The action was a personal reminder system with no lasting process or team development. Quote: 'the next one slipped again.' This reflects individual workaround rather than ownership of the underlying issue. The gap is failure to create leverage or hand off responsibility."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had no formal incident review process after major outages. I sponsored a blameless post-mortem program, funded tooling, and required it for any Sev-1. After six months it became the default across the org."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I delayed two product launches by a sprint to free up the initial engineering time and accepted short-term velocity impact for long-term learning."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you know it stuck?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now run 18 post-mortems per quarter with action items tracked in our planning system; repeat incidents in the same area dropped 60%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Exec sponsored org-wide blameless post-mortem program",
+        "Funded tooling and mandated for Sev-1s",
+        "Accepted sprint delay trade-off for product launches",
+        "Outcome: 18 post-mortems/quarter, 60% drop in repeat incidents",
+        "Follow-up: What trade-offs? - Delayed launches for initial capacity"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate recognized the absence of a critical org process, invested resources despite product trade-offs, and embedded it into operating rhythm with measurable reduction in repeat incidents. Quote: 'I delayed two product launches by a sprint to free up the initial engineering time.' This demonstrates strategic ownership at scale with clear long-term judgment. Biggest strength is converting an unowned risk into durable cultural change.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my staff to track a few metrics that had fallen off the dashboard."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any decisions or investments as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly; it was more visibility for the teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+        "Exec requested teams track dropped metrics",
+        "No investment or decision change",
+        "Outcome limited to added visibility",
+        "Follow-up: Did you change decisions? - No"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The action stayed at requesting visibility without committing resources or altering strategy. Quote: 'it was more visibility for the teams.' This shows delegation without ownership. The gap is absence of personal investment or trade-off decisions needed at this level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of item owned",
+      "junior": "Individual task or doc",
+      "senior": "Cross-team technical debt",
+      "manager": "Team process/health",
+      "exec": "Org operating rhythm"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Asked manager for time",
+      "senior": "Convinced peer teams with data",
+      "manager": "Got peer manager buy-in via pilot",
+      "exec": "Funded and mandated across org"
+    },
+    {
+      "signal": "Trade-off shown",
+      "junior": "Checked with manager",
+      "senior": "Offered pairing to reduce friction",
+      "manager": "Ran pilot before full rollout",
+      "exec": "Delayed product launches for capacity"
+    },
+    {
+      "signal": "Sustained outcome",
+      "junior": "Doc comment from new hires",
+      "senior": "40% error reduction, library retired",
+      "manager": "25-point burnout improvement",
+      "exec": "60% drop in repeat incidents, 18 reviews/quarter"
+    }
+  ],
+  "kind": "lp"
+}

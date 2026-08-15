@@ -1,0 +1,226 @@
+{
+  "question": "Tell me about a time you identified and developed potential in a team member or colleague.",
+  "competency": "Leadership & Influence",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a new hire on my team was quiet in standups but her code reviews showed strong attention to edge cases. I started pairing with her on a small feature and gave her specific feedback after each review. She ended up owning the next increment and shipped it with fewer bugs than expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you say in the feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told her the tests she added caught a case the rest of us missed and asked if she wanted to drive the next story. She said yes and we met twice a week to talk through decisions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Junior dev spotted quiet new hire's strong code reviews",
+        "Paired and gave targeted feedback on edge-case tests",
+        "Quote: 'I told her the tests caught a case the rest of us missed'",
+        "Follow-up: Asked what she said in feedback; candidate described concrete praise and regular 1:1s",
+        "Outcome stayed within own project scope"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate noticed a peer's strength through code reviews rather than loud participation and took direct action by pairing and giving specific feedback. Quote shows she tied the praise to a concrete outcome the team missed. This demonstrates ownership of her immediate circle and willingness to invest time without being asked. The scope stayed local, which is appropriate for the level. Biggest strength is the precise, actionable feedback that led to the new hire taking ownership of a story.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once had a teammate who seemed smart so I told my manager she should get more visibility. My manager gave her a stretch task and it went okay."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just mentioned it once. I didn't have time to help more."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Candidate noticed teammate but only escalated to manager",
+        "No personal follow-up or coaching described",
+        "Quote: 'I just mentioned it once. I didn't have time to help more.'",
+        "Follow-up: Probing for own actions; candidate stayed at the level of suggestion only"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate identified potential but took no ownership beyond a single comment to the manager. Quote reveals the action stopped at escalation without any investment of their own time or concrete support. For this level we expect direct involvement and learning from the interaction. The story shows awareness but no follow-through or measurable development of the colleague."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A mid-level engineer on another team kept getting stuck on cross-service calls. I invited her to a design review I was running and later offered to review her next PR with a focus on API contracts. Over two quarters she became the go-to person for integration work between our services and started mentoring a new hire on the same patterns."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Her team reduced integration bugs by about 30 percent in the next release and she was promoted the following cycle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Senior spotted cross-team engineer struggling with integrations",
+        "Invited to design review and offered targeted PR coaching on contracts",
+        "Quote: 'Her team reduced integration bugs by about 30 percent'",
+        "Follow-up: Asked for measurement; candidate gave clear before/after and promotion outcome",
+        "Impact crossed team boundary without formal authority"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used influence across teams by inviting the engineer into an existing design review and providing specific coaching on API contracts. The 30 percent reduction in integration bugs and subsequent promotion provide concrete evidence of sustained development. Story shows the candidate invested time without owning the person's performance review. Biggest strength is turning an observed gap into measurable cross-team capability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw a strong engineer on another team and gave her some advice in a hallway chat about how to present her ideas better. She seemed to do okay after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or track any outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was just one conversation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Candidate gave one-off hallway advice to cross-team engineer",
+        "No follow-up or measurement described",
+        "Quote: 'it was just one conversation.'",
+        "Follow-up: Probing for sustained action; candidate confirms single interaction only"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate recognized potential but limited action to a single hallway conversation with no follow-up. Quote makes clear there was no sustained coaching or attempt to measure impact. At senior level we expect evidence of influence without authority that produces lasting change, such as repeated investment or visible skill growth. The story stays at the level of good intention without execution."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my directs was technically strong but avoided presenting to stakeholders. I put her on a small project with weekly stakeholder updates and coached her before each meeting. After four months she led a larger roadmap review and two other team members started asking her for presentation feedback."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team benefit?"
+        },
+        {
+          "role": "candidate",
+          "text": "Stakeholder satisfaction scores on her projects rose and she became the default person we sent to represent the team in planning sessions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Manager identified direct's avoidance of stakeholder presentations",
+        "Assigned project with weekly updates plus pre-meeting coaching",
+        "Quote: 'Stakeholder satisfaction scores on her projects rose'",
+        "Follow-up: Asked for team-level benefit; candidate cited measurable improvement and peer requests for help",
+        "Development created leverage for the whole team"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate deliberately assigned work that forced the skill gap into practice and provided targeted coaching, resulting in both individual promotion of visibility and team-level leverage. Quote ties the development to higher stakeholder scores and the person becoming a default representative. This shows the manager created capacity beyond their own heroics. Biggest strength is the deliberate use of project assignment to build a repeatable team capability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told one of my engineers she needed to work on her communication and sent her to a training class. She said it was helpful."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the class?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked in once and moved on to the next priority."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Manager flagged communication gap and delegated to training",
+        "Single follow-up check-in with no further coaching or assignment change",
+        "Quote: 'I checked in once and moved on to the next priority.'",
+        "Follow-up: Probing for ongoing manager involvement; candidate confirms minimal sustained action"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate identified a development need but responded primarily by sending the person to training and performing one check-in. Quote reveals the manager did not adjust assignments or provide continued coaching to embed the skill. At this level we look for the manager to own team outcomes through deliberate development, not just point to external resources. The story shows identification without sustained investment."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org had a gap in technical leaders who could operate at the VP level. I identified two directors who had strong delivery records but limited strategic exposure. I created a six-month rotation where they each owned a cross-org initiative and reported directly to me monthly. Both were promoted to VP within 18 months and one now runs a larger org than mine."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I took on extra meeting load for six months but freed up two senior leaders to absorb work I had been carrying."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Exec spotted director-level strategic exposure gap across org",
+        "Created rotation with direct monthly reporting to self",
+        "Quote: 'Both were promoted to VP within 18 months and one now runs a larger org than mine.'",
+        "Follow-up: Asked for trade-off; candidate described personal time cost and downstream leverage",
+        "Impact scaled to org leadership pipeline"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate built a deliberate development program that addressed an org-level leadership gap and produced two VP promotions plus expanded scope for one. Quote demonstrates multi-year outcome and the willingness to absorb short-term cost for long-term leverage. Story shows strategic judgment in choosing who and how to develop rather than heroically doing the work. Biggest strength is converting identified potential into sustained organizational capacity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed we needed more strategic thinkers at the director level so I mentioned it in a leadership offsite and asked HR to add a training module."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change in who got promoted or what work they owned?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not immediately; the training is still being rolled out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you identified and developed potential in a team member or colleague.",
+        "Exec named org gap at offsite and delegated to HR training",
+        "No personal ownership or assignment changes described",
+        "Quote: 'the training is still being rolled out.'",
+        "Follow-up: Probing for concrete outcomes; candidate confirms no visible promotion or scope change yet"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate surfaced a strategic gap but responded by delegating to HR and a training module without direct involvement or changes to assignments. Quote indicates the effort remained at the planning stage with no measurable leadership pipeline movement. At executive level we expect the leader to create mechanisms that produce visible senior talent, including personal time and trade-offs. The story stays at identification without execution or leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identifying hidden potential",
+      "junior": "Notices through daily work artifacts like code reviews",
+      "senior": "Spots cross-team skill gaps and acts without authority",
+      "manager": "Uses performance data and assignment design to surface gaps",
+      "exec": "Names org-level leadership pipeline shortfalls with multi-year view"
+    },
+    {
+      "signal": "Development actions taken",
+      "junior": "Direct pairing and specific feedback within own project",
+      "senior": "Repeated coaching and access to existing forums",
+      "manager": "Changes assignments plus ongoing coaching to embed skill",
+      "exec": "Creates rotation or program with personal oversight and trade-offs"
+    },
+    {
+      "signal": "Evidence of outcome",
+      "junior": "Peer ships a story with fewer bugs",
+      "senior": "30 percent metric improvement and promotion",
+      "manager": "Team-level stakeholder scores rise and peer requests increase",
+      "exec": "Two VP promotions and expanded org scope for one"
+    },
+    {
+      "signal": "Scope and leverage",
+      "junior": "Stays inside own team or project",
+      "senior": "Cross-team influence without formal ownership",
+      "manager": "Creates capacity that benefits multiple directs",
+      "exec": "Builds repeatable senior leadership pipeline"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,245 @@
+{
+  "question": "Tell me about a time when you were working on an initiative or goal and saw an opportunity to do something much bigger or better than the initial focus. Did you take that opportunity? Why or why not? What was the outcome?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing bugs in a reporting script for my team. I noticed we could add a simple dashboard that pulled the same data for everyone instead of manual exports."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I built a basic version in a week using existing tools, showed it to my manager, and we started using it. Saved the team about 3 hours a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why not just fix the bugs as assigned?"
+        },
+        {
+          "role": "candidate",
+          "text": "The bugs were symptoms of the real problem\u2014people needed the data faster. I checked with two teammates first to confirm it was useful."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: junior IC fixing reporting script",
+        "Saw manual exports as bigger problem, built basic dashboard",
+        "Outcome: 3 hrs/week saved for team",
+        "Quote: \"The bugs were symptoms of the real problem\"",
+        "Follow-up: Why expand scope? - Confirmed with teammates first"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate described spotting that fixing bugs in a reporting script could become a shared dashboard. They validated with two teammates before acting and delivered a tool that saved the team three hours weekly. This shows early ownership of scope beyond the ticket. The limitation is that impact stayed inside one team with no metrics on usage after launch. Biggest strength is moving from assigned task to small local improvement without waiting for permission.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was assigned to fix three bugs in the reporting script. I completed them on time and closed the tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything in the data make you think about a larger fix?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple teammates mentioned exports were slow but I stayed focused on the bugs so I wouldn't miss the deadline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: junior IC on reporting script bugs",
+        "Completed assigned bugs only",
+        "Ignored teammate comments on exports to meet deadline",
+        "Quote: \"I stayed focused on the bugs\"",
+        "Follow-up: Any larger pattern noticed? - No, stuck to scope"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate completed the three assigned bugs but explicitly chose not to explore teammate feedback about slow exports to protect the deadline. This shows a narrow view of the work as only the ticket list. The outcome was on-time closure with no additional value created. Biggest gap is treating the assigned scope as fixed rather than questioning whether the underlying need was larger."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was asked to migrate one service to a new infra. While doing discovery I realized three other services had the same dependency pattern and could be moved together for shared tooling."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams involved?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a one-page proposal, ran it by the three owning teams, and got two to agree to a joint migration plan. We finished in one quarter instead of three separate efforts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: senior on single-service migration",
+        "Identified three other services with same pattern",
+        "Outcome: joint plan across teams, one quarter vs three",
+        "Quote: \"I wrote a one-page proposal and got two teams to agree\"",
+        "Follow-up: How did you influence without authority? - Shared proposal and aligned on shared tooling"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate turned a single-service migration into a cross-team effort by spotting a repeatable pattern and securing buy-in from two other teams via a short proposal. The result compressed three sequential migrations into one quarter. This demonstrates influence without authority and clear metric on time saved. The story stays grounded in one quarter's work rather than claiming company-wide transformation. Biggest strength is converting an individual discovery into coordinated action across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were migrating one service. I completed the migration on schedule and documented the steps for the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the work reveal any patterns for other services?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, but the request was only for this service so I handed the notes to my manager at the end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: senior on single-service migration",
+        "Completed migration and documented steps",
+        "Noted pattern but did not act beyond handing notes to manager",
+        "Quote: \"I handed the notes to my manager at the end\"",
+        "Follow-up: Why not pursue the pattern? - Request was scoped to one service"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate recognized a repeatable pattern across services yet limited action to delivering the single migration and passing notes upward. No attempt was made to align other teams or quantify the potential time savings. The outcome remained a single successful migration. Biggest gap is defaulting to the original scope instead of testing whether a larger coordinated effort was feasible."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was tasked with improving checkout latency by 20%. During review I saw we could also reduce support tickets by instrumenting error paths, which would give product data they lacked."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you staff and prioritize the extra work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I re-scoped two engineers' goals for the quarter, ran the idea by the product manager, and we shipped both latency wins and a new error dashboard. Support tickets on checkout dropped 35%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: manager on checkout latency goal",
+        "Added error instrumentation to also cut support tickets",
+        "Outcome: latency improved + 35% ticket drop",
+        "Quote: \"I re-scoped two engineers' goals for the quarter\"",
+        "Follow-up: How did you align product? - Shared data gap and got agreement on new dashboard"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate expanded a latency goal into a joint win that also reduced support tickets by 35% by reassigning two engineers and aligning with product on a new dashboard. This shows leverage through team priorities and cross-functional coordination. The story includes a concrete metric on ticket reduction. Biggest strength is turning a team goal into broader product value without adding headcount.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team focused on the 20% latency target. We hit it by the end of the quarter and moved to the next project."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any other signals during the work?"
+        },
+        {
+          "role": "candidate",
+          "text": "We saw error patterns but I kept the team on the original goal to avoid scope creep."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: manager on checkout latency goal",
+        "Hit 20% latency target only",
+        "Ignored error patterns to prevent scope creep",
+        "Quote: \"I kept the team on the original goal\"",
+        "Follow-up: Why not explore error data? - Avoided scope creep"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate delivered the assigned 20% latency improvement but explicitly avoided exploring error patterns to prevent scope creep. No attempt was made to connect the work to support ticket reduction or product needs. The outcome stayed within the original metric. Biggest gap is protecting the stated goal at the expense of larger team leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We set a goal to grow a new product line by 15% in one region. Market analysis showed the same product had much higher potential in two adjacent regions if we adjusted packaging and pricing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make to pursue the larger play?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shifted 30% of the regional budget to the new markets, delayed the original region's campaign by six weeks, and secured CEO approval on the revised P&L. The two new regions delivered 2.8x the revenue of the original plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: exec on regional product growth goal",
+        "Expanded from one region to two adjacent markets",
+        "Outcome: 2.8x revenue via budget shift and packaging changes",
+        "Quote: \"I shifted 30% of the regional budget and secured CEO approval\"",
+        "Follow-up: How did you handle the delay risk? - Traded six-week delay for larger total revenue"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate converted a 15% regional growth target into a multi-region expansion by reallocating 30% of budget and securing CEO sign-off on a revised P&L. The result was 2.8x the planned revenue. This reflects strategic judgment on market adjacency and willingness to trade short-term timeline for larger outcome. The story stays at the business level with clear revenue multiple. Biggest strength is making an explicit scope expansion decision at the P&L level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We executed the regional growth plan and achieved 17% growth, slightly above target."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any data suggest expanding beyond the region?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some early signals existed but we stayed disciplined on the approved plan to protect the original forecast."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about time you saw bigger opportunity...",
+        "Role: exec on regional product growth goal",
+        "Delivered 17% growth on original plan",
+        "Ignored expansion signals to protect forecast",
+        "Quote: \"We stayed disciplined on the approved plan\"",
+        "Follow-up: Why not test adjacent markets? - Avoided changing the approved forecast"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate delivered 17% growth on the stated regional plan but chose not to act on market signals for adjacent regions to protect the approved forecast. No reallocation or strategic trade-off discussion occurred. The outcome remained a modest beat on the original target. Biggest gap is prioritizing plan adherence over evaluating a materially larger business opportunity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope identified",
+      "junior": "Local task improvement",
+      "senior": "Pattern across 3+ teams",
+      "manager": "Team goal plus adjacent metric",
+      "exec": "Multi-region P&L expansion"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Checked with 2 peers",
+      "senior": "One-page proposal to peers",
+      "manager": "Re-scoped team goals + PM alignment",
+      "exec": "Budget shift + CEO approval"
+    },
+    {
+      "signal": "Outcome metric",
+      "junior": "Hours saved inside team",
+      "senior": "One quarter vs three",
+      "manager": "35% ticket reduction",
+      "exec": "2.8x revenue"
+    },
+    {
+      "signal": "Risk taken",
+      "junior": "Small extra week of work",
+      "senior": "Coordinated other teams",
+      "manager": "Delayed original target slightly",
+      "exec": "Shifted 30% budget and timeline"
+    },
+    {
+      "signal": "Why not act (lower)",
+      "junior": "Protected assigned deadline",
+      "senior": "Request was scoped narrowly",
+      "manager": "Avoided scope creep",
+      "exec": "Protected approved forecast"
+    }
+  ],
+  "kind": "lp"
+}

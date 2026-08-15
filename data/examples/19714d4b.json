@@ -1,0 +1,275 @@
+{
+  "question": "Tell me about a time when you generated a creative solution to a problem or project without requiring additional resources. What was the problem? What was the solution and how did you come up with it? What was the outcome?",
+  "competency": "Frugality (resourcefulness, cost consciousness)",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had a backlog of customer support tickets because the internal lookup tool was slow. I noticed we already had an unused cache layer from a prior project. I wrote a 40-line script that pre-loaded the top 20% of queries into it during off-peak hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you validate it wouldn't break anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran it in a staging copy first for a week, compared results manually, then got a quick review from the on-call engineer before enabling it in prod."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Average lookup time dropped from 8s to under 1s. Ticket resolution rate went up about 15% in the first month with no extra spend."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you solved something without extra resources",
+        "Used existing cache layer from prior project for support lookup tool",
+        "40-line script, validated in staging, got quick on-call review",
+        "Quote: \"I just reused what was already sitting there\"",
+        "Follow-up: How did you validate? - ran staging comparison for a week",
+        "Outcome: lookup time 8s to <1s, 15% faster resolutions, zero new cost"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for junior. Candidate identified an idle cache from a previous project and wrote a small script to preload frequent queries, cutting lookup time from 8s to under 1s and improving ticket throughput 15% with no added spend. They validated in staging and sought a quick on-call review before prod. The story shows ownership of their own work and learning from existing artifacts rather than requesting new tools. Biggest strength is the concrete reuse of sunk-cost infrastructure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed a new monitoring dashboard so I asked if we could get a license for Grafana Cloud."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything with what you already had?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the free version didn't have the alerts we wanted so I just put in the request."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Asked for Grafana Cloud license instead of exploring existing tools",
+        "Quote: \"the free version didn't have the alerts we wanted\"",
+        "Follow-up: Did you try anything with what you already had? - No, put in request",
+        "Outcome: request was denied, no solution delivered"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for junior. Candidate defaulted to requesting a paid license rather than checking whether existing internal tools or open-source options already in the environment could meet the need. No attempt to repurpose current assets or reduce scope. The story shows reliance on new resources instead of ownership of constraints. Biggest gap is absence of any creative reuse or cost-avoidance thinking."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating data pipelines for the same customer events. I mapped the overlap, then reused the existing shared Kafka topic and wrote a small transformation layer that both teams could call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the duplicated spend in the last quarterly cost review and offered to own the first integration."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We retired three redundant jobs and cut monthly compute spend by roughly 18% across both teams without any new infrastructure."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Mapped duplicate pipelines across two teams, reused shared Kafka topic",
+        "Built thin transformation layer both teams could call",
+        "Quote: \"showed them the duplicated spend in the quarterly cost review\"",
+        "Follow-up: How did you get adoption? - owned first integration, used cost data",
+        "Outcome: retired three jobs, 18% compute reduction, no new infra"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for senior. Candidate spotted duplicated pipelines between teams, reused an existing Kafka topic, and built a lightweight shared layer that eliminated three jobs and reduced compute spend 18% with zero new resources. They used cost data to influence without authority and took ownership of the initial integration. The story demonstrates cross-team impact and measurable cost avoidance. Biggest strength is turning duplication into a leverage point rather than asking for more capacity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed more capacity for the new recommendation engine so I put together a request for additional EC2 instances."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any options to optimize first?"
+        },
+        {
+          "role": "candidate",
+          "text": "We looked at right-sizing but the gains weren't big enough so we went for the new instances."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Defaulted to requesting more EC2 for recommendation engine",
+        "Right-sizing review done but gains called insufficient",
+        "Quote: \"gains weren't big enough so we went for the new instances\"",
+        "Follow-up: Any options to optimize first? - reviewed but still requested new capacity",
+        "Outcome: request approved, spend increased"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for senior. Candidate moved quickly to a request for additional EC2 capacity instead of exploring deeper optimization, code changes, or reuse of existing capacity across teams. The right-sizing check was performed but dismissed once gains looked modest. Story shows limited creativity in working within constraints. Biggest gap is treating new resources as the default path rather than a last resort."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team kept asking for extra headcount to handle seasonal reporting spikes. Instead I created a rotating on-call rotation using existing analysts and built a simple self-serve template so they could generate 80% of reports without manager review."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle quality?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed the first 30 outputs with the team and added a lightweight peer-check step that added almost no time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Zero new hires, on-call load stayed under 10% of anyone's time, and report turnaround improved from 5 days to 2."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Created internal rotation and self-serve template instead of requesting headcount for reporting spikes",
+        "Built peer-check process after reviewing first 30 outputs",
+        "Quote: \"on-call load stayed under 10% of anyone's time\"",
+        "Follow-up: How did you handle quality? - reviewed outputs, added lightweight peer step",
+        "Outcome: no new hires, turnaround 5 days to 2, load under 10%"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for manager. Candidate rejected a headcount request for seasonal reporting and instead designed a rotation plus self-serve template that leveraged existing analysts. They personally reviewed early outputs to maintain quality and kept individual load under 10%. Result was faster turnaround with no added cost. The story shows leverage through process and people development rather than budget. Biggest strength is converting a resource ask into a sustainable team capability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was overloaded so I submitted a req for two contractors."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you try before asking for more people?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tried prioritizing but the backlog kept growing so I moved to the contractor request."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Submitted contractor req for overloaded team",
+        "Prioritization attempted but backlog still grew",
+        "Quote: \"backlog kept growing so I moved to the contractor request\"",
+        "Follow-up: What did you try before asking for more people? - prioritization only",
+        "Outcome: contractors approved, headcount increased"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for manager. Candidate escalated directly to a contractor request after a basic prioritization attempt without exploring process changes, skill development, or internal rotation. No evidence of creative reuse of existing team capacity. Story treats additional headcount as the primary lever. Biggest gap is lack of ownership over team-level resource constraints."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were facing a 30% budget cut across product engineering. I consolidated three overlapping platform teams into one shared services group, moved common infrastructure to a single set of contracts, and redirected the savings into two strategic bets without any net new spend."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage the transition?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 6-week pilot with volunteers from each team, published transparent metrics on utilization, and let the teams propose the final org design."
+        },
+        {
+          "role": "interviewer",
+          "text": "Long-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Platform spend dropped 22% in the first year while feature velocity on the strategic bets increased 40%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Consolidated three platform teams into one shared services group under budget pressure",
+        "Single set of infrastructure contracts, 6-week volunteer pilot with transparent metrics",
+        "Quote: \"let the teams propose the final org design\"",
+        "Follow-up: How did you manage the transition? - pilot, metrics, team-led design",
+        "Outcome: 22% platform spend reduction, 40% velocity lift on strategic bets"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for exec. Candidate used a 30% budget cut as the catalyst to consolidate three platform teams, standardize contracts, and free up resources for strategic bets, achieving 22% spend reduction and 40% velocity gain on key initiatives. They ran a volunteer pilot and let teams shape the design to maintain buy-in. The story shows strategic trade-offs and long-term leverage at org scale. Biggest strength is turning constraint into structural advantage without heroics or new funding.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When the budget was cut I asked finance for an exception on two critical programs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural changes did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "We looked at a few but the exception route was faster so we went that direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Requested budget exception for critical programs after cut",
+        "Structural changes reviewed but exception path chosen for speed",
+        "Quote: \"exception route was faster so we went that direction\"",
+        "Follow-up: What structural changes did you consider? - reviewed but chose exception",
+        "Outcome: partial exception granted, other programs still cut"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for exec. Candidate responded to a budget cut by seeking an exception rather than driving org-level consolidation or contract changes. Structural options were considered but set aside for speed. Story shows limited strategic judgment under constraint. Biggest gap is absence of leverage or trade-off thinking at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Default path when constrained",
+      "junior": "reuses existing cache or script",
+      "senior": "reuses Kafka + thin layer across teams",
+      "manager": "builds rotation + self-serve template",
+      "exec": "consolidates teams and contracts"
+    },
+    {
+      "signal": "Evidence of influence without authority",
+      "junior": "quick on-call review",
+      "senior": "uses cost data to drive adoption",
+      "manager": "lets team propose design",
+      "exec": "volunteer pilot with transparent metrics"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "individual tool / own tickets",
+      "senior": "two teams, 18% compute",
+      "manager": "team capacity, zero hires",
+      "exec": "org platform spend + strategic bets"
+    },
+    {
+      "signal": "Handling of quality / risk",
+      "junior": "staging validation + manual check",
+      "senior": "owns first integration",
+      "manager": "reviews first 30 outputs, adds peer step",
+      "exec": "6-week pilot before full change"
+    },
+    {
+      "signal": "Response to resource pressure",
+      "junior": "finds idle asset",
+      "senior": "eliminates duplication",
+      "manager": "redistributes existing load",
+      "exec": "structural consolidation"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "time and ticket rate",
+      "senior": "compute spend %",
+      "manager": "turnaround days and load %",
+      "exec": "spend % and velocity %"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,276 @@
+{
+  "question": "Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+  "competency": "Decision Making & Judgment",
+  "principle": "Decision Making & Judgment",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a production bug on a new feature that was blocking a customer launch. I had two hours before code freeze. Option A was a quick patch that might have side effects; Option B was reverting the whole feature, which would miss the deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listed the risks on a doc, checked with my mentor on the revert impact, and picked the patch after confirming the side effects were low via a quick test. We shipped and fixed the edge case the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have added a one-line comment in the code so the next person wouldn't repeat the investigation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "Bug blocking launch, 2-hour window",
+        "Listed risks, consulted mentor, chose patch after quick test",
+        "Outcome: shipped on time, followed up with cleanup",
+        "Quote: 'I listed the risks on a doc, checked with my mentor'",
+        "Follow-up: What would you do differently? -> Add code comment for future readers"
+      ],
+      "raiseFeedback": "Raises the bar on Decision Making & Judgment for junior level. The candidate described weighing a production bug fix under a two-hour deadline by listing risks and checking with a mentor before choosing a targeted patch. The story stayed within individual scope and showed ownership of the outcome plus a clear follow-up action. The concrete quote about documenting risks illustrates the process without overclaiming impact. This meets expectations for a junior who owns their work and learns from the situation. Biggest strength is the explicit step of seeking input before deciding.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a bug and I had to choose whether to fix it or not. I just went with the fix because it seemed faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was obvious. I just fixed it and hoped it worked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "Vague bug story, no time pressure details",
+        "No options listed, no consultation",
+        "Outcome: 'hoped it worked'",
+        "Quote: 'I just went with the fix because it seemed faster'",
+        "Follow-up: What options did you consider? -> No real alternatives evaluated"
+      ],
+      "lowerFeedback": "Lowers the bar on Decision Making & Judgment for junior level. The candidate gave a vague account of fixing a bug without describing any options considered or how time pressure shaped the choice. No evidence of weighing trade-offs or seeking input appears in the story. The outcome statement 'hoped it worked' shows lack of structured judgment. This falls short of the coachability and ownership bar expected at junior level. Biggest gap is absence of any decision process or reflection on alternatives."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed the same limited infra capacity for their launches. I had three days to decide allocation."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled usage metrics from both teams, ran a quick impact model on revenue if either slipped, and proposed a split that let the higher-ROI team take 70 percent while the other used a smaller slice. Both leads agreed after I walked through the data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both launches happened; the model held and we avoided a 15 percent revenue miss on the bigger one."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "Infra capacity conflict between two teams, 3-day window",
+        "Pulled metrics, built impact model, proposed 70/30 split",
+        "Outcome: both launches succeeded, avoided revenue miss",
+        "Quote: 'I pulled usage metrics from both teams, ran a quick impact model'",
+        "Follow-up: What was the result? -> Data-driven allocation worked"
+      ],
+      "raiseFeedback": "Raises the bar on Decision Making & Judgment for senior level. The candidate handled a cross-team resource conflict by gathering metrics and building a simple impact model to propose a split allocation. The story shows influence without authority through data sharing that led to agreement. Concrete outcome of avoiding a revenue miss ties the decision to measurable results. This demonstrates the expected senior scope of balancing competing priorities across teams. Biggest strength is the explicit use of data to drive alignment under time pressure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a capacity issue and I decided to give it to the team that asked first."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any data?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was political so I just picked one to move fast."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "Capacity conflict story",
+        "Chose based on who asked first, no metrics",
+        "Outcome: moved fast but no justification",
+        "Quote: 'it was political so I just picked one'",
+        "Follow-up: Did you look at any data? -> No data used"
+      ],
+      "lowerFeedback": "Lowers the bar on Decision Making & Judgment for senior level. The candidate resolved a cross-team capacity issue by defaulting to the first requester without reviewing metrics or modeling impact. No attempt to influence through data or seek alignment is shown. The outcome lacks any measurable result or reflection on trade-offs. This falls short of the cross-team impact and evidence-based judgment expected at senior level. Biggest gap is reliance on speed over structured weighing of options."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had a key engineer on PIP and a critical project at risk if they didn't improve in four weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide on the path?"
+        },
+        {
+          "role": "candidate",
+          "text": "I weighed keeping them on the project versus moving them to a support role while hiring a contractor. I reviewed their recent commits, talked to two peers, and calculated the project delay cost. I chose the support role plus contractor, which let the project stay on track and gave the engineer a clearer improvement path."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "Peers appreciated the transparency; the engineer met the PIP goals in the new role."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "PIP engineer + project risk, 4-week window",
+        "Reviewed commits, peer input, calculated delay cost",
+        "Chose support role + contractor",
+        "Outcome: project on track, engineer met PIP",
+        "Follow-up: How did the team react? -> Transparency helped"
+      ],
+      "raiseFeedback": "Raises the bar on Decision Making & Judgment for manager level. The candidate weighed keeping a PIP engineer on a critical project against moving them to a support role plus contractor by reviewing commits and calculating delay cost. The decision protected team outcomes while giving the individual a viable path forward. Concrete steps of gathering peer input and measuring impact show leverage through structured process. This aligns with expectations for handling underperformance and owning team results. Biggest strength is balancing individual development with project delivery under time pressure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had an underperformer and just extended their PIP because I didn't want to lose headcount."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really consider moving them; I just hoped the extra time would fix it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "PIP situation",
+        "Extended PIP without exploring alternatives",
+        "Outcome: hoped it would work",
+        "Quote: 'I just hoped the extra time would fix it'",
+        "Follow-up: What options did you consider? -> No alternatives evaluated"
+      ],
+      "lowerFeedback": "Lowers the bar on Decision Making & Judgment for manager level. The candidate defaulted to extending a PIP without weighing alternatives such as role change or contractor support. No data review or impact calculation on the project is described. The outcome statement of hoping for improvement shows lack of ownership over team results. This falls short of the expectation to handle underperformance decisively and create leverage. Biggest gap is absence of structured options or team-level trade-off analysis."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced an acquisition offer that would double our revenue but require shutting down our core product line within 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled three scenarios: standalone growth, full acquisition with shutdown, and partial asset sale. I ran the numbers with finance on long-term market share and talent retention risk, then presented the trade-offs to the board with a recommendation to pursue the acquisition while carving out the product for a spin-off. The board approved the hybrid path."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the final call?"
+        },
+        {
+          "role": "candidate",
+          "text": "The 5-year NPV favored acquisition but retention data showed we would lose 40 percent of engineers on a full shutdown, so the spin-off preserved option value."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "Acquisition offer with product shutdown risk",
+        "Built 3 scenarios, modeled NPV and retention",
+        "Recommended hybrid acquisition + spin-off",
+        "Outcome: board approved, preserved talent option value",
+        "Follow-up: What drove the final call? -> Retention risk shaped hybrid path"
+      ],
+      "raiseFeedback": "Raises the bar on Decision Making & Judgment for exec level. The candidate evaluated an acquisition offer involving product shutdown by modeling three scenarios with finance input on NPV and talent retention over five years. The recommendation for a hybrid path that preserved option value shows strategic judgment under high ambiguity. Concrete details on board presentation and retention data illustrate long-term trade-off thinking. This meets expectations for org-level impact and leverage rather than heroics. Biggest strength is integrating financial modeling with people risk to shape the outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We got an acquisition offer and I took it because the number was good."
+        },
+        {
+          "role": "interviewer",
+          "text": "What scenarios did you run?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't run many; the board wanted the deal so we moved quickly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+        "Acquisition story",
+        "Took offer based on headline number",
+        "No scenarios or retention analysis",
+        "Quote: 'the board wanted the deal so we moved quickly'",
+        "Follow-up: What scenarios did you run? -> Minimal analysis"
+      ],
+      "lowerFeedback": "Lowers the bar on Decision Making & Judgment for exec level. The candidate accepted an acquisition offer primarily because of the headline number without modeling multiple scenarios or retention risks. No evidence of long-term trade-off analysis or strategic option value appears. The outcome lacks any discussion of downstream org impact. This falls short of the high-ambiguity and long-term thinking bar expected at exec level. Biggest gap is absence of structured judgment beyond speed and board pressure."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of data/metrics in weighing options",
+      "junior": "Lists risks or runs quick test",
+      "senior": "Builds impact model across teams",
+      "manager": "Calculates project delay cost and reviews commits",
+      "exec": "Models 3 scenarios with 5-year NPV and retention data"
+    },
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual bug fix",
+      "senior": "Cross-team resource allocation",
+      "manager": "Team performance and project risk",
+      "exec": "Acquisition with product-line implications"
+    },
+    {
+      "signal": "Handling of uncertainty",
+      "junior": "Seeks mentor input before deciding",
+      "senior": "Proposes split after data review",
+      "manager": "Weighs role change vs contractor",
+      "exec": "Preserves option value via spin-off"
+    },
+    {
+      "signal": "Evidence of trade-off articulation",
+      "junior": "Patch vs revert",
+      "senior": "70/30 capacity split",
+      "manager": "PIP support role vs project delay",
+      "exec": "Full shutdown vs hybrid path"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Follow-up code comment",
+      "senior": "Both launches succeed",
+      "manager": "Project on track + PIP met",
+      "exec": "Board approves hybrid, retains talent option"
+    },
+    {
+      "signal": "Reflection on process",
+      "junior": "Would add documentation next time",
+      "senior": "Data drove alignment",
+      "manager": "Transparency helped team buy-in",
+      "exec": "Retention data changed recommendation"
+    }
+  ],
+  "kind": "competency"
+}

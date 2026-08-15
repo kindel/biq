@@ -1,0 +1,221 @@
+{
+  "question": "What do you want to DO? Don't tell me what you want to work on; tell me what you want to DO. (Warm-up; follow with: What would you offload?)",
+  "competency": "Dive Deep",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to spend most of my time reading production logs and tracing through one specific customer issue until I find the root cause and ship the fix. I like sitting with the exact failing request and walking the code path myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Writing the weekly status report and triaging new tickets that are clearly duplicates. I\u2019d rather keep the deep debugging time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What do you want to DO?",
+        "Candidate described tracing one failing request through logs and code to root cause",
+        "Quote: 'walking the code path myself'",
+        "Follow-up: What would you offload? -> status reports and duplicate triage"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at junior level. The candidate named the concrete activity (tracing a single failing request end-to-end) rather than a topic area. They also identified specific tasks they would give up to protect that time. This shows early awareness of how they actually add value. The example stayed within individual scope, which is appropriate. Main gap is lack of measurable outcome from the activity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to work on backend systems and learn more about distributed systems."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Anything that isn\u2019t core backend work, like meetings or documentation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What do you want to DO?",
+        "Candidate answered with topics (backend, distributed systems) instead of actions",
+        "No specific activity or customer outcome described",
+        "Follow-up: What would you offload? -> vague answer about meetings and docs"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at junior level. The answer stayed at the level of technology areas rather than describing what the candidate actually wants to do day-to-day. The offload response was generic and did not show any reflection on their own workflow. No evidence they have thought about how they spend time or what produces results. This is common at junior level but still below the expected bar for ownership of their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to take a vague cross-team requirement, turn it into a clear technical design, then personally write the integration tests that prove the handoff works. I spend time in other teams\u2019 on-call rotations to see where my changes break."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Initial ticket grooming and status updates to stakeholders. I\u2019d keep the design and the integration test work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What do you want to DO?",
+        "Candidate specified turning vague requirement into design plus writing integration tests across teams",
+        "Quote: 'personally write the integration tests that prove the handoff works'",
+        "Follow-up: What would you offload? -> grooming and status updates"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at senior level. The candidate described a repeatable sequence of actions (clarify requirement, design, write cross-team tests, validate in on-call) that shows how they operate across boundaries. They protected the high-leverage technical work. The answer stayed grounded in observable activities rather than aspirations. Missing only a concrete metric from a past example.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to drive architecture decisions and influence the technical direction of the platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Day-to-day coding tasks so I can focus on bigger picture work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What do you want to DO?",
+        "Candidate used high-level phrases (drive architecture, influence direction)",
+        "No specific actions or cross-team mechanics described",
+        "Follow-up: What would you offload? -> coding tasks, which is usually core for senior ICs"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at senior level. The response remained at the level of outcomes and influence without naming the actual work required to get there. Offloading coding at senior level signals a misunderstanding of how senior individual contributors create impact. No evidence of how they would personally close the gap between vague requirement and working system."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to sit with an underperforming engineer, look at their last three tickets together, identify the pattern in their design choices, and run a targeted coaching loop until their output changes. I also want to remove the recurring blockers that surface in those sessions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Running the weekly team sync and most of the status reporting to leadership."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What do you want to DO?",
+        "Candidate described pairing on ticket history to surface patterns and running coaching loops",
+        "Quote: 'identify the pattern in their design choices, and run a targeted coaching loop'",
+        "Follow-up: What would you offload? -> team sync and status reporting"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at manager level. The candidate focused on the specific managerial activity of reviewing recent work artifacts to diagnose skill gaps and running repeated coaching cycles. They protected that time by delegating status work. This shows they understand leverage comes from improving individual output rather than doing the work themselves. Story stayed concrete and within team scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to build a high-performing team and remove obstacles so engineers can focus on their work."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "The one-on-ones and performance conversations so I can focus on strategy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What do you want to DO?",
+        "Answer stayed at team health and obstacle removal without naming activities",
+        "Offload response targeted core manager work (1:1s and performance conversations)",
+        "No diagnostic or coaching mechanics described"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at manager level. The candidate gave aspirational statements without specifying the daily actions that produce team improvement. Offloading performance conversations is a clear signal they do not see that as core to the role. No evidence they have a repeatable method for diagnosing or developing people."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to pick one chronic business problem, spend time with the teams that touch it, map the actual decision points and incentives, then change the org structure or funding model so the problem stops recurring. I want to personally review the first two quarters of data after the change."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Most operational reviews and all hiring pipeline management."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What do you want to DO?",
+        "Candidate described diagnosing chronic problem through org mapping and changing structure or funding",
+        "Quote: 'map the actual decision points and incentives, then change the org structure or funding model'",
+        "Follow-up: What would you offload? -> operational reviews and hiring pipeline"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at exec level. The candidate outlined a repeatable executive activity: select recurring problem, map incentives and decision rights, alter structure or funding, then personally validate with data. They protected the diagnostic and structural work by delegating operations. This demonstrates strategic judgment and long-term leverage thinking appropriate for the level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I want to set the vision and make sure the company is working on the right strategic priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you offload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Anything below the VP level so I can stay at the right altitude."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What do you want to DO?",
+        "Answer remained at vision and strategic priorities without mechanics",
+        "Offload response was broad and avoided specifying what the exec would personally do",
+        "No mention of data review, org design, or incentive changes"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at exec level. The response stayed at the level of vision-setting without describing the concrete diagnostic or structural actions required. The offload answer suggested avoiding operational insight, which is the opposite of what strong executives do to maintain judgment. No evidence of how they would personally close the gap between stated strategy and actual outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Names specific daily/weekly actions vs. topics or outcomes",
+      "junior": "Strong: traces one failing request; Weak: backend systems",
+      "senior": "Strong: writes integration tests across teams; Weak: drive architecture",
+      "manager": "Strong: reviews tickets and runs coaching loops; Weak: build high-performing team",
+      "exec": "Strong: maps incentives then changes org structure; Weak: set the vision"
+    },
+    {
+      "signal": "Identifies what to protect vs. what to delegate",
+      "junior": "Strong: keeps debugging time; Weak: offloads meetings/docs",
+      "senior": "Strong: keeps design + tests; Weak: offloads coding",
+      "manager": "Strong: keeps coaching; Weak: offloads 1:1s and performance talks",
+      "exec": "Strong: keeps problem diagnosis + data review; Weak: offloads everything below VP"
+    },
+    {
+      "signal": "Shows understanding of their own leverage point",
+      "junior": "Individual debugging loop",
+      "senior": "Cross-team handoff validation",
+      "manager": "Pattern diagnosis in recent work",
+      "exec": "Recurring org-level problem via incentives"
+    },
+    {
+      "signal": "Stays within appropriate scope for level",
+      "junior": "Single request and fix",
+      "senior": "Cross-team integration",
+      "manager": "Team member skill patterns",
+      "exec": "Org structure and funding model"
+    },
+    {
+      "signal": "Uses concrete artifacts (tickets, logs, data) in description",
+      "junior": "Production logs and failing request",
+      "senior": "Integration tests and on-call rotations",
+      "manager": "Last three tickets and design choices",
+      "exec": "Two quarters of data after change"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a high-stakes situation that did not go as planned. How did you respond in the moment and afterward?",
+  "competency": "Resilience, Handling Failure & Learning Agility",
+  "principle": "Resilience, Handling Failure & Learning Agility",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was owning a feature launch that had a last-minute data pipeline failure. In the moment I flagged the issue in the channel, rolled back the change, and notified the on-call. Afterward I wrote a postmortem, added two validation checks, and asked my mentor to review the root cause analysis."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn about yourself from that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I realized I default to fixing first instead of communicating; now I send a quick status before diving in."
+        }
+      ],
+      "raiseNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: owned feature launch, data pipeline failed day-of",
+        "Action in moment: rollback + notified on-call and stakeholders",
+        "Afterward: wrote postmortem, added validation checks, sought mentor review",
+        "Quote: 'I default to fixing first instead of communicating'",
+        "Follow-up: learned to send quick status before diving in"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned an individual-scope failure, responded with immediate containment, then showed coachability by seeking mentor input and updating their own process. Quote 'I default to fixing first instead of communicating' demonstrates clear self-awareness and a concrete behavior change. This meets expectations for learning agility at 0-2 years. The single biggest strength is the explicit link between the incident and a personal process adjustment rather than external blame.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The launch had an outage because the upstream team changed something without telling us. I stayed late to help restart services but the fix came from the other team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change in how you work after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I try to check the status page more often now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: launch outage blamed on upstream change",
+        "Action in moment: stayed late to restart services",
+        "Afterward: no postmortem or personal changes mentioned",
+        "Quote: 'the fix came from the other team'",
+        "Follow-up: 'I try to check the status page more often'"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story externalizes ownership to another team and shows no evidence of personal learning or process change beyond a vague 'check status page' comment. The candidate describes staying late but does not connect it to any improved outcome or self-insight. Biggest gap is absence of learning agility; the response stays at the level of 'it happened to me' rather than 'here is what I will do differently.'"
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team migration I led missed its SLA by two weeks because of an uncaught schema drift. In the moment I paused the cutover, coordinated a rollback plan with three teams, and sent a daily update. Afterward I drove a shared runbook and a pre-migration diff check that other teams adopted."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback on the extra checks?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team resisted the added step; I ran a two-week pilot showing it caught three issues and got them to adopt it voluntarily."
+        }
+      ],
+      "raiseNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: cross-team migration missed SLA due to schema drift",
+        "Action in moment: paused cutover, coordinated rollback across three teams, daily updates",
+        "Afterward: created shared runbook and pre-migration diff check adopted by others",
+        "Quote: 'ran a two-week pilot showing it caught three issues'",
+        "Follow-up: handled pushback by using data from pilot to gain voluntary adoption"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate took ownership of a multi-team failure, contained impact quickly, then created leverage by building a reusable check that others adopted. The pilot quote shows influence without authority and measurable follow-through. This demonstrates the expected cross-team impact and learning agility. Biggest strength is converting a personal incident into a durable process used beyond their own team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We missed the migration date because another team did not deliver their piece. I escalated and we eventually got it done two weeks late."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process change resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a dependency tracker in our own project plan."
+        }
+      ],
+      "lowerNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: migration delay blamed on another team's delivery",
+        "Action in moment: escalated",
+        "Afterward: added dependency tracker only in own plan",
+        "Quote: 'another team did not deliver their piece'",
+        "Follow-up: change limited to own project plan, no cross-team adoption"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The narrative places responsibility on another team and the only post-incident action stayed inside the candidate's own project plan. No evidence of influence or reusable learning across teams. The escalation step shows reactivity rather than proactive coordination. Biggest gap is lack of cross-team impact or measurable improvement beyond local scope."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team missed a quarterly goal after a key hire underperformed. In the moment I reallocated work and set weekly check-ins while supporting the individual with a clear improvement plan. Afterward I adjusted our hiring rubric and had the team run a retrospective that led to two new onboarding experiments."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the underperformer respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They improved enough to stay but we still parted ways after six months; the rubric change reduced similar mismatches on the next two hires."
+        }
+      ],
+      "raiseNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: team missed quarterly goal due to underperforming new hire",
+        "Action in moment: reallocated work, weekly check-ins, improvement plan",
+        "Afterward: updated hiring rubric and ran team retrospective with two new experiments",
+        "Quote: 'rubric change reduced similar mismatches on the next two hires'",
+        "Follow-up: handled underperformance directly and measured hiring improvement"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate owned team-level outcome, addressed underperformance with structure, and turned the failure into hiring process leverage that improved future results. The quote about reduced mismatches shows clear team-level impact. This reflects expected focus on developing people and creating team leverage. Biggest strength is linking the incident to a durable change in how the team hires and onboards.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team missed the goal because the new hire struggled. I had several conversations but ultimately the work got done by others stepping up."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for the team afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were more careful in the next hiring round."
+        }
+      ],
+      "lowerNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: missed goal due to new hire struggle",
+        "Action in moment: several conversations, others stepped up",
+        "Afterward: vague 'more careful' in next hiring",
+        "Quote: 'the work got done by others stepping up'",
+        "Follow-up: no specific process or rubric change described"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The story shows the manager did not drive a structured improvement plan or team-level learning; work simply shifted to others. The follow-up response remains vague with no measurable change to hiring or onboarding. Biggest gap is absence of leverage through the team or handling of underperformance in a way that produces lasting team capability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We lost a major customer renewal after a platform outage traced to insufficient capacity planning. In the moment I owned the customer call, committed to a 90-day remediation plan, and re-prioritized two quarters of roadmap. Afterward I stood up a capacity governance board and changed our SVP-level OKRs to include availability risk metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Renewal rate recovered within two quarters and the new governance process prevented three similar risks in the following year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: lost major renewal after platform outage from capacity issues",
+        "Action in moment: owned customer call, 90-day plan, roadmap re-prioritization",
+        "Afterward: created capacity governance board and changed SVP OKRs",
+        "Quote: 'prevented three similar risks in the following year'",
+        "Follow-up: renewal rate recovered and org-level process change delivered measurable prevention"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate took personal ownership of a business-level failure, made visible trade-offs, and institutionalized the learning through governance and OKR changes. The quote about preventing three risks shows org-level leverage and long-term thinking. This matches expectations for strategic judgment and creating durable systems. Biggest strength is converting a single incident into structural change that affected multiple future outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had an outage that caused a renewal loss. I apologized to the customer and we added more monitoring."
+        },
+        {
+          "role": "interviewer",
+          "text": "What org-level changes followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We increased the monitoring budget for the next year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: high-stakes situation that did not go as planned",
+        "Situation: outage led to renewal loss",
+        "Action in moment: apologized to customer",
+        "Afterward: added monitoring, increased budget",
+        "Quote: 'we added more monitoring'",
+        "Follow-up: change stayed at tooling level, no governance or OKR shift"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The response stays at tactical remediation without evidence of strategic trade-offs, org-level ownership, or long-term system changes. The follow-up shows budget allocation rather than governance or priority shifts. Biggest gap is lack of leverage beyond immediate fixes and absence of business-level judgment in how the failure was turned into lasting organizational capability."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of failure",
+      "junior": "Owns individual task failure and rollback",
+      "senior": "Owns cross-team migration miss and rollback coordination",
+      "manager": "Owns team goal miss and underperformance handling",
+      "exec": "Owns customer renewal loss and roadmap re-prioritization"
+    },
+    {
+      "signal": "Learning agility evidence",
+      "junior": "Added personal validation checks after mentor review",
+      "senior": "Built reusable diff check adopted by other teams",
+      "manager": "Updated hiring rubric and ran team retrospective",
+      "exec": "Stood up governance board and changed SVP OKRs"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local feature and personal process",
+      "senior": "Three-team migration and shared runbook",
+      "manager": "Team hiring and onboarding experiments",
+      "exec": "Org capacity governance and renewal recovery"
+    },
+    {
+      "signal": "Response to pushback or resistance",
+      "junior": "Asked mentor for review",
+      "senior": "Used pilot data to gain voluntary adoption",
+      "manager": "Ran structured improvement plan",
+      "exec": "Committed to 90-day plan with customer"
+    },
+    {
+      "signal": "Measurable follow-through",
+      "junior": "Two validation checks added",
+      "senior": "Pilot caught three issues",
+      "manager": "Reduced mismatches on next two hires",
+      "exec": "Prevented three similar risks next year"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,245 @@
+{
+  "question": "Give me an example of how you have changed the direction or view of a specific function/department and helped them embrace a new way of thinking. Why was a change needed? What was the outcome?",
+  "competency": "Think Big (strategic influence and shifting mental models)",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our small support pod kept treating every ticket as one-off. I proposed we start tagging recurring themes and share a weekly summary with the product team so they could fix root causes instead of us just triaging."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you think the product team would care?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were already asking why ticket volume wasn't dropping. I pulled three months of tags, showed the top five patterns accounted for 40% of volume, and offered to own the first summary. After two weeks they started routing feature requests from those patterns."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your teammates react to the extra tagging work?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some saw it as overhead at first. I showed them the drop in repeat tickets after the first change landed and they stopped pushing back."
+        }
+      ],
+      "raiseNotes": [
+        "Q: changed direction of a function/department and embraced new thinking",
+        "Situation: support pod stuck in reactive ticket handling",
+        "Action: tagged recurring issues, shared weekly pattern report with product",
+        "Outcome: product started addressing root causes; repeat tickets dropped",
+        "Quote: \"I showed them the drop in repeat tickets after the first change landed\"",
+        "Follow-up: teammate resistance - candidate used data to win them over"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. The candidate identified a local process that limited impact and shifted their pod from pure triage to feeding product decisions. Quote shows they used data rather than authority. The change stayed within their immediate team but produced measurable relief for both support and product. Biggest strength is ownership of the extra step without waiting for a manager to ask. Gap is still narrow scope; no evidence yet of sustaining the habit after they moved on.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once suggested we use a new ticketing template but my manager said it was too much work so we stayed with the old one."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to show why the change mattered?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just mentioned it in standup and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: changed direction of a function/department",
+        "Situation: wanted new ticketing template",
+        "Action: mentioned it once in standup",
+        "Outcome: manager rejected; no further effort",
+        "Quote: \"I just mentioned it in standup and moved on\"",
+        "Follow-up: why no follow-through - candidate had no data or persistence"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate surfaced an idea but treated rejection as final rather than exploring why the change was needed. No attempt to quantify the problem or test a small version. Story shows compliance with the status quo instead of any shift in how the team thought about their work. Biggest gap is absence of even local influence; the example never left the candidate's own head."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing kept launching campaigns without checking whether the site could handle the traffic. I pulled last year's campaign logs, showed three spikes that caused 15-minute outages, and convinced the marketing lead to run a joint capacity review before every major push."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the marketing lead to change their process?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as protecting their campaign ROI rather than 'ops saying no.' We ran a pilot on one email blast and the page stayed up; after that they started looping us in two weeks early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: shifted a different function's view",
+        "Situation: marketing campaigns causing site outages",
+        "Action: used outage data and ROI framing to create joint capacity review",
+        "Outcome: marketing now includes ops two weeks ahead; no further outages",
+        "Quote: \"I framed it as protecting their campaign ROI\"",
+        "Follow-up: how they secured buy-in - candidate tied change to marketing's own metric"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate changed how marketing planned campaigns by linking infrastructure risk directly to their revenue metric. The story shows cross-functional influence without authority and a repeatable process rather than a one-time fix. Biggest strength is translating technical risk into business language that drove sustained behavior change. Gap is that the scope stayed within one function pair; no sign of scaling the model to other teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told marketing they should check with us before big campaigns but they kept forgetting so we just added more servers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the forgetting stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just absorbed the cost."
+        }
+      ],
+      "lowerNotes": [
+        "Q: changed marketing's planning process",
+        "Situation: repeated campaign-related outages",
+        "Action: asked marketing to check ahead",
+        "Outcome: no process change; team added capacity instead",
+        "Quote: \"we just absorbed the cost\"",
+        "Follow-up: why no escalation or data - candidate accepted the status quo"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate identified a recurring problem but defaulted to technical mitigation instead of attempting to shift marketing's planning habits. No data shared, no pilot attempted, and no framing that would matter to the other team. The outcome shows the candidate absorbed cost rather than driving a new way of thinking. Biggest gap is lack of any influence attempt beyond a single request."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our engineering teams treated security reviews as a final gate that always slipped schedules. I worked with the security lead to move threat modeling into the first two weeks of every project and trained two engineers per team to run the sessions themselves."
+        },
+        {
+          "role": "interviewer",
+          "text": "What convinced the teams to own the new process?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tracked the drop in late-stage findings and showed it saved an average of nine days per project. After the first two teams saw the numbers, the others asked to adopt it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: changed how engineering viewed security work",
+        "Situation: security reviews treated as late gate causing slips",
+        "Action: moved threat modeling early and trained engineers to run it",
+        "Outcome: nine-day average reduction; teams self-adopted",
+        "Quote: \"showed it saved an average of nine days per project\"",
+        "Follow-up: how adoption spread - candidate used metrics to create pull"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate redesigned how multiple engineering teams approached security by embedding it earlier and building internal capability. The story demonstrates leverage through training and data that created organic adoption rather than top-down mandate. Biggest strength is measuring and communicating the time savings that mattered to delivery teams. Gap is limited evidence of handling resistance from the security org itself.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my teams to do security reviews earlier but they kept pushing back so I stopped enforcing it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did you stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was creating too much friction with the teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: shifted engineering's view of security",
+        "Situation: late security reviews causing slips",
+        "Action: asked for earlier reviews",
+        "Outcome: teams resisted; manager dropped the request",
+        "Quote: \"It was creating too much friction\"",
+        "Follow-up: response to resistance - candidate abandoned the change"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate recognized a systemic issue but treated pushback as a reason to retreat rather than diagnose root causes or adjust the approach. No attempt to quantify the cost of late reviews or build internal advocates. The story shows the manager protecting team comfort over improving org outcomes. Biggest gap is absence of any sustained effort or creative framing to make the new thinking stick."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Finance viewed every investment through a one-year payback lens, which killed multi-year platform bets. I built a three-year portfolio view that separated 'table stakes' infrastructure from growth bets and got the CFO to approve a separate funding bucket with different success metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the CFO to change the model?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed that the current lens was forcing us to buy point solutions that cost 30% more over three years. We ran a six-month pilot on two bets using the new criteria; both delivered clearer ROI signals and the model became the default for anything over $2M."
+        }
+      ],
+      "raiseNotes": [
+        "Q: changed finance's investment framework at company level",
+        "Situation: one-year payback rule blocking platform work",
+        "Action: created three-year portfolio view and separate funding bucket",
+        "Outcome: new criteria adopted for investments over $2M after pilot",
+        "Quote: \"showed that the current lens was forcing us to buy point solutions that cost 30% more\"",
+        "Follow-up: securing CFO agreement - candidate used comparative cost data and pilot"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate altered how the finance function evaluated long-term bets by introducing a portfolio lens and new success metrics. The story shows strategic judgment in separating table stakes from growth and using a pilot to create proof rather than a mandate. Biggest strength is translating a structural constraint into a business case that finance could own. Gap is thin detail on how other functions adapted to the new funding process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to get finance to fund a multi-year platform but they said no so we funded it out of ops budget instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that change how finance thinks about these decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just worked around them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: changed finance's view on long-term investments",
+        "Situation: one-year payback blocking platform work",
+        "Action: worked around finance using ops budget",
+        "Outcome: no change to finance process",
+        "Quote: \"we just worked around them\"",
+        "Follow-up: attempt to influence - candidate chose bypass over engagement"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate accepted the existing finance model as immovable and chose a workaround instead of attempting to evolve the underlying criteria. No data presented to finance, no pilot proposed, and no effort to align on shared outcomes. The story reflects tactical maneuvering rather than strategic influence on how the function thinks. Biggest gap is treating the constraint as fixed instead of a target for change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of influence",
+      "junior": "local team or pod",
+      "senior": "one adjacent function",
+      "manager": "multiple teams or org process",
+      "exec": "company-level function or funding model"
+    },
+    {
+      "signal": "Evidence of shifting mental model",
+      "junior": "used data to change own team's habits",
+      "senior": "framed change in terms of other function's goals",
+      "manager": "built internal capability and pull via metrics",
+      "exec": "created new funding criteria and success measures"
+    },
+    {
+      "signal": "Persistence after resistance",
+      "junior": "showed results to quiet skeptics",
+      "senior": "ran pilot to prove value",
+      "manager": "let early adopters create demand",
+      "exec": "used pilot to make new model default"
+    },
+    {
+      "signal": "Measurement of outcome",
+      "junior": "repeat ticket drop",
+      "senior": "days saved per project",
+      "manager": "adoption rate across teams",
+      "exec": "new criteria for >$2M investments"
+    },
+    {
+      "signal": "Ownership of the change",
+      "junior": "owned tagging and reporting",
+      "senior": "initiated joint review process",
+      "manager": "trained engineers and tracked results",
+      "exec": "built portfolio view and secured CFO ownership"
+    }
+  ],
+  "kind": "lp"
+}

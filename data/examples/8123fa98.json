@@ -1,0 +1,254 @@
+{
+  "question": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+  "competency": "Integrity, Ethics & Trust",
+  "principle": "Integrity, Ethics & Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "In my first internship, I pushed a small config change that broke the dev build for two hours. I realized it after the fact and could have just reverted quietly, but I posted in the team channel what I changed, why it failed, and the rollback."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "My mentor thanked me and said it saved them time debugging. I also updated the runbook so the same mistake wouldn't happen again."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Intern: pushed config change that broke dev build for 2 hrs",
+        "Posted in channel with exact change and rollback instead of silent revert",
+        "Quote: \"I realized I could just fix it quietly but didn't want someone else wasting time\"",
+        "Follow-up: reaction - mentor thanked her and she updated the runbook"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate described a small-scope error in their own change and chose to surface it in the team channel rather than revert silently. The concrete action was posting the exact change and rollback. This shows early ownership and coachability on individual work. The follow-up confirmed the team viewed the transparency positively and she added a runbook entry. Biggest strength is choosing visibility over convenience on a low-stakes mistake.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "I once had a test that was flaky and I just commented it out. Later the team found out and I said it was temporary."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you tell anyone before they noticed?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured it would get fixed in the next sprint so I didn't raise it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Commented out flaky test without telling anyone",
+        "Only acknowledged after team discovered it",
+        "Quote: \"I figured it would get fixed in the next sprint\"",
+        "Follow-up: no proactive disclosure"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate described hiding a change that affected the test suite and only acknowledged it after discovery. No evidence of voluntary disclosure or learning from the choice. The follow-up confirmed the absence of any attempt to surface the issue early. This signals limited ownership on even small individual work. Biggest gap is treating transparency as optional rather than default."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "I approved a shared library change that introduced a regression for two downstream teams. Once I saw the impact I scheduled a cross-team sync, owned the decision, and walked through the fix timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why not just fix it quietly?"
+        },
+        {
+          "role": "candidate",
+          "text": "The other teams were already debugging and I didn't want them chasing the wrong cause. I also updated the review checklist so similar changes would be caught earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Approved library change causing regression for two downstream teams",
+        "Called cross-team sync and owned the root cause instead of silent fix",
+        "Quote: \"They were already debugging so I didn't want them chasing the wrong cause\"",
+        "Follow-up: updated review checklist to prevent recurrence"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate owned a change that affected multiple teams and proactively scheduled a cross-team sync rather than attempting a quiet fix. The action included walking through the timeline and updating a shared checklist. This demonstrates influence without authority on a cross-team issue. The follow-up showed a concrete process improvement. Biggest strength is choosing transparency that reduced wasted effort for others.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "There was a metrics dashboard change that produced wrong numbers for a week. I fixed the query and mentioned it in the next team meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the consuming teams know the numbers were off?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed they would notice eventually so I didn't send a direct note."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Metrics change produced wrong numbers for a week",
+        "Fixed quietly and mentioned only in next internal meeting",
+        "Quote: \"I assumed they would notice eventually\"",
+        "Follow-up: no direct notification to consuming teams"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate described a cross-team impact but chose minimal disclosure after the fact. No evidence of proactive outreach to affected teams. The follow-up confirmed the assumption that others would self-detect the issue. This shows limited cross-team influence and incomplete ownership. Biggest gap is treating transparency as an internal team matter only."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "My team missed a committed date because I had understaffed the project. I told the leadership team the miss was my call on resourcing and laid out the recovery plan with new headcount asks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I also told the team directly that the pressure came from my estimation error and adjusted their scope for the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Missed committed date due to understaffing decision",
+        "Told leadership the miss was their resourcing call, not team's execution",
+        "Quote: \"The pressure came from my estimation error\"",
+        "Follow-up: adjusted team scope and communicated directly to them"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate took public responsibility for a resourcing decision that caused a date miss and communicated it both upward and to the team. The actions included owning the miss in leadership review and adjusting team scope afterward. This shows ownership of team outcomes and protection of the team. The follow-up confirmed direct feedback to the team. Biggest strength is modeling accountability at the team level.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "We missed a launch date. I told leadership the team had execution issues and we would recover."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share any of your own decisions that contributed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I kept the focus on the team's delivery so leadership would stay confident in the plan."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Missed launch date attributed to team execution",
+        "Did not surface own staffing or priority decisions to leadership",
+        "Quote: \"I kept the focus on the team's delivery\"",
+        "Follow-up: no ownership shared with team either"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate shifted focus to team execution rather than owning their own resourcing or priority decisions. No evidence of upward or downward transparency about the manager's role. The follow-up confirmed the choice to protect leadership confidence over accuracy. This signals weak team ownership and limited integrity under pressure. Biggest gap is protecting self at the expense of the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "I green-lit a market expansion that consumed significant capital before we saw traction was not materializing. In the next board meeting I walked through the original thesis, the data that disproved it, and the decision to wind down the effort."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the board reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They asked for the learning and later referenced the transparency when we made another large bet. We also published a short internal note so other teams could avoid the same pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Green-lit market expansion that burned capital with no traction",
+        "Told board the original thesis was wrong and the wind-down decision",
+        "Quote: \"I walked through the data that disproved the thesis\"",
+        "Follow-up: board referenced the transparency on later bets; internal note published"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate publicly reversed a high-stakes strategic decision in front of the board and shared the disconfirming data. The action included stating the original thesis was incorrect and publishing an internal note. This demonstrates strategic judgment and long-term org learning. The follow-up showed downstream effects on board trust and other teams. Biggest strength is treating a visible failure as an opportunity for organizational transparency.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it."
+        },
+        {
+          "role": "candidate",
+          "text": "We had to pull back from a product line. I framed it as a market timing issue in the all-hands and moved resources quietly."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you address the original investment decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I kept the narrative on external conditions to avoid second-guessing the strategy team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+        "Pulled back from product line after heavy investment",
+        "Framed as market timing only, avoided discussing investment decision",
+        "Quote: \"I kept the narrative on external conditions\"",
+        "Follow-up: no internal note or learning shared"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate chose an external narrative that avoided discussing the original investment decision. No evidence of transparent reversal or org learning. The follow-up confirmed the decision to prevent second-guessing. This signals strategic opacity rather than accountability at scale. Biggest gap is prioritizing narrative control over long-term trust and learning."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Voluntary disclosure before discovery",
+      "junior": "Posts in channel same day",
+      "senior": "Calls cross-team sync proactively",
+      "manager": "Tells leadership and team directly",
+      "exec": "Reverses in board meeting with data"
+    },
+    {
+      "signal": "Scope of impact owned",
+      "junior": "Own single change",
+      "senior": "Two downstream teams",
+      "manager": "Team date miss and resourcing",
+      "exec": "Capital and org strategy"
+    },
+    {
+      "signal": "Process improvement after",
+      "junior": "Updates runbook",
+      "senior": "Updates review checklist",
+      "manager": "Adjusts team scope next quarter",
+      "exec": "Publishes internal note for other teams"
+    },
+    {
+      "signal": "Avoidance behavior",
+      "junior": "Comments out test without notice",
+      "senior": "Assumes others will notice",
+      "manager": "Attributes miss to team execution",
+      "exec": "Frames as external timing only"
+    }
+  ],
+  "kind": "competency"
+}

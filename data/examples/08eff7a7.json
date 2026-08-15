@@ -1,0 +1,267 @@
+{
+  "question": "Describe a time you used written or verbal communication to persuade others to adopt your idea or proposal.",
+  "competency": "Communication (persuasion and influence)",
+  "principle": "Communication",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a small feature team and wanted to switch our logging library to reduce noise in production. I wrote a one-page doc with before/after examples and sent it to the two other engineers plus our tech lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back on migration effort. I scheduled a 20-minute call, walked through the three biggest pain points with actual log samples, and showed a quick prototype. They agreed to a one-week trial. We shipped it and cut log volume by about 40%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the initial pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked what their main concern was instead of arguing, then addressed only that point with data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Wrote 1-page doc with concrete examples for 3-person team",
+        "Followed up with short call and prototype after pushback",
+        "Quote: \"I asked what their main concern was instead of arguing\"",
+        "Outcome: 40% log reduction after one-week trial",
+        "Follow-up: Handled pushback by listening first then responding with data"
+      ],
+      "raiseFeedback": "Raises the bar on Communication for junior level. Candidate described writing a short targeted doc then following up verbally with a prototype when the team resisted. The quote about asking for the main concern first shows early listening skill rather than just broadcasting an idea. Scope stayed within the immediate team and produced a measurable local improvement. Biggest strength is the willingness to adjust approach after initial resistance instead of escalating or giving up.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent an email to the team explaining why my approach was better and attached a long design doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone respond or change their mind?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple people replied with questions but we ended up doing it the original way. I think they just didn't read it all."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Sent long email plus design doc to team",
+        "No follow-up conversation or adjustment",
+        "Quote: \"I think they just didn't read it all\"",
+        "Outcome: No adoption, stuck with original approach",
+        "Follow-up: Candidate blamed recipients for not reading instead of reflecting on delivery"
+      ],
+      "lowerFeedback": "Lowers the bar on Communication for junior level. The candidate relied on a single long written artifact with no follow-up discussion or adaptation after receiving questions. The outcome shows zero movement on the proposal. The reflection that others simply didn't read it reveals limited ownership of the communication failure. Biggest gap is absence of any attempt to understand audience concerns or adjust the message."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were about to duplicate work on a shared data pipeline. I wrote a short RFC and scheduled a joint review meeting with both tech leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you face?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead worried about losing control of their schema. I ran a 30-minute whiteboard session focused only on that risk, showed how we could keep ownership boundaries, and got verbal agreement to merge the efforts."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We avoided roughly six weeks of parallel work and the combined pipeline launched two months earlier than either original plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Wrote RFC and ran joint review with two independent teams",
+        "Addressed specific control concern in focused whiteboard session",
+        "Quote: \"showed how we could keep ownership boundaries\"",
+        "Outcome: Avoided six weeks of duplicated effort",
+        "Follow-up: Used targeted verbal session to resolve the one stated objection"
+      ],
+      "raiseFeedback": "Raises the bar on Communication for senior level. Candidate used a written RFC to surface a cross-team duplication risk then ran a focused verbal session to resolve the key objection about schema ownership. The result was concrete time savings across teams without authority. Biggest strength is the ability to convert written context into a narrow, effective verbal discussion that produced adoption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I presented my proposal in the weekly engineering all-hands and asked for questions in the chat."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the other team adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few people said it sounded good but the other team kept their own approach. I followed up with another slide deck in the next all-hands."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Presented once in large all-hands meeting",
+        "No 1:1 or small-group follow-up with affected team",
+        "Outcome: Other team did not adopt",
+        "Follow-up: Repeated broad presentation instead of targeted conversation",
+        "Quote: \"I followed up with another slide deck\""
+      ],
+      "lowerFeedback": "Lowers the bar on Communication for senior level. The candidate used only large-audience broadcasts and never moved to direct conversation with the team whose work was being duplicated. Repeated slide decks produced no adoption. Biggest gap is treating persuasion as one-way broadcasting rather than addressing specific stakeholder concerns in smaller settings."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to deprecate an internal tool but another manager's team still depended on it. I wrote a transition plan and met with that manager one-on-one to walk through support options."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle their concerns?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were worried about on-call load during the cutover. We agreed on a paired on-call rotation for the first month and I staffed two of my engineers to help. Both teams signed off."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The other manager later asked me to review their own deprecation plans, which became a recurring cross-team practice."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Wrote transition plan and held 1:1 with peer manager",
+        "Addressed on-call concern by offering paired rotation and staffing",
+        "Outcome: Both teams aligned and deprecation completed",
+        "Follow-up: Built ongoing practice where peer now seeks input",
+        "Quote: \"I staffed two of my engineers to help\""
+      ],
+      "raiseFeedback": "Raises the bar on Communication for manager level. Candidate wrote a clear transition plan then used a direct conversation to surface and resolve the peer manager's on-call concern by committing team resources. The result extended beyond the immediate proposal to a repeatable cross-team process. Biggest strength is creating leverage through the conversation rather than just securing one-time agreement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent the deprecation timeline to the other manager via email and copied their director."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they agree to the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back in email. I replied with more details and copied more people. Eventually leadership had to step in."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Used email chain with director copied",
+        "Escalated via more emails instead of direct discussion",
+        "Outcome: Leadership intervention required",
+        "Follow-up: Candidate did not initiate a 1:1 to resolve concerns"
+      ],
+      "lowerFeedback": "Lowers the bar on Communication for manager level. The candidate stayed in email and escalated by copying leadership rather than having a direct conversation to understand and address the peer's concerns. The need for leadership intervention shows the communication approach created friction instead of alignment. Biggest gap is lack of ownership in moving from written updates to verbal resolution."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to shift investment from two mature products to a new growth area. I wrote a two-page strategy memo for the ELT and scheduled a 45-minute discussion."
+        },
+        {
+          "role": "interviewer",
+          "text": "What objections surfaced?"
+        },
+        {
+          "role": "candidate",
+          "text": "The main concern was revenue risk in the current quarter. I brought three scenarios with specific revenue ranges and proposed a phased cut that protected Q3 targets while starting the new bets. The group aligned on the phased plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened over the following quarters?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the new area milestones and the phased approach kept overall revenue flat. Two quarters later the same group used the same memo format for other investment shifts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Wrote two-page strategy memo for ELT and led 45-min discussion",
+        "Addressed revenue risk with three concrete scenarios and phased cut",
+        "Outcome: Aligned on plan that protected near-term revenue while starting new bets",
+        "Follow-up: Approach became reusable template for future decisions",
+        "Quote: \"proposed a phased cut that protected Q3 targets\""
+      ],
+      "raiseFeedback": "Raises the bar on Communication for exec level. Candidate distilled a complex investment shift into a short memo then used the verbal meeting to directly address revenue risk with scenario data, resulting in a phased plan the group adopted. The approach later became a template, showing organizational leverage. Biggest strength is connecting written clarity with verbal handling of the highest-stakes objection at the right altitude.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I presented the investment shift in the quarterly business review with 20 slides and asked for questions at the end."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the group adopt the proposal?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was a lot of discussion but no decision. We scheduled another QBR three months later to revisit it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you used written or verbal communication to persuade others...",
+        "Used 20-slide deck in large quarterly review",
+        "No pre-meeting 1:1s with key stakeholders",
+        "Outcome: No decision, deferred three months",
+        "Follow-up: Repeated large-format presentation instead of targeted alignment"
+      ],
+      "lowerFeedback": "Lowers the bar on Communication for exec level. The candidate relied on a single large-audience presentation without prior alignment conversations, resulting in no decision and a three-month delay. The format did not surface or resolve the real objections in time. Biggest gap is treating a high-stakes strategic proposal as a broadcast event rather than a series of targeted discussions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual team, local tool change",
+      "senior": "Two teams, avoided duplicated effort",
+      "manager": "Peer manager alignment plus reusable process",
+      "exec": "ELT investment decision with reusable template"
+    },
+    {
+      "signal": "Handling of resistance",
+      "junior": "Asked for main concern then responded with data",
+      "senior": "Targeted whiteboard session on single objection",
+      "manager": "1:1 plus offered team resources",
+      "exec": "Brought three scenarios to directly address revenue risk"
+    },
+    {
+      "signal": "Written + verbal mix",
+      "junior": "Short doc then short call",
+      "senior": "RFC then focused verbal session",
+      "manager": "Transition plan then 1:1",
+      "exec": "Two-page memo then 45-min discussion"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "40% log reduction after trial",
+      "senior": "Six weeks saved, earlier launch",
+      "manager": "Deprecation completed and process adopted by peer",
+      "exec": "Phased plan protected revenue and became template"
+    },
+    {
+      "signal": "Audience adaptation",
+      "junior": "Adjusted after initial pushback",
+      "senior": "Narrowed discussion to the stated worry",
+      "manager": "Addressed on-call concern with concrete staffing",
+      "exec": "Shifted from broad memo to scenario-based discussion"
+    }
+  ],
+  "kind": "competency"
+}

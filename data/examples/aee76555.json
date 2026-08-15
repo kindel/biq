@@ -1,0 +1,293 @@
+{
+  "question": "Tell me about a time you took a big risk and it failed. What did you learn? What would you do differently?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to refactor a core module in my first project using a new pattern I read about, even though the team was on a tight deadline. It caused two days of integration issues and we missed a minor internal milestone."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I rolled back the change, shipped the original version, and wrote up what went wrong. My manager and I reviewed it and I learned to run a quick spike with data before committing to a refactor."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have paired with a senior engineer earlier instead of going solo."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "Tried new refactor pattern on first project; caused 2-day slip",
+        "Rolled back, documented, reviewed with manager",
+        "Quote: 'I learned to run a quick spike with data before committing'",
+        "Follow-up: Would do differently by pairing earlier"
+      ],
+      "raiseFeedback": "Raises the bar on Think Big for junior. Candidate described an individual-scope risk on their first project that produced a two-day slip and required rollback. They clearly stated the lesson (run a data-backed spike) and a concrete change (pair earlier). The story stays local but shows coachability and ownership of their own work. Biggest strength is the direct link between failure and an updated personal process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for a new library on a small task but the team said no so it didn't happen."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything actually fail?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just stuck with the old way."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "That people don't like change sometimes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "Suggested new library; team rejected it",
+        "No actual failure occurred",
+        "Quote: 'People don't like change sometimes'",
+        "Follow-up: Unable to describe a real outcome or personal learning"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Big for junior. The candidate never produced an actual failed outcome; the risk was rejected before execution. Learning stayed generic and external ('people don't like change') with no evidence of coachability or adjusted personal approach. Biggest gap is absence of ownership over a concrete result."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I proposed moving two services to a new data store across three teams to cut latency by 40%. We ran a pilot that exposed consistency bugs and had to revert after three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed a quarterly goal by two weeks and lost some trust with the other teams. I wrote a post-mortem and shared the decision framework we should have used."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have secured written commitments from the other teams on rollback criteria before starting the pilot."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "Proposed cross-team data store migration for 40% latency win; pilot failed",
+        "Reverted after 3 weeks; delayed quarterly goal",
+        "Quote: 'I shared the decision framework we should have used'",
+        "Follow-up: Would secure written rollback criteria upfront"
+      ],
+      "raiseFeedback": "Raises the bar on Think Big for senior. Candidate drove a cross-team technical bet with a clear metric target, owned the three-week pilot failure, and produced a reusable decision framework. The learning moved beyond personal tactics to something shareable. Biggest strength is the combination of measurable ambition and post-failure influence without authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to get my team to adopt a new framework but other teams weren't ready so we dropped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the risk you took?"
+        },
+        {
+          "role": "candidate",
+          "text": "I spent a week building a prototype on my own."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "Need more alignment meetings next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "Built solo prototype for new framework; dropped due to lack of alignment",
+        "No cross-team impact realized",
+        "Quote: 'Need more alignment meetings next time'",
+        "Follow-up: Learning stayed at the level of process hygiene, not strategic judgment"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Big for senior. The candidate's risk stayed inside one team and produced no measurable outcome or cross-team movement. The stated learning (more alignment meetings) does not demonstrate growth in influencing without authority or handling larger bets. Biggest gap is lack of evidence that the candidate can drive scope beyond their immediate team."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team proposed a new self-serve tooling platform for the org. We staffed three people for six months; adoption was low and we shut it down."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a retro, protected their next promotion cycles, and moved two engineers onto a higher-visibility project. We documented the customer discovery gaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have required a joint OKR with the consuming teams before staffing the work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "Led team-built self-serve platform; six-month effort shut down for low adoption",
+        "Protected team careers, moved people to visible work",
+        "Quote: 'Required a joint OKR with consuming teams before staffing'",
+        "Follow-up: Focused on team leverage and org-level learning"
+      ],
+      "raiseFeedback": "Raises the bar on Think Big for manager. Candidate sponsored a multi-quarter org-level bet, owned the shutdown decision, and protected team outcomes while extracting a structural lesson (joint OKRs). The story shows leverage through the team rather than personal heroics. Biggest strength is the combination of people development and process change that outlasts the failed project.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We tried a new team process for planning but it didn't stick so we went back to the old way."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just my team of eight."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the underperformance?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told them we would try again later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "New planning process within own team; reverted",
+        "No org impact or people-development actions described",
+        "Quote: 'Told them we would try again later'",
+        "Follow-up: Did not address team outcomes or create leverage"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Big for manager. The risk remained inside one team with no measurable business or org outcome. Candidate showed no evidence of developing people through the failure or creating lasting team leverage. Biggest gap is treating the failure as a one-off process tweak rather than an opportunity to raise team capability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I green-lit a new market expansion that required re-allocating 15% of engineering to a different region. After 18 months the unit economics didn't work and we wound it down."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the organizational impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We took a one-time hit to two product roadmaps and had to reset expectations with the board. I personally owned the narrative and re-assigned the leaders to growth areas."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have required a staged capital-commitment model with clear kill criteria at the 6-month mark instead of a full upfront bet."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "Approved 15% engineering reallocation for new market; 18-month effort wound down",
+        "Owned board narrative, protected leader careers",
+        "Quote: 'Required staged capital-commitment model with kill criteria'",
+        "Follow-up: Demonstrated long-term strategic judgment and org-level trade-offs"
+      ],
+      "raiseFeedback": "Raises the bar on Think Big for exec. Candidate made a multi-year, org-wide capital and talent allocation bet, owned the public failure narrative, and converted the outcome into a repeatable capital-allocation process. The learning reflects long-term thinking and leverage at the business level rather than heroics. Biggest strength is the willingness to surface the failure at board level while still protecting organizational momentum.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a new product line that didn't meet targets so we adjusted the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your personal decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I supported the team's recommendation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how the company makes bets?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now do more customer interviews."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk and it failed...",
+        "Supported new product line that missed targets",
+        "No evidence of personal ownership or org-level trade-offs",
+        "Quote: 'We now do more customer interviews'",
+        "Follow-up: Learning stayed tactical; no strategic judgment shown"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Big for exec. The candidate described a product miss without clear personal ownership of the strategic decision or the resulting resource trade-offs. The stated learning (more customer interviews) does not demonstrate changed capital allocation or long-term org judgment. Biggest gap is absence of evidence that the candidate operates at the ambiguity and scale expected of an exec."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of the risk taken",
+      "junior": "Individual task or module",
+      "senior": "Cross-team technical bet with metrics",
+      "manager": "Multi-quarter team-level investment",
+      "exec": "Org-wide capital and talent allocation"
+    },
+    {
+      "signal": "Ownership of failure narrative",
+      "junior": "Personal rollback and doc",
+      "senior": "Post-mortem shared beyond team",
+      "manager": "Protected team while surfacing gaps",
+      "exec": "Owned board-level narrative"
+    },
+    {
+      "signal": "Quality of learning extracted",
+      "junior": "Updated personal process (spike first)",
+      "senior": "Reusable decision framework",
+      "manager": "Joint OKR requirement for future work",
+      "exec": "Staged capital-commitment model"
+    },
+    {
+      "signal": "Evidence of raising others",
+      "junior": "Asked for pairing help next time",
+      "senior": "Shared framework with peers",
+      "manager": "Moved people to visible projects",
+      "exec": "Re-assigned leaders to growth areas"
+    },
+    {
+      "signal": "Application of learning",
+      "junior": "Would pair earlier on next refactor",
+      "senior": "Would secure written rollback criteria",
+      "manager": "Would require joint OKRs before staffing",
+      "exec": "Would use kill criteria at 6 months"
+    }
+  ],
+  "kind": "lp"
+}

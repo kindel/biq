@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time when a customer came to you for something that wouldn't actually address their need. How did you approach the situation? What was the result?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A support ticket asked for a custom export script, but the real issue was duplicate data in their dashboard. I asked clarifying questions about their workflow, realized the export would just mask the problem, and instead fixed the deduplication logic at the source."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you tell the customer?"
+        },
+        {
+          "role": "candidate",
+          "text": "I explained why the export wouldn't help long-term and walked them through the root cause fix. They agreed and the duplicates stopped."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Individual ticket; spotted mismatch between requested export and duplicate data root cause",
+        "Asked clarifying questions on workflow instead of fulfilling request",
+        "Quote: \"I explained why the export wouldn't help long-term\"",
+        "Follow-up: Walked customer through root cause; duplicates resolved"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a junior. The candidate identified that the requested export would not solve the duplicate data problem and chose to address the source instead. They quote \"I explained why the export wouldn't help long-term\" and describe confirming the fix with the customer. This shows early ownership of digging past the ask. The main strength is willingness to challenge the request at an individual scope; the gap is lack of any metrics or follow-up ownership beyond the single ticket.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer wanted a new button added to the UI. I built it exactly as described and closed the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check if the button solved their underlying issue?"
+        },
+        {
+          "role": "candidate",
+          "text": "They asked for the button so I delivered it. No further follow-up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Delivered requested UI button without probing",
+        "No attempt to understand why the button was needed",
+        "Quote: \"They asked for the button so I delivered it\"",
+        "Follow-up: No follow-up after delivery"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a junior. The candidate fulfilled the literal request for a new button without any investigation into the underlying need. They state \"They asked for the button so I delivered it\" and report no follow-up. This reflects a pure order-taker approach rather than customer obsession. The gap is absence of even basic clarifying questions at the individual task level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A sales team requested a new reporting dashboard for churn. After talking with a few reps I learned the real blocker was slow renewal approvals. I worked with the billing team to cut approval time instead of building the dashboard."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the sales team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the approval bottleneck data and they agreed to pilot the process change. Renewals improved 18% in the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Sales requested churn dashboard; uncovered slow renewal approvals as real issue",
+        "Coordinated with billing team to change process",
+        "Quote: \"I showed them the approval bottleneck data\"",
+        "Follow-up: 18% renewal improvement after cross-team fix"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a senior. The candidate uncovered that the requested dashboard would not address slow renewal approvals and instead drove a cross-team process change. They quote \"I showed them the approval bottleneck data\" and cite an 18% renewal lift. This demonstrates influence without authority and measurable outcome. The strength is connecting customer request to root cause across teams; the remaining gap is limited evidence of teaching others the same approach.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing asked for an extra field in the CRM. I added it and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the field help their campaign?"
+        },
+        {
+          "role": "candidate",
+          "text": "They asked for it so I delivered. Didn't track usage."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Added CRM field without validation",
+        "No cross-team coordination or outcome measurement",
+        "Quote: \"They asked for it so I delivered\"",
+        "Follow-up: No usage tracking"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a senior. The candidate added the requested CRM field without probing whether it would improve campaigns. They state \"They asked for it so I delivered\" and report no outcome tracking. This shows delivery focus rather than obsession with actual customer results. The gap is lack of both influence and any attempt to connect work to business impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team kept getting requests for custom one-off reports. I realized the real need was self-serve analytics. I coached two engineers on building a self-serve tool and changed our intake process so we only built reports when self-serve wasn't viable."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer preferred the quick wins. I paired them with a customer call so they saw the long-term pain and they shifted."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Shifted team from custom reports to self-serve analytics",
+        "Coached engineer via customer call exposure",
+        "Quote: \"I paired them with a customer call so they saw the long-term pain\"",
+        "Follow-up: New intake process reduced one-off work"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a manager. The candidate identified recurring report requests as a symptom and built a self-serve solution while coaching the team. They quote \"I paired them with a customer call so they saw the long-term pain\" and describe changing the intake process. This shows both customer focus and team development. The strength is creating leverage through process and coaching; the gap is missing org-level metrics on time saved.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Team delivered every feature request that came in. I tracked velocity but didn't question the requests."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any requests turn out to be the wrong thing?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably, but my job was to keep the team shipping."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Tracked velocity without challenging requests",
+        "No coaching on customer needs",
+        "Quote: \"My job was to keep the team shipping\"",
+        "Follow-up: No process change attempted"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a manager. The candidate focused on velocity and let the team fulfill requests without validation. They state \"My job was to keep the team shipping\" and describe no coaching or process change. This reflects management of output rather than outcomes. The gap is absence of any effort to develop the team's customer obsession skills."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Enterprise customers kept asking for on-prem deployment. After strategy reviews I realized the real need was data residency and control. We launched a new private cloud offering and phased out on-prem requests, which improved gross margin by 4 points while keeping those customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the board and product teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used customer interview data and margin modeling to show the trade-off and got approval to sunset on-prem."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Replaced on-prem requests with private cloud offering",
+        "Used customer data and margin modeling for strategic decision",
+        "Quote: \"I used customer interview data and margin modeling to show the trade-off\"",
+        "Follow-up: 4 point gross margin improvement at org level"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for an exec. The candidate recognized that on-prem requests were a proxy for data residency needs and shifted the entire offering to private cloud. They quote \"I used customer interview data and margin modeling to show the trade-off\" and cite a 4-point margin gain. This demonstrates long-term strategic judgment and business-level impact. The strength is trading off short-term requests for sustainable customer and financial outcomes; the gap is limited detail on how they handled internal resistance at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We built the features enterprise customers requested to close deals. I reviewed win rates quarterly."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did those features address the underlying strategic needs?"
+        },
+        {
+          "role": "candidate",
+          "text": "We trusted the account teams on what to build."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a customer came to you for something that wouldn't actually address their need...",
+        "Built requested features without strategic validation",
+        "Relied on account teams for direction",
+        "Quote: \"We trusted the account teams on what to build\"",
+        "Follow-up: No org-level pivot or trade-off analysis"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for an exec. The candidate defaulted to building whatever enterprise customers requested without questioning strategic fit. They state \"We trusted the account teams on what to build\" and describe only quarterly win-rate reviews. This shows reactive execution rather than customer-obsessed strategy. The gap is lack of any long-term thinking or willingness to say no at the business level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Probes beyond stated request",
+      "junior": "Asks clarifying questions on individual tickets",
+      "senior": "Uncovers root cause across teams",
+      "manager": "Coaches team to probe and changes intake process",
+      "exec": "Makes org-level offering trade-offs based on underlying needs"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Confirms fix with customer",
+      "senior": "Tracks 18% renewal lift",
+      "manager": "Reduces one-off work volume",
+      "exec": "Delivers 4-point margin improvement"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Direct explanation to requester",
+      "senior": "Shows data to stakeholders",
+      "manager": "Pairs engineer with customer exposure",
+      "exec": "Uses modeling to align board and product"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single ticket resolution",
+      "senior": "Cross-team process change",
+      "manager": "Team process and coaching",
+      "exec": "Business offering and margin shift"
+    }
+  ],
+  "kind": "lp"
+}

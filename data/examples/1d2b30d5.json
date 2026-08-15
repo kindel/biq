@@ -1,0 +1,295 @@
+{
+  "question": "It can be difficult to set goals for a team that are challenging, yet achievable. Tell me about a time when you hit the right balance. How did you approach setting the goals? What was the outcome?",
+  "competency": "Deliver Results (Goal Setting)",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I owned the on-call rotation metrics. I set a goal to reduce P99 latency by 15% in one quarter after talking to my mentor about what was realistic given the current baseline of 800ms."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide on 15%?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at the last two quarters of data, factored in the two new instances we were adding, and checked with the senior engineer on the team. We hit 17% reduction."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you have done if you missed it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have written up what slowed us down and adjusted the next quarter's target based on that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Candidate owned individual on-call metrics project",
+        "Used prior data + mentor input to pick 15% P99 reduction target",
+        "Hit 17%; described fallback plan if missed",
+        "Follow-up: How did you decide on 15%? \u2192 data + senior check",
+        "Follow-up: What if missed? \u2192 post-mortem and adjust next quarter"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for junior level. The candidate described owning an individual metric, using historical data and a quick mentor check to land on a 15% P99 reduction target, then delivering 17%. Quote: 'I looked at the last two quarters of data, factored in the two new instances.' This shows appropriate scope, coachability, and a simple learning loop. The lower answer below sets a goal with no data or review and treats the outcome as luck. Biggest gap in weak answers is absence of any method to choose the target.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me to improve the dashboard load time so I said we'd do it by 20% that quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you pick 20%?"
+        },
+        {
+          "role": "candidate",
+          "text": "It just sounded like a good stretch number. We ended up at 8% because other work came up."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "That goals can be hard to hit when priorities shift."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Goal handed down as 'improve dashboard'",
+        "Picked 20% because 'it sounded like a good stretch'",
+        "Missed at 8% due to shifting priorities",
+        "Follow-up: How did you pick 20%? \u2192 no data or review",
+        "Follow-up: What did you learn? \u2192 goals are hard when priorities change"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for junior level. The candidate accepted a vague goal, chose 20% with no supporting data or input, and missed at 8% while attributing it only to 'shifting priorities.' Quote: 'It just sounded like a good stretch number.' This shows no ownership of the target-setting process and no attempt to adjust or learn from the miss. The strong answer above used data and a mentor to set a calibrated target and described a concrete fallback."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Last year I led a cross-team effort to cut API error rate from 1.2% to 0.4%. I pulled baseline data from three services, ran a quick planning session with the owning teams, and landed on the 0.4% target after modeling the two biggest error sources."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to commit?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the shared customer impact and offered to take the first two fixes myself to prove the approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit 0.35% in six months and the model became the template for two other services."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Led cross-team API error reduction from 1.2% to 0.4%",
+        "Used multi-service data + joint planning session to set target",
+        "Influenced without authority by taking first fixes",
+        "Hit 0.35%; model reused by two other teams",
+        "Follow-up: How did you get commitment? \u2192 showed impact + offered to lead"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for senior level. The candidate drove a cross-team goal, used data from three services to set a 0.4% error target, and secured buy-in by taking early work themselves. Quote: 'I showed them the shared customer impact and offered to take the first two fixes.' They delivered 0.35% and created a reusable model. The lower answer sets an arbitrary team goal with no cross-team coordination or measurement. Biggest gap in weak answers is lack of influence or measurable outcome beyond the candidate's own team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team we needed to improve reliability and set a goal of 99.9% uptime for the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams need to help?"
+        },
+        {
+          "role": "candidate",
+          "text": "A little, but I mostly tracked it myself and we landed around 99.7%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you choose 99.9%?"
+        },
+        {
+          "role": "candidate",
+          "text": "It matched what I had seen at my last company."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Set 99.9% uptime goal for own team",
+        "No data or cross-team input on target",
+        "Landed at 99.7%; tracked mostly alone",
+        "Follow-up: Did other teams help? \u2192 minimal involvement",
+        "Follow-up: How did you choose 99.9%? \u2192 copied from prior company"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for senior level. The candidate set a 99.9% uptime target with no supporting data or cross-team alignment and delivered 99.7% while doing most tracking alone. Quote: 'It matched what I had seen at my last company.' This shows no attempt to influence beyond the immediate team or to calibrate the goal to current reality. The strong answer above used multi-team data and secured commitments to hit a measurable cross-team outcome."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I took over the platform team we were shipping on time but with high defect rates. I worked with each engineer to set individual goals tied to a team target of 30% fewer Sev-1 incidents while still meeting the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers thought the target was too aggressive so I paired them with a senior to review their first two quarters of incidents and let them propose the final number."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "Incidents dropped 34% and the two engineers later used the same approach on their own projects."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Set team target of 30% fewer Sev-1s while protecting roadmap",
+        "Co-created goals with each engineer; handled pushback by letting them propose final number",
+        "Delivered 34% reduction; two engineers later reused the method",
+        "Follow-up: How did you handle pushback? \u2192 data review + let them set final target",
+        "Follow-up: Outcome? \u2192 34% drop and method spread"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for manager level. The candidate set a team-wide 30% Sev-1 reduction goal while protecting the roadmap, then worked one-on-one with engineers to create ownership. Quote: 'I paired them with a senior to review their first two quarters of incidents and let them propose the final number.' The team hit 34% and the approach spread. The lower answer imposes a top-down goal without addressing underperformance or building team capability. Biggest gap in weak answers is treating goal setting as a manager-only exercise.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a team goal to reduce incidents by 25% and tracked it in our weekly meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when two people weren't contributing?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reminded them in the meeting and the number ended up at 18%."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust the goal?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I kept the same target for the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Announced 25% incident reduction goal",
+        "Tracked in weekly meeting; no individual ownership",
+        "Hit 18%; no adjustment after miss",
+        "Follow-up: What about non-contributors? \u2192 public reminder only",
+        "Follow-up: Did you adjust? \u2192 kept same target next quarter"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for manager level. The candidate announced a 25% incident reduction goal, tracked it publicly, and accepted 18% without coaching or adjustment. Quote: 'I reminded them in the meeting.' This shows no development of individuals or ownership of team outcomes. The strong answer above created per-engineer goals, handled resistance by building ownership, and saw the method spread beyond the original goal."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two years ago our business unit was missing revenue targets because of unreliable fulfillment. I set a three-year org goal to reach 99.5% fulfillment accuracy while growing volume 40%, then broke it into annual operating plan targets with clear trade-off decisions on where to invest."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the 40% volume growth was compatible?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled three scenarios with Finance and Ops and picked the middle path that required two new automation projects but no headcount increase."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome after year one?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit 99.2% accuracy and 38% volume growth; the model is now used for the next two business units."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Set three-year org goal: 99.5% fulfillment accuracy + 40% volume growth",
+        "Modeled three scenarios with Finance/Ops to choose feasible path",
+        "Required two automation projects, no headcount increase",
+        "Year one: 99.2% accuracy, 38% growth; model reused",
+        "Follow-up: How did you validate compatibility? \u2192 scenario modeling with partners",
+        "Follow-up: Year-one result? \u2192 near miss and org reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for exec level. The candidate set a multi-year org goal linking 99.5% fulfillment accuracy to 40% volume growth, then used cross-functional modeling to pick an achievable path that avoided headcount. Quote: 'I modeled three scenarios with Finance and Ops and picked the middle path.' Year one delivered 99.2% and 38% growth with the approach spreading. The lower answer sets a stretch target with no strategic modeling or trade-off analysis. Biggest gap in weak answers is absence of long-term leverage or business-level calibration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the organization we needed to hit 99.9% fulfillment next year because customers expect it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you model the volume impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We assumed the existing teams could absorb the growth."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actually happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "Accuracy reached 99.4% but volume only grew 12% because of capacity issues."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you set challenging yet achievable goals",
+        "Set 99.9% fulfillment target for the org",
+        "No modeling of volume or capacity trade-offs",
+        "Hit 99.4% accuracy but only 12% volume growth",
+        "Follow-up: Did you model volume impact? \u2192 assumed teams could absorb",
+        "Follow-up: What happened? \u2192 missed volume due to capacity"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for exec level. The candidate set a 99.9% fulfillment target with no scenario modeling or capacity trade-offs and delivered 99.4% accuracy at the cost of only 12% volume growth. Quote: 'We assumed the existing teams could absorb the growth.' This shows no strategic judgment on long-term feasibility or leverage. The strong answer above used multi-year modeling and cross-functional input to set a goal that balanced accuracy and growth."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Method for choosing target",
+      "junior": "Uses data + mentor input vs arbitrary number",
+      "senior": "Cross-team data + joint planning vs copied from prior role",
+      "manager": "Co-creates with engineers vs top-down announcement",
+      "exec": "Multi-year scenario modeling with partners vs assumption-based"
+    },
+    {
+      "signal": "Handling resistance or miss",
+      "junior": "Describes fallback adjustment vs no plan",
+      "senior": "Offers early work to build buy-in vs minimal coordination",
+      "manager": "Pairs for ownership vs public reminders only",
+      "exec": "Chooses feasible path after trade-offs vs no capacity analysis"
+    },
+    {
+      "signal": "Scope of outcome",
+      "junior": "Individual metric improvement vs vague team goal",
+      "senior": "Cross-team reuse of approach vs single-team result",
+      "manager": "Method spreads to other engineers vs no development",
+      "exec": "Org-level model adopted elsewhere vs isolated miss on volume"
+    },
+    {
+      "signal": "Evidence of calibration",
+      "junior": "Baseline + new capacity factored in vs stretch number chosen for sound",
+      "senior": "Three-service baseline + modeling vs prior-company benchmark",
+      "manager": "Individual goals tied to team target vs one number for all",
+      "exec": "Three scenarios with Finance/Ops vs single stretch target"
+    }
+  ],
+  "kind": "lp"
+}

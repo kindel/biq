@@ -1,0 +1,301 @@
+{
+  "question": "Give me an example of a mission or goal you didn't think was achievable. What was it and how did you help your team try to achieve it? Were you successful in the end? Looking back, would you have done anything differently?",
+  "competency": "Deliver Results",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had to migrate a legacy service to a new platform in four weeks with only two engineers. I didn't believe the timeline was realistic given the data volume."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when you realized the gap?"
+        },
+        {
+          "role": "candidate",
+          "text": "I broke the migration into daily checkpoints, owned the schema mapping myself, and flagged blockers in standup every day. We hit the date but with a rollback plan ready."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked for a third engineer earlier instead of assuming we could stretch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Goal you didn't think achievable and how you helped the team",
+        "Role: new grad on two-person migration team",
+        "Actions: daily checkpoints, owned schema work, daily blocker calls",
+        "Outcome: delivered on date with rollback ready",
+        "Quote: \"I would have asked for a third engineer earlier\"",
+        "Follow-up: Asked about early escalation; candidate described concrete ask to manager"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at junior level. The candidate owned a scoped piece of an aggressive migration and created visible daily progress mechanisms. Quote: \"I broke the migration into daily checkpoints.\" This shows local ownership and learning from the timeline pressure. The reflection on asking for help earlier demonstrates coachability. Biggest strength is translating an unrealistic goal into daily measurable steps rather than waiting for direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to finish a feature in two weeks that I thought needed a month. I worked late every night and we shipped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you involve the rest of the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly did the work myself because explaining it would have taken too long."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe start earlier next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Goal you didn't think achievable",
+        "Role: individual contributor on feature",
+        "Actions: worked late nights alone",
+        "Outcome: shipped but no team involvement mentioned",
+        "Quote: \"I mostly did the work myself\"",
+        "Follow-up: Probing team help; candidate stayed in solo execution mode"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at junior level. The candidate defaulted to solo heroics without attempting to involve teammates or surface the scope risk. Quote: \"I mostly did the work myself because explaining it would have taken too long.\" This shows limited ownership of the team outcome and no visible process for making progress visible. Biggest gap is absence of any attempt to break the problem down or ask for support before the deadline pressure hit."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing needed a new recommendation engine live for a campaign in six weeks. No one on my team had done real-time inference at scale before."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive progress across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I partnered with the infra team on capacity, ran a weekly sync with marketing, and had my engineers prototype two approaches in parallel. We launched on time with 18% lift."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have negotiated a phased rollout instead of all-or-nothing so we could de-risk earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Cross-team goal that looked impossible",
+        "Role: senior on recs team supporting marketing campaign",
+        "Actions: weekly cross-team syncs, parallel prototypes, capacity partnership",
+        "Outcome: on-time launch with measurable lift",
+        "Quote: \"I would have negotiated a phased rollout\"",
+        "Follow-up: Asked about influence without authority; candidate described concrete weekly rituals"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at senior level. The candidate created cross-team rituals and parallel exploration to reduce risk on an unfamiliar domain. Quote: \"I partnered with the infra team on capacity, ran a weekly sync with marketing.\" This produced a clear business outcome without requiring heroics. The retrospective shows strategic thinking about rollout. Biggest strength is converting an ambiguous goal into coordinated execution across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to support a new market launch in five weeks. I told leadership it was tight but we tried."
+        },
+        {
+          "role": "interviewer",
+          "text": "What concrete steps did you take with other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a few emails and focused on my team's part. We missed the date by a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Push back harder on the date up front."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Goal that looked unachievable",
+        "Role: senior supporting market launch",
+        "Actions: sent emails, stayed within own team",
+        "Outcome: missed date by a week",
+        "Quote: \"I sent a few emails and focused on my team's part\"",
+        "Follow-up: Probing cross-team influence; candidate showed minimal coordination"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at senior level. The candidate did not build the coordination mechanisms needed to surface and close gaps across teams. Quote: \"I sent a few emails and focused on my team's part.\" This kept impact local and resulted in a miss. The only reflection offered was pushing back earlier rather than improving execution. Biggest gap is lack of evidence that the candidate drove progress beyond their immediate team."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was asked to cut support costs 30% while maintaining SLA. I didn't think it was possible without hurting customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you develop the team through this?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had each manager own a cost lever, created a shared dashboard, and ran bi-weekly reviews focused on trade-offs. Two engineers built automation that became a template for other teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved customer support earlier to validate the impact of the changes we made."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Org-level cost goal that looked unrealistic",
+        "Role: manager of support engineering team",
+        "Actions: delegated levers to managers, shared dashboard, bi-weekly trade-off reviews",
+        "Outcome: hit 30% reduction while protecting SLA",
+        "Quote: \"I would have involved customer support earlier\"",
+        "Follow-up: Asked about developing others; candidate described manager ownership and reusable automation"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at manager level. The candidate created leverage by distributing ownership and building reusable mechanisms. Quote: \"I had each manager own a cost lever, created a shared dashboard.\" This produced both the target result and team capability growth. The reflection shows awareness of downstream impact. Biggest strength is turning an aggressive goal into a repeatable process rather than a one-time push.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership set a 30% cost reduction. I told my team we had to find savings and tracked it in our weekly meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you help your managers grow through this?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly reviewed their ideas myself to keep quality high."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for the team afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the number but people were burned out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Cost goal that felt impossible",
+        "Role: manager",
+        "Actions: tracked in weekly meeting, reviewed ideas personally",
+        "Outcome: hit target with burnout",
+        "Quote: \"I mostly reviewed their ideas myself\"",
+        "Follow-up: Probing people development; candidate stayed in review mode"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at manager level. The candidate retained decision rights instead of building team ownership. Quote: \"I mostly reviewed their ideas myself to keep quality high.\" This produced short-term compliance but burnout and no lasting capability. No evidence of creating leverage through others. Biggest gap is treating the goal as a tracking exercise rather than a development opportunity."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board asked us to reach $500M ARR in 18 months when we were at $180M and losing money. I did not see a path without major product and go-to-market changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What strategic choices did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reallocated 40% of engineering to a new self-serve product, changed the sales model to focus on mid-market, and set quarterly milestones that the whole company could see. We hit the target in 20 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have communicated the risk of the pivot more explicitly to the board so expectations stayed realistic."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Company-level growth goal that looked unrealistic",
+        "Role: exec leading product and engineering",
+        "Actions: reallocated 40% engineering, shifted sales model, visible quarterly milestones",
+        "Outcome: reached target in 20 months",
+        "Quote: \"I would have communicated the risk of the pivot more explicitly\"",
+        "Follow-up: Asked about long-term trade-offs; candidate described board communication and resource shifts"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at exec level. The candidate made clear portfolio and go-to-market bets with visible milestones that aligned the company. Quote: \"I reallocated 40% of engineering to a new self-serve product.\" This produced a near-miss on an ambitious target while maintaining organizational focus. The retrospective shows judgment on stakeholder communication. Biggest strength is converting an existential goal into a set of decisive, measurable bets.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted $500M in 18 months. I told them it was aggressive and asked the teams to work harder."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resource or strategy shifts did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We increased hiring and added more OKRs. We ended up at $320M."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have pushed the board on a more realistic target."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Aggressive company growth goal",
+        "Role: exec",
+        "Actions: told teams to work harder, increased hiring, added OKRs",
+        "Outcome: missed by a wide margin",
+        "Quote: \"I told them it was aggressive and asked the teams to work harder\"",
+        "Follow-up: Probing strategic judgment; candidate stayed at communication level"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at exec level. The candidate did not make the portfolio or model changes required to close the gap. Quote: \"I told them it was aggressive and asked the teams to work harder.\" This left the organization executing the same plan at higher intensity. No evidence of decisive reallocation or new bets. Biggest gap is absence of strategic trade-offs or new mechanisms to pursue the goal."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task breakdown and daily visibility",
+      "senior": "Cross-team coordination and parallel exploration",
+      "manager": "Delegation to managers plus reusable mechanisms",
+      "exec": "Portfolio reallocation and company-wide milestones"
+    },
+    {
+      "signal": "Response to unrealistic goal",
+      "junior": "Creates personal checkpoints",
+      "senior": "Builds rituals across teams",
+      "manager": "Distributes levers and reviews trade-offs",
+      "exec": "Makes structural bets with visible progress"
+    },
+    {
+      "signal": "Team development",
+      "junior": "Asks for help when stuck",
+      "senior": "Enables others through shared process",
+      "manager": "Grows managers via ownership",
+      "exec": "Aligns entire org on milestones"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Would ask for resources earlier",
+      "senior": "Would phase the rollout",
+      "manager": "Would involve downstream teams sooner",
+      "exec": "Would set expectations with board earlier"
+    },
+    {
+      "signal": "Outcome realism",
+      "junior": "Local delivery with rollback ready",
+      "senior": "On-time launch with measurable lift",
+      "manager": "Target hit plus reusable automation",
+      "exec": "Near-miss on ambitious target after pivot"
+    }
+  ],
+  "kind": "lp"
+}

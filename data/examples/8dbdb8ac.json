@@ -1,0 +1,229 @@
+{
+  "question": "Describe a person who struggled to get promoted under your leadership and how you helped facilitate their success.",
+  "competency": "Hire and Develop the Best",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A new engineer on my team was missing deadlines on small features. I paired with them on code reviews twice a week and shared my template for breaking down tasks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for them?"
+        },
+        {
+          "role": "candidate",
+          "text": "They started hitting their estimates and got positive feedback in the next cycle. They still aren't promoted but their manager noted the improvement."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a person who struggled to get promoted under your leadership...",
+        "- Junior IC helped peer with task breakdown and reviews",
+        "- Outcome: peer improved estimates, got positive feedback",
+        "quote: \"I paired with them twice a week\"",
+        "Follow-up: What changed? They hit estimates but not yet promoted"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate took ownership of helping a peer improve execution through direct pairing and templates, which produced measurable local improvement in estimates. This shows coachability focus and willingness to invest in others even without formal authority. The story stays within individual scope as expected. Biggest strength is the concrete action of weekly pairing that directly tied to the peer's better results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone on my project kept getting feedback that their designs were incomplete. I told them to ask our lead for help."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I was busy with my own tickets so I just pointed them to the lead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a person...",
+        "- Candidate directed struggling peer to lead instead of engaging",
+        "- No personal actions taken due to own workload",
+        "quote: \"I was busy with my own tickets\"",
+        "Follow-up: Did you do anything? No, just pointed elsewhere"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate avoided any direct investment in the peer's development and defaulted to redirecting responsibility. This shows limited ownership even at the individual-contributor level where helping teammates is expected. The outcome is absent because no actions were taken. Biggest gap is the lack of personal effort to coach or provide concrete support."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A mid-level engineer on a cross-team project wasn't getting promoted because their impact was seen as narrow. I sponsored them for a stretch assignment on another team and gave monthly feedback sessions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They delivered a feature used by two teams and got promoted the next cycle. I had to negotiate the stretch assignment with the other team's manager."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a person who struggled...",
+        "- Senior helped peer expand scope via stretch assignment",
+        "- Monthly feedback and cross-team negotiation",
+        "quote: \"I sponsored them for a stretch assignment\"",
+        "Follow-up: Result? Promoted after delivering cross-team feature"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used influence without authority to secure a stretch assignment and provided ongoing feedback, directly expanding the person's scope and leading to promotion. Story includes cross-team coordination and clear metrics of success. This demonstrates the expected level of impact beyond their own team. Biggest strength is the combination of sponsorship and sustained coaching that produced a promotion outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "One engineer on my project was passed over twice. I gave them the promotion rubric and suggested they work on it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or remove blockers?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked in once but didn't have time to do more since I was leading two other projects."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a person...",
+        "- Shared rubric but no sustained support or blocker removal",
+        "- Limited follow-up due to own workload",
+        "quote: \"I checked in once but didn't have time\"",
+        "Follow-up: Did you remove blockers? No sustained action"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate provided only passive guidance without investing time to remove obstacles or create opportunities. Story lacks evidence of influence across teams or measurable development results. This falls short of the cross-team impact expected at senior level. Biggest gap is treating development as a one-time handoff rather than active sponsorship."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A senior engineer on my team was repeatedly told their leadership skills were insufficient for promotion. I created a development plan with specific projects where they led two juniors and ran a process improvement."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were promoted six months later. I also adjusted their scope to free time for the leadership work and tracked progress in bi-weekly 1:1s."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a person who struggled...",
+        "- Manager built formal plan with leadership projects",
+        "- Adjusted scope and tracked in 1:1s",
+        "quote: \"I created a development plan with specific projects\"",
+        "Follow-up: Outcome? Promoted after six months"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate owned the direct report's promotion trajectory by designing targeted leadership opportunities, removing scope constraints, and maintaining structured tracking. Result was a clear promotion. This shows the expected focus on developing people and creating leverage through the team. Biggest strength is the combination of plan, scope adjustment, and measurable outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my reports wasn't promoted because they lacked visibility. I encouraged them to present more in team meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "What support did you provide?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in their review but didn't change their projects or give extra coaching time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a person...",
+        "- Gave generic advice without structural support",
+        "- No project changes or dedicated coaching",
+        "quote: \"I mentioned it in their review\"",
+        "Follow-up: What support? No changes to scope or coaching"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate offered only high-level encouragement without investing in concrete development actions or adjusting work to build the needed skills. Story shows no ownership of team outcomes or underperformance handling. This is below the level of actively developing people expected from a manager. Biggest gap is absence of structured support or accountability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "An org of 80 engineers had very low promotion rates at L6 because calibration was too narrow. I changed the promo committee process to include cross-org reviewers and created a sponsorship program for high-potential L5s."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "L6 promotions increased 40% the next cycle while maintaining bar. I tracked the numbers quarterly and adjusted the program based on feedback from the first cohort."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a person who struggled...",
+        "- Exec changed org-wide promo process and added sponsorship",
+        "- 40% increase in L6 promotions",
+        "quote: \"I changed the promo committee process\"",
+        "Follow-up: Impact? 40% increase while holding bar"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate identified a systemic barrier to promotions, redesigned the process at org scale, and implemented a sponsorship program with measurable results. Story shows long-term thinking and trade-off decisions around calibration. This demonstrates strategic leverage rather than individual heroics. Biggest strength is the org-level change that produced sustained promotion gains.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Several directors told me their strong engineers weren't getting promoted. I sent a note reminding everyone of the promotion criteria."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any processes?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I left it to the directors to handle locally."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a person...",
+        "- Sent reminder note but no process changes",
+        "- Delegated entirely without follow-up",
+        "quote: \"I sent a note reminding everyone\"",
+        "Follow-up: Did you change processes? No"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate addressed a clear org-level issue with only a one-time communication and no structural intervention. Story lacks evidence of strategic judgment or long-term ownership of talent outcomes. This falls short of the expected leverage at executive level. Biggest gap is the absence of any systemic action or measurement."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of leadership",
+      "junior": "Peer-level help on tasks",
+      "senior": "Cross-team sponsorship",
+      "manager": "Direct-report development plans",
+      "exec": "Org-wide process redesign"
+    },
+    {
+      "signal": "Use of metrics",
+      "junior": "Local estimate improvement",
+      "senior": "Promotion achieved",
+      "manager": "Six-month promotion with tracking",
+      "exec": "40% L6 increase tracked quarterly"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "None shown",
+      "senior": "Negotiated stretch assignment",
+      "manager": "Adjusted report scope",
+      "exec": "Redesigned calibration committees"
+    },
+    {
+      "signal": "Sustained investment",
+      "junior": "Weekly pairing",
+      "senior": "Monthly feedback sessions",
+      "manager": "Bi-weekly 1:1s plus scope change",
+      "exec": "Quarterly tracking and cohort adjustments"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Peer improved but not promoted",
+      "senior": "Promotion occurred",
+      "manager": "Promotion occurred with plan",
+      "exec": "Sustained org-level rate increase"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,294 @@
+{
+  "question": "Often, we must make decisions as a group. Give me an example of a time you committed to a group decision even though you disagreed. What factors led you to commit to the decision? Would you make the same decision now?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the team chose to use a simpler logging approach instead of the structured one I proposed. I still thought mine was better for long-term debugging."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you commit?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM needed to ship in two weeks and my approach would have added four days of work. I implemented the simpler version and documented where we could upgrade later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes. We shipped on time and the logs were sufficient for the first six months. I learned to bring trade-off data earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Junior dev on first project; team picked simpler logging over structured approach candidate proposed",
+        "- Committed because of ship date pressure (2 weeks vs +4 days)",
+        "- Outcome: shipped on time; logs sufficient for 6 months; documented upgrade path",
+        "Quote: 'I implemented the simpler version and documented where we could upgrade later.'",
+        "Follow-up: Would you do it again? Yes, with note on bringing data earlier."
+      ],
+      "raiseFeedback": "Raises the bar for Have Backbone; Disagree and Commit at junior level. Candidate described committing to a simpler logging approach despite personal preference because the two-week ship date made the extra four days untenable. The story stayed within individual scope yet showed clear ownership by documenting an upgrade path and later reflecting on bringing data earlier. This matches the level expectation of coachability and local ownership rather than heroics. The decision to commit was tied to a concrete business constraint rather than vague deference. Biggest strength is the ability to state the disagreement, accept the outcome, and still deliver without lingering resentment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a disagreement on whether to add a feature. I thought it was unnecessary but the team voted to include it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you committed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just did the work. It shipped and nothing bad happened."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you make the same decision now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I guess so. The team decided."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Vague example about adding a feature candidate thought was unnecessary",
+        "- Only action described is 'I just did the work'",
+        "- No metrics, trade-offs, or reflection on why the decision was accepted",
+        "Quote: 'I guess so. The team decided.'",
+        "Follow-up: Would you do it again? Response shows passive compliance without learning."
+      ],
+      "lowerFeedback": "Lowers the bar for Have Backbone; Disagree and Commit at junior level. The candidate gave only a vague story about implementing a feature they disagreed with and offered no factors that drove the commitment beyond 'the team decided.' There is no evidence of weighing trade-offs or reflecting on whether the choice was right after the fact. At junior level we expect at least individual ownership and some articulation of why they moved forward. The answer demonstrates compliance rather than thoughtful commitment. Biggest gap is absence of any learning or concrete outcome that shows the candidate engaged with the decision."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams disagreed on the rollout order for a shared service migration. My team wanted to go last to reduce risk; the other team wanted us to go first."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you commit?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had cross-team dependency data showing the other team's service was more stable. I agreed to go first after we negotiated extra monitoring and rollback support from platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes. We caught two issues early that helped the other team and the migration finished two weeks ahead of the original plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Senior engineer; cross-team migration order dispute",
+        "- Committed after reviewing dependency data and securing monitoring/rollback support",
+        "- Outcome: caught issues early; migration finished 2 weeks ahead",
+        "Quote: 'I agreed to go first after we negotiated extra monitoring and rollback support from platform.'",
+        "Follow-up: Would you do it again? Yes, with measurable schedule gain."
+      ],
+      "raiseFeedback": "Raises the bar for Have Backbone; Disagree and Commit at senior level. Candidate described negotiating monitoring support before agreeing to lead a migration despite preferring to go last, using cross-team dependency data as the deciding factor. The story shows influence without authority and a clear outcome of finishing two weeks early. This meets the expectation of cross-team impact and concrete metrics rather than just personal preference. The commitment was conditional on risk mitigation rather than simple concession. Biggest strength is turning disagreement into a negotiated win that benefited the broader migration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing wanted a different UI flow. I disagreed but they had stakeholder backing so we went with it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you push back with data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned my concerns in the meeting but didn't prepare numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably. They had the final say."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Senior candidate; disagreed with marketing on UI flow",
+        "- Only action: 'mentioned my concerns in the meeting'",
+        "- No data, no negotiation, no post-decision reflection",
+        "Quote: 'They had the final say.'",
+        "Follow-up: Would you do it again? Passive acceptance without learning."
+      ],
+      "lowerFeedback": "Lowers the bar for Have Backbone; Disagree and Commit at senior level. The candidate described a cross-team UI decision but offered no data or negotiation attempt, only noting that marketing had stakeholder backing. At senior level we expect evidence of influence without authority and clear articulation of trade-offs. The answer shows neither, only passive acceptance. There is also no reflection on whether the decision proved right or wrong after the fact. Biggest gap is lack of any attempt to shape the outcome or document the disagreement productively."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to pause a project to fix tech debt while leadership pushed for a new feature. I disagreed with the feature priority."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you commit?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the debt impact data to leadership, then aligned the team on a reduced scope that shipped the feature while carving out two weeks for debt work afterward."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes. The feature launched and we reduced incident rate by 30% in the following quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Manager; team vs leadership on tech debt vs new feature",
+        "- Committed after presenting data and negotiating reduced scope plus dedicated debt time",
+        "- Outcome: feature launched; 30% incident reduction next quarter",
+        "Quote: 'aligned the team on a reduced scope that shipped the feature while carving out two weeks for debt work afterward.'",
+        "Follow-up: Would you do it again? Yes, tied to measurable reliability gain."
+      ],
+      "raiseFeedback": "Raises the bar for Have Backbone; Disagree and Commit at manager level. Candidate presented debt impact data to leadership, then aligned their own team on a negotiated reduced scope plus dedicated debt time. The story demonstrates creating leverage through the team and owning the team outcome rather than heroically doing the work alone. A 30% incident reduction provides concrete evidence the commitment was sound. This matches the expectation of handling team-level trade-offs and developing shared ownership. Biggest strength is showing how the manager turned personal disagreement into a plan the team could execute and measure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership decided on a direction my team didn't like. I told the team we had to follow it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle team concerns?"
+        },
+        {
+          "role": "candidate",
+          "text": "I relayed the decision and asked them to focus on execution."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, because it came from above."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Manager; relayed leadership decision without context or negotiation",
+        "- Action limited to 'relayed the decision and asked them to focus on execution'",
+        "- No data, no team alignment effort, no outcome metrics",
+        "Quote: 'Yes, because it came from above.'",
+        "Follow-up: Would you do it again? Shows top-down compliance without leadership."
+      ],
+      "lowerFeedback": "Lowers the bar for Have Backbone; Disagree and Commit at manager level. The candidate described simply relaying a leadership decision to the team with no attempt to surface data or negotiate scope. At manager level we look for how the person develops the team and owns outcomes, not just passes messages. The answer shows neither. There is also no evidence the manager helped the team understand the rationale or measure results afterward. Biggest gap is treating commitment as top-down enforcement rather than active leadership of the decision."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted to acquire a company that overlapped with our roadmap. I believed organic build was lower risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove your commitment?"
+        },
+        {
+          "role": "candidate",
+          "text": "After modeling both paths I saw the acquisition gave us two-year speed advantage in a market where timing mattered more than cost. I committed and reallocated two product teams to integration."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes. We reached the target market segment 18 months earlier than the build path and retained 85% of the acquired team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Exec; board push for acquisition vs organic build",
+        "- Committed after modeling speed vs cost; reallocated two teams to integration",
+        "- Outcome: reached segment 18 months earlier; 85% team retention",
+        "Quote: 'I committed and reallocated two product teams to integration.'",
+        "Follow-up: Would you do it again? Yes, with clear market-timing metric."
+      ],
+      "raiseFeedback": "Raises the bar for Have Backbone; Disagree and Commit at exec level. Candidate modeled both acquisition and organic paths, then committed to the board's preference after determining speed-to-market outweighed build risk, reallocating two teams accordingly. The story shows strategic judgment under ambiguity and long-term thinking with an 18-month market advantage and 85% retention as outcomes. This fits the expectation of org-level trade-offs rather than personal or team-level concerns. Biggest strength is the willingness to change resource allocation based on updated analysis instead of digging in.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board chose an acquisition I had reservations about. I expressed my view then supported the decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed your view?"
+        },
+        {
+          "role": "candidate",
+          "text": "The vote was clear so I moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, once the decision is made you support it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Often we must make decisions as a group...",
+        "- Exec; board acquisition decision",
+        "- No modeling or data presented; only 'expressed my view then supported'",
+        "- No reallocation details or post-decision metrics",
+        "Quote: 'The vote was clear so I moved on.'",
+        "Follow-up: Would you do it again? Generic support without strategic rationale."
+      ],
+      "lowerFeedback": "Lowers the bar for Have Backbone; Disagree and Commit at exec level. The candidate described expressing reservations about a board acquisition but provided no modeling, trade-off analysis, or subsequent actions to shape integration. At exec level we expect evidence of strategic judgment and long-term leverage, not just acceptance after a vote. The answer contains neither. There is also no reflection on whether the acquisition delivered the intended value. Biggest gap is absence of any org-level impact or resource decision tied to the commitment."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Data vs intuition in decision",
+      "junior": "Bring timing data to accept simpler approach",
+      "senior": "Cross-team dependency data to negotiate monitoring",
+      "manager": "Debt impact data to secure scope carve-out",
+      "exec": "Speed-to-market model to accept acquisition"
+    },
+    {
+      "signal": "Scope of commitment",
+      "junior": "Individual task delivery and documentation",
+      "senior": "Cross-team migration order with negotiated support",
+      "manager": "Team scope reduction plus future debt allocation",
+      "exec": "Reallocation of two product teams to integration"
+    },
+    {
+      "signal": "Post-decision reflection",
+      "junior": "Logs sufficient for 6 months; would bring data earlier",
+      "senior": "Caught issues early; finished 2 weeks ahead",
+      "manager": "30% incident reduction next quarter",
+      "exec": "Reached segment 18 months earlier; 85% retention"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Documented upgrade path for future team",
+      "senior": "Secured platform monitoring and rollback",
+      "manager": "Aligned team on reduced scope",
+      "exec": "Changed resource allocation after analysis"
+    }
+  ],
+  "kind": "lp"
+}

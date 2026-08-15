@@ -1,0 +1,238 @@
+{
+  "question": "Give an example of taking on responsibilities outside your job description because the situation required it.",
+  "competency": "Adaptability, Flexibility & Change",
+  "principle": "Adaptability, Flexibility & Change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was short a QA person for two weeks so I took over running the nightly regression suite and triaging bugs even though I'm a backend dev. I asked the senior QA for a quick walkthrough, then owned the process until they returned."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on your own deliverables?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shifted two of my features by three days and told my manager upfront. The release still shipped on time because we caught two critical bugs early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: Backend dev, 1.5 YOE",
+        "Situation: QA gap for two weeks; volunteered to run regression and triage",
+        "Actions: Got quick coaching from senior QA, owned the suite, shifted own features",
+        "Outcome: Caught two critical bugs; release on time; manager informed",
+        "Quote: \"I shifted two of my features by three days and told my manager upfront.\"",
+        "Follow-up: Impact on own work? Said communicated trade-off and release still landed."
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a junior. The candidate owned a clear gap outside their role, sought coaching, and protected the release while transparently managing their own work. The quote about shifting features and informing the manager shows ownership without heroics. This matches the level expectation of individual scope and learning from others. Biggest strength is the proactive communication of trade-offs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Once our PM was out so I helped update the Jira board for a sprint. It was only a couple of tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How long did this last and what happened to your normal work?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just that one day. I finished my tickets the next week."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: Junior backend dev",
+        "Situation: PM absent one day; updated Jira board",
+        "Actions: Moved a couple tickets",
+        "Outcome: Finished own work the following week",
+        "Quote: \"It was only a couple of tickets.\"",
+        "Follow-up: Duration and impact? One day only; no visible trade-off or learning."
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a junior. The example is minimal, one-off, and stays close to coordination rather than real responsibility. No evidence of learning, sustained ownership, or communicating impact on their own work. The story does not show the candidate stretching beyond a trivial task. Biggest gap is lack of scope or follow-through."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our mobile team lost their lead mid-release. I stepped in to run their weekly syncs and unblock API contracts even though I'm on backend platform. I coordinated with three other teams to adjust timelines."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We avoided a two-week slip on the launch. I also trained one of their senior engineers to take over the syncs after four weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: Senior backend, 5 YOE",
+        "Situation: Mobile lead departure during release; stepped into coordination role",
+        "Actions: Ran syncs, unblocked contracts, aligned three teams, trained replacement",
+        "Outcome: Prevented two-week slip; handed off after four weeks",
+        "Quote: \"I also trained one of their senior engineers to take over the syncs after four weeks.\"",
+        "Follow-up: Metrics? Launch protected and knowledge transferred."
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a senior. The candidate took cross-team ownership during an ambiguous gap, delivered measurable timeline protection, and built lasting capability in another team. The training hand-off shows influence without authority. This aligns with senior expectations of cross-team impact and raising others. Biggest strength is the combination of short-term execution and knowledge transfer.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our ops team was overloaded so I started monitoring the shared dashboard and paging them when alerts fired. I did this for about a month until they hired someone."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect your roadmap commitments?"
+        },
+        {
+          "role": "candidate",
+          "text": "A little, but my manager said it was fine so I kept doing it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: Senior backend",
+        "Situation: Ops overload; monitored dashboard and paged team",
+        "Actions: Did this for a month until hire",
+        "Outcome: Ops stabilized",
+        "Quote: \"My manager said it was fine so I kept doing it.\"",
+        "Follow-up: Roadmap impact? Minimal acknowledgment; no proactive trade-off management."
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a senior. The candidate absorbed ongoing work without negotiating scope or protecting their primary deliverables. No cross-team influence or measurable outcome beyond \"ops stabilized.\" The reliance on manager approval shows limited ownership. Biggest gap is absence of strategic trade-off or lasting improvement."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When two of my engineers left in the same quarter I personally ran the on-call rotation and handled escalations for six weeks while still leading the team. I also created a lightweight runbook so the remaining engineers could rotate without me."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team feel about the load?"
+        },
+        {
+          "role": "candidate",
+          "text": "Burnout risk was high so I reduced scope on two projects and got explicit buy-in from stakeholders before committing the team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: Engineering manager, 8 YOE",
+        "Situation: Two engineers departed same quarter; manager covered on-call and escalations",
+        "Actions: Ran rotation six weeks, wrote runbook, reduced project scope with stakeholder agreement",
+        "Outcome: Team avoided burnout; coverage maintained",
+        "Quote: \"I reduced scope on two projects and got explicit buy-in from stakeholders before committing the team.\"",
+        "Follow-up: Team load? Addressed burnout risk through scope reduction."
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a manager. The candidate absorbed operational ownership during headcount shock, protected the team through scope negotiation, and left behind a runbook. The stakeholder buy-in shows leverage and team outcome focus. This meets manager-level expectations of owning team results under pressure. Biggest strength is balancing personal stretch with team sustainability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our design partner was on leave so I started reviewing their PRDs for two months. I just added it to my weekly one-on-ones."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you stop doing to make room?"
+        },
+        {
+          "role": "candidate",
+          "text": "I worked a few extra hours a week until they returned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: Engineering manager",
+        "Situation: Design partner leave; reviewed PRDs for two months",
+        "Actions: Added to one-on-ones",
+        "Outcome: Coverage provided",
+        "Quote: \"I worked a few extra hours a week until they returned.\"",
+        "Follow-up: Trade-offs? Only personal hours; no team or stakeholder adjustment."
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a manager. The example shows personal heroics without any delegation, scope negotiation, or team leverage. No evidence of developing others or protecting team capacity. The \"extra hours\" approach signals lack of systemic thinking. Biggest gap is failure to create leverage through the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the acquisition we had to integrate two conflicting promotion processes across 400 people. I personally led the combined calibration sessions for the first two quarters while building a new framework with HR and finance. We rolled it out globally and reduced calibration time by 30%."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the biggest trade-off you made?"
+        },
+        {
+          "role": "candidate",
+          "text": "I deprioritized two platform investments for six months and communicated the decision to the board with a clear recovery plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: VP Engineering, post-acquisition",
+        "Situation: Conflicting promotion processes across 400 people",
+        "Actions: Led calibrations two quarters, co-created new framework with HR/finance, rolled out globally",
+        "Outcome: 30% reduction in calibration time",
+        "Quote: \"I deprioritized two platform investments for six months and communicated the decision to the board with a clear recovery plan.\"",
+        "Follow-up: Trade-off? Explicit platform delay with board-level recovery plan."
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for an exec. The candidate owned an org-level process integration under high ambiguity, delivered measurable efficiency, and made a deliberate long-term trade-off with board transparency. The story shows strategic judgment and leverage at scale. This matches exec expectations of business-level impact and long-term thinking. Biggest strength is the combination of short-term ownership and structural change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the merger I sat in on a few finance meetings to understand their budgeting model. I shared notes with my team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this change any decisions at your level?"
+        },
+        {
+          "role": "candidate",
+          "text": "It helped us align our headcount asks for the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of taking on responsibilities outside your job description because the situation required it.",
+        "Role: VP Engineering",
+        "Situation: Post-merger finance meetings",
+        "Actions: Attended meetings and shared notes",
+        "Outcome: Better headcount alignment next quarter",
+        "Quote: \"It helped us align our headcount asks for the next quarter.\"",
+        "Follow-up: Decision impact? Tactical only; no org-level change or trade-offs."
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for an exec. The example stays at information gathering with no evidence of org-level ownership or strategic trade-offs. No measurable business impact or long-term framework created. The outcome is limited to one quarter's headcount ask. Biggest gap is absence of high-ambiguity leadership or leverage at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change handled",
+      "junior": "Individual task or short gap",
+      "senior": "Cross-team coordination with measurable outcome",
+      "manager": "Team capacity and process under pressure",
+      "exec": "Org-level process with board-visible trade-offs"
+    },
+    {
+      "signal": "Ownership style",
+      "junior": "Seeks coaching then executes",
+      "senior": "Influences without authority and transfers knowledge",
+      "manager": "Protects team while personally covering gaps",
+      "exec": "Makes deliberate long-term trade-offs with clear communication"
+    },
+    {
+      "signal": "Evidence of learning or leverage",
+      "junior": "Asks for walkthrough and applies it",
+      "senior": "Trains replacement or leaves runbook",
+      "manager": "Creates runbook and negotiates scope",
+      "exec": "Builds new framework and reduces cycle time 30%"
+    },
+    {
+      "signal": "Trade-off management",
+      "junior": "Tells manager about shifted features",
+      "senior": "Aligns multiple teams on timelines",
+      "manager": "Reduces project scope with stakeholder buy-in",
+      "exec": "Deprioritizes platform work with board recovery plan"
+    }
+  ],
+  "kind": "competency"
+}

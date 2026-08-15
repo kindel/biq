@@ -1,0 +1,269 @@
+{
+  "question": "Describe a situation where you had to make an unpopular decision as a leader. How did you communicate it and manage the response?",
+  "competency": "Leadership & Influence",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project I decided we should stop using the quick-and-dirty logging library we had picked and switch to the standard one. Two teammates pushed back because it meant changing five files."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a short doc with the two risks and sent it in Slack, then asked each person what would make the change easier. We agreed on a one-day spike and did it together."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate chose to standardize logging on a small feature.",
+        "Action: shared one-page tradeoff note, asked for input on rollout.",
+        "Quote: \"I asked each person what would make the change easier.\"",
+        "Outcome: team completed change in one day together.",
+        "Follow-up: \"What did you learn from their initial resistance?\" - Candidate said they now default to writing the tradeoff before announcing."
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a small-scope decision that affected only their immediate work and handled resistance by sharing reasoning and inviting input on execution. The story shows clear communication and willingness to adjust the rollout based on teammate feedback. The outcome stayed local but the candidate demonstrated ownership instead of deferring to the team. Biggest strength is the explicit step of asking others how to reduce friction rather than defending the decision in isolation.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "I told the team we had to add unit tests to every new function even though it would slow us down. They were annoyed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you explain it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just said it was the right thing to do and moved on. A week later two people still weren't doing it so I reminded them in standup."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate mandated unit tests without prior discussion.",
+        "Action: stated the rule and later reminded in standup.",
+        "Quote: \"I just said it was the right thing to do and moved on.\"",
+        "Outcome: compliance remained partial after one week.",
+        "Follow-up: \"Did anyone tell you why they disagreed?\" - Candidate could not recall specific objections."
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate announced a process change that directly affected teammates' daily work but provided no reasoning or opportunity for input. When resistance continued, the response was limited to public reminders rather than one-on-one problem solving. The story shows the decision stayed individual but lacked any attempt to understand or address the source of pushback. Biggest gap is absence of communication or adjustment after the initial announcement."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "I pushed to deprecate an internal API two teams still used because it blocked a required security upgrade. Both teams objected in the design review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled separate 30-minute calls with each lead, shared the security deadline and migration cost estimate, then offered to pair on the migration for the first service. One team accepted; we shipped their migration in three weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate deprecated shared internal API for security reasons.",
+        "Action: 1:1s with affected leads, offered paired migration support.",
+        "Quote: \"I offered to pair on the migration for the first service.\"",
+        "Outcome: one team migrated in three weeks; second team followed later.",
+        "Follow-up: \"How did you decide the security deadline was non-negotiable?\" - Candidate referenced prior incident and risk assessment."
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate made a cross-team decision with measurable downstream cost and addressed resistance through direct conversations plus concrete help rather than broadcast announcements. The story includes a clear tradeoff (security vs. short-term effort) and willingness to absorb some of the migration work. Influence was exercised without authority by offering paired support. Biggest strength is turning initial objections into a joint plan on at least one team.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "I decided to change the review process so all changes needed two approvers. Other teams complained it would slow them down."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond to the complaints?"
+        },
+        {
+          "role": "candidate",
+          "text": "I posted the new rule in the engineering channel and said it was required for audit. After two weeks the volume of complaints dropped so I considered it resolved."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate changed code review policy affecting multiple teams.",
+        "Action: announced in channel and cited audit requirement.",
+        "Quote: \"After two weeks the volume of complaints dropped so I considered it resolved.\"",
+        "Outcome: complaints subsided but no evidence of actual compliance or mitigation.",
+        "Follow-up: \"Did you measure review time before and after?\" - Candidate had not."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate imposed a cross-team process change but treated communication as a one-way announcement and measured success by reduced noise rather than adoption or impact. No attempt was made to understand specific team constraints or offer mitigation. The decision had cross-team scope yet the response stayed passive after the initial post. Biggest gap is lack of follow-through or adjustment once objections surfaced."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "I had to reallocate two senior engineers from feature work to platform stability after repeated outages. The feature team pushed back hard on velocity."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I held a team meeting, showed the outage data and customer impact, then asked the two engineers to present their proposed platform fixes. I also committed to shielding the rest of the team from new platform tickets for the quarter. Velocity recovered in the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate moved two engineers to platform work after outages.",
+        "Action: shared data in team meeting, asked engineers to present plan, protected feature velocity.",
+        "Quote: \"I committed to shielding the rest of the team from new platform tickets.\"",
+        "Outcome: velocity recovered in following sprint.",
+        "Follow-up: \"What happened to the two engineers' career goals?\" - Candidate discussed the move with them first and tied it to growth in reliability."
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate made a team-level resource decision that directly reduced feature output and addressed resistance by surfacing data, involving the affected engineers in solution design, and protecting the broader team's metrics. The story shows ownership of team outcomes while still supporting individual development. Communication combined transparency with concrete mitigation. Biggest strength is linking the unpopular move to both customer impact and engineer growth.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "I moved headcount from the mobile team to web because web had more revenue. The mobile team was upset about losing people."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the mobile manager in a 1:1 and asked them to handle the messaging. A month later two people on mobile had already started looking for new roles."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate reallocated headcount based on revenue.",
+        "Action: delegated communication to direct manager.",
+        "Quote: \"I told the mobile manager in a 1:1 and asked them to handle the messaging.\"",
+        "Outcome: attrition risk appeared within a month.",
+        "Follow-up: \"Did you meet with the mobile team yourself?\" - Candidate did not."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate made a team-impacting resource decision but delegated both the rationale and the emotional labor of communication to another manager. No direct engagement occurred with the affected team, and early signs of attrition were noted without intervention. The story shows the decision was owned at the manager level yet the response lacked transparency or support for the losing team. Biggest gap is absence of direct leadership communication when the decision was most visible."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "I decided to sunset an entire product line that still had 40 customers because it was consuming disproportionate support and slowing two strategic bets. The customer-success and sales teams were strongly opposed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage the response across the company?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a memo that included the financials, support load, and the two bets we were delaying. I then met with the heads of CS and sales, offered a six-month transition plan with dedicated resources, and asked them to co-own the customer communications. We retained 32 customers on the new platform and freed 18 engineers for the strategic work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate sunset entire product line for strategic focus.",
+        "Action: memo with data, joint planning with CS and sales leads, six-month transition with resources.",
+        "Quote: \"I asked them to co-own the customer communications.\"",
+        "Outcome: 32 of 40 customers retained on new platform; 18 engineers freed.",
+        "Follow-up: \"What was the long-term effect on the two strategic bets?\" - Candidate reported both bets shipped on schedule the following year."
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made an org-level decision with clear business trade-offs and managed resistance by sharing the full context in writing and involving opposing leaders in the execution plan. The story includes measurable outcomes on both customer retention and engineering leverage. Communication was proactive and collaborative rather than top-down. Biggest strength is turning potential internal conflict into shared ownership of the transition.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made an unpopular decision."
+        },
+        {
+          "role": "candidate",
+          "text": "I canceled a long-running internal tool project that several teams relied on because it was not aligned with our new platform strategy."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the teams react and what did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was a lot of noise in Slack. I replied in the thread that the decision was final and that teams should plan accordingly. Most teams eventually found workarounds."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to make an unpopular decision as a leader.",
+        "Candidate canceled internal tool for strategic alignment.",
+        "Action: declared decision final in Slack thread.",
+        "Quote: \"I replied in the thread that the decision was final and that teams should plan accordingly.\"",
+        "Outcome: teams created their own workarounds with no central support.",
+        "Follow-up: \"Did you offer any transition resources?\" - Candidate offered none."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate made a decision with broad organizational impact but treated communication as a single declarative statement and provided no transition support or engagement with affected teams. Resistance was acknowledged only as noise rather than input that could shape execution. The story shows strategic intent but no evidence of leveraging or developing the organization through the change. Biggest gap is the absence of any plan to absorb or mitigate downstream cost."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual task or small feature",
+      "senior": "Cross-team technical change",
+      "manager": "Team resource allocation",
+      "exec": "Product-line or org strategy"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Asked teammates how to reduce friction",
+      "senior": "1:1s plus offered paired help",
+      "manager": "Shared data and protected team metrics",
+      "exec": "Involved opposing leaders in transition plan"
+    },
+    {
+      "signal": "Communication method",
+      "junior": "Short doc in Slack + direct asks",
+      "senior": "Separate calls with leads",
+      "manager": "Team meeting plus 1:1s with affected engineers",
+      "exec": "Written memo followed by joint planning sessions"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Change completed in one day",
+      "senior": "One team migrated in three weeks",
+      "manager": "Velocity recovered next sprint",
+      "exec": "32 customers retained, 18 engineers freed"
+    },
+    {
+      "signal": "Follow-up ownership",
+      "junior": "Learned to share tradeoffs earlier",
+      "senior": "Tied migration to engineer growth",
+      "manager": "Discussed move with engineers before announcing",
+      "exec": "Both strategic bets shipped on schedule"
+    }
+  ],
+  "kind": "competency"
+}

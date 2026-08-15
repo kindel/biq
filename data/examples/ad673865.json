@@ -1,0 +1,304 @@
+{
+  "question": "Tell me about a time when you drove adoption for your vision/ideas. How did you know your vision/idea was adopted by others? How did you drive adoption for your vision/ideas? How did you track adoption? Would you do anything differently?",
+  "competency": "Think Big (Driving Adoption)",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team project last year our API latency was spiking. I proposed adding a simple caching layer after reviewing logs. I wrote a one-page doc and demoed it in our weekly sync. Two engineers tried it on their services and it cut p99 by 40%. I tracked it by checking the shared dashboard we set up and saw three more teams copy the pattern in the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you convince the first two engineers?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the exact latency numbers from our service and offered to pair on the first implementation. They saw results in a day so they told others."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have written the doc earlier instead of just mentioning it in chat."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you drove adoption for your vision/ideas...",
+        "- Junior IC scope: single project, own service",
+        "- Drove via doc + demo + pairing offer",
+        "- Tracked via shared dashboard, 5 teams adopted pattern",
+        "Quote: \"I showed them the exact latency numbers...\"",
+        "Follow-up: How did you convince first two? - Offered to pair, quick win visible"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. Candidate took a local performance issue and turned it into a reusable pattern that spread to five teams. Concrete quote: \"I showed them the exact latency numbers from our service and offered to pair.\" Adoption was tracked with a shared dashboard rather than hope. The main gap is narrow scope, which is appropriate for 0-2 years, but the ownership and willingness to document and pair show strong coachability signals.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had an idea to use a new library in our code. I mentioned it in standup and a couple people tried it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it was adopted?"
+        },
+        {
+          "role": "candidate",
+          "text": "I saw the PRs go in. Not sure how many though."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe send an email next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you drove adoption...",
+        "- Idea mentioned only in standup, no doc or demo",
+        "- Tracked by casually watching PRs, no metrics",
+        "Quote: \"I saw the PRs go in. Not sure how many though.\"",
+        "Follow-up: How did you know? - No clear measurement"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate had an idea but did not create any artifact or measurement to drive or confirm adoption. Quote: \"I saw the PRs go in. Not sure how many though\" shows passive tracking. No evidence of influence beyond one standup mention. At junior level we expect at least ownership of documenting and checking results on their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout flow had high drop-off. I proposed a new experiment framework that let product teams run A/B tests without eng support. I wrote a six-page design doc, presented to three platform teams, and ran two pilot tests that showed 8% conversion lift. Adoption tracked via a public dashboard showing 12 teams running tests within four months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the platform teams to invest?"
+        },
+        {
+          "role": "candidate",
+          "text": "I first got the PMs to commit headcount to the pilots so platform teams saw demand before building."
+        },
+        {
+          "role": "interviewer",
+          "text": "Anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved security earlier; we had a two-week delay on review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you drove adoption...",
+        "- Senior scope: cross-team platform change",
+        "- Drove via design doc, pilots, PM alignment",
+        "- Tracked with public dashboard, 12 teams in 4 months",
+        "Quote: \"I first got the PMs to commit headcount...\"",
+        "Follow-up: How did you get platform teams? - Created demand signal first"
+      ],
+      "raiseFeedback": "Raises the bar for senior Think Big. Candidate built a self-service experimentation platform that removed a bottleneck for multiple teams and measured 12 teams adopting within four months. Quote: \"I first got the PMs to commit headcount to the pilots\" shows influence without authority. Clear before-and-after metrics and retrospective on security timing. Scope and tracking are exactly what we expect at 3-7 years.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to standardize our logging library across services. I sent a wiki page and asked teams to migrate."
+        },
+        {
+          "role": "interviewer",
+          "text": "How many adopted it?"
+        },
+        {
+          "role": "candidate",
+          "text": "About half the services eventually did, but it took six months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I followed up in the engineering all-hands once."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you drove adoption...",
+        "- Sent wiki page, one all-hands mention",
+        "- No pilots or stakeholder alignment upfront",
+        "Quote: \"About half the services eventually did, but it took six months.\"",
+        "Follow-up: How did you drive it? - Passive follow-up only"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate relied on a wiki page and a single all-hands mention with no pilots or demand creation. Quote: \"About half the services eventually did, but it took six months\" indicates weak tracking and slow, incomplete adoption. At senior level we expect proactive cross-team coordination and measurable results within a quarter."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was duplicating infra work. I created a vision for a shared platform team and convinced three managers to contribute two engineers each. We launched with clear OKRs and a monthly adoption review. Within nine months 70% of new services used the platform and we freed up 8 FTEs of duplicated effort."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the managers who resisted?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a joint retrospective on the duplication cost and let them propose the staffing model themselves."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have defined the success metrics with the other managers in the first week instead of after launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you drove adoption...",
+        "- Manager scope: org-level platform, multiple teams",
+        "- Drove via joint staffing model and OKR reviews",
+        "- Tracked: 70% new services, 8 FTEs saved",
+        "Quote: \"I ran a joint retrospective on the duplication cost...\"",
+        "Follow-up: How did you handle resistance? - Let resistors design the solution"
+      ],
+      "raiseFeedback": "Raises the bar for manager Think Big. Candidate built a shared platform by aligning three peer managers and measuring both adoption (70%) and business leverage (8 FTEs). Quote: \"I ran a joint retrospective on the duplication cost and let them propose the staffing model\" shows leverage through others. Clear retrospective on metric definition timing. Focus on team outcomes and underperformance avoidance is appropriate at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided our team should move to a new deployment tool. I presented the idea to my director and rolled it out to my team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple did after they saw our success, but I didn't track it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made it the default for all my team's new projects."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you drove adoption...",
+        "- Only own team + director, no peer alignment",
+        "- No metrics or tracking of broader adoption",
+        "Quote: \"A couple did after they saw our success, but I didn't track it.\"",
+        "Follow-up: Did other teams adopt? - No measurement"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate drove change only inside their own team and hoped others would copy without any coordination or measurement. Quote: \"A couple did after they saw our success, but I didn't track it\" shows absence of manager-level leverage. At this level we expect the candidate to create mechanisms that scale beyond their direct reports."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our company was losing deals because sales could not configure complex pricing in under two weeks. I set a vision for a self-serve pricing engine and aligned the CFO, CRO, and CTO on a three-quarter roadmap. We created a cross-functional steering committee that met bi-weekly and published a public adoption scorecard. After 18 months the engine handled 65% of new bookings and reduced sales cycle by 11 days on average."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two high-visibility features so the core engine could launch in Q2 and prove value before expanding scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have included a customer advisory board from month one instead of month four."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you drove adoption...",
+        "- Exec scope: company-wide pricing engine, C-suite alignment",
+        "- Drove via steering committee and public scorecard",
+        "- Tracked: 65% bookings, 11-day cycle reduction",
+        "Quote: \"We delayed two high-visibility features so the core engine could launch in Q2...\"",
+        "Follow-up: What trade-offs? - Prioritized speed to value over scope"
+      ],
+      "raiseFeedback": "Raises the bar for exec Think Big. Candidate drove a multi-quarter, C-suite-aligned initiative that changed how the company priced and sold. Quote: \"We delayed two high-visibility features so the core engine could launch in Q2\" demonstrates strategic trade-off judgment. Public scorecard and 65% adoption metric show long-term measurement discipline. Scope, ambiguity handling, and leverage through steering mechanisms match 10+ year expectations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I believed we needed a new customer portal. I got the CEO to approve the project and assigned it to my org."
+        },
+        {
+          "role": "interviewer",
+          "text": "How widely was it adopted?"
+        },
+        {
+          "role": "candidate",
+          "text": "Usage grew but we never hit the target we set with the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "More resources earlier."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you drove adoption...",
+        "- Relied on CEO approval and own org ownership",
+        "- No cross-functional steering or public metrics",
+        "Quote: \"Usage grew but we never hit the target we set with the board.\"",
+        "Follow-up: How widely was it adopted? - Missed targets, no mechanism to course-correct"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate secured top-down approval but failed to create cross-org mechanisms or transparent tracking. Quote: \"Usage grew but we never hit the target we set with the board\" reveals lack of strategic judgment on adoption. At exec level we expect the candidate to design the operating system for change, not just win the initial approval."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of vision",
+      "junior": "Single project or service",
+      "senior": "Cross-team platform or pattern",
+      "manager": "Org-level staffing and OKRs",
+      "exec": "Company-wide roadmap with C-suite trade-offs"
+    },
+    {
+      "signal": "How adoption was driven",
+      "junior": "Doc + demo + pairing",
+      "senior": "Design doc + pilots + PM demand",
+      "manager": "Joint manager alignment + steering reviews",
+      "exec": "Steering committee + public scorecard"
+    },
+    {
+      "signal": "Tracking method",
+      "junior": "Shared dashboard, count of teams",
+      "senior": "Public dashboard with % adoption",
+      "manager": "OKRs + FTE impact",
+      "exec": "% of bookings + cycle time metrics"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Offered to pair on first use",
+      "senior": "Created demand signal before build",
+      "manager": "Let resistors design the model",
+      "exec": "Aligned CFO/CRO/CTO on roadmap"
+    },
+    {
+      "signal": "Retrospective insight",
+      "junior": "Would write doc earlier",
+      "senior": "Would involve security sooner",
+      "manager": "Define metrics with peers in week one",
+      "exec": "Add customer advisory board from month one"
+    },
+    {
+      "signal": "Measurement discipline",
+      "junior": "Basic counts after the fact",
+      "senior": "Clear before/after metrics",
+      "manager": "Business leverage (FTEs saved)",
+      "exec": "Deal-level and cycle-time outcomes"
+    }
+  ],
+  "kind": "lp"
+}

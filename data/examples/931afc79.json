@@ -1,0 +1,233 @@
+{
+  "question": "Give me an example of a goal you've had where you wish you had done better. What was the goal? How could you have improved on it?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My goal was to deliver a clean feature implementation for a small internal tool by end of sprint. I shipped on time but the code had a few edge cases that broke in prod and required a hotfix."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the hotfix?"
+        },
+        {
+          "role": "candidate",
+          "text": "I went back and added unit tests plus a simple checklist for future work. My manager reviewed it and it caught two more issues before next release."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Junior dev on internal tool feature",
+        "Shipped on time but missed edge cases leading to hotfix",
+        "Added tests and checklist after",
+        "Quote: 'I went back and added unit tests plus a simple checklist'",
+        "Follow-up: Asked what changed in process; candidate described asking for early code review on next task"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. The candidate owned a local feature goal that missed quality and described concrete follow-up steps. They said they added unit tests and a checklist after the hotfix. This shows early recognition that on-time delivery alone was not enough. The follow-up revealed they proactively asked for reviews next time. Biggest strength is clear personal ownership of the quality gap at junior scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The goal was to finish the feature on time. We did but then some bugs showed up because the requirements kept changing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked the PM to lock the scope earlier."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Candidate points to changing requirements as main issue",
+        "No mention of own code quality or testing",
+        "Quote: 'I would have asked the PM to lock the scope earlier'",
+        "Follow-up: Pressed on personal actions; candidate stayed focused on external factors"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The story externalized the quality miss to requirement changes instead of owning testing or review gaps. The suggested improvement stayed at asking someone else to change behavior. No evidence of raising personal standards on the delivered work. Biggest gap is absence of self-reflection on what good enough looked like for their own output."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a goal to reduce p99 latency on our shared service by 30 percent. We hit 18 percent after three months of cross-team changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why do you wish you had done better?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted an early win on the easiest path and did not push the team to instrument the remaining hot paths. I later wrote a short post-mortem and drove a follow-up project that reached 35 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Senior on shared service latency reduction",
+        "Hit 18 percent instead of 30 percent target",
+        "Accepted early win without full instrumentation",
+        "Quote: 'I later wrote a short post-mortem and drove a follow-up project'",
+        "Follow-up: How did you influence other teams; candidate described sharing data and getting two teams to adopt new patterns"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. The candidate set an ambitious cross-team metric, fell short, and then drove further work to exceed the original target. They explicitly called out accepting an incomplete solution. The post-mortem and follow-up project show they raised the bar for the broader group. Biggest strength is turning a personal shortfall into measurable system-level improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My goal was to cut latency on the service. We got decent gains but the last 10 percent proved harder than expected so we stopped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have picked a slightly lower target up front so the result looked stronger."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Senior latency project",
+        "Stopped at decent gains",
+        "Quote: 'I would have picked a slightly lower target up front'",
+        "Follow-up: Asked about data shared with stakeholders; candidate focused on optics rather than further technical work"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The candidate treated the shortfall as a target-setting problem rather than a quality or persistence problem. The proposed improvement was to lower expectations instead of raising effort. No evidence of pushing for deeper instrumentation or cross-team leverage. Biggest gap is prioritizing narrative over actual standard of delivery."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a team goal to reach 95 percent automated test coverage on our core service within a quarter. We landed at 82 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the gap?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had one engineer who kept deprioritizing test work. I paired with them on the hardest module and then changed the team definition of done to require coverage numbers in every PR."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Manager on team test coverage goal",
+        "Landed at 82 percent vs 95 percent target",
+        "Addressed underperformer by pairing and updated team process",
+        "Quote: 'I paired with them on the hardest module and then changed the team definition of done'",
+        "Follow-up: What happened to coverage after the change; candidate reported it reached 94 percent in the next quarter"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. The manager owned a team-level quality goal, identified an underperformer, and used direct coaching plus process change to lift the bar. They did not accept the shortfall as final. The follow-up metric shows the intervention worked. Biggest strength is converting a missed standard into a durable team expectation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team goal was higher test coverage. We improved but one person on the team was consistently behind so the number suffered."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about that person?"
+        },
+        {
+          "role": "candidate",
+          "text": "I noted it in their review and hoped the next quarter would be better."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Manager test coverage story",
+        "Blamed one team member",
+        "Quote: 'I noted it in their review and hoped the next quarter would be better'",
+        "Follow-up: Asked for coaching actions; candidate had none beyond the annual review"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The manager attributed the miss to one individual without describing coaching or process intervention. The only action was a note in a review. No evidence of raising the team's operating standard. Biggest gap is lack of leverage through direct people development or team mechanisms."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set an org goal to move our customer NPS from 32 to 50 within 18 months. We reached 41."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you have done differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I treated NPS as a single number and did not force a deeper segmentation by churn cohort. I later restructured the customer-success org around retention risk signals and reset the target with clearer leading indicators."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Exec on org NPS target",
+        "Reached 41 instead of 50",
+        "Missed segmentation by churn risk",
+        "Quote: 'I later restructured the customer-success org around retention risk signals'",
+        "Follow-up: What was the business impact of the restructure; candidate tied it to measurable reduction in churn-driven revenue loss"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. The executive owned an ambitious org-level outcome, diagnosed why the metric fell short at a structural level, and reorganized teams around better signals. They did not defend the original result. The restructure addressed root cause rather than symptoms. Biggest strength is strategic judgment on where standards were insufficient across the organization.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our goal was to improve NPS significantly. We made progress but market conditions made the original target unrealistic."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change looking back?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have adjusted the goal mid-year once we saw the external data."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a goal you've had where you wish you had done better.",
+        "Exec NPS story",
+        "Externalized miss to market conditions",
+        "Quote: 'I would have adjusted the goal mid-year once we saw the external data'",
+        "Follow-up: Asked about internal levers; candidate stayed on goal adjustment rather than org capability"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The executive attributed the shortfall to external conditions and proposed lowering the target as the improvement. No discussion of internal capability gaps or structural changes. The story shows comfort with adjusting expectations instead of raising them. Biggest gap is absence of long-term leverage thinking on org standards."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of quality gap",
+      "junior": "Owns personal output and adds tests",
+      "senior": "Owns cross-team metric and drives follow-up project",
+      "manager": "Owns team process and coaches individual",
+      "exec": "Owns org structure and resets leading indicators"
+    },
+    {
+      "signal": "Response to shortfall",
+      "junior": "Adds checklist after hotfix",
+      "senior": "Writes post-mortem and exceeds original target",
+      "manager": "Updates definition of done",
+      "exec": "Restructures team around better signals"
+    },
+    {
+      "signal": "External vs internal attribution",
+      "junior": "Stays internal at junior scope",
+      "senior": "Stays internal on technical paths",
+      "manager": "Stays internal on people and process",
+      "exec": "Stays internal on org design"
+    },
+    {
+      "signal": "Evidence of raising bar for others",
+      "junior": "None expected",
+      "senior": "Shares data with peer teams",
+      "manager": "Changes team definition of done",
+      "exec": "Resets org-level metrics and structure"
+    },
+    {
+      "signal": "Handling underperformance",
+      "junior": "N/A",
+      "senior": "N/A",
+      "manager": "Pairs with lagging engineer",
+      "exec": "N/A at this level of abstraction"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,308 @@
+{
+  "question": "Describe a situation where you made an important business decision without consulting your manager. What was the situation and how did it turn out? Would you have done anything differently?",
+  "competency": "Bias for Action",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a customer-facing dashboard that was showing stale data for three days because of a config mismatch in the ETL job. My manager was out, so I decided to roll back the last config change myself after checking the logs and confirming it was the root cause. It restored the data within an hour."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the risk if you were wrong?"
+        },
+        {
+          "role": "candidate",
+          "text": "The dashboard would have stayed broken another day, but rollback was reversible in five minutes so I documented it in the runbook and pinged the on-call channel."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have added a short note in the team Slack before rolling back so others knew it was in progress."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Junior IC, fixed customer dashboard stale data by rolling back ETL config while manager OOO",
+        "- Verified root cause via logs, rollback took 5 min and was reversible",
+        "- Outcome: data restored in 1 hour, documented in runbook and notified on-call",
+        "Quote: \"I would have added a short note in the team Slack before rolling back\"",
+        "Follow-up: risk if wrong? \"Dashboard stays broken another day but reversible\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at junior level. The candidate owned a local production issue, verified the cause, executed a reversible fix, and documented the change. The story shows appropriate scope for 0-2 years experience and awareness of reversibility. The follow-up answer about adding a Slack note demonstrates coachability and learning. Biggest strength is the clear ownership of the outcome without overstepping into team-wide changes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our pricing page had a typo in the annual plan copy. I updated it live without telling anyone because it looked wrong and I didn't want to wait for the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it was the right change?"
+        },
+        {
+          "role": "candidate",
+          "text": "It just seemed obvious. Sales never complained so I assumed it was fine."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably not, it was a small text change and no one noticed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Changed pricing page copy live without approval or verification",
+        "- No data or stakeholder check; assumed \"obvious\"",
+        "- Outcome: no visible impact but no process followed",
+        "Quote: \"It just seemed obvious. Sales never complained so I assumed it was fine.\"",
+        "Follow-up: would do differently? \"Probably not\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at junior level. The candidate treated a visible but low-risk change as an individual decision without checking impact or involving the right owner. No evidence of verification or learning from the action. The follow-up shows limited reflection. Biggest gap is absence of any mechanism to confirm the change was correct before acting."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were blocked on a shared dependency that was deprioritized. I decided to pull the work into our sprint and deliver the integration layer ourselves after estimating it would take two weeks and unblock three downstream features."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a one-page proposal with the trade-off, shared it in the cross-team channel, and got explicit thumbs-up from both leads before starting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have surfaced the decision to my manager the same day rather than the next standup so she had visibility earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Senior engineer, pulled shared dependency work into sprint to unblock two teams",
+        "- Two-week estimate, delivered integration layer, unblocked three features",
+        "- Aligned via one-page proposal and explicit cross-team thumbs-up",
+        "Quote: \"I would have surfaced the decision to my manager the same day\"",
+        "Follow-up: align others? \"Wrote proposal and got explicit thumbs-up from both leads\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at senior level. The candidate identified a cross-team blocker, quantified the impact, created a lightweight alignment artifact, and executed without waiting for manager direction. The decision stayed within individual scope while delivering measurable downstream value. The follow-up shows appropriate escalation awareness. Biggest strength is the combination of speed and lightweight coordination without requiring authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I chose to rewrite a core service in a new language because the current one was hard to maintain. I started the spike on my own and told my manager two weeks later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact of the delay?"
+        },
+        {
+          "role": "candidate",
+          "text": "We missed a couple of feature deadlines but the new service will be better long term."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked for a dedicated two-week hackathon instead of doing it in parallel."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Senior engineer, started full rewrite of core service without alignment",
+        "- Two-week parallel spike, missed feature deadlines",
+        "- No upfront trade-off or stakeholder check",
+        "Quote: \"We missed a couple of feature deadlines but the new service will be better long term.\"",
+        "Follow-up: business impact? \"Missed a couple of feature deadlines\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at senior level. The candidate initiated a high-risk architectural change without quantifying cost or securing cross-team buy-in. The outcome traded short-term delivery commitments for an unapproved long-term bet. The follow-up still frames the rewrite as the right direction rather than questioning the decision process. Biggest gap is lack of visible trade-off analysis before committing team capacity."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our support queue was growing because the on-call rotation was understaffed after two people left. I approved hiring a contractor for 90 days and adjusted the rotation to include the new person without waiting for the quarterly headcount meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the budget?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used unspent contractor budget from another project and got retroactive approval from finance the next week."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have written a short memo to the leadership team the same day so they weren't surprised by the spend."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Manager, approved 90-day contractor to fix support queue after attrition",
+        "- Used existing unspent budget, adjusted rotation, reduced queue time",
+        "- Got retroactive finance approval",
+        "Quote: \"I would have written a short memo to the leadership team the same day\"",
+        "Follow-up: budget handling? \"Used unspent contractor budget from another project\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at manager level. The candidate acted on a clear team-level pain point by reallocating existing budget and adjusting process, then secured retroactive approval. The decision directly improved a team outcome metric. The follow-up shows awareness of upward communication. Biggest strength is creating leverage for the team without waiting for perfect process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I let the team skip the weekly planning meeting for two weeks so they could focus on a launch. I didn't tell my director until the launch slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What signal told you the launch was at risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team told me they were behind but I trusted them to catch up."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked for a status update mid-week instead of waiting until the end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Manager, canceled team planning meetings for two weeks without escalation",
+        "- Launch slipped, no early warning to director",
+        "- Relied on team self-report without verification",
+        "Quote: \"I trusted them to catch up\"",
+        "Follow-up: risk signal? \"The team told me they were behind\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at manager level. The candidate removed a core team process without visibility or contingency, then failed to escalate when delivery risk appeared. The outcome shows the decision created rather than reduced team risk. The follow-up still places responsibility on the team rather than the manager's choice to stay silent. Biggest gap is absence of any mechanism to monitor the impact of the decision."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing enterprise deals because our SOC2 certification timeline was 18 months out. I authorized starting the audit with an external firm using unallocated G&A budget and set a six-month target, then informed the board at the next meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the expected revenue impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled $4M in pipeline that was blocked on the certification; the model showed we would recover the audit cost in the first two closed deals."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have briefed the CFO the same afternoon rather than waiting for the weekly sync so she could adjust the cash forecast."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Exec, authorized early SOC2 audit using unallocated budget to unblock enterprise deals",
+        "- Six-month target vs 18-month plan, modeled $4M pipeline impact",
+        "- Informed board after the fact",
+        "Quote: \"I would have briefed the CFO the same afternoon\"",
+        "Follow-up: revenue impact? \"$4M in pipeline that was blocked on the certification\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at exec level. The candidate identified a strategic blocker to revenue, used available budget to compress a long-cycle compliance item, and quantified the business case. The decision operated at org level with clear trade-off visibility. The follow-up reflects appropriate peer communication. Biggest strength is linking a single decision to measurable business outcome without requiring perfect consensus first.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I greenlit a new market expansion into Brazil because the TAM looked attractive. We spent nine months building local infrastructure before realizing regulatory requirements made the unit economics negative."
+        },
+        {
+          "role": "interviewer",
+          "text": "When did you first see the regulatory issue?"
+        },
+        {
+          "role": "candidate",
+          "text": "The legal team flagged it in month four but the team thought they could work around it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have required a formal legal sign-off before committing the first engineering headcount."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you made an important business decision without consulting your manager...",
+        "- Exec, approved Brazil market expansion based on TAM",
+        "- Nine months and negative unit economics after regulatory discovery",
+        "- Legal flag at month four not escalated to decision point",
+        "Quote: \"The legal team flagged it in month four but the team thought they could work around it\"",
+        "Follow-up: when flagged? \"Month four\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at exec level. The candidate committed significant resources to a market entry without securing cross-functional sign-off on regulatory risk. The outcome required nine months to surface a fatal flaw that was known internally. The follow-up still treats the issue as a process fix rather than a decision-quality problem. Biggest gap is lack of early risk gating before large resource allocation."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Local production fix or small process change",
+      "senior": "Cross-team blocker with quantified downstream impact",
+      "manager": "Team-level resource reallocation with budget awareness",
+      "exec": "Org-level strategic blocker with revenue model"
+    },
+    {
+      "signal": "Alignment approach",
+      "junior": "Documented change and notified on-call",
+      "senior": "One-page proposal with explicit cross-team thumbs-up",
+      "manager": "Retroactive finance approval after acting",
+      "exec": "Informed board after committing unallocated budget"
+    },
+    {
+      "signal": "Reversibility / risk awareness",
+      "junior": "Rollback was 5 min and documented",
+      "senior": "Two-week estimate with clear trade-off",
+      "manager": "Used existing budget line item",
+      "exec": "Modeled $4M pipeline recovery vs audit cost"
+    },
+    {
+      "signal": "Learning / reflection",
+      "junior": "Would add Slack note next time",
+      "senior": "Would surface to manager same day",
+      "manager": "Would write memo to leadership same day",
+      "exec": "Would brief CFO same afternoon"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Data restored in 1 hour",
+      "senior": "Unblocked three features",
+      "manager": "Reduced support queue time",
+      "exec": "Compressed 18-month compliance to 6 months"
+    },
+    {
+      "signal": "Escalation timing",
+      "junior": "After action with documentation",
+      "senior": "Next standup instead of same day",
+      "manager": "After launch slipped",
+      "exec": "Next board meeting instead of same day"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,237 @@
+{
+  "question": "Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+  "competency": "Time Management, Prioritization & Organization",
+  "principle": "Time Management, Prioritization & Organization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship I had a feature bug fix due Friday, a code review for another intern due Thursday, and my manager asked for a status deck by Wednesday. I listed everything, estimated hours, then asked my mentor which item could slip if needed. I finished the deck first since it unblocked the team, then knocked out the review before the bug fix."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when the bug turned out bigger than expected?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged it Wednesday night, got help from a senior on the tricky part, and still shipped on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: internship, three deliverables (bug fix, review, status deck) all due same week",
+        "Actions: wrote list + estimates, asked mentor for priority guidance, sequenced work to unblock others first",
+        "Outcome: shipped everything on time after flagging scope creep and getting help",
+        "Quote: \"I listed everything, estimated hours, then asked my mentor which item could slip\"",
+        "Follow-up: asked about the bug growing; candidate escalated early and still delivered"
+      ],
+      "raiseFeedback": "The story shows a junior candidate who owned their individual workload and sought guidance rather than guessing priorities. They sequenced work to maximize team value first and escalated when the bug grew, which kept the Friday deadline. The approach stayed within individual scope but demonstrated clear ownership and coachability. This raises the bar for junior because the candidate treated prioritization as a skill to practice with help instead of heroics. Biggest strength is the early escalation and willingness to adjust based on feedback.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had three things due at once so I just stayed late every night and got them all done. I didn't really talk to anyone about it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to work on first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just started with whatever was on top of my list and kept going until everything was finished."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: three overlapping deadlines during internship",
+        "Actions: worked longer hours, started with whatever was on top of list, no discussion with others",
+        "Outcome: finished everything but no evidence of prioritization or learning",
+        "Quote: \"I just stayed late every night and got them all done\"",
+        "Follow-up: asked how order was chosen; candidate had no explicit method or stakeholder input"
+      ],
+      "lowerFeedback": "The candidate relied on extended hours without showing any structured approach to prioritization. There is no evidence they considered relative impact or sought input, which is a gap even at junior level. The story stays purely individual but misses the coachability and ownership signals expected. This lowers the bar because the response treats time management as endurance rather than deliberate sequencing. Biggest gap is absence of any reflection or adjustment based on feedback or stakeholder needs."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two cross-team launches landed in the same month plus a critical security patch. I mapped dependencies across the three efforts, then ran a quick alignment meeting with the other leads to agree on sequencing and shared resources. I took the patch myself, delegated parts of one launch, and shifted the second launch by two weeks after stakeholders agreed the risk was low."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed the decision worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both launches hit their original customer-impact targets and the patch reduced open vulns by 40 percent that quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: two launches plus security patch competing for senior IC attention",
+        "Actions: mapped dependencies, aligned leads on sequencing, delegated one launch, negotiated two-week shift",
+        "Outcome: all three delivered with measurable customer and security impact",
+        "Quote: \"I mapped dependencies across the three efforts, then ran a quick alignment meeting\"",
+        "Follow-up: asked for metrics; candidate tied decisions to launch targets and vuln reduction"
+      ],
+      "raiseFeedback": "The candidate demonstrated senior-level influence by driving cross-team alignment without authority and using data to justify a schedule trade-off. They protected the most urgent security work while still enabling both launches to meet customer goals. The approach shows clear metrics and raises others through delegation. This raises the bar for senior because the story moves beyond personal task lists to organizational sequencing. Biggest strength is the proactive dependency mapping and stakeholder negotiation that protected overall delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had two launches and a patch so I worked with both teams and tried to get everything done in parallel. It was tight but we shipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the resource conflict?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just asked people to help when they could and stayed on top of the details myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: two launches plus patch at senior level",
+        "Actions: worked in parallel, asked for help ad-hoc, kept details personally",
+        "Outcome: shipped but no visible trade-offs or influence",
+        "Quote: \"I just asked people to help when they could and stayed on top of the details myself\"",
+        "Follow-up: asked about resource conflict; candidate showed no structured negotiation or delegation"
+      ],
+      "lowerFeedback": "The candidate stayed in execution mode without showing the cross-team influence or explicit trade-off decisions expected at senior level. Resource conflicts were handled reactively rather than through alignment or re-prioritization. No metrics or stakeholder outcomes are referenced. This lowers the bar because the story reads like an individual contributor managing more work rather than driving leverage across teams. Biggest gap is lack of evidence that the candidate shaped priorities beyond their own plate."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had three major releases plus a re-org that all landed in Q3. I sat down with each engineer to map capacity, then worked with product and other managers to deprioritize one non-critical feature and move two people temporarily to the security work. I owned the communication to leadership on the trade-offs and tracked weekly so no one burned out."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team feel about the shifts?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers later told me the clarity helped them focus and they appreciated not having to guess what mattered most."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: three releases plus re-org creating team-level priority conflict",
+        "Actions: capacity mapping per person, negotiated deprioritization with peers, owned leadership communication, weekly tracking",
+        "Outcome: releases delivered, no burnout reported, engineers cited improved focus",
+        "Quote: \"I sat down with each engineer to map capacity, then worked with product and other managers\"",
+        "Follow-up: asked about team sentiment; candidate shared direct engineer feedback on clarity"
+      ],
+      "raiseFeedback": "The manager used team capacity data to drive cross-org trade-offs and protected the team from overload while still meeting business needs. They owned the upward communication and created clarity that the team explicitly valued. This raises the bar for manager because prioritization became a team-level system rather than individual heroics. Biggest strength is the combination of people development through clear expectations and measurable delivery without burnout.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had too many releases so I told the team to focus on the top two and I tried to shield them from the rest. It mostly worked."
+        },
+        {
+          "role": "interviewer",
+          "text": "What conversations did you have with stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a few updates but didn't really push back on the third release."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: multiple releases plus re-org at manager level",
+        "Actions: told team to focus on top two, sent status updates, limited stakeholder pushback",
+        "Outcome: partial shielding but no evidence of team leverage or development",
+        "Quote: \"I told the team to focus on the top two and I tried to shield them from the rest\"",
+        "Follow-up: asked about stakeholder conversations; candidate avoided direct negotiation"
+      ],
+      "lowerFeedback": "The candidate attempted to protect the team but did not demonstrate the cross-functional negotiation or capacity planning expected of a manager. Stakeholder management stayed passive and there is no sign the team gained lasting prioritization skills. This lowers the bar because the story shows reactive shielding rather than proactive creation of leverage. Biggest gap is absence of any development or process improvement that would help the team handle future conflicts."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org had four strategic bets all claiming top priority for the same two quarters. I ran a leadership offsite to score each bet against revenue and risk, then recommended killing one, funding two at full speed, and sequencing the fourth. I personally owned the messaging to the board and reallocated two VP budgets to match the new priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the revenue target for the funded bets and the killed initiative freed 18 percent of engineering capacity that funded two new exploratory bets the following year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: four competing org-level strategic bets at exec scope",
+        "Actions: facilitated scoring offsite, made kill/fund/sequence recommendation, owned board communication, shifted budgets",
+        "Outcome: revenue targets met and 18 percent capacity freed for future bets",
+        "Quote: \"I ran a leadership offsite to score each bet against revenue and risk, then recommended killing one\"",
+        "Follow-up: asked about longer-term impact; candidate tied decision to both immediate results and next-year capacity"
+      ],
+      "raiseFeedback": "The executive used explicit strategic criteria to make visible trade-offs at the org level and accepted the political cost of killing a bet. They translated the decision into budget and capacity shifts that created future optionality. This raises the bar for exec because prioritization is treated as a business-level judgment with multi-quarter leverage. Biggest strength is the combination of clear decision framework and willingness to own the hard call publicly.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had several big initiatives so I asked my directs to figure out the priorities and I supported whatever they decided."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you personally drive?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly stayed out of the details and let the teams work it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+        "Situation: multiple strategic initiatives at exec level",
+        "Actions: delegated priority decisions to directs, provided support only",
+        "Outcome: no visible strategic trade-offs or org-level judgment from candidate",
+        "Quote: \"I asked my directs to figure out the priorities and I supported whatever they decided\"",
+        "Follow-up: asked about personal trade-offs; candidate avoided direct involvement"
+      ],
+      "lowerFeedback": "The candidate delegated the core prioritization work without providing the strategic framework or owning the difficult decisions expected at executive level. No evidence of business-level trade-offs or long-term capacity impact appears. This lowers the bar because the story shows absence of executive judgment rather than leverage through clear direction. Biggest gap is lack of any personal accountability for the hard choices that define org priorities."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of prioritization",
+      "junior": "Individual task list with mentor input",
+      "senior": "Cross-team dependency mapping and sequencing",
+      "manager": "Team capacity planning and peer negotiation",
+      "exec": "Org-level strategic scoring and kill decisions"
+    },
+    {
+      "signal": "Use of data or criteria",
+      "junior": "Simple time estimates",
+      "senior": "Impact metrics tied to launches",
+      "manager": "Per-person capacity data",
+      "exec": "Revenue and risk scoring framework"
+    },
+    {
+      "signal": "Stakeholder influence",
+      "junior": "Asks mentor for guidance",
+      "senior": "Aligns peer leads without authority",
+      "manager": "Negotiates with product and other managers",
+      "exec": "Owns board-level communication and budget shifts"
+    },
+    {
+      "signal": "People development angle",
+      "junior": "Shows coachability and early escalation",
+      "senior": "Delegates to raise others",
+      "manager": "Creates clarity that team values long-term",
+      "exec": "Frees capacity for future bets"
+    },
+    {
+      "signal": "Evidence of trade-offs",
+      "junior": "Asks which item can slip",
+      "senior": "Negotiates two-week shift",
+      "manager": "Deprioritizes one feature to protect team",
+      "exec": "Kills one bet and reallocates budgets"
+    }
+  ],
+  "kind": "competency"
+}

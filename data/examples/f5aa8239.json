@@ -1,0 +1,269 @@
+{
+  "question": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision. How much time did you have? What approach did you take? What did you learn from the situation?",
+  "competency": "Bias for Action",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a production bug reported on Friday afternoon that would break a key customer workflow by Monday. I had about four hours before EOD. I quickly reproduced it, checked the recent commit that touched the area, and decided to revert rather than debug fully since the change was isolated."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "I learned to always have a rollback plan ready and to flag when a change might need extra review time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Junior IC on bug fix, 4 hours until EOD",
+        "- Reproduced, checked recent commit, chose revert over full debug",
+        "- Outcome: system stable by Monday morning",
+        "Quote: 'I learned to always have a rollback plan ready'",
+        "Follow-up: How did you confirm the revert was safe? Candidate: checked the diff and ran the existing test suite in staging."
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at junior level. Candidate described a clear individual-contributor situation with a four-hour window and chose a pragmatic revert after checking the recent commit. The outcome was system stability by Monday. This shows ownership of their own work and learning from the constraint. Biggest strength is the concrete rollback-plan takeaway tied directly to the decision made under time pressure.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a deadline and I just worked late to get everything done. I didn't really make a decision, I just kept going until it was finished."
+        },
+        {
+          "role": "interviewer",
+          "text": "How much time did you have?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple days I think."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Junior IC, vague multi-day window",
+        "- 'Just worked late' with no decision point described",
+        "- No specific action or tradeoff mentioned",
+        "Quote: 'I just kept going until it was finished'",
+        "Follow-up: What options did you skip? Candidate: couldn't recall any."
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at junior level. The story lacks a specific decision under time pressure and instead defaults to 'worked late' without identifying options or tradeoffs. No measurable outcome or learning is articulated. The candidate could not surface any concrete action taken when probed. Biggest gap is absence of ownership over a deliberate choice."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "A partner team needed a new API endpoint in two days to unblock their launch. I had roughly 36 hours. I scoped the minimal viable change, aligned with the partner on what could wait, and shipped a read-only version first."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "I learned to explicitly call out the scope cuts to the partner so expectations stayed aligned across teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Senior, cross-team API request, 36-hour window",
+        "- Scoped minimal viable change and shipped read-only first",
+        "- Aligned partner on deferred work",
+        "Quote: 'I learned to explicitly call out the scope cuts to the partner'",
+        "Follow-up: How did you decide what to cut? Candidate: listed three features, picked the one with lowest downstream risk."
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at senior level. Candidate handled a 36-hour cross-team request by making an explicit scope decision and shipping a minimal version. The story includes alignment with another team and a clear learning on expectation setting. Outcome enabled the partner launch. Biggest strength is the cross-team influence demonstrated through the decision rather than heroics.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a tight deadline from leadership. I just picked the approach that seemed fastest and we shipped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "They had to adjust later but it worked out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Senior, vague leadership deadline",
+        "- 'Picked the approach that seemed fastest' with no details",
+        "- No metrics or cross-team coordination described",
+        "Quote: 'They had to adjust later but it worked out'",
+        "Follow-up: What options did you evaluate? Candidate: none documented."
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at senior level. The candidate provides no concrete time window, decision criteria, or cross-team coordination. The outcome is described only as 'it worked out' without metrics. When probed, the candidate could not surface options considered. Biggest gap is lack of influence without authority or measurable impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "My team had to deliver a compliance fix in five days or risk a regulatory penalty. I had the team list the top three approaches, picked the one with lowest risk of regression, and reassigned two people from another project."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the reassignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I talked to the other manager, explained the regulatory risk, and offered to help them recover the lost time later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Manager, 5-day regulatory fix, team of ~6",
+        "- Listed three approaches, chose lowest-regression option",
+        "- Reassigned two engineers after negotiating with peer manager",
+        "Quote: 'I talked to the other manager and offered to help them recover'",
+        "Follow-up: What was the outcome? Candidate: fix shipped on time, no penalty incurred."
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at manager level. Candidate led a five-day regulatory deadline by directing the team to evaluate three options and making a clear choice. The story shows leverage through reassignment and coordination with another manager. Outcome avoided the penalty. Biggest strength is creating team-level leverage while managing the cross-team impact.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a deadline and I told the team to just get it done. I didn't have time to run options by them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team feel about the direction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were fine, they just worked the weekend."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Manager, vague deadline",
+        "- Told team 'just get it done' with no options presented",
+        "- No coordination or team development described",
+        "Quote: 'They just worked the weekend'",
+        "Follow-up: What did you learn about leading under pressure? Candidate: nothing specific."
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at manager level. The story shows directive behavior without evidence of option evaluation or team involvement in the decision. No metrics on outcome or development of the team. The candidate relied on weekend work rather than leverage. Biggest gap is absence of creating leverage through the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "We faced a potential loss of a major enterprise customer in 10 days unless we changed our data-retention policy. I had the team model three scenarios, picked the middle option that balanced legal risk and customer needs, and personally briefed the CFO and legal on the tradeoffs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "We retained the customer and later used the same decision framework for two other policy changes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Exec, 10-day enterprise customer risk",
+        "- Modeled three scenarios, chose middle option balancing legal and customer needs",
+        "- Briefed CFO and legal directly",
+        "Quote: 'We later used the same decision framework for two other policy changes'",
+        "Follow-up: How did you decide which option to brief? Candidate: weighted customer retention at 60% of the decision."
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at exec level. Candidate addressed a 10-day existential customer risk by directing scenario modeling and personally aligning the CFO and legal. The decision preserved revenue and created a reusable framework. Story shows strategic judgment and org-level leverage. Biggest strength is turning a one-time decision into reusable process.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a big customer issue and I told the team to fix it fast. I didn't get into the details because I was traveling."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "They fixed it and the customer stayed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you worked against tight deadlines...",
+        "- Exec, vague customer issue",
+        "- Delegated without options or personal involvement",
+        "- No strategic framing or long-term learning",
+        "Quote: 'I didn't get into the details because I was traveling'",
+        "Follow-up: What tradeoffs did you consider? Candidate: none surfaced."
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at exec level. The candidate delegated without engaging in option evaluation or surfacing tradeoffs at the org level. No evidence of strategic judgment or long-term leverage. Outcome is described only as 'the customer stayed' without metrics. Biggest gap is reliance on the team without creating org-level process or alignment."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Time window specificity",
+      "junior": "4 hours stated with clear decision",
+      "senior": "36 hours with cross-team scope cut",
+      "manager": "5-day regulatory deadline with team reassignment",
+      "exec": "10-day revenue risk with CFO briefing"
+    },
+    {
+      "signal": "Decision process visible",
+      "junior": "Chose revert after checking recent commit",
+      "senior": "Minimal viable change after listing options",
+      "manager": "Picked lowest-regression approach from three",
+      "exec": "Weighted scenarios and briefed stakeholders"
+    },
+    {
+      "signal": "Learning articulated",
+      "junior": "Rollback plan takeaway",
+      "senior": "Explicit scope-cut communication",
+      "manager": "Reusable decision framework created",
+      "exec": "Framework reused for two later policy changes"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual code change",
+      "senior": "Partner team launch enabled",
+      "manager": "Team reallocation and peer coordination",
+      "exec": "Retained major customer and org process"
+    },
+    {
+      "signal": "Under time pressure ownership",
+      "junior": "Owned the revert decision",
+      "senior": "Aligned partner on tradeoffs",
+      "manager": "Negotiated resource shift",
+      "exec": "Personally briefed finance and legal"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,294 @@
+{
+  "question": "Tell me about a situation where you adjusted your communication style to be more effective with a specific person or group.",
+  "competency": "Communication (adaptability in messaging)",
+  "principle": "Communication",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager preferred high-level summaries but I was sending detailed status emails. I switched to bullet points with one key ask and a link to details."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "He replied 'too long' twice. I asked what format he wanted and tried it on the next update."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it land?"
+        },
+        {
+          "role": "candidate",
+          "text": "He started responding same day and gave clearer direction. I still keep the full notes for myself."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: detailed emails to manager who wanted brevity",
+        "Action: switched to bullets + one ask after direct feedback",
+        "Outcome: faster responses, clearer direction",
+        "Quote: 'He started responding same day'",
+        "Follow-up: Asked what format he wanted; iterated once"
+      ],
+      "raiseFeedback": "Raises the bar for Communication at junior level. The candidate described shifting from long emails to concise bullets after receiving explicit feedback from their manager. They asked for the preferred format and applied it on the next update, resulting in same-day responses. The story stays within individual scope and shows quick adoption of input. Biggest strength is the direct link between the change and measurable improvement in response time.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I usually send the same update email to everyone on the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever change it for someone specific?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just cc'd them and hoped they read it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when that didn't work?"
+        },
+        {
+          "role": "candidate",
+          "text": "They asked questions that were already in the email so I resent the same one."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: sent identical updates to whole team",
+        "Action: none; resent same email when questions came back",
+        "Outcome: repeated questions, no change in behavior",
+        "Quote: 'I just cc'd them and hoped they read it'",
+        "Follow-up: No attempt to ask recipient preference or simplify"
+      ],
+      "lowerFeedback": "Lowers the bar for Communication at junior level. The candidate described sending the same update to everyone and simply resending it when questions arose. No evidence of observing the recipient's needs or testing a different format. The story shows passive repetition rather than any adjustment. Biggest gap is absence of even a single attempt to adapt based on feedback or observed behavior."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The eng team wanted data while the design team wanted user stories. I created two versions of the same project update: one with metrics and charts, one with journey maps and quotes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide on the split?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each lead what decisions they needed to make and matched the format to that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Design reviews became shorter and eng started surfacing risks earlier. Both groups said the updates were now actionable."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: cross-team update for eng and design with different needs",
+        "Action: created two tailored versions after asking what decisions each needed",
+        "Outcome: shorter reviews, earlier risk surfacing",
+        "Quote: 'Both groups said the updates were now actionable'",
+        "Follow-up: Asked leads about decision needs before formatting"
+      ],
+      "raiseFeedback": "Raises the bar for Communication at senior level. The candidate identified that engineering and design consumed information differently and produced two versions of the same update after asking each lead what decisions they needed to make. This produced shorter design reviews and earlier risk identification from engineering. The adjustment shows influence across teams without authority. Biggest strength is the explicit tie between the format change and cross-team decision speed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent the same 10-page deck to both engineering and design."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone struggle with it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Design asked for more visuals but I told them the data was in the appendix."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything for the next one?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the deck was already approved so I kept using it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: same deck sent to engineering and design",
+        "Action: refused to add visuals when design requested them",
+        "Outcome: continued use of unchanged deck",
+        "Quote: 'The deck was already approved so I kept using it'",
+        "Follow-up: No tailoring despite clear signal from one group"
+      ],
+      "lowerFeedback": "Lowers the bar for Communication at senior level. The candidate sent an identical long deck to both engineering and design and declined to adjust when design requested more visuals. They cited prior approval as the reason for no change. The story shows no cross-team adaptation despite direct feedback. Biggest gap is treating the artifact as fixed rather than adjusting format to improve consumption by different audiences."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my directs was very data-driven while another needed context and stories before accepting direction. I started giving the first person raw metrics first and the second person a short narrative plus the same metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you land on those approaches?"
+        },
+        {
+          "role": "candidate",
+          "text": "I observed what each person pushed back on in 1:1s and tested the new format on two decisions."
+        },
+        {
+          "role": "interviewer",
+          "text": "Impact on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both started owning their areas faster and the second person stopped asking for extra meetings to clarify intent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: two directs with different decision styles",
+        "Action: observed pushback patterns then tested narrative vs metrics framing",
+        "Outcome: faster ownership, fewer clarification meetings",
+        "Quote: 'Both started owning their areas faster'",
+        "Follow-up: Tested on two decisions before standardizing"
+      ],
+      "raiseFeedback": "Raises the bar for Communication at manager level. The candidate observed that two directs responded to different framing\u2014one to raw metrics, one to narrative\u2014and adjusted how they presented decisions accordingly. They tested the change on two decisions and saw faster ownership plus fewer clarification meetings. The example demonstrates developing people through tailored communication. Biggest strength is the link between the style adjustment and measurable reduction in meeting load.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I give everyone the same level of detail in our 1:1s."
+        },
+        {
+          "role": "interviewer",
+          "text": "Has that worked for all your directs?"
+        },
+        {
+          "role": "candidate",
+          "text": "One person still asks a lot of follow-ups but I assume that's just their style."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything different?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added more slides to the shared deck so they could review it themselves."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: uniform 1:1 format across directs",
+        "Action: added more slides instead of changing verbal delivery",
+        "Outcome: continued follow-up questions from one person",
+        "Quote: 'I assume that's just their style'",
+        "Follow-up: No attempt to match framing to individual preference"
+      ],
+      "lowerFeedback": "Lowers the bar for Communication at manager level. The candidate maintained a single 1:1 format for all directs and responded to extra questions from one person by adding more slides rather than changing delivery style. No evidence of experimenting with different framing. The story shows limited leverage through communication adjustments. Biggest gap is treating repeated questions as fixed individual style instead of an opportunity to adapt messaging."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When we announced the reorg, the field team needed vision and customer impact while finance needed cost and headcount math. I ran two separate all-hands with different opening frames and left the same Q&A doc for both."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why split the sessions?"
+        },
+        {
+          "role": "candidate",
+          "text": "Early feedback showed finance was focused on runway while field was worried about customer commitments. One message wouldn't land both places."
+        },
+        {
+          "role": "interviewer",
+          "text": "Longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Field adoption of new processes was two weeks ahead of plan and finance approved the budget model without extra rounds."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: reorg announcement for field vs finance audiences",
+        "Action: split all-hands with different opening frames based on early feedback",
+        "Outcome: faster field adoption, quicker finance approval",
+        "Quote: 'One message wouldn't land both places'",
+        "Follow-up: Used early signals to decide on separate sessions"
+      ],
+      "raiseFeedback": "Raises the bar for Communication at exec level. The candidate split a reorg announcement into two tailored all-hands after early feedback revealed field concerns about customers and finance concerns about runway. They kept the same Q&A document but changed the opening frame for each group. This produced faster process adoption and smoother budget approval. The example shows strategic judgment under ambiguity with org-level impact. Biggest strength is the deliberate choice to trade one message for two in service of execution speed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent the same reorg email to the whole company."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did different groups react differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, field had more questions about customers and finance about costs."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust follow-up communication?"
+        },
+        {
+          "role": "candidate",
+          "text": "I answered the questions in the next company-wide update using the original framing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about adjusting communication style",
+        "Situation: single reorg email to entire company",
+        "Action: answered divergent questions in next all-hands with same framing",
+        "Outcome: continued split concerns from field and finance",
+        "Quote: 'I answered the questions in the next company-wide update'",
+        "Follow-up: No tailoring of subsequent messages despite clear audience split"
+      ],
+      "lowerFeedback": "Lowers the bar for Communication at exec level. The candidate sent one reorg email company-wide and continued using the original framing in follow-up updates even after field and finance surfaced different concerns. No evidence of segmenting the message. The story shows limited strategic adjustment at org scale. Biggest gap is persistence with a single narrative when audience needs had already diverged."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Observed recipient needs before changing format",
+      "junior": "Asked manager directly what format worked",
+      "senior": "Asked each lead what decisions they needed",
+      "manager": "Observed pushback patterns in 1:1s then tested",
+      "exec": "Used early feedback to split sessions by concern"
+    },
+    {
+      "signal": "Evidence of iteration after first attempt",
+      "junior": "Tried new format on next update",
+      "senior": "Produced two versions after initial mismatch",
+      "manager": "Tested framing on two decisions",
+      "exec": "Ran separate all-hands after early signals"
+    },
+    {
+      "signal": "Link to measurable outcome",
+      "junior": "Same-day responses from manager",
+      "senior": "Shorter reviews and earlier risk surfacing",
+      "manager": "Faster ownership and fewer clarification meetings",
+      "exec": "Field adoption two weeks ahead; smoother budget approval"
+    },
+    {
+      "signal": "Scope of adjustment",
+      "junior": "Individual manager relationship",
+      "senior": "Cross-team (eng + design)",
+      "manager": "Two directs with different styles",
+      "exec": "Org-level reorg announcement"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,257 @@
+{
+  "question": "Give an example of volunteering for a challenging assignment others avoided.",
+  "competency": "Initiative, Drive & Proactivity",
+  "principle": "Initiative, Drive & Proactivity",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed the team kept deferring a messy data-migration script that kept failing in staging. I offered to own it even though it was outside my assigned tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you step up?"
+        },
+        {
+          "role": "candidate",
+          "text": "I figured it was blocking the release and I had time between sprints. I spent evenings reading the old code, added logging, and got it running reliably."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "It ran clean for the next three releases and the team stopped losing half a day each time. My manager later asked me to document the approach for new hires."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Junior dev volunteered for failing data-migration script no one touched.",
+        "Added logging and fixed it outside sprint work; unblocked releases.",
+        "Quote: \"I figured it was blocking the release and I had time.\"",
+        "Follow-up: Asked why they stepped up \u2192 cited personal time and learning goal."
+      ],
+      "raiseFeedback": "Raises the bar for Initiative at junior level. The candidate identified a blocked release and took ownership of a script teammates avoided, working outside assigned tickets to add logging and stabilize it. Quote: \"I figured it was blocking the release and I had time.\" This produced a concrete local result (three clean releases) and led to a documentation request from the manager. The story stays within individual scope while showing proactive identification of risk and follow-through without prompting. Biggest strength is the willingness to invest personal effort on an unglamorous task that directly unblocked the team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once asked if I could help on a new feature but my manager said I should stick to my backlog."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any task others were avoiding that you considered?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was some old test cleanup but it felt low priority so I waited for direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Candidate asked about a new feature but was told to stay on backlog.",
+        "Mentioned old test cleanup but waited for direction because it felt low priority.",
+        "Follow-up: Asked if any avoided tasks came up \u2192 no action taken."
+      ],
+      "lowerFeedback": "Lowers the bar for Initiative at junior level. The candidate only offered help on a new feature and immediately deferred when told to stay on the backlog. When probed about avoided work, they referenced test cleanup but took no steps because it \"felt low priority.\" No evidence of spotting risk or acting without explicit direction. The story shows passive waiting rather than ownership of an individual task. Biggest gap is absence of any self-started action even at the smallest scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were stuck on an ambiguous API contract that kept changing. I volunteered to draft the first version and run the cross-team review even though it wasn't in my org's roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get traction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled short syncs with both sides, captured the disagreements in a shared doc, and proposed a minimal viable spec. It took three iterations but both teams signed off."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The contract shipped and two dependent services launched on time. Later the same pattern was reused by another pair of teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Senior volunteered to own ambiguous cross-team API contract no one wanted.",
+        "Ran reviews, produced minimal spec, got both teams to sign off.",
+        "Quote: \"It took three iterations but both teams signed off.\"",
+        "Follow-up: How traction was gained \u2192 short syncs and shared doc."
+      ],
+      "raiseFeedback": "Raises the bar for Initiative at senior level. The candidate stepped into an ambiguous cross-team API contract that two teams had avoided, driving the first draft and three iterations of review without formal ownership. Quote: \"It took three iterations but both teams signed off.\" The result enabled two service launches and the pattern was later reused elsewhere, showing influence without authority and reusable impact. Story stays grounded in coordination work rather than hero coding. Biggest strength is converting an avoided problem into a stable, adopted artifact with measurable downstream effect.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I raised the API issue in a planning meeting but the owning team said they would handle it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or offer to help draft it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked in once more but moved on when they didn't ask for input."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Raised API issue in planning meeting; owning team claimed it.",
+        "Checked in once, then moved on when no input was requested.",
+        "Follow-up: Offered to help draft? \u2192 no further action."
+      ],
+      "lowerFeedback": "Lowers the bar for Initiative at senior level. The candidate surfaced an API problem in a meeting but accepted the owning team's claim of responsibility and performed only a single follow-up before dropping it. No attempt to draft, facilitate, or drive resolution despite cross-team visibility. Story shows awareness without sustained ownership. Biggest gap is lack of persistence or influence when the initial offer was declined."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our on-call rotation had high burnout because one service had chronic paging issues. No one wanted to own the remediation so I volunteered my team to lead the fix while still carrying the rotation."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you balance the load?"
+        },
+        {
+          "role": "candidate",
+          "text": "I carved out dedicated time for two engineers, paired them with ops, and tracked reduction in pages weekly. I also adjusted their other priorities so the work counted toward their goals."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "P0 pages dropped 70% in two quarters and the rotation stabilized enough that two other teams adopted the same approach."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Manager volunteered team to fix chronic paging service no one owned.",
+        "Carved out time, paired with ops, tracked metrics, adjusted priorities.",
+        "Quote: \"P0 pages dropped 70% in two quarters.\"",
+        "Follow-up: How load was balanced \u2192 dedicated time and goal alignment."
+      ],
+      "raiseFeedback": "Raises the bar for Initiative at manager level. The candidate volunteered their team for a high-burnout on-call remediation that other teams avoided, carving out protected time and aligning it to individual goals. Quote: \"P0 pages dropped 70% in two quarters.\" The effort produced a 70% reduction and was adopted by two other teams, demonstrating leverage through the team rather than personal heroics. Story shows ownership of team outcomes and creation of reusable process. Biggest strength is turning an avoided operational problem into sustained capacity gains for multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested the on-call problem needed attention in a leadership sync but other managers said their teams were already overloaded."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did your team take any piece of the work?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were also stretched so I didn't push further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Suggested on-call issue in leadership sync; others cited overload.",
+        "Did not assign any work to own team.",
+        "Follow-up: Took any piece? \u2192 no, team was stretched."
+      ],
+      "lowerFeedback": "Lowers the bar for Initiative at manager level. The candidate raised the on-call burnout issue but accepted other managers' overload claims and assigned nothing to their own team. No attempt to carve out capacity or lead even a partial fix. Story shows identification of a team-level problem without any follow-through or leverage. Biggest gap is treating the issue as someone else's responsibility despite managerial scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After an acquisition, two product lines had duplicate expensive infrastructure that neither org wanted to consolidate because of political risk. I sponsored the consolidation program and staffed a small tiger team outside existing roadmaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted a six-month delay on one new feature and reallocated two senior engineers from my own org. I also created a joint steering group so neither legacy leader felt they lost."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shut down one data center, saved $4M annually, and the model was used for two later integrations."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Exec sponsored post-acquisition infrastructure consolidation no leader would touch.",
+        "Accepted feature delay, reallocated own engineers, created joint steering group.",
+        "Quote: \"We shut down one data center, saved $4M annually.\"",
+        "Follow-up: Trade-offs accepted \u2192 feature delay and org reallocation."
+      ],
+      "raiseFeedback": "Raises the bar for Initiative at exec level. The candidate sponsored a politically risky post-acquisition infrastructure consolidation that neither product leader would own, staffing a tiger team and accepting a six-month feature delay plus reallocation of senior engineers. Quote: \"We shut down one data center, saved $4M annually.\" The program delivered $4M savings and became the template for later integrations, showing long-term strategic judgment and org-level leverage. Story centers on trade-offs and political navigation rather than direct execution. Biggest strength is converting an avoided org-level problem into reusable process and measurable financial impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noted the duplicate infrastructure in a strategy offsite but both teams pushed back on timing."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you sponsor any consolidation work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked for a proposal but didn't commit resources when resistance appeared."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of volunteering for a challenging assignment others avoided.",
+        "Noted duplicate infrastructure in offsite; teams pushed back on timing.",
+        "Asked for proposal but withheld resources after resistance.",
+        "Follow-up: Sponsored any work? \u2192 no commitment made."
+      ],
+      "lowerFeedback": "Lowers the bar for Initiative at exec level. The candidate flagged duplicate infrastructure in an offsite but deferred when teams resisted timing and never committed resources or sponsorship. Story shows awareness of a high-ambiguity, high-value opportunity without any strategic action or trade-off decisions. Biggest gap is absence of ownership at the organizational level despite clear visibility into the problem."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of avoided work",
+      "junior": "Single script or ticket",
+      "senior": "Cross-team technical artifact",
+      "manager": "Team operational burden",
+      "exec": "Org-level political/financial risk"
+    },
+    {
+      "signal": "Evidence of unprompted action",
+      "junior": "Used personal time on one task",
+      "senior": "Drove reviews without ownership",
+      "manager": "Carved out team capacity",
+      "exec": "Accepted feature delay and reallocated staff"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Minimal (individual)",
+      "senior": "Facilitated two teams",
+      "manager": "Aligned multiple teams to new process",
+      "exec": "Created joint steering and set precedent"
+    },
+    {
+      "signal": "Measurable outcome",
+      "junior": "Local release stability",
+      "senior": "Two launches enabled, pattern reused",
+      "manager": "70% page reduction, adopted elsewhere",
+      "exec": "$4M savings, model reused for integrations"
+    },
+    {
+      "signal": "Handling of resistance",
+      "junior": "Not tested",
+      "senior": "Three iterations to agreement",
+      "manager": "Adjusted individual goals to sustain effort",
+      "exec": "Political navigation and explicit trade-offs"
+    }
+  ],
+  "kind": "competency"
+}

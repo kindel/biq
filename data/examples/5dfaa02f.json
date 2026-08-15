@@ -1,0 +1,238 @@
+{
+  "question": "Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a dashboard for the support team. The PM wanted it shipped by Friday even though two charts had rounding errors on large numbers. I told them I wouldn't release until fixed because the numbers would mislead agents on ticket volumes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stayed late Thursday, fixed the calc, and shipped Monday. The support lead said it saved them from chasing bad data twice that week."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: new grad on internal tool team",
+        "Situation: rounding bug in dashboard for support agents",
+        "Action: pushed back on PM deadline, fixed calc overnight",
+        "Outcome: shipped Monday, support lead confirmed it avoided bad data chasing",
+        "Quote: \"I wouldn't release until fixed because the numbers would mislead agents\"",
+        "Follow-up: How did the PM react? Said they were annoyed at first but later thanked me in retro."
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at junior level. The candidate owned a local quality issue on an internal dashboard whose customer was the support team. They explicitly refused to ship with rounding errors that would mislead agents, fixed the calc despite deadline pressure, and saw the downstream effect when the support lead confirmed it prevented bad data chasing. This shows clear individual ownership and willingness to absorb short-term cost for accuracy. The story is small in scope but matches expectations for 0-2 years experience. Biggest strength is the direct link between the refusal and the measurable customer impact rather than a vague quality claim.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager asked me to update some copy on the login page. I thought the new text was unclear so I pushed back and rewrote it myself over the weekend."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the change ship?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yeah, they used my version. The users didn't complain so I think it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: new grad on web team",
+        "Situation: unclear copy on login page",
+        "Action: rewrote copy over weekend after pushing back",
+        "Outcome: shipped, no user complaints",
+        "Quote: \"The users didn't complain so I think it was fine\"",
+        "Follow-up: What standard were you holding to? Could not name specific quality bar or data on why original was bad."
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at junior level. The candidate described rewriting login copy they personally found unclear but never articulated an objective quality standard or customer impact. The result was simply \"no complaints,\" which shows passive acceptance rather than active insistence. No evidence of trade-off discussion with stakeholders or measurable outcome for the actual customer. This reads as individual preference rather than holding a high bar. Biggest gap is lack of any concrete definition of \"highest standards\" or data tying the change to customer results."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments service had a 0.8% error rate on retries that was causing merchant payouts to fail intermittently. I refused to greenlight the next release until we added idempotency keys and circuit breakers even though it slipped the quarter by three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "The product director for merchants. I showed them the merchant ticket volume and payout failure data, then worked with two other teams to land the changes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: senior on payments platform",
+        "Situation: 0.8% retry errors causing merchant payout failures",
+        "Action: blocked release, added idempotency and circuit breakers, slipped quarter by 3 weeks",
+        "Outcome: worked across teams; payout failures dropped below 0.1%",
+        "Quote: \"I refused to greenlight the next release until we added idempotency keys\"",
+        "Follow-up: How did you influence the product director? Used merchant ticket data and payout volume metrics to align on the cost of inaction."
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at senior level. The candidate blocked a release that would have continued 0.8% payout failures for merchants, their direct customer, and drove cross-team changes to add idempotency and circuit breakers. They accepted a three-week slip after using data to align the product director. The result was a clear reduction in failures. This demonstrates influence without authority and measurable customer impact beyond their immediate team. Biggest strength is the explicit trade-off discussion and data-driven negotiation rather than just saying no.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told a PM we couldn't launch a new checkout flow because the A/B test showed a 2% conversion drop. They launched anyway and I documented my concern in the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final outcome for customers?"
+        },
+        {
+          "role": "candidate",
+          "text": "Conversion recovered after two weeks so it was probably okay."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: senior on checkout team",
+        "Situation: A/B test showed 2% conversion drop on new flow",
+        "Action: documented concern in ticket but did not block",
+        "Outcome: launched anyway, conversion recovered later",
+        "Quote: \"I documented my concern in the ticket\"",
+        "Follow-up: What standard were you defending? Pointed only to the test result without defining an acceptable quality threshold or following up on customer impact."
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at senior level. The candidate documented a concern about a 2% conversion drop but did not actually refuse the launch or drive any remediation. The story ends with passive acceptance once numbers recovered. No evidence of cross-team influence or sustained ownership of the customer experience. This shows awareness of a quality signal without the insistence required at senior scope. Biggest gap is treating documentation as a substitute for holding the standard."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was under pressure to hit a feature deadline that would have required shipping without full regression coverage on the new billing engine. I told the director we would miss the date rather than risk customer invoices being wrong."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your team feel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were relieved. I then re-prioritized the next two sprints so they could add the tests without burnout, and we still delivered the feature the following month with zero invoice defects."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: manager of billing platform team",
+        "Situation: feature deadline vs incomplete regression on billing engine",
+        "Action: refused to ship, took date slip, re-prioritized sprints to add tests",
+        "Outcome: zero invoice defects; team avoided burnout",
+        "Quote: \"I told the director we would miss the date rather than risk customer invoices being wrong\"",
+        "Follow-up: What was the long-term effect on the team? They now run full regression as a non-negotiable before any billing release."
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at manager level. The candidate protected invoice accuracy for customers by refusing an incomplete release and absorbed the date miss with the director. They then adjusted team priorities to close the quality gap without burnout. The result was zero defects and a new team norm around regression. This shows both customer focus and leverage through process change. Biggest strength is turning a one-time refusal into sustained team behavior rather than repeated heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a junior engineer who kept shipping small bugs. I told them to be more careful in code reviews but didn't change any of our release process."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the bug rate improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "A bit after I started reviewing their PRs myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: manager of small feature team",
+        "Situation: junior shipping bugs",
+        "Action: told engineer to be careful and started reviewing their PRs",
+        "Outcome: bug rate improved slightly",
+        "Quote: \"I told them to be more careful in code reviews\"",
+        "Follow-up: How did this affect the rest of the team? No process change; only manager time spent on one person's output."
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at manager level. The candidate addressed repeated bugs from one engineer through personal review rather than raising team standards or fixing the release process. The outcome was marginal improvement at the cost of manager time. No evidence of building leverage or changing how the team owns quality. This reads as individual heroics instead of managerial insistence on higher standards. Biggest gap is lack of systemic change or development of the broader team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a legacy search index that was returning stale results 4% of the time for high-value enterprise customers. I made the call to pause all new feature work for six months and rebuild the index with strong consistency guarantees."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CFO pushed back hard on the pause. I showed them the renewal risk data from the top 20 accounts and we agreed to a phased migration that still protected Q3 revenue targets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: VP of platform at ~2000 person company",
+        "Situation: 4% stale search results for enterprise customers",
+        "Action: paused feature work for six months to rebuild index with consistency",
+        "Outcome: phased migration approved after showing renewal risk data; stale rate went to zero",
+        "Quote: \"I made the call to pause all new feature work for six months\"",
+        "Follow-up: How did you measure long-term impact? Enterprise renewal rate improved 8 points the following year; search complaints dropped 70%."
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at exec level. The candidate made a multi-quarter trade-off to rebuild a core search system after data showed 4% stale results were creating renewal risk with enterprise customers. They used account-level data to align the CFO on a phased approach that protected revenue. The result was a durable fix and measurable renewal improvement. This demonstrates strategic judgment and long-term thinking at org scale. Biggest strength is converting a quality issue into a business-aligned investment rather than a pure engineering mandate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our mobile app had occasional crashes in low-signal areas. I asked the team to add better logging so we could debug faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did crash rates change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Logging helped us find a few issues over the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+        "Role: VP of mobile at mid-size company",
+        "Situation: occasional crashes in low-signal areas",
+        "Action: asked team to add better logging",
+        "Outcome: found a few issues over the quarter",
+        "Quote: \"I asked the team to add better logging so we could debug faster\"",
+        "Follow-up: What standard did you set? No explicit target for crash rate or customer impact defined; relied on incremental debugging."
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at exec level. The candidate responded to app crashes with a request for better logging rather than setting a clear quality bar or making resource trade-offs. The outcome was incremental debugging with no stated target or customer metric. This shows awareness of an issue without the strategic insistence or leverage expected at executive scope. Biggest gap is absence of any org-level decision or measurable customer outcome tied to the action."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of customer impact",
+      "junior": "Individual feature or tool affecting a small internal group",
+      "senior": "Platform or service affecting external customers with cross-team coordination",
+      "manager": "Team output and process norms protecting customer experience",
+      "exec": "Org-level trade-off affecting renewal or revenue with C-level alignment"
+    },
+    {
+      "signal": "Nature of refusal",
+      "junior": "Pushed back on a single deadline or PR",
+      "senior": "Blocked a release and drove technical changes across teams",
+      "manager": "Refused date and adjusted team priorities and norms",
+      "exec": "Paused multi-quarter roadmap after business case to CFO"
+    },
+    {
+      "signal": "Evidence of standards",
+      "junior": "Named a concrete defect (rounding error) with local effect",
+      "senior": "Used error rate and ticket volume to define the bar",
+      "manager": "Established regression as non-negotiable for the team",
+      "exec": "Tied 4% staleness directly to renewal risk data"
+    },
+    {
+      "signal": "Result measurement",
+      "junior": "Anecdotal confirmation from one stakeholder",
+      "senior": "Quantified drop in payout failures",
+      "manager": "Zero defects plus new team process",
+      "exec": "8-point renewal lift and 70% drop in complaints"
+    }
+  ],
+  "kind": "lp"
+}

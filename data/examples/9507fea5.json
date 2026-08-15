@@ -1,0 +1,301 @@
+{
+  "question": "Tell me about a problem you had to solve that required in-depth thought and analysis. How did you know you were focusing on the right things? What was the outcome? Would you have done anything differently?",
+  "competency": "Dive Deep (analysis focus, validation of priorities, reflection)",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing slow page loads on a new dashboard feature. I added logging to measure query times and spotted an N+1 issue in the user list endpoint."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm that was the right focus area?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the prior week's latency numbers from CloudWatch and saw the p95 jump right after my change. After the fix, p95 dropped 40% and support tickets fell."
+        },
+        {
+          "role": "interviewer",
+          "text": "Anything you would do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have added the same logging earlier in the project instead of waiting for complaints."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Analyzed dashboard latency by adding targeted logging on their feature.",
+        "Validated focus via CloudWatch p95 metrics before/after change.",
+        "Outcome: 40% p95 drop, fewer tickets.",
+        "Quote: 'I pulled the prior week's latency numbers...'",
+        "Follow-up: Would you do anything differently? -> Add logging earlier."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at junior level. The candidate owned an individual performance problem, used data to confirm the N+1 root cause, and measured the result. They explicitly tied focus to CloudWatch numbers rather than assumptions. The reflection on adding logging earlier shows coachability. Biggest strength is the clear before-and-after metric link; gap is that scope stayed within one feature with no cross-team coordination needed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The page was slow so I tried a few different queries until it felt faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know which changes actually mattered?"
+        },
+        {
+          "role": "candidate",
+          "text": "It just loaded quicker in my browser so I moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe ask my manager sooner next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Tried random query tweaks without measurement.",
+        "No data used to validate focus; relied on 'felt faster'.",
+        "Outcome described only as 'quicker in my browser'.",
+        "Quote: 'It just loaded quicker in my browser so I moved on.'",
+        "Follow-up: How did you know which changes mattered? -> No clear answer."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at junior level. The candidate described trial-and-error without any metrics or logging to confirm root cause. They could not articulate how they validated focus, defaulting to subjective feel. Reflection stayed at 'ask manager sooner' with no ownership of analysis process. Biggest gap is absence of data-driven validation; strength is willingness to attempt fixes but without depth."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout service had intermittent 5xx spikes affecting two teams. I built a query across logs and metrics to correlate errors with a new inventory service call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you validate the right focus?"
+        },
+        {
+          "role": "candidate",
+          "text": "I compared error rates before and after the inventory change across three regions and confirmed the correlation coefficient."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and what you would change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Spikes dropped to zero after adding a circuit breaker. I would have involved the inventory team earlier instead of solving it alone first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Cross-team checkout 5xx issue; correlated logs with new inventory dependency.",
+        "Validated via regional error rates and correlation coefficient.",
+        "Outcome: zero spikes after circuit breaker; involved other team in hindsight.",
+        "Quote: 'I compared error rates before and after...'",
+        "Follow-up: What would you change? -> Involve inventory team earlier."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at senior level. The candidate drove analysis across service boundaries using quantitative correlation rather than guesswork. They surfaced the inventory dependency and measured impact with regional data. Reflection on earlier cross-team involvement shows influence without authority. Biggest strength is the clear validation method; gap is initial solo approach before looping in the other team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Checkout was erroring so I looked at the logs for a few hours and guessed it was the new service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm the focus was correct?"
+        },
+        {
+          "role": "candidate",
+          "text": "The errors looked similar so I added a retry and it seemed better."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Document the guess better for the next person."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Reviewed logs for hours then guessed root cause.",
+        "Validation was 'errors looked similar' with no metrics.",
+        "Outcome: added retry and 'it seemed better'.",
+        "Quote: 'The errors looked similar so I added a retry...'",
+        "Follow-up: How did you confirm focus? -> No quantitative answer."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at senior level. The candidate relied on subjective log review and a guess instead of structured analysis or metrics. They could not explain how they validated the inventory link. Reflection stayed at documentation rather than improving analysis depth or collaboration. Biggest gap is lack of data correlation; strength is eventual retry attempt but without measurable validation."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned a recommendation engine with declining CTR. I had the team instrument per-model metrics and run a cohort analysis over 90 days of user data."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team know they were focused correctly?"
+        },
+        {
+          "role": "candidate",
+          "text": "We set a hypothesis threshold on CTR lift per cohort and only pursued changes that cleared it; two models were deprioritized as a result."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and reflection?"
+        },
+        {
+          "role": "candidate",
+          "text": "CTR rose 18% after shipping the top two models. I would have run the cohort analysis two weeks earlier to avoid sunk cost on the weaker models."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Led team on recommendation CTR decline via 90-day cohort analysis.",
+        "Validated focus with hypothesis threshold on CTR lift.",
+        "Outcome: 18% CTR rise; deprioritized two models.",
+        "Quote: 'We set a hypothesis threshold on CTR lift per cohort...'",
+        "Follow-up: What would you change? -> Run analysis two weeks earlier."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at manager level. The candidate created leverage by having the team instrument metrics and apply a clear decision threshold, avoiding heroics. They protected team focus by deprioritizing work based on data. Reflection on earlier analysis timing shows long-term process thinking. Biggest strength is the team-level validation mechanism; gap is the initial two-week delay in starting the cohort work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "CTR was down so I told the team to look at the models and pick the best one."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the team was focused on the right signals?"
+        },
+        {
+          "role": "candidate",
+          "text": "They came back with a few ideas that felt promising."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped one and CTR moved a bit."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Directed team to review models without structured analysis plan.",
+        "Validation based on 'felt promising' rather than thresholds.",
+        "Outcome: shipped one model and 'CTR moved a bit'.",
+        "Quote: 'They came back with a few ideas that felt promising.'",
+        "Follow-up: How did you know focus was right? -> Subjective judgment."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at manager level. The candidate provided no evidence of creating team processes for validation or metrics thresholds. Focus decisions stayed subjective. Outcome lacked concrete metrics and showed no leverage through the team. Biggest gap is absence of data-driven prioritization; strength is assigning the work but without depth or measurable coaching on analysis."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a multi-quarter revenue plateau tied to platform maturity. I commissioned an internal diagnostic across product, sales, and finance data to isolate the top three drivers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you validate the diagnostic scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "We required each driver to explain at least 15% of the variance in a regression model before investing further analysis."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and what you would change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shifted 30% of roadmap to the highest driver and revenue grew 12% the next year. I would have included customer interview data in the regression from day one."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Org-level revenue plateau; commissioned cross-functional diagnostic.",
+        "Validated via regression requiring 15% variance threshold per driver.",
+        "Outcome: 30% roadmap shift, 12% revenue growth.",
+        "Quote: 'We required each driver to explain at least 15% of the variance...'",
+        "Follow-up: What would you change? -> Include customer interviews earlier."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at exec level. The candidate set a quantitative threshold for analysis scope at the business level and used it to drive roadmap trade-offs. They owned the outcome through measurable revenue impact. Reflection on adding customer data earlier shows strategic judgment on data sources. Biggest strength is the variance threshold protecting focus; gap is the one-quarter delay before including qualitative signals.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Revenue was flat so I asked each team to report on their biggest issues and we picked the top three."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm those were the right priorities?"
+        },
+        {
+          "role": "candidate",
+          "text": "The reports lined up with what I was hearing in QBRs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We adjusted a few priorities and revenue started moving again later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem... in-depth thought and analysis.",
+        "Collected team reports on flat revenue without structured model.",
+        "Validation based on alignment with existing QBR anecdotes.",
+        "Outcome: adjusted priorities and 'revenue started moving again later'.",
+        "Quote: 'The reports lined up with what I was hearing in QBRs.'",
+        "Follow-up: How did you confirm priorities? -> Anecdotal alignment."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at exec level. The candidate relied on aggregated anecdotes rather than a rigorous diagnostic model or variance thresholds. No evidence of strategic trade-off analysis or long-term data hygiene. Outcome description stayed vague without attributable metrics. Biggest gap is lack of quantitative scoping; strength is soliciting input but without depth to drive precise decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Validation method for focus",
+      "junior": "Used before/after metrics on own change",
+      "senior": "Regional correlation coefficient across services",
+      "manager": "Team hypothesis threshold on CTR lift",
+      "exec": "Regression variance threshold at org level"
+    },
+    {
+      "signal": "Scope of analysis",
+      "junior": "Single feature, individual ownership",
+      "senior": "Cross-team service dependency",
+      "manager": "Team process and model prioritization",
+      "exec": "Multi-quarter business driver isolation"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "40% p95 drop, ticket reduction",
+      "senior": "Zero 5xx spikes post fix",
+      "manager": "18% CTR rise after roadmap shift",
+      "exec": "12% revenue growth after 30% roadmap change"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Add logging earlier in project",
+      "senior": "Loop in dependent team sooner",
+      "manager": "Start cohort analysis two weeks earlier",
+      "exec": "Include customer interviews in regression from day one"
+    },
+    {
+      "signal": "Data vs anecdote reliance",
+      "junior": "CloudWatch metrics vs subjective feel",
+      "senior": "Correlation stats vs log similarity guess",
+      "manager": "Cohort thresholds vs 'felt promising'",
+      "exec": "Regression model vs QBR anecdotes"
+    }
+  ],
+  "kind": "lp"
+}

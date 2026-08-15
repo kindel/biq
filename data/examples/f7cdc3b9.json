@@ -1,0 +1,262 @@
+{
+  "question": "Describe a situation where you had to choose between what was easy/convenient and what was right.",
+  "competency": "Integrity, Ethics & Trust",
+  "principle": "Integrity, Ethics & Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "I found a small data mismatch in my test script that would have let the build pass if I ignored it. I logged the bug and told my mentor instead of shipping it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed the release by a day. My mentor said it was the right call and walked me through how to catch it earlier next time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Junior dev found data mismatch in own test script that would let build pass.",
+        "Logged bug and told mentor instead of ignoring it.",
+        "Outcome: release delayed one day; received coaching on prevention.",
+        "Quote: 'I logged the bug and told my mentor.'",
+        "Follow-up: Asked what happened after; candidate described learning and positive feedback."
+      ],
+      "raiseFeedback": "Raises the bar on Integrity for a junior. The candidate described catching their own small data mismatch and choosing to report it rather than let the build pass. They accepted a one-day delay and used the moment for coaching on prevention. This shows ownership of individual work and willingness to surface issues early. The story is local but demonstrates the right instincts before any external pressure. Biggest strength is immediate transparency on their own output.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "I once noticed a test was flaky but the team was pushing to merge so I just reran it until it passed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone find out later?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it never came up again so we moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Candidate reran flaky test until it passed to avoid blocking merge.",
+        "Did not log or escalate the flakiness.",
+        "Outcome: issue never surfaced again; no further action taken.",
+        "Quote: 'I just reran it until it passed.'",
+        "Follow-up: Asked if anyone found out; candidate confirmed it stayed hidden."
+      ],
+      "lowerFeedback": "Lowers the bar on Integrity for a junior. The candidate chose to rerun a flaky test until it passed rather than investigate or report it. They treated the absence of later complaints as sufficient justification. This shows preference for personal convenience over surfacing a real quality signal. No evidence of reflection or intent to improve the process. Biggest gap is treating hidden problems as acceptable outcomes."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "Another team asked us to reuse their API that had known rate-limit gaps. I pushed back in the design review and wrote up the risk even though it slowed our timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were frustrated at first but later thanked us when their own monitoring caught the issue on a different service."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Senior pushed back on reusing another team's API with known rate-limit gaps.",
+        "Documented risk in design review despite timeline pressure.",
+        "Outcome: other team later acknowledged the call after catching similar issue elsewhere.",
+        "Quote: 'I pushed back in the design review and wrote up the risk.'",
+        "Follow-up: Asked about other team's reaction; candidate noted initial friction then thanks."
+      ],
+      "raiseFeedback": "Raises the bar on Integrity for a senior. The candidate documented and escalated a cross-team API risk instead of taking the convenient reuse path. They accepted short-term friction to protect downstream reliability. The later acknowledgment from the other team shows the decision had measurable impact beyond their own service. Story demonstrates influence without authority on a quality trade-off. Biggest strength is willingness to create documented dissent for long-term system health.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a dependency with a security advisory but the fix was a big refactor. I added a suppression comment and moved on since the affected path was internal only."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was that reviewed anywhere?"
+        },
+        {
+          "role": "candidate",
+          "text": "It passed the security scan after the suppression so we shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Senior added suppression for known security advisory instead of fixing dependency.",
+        "Justified by noting affected path was internal.",
+        "Outcome: scan passed after suppression and code shipped.",
+        "Quote: 'I added a suppression comment and moved on.'",
+        "Follow-up: Asked about review; candidate confirmed scan acceptance was sufficient."
+      ],
+      "lowerFeedback": "Lowers the bar on Integrity for a senior. The candidate suppressed a security advisory rather than perform the refactor because the path was internal. They relied on the scan passing after suppression as the only validation. No evidence of consulting security or considering blast radius beyond their service. This shows prioritization of short-term velocity over risk transparency. Biggest gap is treating internal-only as justification for lowered standards."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "One of my engineers wanted to close a customer data ticket by deleting the record instead of fixing the export job. I required them to do the proper fix and explained why to the customer even though it meant missing the quarter's SLA target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your team respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "The engineer was annoyed at first but later used the fix as an example in onboarding."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Manager required proper fix for customer data export instead of deletion to close ticket.",
+        "Accepted missed SLA to protect data integrity.",
+        "Outcome: engineer later used the incident as onboarding example.",
+        "Quote: 'I required them to do the proper fix.'",
+        "Follow-up: Asked about team response; candidate noted initial frustration then positive reuse."
+      ],
+      "raiseFeedback": "Raises the bar on Integrity for a manager. The candidate overruled a quick deletion fix for customer data and insisted on the correct export job repair. They accepted a missed SLA to avoid data loss. The engineer later referenced the decision in onboarding, showing the standard was internalized by the team. Story shows the manager modeling and reinforcing ethical handling of customer data. Biggest strength is using a concrete case to set team expectations on data handling.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "My team had a ticket where the customer data was already corrupted. I let them close it with a note because fixing the root cause would have taken too much time from other work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the customer ever ask again?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not that I saw, so we considered it resolved."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Manager allowed team to close corrupted customer data ticket with a note.",
+        "Prioritized other work over root-cause fix.",
+        "Outcome: no further customer contact observed; treated as resolved.",
+        "Quote: 'I let them close it with a note.'",
+        "Follow-up: Asked if customer followed up; candidate said no further contact seen."
+      ],
+      "lowerFeedback": "Lowers the bar on Integrity for a manager. The candidate permitted closing a customer data corruption ticket with only a note instead of driving the root-cause fix. They justified the choice by citing competing team priorities. No follow-up mechanism was put in place to verify customer impact. This signals to the team that data issues can be deprioritized when inconvenient. Biggest gap is failing to enforce data-handling standards under delivery pressure."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "We discovered a billing calculation error that had overcharged a segment of customers for two years. I chose to issue full refunds and notify regulators even though it meant taking a large one-time hit and delaying our next funding round."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the board reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They supported the decision after I showed the long-term brand and legal risk of non-disclosure."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Exec chose full refunds and regulator notification for multi-year billing error.",
+        "Accepted large financial hit and delayed funding round.",
+        "Outcome: board supported after risk analysis presented.",
+        "Quote: 'I chose to issue full refunds and notify regulators.'",
+        "Follow-up: Asked about board reaction; candidate described initial concern then alignment on long-term risk."
+      ],
+      "raiseFeedback": "Raises the bar on Integrity for an exec. The candidate initiated full refunds and regulatory disclosure for a two-year billing error despite the immediate financial and funding impact. They prepared the board with a risk analysis that prioritized long-term trust and compliance. The decision affected thousands of customers and required accepting a material P&L event. Story shows strategic judgment on ethics at business scale. Biggest strength is willingness to surface and own a systemic issue that could have been minimized.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to pick between easy and right."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a legacy billing issue affecting a small segment. I approved a quiet credit instead of a full refund because the total was under our materiality threshold and we were in the middle of a fundraising process."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you track if the affected customers noticed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We monitored churn in that cohort and it stayed flat so we moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to choose between easy/convenient and right.",
+        "Exec approved quiet credits for legacy billing error instead of refunds.",
+        "Cited materiality threshold and fundraising timing.",
+        "Outcome: churn remained flat; issue closed without disclosure.",
+        "Quote: 'I approved a quiet credit instead of a full refund.'",
+        "Follow-up: Asked about customer awareness; candidate cited stable churn metrics."
+      ],
+      "lowerFeedback": "Lowers the bar on Integrity for an exec. The candidate chose quiet credits over full refunds for a billing error to avoid impacting fundraising. They used cohort churn stability as the primary success metric. No evidence of legal or customer-trust analysis beyond the immediate financial threshold. This approach treats regulatory and brand risk as secondary to short-term optics. Biggest gap is allowing fundraising timing to drive the scope of customer remediation."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual output or small bug",
+      "senior": "Cross-team technical risk",
+      "manager": "Team process and customer data handling",
+      "exec": "Business-level financial and regulatory exposure"
+    },
+    {
+      "signal": "Willingness to accept cost",
+      "junior": "One-day delay and coaching",
+      "senior": "Timeline friction with peer team",
+      "manager": "Missed SLA to protect data",
+      "exec": "Large P&L hit and delayed funding"
+    },
+    {
+      "signal": "Evidence of reflection",
+      "junior": "Used incident for personal learning",
+      "senior": "Later acknowledged by other team",
+      "manager": "Incident reused in team onboarding",
+      "exec": "Board alignment on long-term risk"
+    },
+    {
+      "signal": "Transparency mechanism",
+      "junior": "Told mentor immediately",
+      "senior": "Wrote risk in design review",
+      "manager": "Explained decision to customer and team",
+      "exec": "Prepared board and notified regulators"
+    }
+  ],
+  "kind": "competency"
+}

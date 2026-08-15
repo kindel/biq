@@ -1,0 +1,226 @@
+{
+  "question": "Give me an example of when you were able to anticipate a customer need with a solution/product they didn't know they needed/wanted yet. How did you know they needed this? How did they respond?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed in our support logs that users kept asking how to export data to CSV even though the feature didn't exist. I pulled the top 20 tickets, saw the pattern, and built a simple one-click export in my spare time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it was worth building before they asked?"
+        },
+        {
+          "role": "candidate",
+          "text": "The tickets were increasing 15% month over month and came from three different customer segments. After I shipped it, ticket volume on that topic dropped to zero and we got three unsolicited thank-you emails."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate scanned support logs, saw rising CSV export requests across segments",
+        "Built simple export in spare time",
+        "Outcome: tickets dropped to zero, three thank-you notes",
+        "Quote: 'Tickets were increasing 15% month over month'",
+        "Follow-up: How did you know it was worth it? - Tied to ticket trend and cross-segment signal"
+      ],
+      "raiseFeedback": "Raises the bar for Customer Obsession at junior level. The candidate proactively mined support data rather than waiting for a direct ask. Story shows they connected rising ticket volume to a latent need and shipped a fix that eliminated the problem. Quote about 15% monthly growth demonstrates they used observable signals instead of intuition alone. Outcome was measurable and directly tied to the work. Biggest strength is turning raw ticket data into a shipped solution without being asked.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer once told us they wanted a dark mode, so we added it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you anticipate something they didn't know they needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Well, they asked for it, so I guess we anticipated it by building it quickly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate described building dark mode after customer explicitly requested it",
+        "No proactive signal or discovery step mentioned",
+        "Outcome: feature was delivered, no further detail",
+        "Follow-up: How did you anticipate something they didn't know they needed? - Candidate restated that the customer had asked"
+      ],
+      "lowerFeedback": "Lowers the bar for Customer Obsession at junior level. The example is a direct response to an explicit customer request rather than anticipation of an unstated need. No evidence of pattern spotting or independent discovery. Story remains at the level of 'they asked, we built.' Biggest gap is lack of proactive customer insight work even at individual scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our B2B customers were manually reconciling invoices in spreadsheets. I analyzed usage data and support tickets, then worked with two other teams to add automated reconciliation reports."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know customers needed this before they asked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Invoice-related tickets had grown 40% and usage showed 60% of enterprise accounts exporting data weekly. After launch, manual export volume fell 35% and two customers mentioned it in renewal calls."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate analyzed invoice reconciliation friction via data and tickets",
+        "Partnered with two other teams to ship automated reports",
+        "Outcome: export volume down 35%, mentioned in renewals",
+        "Quote: 'Invoice tickets grew 40% and 60% of enterprise accounts exported weekly'",
+        "Follow-up: How did you know before they asked? - Linked ticket growth and usage patterns to latent need"
+      ],
+      "raiseFeedback": "Raises the bar for Customer Obsession at senior level. Candidate used cross-team data to surface an unarticulated workflow pain point. Story shows influence across teams to deliver automated reconciliation without waiting for customer requests. Quote tying 40% ticket growth and 60% export rate gives concrete grounding. Result affected both support load and renewal conversations. Biggest strength is scaling individual discovery into a multi-team solution with measurable adoption impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We added a feature after a big customer complained about invoice exports during a QBR."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you anticipate something they didn't know they needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "The customer brought it up, so we prioritized it in the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate described reacting to a complaint in a QBR",
+        "No prior data analysis or pattern detection",
+        "Outcome: feature was prioritized, no further metrics",
+        "Follow-up: How did you anticipate something they didn't know they needed? - Candidate reframed as fast reaction to voiced complaint"
+      ],
+      "lowerFeedback": "Lowers the bar for Customer Obsession at senior level. The example is reactive to a single customer's voiced complaint rather than proactive discovery. No evidence of cross-team data analysis or influence without authority. Story stays within the bounds of responding to explicit feedback. Biggest gap is absence of senior-level pattern recognition that prevents issues before customers raise them."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team noticed customers struggling with onboarding drop-off. I had them run cohort analysis and shadow calls, then we built guided setup flows before customers asked for help."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team know this was needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Drop-off was at 42% in week one. After the guided flows launched, activation rose 18 points and support tickets from new users fell 25%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate had team run cohort analysis and customer shadows",
+        "Shipped guided onboarding flows proactively",
+        "Outcome: activation up 18 points, new-user tickets down 25%",
+        "Quote: 'Drop-off was at 42% in week one'",
+        "Follow-up: How did the team know? - Tied to cohort data and observed behavior"
+      ],
+      "raiseFeedback": "Raises the bar for Customer Obsession at manager level. Candidate created team processes to surface latent onboarding friction before customers articulated it. Story demonstrates leverage through analysis and shadowing rather than heroics. Quote on 42% drop-off shows they set up data-driven discovery. Result improved activation and reduced support load. Biggest strength is building repeatable team mechanisms that anticipate needs at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When a customer asked for better onboarding, I assigned it to the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you anticipate something they didn't know they needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We moved quickly once the request came in."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate described assigning work after a customer request arrived",
+        "No team-level discovery process described",
+        "Outcome: work was assigned, no metrics shared",
+        "Follow-up: How did you anticipate something they didn't know they needed? - Candidate focused on speed of response"
+      ],
+      "lowerFeedback": "Lowers the bar for Customer Obsession at manager level. The example shows delegation after an explicit request rather than creating proactive discovery habits in the team. No evidence of developing people to spot unstated needs. Story remains at the level of reacting to inbound feedback. Biggest gap is lack of team leverage or process that surfaces needs earlier."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We saw enterprise customers delaying purchases because they couldn't forecast usage costs. I sponsored a pricing simulator project across product, finance, and sales before any customer explicitly asked for it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know this was a strategic need?"
+        },
+        {
+          "role": "candidate",
+          "text": "Win-rate data showed a 22-point gap on deals over $500k and sales calls repeatedly surfaced cost uncertainty. After the simulator, forecast accuracy in sales improved and cycle time for large deals dropped 19%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate sponsored cross-org pricing simulator based on win-rate and call patterns",
+        "No customer had directly requested the tool",
+        "Outcome: sales forecast accuracy up, large-deal cycle time down 19%",
+        "Quote: 'Win-rate gap of 22 points on deals over $500k'",
+        "Follow-up: How did you know this was strategic? - Linked to revenue data and deal patterns"
+      ],
+      "raiseFeedback": "Raises the bar for Customer Obsession at exec level. Candidate used business-level signals to identify a purchasing friction customers had not yet named. Story shows strategic judgment in sponsoring a cross-org solution ahead of explicit demand. Quote on 22-point win-rate gap ties the decision to measurable commercial impact. Result affected sales cycle at scale. Biggest strength is connecting customer behavior data to long-term revenue outcomes without waiting for requests.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We built a pricing tool after several customers said forecasting was hard during renewals."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you anticipate something they didn't know they needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We responded by building it for the next renewal cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of anticipating a customer need they didn't know they wanted",
+        "Candidate described building tool after customers voiced the issue in renewals",
+        "No preemptive business or usage analysis cited",
+        "Outcome: tool was delivered for next cycle",
+        "Follow-up: How did you anticipate something they didn't know they needed? - Candidate described reacting to voiced feedback"
+      ],
+      "lowerFeedback": "Lowers the bar for Customer Obsession at exec level. The example is a response to feedback that had already surfaced in renewal conversations. No evidence of using ambiguous strategic signals to act earlier. Story stays within reacting to stated customer pain rather than shaping the product ahead of demand. Biggest gap is absence of long-term, org-level anticipation that prevents revenue friction."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Data-driven discovery",
+      "junior": "Uses ticket volume trends",
+      "senior": "Combines usage + ticket data across segments",
+      "manager": "Sets up team cohort and shadowing processes",
+      "exec": "Links win-rate gaps to strategic product bets"
+    },
+    {
+      "signal": "Proactive vs reactive",
+      "junior": "Builds before explicit ask",
+      "senior": "Influences other teams without request",
+      "manager": "Creates team habits for early detection",
+      "exec": "Sponsors org-wide solutions from business signals"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature, local metrics",
+      "senior": "Cross-team, adoption metrics",
+      "manager": "Team process, activation metrics",
+      "exec": "Revenue cycle and forecast accuracy"
+    },
+    {
+      "signal": "Customer signal source",
+      "junior": "Support logs",
+      "senior": "Usage patterns + tickets",
+      "manager": "Cohort analysis + call shadowing",
+      "exec": "Win-rate data + sales call themes"
+    }
+  ],
+  "kind": "lp"
+}

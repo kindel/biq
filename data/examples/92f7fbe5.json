@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time where you were successful in overcoming engineering resistance to an idea. What was the idea? What did you do? What was the outcome?",
+  "competency": "Bias for Action (Influence without authority)",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was stuck on manual testing for a feature flag rollout. I proposed adding a simple automated smoke test in our CI pipeline. Most engineers said it was extra work and would slow merges. I built a minimal version over two nights, ran it on our last three deploys, and showed it caught a config bug before it hit staging. After that, two teammates started extending it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit after you showed the results?"
+        },
+        {
+          "role": "candidate",
+          "text": "One senior dev still worried about maintenance. I asked him to review the script and he added two checks that made it more reliable. We merged it the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you were successful in overcoming engineering resistance to an idea...",
+        "Proposed adding automated smoke test to CI for feature flags",
+        "Built minimal version personally, showed it caught a real bug on three deploys",
+        "Quote: 'I built a minimal version over two nights...'",
+        "Follow-up: Senior still worried about maintenance \u2192 asked him to review and he added checks"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at junior level. The candidate took individual ownership by building the prototype themselves rather than waiting for consensus. Concrete quote shows they moved from idea to working artifact quickly. The outcome stayed local but produced measurable signal (caught a config bug) that shifted two teammates. Follow-up answer demonstrates they incorporated the remaining resister instead of dismissing them. Biggest gap is limited scope; no evidence yet of sustaining the practice beyond one feature.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we should use a new linter. People pushed back saying it was too strict. I kept bringing it up in standup until they agreed to try it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually do to show it would work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just ran it on my machine and showed a couple of warnings. They eventually said okay."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time...",
+        "Suggested new linter, met resistance on strictness",
+        "Kept mentioning it in standup until agreement",
+        "Quote: 'I just ran it on my machine and showed a couple of warnings'",
+        "Follow-up: No prototype or data beyond personal run \u2192 outcome was passive agreement"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate relied on repeated verbal requests instead of producing a working artifact to reduce perceived risk. Story shows persistence but no evidence of reducing friction for others or delivering a concrete outcome beyond eventual reluctant agreement. Follow-up reveals the effort stayed at the level of suggestion rather than demonstration. Biggest gap is absence of any measurable impact or learning from the resistance."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams resisted adopting a shared retry library because each had their own timeout logic. I prototyped a thin wrapper around our existing client that used the new library and ran load tests showing 18% fewer 5xx errors on their endpoints. I then paired with one engineer from each team for a week to migrate their critical path."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineer who kept saying their use case was different?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked him to define the exact difference, added a config hook for it, and had him own the first production rollout. Error rate dropped on his service first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you were successful in overcoming engineering resistance...",
+        "Idea: shared retry library across two platform teams",
+        "Built prototype + load tests showing 18% fewer 5xx",
+        "Paired with one engineer per team for migration",
+        "Follow-up: Engineer claimed unique use case \u2192 added config hook and let him own first rollout"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate used a working prototype plus data to convert resistance into participation. Cross-team scope is appropriate and they created leverage by having resisters own part of the rollout. Quote on the follow-up shows they turned the loudest skeptic into an advocate rather than overriding them. Outcome includes a clear metric. Biggest strength is converting resistance into ownership instead of just winning the argument.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted the teams to use a common retry library. They said their cases were different so I wrote a long design doc explaining why they were wrong. After three review cycles they agreed to a meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything ship?"
+        },
+        {
+          "role": "candidate",
+          "text": "We scheduled a follow-up to discuss timelines but the project moved to another quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time...",
+        "Pushed shared retry library, met 'use cases are different' resistance",
+        "Responded with long design doc arguing against objections",
+        "Quote: 'I wrote a long design doc explaining why they were wrong'",
+        "Follow-up: Three review cycles \u2192 meeting scheduled, nothing shipped"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate defaulted to documentation and debate instead of a runnable artifact that could disprove objections. Story shows persistence on process but zero shipped outcome. Follow-up confirms the effort stayed in review cycles without reducing risk for the resisting teams. Biggest gap is treating resistance as something to be argued away rather than de-risked with evidence."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team and the adjacent infra team were both building separate circuit-breaker solutions. I asked my leads to run a joint spike for two weeks and surface the top three failure scenarios. We then had each team own one production service migration with shared on-call rotation for the first month."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the lead who felt his team was being deprioritized?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the joint spike count toward his team's OKRs and had him present the results in the quarterly review. Both teams now use the same library and on-call load dropped 25%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you were successful in overcoming engineering resistance...",
+        "Idea: shared circuit-breaker across two teams",
+        "Ran joint spike with leads owning failure scenarios",
+        "Each team migrated one service with shared on-call",
+        "Follow-up: Lead felt deprioritized \u2192 tied spike to his OKRs and let him present results"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate created structural leverage by tying the joint work to both teams' goals and using shared on-call as a forcing function. The outcome is a sustained reduction in duplicated effort and measurable on-call relief. Follow-up shows they addressed the under-the-surface resistance by giving the skeptical lead visibility instead of mandating compliance. Biggest strength is turning a resource conflict into a shared win.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told both teams they needed to consolidate on one circuit-breaker. My team pushed back saying they had already invested time. I escalated to the director to get a decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result for the teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "We standardized but morale on the other team stayed low for a couple quarters."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time...",
+        "Directed two teams to consolidate circuit-breaker work",
+        "Met resistance on sunk cost \u2192 escalated to director",
+        "Quote: 'I escalated to the director to get a decision'",
+        "Follow-up: Standardization achieved but morale impact lasted quarters"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate used positional authority to force alignment instead of creating conditions for the teams to converge themselves. Outcome achieved the technical goal but created lasting friction. Follow-up reveals they did not own the people impact of the decision. Biggest gap is missing the opportunity to build cross-team ownership."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three orgs were each funding their own service mesh control plane. I set a 60-day deadline for a joint evaluation with clear success criteria and assigned a single tech lead from each org to the tiger team. After the evaluation showed 40% reduction in cross-org latency, I moved the funding line to a shared platform budget and let the original orgs keep their feature velocity commitments."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the org that was furthest behind on adoption?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave them the first production workload slot and let their lead run the migration metrics in the monthly business review. That org became the strongest internal advocate."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you were successful in overcoming engineering resistance...",
+        "Idea: single service mesh control plane across three orgs",
+        "60-day joint evaluation with one tech lead per org",
+        "Moved funding to shared platform after 40% latency win",
+        "Follow-up: Lagging org \u2192 gave them first production slot and visibility in business review"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate used a time-boxed evaluation plus funding reallocation to convert resistance into ownership at org scale. The outcome includes both a technical metric and a structural change (shared budget). Follow-up shows they deliberately gave the weakest org the win to create an advocate. Biggest strength is treating resistance as a signal of misaligned incentives rather than technical disagreement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I announced we would consolidate to one service mesh and asked the orgs to align. Two orgs kept building their own versions in parallel. I eventually had to cut their funding to force the decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "We saved money on licensing but lost two senior engineers who felt the decision was top-down."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time...",
+        "Announced consolidation to one service mesh",
+        "Met parallel builds \u2192 cut funding to force alignment",
+        "Quote: 'I eventually had to cut their funding to force the decision'",
+        "Follow-up: Cost savings but lost two senior engineers"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate defaulted to funding cuts as the primary lever instead of creating a joint evaluation that would surface data. Outcome produced cost savings but damaged retention. Follow-up shows they did not anticipate or mitigate the talent impact. Biggest gap is using positional power instead of building a coalition that could sustain the change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of resistance overcome",
+      "junior": "Individual teammates on one team",
+      "senior": "Two platform teams",
+      "manager": "Two reporting teams with OKR conflict",
+      "exec": "Three orgs with separate funding"
+    },
+    {
+      "signal": "Method used to reduce resistance",
+      "junior": "Built and demoed working artifact",
+      "senior": "Prototype + paired migration",
+      "manager": "Joint spike tied to both teams' goals",
+      "exec": "Time-boxed evaluation + funding reallocation"
+    },
+    {
+      "signal": "How resister was engaged",
+      "junior": "Asked skeptic to review and extend",
+      "senior": "Let skeptic own first production rollout",
+      "manager": "Gave skeptical lead visibility in quarterly review",
+      "exec": "Gave lagging org first production slot and metrics ownership"
+    },
+    {
+      "signal": "Evidence of outcome",
+      "junior": "Caught one config bug; two teammates extended it",
+      "senior": "18% fewer 5xx; shared library adopted",
+      "manager": "25% on-call reduction; sustained use",
+      "exec": "40% latency drop; shared platform budget created"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,229 @@
+{
+  "question": "Tell me about a time you led a team through a significant challenge, change, or high-pressure project. What was your approach and the outcome?",
+  "competency": "Leadership & Influence",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a tight deadline on a feature migration that slipped two weeks. I owned the task list, asked my manager for feedback on priorities twice a week, and pulled in one peer for code review. We shipped on the revised date with no P0 bugs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when a teammate pushed back on the new timeline?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listened, showed the customer impact data, and offered to take their hardest ticket myself. They agreed and we finished early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: led team through high-pressure project",
+        "Owned task list and sought manager feedback bi-weekly",
+        "Asked peer for review; shipped on revised date, zero P0s",
+        "Quote: \"I showed the customer impact data and took their hardest ticket\"",
+        "Follow-up: handled pushback by listening + trading work; teammate agreed"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Competency: Leadership & Influence. Candidate described owning a slipped migration, seeking feedback twice weekly, and trading work to resolve pushback. Quote: \"I showed the customer impact data and took their hardest ticket.\" This shows local ownership and coachability without claiming team leadership. Biggest strength is repeated manager check-ins that kept scope realistic for 0-2 years experience.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The project was late so I just worked late every night until it was done. I told everyone what to do but one person still missed their part."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you adjust when the team member missed the task?"
+        },
+        {
+          "role": "candidate",
+          "text": "I finished it myself the night before launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: led team through high-pressure project",
+        "Worked late nights; told people what to do",
+        "One miss; candidate completed the work alone",
+        "Quote: \"I finished it myself the night before launch\"",
+        "Follow-up: no evidence of asking for help or feedback"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Competency: Leadership & Influence. Story reduced to solo heroics and \"telling people what to do\" with no feedback loop or adjustment. Quote: \"I finished it myself the night before launch.\" Shows lack of ownership of the team dynamic and no learning from the miss. Biggest gap is absence of any coachability signal expected at this level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams disagreed on API contract changes that blocked a Q3 launch. I ran a working session, surfaced the three options with trade-off data, and got both leads to agree on option B. We launched on time and reduced support tickets 18%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the second team to change their stance?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked their on-call engineer what pain they saw weekly and mapped it to the option that cut their alerts in half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: led through cross-team change",
+        "Ran working session and presented three options with data",
+        "Secured agreement from both leads; launched on time, -18% tickets",
+        "Quote: \"mapped it to the option that cut their alerts in half\"",
+        "Follow-up: used on-call pain data to influence without authority"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Competency: Leadership & Influence. Candidate drove cross-team API alignment via data and one-on-one influence, delivering on-time launch and 18% ticket reduction. Quote: \"mapped it to the option that cut their alerts in half.\" Demonstrates influence without authority and measurable team impact. Biggest strength is translating stakeholder pain into shared decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I scheduled a meeting with the other team and presented the plan. They still wouldn't agree so we delayed the launch by a month."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything else to align them?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated to my manager after the second meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: led through cross-team change",
+        "Presented plan in one meeting; no agreement",
+        "Escalated after second meeting; launch delayed a month",
+        "Quote: \"I escalated to my manager after the second meeting\"",
+        "Follow-up: relied on hierarchy instead of further influence tactics"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Competency: Leadership & Influence. Story shows single meeting then escalation with no attempt at data-driven alignment or 1:1 influence. Quote: \"I escalated to my manager after the second meeting.\" Result was a month delay instead of resolution. Biggest gap is missing cross-team leverage expected at 3-7 years."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team of six faced 40% attrition risk after a reorg. I ran stay interviews, redistributed scope to reduce burnout, and created a rotation so two people could learn new skills. Attrition dropped to 10% and two people were promoted within nine months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the person most at risk of leaving?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave them a stretch project they owned end-to-end and paired them with a mentor from another team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: led team through org change and retention pressure",
+        "Stay interviews + scope redistribution + skill rotation",
+        "Attrition 40% to 10%; two promotions in nine months",
+        "Quote: \"gave them a stretch project they owned end-to-end\"",
+        "Follow-up: used stretch assignment and cross-team mentor for at-risk employee"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Competency: Leadership & Influence. Candidate used stay interviews and scope changes to cut attrition from 40% to 10% while enabling two promotions. Quote: \"gave them a stretch project they owned end-to-end.\" Shows people development and team-level leverage. Biggest strength is measurable retention and growth outcomes tied directly to manager actions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the reorg I told the team the new priorities and asked them to work harder. Two people left in the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the first person gave notice?"
+        },
+        {
+          "role": "candidate",
+          "text": "I posted the req and redistributed their tickets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: led team through org change",
+        "Announced priorities and asked for more effort",
+        "Two exits; handled via req posting and ticket split",
+        "Quote: \"I posted the req and redistributed their tickets\"",
+        "Follow-up: no retention or development actions taken"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Competency: Leadership & Influence. Response shows announcement-only approach with no development or retention tactics, resulting in two exits. Quote: \"I posted the req and redistributed their tickets.\" Lacks any evidence of creating team leverage or handling underperformance proactively. Biggest gap is treating people issues as purely operational."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to shut down a product line that employed 180 people while protecting revenue. I built a 12-month transition plan, moved 60 engineers to growth areas, and created an internal startup track for the rest. We retained 85% of key talent and revenue from the new products offset 70% of the original line within 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make on the talent you couldn't retain?"
+        },
+        {
+          "role": "candidate",
+          "text": "We offered generous packages and helped place 25 people at partner companies to protect our reputation in the market."
+        }
+      ],
+      "raiseNotes": [
+        "Q: led org through product-line shutdown and talent shift",
+        "12-month plan; moved 60 engineers; internal startup track",
+        "85% key-talent retention; 70% revenue replacement in 18 months",
+        "Quote: \"helped place 25 people at partner companies to protect reputation\"",
+        "Follow-up: chose reputation-preserving exit packages as strategic trade-off"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Competency: Leadership & Influence. Candidate drove 180-person product shutdown with 85% key retention and 70% revenue replacement via internal mobility and partner placements. Quote: \"helped place 25 people at partner companies to protect reputation.\" Demonstrates long-term strategic judgment and org-level leverage. Biggest strength is balancing business exit with talent and market reputation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We decided to wind down the product because it was losing money. I announced the date and let HR handle the exits."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you protect the business during the transition?"
+        },
+        {
+          "role": "candidate",
+          "text": "We froze all new features and focused on keeping the lights on until the end date."
+        }
+      ],
+      "lowerNotes": [
+        "Q: led org through product-line shutdown",
+        "Announced date; delegated exits to HR",
+        "Focused on lights-on only; no mobility or retention plan",
+        "Quote: \"We froze all new features and focused on keeping the lights on\"",
+        "Follow-up: no strategic talent or reputation actions described"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Competency: Leadership & Influence. Story is limited to announcement and freeze with no talent strategy or revenue bridge. Quote: \"We froze all new features and focused on keeping the lights on.\" Shows tactical execution without org-level trade-offs or long-term positioning. Biggest gap is absence of strategic judgment expected at 10+ years."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task ownership and local fixes",
+      "senior": "Cross-team alignment and influence",
+      "manager": "Team retention and development outcomes",
+      "exec": "Org-level talent and revenue trade-offs"
+    },
+    {
+      "signal": "Use of authority vs influence",
+      "junior": "Seeks manager feedback; trades work directly",
+      "senior": "Uses data and 1:1s to align peers",
+      "manager": "Redistributes scope and creates growth paths",
+      "exec": "Designs mobility programs and partner placements"
+    },
+    {
+      "signal": "Handling resistance or risk",
+      "junior": "Listens then offers to take hard work",
+      "senior": "Maps stakeholder pain to shared option",
+      "manager": "Stay interviews and stretch assignments",
+      "exec": "Reputation-preserving exit support"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "On-time ship, zero P0s",
+      "senior": "On-time launch, 18% ticket drop",
+      "manager": "Attrition 40% to 10%, two promotions",
+      "exec": "85% retention, 70% revenue replacement"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Peer code review and manager check-ins",
+      "senior": "Working session that unlocked two teams",
+      "manager": "Skill rotation enabling internal promotions",
+      "exec": "12-month transition plan moving 60 engineers"
+    }
+  ],
+  "kind": "competency"
+}

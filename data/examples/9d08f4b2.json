@@ -1,0 +1,230 @@
+{
+  "question": "Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+  "competency": "Earn Trust (influence without authority)",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a school project last year our team had to deliver a prototype. My peer wanted to use a framework we hadn't used before, but I thought it would slow us down. I asked him to walk me through his reasoning and shared the timeline risk I saw. We agreed to prototype both approaches for two days and pick based on speed. We picked the simpler path and hit the deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say when he first pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said 'help me understand why this framework matters more than shipping on time' and then listened without interrupting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: individual contributor on class project",
+        "Asked for reasoning first, proposed time-boxed test, listened without interrupting",
+        "Quote: 'help me understand why this framework matters more than shipping on time'",
+        "Outcome: picked simpler path, met deadline",
+        "Follow-up: What did you say when he first pushed back? -> repeated the listening step"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Earn Trust was shown by starting with curiosity instead of advocacy and by proposing a joint experiment rather than insisting. The candidate owned their part of the shared goal and adjusted based on the peer's input. This matches the level expectation of local scope and coachability. The concrete quote about listening demonstrates the behavior in the moment. Biggest strength is the willingness to test instead of debate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate wanted to add extra features but I knew we only had time for the core. I told him my plan was better and we should just do it my way so we wouldn't miss the deadline. He eventually agreed after I showed the schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond when he disagreed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just explained my schedule again until he saw it made sense."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: individual contributor",
+        "Led with own plan and repeated the schedule argument",
+        "Quote: 'I just explained my schedule again until he saw it made sense'",
+        "Outcome: peer eventually agreed",
+        "Follow-up: How did you respond when he disagreed? -> doubled down on advocacy"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Earn Trust requires listening before persuading; the candidate skipped that step and treated the peer as someone to be convinced rather than collaborated with. Repeating the same argument shows limited curiosity about the other viewpoint. At this level we look for ownership of own work and openness to feedback; both are missing. The story stays at the level of 'I was right' without any adjustment. Biggest gap is absence of joint problem-solving."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed to agree on an API contract for a new integration. The other team's lead wanted a synchronous design that would have created tight coupling. I scheduled a 1:1, asked what success looked like for their service in six months, and shared our scaling concerns. We ran a short async prototype and both teams adopted it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when the first proposal was rejected?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked what problem they were trying to solve instead of debating the solution."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: senior IC influencing peer lead on another team",
+        "Started with their six-month success criteria, proposed joint prototype",
+        "Quote: 'I asked what problem they were trying to solve instead of debating the solution'",
+        "Outcome: both teams adopted async design",
+        "Follow-up: What happened when the first proposal was rejected? -> shifted to problem framing"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Earn Trust at this level includes cross-team influence without authority. The candidate invested in understanding the peer's longer-term constraints before offering an alternative. The joint prototype created shared ownership rather than a win-lose outcome. This produced measurable alignment across teams. The follow-up answer shows the candidate can pivot from advocacy to inquiry. Biggest strength is treating the differing opinion as data rather than resistance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team wanted a different API shape. I sent them the design doc with all the reasons ours was better and asked them to review it. After a few follow-ups they aligned."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you meet with the other lead directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly worked through the doc and email because it was faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: senior IC",
+        "Used design doc and email to push own solution",
+        "Quote: 'I mostly worked through the doc and email because it was faster'",
+        "Outcome: other team aligned after follow-ups",
+        "Follow-up: Did you meet with the other lead directly? -> avoided 1:1 conversation"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Earn Trust at senior level requires building relationships across teams, yet the candidate defaulted to asynchronous documents. This approach treats the peer as a reviewer rather than a partner and misses the chance to understand underlying concerns. The story shows no adjustment based on the other team's input. At this level we expect evidence of influence without authority; email follow-ups do not demonstrate it. Biggest gap is lack of direct relationship-building."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two managers on my peer team disagreed on whether to prioritize a new feature or pay down tech debt. I brought both into a room, had each explain the impact on their teams' metrics, then facilitated a trade-off discussion. We landed on a phased plan that addressed the highest-risk debt first while still delivering the feature in the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the initial disagreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each to surface the concrete metric that would suffer most if we chose the other path."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: manager aligning peer managers",
+        "Facilitated metric-based discussion, created phased compromise",
+        "Quote: 'I asked each to surface the concrete metric that would suffer most if we chose the other path'",
+        "Outcome: phased plan delivered both feature and debt work",
+        "Follow-up: How did you handle the initial disagreement? -> focused on metrics"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Earn Trust includes creating leverage through the team and owning shared outcomes. The candidate turned a peer conflict into a structured discussion anchored in team metrics rather than opinions. The phased plan shows the manager can find leverage that benefits multiple teams. This matches the expectation that managers create alignment rather than dictate. The follow-up answer illustrates the skill of surfacing trade-offs. Biggest strength is treating the disagreement as a signal to design a better process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My peer manager wanted to cut scope on a project we shared. I explained why that would hurt our roadmap and asked their director to weigh in. We kept the original scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you discuss it directly with the peer first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried once but it was clear we wouldn't agree so I escalated."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: manager",
+        "Escalated to director instead of resolving with peer",
+        "Quote: 'it was clear we wouldn't agree so I escalated'",
+        "Outcome: original scope kept",
+        "Follow-up: Did you discuss it directly with the peer first? -> chose escalation over direct resolution"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Earn Trust at the manager level means handling underperformance and conflict at the peer level before escalating. The candidate defaulted to escalation, which undermines peer relationships and signals inability to create alignment. The story shows no attempt to find a mutually acceptable outcome. We expect managers to develop leverage through their team and peers; relying on a director does the opposite. Biggest gap is absence of direct conflict resolution."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two orgs had conflicting priorities on a multi-year platform migration. I met separately with each VP to understand the business risk each saw, then convened a joint session where we mapped the trade-offs against company revenue targets. We agreed on a sequenced migration that protected the highest-margin product line first while still hitting the overall timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the initial positions so entrenched?"
+        },
+        {
+          "role": "candidate",
+          "text": "Each org was measured on different P&L metrics, so I made those explicit before asking for a compromise."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: exec aligning multiple VPs",
+        "Mapped org-level P&L risks, sequenced migration to protect revenue",
+        "Quote: 'I made those explicit before asking for a compromise'",
+        "Outcome: sequenced plan protected margin while meeting timeline",
+        "Follow-up: What made the initial positions so entrenched? -> surfaced misaligned incentives"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Earn Trust at this level requires strategic judgment under high ambiguity and long-term thinking. The candidate treated the conflict as a signal of misaligned incentives and made those incentives visible before seeking alignment. The sequenced plan demonstrates leverage at the business level rather than heroics on a single project. This matches the expectation that execs own org-level outcomes and trade-offs. The follow-up shows comfort with exposing root causes. Biggest strength is converting a zero-sum disagreement into a sequenced business decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two VPs disagreed on platform priorities. I sent a memo laying out the company strategy and asked them to align. After a few revisions they both signed off."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you meet with them individually first?"
+        },
+        {
+          "role": "candidate",
+          "text": "The memo was the fastest way to get everyone on the same page."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+        "Role: exec",
+        "Used memo to dictate alignment",
+        "Quote: 'The memo was the fastest way to get everyone on the same page'",
+        "Outcome: both signed off after revisions",
+        "Follow-up: Did you meet with them individually first? -> avoided 1:1s"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Earn Trust at the exec level demands strategic judgment and the ability to navigate ambiguity through relationships, yet the candidate chose a one-way memo. This approach assumes positional authority is sufficient and misses the chance to understand underlying business risks. The story shows no evidence of long-term thinking or trade-off design. We look for leverage through the organization, not top-down direction. Biggest gap is reliance on formal authority instead of influence."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Starts with inquiry vs advocacy",
+      "junior": "Asks for reasoning before proposing test",
+      "senior": "Asks what success looks like for the other team",
+      "manager": "Surfaces metrics each team cares about",
+      "exec": "Surfaces misaligned P&L incentives"
+    },
+    {
+      "signal": "Creates joint ownership",
+      "junior": "Time-boxed experiment both can evaluate",
+      "senior": "Joint prototype across teams",
+      "manager": "Phased plan both teams execute",
+      "exec": "Sequenced migration protecting multiple orgs"
+    },
+    {
+      "signal": "Uses direct conversation",
+      "junior": "1:1 discussion on approach",
+      "senior": "Scheduled 1:1 with peer lead",
+      "manager": "Brought peers into room",
+      "exec": "Met separately then convened VPs"
+    },
+    {
+      "signal": "Adjusts based on input",
+      "junior": "Changed path after test",
+      "senior": "Shifted from sync to async after discussion",
+      "manager": "Moved from all-or-nothing to phased",
+      "exec": "Changed sequence to protect margin"
+    }
+  ],
+  "kind": "lp"
+}

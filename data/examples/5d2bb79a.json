@@ -1,0 +1,262 @@
+{
+  "question": "Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+  "competency": "Conflict Resolution & Difficult Interpersonal Situations",
+  "principle": "Conflict Resolution & Difficult Interpersonal Situations",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, a teammate from a different background preferred very formal written updates while I was casual in Slack. It created friction on a shared task."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my manager for a quick 1:1 and said I noticed the mismatch. She suggested I try one formal update. After that, we met once and agreed on a hybrid format. The task finished on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now default to asking people their preference early instead of assuming."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: formal vs casual comms on shared task",
+        "Action: asked manager for advice, tried formal update, then met to agree hybrid",
+        "Outcome: task on time; now asks preference upfront",
+        "Quote: \"I now default to asking people their preference early instead of assuming.\"",
+        "Follow-up: What did you learn? - reflected on changing own approach"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate described a style clash on a shared task and said they asked their manager for advice then tried a formal update before agreeing on a hybrid format. This shows ownership of their own behavior and quick coachability. The concrete quote about now asking preferences upfront demonstrates learning from feedback. Biggest strength is taking responsibility for the adjustment instead of waiting for the other person to change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone on the team kept sending short emails that felt rude. I just stopped including them on updates."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to them or anyone else?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured it was their personality so I worked around it. Later my manager asked why the handoff was late."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: short emails felt rude",
+        "Action: stopped including the person on updates",
+        "Outcome: handoff delayed, manager had to intervene",
+        "Quote: \"I figured it was their personality so I worked around it.\"",
+        "Follow-up: Did you talk to them or anyone else? - avoided direct conversation"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate avoided the person entirely after perceiving rude emails and only adjusted when the manager noticed a late handoff. The quote about working around the personality difference shows no attempt at resolution or seeking feedback. This reflects limited ownership of interpersonal issues at the individual contributor level. Biggest gap is lack of any proactive step before the problem escalated."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer from another team had a very directive style while I preferred data-driven discussion. It stalled a joint feature launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a short sync, shared the timeline impact, and asked what success looked like for them. We landed on weekly written status plus one decision meeting. The launch shipped two weeks late but with no rework."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any cross-team effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two other teams adopted the same format after we shared the retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: directive vs data-driven style blocking joint launch",
+        "Action: one sync to align on success criteria, agreed weekly written + one meeting",
+        "Outcome: shipped late but clean; two other teams copied the format",
+        "Quote: \"We landed on weekly written status plus one decision meeting.\"",
+        "Follow-up: Any cross-team effect? - pattern spread beyond the pair"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate addressed a style clash with a peer that was delaying a joint launch by proposing a structured sync and landing on a hybrid process. The outcome included both delivery and the format spreading to two other teams, showing influence without authority. The quote about agreeing on weekly written status plus one meeting illustrates concrete de-escalation. Biggest strength is turning a one-off conflict into reusable cross-team practice.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer kept pushing their approach in meetings. I escalated to both our managers after the third time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after escalation?"
+        },
+        {
+          "role": "candidate",
+          "text": "Managers told us to work it out. We ended up splitting the work so we didn't have to collaborate much."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: peer pushing approach in meetings",
+        "Action: escalated to managers after third occurrence",
+        "Outcome: managers declined to own it; split work to minimize contact",
+        "Quote: \"We ended up splitting the work so we didn't have to collaborate much.\"",
+        "Follow-up: What happened after escalation? - avoided building direct resolution skill"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate escalated a style clash with a peer to managers instead of attempting direct influence first. The outcome was work split to avoid collaboration, showing no cross-team leverage. The quote about minimizing contact reveals preference for avoidance over resolution. Biggest gap is missing the senior expectation of resolving peer conflicts without authority."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two reports with very different styles\u2014one very blunt, one very consensus-seeking\u2014were clashing on code review norms and slowing the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What steps did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met each one separately to hear their view, then ran a team retro focused on review guidelines. We landed on explicit criteria and a rotating reviewer pair. Velocity improved 15% the next quarter and both people later said reviews felt fairer."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the blunt person?"
+        },
+        {
+          "role": "candidate",
+          "text": "I coached them on adding context before critique; they improved and started mentoring the newer engineer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: blunt vs consensus-seeking reports slowing reviews",
+        "Action: 1:1s then team retro to define explicit criteria and pairing",
+        "Outcome: 15% velocity lift; both reported reviews felt fairer; blunt person began mentoring",
+        "Quote: \"We landed on explicit criteria and a rotating reviewer pair.\"",
+        "Follow-up: How did you handle the blunt person? - coached on delivery and leveraged strength"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate addressed a style clash between two reports that was slowing reviews by doing separate 1:1s, running a team retro, and implementing explicit criteria plus pairing. The 15% velocity improvement and later feedback from both engineers show ownership of team outcomes. The quote about landing on explicit criteria illustrates creating team leverage. Biggest strength is turning individual style differences into a repeatable team process while coaching the blunt engineer into a mentoring role.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two of my engineers had different communication styles and kept missing each other's intent. I told them to be more patient with each other."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I ended up reassigning some work so they interacted less."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: two reports missing intent due to style",
+        "Action: told them to be more patient",
+        "Outcome: no improvement; reassigned work to reduce interaction",
+        "Quote: \"I ended up reassigning some work so they interacted less.\"",
+        "Follow-up: Did anything change? - avoided structured team intervention"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate gave a generic instruction to be patient instead of diagnosing or creating team structure. The outcome was reassigning work to reduce interaction, showing no leverage through the team. The quote about reassigning to minimize contact reveals preference for avoidance over developing the reports. Biggest gap is failing to own team-level resolution or coach either person."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After a reorg, two orgs had clashing decision styles\u2014one top-down, one highly consultative\u2014creating repeated delays on shared platform decisions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a joint leadership offsite, surfaced the style difference as a root cause, and proposed a decision-rights matrix plus a bi-weekly forum. Platform release predictability went from 40% to 85% over two quarters; three other orgs later adopted the matrix."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you sustain it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the forum part of the operating cadence and asked each org to rotate the facilitator role."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: post-reorg style clash between two orgs delaying platform decisions",
+        "Action: joint offsite, decision-rights matrix, bi-weekly forum",
+        "Outcome: predictability 40% to 85%; three other orgs adopted matrix; forum embedded in cadence",
+        "Quote: \"I proposed a decision-rights matrix plus a bi-weekly forum.\"",
+        "Follow-up: How did you sustain it? - institutionalized via operating rhythm and rotation"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate addressed an org-level style clash after reorg by running a joint offsite and introducing a decision-rights matrix plus standing forum. The jump from 40% to 85% predictability and adoption by three other orgs demonstrate strategic, scalable impact. The quote about proposing the matrix plus forum shows long-term structural thinking over heroics. Biggest strength is converting a cultural friction into durable operating mechanisms.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two orgs kept arguing over decision style on shared work. I asked their leaders to sort it out."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "It dragged on for months until we had to add an extra review layer at my level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+        "Situation: org-level decision style clash",
+        "Action: delegated to the two leaders",
+        "Outcome: months of drag; added extra review layer at exec level",
+        "Quote: \"I asked their leaders to sort it out.\"",
+        "Follow-up: What was the result? - created dependency on higher escalation"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Competency tested is Conflict Resolution & Difficult Interpersonal Situations. Candidate delegated an org-level style clash without providing structure or escalation path. The outcome required adding an extra review layer at the exec level, showing failure to create scalable resolution. The quote about asking the leaders to sort it out reveals absence of strategic judgment on cultural integration. Biggest gap is missing long-term leverage in favor of short-term handoff."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Direct vs indirect resolution",
+      "junior": "Raises when asks manager then adjusts own behavior",
+      "senior": "Raises when drives peer agreement without escalation",
+      "manager": "Raises when creates team process and coaches individuals",
+      "exec": "Raises when institutionalizes org-level mechanisms"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local task; learning reflected in personal habit",
+      "senior": "Cross-team; format spreads beyond original pair",
+      "manager": "Team velocity and development of reports",
+      "exec": "Org predictability and adoption by peer orgs"
+    },
+    {
+      "signal": "Avoidance vs ownership",
+      "junior": "Lowers when stops including person",
+      "senior": "Lowers when splits work to avoid contact",
+      "manager": "Lowers when reassigns to reduce interaction",
+      "exec": "Lowers when delegates without structure"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Asks preference early going forward",
+      "senior": "Reusable cross-team format",
+      "manager": "Embedded retro + pairing in team norms",
+      "exec": "Decision matrix + rotating forum in operating cadence"
+    }
+  ],
+  "kind": "competency"
+}

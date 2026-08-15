@@ -1,0 +1,286 @@
+{
+  "question": "Tell me about a time when you didn't have enough data to make the right decision. What did you do? What path did you take? Did the decision turn out to be the correct one?",
+  "competency": "Are Right, A Lot",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a feature I owned, the A/B test had only 60% of the traffic we planned due to a rollout issue. I didn't have enough conversion data to call the winner confidently."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the last 3 months of similar experiments from our internal repo, talked to the PM who ran two of them, and used that as a prior. We shipped the variant with a note to monitor for 2 weeks post-launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "Metrics held steady. Two weeks later we had enough data to confirm it was neutral to positive. My manager later used the same prior approach on another test."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: A/B test under-powered due to rollout bug",
+        "Action: Pulled historical experiments, consulted PM, shipped with monitoring plan",
+        "Outcome: Held steady, later validated; approach reused by manager",
+        "Quote: \"I used the last 3 months of similar experiments as a prior\"",
+        "Follow-up: How did you decide how long to monitor? (Said 2 weeks based on prior test velocity)"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for junior. Candidate owned an under-powered test, sought historical data and a peer's input rather than guessing or delaying. Quote shows they treated partial data as a signal to combine with prior evidence instead of waiting for perfect information. The reuse by the manager indicates the approach was sound enough to spread. Biggest strength: treated data scarcity as a solvable constraint rather than a blocker.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The test didn't reach significance so I just picked the variant that looked better in the first week and shipped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check anything else first?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the PM was busy and I didn't want to bother the data team again."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after launch?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was flat but we never ran the follow-up analysis because the next project started."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: Under-powered A/B test",
+        "Action: Picked the early leader without further checks",
+        "Outcome: Flat result, no follow-up analysis done",
+        "Quote: \"The PM was busy and I didn't want to bother the data team again\"",
+        "Follow-up: Why no post-launch check? (Next project took priority)"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for junior. Candidate defaulted to the visible early signal and avoided seeking historical data or peer input because others were busy. No mechanism was put in place to validate the choice later. Quote reveals preference for avoiding friction over closing the data gap. Biggest gap: treated insufficient data as permission to guess rather than a prompt to gather the next-best evidence."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to pick a new auth provider for three teams but only had usage data from two of them and no latency numbers from the third region."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you move forward?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week spike with the infra team to collect synthetic traffic from the missing region, then built a simple weighted score with the PMs that included migration cost. We chose provider B and documented the assumptions."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it hold up?"
+        },
+        {
+          "role": "candidate",
+          "text": "Six months later the third region's actual numbers matched our spike within 8%. The other two teams adopted the same scoring model for their next vendor choice."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: Auth provider decision missing one region's data",
+        "Action: Two-week spike for synthetic data, created weighted score with PMs",
+        "Outcome: 8% accuracy on later validation; model reused by other teams",
+        "Quote: \"We documented the assumptions and the spike matched within 8%\"",
+        "Follow-up: How did you get the infra team to commit two weeks? (Tied to shared migration deadline)"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for senior. Candidate created a short, targeted data collection effort instead of deciding on incomplete information or stalling. The weighted score made trade-offs explicit across teams. Post-launch validation within 8% shows the method was reliable. Reuse by other teams demonstrates cross-team leverage. Biggest strength: turned missing data into a bounded experiment that produced reusable insight.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had data from two regions so I recommended the provider that looked fastest there and the third team could switch later if needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you have for the third region?"
+        },
+        {
+          "role": "candidate",
+          "text": "None, but the PMs agreed it was probably similar."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any follow-up after the choice?"
+        },
+        {
+          "role": "candidate",
+          "text": "We never collected the numbers; the migration was already underway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: Missing regional data for vendor choice",
+        "Action: Recommended based on two regions only",
+        "Outcome: No validation collected after decision",
+        "Quote: \"The PMs agreed it was probably similar\"",
+        "Follow-up: Why skip collecting the missing data? (Migration already started)"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for senior. Candidate accepted incomplete data and relied on an untested assumption that the third region would match the others. No mechanism was created to check the assumption after the fact. Quote shows deference to consensus over evidence gathering. Biggest gap: allowed cross-team impact to proceed without closing the critical data gap."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had to decide whether to rebuild our reporting pipeline or keep patching it. We only had incident data from the last quarter and no customer impact numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process did you run?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had the team spend one week mapping the top five customer workflows to the incidents, then ran a retro with support to estimate pain. We chose to patch for six months while building a small proof-of-concept for the rebuild."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that play out?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets dropped 30% in the next quarter. Two engineers later used the same workflow-mapping method on another service."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: Rebuild vs patch decision with limited incident data",
+        "Action: One-week mapping exercise with support, chose time-boxed patch + POC",
+        "Outcome: 30% ticket drop; method reused by two engineers",
+        "Quote: \"We mapped the top five customer workflows to the incidents\"",
+        "Follow-up: How did you decide the six-month patch window? (Based on support capacity and roadmap pressure)"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for manager. Candidate created a lightweight process to convert missing customer data into usable signals through support collaboration. The time-boxed decision reduced risk while generating new data via the POC. Reuse of the mapping method shows the team learned a durable approach. Biggest strength: used team capacity to close the data gap instead of making the call in isolation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The data was incomplete so I told the team to keep patching until we had a full quarter of clean metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "How long did that take?"
+        },
+        {
+          "role": "candidate",
+          "text": "It dragged into the next quarter and we lost two engineers who wanted to work on the rebuild."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: Rebuild vs patch with limited data",
+        "Action: Delayed decision pending more metrics",
+        "Outcome: Delayed quarter, lost two engineers",
+        "Quote: \"I told the team to keep patching until we had a full quarter\"",
+        "Follow-up: What happened to team morale during the delay? (Two engineers left)"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for manager. Candidate defaulted to waiting for perfect data rather than creating a way to gather better signals quickly. The delay caused attrition. Quote shows the decision was deferred without a plan to reduce ambiguity. Biggest gap: protected the team from a hard call but failed to develop their ability to decide under uncertainty."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to choose between two M&A targets. One had strong unit economics but only two years of data; the other had five years but declining growth. Board wanted a decision in three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the data gap?"
+        },
+        {
+          "role": "candidate",
+          "text": "I commissioned a 10-day external diligence on the shorter-history target focused on cohort retention and channel saturation, then ran a joint session with finance and product to model both scenarios under three macro assumptions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We picked the shorter-history target. Eighteen months later its retention curves matched our model within the confidence bands we set, and we used the same diligence template on the next acquisition."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: M&A choice with asymmetric data history",
+        "Action: 10-day external diligence + joint modeling session with three macro scenarios",
+        "Outcome: Retention matched model; diligence template reused on next deal",
+        "Quote: \"We modeled both under three macro assumptions\"",
+        "Follow-up: How did you decide which assumptions to stress? (Picked the two variables that historically moved retention most)"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for exec. Candidate bought targeted external data to close the specific gap rather than averaging the two options or delaying. The scenario modeling made uncertainty explicit for the board. Post-close validation within confidence bands shows the approach was calibrated. Reuse of the template demonstrates organizational leverage. Biggest strength: treated data scarcity as a capital allocation problem and solved it at the right fidelity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We went with the target that had five years of data because the board was more comfortable with the longer track record."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do any additional work on the shorter-history company?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reviewed the deck they provided but didn't commission extra diligence given the timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How has that choice performed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Growth continued to slow and we wrote down part of the investment last year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough data...",
+        "Situation: M&A with asymmetric history",
+        "Action: Chose longer-history target for board comfort",
+        "Outcome: Growth slowed, partial write-down",
+        "Quote: \"The board was more comfortable with the longer track record\"",
+        "Follow-up: What was the cost of the write-down relative to the diligence spend you skipped? (Declined to quantify)"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for exec. Candidate selected the option that reduced perceived risk to stakeholders instead of closing the material data gap on the higher-upside target. No additional diligence was commissioned despite the three-week window. The write-down indicates the comfort-based choice was not the right one. Biggest gap: optimized for narrative safety over generating the evidence needed for a high-stakes capital decision."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Seeks additional evidence under ambiguity",
+      "junior": "Runs small internal lookup or asks peer",
+      "senior": "Creates short spike or cross-team data pull",
+      "manager": "Builds lightweight team process to generate signal",
+      "exec": "Commissions targeted external diligence or modeling at right fidelity"
+    },
+    {
+      "signal": "Makes uncertainty explicit",
+      "junior": "Documents monitoring plan after choice",
+      "senior": "Creates weighted score with stated assumptions",
+      "manager": "Time-boxes decision and shares trade-offs with team",
+      "exec": "Models multiple macro scenarios for board"
+    },
+    {
+      "signal": "Validates after the fact",
+      "junior": "Checks metrics post-launch",
+      "senior": "Compares actuals to spike within % error",
+      "manager": "Tracks leading indicators like ticket volume",
+      "exec": "Compares retention curves to model bands"
+    },
+    {
+      "signal": "Creates reusable method",
+      "junior": "Manager reuses the prior approach",
+      "senior": "Other teams adopt the scoring model",
+      "manager": "Engineers apply workflow-mapping elsewhere",
+      "exec": "Diligence template used on next deal"
+    }
+  ],
+  "kind": "lp"
+}

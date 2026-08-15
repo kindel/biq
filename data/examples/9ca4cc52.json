@@ -1,0 +1,258 @@
+{
+  "question": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+  "competency": "Integrity, Ethics & Trust",
+  "principle": "Integrity, Ethics & Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I noticed a teammate reusing internal test data that contained customer PII in a demo for another team. I first checked our data policy, then told them directly it looked off. They brushed it off, so I looped in my manager with the policy link and the exact files."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and how did your teammate react later?"
+        },
+        {
+          "role": "candidate",
+          "text": "Manager had the data scrubbed and we switched to synthetic data. Teammate was annoyed at first but later asked me to review another script."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Junior IC noticed teammate using customer PII in demo data",
+        "Checked policy first, spoke directly, then escalated to manager with specifics",
+        "Outcome: data replaced with synthetic set; teammate later asked for review help",
+        "Quote: 'I looped in my manager with the policy link and the exact files'",
+        "Follow-up: Asked about teammate reaction; candidate described short-term friction then improved collaboration"
+      ],
+      "raiseFeedback": "Raises the bar for Integrity, Ethics & Trust on the junior question. The candidate described spotting customer PII reused in a demo, verifying the policy, addressing the teammate directly, and escalating with concrete details when needed. The outcome was limited to their immediate work but showed ownership without overstepping. This meets expectations for 0-2 years: they owned their observation and used the right channel rather than ignoring or gossiping. Biggest strength is the direct-then-escalate sequence with a clear quote on how they documented the handoff.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I saw someone copy a slide deck from another team and change the date. It felt off but I didn't want to get involved so I just made sure my own slides were original."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you mention it to anyone or check the policy?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured it was their problem. I stayed out of it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Candidate saw copied deck with date changed",
+        "Chose not to engage or escalate",
+        "Quote: 'I figured it was their problem. I stayed out of it'",
+        "Follow-up: Asked if they checked policy or told anyone; candidate confirmed they took no action"
+      ],
+      "lowerFeedback": "Lowers the bar for Integrity, Ethics & Trust on the junior question. The candidate observed a copied deck with an altered date but explicitly decided to stay out of it without checking policy or informing anyone. This shows no ownership even at the individual level expected of juniors. The story stays local and passive. Biggest gap is the absence of any attempt to address or escalate, which signals weak calibration on when to act."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "A partner team was overstating feature readiness in a joint customer presentation to close a deal. I pulled the partner lead aside with the actual status, then suggested we both send a corrected note to the account team before the call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback and what was the cross-team result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed to keep the slide; I documented the discrepancy in email to both managers and offered a revised version. Deal moved forward with accurate timeline and we avoided a later escalation from the customer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Senior saw partner team overstating readiness in joint deck",
+        "Addressed partner lead directly then sent joint correction to account team",
+        "Outcome: accurate timeline used; avoided customer escalation",
+        "Quote: 'I documented the discrepancy in email to both managers and offered a revised version'",
+        "Follow-up: Asked about pushback; candidate described documenting and offering fix"
+      ],
+      "raiseFeedback": "Raises the bar for Integrity, Ethics & Trust on the senior question. The candidate identified overstated readiness in a shared customer deck, addressed the partner lead first, then used email to both managers with a proposed fix. The result protected the customer relationship across teams without authority. This aligns with 3-7 year expectations: influence without authority and cross-team impact. Biggest strength is the documented escalation path that kept the deal intact while correcting the record.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I saw another team padding their launch date in a shared roadmap. I mentioned it in a 1:1 with my manager but didn't push further because it wasn't my team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you speak with the other team or document anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I left it with my manager. I didn't want to create friction across teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Senior saw padded launch date in shared roadmap",
+        "Only mentioned in 1:1 with own manager",
+        "Quote: 'I left it with my manager. I didn't want to create friction across teams'",
+        "Follow-up: Asked about direct action; candidate confirmed no cross-team conversation or documentation"
+      ],
+      "lowerFeedback": "Lowers the bar for Integrity, Ethics & Trust on the senior question. The candidate noticed a padded date in a shared roadmap but limited action to a single 1:1 with their own manager and avoided any cross-team conversation. This shows insufficient influence without authority at the senior level. The story lacks documentation or attempt to correct the shared artifact. Biggest gap is treating the issue as someone else's problem despite visible cross-team exposure."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two of my directs were splitting a contractor's hours across two projects to hide budget overrun. I had separate 1:1s, explained the policy violation, and required corrected time sheets plus a joint plan to surface the overrun to finance."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle performance and team outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both engineers received a written expectation note. We adjusted the project plan openly and the team hit the next quarter without further issues. One engineer later thanked me for the clarity."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Manager discovered directs splitting contractor hours to mask overrun",
+        "Held 1:1s, required corrected sheets and open plan to finance",
+        "Outcome: written expectations, adjusted plan, no repeat issues",
+        "Quote: 'I had separate 1:1s, explained the policy violation, and required corrected time sheets'",
+        "Follow-up: Asked about performance handling; candidate described written notes and later positive feedback from one engineer"
+      ],
+      "raiseFeedback": "Raises the bar for Integrity, Ethics & Trust on the manager question. The candidate identified two directs splitting contractor hours to hide an overrun, addressed each in 1:1s, enforced corrected reporting, and required an open plan to finance. The team outcome improved with no recurrence. This matches manager expectations: handling underperformance, creating team leverage through clear standards, and owning the result. Biggest strength is the combination of individual accountability and systemic fix.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I found out a report was backdating approvals to meet their OKRs. I told them to stop but didn't involve HR or change any process because the numbers looked fine overall."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you follow up with the person or the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just monitored their next report. No formal action."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Manager saw report backdating approvals",
+        "Told person to stop but skipped HR and process change",
+        "Quote: 'I just monitored their next report. No formal action'",
+        "Follow-up: Asked about follow-up; candidate confirmed no documentation or escalation"
+      ],
+      "lowerFeedback": "Lowers the bar for Integrity, Ethics & Trust on the manager question. The candidate discovered backdated approvals but limited response to an informal request to stop and skipped HR or any process change. This shows weak ownership of team outcomes and underperformance handling. The story lacks documentation or systemic correction. Biggest gap is treating the issue as a one-off conversation rather than a manager-level responsibility."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "During diligence for an acquisition we discovered the target had been selectively reporting churn metrics to investors. I paused the deal, brought the finding to the board audit committee, and required full data re-audit before any further talks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term org impact and trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "Deal was terminated. We updated our own diligence checklist and later applied the same standard to two other targets, avoiding similar risk. Board noted the decision as precedent for future M&A."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Exec found selective churn reporting during acquisition diligence",
+        "Paused deal, escalated to board audit committee, required re-audit",
+        "Outcome: deal terminated; updated diligence process applied to later targets",
+        "Quote: 'I paused the deal, brought the finding to the board audit committee'",
+        "Follow-up: Asked about long-term impact; candidate described new checklist and board precedent"
+      ],
+      "raiseFeedback": "Raises the bar for Integrity, Ethics & Trust on the exec question. The candidate uncovered selective churn reporting in an acquisition target, paused the deal, and escalated directly to the board audit committee with a required re-audit. The decision set an org-level precedent and changed future diligence. This fits 10+ year expectations: strategic judgment under ambiguity and long-term org leverage over short-term deal pressure. Biggest strength is the willingness to kill the deal and institutionalize the learning.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "We saw inflated usage numbers from a potential partner. I asked the team to note it in the memo but kept the partnership discussion moving because the strategic fit was strong."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you escalate or change any process?"
+        },
+        {
+          "role": "candidate",
+          "text": "No formal escalation. We flagged it internally and proceeded."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+        "Exec saw inflated usage numbers in partnership diligence",
+        "Noted in memo but continued discussions",
+        "Quote: 'We flagged it internally and proceeded'",
+        "Follow-up: Asked about escalation; candidate confirmed no board or process change"
+      ],
+      "lowerFeedback": "Lowers the bar for Integrity, Ethics & Trust on the exec question. The candidate observed inflated usage numbers during partnership diligence but only noted it internally and continued the discussion. This shows insufficient strategic judgment and long-term thinking at the org level. The story prioritizes deal momentum over risk. Biggest gap is the absence of escalation or process change despite visible data integrity issues."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Direct address vs. passive note",
+      "junior": "Raises: spoke to teammate then escalated; Lowers: stayed silent",
+      "senior": "Raises: addressed partner lead and documented; Lowers: only told own manager",
+      "manager": "Raises: 1:1s plus written expectations; Lowers: informal request only",
+      "exec": "Raises: paused deal and board escalation; Lowers: internal note only"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual work product",
+      "senior": "Cross-team customer deliverable",
+      "manager": "Direct reports and project process",
+      "exec": "M&A diligence and org-wide checklist"
+    },
+    {
+      "signal": "Documentation and escalation path",
+      "junior": "Policy link + manager handoff",
+      "senior": "Email to both managers with proposed fix",
+      "manager": "Written expectation notes + finance plan",
+      "exec": "Board audit committee + updated diligence process"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Data fixed locally",
+      "senior": "Deal protected with accurate timeline",
+      "manager": "Team plan adjusted, no recurrence",
+      "exec": "Deal killed; precedent set for future deals"
+    }
+  ],
+  "kind": "competency"
+}

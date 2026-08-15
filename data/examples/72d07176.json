@@ -1,0 +1,237 @@
+{
+  "question": "Give an example of when you stepped up and led without formal authority. What happened?",
+  "competency": "Leadership & Influence",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a recent feature, two devs were stuck on conflicting approaches for the API layer. I pulled the three of us into a 30-minute huddle, wrote the options on the whiteboard, and we landed on a hybrid that cut our integration time by two days."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to agree when you weren't the owner?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each person to state the risk they cared most about, then showed how the hybrid addressed both. They both said yes after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: two devs blocked on API design choices",
+        "Action: called short huddle, listed options, asked each for top risk",
+        "Outcome: hybrid approach chosen, saved two days",
+        "Quote: \"I asked each person to state the risk they cared most about\"",
+        "Follow-up: How did you get them to agree? Candidate explained surfacing risks and reaching consensus"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate took initiative on a local disagreement and drove a quick decision that produced a measurable time save. Quote shows they focused on surfacing constraints rather than pushing their own view. This demonstrates ownership and basic influence at the individual-contributor level without overstepping. The story stays appropriately scoped for 0-2 years. Biggest strength is the clear, repeatable step of naming risks to reach alignment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager was out and the team was behind on a ticket, so I just started assigning tasks in the standup and told everyone what to do."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team follow your assignments?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple did, but two people pushed back and we ended up doing it the original way anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: manager absent, team behind on ticket",
+        "Action: assigned tasks in standup without discussion",
+        "Outcome: partial compliance, team reverted to original plan",
+        "Quote: \"I just started assigning tasks\"",
+        "Follow-up: Did the team follow? Candidate admitted limited buy-in and no lasting change"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate treated leadership as giving orders rather than building agreement, and the team largely ignored the direction. Quote reveals a directive approach with no attempt to understand constraints or gain commitment. Result was zero lasting impact. This shows lack of basic influence skills even at the individual level. Biggest gap is absence of any collaborative mechanism or learning from the failed attempt."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams were duplicating work on a shared retry library. I created a short design doc, ran a 45-minute review with both leads, and got them to agree on one implementation plus a migration plan that finished in six weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed the win?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deleted 1,800 lines of duplicate code and cut incident response time for retry bugs by 40 percent across both teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: two platform teams duplicating retry library work",
+        "Action: wrote design doc, facilitated cross-team review, drove single implementation",
+        "Outcome: 1,800 lines deleted, 40 percent faster incident response",
+        "Quote: \"got them to agree on one implementation plus a migration plan\"",
+        "Follow-up: What metrics showed the win? Candidate cited concrete lines and incident time reduction"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate identified cross-team duplication and used a lightweight design doc plus review to align two teams without authority. Quote and metrics demonstrate clear influence and measurable outcome beyond their own team. Story shows the expected senior scope of reducing waste across boundaries. Biggest strength is turning an observation into a six-week migration with documented results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed two teams doing similar work so I sent an email suggesting they talk. Nothing really changed after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or run any meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pinged the leads once but they were busy so I dropped it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: two teams duplicating work",
+        "Action: sent one email suggestion",
+        "Outcome: no change, effort dropped after one follow-up",
+        "Quote: \"I pinged the leads once but they were busy so I dropped it\"",
+        "Follow-up: Did you follow up or run any meeting? Candidate confirmed minimal persistence"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. A single email with no sustained effort or structured facilitation produced zero impact. Quote shows the candidate stopped at the first sign of resistance instead of using influence tactics expected at this level. Story lacks cross-team metrics or evidence of raising the bar for others. Biggest gap is absence of ownership once initial outreach failed."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two of my peer managers had engineers arguing over ownership of a new alerting service. I facilitated a joint planning session, surfaced the capacity trade-offs, and helped them agree on a shared roadmap with clear owners that both teams executed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this affect your own team?"
+        },
+        {
+          "role": "candidate",
+          "text": "My team picked up two supporting stories but we gained a stable alerting contract, which reduced our on-call load by 25 percent over the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: peer teams in conflict over alerting service ownership",
+        "Action: ran joint planning session, clarified trade-offs and owners",
+        "Outcome: shared roadmap executed, 25 percent on-call reduction for own team",
+        "Quote: \"helped them agree on a shared roadmap with clear owners\"",
+        "Follow-up: How did this affect your own team? Candidate linked outcome to measurable on-call relief"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used facilitation to resolve a cross-team ownership dispute and produced a durable roadmap. Quote and on-call metric show they created leverage for their own team while helping peers. Story demonstrates expected manager behaviors of handling inter-team friction and delivering team-level results. Biggest strength is turning conflict into shared execution with visible benefit to their own org.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the two managers they needed to figure it out themselves because it wasn't my problem."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the conflict get resolved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Eventually, after their directors stepped in. My team still had to support two different systems for a while."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: peer managers arguing over alerting ownership",
+        "Action: explicitly declined to get involved",
+        "Outcome: directors intervened, team carried duplicate support cost",
+        "Quote: \"I told the two managers they needed to figure it out themselves\"",
+        "Follow-up: Did the conflict get resolved? Candidate confirmed prolonged cost to own team"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate avoided any leadership role and left the problem for higher management, resulting in sustained cost to their own team. Quote directly states refusal to engage. Story shows no attempt to develop leverage or resolve friction across teams. Biggest gap is lack of willingness to step up when peer alignment was required."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two largest business units were building parallel data platforms, burning roughly $4M a year in duplicated infra and headcount. I formed a small steering group of their tech leads, ran a three-week options analysis, and secured agreement on a single platform with a 12-month consolidation plan that saved $2.8M in year two."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a six-month delay for one business unit's new feature in exchange for long-term cost and reliability gains, which both VPs signed off on."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: two business units duplicating data platforms at $4M annual cost",
+        "Action: created steering group, drove options analysis, secured consolidation commitment",
+        "Outcome: $2.8M savings in year two, signed off by both VPs",
+        "Quote: \"secured agreement on a single platform with a 12-month consolidation plan\"",
+        "Follow-up: What trade-offs did you surface? Candidate cited explicit feature delay for cost and reliability gains"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate identified a multi-million-dollar duplication at the business-unit level and built alignment through a steering group without formal authority. Quote and savings figure show strategic judgment and willingness to trade short-term feature speed for long-term leverage. Story operates at the expected org-level scope with clear executive sign-off. Biggest strength is converting ambiguity into a signed, multi-year consolidation with quantified impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I raised the duplication issue in a staff meeting and asked the two VPs to work it out offline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "They never reached agreement, so the spend continued for another year until a reorg forced consolidation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you stepped up and led without formal authority. What happened?",
+        "Situation: parallel data platforms across business units",
+        "Action: raised in staff meeting and delegated to VPs",
+        "Outcome: no agreement, spend continued until reorg",
+        "Quote: \"I raised the duplication issue in a staff meeting and asked the two VPs to work it out offline\"",
+        "Follow-up: Did anything change after that? Candidate confirmed continued waste for a year"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate surfaced a major business issue but took no further action beyond delegation, allowing duplicated spend to persist. Quote shows reliance on others to solve without providing structure or trade-off analysis. Story lacks evidence of strategic judgment or long-term leverage creation. Biggest gap is absence of sustained ownership on an org-level problem."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "local team disagreement with quick consensus",
+      "senior": "cross-team duplication resolved with metrics",
+      "manager": "peer-manager conflict turned into shared roadmap",
+      "exec": "business-unit platform duplication with multi-million savings"
+    },
+    {
+      "signal": "Use of structure",
+      "junior": "short huddle and risk listing",
+      "senior": "design doc plus cross-lead review",
+      "manager": "joint planning session with capacity trade-offs",
+      "exec": "steering group and three-week options analysis"
+    },
+    {
+      "signal": "Persistence after resistance",
+      "junior": "one follow-up question to reach agreement",
+      "senior": "kept leads engaged until migration plan signed",
+      "manager": "facilitated until both teams owned the roadmap",
+      "exec": "secured VP sign-off on 12-month plan despite feature delay"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "two-day time save for immediate task",
+      "senior": "1,800 lines and 40 percent incident reduction",
+      "manager": "25 percent on-call relief for own team",
+      "exec": "$2.8M year-two savings with explicit trade-off accepted"
+    },
+    {
+      "signal": "Handling of authority gap",
+      "junior": "asked for risks instead of directing",
+      "senior": "used document to create shared decision",
+      "manager": "created neutral forum for peer alignment",
+      "exec": "built steering group to drive org-level choice"
+    }
+  ],
+  "kind": "competency"
+}

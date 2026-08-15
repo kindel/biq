@@ -1,0 +1,302 @@
+{
+  "question": "Tell me about a time when you had significant, unanticipated obstacles to overcome in achieving a key goal. What was the obstacle? Were you eventually successful? Knowing what you know now, is there anything you would have done differently?",
+  "competency": "Deliver Results (overcoming unanticipated obstacles)",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a simple internal dashboard for my team. Two weeks before launch the data source API changed without notice and broke all my queries. I spent a weekend learning the new schema and rewrote the ETL logic. We shipped on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the change first appeared?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged it in standup, asked my mentor for a quick review of the new docs, then isolated the broken queries and rebuilt them one by one."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have set up a weekly check on the API changelog instead of assuming it was stable."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: new grad on first dashboard project",
+        "Obstacle: undocumented API change two weeks out",
+        "Actions: flagged in standup, asked mentor, rewrote queries over weekend",
+        "Outcome: shipped on time, learned to monitor changelogs",
+        "Quote: \"I would have set up a weekly check on the API changelog\"",
+        "Follow-up: Asked about first response to the change; candidate described concrete steps and coachability"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for a junior. The candidate owned an individual deliverable, adapted to an external change, and shipped. Quote: \"I flagged it in standup, asked my mentor... then rebuilt them one by one.\" Shows ownership and quick learning from feedback. The reflection on adding changelog monitoring demonstrates coachability. Biggest strength is clear individual ownership and willingness to adjust approach after the fact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The vendor changed their API and nothing worked. I waited for them to fix it but the deadline passed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What steps did you take after the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I emailed the vendor and told my manager the feature was blocked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Anything you would do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably nothing, the change was out of my control."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: new grad dashboard project",
+        "Obstacle: API change",
+        "Actions: emailed vendor, told manager it was blocked",
+        "Outcome: missed deadline",
+        "Quote: \"Probably nothing, the change was out of my control\"",
+        "Follow-up: Probing ownership; candidate stayed at blame and external control"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for a junior. The candidate did not attempt to work around the obstacle or seek alternatives. Quote: \"I emailed the vendor and told my manager the feature was blocked.\" Shows no ownership of the outcome and no learning. The reflection that nothing could have been done differently indicates low coachability. Biggest gap is absence of individual initiative when scope was fully within their control."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service migration was blocked when a partner team\u2019s rate limits changed mid-project. I negotiated a temporary quota increase, built a throttling layer, and shipped the migration two weeks late but with zero customer impact."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the partner team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared our traffic projections and offered to help them tune their alerts in exchange for the short-term quota."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have run a joint load test earlier so the quota issue surfaced in planning instead of execution."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: senior owning cross-team migration",
+        "Obstacle: partner rate-limit change during execution",
+        "Actions: negotiated quota, built throttling, offered help on alerts",
+        "Outcome: shipped with zero customer impact, two weeks late",
+        "Quote: \"I would have run a joint load test earlier\"",
+        "Follow-up: Probing influence; candidate described specific trade offered to partner"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for a senior. The candidate drove a cross-team outcome through negotiation and technical mitigation. Quote: \"I shared our traffic projections and offered to help them tune their alerts.\" Shows influence without authority and focus on customer impact. The retrospective on earlier joint testing reflects systems thinking. Biggest strength is converting an external blocker into a collaborative solution with measurable result.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team changed their limits and we had to delay the migration by a month. I documented the issue for the next planning cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to engage them directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent the JIRA ticket and waited for their reply."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe escalate earlier, but our roadmaps weren\u2019t aligned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: senior migration project",
+        "Obstacle: partner rate limit change",
+        "Actions: sent JIRA ticket, documented for next cycle",
+        "Outcome: one-month delay",
+        "Quote: \"I sent the JIRA ticket and waited for their reply\"",
+        "Follow-up: Probing influence; candidate relied on passive escalation"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for a senior. The candidate treated the partner dependency as outside their scope. Quote: \"I sent the JIRA ticket and waited for their reply.\" No evidence of proactive influence or alternative paths. The reflection stays at process suggestions rather than personal action. Biggest gap is lack of cross-team ownership expected at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team\u2019s quarterly goal of launching a new onboarding flow was threatened when two senior engineers gave notice. I re-prioritized scope with the team, redistributed work to two strong juniors with paired mentoring, and still hit 90% of the original target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the underperformance risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had weekly check-ins with the remaining leads and adjusted the definition of done so the juniors could succeed without burnout."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have built bench strength earlier by giving juniors ownership of smaller features throughout the year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: manager of 8-person team",
+        "Obstacle: two senior departures mid-quarter",
+        "Actions: re-scoped with team, paired juniors with leads, adjusted definition of done",
+        "Outcome: 90% of target delivered",
+        "Quote: \"I would have built bench strength earlier\"",
+        "Follow-up: Probing team leverage; candidate described specific scope and mentoring changes"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for a manager. The candidate protected team output through scope trade-offs and development of others. Quote: \"I re-prioritized scope with the team, redistributed work to two strong juniors with paired mentoring.\" Demonstrates owning team outcomes and creating leverage. The retrospective shows long-term thinking about bench strength. Biggest strength is converting a people risk into a development opportunity while still delivering.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We lost two engineers and missed the onboarding launch. I hired replacements and reset expectations with leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with the remaining team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the remaining seniors to cover the work until we backfilled."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Hire faster next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: manager onboarding launch",
+        "Obstacle: two departures",
+        "Actions: asked seniors to cover, hired replacements",
+        "Outcome: missed launch",
+        "Quote: \"I asked the remaining seniors to cover the work\"",
+        "Follow-up: Probing team development; candidate showed no coaching or scope adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for a manager. The candidate did not adapt team processes or develop remaining talent. Quote: \"I asked the remaining seniors to cover the work until we backfilled.\" No evidence of creating leverage through the team. The reflection focuses only on hiring speed. Biggest gap is failure to own team outcomes beyond headcount replacement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our acquisition integration was derailed when regulatory approval took four months longer than modeled. I shifted the combined P&L ownership to the acquiring business unit, renegotiated earn-out milestones with the founders, and still captured 70% of the projected synergies within the original fiscal year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide on the P&L shift?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled three scenarios with finance and presented the trade-offs to the CEO and board, choosing the path that protected customer retention over short-term accounting optics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have built regulatory contingency milestones into the original deal structure so the earn-out could flex without renegotiation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: exec leading acquisition integration",
+        "Obstacle: regulatory delay of four months",
+        "Actions: shifted P&L, renegotiated earn-outs, protected 70% synergies",
+        "Outcome: captured majority of value despite delay",
+        "Quote: \"I modeled three scenarios with finance and presented the trade-offs to the CEO and board\"",
+        "Follow-up: Probing strategic judgment; candidate described scenario modeling and board-level trade-offs"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results for an exec. The candidate made org-level trade-offs under high ambiguity and still delivered business value. Quote: \"I modeled three scenarios with finance and presented the trade-offs to the CEO and board.\" Shows strategic judgment and long-term leverage. The reflection on deal-structure contingencies demonstrates foresight. Biggest strength is converting a regulatory blocker into a structural solution with quantified outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Regulatory delays pushed the integration back a year. We eventually completed it but synergies came in well below plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What decisions did you make during the delay?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused most integration work and waited for clarity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Push the legal team harder on timelines."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about unanticipated obstacles...",
+        "Role: exec acquisition integration",
+        "Obstacle: regulatory delay",
+        "Actions: paused work and waited",
+        "Outcome: synergies well below plan",
+        "Quote: \"We paused most integration work and waited for clarity\"",
+        "Follow-up: Probing strategic judgment; candidate showed no alternative paths or trade-offs"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results for an exec. The candidate defaulted to waiting rather than exploring structural options. Quote: \"We paused most integration work and waited for clarity.\" No evidence of strategic trade-offs or long-term thinking. The reflection stays at pushing other teams. Biggest gap is absence of org-level ownership and scenario planning expected at this level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of outcome",
+      "junior": "Takes personal steps to unblock own work",
+      "senior": "Negotiates across teams to protect delivery",
+      "manager": "Adjusts team scope and develops others to hit goal",
+      "exec": "Makes org-level structural changes to preserve business value"
+    },
+    {
+      "signal": "Response to external blocker",
+      "junior": "Seeks help and iterates quickly",
+      "senior": "Builds temporary technical or process bridges",
+      "manager": "Reallocates team capacity and coaching",
+      "exec": "Renegotiates governance or incentives"
+    },
+    {
+      "signal": "Retrospective quality",
+      "junior": "Identifies personal process fix",
+      "senior": "Suggests earlier cross-team coordination",
+      "manager": "Points to earlier talent development",
+      "exec": "Identifies missing contingency terms in original agreements"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Individual output recovered",
+      "senior": "Customer impact protected via influence",
+      "manager": "Team output maintained through development",
+      "exec": "Majority of financial synergies captured despite delay"
+    }
+  ],
+  "kind": "lp"
+}

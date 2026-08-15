@@ -1,0 +1,269 @@
+{
+  "question": "Give an example of balancing competing customer needs or managing expectations under constraints.",
+  "competency": "Customer / Client Focus",
+  "principle": "Customer / Client Focus",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Two internal teams both needed a data export feature from my dashboard. One wanted CSV with filters, the other needed API access by end of sprint. I checked with my manager on priority, then told both teams the timeline and what I could deliver first."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the second team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave them a partial CSV export in week one and explained the API would slip. They accepted it once I showed the data they needed was in the file."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: new grad on dashboard team; two internal customers wanted export feature in same sprint.",
+        "Action: asked manager for priority guidance, communicated partial delivery to second team.",
+        "Outcome: delivered CSV to both, API deferred; second team used the file for their report.",
+        "Quote: \"I showed them the data they needed was already in the CSV.\"",
+        "Follow-up: Asked about second team reaction; candidate described acceptance after seeing the file contents."
+      ],
+      "raiseFeedback": "Raises the bar for junior. The competency is Customer / Client Focus. Candidate described two internal teams requesting an export feature in the same sprint and, after checking priority with their manager, delivered a partial CSV to the lower-priority team while explaining the API delay. The second team accepted the file once shown it contained the data they needed. This shows basic ownership of their own scope and willingness to seek guidance rather than over-promising. The story stays local to one dashboard but demonstrates clear communication of constraints. Biggest strength is the quick pivot to partial delivery instead of silence or escalation.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams asked for different exports. I tried to build both but ran out of time and just told them it would be late."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to either team before the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I was heads-down coding."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: new grad; two internal teams requested export features.",
+        "Action: attempted both without prioritization or updates.",
+        "Outcome: missed both, informed teams only after deadline slipped.",
+        "Quote: \"I was heads-down coding.\"",
+        "Follow-up: Asked about pre-deadline communication; candidate admitted none occurred."
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The competency is Customer / Client Focus. Candidate attempted to satisfy two export requests simultaneously without seeking priority input or providing updates, then notified both teams only after missing the sprint. No evidence of managing expectations or using available support. The story shows the candidate defaulting to solo execution under constraint instead of communicating trade-offs. Biggest gap is absence of any proactive customer conversation before the deadline."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Payments and Risk teams both needed changes to the same fraud-check service. Payments wanted faster approvals; Risk wanted stricter rules. I ran a short design review with both leads, surfaced the throughput trade-off, and proposed a toggle we could ship in two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get agreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each team their top metric under the toggle options. Risk accepted a 3% slower path for high-risk flows; Payments kept their SLA for the rest."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: senior engineer; Payments and Risk needed conflicting changes to fraud service.",
+        "Action: facilitated design review, quantified trade-off, proposed toggle with metrics for each team.",
+        "Outcome: both teams agreed on staged rollout; feature shipped on time.",
+        "Quote: \"I showed each team their top metric under the toggle options.\"",
+        "Follow-up: Asked how agreement was reached; candidate described metric-driven discussion."
+      ],
+      "raiseFeedback": "Raises the bar for senior. The competency is Customer / Client Focus. Candidate mediated between Payments and Risk on conflicting requirements for a shared fraud service by running a joint design review and offering a toggle that preserved each team's primary metric. The solution shipped on schedule after both teams accepted the quantified trade-off. This shows cross-team influence without authority and clear use of data to manage expectations. The story stays within one service but demonstrates senior-level coordination. Biggest strength is translating constraints into options the customers could evaluate themselves.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Payments and Risk both wanted changes. I built what Risk asked for first because their ticket came in earlier."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did Payments understand the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I updated the ticket later but they were surprised."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: senior engineer; Payments and Risk requested changes to same service.",
+        "Action: prioritized by ticket arrival order without discussion.",
+        "Outcome: Payments surprised by outcome.",
+        "Quote: \"I updated the ticket later but they were surprised.\"",
+        "Follow-up: Asked about communication to Payments; candidate confirmed late notification only."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The competency is Customer / Client Focus. Candidate resolved competing requests from Payments and Risk by processing the earlier ticket without joint discussion, then notified the second team only after the decision was made. No attempt to surface trade-offs or seek alignment. The story shows senior scope handled at a junior level of coordination. Biggest gap is lack of proactive expectation management across teams."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Two large enterprise customers both needed a compliance report by quarter end, but the team had only three analysts. I asked each account team for the minimum fields required, then assigned one analyst to build a shared template and the other two to customize per customer."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the account teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told both we could deliver 80% of fields in the shared template and offered a paid services add-on for anything beyond that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: manager of reporting team; two enterprise customers needed compliance reports same quarter.",
+        "Action: clarified minimum requirements, created shared template, offered paid add-on for extras.",
+        "Outcome: both customers accepted the template; one bought the add-on.",
+        "Quote: \"I told both we could deliver 80% of fields in the shared template.\"",
+        "Follow-up: Asked about account team conversations; candidate described minimum-scope negotiation."
+      ],
+      "raiseFeedback": "Raises the bar for manager. The competency is Customer / Client Focus. Candidate managed two enterprise customers requesting compliance reports under a three-analyst constraint by defining a shared 80% template and offering paid services for additional fields. Both customers accepted the plan and one purchased the add-on. This shows leverage through the team and clear commercial framing of constraints. The story ties directly to team capacity and revenue outcome. Biggest strength is converting a resource limit into a structured customer choice rather than an internal scramble.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Two customers wanted reports. I split the team and told them to do their best."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "One customer complained about missing fields and we had to do a free rework."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: manager; two customers requested reports with limited analysts.",
+        "Action: split team without scope discussion.",
+        "Outcome: one customer received incomplete report and required free rework.",
+        "Quote: \"I split the team and told them to do their best.\"",
+        "Follow-up: Asked about customer reaction; candidate described complaint and rework."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The competency is Customer / Client Focus. Candidate split a constrained team across two report requests without clarifying scope or expectations, resulting in one incomplete delivery and subsequent free rework. No evidence of team leverage or commercial boundary-setting. The story shows the manager absorbing the constraint rather than shaping customer outcomes. Biggest gap is absence of any negotiation or prioritization step before work began."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Enterprise and SMB segments both wanted faster onboarding, but our support capacity was capped. I shifted investment from a low-use self-serve tool to an automated workflow that reduced average time by 40% for both segments while keeping headcount flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed usage data showing the self-serve tool served under 5% of customers and used that to justify the reallocation to the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: exec; Enterprise and SMB both requested faster onboarding under fixed support capacity.",
+        "Action: analyzed usage data, reallocated investment from low-use tool to automated workflow.",
+        "Outcome: 40% reduction in onboarding time for both segments with no headcount increase.",
+        "Quote: \"I reviewed usage data showing the self-serve tool served under 5% of customers.\"",
+        "Follow-up: Asked about investment decision; candidate described data-driven justification to board."
+      ],
+      "raiseFeedback": "Raises the bar for exec. The competency is Customer / Client Focus. Candidate addressed simultaneous onboarding speed demands from Enterprise and SMB segments under fixed support capacity by reallocating budget from a low-usage self-serve tool to a shared automated workflow, achieving 40% faster time for both groups. The decision was grounded in usage data presented to the board. This shows strategic judgment and long-term leverage rather than headcount growth. The story operates at business-segment level. Biggest strength is using customer data to make a zero-sum investment choice that benefited the broader base.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints."
+        },
+        {
+          "role": "candidate",
+          "text": "Both segments wanted faster onboarding. I asked for more headcount but it was denied so we stayed flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did customer satisfaction change?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed about the same; we just told them the timeline was what it was."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of balancing competing customer needs or managing expectations under constraints.",
+        "Role: exec; Enterprise and SMB requested faster onboarding.",
+        "Action: requested headcount increase; when denied, maintained status quo.",
+        "Outcome: no improvement; customers told timelines would not change.",
+        "Quote: \"we just told them the timeline was what it was.\"",
+        "Follow-up: Asked about satisfaction impact; candidate reported no change."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The competency is Customer / Client Focus. Candidate responded to Enterprise and SMB onboarding demands by requesting additional headcount and, once denied, communicated no change in timelines without exploring alternative solutions. No evidence of strategic reallocation or long-term planning. The story shows acceptance of the constraint rather than business-level judgment. Biggest gap is lack of any attempt to create leverage within existing resources."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of customers addressed",
+      "junior": "Two small internal teams",
+      "senior": "Two product teams sharing a service",
+      "manager": "Two named enterprise accounts",
+      "exec": "Enterprise and SMB segments"
+    },
+    {
+      "signal": "How constraints are handled",
+      "junior": "Seeks manager input for priority",
+      "senior": "Facilitates cross-team trade-off discussion",
+      "manager": "Defines minimum scope and commercial options",
+      "exec": "Reallocates investment based on usage data"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Partial delivery by one person",
+      "senior": "Toggle feature serving both teams",
+      "manager": "Shared template plus paid add-on",
+      "exec": "40% improvement with flat headcount"
+    },
+    {
+      "signal": "Communication of trade-offs",
+      "junior": "Tells teams after checking with manager",
+      "senior": "Shows each team their metric impact",
+      "manager": "Offers 80% template or paid services",
+      "exec": "Presents data to board for investment shift"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Local feature delivered",
+      "senior": "Service change shipped on schedule",
+      "manager": "Both customers accept plan, one buys add-on",
+      "exec": "Segment-level time reduction achieved"
+    }
+  ],
+  "kind": "competency"
+}

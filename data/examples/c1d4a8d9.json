@@ -1,0 +1,308 @@
+{
+  "question": "Describe the most innovative thing you've done and why you thought it was innovative. Ask for one or two more examples to see if it's a pattern of innovative thinking. What was the problem it was solving? What was innovative about it?",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a simple internal script that auto-tagged support tickets by urgency using basic keyword rules and a small lookup table. It cut our triage time by about 30% for the team of four."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did you think it was innovative?"
+        },
+        {
+          "role": "candidate",
+          "text": "It wasn't a new algorithm, but no one on the team had automated that step before. The problem was inconsistent prioritization that caused missed SLAs."
+        },
+        {
+          "role": "interviewer",
+          "text": "Give me one more example."
+        },
+        {
+          "role": "candidate",
+          "text": "Later I added a daily digest email that summarized open items. Same idea, small automation that removed a manual step."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing and why",
+        "Built ticket auto-tagger with keyword rules",
+        "Cut triage time 30% for small team",
+        "Quote: 'no one had automated that step before'",
+        "Follow-up: second example of daily digest",
+        "Both solved manual repetition at individual scope"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a small automation that directly reduced repeated work and measured the local impact. The second example shows the same pattern of spotting a manual step and removing it. This matches the level expectation of individual ownership and learning to simplify their own workflow.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested using a new library in our project that made one API call easier."
+        },
+        {
+          "role": "interviewer",
+          "text": "What problem was it solving and why innovative?"
+        },
+        {
+          "role": "candidate",
+          "text": "It saved me typing a few lines. I read about it online and thought it was cool."
+        },
+        {
+          "role": "interviewer",
+          "text": "Another example?"
+        },
+        {
+          "role": "candidate",
+          "text": "I also used a different charting tool once for a dashboard."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing",
+        "Suggested a new library for one API call",
+        "Saved typing a few lines",
+        "Quote: 'I read about it online and thought it was cool'",
+        "Follow-up: second example of different charting tool",
+        "No clear problem statement or measurable outcome"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The examples show tool adoption without evidence of solving a real team problem or simplifying work. No measurement or repeated pattern of invention. The candidate did not demonstrate ownership of outcomes beyond personal convenience."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I designed a shared retry and backoff library that three teams adopted after we saw repeated timeout issues in production. It reduced customer-facing errors by 18% across services."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why innovative?"
+        },
+        {
+          "role": "candidate",
+          "text": "The innovation was making the retry policy configurable per downstream dependency instead of one-size-fits-all. It solved inconsistent failure handling that each team was reinventing."
+        },
+        {
+          "role": "interviewer",
+          "text": "Another example?"
+        },
+        {
+          "role": "candidate",
+          "text": "I later created a lightweight schema registry for event payloads that let two teams evolve contracts without breaking consumers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing",
+        "Shared retry library adopted by three teams",
+        "18% reduction in customer errors",
+        "Quote: 'making the retry policy configurable per dependency'",
+        "Follow-up: schema registry for event contracts",
+        "Cross-team impact with clear metrics"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove adoption across teams without authority and delivered measurable reliability gains. The second example reinforces the pattern of reducing duplicated work through reusable simplification. This shows the expected influence and cross-team leverage at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I refactored one service to use a newer framework version that had better performance."
+        },
+        {
+          "role": "interviewer",
+          "text": "What problem and why innovative?"
+        },
+        {
+          "role": "candidate",
+          "text": "The old version was getting deprecated. It was mostly an upgrade task."
+        },
+        {
+          "role": "interviewer",
+          "text": "Another example?"
+        },
+        {
+          "role": "candidate",
+          "text": "I also picked a different logging format in my last project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing",
+        "Refactored service to newer framework",
+        "Mainly an upgrade to avoid deprecation",
+        "Quote: 'it was mostly an upgrade task'",
+        "Follow-up: different logging format",
+        "No cross-team adoption or quantified impact"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Both examples are routine maintenance or personal preference changes with no evidence of broader influence or simplification that others adopted. The candidate stayed within single-team scope and did not show the pattern of reusable invention expected at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team created a self-service capacity model that let product managers forecast their own resource needs. It cut planning cycle time from three weeks to four days."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why innovative and how did you drive it?"
+        },
+        {
+          "role": "candidate",
+          "text": "We combined usage data with simple heuristics instead of building a full simulation. I had one engineer own the initial prototype and then coached two others to extend it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Another example?"
+        },
+        {
+          "role": "candidate",
+          "text": "We also introduced a weekly 'simplify review' where the team surfaces one process to automate or remove."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing",
+        "Self-service capacity model for PMs",
+        "Cut planning from 3 weeks to 4 days",
+        "Quote: 'one engineer owned prototype, then coached two others'",
+        "Follow-up: weekly simplify review process",
+        "Team leverage and process change"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate created leverage by enabling others to do their own forecasting and built a repeatable team habit of simplification. The story shows both a concrete outcome and how the manager developed the team to sustain the approach.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I approved budget for a new monitoring tool that the team wanted."
+        },
+        {
+          "role": "interviewer",
+          "text": "What problem did it solve?"
+        },
+        {
+          "role": "candidate",
+          "text": "The old tool had some gaps. The team handled the rollout."
+        },
+        {
+          "role": "interviewer",
+          "text": "Another example?"
+        },
+        {
+          "role": "candidate",
+          "text": "I supported an offsite to brainstorm ideas."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing",
+        "Approved budget for new monitoring tool",
+        "Team handled rollout",
+        "Quote: 'the team handled the rollout'",
+        "Follow-up: supported an offsite",
+        "No personal ownership of invention or team development"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The examples show facilitation of team requests rather than actively shaping a culture of invention or simplification. No evidence of developing people to invent or measuring team-level impact from new approaches."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a company-wide 'two-pizza' review process that forced every new project to justify why it could not reuse or extend existing services. It reduced new service creation by 40% in the first year."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it innovative at scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "The innovation was tying the review to promotion criteria for senior engineers so there was real incentive to simplify instead of building new. We traded short-term feature velocity for long-term operational leverage."
+        },
+        {
+          "role": "interviewer",
+          "text": "Another example?"
+        },
+        {
+          "role": "candidate",
+          "text": "I also pushed a decision to sunset three internal platforms after mapping total cost of ownership across the org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing",
+        "Two-pizza review tied to promotion criteria",
+        "40% drop in new services year one",
+        "Quote: 'tying the review to promotion criteria for senior engineers'",
+        "Follow-up: sunsetting three platforms via TCO mapping",
+        "Org-level trade-off and incentive design"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate changed organizational incentives and decision rights to favor reuse over new builds, with clear long-term leverage metrics. The second example shows consistent strategic judgment on when to stop investing. This demonstrates the expected scope of business-level simplification.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged teams to share more code across the company."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you make that happen and what changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a few all-hands. Some teams started doing it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Another example?"
+        },
+        {
+          "role": "candidate",
+          "text": "I also asked for fewer new projects in planning."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing",
+        "Encouraged code sharing in all-hands",
+        "Some teams started doing it",
+        "Quote: 'I mentioned it in a few all-hands'",
+        "Follow-up: asked for fewer new projects",
+        "No structural change or measured org impact"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate relied on communication rather than changing incentives, processes, or resource allocation. No evidence of making difficult trade-offs or achieving sustained, measurable simplification at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual workflow",
+      "senior": "Cross-team adoption",
+      "manager": "Team process and development",
+      "exec": "Org incentives and trade-offs"
+    },
+    {
+      "signal": "Pattern of invention",
+      "junior": "Repeated small automations",
+      "senior": "Reusable components others adopt",
+      "manager": "Team habit of simplification",
+      "exec": "Structural changes to favor reuse"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Local time saved",
+      "senior": "Error reduction across services",
+      "manager": "Planning cycle time",
+      "exec": "Service creation rate and TCO"
+    },
+    {
+      "signal": "How innovation is driven",
+      "junior": "Personal initiative",
+      "senior": "Influence without authority",
+      "manager": "Coaching and process",
+      "exec": "Incentive and policy redesign"
+    },
+    {
+      "signal": "Evidence of simplify over invent",
+      "junior": "Remove manual step",
+      "senior": "Stop reinventing retry logic",
+      "manager": "Weekly simplify review",
+      "exec": "Sunset platforms"
+    },
+    {
+      "signal": "Handling trade-offs",
+      "junior": "Not expected",
+      "senior": "Configurable policies",
+      "manager": "Velocity vs operational cost",
+      "exec": "Feature speed vs long-term leverage"
+    }
+  ],
+  "kind": "lp"
+}

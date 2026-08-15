@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time you dropped the ball. You or your team was going to miss a deadline or promise. Walk me through how you handled it.",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was assigned a small feature for a sprint and realized two days before the end I had misunderstood the scope and would miss the commit. I told my manager right away, cut scope to the core path, delivered that, and documented the rest for the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn from the misunderstanding?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started writing acceptance criteria in my own words and getting them reviewed before starting work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Missed feature scope two days out; immediately flagged to manager and reduced scope.",
+        "Delivered core path and wrote follow-up task.",
+        "Quote: 'I told my manager right away and cut to the must-have.'",
+        "Follow-up: Asked what was learned; candidate described adding acceptance-criteria review step."
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. The candidate owned the miss at the individual task level by surfacing it early instead of hoping to recover quietly. They executed a concrete scope trade-off and added a personal process fix. The story stays small but shows clear accountability and coachability. Biggest strength is the immediate escalation and the specific follow-up habit they adopted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The requirements kept changing so I couldn't finish on time. I worked late the last two nights but still missed the commit."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you tell anyone before the deadline that you were at risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I thought I could catch up so I didn't want to bother anyone."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Blamed changing requirements; worked late but still missed.",
+        "Did not escalate risk until after the fact.",
+        "Quote: 'I thought I could catch up so I didn't want to bother anyone.'",
+        "Follow-up: Confirmed no early signal was sent."
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. The candidate externalized the miss to requirements changes and never raised the risk proactively. No evidence of adjusting scope or seeking help in time. The only action was individual heroics after the problem was already late. Biggest gap is absence of early communication or ownership of the outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service migration was slipping because two partner teams had not completed their config changes. I pulled the dependency owners into a daily sync, published a shared burndown, and offered to take one of their config items myself to unblock."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other teams respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team still missed their date; I absorbed their work and we hit the customer-visible launch with a note on the remaining cleanup."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Migration at risk due to partner teams; created shared burndown and absorbed one team's work.",
+        "Hit the external launch date anyway.",
+        "Quote: 'I pulled the dependency owners into a daily sync and offered to take one of their items.'",
+        "Follow-up: Confirmed outcome was still a customer-visible win despite the miss."
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. The candidate treated a cross-team slip as their problem, created visibility, and took on extra work to protect the launch. They influenced without authority and still delivered the promised customer outcome. The story demonstrates senior scope beyond their own code. Biggest strength is converting a multi-team risk into a managed delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The other team didn't deliver their part so our launch slipped by a week. I sent them the updated timeline after the fact."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do before the slip was confirmed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on finishing my own pieces and assumed they would come through."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Launch slipped because partner team missed; only action was sending new timeline after the fact.",
+        "No preemptive coordination or absorption of work.",
+        "Quote: 'I focused on finishing my own pieces and assumed they would come through.'",
+        "Follow-up: Confirmed no escalation or mitigation attempt occurred."
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. The candidate stayed within their own scope and only reacted after the miss had already happened. No attempt to create shared visibility or absorb risk. The outcome was a visible customer delay that could have been mitigated. Biggest gap is treating cross-team dependencies as outside their responsibility."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team committed to a Q3 migration that was trending late because two engineers were blocked on unclear requirements. I reset the team goal publicly, reassigned one person to clarify requirements full-time, and moved the launch date with a clear explanation to leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react to the reset?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were relieved once the new plan was realistic; we hit the revised date and used the retro to improve requirement intake for the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Team migration trending late; reset goal, reassigned headcount, and communicated new date upward.",
+        "Hit revised date and improved intake process.",
+        "Quote: 'I reset the team goal publicly and moved the launch date with a clear explanation.'",
+        "Follow-up: Confirmed team morale improved and process change was adopted."
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. The manager owned the team-level miss, made the hard call to reset expectations, and protected long-term process health. They used the event to develop the team rather than just pushing harder. The story shows leverage through people and clear communication to stakeholders. Biggest strength is turning a delivery slip into a durable operating improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team missed the date because they underestimated the work. I told them to try harder next time and noted it in their reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything about how the team plans or escalates?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really; it was a one-off and they know they need to be more accurate."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Missed date blamed on underestimation; only action was telling team to try harder and noting in reviews.",
+        "No process or planning change implemented.",
+        "Quote: 'I told them to try harder next time and noted it in their reviews.'",
+        "Follow-up: Confirmed no structural fix was put in place."
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. The manager treated the miss as an individual performance issue rather than a team-system problem. No evidence of resetting scope, adding support, or fixing planning hygiene. The only outcome was documentation in reviews. Biggest gap is lack of leverage or process ownership after the miss."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our annual platform migration was at risk of missing the board commitment because two acquired teams were not aligned on the new architecture. I changed the company goal from 'complete migration' to 'migrate 80 percent of traffic with clear exceptions,' briefed the board on the trade-off, and created a quarterly exception review process."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the revised target, reduced tech debt in the remaining 20 percent, and the exception process became the model for how we handle future large-scale commitments."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Org-level migration at risk; reset company goal, briefed board, and institutionalized exception reviews.",
+        "Hit revised target and turned the fix into a repeatable process.",
+        "Quote: 'I changed the company goal from complete migration to 80 percent with clear exceptions.'",
+        "Follow-up: Confirmed the process change persisted beyond the original program."
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. The executive owned an org-wide commitment that was slipping, made a strategic scope trade-off, and aligned the board without heroics. They converted the miss into a durable governance mechanism. The story shows long-term leverage and strategic judgment under ambiguity. Biggest strength is protecting the business outcome while improving how the organization makes and keeps big promises.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The acquired teams slowed us down so we missed the board date by two quarters. I escalated to the CEO to get more pressure on those teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust the original commitment or create any new process?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just kept pushing; eventually it got done but the board was unhappy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you dropped the ball on a deadline.",
+        "Missed board commitment due to acquired teams; only action was escalation for more pressure.",
+        "No scope adjustment or new process created.",
+        "Quote: 'I escalated to the CEO to get more pressure on those teams.'",
+        "Follow-up: Confirmed no structural change resulted."
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. The executive stayed in push mode rather than making a strategic call on scope or governance. No evidence of resetting expectations with the board or fixing the underlying integration problem. The outcome was a delayed commitment and unhappy stakeholders. Biggest gap is absence of strategic trade-offs or long-term leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Early risk escalation",
+      "junior": "Flags personal miss same day",
+      "senior": "Creates shared visibility across teams",
+      "manager": "Resets team goal and staffing",
+      "exec": "Resets org-level commitment with board"
+    },
+    {
+      "signal": "Scope management",
+      "junior": "Cuts own feature scope",
+      "senior": "Absorbs partner work to protect launch",
+      "manager": "Reassigns headcount to unblock",
+      "exec": "Changes company goal to 80 percent"
+    },
+    {
+      "signal": "Process improvement after miss",
+      "junior": "Adds personal acceptance-criteria review",
+      "senior": "Publishes shared burndown for future use",
+      "manager": "Fixes requirement intake process",
+      "exec": "Institutionalizes exception review cadence"
+    },
+    {
+      "signal": "Stakeholder communication",
+      "junior": "Tells manager immediately",
+      "senior": "Coordinates partner teams daily",
+      "manager": "Explains reset to leadership",
+      "exec": "Briefs board on trade-off"
+    }
+  ],
+  "kind": "lp"
+}

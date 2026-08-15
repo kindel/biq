@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about a time when you didn't know what to do next or how to solve a challenging problem. How do you learn what you don't know? What were the options you considered? How did you decide the best path forward? What was the outcome?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first backend feature I had to add pagination to an endpoint but had never touched the ORM layer. I started by reading the existing code and the framework docs for two hours, then listed three options: copy a similar endpoint, ask my mentor for a walkthrough, or try to implement from scratch and test. I chose to ask my mentor first for a 15-minute overview, then built a prototype and iterated based on his feedback. Outcome was it shipped in two days with no bugs in prod."
+        },
+        {
+          "role": "interviewer",
+          "text": "What specifically did you ask your mentor?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked how the query builder handled limit and offset so I wouldn't miss edge cases like total count."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Candidate read docs 2h then listed 3 options before asking mentor",
+        "Chose mentor walkthrough then prototype",
+        "Outcome: shipped in 2 days, no prod bugs",
+        "Quote: 'I asked how the query builder handled limit and offset'",
+        "Follow-up: What specifically did you ask your mentor? -> clear targeted question"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at junior level. Candidate described reading docs first, listing three concrete options, then asking a targeted question of their mentor on query builder limit/offset behavior. The story shows ownership of their own learning path before seeking help and resulted in a clean two-day delivery with zero production issues. This matches the expected junior scope of individual work plus coachability. The lower option of guessing from scratch was considered but rejected, showing deliberate choice. Biggest strength is the explicit sequence of self-research before escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I got stuck on a task and didn't know the API so I just tried random things until it worked. Eventually my manager told me the right way."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you consider before trying random things?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really list options, I just started coding."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Candidate tried random things until manager intervened",
+        "No options listed or docs read",
+        "Outcome: manager had to tell them the right way",
+        "Quote: 'I just tried random things until it worked'",
+        "Follow-up: What options did you consider? -> none, jumped straight to trial and error"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at junior level. The candidate defaulted to random trial-and-error without first consulting docs or listing options, requiring manager intervention to correct course. No evidence of structured self-learning or coachability before escalation. This falls short of even basic individual ownership expected at 0-2 years. The outcome depended entirely on someone else providing the answer. Biggest gap is absence of any proactive steps to learn independently."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team project needed a new search index but our team had no prior experience. I scheduled short calls with two other teams that had done similar work, read their internal wiki posts, and pulled three architecture options with rough effort estimates. We picked the middle option after a joint review because it balanced latency and maintenance cost. The index launched on time and cut query latency 40% for the partner team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to share their lessons?"
+        },
+        {
+          "role": "candidate",
+          "text": "I offered to document our final decision and share back any metrics we collected."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Scheduled calls with two other teams and read their wikis",
+        "Created three architecture options with effort estimates",
+        "Outcome: launched on time, 40% latency cut",
+        "Quote: 'I offered to document our final decision and share back metrics'",
+        "Follow-up: How did you get the other teams to share? -> reciprocal value offer"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at senior level. The candidate proactively reached across teams, synthesized three options with estimates, and created reciprocal value to secure knowledge sharing. The result delivered measurable impact for a partner team. This demonstrates the expected cross-team influence without authority. The decision process was explicit and tied to concrete trade-offs. Biggest strength is turning unknown territory into a repeatable learning pattern that benefited others.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I didn't know how to integrate with another service so I waited for the next planning meeting and hoped someone would bring it up."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do in the meantime to learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't do anything extra, figured it would come up eventually."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Waited for planning meeting instead of seeking knowledge",
+        "No outreach or options considered",
+        "Outcome: relied on meeting to surface answer",
+        "Quote: 'I didn't do anything extra, figured it would come up eventually'",
+        "Follow-up: What did you do in the meantime? -> nothing"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at senior level. The candidate took no initiative to learn across teams or explore options, instead passively waiting for a meeting. No evidence of influence without authority or creating leverage for others. This is below the 3-7 year expectation of driving clarity on ambiguous problems. The outcome depended on others raising the issue. Biggest gap is complete absence of proactive learning behaviors."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my engineers was blocked on a new domain area. I had them shadow a peer for a day, set up a weekly reading list with check-ins, and asked them to present options to the team after two weeks. We chose an approach that the team refined together. The engineer later led a similar project independently and helped two new hires ramp faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure if the learning stuck?"
+        },
+        {
+          "role": "candidate",
+          "text": "Tracked whether they could explain trade-offs in their next design review without my input."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Had engineer shadow peer and maintain reading list with check-ins",
+        "Asked for options presentation after two weeks",
+        "Outcome: engineer led later project and helped ramp new hires",
+        "Quote: 'Tracked whether they could explain trade-offs in their next design review'",
+        "Follow-up: How did you measure if the learning stuck? -> independent design review"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at manager level. The candidate built a structured learning plan for a direct report including shadowing, reading, and team presentation, then measured independence through design reviews. This created team leverage as the engineer later mentored others. The approach shows clear focus on developing people rather than solving the problem themselves. Outcome scaled beyond the original issue. Biggest strength is turning one person's knowledge gap into repeatable team capability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When my team hit an unknown area I told them to figure it out and report back in the next one-on-one."
+        },
+        {
+          "role": "interviewer",
+          "text": "What support did you provide?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't provide any, they needed to own it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Told team to figure it out with no support",
+        "No structured learning plan or options review",
+        "Outcome: reported in 1:1 with no evidence of development",
+        "Quote: 'I didn't provide any, they needed to own it'",
+        "Follow-up: What support did you provide? -> none"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at manager level. The candidate provided zero structure or coaching for the team's knowledge gap, simply delegating without support or measurement. No evidence of developing people or creating team leverage. This misses the core expectation that managers build capability rather than just assign ownership. The outcome showed no lasting improvement. Biggest gap is treating learning as purely individual rather than a manager responsibility."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Facing a market shift with unclear tech direction, I commissioned three small internal experiments across different orgs, each with a two-week learning goal and shared readout. After reviewing results I picked the path that aligned with our three-year platform bets and killed the others. We redirected two teams and the chosen direction became the basis for our next major product line, adding $12M in projected revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide which experiments to fund?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set explicit success criteria upfront tied to customer adoption signals we already tracked."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Commissioned three small experiments with two-week goals",
+        "Reviewed results against three-year platform bets",
+        "Outcome: redirected two teams, $12M projected revenue",
+        "Quote: 'I set explicit success criteria upfront tied to customer adoption signals'",
+        "Follow-up: How did you decide which experiments to fund? -> upfront criteria linked to existing metrics"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at exec level. The candidate ran parallel low-cost experiments to resolve high ambiguity, made a strategic choice against long-term bets, and drove org-level impact with clear revenue attribution. This shows the required judgment on trade-offs and leverage through multiple teams rather than personal heroics. Decision criteria were tied to existing customer signals. Biggest strength is converting organizational uncertainty into a scalable directional bet.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When the market shifted I asked my directs to come up with a plan and picked the one that sounded best in the meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data or experiments informed the choice?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't run any, just discussed options."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't know what to do next...",
+        "Asked directs for a plan and picked one in meeting",
+        "No experiments or data collection",
+        "Outcome: chose based on meeting discussion only",
+        "Quote: 'We didn't run any, just discussed options'",
+        "Follow-up: What data or experiments informed the choice? -> none"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at exec level. The candidate relied on discussion without experiments or external data, making a high-stakes directional call in a vacuum. No evidence of strategic judgment under ambiguity or creating organizational learning loops. This falls short of the 10+ year expectation for handling org-level uncertainty through structured exploration. The outcome lacked measurable grounding. Biggest gap is absence of any mechanism to reduce risk before committing teams."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "How they seek knowledge when stuck",
+      "junior": "Reads docs then asks targeted mentor question",
+      "senior": "Reaches across teams and offers reciprocal value",
+      "manager": "Builds learning plan for report with measurement",
+      "exec": "Runs parallel low-cost experiments with clear criteria"
+    },
+    {
+      "signal": "Options considered before acting",
+      "junior": "Lists three options then chooses",
+      "senior": "Creates architecture options with effort estimates",
+      "manager": "Has report present options to team",
+      "exec": "Funds three experiments then selects"
+    },
+    {
+      "signal": "Evidence of leverage beyond self",
+      "junior": "None expected",
+      "senior": "Shares decision back with other teams",
+      "manager": "Engineer later ramps new hires",
+      "exec": "Redirects two teams to new direction"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Shipped in two days, zero bugs",
+      "senior": "40% latency improvement for partner",
+      "manager": "Independent design review capability",
+      "exec": "$12M projected revenue"
+    }
+  ],
+  "kind": "lp"
+}

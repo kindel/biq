@@ -1,0 +1,225 @@
+{
+  "question": "Describe a time when you had to support a business initiative that you didn't agree with. How did you handle it? How did you deliver the message to your team?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with switching our sprint cadence to two weeks because it felt rushed for my feature work. I raised it in the retro with data on my last PR cycle time, then once the decision was made I updated my tasks and finished the stories on the new cadence."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you tell the other engineers on your pod?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said the PM had decided on two-week sprints to align with the release train and that we would all adjust our planning. I focused on what changed in the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time you supported an initiative you disagreed with",
+        "Raised timing concern once in retro with cycle-time numbers",
+        "After decision, updated own tasks and delivered on new cadence",
+        "Quote: \"I told the pod the PM decided and we would adjust the board\"",
+        "Follow-up: asked how message was delivered \u2192 kept it factual, no editorializing"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate voiced a specific concern with data then fully executed the new process without ongoing resistance. Quote on delivery shows they kept the message neutral rather than seeding doubt. This matches the expected scope of owning their own work and demonstrating coachability after a decision. The gap is narrow: no evidence yet of helping peers adjust, but that is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought the two-week sprints were a bad idea and told the team I was going to keep working in the old way until the PM changed it back."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I did the stories but kept telling people in standup that the cadence was too short and we were going to miss quality."
+        }
+      ],
+      "lowerNotes": [
+        "Q: supported initiative they disagreed with",
+        "Continued voicing disagreement after decision",
+        "Quote: \"I told people we were going to miss quality\"",
+        "Follow-up: asked about delivery \u2192 kept pushing personal view in team settings"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate did the work but kept publicly undermining the decision, which shows weak commitment once the call was made. The repeated negative comments in standup go against the principle of disagreeing and then committing. At this level the expectation is that after one clear disagreement the person moves forward without seeding doubt in the team."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing wanted to launch a new self-serve tier that I believed would cannibalize our enterprise deals. I wrote a short doc with win-rate data from the last two quarters and shared it with the PM and sales lead before the final call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team hear about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Once the decision was locked I ran a 30-minute sync, showed the trade-off slide we had discussed, and said the launch date was fixed so we needed to sequence the enterprise migration work first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: supported initiative they disagreed with",
+        "Wrote data-backed doc and shared with PM and sales before decision",
+        "After lock, ran team sync with trade-off slide and clear sequencing ask",
+        "Quote: \"I showed the trade-off slide we had discussed\"",
+        "Follow-up: asked about cross-team influence \u2192 engaged sales lead directly"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used written data to influence before the decision and then translated the outcome into a concrete plan for their team. The quote shows they framed the decision as a shared trade-off rather than top-down. This demonstrates the expected influence without authority and clear delivery of the committed direction. Biggest strength is the pre-decision written artifact; the gap is that impact stayed within one team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent an email to the PM listing all the reasons the self-serve tier would hurt revenue but never followed up after they decided to proceed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did your team hear?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just forwarded the PM announcement and said we had to do it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: supported initiative they disagreed with",
+        "Sent one email then dropped the issue",
+        "Quote on delivery: \"I just forwarded the PM announcement\"",
+        "Follow-up: asked about team message \u2192 no framing or sequencing provided"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate voiced disagreement only once via email with no follow-through or attempt to align stakeholders. After the decision the message to the team was a bare forward with no context or plan, which fails to show the influence or clear commitment expected at this level. The story stays local and passive rather than demonstrating cross-team leverage."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My director wanted to reallocate two headcount from my platform team to a new growth squad. I disagreed because it would slow our reliability work. I laid out the risk in our 1:1 with metrics on incident response time and then accepted the call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it with the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the two engineers moving that the decision was made to accelerate growth and asked what projects they wanted to finish before the transition. I also reset the remaining team's OKRs in the next planning cycle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: supported initiative they disagreed with",
+        "Brought metrics to 1:1 with director before decision",
+        "After decision, gave clear rationale to moving engineers and reset team OKRs",
+        "Quote: \"I asked what projects they wanted to finish before the transition\"",
+        "Follow-up: asked about underperformance handling \u2192 no direct reports resisted but showed proactive reset"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used data to push back at the right level, then owned the outcome by giving affected engineers agency and resetting team goals. The quote illustrates people-focused delivery rather than just relaying the decision. This matches the expectation that managers create leverage through the team and handle org trade-offs without lingering resistance. The single gap is lack of longer-term measurement of the reallocation impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my director I thought the headcount move was a mistake but then told my team the two people were leaving and that we would just have to absorb the work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust any plans?"
+        },
+        {
+          "role": "candidate",
+          "text": "We dropped two reliability projects but I never explained why to the remaining team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: supported initiative they disagreed with",
+        "Disagreed once then passed message without context",
+        "Quote: \"I never explained why to the remaining team\"",
+        "Follow-up: asked about plan adjustment \u2192 dropped work with no communication"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate disagreed at the director level but failed to translate the decision into a coherent message or adjusted plan for the team. Dropping projects without explanation shows weak ownership of team outcomes. At the manager level the expectation is active leadership through change, not passive transmission of decisions."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board pushed for an acquisition that I believed would distract from our core platform strategy. I prepared a counter-proposal with three-year P&L scenarios and presented it in the exec offsite, then accepted the board vote."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the org hear about the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran an all-hands that showed the board rationale, the integration risks we had modeled, and the three new workstreams that would start. I also told my directs to bring their teams' questions to the next staff meeting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: supported initiative they disagreed with",
+        "Brought three-year P&L counter-proposal to exec offsite",
+        "After board vote, ran all-hands with risks and new workstreams",
+        "Quote: \"I told my directs to bring their teams' questions to the next staff meeting\"",
+        "Follow-up: asked about long-term thinking \u2192 modeled integration risks explicitly"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate brought a quantified strategic alternative before the decision and then translated the outcome into clear org-level framing and escalation paths. The quote shows they created leverage by routing questions through directs rather than heroically answering everything themselves. This reflects the expected strategic judgment and long-term thinking at this level. The gap is absence of post-integration metrics in the story.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the board the acquisition was a distraction but once they voted I sent a short email to the company saying we were acquiring and would share more later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with your leadership team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I left it to each VP to figure out how to absorb the work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: supported initiative they disagreed with",
+        "Disagreed at board then sent minimal company note",
+        "Quote on delivery: \"I left it to each VP to figure out how to absorb the work\"",
+        "Follow-up: asked about leadership leverage \u2192 no org-level framing or follow-up mechanism"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate disagreed at the right forum but then provided almost no strategic framing or integration plan to the organization. Leaving absorption to individual VPs without coordination shows absence of the leverage and long-term thinking required at this level. The story lacks evidence of owning the business outcome after the decision."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Raised disagreement with data before decision",
+      "junior": "Used cycle-time numbers in retro",
+      "senior": "Wrote doc shared with PM and sales",
+      "manager": "Metrics in 1:1 with director",
+      "exec": "Three-year P&L scenarios at offsite"
+    },
+    {
+      "signal": "Fully committed after decision",
+      "junior": "Updated own tasks and delivered",
+      "senior": "Ran team sync with sequencing plan",
+      "manager": "Reset OKRs and gave engineers agency",
+      "exec": "Defined new workstreams and escalation path"
+    },
+    {
+      "signal": "Message to team was neutral and actionable",
+      "junior": "Factual statement about cadence change",
+      "senior": "Trade-off slide plus concrete next steps",
+      "manager": "Rationale plus transition ownership",
+      "exec": "All-hands with risks and directs routing questions"
+    },
+    {
+      "signal": "Avoided seeding doubt post-decision",
+      "junior": "No ongoing complaints in standup",
+      "senior": "No continued pushback to peers",
+      "manager": "No lingering resistance visible to team",
+      "exec": "No public second-guessing of board"
+    },
+    {
+      "signal": "Created leverage through others",
+      "junior": "N/A at this scope",
+      "senior": "Engaged sales lead before decision",
+      "manager": "Reset team goals and gave directs ownership",
+      "exec": "Routed questions through leadership team"
+    }
+  ],
+  "kind": "lp"
+}

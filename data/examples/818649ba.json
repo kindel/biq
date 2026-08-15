@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about a time when you discovered that your idea was not the best course of action. What was your idea? Why wasn't your idea the best course of action? How did you find out it was not the correct path? What was the best course of action? Who provided it? What did you learn from the experience?",
+  "competency": "Are Right, A Lot (willingness to change mind with evidence, seeking truth over attachment to own ideas)",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I proposed building a simple in-memory cache for user sessions because it was fast to implement. After a week the cache started evicting entries under load and we saw login failures. My manager pointed out that the traffic pattern was spiky and suggested using the existing Redis cluster instead. I switched the implementation over two days and added a small test for eviction. I learned to check load characteristics before picking a storage approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data made you accept the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "The production metrics showed 30% eviction rate during peak and our load test confirmed it. I had assumed steady traffic."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Proposed in-memory cache for sessions on first project",
+        "Action: Switched to Redis after manager flagged load issues and showed metrics",
+        "Outcome: Fixed login failures in two days; added test",
+        "Quote: 'I had assumed steady traffic.'",
+        "Follow-up: What data made you accept the change? -> Cited eviction rate and load test"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at junior level. The candidate described a small-scope idea, accepted concrete production data from their manager, and implemented the better path without delay. The story shows quick learning from evidence rather than attachment to the original approach. The follow-up answer directly ties the decision change to metrics instead of authority. Biggest strength is the explicit link between observed data and course correction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we use a custom JSON parser because the built-in one was slow in my local tests. The team lead said it was unnecessary and we should profile first. I kept the parser in for two more weeks until it caused a deserialization bug on edge cases. We ended up reverting to the built-in one."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide to keep your version after the initial feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I thought my local numbers were still valid and wanted to prove it worked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Pushed custom JSON parser despite lead feedback",
+        "Action: Kept it for two weeks until edge-case bug appeared",
+        "Outcome: Reverted to built-in parser",
+        "Quote: 'I thought my local numbers were still valid.'",
+        "Follow-up: How did you decide to keep your version? -> Defended local test results over team input"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at junior level. The candidate continued with their approach after receiving direct feedback and only changed after a production bug. The follow-up reveals reliance on personal local tests rather than seeking broader data or quickly testing the lead's suggestion. The story shows persistence driven by proving their idea rather than evaluating evidence early."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I proposed a new indexing strategy for our search service to reduce latency by 40%. Cross-team load testing with the ads team showed it increased their p99 by 15%. I dropped the change and worked with them on a joint approach that used their existing index with a lightweight filter. We shipped a 25% improvement that both teams accepted."
+        },
+        {
+          "role": "interviewer",
+          "text": "What convinced you the original idea was wrong?"
+        },
+        {
+          "role": "candidate",
+          "text": "The shared load-test dashboard and the ads team's SLO breach projection."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Proposed indexing change for search service",
+        "Action: Ran cross-team load test, saw p99 regression, switched to joint filter approach",
+        "Outcome: Delivered 25% improvement accepted by both teams",
+        "Quote: 'The shared load-test dashboard and the ads team's SLO breach projection.'",
+        "Follow-up: What convinced you? -> Cited concrete cross-team metrics"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at senior level. The candidate surfaced a cross-team impact through shared testing, accepted the data, and shifted to a collaborative solution with measurable results. The story demonstrates influence without authority by using evidence to align teams. The follow-up answer points to specific metrics rather than hierarchy. Biggest strength is the clear trade-off evaluation across team boundaries.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for a new caching layer because it worked well in my previous company. The platform team flagged potential consistency issues but I moved forward with a pilot. After two incidents we rolled it back and adopted their suggested configuration instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why continue the pilot after the consistency warning?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted to collect our own data before changing direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Advocated new caching layer based on prior experience",
+        "Action: Ran pilot despite platform team warning, hit two incidents",
+        "Outcome: Rolled back and adopted platform team's config",
+        "Quote: 'I wanted to collect our own data before changing direction.'",
+        "Follow-up: Why continue after warning? -> Prioritized own data collection over early input"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at senior level. The candidate discounted platform-team input and only reversed after incidents. The follow-up shows preference for generating personal data over incorporating existing signals quickly. The story lacks evidence of cross-team influence or proactive trade-off analysis before launch."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team proposed building a custom workflow engine. I asked for a review with two other teams that had similar needs. Their data showed we could reuse an existing service with minor extensions and save six months. I redirected the team to contribute to the shared service instead and we delivered two quarters earlier."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team's reaction to dropping their idea?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had them own the extension work and present the timeline savings to leadership."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Team proposed custom workflow engine",
+        "Action: Facilitated cross-team review, surfaced reuse data, redirected to shared service",
+        "Outcome: Delivered two quarters early; team presented savings",
+        "Quote: 'I had them own the extension work and present the timeline savings.'",
+        "Follow-up: How did you handle team reaction? -> Gave team ownership of the better path"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at manager level. The candidate created a process for the team to encounter better data themselves and then shifted ownership to the stronger outcome. The story shows leverage through team development rather than top-down reversal. The follow-up demonstrates coaching by letting the team present the improved plan. Biggest strength is turning a potential attachment issue into a team learning moment with clear business impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to build a custom dashboard. I supported it until exec review where we learned another org had a similar tool. We stopped the project and adopted theirs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted you to support the build initially?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team was excited and I wanted to keep momentum."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Supported team's custom dashboard build",
+        "Action: Continued until exec review surfaced existing tool",
+        "Outcome: Stopped work and adopted other org's tool",
+        "Quote: 'The team was excited and I wanted to keep momentum.'",
+        "Follow-up: What prompted initial support? -> Prioritized team excitement over early validation"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at manager level. The candidate allowed momentum to override early validation and only changed direction after external review. The follow-up reveals a focus on preserving team energy rather than establishing truth-seeking mechanisms. The story shows limited leverage in preventing wasted effort."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sponsored a marketplace expansion into a new vertical based on top-line growth models. A six-month data review with finance revealed unit economics turned negative at scale due to support costs. I reversed the expansion decision, redirected the team to improve support tooling in the core business, and we improved overall margins by 4 points."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate the reversal to the board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the updated unit-economics model and the reallocation plan in the same meeting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Sponsored new vertical expansion on growth models",
+        "Action: Commissioned finance review, accepted negative unit economics, reversed and reallocated to core tooling",
+        "Outcome: Improved margins 4 points; presented model and plan together to board",
+        "Quote: 'I presented the updated unit-economics model and the reallocation plan in the same meeting.'",
+        "Follow-up: How did you communicate reversal? -> Tied data directly to resource shift"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at exec level. The candidate commissioned rigorous analysis on their own initiative, accepted data that invalidated the original thesis, and converted the reversal into a higher-leverage core-business improvement. The story shows strategic judgment and long-term thinking by linking the decision to margin impact. The follow-up answer demonstrates transparent trade-off communication at the board level. Biggest strength is treating the original idea as a hypothesis rather than a commitment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I green-lit a new product line after internal modeling showed strong revenue. When actuals came in below forecast I asked for more time to optimize rather than reassessing the line itself. We eventually wound it down after 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would have changed your mind earlier?"
+        },
+        {
+          "role": "candidate",
+          "text": "Earlier access to external benchmark data on similar launches."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your idea wasn't best...",
+        "Situation: Green-lit product line on internal revenue model",
+        "Action: Extended timeline for optimization instead of reassessing thesis",
+        "Outcome: Wound down after 18 months",
+        "Quote: 'Earlier access to external benchmark data on similar launches.'",
+        "Follow-up: What would have changed mind earlier? -> Pointed to missing external data rather than internal process gap"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at exec level. The candidate extended investment despite early signals and only reversed after significant time and cost. The follow-up attributes the delay to external data gaps rather than internal mechanisms for challenging assumptions. The story lacks evidence of proactive truth-seeking or rapid resource reallocation."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed of updating belief with new evidence",
+      "junior": "Raises: switched within days after seeing metrics; Lowers: continued two weeks until bug",
+      "senior": "Raises: dropped idea same week after cross-team test; Lowers: ran pilot despite warning",
+      "manager": "Raises: redirected after cross-team review; Lowers: supported until exec review",
+      "exec": "Raises: reversed after six-month review and reallocated; Lowers: extended 18 months before winding down"
+    },
+    {
+      "signal": "Source of better idea",
+      "junior": "Raises: manager with production data; Lowers: eventual bug forced change",
+      "senior": "Raises: ads team load-test data; Lowers: platform team input ignored until incidents",
+      "manager": "Raises: other teams' data surfaced in review; Lowers: exec review",
+      "exec": "Raises: finance unit-economics model; Lowers: actuals after launch"
+    },
+    {
+      "signal": "Scope of impact considered",
+      "junior": "Raises: own service metrics; Lowers: local tests only",
+      "senior": "Raises: cross-team p99 and SLOs; Lowers: single-team pilot",
+      "manager": "Raises: team timeline and shared service reuse; Lowers: team momentum",
+      "exec": "Raises: org margin and resource reallocation; Lowers: product-line revenue alone"
+    },
+    {
+      "signal": "How reversal was handled",
+      "junior": "Raises: implemented change and added test; Lowers: defended original until failure",
+      "senior": "Raises: collaborated on joint solution; Lowers: rolled back after incidents",
+      "manager": "Raises: gave team ownership of better path; Lowers: stopped project externally",
+      "exec": "Raises: presented model plus reallocation plan; Lowers: asked for more time to optimize"
+    }
+  ],
+  "kind": "lp"
+}

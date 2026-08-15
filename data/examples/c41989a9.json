@@ -1,0 +1,276 @@
+{
+  "question": "Tell me about a time when you used feedback about your team to drive a change. How did you gather or receive feedback on your team's performance? What was the outcome?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, peer code reviews flagged that my modules had inconsistent error handling. I asked two teammates for specific examples after standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with that feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I created a short checklist of error patterns and ran it on my next two tasks. My reviewer count dropped from six comments to one."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the change stuck?"
+        },
+        {
+          "role": "candidate",
+          "text": "The same reviewer used the checklist on my follow-up PR and said it was clean."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- Received peer review comments on inconsistent error handling in own modules",
+        "- Asked two teammates for concrete examples after standup",
+        "- Built simple checklist and applied to next tasks",
+        "Quote: \"My reviewer count dropped from six comments to one\"",
+        "Follow-up: How did you know the change stuck? - Same reviewer confirmed checklist worked on follow-up PR"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate took direct peer feedback on their own work and turned it into a repeatable checklist that improved review quality. They owned the gap without prompting and verified the fix with the same reviewer. The outcome is local but measurable. They showed coachability and willingness to raise their personal standard rather than defend the original code. Biggest strength is closing the loop from feedback to verified improvement without needing manager intervention.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager said the team needed faster turnaround on tickets. I mentioned it in our next retro."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We talked about it but kept the same process. The feedback was noted for the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- Manager flagged slow ticket turnaround",
+        "- Raised in retro but no follow-up action taken",
+        "- Outcome: process stayed the same, feedback deferred to next quarter",
+        "Quote: \"We talked about it but kept the same process\"",
+        "Follow-up: What changed as a result? - No concrete change implemented"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate received clear feedback on team velocity yet only surfaced it in a retro without proposing or testing any adjustment. No ownership of driving the change or measuring impact. The outcome shows passive handling of standards rather than insistence on improvement. Biggest gap is treating feedback as discussion topic instead of actionable input to raise performance."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two partner teams flagged that our service had inconsistent latency SLAs. I pulled the last three months of on-call tickets and ran a quick survey with their on-call engineers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What action did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I proposed a shared latency budget and added automated alerts that fired when we approached the threshold. Both teams adopted the same alert rule."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable result?"
+        },
+        {
+          "role": "candidate",
+          "text": "P99 latency incidents dropped 40 percent over the next quarter and the partner teams stopped opening separate tickets for us."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- Cross-team feedback on inconsistent latency SLAs",
+        "- Analyzed three months of tickets plus survey of partner on-call engineers",
+        "- Introduced shared latency budget and automated alerts",
+        "Quote: \"P99 latency incidents dropped 40 percent\"",
+        "Follow-up: What was the measurable result? - Partner teams stopped filing separate tickets"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate converted external team complaints into data, defined a new shared standard, and drove adoption beyond their own team. The 40 percent reduction and elimination of duplicate tickets shows the change raised the bar for multiple teams. They influenced without authority by making the standard easy to adopt. Biggest strength is turning vague feedback into a measurable, cross-team improvement that persisted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team complained our API responses were slow. I forwarded the email to my manager and asked if we should look at it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it in planning but the priority stayed on our roadmap features. The complaints continued for a few more months."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- External team flagged slow API responses",
+        "- Forwarded email to manager, no further action taken",
+        "- Outcome: issue stayed in planning, complaints persisted",
+        "Quote: \"The priority stayed on our roadmap features\"",
+        "Follow-up: Did anything change? - No change implemented"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate received concrete cross-team feedback yet delegated it upward without proposing a solution or following through. No evidence of raising standards or influencing the other team. The issue lingered because the candidate treated it as someone else's problem. Biggest gap is lack of ownership when the feedback required cross-team coordination."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Employee engagement survey showed my team scored low on \"clear expectations.\" I ran 1:1s with each report and mapped every open project to explicit success criteria."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle underperformers?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers were missing the new criteria. I put them on a 30-day plan with weekly check-ins and paired them with stronger peers. Both met the bar by the end of the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the team-level outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Next survey score rose 18 points and we reduced rework by roughly a third."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- Engagement survey flagged unclear expectations",
+        "- Conducted 1:1s and defined explicit success criteria per project",
+        "- Placed two underperformers on structured 30-day plans with peer pairing",
+        "Quote: \"Next survey score rose 18 points\"",
+        "Follow-up: What was the team-level outcome? - Rework reduced by a third"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used survey data to identify a standards gap, translated it into concrete expectations, and directly managed underperformance with clear plans. Both individuals improved and team metrics moved. They created leverage by raising the entire team's baseline rather than doing the work themselves. Biggest strength is linking feedback to people development and measurable team output improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The annual survey showed my team wanted more recognition. I started a monthly shout-out in team meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did performance change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Morale felt better but delivery metrics stayed flat. I didn't tie the recognition to specific standards."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- Survey feedback on need for more recognition",
+        "- Added monthly shout-outs in team meeting",
+        "- Outcome: morale improved subjectively, delivery metrics unchanged",
+        "Quote: \"Delivery metrics stayed flat\"",
+        "Follow-up: Did performance change? - No link to standards or results"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate responded to feedback with a morale activity that did not address underlying performance standards. No evidence of handling underperformance or driving outcome-level change. The team delivered the same results. Biggest gap is substituting surface-level recognition for insistence on higher execution standards."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer NPS data and internal audit both showed our platform had reliability gaps versus competitors. I commissioned a cross-org review and set a new target of 99.95 percent availability with quarterly public scorecards."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive adoption?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied the new target to each VP's OKRs and created a shared incident review process. Two regions initially resisted the extra reporting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Availability reached 99.96 percent within nine months. We won two enterprise deals that had previously cited reliability concerns."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- NPS and audit data revealed reliability gap vs competitors",
+        "- Set org-wide 99.95 percent availability target with public scorecards",
+        "- Tied target to VP OKRs and introduced shared incident reviews",
+        "Quote: \"We won two enterprise deals that had previously cited reliability concerns\"",
+        "Follow-up: What was the long-term result? - Hit 99.96 percent in nine months"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate used external and internal signals to reset an org-level standard, embedded it into leadership accountability, and overcame resistance through process changes. The outcome directly affected revenue. They showed strategic judgment by choosing a metric that mattered to customers and making it visible. Biggest strength is converting feedback into a durable, multi-quarter standard that shifted business results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We saw some customer complaints about uptime. I asked the SRE team to look into it and report back in the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the organization change its approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "The report recommended improvements but we kept the existing SLOs because other priorities took precedence."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you used feedback about your team to drive a change...",
+        "- Customer complaints on uptime received",
+        "- Delegated to SRE for quarterly report",
+        "- Outcome: existing SLOs unchanged due to competing priorities",
+        "Quote: \"Other priorities took precedence\"",
+        "Follow-up: Did the organization change its approach? - No new standard adopted"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate received clear market feedback yet deferred action and allowed competing priorities to block any standard change. No evidence of strategic trade-off decisions or personal ownership of raising the bar. The organization stayed at the prior level. Biggest gap is failing to convert external signals into an org-level standard despite having the scope to do so."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Gathers and acts on feedback",
+      "junior": "Raises: turned peer comments into checklist with verified result",
+      "senior": "Raises: used cross-team data to define shared latency budget",
+      "manager": "Raises: mapped survey to explicit expectations and managed underperformers",
+      "exec": "Raises: reset org availability target tied to OKRs and revenue"
+    },
+    {
+      "signal": "Raises bar vs accepts status quo",
+      "junior": "Raises: reduced review comments from 6 to 1",
+      "senior": "Raises: eliminated duplicate tickets via new standard",
+      "manager": "Raises: 18-point survey lift and one-third less rework",
+      "exec": "Raises: reached 99.96 percent and won two deals"
+    },
+    {
+      "signal": "Drives change beyond own scope",
+      "junior": "Meets: change stayed within own work",
+      "senior": "Raises: partner teams adopted same alert rule",
+      "manager": "Raises: two engineers improved via plans and pairing",
+      "exec": "Raises: VP OKRs and shared incident process across regions"
+    },
+    {
+      "signal": "Handles resistance or underperformance",
+      "junior": "N/A at level",
+      "senior": "N/A at level",
+      "manager": "Raises: used 30-day plans with weekly check-ins",
+      "exec": "Raises: addressed two resisting regions through OKR linkage"
+    },
+    {
+      "signal": "Links feedback to measurable outcome",
+      "junior": "Raises: concrete drop in review comments",
+      "senior": "Raises: 40 percent incident reduction",
+      "manager": "Raises: survey and rework metrics moved",
+      "exec": "Raises: availability and closed deals"
+    },
+    {
+      "signal": "Passive vs active ownership",
+      "junior": "Lowers: raised in retro, no action taken",
+      "senior": "Lowers: forwarded email, no proposal",
+      "manager": "Lowers: added recognition, metrics flat",
+      "exec": "Lowers: delegated to report, no new target set"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,294 @@
+{
+  "question": "Tell me about a time when you had to gather information and respond immediately to a situation. What was the outcome? Would you have done anything differently?",
+  "competency": "Bias for Action",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My onboarding checklist had a broken link to the internal wiki on day two. I pinged the owner once, got no reply, then searched the repo for the content, found an older version, and posted the fix in the team channel within 90 minutes so the next new hire wouldn't hit the same blocker."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the owner didn't reply?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed they were busy and moved on. I still looped them in the channel post so they could correct anything later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have added a note in the onboarding doc that the link might be stale so others could fix it faster next time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Junior IC, day-2 onboarding blocker",
+        "- Searched repo, posted fix in 90 min",
+        "- Quote: \"I assumed they were busy and moved on\"",
+        "Follow-up: What if owner never replied? - looped them after posting",
+        "Follow-up: Would you change anything? - add note to doc for future hires"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a junior. The candidate identified a local blocker on day two, quickly located an older version of the content in the repo, and posted a fix within 90 minutes so the next hire would not be delayed. They owned the outcome without waiting for permission and later suggested adding a note to prevent recurrence. The story shows appropriate individual scope and learning from the moment. Biggest strength is the speed of moving from discovery to resolution without escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a customer ticket about a missing field in the export. I opened a ticket for the data team and waited two days for their reply before updating the customer."
+        },
+        {
+          "role": "interviewer",
+          "text": "What information did you gather while waiting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have access to the export code so I just waited."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe asked my manager first, but I didn't want to bother them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Junior IC, customer export ticket",
+        "- Opened ticket for data team, waited two days",
+        "- Quote: \"I didn't have access so I just waited\"",
+        "Follow-up: What info gathered while waiting? - none, no code access",
+        "Follow-up: Would you change anything? - maybe ask manager but didn't want to bother"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for a junior. The candidate opened a ticket and waited two days without attempting any local investigation or alternative path to help the customer. They cited lack of access as the reason for inaction rather than trying to locate the owner or check recent commits themselves. The story shows passive hand-off instead of ownership. Biggest gap is the absence of any attempt to move faster with the information available to them."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team's API change broke our nightly sync at 8 pm the night before a quarterly review. I pulled the last three deploys, found the contract mismatch in 40 minutes, wrote a temporary adapter, and shipped it so the report would still be ready for the 9 am meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the partner team wouldn't object?"
+        },
+        {
+          "role": "candidate",
+          "text": "I posted the diff in their channel and tagged the on-call; they approved within 20 minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have added a test that caught contract drift earlier so we wouldn't need the hotfix at all."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Senior, partner API break at 8 pm before quarterly review",
+        "- Pulled deploys, found mismatch, shipped adapter in 40 min",
+        "- Quote: \"Posted the diff and tagged on-call; approved in 20 min\"",
+        "Follow-up: How did you know partner wouldn't object? - posted diff and got approval",
+        "Follow-up: Would you change anything? - add contract test to prevent recurrence"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a senior. The candidate diagnosed a cross-team API break the night before a quarterly review, located the contract mismatch in under an hour, built a temporary adapter, and coordinated approval from the partner on-call to ship before the morning meeting. They acted with incomplete information while keeping the partner informed. The story demonstrates speed plus influence without authority. Biggest strength is the combination of rapid diagnosis and minimal viable fix that protected the business outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner API change broke our sync. I wrote up a detailed analysis and sent it to the partner team for discussion in their next planning meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "When was the next planning meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two weeks later. We missed the quarterly numbers but the root cause was documented."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I could have asked for an emergency sync but I didn't want to escalate without full data."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Senior, partner API break",
+        "- Wrote analysis and waited for next planning meeting",
+        "- Quote: \"Missed the quarterly numbers but root cause was documented\"",
+        "Follow-up: When was the next meeting? - two weeks later",
+        "Follow-up: Would you change anything? - maybe ask for emergency sync but avoided escalation"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for a senior. The candidate produced a detailed analysis and waited two weeks for the partner's regular planning meeting instead of driving an immediate workaround or escalation. The quarterly numbers were missed because no temporary action was taken. They cited the desire for full data as the reason for delay. Biggest gap is the lack of urgency or cross-team influence to protect the near-term business outcome."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two of my engineers flagged a production incident at 11 pm that looked like a data loss risk. I pulled the on-call rotation, asked one engineer to start the rollback while the other gathered logs, and joined the bridge myself so the team could decide on the fix within 45 minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide who did what?"
+        },
+        {
+          "role": "candidate",
+          "text": "I matched the rollback to the engineer who had done it before and the log work to the newer engineer so they could learn the tooling."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have run a short retro the next day to capture the decision steps so the team could handle the next one without me on the bridge."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Manager, 11 pm data loss risk incident",
+        "- Assigned rollback and log gathering, joined bridge",
+        "- Quote: \"Matched rollback to experienced engineer, log work to newer one for learning\"",
+        "Follow-up: How did you decide roles? - matched experience and development opportunity",
+        "Follow-up: Would you change anything? - run retro next day for team learning"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a manager. The candidate quickly organized the response to a late-night data risk by assigning specific tasks to two engineers, joined the bridge to keep momentum, and used the moment to give the newer engineer exposure while protecting the system. They later planned a retro so the team could handle similar situations independently. The story shows leverage through the team and development of others. Biggest strength is the combination of immediate action and intentional coaching during the incident.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a production incident at 11 pm. I told the team to page the on-call engineer and went to bed so I would be fresh for the next day."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the incident?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was resolved by morning but the customer saw elevated error rates for six hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe checked in once, but I trust the on-call process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Manager, 11 pm production incident",
+        "- Told team to page on-call and went to bed",
+        "- Quote: \"Resolved by morning but customer saw errors for six hours\"",
+        "Follow-up: What happened to the incident? - resolved overnight with customer impact",
+        "Follow-up: Would you change anything? - maybe check in once but trust the process"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for a manager. The candidate delegated entirely to the on-call process and disengaged for the night, resulting in six hours of elevated customer errors. No attempt was made to gather status or provide additional leverage. They defended the choice by citing trust in the process. Biggest gap is the absence of any personal or team-level action to reduce the duration or impact of the incident."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our largest customer announced they were switching to a competitor in 48 hours unless we could match a new compliance requirement. I pulled the policy, legal, and product leads into a 30-minute call, approved a narrow scope change that met the requirement, and had the updated contract sent before the deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you accept?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deferred two roadmap items for Q3 and accepted a one-time legal review cost, but retained the account which was 18 percent of revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked the customer for a 24-hour extension so we could run a quick customer advisory board check on the scope change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Exec, largest customer threatening to leave in 48 hours over compliance",
+        "- Convened leads, approved narrow scope change, sent contract in time",
+        "- Quote: \"Retained account worth 18 percent of revenue by deferring two Q3 items\"",
+        "Follow-up: What trade-offs? - deferred roadmap, accepted legal cost",
+        "Follow-up: Would you change anything? - ask for 24-hour extension for advisory input"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for an exec. The candidate assembled the right leads within 30 minutes of the threat, made a clear scope trade-off decision, and delivered the updated contract before the 48-hour deadline, protecting 18 percent of revenue. They explicitly weighed the cost of deferred roadmap items against the revenue at risk. The story shows strategic judgment under time pressure. Biggest strength is the speed of cross-functional alignment and willingness to accept short-term trade-offs for long-term business continuity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A key customer gave us 48 hours to meet a new compliance rule or they would leave. I asked legal to draft a response and scheduled a follow-up meeting for the following week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They switched to the competitor. We later met the requirement but it was too late."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I could have pushed for a faster legal turnaround but the team was already at capacity."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to gather information and respond immediately...",
+        "- Exec, key customer 48-hour compliance ultimatum",
+        "- Asked legal to draft response, scheduled meeting for next week",
+        "- Quote: \"They switched; we met the requirement too late\"",
+        "Follow-up: What was the outcome? - lost the customer",
+        "Follow-up: Would you change anything? - push for faster legal but team at capacity"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for an exec. The candidate routed the 48-hour customer ultimatum to legal and scheduled a meeting for the following week instead of driving an immediate cross-functional decision. The account was lost. They cited team capacity as the reason for not accelerating the response. Biggest gap is the lack of personal ownership or rapid trade-off decisions to protect a material revenue stream."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed of information gathering and decision",
+      "junior": "Gathered repo content and fixed in 90 min",
+      "senior": "Diagnosed contract mismatch and shipped adapter in 40 min",
+      "manager": "Assigned tasks and joined bridge within minutes",
+      "exec": "Convened leads and approved scope change in 30 min"
+    },
+    {
+      "signal": "Appropriate scope and leverage",
+      "junior": "Individual fix with note for future hires",
+      "senior": "Cross-team coordination without authority",
+      "manager": "Task assignment plus coaching opportunity",
+      "exec": "Revenue trade-off decision with explicit costs"
+    },
+    {
+      "signal": "Learning and iteration",
+      "junior": "Suggested doc note to prevent recurrence",
+      "senior": "Proposed contract test to avoid future hotfixes",
+      "manager": "Planned retro so team can handle next incident alone",
+      "exec": "Would seek customer advisory input on next similar decision"
+    },
+    {
+      "signal": "Impact of inaction",
+      "junior": "Next hire would have hit same blocker",
+      "senior": "Quarterly review would have failed",
+      "manager": "Six hours of customer errors",
+      "exec": "Lost account worth 18 percent of revenue"
+    }
+  ],
+  "kind": "lp"
+}

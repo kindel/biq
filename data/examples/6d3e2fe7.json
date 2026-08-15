@@ -1,0 +1,269 @@
+{
+  "question": "Tell me about a time you refused to cut corners despite pressure to do so.",
+  "competency": "Integrity, Ethics & Trust",
+  "principle": "Integrity, Ethics & Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project I was asked to skip writing unit tests for a small API endpoint so we could hit the sprint deadline. I told my manager I was worried it would create bugs later and asked if we could pair on a minimal test set instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "We spent 90 minutes writing three tests together. The endpoint later caught a regression during integration testing. My manager said it was the right call."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: new grad on first team, small API change",
+        "Action: pushed back on skipping tests, proposed minimal test set and paired",
+        "Outcome: caught regression later; manager acknowledged it was right",
+        "Quote: \"I told my manager I was worried it would create bugs later\"",
+        "Follow-up: Asked what the pressure looked like day-to-day; candidate described one 1:1 conversation and then moved on"
+      ],
+      "raiseFeedback": "Raises the bar on Integrity for a junior. The candidate owned a narrow scope decision, escalated the risk clearly to their manager, and accepted the outcome of pairing to get tests in. The story stayed local but showed willingness to slow down when quality was at stake. The regression catch provides concrete evidence the refusal mattered. Biggest strength is the direct quote to the manager and the quick resolution without drama.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "I usually just do what the team asks but one time I mentioned tests were important in standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone push back?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yeah but we shipped anyway and nothing broke so it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: junior dev, vague standup comment only",
+        "Action: mentioned tests once, no follow-through",
+        "Outcome: shipped without tests, claims nothing broke",
+        "Quote: \"we shipped anyway and nothing broke so it was fine\"",
+        "Follow-up: Pressed on what pressure was applied; candidate could not name a specific conversation or person"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate never actually refused the corner-cutting; they made a single comment in standup and then complied. No ownership of the risk or attempt to influence the outcome. The claim that \"nothing broke\" removes any evidence that their stance mattered. Biggest gap is absence of any real pushback or learning from the situation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams wanted to share a new service without proper auth checks to meet a joint launch date. I wrote up the security gap and took it to both tech leads, offering to help design a minimal token check."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back hard on timeline. I escalated to the shared director with a one-page risk assessment. We delayed the launch by four days and added the check."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: senior on platform team, cross-team launch pressure",
+        "Action: documented auth gap, offered help, escalated with one-page assessment",
+        "Outcome: four-day delay, check added before launch",
+        "Quote: \"I wrote up the security gap and took it to both tech leads\"",
+        "Follow-up: Asked about relationship impact; candidate said they still ship with the other team regularly"
+      ],
+      "raiseFeedback": "Raises the bar at senior level. The candidate surfaced a cross-team security risk, proposed a concrete fix, and used written escalation when verbal pushback occurred. The four-day delay shows willingness to accept short-term cost for long-term integrity. Evidence of influence without authority is present through the director escalation. Biggest strength is the combination of documentation and offered help rather than just blocking.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged a missing test in code review but the author said they would add it later so we merged."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "I left a comment and moved on to my own work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: senior, code review on another team's change",
+        "Action: left one comment about missing test",
+        "Outcome: merged anyway, no follow-up",
+        "Quote: \"I left a comment and moved on to my own work\"",
+        "Follow-up: Asked about downstream impact; candidate had no visibility or ownership after merge"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate identified the gap but took no further action once the author declined. No escalation or attempt to influence the outcome beyond a single review comment. The story shows compliance rather than ownership of integrity across teams. Biggest gap is lack of any measurable follow-through or willingness to accept short-term friction."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "My team was behind on a customer commitment. An engineer suggested we release with a known data inconsistency that only affected a small cohort. I told the team we would not ship until the inconsistency was fixed and reassigned two people to close it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the customer react?"
+        },
+        {
+          "role": "candidate",
+          "text": "We missed the original date by a week. I called the customer, explained the data issue, and they thanked us for catching it before it reached them."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: manager, team behind on customer deadline",
+        "Action: overruled partial fix, reassigned headcount to full resolution",
+        "Outcome: one-week delay, customer appreciated the honesty",
+        "Quote: \"I told the team we would not ship until the inconsistency was fixed\"",
+        "Follow-up: Asked how the team felt about the reassignment; candidate said morale stayed high because they saw the customer impact"
+      ],
+      "raiseFeedback": "Raises the bar at manager level. The candidate protected team integrity by rejecting a partial fix and reallocating resources, owning the timeline impact with the customer. The direct customer conversation shows accountability for team outcomes. Evidence of developing the team is present in the decision to model the right behavior. Biggest strength is the willingness to absorb schedule pressure rather than push risk downstream.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "I usually let the team decide but once I reminded them to follow the checklist."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped and we had a small incident the next week. I documented it for the retro."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: manager, passive reminder only",
+        "Action: mentioned checklist once",
+        "Outcome: shipped with incident, only retro documentation",
+        "Quote: \"I documented it for the retro\"",
+        "Follow-up: Asked what they would do differently; candidate had no plan beyond process notes"
+      ],
+      "lowerFeedback": "Lowers the bar for a manager. The candidate did not intervene when the team chose to cut corners and only documented the resulting incident. No ownership of the team outcome or coaching on integrity. The story shows delegation without accountability. Biggest gap is treating the issue as a process failure rather than a leadership decision."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a board-level revenue target that depended on launching a new billing feature. Engineering found a compliance gap that would require re-architecture. I told the board we would miss the quarter rather than launch non-compliant and accepted the stock impact."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched compliant two quarters later. The delay became the reason we strengthened our regulatory review process across all product lines."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: exec, board revenue target at stake",
+        "Action: chose to miss quarter over non-compliant launch, accepted stock hit",
+        "Outcome: compliant launch later; new org-wide review process created",
+        "Quote: \"I told the board we would miss the quarter rather than launch non-compliant\"",
+        "Follow-up: Asked about internal resistance; candidate described two VPs who wanted to ship and how they were convinced"
+      ],
+      "raiseFeedback": "Raises the bar at exec level. The candidate made a clear strategic trade-off between short-term revenue and long-term compliance risk, communicating directly to the board. The creation of an org-wide process shows leverage beyond the single incident. Evidence of long-term thinking is present in the process change. Biggest strength is accepting personal and company-level cost to protect integrity at scale.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so."
+        },
+        {
+          "role": "candidate",
+          "text": "I asked legal for guidance and we followed whatever they said."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there ever a case where legal was slow?"
+        },
+        {
+          "role": "candidate",
+          "text": "We waited but eventually shipped once they signed off."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you refused to cut corners despite pressure to do so.",
+        "Role: exec, delegated entirely to legal",
+        "Action: waited for legal sign-off, no independent judgment",
+        "Outcome: shipped after delay, no org change",
+        "Quote: \"we followed whatever they said\"",
+        "Follow-up: Asked about personal stance when legal was ambiguous; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar at exec level. The candidate treated integrity as a hand-off to legal rather than a leadership judgment. No evidence of strategic trade-offs or willingness to own ambiguity. The story shows process compliance without personal accountability for org standards. Biggest gap is absence of any decision that required courage or long-term leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual task or small feature",
+      "senior": "Cross-team launch or code review",
+      "manager": "Team delivery and customer commitment",
+      "exec": "Board-level revenue or org process"
+    },
+    {
+      "signal": "Form of pressure",
+      "junior": "Manager or sprint deadline",
+      "senior": "Peer teams and timeline",
+      "manager": "Team velocity and customer date",
+      "exec": "Board target and stock impact"
+    },
+    {
+      "signal": "Evidence of refusal",
+      "junior": "Direct conversation plus pairing",
+      "senior": "Written risk note plus escalation",
+      "manager": "Resource reallocation and customer call",
+      "exec": "Explicit miss-quarter decision"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Caught regression",
+      "senior": "Four-day delay accepted",
+      "manager": "Customer thanked them",
+      "exec": "New org-wide process created"
+    },
+    {
+      "signal": "Learning shown",
+      "junior": "Manager acknowledged the call",
+      "senior": "Still ships with the other team",
+      "manager": "Team morale stayed high",
+      "exec": "Strengthened regulatory review"
+    }
+  ],
+  "kind": "competency"
+}

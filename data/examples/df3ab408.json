@@ -1,0 +1,276 @@
+{
+  "question": "Describe a time when you improved morale and productivity on your team. What were the underlying problems and their causes? How did you prevent them from negatively impacting the team in the future?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our sprint had unclear ticket priorities and I kept getting pulled into last-minute asks. I raised it in standup, proposed a simple priority matrix, and after the manager approved I started using it on my own work and shared the template."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the root cause?"
+        },
+        {
+          "role": "candidate",
+          "text": "New PM was still ramping and didn't know our capacity. I asked for a 15-min sync each Monday to align."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it stick?"
+        },
+        {
+          "role": "candidate",
+          "text": "We did it for the next three sprints; morale on my tickets improved because I stopped context-switching."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: unclear priorities from new PM, candidate's own tickets suffered",
+        "Action: built simple matrix, proposed weekly sync, applied to own work first",
+        "Outcome: three sprints of better focus; shared template",
+        "Quote: \"I asked for a 15-min sync each Monday to align\"",
+        "Follow-up: root cause was PM ramp; candidate owned the ask"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a local process gap instead of waiting for direction and used a lightweight mechanism to protect their own output. They correctly identified the cause (new PM ramp) and created a repeatable sync rather than a one-off fix. The story stays within individual scope yet shows initiative to make the change durable. Biggest strength is the willingness to surface the issue directly and test a fix on their own work before broadcasting it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team was stressed because leadership kept changing priorities every week. I tried to keep my head down and just work faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to improve morale?"
+        },
+        {
+          "role": "candidate",
+          "text": "I complained in the retro that priorities were bad. Nothing really changed after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: weekly priority changes",
+        "Action: worked harder, complained in retro",
+        "Outcome: no change mentioned",
+        "Quote: \"I tried to keep my head down\"",
+        "Follow-up: no root-cause analysis or personal ownership of a fix"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate attributed the problem entirely to leadership and took no concrete action beyond venting in a retro. There is no evidence of attempting to understand the cause or testing a local solution. The response shows passivity rather than ownership of their own productivity and morale."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating work on the same data pipeline because handoff meetings kept getting canceled. I scheduled a joint working session, mapped the overlap, and proposed a shared ownership model with a single on-call rotation."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed both teams the duplicated tickets and the velocity loss in the last quarter. One eng manager agreed to pilot the rotation for a month."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prevented recurrence?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a recurring 30-min sync and a shared backlog tag so future work was visible before tickets were created."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: duplicated pipeline work across two teams",
+        "Action: ran joint session, quantified overlap, proposed shared on-call",
+        "Outcome: one-month pilot, recurring sync added",
+        "Quote: \"I showed both teams the duplicated tickets and the velocity loss\"",
+        "Follow-up: used data to gain cross-team agreement"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used concrete data to surface duplicated effort and drove a cross-team process change without formal authority. They addressed the root cause (missing visibility and handoff) by creating a lightweight recurring mechanism. The story demonstrates influence and a durable fix rather than a heroic one-time effort. Biggest strength is turning a morale-draining overlap into a shared ownership model.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was burned out from too many projects. I told my manager we should drop some work but nothing happened."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to the other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once in a leadership meeting but didn't follow up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: team burnout from too many projects",
+        "Action: told manager, mentioned once in meeting",
+        "Outcome: no change",
+        "Quote: \"I mentioned it once in a leadership meeting but didn't follow up\"",
+        "Follow-up: no cross-team coordination or data-driven proposal"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate identified a cross-team problem but limited action to a single mention without follow-through or data. No attempt to influence peers or create a shared solution. The response shows recognition without the ownership or persistence expected at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After two high performers left, exit interviews showed lack of growth paths. I ran a skills-mapping exercise with the team, created two new project leads roles, and started monthly career conversations."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle underperformers during this?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer was coasting; I gave clear expectations and a 30-day plan. They improved and later took one of the lead roles."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it stick?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied the new roles to promotion criteria and had the team vote on the first pilot project so ownership felt earned."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: two high-performer exits due to unclear growth",
+        "Action: skills map, created lead roles, monthly 1:1s, handled one underperformer with plan",
+        "Outcome: improved retention, one underperformer promoted",
+        "Quote: \"I tied the new roles to promotion criteria\"",
+        "Follow-up: addressed underperformance directly while building growth paths"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate connected attrition to a structural gap, created roles with clear criteria, and handled underperformance with a documented plan rather than avoidance. They involved the team in shaping the solution, increasing buy-in. The story shows both people development and process leverage. Biggest strength is using exit data to drive role redesign while still managing performance issues transparently.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Team morale was low after a reorg. I sent an email saying I was there to support them and held an all-hands."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for individuals?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple people still left but the rest seemed okay after the meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: post-reorg morale drop",
+        "Action: sent email, held all-hands",
+        "Outcome: some attrition, rest \"seemed okay\"",
+        "Quote: \"I sent an email saying I was there to support them\"",
+        "Follow-up: no individual plans or structural changes"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The response relies on one-way communication and lacks evidence of diagnosing root causes or creating targeted development actions. Underperformance and growth concerns are not addressed. The candidate did not demonstrate the coaching or structural leverage expected of a people manager."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After acquiring a company, integration created two competing roadmaps and duplicated platforms. I formed a joint steering group, ran a six-week portfolio review, and consolidated to one platform with clear ownership."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage the politics?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the trade-off explicit: keep both and miss next-year revenue target, or consolidate and protect margins. Both original leads kept scope on the surviving platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "Long-term prevention?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a quarterly portfolio health review with P&L owners and a rule that any new initiative above $2M must go through the same process."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: post-acquisition roadmap conflict and duplication",
+        "Action: joint steering group, six-week review, consolidated platform, protected original leads' scope",
+        "Outcome: single platform, protected margins",
+        "Quote: \"I made the trade-off explicit: keep both and miss next-year revenue target\"",
+        "Follow-up: institutionalized quarterly review and threshold rule"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate framed a high-ambiguity integration problem around concrete business outcomes (revenue and margins) and created a durable governance mechanism rather than a one-time decision. They managed competing interests by making trade-offs transparent and preserving scope for key leaders. The story shows strategic judgment and org-level leverage. Biggest strength is turning a trust-eroding duplication into a repeatable portfolio process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had low morale after missing targets. I told the org we would focus on fewer priorities next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural change did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked VPs to reduce their project lists. Some did, some didn't."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe time you improved morale/productivity",
+        "Situation: missed targets, low morale",
+        "Action: told org to focus, asked VPs to cut projects",
+        "Outcome: inconsistent follow-through",
+        "Quote: \"I asked VPs to reduce their project lists. Some did, some didn't\"",
+        "Follow-up: no governance or accountability mechanism created"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate communicated intent but created no mechanism to enforce or sustain the change across the organization. Trade-offs were not made explicit and no durable process was installed. The response lacks the strategic leverage and long-term thinking required at this level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Root cause depth",
+      "junior": "Identifies immediate trigger (PM ramp)",
+      "senior": "Quantifies cross-team overlap with data",
+      "manager": "Links attrition to missing growth paths",
+      "exec": "Frames duplication as revenue/margin risk"
+    },
+    {
+      "signal": "Scope of fix",
+      "junior": "Own tickets and weekly sync",
+      "senior": "Two-team shared on-call model",
+      "manager": "New roles plus performance plan",
+      "exec": "Org-wide portfolio governance"
+    },
+    {
+      "signal": "Prevention mechanism",
+      "junior": "Template + recurring sync",
+      "senior": "Recurring sync + backlog tag",
+      "manager": "Tied roles to promotion criteria",
+      "exec": "Quarterly review + $2M threshold"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "N/A (individual scope)",
+      "senior": "Used velocity data for buy-in",
+      "manager": "Clear expectations + 30-day plan",
+      "exec": "Explicit trade-off with revenue target"
+    },
+    {
+      "signal": "People development",
+      "junior": "Shared template with peers",
+      "senior": "N/A",
+      "manager": "Created growth roles, coached underperformer",
+      "exec": "Preserved scope for original leads"
+    },
+    {
+      "signal": "Durability",
+      "junior": "Three sprints observed",
+      "senior": "Pilot turned into standing process",
+      "manager": "Promotion criteria updated",
+      "exec": "Institutionalized quarterly review"
+    }
+  ],
+  "kind": "lp"
+}

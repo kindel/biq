@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you encouraged a team member or organization to take a big risk. How did you balance the risk against existing business goals? What was the outcome? What did you learn from this situation?",
+  "competency": "Think Big + Risk Judgment",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I suggested we try a new testing framework that was faster but had a two-day learning curve. I checked with my manager, ran a small spike on one module, and showed it would still hit the sprint deadline. We shipped two days early and cut test time by 30%. Follow-up: How did you weigh the risk? I listed the unknowns, talked to two teammates who had used it before, and set a go/no-go after the spike."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you have done if the spike failed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Rolled back and documented why, then picked the next-smallest improvement."
+        }
+      ],
+      "raiseNotes": [
+        "Q: encouraged team member or org to take big risk, balance vs business goals, outcome, learnings",
+        "Story: proposed new test framework on first project",
+        "Actions: ran time-boxed spike, checked with manager, showed sprint impact",
+        "Outcome: shipped early, 30% faster tests",
+        "Quote: \"listed the unknowns, talked to two teammates, set go/no-go after spike\"",
+        "Follow-up: what if spike failed? -> rollback plan and next-smallest improvement"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. The candidate took initiative on a local change, used a concrete time-boxed experiment to bound risk, and tied the decision directly to the sprint goal. The rollback plan shows they understood how to protect the existing delivery commitment. Biggest strength is the explicit go/no-go checkpoint that kept the risk contained.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once suggested we switch to a newer library but my lead said no because of the deadline so we didn't do it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you try to balance the risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just mentioned it in standup and moved on when they said it was too risky."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Story: suggested library switch but dropped it after one pushback",
+        "Actions: mentioned in standup only",
+        "Outcome: no change made",
+        "Quote: \"mentioned it in standup and moved on\"",
+        "Follow-up: how did you balance? -> no further attempt"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate surfaced an idea but took no steps to quantify risk or protect the business goal, and accepted the first objection without data. At junior level we still expect evidence of ownership through a small experiment or clear trade-off discussion rather than immediate retreat."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams were stuck on separate data pipelines. I proposed we merge them into one shared service even though it meant delaying two quarterly goals by three weeks. I built a one-page trade-off with revenue impact, ran it by both PMs, and got a joint OKR signed. We launched in Q3 and both teams hit their annual targets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the biggest pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "One director worried about on-call load; we added a shared rotation and a 20% buffer in the plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Story: merged two team pipelines into shared service",
+        "Actions: wrote trade-off doc, aligned PMs, created joint OKR, added on-call buffer",
+        "Outcome: both teams still hit annual targets",
+        "Quote: \"one-page trade-off with revenue impact\"",
+        "Follow-up: biggest pushback? -> on-call concern addressed with rotation and buffer"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove a cross-team change that required explicit delay of committed goals, used a written trade-off to gain alignment, and protected the larger business outcome with a concrete mitigation. The shared OKR and on-call plan show influence without authority. Biggest strength is the direct link between the risk and annual target protection.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed my team to adopt a new architecture pattern that I thought would scale better, but it caused two missed deadlines before we stabilized."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you balance against the quarterly goals?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the team the long-term benefit was worth it and we would catch up later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Story: pushed new architecture pattern",
+        "Actions: told team long-term benefit justified delay",
+        "Outcome: two missed deadlines",
+        "Quote: \"long-term benefit was worth it\"",
+        "Follow-up: balance vs quarterly goals? -> no concrete mitigation or alignment step"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate advocated for a bigger change but provided no mechanism to weigh or contain the impact on existing goals, resulting in missed commitments. At senior level we expect written trade-offs and cross-team alignment before the risk is taken, not after the damage occurs."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to sunset a low-usage feature to free capacity for a new product bet. I asked them to run a customer-impact analysis and model the revenue risk. We presented a phased rollout with a kill switch and a 15% buffer in the other roadmap items. The bet launched and contributed 8% of new revenue that year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team member who was most worried?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had them own the kill-switch metric and report weekly so they felt control over the downside."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Story: supported team sunsetting low-usage feature for new bet",
+        "Actions: required impact analysis, modeled revenue risk, phased rollout + kill switch + buffer",
+        "Outcome: 8% new revenue",
+        "Quote: \"had them own the kill-switch metric and report weekly\"",
+        "Follow-up: worried team member? -> gave them ownership of downside metric"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate created space for the team to propose a meaningful bet, required them to quantify risk against revenue, and used a kill switch plus buffer to protect other goals. Assigning the worried engineer to the safeguard metric shows deliberate people development while still owning the outcome. Biggest strength is turning individual concern into ownership of the mitigation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I let one of my engineers try a big refactor because they were excited, but we had to pause it after two sprints when other work slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What guardrails did you put in place?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked in every week but didn't change any other commitments."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Story: allowed engineer-led refactor",
+        "Actions: weekly check-ins only",
+        "Outcome: paused after two sprints due to slippage",
+        "Quote: \"checked in every week but didn't change any other commitments\"",
+        "Follow-up: guardrails? -> no explicit risk buffer or trade-off"
+      ],
+      "lowerFeedback": "Lowers the bar. The manager permitted a team-driven risk without adjusting team commitments or creating a clear exit criterion, leading to unplanned slippage. At manager level we expect the leader to own the portfolio balance and to equip the team with explicit safeguards before the work begins."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were debating whether to enter a new vertical that required re-platforming our core service. I framed it as a three-year bet that would cannibalize 12% of current revenue in year one. I created an investment review with stage gates tied to customer adoption metrics and ring-fenced a separate P&L. The board approved; the new vertical is now 22% of revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the hardest trade-off you had to defend?"
+        },
+        {
+          "role": "candidate",
+          "text": "Protecting the existing P&L owners by making the new vertical carry its own infrastructure cost from day one."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Story: led decision to enter new vertical with re-platforming",
+        "Actions: framed three-year bet, built stage-gate investment review, separate P&L, cannibalization acknowledged",
+        "Outcome: new vertical now 22% of revenue",
+        "Quote: \"new vertical carry its own infrastructure cost from day one\"",
+        "Follow-up: hardest trade-off? -> protected existing P&L owners via cost allocation"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate owned a multi-year strategic bet that explicitly traded off current revenue, used stage gates and a separate P&L to contain risk, and aligned the organization around measurable adoption thresholds. The infrastructure cost allocation shows long-term systems thinking rather than short-term heroics. Biggest strength is the clear linkage between the risk decision and sustained business growth.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We took a big bet on a new market last year. It didn't work out but we learned a lot about customer needs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you balance it against the core business?"
+        },
+        {
+          "role": "candidate",
+          "text": "We allocated some headcount but kept the main roadmap intact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Story: entered new market",
+        "Actions: allocated some headcount, kept main roadmap intact",
+        "Outcome: bet didn't work, learned about customers",
+        "Quote: \"allocated some headcount but kept the main roadmap intact\"",
+        "Follow-up: balance vs core? -> no stage gates or P&L separation"
+      ],
+      "lowerFeedback": "Lowers the bar. The executive describes a strategic bet without evidence of quantified trade-offs, stage gates, or structural protections for the core business. At exec level we expect explicit ownership of the financial and organizational downside before resources are committed."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of risk proposed",
+      "junior": "Local tool/process change with time-boxed experiment",
+      "senior": "Cross-team merge with explicit quarterly delay",
+      "manager": "Team-driven feature sunset with revenue model and kill switch",
+      "exec": "Multi-year market entry with cannibalization and separate P&L"
+    },
+    {
+      "signal": "Balancing mechanism",
+      "junior": "Spike + go/no-go checkpoint",
+      "senior": "One-page trade-off doc + joint OKR",
+      "manager": "Phased rollout + assigned downside owner",
+      "exec": "Stage gates + ring-fenced P&L"
+    },
+    {
+      "signal": "Outcome linkage",
+      "junior": "Sprint goal protected, local efficiency gain",
+      "senior": "Annual targets still hit",
+      "manager": "8% new revenue contribution",
+      "exec": "22% of total revenue"
+    },
+    {
+      "signal": "Learning articulation",
+      "junior": "Rollback plan and next-smallest step",
+      "senior": "On-call buffer as reusable pattern",
+      "manager": "Giving worried engineer control of metric",
+      "exec": "Infrastructure cost allocation to protect existing owners"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Checked with manager before acting",
+      "senior": "Aligned two PMs without authority",
+      "manager": "Equipped team to own mitigation",
+      "exec": "Board-level framing and structural separation"
+    }
+  ],
+  "kind": "lp"
+}

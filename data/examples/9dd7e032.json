@@ -1,0 +1,252 @@
+{
+  "question": "Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+  "competency": "Problem-Solving & Analytical Thinking",
+  "principle": "Problem-Solving & Analytical Thinking",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship, the spec for a dashboard feature was missing the data source and had two conflicting mockups from design and product. I listed the unknowns, asked the PM and designer three targeted questions in one thread, picked the version that matched existing API patterns, and shipped a working prototype that both signed off on."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the answers still left one field ambiguous?"
+        },
+        {
+          "role": "candidate",
+          "text": "I defaulted to the simpler implementation, added a TODO comment, and flagged it in the PR so it could be adjusted in the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: intern on small feature team",
+        "Situation: missing data source + two conflicting mockups",
+        "Actions: listed unknowns, asked three targeted questions, chose API-consistent option, shipped prototype",
+        "Outcome: both stakeholders approved; one remaining field called out in PR",
+        "Quote: \"I defaulted to the simpler implementation and added a TODO\"",
+        "Follow-up: asked what happened with remaining ambiguity \u2192 candidate described low-risk default + visibility"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate described a realistic first-internship scenario with conflicting mockups and missing data. They proactively listed unknowns and asked targeted questions rather than waiting. The quote about defaulting to the simpler path and surfacing the TODO shows ownership without overstepping scope. This matches the expected junior focus on individual work and coachability. The main strength is turning ambiguity into a visible, low-risk decision instead of stalling.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The requirements were unclear so I just built what I thought made sense and the reviewer told me it was wrong."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ask anyone for clarification before starting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to bother them so I guessed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: intern",
+        "Situation: unclear requirements",
+        "Actions: guessed without asking",
+        "Outcome: reviewer said it was wrong",
+        "Quote: \"I didn't want to bother them so I guessed\"",
+        "Follow-up: probed whether candidate sought input \u2192 still avoided asking"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate chose to guess rather than seek clarification, which is the opposite of the coachability and ownership we want at this level. The story shows no attempt to resolve ambiguity before investing effort. This pattern would create repeated rework on a real team. The core gap is lack of proactive communication when information is missing."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams gave conflicting SLAs for a shared dependency and the product spec left the fallback behavior undefined. I pulled the on-call metrics, ran a quick load test on the lower SLA, and proposed a circuit-breaker default that both teams accepted because it protected their existing guarantees."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from the team that wanted the stricter SLA?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the load-test numbers and let them pick the exact timeout value so they kept control."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: senior on cross-team feature",
+        "Situation: conflicting SLAs + undefined fallback",
+        "Actions: pulled metrics, ran load test, proposed circuit breaker, let stricter team set timeout",
+        "Outcome: both teams accepted proposal",
+        "Quote: \"I showed them the load-test numbers and let them pick the exact timeout value\"",
+        "Follow-up: how buy-in was achieved \u2192 data + giving control"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used data to resolve conflicting SLAs across teams instead of escalating. The quote shows influence without authority by letting the stricter team retain control. Scope is appropriate: cross-team impact with measurable validation. The main strength is converting ambiguous requirements into a concrete, acceptable technical decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The two teams couldn't agree on the SLA so I escalated to my manager and we waited for direction."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any data you could have collected in the meantime?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have time to run tests before the decision was needed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: senior",
+        "Situation: conflicting SLAs",
+        "Actions: escalated and waited",
+        "Outcome: decision delayed",
+        "Quote: \"I didn't have time to run tests\"",
+        "Follow-up: explored whether data gathering was attempted \u2192 no"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate defaulted to escalation instead of attempting to resolve the conflict with data or a proposal. At senior level we expect the person to drive cross-team alignment. The story shows no evidence of using metrics or influence tactics. The gap is treating ambiguity as someone else's problem to solve."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team received an ambiguous OKR around \"improve reliability\" with no baseline or target. I had each engineer pick one service they owned, define a measurable reliability signal, and run a 2-week experiment. We then picked the three signals that moved the needle most and set the OKR around those."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineer whose signal didn't get chosen?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure their work was still recognized in the quarterly review and gave them the next high-visibility project."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: manager of 6-person team",
+        "Situation: vague reliability OKR with no metrics",
+        "Actions: had each engineer define a signal, ran experiments, selected top three",
+        "Outcome: OKR became measurable and team-owned",
+        "Quote: \"I made sure their work was still recognized in the quarterly review\"",
+        "Follow-up: how the unselected engineer was handled \u2192 recognition + next opportunity"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate turned an ambiguous OKR into a team-driven process that produced concrete metrics. The quote demonstrates developing people by protecting the engineer whose idea was not selected. This shows leverage through the team rather than the manager solving it alone. The strength is creating ownership while still delivering a usable OKR.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The OKR was vague so I defined the metrics myself and assigned them to the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team feel ownership of the final targets?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of people pushed back but we moved forward anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: manager",
+        "Situation: vague OKR",
+        "Actions: defined metrics alone and assigned them",
+        "Outcome: some pushback but proceeded",
+        "Quote: \"A couple of people pushed back but we moved forward anyway\"",
+        "Follow-up: explored team ownership \u2192 limited"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate solved the ambiguity by deciding alone instead of involving the team. This misses the expectation that managers create leverage and ownership. The quote reveals the team was not aligned. The core gap is treating team development as secondary to getting a quick answer."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three conflicting board requests on whether to expand into two new verticals or double down on the core product, with no clear revenue data for the new verticals. I commissioned a 6-week lightweight market test in one vertical, used the results plus our core retention numbers to build a scenario model, and recommended a sequenced approach that started with the vertical showing clearest signal while protecting core investment."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you surface to the board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed that pursuing both new verticals at once would require cutting core roadmap by 30 percent, which our retention data said would hurt long-term growth more than the new revenue upside."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: exec facing board-level ambiguity",
+        "Situation: three conflicting strategic directions + missing data",
+        "Actions: ran limited market test, built scenario model, recommended sequenced approach",
+        "Outcome: board aligned on sequenced plan protecting core",
+        "Quote: \"pursuing both new verticals at once would require cutting core roadmap by 30 percent\"",
+        "Follow-up: what trade-off was presented \u2192 quantified core impact"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate handled high ambiguity at the business-strategy level by running a targeted experiment instead of analysis paralysis. The quote shows clear strategic judgment on the core vs. new trade-off. Scope is org-level with long-term thinking. The strength is using limited data to create a defensible recommendation that balanced multiple stakeholder demands.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board gave conflicting priorities so I asked them to pick one and we waited until they aligned."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you provide any analysis to help them decide?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't have enough data so it felt premature."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+        "Role: exec",
+        "Situation: conflicting board priorities",
+        "Actions: asked board to decide and waited",
+        "Outcome: stalled decision",
+        "Quote: \"We didn't have enough data so it felt premature\"",
+        "Follow-up: whether any analysis was offered \u2192 none"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate treated strategic ambiguity as something to hand back rather than resolve with judgment or lightweight experiments. At exec level we expect the person to drive clarity on high-stakes trade-offs. The story shows no evidence of long-term thinking or leverage. The gap is waiting for perfect information instead of creating options."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Seeks clarification vs. guesses or escalates",
+      "junior": "Raises: asked targeted questions; Lowers: guessed to avoid bothering people",
+      "senior": "Raises: used metrics to resolve conflict; Lowers: escalated without data",
+      "manager": "Raises: had team define signals; Lowers: defined alone",
+      "exec": "Raises: ran experiment to create data; Lowers: waited for perfect data"
+    },
+    {
+      "signal": "Scope of ambiguity handled",
+      "junior": "Individual feature spec",
+      "senior": "Cross-team technical conflict",
+      "manager": "Team OKR definition",
+      "exec": "Board-level strategic direction"
+    },
+    {
+      "signal": "Evidence of influence without authority",
+      "junior": "N/A at this level",
+      "senior": "Let stricter team set timeout value",
+      "manager": "Protected unselected engineer's visibility",
+      "exec": "Board accepted sequenced recommendation"
+    },
+    {
+      "signal": "Use of data or experiments",
+      "junior": "Defaulted to simpler path",
+      "senior": "Load test to choose SLA",
+      "manager": "2-week experiments per engineer",
+      "exec": "6-week market test + scenario model"
+    },
+    {
+      "signal": "People development visible",
+      "junior": "N/A",
+      "senior": "N/A",
+      "manager": "Recognized unselected engineer with next project",
+      "exec": "N/A"
+    },
+    {
+      "signal": "Long-term vs short-term thinking",
+      "junior": "Flagged remaining item in PR",
+      "senior": "Protected existing SLAs",
+      "manager": "Created team-owned OKR",
+      "exec": "Quantified core roadmap impact before expanding"
+    }
+  ],
+  "kind": "competency"
+}

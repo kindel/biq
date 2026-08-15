@@ -1,0 +1,269 @@
+{
+  "question": "Tell me about an idea or initiative you proposed and saw through to implementation.",
+  "competency": "Innovation, Creativity & Simplification",
+  "principle": "Innovation, Creativity & Simplification",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our weekly status report took 4 hours to compile manually. I proposed a simple shared template with auto-filters and walked the team through it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you proposed it?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager approved a trial. I built the first version in a day, got feedback from two peers, and iterated once. It cut time to 45 minutes. We still use it six months later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the one person who kept sending data in the old format?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sat with them for 10 minutes, showed the new steps, and offered to do their first submission together. They switched after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Proposed shared status template to cut manual reporting time",
+        "Built v1, ran quick peer feedback loop, iterated once",
+        "Outcome: 4h \u2192 45min; still in use after 6 months",
+        "Quote: \"I sat with them for 10 minutes and offered to do their first submission together\"",
+        "Follow-up: Asked about resistance; candidate described direct 1:1 help and quick adoption"
+      ],
+      "raiseFeedback": "Raises the bar for Innovation at junior level. The candidate identified a repetitive local pain point, proposed a lightweight fix, and drove it to sustained use with minimal resources. Quote shows they personally handled the one resister instead of escalating. Story stays within individual scope yet demonstrates clear ownership and follow-through. Biggest strength is turning a small idea into measurable, lasting team time savings without needing senior sponsorship.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager asked me to update the status report format so I made a new spreadsheet."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you suggest any changes yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they told me what columns to add."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Candidate describes task given by manager rather than own proposal",
+        "No evidence of suggesting the change or driving adoption",
+        "Outcome: just completed the assigned update",
+        "Quote: \"they told me what columns to add\"",
+        "Follow-up: Probing for candidate initiative yielded only manager-directed work"
+      ],
+      "lowerFeedback": "Lowers the bar. The story is a manager-assigned task with no original idea or personal ownership of implementation. Candidate could not point to any proposal they made or resistance they navigated. At junior level we expect at least one example of spotting a small improvement and carrying it through. Gap is lack of initiative; the answer shows execution only, not creativity or simplification."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating data pulls for customer health scores. I proposed a shared service with one query layer and convinced both leads to adopt it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each team their duplicated effort in a 15-minute deck with before/after time estimates. One lead pushed back on schema changes so I offered to own the migration script."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both teams moved to the shared layer in six weeks. Duplication dropped from 18 hours/week to under 2. Other teams later asked to join."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Proposed shared data service to eliminate duplicate pulls across two teams",
+        "Used time-based data and offered to own migration to overcome resistance",
+        "Outcome: 18h \u2192 <2h/week duplication; later adopted by additional teams",
+        "Quote: \"I showed each team their duplicated effort in a 15-minute deck\"",
+        "Follow-up: Asked about buy-in; candidate described concrete metrics and personal ownership of migration"
+      ],
+      "raiseFeedback": "Raises the bar for senior level. Candidate identified cross-team duplication, quantified the waste, and secured adoption without formal authority. They personally absorbed the migration work to remove a blocker. Result moved from local fix to reusable pattern used by others. Biggest strength is combining data-driven persuasion with willingness to do the unglamorous work needed for implementation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we standardize on one reporting tool but the other team kept using their own."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to drive adoption?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent an email with the pros and cons. They didn't reply so I moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Idea for tool standardization raised but no sustained push",
+        "Only sent one email; no follow-up or compromise offered",
+        "Outcome: no adoption, candidate dropped the effort",
+        "Quote: \"They didn't reply so I moved on\"",
+        "Follow-up: Probing for influence showed quick abandonment at first resistance"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate floated an idea but showed no persistence or creative approaches to gain traction across teams. At senior level we expect evidence of influence without authority and willingness to iterate on objections. The story ends at the first non-response. Gap is treating influence as a one-time broadcast rather than ongoing simplification work."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team spent too much time on manual onboarding reviews. I proposed a lightweight checklist plus peer-review rotation and had the team pilot it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you involve the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 30-minute brainstorm, let a mid-level engineer own the checklist template, and tracked the first three cycles myself before handing off."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Onboarding review time fell 60%. Two engineers later reused the rotation model on another process. I used the freed capacity to add one extra feature that quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Proposed onboarding checklist and peer rotation to cut manual reviews",
+        "Delegated template ownership to mid-level engineer while initially tracking metrics",
+        "Outcome: 60% time reduction; model reused by team; enabled extra feature work",
+        "Quote: \"I let a mid-level engineer own the checklist template\"",
+        "Follow-up: Asked how team was involved; candidate showed delegation and leverage"
+      ],
+      "raiseFeedback": "Raises the bar for manager level. Candidate created team-level process simplification, deliberately developed a mid-level owner, and converted time savings into higher-value output. Story shows both personal initiative and deliberate leverage through others. Biggest strength is using the initiative to build team capability rather than remaining the single point of improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we needed faster onboarding and created the checklist myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone else own parts of it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I maintained the checklist and sent updates when things changed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Manager created checklist but kept full ownership",
+        "No delegation or team involvement in design",
+        "Outcome: checklist existed but no mention of time savings or reuse",
+        "Quote: \"I maintained the checklist and sent updates\"",
+        "Follow-up: Probing for team leverage showed single-owner model"
+      ],
+      "lowerFeedback": "Lowers the bar. The manager generated the idea yet retained all ownership instead of creating team leverage. At manager level we look for development of others and sustainable process change. The answer shows a top-down solution with no evidence of time savings or broader impact. Gap is missing the multiplier effect expected from people managers."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing deals because pricing approvals took 11 days on average. I sponsored a cross-functional simplification that reduced it to 48 hours while keeping compliance."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I removed two approval layers and replaced them with automated risk flags plus monthly audit sampling. Finance initially resisted; I committed to a 90-day pilot with clear rollback criteria."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Win rate on mid-size deals rose 8 points. The model was later rolled out to two other regions. We also cut 3 FTE-equivalent hours per week across the org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Sponsored pricing approval simplification from 11 days to 48 hours",
+        "Removed layers, added automated flags and audit sampling; ran 90-day pilot",
+        "Outcome: +8 point win rate; rolled out to two regions; 3 FTE-equivalent saved",
+        "Quote: \"I committed to a 90-day pilot with clear rollback criteria\"",
+        "Follow-up: Asked about trade-offs; candidate described concrete risk controls and measurable business result"
+      ],
+      "raiseFeedback": "Raises the bar for exec level. Candidate identified a strategic bottleneck, made structural changes with explicit risk mitigations, and drove org-wide adoption through measured experimentation. Story shows long-term thinking and willingness to trade short-term friction for sustained leverage. Biggest strength is linking a process simplification directly to revenue impact and scalable rollout.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the pricing team to speed up approvals but the process stayed mostly the same."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural changes did you sponsor?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a note to the VP of Finance highlighting the issue. They said they would look into it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an idea or initiative you proposed and saw through to implementation.",
+        "Raised pricing speed issue but only via one note to another VP",
+        "No structural changes, pilot, or personal ownership described",
+        "Outcome: no measurable change",
+        "Quote: \"They said they would look into it\"",
+        "Follow-up: Probing for exec-level action showed passive escalation only"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate identified a business problem yet took no direct ownership of driving change at the org level. At exec level we expect strategic judgment and willingness to remove barriers even when they sit in other functions. The story ends with a single note and no follow-through. Gap is absence of leverage or sustained simplification effort."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of initiative",
+      "junior": "Local team process",
+      "senior": "Cross-team duplication",
+      "manager": "Team process with delegation",
+      "exec": "Org-level revenue bottleneck"
+    },
+    {
+      "signal": "Evidence of driving implementation",
+      "junior": "Built v1 and iterated with peers",
+      "senior": "Offered to own migration to remove blocker",
+      "manager": "Tracked first cycles then handed off",
+      "exec": "Sponsored pilot with rollback criteria"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "1:1 walkthrough with resister",
+      "senior": "Data deck plus personal ownership offer",
+      "manager": "Brainstorm then delegated ownership",
+      "exec": "90-day pilot with clear criteria"
+    },
+    {
+      "signal": "Measurable outcome",
+      "junior": "Time reduced from 4h to 45min",
+      "senior": "Duplication 18h \u2192 <2h/week",
+      "manager": "60% time cut, enabled extra feature",
+      "exec": "+8 point win rate, 3 FTE saved"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "Still in use after 6 months",
+      "senior": "Later adopted by additional teams",
+      "manager": "Model reused by two engineers",
+      "exec": "Rolled out to two regions"
+    }
+  ],
+  "kind": "competency"
+}

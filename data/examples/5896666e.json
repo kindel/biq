@@ -1,0 +1,309 @@
+{
+  "question": "Describe a time when you had to decide whether or not to award or ask for additional resources. What criteria do you use for making the call? What was the outcome? Knowing what you know now, would you have done anything differently?",
+  "competency": "Frugality",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I had to decide whether to request two extra weeks of contractor time for testing. I compared the cost against the risk of shipping with known edge-case gaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What criteria did you apply?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at defect density from the last release and talked to the on-call engineer about how often those paths were hit. The data said the risk was low, so I decided not to ask."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened and what would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped on time and had only one low-severity bug in that area. I would still make the same call but would document the trade-off for my manager so the decision is visible next time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: new grad on first feature team, testing phase",
+        "Situation: contractor budget request for extra test coverage",
+        "Action: compared defect density + on-call signal, chose not to request",
+        "Outcome: shipped on time, one low-sev bug",
+        "Quote: \"I would still make the same call but would document the trade-off\"",
+        "Follow-up: asked about criteria and retrospective; candidate stayed data-driven and owned visibility gap"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for a junior. The candidate used concrete signals (defect density and on-call input) instead of defaulting to more resources. Quote: \"I compared the cost against the risk of shipping with known edge-case gaps.\" This shows early ownership of trade-offs at individual scope. The reflection on documenting the decision demonstrates coachability. Biggest strength is treating resources as a deliberate choice rather than an automatic ask.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked for another headcount because the team said we were behind."
+        },
+        {
+          "role": "interviewer",
+          "text": "What criteria did you use?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM and lead both thought we needed more people so I went with that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and what you'd do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "We got the headcount but the project still slipped. I guess I should have pushed harder on scope instead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: new grad supporting a feature",
+        "Situation: asked for extra headcount after team said they were behind",
+        "Action: deferred to PM and lead without own analysis",
+        "Outcome: headcount approved but schedule still slipped",
+        "Quote: \"The PM and lead both thought we needed more people so I went with that\"",
+        "Follow-up: probed criteria; candidate had none beyond \"team said so\""
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for a junior. The candidate treated the request as a consensus decision rather than running their own analysis. Quote: \"The PM and lead both thought we needed more people so I went with that.\" No evidence of weighing cost against alternatives at even an individual level. The outcome shows the request did not change results. Biggest gap is lack of personal ownership over resource decisions."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams needed extra infra capacity for a joint launch. I ran the numbers on peak traffic versus reserved instances and decided to re-use existing capacity with a throttling layer instead of asking for new spend."
+        },
+        {
+          "role": "interviewer",
+          "text": "Criteria and outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at historical peaks, the cost of reserved vs on-demand, and the blast radius if throttling kicked in. We saved $180k annualized and the launch went fine."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved the finance partner earlier so the savings showed up in their model and other teams could copy the pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: senior owning cross-team launch capacity",
+        "Situation: joint launch needed extra infra; chose reuse + throttling",
+        "Action: modeled peaks, reserved vs on-demand cost, blast radius",
+        "Outcome: $180k annualized saved, launch successful",
+        "Quote: \"I would have involved the finance partner earlier so the savings showed up\"",
+        "Follow-up: asked about cross-team coordination; candidate surfaced visibility as the real gap"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for a senior. The candidate modeled concrete cost and risk data across teams instead of defaulting to new spend. Quote: \"I ran the numbers on peak traffic versus reserved instances.\" Outcome delivered measurable savings with no launch impact. The retrospective correctly identifies the leverage opportunity of making the pattern visible. Biggest strength is treating frugality as a cross-team engineering decision rather than a local one.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked for more EC2 instances because load tests were failing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What criteria?"
+        },
+        {
+          "role": "candidate",
+          "text": "The test showed we would hit limits so I requested the capacity the runbook suggested."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and reflection?"
+        },
+        {
+          "role": "candidate",
+          "text": "We got the instances but later found the tests were misconfigured. I would have double-checked the test setup first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: senior on a service team",
+        "Situation: load test failures led to capacity request",
+        "Action: followed runbook without validating test validity",
+        "Outcome: capacity granted but root cause was test error",
+        "Quote: \"I requested the capacity the runbook suggested\"",
+        "Follow-up: probed criteria; candidate relied on process instead of data validation"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for a senior. The candidate escalated a resource request without first validating the underlying data. Quote: \"I requested the capacity the runbook suggested.\" The outcome reveals the request was unnecessary. Reflection focuses on process compliance rather than improving decision quality. Biggest gap is absence of personal analysis before spending team resources."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to hire two more engineers mid-year to hit roadmap goals. I asked each lead to map every planned feature to expected ROI and headcount hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "Criteria and outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Only two features cleared a 3x return threshold. We hired one person and deprioritized the rest. The team still hit 85% of committed revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have run the same exercise quarterly so the team internalizes the bar instead of treating it as a one-time event."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: manager of a 12-person team",
+        "Situation: mid-year headcount request tied to roadmap",
+        "Action: required ROI mapping per feature before approving hire",
+        "Outcome: hired one instead of two, still delivered 85% revenue",
+        "Quote: \"I would have run the same exercise quarterly so the team internalizes the bar\"",
+        "Follow-up: asked how decision was socialized; candidate focused on building team judgment"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for a manager. The candidate forced explicit ROI analysis before adding headcount. Quote: \"I asked each lead to map every planned feature to expected ROI and headcount hours.\" Result protected budget while still meeting most business goals. The reflection shows intent to create lasting leverage through team habits. Biggest strength is using the decision to raise the team's resource discipline rather than just solving the immediate request.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team asked for two more people and I approved it after they showed the backlog."
+        },
+        {
+          "role": "interviewer",
+          "text": "What criteria did you apply?"
+        },
+        {
+          "role": "candidate",
+          "text": "They had more work than current capacity so I supported the request to leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and reflection?"
+        },
+        {
+          "role": "candidate",
+          "text": "Hiring took four months and by then priorities had shifted. I would have asked for contractors instead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: manager of an 8-person team",
+        "Situation: team backlog justified headcount request",
+        "Action: approved based on volume without ROI filter",
+        "Outcome: four-month hire cycle missed the actual need window",
+        "Quote: \"They had more work than current capacity so I supported the request\"",
+        "Follow-up: probed decision criteria; candidate defaulted to supporting the team"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for a manager. The candidate approved a headcount request based on backlog volume alone. Quote: \"They had more work than current capacity so I supported the request.\" The four-month delay shows the decision did not create leverage. Reflection defaults to a different resource type rather than questioning the underlying assumption. Biggest gap is treating team advocacy as sufficient justification without business return analysis."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a $12M ask for a new data platform. I required the team to show the incremental revenue or cost avoidance per dollar spent and compared it against three alternative investments."
+        },
+        {
+          "role": "interviewer",
+          "text": "Criteria and outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Only one use case cleared a 5x return within 18 months. We funded a smaller scoped version and redirected the rest to a customer-facing feature that drove $40M ARR."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have published the decision framework so other orgs could apply the same bar without waiting for my review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: VP-level exec reviewing large platform investment",
+        "Situation: $12M data platform proposal",
+        "Action: forced ROI comparison against alternative investments",
+        "Outcome: funded smaller version, redirected remainder to $40M ARR feature",
+        "Quote: \"I would have published the decision framework so other orgs could apply the same bar\"",
+        "Follow-up: asked about scaling the approach; candidate focused on organizational leverage"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality for an exec. The candidate imposed a strict multi-option ROI filter on a large capital request. Quote: \"I required the team to show the incremental revenue or cost avoidance per dollar spent.\" The decision produced both direct savings and reallocation to higher-return work. Reflection correctly targets repeatable organizational leverage. Biggest strength is treating capital allocation as a strategic portfolio choice rather than a one-off approval.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The platform team made a strong case for the $12M investment so I approved it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What criteria?"
+        },
+        {
+          "role": "candidate",
+          "text": "They showed clear technical debt and competitive risk if we didn't move."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and reflection?"
+        },
+        {
+          "role": "candidate",
+          "text": "Usage ended up lower than projected. I would have required usage commitments from product teams first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Decide whether to award or ask for additional resources, criteria, outcome, what you'd change now",
+        "Role: exec reviewing platform spend",
+        "Situation: $12M data platform request",
+        "Action: approved on technical debt and competitive arguments",
+        "Outcome: under-utilized platform",
+        "Quote: \"They showed clear technical debt and competitive risk if we didn't move\"",
+        "Follow-up: probed criteria; candidate accepted narrative without alternative investment comparison"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality for an exec. The candidate approved a large spend based on technical and competitive framing without quantifying return. Quote: \"They showed clear technical debt and competitive risk if we didn't move.\" Under-utilization shows the investment did not deliver expected leverage. Reflection focuses on downstream commitments rather than improving the original decision process. Biggest gap is absence of portfolio-level trade-off analysis at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Resource decision ownership",
+      "junior": "Runs own quick analysis before asking",
+      "senior": "Models cost vs risk across teams",
+      "manager": "Requires ROI mapping from leads",
+      "exec": "Compares against alternative investments at org scale"
+    },
+    {
+      "signal": "Use of data vs narrative",
+      "junior": "Defect density and on-call input",
+      "senior": "Peak traffic modeling and blast radius",
+      "manager": "Feature-level ROI threshold",
+      "exec": "Incremental revenue per dollar vs other options"
+    },
+    {
+      "signal": "Cross-boundary leverage",
+      "junior": "Documents decision for manager visibility",
+      "senior": "Makes pattern reusable for other teams",
+      "manager": "Builds team habit of ROI thinking",
+      "exec": "Publishes framework for org-wide use"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Adds visibility step next time",
+      "senior": "Involves finance partner earlier",
+      "manager": "Runs exercise quarterly",
+      "exec": "Scales decision framework to other orgs"
+    },
+    {
+      "signal": "Outcome realism",
+      "junior": "One low-sev bug, on-time ship",
+      "senior": "$180k saved, launch successful",
+      "manager": "85% revenue with smaller team",
+      "exec": "Redirected to $40M ARR feature"
+    }
+  ],
+  "kind": "lp"
+}

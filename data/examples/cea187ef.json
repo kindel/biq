@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you pushed back against a decision that negatively impacted your team. What was the issue? How did it turn out? Would you have done anything differently?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager wanted to ship a feature with a known data bug that would affect our internal reporting. I flagged it in the standup and said we should fix it first because it would create cleanup work later. We delayed the release by two days and fixed it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say exactly when you pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the query that would break and said the fix was only a few hours. My manager agreed after seeing the data."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have raised it in a 1:1 first instead of in the group meeting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Junior dev, own feature scope only",
+        "Pushed back on shipping with known data bug; showed query and estimated fix time",
+        "Quote: \"I showed the query that would break and said the fix was only a few hours\"",
+        "Follow-up: Would you do anything differently? Said would raise in 1:1 first next time"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for a junior. The candidate identified a concrete downstream impact on reporting, surfaced data to support their view, and secured a two-day delay. They also reflected on the forum of the disagreement. This shows ownership of their own output and willingness to surface issues early, which is the right bar for 0-2 years experience.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager set a deadline that felt tight for the task I was on. I mentioned it once in standup but we shipped anyway and I had to work late the last weekend."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you propose any options or data?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just said it felt tight."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Junior, own task only",
+        "Mentioned tight deadline once in standup; no data or options offered; shipped with weekend work",
+        "Quote: \"I just said it felt tight\"",
+        "Follow-up: Did you propose any options or data? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for a junior. The candidate noticed a problem but offered no data, alternatives, or escalation path, so the negative impact occurred. For this level we expect at least one clear attempt to surface the issue with evidence before accepting the outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team wanted to deprecate an API our service depended on with a 30-day notice. I wrote a short doc showing the migration cost to three other services and proposed a 90-day timeline with a compatibility shim. After two rounds of discussion they agreed to the longer window."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the affected teams into the thread and let them share their migration estimates directly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Senior scope: cross-team API change",
+        "Wrote doc with migration costs for three services; proposed shim and 90-day window",
+        "Quote: \"I brought the affected teams into the thread and let them share their migration estimates directly\"",
+        "Follow-up: How did you influence without authority? Used data from peer teams"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for a senior. The candidate converted a one-sided deprecation into a cross-team discussion backed by concrete migration data and a workable alternative. Influence came from enabling others to speak rather than escalation, which matches the expected level of impact without authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team announced they were removing an API we used. I sent an email saying it would hurt us but they went ahead with the original timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you meet with them or bring data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I replied to the announcement thread with a one-paragraph concern."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Senior scope claimed but stayed in email",
+        "Sent one-paragraph reply to announcement; no meeting or data package",
+        "Quote: \"I replied to the announcement thread with a one-paragraph concern\"",
+        "Follow-up: Did you meet with them or bring data? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for a senior. The candidate limited their pushback to a single email without data or follow-up conversation, allowing the negative impact to land. At this level we expect documented alternatives and at least one direct conversation to test whether the decision can move."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My director wanted to reallocate two headcount from my team to a new initiative mid-quarter. I prepared a one-pager showing current on-call load and two projects that would slip by six weeks. We kept one headcount and phased the reallocation over eight weeks instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the conversation with your director?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked what success looked like for the new initiative and showed how my team's work supported it, then offered the phased option."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Manager scope: protected team capacity and delivery",
+        "One-pager with on-call load and project slip estimates; negotiated phased reallocation",
+        "Quote: \"I asked what success looked like for the new initiative and showed how my team's work supported it\"",
+        "Follow-up: How did you handle the conversation with your director? Framed in terms of shared goals then offered alternative"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for a manager. The candidate protected team delivery while staying aligned to org goals, using data on on-call and project impact. They offered a concrete phased path forward rather than a flat no, demonstrating both backbone and commitment to the broader decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My director wanted to move two people off my team. I told them it would hurt velocity but the move happened anyway and we missed two milestones."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you bring any options or trade-offs to the table?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just stated the risk and accepted the decision."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Manager scope but no alternatives offered",
+        "Stated velocity risk once; no data or phased proposal; missed milestones followed",
+        "Quote: \"I just stated the risk and accepted the decision\"",
+        "Follow-up: Did you bring any options or trade-offs to the table? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for a manager. The candidate surfaced a risk but did not translate it into options or a path that allowed partial commitment, resulting in missed milestones. At the manager level we expect the candidate to propose concrete trade-offs that let leadership choose while protecting core team outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO wanted to acquire a company whose product overlapped 70% with our roadmap. I built a model showing the integration cost versus building the missing 30% ourselves and recommended we pass. After two weeks of analysis the board agreed to build instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you disagree at that level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed the decision around long-term capital allocation and asked the CEO what problem they were trying to solve in 18 months that the acquisition would uniquely solve."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Exec scope: company-level M&A decision",
+        "Built integration-cost model versus build option; recommended passing; board chose build",
+        "Quote: \"I framed the decision around long-term capital allocation and asked the CEO what problem they were trying to solve in 18 months\"",
+        "Follow-up: How did you disagree at that level? Used 18-month strategic framing"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for an exec. The candidate challenged a CEO-led acquisition with a capital-allocation model and a strategic framing question, leading the board to change course. This shows the ability to disagree at the highest level while staying focused on long-term trade-offs rather than short-term optics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO pushed for an acquisition that overlapped our roadmap. I raised concerns in the staff meeting but the deal went through and integration took longer than expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you prepare any analysis or alternatives?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared my view verbally but did not run the numbers before the meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you pushed back against a decision that negatively impacted your team...",
+        "Exec scope claimed but stayed verbal",
+        "Raised concern verbally in staff meeting; no model or alternatives prepared",
+        "Quote: \"I shared my view verbally but did not run the numbers before the meeting\"",
+        "Follow-up: Did you prepare any analysis or alternatives? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for an exec. The candidate voiced an opinion without supporting analysis or a clear alternative, allowing a costly integration to proceed. At the exec level we expect rigorous modeling and a strategic framing that gives the CEO and board a real decision point before the outcome is locked."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of disagreement",
+      "junior": "Own task or feature",
+      "senior": "Cross-team dependency or process",
+      "manager": "Team capacity and delivery commitments",
+      "exec": "Org strategy or capital allocation"
+    },
+    {
+      "signal": "Quality of pushback",
+      "junior": "Simple data or estimate",
+      "senior": "Doc with alternatives and peer input",
+      "manager": "Trade-off options tied to org goals",
+      "exec": "Model plus strategic framing question"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Local fix or delay",
+      "senior": "Negotiated timeline or shim",
+      "manager": "Phased change preserving core work",
+      "exec": "Board-level decision changed"
+    },
+    {
+      "signal": "Reflection on approach",
+      "junior": "Forum or timing tweak",
+      "senior": "How influence was built",
+      "manager": "How director conversation was framed",
+      "exec": "Capital and 18-month lens used"
+    },
+    {
+      "signal": "Risk if weak",
+      "junior": "Weekend work accepted",
+      "senior": "Email only, impact lands",
+      "manager": "Missed milestones",
+      "exec": "Costly integration proceeds"
+    }
+  ],
+  "kind": "lp"
+}

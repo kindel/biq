@@ -1,0 +1,240 @@
+{
+  "question": "Tell me about a time when you evaluated the customer experience of your product or service. What did you do? What was the result?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our onboarding flow had a 40% drop-off after the first step. I pulled the last 200 support tickets and user session recordings for my feature, mapped the friction points, and proposed a simpler form to my manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you shared that?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped a two-field version. Drop-off fell to 22% and ticket volume on that step dropped 35% over the next month. I learned to always check the raw session data before assuming the cause."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Junior IC pulled tickets + session recordings on own feature",
+        "- Mapped friction, proposed simpler form to manager",
+        "- Result: drop-off 40% -> 22%, tickets -35%",
+        "Quote: \"I learned to always check the raw session data before assuming the cause\"",
+        "Follow-up: Asked what happened after sharing; candidate described shipping and metric movement"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a junior. The candidate proactively reviewed support tickets and session data on their own feature instead of waiting for direction. They owned the analysis end-to-end and shipped a change that moved a clear metric. The follow-up shows they internalized the method for future work. Biggest strength is the closed loop from observation to measured result at individual scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager asked me to look at the onboarding page because customers were complaining. I checked the analytics dashboard and saw the numbers were down so I told the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you personally do with that information?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reported it in the standup. The PM decided what to change next sprint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Candidate only acted after manager directive",
+        "- Reviewed dashboard, reported numbers in standup",
+        "- No personal follow-through or proposed action",
+        "Quote: \"The PM decided what to change next sprint\"",
+        "Follow-up: Probing ownership; candidate deferred to PM"
+      ],
+      "lowerFeedback": "Lowers the bar for a junior on Customer Obsession. The candidate waited for a manager prompt and treated the task as reporting numbers rather than diagnosing root cause. No evidence of digging into tickets or sessions themselves. Outcome stayed with the PM, showing limited ownership of the customer problem. Biggest gap is reactive posture and lack of individual initiative on a local scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Support volume on our API error paths was rising across two partner teams. I ran a week-long analysis of error logs plus customer calls, identified three undocumented edge cases, and created a shared runbook plus error message improvements that both teams adopted."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to use it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the data in their weekly sync and offered to pair on the first two integrations. Adoption hit 90% in six weeks and cross-team tickets fell 50%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Senior IC spotted rising API errors across partner teams",
+        "- Combined logs + customer calls, built runbook and error fixes",
+        "- Influenced two teams via data + pairing offer",
+        "- Result: 90% adoption, tickets -50%",
+        "Quote: \"I presented the data in their weekly sync and offered to pair\"",
+        "Follow-up: How adoption happened; candidate described cross-team influence"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a senior. The candidate connected rising support signals to a cross-team experience problem without being asked. They combined quantitative logs with direct customer calls and drove adoption through influence rather than authority. Clear metrics on both adoption and ticket reduction show impact beyond their immediate team. Biggest strength is using data to create leverage across boundaries.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw complaints about our API docs in our own support queue. I updated the docs page for my service and closed the tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect other teams using the same API?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't check. I focused on the tickets assigned to my team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Senior only looked at own team's queue",
+        "- Updated docs for assigned tickets, no broader scan",
+        "- No coordination with partner teams",
+        "Quote: \"I didn't check. I focused on the tickets assigned to my team\"",
+        "Follow-up: Probing cross-team scope; candidate stayed narrow"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a senior. The candidate confined their review to tickets already assigned to them and made a local doc change without checking downstream impact. No attempt to quantify or address the broader partner experience. Result stayed inside team boundaries. Biggest gap is missing the cross-team signal that a senior should surface and act on."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our renewal rate was slipping because onboarding took too long for mid-market customers. I had my team run a cohort analysis of 80 recent customers, then stood up a dedicated onboarding pod that cut time-to-value from 45 to 18 days."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team capacity trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "I re-prioritized two roadmap items with the product trio and used the freed capacity to pilot the pod for one quarter. Renewals in that segment rose 12 points."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Manager identified renewal drop tied to onboarding length",
+        "- Directed team cohort analysis of 80 customers",
+        "- Created dedicated pod, traded off roadmap items",
+        "- Result: time-to-value 45->18 days, renewals +12 pts",
+        "Quote: \"I re-prioritized two roadmap items with the product trio\"",
+        "Follow-up: Capacity trade-off; candidate described explicit prioritization"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a manager. The candidate used team resources to quantify a customer pain point that directly affected renewals. They made a deliberate team-level trade-off and stood up a new process that delivered measurable business impact. Evidence of both directing the analysis and protecting team focus shows leadership leverage. Biggest strength is owning the end-to-end customer outcome through team execution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my team to fix the top three customer complaints from the last quarter. They updated the help center and closed most of the tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't track renewals or time-to-value after the changes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Manager delegated to team without clear framing",
+        "- Updates limited to help center, no structural change",
+        "- No metrics tracked on business outcome",
+        "Quote: \"We didn't track renewals or time-to-value after the changes\"",
+        "Follow-up: Probing impact; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a manager. The candidate delegated complaint handling without connecting it to a measurable customer or business outcome. No cohort analysis or follow-up metrics were established. Team effort stayed tactical and unlinked to renewals or retention. Biggest gap is absence of manager-level ownership over team results tied to customer experience."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing enterprise deals because our self-serve trial didn't map to how security and procurement teams evaluate vendors. I commissioned a win-loss study across 30 lost deals, then sponsored a new enterprise trial track that included dedicated SE support and contract templates."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make at the company level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two growth initiatives by one quarter to fund the new track. Enterprise win rate improved 18% and average deal size grew 25% within nine months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Exec commissioned win-loss study on 30 lost deals",
+        "- Identified enterprise buyer mismatch in trial process",
+        "- Sponsored new trial track with SE support and templates",
+        "- Traded off growth initiatives; result +18% win rate, +25% deal size",
+        "Quote: \"We delayed two growth initiatives by one quarter to fund the new track\"",
+        "Follow-up: Company-level trade-offs; candidate described explicit prioritization"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for an exec. The candidate used a structured win-loss review to surface a systemic mismatch between the product experience and enterprise buyer needs. They made a visible resource trade-off at the company level and delivered clear revenue impact. Long-term thinking is evident in the nine-month measurement window. Biggest strength is strategic judgment that connected customer friction to business outcomes at org scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer satisfaction scores were below target so I told the product and support VPs to improve them. We ran a few training sessions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for customers or the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "Scores moved a few points but I don't have the exact renewal or revenue impact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you evaluated the customer experience...",
+        "- Exec delegated to VPs without deep diagnosis",
+        "- Training sessions as primary action",
+        "- No linked business metrics reported",
+        "Quote: \"Scores moved a few points but I don't have the exact renewal or revenue impact\"",
+        "Follow-up: Probing business linkage; candidate lacked data"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for an exec. The candidate responded to a score metric by delegating training without first understanding root causes in the customer journey. No evidence of strategic trade-offs or connection to revenue outcomes. Result remained a modest score movement without business context. Biggest gap is lack of org-level judgment and measurement on a high-ambiguity problem."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initiative identifying customer friction",
+      "junior": "Proactively reviewed tickets and sessions on own feature",
+      "senior": "Spotted cross-team API issues from rising volume",
+      "manager": "Directed cohort analysis tied to renewal drop",
+      "exec": "Commissioned win-loss study on lost enterprise deals"
+    },
+    {
+      "signal": "Use of direct customer data",
+      "junior": "Session recordings plus support tickets",
+      "senior": "Error logs plus customer calls",
+      "manager": "Cohort analysis of 80 recent customers",
+      "exec": "Win-loss interviews across 30 lost deals"
+    },
+    {
+      "signal": "Driving measurable outcome",
+      "junior": "Drop-off reduced 40% to 22%",
+      "senior": "Cross-team tickets down 50%",
+      "manager": "Time-to-value cut from 45 to 18 days",
+      "exec": "Enterprise win rate +18%, deal size +25%"
+    },
+    {
+      "signal": "Handling trade-offs and leverage",
+      "junior": "None expected at this level",
+      "senior": "Offered pairing to gain adoption",
+      "manager": "Re-prioritized roadmap items for pod capacity",
+      "exec": "Delayed two growth initiatives to fund new track"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single feature, local metrics",
+      "senior": "Cross-team influence without authority",
+      "manager": "Team process change with business metric",
+      "exec": "Org-level program affecting revenue"
+    }
+  ],
+  "kind": "lp"
+}

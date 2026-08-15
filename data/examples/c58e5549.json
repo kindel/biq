@@ -1,0 +1,301 @@
+{
+  "question": "Describe a time when you had to get a project or initiative completed with limited resources. How did you approach the situation? What was the impact? Knowing what you know now, would you have done anything differently?",
+  "competency": "Frugality",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had to ship a small dashboard feature with no budget for new tools. I mapped the must-have metrics, reused an existing internal query service, and cut two nice-to-have charts. We shipped in three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the first query didn't return fast enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a simple cache in the existing Lambda instead of asking for Redis. Latency dropped to under 200 ms."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have documented the query reuse pattern so the next person didn't repeat the work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: limited resources project",
+        "Reused internal query service and added cache in Lambda",
+        "Shipped dashboard in 3 weeks, sub-200ms latency",
+        "Quote: \"I mapped must-haves and cut two charts\"",
+        "Follow-up: cache decision - chose existing Lambda over new service",
+        "Would document reuse pattern next time"
+      ],
+      "raiseFeedback": "Story shows individual ownership of scope and reuse of existing tools. Candidate made concrete trade-offs on charts and chose Lambda cache over new infrastructure. Impact is local but measurable (3-week delivery, 200 ms latency). Follow-up answer on documentation reveals coachability. The single biggest strength is the willingness to cut scope rather than ask for more resources.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed a new monitoring tool but had no budget so I just worked weekends to build it manually."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that approach work?"
+        },
+        {
+          "role": "candidate",
+          "text": "It took longer than expected and the team still complains about it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably ask for budget earlier."
+        }
+      ],
+      "lowerNotes": [
+        "Q: limited resources project",
+        "Built monitoring tool manually over weekends",
+        "Took longer than expected, team still complains",
+        "Quote: \"I just worked weekends\"",
+        "Follow-up: would ask for budget earlier instead of reuse",
+        "No evidence of scope cuts or reuse"
+      ],
+      "lowerFeedback": "Candidate defaulted to personal heroics instead of scoping or reusing existing services. The weekend work produced an outcome the team still dislikes, showing limited impact. Answer to the retrospective question focuses on asking for more resources rather than better prioritization. The single biggest gap is absence of any frugality tactics such as cutting scope or leveraging what already existed."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed the same internal API but had separate headcount. I aligned on a shared spec, reused one team's existing auth layer, and delivered for both with four engineers instead of eight."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week spike showing 60 percent overlap in requirements and presented the shared timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved the second team's TPM earlier to avoid a late requirements change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: limited resources project",
+        "Aligned two teams on shared API spec and reused auth layer",
+        "Delivered for both teams with 4 engineers vs planned 8",
+        "Quote: \"showed 60 percent overlap in a spike\"",
+        "Follow-up: used data spike to influence without authority",
+        "Would involve TPM earlier"
+      ],
+      "raiseFeedback": "Candidate drove cross-team reuse that halved headcount. The spike provided data to influence the second team without authority. Impact is clear: 4 engineers instead of 8. Retrospective shows learning on stakeholder timing. The single biggest strength is converting a resource constraint into a measurable efficiency gain across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had headcount cuts so I pushed the launch by two months and asked for contractors."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was the delay accepted?"
+        },
+        {
+          "role": "candidate",
+          "text": "Leadership agreed but the other team had to absorb the delay."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe negotiate for partial headcount back."
+        }
+      ],
+      "lowerNotes": [
+        "Q: limited resources project",
+        "Responded to cuts by delaying launch two months",
+        "Other team absorbed the delay",
+        "Quote: \"I pushed the launch and asked for contractors\"",
+        "Follow-up: focused on getting resources back rather than reuse",
+        "No cross-team leverage shown"
+      ],
+      "lowerFeedback": "Candidate treated the constraint as a simple delay request rather than seeking reuse or scope adjustment. The impact shifted cost to another team without solving the underlying resource issue. Retrospective answer centers on recovering headcount instead of improving efficiency. The single biggest gap is lack of influence or creative reuse to protect the broader organization."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team of six lost two engineers mid-quarter. I re-prioritized the roadmap with the PM, moved two features to self-serve, and had the remaining team ship the top three items on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who owned the deferred features?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with each one, explained the data, and gave them ownership of the self-serve migration which became their next promotion case."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have run the prioritization exercise with the full team instead of just the PM."
+        }
+      ],
+      "raiseNotes": [
+        "Q: limited resources project",
+        "Re-prioritized roadmap after losing 2 of 6 engineers",
+        "Shipped top 3 items on time by moving 2 features to self-serve",
+        "Quote: \"gave engineers ownership of the migration for promotion\"",
+        "Follow-up: used constraint to create promotion opportunities",
+        "Would involve full team in prioritization"
+      ],
+      "raiseFeedback": "Manager protected team outcomes by making explicit trade-offs and converting the constraint into development opportunities. The self-serve move created leverage and career growth. Impact stayed on time for the top three items. Retrospective shows awareness of broader inclusion. The single biggest strength is turning a headcount loss into both delivery and people development.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After losing two engineers I told the team to work harder and we still missed two deadlines."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you support the remaining team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shielded them from new requests but couldn't prevent burnout."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Hire faster next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: limited resources project",
+        "Told team to work harder after losing 2 engineers",
+        "Missed two deadlines, burnout occurred",
+        "Quote: \"I shielded them from new requests\"",
+        "Follow-up: solution was faster hiring rather than reprioritization",
+        "No evidence of scope or process leverage"
+      ],
+      "lowerFeedback": "Manager relied on increased effort rather than re-prioritization or leverage. Delivery slipped and the team experienced burnout. Retrospective focuses on external hiring instead of internal process changes. The single biggest gap is absence of any team-level leverage or development actions in response to the constraint."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Facing a 30 percent budget cut, I consolidated three overlapping platform teams into one, standardized on a single deployment pipeline, and still met the annual reliability target while reducing run rate by 22 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the leaders whose teams were merged?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made two of them co-leads of the new organization and tied their bonuses to the combined reliability metric."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have run a six-week pilot of the new pipeline before the full cut so we caught two edge cases earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: limited resources project",
+        "Consolidated 3 platform teams into 1 after 30 percent budget cut",
+        "Reduced run rate 22 percent while meeting reliability target",
+        "Quote: \"tied co-leads bonuses to combined metric\"",
+        "Follow-up: used incentives to align merged leaders",
+        "Would pilot pipeline before full cut"
+      ],
+      "raiseFeedback": "Executive made a structural change that delivered lasting cost reduction without sacrificing the core metric. The co-lead model and shared bonus created alignment. Impact is org-level (22 percent run-rate reduction). Retrospective identifies a concrete sequencing improvement. The single biggest strength is converting a large budget cut into a permanent efficiency gain through org design.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We cut marketing spend 25 percent and asked product to delay two launches."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Revenue dipped the next quarter and we had to restore some spend."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Phase the cuts more gradually."
+        }
+      ],
+      "lowerNotes": [
+        "Q: limited resources project",
+        "Cut marketing 25 percent and delayed two launches",
+        "Revenue dipped, had to restore spend",
+        "Quote: \"asked product to delay two launches\"",
+        "Follow-up: solution was slower cuts rather than structural change",
+        "No org or process leverage shown"
+      ],
+      "lowerFeedback": "Executive applied blunt cost cuts without redesigning underlying spend or processes. The revenue dip shows the approach did not create sustainable leverage. Retrospective answer stays at pacing rather than structural improvement. The single biggest gap is lack of org-level or strategic changes that would have produced lasting frugality."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope trade-off",
+      "junior": "Cuts own feature scope",
+      "senior": "Aligns two teams on shared scope",
+      "manager": "Reprioritizes team roadmap",
+      "exec": "Consolidates org structure"
+    },
+    {
+      "signal": "Reuse vs new spend",
+      "junior": "Reuses internal query service",
+      "senior": "Reuses auth layer across teams",
+      "manager": "Moves features to self-serve",
+      "exec": "Standardizes single pipeline"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "N/A (individual scope)",
+      "senior": "Uses spike data to align second team",
+      "manager": "Creates promotion cases for engineers",
+      "exec": "Ties co-lead bonuses to shared metric"
+    },
+    {
+      "signal": "People development",
+      "junior": "Would document for next person",
+      "senior": "N/A",
+      "manager": "Links migration work to promotion",
+      "exec": "Uses co-lead model for alignment"
+    },
+    {
+      "signal": "Retrospective insight",
+      "junior": "Document reuse pattern",
+      "senior": "Involve TPM earlier",
+      "manager": "Run prioritization with full team",
+      "exec": "Pilot pipeline before full cut"
+    }
+  ],
+  "kind": "lp"
+}

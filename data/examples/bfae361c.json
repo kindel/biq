@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time recently where you learned something new. What was it? How did you learn it? How did you apply it?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I learned how to use our internal query tool for log analysis. I read the wiki and ran a few test queries on my own time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with it after?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used it to debug a customer ticket faster than before and shared the query with my teammate so they could reuse it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Learned internal query tool via wiki + self tests",
+        "Applied to customer ticket, reduced debug time",
+        "Quote: \"shared the query with my teammate\"",
+        "Follow-up: Asked how they found the wiki - said asked manager for pointer then explored"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at junior level. Candidate described picking up an internal query tool from the wiki and self-tests, then applying it directly to a customer ticket. Quote: \"shared the query with my teammate.\" This shows ownership of individual learning and immediate local application. The story stays within individual scope but demonstrates coachability by seeking the initial pointer. Biggest strength is the quick loop from learning to reuse by a peer.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I learned about a new library in a team meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not yet, I noted it down for later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Library mentioned in meeting",
+        "No follow-up action or application",
+        "Quote: \"noted it down for later\"",
+        "Follow-up: Probing for application - candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at junior level. Candidate only recalled a library name from a meeting and took no further steps. Quote: \"noted it down for later.\" No evidence of self-directed effort or application to work. The story shows passive receipt of information rather than curiosity or ownership. Biggest gap is absence of any learning-to-action loop even at individual task level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I learned a new observability pattern from a neighboring team. I read their design doc and ran a small experiment on our service."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reduced mean time to detect by 30% and I wrote a short internal post that two other teams adopted."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Learned observability pattern from adjacent team doc + experiment",
+        "Applied to own service, 30% MTTD drop",
+        "Quote: \"two other teams adopted\"",
+        "Follow-up: Asked how they influenced others - said shared results in weekly sync"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at senior level. Candidate sought out an observability pattern from another team, ran an experiment, and drove a 30% MTTD improvement. Quote: \"two other teams adopted.\" Story shows cross-team influence without authority and measurable impact. The learning was applied beyond the candidate's own code. Biggest strength is the documented reuse by peers after the experiment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I read a blog about a new framework."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it affect your work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a 1:1 but nothing came of it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Read external blog on framework",
+        "Mentioned in 1:1, no further action",
+        "Quote: \"nothing came of it\"",
+        "Follow-up: Probing for cross-team effect - none found"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at senior level. Candidate read an external blog and mentioned it once with no follow-through. Quote: \"nothing came of it.\" No evidence of experimentation or influence on other teams. The story remains isolated and lacks any measurable application. Biggest gap is failure to convert external input into cross-team impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I learned a new coaching framework from a peer manager. I practiced it in my 1:1s and tracked team member growth goals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers hit promotion criteria earlier than expected and I rolled the framework out to the rest of my team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Learned coaching framework from peer manager",
+        "Practiced in 1:1s and tracked growth goals",
+        "Quote: \"two engineers hit promotion criteria earlier\"",
+        "Follow-up: Asked how they scaled - said ran a brown-bag for other managers"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at manager level. Candidate adopted a coaching framework from a peer, applied it in 1:1s, and saw two engineers reach promotion criteria faster. Quote: \"two engineers hit promotion criteria earlier.\" Story demonstrates developing others and creating leverage through the team. The learning was scaled beyond the manager's own reports. Biggest strength is the clear link between new practice and team-level promotion outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I attended a leadership webinar."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything on your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I took notes but kept running 1:1s the same way."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Attended leadership webinar",
+        "Took notes, no change to team practices",
+        "Quote: \"kept running 1:1s the same way\"",
+        "Follow-up: Probing for team impact - none reported"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at manager level. Candidate attended a webinar, took notes, and made no adjustments to team processes. Quote: \"kept running 1:1s the same way.\" No evidence of developing people or creating team leverage. The story shows learning without application at the team level. Biggest gap is lack of any outcome tied to the new input."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I studied a new market entry model from an acquisition. I ran scenario analysis with finance and adjusted our three-year roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the strategic result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deprioritized two bets and accelerated one that is now on track for $40M incremental revenue."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Studied acquisition market model via scenario work with finance",
+        "Adjusted three-year roadmap, deprioritized two bets",
+        "Quote: \"$40M incremental revenue\"",
+        "Follow-up: Asked about ambiguity - said weighed long-term option value vs short-term P&L"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at exec level. Candidate absorbed a market entry model from an acquisition, ran finance scenarios, and shifted the three-year roadmap. Quote: \"$40M incremental revenue.\" Story shows strategic judgment under ambiguity and long-term business trade-offs. The learning produced org-level impact rather than heroics. Biggest strength is the clear connection between new model and portfolio reallocation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I read an industry report on AI trends."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it change any plans?"
+        },
+        {
+          "role": "candidate",
+          "text": "I forwarded it to the strategy team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time recently where you learned something new...",
+        "Read AI trends report",
+        "Forwarded to strategy team, no personal action",
+        "Quote: \"forwarded it to the strategy team\"",
+        "Follow-up: Probing for strategic trade-offs - none owned"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at exec level. Candidate read an industry report and delegated it without further engagement. Quote: \"forwarded it to the strategy team.\" No evidence of personal strategic judgment or roadmap changes. The story lacks ownership of long-term business implications. Biggest gap is absence of any trade-off or org-level outcome tied to the learning."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of self-directed learning",
+      "junior": "Raise: wiki + self tests; Lower: passive meeting note",
+      "senior": "Raise: adjacent team doc + experiment; Lower: external blog, no test",
+      "manager": "Raise: peer framework + practiced in 1:1s; Lower: webinar, no practice",
+      "exec": "Raise: acquisition model + finance scenarios; Lower: report, delegated only"
+    },
+    {
+      "signal": "Evidence of application",
+      "junior": "Raise: used on customer ticket; Lower: noted for later",
+      "senior": "Raise: 30% MTTD drop + internal post; Lower: mentioned in 1:1, nothing else",
+      "manager": "Raise: two promotions accelerated; Lower: kept 1:1s unchanged",
+      "exec": "Raise: roadmap shift, $40M revenue; Lower: no plan change"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Raise: shared with teammate; Lower: none",
+      "senior": "Raise: two other teams adopted; Lower: isolated",
+      "manager": "Raise: rolled to whole team; Lower: none",
+      "exec": "Raise: org portfolio reallocation; Lower: none owned"
+    },
+    {
+      "signal": "Handling of ambiguity or trade-offs",
+      "junior": "N/A at this level",
+      "senior": "N/A at this level",
+      "manager": "N/A at this level",
+      "exec": "Raise: weighed option value vs P&L; Lower: no trade-off discussed"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,258 @@
+{
+  "question": "Tell me about a time you collaborated with someone whose working style, background, or personality was very different from yours.",
+  "competency": "Teamwork & Collaboration",
+  "principle": "Teamwork & Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first internship project I paired with a senior engineer who wanted to whiteboard every detail before writing any code. I usually jump straight into implementation. We were building a small internal tool and kept missing each other on scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started sending him a one-page summary the night before our syncs with the three things I needed his input on. He started adding comments directly in the doc. We finished the tool two weeks early and I still use that summary habit on new tasks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about slowing down?"
+        },
+        {
+          "role": "candidate",
+          "text": "At first it felt like extra work, but after the first two syncs I saw we avoided three rework loops, so I kept it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you collaborated with someone whose working style, background, or personality was very different from yours.",
+        "Internship project; senior engineer who wanted full whiteboarding vs candidate's jump-in style",
+        "Candidate started sending one-page pre-reads; engineer commented in docs",
+        "Outcome: tool shipped two weeks early; candidate adopted the habit",
+        "Quote: \"I saw we avoided three rework loops, so I kept it.\"",
+        "Follow-up: How did you feel about slowing down? \u2192 Saw concrete benefit and kept the practice"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The story shows the candidate recognized a style mismatch on a small project and took a simple, repeatable action to bridge it. The one-page summary directly addressed the senior engineer's need and produced a measurable reduction in rework. The candidate also demonstrated coachability by keeping the habit after seeing the result. Biggest strength is the quick ownership of their own adjustment rather than waiting for the other person to change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I worked with a guy on my team who was super slow and wanted everything documented. I just did the work myself and handed it over at the end so we wouldn't get blocked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to him about the mismatch?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured it was his style and I just worked around it. The project still shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Paired with slow, documentation-heavy teammate",
+        "Candidate worked around the person instead of engaging",
+        "Outcome: project shipped but no adaptation or learning shown",
+        "Follow-up: Did you talk to him? \u2192 \"Not really, I just worked around it.\""
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate avoided the collaboration problem entirely by working in isolation and never attempted to align styles. There is no evidence of trying to understand the other person's constraints or adjusting their own approach. The result was a completed task but zero learning or improved working relationship. Biggest gap is lack of ownership over making the partnership effective."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Last year I led a pricing-model change that required input from both the data-science team and the sales ops team. The DS lead was very data-first and wanted six months of experiments; the sales ops lead wanted a quick A/B test in two weeks because of quarter-end targets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the tension?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week scoping workshop where we listed the minimum data each side needed. We agreed on a phased rollout: a limited test in one region first, then expand if the lift held. DS got their statistical rigor on the first cohort; sales ops hit their quarterly goal. The model is now used in four regions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your role in keeping both sides moving?"
+        },
+        {
+          "role": "candidate",
+          "text": "I owned the decision log and sent a weekly one-pager summarizing trade-offs so neither team felt surprised."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Cross-team pricing project; DS (long experiments) vs sales ops (fast test)",
+        "Ran scoping workshop and agreed on phased rollout",
+        "Outcome: model rolled to four regions; both teams met their constraints",
+        "Quote: \"I owned the decision log and sent a weekly one-pager.\"",
+        "Follow-up: What was your role? \u2192 Kept both sides aligned via shared artifacts"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove alignment across two teams with conflicting time horizons and delivered a phased solution that satisfied both constraints. The scoping workshop and decision log are concrete mechanisms that created leverage without authority. Impact extended beyond the initial project to four regions. Biggest strength is the explicit ownership of communication artifacts that prevented later misalignment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to work with the data-science team on a model. They wanted months of data and I needed something sooner, so I escalated to my manager and we ended up splitting the project."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to find common ground first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a few emails but they didn't respond quickly, so escalation felt faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Cross-team model work; DS wanted long experiments",
+        "Escalated after a few unanswered emails",
+        "Outcome: project split but no direct resolution shown",
+        "Follow-up: Did you try common ground? \u2192 Relied on escalation instead of facilitation"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate defaulted to escalation rather than attempting to bridge the two working styles directly. There is no evidence of creating shared artifacts or running a structured discussion to find a middle path. The result was a split project rather than an integrated outcome. Biggest gap is absence of influence-without-authority tactics that a senior should demonstrate."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I took over the platform team I inherited an engineer who was extremely autonomous and rarely updated the team, plus a new manager from another org who wanted daily stand-ups and detailed status. The mismatch was hurting morale."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actions did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set up a bi-weekly 'style sync' where the autonomous engineer shared only the three highest-risk items and the new manager practiced asking fewer questions in exchange. After six weeks the new manager reported higher confidence and the engineer started volunteering updates in the team channel. Team NPS went from 32 to 61."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the autonomous engineer specifically?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave him explicit coaching on the minimum information the team needed to stay unblocked and then protected his deep-work time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Inherited team with autonomous engineer and new manager who wanted heavy process",
+        "Created bi-weekly style sync and coached both sides on trade-offs",
+        "Outcome: team NPS 32 \to 61; engineer began volunteering updates",
+        "Quote: \"I gave him explicit coaching on the minimum information the team needed.\"",
+        "Follow-up: How did you handle the autonomous engineer? \u2192 Targeted coaching plus protection of focus time"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate directly addressed a style clash inside their team by designing a lightweight process that respected both extremes. They coached the autonomous engineer on minimum viable updates and helped the new manager reduce their ask. The measurable lift in team NPS shows the intervention improved team health. Biggest strength is the combination of structural change and individual coaching rather than relying on either alone.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had two people on the team with very different styles so I moved one to another project to reduce friction."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to develop either person?"
+        },
+        {
+          "role": "candidate",
+          "text": "I gave feedback once but the autonomous one didn't change much, so the move felt cleaner."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Style clash inside team",
+        "Moved one person to another project",
+        "Outcome: friction reduced but no development or process improvement",
+        "Follow-up: Did you try to develop either person? \u2192 Single feedback attempt then reassignment"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate treated the style difference as a personnel problem to be removed rather than a team dynamic to be managed. There is no evidence of coaching, process design, or helping either person adapt. The outcome was simply moving the conflict elsewhere. Biggest gap is lack of leverage through developing the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two years ago our product and infrastructure orgs had fundamentally different risk tolerances. Product wanted to ship weekly; infra wanted six-month hardening cycles. This was blocking our move to a new cloud region."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you approach it at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I created a joint 'risk council' with rotating leads from both orgs and gave them authority to approve 30-day exception windows. We also published a shared risk framework that both orgs signed. The cloud migration finished in nine months instead of the planned eighteen, and the framework is still used for every major launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect on the two orgs?"
+        },
+        {
+          "role": "candidate",
+          "text": "Product now includes infra risk owners in their quarterly planning and infra has started running shorter canary programs. The collaboration model spread to two other org pairs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Org-level clash between product (fast ship) and infra (long hardening) on cloud migration",
+        "Created joint risk council with decision authority and shared framework",
+        "Outcome: migration in 9 months vs 18; model adopted by two other org pairs",
+        "Quote: \"The collaboration model spread to two other org pairs.\"",
+        "Follow-up: Long-term effect? \u2192 Institutionalized the approach across the company"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate diagnosed a systemic style mismatch between two large orgs and built a durable governance structure that both sides owned. The risk council and shared framework created leverage that outlasted the original migration. The approach was later adopted elsewhere, showing strategic judgment and long-term thinking. Biggest strength is turning a recurring conflict into reusable company infrastructure rather than a one-time fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The product and infra teams kept clashing on release cadence so I had the CTO set a single policy that everyone had to follow."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the teams help shape the policy?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly; we needed a decision so leadership made the call."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Org-level cadence clash",
+        "Asked CTO to impose a top-down policy",
+        "Outcome: policy issued but no ownership from the teams",
+        "Follow-up: Did the teams help shape it? \u2192 No, leadership decided"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate bypassed the two orgs and relied on top-down mandate instead of building a mechanism the teams would sustain. There is no evidence of creating shared ownership or long-term alignment. The result was compliance rather than collaboration. Biggest gap is absence of strategic leverage through cross-org structures."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Adaptation approach",
+      "junior": "Tries small personal adjustment after seeing benefit",
+      "senior": "Creates shared artifacts to align two teams",
+      "manager": "Designs lightweight team process plus individual coaching",
+      "exec": "Builds durable cross-org governance that outlives the project"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single task or project",
+      "senior": "Cross-team outcome with measurable rollout",
+      "manager": "Team health metric (NPS) and development of two people",
+      "exec": "Org-level migration plus model adopted by other pairs"
+    },
+    {
+      "signal": "Ownership of the relationship",
+      "junior": "Owns their own change in behavior",
+      "senior": "Owns communication mechanisms without authority",
+      "manager": "Coaches both sides and protects focus time",
+      "exec": "Creates joint decision body with rotating ownership"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Keeps the new habit after seeing results",
+      "senior": "Uses decision log to prevent future surprises",
+      "manager": "Iterates the sync process over six weeks",
+      "exec": "Framework still in use two years later"
+    }
+  ],
+  "kind": "competency"
+}

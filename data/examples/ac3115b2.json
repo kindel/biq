@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about a time when you used external trends to improve your own company's products or services. How did you keep up to date with external trends? How did you decide to apply them to your own company? What was the result?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a feature for our internal dashboard and noticed from a couple of tech blogs and a conference talk that React hooks were becoming standard for cleaner state management. I started following a few newsletters and tried a small prototype on my own time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide it was worth bringing in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed my manager the prototype and the reduced code size compared to our class components. We rolled it out to one module first and cut our bundle size by about 15 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you used external trends...",
+        "- Read tech blogs + conference talk on React hooks",
+        "- Built personal prototype, then showed manager",
+        "- Outcome: 15% bundle reduction on one module",
+        "Quote: \"I tried it on my own time first\"",
+        "Follow-up: How did you decide worth bringing in? -> Showed data to manager"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for junior. The candidate proactively followed external sources on their own time and tested the idea before pitching, which is the right scope for 0-2 years. Quote about trying it personally shows ownership of learning. The result stayed local to one module, which is appropriate, but the decision process was evidence-based rather than just following hype. Biggest strength is the self-initiated prototype before involving others.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told us to start using a new library that was trending, so I read the docs and updated my part of the code."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep up yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly waited for team meetings or what the seniors suggested."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about...",
+        "- Trend came from manager, not self",
+        "- Read docs only after told",
+        "- No personal experimentation or external scanning",
+        "Quote: \"I mostly waited for team meetings\"",
+        "Follow-up: How did you keep up yourself? -> Relied on seniors"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate waited for direction instead of scanning externally, which shows limited curiosity at the junior level. No evidence of personal testing or deciding when to apply the trend. Result is absent, leaving only compliance. Biggest gap is treating learning as reactive rather than self-directed."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed rising adoption of edge computing in industry reports and a competitor's blog. I started tracking two analyst newsletters and ran a small experiment on our API latency using an edge provider."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get cross-team buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the latency numbers with the infra and product teams, then we piloted it on one customer-facing endpoint, cutting p99 by 40ms."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time...",
+        "- Tracked analyst newsletters + competitor blog",
+        "- Ran personal experiment on edge computing",
+        "- Shared data with infra and product teams",
+        "Quote: \"I started tracking two analyst newsletters\"",
+        "Follow-up: How did you get cross-team buy-in? -> Shared latency data"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate independently tracked external sources and ran an experiment before influencing two other teams, matching the expected cross-team scope. The decision rested on measured p99 improvement rather than trend alone. Biggest strength is turning personal scanning into a pilot that others adopted without formal authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw a trend report at a conference and mentioned it in our team sync. Leadership later decided to try it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the conference?"
+        },
+        {
+          "role": "candidate",
+          "text": "I forwarded the slides and waited to see if anyone followed up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about...",
+        "- One-time conference exposure",
+        "- Forwarded slides, no follow-up experiment",
+        "- Outcome owned by leadership",
+        "Quote: \"I forwarded the slides and waited\"",
+        "Follow-up: What did you do after? -> No personal action"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate stopped at forwarding material instead of testing or influencing peers, missing the senior expectation of driving adoption across teams. No metrics or decision framework shown. Biggest gap is lack of ownership after spotting the trend."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our support volume was rising and I saw customer-success teams at peer companies adopting AI chatbots in public case studies. I had my team run a weekly trend review and we tested one vendor on 10 percent of tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team experiment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I coached the lead engineer on defining success metrics and we reduced average response time by 30 percent while keeping CSAT flat, then rolled it out more broadly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time...",
+        "- Saw peer case studies on AI chatbots",
+        "- Instituted weekly team trend review",
+        "- Piloted on 10% of tickets, coached lead on metrics",
+        "Quote: \"I coached the lead engineer on defining success metrics\"",
+        "Follow-up: How did you handle the team experiment? -> 30% response time drop"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate built a repeatable team process for scanning trends and developed a direct report through the pilot, showing leverage rather than personal heroics. Clear metrics and decision to scale only after validation fit the level. Biggest strength is turning external input into team capability and measurable support improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I read about AI chatbots and asked one engineer to look into it. They came back with a POC but we never rolled it out."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why didn't it go further?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team was busy with other priorities so I didn't push."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about...",
+        "- Read about trend, delegated POC",
+        "- No team process or coaching",
+        "- Abandoned due to competing priorities",
+        "Quote: \"I didn't push\"",
+        "Follow-up: Why didn't it go further? -> No follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar. The manager delegated without creating team learning habits or removing blockers, resulting in zero outcome. No evidence of developing others or owning the decision to stop. Biggest gap is absence of leverage through the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tracked macro shifts in regulatory data-privacy rules across Europe and Asia through quarterly advisor briefings. We formed a small cross-org working group that prototyped consent-management changes six months before the first new law took effect."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a short-term 8 percent feature delay to avoid a potential fine and customer churn; post-launch we saw 12 percent higher retention in affected regions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time...",
+        "- Quarterly advisor briefings on regulatory trends",
+        "- Formed cross-org group, prototyped early",
+        "- Traded 8% feature delay for compliance",
+        "Quote: \"We accepted a short-term 8 percent feature delay\"",
+        "Follow-up: What was the business trade-off? -> 12% higher retention"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate used ongoing external intelligence to drive an org-wide initiative with clear strategic trade-offs and long-term retention impact. Scope spans multiple regions and functions, showing judgment at business level rather than feature level. Biggest strength is anticipating regulatory change and converting it into measurable competitive advantage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our legal team flagged a new privacy rule and we updated the product to stay compliant."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you stay ahead of trends?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reacted once legal sent the memo."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about...",
+        "- Trend surfaced by legal, not exec scanning",
+        "- Purely reactive compliance",
+        "- No strategic framing or early action",
+        "Quote: \"We reacted once legal sent the memo\"",
+        "Follow-up: How did you stay ahead? -> Relied on internal memo"
+      ],
+      "lowerFeedback": "Lowers the bar. The exec waited for internal functions instead of maintaining external foresight, missing the expectation of long-term strategic judgment. No trade-offs or org-level leverage demonstrated. Biggest gap is treating external trends as someone else's problem to surface."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Source of trend awareness",
+      "junior": "Personal blogs and own-time experiments vs waiting for manager",
+      "senior": "Newsletters plus cross-team sharing vs forwarding slides",
+      "manager": "Weekly team process plus coaching vs one-off delegation",
+      "exec": "Ongoing advisor briefings and early org prototypes vs reacting to legal memos"
+    },
+    {
+      "signal": "Decision to apply",
+      "junior": "Small prototype with data before pitching manager",
+      "senior": "Latency experiment shared with peer teams",
+      "manager": "Pilot with defined metrics and scale decision",
+      "exec": "Explicit business trade-off (delay vs fine/churn)"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single module, individual ownership",
+      "senior": "Two teams, influence without authority",
+      "manager": "Team capability built, support metrics moved",
+      "exec": "Multi-region retention and regulatory positioning"
+    },
+    {
+      "signal": "Evidence of curiosity habit",
+      "junior": "Self-started reading and prototyping",
+      "senior": "Tracked sources then ran experiment",
+      "manager": "Created repeatable team scanning ritual",
+      "exec": "Quarterly external briefings baked into rhythm"
+    }
+  ],
+  "kind": "lp"
+}

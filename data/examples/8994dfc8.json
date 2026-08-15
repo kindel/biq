@@ -1,0 +1,269 @@
+{
+  "question": "Tell me about a time you had to make an important decision without all the information you wanted.",
+  "competency": "Decision Making & Judgment",
+  "principle": "Decision Making & Judgment",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project, our API had intermittent errors but logs were incomplete. I had to decide whether to rollback or push a partial fix."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked the last three days of partial metrics, asked my mentor for a quick review of similar past incidents, then chose to deploy the fix with extra monitoring. It reduced errors by 60%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about the missing data?"
+        },
+        {
+          "role": "candidate",
+          "text": "Uncomfortable, but I documented what I used and what I still needed so the team could investigate later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: New grad on first API project; situation = intermittent errors, incomplete logs",
+        "Actions: Reviewed partial metrics, quick mentor consult, chose monitored deploy",
+        "Outcome: 60% error reduction; documented unknowns for follow-up",
+        "Quote: \"I documented what I used and what I still needed\"",
+        "Follow-up: Asked how they handled discomfort with missing data \u2192 owned the gap and made it visible"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at junior level. The candidate described choosing a monitored partial fix after reviewing three days of partial metrics and a brief mentor check-in. They explicitly noted discomfort with the gaps and documented remaining unknowns so the team could continue investigation. This shows appropriate scope for an individual contributor who still seeks light guidance and surfaces what is still unknown. The concrete result of 60% error reduction ties the decision to impact without claiming heroic scale. Biggest strength is turning missing data into a documented handoff rather than hiding uncertainty.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a deadline and the data was messy so I just picked the option my manager seemed to like last time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check anything else?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I was worried about missing the date so I went with it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: Individual contributor; situation = deadline pressure, messy data",
+        "Actions: Defaulted to what manager liked previously",
+        "Outcome: No stated result or reflection",
+        "Quote: \"I just picked the option my manager seemed to like last time\"",
+        "Follow-up: Asked if they checked other signals \u2192 admitted skipping further checks due to deadline fear"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at junior level. The candidate defaulted to a prior manager preference without reviewing any additional signals or documenting uncertainty. No attempt was made to narrow the information gap even modestly, and the story ends without a measurable outcome or reflection on what was learned. This shows passive decision-making that relies entirely on authority rather than taking ownership of the available facts. The absence of any follow-up action after the decision further weakens the example. Biggest gap is failing to demonstrate even basic individual judgment under ambiguity."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams needed a shared logging standard but usage data was only partial. I had to pick a format that would work across services."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot with the three largest services, collected error rates and query latency, then chose the format that cut query time 25% while staying compatible. I also wrote a migration plan the other teams could follow."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was still unknown?"
+        },
+        {
+          "role": "candidate",
+          "text": "Edge cases in smaller services; I flagged them and scheduled a review after rollout."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: Senior on shared logging standard; situation = partial usage data across two teams",
+        "Actions: Two-week pilot on three services, measured error rates and latency, selected format with 25% query improvement",
+        "Outcome: Compatible choice plus written migration plan; flagged remaining edge cases",
+        "Quote: \"I flagged them and scheduled a review after rollout\"",
+        "Follow-up: Asked what remained unknown \u2192 surfaced edge cases and created post-rollout review plan"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at senior level. The candidate ran a targeted two-week pilot across the three largest services, collected concrete metrics on error rates and query latency, and selected the format delivering 25% faster queries. They also produced a migration plan that other teams could adopt without their direct involvement. Remaining unknowns were explicitly called out with a scheduled review, showing cross-team influence without authority. The story stays grounded in measurable trade-offs rather than perfect information. Biggest strength is converting partial data into a pilot that produced usable metrics and a reusable plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked the format our biggest service already used because it felt safest."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you test with the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we were behind schedule so I just went with it and hoped the smaller services would adapt."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: Senior; situation = partial data on logging standard",
+        "Actions: Defaulted to biggest service's format without testing",
+        "Outcome: No metrics or cross-team validation",
+        "Quote: \"I just went with it and hoped the smaller services would adapt\"",
+        "Follow-up: Asked about testing with other team \u2192 admitted skipping validation due to schedule pressure"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at senior level. The candidate selected the format used by the largest service without running any cross-team validation or collecting comparative metrics. No attempt was made to quantify trade-offs or surface risks to the smaller services. The decision relied on assumption rather than evidence and left downstream adaptation entirely to others. This lacks the cross-team influence expected at senior level. Biggest gap is absence of any structured way to reduce uncertainty before committing multiple teams."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team needed to reallocate two headcount slots mid-year but forecast data was incomplete. I had to decide which projects to pause."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process did you use?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with each tech lead, had them score projects on customer impact and effort using the partial data we had, then ran a two-hour calibration session. We paused the lowest-scoring project and reassigned the engineers within three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead was disappointed; we agreed on a checkpoint in 30 days to revisit if new data appeared."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: Manager reallocating headcount; situation = incomplete mid-year forecast",
+        "Actions: Collected lead scoring on impact/effort, ran calibration session, paused lowest project",
+        "Outcome: Engineers reassigned in three weeks; 30-day checkpoint set with disappointed lead",
+        "Quote: \"We agreed on a checkpoint in 30 days to revisit if new data appeared\"",
+        "Follow-up: Asked how team reacted \u2192 handled disappointment by creating explicit review point"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at manager level. The candidate gathered structured input from all tech leads using the available partial data, ran a calibration session to surface trade-offs, and made the call to pause one project. They also created a 30-day checkpoint to revisit the decision once better data arrived, directly addressing the disappointed lead. This demonstrates both team-level ownership and a mechanism for handling underperformance or shifting priorities. The three-week reallocation shows concrete leverage through the team. Biggest strength is turning incomplete forecasts into a transparent process that still produced timely action.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I made the call myself based on what I thought the business wanted and told the team the next day."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve the leads?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I wanted to avoid debate since the data was fuzzy anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: Manager; situation = incomplete headcount forecast",
+        "Actions: Decided alone based on assumed business priority",
+        "Outcome: No team input or follow-up mechanism",
+        "Quote: \"I wanted to avoid debate since the data was fuzzy anyway\"",
+        "Follow-up: Asked if leads were involved \u2192 admitted skipping input to prevent debate"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at manager level. The candidate decided unilaterally without involving tech leads or using any structured scoring, citing fuzzy data as the reason to avoid discussion. No mechanism was created to revisit the decision or surface downstream impact on the team. This shows neither team development nor leverage through others. The approach leaves the team without context or ownership. Biggest gap is treating incomplete information as a reason to exclude the team rather than a reason to involve them in bounding uncertainty."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were evaluating entry into a new vertical but market sizing and regulatory timelines were both uncertain. I had to recommend go or no-go to the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you proceed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I commissioned two small discovery teams with 6-week budgets, set explicit kill criteria on customer interviews and regulatory signals, then presented a recommendation with three scenario-based investment levels. The board approved the middle path."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the unknowns?"
+        },
+        {
+          "role": "candidate",
+          "text": "We built a quarterly review gate tied to the original kill criteria so the org could adjust without sunk-cost pressure."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: Exec evaluating new vertical; situation = uncertain market size and regulatory timelines",
+        "Actions: Two 6-week discovery teams with kill criteria, scenario-based board recommendation",
+        "Outcome: Middle-path approval plus quarterly review gate tied to original criteria",
+        "Quote: \"We built a quarterly review gate tied to the original kill criteria\"",
+        "Follow-up: Asked what happened to the unknowns \u2192 created org-level review mechanism to avoid sunk cost"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at exec level. The candidate commissioned bounded discovery work with explicit kill criteria, then framed the board recommendation around three investment scenarios rather than a binary call. They also instituted a quarterly review gate anchored to the original criteria, protecting the organization from escalation of commitment. This shows strategic judgment under high ambiguity with clear leverage through small teams and governance. The approach scales beyond any single project. Biggest strength is designing reversible decision architecture that keeps long-term options open.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for full investment because the opportunity window felt short and we could figure out details later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What guardrails did you set?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't have time for pilots; the board just had to trust the direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to make an important decision without all the information you wanted.",
+        "Role: Exec; situation = uncertain market entry",
+        "Actions: Pushed full investment without pilots or kill criteria",
+        "Outcome: No staged approach or review mechanism",
+        "Quote: \"The board just had to trust the direction\"",
+        "Follow-up: Asked about guardrails \u2192 admitted skipping pilots due to perceived time pressure"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at exec level. The candidate advocated full investment without any staged discovery, kill criteria, or scenario planning, citing a short window as justification. No mechanism was created to revisit the decision or limit downside if early signals proved wrong. This demonstrates heroics rather than leverage and leaves the organization exposed to high ambiguity. The absence of any governance structure is especially costly at this scope. Biggest gap is treating incomplete information as a reason to accelerate rather than to stage the commitment."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of partial data",
+      "junior": "Reviews available metrics and asks mentor",
+      "senior": "Runs targeted pilot to generate metrics",
+      "manager": "Facilitates team scoring on available data",
+      "exec": "Commissions bounded discovery with explicit criteria"
+    },
+    {
+      "signal": "Handling unknowns",
+      "junior": "Documents gaps for later",
+      "senior": "Flags edge cases and schedules review",
+      "manager": "Creates checkpoint with affected lead",
+      "exec": "Institutes quarterly gate tied to kill criteria"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task or small fix",
+      "senior": "Cross-team standard or plan",
+      "manager": "Team resource allocation",
+      "exec": "Org-level investment with board input"
+    },
+    {
+      "signal": "Reversibility",
+      "junior": "Adds monitoring after choice",
+      "senior": "Writes migration path others can follow",
+      "manager": "Sets 30-day revisit with team",
+      "exec": "Builds quarterly review to avoid sunk cost"
+    },
+    {
+      "signal": "Influence style",
+      "junior": "Seeks light guidance",
+      "senior": "Produces reusable artifacts",
+      "manager": "Runs calibration to align team",
+      "exec": "Frames scenarios for senior stakeholders"
+    }
+  ],
+  "kind": "competency"
+}

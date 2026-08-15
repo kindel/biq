@@ -1,0 +1,218 @@
+{
+  "question": "Give an example of a process or checklist you implemented to maintain high standards of accuracy or quality.",
+  "competency": "Attention to Detail & Quality",
+  "principle": "Attention to Detail & Quality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I created a simple pre-release checklist for my code changes after a bug slipped into production. It had steps like peer review sign-off, running full test suite locally, and checking config values twice."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you started using it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Zero config-related bugs from my work in the next three releases. My manager asked me to share it with two other new hires."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate built personal pre-release checklist after one production bug",
+        "Steps: peer review, local tests, double-check configs",
+        "Outcome: zero config bugs in next three releases; shared with new hires",
+        "Follow-up: Asked about impact - candidate described manager requesting distribution to others"
+      ],
+      "raiseFeedback": "Raises the bar for Attention to Detail & Quality at the junior level. The candidate described building a personal checklist after a config bug reached production and reported zero similar issues across three releases. They noted the manager later asked them to share it with new hires, showing the process was adopted beyond their own work. This demonstrates ownership of accuracy at the individual scope expected for 0-2 years. The concrete outcome ties directly to the checklist rather than general diligence. Biggest strength is the clear before-and-after result on their own output.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I always double-check my work before submitting tickets or code."
+        },
+        {
+          "role": "interviewer",
+          "text": "Can you give a specific checklist or process you created and the results?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really a formal list, just mental notes like make sure tests pass and ask someone to look at it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate described only informal mental checks",
+        "No documented steps or measurable outcome provided",
+        "Follow-up: Pressed for specifics - candidate stayed at high level of 'double-check my work'"
+      ],
+      "lowerFeedback": "Lowers the bar for Attention to Detail & Quality at the junior level. The candidate offered only vague statements about double-checking work without describing any actual checklist or process they implemented. No before-and-after results or adoption by others were mentioned. This leaves the answer at the level of general intent rather than concrete action. The follow-up did not surface any documented steps or metrics. Biggest gap is absence of a repeatable mechanism tied to accuracy outcomes."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I introduced a cross-team review checklist for API changes that included backward-compatibility checks, schema validation, and consumer impact notes. It was adopted by three teams after a breaking change affected two downstream services."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed it helped?"
+        },
+        {
+          "role": "candidate",
+          "text": "Breaking change incidents dropped from four to one over the next two quarters, and onboarding time for new consumers fell by about 30 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate created API change review checklist with compatibility and impact steps",
+        "Adopted by three teams after a breaking change incident",
+        "Outcome: breaking incidents 4 to 1 over two quarters; 30% faster consumer onboarding",
+        "Follow-up: Asked for metrics - candidate gave specific incident reduction and onboarding improvement"
+      ],
+      "raiseFeedback": "Raises the bar for Attention to Detail & Quality at the senior level. The candidate implemented a cross-team API review checklist covering compatibility and consumer impact after a breaking change, which three teams then adopted. They reported breaking incidents falling from four to one across two quarters plus 30 percent faster onboarding. This shows influence without authority and measurable quality impact beyond their immediate team. The story directly links the checklist to reduced downstream errors. Biggest strength is the quantified cross-team result at the expected scope for 3-7 years experience.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I started requiring code reviews on all my PRs and added a few items to our team wiki."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect other teams or produce measurable quality gains?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really tracked, but it felt like reviews caught more issues internally."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate mentioned adding items to team wiki and requiring reviews",
+        "No cross-team adoption or specific metrics shared",
+        "Follow-up: Asked about impact - candidate could not provide numbers or external reach"
+      ],
+      "lowerFeedback": "Lowers the bar for Attention to Detail & Quality at the senior level. The candidate described adding wiki items and requiring reviews but stayed within their own team with no evidence of cross-team influence. No metrics on accuracy or quality improvements were provided despite follow-up. This keeps the example at local scope rather than the broader impact expected for seniors. The answer lacks concrete steps or adoption signals. Biggest gap is missing evidence of scalable process or measurable results."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I rolled out a quarterly quality audit checklist for the team that covered test coverage, incident post-mortems, and on-call handoff docs. After two engineers missed critical steps in a migration, I made the checklist mandatory and tracked completion in our tooling."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this affect team performance?"
+        },
+        {
+          "role": "candidate",
+          "text": "Migration-related incidents fell 60 percent year over year, and the two engineers who struggled improved their audit scores after targeted coaching."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate created mandatory quarterly quality audit checklist covering coverage, post-mortems, and handoffs",
+        "Implemented after migration issues; tracked via tooling",
+        "Outcome: 60% drop in migration incidents; improved scores for two underperforming engineers",
+        "Follow-up: Asked about results - candidate tied checklist to incident reduction and individual coaching"
+      ],
+      "raiseFeedback": "Raises the bar for Attention to Detail & Quality at the manager level. The candidate introduced a mandatory quarterly audit checklist after migration problems and linked it to a 60 percent drop in incidents plus improved performance from two engineers via coaching. This shows ownership of team outcomes and use of the process to develop people. The example demonstrates leverage through enforced standards rather than individual heroics. Follow-up answers connected the checklist directly to both metrics and underperformance handling. Biggest strength is the combination of process rollout and people development results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reminded the team to follow our existing review process and occasionally spot-checked tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you create or enforce any new checklist or track outcomes?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not a new one, just reinforced what was already there."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate described only reminders and spot checks of existing process",
+        "No new checklist created or outcomes tracked",
+        "Follow-up: Pressed for enforcement details - candidate stayed at reinforcement level"
+      ],
+      "lowerFeedback": "Lowers the bar for Attention to Detail & Quality at the manager level. The candidate relied on reminding the team about an existing process without implementing or enforcing a new checklist. No team-level metrics or handling of underperformance were described. This approach stays reactive rather than creating leverage through standards. Follow-up did not surface any adoption tracking or results. Biggest gap is lack of manager-owned process that drives team quality outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sponsored an org-wide quality gate framework that required every service to maintain a living checklist covering data integrity, rollback readiness, and customer-visible error budgets. It was rolled out after repeated platform incidents and tied to promotion criteria for engineering leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Customer-facing incidents dropped 45 percent over 18 months while deployment frequency rose 2x, and we reduced audit findings from external regulators by half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate sponsored org-wide quality gate framework with data integrity, rollback, and error budget items",
+        "Tied to promotion criteria after repeated incidents",
+        "Outcome: 45% fewer customer incidents, 2x deployments, 50% fewer regulatory findings over 18 months",
+        "Follow-up: Asked for business results - candidate gave multi-quarter metrics on incidents, velocity, and compliance"
+      ],
+      "raiseFeedback": "Raises the bar for Attention to Detail & Quality at the exec level. The candidate sponsored an org-wide quality gate framework covering integrity, rollback, and error budgets that was linked to promotion criteria and produced a 45 percent drop in customer incidents plus doubled deployment frequency over 18 months. This reflects strategic judgment in embedding standards at scale with long-term leverage. The example shows trade-offs between quality controls and velocity while delivering regulatory gains. Follow-up answers connected the framework to both operational and business metrics. Biggest strength is the sustained, org-level impact with clear ownership of standards.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each team to improve their quality processes and reviewed summaries in quarterly business reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you implement any standardized checklist or track org-level results?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it but left the details to individual teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a process or checklist you implemented...",
+        "Candidate described asking teams to improve and reviewing summaries",
+        "No standardized org-wide checklist or tracked results",
+        "Follow-up: Asked about standardization - candidate deferred to teams without specifics"
+      ],
+      "lowerFeedback": "Lowers the bar for Attention to Detail & Quality at the exec level. The candidate delegated quality improvements to teams without implementing or enforcing any org-wide checklist or standards. No measurable results on incidents, velocity, or compliance were provided. This leaves the response at the level of intent rather than strategic ownership of quality at scale. Follow-up confirmed absence of standardized mechanisms. Biggest gap is lack of executive-level process that creates consistent accuracy across the organization."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of checklist",
+      "junior": "Personal pre-release steps",
+      "senior": "Cross-team API review",
+      "manager": "Team audit with coaching tie-in",
+      "exec": "Org-wide quality gates tied to promotions"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Zero bugs in three releases",
+      "senior": "Incidents 4 to 1, 30% faster onboarding",
+      "manager": "60% incident drop, improved engineer scores",
+      "exec": "45% fewer incidents, 2x deployments, 50% fewer audit findings"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Shared with new hires after manager request",
+      "senior": "Adopted by three teams post-incident",
+      "manager": "Mandatory via tooling after migration issues",
+      "exec": "Linked to promotion criteria after platform incidents"
+    },
+    {
+      "signal": "Handling of gaps",
+      "junior": "Built after own config bug",
+      "senior": "Created after breaking change affected consumers",
+      "manager": "Targeted coaching for two engineers",
+      "exec": "Framework addressed repeated org incidents"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,226 @@
+{
+  "question": "Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+  "competency": "Adaptability, Flexibility & Change",
+  "principle": "Adaptability, Flexibility & Change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My first project had specs that changed weekly because the PM was still figuring out the customer problem. I kept a running list of open questions and updated my tasks every Monday based on the latest input."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when you hit a blocker you couldn't resolve yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged it in the standup with what I had tried, then asked my mentor for a 15-minute sync. She pointed me to an internal doc I hadn't seen, and I finished the task two days later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Junior dev on first feature; weekly spec changes from unclear customer problem",
+        "Maintained running list of open questions and refreshed tasks each Monday",
+        "When blocked, flagged in standup and asked mentor for quick sync",
+        "Quote: \"She pointed me to an internal doc I hadn't seen\"",
+        "Follow-up: Asked what happened on blocker; candidate described escalation and outcome"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a junior. The candidate described handling weekly spec changes by maintaining a running list of questions and refreshing tasks weekly. When blocked, they flagged it in standup and used a mentor sync to unblock themselves. This shows ownership of their own work and coachability without waiting passively. The story stayed local to one feature but demonstrated learning from feedback. Biggest strength is the concrete escalation step rather than freezing on uncertainty.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a lot of ambiguity on my project because requirements weren't clear. I just waited for the PM to give me the final spec."
+        },
+        {
+          "role": "interviewer",
+          "text": "How long did you wait and what did you do in the meantime?"
+        },
+        {
+          "role": "candidate",
+          "text": "About three weeks. I worked on other small tasks but didn't push for clarity."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Candidate described unclear requirements on a project",
+        "Waited three weeks for final spec from PM",
+        "Worked on other small tasks while waiting",
+        "Follow-up: Asked duration and actions taken; candidate confirmed passive approach"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a junior. The candidate waited three weeks for a final spec without attempting to reduce uncertainty themselves. They mentioned working on other small tasks but provided no evidence of asking questions, documenting assumptions, or seeking feedback. This shows low ownership of their own work when facing ambiguity. The story lacks any proactive step or learning. Biggest gap is absence of even a basic attempt to clarify requirements."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to ship a new integration while the partner API was still in beta and changing. I mapped the stable endpoints first, then created a thin adapter layer so the rest of the team could keep building."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the dependent teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a short sync with the three affected service owners, shared the adapter contract, and got them to agree on a two-week buffer before we touched the unstable parts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Senior engineer on integration with beta partner API changing frequently",
+        "Mapped stable endpoints and built thin adapter layer for the team",
+        "Ran sync with three service owners to agree on contract and two-week buffer",
+        "Quote: \"Got them to agree on a two-week buffer before we touched the unstable parts\"",
+        "Follow-up: Asked about cross-team alignment; candidate described concrete coordination"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a senior. The candidate built an adapter layer to isolate the team from a changing beta API and then coordinated three service owners to agree on a buffer. This shows influence without authority and cross-team impact while delivering despite uncertainty. The story includes a specific mechanism (adapter contract) rather than just describing the problem. Biggest strength is turning ambiguity into a scoped plan that protected delivery velocity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The partner API kept changing so we had to rework a lot of code. I just kept updating my part whenever new docs came out."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything to reduce the rework for the broader team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I focused on my own service and let the other teams figure it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Senior on changing partner API integration",
+        "Kept updating own code with each new doc version",
+        "No attempt to coordinate or isolate changes for other teams",
+        "Follow-up: Asked about broader impact; candidate stayed within own service"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a senior. The candidate responded to API changes by repeatedly updating only their own code and made no effort to reduce rework for dependent teams. They explicitly said they let others figure it out, showing limited influence without authority. The story stays narrowly individual despite the cross-team nature of the problem. Biggest gap is lack of any mechanism to absorb or communicate the uncertainty."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a reorg our team lost two headcount and the roadmap was still unclear. I ran a two-week planning exercise with the remaining engineers to reprioritize to the top three outcomes and reassigned ownership so no one was stretched across too many areas."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the people whose work was deprioritized?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had 1:1s with each and explained the business reason, then worked with them to find stretch goals inside the new scope so they still had visible impact."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Manager navigated reorg with headcount loss and unclear roadmap",
+        "Ran two-week planning exercise to narrow to top three outcomes",
+        "Reassigned ownership to avoid overload",
+        "Quote: \"Worked with them to find stretch goals inside the new scope\"",
+        "Follow-up: Asked about handling deprioritized work; candidate described 1:1s and impact preservation"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a manager. The candidate ran a structured planning exercise after a reorg and headcount cut to focus the team on three outcomes, then used 1:1s to give people new stretch goals. This demonstrates creating leverage through the team and owning team outcomes in ambiguity. The story shows both process and people management. Biggest strength is the explicit step to preserve individual impact rather than just cutting scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the reorg the roadmap was fuzzy so I told the team to keep working on what they had been doing until we got more direction from leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "How long did that last and what was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "About a month. Morale dropped but at least we weren't making wrong bets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Manager after reorg with unclear roadmap",
+        "Told team to continue prior work until leadership provided direction",
+        "Lasted a month with noted morale drop",
+        "Follow-up: Asked about duration and impact; candidate confirmed passive stance"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a manager. The candidate instructed the team to continue prior work for a month while waiting for leadership direction after a reorg. They noted morale dropped but offered no actions taken to reduce uncertainty or protect outcomes. This shows limited ownership of team results and no attempt to create leverage. Biggest gap is absence of any proactive planning or people conversations during the period of ambiguity."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a sudden regulatory shift that put 40% of our revenue at risk within six months. I formed a small tiger team with legal and product to model three scenarios, then presented the board with a recommendation to pivot part of the business into a compliant adjacent market."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "We showed the board the revenue hit if we stayed, the investment required for the pivot, and the timeline risk. They chose the middle path of a phased transition."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Exec responded to regulatory change threatening 40% revenue",
+        "Formed tiger team to model three scenarios and recommended pivot",
+        "Presented board with revenue, investment, and timeline trade-offs",
+        "Quote: \"They chose the middle path of a phased transition\"",
+        "Follow-up: Asked about trade-offs surfaced; candidate described concrete options given to board"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for an exec. The candidate assembled a cross-functional team to model scenarios after a regulatory threat and gave the board clear options with quantified trade-offs, leading to a phased pivot decision. This reflects strategic judgment and long-term thinking under high ambiguity. The story shows leverage through a small team rather than personal heroics. Biggest strength is translating uncertainty into board-level choices with measurable implications.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When the regulation changed we spent several months analyzing the impact before deciding on next steps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for the business during that time?"
+        },
+        {
+          "role": "candidate",
+          "text": "We lost some customers but avoided making a big mistake by rushing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+        "Exec faced regulatory change affecting revenue",
+        "Spent several months in analysis before deciding",
+        "Lost customers but avoided rushing into a mistake",
+        "Follow-up: Asked about business outcome; candidate focused on risk avoidance"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for an exec. The candidate described spending months in analysis after a regulatory shift without surfacing timely options or decisions to the board. They framed the result as avoiding a mistake rather than protecting revenue or creating a path forward. This shows limited strategic judgment and slow response to high-ambiguity business risk. Biggest gap is lack of evidence of driving a decision or trade-off discussion within a reasonable timeframe."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed of reducing uncertainty",
+      "junior": "Raises: asks mentor after trying; Lowers: waits weeks passively",
+      "senior": "Raises: builds adapter and aligns owners in days; Lowers: updates only own code",
+      "manager": "Raises: runs two-week planning exercise; Lowers: waits a month for leadership",
+      "exec": "Raises: models three scenarios and presents board options; Lowers: months of analysis with no decision"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Raises: protects own delivery; Lowers: no ownership shown",
+      "senior": "Raises: shields cross-team velocity; Lowers: stays within own service",
+      "manager": "Raises: preserves team outcomes and morale; Lowers: lets morale drop",
+      "exec": "Raises: protects business revenue via pivot; Lowers: accepts customer loss"
+    },
+    {
+      "signal": "Use of structure/tools",
+      "junior": "Raises: running question list + weekly refresh; Lowers: none",
+      "senior": "Raises: adapter contract + buffer agreement; Lowers: none",
+      "manager": "Raises: planning exercise + 1:1s; Lowers: none",
+      "exec": "Raises: scenario modeling + quantified trade-offs; Lowers: open-ended analysis"
+    },
+    {
+      "signal": "Handling of people impact",
+      "junior": "N/A at this level",
+      "senior": "N/A at this level",
+      "manager": "Raises: 1:1s to create new stretch goals; Lowers: no conversations",
+      "exec": "Raises: board options with clear choices; Lowers: no surfaced decisions"
+    }
+  ],
+  "kind": "competency"
+}

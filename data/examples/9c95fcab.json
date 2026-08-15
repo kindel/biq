@@ -1,0 +1,237 @@
+{
+  "question": "Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+  "competency": "Leadership & Influence",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, two new hires on my pod stopped contributing after a scope change. I scheduled 1:1s, asked what was blocking them, and paired with each on a small visible win. One said the work felt pointless; I showed how their piece connected to the launch metric."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both started shipping daily. The pod hit its milestone and the manager noted the turnaround in the retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: new grad on 4-person pod; two peers disengaged after scope cut",
+        "Action: 1:1s + paired on visible wins; connected work to launch metric",
+        "Outcome: daily shipping resumed, milestone hit, retro call-out",
+        "Quote: 'I showed how their piece connected to the launch metric'",
+        "Follow-up: What changed after that? -> Both started shipping daily"
+      ],
+      "raiseFeedback": "Raises the bar for Leadership & Influence at junior level. The candidate owned a local motivation problem on their own pod without authority. They used direct 1:1s and concrete pairing to create visible progress, resulting in resumed daily output and a public retro mention. The story stays within individual scope but shows clear ownership and quick iteration on feedback from peers. Biggest strength is turning a specific complaint ('pointless') into a measurable connection rather than generic pep talks.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A teammate seemed checked out so I told them to just focus on their tasks and that it would get better soon."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to them or change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I was busy with my own work so I just kept my head down."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: new grad; vague reference to one teammate",
+        "Action: generic advice to 'focus on tasks'",
+        "Outcome: none described",
+        "Quote: 'I told them to just focus on their tasks'",
+        "Follow-up: Did you talk to them or change anything? -> No follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar for Leadership & Influence at junior level. The candidate offered only passive advice without any follow-up action or ownership of the outcome. No evidence of listening, adjusting scope, or measuring change. The response stays entirely reactive and individual, missing even basic attempts to influence a peer. Biggest gap is absence of any concrete behavior change or result tied to their intervention."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two engineers on another team stopped reviewing PRs after a reorg left them without clear ownership. I ran a short data pull showing review latency had doubled and shared it in their standup with a lightweight rotation proposal."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked their TL first, then ran a two-week pilot where I took the first shift. Latency dropped 40 percent and they kept the rotation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: senior IC influencing adjacent team post-reorg",
+        "Action: data pull on review latency + lightweight rotation proposal + two-week pilot",
+        "Outcome: 40% latency drop, process adopted",
+        "Quote: 'I asked their TL first, then ran a two-week pilot'",
+        "Follow-up: How did you get them to adopt it? -> Pilot ownership led to sustained change"
+      ],
+      "raiseFeedback": "Raises the bar for Leadership & Influence at senior level. The candidate used data and a low-friction pilot to influence a peer team without formal authority, producing a 40 percent measurable improvement. They respected the other TL's position while still driving adoption through personal ownership of the pilot. Story shows cross-team scope and willingness to absorb initial cost. Biggest strength is converting a motivation problem into a repeatable process that persisted after the pilot.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the reorg some people on another team were disengaged so I suggested they talk to their manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I don't know, I moved on to my next project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: senior IC; adjacent team post-reorg",
+        "Action: told them to talk to their manager",
+        "Outcome: unknown, candidate disengaged",
+        "Quote: 'I suggested they talk to their manager'",
+        "Follow-up: Did anything change? -> No follow-up"
+      ],
+      "lowerFeedback": "Lowers the bar for Leadership & Influence at senior level. The candidate delegated the problem upward and abandoned any further involvement. No data, no proposal, and no personal investment to create momentum. The response shows zero cross-team influence or willingness to absorb cost for a shared outcome. Biggest gap is treating motivation as someone else's problem rather than an opportunity for influence without authority."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Half my team disengaged after missing a launch date. I ran skip-levels, found the root was unclear career impact, then created a visible 'impact map' linking each person's work to quarterly goals and promoted two people who had been overlooked."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the timeline pressure?"
+        },
+        {
+          "role": "candidate",
+          "text": "I protected one focused week for the map work and used existing 1:1s to roll it out, so no extra meetings were added."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: manager of 8-person team post-missed launch",
+        "Action: skip-levels + impact map + two promotions",
+        "Outcome: engagement recovered, two promotions",
+        "Quote: 'I protected one focused week for the map work'",
+        "Follow-up: How did you handle the timeline pressure? -> Used existing rituals, no added meetings"
+      ],
+      "raiseFeedback": "Raises the bar for Leadership & Influence at manager level. The candidate diagnosed disengagement through skip-levels, then created structural visibility (impact map) and backed it with promotions. They protected team capacity instead of adding meetings, showing leverage. Story demonstrates handling underperformance signals at team scale and producing sustained people outcomes. Biggest strength is linking motivation work directly to promotion decisions rather than temporary morale events.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was low after a missed launch so I gave a pep talk in the next all-hands."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the individuals?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple left over the next quarter but the rest stayed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: manager; team post-missed launch",
+        "Action: one all-hands pep talk",
+        "Outcome: two attrition, rest stayed",
+        "Quote: 'I gave a pep talk in the next all-hands'",
+        "Follow-up: What happened to the individuals? -> Attrition occurred"
+      ],
+      "lowerFeedback": "Lowers the bar for Leadership & Influence at manager level. The candidate relied on a single broadcast message without diagnosis or structural change. Two people left, indicating the approach did not address root causes. No evidence of developing individuals or creating leverage through the team. Biggest gap is treating motivation as a communication event instead of an ongoing people-management responsibility."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After a failed acquisition integration, two acquired teams showed 30 percent voluntary exit risk in the pulse survey. I created a cross-org 'integration council' with rotating leads from both sides and tied their first deliverable to a visible customer metric that both legacy and acquired teams owned."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Exit risk dropped below company average within six months and the council model was adopted by two other post-integration groups."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: exec; two acquired teams post-failed integration",
+        "Action: cross-org council with rotating leads + shared customer metric",
+        "Outcome: exit risk below average, model adopted elsewhere",
+        "Quote: 'tied their first deliverable to a visible customer metric'",
+        "Follow-up: What was the longer-term effect? -> Model scaled to other groups"
+      ],
+      "raiseFeedback": "Raises the bar for Leadership & Influence at exec level. The candidate addressed org-level disengagement risk through a structural intervention (integration council) that created shared ownership and visible metrics. They turned a high-ambiguity post-acquisition situation into a repeatable model adopted by other groups. Story shows strategic judgment on where to apply leverage rather than heroics. Biggest strength is converting motivation data into an enduring operating mechanism with measurable retention impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the integration the teams were quiet so I sent a company-wide note emphasizing the strategic importance of the acquisition."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did retention or output change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We still lost some key people but the rest adjusted over time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+        "Role: exec; post-acquisition teams",
+        "Action: one company-wide note",
+        "Outcome: key people lost, rest adjusted",
+        "Quote: 'I sent a company-wide note emphasizing the strategic importance'",
+        "Follow-up: Did retention or output change? -> Key attrition occurred"
+      ],
+      "lowerFeedback": "Lowers the bar for Leadership & Influence at exec level. The candidate used only a broadcast communication without structural change or targeted ownership. Key talent left, showing the approach failed to address disengagement at scale. No evidence of strategic trade-offs or long-term mechanism building. Biggest gap is substituting messaging for the hard work of creating shared accountability across legacy and acquired organizations."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of influence",
+      "junior": "Own pod or peers",
+      "senior": "Adjacent team without authority",
+      "manager": "Own team + structural changes",
+      "exec": "Org-level mechanism adopted elsewhere"
+    },
+    {
+      "signal": "Use of data or structure",
+      "junior": "Simple connection to metric",
+      "senior": "Latency data + pilot",
+      "manager": "Impact map + promotions",
+      "exec": "Pulse survey + council tied to customer metric"
+    },
+    {
+      "signal": "Handling of underperformance signals",
+      "junior": "Paired on wins",
+      "senior": "Proposed rotation after TL buy-in",
+      "manager": "Skip-levels then promotions",
+      "exec": "Created rotating ownership model"
+    },
+    {
+      "signal": "Sustainability of outcome",
+      "junior": "Milestone hit",
+      "senior": "Process kept after pilot",
+      "manager": "Two promotions",
+      "exec": "Model scaled to other groups"
+    },
+    {
+      "signal": "Personal cost absorbed",
+      "junior": "Paired time",
+      "senior": "Took first shift",
+      "manager": "Protected week from existing rituals",
+      "exec": "Designed council to run without constant exec involvement"
+    }
+  ],
+  "kind": "competency"
+}

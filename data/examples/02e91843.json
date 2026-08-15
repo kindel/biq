@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address. How did you select an alternative approach? What alternative approach(es) did you consider? What was the end result? What was the impact?",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a data sync bug between two services where the standard retry loop kept timing out under load. I considered just increasing the timeout but that would mask the real issue. Instead I wrote a small batching script that grouped updates and ran them in one call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you pick that over other options?"
+        },
+        {
+          "role": "candidate",
+          "text": "I timed both approaches on a test dataset and the batch version cut calls by 70 percent. End result was syncs completed in under 30 seconds instead of failing. My manager had me document it so the team reused the pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: data sync bug, standard retry loop failing under load",
+        "Actions: evaluated timeout increase vs batching, timed both on test data",
+        "Outcome: 70% fewer calls, syncs under 30s, documented for reuse",
+        "Quote: \"I timed both approaches on a test dataset\"",
+        "Follow-up: How did you pick that over other options? -> chose based on measured call reduction"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for junior level. The candidate described a local data-sync bug where the standard retry loop failed and chose to test a batching alternative after measuring both options. Quote: \"I timed both approaches on a test dataset and the batch version cut calls by 70 percent.\" This shows they moved past the obvious fix and produced a reusable pattern. The impact stayed within their own work but they shared the solution. Biggest strength is the simple measurement step that let them select the alternative. Gap is limited scope, which is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a sync issue and the usual retry kept failing. I just increased the timeout like we always do and it eventually worked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any other options?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the timeout change was the quickest fix and it passed QA."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: sync bug, standard retry failing",
+        "Actions: increased timeout as the usual fix",
+        "Outcome: eventually worked, passed QA",
+        "Quote: \"the timeout change was the quickest fix\"",
+        "Follow-up: Did you look at any other options? -> no other options considered"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for junior level. The candidate stayed with the standard timeout increase when the retry loop failed and gave no evidence of considering alternatives. Quote: \"the timeout change was the quickest fix and it passed QA.\" They did not measure or test other approaches. The result was local and temporary. Biggest gap is absence of any invention or simplification step. This signals they default to the existing pattern without questioning it."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating customer profile updates and causing consistency errors. The usual approach of adding more validation checks had already been tried and didn't scale. I proposed a shared event-driven update service instead of each team owning its own copy."
+        },
+        {
+          "role": "interviewer",
+          "text": "What alternatives did you evaluate?"
+        },
+        {
+          "role": "candidate",
+          "text": "We looked at a central database plus an API gateway versus the event bus. The event bus won on latency and reduced cross-team coordination. After rollout, duplicate updates dropped 85 percent and both teams stopped maintaining separate sync code."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: two teams duplicating profile updates, validation checks already failed",
+        "Actions: evaluated central DB/API vs event-driven service, picked event bus on latency and reduced coordination",
+        "Outcome: 85% drop in duplicates, teams stopped maintaining separate sync code",
+        "Quote: \"The event bus won on latency and reduced cross-team coordination\"",
+        "Follow-up: What alternatives did you evaluate? -> central DB vs event bus comparison"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for senior level. The candidate replaced duplicated profile-update logic across teams with a shared event-driven service after comparing it to a central database option. Quote: \"The event bus won on latency and reduced cross-team coordination.\" Duplicate updates fell 85 percent and two teams removed their own sync code. The story shows cross-team impact and a clear decision framework. Biggest strength is the measurable reduction in duplicated effort. Gap is modest on long-term ownership of the new service.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had duplicate updates across teams so I added stricter validation in each service like we had done before. It reduced some errors but teams still maintained their own logic."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why not consider a shared service?"
+        },
+        {
+          "role": "candidate",
+          "text": "That would have required more coordination and we didn't have bandwidth."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: duplicate updates across teams",
+        "Actions: added stricter validation in each service",
+        "Outcome: some errors reduced but teams kept separate logic",
+        "Quote: \"That would have required more coordination and we didn't have bandwidth\"",
+        "Follow-up: Why not consider a shared service? -> coordination concern blocked exploration"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for senior level. The candidate applied more validation inside each team's code when duplicate updates occurred and did not explore a shared service. Quote: \"That would have required more coordination and we didn't have bandwidth.\" No alternatives were measured or prototyped. The result left duplicated effort in place. Biggest gap is the absence of any attempt to simplify across team boundaries. This signals limited willingness to invent beyond the current pattern."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending 30 percent of sprint time on manual deployment checks that kept failing in new environments. The usual process of adding more runbooks wasn't helping new hires. I had the team build a self-service validation tool that codified the checks and let any engineer run them locally."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team land on that solution?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a two-week spike comparing runbook updates versus automation. The automation path showed 4x faster onboarding in the pilot. After launch, deployment-related tickets fell 60 percent and the team reclaimed roughly one day per sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: team losing 30% sprint time to manual deployment checks",
+        "Actions: ran spike comparing runbooks vs self-service validation tool, chose automation on onboarding speed",
+        "Outcome: 60% drop in tickets, one day per sprint reclaimed",
+        "Quote: \"The automation path showed 4x faster onboarding in the pilot\"",
+        "Follow-up: How did the team land on that solution? -> two-week spike with clear metrics"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for manager level. The candidate replaced manual deployment checks with a self-service validation tool after the team ran a measured spike against more runbooks. Quote: \"The automation path showed 4x faster onboarding in the pilot.\" Deployment tickets dropped 60 percent and the team gained a day per sprint. The story shows leverage through the team and a repeatable process for choosing the alternative. Biggest strength is the direct tie from invention to team capacity. Gap is limited visibility into whether the tool scaled beyond the immediate org.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Deployment checks were taking too much time so I asked the team to update the runbooks with more detail. It helped a little but new engineers still needed a lot of hand-holding."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team consider automating any of the checks?"
+        },
+        {
+          "role": "candidate",
+          "text": "We talked about it but decided the runbook updates were lower risk."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: deployment checks consuming team time",
+        "Actions: asked team to add more detail to runbooks",
+        "Outcome: minor improvement, hand-holding still required",
+        "Quote: \"We talked about it but decided the runbook updates were lower risk\"",
+        "Follow-up: Did the team consider automating any of the checks? -> automation deprioritized for lower risk"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for manager level. The candidate directed the team to expand runbooks when deployment checks consumed time and did not pursue automation. Quote: \"We talked about it but decided the runbook updates were lower risk.\" No prototype or measurement of an alternative approach occurred. The outcome left the original time sink largely intact. Biggest gap is the manager's choice to reinforce the existing process instead of creating leverage through a simpler tool. This signals risk-averse leadership on simplification."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our global ops cost was growing faster than revenue because every region ran its own capacity-planning process. The usual approach of tighter central forecasting had already been tried twice. I sponsored a single planning platform that let regions input local signals while a shared model produced the final allocation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you evaluate?"
+        },
+        {
+          "role": "candidate",
+          "text": "We compared a fully centralized model versus the hybrid platform on forecast accuracy and regional autonomy. The hybrid won on both and cut planning cycle time from six weeks to ten days. Within a year, ops cost growth slowed to match revenue growth and two regional planning teams were redeployed to product work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: global ops cost growing faster than revenue due to duplicated regional planning",
+        "Actions: evaluated centralized vs hybrid platform on accuracy and autonomy, chose hybrid",
+        "Outcome: planning cycle from 6 weeks to 10 days, ops cost growth matched revenue, two teams redeployed",
+        "Quote: \"The hybrid won on both and cut planning cycle time from six weeks to ten days\"",
+        "Follow-up: What trade-offs did you evaluate? -> accuracy vs autonomy comparison"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for exec level. The candidate replaced duplicated regional capacity planning with a hybrid platform after comparing it to a fully centralized model. Quote: \"The hybrid won on both and cut planning cycle time from six weeks to ten days.\" Planning cycles dropped from six weeks to ten days, ops cost growth aligned with revenue, and two teams were redeployed. The story shows org-level leverage and clear strategic trade-offs. Biggest strength is the long-term capacity shift to product work. Gap is thin detail on how regional adoption resistance was handled.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Regional planning costs were rising so I pushed for stricter central forecasts like we had done before. Accuracy improved slightly but regions still ran parallel processes."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why stay with the central-forecast model?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was the lowest-disruption option and we already had the forecasting team in place."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address...",
+        "Situation: rising regional planning costs",
+        "Actions: pushed stricter central forecasts",
+        "Outcome: slight accuracy gain, parallel processes remained",
+        "Quote: \"It was the lowest-disruption option and we already had the forecasting team in place\"",
+        "Follow-up: Why stay with the central-forecast model? -> lowest-disruption rationale"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for exec level. The candidate reinforced the existing central-forecast process when regional planning costs grew and did not explore a platform alternative. Quote: \"It was the lowest-disruption option and we already had the forecasting team in place.\" No new model or structural simplification was tested. The outcome left duplicated effort untouched. Biggest gap is the executive's focus on minimizing change rather than inventing a simpler operating model. This signals limited strategic appetite for simplification at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of invention",
+      "junior": "Local bug fix with measured alternative",
+      "senior": "Cross-team duplication removed via shared service",
+      "manager": "Team process automated, capacity reclaimed",
+      "exec": "Org-wide planning platform, teams redeployed"
+    },
+    {
+      "signal": "Decision process",
+      "junior": "Simple timing of two options",
+      "senior": "Latency and coordination metrics",
+      "manager": "Two-week spike with onboarding metric",
+      "exec": "Accuracy vs autonomy trade-off at scale"
+    },
+    {
+      "signal": "Evidence of simplification",
+      "junior": "70% fewer calls, documented pattern",
+      "senior": "Teams stopped maintaining duplicate code",
+      "manager": "One day per sprint returned to team",
+      "exec": "Planning cycle 6 weeks to 10 days, cost growth matched revenue"
+    },
+    {
+      "signal": "Handling of usual approach failure",
+      "junior": "Tested batching after retry failed",
+      "senior": "Validation checks already tried, moved to events",
+      "manager": "Runbooks already expanded, built tool instead",
+      "exec": "Central forecasting tried twice, built hybrid platform"
+    },
+    {
+      "signal": "Impact ownership",
+      "junior": "Shared with immediate team",
+      "senior": "Reduced work for two teams",
+      "manager": "Team capacity and ticket reduction",
+      "exec": "Org cost alignment and team redeployment"
+    }
+  ],
+  "kind": "lp"
+}

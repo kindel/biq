@@ -1,0 +1,257 @@
+{
+  "question": "Tell me about a situation that required you to dig deep to get to the root cause. How did you know you were focusing on the right things? What was the outcome? Would you have done anything differently?",
+  "competency": "Dive Deep",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was debugging a latency spike in our checkout service that only happened on Tuesdays. I started by adding more logging around the payment call, then noticed a pattern tied to a third-party API retry. I cross-checked the timestamps in our logs against the vendor dashboard and found the root was a config mismatch in our retry logic that only surfaced under their maintenance window."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know you were on the right track?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a small test script that reproduced the exact error rate from the logs and confirmed the fix dropped it to zero before deploying."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have checked the vendor status page earlier instead of assuming it was our code."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a situation that required you to dig deep...",
+        "- Individual bug in checkout service, added logging then matched timestamps to vendor window",
+        "- Validated focus by writing repro script that matched prod error rate",
+        "Quote: 'I would have checked the vendor status page earlier'",
+        "Follow-up: How did you know you were on the right track? -> test script confirmation"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at junior level. The candidate owned an individual debugging task end-to-end, used concrete data (logs and repro script) to stay focused, and could articulate a clear retrospective. The story stayed local but showed ownership and willingness to learn from the missed vendor check. Biggest strength is the explicit validation step with the test script; the main gap is lack of any cross-team coordination, which is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a bug where the page loaded slow sometimes. I looked at the code for a while and tried a few changes until it got better."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to focus on?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just tried the obvious things first and asked my teammate what they thought."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a situation...",
+        "- Vague 'page loaded slow' with no metrics or timeline",
+        "- No clear root cause identified, just 'tried changes until better'",
+        "Follow-up: How did you decide what to focus on? -> asked teammate, no personal validation method"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at junior level. The candidate could not describe a specific root cause or how they narrowed the problem space, relying on trial-and-error and teammate input without evidence of their own analysis. No outcome metrics or retrospective were provided. The core gap is absence of any structured validation method, which is a basic expectation even for 0-2 years of experience."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our recommendation service showed a 15% drop in CTR after a dependency update. I pulled the full request trace across three services, correlated it with the change log, and isolated the issue to a new feature flag that altered ranking weights only for a subset of users."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm you were focused correctly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I built a dashboard comparing CTR before and after the flag for the affected cohort versus control, then got the owning team to acknowledge the regression in their metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved the ranking team 24 hours earlier instead of debugging in isolation for two days."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a situation that required you to dig deep...",
+        "- Cross-service CTR regression after dependency update, used full trace and change log",
+        "- Validated with before/after dashboard shared with owning team",
+        "Quote: 'I would have involved the ranking team 24 hours earlier'",
+        "Follow-up: How did you confirm focus? -> cohort dashboard and team acknowledgment"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at senior level. The candidate drove a multi-service investigation, used quantitative cohort analysis to stay on track, and influenced the owning team without authority. The two-day isolation period shows a minor coordination gap but the outcome (identified root cause and shared dashboard) demonstrates the expected scope and influence. Biggest strength is the clear data-driven validation method.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a performance issue after a release. I spent time looking through logs across services until I found a suspicious query."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know that query was the real cause?"
+        },
+        {
+          "role": "candidate",
+          "text": "It looked different from the others so I flagged it to the team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a situation...",
+        "- Vague multi-service performance issue, no metrics or timeline given",
+        "- No validation method beyond 'looked different'",
+        "Follow-up: How did you know that query was the real cause? -> flagged to team, no data or repro"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at senior level. The candidate described a cross-service problem but provided neither metrics nor a repeatable validation method, defaulting to subjective judgment and escalation. No evidence of influencing another team or driving to a quantified outcome. The primary gap is lack of the data rigor and cross-team coordination expected at 3-7 years."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned a checkout conversion drop that affected two pods. I had the engineers instrument the full funnel, then ran a structured root-cause session where we mapped every hypothesis to data. We discovered a downstream inventory service was returning stale stock under high load."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep the team focused?"
+        },
+        {
+          "role": "candidate",
+          "text": "I required every hypothesis to have a measurable signal before we spent time on it, and I checked in daily with the inventory team lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have pulled the inventory team into the initial mapping session rather than treating them as a handoff."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a situation...",
+        "- Team-owned conversion drop across two pods, used funnel instrumentation and hypothesis mapping",
+        "- Kept focus via measurable signals and daily cross-team check-ins",
+        "Quote: 'I would have pulled the inventory team into the initial mapping session'",
+        "Follow-up: How did you keep the team focused? -> required measurable signals per hypothesis"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at manager level. The candidate created a repeatable process (hypothesis-to-signal mapping) that scaled across the team and drove cross-team coordination to a clear root cause. Daily check-ins and the retrospective on involving the inventory team earlier show both leverage and people development. The story stays grounded in team outcomes rather than individual heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team had a conversion issue. I asked them to investigate and they eventually found a stale cache in another service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you guide their focus?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked in every few days and made sure they were making progress."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a situation...",
+        "- Team conversion issue with no details on process or metrics",
+        "- Guidance limited to periodic check-ins, no structured method",
+        "Follow-up: How did you guide their focus? -> checked in every few days"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at manager level. The candidate delegated the investigation without establishing any process for focus or validation, resulting in passive oversight rather than active coaching. No evidence of developing the team's analytical skills or creating leverage through structured methods. The core gap is absence of any repeatable team-level approach to root cause work."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We saw a sustained 8% revenue impact from increased failed payments across two regions. I commissioned a cross-org working group with finance, risk, and product to map the full payment funnel against macro indicators. The analysis showed the root was a policy change in one acquiring bank that only appeared after we expanded volume in that market."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the working group stayed on the highest-leverage questions?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set a weekly review where every workstream had to tie its findings back to the revenue delta and stop if the signal was below a threshold."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have engaged the acquiring bank directly in week one instead of waiting for internal data to converge."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a situation...",
+        "- Org-level 8% revenue impact from failed payments, cross-org working group with finance/risk/product",
+        "- Weekly threshold reviews tied every workstream to revenue delta",
+        "Quote: 'I would have engaged the acquiring bank directly in week one'",
+        "Follow-up: How did you know the working group stayed on the highest-leverage questions? -> revenue-tied thresholds"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at exec level. The candidate framed an ambiguous, high-stakes business problem, created a governance mechanism (revenue-tied thresholds) to keep the org focused, and identified a strategic external root cause. The one-week delay in bank engagement is a clear retrospective that shows long-term judgment. Scope and leverage are at the right altitude.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a payment issue hurting revenue. I asked the teams to dig in and after a few weeks we traced it to a bank policy."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you ensure the work stayed focused on the biggest drivers?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed updates in staff meetings and redirected when things seemed off track."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a situation...",
+        "- Revenue payment issue with no quantified scope or process",
+        "- Oversight via staff meeting updates only, no structured prioritization",
+        "Follow-up: How did you ensure focus on biggest drivers? -> redirected in meetings when off track"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at exec level. The candidate described a material business problem but provided no mechanism for maintaining organizational focus or validating the highest-leverage paths. Oversight reduced to periodic redirection without data thresholds or cross-org governance. The primary gap is lack of the strategic process and external stakeholder judgment expected at this level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Validation method used",
+      "junior": "Repro script or log correlation",
+      "senior": "Cohort dashboard shared with owners",
+      "manager": "Hypothesis-to-signal mapping process",
+      "exec": "Weekly revenue-tied thresholds"
+    },
+    {
+      "signal": "Scope of investigation",
+      "junior": "Single service or local bug",
+      "senior": "Multi-service with cross-team data",
+      "manager": "Team-owned funnel across pods",
+      "exec": "Org-level revenue with external root cause"
+    },
+    {
+      "signal": "Coordination approach",
+      "junior": "Asked mentor or teammate",
+      "senior": "Influenced owning team via shared metrics",
+      "manager": "Daily check-ins with peer leads",
+      "exec": "Commissioned working group with threshold governance"
+    },
+    {
+      "signal": "Retrospective quality",
+      "junior": "Would check vendor page earlier",
+      "senior": "Would involve ranking team 24h sooner",
+      "manager": "Would include inventory team in initial mapping",
+      "exec": "Would engage bank in week one"
+    },
+    {
+      "signal": "Outcome articulation",
+      "junior": "Error rate dropped to zero",
+      "senior": "CTR regression confirmed and owned",
+      "manager": "Conversion root cause identified by team",
+      "exec": "8% revenue impact traced to bank policy"
+    }
+  ],
+  "kind": "lp"
+}

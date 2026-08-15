@@ -1,0 +1,238 @@
+{
+  "question": "Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+  "competency": "Teamwork & Collaboration",
+  "principle": "Teamwork & Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I wanted to use a new library for the UI layer but the team had already standardized on an older one. I built a quick prototype showing the benefits and shared it in our standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team lead explained the maintenance burden and we agreed to stick with the standard. I refactored my work to match and documented the tradeoffs so the next person wouldn\u2019t repeat the research."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that feel?"
+        },
+        {
+          "role": "candidate",
+          "text": "At first disappointing, but I learned the value of team consistency over individual preference."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: New grad on first feature team; preferred new UI library vs team standard.",
+        "Action: Built quick prototype, presented in standup, then accepted decision and refactored.",
+        "Outcome: Switched to standard approach; added tradeoff doc for future reference.",
+        "Quote: \u201cI learned the value of team consistency over individual preference.\u201d",
+        "Follow-up: Asked what happened next and how it felt; candidate showed quick acceptance and learning."
+      ],
+      "raiseFeedback": "Raises the bar for Junior on Teamwork & Collaboration. The candidate described a realistic first-project situation where they advocated once then fully aligned. They explicitly refactored their own code and added documentation rather than holding a grudge. The follow-up answers showed they understood the trade-off was about maintenance, not personal preference. This demonstrates coachability and local ownership without overclaiming impact. Biggest strength: clear acceptance of the team decision and turning it into a reusable artifact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I really wanted to use a new framework but the team said no so I just did what they asked even though I knew it was worse."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share your reasoning with anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just moved on and finished my tickets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: Individual contributor on first project.",
+        "Action: Wanted new framework, team said no, candidate complied without discussion.",
+        "Outcome: Finished tickets but no further engagement or learning captured.",
+        "Quote: \u201cI just moved on and finished my tickets.\u201d",
+        "Follow-up: Asked if reasoning was shared; candidate had not advocated or asked why."
+      ],
+      "lowerFeedback": "Lowers the bar for Junior on Teamwork & Collaboration. The story shows passive compliance rather than any attempt to understand the team\u2019s constraints. No evidence of ownership after the decision or of learning from the situation. The follow-up revealed the candidate did not even raise their concerns, which misses the coachability signal expected at this level. Biggest gap: absence of curiosity about why the team chose the other path."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed to integrate our services but my preferred API design was more flexible while theirs was simpler. I ran a short design review with both teams and we landed on a middle path that added one extra endpoint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Integration shipped two weeks later than I hoped but with fewer support tickets than either original proposal. I wrote the shared client library so both teams could move faster."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: Senior on cross-team integration; preferred flexible API vs simpler design from other team.",
+        "Action: Ran joint design review, accepted middle path, then built shared client library.",
+        "Outcome: Shipped with fewer support tickets; library helped both teams.",
+        "Quote: \u201cIntegration shipped two weeks later than I hoped but with fewer support tickets.\u201d",
+        "Follow-up: Asked about result; candidate tied compromise to measurable downstream impact."
+      ],
+      "raiseFeedback": "Raises the bar for Senior on Teamwork & Collaboration. The candidate drove a cross-team discussion and accepted a compromise that was not their first choice. They then created leverage for both teams by shipping a shared library. The outcome metric (support tickets) shows they cared about the broader result rather than their design preference. Follow-up answers stayed grounded in the actual delivery. Biggest strength: turning a compromise into a reusable artifact that benefited the wider group.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a better design in mind but the other team wouldn\u2019t budge so we used theirs and I complained about it in our retro."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to find common ground?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent one email with my proposal and when they didn\u2019t reply I dropped it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: Senior working with another team on integration.",
+        "Action: Sent one proposal email, received no reply, used their design anyway.",
+        "Outcome: Used other team\u2019s approach and voiced frustration in internal retro only.",
+        "Quote: \u201cI sent one email with my proposal and when they didn\u2019t reply I dropped it.\u201d",
+        "Follow-up: Asked if common ground was sought; candidate stopped after single unsuccessful attempt."
+      ],
+      "lowerFeedback": "Lowers the bar for Senior on Teamwork & Collaboration. The candidate made a single low-effort attempt and then disengaged. No evidence of influence without authority or of helping the other team understand trade-offs. The only action after the decision was internal complaining. Biggest gap: lack of persistence or creativity in finding alignment across teams."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to adopt a new process that would slow another team\u2019s deliverables. I met with that team\u2019s manager, heard their constraints, and we adjusted the rollout so only one squad piloted first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were disappointed at first. I explained the dependency and asked two engineers to help document the pilot results so the other team could adopt faster later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: Manager balancing own team\u2019s process change against another team\u2019s velocity.",
+        "Action: Met peer manager, limited pilot to one squad, had engineers document results.",
+        "Outcome: Pilot ran without blocking the partner team; documentation created for future scaling.",
+        "Quote: \u201cI explained the dependency and asked two engineers to help document the pilot results.\u201d",
+        "Follow-up: Asked how team reacted; candidate addressed disappointment by creating ownership for engineers."
+      ],
+      "raiseFeedback": "Raises the bar for Manager on Teamwork & Collaboration. The manager protected a peer team\u2019s delivery while still giving their own team a path forward. They involved engineers in creating the documentation, turning a constraint into team development. The story shows leverage through coordination rather than heroics. Follow-up revealed they handled internal disappointment directly. Biggest strength: using the compromise to build cross-team artifacts and grow their own people.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to change our process but it would have impacted another team so I told my team we couldn\u2019t do it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just made the call to avoid the conflict."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: Manager facing cross-team process conflict.",
+        "Action: Unilaterally decided against the change without consulting the other team.",
+        "Outcome: Team change blocked; no exploration of partial rollout or mitigation.",
+        "Quote: \u201cI just made the call to avoid the conflict.\u201d",
+        "Follow-up: Asked if other team was consulted; candidate avoided the conversation entirely."
+      ],
+      "lowerFeedback": "Lowers the bar for Manager on Teamwork & Collaboration. The manager avoided the cross-team discussion and simply shut down their own team\u2019s idea. No attempt to create leverage or find a scoped path forward. The decision protected short-term peace at the expense of team learning. Biggest gap: failure to model the coordination behavior expected of a manager."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product lines had conflicting roadmaps that would have required duplicating platform work. I facilitated a joint planning session with both GMs and we agreed to sequence one major initiative behind the other."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We avoided roughly six months of duplicated effort. The second product line used the first\u2019s learnings and launched with higher quality. I made sure both teams presented the joint decision in their all-hands so the rationale was transparent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: Exec resolving roadmap conflict between two product lines.",
+        "Action: Ran joint GM planning session, sequenced initiatives, ensured transparent communication.",
+        "Outcome: Avoided six months duplication; second launch benefited from first\u2019s learnings.",
+        "Quote: \u201cWe avoided roughly six months of duplicated effort.\u201d",
+        "Follow-up: Asked about longer-term impact; candidate tied decision to org-level efficiency and quality."
+      ],
+      "raiseFeedback": "Raises the bar for Exec on Teamwork & Collaboration. The executive surfaced an org-level duplication risk and created a forum for two GMs to align. They protected long-term leverage by sequencing work and ensured the decision was explained broadly. The outcome metric (six months saved) reflects strategic judgment rather than local wins. Follow-up answers stayed at the business-impact level. Biggest strength: converting a compromise into reusable platform learning across product lines.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams had overlapping work but I let each keep their own plan because forcing alignment would have taken too much political capital."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ended up with two similar features and higher support load, but at least nobody was unhappy with the process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of a time you had to compromise your preferred approach to align with the team\u2019s direction.",
+        "Role: Exec facing overlapping roadmaps.",
+        "Action: Avoided forcing alignment to preserve relationships.",
+        "Outcome: Duplicated features shipped; higher long-term support cost accepted.",
+        "Quote: \u201cWe ended up with two similar features and higher support load, but at least nobody was unhappy with the process.\u201d",
+        "Follow-up: Asked about cost; candidate accepted duplication as the price of avoiding conflict."
+      ],
+      "lowerFeedback": "Lowers the bar for Exec on Teamwork & Collaboration. The executive chose short-term harmony over addressing org-level duplication. No attempt to create a forum or trade-off discussion at the right level. The outcome explicitly accepted higher support load as acceptable. Biggest gap: absence of strategic judgment on when to spend political capital for long-term efficiency."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Advocacy then alignment",
+      "junior": "Raises: built prototype then fully switched and documented",
+      "senior": "Raises: ran joint review and built shared library",
+      "manager": "Raises: scoped pilot and involved engineers in mitigation",
+      "exec": "Raises: created joint GM session and sequenced work"
+    },
+    {
+      "signal": "Cross-boundary impact",
+      "junior": "N/A at this level",
+      "senior": "Raises: reduced support tickets for both teams",
+      "manager": "Raises: protected peer team velocity while enabling own team",
+      "exec": "Raises: avoided six months of org duplication"
+    },
+    {
+      "signal": "Handling disappointment",
+      "junior": "Raises: accepted decision and learned consistency value",
+      "senior": "Lowers: voiced frustration only in internal retro",
+      "manager": "Raises: explained dependency and created ownership for engineers",
+      "exec": "Lowers: accepted duplication to avoid political cost"
+    },
+    {
+      "signal": "Persistence after initial pushback",
+      "junior": "Lowers: never asked why",
+      "senior": "Lowers: stopped after one email",
+      "manager": "Lowers: made unilateral call without conversation",
+      "exec": "Lowers: avoided alignment discussion entirely"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,218 @@
+{
+  "question": "Give me an example of when you submitted a great idea to your manager and they did not support it. What was the idea? How did you handle the lack of support?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested adding a simple validation step to our onboarding script to catch bad data earlier. My manager said it was out of scope for the sprint. I asked what the priority trade-off was, then implemented a one-off check on my own time to prove the value."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you showed the results?"
+        },
+        {
+          "role": "candidate",
+          "text": "He still didn't add it to the backlog, but I documented the findings and moved on. I learned to bring data earlier next time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Proposed validation step in onboarding script; manager said out of scope",
+        "Asked for priority context, ran one-off test on own time",
+        "Outcome: documented findings, accepted decision",
+        "Quote: 'I learned to bring data earlier next time'",
+        "Follow-up: Asked what happened after showing results; candidate moved on without pushing further"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate proposed a concrete, scoped improvement and responded to the rejection by seeking context rather than arguing. They executed a low-cost experiment and accepted the outcome once the manager stayed firm. This shows basic backbone paired with coachability. The story stays local to their own work, which matches the level. Biggest gap is lack of any attempt to understand the broader sprint constraints before acting.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to refactor the whole login flow because it was messy. Manager said no, focus on the ticket. I just did the ticket and didn't bring it up again."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share any data or impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured they knew the code better."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Wanted to refactor login flow; manager said focus on ticket",
+        "Did the assigned work and dropped the idea",
+        "Quote: 'I figured they knew the code better'",
+        "Follow-up: Asked if data was shared; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate surfaced an idea but provided no supporting detail and immediately accepted the rejection without any clarifying questions. They treated the manager's decision as final without showing any ownership of the disagreement. The story demonstrates compliance rather than backbone. Biggest gap is zero evidence of learning or follow-up action after the conversation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I proposed shifting our alerting thresholds based on customer segment data to reduce noise for the top 20 accounts. My manager worried it would increase risk. I pulled six months of incidents, ran the numbers with the on-call team, and presented a phased rollout plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the final no?"
+        },
+        {
+          "role": "candidate",
+          "text": "I committed to the existing thresholds but asked to revisit after the next quarter's review. We ended up adopting a lighter version two months later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Suggested segment-based alerting thresholds; manager cited risk",
+        "Built data set with on-call team and proposed phased plan",
+        "Outcome: committed to original approach but revisited later and won partial adoption",
+        "Quote: 'We ended up adopting a lighter version two months later'",
+        "Follow-up: Asked how they handled the final no; candidate showed commitment plus persistence"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used cross-team data and a concrete rollout plan to push back, then fully committed once the decision was made while keeping the door open for later review. This demonstrates influence without authority and the ability to disagree productively. The partial win two months later shows judgment on when to let go. Biggest strength is the combination of persistence and eventual commitment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to change our deployment process to require two reviewers. Manager said it would slow things down. I argued a couple times in standup but eventually just stopped bringing it up."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve anyone else or run a pilot?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it felt like it wasn't worth the political capital."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Proposed two-reviewer deployment; manager worried about speed",
+        "Argued in standup then dropped the topic",
+        "Quote: 'It felt like it wasn't worth the political capital'",
+        "Follow-up: Asked about pilot or other involvement; candidate did neither"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate raised a reasonable process idea but treated disagreement as a one-time debate rather than building support or data. They stopped advocating without committing to the chosen path or documenting the trade-off. The story shows neither sustained influence nor clear commitment. Biggest gap is lack of any attempt to test the idea with a small group before escalating."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team proposed moving to a shared service model for infra requests. My manager wanted to keep the current embedded model. I had the team run a two-week time study, shared the results with peer managers, and asked for a joint decision in the next staff meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the model stayed the same?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the team we would fully support the embedded approach and redirected their energy to improving ticket quality instead. Two quarters later the data still favored the change and we revisited it successfully."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Team wanted shared infra service model; manager kept embedded",
+        "Ran time study and aligned with peer managers before staff meeting",
+        "Outcome: committed the team to the chosen model while keeping data alive for later",
+        "Quote: 'I told the team we would fully support the embedded approach'",
+        "Follow-up: Asked what happened after decision stayed the same; candidate protected team focus and revisited later"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used team data and peer alignment to surface the disagreement, then explicitly committed their team to the final decision while preserving the option to revisit. This protects team energy and models commitment. The later successful revisit shows strategic patience. Biggest strength is translating a rejected idea into a clear team directive without losing momentum.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team suggested a new staffing model. My manager said it was too risky. I told the team the idea was rejected and we moved on to other work."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you explain the decision to the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just said leadership wasn't ready for it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Team proposed new staffing model; manager called it risky",
+        "Passed the rejection down without further advocacy or data",
+        "Quote: 'I just said leadership wasn't ready for it'",
+        "Follow-up: Asked how decision was explained; candidate gave no context or ownership"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate relayed the rejection without any attempt to gather supporting evidence or align stakeholders. They provided the team with no context or rationale, which weakens both backbone and commitment. The story shows passive acceptance rather than leadership. Biggest gap is failure to turn the disagreement into a learning moment for the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I recommended spinning out a new product line using existing infrastructure to capture an adjacent market. The CEO felt it would dilute focus. I commissioned an external market analysis and built a P&L model with finance, then presented three scenarios including a minimal viable version."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the organization after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I publicly supported the decision to stay focused on the core business and redirected all resources accordingly. Eighteen months later the market data had shifted and we launched a scoped version with board support."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Proposed spinning out adjacent product line; CEO worried about dilution",
+        "Used external analysis and finance model with three scenarios",
+        "Outcome: committed publicly to core focus and later launched scoped version",
+        "Quote: 'I publicly supported the decision to stay focused on the core business'",
+        "Follow-up: Asked how organization was aligned after decision; candidate redirected resources and kept data for future"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate escalated a strategic idea with rigorous external and financial analysis, then fully committed the organization to the chosen direction while preserving optionality. The later successful launch demonstrates long-term judgment. This shows backbone at the business level without undermining leadership. Biggest strength is the ability to disagree at high ambiguity and still drive alignment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for acquiring a small startup to accelerate our roadmap. The board said no. I continued to mention it in quarterly reviews until they told me to drop it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team and partners react?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some were confused about priorities for a while."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Pushed for startup acquisition; board rejected",
+        "Kept raising the topic in reviews without new data or alternatives",
+        "Quote: 'Some were confused about priorities for a while'",
+        "Follow-up: Asked about team and partner reaction; candidate left confusion unresolved"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate repeatedly surfaced the same idea without adapting the approach or building broader alignment. They failed to commit to the board decision, creating confusion across teams. The story shows persistence without strategic judgment. Biggest gap is lack of any effort to explore alternative paths after the initial rejection."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initial reaction to rejection",
+      "junior": "Seeks clarifying questions before acting",
+      "senior": "Builds data with peers before escalating",
+      "manager": "Aligns stakeholders and protects team energy",
+      "exec": "Commissions external analysis and offers scenarios"
+    },
+    {
+      "signal": "Commitment after decision",
+      "junior": "Documents findings and moves on",
+      "senior": "Commits publicly while keeping door open for revisit",
+      "manager": "Redirects team to chosen path",
+      "exec": "Publicly supports direction and reallocates resources"
+    },
+    {
+      "signal": "Follow-through or escalation",
+      "junior": "One-off experiment on own time",
+      "senior": "Phased plan and later partial adoption",
+      "manager": "Revisited successfully after two quarters",
+      "exec": "Launched scoped version 18 months later with board support"
+    },
+    {
+      "signal": "Impact on others",
+      "junior": "Local to own work",
+      "senior": "Involves on-call team",
+      "manager": "Sets clear team directive",
+      "exec": "Aligns entire organization and board"
+    }
+  ],
+  "kind": "lp"
+}

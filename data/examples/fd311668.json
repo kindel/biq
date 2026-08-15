@@ -1,0 +1,229 @@
+{
+  "question": "Give me an example of a time when you were not able to meet a commitment. What was the commitment and what were the obstacles that prevented success? What was the impact to your customers/peers and what did you learn from it?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I committed to delivering a small feature update by end of sprint. The obstacle was I underestimated the edge cases in testing and hit a blocker on Friday afternoon."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact and how did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "My peer on the adjacent team had to wait an extra day for their integration test. I told them the same day I realized it was at risk, apologized, and gave a revised time. I learned to flag risks 48 hours earlier and to pair with someone on test cases sooner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Missed feature update due to under-estimated edge cases",
+        "Told peer same day, gave new ETA, apologized",
+        "Quote: \"I learned to flag risks 48 hours earlier\"",
+        "Follow-up: Asked about impact - described peer delay and concrete change in behavior"
+      ],
+      "raiseFeedback": "Story shows the candidate owning a local miss on a feature update after under-estimating test cases. They flagged the issue the same day and gave the impacted peer a new date. The learning (flag risks earlier and pair on test cases) is directly tied to the failure. This meets the bar for junior because it demonstrates accountability without deflection and a simple behavior change that prevents recurrence.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I missed a deadline because the requirements kept changing and the PM didn't give me enough time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when you saw the risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I finished what I could and handed it off. I don't think it affected anyone much."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Blamed changing requirements and PM",
+        "No proactive communication mentioned",
+        "Quote: \"I don't think it affected anyone much\"",
+        "Follow-up: Probe on action taken - response stayed vague and externalized cause"
+      ],
+      "lowerFeedback": "Candidate externalized the miss to changing requirements and the PM without describing any action they took to surface the risk. They could not articulate impact to others and offered no personal learning. This lowers the bar for junior because Earn Trust at this level requires owning the outcome and showing you adjusted your own approach rather than attributing failure elsewhere."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I committed to delivering a shared service migration that two other teams depended on for their Q2 launches. The obstacle was an unexpected dependency on a platform change that slipped two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate and what was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I notified both teams the day the slip became clear, walked through the new timeline, and offered to help them de-risk their launches with a phased rollout. One team delayed a non-critical piece; the other shipped on time using the phased approach. I learned to build buffer into cross-team dependencies and to run a joint risk review before committing dates."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Shared service migration for two dependent teams",
+        "Notified same day, offered phased help",
+        "Quote: \"I learned to build buffer into cross-team dependencies\"",
+        "Follow-up: Impact - one team delayed non-critical work, other shipped via phased approach"
+      ],
+      "raiseFeedback": "Candidate described missing a cross-team migration date due to a platform slip and immediately notified the two affected teams with a revised plan and concrete help. The impact was contained to one non-critical delay. The learning (build buffer and run joint risk reviews) shows they adjusted their planning process for future cross-team work. This raises the bar for senior because it demonstrates influence without authority and measurable mitigation of customer impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I missed a date on a service my team owned because another team didn't deliver their part on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about the downstream teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent an update after the fact. They had to adjust their plans but it wasn't a big deal."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Missed date blamed on another team",
+        "Update sent after the fact",
+        "Quote: \"They had to adjust their plans but it wasn't a big deal\"",
+        "Follow-up: Probe on communication timing - response stayed after-the-fact and minimized impact"
+      ],
+      "lowerFeedback": "Candidate attributed the miss entirely to another team and only communicated after the fact. They could not describe any proactive steps or concrete impact mitigation. This lowers the bar for senior because Earn Trust at this level expects the candidate to surface risks early and work across teams to limit downstream damage rather than minimizing the effect after the fact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team committed to a reliability improvement that would reduce customer incidents by 30 percent. A key hire delayed start and two engineers were pulled onto an urgent project, so we missed the target by six weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the impact and the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the customers and peer teams the week the staffing risk materialized, reset expectations, and re-prioritized the remaining work with the team. We still delivered 22 percent reduction. I also started a monthly capacity review with my manager so we don't over-commit when headcount is uncertain. Two engineers later said the transparent reset helped them trust the planning process."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Team missed 30 percent reliability goal due to hiring delay and reallocation",
+        "Reset expectations with customers one week after risk clear",
+        "Quote: \"Started monthly capacity review with my manager\"",
+        "Follow-up: Team reaction - engineers reported increased trust in planning"
+      ],
+      "raiseFeedback": "Candidate owned a team-level miss on a reliability goal caused by staffing shifts, notified customers promptly, and reset the commitment with a revised 22 percent outcome. They also implemented a capacity review process that involved their own manager. The engineers' feedback shows the transparency built trust inside the team. This raises the bar for manager because it shows owning team outcomes, protecting customer trust, and creating a repeatable mechanism to prevent over-commitment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team missed a goal because we lost two people to another project. I told leadership after the quarter closed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for the next planning cycle?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just tried to be more careful with the next set of goals."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Missed goal due to headcount loss",
+        "Informed leadership after quarter closed",
+        "Quote: \"We just tried to be more careful\"",
+        "Follow-up: Process change - vague response with no concrete mechanism"
+      ],
+      "lowerFeedback": "Candidate described a team miss but only informed leadership after the quarter and offered no concrete process change beyond \"be more careful.\" No evidence of early customer communication or team-level learning. This lowers the bar for manager because Earn Trust requires the leader to create mechanisms that protect commitments and develop the team's ability to surface and manage risk."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We committed to a new market launch that would generate $8M in the first year. Supply chain constraints and a regulatory change made the original timeline impossible."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact and what did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the board and sales teams six weeks before the original date, proposed a phased regional rollout starting with the least constrained market, and adjusted the revenue forecast down to $3M in year one. The phased approach still captured early customers and protected partner relationships. I also instituted a quarterly strategic risk review with the CFO and supply chain lead so future bets include explicit trigger points for re-forecasting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Market launch revenue commitment missed due to supply chain and regulatory issues",
+        "Notified board and sales six weeks early, proposed phased rollout",
+        "Quote: \"Instituted quarterly strategic risk review with CFO\"",
+        "Follow-up: Business outcome - captured early customers, protected partners, new $3M forecast"
+      ],
+      "raiseFeedback": "Candidate owned an org-level revenue commitment miss, surfaced the issue six weeks early to the board, and shifted to a phased rollout that still delivered value and protected relationships. They created a standing strategic risk review with finance and supply chain. The outcome shows long-term leverage rather than heroics. This raises the bar for exec because it demonstrates strategic judgment under ambiguity and the creation of durable processes that improve future decision quality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We missed a market launch date because of external factors outside our control. We updated the board after the original date passed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process did you put in place afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reviewed the specific issues in the post-mortem and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of missing a commitment...",
+        "Missed launch blamed on external factors",
+        "Board notified after original date",
+        "Quote: \"We reviewed the specific issues in the post-mortem and moved on\"",
+        "Follow-up: Systemic change - no ongoing mechanism described"
+      ],
+      "lowerFeedback": "Candidate attributed the miss to external factors and only informed the board after the date had passed. The only follow-up was a one-time post-mortem with no structural change. This lowers the bar for exec because Earn Trust at this level requires early transparency with stakeholders and the creation of mechanisms that reduce ambiguity on future high-stakes bets."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Timing of communication",
+      "junior": "Same day risk identified",
+      "senior": "Same day with cross-team mitigation offer",
+      "manager": "One week after risk clear, with customer reset",
+      "exec": "Six weeks early with board and revised forecast"
+    },
+    {
+      "signal": "Ownership vs external blame",
+      "junior": "Owns under-estimation",
+      "senior": "Owns planning gap on dependencies",
+      "manager": "Owns team staffing and commitment process",
+      "exec": "Owns org-level forecast and risk process"
+    },
+    {
+      "signal": "Impact described",
+      "junior": "Single peer delay",
+      "senior": "Two teams, one non-critical delay",
+      "manager": "Customers and peer teams, 22 percent still delivered",
+      "exec": "Board, sales, partners; $3M vs $8M with phased value captured"
+    },
+    {
+      "signal": "Learning turned into mechanism",
+      "junior": "Personal behavior change (flag earlier)",
+      "senior": "Buffer and joint risk review",
+      "manager": "Monthly capacity review with manager",
+      "exec": "Quarterly strategic risk review with CFO"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Individual task",
+      "senior": "Cross-team",
+      "manager": "Team outcomes and direct reports",
+      "exec": "Org revenue and board stakeholders"
+    }
+  ],
+  "kind": "lp"
+}

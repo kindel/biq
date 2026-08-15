@@ -1,0 +1,330 @@
+{
+  "question": "Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+  "competency": "Decision Making & Judgment",
+  "principle": "Decision Making & Judgment",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "On a small feature I owned, I assumed a simple API change would be best. My mentor suggested checking with two other teams that used the same endpoint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reached out, learned one team had a latency constraint I hadn't considered. I switched to a different approach and documented the reason."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that feel?"
+        },
+        {
+          "role": "candidate",
+          "text": "A bit frustrating at first but it saved rework later. I now ask for input earlier on even small tasks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Role: individual contributor on one feature",
+        "Situation: assumed API change was fine, mentor prompted outreach",
+        "Action: contacted two downstream teams, learned about latency constraint",
+        "Outcome: switched approach and documented decision",
+        "Quote: \"I now ask for input earlier on even small tasks.\"",
+        "Follow-up: Asked how it felt; candidate described initial frustration then learning"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at junior level. The candidate described changing their approach on an individual task after input from two other teams. Quote: \"I now ask for input earlier on even small tasks.\" This shows coachability and local ownership of the outcome. The story stays within expected scope for 0-2 years experience. The main gap is lack of metrics on the impact of the change.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "I usually just go with what I think is right after looking at the requirements."
+        },
+        {
+          "role": "interviewer",
+          "text": "Can you give a specific example?"
+        },
+        {
+          "role": "candidate",
+          "text": "On my last project I picked a library because it was familiar. No one pushed back so I shipped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently now?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe check the docs more carefully next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Candidate states they usually decide alone",
+        "No example of seeking input or changing mind",
+        "Outcome: shipped without external views",
+        "Quote: \"I usually just go with what I think is right\"",
+        "Follow-up: Asked for specific example; candidate stayed at high level and suggested checking docs"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at junior level. The candidate gave no concrete example of seeking input or revising a decision. Quote: \"I usually just go with what I think is right after looking at the requirements.\" This signals limited coachability and weak ownership of learning. The follow-up answer stayed generic instead of showing reflection on a real instance."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "We were choosing a new caching layer. I ran a design review with three teams plus infra and security."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Infra flagged a 40% cost increase I had missed in my model. I switched the recommendation to a simpler in-memory option and tracked the latency win over the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive alignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote the trade-off doc, got written objections from each team, and updated the plan before the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Role: senior IC driving cross-team tech choice",
+        "Situation: caching layer decision",
+        "Action: design review with three teams plus infra and security",
+        "Outcome: changed to cheaper option after cost feedback, tracked latency win",
+        "Quote: \"I wrote the trade-off doc, got written objections from each team\"",
+        "Follow-up: Asked how alignment was driven; candidate described written objections and updated plan"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at senior level. The candidate changed the caching recommendation after infra input revealed a 40% cost increase. Quote: \"I wrote the trade-off doc, got written objections from each team.\" This demonstrates cross-team influence and clear metrics on the revised decision. The story shows the expected scope of impact without authority for a 3-7 year engineer.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "I usually run my ideas by my immediate team before finalizing."
+        },
+        {
+          "role": "interviewer",
+          "text": "Give me a concrete case."
+        },
+        {
+          "role": "candidate",
+          "text": "We picked a new framework after a quick poll in our squad channel. It worked out fine."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone outside the squad weigh in?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we moved fast to hit the deadline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Candidate stays within immediate team",
+        "No example of changing mind or external input",
+        "Outcome: quick poll, shipped on time",
+        "Quote: \"We picked a new framework after a quick poll in our squad channel\"",
+        "Follow-up: Asked if anyone outside weighed in; candidate cited deadline pressure"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at senior level. The candidate described only polling their immediate squad with no evidence of revising the decision. Quote: \"We picked a new framework after a quick poll in our squad channel.\" This lacks the cross-team influence and measurable outcomes expected at 3-7 years. The follow-up revealed speed was prioritized over broader input."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "My team was debating two ways to reduce support tickets. I asked each engineer to interview one support rep and bring data back."
+        },
+        {
+          "role": "interviewer",
+          "text": "What shifted?"
+        },
+        {
+          "role": "candidate",
+          "text": "The data showed the bigger win was better error messages, not the automation path we favored. I changed the roadmap and had the team own the messaging work for two sprints."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers initially pushed back but after seeing the ticket data they volunteered to lead the change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Role: manager letting team gather external data",
+        "Situation: support ticket reduction debate",
+        "Action: each engineer interviewed a support rep",
+        "Outcome: pivoted roadmap to error messages based on data",
+        "Quote: \"I changed the roadmap and had the team own the messaging work for two sprints\"",
+        "Follow-up: Asked team response; candidate described initial pushback then ownership"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at manager level. The candidate changed the team's roadmap after engineers collected data from support reps. Quote: \"I changed the roadmap and had the team own the messaging work for two sprints.\" This shows creating leverage through the team and handling underperformance of the original plan. The story focuses on team outcomes rather than personal heroics.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "I usually decide after reviewing the options with my leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "Walk through a real example."
+        },
+        {
+          "role": "candidate",
+          "text": "We chose to build a new dashboard after my leads agreed it would help. Later support volume stayed flat but we kept the project."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why not adjust?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team had already invested time so we finished it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Input limited to leads",
+        "No change in direction despite flat results",
+        "Outcome: completed project anyway",
+        "Quote: \"The team had already invested time so we finished it\"",
+        "Follow-up: Asked why not adjust; candidate cited sunk cost"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at manager level. The candidate did not revise the dashboard project even after support metrics stayed flat. Quote: \"The team had already invested time so we finished it.\" This shows weak ownership of team outcomes and failure to model changing direction based on data. The story reveals limited ability to develop judgment in the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "We were considering a major market expansion. I commissioned three separate analyses from product, finance, and a regional GM."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed your view?"
+        },
+        {
+          "role": "candidate",
+          "text": "The regional GM's customer interviews showed regulatory risk that would delay revenue by 18 months. I narrowed the scope to one country and delayed the broader rollout by a year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate the shift?"
+        },
+        {
+          "role": "candidate",
+          "text": "I held a leadership offsite, presented the conflicting data sets, and had each function lead vote on the revised plan before announcing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Role: exec evaluating org-level expansion",
+        "Situation: major market expansion",
+        "Action: commissioned three independent analyses including regional GM",
+        "Outcome: narrowed scope after regulatory risk surfaced, delayed rollout",
+        "Quote: \"I held a leadership offsite, presented the conflicting data sets, and had each function lead vote\"",
+        "Follow-up: Asked how shift was communicated; candidate described offsite and function votes"
+      ],
+      "raiseFeedback": "Raises the bar for Decision Making & Judgment at exec level. The candidate narrowed a market expansion after the regional GM analysis revealed an 18-month regulatory delay. Quote: \"I held a leadership offsite, presented the conflicting data sets, and had each function lead vote.\" This reflects strategic judgment under ambiguity and long-term trade-offs at the business level. The story emphasizes leverage through others rather than personal direction.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you sought diverse input before deciding or changed your mind based on new information."
+        },
+        {
+          "role": "candidate",
+          "text": "My staff team reviews big bets before we commit."
+        },
+        {
+          "role": "interviewer",
+          "text": "Describe a specific case where input changed the outcome."
+        },
+        {
+          "role": "candidate",
+          "text": "We moved forward with a new vertical after the staff meeting. One function later raised concerns but we had already announced."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the concerns?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added mitigation workstreams but kept the original timeline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+        "Input gathered but did not alter decision",
+        "Announcement locked in before full views",
+        "Outcome: kept timeline despite concerns",
+        "Quote: \"We added mitigation workstreams but kept the original timeline\"",
+        "Follow-up: Asked how concerns were handled; candidate described adding work without changing scope"
+      ],
+      "lowerFeedback": "Lowers the bar for Decision Making & Judgment at exec level. The candidate kept the original timeline after concerns surfaced post-announcement. Quote: \"We added mitigation workstreams but kept the original timeline.\" This indicates limited strategic flexibility and weak modeling of revising decisions at the org level. The story shows reliance on process over judgment under new information."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual task or feature",
+      "senior": "Cross-team technical choice with metrics",
+      "manager": "Team roadmap and underperformance handling",
+      "exec": "Org-level strategic trade-off with long-term delay"
+    },
+    {
+      "signal": "Evidence of changing mind",
+      "junior": "Switched approach after mentor input",
+      "senior": "Revised caching recommendation after cost data",
+      "manager": "Pivoted team to error messages work",
+      "exec": "Narrowed market expansion after regulatory analysis"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Asked mentor and two teams",
+      "senior": "Written trade-off doc with objections",
+      "manager": "Engineers collected external data",
+      "exec": "Leadership offsite with function votes"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Documented reason locally",
+      "senior": "Tracked latency win over quarter",
+      "manager": "Team owned messaging for two sprints",
+      "exec": "Delayed rollout by one year"
+    }
+  ],
+  "kind": "competency"
+}

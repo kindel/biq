@@ -1,0 +1,446 @@
+:root {
+  --biq-ink: #17202b;
+  --biq-paper: #f6f1e8;
+  --biq-line: #d5cbb8;
+  --biq-muted: #6b6258;
+  --biq-accent: #b85c38;
+  --biq-accent-dark: #8c3f24;
+  --biq-wash: #efe8dc;
+  --biq-raise: #2f5d73;
+  --biq-lower: #b85c38;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--biq-paper);
+  color: var(--biq-ink);
+  font-family: Inter, "Avenir Next", "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+a {
+  color: var(--biq-accent-dark);
+}
+
+a:hover {
+  color: var(--biq-accent);
+}
+
+h1, h2, h3 {
+  font-weight: 650;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+.biq-lede {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 2.75rem 1.25rem 0;
+}
+
+.biq-lede h1 {
+  margin: 0 0 0.7rem;
+  font-size: 2.15rem;
+}
+
+.biq-lede p {
+  margin: 0;
+  color: var(--biq-muted);
+  font-size: 1.15rem;
+}
+
+.biq-back {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 0;
+}
+
+.biq-back a {
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+#biq-ex-question {
+  margin: 0.15rem 0 0;
+  font-size: 1.45rem;
+}
+
+.bhiq-page {
+  padding-bottom: 4rem;
+}
+
+.bhiq-app {
+  max-width: 820px;
+  margin: 2.5rem auto 0;
+  padding: 0 1.25rem;
+}
+
+.bhiq-app label {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--biq-accent);
+  margin-bottom: 0.5rem;
+}
+
+
+.bhiq-level-label {
+  display: block;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--biq-accent);
+  margin-bottom: 0.5rem;
+}
+
+#biq-examples-app .bhiq-level-label {
+  margin-top: 1.25rem;
+}
+
+.bhiq-level {
+  display: flex;
+  margin: 0 0 0.45rem;
+  border: 1px solid var(--biq-line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--biq-paper);
+}
+
+.bhiq-app .bhiq-level label {
+  position: relative;
+  display: block;
+  flex: 1 1 0;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 0.95rem;
+  color: var(--biq-ink);
+  margin-bottom: 0;
+  padding: 0.55rem 0.35rem;
+  cursor: pointer;
+  border-right: 1px solid var(--biq-line);
+  background: var(--biq-paper);
+}
+
+.bhiq-app .bhiq-level label:last-child {
+  border-right: none;
+}
+
+.bhiq-level input {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.bhiq-app .bhiq-level label:hover {
+  color: var(--biq-accent);
+}
+
+.bhiq-app .bhiq-level label:has(input:checked),
+.bhiq-app .bhiq-level label.is-on {
+  background: var(--biq-ink);
+  color: var(--biq-paper);
+}
+
+.bhiq-app .bhiq-level label:has(input:focus-visible) {
+  outline: 2px solid var(--biq-accent);
+  outline-offset: -2px;
+}
+
+.bhiq-level-hint {
+  margin: 0 0 1.25rem;
+  color: var(--biq-muted);
+  font-size: 0.9rem;
+}
+
+.bhiq-ex-table-wrap {
+  overflow-x: auto;
+}
+
+
+#bhiq-input {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 1.15rem;
+  color: var(--biq-ink);
+  background: var(--biq-paper);
+  border: 1px solid var(--biq-line);
+  border-radius: 6px;
+  padding: 0.85rem 1rem;
+}
+
+#bhiq-input:focus {
+  outline: 2px solid var(--biq-accent);
+  outline-offset: 2px;
+  border-color: var(--biq-accent);
+}
+
+.bhiq-hint {
+  color: var(--biq-muted);
+  font-size: 0.95rem;
+  margin: 0.85rem 0 1.25rem;
+}
+
+.bhiq-selects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  margin-bottom: 1.75rem;
+}
+
+.bhiq-select {
+  width: 100%;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+  font: inherit;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: var(--biq-ink);
+  background-color: var(--biq-paper);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 8'%3E%3Cpolyline points='1,1 6,6 11,1' fill='none' stroke='%2317202b' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.75rem center;
+  background-size: 0.7rem;
+  border: 1px solid var(--biq-line);
+  border-radius: 6px;
+  padding: 0.65rem 2rem 0.65rem 0.85rem;
+}
+
+.bhiq-select.is-placeholder {
+  color: var(--biq-muted);
+}
+
+.bhiq-select:focus {
+  outline: 2px solid var(--biq-accent);
+  outline-offset: 2px;
+  border-color: var(--biq-accent);
+}
+
+@media (max-width: 560px) {
+  .bhiq-selects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.bhiq-group {
+  margin: 0 0 2rem;
+}
+
+.bhiq-group h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  color: var(--biq-ink);
+}
+
+.bhiq-count {
+  color: var(--biq-muted);
+  font-size: 0.9rem;
+  margin: 0 0 0.85rem;
+}
+
+.bhiq-group ol {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.bhiq-group li {
+  margin: 0 0 0.75rem;
+  line-height: 1.45;
+}
+
+.bhiq-manager {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--biq-raise);
+  border: 1px solid var(--biq-line);
+  background: var(--biq-wash);
+  padding: 0.05rem 0.4rem;
+  border-radius: 3px;
+  vertical-align: middle;
+}
+
+.bhiq-empty {
+  color: var(--biq-muted);
+}
+
+.bhiq-chip-wrap {
+  margin-bottom: 0;
+}
+
+.bhiq-kind {
+  margin: 0 0 0.2rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--biq-accent);
+}
+
+.bhiq-qrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 0.5rem 0.75rem;
+}
+
+.bhiq-qrow .bhiq-qtext {
+  flex: 1 1 16rem;
+}
+
+.bhiq-examples-btn {
+  flex: 0 0 auto;
+  appearance: none;
+  display: inline-block;
+  text-decoration: none;
+  font: inherit;
+  font-size: 0.8rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--biq-accent-dark);
+  border: 1px solid var(--biq-line);
+  background: var(--biq-paper);
+  padding: 0.25rem 0.55rem;
+  border-radius: 4px;
+  margin-top: 0.15rem;
+}
+
+.bhiq-examples-btn:hover {
+  border-color: var(--biq-accent);
+  color: var(--biq-accent);
+}
+
+.bhiq-ex-col {
+  margin: 2rem 0 0;
+}
+
+.bhiq-ex-col h3 {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+}
+
+.bhiq-ex-raise article,
+.bhiq-ex-lower article {
+  border: 1px solid var(--biq-line);
+  background: var(--biq-wash);
+  padding: 1rem 1.1rem;
+  margin: 0 0 0.85rem;
+}
+
+.bhiq-ex-raise article {
+  border-top: 3px solid var(--biq-raise);
+}
+
+.bhiq-ex-lower article {
+  border-top: 3px solid var(--biq-accent);
+}
+
+.bhiq-ex-why {
+  margin: 0 0 0.5rem;
+  color: var(--biq-muted);
+  font-size: 0.95rem;
+}
+
+.bhiq-ex-answer {
+  margin: 0;
+  color: var(--biq-ink);
+}
+
+.bhiq-ex-sub {
+  margin: -0.4rem 0 0.75rem;
+  color: var(--biq-muted);
+  font-size: 0.95rem;
+}
+
+.bhiq-ex-why-label {
+  margin: 1rem 0 0.35rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--biq-muted);
+}
+
+.bhiq-ex-why-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.bhiq-ex-why-list li {
+  margin: 0 0 0.35rem;
+}
+
+.bhiq-ex-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.bhiq-ex-table th,
+.bhiq-ex-table td {
+  border: 1px solid var(--biq-line);
+  padding: 0.55rem 0.65rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.bhiq-ex-table th {
+  background: var(--biq-wash);
+  color: var(--biq-ink);
+}
+
+
+.bhiq-prose {
+  max-width: 820px;
+  margin: 2.75rem auto 0;
+  padding: 0 1.25rem 1rem;
+  color: var(--biq-muted);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.bhiq-prose p { margin: 0 0 1rem; }
+.bhiq-prose p:last-child { margin-bottom: 0; }
+
+.bhiq-ex-transcript {
+  margin: 0 0 0.25rem;
+}
+.bhiq-ex-turn {
+  margin: 0 0 0.75rem;
+  color: var(--biq-ink);
+}
+.bhiq-ex-turn:last-child { margin-bottom: 0; }
+.bhiq-ex-who {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--biq-muted);
+  margin-right: 0.35rem;
+}
+.bhiq-ex-turn-interviewer .bhiq-ex-who { color: var(--biq-raise); }
+.bhiq-ex-turn-candidate .bhiq-ex-who { color: var(--biq-accent-dark); }
+.bhiq-ex-feedback {
+  margin: 0;
+  color: var(--biq-ink);
+}

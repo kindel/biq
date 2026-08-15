@@ -1,0 +1,261 @@
+{
+  "question": "Give me an example of when you had to make an important decision and had to decide between moving forward or gathering more information. What did you do? What was the outcome? What information is necessary for you to have before acting?",
+  "competency": "Bias for Action",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a bug in our checkout flow that was causing 2% of carts to fail. I had the repro steps but the root cause wasn't fully clear. I decided to ship a targeted fix after confirming it passed our unit tests and a quick manual check with the on-call engineer."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you stop gathering info?"
+        },
+        {
+          "role": "candidate",
+          "text": "The change was small and reversible. I knew if it didn't work we'd roll back in under an hour. Outcome was the error rate dropped to zero and we didn't see any new issues."
+        },
+        {
+          "role": "interviewer",
+          "text": "What info do you need before acting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I need to know the blast radius and rollback plan. For bigger changes I'd want more data first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: decision between move forward vs more info on checkout bug",
+        "Rolled out small fix after unit tests + on-call review",
+        "Outcome: error rate to zero, clean rollback path",
+        "Quote: 'The change was small and reversible'",
+        "Follow-up: blast radius and rollback plan needed before acting"
+      ],
+      "raiseFeedback": "Candidate chose a bounded change with clear rollback criteria and shipped after minimal but sufficient validation. The story stayed within individual scope and showed they weighed reversibility against further investigation. They articulated the exact threshold (blast radius and rollback) they use to decide when to act. This matches junior expectations for owning their own work and learning when to stop gathering data.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a small styling issue on the login page. I spent two days collecting browser logs and user reports before making any change."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why gather that much data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted to be sure I understood every possible scenario. In the end the fix was just one CSS rule."
+        }
+      ],
+      "lowerNotes": [
+        "Q: styling issue on login page",
+        "Collected logs and reports for two full days",
+        "Outcome: one-line CSS change",
+        "Quote: 'I wanted to be sure I understood every possible scenario'",
+        "Follow-up: no clear threshold for when enough data is enough"
+      ],
+      "lowerFeedback": "Candidate defaulted to extended data collection on a low-risk cosmetic change with no stated criteria for stopping. The outcome was disproportionate effort for a one-line fix. No mention of rollback or blast radius shows missing calibration on when to act. This lowers the bar for Bias for Action at the junior level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service was seeing elevated latency in one region. I had partial metrics but not full traces. I chose to enable a feature flag that reduced load on the hot path rather than wait for complete observability data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The flag change affected only 8% of traffic and we had automated rollback. Latency dropped 40% within ten minutes. We later added the missing traces as follow-up work."
+        },
+        {
+          "role": "interviewer",
+          "text": "What info do you require before acting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I need to know customer impact threshold and whether a reversible mitigation exists. Full diagnosis can come after the immediate pain is reduced."
+        }
+      ],
+      "raiseNotes": [
+        "Q: latency incident decision with partial metrics",
+        "Enabled scoped feature flag instead of waiting for traces",
+        "Outcome: 40% latency drop, rollback ready, traces added later",
+        "Quote: 'Full diagnosis can come after the immediate pain is reduced'",
+        "Follow-up: customer impact threshold and reversible mitigation required"
+      ],
+      "raiseFeedback": "Candidate used a reversible mitigation to protect customers while accepting incomplete data, then drove follow-up observability work. Story shows cross-team coordination through the flag system and a clear metric (40% latency reduction). The decision criteria (impact threshold + reversibility) are explicit and appropriate for senior scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had conflicting A/B test results on a new checkout step. I ran three additional experiments and collected another two weeks of data before making any call."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the cost of waiting?"
+        },
+        {
+          "role": "candidate",
+          "text": "Conversion stayed flat during that period. We eventually shipped the original variant."
+        }
+      ],
+      "lowerNotes": [
+        "Q: conflicting A/B results on checkout",
+        "Ran three more experiments over two weeks",
+        "Outcome: shipped original variant, conversion unchanged",
+        "Quote: no mention of customer or revenue impact during delay",
+        "Follow-up: no stated threshold for ending data collection"
+      ],
+      "lowerFeedback": "Candidate prolonged data collection without a defined stopping rule, resulting in two weeks of flat conversion with no customer benefit. The story lacks evidence of weighing ongoing cost against further information. This lowers the bar for Bias for Action at the senior level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was split on whether to launch a new self-service tool with known edge-case gaps. I decided to launch to 5% of users after setting a clear error-budget threshold and assigning two engineers to monitor for the first week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team disagreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had the team document the risks and the monitoring plan, then made the call. Two engineers later said the process helped them feel heard even though we moved forward."
+        },
+        {
+          "role": "interviewer",
+          "text": "What information do you need before acting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I need a measurable customer impact signal and a named owner for the first 48 hours. Once those exist I will move."
+        }
+      ],
+      "raiseNotes": [
+        "Q: team split on self-service tool launch",
+        "Launched at 5% with error budget and named monitors",
+        "Outcome: team felt heard, launch proceeded with clear ownership",
+        "Quote: 'I need a measurable customer impact signal and a named owner for the first 48 hours'",
+        "Follow-up: documented risks and monitoring plan before deciding"
+      ],
+      "raiseFeedback": "Candidate created a controlled rollout with explicit success criteria and ownership, turning a team disagreement into a documented decision. The approach shows leverage through process rather than heroics and produced a repeatable signal (error budget) the team can use again. This meets manager expectations for Bias for Action.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team wanted to delay a release because of one open bug. I scheduled three more meetings to review the bug and gather everyone's input before we decided."
+        },
+        {
+          "role": "interviewer",
+          "text": "How long did that take?"
+        },
+        {
+          "role": "candidate",
+          "text": "We met over five days. The bug was eventually deemed low severity and we shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: team wanted to delay over one open bug",
+        "Held three meetings across five days",
+        "Outcome: shipped after determining low severity",
+        "Quote: no clear decision criteria stated upfront",
+        "Follow-up: no named owner or threshold for the delay decision"
+      ],
+      "lowerFeedback": "Candidate defaulted to additional meetings without a pre-agreed decision framework, consuming five days for a low-severity issue. No evidence of creating team leverage or a repeatable process. This lowers the bar for Bias for Action at the manager level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a make-or-buy decision on a core platform component with a six-month build timeline. I chose to buy after modeling the three-year TCO and confirming the vendor met our security bar, accepting we would customize only the top two integration points."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "Build would have given more control but delayed two product launches by nine months. Buy preserved roadmap velocity at the cost of some flexibility. We documented the decision and reviewed it after twelve months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What information is required before acting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I need quantified business impact of delay and a clear exit or pivot clause in the contract. With those I will decide even if technical details remain open."
+        }
+      ],
+      "raiseNotes": [
+        "Q: make-or-buy platform component at exec level",
+        "Chose buy after TCO model and security review, limited customization",
+        "Outcome: preserved nine months of roadmap velocity, 12-month review scheduled",
+        "Quote: 'I need quantified business impact of delay and a clear exit clause'",
+        "Follow-up: documented trade-offs and scheduled review"
+      ],
+      "raiseFeedback": "Candidate framed the decision around multi-year business impact and roadmap velocity rather than technical completeness, then embedded a review mechanism. The story demonstrates strategic judgment under ambiguity and the ability to set organizational decision criteria. This raises the bar for Bias for Action at the exec level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to choose a new data platform. I commissioned four internal working groups and two external audits before reaching a recommendation."
+        },
+        {
+          "role": "interviewer",
+          "text": "How long did the process take?"
+        },
+        {
+          "role": "candidate",
+          "text": "Fourteen months. By then two of the shortlisted vendors had changed their pricing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: data platform selection",
+        "Four working groups plus two audits over 14 months",
+        "Outcome: two vendors changed pricing during delay",
+        "Quote: no upfront time or business-impact bound stated",
+        "Follow-up: no decision threshold or exit criteria defined"
+      ],
+      "lowerFeedback": "Candidate allowed an open-ended process to run for fourteen months without time or impact bounds, resulting in stale vendor data. No evidence of setting organizational decision speed or trade-off criteria. This lowers the bar for Bias for Action at the exec level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision threshold clarity",
+      "junior": "Rollback plan and blast radius",
+      "senior": "Customer impact threshold plus reversible mitigation",
+      "manager": "Measurable signal plus named owner for 48 hours",
+      "exec": "Quantified business delay cost plus contract exit clause"
+    },
+    {
+      "signal": "Scope of story",
+      "junior": "Single bug fix owned by candidate",
+      "senior": "Regional latency incident with cross-team flag",
+      "manager": "Team disagreement resolved via rollout process",
+      "exec": "Multi-year make-or-buy affecting product roadmap"
+    },
+    {
+      "signal": "Outcome framing",
+      "junior": "Error rate to zero, clean rollback",
+      "senior": "40% latency drop, observability added later",
+      "manager": "Team felt heard, launch with ownership",
+      "exec": "Nine months roadmap velocity preserved, 12-month review"
+    },
+    {
+      "signal": "Risk of over-analysis",
+      "junior": "Two days on one-line CSS change",
+      "senior": "Two weeks flat conversion with no stopping rule",
+      "manager": "Five days of meetings on low-severity bug",
+      "exec": "14 months of working groups, vendors changed pricing"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "None expected",
+      "senior": "Flag system and later traces",
+      "manager": "Documented risk process reusable by team",
+      "exec": "Decision criteria and review cadence for org"
+    }
+  ],
+  "kind": "lp"
+}

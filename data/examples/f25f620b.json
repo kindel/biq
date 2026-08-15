@@ -1,0 +1,237 @@
+{
+  "question": "Describe the most significant continuous improvement project that you led. What was the catalyst to this change and how did you go about it? What was the outcome?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our team's bug backlog was growing because we had inconsistent test coverage on new features. I proposed and owned a small process to require 70% coverage on any PR I touched, then expanded it by sharing a simple checklist."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide on 70% specifically?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our average was around 40%. I picked 70% as a stretch but achievable target based on the last three sprints. After two months coverage hit 68% and escaped defects on my modules dropped from 4 to 1."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: growing bug backlog from low test coverage",
+        "Actions: set 70% target on own PRs, created checklist, shared with team",
+        "Outcome: coverage to 68%, defects down from 4 to 1",
+        "Quote: 'I picked 70% as a stretch but achievable'",
+        "Follow-up: how did you choose the number? -> referenced last three sprints data"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at junior level. The candidate identified a local quality gap in test coverage, set a measurable target above the existing baseline, and drove the change through their own work before sharing it. Quote on choosing 70% shows they used sprint data rather than guessing. Story stays within individual scope, which is appropriate, yet demonstrates ownership and willingness to raise the bar on their output. Biggest strength is the direct link between the change and reduced defects.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I helped update the team's wiki page on coding standards after my manager asked for volunteers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What problem were you solving and what was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The page was outdated. I copied some new guidelines from another team. We didn't track usage or measure any improvement after the update."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: manager asked for volunteers to update wiki",
+        "Actions: copied guidelines from another team",
+        "Outcome: no measurement of impact or adoption",
+        "Quote: 'We didn't track usage'",
+        "Follow-up: what problem were you solving? -> no clear quality gap identified"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at junior level. The candidate treated the task as an assignment rather than identifying a real quality issue themselves. No baseline data or outcome metrics were collected, so there is no evidence standards actually improved. Story shows compliance instead of ownership of raising the bar. Biggest gap is absence of any link between the activity and customer or team results."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service had p99 latency creeping up across two teams. I drove a cross-team effort to standardize connection pooling and add circuit breakers, starting with data from our shared dashboards."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to adopt the changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot on my service, showed 35% p99 reduction, then presented the before/after to the other leads with the exact config changes. Both teams rolled it out and overall p99 dropped 28%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: p99 latency increasing across services",
+        "Actions: piloted pooling + circuit breakers, shared data with other team leads",
+        "Outcome: 28% p99 reduction after cross-team rollout",
+        "Quote: 'showed 35% p99 reduction, then presented the before/after'",
+        "Follow-up: how did you influence the other team? -> pilot data and config sharing"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at senior level. The candidate used production data to surface a shared quality problem and drove adoption through demonstrated results rather than mandate. The 28% latency improvement was achieved across teams without formal authority. Story shows the right balance of technical depth and influence. Biggest strength is the clear before/after metrics tied to customer-visible performance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I rewrote a slow module in my service to use a newer library. It was faster locally so I merged it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect any other teams or get measured in production?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it was just my service. Production numbers stayed about the same because of other bottlenecks we didn't address."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: personal observation of slow module",
+        "Actions: swapped library in own service",
+        "Outcome: no production improvement, no cross-team impact",
+        "Quote: 'Production numbers stayed about the same'",
+        "Follow-up: any measurement across teams? -> none"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at senior level. The change remained isolated to one module with no production impact or influence on adjacent teams. Lack of metrics or follow-through shows the candidate did not insist on verifying the improvement at scale. Biggest gap is absence of cross-team leverage or sustained quality lift."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had inconsistent code review thoroughness leading to repeated production issues. I introduced a review checklist and required managers to audit three reviews per month, then coached reviewers who consistently missed issues."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle reviewers who pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers felt it added overhead. I sat with them on their next reviews, showed specific misses that had caused incidents, and adjusted the checklist based on their input. Audit findings dropped 60% in six months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: repeated production issues from weak reviews",
+        "Actions: created checklist, manager audits, 1:1 coaching on misses",
+        "Outcome: 60% reduction in audit findings",
+        "Quote: 'showed specific misses that had caused incidents'",
+        "Follow-up: how did you handle pushback? -> paired reviews and adjusted checklist"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at manager level. The candidate built a repeatable process that raised review quality across the team and used data from audits to drive coaching. The 60% drop in findings shows the change stuck. Story demonstrates both setting higher expectations and developing people through direct feedback. Biggest strength is the combination of process and individual development that produced sustained improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we needed better reviews and sent out a checklist I found online."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you sent it?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few people used it for a week. I didn't follow up with audits or coaching so adoption faded."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: general sense reviews needed improvement",
+        "Actions: emailed an external checklist",
+        "Outcome: brief use then faded, no measurement",
+        "Quote: 'I didn't follow up with audits or coaching'",
+        "Follow-up: any ongoing enforcement? -> none"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at manager level. The candidate delegated the standard to an email without creating accountability or coaching mechanisms. No data was collected to confirm whether reviews actually improved. Biggest gap is lack of follow-through and team development to embed the higher standard."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer NPS had plateaued for three quarters because of recurring reliability issues across multiple products. I launched an org-wide reliability initiative that set a new SLO of 99.9% and tied it to promotion criteria and quarterly planning."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive adoption at scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the SLO the first item in every QBR, required each VP to present their gap analysis, and personally reviewed the top ten customer-impacting incidents. Within a year we moved from 99.5% to 99.85% and NPS rose 12 points."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: NPS plateau from cross-org reliability gaps",
+        "Actions: set 99.9% SLO, tied to promotions and QBRs, reviewed top incidents",
+        "Outcome: 99.5% to 99.85%, NPS +12 points",
+        "Quote: 'made the SLO the first item in every QBR'",
+        "Follow-up: how did you drive adoption at scale? -> QBR ownership and promotion linkage"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at exec level. The candidate identified a business-level quality ceiling and translated it into an org-wide SLO with clear accountability mechanisms. Linking the standard to promotions and QBRs created lasting leverage. The 12-point NPS lift shows the change moved customer outcomes. Biggest strength is the strategic use of existing rhythms to embed higher standards without creating new bureaucracy.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each team to improve their reliability and we discussed it in staff meetings a few times."
+        },
+        {
+          "role": "interviewer",
+          "text": "What concrete changes or results came from those discussions?"
+        },
+        {
+          "role": "candidate",
+          "text": "Teams made some local improvements but there was no shared target or tracking, so overall reliability metrics didn't move."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most significant CI project you led",
+        "Catalyst: general reliability concerns",
+        "Actions: raised topic in staff meetings",
+        "Outcome: local efforts with no org-level movement",
+        "Quote: 'no shared target or tracking'",
+        "Follow-up: any shared metrics or accountability? -> none"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at exec level. The candidate relied on discussion without establishing measurable targets or structural accountability. Absence of shared SLOs or tracking meant the organization could not demonstrate progress. Biggest gap is failure to convert a known quality issue into an org-wide standard with consequences."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "individual module or process",
+      "senior": "cross-team service improvement",
+      "manager": "team process with coaching",
+      "exec": "org-wide SLO with business metric"
+    },
+    {
+      "signal": "Use of data to set bar",
+      "junior": "references recent sprints for target",
+      "senior": "pilot metrics to influence peers",
+      "manager": "audit findings to drive coaching",
+      "exec": "NPS and availability tied to promotions"
+    },
+    {
+      "signal": "Sustained mechanism",
+      "junior": "checklist shared after personal use",
+      "senior": "config rolled out after pilot",
+      "manager": "monthly audits + 1:1s",
+      "exec": "QBR ownership and promotion criteria"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "not tested at this level",
+      "senior": "data-driven persuasion",
+      "manager": "paired reviews and checklist iteration",
+      "exec": "executive review cadence"
+    },
+    {
+      "signal": "Outcome linkage",
+      "junior": "defect count on own modules",
+      "senior": "p99 reduction across teams",
+      "manager": "60% drop in audit findings",
+      "exec": "NPS +12 points"
+    }
+  ],
+  "kind": "lp"
+}

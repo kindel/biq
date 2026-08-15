@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you invested in an employee's development. What did you invest in and why? What was the outcome? Can you share an example where investing in an employee's development didn't work out?",
+  "competency": "Hire and Develop the Best",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When a new teammate joined our project, I spent extra time pairing with them on their first two features and walked through our codebase patterns."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you invest?"
+        },
+        {
+          "role": "candidate",
+          "text": "About six hours a week for a month plus written notes on common pitfalls. They shipped their first ticket two weeks earlier than the team expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "And the case that didn't work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried the same approach with another new hire who already knew the stack; they got frustrated and asked for less help. I stopped after two sessions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you invested in someone's development",
+        "Paired with new teammate on first features, 6 hrs/wk for a month, created notes on pitfalls",
+        "Outcome: new hire shipped first ticket two weeks early",
+        "Quote: 'They asked for less help after two sessions'",
+        "Follow-up: Why did you stop? 'They already knew the patterns so I switched to async reviews'"
+      ],
+      "raiseFeedback": "Candidate described a concrete, time-bounded investment in a peer rather than a direct report, which is appropriate at this level. The positive case shows they tracked output (first ticket shipped early) and adjusted when the recipient signaled they needed less help. The negative example demonstrates they recognized over-investment and stopped without forcing the approach. Biggest strength is the willingness to course-correct quickly instead of persisting with a mismatched plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once helped a classmate with their homework by explaining the assignment."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for them?"
+        },
+        {
+          "role": "candidate",
+          "text": "They got a better grade. I don't really have an example where it didn't work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Time invested in development",
+        "Explained homework to classmate",
+        "Outcome: 'They got a better grade'",
+        "No negative example offered",
+        "Follow-up: Asked for work example, candidate stayed with school story"
+      ],
+      "lowerFeedback": "Story stays in academic territory and never connects to workplace impact or measurable change in the other person's output. Candidate could not produce an example where development effort failed, which removes any signal on learning or adjustment. The investment described (one-time homework help) is too light to show sustained ownership. Main gap is absence of any follow-through or outcome tracking beyond a single grade."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A mid-level engineer on another team wanted to move into distributed systems work. I created a six-week reading list and reviewed their design docs weekly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "They led the next service migration and the team cited their design as the template. The negative case was a different engineer who wanted the same path but never completed the first reading; after three check-ins with no progress I closed the loop and suggested they focus on current role priorities."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Invested in employee's development",
+        "Built 6-week reading list + weekly design reviews for cross-team engineer",
+        "Outcome: engineer led service migration; design became team template",
+        "Negative: different engineer never completed readings, effort stopped after three check-ins",
+        "Quote: 'Suggested they focus on current role priorities'"
+      ],
+      "raiseFeedback": "Candidate chose a cross-team target and tied the investment to a specific business outcome (service migration). They tracked completion and adjusted when the second person showed no progress, demonstrating boundary-setting. The negative case shows they did not continue investing time once signals were clear. Primary strength is linking personal development to a concrete deliverable the broader team later adopted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I gave a teammate some articles on system design because they asked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change in their work?"
+        },
+        {
+          "role": "candidate",
+          "text": "They said it was helpful. I don't have a case where it didn't land."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Development investment",
+        "Shared articles after teammate request",
+        "Outcome: 'They said it was helpful'",
+        "No negative example",
+        "Follow-up: Any measurable change? Candidate could not name one"
+      ],
+      "lowerFeedback": "Investment is passive (shared links) with no structured plan or follow-up. Candidate cannot point to any observable change in the other person's scope or output. Lack of a failed example removes evidence of judgment on when to stop. Main gap is absence of ownership over the result beyond the initial gesture."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my directs wanted to move from IC to tech lead. I put them on a project with two junior engineers, gave them explicit coaching on delegation, and reviewed their 1:1 notes weekly for three months."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were promoted and the two juniors both improved their velocity by 30 percent. The case that didn't work was an engineer who wanted the same track but resisted delegating; after two cycles of feedback with no change I moved them to a pure IC track and documented the decision."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Invested in direct's development",
+        "Assigned project with two reports, weekly coaching on delegation, reviewed 1:1 notes for 3 months",
+        "Outcome: promoted; two juniors velocity +30%",
+        "Negative: resisted delegation, moved to IC track after two feedback cycles",
+        "Follow-up: How did you decide to stop? 'Documented decision and aligned with their skip'"
+      ],
+      "raiseFeedback": "Candidate used a real project assignment and measurable coaching cadence to develop a direct report. Positive outcome includes both the individual's promotion and downstream team impact. The negative case shows timely recognition of resistance and a clear pivot to a better-fit role. Core strength is treating development as a managed program with exit criteria rather than open-ended mentoring.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged one of my reports to take a course and approved the budget."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did their scope change?"
+        },
+        {
+          "role": "candidate",
+          "text": "They completed it. I haven't had a situation where development didn't pay off."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Development investment",
+        "Approved course budget after encouragement",
+        "Outcome: 'They completed it'",
+        "No negative example provided",
+        "Follow-up: Any change in responsibilities? Candidate had none"
+      ],
+      "lowerFeedback": "Investment is limited to budget approval with no ongoing coaching or outcome tracking. Candidate cannot describe any shift in the person's responsibilities or results. Absence of a failed case suggests either no real development attempts or unwillingness to discuss them. Primary gap is treating development as a transaction instead of an accountable process."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a leadership gap in our platform org. I created a six-month rotation program for three high-potential directors, assigned each a P&L owner as sponsor, and tied their promotion case to org-wide metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two were promoted into director roles; platform reliability improved 25 percent under their ownership. The third did not show the required strategic thinking after four months; we moved them back to their original org and replaced them with another candidate."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Invested in employee development at scale",
+        "Built 6-month rotation with P&L sponsors for 3 directors, tied to org metrics",
+        "Outcome: 2 promoted, platform reliability +25%",
+        "Negative: one lacked strategic thinking, moved back after 4 months",
+        "Follow-up: How did you choose the replacement? 'Used the same criteria and pulled from a bench we had pre-identified'"
+      ],
+      "raiseFeedback": "Candidate designed a structured, multi-person program tied to business metrics rather than one-off coaching. Positive results include both individual promotions and measurable platform improvement. The negative case shows they made a data-driven call to remove someone from the track without prolonged investment. Key strength is creating repeatable leverage through a program instead of relying on personal heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my VPs to spend more time mentoring their directs."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any visible result?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of people got promoted over the next year. I don't recall a case where it failed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Development investment",
+        "Directed VPs to mentor more",
+        "Outcome: 'A couple of people got promoted'",
+        "No negative example",
+        "Follow-up: Any org-level metric or program? Candidate had none"
+      ],
+      "lowerFeedback": "Action is a directive to others with no personal structure, tracking, or accountability. Outcome is vague and cannot be linked to the candidate's investment. Lack of a failed example removes evidence of strategic judgment on talent. Main gap is absence of any scalable mechanism or measured business impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of investment",
+      "junior": "Peer or intern level, time-bounded help",
+      "senior": "Cross-team individual with clear deliverable",
+      "manager": "Direct report with role change and team impact",
+      "exec": "Multi-person program tied to org metrics"
+    },
+    {
+      "signal": "Handling failure",
+      "junior": "Stopped after recipient signaled mismatch",
+      "senior": "Closed loop after no progress on readings",
+      "manager": "Moved to IC track after two cycles",
+      "exec": "Removed from rotation after four months with replacement ready"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "First ticket shipped early",
+      "senior": "Led migration; design became template",
+      "manager": "Promotion + 30% velocity for reports",
+      "exec": "Two promotions + 25% reliability lift"
+    },
+    {
+      "signal": "Adjustment speed",
+      "junior": "Within first two sessions",
+      "senior": "After three check-ins",
+      "manager": "After two feedback cycles",
+      "exec": "After four months with documented decision"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "Notes reused by teammate",
+      "senior": "Template adopted by team",
+      "manager": "Two juniors accelerated",
+      "exec": "Repeatable rotation program with bench"
+    }
+  ],
+  "kind": "lp"
+}

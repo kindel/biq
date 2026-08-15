@@ -1,0 +1,245 @@
+{
+  "question": "Give an example of receiving critical or tough feedback. How did you respond?",
+  "competency": "Resilience, Handling Failure & Learning Agility",
+  "principle": "Resilience, Handling Failure & Learning Agility",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager said my PRs had too many bugs and unclear variable names. I felt embarrassed but asked for specific examples."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I rewrote the next two features with better naming and added unit tests. My bug rate dropped and he noted it in the next 1:1."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: new engineer on payments service",
+        "Situation: manager flagged buggy PRs and poor naming",
+        "Action: asked for examples, rewrote two features with tests",
+        "Outcome: bug rate dropped, positive note in 1:1",
+        "Quote: 'I felt embarrassed but asked for specific examples'",
+        "Follow-up: How did you feel initially? -> Owned it and iterated"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Candidate described receiving direct feedback on code quality and variable naming. They asked for specifics then rewrote two features with added tests, resulting in lower bug rate noted by manager. This shows coachability and ownership of individual output. The story stays local to their work and demonstrates quick application of feedback without defensiveness. Biggest strength is treating the feedback as actionable rather than personal.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager said my code had bugs. I explained why the approach was correct given the deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the project shipped and I moved on to the next task."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: new engineer on payments service",
+        "Situation: manager flagged buggy PRs",
+        "Action: defended the approach citing deadline pressure",
+        "Outcome: no change, moved to next task",
+        "Quote: 'I explained why the approach was correct given the deadline'",
+        "Follow-up: Did anything change? -> Nothing, project shipped"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Candidate received feedback on buggy code but responded by justifying the work instead of addressing the issues. No follow-up actions were taken and the behavior did not change. The story shows limited ownership and weak response to direct input on their output. This signals low coachability at the individual contributor level. Biggest gap is absence of any learning or adjustment after the feedback."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer team lead told me my design doc for the new API ignored latency requirements from their service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a joint review, updated the doc with their numbers, and added a fallback path. Two other teams later reused the pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: senior on checkout platform",
+        "Situation: peer lead flagged missing latency requirements in design",
+        "Action: scheduled joint review, revised doc, added fallback",
+        "Outcome: two other teams reused the updated pattern",
+        "Quote: 'I scheduled a joint review, updated the doc with their numbers'",
+        "Follow-up: What was the cross-team result? -> Pattern adopted elsewhere"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate received direct feedback from a peer team on an API design missing latency needs. They organized a joint review, incorporated the data, and added a fallback that later became reusable by two other teams. The response shows influence without authority and measurable cross-team impact. Story stays grounded in technical work with clear follow-through. Biggest strength is turning critical input into a pattern others adopted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer team lead said my API design missed their latency needs. I added a note in the doc but kept the main path the same."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the other team adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "They built their own version instead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: senior on checkout platform",
+        "Situation: peer lead flagged missing latency in design",
+        "Action: added a note but kept original path unchanged",
+        "Outcome: peer team built their own solution",
+        "Quote: 'I added a note in the doc but kept the main path the same'",
+        "Follow-up: Did the other team adopt it? -> No, they built separately"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Candidate received feedback on an API design but only added a note without changing the core approach. The peer team ended up building their own solution. This shows limited influence and minimal adjustment despite cross-team input. The story lacks evidence of driving alignment or broader impact. Biggest gap is treating feedback as documentation rather than a signal to iterate."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My skip-level told me my team was missing promotion cases because I was not coaching on impact writing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started bi-weekly calibration sessions, had each engineer draft their own promo doc, and three people were promoted in the next cycle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: engineering manager of 8",
+        "Situation: skip-level flagged weak promotion cases due to poor coaching",
+        "Action: ran bi-weekly calibration, had engineers draft their docs",
+        "Outcome: three promotions in next cycle",
+        "Quote: 'I started bi-weekly calibration sessions'",
+        "Follow-up: How did the team respond? -> Engineers owned their narratives"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate received feedback that their team lacked strong promotion cases due to insufficient coaching on impact. They introduced bi-weekly calibration sessions and required engineers to draft their own documents, resulting in three promotions. The response demonstrates developing the team and owning team-level outcomes. Story focuses on process change with measurable people results. Biggest strength is converting personal feedback into leverage for multiple team members.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My skip-level said my team was weak on promotion cases. I told the team to work on their impact statements."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did promotion rates improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "One person was promoted but the others stayed flat."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: engineering manager of 8",
+        "Situation: skip-level flagged weak promotion cases",
+        "Action: told team to work on impact statements",
+        "Outcome: only one promotion, others flat",
+        "Quote: 'I told the team to work on their impact statements'",
+        "Follow-up: Did promotion rates improve? -> Minimal change"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Candidate received feedback on weak team promotion cases but responded with a one-time directive rather than structured coaching. Only one promotion occurred afterward. This shows limited ownership of team development and weak follow-through on people outcomes. The story lacks evidence of creating leverage or addressing underperformance in skill building. Biggest gap is absence of sustained process change after the feedback."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO told me our org was losing senior talent because leaders were not owning retention conversations."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I created a quarterly retention review with each director, tied it to their performance goals, and reduced senior attrition from 18% to 9% over 18 months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: VP Engineering",
+        "Situation: CEO flagged high senior attrition due to weak leader ownership",
+        "Action: launched quarterly retention reviews tied to director goals",
+        "Outcome: senior attrition dropped from 18% to 9% in 18 months",
+        "Quote: 'I created a quarterly retention review with each director'",
+        "Follow-up: How did you measure success? -> 18% to 9% attrition"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate received direct feedback from the CEO on senior talent loss tied to leader behavior. They introduced quarterly retention reviews linked to director performance goals, cutting attrition from 18% to 9% over 18 months. The response shows strategic judgment and org-level impact with clear long-term metrics. Story demonstrates creating systemic leverage rather than heroics. Biggest strength is translating blunt feedback into a durable process that improved retention at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO said we were losing seniors because leaders avoided hard retention talks. I sent an email reminding directors to have stay conversations."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result on attrition?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed roughly the same the following year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of receiving critical or tough feedback. How did you respond?",
+        "Role: VP Engineering",
+        "Situation: CEO flagged high senior attrition",
+        "Action: sent email reminder about stay conversations",
+        "Outcome: attrition unchanged the next year",
+        "Quote: 'I sent an email reminding directors to have stay conversations'",
+        "Follow-up: What was the result on attrition? -> Stayed the same"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Candidate received feedback on senior attrition but responded with a single email rather than structural change. Attrition remained flat the following year. This shows limited strategic judgment and weak ownership of org-level outcomes. The story lacks evidence of long-term thinking or creating leverage through leaders. Biggest gap is treating a business-critical signal as a communication task instead of a systemic issue."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initial emotional response",
+      "junior": "Owns embarrassment then acts",
+      "senior": "Focuses on cross-team fix",
+      "manager": "Shifts to team process",
+      "exec": "Builds org mechanism"
+    },
+    {
+      "signal": "Action taken after feedback",
+      "junior": "Rewrites own code features",
+      "senior": "Revises design with peers",
+      "manager": "Adds calibration sessions",
+      "exec": "Ties reviews to goals"
+    },
+    {
+      "signal": "Evidence of sustained change",
+      "junior": "Bug rate drop noted once",
+      "senior": "Pattern reused by two teams",
+      "manager": "Three promotions achieved",
+      "exec": "Attrition halved over 18 months"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual PR quality",
+      "senior": "Cross-team technical reuse",
+      "manager": "Team promotion outcomes",
+      "exec": "Org-wide retention metric"
+    },
+    {
+      "signal": "Learning agility shown",
+      "junior": "Asks for examples then iterates",
+      "senior": "Incorporates external data",
+      "manager": "Requires engineers to own docs",
+      "exec": "Links feedback to leader accountability"
+    }
+  ],
+  "kind": "competency"
+}

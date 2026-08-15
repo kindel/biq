@@ -1,0 +1,262 @@
+{
+  "question": "Tell me about a time when you thought differently to improve a process that was working. What assumptions did you have to question? How did you evaluate if the change improved the process? Knowing what you know now, would you do anything differently?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team we had a weekly status email that took 45 minutes to compile from three dashboards. I assumed the format was required by leadership so I asked my manager if we could switch to a shared doc with live links instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What assumptions did you question?"
+        },
+        {
+          "role": "candidate",
+          "text": "I questioned that the email format itself drove value versus the data being current. I ran a two-week pilot, measured time saved, and asked the three recipients if they preferred the new version."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have checked with the other two analysts first so they weren't surprised by the change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Candidate described own weekly status email process",
+        "Questioned assumption that email format was mandated",
+        "Pilot with metrics and direct feedback from recipients",
+        "Follow-up: Would do differently? Would loop in peers earlier"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. Candidate identified an assumption about format requirements and tested a simpler alternative on their own work. The two-week pilot and recipient feedback provided a clear before/after comparison. They also reflected on missing peer input. Story stays within individual scope but shows willingness to question the status quo and measure impact. Biggest strength is the concrete evaluation step with direct feedback.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a daily standup that ran long so I suggested we make it async in Slack."
+        },
+        {
+          "role": "interviewer",
+          "text": "What assumption did you question?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just thought standups were inefficient."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure if it worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "People seemed happier and it felt faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Suggested async standup because meetings felt long",
+        "No clear assumption stated beyond inefficiency",
+        "Measurement was anecdotal",
+        "Follow-up: No structured evaluation or reflection on trade-offs"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at junior level. Candidate proposed a change based on personal feeling rather than questioning a specific assumption about why the meeting existed. Evaluation relied on vague impressions instead of defined metrics or stakeholder input. No reflection on what was learned or what would be done differently. The story shows no evidence of testing impact before or after the change."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our release process required a full regression suite even for config changes. I questioned the assumption that every change carried the same risk and proposed a risk-tiered checklist instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled six months of incident data, showed that config-only changes had zero rollbacks, and ran a pilot with two teams before presenting to the platform group."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have included the security team earlier; they raised a valid concern about audit trails in week three of the pilot."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Challenged uniform regression requirement using incident data",
+        "Pilot across two teams then scaled via platform group",
+        "Measured rollback rates and time-to-release",
+        "Follow-up: Would involve security earlier"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at senior level. Candidate used six months of incident data to question the uniform-risk assumption and ran a controlled pilot before broader rollout. Cross-team influence is visible through the platform group presentation. Reflection on involving security shows learning. The metrics (rollback rate and release time) provide concrete evaluation. Biggest strength is the data-driven challenge followed by iterative rollout.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we skip some regression tests for small changes but the team said no so we kept the old process."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't pull data, just raised it in a meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Suggested skipping tests for small changes",
+        "No data or pilot attempted",
+        "Stopped at first pushback",
+        "Follow-up: No measurement or alternative approaches explored"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at senior level. Candidate raised an idea without supporting data or a proposed experiment, then accepted the first objection. No attempt to quantify risk or run a limited test. The story shows no influence beyond a single meeting and no reflection on how the idea could have been evaluated differently."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our quarterly planning used the same template for every team despite different maturity levels. I questioned the assumption that one process fit all and created two tracks: lightweight for mature teams and detailed for newer ones."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Tracked planning cycle time and manager satisfaction scores; cycle time dropped 30% for mature teams with no increase in missed commitments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved the finance team earlier because their reporting needs were not fully met in the lightweight track."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Split planning process by team maturity",
+        "Used cycle time and satisfaction metrics",
+        "30% reduction for mature teams, commitments held",
+        "Follow-up: Would engage finance earlier"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at manager level. Candidate redesigned a company-wide planning process by questioning the one-size-fits-all assumption and created differentiated tracks. Impact is measured through cycle time and satisfaction, with clear team-level outcomes. Reflection shows awareness of cross-functional stakeholders. The change created leverage by reducing overhead for mature teams while preserving support for newer ones.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team to use a shorter planning template but some managers kept using the long one."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you evaluate the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few managers said it was faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Suggested shorter template to own team",
+        "No metrics collected",
+        "Adoption was inconsistent",
+        "Follow-up: No structured evaluation or adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at manager level. Candidate made a local suggestion without data or a pilot that could demonstrate value to other teams. Evaluation was limited to a few anecdotal comments. No attempt to create broader leverage or address inconsistent adoption. The story shows no evidence of questioning assumptions at a process-design level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our annual budgeting cycle assumed linear growth and locked resources twelve months out. I questioned whether that model still matched market velocity and introduced rolling 90-day budgets with quarterly reallocation for two business units."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The two units shifted 18% of spend mid-year to new opportunities; overall portfolio ROI improved 9% versus the prior year while other units stayed flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have defined clearer guardrails on the reallocation authority upfront to reduce friction with central finance."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Challenged 12-month fixed budget assumption",
+        "Pilot with rolling 90-day cycles in two units",
+        "18% mid-year reallocation, 9% ROI lift",
+        "Follow-up: Would set clearer guardrails with finance"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at exec level. Candidate challenged the core assumption of annual fixed budgeting and replaced it with a rolling model that enabled faster resource shifts. The pilot produced measurable portfolio-level impact (9% ROI lift) while holding other units constant. Reflection on guardrails shows strategic judgment about organizational friction. The change demonstrates long-term leverage rather than one-time heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked finance if we could review budgets more often but they said the current cycle was required for board reporting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you propose an alternative?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I accepted the constraint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you thought differently to improve a process that was working.",
+        "Suggested more frequent budget reviews",
+        "Accepted first objection from finance",
+        "No alternative model or pilot offered",
+        "Follow-up: No measurement or strategic trade-off discussion"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at exec level. Candidate accepted an existing constraint without testing whether a different budgeting rhythm could still meet board needs. No alternative framework or limited experiment was proposed. The story shows no org-level impact or strategic judgment about resource allocation speed versus control."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Questioning core assumptions",
+      "junior": "Questions format or cadence of own work",
+      "senior": "Questions risk or effort assumptions using data",
+      "manager": "Questions one-size-fits-all process design",
+      "exec": "Questions fundamental planning or resource models"
+    },
+    {
+      "signal": "Evaluation method",
+      "junior": "Simple pilot with direct feedback",
+      "senior": "Pilot plus cross-team metrics",
+      "manager": "Team outcome metrics and satisfaction",
+      "exec": "Portfolio or business-level ROI impact"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Individual task",
+      "senior": "Two to three teams",
+      "manager": "Multiple teams or function",
+      "exec": "Business unit or company process"
+    },
+    {
+      "signal": "Reflection on trade-offs",
+      "junior": "Mentions peers or communication",
+      "senior": "Mentions missed stakeholder",
+      "manager": "Mentions cross-functional needs",
+      "exec": "Mentions governance or control tension"
+    }
+  ],
+  "kind": "lp"
+}

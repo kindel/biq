@@ -1,0 +1,228 @@
+{
+  "question": "Tell me about a time you went above and beyond for a customer or client.",
+  "competency": "Customer / Client Focus",
+  "principle": "Customer / Client Focus",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer reported a data export failing on Friday afternoon. I reproduced it, found a null-handling edge case in our parser, fixed the code, wrote a test, and pushed a hotfix by 8pm so their Monday report would work. I also emailed the customer the workaround and the fix ETA."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the fix shipped?"
+        },
+        {
+          "role": "candidate",
+          "text": "I followed up Monday morning, confirmed it worked, and logged the root cause so the team could prevent similar issues."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Individual contributor fixed export bug same day, added test, followed up next week",
+        "Quote: \"I stayed until 8pm to push the hotfix so their Monday report worked\"",
+        "Follow-up: Asked about post-fix actions; candidate described confirming success and sharing root cause"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for junior level. Candidate owned an individual task end-to-end: reproduced the failing export, shipped a tested fix the same day, and verified outcome with the customer. The story shows personal ownership and follow-through rather than handoff. Biggest strength is taking responsibility for the full loop instead of stopping at the code change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The customer had an export issue. I created a ticket and assigned it to the on-call engineer."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything else?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, that was the process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Candidate created ticket and handed off, no further action",
+        "Quote: \"I created a ticket and assigned it to the on-call engineer\"",
+        "Follow-up: Asked if they did anything else; response was that it followed process"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for junior level. Candidate treated the request as a handoff rather than taking ownership of resolution. No evidence of personal follow-through or learning from the incident. The gap is lack of individual accountability for customer outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A key customer was churning because our reporting lacked a needed aggregation. I worked with their team and two internal platform groups to define the requirement, influenced the roadmap to prioritize it, and delivered a v1 within six weeks that retained the account and unlocked two similar deals."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought data on revenue impact and ran a short demo with the customer so platform owners could see the value directly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Senior influenced two platform teams, delivered feature in 6 weeks, retained account and enabled two more deals",
+        "Quote: \"I brought data on revenue impact and ran a short demo so platform owners could see the value\"",
+        "Follow-up: Asked how they influenced other teams; candidate described using customer data and demo to align priorities"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for senior level. Candidate translated a single customer need into cross-team influence and measurable business impact, including account retention and pipeline. The approach combined direct customer work with internal leverage. Biggest strength is using concrete customer evidence to drive alignment without formal authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The customer wanted a new report. I escalated it to product and moved on to my next ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the feature ship?"
+        },
+        {
+          "role": "candidate",
+          "text": "I don't know, I handed it off."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Candidate escalated request and stopped, no follow-up on outcome",
+        "Quote: \"I escalated it to product and moved on to my next ticket\"",
+        "Follow-up: Asked if feature shipped; candidate had no visibility"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for senior level. Candidate stopped at escalation and showed no cross-team influence or interest in outcome. Missing any metric or evidence of broader impact. The gap is treating customer requests as one-off tickets rather than opportunities for sustained influence."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our support team was overwhelmed by a recurring integration issue affecting ten enterprise customers. I had my engineers shadow support for a week, identified the top three root causes, then restructured on-call and added self-service tooling. Customer escalations dropped 60% and my team improved their own velocity."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who resisted the shadowing?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paired the most resistant engineer with a customer success lead and reviewed the reduction in tickets together after two weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Manager had team shadow support, fixed root causes, cut escalations 60%",
+        "Quote: \"I paired the most resistant engineer with a customer success lead and reviewed the reduction in tickets together\"",
+        "Follow-up: Asked about resistance; candidate described pairing and shared metrics to build buy-in"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for manager level. Candidate used team resources to address systemic customer pain, created leverage through process change, and drove a clear metric improvement. The story shows both people development and outcome ownership. Biggest strength is turning a support burden into a team-level fix that benefited customers and engineers.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customers were complaining so I told my team to prioritize support tickets higher."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for the customers?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't track it after the initial direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Manager gave direction to prioritize tickets but no follow-up or metrics",
+        "Quote: \"I told my team to prioritize support tickets higher\"",
+        "Follow-up: Asked what changed; candidate had no visibility into results"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for manager level. Candidate issued a directive without creating team leverage or measuring impact. No evidence of developing people or owning the outcome. The gap is lack of follow-through and absence of systemic improvement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing mid-market customers at 18% annually due to onboarding friction. I sponsored a cross-org program that combined product, sales, and success teams, redefined the first-30-day journey, and shifted investment from new-feature work. Retention improved to 9% churn and the model was adopted company-wide."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two roadmap items that would have helped only the top 5% of customers and accepted short-term feature velocity impact for longer-term retention gains."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Exec drove org-wide onboarding change, cut churn from 18% to 9%, accepted roadmap trade-offs",
+        "Quote: \"We delayed two roadmap items that would have helped only the top 5% of customers\"",
+        "Follow-up: Asked about trade-offs; candidate described explicit prioritization decision and long-term rationale"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for exec level. Candidate identified a business-level retention problem, made strategic investment trade-offs, and drove org-wide change with measurable results. The story shows long-term thinking and willingness to deprioritize other work. Biggest strength is linking customer experience directly to company retention metrics and acting on it at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had high churn so I asked customer success to improve onboarding."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "I left it with the CS leader to execute."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer or client.",
+        "Exec delegated onboarding improvement without further involvement or metrics",
+        "Quote: \"I asked customer success to improve onboarding\"",
+        "Follow-up: Asked about result; candidate had handed off entirely"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for exec level. Candidate delegated without strategic ownership or visibility into outcomes. No evidence of trade-off decisions or org-level leverage. The gap is absence of personal accountability for a systemic customer problem."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task resolution",
+      "senior": "Cross-team feature delivery",
+      "manager": "Team process redesign",
+      "exec": "Org-wide retention program"
+    },
+    {
+      "signal": "Use of metrics",
+      "junior": "None required",
+      "senior": "Account retention + pipeline",
+      "manager": "60% reduction in escalations",
+      "exec": "Churn from 18% to 9%"
+    },
+    {
+      "signal": "Trade-off handling",
+      "junior": "Not applicable",
+      "senior": "Roadmap influence via demo",
+      "manager": "Engineer resistance addressed with data",
+      "exec": "Delayed features for top 5% to fix onboarding"
+    },
+    {
+      "signal": "Follow-through",
+      "junior": "Confirmed fix with customer",
+      "senior": "Tracked deal impact",
+      "manager": "Paired resistant engineer and reviewed results",
+      "exec": "Adopted model company-wide"
+    },
+    {
+      "signal": "People development",
+      "junior": "Not expected",
+      "senior": "Not primary",
+      "manager": "Used shadowing and pairing to build ownership",
+      "exec": "Not shown in story but implied in cross-org sponsorship"
+    },
+    {
+      "signal": "Strategic judgment",
+      "junior": "Local bug fix",
+      "senior": "Used customer evidence to prioritize",
+      "manager": "Systemic root-cause focus over ticket volume",
+      "exec": "Chose retention over new-feature velocity"
+    }
+  ],
+  "kind": "competency"
+}

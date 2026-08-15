@@ -1,0 +1,299 @@
+{
+  "question": "Tell me about a time when you had to make tradeoffs between quality and cost. How did you weigh the options? What was the result? Would you have done anything differently?",
+  "competency": "Frugality",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I had to pick between a paid testing tool at $200/month or a free open-source one for a small internal dashboard. I listed the features we actually needed, timed how long setup would take, and picked the free option after checking with my mentor."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you chose it?"
+        },
+        {
+          "role": "candidate",
+          "text": "It worked for the first release but we hit a scaling limit after two months. I logged the extra hours it took to work around it and brought that data to the retro."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have set a two-week trial period with clear criteria instead of deciding in one day."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Chose free OSS tool over $200/mo paid tool for internal dashboard",
+        "Listed needed features and checked with mentor before deciding",
+        "Outcome: worked for first release, then hit scaling limit after 2 months; tracked extra hours",
+        "Quote: 'I logged the extra hours and brought that data to the retro'",
+        "Follow-up: Would you do anything differently? -> set a two-week trial with clear criteria"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at junior level. Candidate described a concrete individual decision on a small dashboard, weighing cost against setup time and actual feature needs. They checked with a mentor and later quantified the workaround cost in hours, showing they tracked the result. The reflection on adding a trial period demonstrates learning from the outcome. Story stays local in scope as expected. Biggest strength is the post-decision measurement and willingness to surface the data in retro.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I always try to pick the cheapest option so we don't spend money. Once I used a free template instead of building something custom."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was fine, the team used it and we saved some money."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, cheap is good."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Defaulted to 'cheapest option' without specifics",
+        "Used free template instead of custom build",
+        "Outcome: 'fine' and 'saved some money'",
+        "Quote: 'cheap is good'",
+        "Follow-up: Would you have done anything differently? -> no"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at junior level. Candidate gave no concrete project details, metrics, or weighing process beyond a general preference for cheap. No evidence of checking impact on quality or tracking downstream cost. The answer shows no reflection on tradeoffs or learning. Story lacks even basic individual ownership of the result. Biggest gap is absence of any decision framework or measured outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team needed to migrate a reporting service. The premium cloud option was 3x the cost of the standard tier but offered better SLAs. I ran a two-week proof of concept on standard, measured query latency under load, and compared it to our current error budget."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the latency numbers and projected monthly cost delta in a shared doc and asked the consuming teams to review. Two teams flagged a weekly batch job that would be at risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We stayed on standard, added a simple retry layer, and cut spend by 60%. The batch jobs stayed within SLO after the change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Chose standard cloud tier over 3x premium for reporting service migration",
+        "Ran 2-week POC measuring latency vs error budget",
+        "Shared data with consuming teams; two flagged batch job risk",
+        "Outcome: 60% cost cut, added retry layer, batch jobs stayed in SLO",
+        "Follow-up: How did you get buy-in? -> shared latency and cost delta doc"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at senior level. Candidate ran a measurable POC, surfaced cross-team risk, and landed a 60% cost reduction while protecting SLOs. They influenced without authority by sharing data rather than mandating. The retry layer shows pragmatic engineering to close the quality gap. Story demonstrates cross-team impact and clear metrics. Biggest strength is the combination of data-driven decision and follow-through on downstream effects.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We picked the cheaper cloud tier because leadership wanted to save money. I told the other teams it would be fine."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few jobs slowed down but we handled the tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe run a quick test first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Chose cheaper tier due to leadership pressure",
+        "Told consuming teams 'it would be fine' without data",
+        "Outcome: some jobs slowed, handled tickets reactively",
+        "Quote: 'Maybe run a quick test first'",
+        "Follow-up: How did you get buy-in? -> just told them"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at senior level. Candidate deferred to leadership cost pressure without running their own analysis or quantifying risk. No evidence of cross-team influence beyond a one-way announcement. The reactive ticket handling shows the tradeoff was not managed. Story lacks measurable outcome or learning depth. Biggest gap is missing the data-driven weighing and proactive risk mitigation expected at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was asked to cut infra spend 25% while keeping release velocity. I had the engineers audit our least-used microservices and proposed sunsetting two that had under 5% traffic. We moved the remaining load to a smaller instance type after load testing."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as an experiment with a rollback plan and let the owning engineers pick the instance type. One engineer later suggested a caching layer that gave us extra headroom."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the 25% cut, release frequency stayed flat, and the team now runs a quarterly cost review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Team tasked with 25% infra spend cut while protecting velocity",
+        "Audited low-traffic microservices and sunset two under 5% traffic",
+        "Moved load to smaller instance after load testing",
+        "Outcome: hit 25% cut, velocity flat; team adopted quarterly cost review",
+        "Follow-up: How did you handle team reaction? -> framed as experiment, let engineers choose instance type"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at manager level. Candidate turned a cost mandate into a team-owned process that delivered exactly 25% savings without velocity loss. They created leverage by having engineers run the audit and pick the instance type, then institutionalized quarterly reviews. The rollback plan and experiment framing show they protected psychological safety. Story shows clear team outcome ownership. Biggest strength is building a repeatable cost discipline rather than one-off heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we had to cut costs and asked them to find savings. We ended up turning off a few alerts."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result on velocity or quality?"
+        },
+        {
+          "role": "candidate",
+          "text": "Velocity dipped a bit but we met the target."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I should have checked the impact on on-call first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Directed team to find savings without structured approach",
+        "Outcome: turned off alerts, velocity dipped",
+        "Quote: 'I should have checked the impact on on-call first'",
+        "Follow-up: What was the result on velocity or quality? -> dipped a bit but met target"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at manager level. Candidate delegated cost cutting without providing a framework or protecting team outcomes. The only action described was turning off alerts, which created unmeasured quality risk. No evidence of developing the team or creating lasting leverage. Story shows the manager reacting to the mandate rather than owning the result. Biggest gap is lack of structured decision process and failure to track downstream effects on the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were planning a platform expansion that would double our footprint. I modeled three scenarios: full build-out, phased rollout with existing capacity, and a hybrid using spot instances for non-critical workloads. The phased approach with spot saved 40% versus full build while keeping P99 latency under target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the broader organization?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the three models with explicit risk and cost curves to the exec team and product leads. We agreed on a 6-month phased gate with a spend review at month three."
+        },
+        {
+          "role": "interviewer",
+          "text": "What long-term change resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now require every major capacity request to include a frugality model before funding approval."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Modeled three scenarios for platform expansion: full, phased, hybrid with spot",
+        "Phased + spot saved 40% vs full build while meeting P99 target",
+        "Presented risk/cost curves to execs and product leads; agreed 6-month phased gate",
+        "Outcome: institutionalized frugality model requirement for all major capacity requests",
+        "Follow-up: How did you align the broader organization? -> presented three models with explicit curves"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at exec level. Candidate created and compared three strategic scenarios with quantified cost and risk, then drove an org-wide policy change requiring frugality models for capacity decisions. The 40% savings at maintained latency shows business-level impact without heroics. Alignment across execs and product leads demonstrates strategic judgment under ambiguity. Story reflects long-term leverage through process rather than single-project wins. Biggest strength is turning one decision into durable organizational guardrails.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We went with the lower-cost option for the expansion because the numbers looked better."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh quality impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We assumed the latency would be acceptable based on vendor claims."
+        },
+        {
+          "role": "interviewer",
+          "text": "What long-term change resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "We saved money on that project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make tradeoffs between quality and cost...",
+        "Chose lower-cost option based on vendor numbers",
+        "Assumed latency acceptable without internal validation",
+        "Outcome: saved money on that project",
+        "Follow-up: How did you weigh quality impact? -> assumed based on vendor claims"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at exec level. Candidate relied on vendor claims without independent modeling or risk curves. No evidence of cross-org alignment or lasting process change. The outcome is described only as saving money on one project with no metrics or downstream effects. Story shows tactical cost cutting rather than strategic trade-off leadership. Biggest gap is absence of any mechanism to embed frugality into future decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision framework used",
+      "junior": "Simple feature list + mentor check",
+      "senior": "POC with latency vs error budget metrics",
+      "manager": "Team audit + experiment with rollback",
+      "exec": "Three scenario models with risk/cost curves"
+    },
+    {
+      "signal": "Cross-team / org influence",
+      "junior": "Checked with mentor",
+      "senior": "Shared data doc with consuming teams",
+      "manager": "Let engineers own instance choice",
+      "exec": "Aligned exec team and product leads on gate process"
+    },
+    {
+      "signal": "Measured outcome",
+      "junior": "Tracked workaround hours",
+      "senior": "60% cost cut, SLO maintained",
+      "manager": "25% cut, velocity flat, quarterly review adopted",
+      "exec": "40% savings, org policy change"
+    },
+    {
+      "signal": "Reflection / learning",
+      "junior": "Would add trial period next time",
+      "senior": "Added retry layer after risk surfaced",
+      "manager": "Institutionalized quarterly cost reviews",
+      "exec": "Made frugality model mandatory for capacity requests"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single internal dashboard",
+      "senior": "Reporting service used by multiple teams",
+      "manager": "Team infra spend and process",
+      "exec": "Platform expansion and company-wide policy"
+    }
+  ],
+  "kind": "lp"
+}

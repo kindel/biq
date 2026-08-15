@@ -1,0 +1,246 @@
+{
+  "question": "Describe a time when you brought different perspectives together to solve a problem. What types of different perspectives were represented? How did you seek out different points of view? What was the outcome? Were there any key learnings from this experience? Knowing what you know now, would you have done anything different?",
+  "competency": "Are Right, A Lot (seeking truth through diverse viewpoints)",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a feature launch, the PM wanted to prioritize speed while the designer pushed for accessibility. I asked both to join a 30-minute sync, pulled in the support ticket data I had, and we landed on a phased rollout that met the deadline and fixed the main a11y gaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide who to include?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked the ticket queue and asked the on-call engineer what broke last time we rushed something."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have written down the decision criteria before the meeting so the trade-off was clearer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: PM vs designer on speed vs a11y; used support data and on-call input",
+        "Sought views by checking tickets and asking on-call engineer",
+        "Outcome: phased rollout met deadline and fixed main gaps",
+        "Quote: 'I asked both to join a 30-minute sync'",
+        "Follow-up: Would change by writing decision criteria first"
+      ],
+      "raiseFeedback": "The candidate described a concrete, scoped disagreement between PM and designer and used ticket data plus an on-call engineer to surface facts. They sought input by directly checking existing data rather than assuming consensus. The outcome was a practical compromise that shipped on time. They reflected on the need for explicit decision criteria, showing coachability. This meets the bar for a junior role where local ownership and learning from feedback are the focus. The main strength is the willingness to pull in the right person without overstepping scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a disagreement with a teammate about the color of a button. I talked to my manager and we decided to keep the original color."
+        },
+        {
+          "role": "interviewer",
+          "text": "What other perspectives did you seek?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just my manager. The designer was busy so I didn't want to bother them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: Button color disagreement resolved by manager",
+        "Sought views: only manager, avoided designer",
+        "Outcome: kept original color",
+        "Quote: 'The designer was busy so I didn't want to bother them'",
+        "Follow-up: No evidence of data or broader input"
+      ],
+      "lowerFeedback": "The example stayed at a trivial UI detail and only involved the manager, showing no attempt to gather real differing views. The candidate avoided the designer explicitly rather than seeking their input. No data or customer signal was referenced. Reflection was absent. This lowers the bar for Are Right, A Lot at the junior level because even early-career hires should show basic curiosity about other viewpoints on their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams disagreed on whether to build a shared service or keep separate implementations. I scheduled 1:1s with the leads, pulled usage metrics from both systems, and ran a joint working session that produced a short decision doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle resistance?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead still wanted to go alone, so I asked them to own the migration cost estimate and present it back to the group."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after?"
+        },
+        {
+          "role": "candidate",
+          "text": "We adopted the shared path and the other team reduced their on-call load by 40 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: Two teams on shared service vs separate; used metrics and joint session",
+        "Sought views via 1:1s and asked resistant lead to own cost estimate",
+        "Outcome: shared path adopted, 40% on-call reduction",
+        "Quote: 'I asked them to own the migration cost estimate'",
+        "Follow-up: Would run the cost exercise earlier to shorten debate"
+      ],
+      "raiseFeedback": "The candidate identified a cross-team conflict and used usage metrics plus structured 1:1s to surface facts before a group discussion. They handled resistance by assigning the dissenting lead a concrete analysis task rather than arguing. The result delivered measurable operational relief. Reflection included a specific process improvement for next time. This raises the bar for a senior because it shows influence across teams and use of data to reach the right technical decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I invited everyone to a big meeting and we talked until we agreed on the design."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring?"
+        },
+        {
+          "role": "candidate",
+          "text": "I summarized what people said in the meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: Large meeting to reach design agreement",
+        "Sought views: open invitation and discussion",
+        "Outcome: agreement reached",
+        "Quote: 'I summarized what people said in the meeting'",
+        "Follow-up: No metrics or targeted outreach shown"
+      ],
+      "lowerFeedback": "The approach relied on a single large meeting without prior data or targeted outreach, which rarely surfaces the strongest arguments. No attempt was made to quantify trade-offs or give dissenters ownership of analysis. The outcome is stated as agreement without evidence it was the right one. This lowers the bar for a senior because Are Right, A Lot at this level requires deliberate collection of evidence across teams, not just facilitation."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team and the platform team had opposing priorities on a reliability investment. I asked each team to list their top three risks with data, then facilitated a joint review where we ranked them together and assigned owners."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you develop your people through this?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had the two tech leads co-own the final recommendation and present it to leadership."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: Team vs platform on reliability; used risk lists and joint ranking",
+        "Sought views by requiring data-backed risks from each side",
+        "Outcome: ranked risks and assigned owners",
+        "Quote: 'I had the two tech leads co-own the final recommendation'",
+        "Follow-up: Used the process to grow leads by giving them visibility"
+      ],
+      "raiseFeedback": "The manager created a structured process that forced both teams to surface data rather than opinions and then gave leads joint ownership of the output. This built capability in the team while reaching a decision aligned with actual risk. The approach shows leverage through others instead of the manager deciding alone. Reflection is implicit in the repeatable method. This raises the bar for a manager because it demonstrates developing people while owning team-level outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I listened to both sides and made the call that felt fairest."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ask your reports to gather data?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I wanted to keep it quick so the teams could move on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: Listened to both sides and decided",
+        "Sought views: direct listening only",
+        "Outcome: fairest call made",
+        "Quote: 'I wanted to keep it quick so the teams could move on'",
+        "Follow-up: No development of reports or data requirement"
+      ],
+      "lowerFeedback": "The manager defaulted to personal judgment without requiring data or involving reports in the analysis. Speed was prioritized over building team capability. No evidence that the decision was actually right, only that it felt fair. This lowers the bar for a manager role because Are Right, A Lot requires creating mechanisms that let the team reach better answers over time."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering and finance disagreed on whether to sunset a low-margin product line. I commissioned a small cross-functional group with P&L data, customer interviews, and competitive analysis, then had them present three scenarios to the ELT."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We exited the line, freed 12 engineers, and the retained customers showed higher NPS within two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: Eng vs finance on product sunsetting; commissioned data-driven group",
+        "Sought views via P&L, customer interviews, competitive analysis",
+        "Outcome: exit freed 12 engineers, NPS improved",
+        "Quote: 'had them present three scenarios to the ELT'",
+        "Follow-up: Would have included regulatory view earlier"
+      ],
+      "raiseFeedback": "The executive framed a high-stakes, ambiguous business decision and created a cross-functional fact-finding team with clear deliverables rather than mediating opinions. Multiple data sources including customer and competitive signals were required. The outcome produced both resource leverage and measurable customer improvement. The candidate noted a missing perspective for future decisions. This raises the bar at the exec level because it shows strategic judgment and the ability to drive org-level clarity through structured debate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I held an offsite with the two VPs and we aligned on the direction."
+        },
+        {
+          "role": "interviewer",
+          "text": "What external data informed the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The VPs brought their teams' views."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you brought different perspectives together...",
+        "Story: Offsite with two VPs to align",
+        "Sought views: internal VP perspectives only",
+        "Outcome: alignment reached",
+        "Quote: 'The VPs brought their teams' views'",
+        "Follow-up: No external or customer data referenced"
+      ],
+      "lowerFeedback": "The approach stayed inside the company and relied on two VPs negotiating rather than testing assumptions against market or customer reality. No mechanism was created to surface contradictory evidence. The result is stated as alignment without proof it was the strategically correct choice. This lowers the bar for an exec because Are Right, A Lot at this level demands forcing functions that incorporate external signals before committing resources."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Data vs opinion",
+      "junior": "Used existing tickets to ground discussion",
+      "senior": "Pulled cross-team usage metrics before meeting",
+      "manager": "Required each team to list risks with data",
+      "exec": "Commissioned P&L, customer interviews, competitive analysis"
+    },
+    {
+      "signal": "Handling dissent",
+      "junior": "Asked on-call engineer for input",
+      "senior": "Assigned resistant lead the cost estimate task",
+      "manager": "Gave tech leads joint ownership of recommendation",
+      "exec": "Structured three scenarios for ELT review"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single feature launch",
+      "senior": "Two-team technical decision",
+      "manager": "Team vs platform priority conflict",
+      "exec": "Product line exit affecting 12 engineers"
+    },
+    {
+      "signal": "Reflection and iteration",
+      "junior": "Would write decision criteria upfront next time",
+      "senior": "Would run cost exercise earlier",
+      "manager": "Process now used to develop leads",
+      "exec": "Would include regulatory view earlier"
+    }
+  ],
+  "kind": "lp"
+}

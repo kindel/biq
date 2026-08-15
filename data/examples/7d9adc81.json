@@ -1,0 +1,237 @@
+{
+  "question": "We don't always make the right judgment all the time. Tell me about a time when you made an error in judgment. What was the impact? What did you learn? How have you applied what you learned?",
+  "competency": "Are Right, A Lot (learning from errors in judgment)",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I misestimated the effort on a feature by assuming a library would handle edge cases cleanly. The impact was a two-day slip on a sprint deliverable that affected only my task. I learned to validate assumptions with a quick spike or peer check before committing. Since then I always run a 30-minute proof-of-concept on any new dependency and flag risks in planning."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted the initial assumption?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had used the library once before on a smaller project and it worked, so I didn't test the specific data shape we had here."
+        }
+      ],
+      "raiseNotes": [
+        "Q: error in judgment story",
+        "Situation: underestimated library edge cases on personal task",
+        "Action: now runs quick spike + flags risks",
+        "Outcome: prevented repeat slips on own work",
+        "Quote: 'I always run a 30-minute proof-of-concept'",
+        "Follow-up: assumption source - admitted prior success bias"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for junior. Candidate owned a narrow scope error that delayed only their task and described a concrete process change they now apply. The quote about running a 30-minute spike shows they turned the mistake into an owned habit rather than a one-off. This demonstrates coachability and local ownership expected at 0-2 years. The follow-up revealed the root cause was prior success bias, which they addressed without external prompting. Biggest strength is the direct link from error to repeatable personal safeguard.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked the wrong approach on a ticket but the team caught it in review so the impact was minimal. I learned to listen more to senior engineers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your original reasoning?"
+        },
+        {
+          "role": "candidate",
+          "text": "It seemed faster at the time and I didn't want to overthink it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: error in judgment story",
+        "Situation: wrong approach caught in review",
+        "Action: 'listen more to seniors'",
+        "Outcome: minimal impact claimed",
+        "Quote: 'it seemed faster at the time'",
+        "Follow-up: reasoning - stayed vague on why it was wrong"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for junior. The candidate minimized ownership by crediting the team for catching the issue and gave a generic learning point about listening rather than a specific process change. No measurable impact or before-after behavior was described. The follow-up showed the original judgment was based on speed without analysis. This pattern suggests limited reflection and weak personal ownership, which is below the threshold even for entry level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for a shared service design that two other teams adopted, but it created latency under their load patterns. Impact was a quarter-long performance regression affecting three teams until we added caching. I learned to run cross-team load tests before advocating patterns. Now I require a 48-hour bake with synthetic traffic from each consuming team before any shared component ships."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to adopt it initially?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented benchmarks from our workload only and assumed similarity."
+        }
+      ],
+      "raiseNotes": [
+        "Q: error in judgment story",
+        "Situation: advocated shared service without cross-team validation",
+        "Action: now mandates 48-hour multi-team bake",
+        "Outcome: prevented repeat cross-team regressions",
+        "Quote: 'require a 48-hour bake with synthetic traffic from each consuming team'",
+        "Follow-up: adoption driver - admitted single-workload benchmarks"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for senior. The candidate described an error with cross-team scope, quantified the quarter-long impact, and implemented a new validation step that now protects multiple teams. The quote shows the learning was turned into an enforceable process rather than personal advice. Follow-up clarified the root cause was assuming workload similarity, which they addressed with broader testing. This level of influence without authority and measurable downstream improvement meets senior expectations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I chose a design that didn't scale well for one dependent team. We fixed it after launch. I learned to consider more use cases next time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you have on their workload?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly what they told us in a single meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: error in judgment story",
+        "Situation: design didn't scale for dependent team",
+        "Action: 'consider more use cases'",
+        "Outcome: fixed post-launch",
+        "Quote: 'mostly what they told us in a single meeting'",
+        "Follow-up: data source - limited to one conversation"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for senior. Impact stayed vague and post-hoc; no metrics or duration were given. The learning remained aspirational without a changed mechanism or evidence of application to other work. Follow-up showed reliance on a single meeting rather than proactive data gathering. This reflects individual-level reflection instead of the cross-team influence and repeatable safeguards expected at senior level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I staffed a critical project with a strong but overloaded engineer because I wanted quick delivery. The engineer burned out and two other projects slipped. I learned to run explicit capacity checks with peer managers before committing people. Since then my team has a standing rule that any cross-project staffing requires a written capacity review from the owning manager first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the burnout surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "Through missed milestones and a 1:1 where they admitted working weekends for six weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: error in judgment story",
+        "Situation: overloaded key engineer for speed",
+        "Action: created written capacity review rule",
+        "Outcome: protected team capacity across projects",
+        "Quote: 'any cross-project staffing requires a written capacity review'",
+        "Follow-up: burnout signal - missed milestones and 1:1 admission"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for manager. The candidate owned a staffing judgment that produced team-level burnout and project slippage, then converted the lesson into a durable team process that now involves peer managers. The quote demonstrates leverage through process rather than heroics. Follow-up showed they tracked concrete signals like missed milestones. This reflects the people-development and team-outcome ownership required at manager level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I assigned the wrong person to lead a project and had to step in later. I learned to better match skills to projects."
+        },
+        {
+          "role": "interviewer",
+          "text": "What signals did you miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "They seemed capable in their prior role."
+        }
+      ],
+      "lowerNotes": [
+        "Q: error in judgment story",
+        "Situation: wrong project lead",
+        "Action: 'better match skills'",
+        "Outcome: had to step in",
+        "Quote: 'seemed capable in their prior role'",
+        "Follow-up: missed signals - relied on past role performance"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for manager. The story stayed at the level of one assignment without team-wide impact or process change. Learning was stated at a high level with no evidence of application or prevention of recurrence. Follow-up revealed the judgment was based on outdated signals rather than current capacity. This lacks the team-leverage and underperformance-handling focus expected of managers."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I green-lit an acquisition that looked strategically aligned on paper but whose culture and tech stack proved incompatible. Integration cost exceeded forecast by 40% and two key product lines lost momentum for a year. I learned to run a 90-day cultural and technical due-diligence exercise with joint teams before final approval. That practice is now embedded in our M&A playbook and has been used on the last three deals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the original analysis insufficient?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled synergies but never stress-tested day-to-day operating differences."
+        }
+      ],
+      "raiseNotes": [
+        "Q: error in judgment story",
+        "Situation: acquisition with culture/tech mismatch",
+        "Action: embedded 90-day joint due-diligence in M&A playbook",
+        "Outcome: applied to last three deals",
+        "Quote: 'now embedded in our M&A playbook'",
+        "Follow-up: analysis gap - modeled synergies but skipped operating differences"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for exec. The candidate described a high-ambiguity strategic error with org-level cost and momentum impact, then institutionalized a new due-diligence step that now governs future decisions. The quote shows long-term leverage through process change rather than one-off correction. Follow-up identified the exact analytical blind spot. This demonstrates strategic judgment and trade-off thinking at the scale expected of execs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We made an investment that didn't pan out as expected. We adjusted the strategy afterward. I learned to look at more scenarios."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the scale of the miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "It affected our quarterly numbers but we recovered."
+        }
+      ],
+      "lowerNotes": [
+        "Q: error in judgment story",
+        "Situation: investment miss",
+        "Action: 'look at more scenarios'",
+        "Outcome: recovered after adjustment",
+        "Quote: 'affected our quarterly numbers but we recovered'",
+        "Follow-up: scale - stayed at quarterly level without org impact"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for exec. The error was framed at a quarterly financial level without org or multi-year consequences. Learning remained generic without evidence of changed decision frameworks or lasting organizational impact. Follow-up did not surface strategic trade-offs or long-term thinking. This reads as tactical rather than the high-ambiguity, playbook-level judgment required at exec level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of error",
+      "junior": "Names personal task impact",
+      "senior": "Names cross-team impact",
+      "manager": "Names team outcome impact",
+      "exec": "Names org-level strategic impact"
+    },
+    {
+      "signal": "Root cause depth",
+      "junior": "Identifies own assumption bias",
+      "senior": "Identifies workload similarity assumption",
+      "manager": "Identifies capacity signal miss",
+      "exec": "Identifies synergy vs operating model gap"
+    },
+    {
+      "signal": "Learning mechanism",
+      "junior": "Personal habit change",
+      "senior": "Cross-team validation step",
+      "manager": "Peer-manager process rule",
+      "exec": "Embedded M&A playbook change"
+    },
+    {
+      "signal": "Evidence of application",
+      "junior": "Applied to own subsequent work",
+      "senior": "Applied to other shared components",
+      "manager": "Applied to subsequent staffing decisions",
+      "exec": "Applied to last three deals"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Individual task",
+      "senior": "Multiple teams",
+      "manager": "Own team + peer managers",
+      "exec": "Company M&A process"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Behavioral interview questions</title>
+  <link rel="stylesheet" href="css/biq.css">
+</head>
+<body>
+  <main class="bhiq-page">
+    <header class="biq-lede">
+      <h1>Behavioral interview questions</h1>
+      <p>A behavioral interview question bank for interviewers who care about only hiring excellent candidates.</p>
+    </header>
+    <section class="bhiq-app" aria-labelledby="bhiq-input-label">
+      <p class="bhiq-level-label" id="bhiq-level-label">Level</p>
+      <div class="bhiq-level" role="radiogroup" aria-labelledby="bhiq-level-label">
+        <label><input type="radio" name="bhiq-level" value="junior"> Junior</label>
+        <label><input type="radio" name="bhiq-level" value="senior" checked> Senior</label>
+        <label><input type="radio" name="bhiq-level" value="exec"> Exec</label>
+      </div>
+      <p class="bhiq-level-hint">Example answers are written for this level.</p>
+      <label id="bhiq-input-label" for="bhiq-input">Principle or competency</label>
+      <input id="bhiq-input" type="search" autocomplete="off" spellcheck="false" placeholder="Customer Obsession, teamwork, BFA, conflict">
+      <p class="bhiq-hint">Pick 2-3 per assigned principle. Prefer a time you did the work over an opinion. Probe STAR. Manager marks people-manager questions.</p>
+      <div id="bhiq-chips" class="bhiq-chip-wrap" aria-label="Leadership principles and competencies"></div>
+      <div id="bhiq-results" class="bhiq-results" aria-live="polite"></div>
+    </section>
+  </main>
+  <script src="js/biq.js" defer></script>
+</body>
+</html>

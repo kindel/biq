@@ -1,0 +1,233 @@
+{
+  "question": "Give an example of simplifying a complex process, system, or approach that led to meaningful improvement.",
+  "competency": "Problem-Solving & Analytical Thinking",
+  "principle": "Problem-Solving & Analytical Thinking",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was tracking bugs in a spreadsheet with 12 columns that kept getting out of date. I created a simple Kanban board in our existing tool with three columns and moved everything over."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We stopped missing critical bugs and the team spent 30 minutes less per week updating status. My manager asked me to show the rest of the interns."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Owned personal task tracking pain",
+        "- Moved from 12-col spreadsheet to 3-col Kanban",
+        "- Outcome: 30 min/week saved, fewer missed bugs",
+        "Quote: \"My manager asked me to show the rest of the interns\"",
+        "Follow-up: Asked about measurement - candidate had before/after time estimate"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a personal workflow inefficiency and replaced a bloated spreadsheet with a three-column board. Quote: \"We stopped missing critical bugs and the team spent 30 minutes less per week.\" This shows ownership of their own work and willingness to share the fix. The impact is local but measurable. Biggest strength is turning a small frustration into a repeatable improvement without needing direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our onboarding docs were long so I suggested we use a checklist instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a meeting but the docs owner said they were busy so nothing happened."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Suggested checklist for long docs",
+        "- No follow-through after initial pushback",
+        "Quote: \"the docs owner said they were busy so nothing happened\"",
+        "Follow-up: Asked what they did next - candidate stopped at first objection"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate noticed long onboarding docs but only made one suggestion and accepted the first objection without further action. Quote: \"the docs owner said they were busy so nothing happened.\" No evidence of ownership or iteration. The gap is lack of persistence on a small-scope improvement that stayed within their control."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating API calls because each maintained their own cache invalidation logic. I mapped the flows, proposed a shared service with clear ownership, and got both teams to adopt it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get agreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed latency numbers from both sides and ran a two-week pilot that cut duplicate calls by 40%. The other team owned the service after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Identified duplicate API cache logic across teams",
+        "- Proposed and piloted shared service",
+        "- Outcome: 40% reduction in duplicate calls",
+        "Quote: \"showed latency numbers... ran a two-week pilot\"",
+        "Follow-up: Asked how influence happened - candidate used data and pilot instead of authority"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate spotted duplicated cache logic between teams and drove adoption of a shared service through a data-backed pilot. Quote: \"showed latency numbers from both sides and ran a two-week pilot that cut duplicate calls by 40%.\" Demonstrates cross-team influence and measurable system simplification. Biggest strength is using evidence to align teams without formal authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our deployment scripts were messy so I rewrote them in my spare time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I posted the new scripts but only my team used them because the other teams had their own versions."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Rewrote deployment scripts individually",
+        "- No cross-team adoption",
+        "Quote: \"only my team used them because the other teams had their own versions\"",
+        "Follow-up: Asked about influence approach - candidate relied on posting code rather than collaboration"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate rewrote deployment scripts but achieved no cross-team adoption. Quote: \"only my team used them because the other teams had their own versions.\" The work stayed local despite clear duplication opportunity. The gap is missing the influence step required at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our incident response process had seven handoff points that caused delays. I had the team map every step, remove three handoffs, and create a single on-call rotation with clear escalation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the team impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mean time to resolve dropped 25% and two engineers who previously avoided on-call now volunteer because the process is clearer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Led team to map 7-handoff incident process",
+        "- Removed 3 handoffs, created single rotation",
+        "- Outcome: 25% faster resolution, broader on-call participation",
+        "Quote: \"two engineers who previously avoided on-call now volunteer\"",
+        "Follow-up: Asked about underperformance handling - candidate tied clarity to engagement lift"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate had their team map a seven-handoff incident process and reduced it to a single rotation. Quote: \"two engineers who previously avoided on-call now volunteer because the process is clearer.\" Shows leverage through the team and improved team outcomes. Biggest strength is connecting process simplification to both metrics and people engagement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team to stop using the old ticket system and switch to the new one."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that go?"
+        },
+        {
+          "role": "candidate",
+          "text": "Adoption was low so I escalated to their managers and forced the change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Mandated switch to new ticket system",
+        "- Used escalation instead of team buy-in",
+        "Quote: \"I escalated to their managers and forced the change\"",
+        "Follow-up: Asked about team development - candidate showed no coaching or iteration"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate mandated a ticket system change and relied on escalation when adoption lagged. Quote: \"I escalated to their managers and forced the change.\" No evidence of developing the team or creating sustainable leverage. The gap is treating simplification as a top-down directive rather than team-owned improvement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three overlapping product lines causing customer confusion and duplicated engineering effort. I led a six-month portfolio review that consolidated two lines into one platform with a clear migration path."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted short-term revenue dip on one legacy line to free 35 engineers for the consolidated platform. Two years later the unified line grew 2x while support costs fell 40%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Drove portfolio consolidation of three product lines",
+        "- Accepted short-term revenue hit for long-term leverage",
+        "- Outcome: 2x growth, 40% lower support costs, 35 engineers freed",
+        "Quote: \"accepted short-term revenue dip... unified line grew 2x\"",
+        "Follow-up: Asked about strategic judgment - candidate weighed multi-year trade-offs explicitly"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate consolidated three overlapping product lines into one platform after a structured review. Quote: \"accepted short-term revenue dip on one legacy line to free 35 engineers for the consolidated platform.\" Demonstrates org-level impact and willingness to make multi-year trade-offs. Biggest strength is linking simplification to both business growth and resource leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We standardized on one vendor for all our tools to reduce complexity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business result?"
+        },
+        {
+          "role": "candidate",
+          "text": "It took longer than expected and some teams still use workarounds, but we met the procurement goal."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of simplifying a complex process...",
+        "- Pushed single-vendor standardization",
+        "- Result stayed at procurement goal, not business impact",
+        "Quote: \"some teams still use workarounds, but we met the procurement goal\"",
+        "Follow-up: Asked about long-term thinking - candidate did not address adoption or strategic outcomes"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate standardized on one vendor but achieved only the procurement target while workarounds persisted. Quote: \"some teams still use workarounds, but we met the procurement goal.\" The change stayed tactical without org-level leverage or sustained adoption. The gap is absence of strategic trade-off analysis and long-term outcome ownership."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of simplification",
+      "junior": "Personal workflow or single task",
+      "senior": "Cross-team system or workflow",
+      "manager": "Team-owned process with engagement lift",
+      "exec": "Org or portfolio level with multi-year trade-offs"
+    },
+    {
+      "signal": "Use of data/metrics",
+      "junior": "Simple before/after time estimate",
+      "senior": "Latency or call reduction with pilot data",
+      "manager": "MTTR plus participation metrics",
+      "exec": "Revenue, cost, and headcount reallocation over years"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Shared with peers after success",
+      "senior": "Data + pilot to align teams",
+      "manager": "Team mapping and ownership transfer",
+      "exec": "Portfolio review with explicit trade-offs"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Stops at first objection",
+      "senior": "Uses pilot results to overcome",
+      "manager": "Builds team clarity to increase buy-in",
+      "exec": "Accepts short-term pain for long-term position"
+    },
+    {
+      "signal": "People development angle",
+      "junior": "None expected",
+      "senior": "Minimal",
+      "manager": "Links process clarity to on-call participation",
+      "exec": "Frees engineering capacity for higher-value work"
+    }
+  ],
+  "kind": "competency"
+}

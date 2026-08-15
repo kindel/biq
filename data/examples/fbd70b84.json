@@ -1,0 +1,226 @@
+{
+  "question": "Tell me about a time when you not only met a goal but considerably exceeded expectations. How were you able to do it? What challenges did you have to overcome?",
+  "competency": "Deliver Results",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was asked to deliver a feature in six weeks. I finished the core work in four and used the extra time to add automated tests and performance improvements that cut load time by 30 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the original goal and how did you decide to go further?"
+        },
+        {
+          "role": "candidate",
+          "text": "The goal was just working code by the deadline. I tracked my velocity weekly and asked my mentor for a code review early so I could iterate faster."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Individual contributor scope: first project, finished core in 4 weeks vs 6-week target",
+        "Added tests and 30% perf gain on own initiative",
+        "Challenge: learning the codebase quickly; asked mentor for early review",
+        "Outcome: shipped early with extra quality",
+        "Follow-up: Asked about how candidate chose what to exceed on; said tracked velocity and sought feedback"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at junior level. Candidate owned an individual deliverable and shipped two weeks early while adding measurable quality. Quote: 'I tracked my velocity weekly and asked my mentor for a code review early.' This shows coachability and initiative within a narrow scope. The story stays realistic for 0-2 years experience and focuses on personal execution rather than team leadership. Biggest strength is clear ownership of the gap between 'done' and 'better.'",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I met the six-week deadline for the feature. I worked late a few nights to make sure everything passed QA."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you exceed the original goal in any way?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the spec was met and that was the main target."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Met the deadline but no evidence of going beyond",
+        "Challenge described only as 'working late'",
+        "No metrics or extra outcomes mentioned",
+        "Follow-up: Probing for exceedance; candidate stayed at 'met spec'"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at junior level. Story describes meeting the stated deadline with extra hours but provides no evidence of exceeding scope or quality. Quote: 'the spec was met and that was the main target.' This reflects a compliance mindset rather than ownership of results. The candidate did not articulate how they could have added value beyond the minimum. Biggest gap is absence of any concrete improvement or learning applied to raise the outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had a Q3 target to reduce support tickets by 15 percent. I pulled in data from two other teams, built a shared dashboard, and the combined effort cut tickets 28 percent while also surfacing a cross-team dependency we fixed early."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to participate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them their own ticket trends first, then offered to own the dashboard build so they only had to provide data once."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Senior scope: 15 percent target exceeded to 28 percent with cross-team data",
+        "Built shared dashboard and removed a dependency",
+        "Challenge: getting other teams to share data; used their metrics as hook",
+        "Outcome: 28 percent reduction and early dependency fix",
+        "Follow-up: How influence without authority worked; offered to own the work"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at senior level. Candidate drove a cross-team outcome that nearly doubled the original target. Quote: 'I showed them their own ticket trends first, then offered to own the dashboard build.' Demonstrates influence without authority and clear metrics. Story stays grounded in 3-7 year scope with visible leverage beyond one team. Biggest strength is turning a single-team goal into a multi-team win through data and ownership of the tooling.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We hit the 15 percent ticket reduction. I stayed focused on my team's backlog and made sure we didn't miss any SLAs."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything happen beyond your own team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we kept our head down and delivered what was asked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Hit the 15 percent number but stayed inside team boundary",
+        "No cross-team action or extra outcome described",
+        "Challenge framed only as staying focused",
+        "Follow-up: Probing for influence; candidate stayed within own backlog"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at senior level. Candidate delivered the stated 15 percent reduction but shows no evidence of cross-team impact or additional value. Quote: 'we kept our head down and delivered what was asked.' This reflects a senior individual contributor who did not leverage influence or look for leverage points. Biggest gap is lack of any attempt to expand the result beyond the original team scope."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was asked to improve release frequency from monthly to bi-weekly. I restructured on-call, paired junior engineers with seniors on the release pipeline, and we reached weekly releases in one quarter while cutting rollback rate by half."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who struggled with the new cadence?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers were consistently missing the new checkpoints. I moved one to a different focus area and gave the other a clear 30-day plan with weekly check-ins; both improved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Manager scope: monthly to bi-weekly target exceeded to weekly",
+        "Developed team through pairing and restructured on-call",
+        "Handled underperformance with one reassignment and one 30-day plan",
+        "Outcome: weekly releases and 50 percent fewer rollbacks",
+        "Follow-up: Specific underperformance actions; clear plan and outcome"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at manager level. Candidate exceeded the release goal and improved quality while developing the team. Quote: 'I moved one to a different focus area and gave the other a clear 30-day plan with weekly check-ins.' Shows direct ownership of both results and people development. Story reflects manager-level leverage through process and coaching rather than personal heroics. Biggest strength is the concrete handling of underperformance tied to the delivery outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We moved from monthly to bi-weekly releases by adding more review meetings and tracking velocity closely."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond to the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple people were slower but we just kept reminding them of the target dates."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Reached bi-weekly but no evidence of going to weekly",
+        "Underperformance handled only with reminders",
+        "No team development or process ownership described",
+        "Follow-up: Probing people actions; stayed at 'reminding' level"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at manager level. Candidate achieved the bi-weekly target but provides no evidence of exceeding it or developing the team. Quote: 'we just kept reminding them of the target dates.' This shows process compliance without leverage or coaching. Biggest gap is absence of any action to raise team capability or push the outcome further."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The company needed to cut infrastructure spend 20 percent while supporting 40 percent more traffic. I shifted two product lines to a new architecture, negotiated multi-year capacity deals, and we delivered 35 percent cost reduction with headroom for the growth."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on the product side?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team had to accept a six-month delay on a new feature. I worked with them to sequence the migration so their critical path stayed intact and we still hit the annual revenue target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Exec scope: 20 percent cost cut exceeded to 35 percent while supporting 40 percent growth",
+        "Strategic architecture shift and multi-year deals",
+        "Trade-off: delayed one feature but protected revenue target",
+        "Outcome: cost and capacity both exceeded",
+        "Follow-up: Product trade-offs; sequenced migration to protect revenue"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results at exec level. Candidate exceeded both cost and capacity goals through long-term architecture and commercial decisions. Quote: 'I worked with them to sequence the migration so their critical path stayed intact and we still hit the annual revenue target.' Demonstrates strategic judgment and cross-org trade-offs under ambiguity. Story reflects 10+ year scope with business-level impact. Biggest strength is protecting a revenue outcome while delivering a larger cost win.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We hit the 20 percent infrastructure reduction by tightening budgets and delaying a few non-critical projects."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this affect growth plans?"
+        },
+        {
+          "role": "candidate",
+          "text": "Growth continued but we had to slow a couple of new initiatives for the quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you not only met a goal but considerably exceeded expectations.",
+        "Met the 20 percent cut but no exceedance shown",
+        "Trade-offs described only as 'slowing initiatives'",
+        "No long-term architecture or commercial leverage",
+        "Follow-up: Probing growth impact; stayed at short-term delays"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results at exec level. Candidate achieved the stated 20 percent reduction but shows no evidence of exceeding it or protecting long-term growth. Quote: 'we had to slow a couple of new initiatives for the quarter.' This reflects tactical cost control without strategic leverage. Biggest gap is lack of any multi-year decision or business outcome beyond the immediate target."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature or task",
+      "senior": "Cross-team data or tooling",
+      "manager": "Team process and people development",
+      "exec": "Org-level architecture and commercial deals"
+    },
+    {
+      "signal": "How exceeded goal",
+      "junior": "Added tests and perf on own time",
+      "senior": "Doubled target reduction via shared dashboard",
+      "manager": "Reached weekly releases and cut rollbacks",
+      "exec": "35 percent cost cut while supporting 40 percent growth"
+    },
+    {
+      "signal": "Handling challenges",
+      "junior": "Asked mentor for early review",
+      "senior": "Used data to gain buy-in from other teams",
+      "manager": "Clear 30-day plan and role change for underperformers",
+      "exec": "Sequenced migration to protect revenue target"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Personal velocity tracking",
+      "senior": "Owned dashboard so others only provided data",
+      "manager": "Restructured on-call and pairing model",
+      "exec": "Multi-year capacity deals and architecture shift"
+    }
+  ],
+  "kind": "lp"
+}

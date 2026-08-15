@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about your most challenging talent review and promotion process that you conducted for your team. What made it challenging? What factors did you consider in your talent review? What factors did you consider in the promotion process? Did you incorporate a tool to counter unconscious bias? If yes, how? How do you manage perceptions of unfair treatment? What did you learn from this process? Knowing what you know now, would you have done anything different?",
+  "competency": "Hire and Develop the Best (talent calibration, promotion decisions, bias mitigation)",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I helped my manager run a calibration for two interns on our project last year. One had strong code but weak documentation; the other was the opposite. We used a simple rubric and discussed concrete examples from code reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the promotion recommendation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pushed for converting the stronger one to full-time. We wrote down the criteria first so it wasn't just my opinion. I learned I needed to gather more peer input earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most challenging talent review/promotion you conducted",
+        "Situation: intern calibration on 6-person project team",
+        "Actions: created shared rubric, logged specific examples, recommended conversion for one",
+        "Outcome: both interns received clear feedback; one converted",
+        "Quote: \"We wrote down the criteria first so it wasn't just my opinion\"",
+        "Follow-up: bias tool? Used simple checklist to force evidence over gut feel"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Candidate owned a small-scope review, used explicit criteria before deciding, and could articulate the learning. The story stayed within individual contribution and showed coachability when they noted needing earlier peer input. Biggest strength is the concrete step of writing criteria down before the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager did the reviews and I just sat in. It was challenging because one person thought they deserved a promo but didn't have the impact."
+        },
+        {
+          "role": "interviewer",
+          "text": "What factors did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly whether their manager liked their work. We didn't use any bias tool."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most challenging talent review/promotion",
+        "Situation: sat in on team review as junior",
+        "Actions: mostly observed, no ownership of process or criteria",
+        "Outcome: unclear, focused on manager opinion",
+        "Quote: \"Mostly whether their manager liked their work\"",
+        "Follow-up: bias mitigation? None used"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Candidate showed no ownership of the process and defaulted to manager opinion without evidence or structure. Story stayed passive and did not demonstrate learning or any attempt to apply even basic calibration practices. Biggest gap is absence of individual agency in the talent decision."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Last year I led calibration for my eight-person team across two squads. Two engineers were borderline for senior promo. I created a shared impact table with metrics and had each submit peer feedback first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle bias?"
+        },
+        {
+          "role": "candidate",
+          "text": "We used a simple bias checklist that forced us to list three pieces of evidence for each rating. One person still felt the process was unfair so I met with them one-on-one and walked through the documented criteria."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most challenging talent review/promotion",
+        "Situation: led calibration for 8-person team, two senior promo cases",
+        "Actions: built impact table, required peer input upfront, used evidence checklist",
+        "Outcome: both promos approved; one fairness conversation held",
+        "Quote: \"We used a simple bias checklist that forced us to list three pieces of evidence\"",
+        "Follow-up: what would you change? Would run the checklist earlier in the year"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate drove the process across their team, introduced a lightweight bias countermeasure, and addressed fairness concerns directly with data. Story shows influence without authority and measurable structure. Biggest strength is the documented evidence requirement that made decisions defensible.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I ran the review for my team but mostly followed what my manager told me to do. One person was disappointed about not getting promoted."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you use any bias tool?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just talked through it. I tried to be fair."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most challenging talent review/promotion",
+        "Situation: ran review but followed manager direction",
+        "Actions: no structured criteria or bias mitigation",
+        "Outcome: one disappointed team member",
+        "Quote: \"we just talked through it\"",
+        "Follow-up: fairness management? Tried to be fair"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Candidate did not own the structure or introduce any repeatable process, defaulting to manager input and vague fairness language. No evidence of cross-team influence or bias countermeasures. Biggest gap is lack of proactive process ownership expected at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I ran the annual talent review for a 35-person org. Three promotion cases were contentious because two managers had very different standards. I forced a pre-calibration where every manager submitted written evidence before the meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle perceptions of unfairness?"
+        },
+        {
+          "role": "candidate",
+          "text": "After decisions I held skip-levels with the teams and published the promotion criteria and examples (anonymized). We also used a bias interrupter card in the room that anyone could raise."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most challenging talent review/promotion",
+        "Situation: 35-person org review with inconsistent manager standards",
+        "Actions: pre-submitted evidence requirement, published criteria post-decision, bias interrupter card",
+        "Outcome: three promotions landed cleanly; skip-levels reduced noise",
+        "Quote: \"I forced a pre-calibration where every manager submitted written evidence\"",
+        "Follow-up: what would change? Would run the evidence step quarterly instead of annually"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate owned org-level calibration, created leverage through process (pre-submission and published criteria), and addressed unfairness perceptions with transparency. Story shows development of managers and handling of team outcomes. Biggest strength is the systemic fix rather than one-off heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I facilitated the review but let the managers decide. One promo was controversial but we went with the majority."
+        },
+        {
+          "role": "interviewer",
+          "text": "Bias or fairness steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it but didn't have a formal tool. I talked to the person afterward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most challenging talent review/promotion",
+        "Situation: facilitated 35-person review",
+        "Actions: deferred to managers, no structured bias tool",
+        "Outcome: one controversial promo",
+        "Quote: \"we went with the majority\"",
+        "Follow-up: fairness? Talked to the person afterward"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Candidate facilitated but did not create leverage or standards across managers, resulting in inconsistent decisions. No repeatable bias mitigation or transparent communication of criteria. Biggest gap is absence of process ownership that would raise the bar for the broader team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "At the VP level I led the talent review for a 400-person org with six directors. The biggest challenge was inconsistent senior promo rates across teams. I introduced an org-wide rubric with business impact tiers and required every director to map their cases to it before the meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage unfairness perceptions?"
+        },
+        {
+          "role": "candidate",
+          "text": "We published anonymized promotion examples at each level and ran a quarterly calibration check-in. One director still pushed back so we adjusted the rubric together and I owned the communication to their team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most challenging talent review/promotion",
+        "Situation: 400-person org with inconsistent director standards",
+        "Actions: org rubric with impact tiers, pre-mapping requirement, published examples, quarterly check-ins",
+        "Outcome: promo rates equalized within 6 months; one director alignment conversation",
+        "Quote: \"required every director to map their cases to it before the meeting\"",
+        "Follow-up: what would change? Would have started the rubric work a full year earlier"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate drove org-level change with structural interventions (rubric, pre-mapping, published examples) that created leverage across directors. Story shows long-term thinking and ownership of business outcomes rather than individual cases. Biggest strength is turning inconsistent director behavior into a repeatable, transparent system.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I chaired the review sessions but let each director run their own process. We had some variation in promo rates but that is expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "Bias or fairness steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "We talked about it in the room. No formal tool across the org."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most challenging talent review/promotion",
+        "Situation: chaired 400-person review",
+        "Actions: delegated fully to directors, accepted variation",
+        "Outcome: ongoing inconsistency",
+        "Quote: \"that is expected\"",
+        "Follow-up: bias mitigation? Talked about it in the room"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Candidate chaired but did not impose org-level standards or create transparency mechanisms, accepting variation instead of driving consistency. No evidence of strategic leverage or long-term process improvement. Biggest gap is lack of org-level ownership expected at this scope."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of process vs facilitation",
+      "junior": "Raises when candidate owns small rubric or criteria; lowers when passive observer",
+      "senior": "Raises when candidate introduces team-level structure; lowers when defers to manager",
+      "manager": "Raises when candidate forces evidence standards across managers; lowers when lets managers decide",
+      "exec": "Raises when candidate creates org rubric and transparency; lowers when accepts director variation"
+    },
+    {
+      "signal": "Bias mitigation approach",
+      "junior": "Simple checklist or evidence requirement is sufficient",
+      "senior": "Lightweight tool plus peer input before decision",
+      "manager": "Bias interrupter plus published criteria post-decision",
+      "exec": "Org-wide rubric plus quarterly calibration and published examples"
+    },
+    {
+      "signal": "Handling fairness perceptions",
+      "junior": "Clear criteria and one-on-one feedback",
+      "senior": "Documented criteria plus direct conversation",
+      "manager": "Skip-levels and anonymized published examples",
+      "exec": "Published examples plus director alignment and team communication"
+    },
+    {
+      "signal": "Learning and iteration",
+      "junior": "Would gather peer input earlier",
+      "senior": "Would run checklist earlier in the year",
+      "manager": "Would run evidence step quarterly",
+      "exec": "Would have started rubric work a full year earlier"
+    }
+  ],
+  "kind": "lp"
+}

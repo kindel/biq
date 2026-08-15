@@ -1,0 +1,269 @@
+{
+  "question": "Tell me about a time when you were able to remove a serious roadblock/barrier preventing your team from making progress. What was the barrier? How were you able to remove it? What was the outcome? Knowing what you know now, would you have done anything differently?",
+  "competency": "Bias for Action (Ownership)",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "Our build was blocked by a flaky test in a shared service. I reproduced it locally, found the race condition, and proposed a fix in the PR. Owner merged it after review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and what would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Shipped two days early. I would have looped the service owner earlier instead of debugging solo for a day."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: flaky test blocking builds",
+        "Action: reproduced, diagnosed race condition, submitted PR",
+        "Outcome: unblocked, shipped 2 days early",
+        "Quote: \"I would have looped the service owner earlier\"",
+        "Follow-up: Would you escalate sooner? \"Yes, after 4 hours next time.\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at junior level. The candidate identified a concrete barrier (flaky test in shared service), took direct ownership by reproducing and fixing it locally, and delivered a measurable outcome of shipping two days early. The reflection quote shows coachability and learning. This is local scope but demonstrates proactive removal rather than waiting. Biggest strength is the clear before-and-after impact tied to their own actions.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "We were waiting on legal approval for a dependency. I sent a reminder email after two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They approved it eventually. I didn't follow up again because I didn't want to bother them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: legal approval delay",
+        "Action: sent one reminder email after two weeks",
+        "Outcome: waited for eventual approval",
+        "Quote: \"I didn't follow up again because I didn't want to bother them\"",
+        "Follow-up: Did you try any other channel? \"No, just the one email.\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at junior level. The candidate described a passive approach consisting of a single email after two weeks and explicitly avoided further action to not bother stakeholders. No evidence of creative problem-solving or ownership to unblock the team faster. The story shows waiting rather than driving resolution. Biggest gap is lack of initiative or escalation when a clear barrier existed."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams had conflicting API requirements that stalled our launch. I ran a joint design session, aligned on a shared contract, and got both leads to sign off."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and what would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Launch happened on schedule. I would have involved the TPM earlier to document decisions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: cross-team API conflict",
+        "Action: organized joint session, drove alignment on contract",
+        "Outcome: on-schedule launch",
+        "Quote: \"I would have involved the TPM earlier\"",
+        "Follow-up: How did you influence without authority? \"By focusing on shared launch date and data.\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at senior level. The candidate proactively addressed a cross-team dependency conflict by convening stakeholders and securing alignment that enabled an on-schedule launch. The story shows influence without authority and a concrete metric. The retrospective quote demonstrates learning. Biggest strength is turning an ambiguous blocker into a resolved outcome with measurable delivery impact.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "Marketing kept changing requirements. I documented the changes and escalated to my manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager handled it. We slipped the date by three weeks but the team was protected."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: changing requirements from marketing",
+        "Action: documented and escalated to manager",
+        "Outcome: three-week slip, manager resolved it",
+        "Quote: \"My manager handled it\"",
+        "Follow-up: Did you propose any mitigation? \"No, I waited for direction.\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at senior level. The candidate responded to a cross-team blocker by documenting and handing it off to their manager rather than driving resolution themselves. The outcome was a three-week slip with no evidence of personal leverage or creative unblocking. The story reflects a lack of ownership for cross-team progress. Biggest gap is treating escalation as the end rather than the start of action."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "A key engineer was blocked by unclear priorities across three projects. I reset the team's OKRs, reallocated two people, and created a weekly sync with stakeholders."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Velocity increased 30% and the engineer stayed. I would have reset expectations with stakeholders sooner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: unclear priorities causing engineer blockage",
+        "Action: reset OKRs, reallocated headcount, added sync cadence",
+        "Outcome: 30% velocity lift, retention",
+        "Quote: \"I would have reset expectations with stakeholders sooner\"",
+        "Follow-up: How did you handle pushback? \"By showing data on context-switching cost.\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at manager level. The candidate identified a systemic priority barrier affecting their team, took direct steps to reset OKRs and reallocate resources, and achieved a 30% velocity increase plus retention. The story shows leverage through process and people decisions. The reflection indicates ongoing improvement. Biggest strength is owning team-level outcomes rather than individual heroics.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "The team was waiting on headcount approval. I reminded my director in our 1:1."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We got the req two months later. The team was frustrated but I kept them focused on other work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: delayed headcount approval",
+        "Action: mentioned once in 1:1 with director",
+        "Outcome: two-month delay, team stayed on other work",
+        "Quote: \"I kept them focused on other work\"",
+        "Follow-up: Did you prepare a business case? \"No, I assumed the director would handle it.\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at manager level. The candidate treated a critical staffing barrier with a single mention in a 1:1 and accepted a two-month delay without further action or business-case preparation. No evidence of creating leverage or protecting team outcomes. The story shows passive waiting rather than driving resolution. Biggest gap is lack of ownership for team capacity and delivery."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "Org-wide, legal review was gating all new product launches. I sponsored a risk-tiering framework that let low-risk features bypass full review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and what would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Time-to-launch dropped 40%. I would have piloted with one business unit first to refine the tiers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: legal review gating all launches",
+        "Action: sponsored risk-tiering framework to unblock low-risk work",
+        "Outcome: 40% faster time-to-launch",
+        "Quote: \"I would have piloted with one business unit first\"",
+        "Follow-up: How did you get legal buy-in? \"By quantifying review backlog cost and sharing pilot data.\""
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at exec level. The candidate diagnosed an org-level process barrier, designed and sponsored a scalable solution (risk-tiering), and delivered a 40% improvement in launch velocity. The story shows strategic judgment and long-term leverage. The retrospective quote reflects learning on rollout. Biggest strength is creating systemic change that benefits multiple teams rather than one-off fixes.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you removed a roadblock for your team."
+        },
+        {
+          "role": "candidate",
+          "text": "We had repeated delays from a partner team. I raised it in the quarterly business review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "The partner committed to improvements. We still missed two quarters but the issue was now visible at the right level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you removed a roadblock for your team.",
+        "Barrier: repeated partner delays",
+        "Action: raised in QBR",
+        "Outcome: partner commitment, still missed two quarters",
+        "Quote: \"The issue was now visible at the right level\"",
+        "Follow-up: Did you propose any joint process change? \"No, I left it to the partner.\""
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at exec level. The candidate responded to a persistent cross-org blocker by surfacing it in a QBR and accepting continued misses without driving a structural fix. No evidence of strategic trade-offs or long-term leverage. The story reflects visibility without resolution. Biggest gap is treating escalation as sufficient action at an organizational scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Proactive vs reactive response",
+      "junior": "Raises: reproduces and fixes locally; Lowers: sends single email and waits",
+      "senior": "Raises: convenes cross-team session; Lowers: escalates and hands off",
+      "manager": "Raises: resets OKRs and reallocates resources; Lowers: mentions once in 1:1",
+      "exec": "Raises: sponsors org-wide framework; Lowers: raises in QBR and stops"
+    },
+    {
+      "signal": "Scope and leverage",
+      "junior": "Individual task unblock",
+      "senior": "Cross-team alignment",
+      "manager": "Team process and capacity",
+      "exec": "Org-level process change"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Days saved on own project",
+      "senior": "On-schedule launch",
+      "manager": "30% velocity + retention",
+      "exec": "40% time-to-launch reduction"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Would loop owner earlier",
+      "senior": "Would involve TPM sooner",
+      "manager": "Would reset stakeholder expectations faster",
+      "exec": "Would pilot with one BU first"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Direct fix + PR",
+      "senior": "Joint design session + sign-off",
+      "manager": "OKR reset + cadence",
+      "exec": "Risk-tiering framework + data"
+    }
+  ],
+  "kind": "lp"
+}

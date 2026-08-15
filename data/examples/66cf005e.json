@@ -1,0 +1,238 @@
+{
+  "question": "Elevator Part 1: design an elevator system for a building I am building.",
+  "competency": "Invent and Simplify + Structured problem solving",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "How many floors and what is the expected traffic? I would start by clarifying requirements before sketching a basic controller."
+        },
+        {
+          "role": "interviewer",
+          "text": "Five floors, mostly residents. What next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would model it as a simple state machine with up/down requests and one elevator car. Follow-up: would you like me to walk through the state transitions?"
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you handle multiple requests?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would queue them by direction and floor, then optimize the next stop. I learned this from a previous assignment where I overcomplicated a scheduler."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Clarified floors and traffic first",
+        "Proposed state machine + request queue",
+        "Quote: \"I overcomplicated a scheduler last time so I kept it to one car\"",
+        "Follow-up: asked about multiple requests, candidate described direction-based queuing"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a junior. The candidate first asked about floors and traffic instead of jumping to code. They described a single-car state machine and direction queue, explicitly referencing a prior over-engineered scheduler as the reason for keeping scope small. This shows ownership of their own work and coachability. The story is local but demonstrates the right instincts for simplification. Biggest strength is the explicit link between past feedback and current scoping decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I would use a class for each floor and an event bus for requests."
+        },
+        {
+          "role": "interviewer",
+          "text": "What problem are you solving first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I think we need to support multiple elevators and real-time optimization from day one."
+        },
+        {
+          "role": "interviewer",
+          "text": "The building has five floors."
+        },
+        {
+          "role": "candidate",
+          "text": "Still, I would start with a distributed system design."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Jumped straight to classes and event bus",
+        "Assumed multiple elevators without asking",
+        "Quote: \"I would start with a distributed system design\"",
+        "Follow-up: interviewer gave five floors; candidate still pushed for distributed approach"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for a junior. The candidate immediately proposed classes and an event bus without clarifying scope. When told the building has five floors they still defaulted to a distributed system. This shows lack of ownership over their own work and poor response to feedback. The story never narrows to a solvable individual task. Biggest gap is failure to ask clarifying questions before expanding scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I would first define the key metrics: average wait time and throughput per floor. Then I would design a single shared controller that other teams can extend."
+        },
+        {
+          "role": "interviewer",
+          "text": "What tradeoffs are you making?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would start with one elevator and add a second only after measuring real traffic. This keeps the initial interface simple for the mobile team that will call it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Defined success metrics first",
+        "Proposed shared controller for cross-team use",
+        "Quote: \"keeps the initial interface simple for the mobile team\"",
+        "Follow-up: asked about tradeoffs, candidate chose one elevator until data arrives"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a senior. The candidate anchored on measurable outcomes (wait time, throughput) and designed a single controller explicitly to reduce work for the mobile team. They chose incremental rollout rather than building for multiple elevators upfront. The story shows cross-team influence without authority and a clear simplification decision. Biggest strength is tying the design choice directly to another team's consumption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I would build a full simulation with multiple cars and predictive algorithms."
+        },
+        {
+          "role": "interviewer",
+          "text": "The building is five floors."
+        },
+        {
+          "role": "candidate",
+          "text": "Still worth modeling all edge cases now so we do not have to change later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Proposed full multi-car simulation immediately",
+        "Ignored building size when challenged",
+        "Quote: \"worth modeling all edge cases now\"",
+        "Follow-up: interviewer noted five floors; candidate doubled down on future-proofing"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for a senior. The candidate proposed a multi-car predictive simulation without first defining metrics or confirming traffic. When told the building size they still prioritized modeling every edge case. This shows absence of cross-team leverage and a bias toward complexity over measurable value. Biggest gap is lack of evidence that they would influence others toward a simpler starting point."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I would assign one engineer to own the core scheduling logic and have them partner with the mobile team on the API. My goal is to ship a minimal version in four weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you handle underperformance on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would give the engineer clear success criteria on wait-time metrics and pair them with a stronger peer for the first sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Assigned single owner and cross-team partner",
+        "Targeted four-week minimal ship",
+        "Quote: \"give the engineer clear success criteria on wait-time metrics\"",
+        "Follow-up: asked about underperformance, candidate described pairing and metric-based coaching"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a manager. The candidate created leverage by giving one person clear ownership and a cross-team partner, with an explicit four-week minimal deliverable. They described handling underperformance through metric-based coaching rather than heroics. The story shows team-level outcomes and development of others. Biggest strength is the concrete mechanism for both simplification and people development.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I would personally design the full system and review every PR."
+        },
+        {
+          "role": "interviewer",
+          "text": "How would your team grow from this?"
+        },
+        {
+          "role": "candidate",
+          "text": "They would learn by reviewing my design doc."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Kept design ownership with self",
+        "No delegation plan",
+        "Quote: \"They would learn by reviewing my design doc\"",
+        "Follow-up: asked about team growth; candidate offered only passive review"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for a manager. The candidate retained personal ownership of the full design instead of creating team leverage. When asked about development they offered only passive review of their own work. This shows absence of leverage through others and no plan for handling underperformance. Biggest gap is treating the problem as individual heroics rather than team outcome."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I would first ask what business outcome matters most: tenant satisfaction, construction cost, or long-term maintenance. Then I would decide whether to buy or build based on that single metric."
+        },
+        {
+          "role": "interviewer",
+          "text": "What if the board wants both low cost and high satisfaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would run a two-month pilot with one vendor system, measure actual tenant complaints, and only then decide on custom work. This avoids committing the org to a multi-year build without data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Anchored on single business metric first",
+        "Chose buy-vs-build after pilot",
+        "Quote: \"avoids committing the org to a multi-year build without data\"",
+        "Follow-up: asked about conflicting goals; candidate proposed time-boxed pilot"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for an exec. The candidate started with the single most important business outcome and used a time-boxed pilot to resolve ambiguity before committing the organization. They explicitly avoided a multi-year custom build without data. The story shows strategic judgment and long-term leverage rather than heroics. Biggest strength is the clear trade-off decision tied to org-level risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I would form a task force to design a world-class custom system from scratch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What is the business goal?"
+        },
+        {
+          "role": "candidate",
+          "text": "We can define that after we see the architecture."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Elevator Part 1: design an elevator system for a building I am building.",
+        "Proposed task force for custom build",
+        "Deferred business goal definition",
+        "Quote: \"We can define that after we see the architecture\"",
+        "Follow-up: asked about business goal; candidate postponed until after architecture work"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for an exec. The candidate immediately formed a task force for a custom system without first identifying the primary business metric. When pressed they deferred goal definition until after architecture work. This shows absence of strategic judgment and a willingness to commit the organization to long-term cost without data. Biggest gap is lack of evidence they would make the hard buy-versus-build trade-off early."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Clarifies requirements before designing",
+      "junior": "Asks about floors and traffic",
+      "senior": "Defines metrics first",
+      "manager": "Sets four-week minimal scope with owner",
+      "exec": "Anchors on single business outcome"
+    },
+    {
+      "signal": "Simplifies initial scope",
+      "junior": "One car, state machine",
+      "senior": "One elevator until data arrives",
+      "manager": "Delegates core logic to one engineer",
+      "exec": "Time-boxed vendor pilot before custom work"
+    },
+    {
+      "signal": "Responds to feedback",
+      "junior": "References prior scheduler over-complexity",
+      "senior": "Adjusts rollout based on traffic data",
+      "manager": "Uses metric-based coaching for underperformer",
+      "exec": "Uses pilot data to avoid multi-year commitment"
+    },
+    {
+      "signal": "Creates leverage beyond self",
+      "junior": "N/A (individual scope)",
+      "senior": "Simple API for mobile team",
+      "manager": "Pairs underperformer with peer",
+      "exec": "Avoids org-level multi-year build"
+    }
+  ],
+  "kind": "lp"
+}

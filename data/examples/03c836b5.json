@@ -1,0 +1,244 @@
+{
+  "question": "Tell me about a time where you had a dependency that wasn't delivering to you. How did you deal with this to get it back on track?",
+  "competency": "Ownership (influence without authority)",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My onboarding checklist depended on the infra team provisioning a test account. After two days with no update I pinged the ticket daily and offered to pair on the request form. When it still slipped I asked my manager for the right contact and we got it done in four days total."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the first ping got no reply?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked the ticket status myself and then looped in my manager with a short summary of what was blocked."
+        }
+      ],
+      "raiseNotes": [
+        "Q: dependency not delivering",
+        "Role: new hire on feature team",
+        "Action: daily pings + offered help + escalated to manager",
+        "Outcome: account live in 4 days instead of 2-week slip",
+        "Quote: \"I summarized the blocker for my manager so she could unblock\"",
+        "Follow-up: asked about first non-reply; candidate showed persistence then proper escalation"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for junior level. Candidate owned the local blocker instead of waiting, used daily follow-up and offered concrete help, then escalated cleanly with a summary. Quote shows they understood the limit of their authority. Story stays within individual scope and demonstrates coachability by seeking manager input. Biggest strength is moving from passive waiting to structured escalation without drama.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The other team just never responded so I waited and told my manager at the next 1:1 that the dependency was late."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything else?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent one email and after that it was on them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: dependency not delivering",
+        "Role: new hire",
+        "Action: one email then waited",
+        "Outcome: slipped two weeks, no recovery attempt",
+        "Quote: \"after that it was on them\"",
+        "Follow-up: candidate confirmed no further action or escalation"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. Candidate sent one message and treated the dependency as someone else's problem rather than their own to resolve. No evidence of follow-up, alternative paths, or timely escalation. Story shows waiting behavior instead of ownership of the outcome. Biggest gap is lack of personal accountability for unblocking their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Search indexing depended on the ranking service to expose a new signal. Two weeks of missed dates risked our launch. I mapped the dependency chain, created a shared doc with impact numbers, and ran weekly syncs with both teams until we aligned on a reduced scope that let us ship on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the ranking team to prioritize?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the launch revenue impact and offered to take on two of their test cases to reduce their load."
+        }
+      ],
+      "raiseNotes": [
+        "Q: dependency not delivering",
+        "Role: senior IC on launch-critical project",
+        "Action: mapped chain, shared metrics doc, weekly syncs, offered help",
+        "Outcome: reduced scope shipped on original date",
+        "Quote: \"showed revenue impact and took on two test cases\"",
+        "Follow-up: probed influence tactic; candidate used data plus reciprocity"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for senior level. Candidate treated the cross-team miss as their problem, used metrics to create shared context, and applied influence without authority by offering reciprocal work. Outcome stayed measurable and protected the launch date. Story shows cross-team scope and proactive recovery. Biggest strength is combining data with concrete help to drive alignment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept reminding the ranking team in Slack but they had higher priorities so the signal landed late and we slipped the launch by a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any other steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated to my manager but the other team still wouldn't move."
+        }
+      ],
+      "lowerNotes": [
+        "Q: dependency not delivering",
+        "Role: senior IC",
+        "Action: Slack reminders then manager escalation",
+        "Outcome: one-week slip, no recovery",
+        "Quote: \"they had higher priorities\"",
+        "Follow-up: candidate showed reliance on escalation without personal leverage attempts"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. Candidate relied on reminders and one escalation instead of driving recovery themselves. No evidence of creating shared visibility or offering trade-offs to influence the other team. Story stays reactive and accepts the slip as inevitable. Biggest gap is absence of cross-team influence tactics or measurable mitigation attempts."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The platform team was three sprints behind on a shared service our two teams needed. I met with their manager, aligned on joint OKRs, and reassigned one of my engineers to embed for two weeks to unblock. We hit the combined milestone and later turned the embedding into a recurring rotation."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the capacity hit on your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I deprioritized a lower-impact internal tool and communicated the trade-off to my director."
+        }
+      ],
+      "raiseNotes": [
+        "Q: dependency not delivering",
+        "Role: manager of feature team",
+        "Action: joint OKRs with peer manager, embedded engineer, deprioritized own work",
+        "Outcome: milestone hit + new rotation process",
+        "Quote: \"turned the embedding into a recurring rotation\"",
+        "Follow-up: asked about capacity trade-off; candidate owned the decision and communicated upward"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for manager level. Candidate owned the cross-team delivery gap, created joint accountability with a peer, and used team leverage by embedding an engineer. Also modeled trade-off decisions and communicated them up. Story shows team-level leverage and process improvement beyond the single incident. Biggest strength is turning a one-time miss into a repeatable mechanism while protecting the outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I flagged the delay in the monthly dependency review and asked my director to talk to their director. The work eventually landed but we missed the quarter goal."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you engage the other manager directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I waited for the formal review cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: dependency not delivering",
+        "Role: manager",
+        "Action: flagged in review, waited for director escalation",
+        "Outcome: missed quarter goal",
+        "Quote: \"waited for the formal review cycle\"",
+        "Follow-up: candidate confirmed no direct peer engagement or team leverage"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. Candidate treated the issue as a reporting item rather than something to actively resolve with peer managers. No evidence of direct engagement, capacity trade-offs, or creating leverage through their own team. Story shows passive escalation and acceptance of the missed goal. Biggest gap is lack of manager-level ownership over cross-team outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product lines depended on a shared infra migration that kept slipping. I changed the org priority to make the migration the top company goal for Q3, moved two senior engineers under the infra lead temporarily, and adjusted our revenue forecast with the CFO. We completed the migration six weeks early and used the model for the next platform shift."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused two non-critical feature bets and accepted a one-quarter delay in a smaller market expansion."
+        }
+      ],
+      "raiseNotes": [
+        "Q: dependency not delivering",
+        "Role: exec owning multiple product lines",
+        "Action: reset company priority, temporary org move, forecast adjustment with CFO",
+        "Outcome: migration early + reusable model",
+        "Quote: \"paused two non-critical feature bets\"",
+        "Follow-up: probed trade-offs; candidate showed strategic prioritization and cross-org leverage"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for exec level. Candidate treated the chronic dependency miss as an org-level problem, made explicit priority and structural changes, and aligned finance on the forecast impact. Outcome delivered early and created a reusable pattern. Story demonstrates long-term thinking and willingness to own company-wide trade-offs. Biggest strength is using org levers rather than heroics to fix the root cause.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the infra VP for a recovery plan in the quarterly review and followed up in staff meetings until it landed two months late."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any org or priority changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We stayed with the existing roadmap and absorbed the delay."
+        }
+      ],
+      "lowerNotes": [
+        "Q: dependency not delivering",
+        "Role: exec",
+        "Action: asked for recovery plan in reviews",
+        "Outcome: two-month slip, no structural change",
+        "Quote: \"absorbed the delay\"",
+        "Follow-up: candidate confirmed no priority or org adjustments"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. Candidate relied on status updates and accepted the slip instead of using executive authority to reset priorities or structure. No evidence of trade-off decisions or long-term fixes. Story shows monitoring rather than ownership of the business outcome. Biggest gap is absence of strategic judgment or leverage at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Personal accountability vs waiting",
+      "junior": "Raises: daily follow-up then clean escalation; Lowers: one email then passive",
+      "senior": "Raises: mapped chain and offered help; Lowers: Slack reminders only",
+      "manager": "Raises: engaged peer manager directly; Lowers: waited for formal review",
+      "exec": "Raises: reset company priority; Lowers: absorbed delay"
+    },
+    {
+      "signal": "Use of leverage (data, people, structure)",
+      "junior": "Raises: offered help + manager summary; Lowers: none",
+      "senior": "Raises: metrics + reciprocity; Lowers: none",
+      "manager": "Raises: joint OKRs + embed; Lowers: none",
+      "exec": "Raises: org move + forecast alignment; Lowers: none"
+    },
+    {
+      "signal": "Scope of recovery",
+      "junior": "Individual task unblock",
+      "senior": "Cross-team launch protection",
+      "manager": "Team capacity and process",
+      "exec": "Org priority and structure"
+    },
+    {
+      "signal": "Trade-off communication",
+      "junior": "N/A at this level",
+      "senior": "Offered test-case help",
+      "manager": "Deprioritized internal tool and told director",
+      "exec": "Paused feature bets with CFO"
+    },
+    {
+      "signal": "Long-term fix vs one-time",
+      "junior": "N/A",
+      "senior": "N/A",
+      "manager": "Created recurring rotation",
+      "exec": "Reusable migration model"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "4-day delivery",
+      "senior": "On-time launch",
+      "manager": "Milestone hit + new process",
+      "exec": "Early completion + org model"
+    }
+  ],
+  "kind": "lp"
+}

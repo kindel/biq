@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you saw an issue that would impact your team and took a proactive approach to solve it. What was the issue? What did you do and what was the outcome? What did you learn from this situation?",
+  "competency": "Bias for Action",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our build was failing intermittently because of a flaky test in my module. I noticed it while running locally, added a retry and fixed the root cause in the test data setup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Builds stabilized for the team. My manager asked me to share the fix in the next retro. I learned to treat flaky tests as real defects instead of ignoring them."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you saw an issue impacting your team and took proactive action.",
+        "Issue: intermittent build failures from flaky test in own module",
+        "Actions: diagnosed locally, added retry + fixed data setup",
+        "Outcome: builds stabilized; shared in retro",
+        "Quote: 'I learned to treat flaky tests as real defects'",
+        "Follow-up: How did you decide to own it vs flag to someone else? 'It was in my code so I just fixed it.'"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at junior level. The candidate identified a build issue in their own module, diagnosed the flaky test, and shipped both a retry and root-cause fix without being asked. Quote: 'It was in my code so I just fixed it.' This shows clear ownership of individual work and willingness to act before the problem grew. The outcome was local but measurable (stabilized builds) and they reflected on treating flakes as defects. Biggest strength is immediate ownership rather than waiting for escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team was hitting merge conflicts a lot. I mentioned it in standup a couple times."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to solve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured the leads would set up a better branching strategy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Issue: frequent merge conflicts mentioned in standup",
+        "Actions: raised in standup, waited for leads",
+        "Outcome: no change described",
+        "Quote: 'I figured the leads would set up a better strategy'",
+        "Follow-up: Why not investigate yourself? 'It felt like a team process thing.'"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at junior level. The candidate noticed merge conflicts but only surfaced the issue in standup and deferred to leads instead of exploring a fix. Quote: 'I figured the leads would set up a better strategy.' No evidence of personal ownership or small experiments. The story stays at the level of reporting rather than acting. Biggest gap is lack of initiative on an issue within individual scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two partner teams were duplicating effort on a shared data pipeline that was about to break our release cadence. I mapped the overlap, proposed a joint ownership model, and drove the first two syncs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the duplicated work in a shared doc with cycle-time numbers and let each team pick which pieces they owned. We cut duplication by 40 percent and hit the release date."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Issue: duplicated pipeline work across partner teams threatening release",
+        "Actions: mapped overlap, proposed joint model, ran first syncs",
+        "Outcome: 40% reduction in duplication, release on time",
+        "Quote: 'I showed the duplicated work with cycle-time numbers'",
+        "Follow-up: What resistance did you hit? 'One team worried about losing control; we solved it by letting them choose ownership slices.'"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at senior level. The candidate spotted cross-team duplication that would miss a release, created a shared view with metrics, and facilitated agreement without formal authority. Quote: 'I showed the duplicated work with cycle-time numbers.' Result was concrete (40% reduction, on-time release) and required influence across boundaries. The story demonstrates proactive coordination rather than waiting for a program manager. Biggest strength is turning observation into cross-team leverage with measurable impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw our service was getting paged more than the other teams. I filed a ticket with the on-call rotation owner."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not immediately. The ticket stayed open for a few weeks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Issue: higher paging load on own service",
+        "Actions: filed ticket with on-call owner",
+        "Outcome: ticket open for weeks, no resolution described",
+        "Quote: 'The ticket stayed open for a few weeks'",
+        "Follow-up: Why stop at the ticket? 'I didn't have authority over the rotation.'"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at senior level. The candidate identified elevated paging but limited action to filing a ticket and stopped when ownership was unclear. Quote: 'The ticket stayed open for a few weeks.' No attempt to gather data, propose options, or influence the owning team. The outcome stayed passive. Biggest gap is absence of influence without authority on an issue with cross-team visibility."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my teams was consistently missing sprint commitments because of unplanned support work. I ran a two-week time audit with the team, rebalanced the on-call load, and created a support rotation that freed two engineers per sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to delivery?"
+        },
+        {
+          "role": "candidate",
+          "text": "Sprint completion went from 60% to 85% over the next quarter. The team also started mentoring a new hire on the support process."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Issue: team missing commitments due to unplanned support load",
+        "Actions: ran time audit, rebalanced on-call, created rotation",
+        "Outcome: sprint completion 60% to 85%; enabled mentoring",
+        "Quote: 'Sprint completion went from 60% to 85%'",
+        "Follow-up: How did you handle the engineer who resisted the rotation? 'We let them pick their preferred support week first.'"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at manager level. The candidate diagnosed chronic sprint misses caused by support load, ran a time audit, and implemented a new rotation that improved completion from 60% to 85%. Quote: 'Sprint completion went from 60% to 85%.' Action created team-level leverage and freed capacity for mentoring. The story shows ownership of team outcomes and development of repeatable process. Biggest strength is converting a systemic issue into a structural fix owned by the team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was overloaded. I asked them to prioritize better in planning."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the load change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. We just kept pushing items to the next sprint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Issue: team overload affecting delivery",
+        "Actions: told team to prioritize better",
+        "Outcome: items deferred, no structural change",
+        "Quote: 'We just kept pushing items to the next sprint'",
+        "Follow-up: What data did you collect? 'I didn't run any audit.'"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at manager level. The candidate recognized overload but responded only with a directive to prioritize, without data or process change. Quote: 'We just kept pushing items to the next sprint.' No audit, no rotation redesign, and no measurable improvement. The story shows reactivity rather than creating leverage. Biggest gap is absence of manager-level ownership over team capacity and outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our enterprise renewal rate was slipping because renewal conversations started too late in the cycle. I commissioned a cross-functional working group, set a 90-day target to move first outreach to T-minus 120 days, and tied the change to quota attainment for the sales org."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Renewals improved 12 points in two quarters and the process became the standard for the next fiscal year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Issue: late renewal outreach threatening enterprise revenue",
+        "Actions: formed cross-functional group, set 90-day target, linked to quota",
+        "Outcome: +12 points renewal rate; became standard process",
+        "Quote: 'tied the change to quota attainment for the sales org'",
+        "Follow-up: What trade-offs did you accept? 'We delayed two product initiatives by one quarter to free the working group.'"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at exec level. The candidate identified a systemic renewal timing issue with business impact, stood up a cross-functional group, set a hard 90-day deadline, and aligned incentives by tying the change to quota. Quote: 'tied the change to quota attainment for the sales org.' Result was org-level (12-point lift) and became durable process. The story demonstrates strategic judgment and willingness to trade off other work. Biggest strength is converting a revenue risk into a permanent operating rhythm.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were seeing renewal slippage. I asked the sales VP to look into it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you stay involved?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked status in the monthly business review."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Issue: renewal slippage",
+        "Actions: delegated to sales VP, monitored in monthly review",
+        "Outcome: no personal ownership or timeline described",
+        "Quote: 'I checked status in the monthly business review'",
+        "Follow-up: What was your role after the ask? 'I wanted them to own the fix.'"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at exec level. The candidate noted renewal slippage but immediately delegated without setting a target, timeline, or cross-functional structure. Quote: 'I checked status in the monthly business review.' No evidence of personal ownership, trade-off decisions, or org-level leverage. The story remains at the level of monitoring rather than driving. Biggest gap is lack of strategic ownership on a business-critical issue."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "local module or build",
+      "senior": "cross-team coordination",
+      "manager": "team process and capacity",
+      "exec": "org revenue or operating rhythm"
+    },
+    {
+      "signal": "Evidence of ownership",
+      "junior": "fixed own code without being asked",
+      "senior": "drove alignment without authority",
+      "manager": "created team rotation and audit",
+      "exec": "commissioned group and tied to quota"
+    },
+    {
+      "signal": "Use of data/metrics",
+      "junior": "noticed flaky test",
+      "senior": "cycle-time numbers in shared doc",
+      "manager": "time audit and 60% to 85% completion",
+      "exec": "12-point renewal lift"
+    },
+    {
+      "signal": "Learning/reflection",
+      "junior": "treat flakes as defects",
+      "senior": "influence via options not mandates",
+      "manager": "structural fixes beat reminders",
+      "exec": "trade-offs required for speed"
+    },
+    {
+      "signal": "Proactivity vs reactivity",
+      "junior": "acted before builds worsened",
+      "senior": "prevented release miss",
+      "manager": "prevented ongoing sprint misses",
+      "exec": "prevented revenue slippage"
+    }
+  ],
+  "kind": "lp"
+}

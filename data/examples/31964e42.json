@@ -1,0 +1,229 @@
+{
+  "question": "Tell me about a time when you did not effectively manage your projects and something did not get completed on time. What was the impact? What approaches do you use to make sure you are focusing on the right deliverables when you have several competing priorities?",
+  "competency": "Deliver Results (prioritization under competing demands)",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I missed a code review deadline on a small feature because I underestimated the testing time. The impact was a one-day slip in the sprint, which my manager had to explain to the PM. I learned to break tasks into smaller estimates and flag risks earlier."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you adjust your approach after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started using a simple priority list each morning and checking in with my lead twice a week on blockers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you missed a deadline and impact",
+        "Missed code review on feature; 1-day sprint slip",
+        "Impact: PM had to explain delay",
+        "Quote: 'I started using a simple priority list each morning'",
+        "Follow-up: How did you adjust? - Now flags risks in weekly check-ins"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Candidate owns the miss directly and links it to a concrete change in daily prioritization. The impact described is local but realistic for the level. Shows coachability by adopting a lightweight process after feedback. Gap is lack of metrics on whether the new habit reduced slips, but the learning loop is clear.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Yeah, a task slipped once because there was too much work. It didn't affect much."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the actual impact and what did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team just had to wait a bit. I try to do the urgent stuff first now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Missed deadline example",
+        "Vague: 'a task slipped because too much work'",
+        "Impact: 'team had to wait a bit'",
+        "Quote: 'I try to do the urgent stuff first now'",
+        "Follow-up: No specific process or learning loop described"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Candidate gives no ownership or measurable impact and treats the miss as inevitable. The follow-up answer stays generic without showing a repeatable method for handling competing priorities. No evidence of learning from the event or adjusting personal workflow."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I under-scoped a cross-team data migration that affected two services. We missed the launch window by three weeks, delaying a revenue feature for one partner team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how you prioritize now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now run a weekly dependency map with the other leads and surface trade-offs in writing so the PM can decide what drops."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Missed deadline and impact",
+        "Cross-team migration slipped 3 weeks",
+        "Impact: delayed revenue feature for partner",
+        "Quote: 'run a weekly dependency map with other leads'",
+        "Follow-up: Now surfaces trade-offs in writing for PM decisions"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Story shows cross-team scope and a clear business impact. The candidate moved from heroics to a repeatable coordination mechanism that gives others visibility. Approach demonstrates influence without authority through written trade-offs rather than just personal lists.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A project with another team ran late because requirements kept changing. We missed the date but the team understood."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you handle competing priorities today?"
+        },
+        {
+          "role": "candidate",
+          "text": "I push back on scope when I can and try to sequence my own work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Missed deadline example",
+        "Vague cross-team project slipped due to changing reqs",
+        "Impact: 'team understood'",
+        "Quote: 'I push back on scope when I can'",
+        "Follow-up: No system for surfacing trade-offs or involving stakeholders"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Story stays at the level of personal workload without demonstrating cross-team influence or measurable impact. The prioritization approach remains reactive and individual rather than creating leverage through shared visibility or decision frameworks."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team missed a quarterly goal because two engineers were pulled onto an urgent escalation without re-prioritizing the roadmap. The impact was we lost a key customer renewal."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process did you put in place?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now require a weekly capacity check with the TPM and force explicit trade-off decisions before any new work enters the sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Missed project deadline and impact",
+        "Team missed quarterly goal after escalation pull",
+        "Impact: lost customer renewal",
+        "Quote: 'require weekly capacity check with TPM and force explicit trade-offs'",
+        "Follow-up: Process protects team capacity and surfaces decisions"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate owns team outcome and connects the miss to a lost business result. The fix creates leverage by institutionalizing capacity reviews and requiring explicit decisions rather than absorbing all pressure personally. Shows development of team processes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We missed a deadline because the team was overloaded. I talked to them about it afterward."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you protect focus now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I try to shield the team and say no when possible."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Team missed deadline",
+        "Overloaded team missed date",
+        "Impact: not stated beyond 'talked to them'",
+        "Quote: 'I try to shield the team and say no when possible'",
+        "Follow-up: No repeatable team process or metrics"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Story lacks team-level ownership or business impact. The described approach stays at personal shielding rather than building a system that helps the team make trade-offs. No evidence of handling underperformance or creating sustainable leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We deprioritized a platform migration in favor of a new product bet that later underperformed, causing a nine-month delay in reliability improvements that affected three regions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you adjust prioritization at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I introduced a quarterly portfolio review with explicit success metrics and kill criteria so we could reallocate before sunk-cost bias set in."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Org-level missed deliverable",
+        "Platform migration deprioritized for underperforming bet",
+        "Impact: 9-month delay across three regions",
+        "Quote: 'quarterly portfolio review with explicit success metrics and kill criteria'",
+        "Follow-up: Created mechanism to reallocate resources early"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate describes strategic trade-off with multi-region impact and long-term consequences. The response shows creation of an org-level process with clear decision criteria rather than relying on heroics or individual judgment. Demonstrates long-term thinking on resource allocation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A major initiative slipped because market conditions changed. We adjusted the plan afterward."
+        },
+        {
+          "role": "interviewer",
+          "text": "What mechanisms do you use for prioritization?"
+        },
+        {
+          "role": "candidate",
+          "text": "We review priorities in the leadership offsite each year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Missed strategic deliverable",
+        "Initiative slipped due to market shift",
+        "Impact: not quantified",
+        "Quote: 'review priorities in the leadership offsite each year'",
+        "Follow-up: Annual cadence only; no ongoing kill criteria or reallocation process"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Story provides no measurable org impact or strategic judgment. The prioritization approach is limited to infrequent offsites without mechanisms for rapid reallocation under ambiguity. Shows no evidence of creating leverage at scale or addressing sunk-cost decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of miss",
+      "junior": "Owns personal task slip and names concrete fix",
+      "senior": "Owns cross-team scope and business impact",
+      "manager": "Owns team outcome and lost renewal",
+      "exec": "Owns portfolio trade-off and multi-region delay"
+    },
+    {
+      "signal": "Prioritization method",
+      "junior": "Daily list + lead check-ins",
+      "senior": "Weekly dependency map + written trade-offs",
+      "manager": "Weekly capacity check forcing explicit decisions",
+      "exec": "Quarterly portfolio review with kill criteria"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "1-day sprint slip",
+      "senior": "3-week revenue delay for partner",
+      "manager": "Lost customer renewal",
+      "exec": "9-month reliability delay across regions"
+    },
+    {
+      "signal": "Learning loop",
+      "junior": "Adopts process after feedback",
+      "senior": "Creates coordination ritual",
+      "manager": "Institutionalizes capacity reviews",
+      "exec": "Builds reallocation mechanism"
+    },
+    {
+      "signal": "Influence style",
+      "junior": "Seeks lead input",
+      "senior": "Surfaces options for PM",
+      "manager": "Requires TPM partnership",
+      "exec": "Sets org decision framework"
+    }
+  ],
+  "kind": "lp"
+}

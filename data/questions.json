@@ -1,0 +1,1424 @@
+{
+  "source": "KLD hiring curriculum behavioral interview question bank, plus competency variants compiled from common public hiring frameworks",
+  "howTo": [
+    "Pick 2-3 questions per assigned leadership principle.",
+    "Prefer tell-me-about-a-time over opinion questions.",
+    "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+    "Items marked Manager are aimed at people-manager candidates."
+  ],
+  "principles": [
+    {
+      "id": "customer-obsession",
+      "name": "Customer Obsession",
+      "aliases": [
+        "customer",
+        "customers",
+        "co",
+        "customer first",
+        "customer obsessed",
+        "customer-obsession",
+        "obsession",
+        "customer experience"
+      ],
+      "questions": [
+        {
+          "text": "Describe a difficult interaction you had with a customer. How did you deal with it? What was the outcome? How would you handle it differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you went above and beyond for a customer. Why did you do it? How did the customer respond? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of when you were able to anticipate a customer need with a solution/product they didn't know they needed/wanted yet. How did you know they needed this? How did they respond?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a time when you asked for customer feedback. How did you use that feedback to drive innovation or improvement? How did the customer respond?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you evaluated the customer experience of your product or service. What did you do? What was the result?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when a customer came to you for something that wouldn't actually address their need. How did you approach the situation? What was the result?",
+          "manager": false
+        },
+        {
+          "text": "Sometimes customers make unreasonable requests. Tell me about a time when you've had to push back or say no to a customer request. What did you say or do in response to that request?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had to balance the needs of the customer with the needs of the business. What did you do? What was the result?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a change you implemented in your current team or organization to meet the needs of your customers. What has been the result?",
+          "manager": true
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "ownership",
+      "name": "Ownership",
+      "aliases": [
+        "own",
+        "owner",
+        "owners",
+        "owned",
+        "outside your area",
+        "languishing"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you didn't think you were going to meet a commitment you promised. How did you identify the risk and communicate it to stakeholders? Is there anything you would do differently?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you made a hard decision to sacrifice short term gain for something that would create long term value for the business. What was the outcome? Knowing what you know now, would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you had to transition a project you owned to a new owner. What steps did you take to make sure the transition went smoothly? Tell me about a time that you chose to get involved in a project that you had already transitioned to somebody else. What was the situation? Why was it important to get involved?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you saw a peer struggling and decided to step in and help. What was the situation? Why did you decide to step in? What actions did you take?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time where you took over something outside of your responsibility. What was the situation? What did you do? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time where you picked up something that was languishing. What was it? What did you do? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time where you had a dependency that wasn't delivering to you. How did you deal with this to get it back on track?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you dropped the ball. You or your team was going to miss a deadline or promise. Walk me through how you handled it.",
+          "manager": false
+        },
+        {
+          "text": "When's the last time you picked up something that was languishing; that wouldn't have happened without you?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "invent-and-simplify",
+      "name": "Invent and Simplify",
+      "aliases": [
+        "invent",
+        "simplify",
+        "i&s",
+        "ias",
+        "innovation",
+        "innovative",
+        "invent-and-simplify",
+        "simple",
+        "novel"
+      ],
+      "questions": [
+        {
+          "text": "Give me an example of a complex problem you solved with a simple solution. What made the problem complex? How do you know your solution addressed the problem?",
+          "manager": false
+        },
+        {
+          "text": "Describe the most innovative thing you've done and why you thought it was innovative. Ask for one or two more examples to see if it's a pattern of innovative thinking. What was the problem it was solving? What was innovative about it?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you were able to make something simpler for customers. What drove you to implement this change? What was the impact?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you influenced and drove new thinking and innovation out of your team. Give an example of how your approach led to a specific innovation.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had a challenging problem or situation that the usual approach wouldn't address. How did you select an alternative approach? What alternative approach(es) did you consider? What was the end result? What was the impact?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you enabled your team/a team member to implement a significant change or improvement. What problem were you trying to solve? How did you measure success? What was the end result/impact?",
+          "manager": true
+        },
+        {
+          "text": "Best example of picking something new up and running with it. What was it? How did you get up to speed? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Elevator Part 1: design an elevator system for a building I am building. (Structured problem solving / Invent and Simplify)",
+          "manager": false
+        },
+        {
+          "text": "Tell me about the most innovative thing you've done and why you thought it was innovative. Probe: that sounds evolutionary; tell me about something truly revolutionary. Ask for one or two more examples to see if it is a pattern.",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "are-right-a-lot",
+      "name": "Are Right, A Lot",
+      "aliases": [
+        "aral",
+        "right a lot",
+        "are right a lot",
+        "judgment",
+        "judgement",
+        "right",
+        "decision quality",
+        "good judgment"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time when you didn't have enough data to make the right decision. What did you do? What path did you take? Did the decision turn out to be the correct one?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a strategic decision you had to make without clear data or benchmarks. How did you make your final decision? What alternatives did you consider? What were the tradeoffs of each? How did you mitigate risk?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you made a difficult decision with input from many different sources (customers, stakeholders, partner teams, etc.). What was the situation and how did you arrive at your decision? Did the decision turn out to be the correct one? Why or why not?",
+          "manager": false
+        },
+        {
+          "text": "We don't always make the right decision all the time. Tell me about a time when you made a bad decision. What was the impact of that decision? What did you learn? How have you applied what you learned?",
+          "manager": false
+        },
+        {
+          "text": "We don't always make the right judgment all the time. Tell me about a time when you made an error in judgment. What was the impact? What did you learn? How have you applied what you learned?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you discovered that your idea was not the best course of action. What was your idea? Why wasn't your idea the best course of action? How did you find out it was not the correct path? What was the best course of action? Who provided it? What did you learn from the experience?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you brought different perspectives together to solve a problem. What types of different perspectives were represented? How did you seek out different points of view? What was the outcome? Where there any key learnings from this experience? Knowing what you know now, would you have done anything different?",
+          "manager": false
+        },
+        {
+          "text": "Walk me through how you handled incomplete data and a real deadline. What did you decide? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you shipped something you later realized was wrong. What happened? What did you learn?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later. What did you learn that you were able to apply?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "learn-and-be-curious",
+      "name": "Learn and Be Curious",
+      "aliases": [
+        "labc",
+        "curious",
+        "curiosity",
+        "learn",
+        "learning",
+        "learn and be curious"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time when you realized you needed a deeper level of subject matter expertise to do your job well. What did you do about it? What was the outcome? Is there anything you would have done differently?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you took on work outside of your comfort area. How did you identify what you needed to learn to be successful? How did you go about building expertise to meet your goal? Did you meet your goal?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you didn't know what to do next or how to solve a challenging problem. How do you learn what you don't know? What were the options you considered? How did you decide the best path forward? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a time when you explored a new or unexpected area of an existing space. Why hadn't this been explored already? Why did you move forward? What were the results or what was the impact?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when someone on your team challenged you to think differently about a problem. What was the situation? How did you respond? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you used external trends to improve your own company's products or services. How did you keep up to date with external trends? How did you decide to apply them to your own company? What was the result?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time recently where you learned something new. What was it? How did you learn it? How did you apply it?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about stuff you don't love doing. What do you do with that work?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "hire-and-develop-the-best",
+      "name": "Hire and Develop the Best",
+      "aliases": [
+        "hdtb",
+        "hire",
+        "hiring",
+        "develop",
+        "develop the best",
+        "talent",
+        "coaching",
+        "hire and develop"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time when you helped one of your team members develop their career. How did you help that team member? What was the result?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you invested in an employee's development. What did you invest in and why? What was the outcome? Can you share an example where investing in an employee's development didn't work out?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a time you provided feedback to develop the strengths of someone on your team. Were you able to positively impact their performance?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you provided coaching for a team member. What started the coaching? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about someone you hired that you thought complemented your skills. How did you coach an individual in areas where you have a weakness?",
+          "manager": true
+        },
+        {
+          "text": "Tell me about a time when you helped a remote team member develop their career. Can you give me an example of a specific team member and how you helped them develop across the geographic distance?",
+          "manager": true
+        },
+        {
+          "text": "Describe a person who struggled to get promoted under your leadership and how you helped facilitate their success.",
+          "manager": true
+        },
+        {
+          "text": "Tell me about your most challenging talent review and promotion process that you conducted for your team. What made it challenging? What factors did you consider in your talent review? What factors did you consider in the promotion process? Did you incorporate a tool to counter unconscious bias? If yes, how? How do you manage perceptions of unfair treatment? What did you learn from this process? Knowing what you know now, would you have done anything different?",
+          "manager": true
+        },
+        {
+          "text": "Describe a time when you constructed a team to accomplish a goal. What factors did you consider in constructing the team? Did you factor diversity into your team construction? How did you balance work requirements, team skill composition, and team stretch opportunities? What do you consider when you allocate work? How did you ensure team members were able to work effectively together? Would you have done anything differently?",
+          "manager": true
+        },
+        {
+          "text": "Tell me about a time when you had a low performing individual on your team. How did you deliver feedback? Did their performance improve?",
+          "manager": true
+        },
+        {
+          "text": "What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "insist-on-the-highest-standards",
+      "name": "Insist on the Highest Standards",
+      "aliases": [
+        "ihs",
+        "standards",
+        "quality",
+        "highest standards",
+        "bar",
+        "insist on the highest standards",
+        "high bar"
+      ],
+      "questions": [
+        {
+          "text": "Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you were unsatisfied with the status quo. What did you do to change it? What was the impact? Would you do anything differently in the future?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you worked to improve the quality of a product / service / solution that was already getting good customer feedback. Why did you think it needed improvement? How did customers react?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had to make a decision between standards and delivery. What tradeoffs did you have make? What was the outcome? Knowing what you know now, would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a goal you've had where you wish you had done better. What was the goal? How could you have improved on it?",
+          "manager": false
+        },
+        {
+          "text": "Describe the most significant continuous improvement project that you led. What was the catalyst to this change and how did you go about it? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you used feedback about your team to drive a change. How did you gather or receive feedback on your team's performance? What was the outcome?",
+          "manager": true
+        },
+        {
+          "text": "Give me an example of a time where there was a big bug, outage, or product failure. What happened? What did you do? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "think-big",
+      "name": "Think Big",
+      "aliases": [
+        "tb",
+        "think-big",
+        "vision",
+        "think big",
+        "big bet",
+        "risk"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about time when you were working on an initiative or goal and saw an opportunity to do something much bigger or better than the initial focus. Did you take that opportunity? Why or why not? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of how you have changed the direction or view of a specific function/department and helped them embrace a new way of thinking. Why was a change needed? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a time you proposed a novel approach to a problem. What was the problem and why did it require a novel approach? Was your approach successful?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you drove adoption for your vision/ideas. How did you know your vision/idea was adopted by others? How did you drive adoption for your vision/ideas? How did you track adoption? Would you do anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of an idea or vision you had which was adopted by global stakeholders. How did you drive adoption for your vision/ideas? How did you track adoption? Would you do anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you thought differently to improve a process that was working. What assumptions did you have to question? How did you evaluate if the change improved the process? Knowing what you know now, would you do anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you encouraged a team member or organization to take a big risk. How did you balance the risk against existing business goals? What was the outcome? What did you learn from this situation?",
+          "manager": true
+        },
+        {
+          "text": "Tell me about a time when you established a vision for a (team, product, initiative) when there wasn't one. How did you gain buy-in and drive execution? What was the outcome? Would you have done anything differently?",
+          "manager": true
+        },
+        {
+          "text": "What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you came up with the vision for a team, product, or strategic initiative when there wasn't a guiding vision. What was it? How did you gain buy-in and drive execution?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you took a big risk. What was the risk, how did you decide to do it, and what was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you took a big risk and it failed. What did you learn? What would you do differently?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "bias-for-action",
+      "name": "Bias for Action",
+      "aliases": [
+        "bfa",
+        "action",
+        "speed",
+        "bias",
+        "bias for action",
+        "move"
+      ],
+      "questions": [
+        {
+          "text": "Give me an example of a calculated risk that you have taken where speed was critical. What was the situation and how did you handle it? What steps did you take to mitigate the risk? What was the outcome? Knowing what you know now, would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you worked against tight deadlines and didn't have time to consider all options before making a decision. How much time did you have? What approach did you take? What did you learn from the situation?",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you made an important business decision without consulting your manager. What was the situation and how did it turn out? Would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had to gather information and respond immediately to a situation. What was the outcome? Would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of when you had to make an important decision and had to decide between moving forward or gathering more information. What did you do? What was the outcome? What information is necessary for you to have before acting?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you saw an issue that would impact your team and took a proactive approach to solve it. What was the issue? What did you do and what was the outcome? What did you learn from this situation?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you felt your team was not moving to action quickly enough. What was the situation? What did you do? What was the outcome? Would you have done anything differently?",
+          "manager": true
+        },
+        {
+          "text": "Tell me about a time when you were able to remove a serious roadblock/barrier preventing your team from making progress. What was the barrier? How were you able to remove it? What was the outcome? Knowing what you know now, would you have done anything differently?",
+          "manager": true
+        },
+        {
+          "text": "Tell me about a time where you were successful in overcoming engineering resistance to an idea. What was the idea? What did you do? What was the outcome?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "frugality",
+      "name": "Frugality",
+      "aliases": [
+        "frugal",
+        "cost",
+        "waste",
+        "resources",
+        "constraints",
+        "no extra budget"
+      ],
+      "questions": [
+        {
+          "text": "Give me an example of how you have helped save costs or eliminate waste within your role or organization. What was the situation? What was the impact?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you had to get a project or initiative completed with limited resources. How did you approach the situation? What was the impact? Knowing what you know now, would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you didn't have enough resources to do something you felt was important but found a creative way to get it done anyway. What was the situation? What other options did you consider? How did you decide on a path forward? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had to make tradeoffs between quality and cost. How did you weigh the options? What was the result? Would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you generated a creative solution to a problem or project without requiring additional resources. What was the problem? What was the solution and how did you come up with it? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of a time you requested additional funding/budget to complete a project. Why was it needed? Did you try to figure out another approach? Did you get the additional resources? Why or why not?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you had to decide whether or not to award or ask for additional resources. What criteria do you use for making the call? What was the outcome? Knowing what you know now, would you have done anything differently?",
+          "manager": true
+        },
+        {
+          "text": "Give an example of a time when you challenged your team to come up with a more efficient solution or process. What drove the request? How did you help? What were some of your biggest challenges? What were the end results?",
+          "manager": true
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "earn-trust",
+      "name": "Earn Trust",
+      "aliases": [
+        "et",
+        "trust",
+        "credibility",
+        "earn trust",
+        "feedback",
+        "morale"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time when you had to communicate a change in direction that you anticipated people would have concerns with. What did you do to understand the concerns and mitigate them? Were there any changes you made along the way after hearing these concerns? How did you handle questions and/or resistance? Were you able to get people comfortable with the change?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a tough or critical piece of feedback you received. What was it and what did you do about it?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you needed to influence a peer who had a differing opinion about a shared goal. What did you do? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a time when you were not able to meet a commitment. What was the commitment and what were the obstacles that prevented success? What was the impact to your customers/peers and what did you learn from it?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when your team's goals were out of alignment with another team you relied on in order to meet your goal. How did you work with the other team? Were you able to achieve your goals?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you uncovered a significant problem in your team. What was it and how did you communicate it to your manager and other stakeholders? What did you do to address the problem? How did you manage the impact of this problem for the rest of your team?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you improved morale and productivity on your team. What were the underlying problems and their causes? How did you prevent them from negatively impacting the team in the future?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when a team member was struggling to keep up or fit in and you stepped in to help out. Why did you think they were struggling or not fitting in? Why did you decide in step in and support? What did you do to help out? How did it impact your work? What was the outcome? What did you learn from that situation?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when a team member was not performing well and impacted your work. How did you handle that situation? Why were they not performing well? What was the outcome? What did you learn from that situation?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about the most difficult interaction you had at work. What happened? How did you handle it? What was the outcome?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "dive-deep",
+      "name": "Dive Deep",
+      "aliases": [
+        "dd",
+        "deep",
+        "details",
+        "root cause",
+        "metrics",
+        "dive deep",
+        "dig"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time when you were trying to understand a complex problem on your team and you had to dig into the details to figure it out. Who did you talk with or where did you have to look to find the most valuable information? How did you use that information to help solve the problem?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a situation that required you to dig deep to get to the root cause. How did you know you were focusing on the right things? What was the outcome? Would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a problem you had to solve that required in-depth thought and analysis. How did you know you were focusing on the right things? What was the outcome? Would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Walk me through a big problem or issue in your organization that you helped to solve. How did you become aware of it? What information did you gather? What information was missing and how did you fill the gaps? Did you do a reflection at the conclusion of the project? If so, what did you learn?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a specific metric you have used to identify a need for a change in your department. Did you create the metric or was it already available? How did this and other information influence the change? What was the outcome of this change?",
+          "manager": false
+        },
+        {
+          "text": "Have you ever created a metric that helped identify a need for a change in your department? What was the metric? Why did you create it? How did this and other information influence change? What was the outcome of the change?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had to validate the assumptions underlying a direct report's project. How did you decide follow up was necessary? What steps, if any, did you take to validate the assumptions? What was the result?",
+          "manager": true
+        },
+        {
+          "text": "Walk me through a technical decision you made that you had to live with later. What was the decision? What were the consequences?",
+          "manager": false
+        },
+        {
+          "text": "Walk me through a customer or operational consequence of a technical decision you made.",
+          "manager": false
+        },
+        {
+          "text": "What do you want to DO? Don't tell me what you want to work on; tell me what you want to DO. (Warm-up; follow with: What would you offload?)",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "have-backbone-disagree-and-commit",
+      "name": "Have Backbone; Disagree and Commit",
+      "aliases": [
+        "dac",
+        "d&c",
+        "d and c",
+        "backbone",
+        "disagree",
+        "disagree and commit",
+        "commit",
+        "have backbone",
+        "unpopular"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time when you strongly disagreed with your manager or peer on something you considered very important to the business. What was it and how did you handle it? Knowing what you know now, would you do anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you took an unpopular stance in a meeting with peers and your leader. What was it? Why did you feel strongly about it? What did you do? What was the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Often, we must make decisions as a group. Give me an example of a time you committed to a group decision even though you disagreed. What factors led you to commit to the decision? Would you make the same decision now?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you felt really strongly about something on a project but the team decided to go in a different direction. How hard did you press the issue? How did you approach that project afterward?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you pushed back against a decision that negatively impacted your team. What was the issue? How did it turn out? Would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of when you submitted a great idea to your manager and they did not support it. What was the idea? How did you handle the lack of support?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time when you had to support a business initiative that you didn't agree with. How did you handle it? How did you deliver the message to your team?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when the business gained something because you persisted for a length of time. Why were you so determined? How did it turn out?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "deliver-results",
+      "name": "Deliver Results",
+      "aliases": [
+        "dr",
+        "results",
+        "deliver",
+        "ship",
+        "delivery",
+        "deliver results",
+        "deadline",
+        "goal"
+      ],
+      "questions": [
+        {
+          "text": "Give me an example of a time when you were able to deliver an important project under a tight deadline. What sacrifices did you have to make to meet the deadline? How did they impact the final deliverable? What was the final outcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you had significant, unanticipated obstacles to overcome in achieving a key goal. What was the obstacle? Were you eventually successful? Knowing what you know now, is there anything you would have done differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you not only met a goal but considerably exceeded expectations. How were you able to do it? What challenges did you have to overcome?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you or your team were more than half way to meeting a goal when you realized it may not be the right goal or may have unintended consequences. What was the situation? What did you do? What was the outcome? Looking back, would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Give me an example of a mission or goal you didn't think was achievable. What was it and how did you help your team try to achieve it? Were you successful in the end? Looking back, would you have done anything differently?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time when you did not effectively manage your projects and something did not get completed on time. What was the impact? What approaches do you use to make sure you are focusing on the right deliverables when you have several competing priorities?",
+          "manager": false
+        },
+        {
+          "text": "It can be difficult to set goals for a team that are challenging, yet achievable. Tell me about a time when you hit the right balance. How did you approach setting the goals? What was the outcome?",
+          "manager": true
+        },
+        {
+          "text": "How did you get it shipped? (Probe after a delivery story: constraints, tradeoffs, what you personally owned.)",
+          "manager": false
+        }
+      ],
+      "kind": "lp"
+    },
+    {
+      "id": "leadership-influence",
+      "name": "Leadership & Influence",
+      "kind": "competency",
+      "aliases": [
+        "leadership",
+        "influence",
+        "without authority",
+        "lead a team"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you led a team through a significant challenge, change, or high-pressure project. What was your approach and the outcome?",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you had to make an unpopular decision as a leader. How did you communicate it and manage the response?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of when you stepped up and led without formal authority. What happened?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you identified and developed potential in a team member or colleague.",
+          "manager": false
+        },
+        {
+          "text": "Describe a time you had to hold someone accountable for underperformance. How did you handle the conversation?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of when you set a vision or direction for a group and then executed on it.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time your leadership style had to adapt to a different team, culture, or situation.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you inspired or motivated a demotivated or disengaged team or individual.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time a decision you made as a leader did not produce the expected results. How did you respond?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of building or assembling a team from scratch (or significantly reshaping one).",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "ownership-accountability",
+      "name": "Ownership & Accountability",
+      "kind": "competency",
+      "aliases": [
+        "accountability",
+        "accountable",
+        "outside your job"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you took on something significant outside your job description or area of responsibility because it needed to be done.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you identified a problem that no one else was addressing and drove a solution.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of when you sacrificed short-term convenience or gain for long-term value or the broader good of the organization.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you owned a mistake or failure completely (even if others shared responsibility). What did you do next?",
+          "manager": false
+        },
+        {
+          "text": "Describe a project or initiative you drove end-to-end because you felt it was important, even though it wasn’t assigned to you.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "teamwork-collaboration",
+      "name": "Teamwork & Collaboration",
+      "kind": "competency",
+      "aliases": [
+        "teamwork",
+        "collaboration",
+        "collaborate",
+        "cross-functional",
+        "team dynamics"
+      ],
+      "questions": [
+        {
+          "text": "Describe a time you worked with a cross-functional or diverse team to achieve a shared goal. What was your specific contribution?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a situation where a team member was not pulling their weight. What did you do?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of a time you had to compromise your preferred approach to align with the team’s direction.",
+          "manager": false
+        },
+        {
+          "text": "Describe a project where you contributed to someone else’s success rather than focusing primarily on your own deliverables.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you collaborated with someone whose working style, background, or personality was very different from yours.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of when team dynamics were poor or conflict threatened success. What actions did you take to improve them?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time you onboarded or helped a new team member get up to speed quickly.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a situation where you gave credit to others or elevated the team rather than taking personal credit.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of coordinating work across different locations, time zones, or functions under pressure.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "problem-solving-analytical-thinking",
+      "name": "Problem-Solving & Analytical Thinking",
+      "kind": "competency",
+      "aliases": [
+        "problem solving",
+        "problem-solving",
+        "analytical",
+        "analytical thinking",
+        "root cause"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a complex problem you solved that others had struggled with. What was different about your approach?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of solving a problem with incomplete, ambiguous, or conflicting information.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you used data, metrics, or analysis to drive a decision or solve a business problem.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where your first solution didn’t work. How did you iterate?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of simplifying a complex process, system, or approach that led to meaningful improvement.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you challenged an existing assumption or process and improved the outcome.",
+          "manager": false
+        },
+        {
+          "text": "Describe a problem you solved by asking better questions rather than jumping immediately to a solution.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of drawing on knowledge or methods from outside your primary field to solve a problem.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "communication",
+      "name": "Communication",
+      "kind": "competency",
+      "aliases": [
+        "communication",
+        "communicate",
+        "persuasion",
+        "listening",
+        "presentation"
+      ],
+      "questions": [
+        {
+          "text": "Describe a time you had to explain a complex or technical concept to a non-technical audience. How did you approach it?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a situation where miscommunication caused a problem. How did you resolve it and prevent recurrence?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of delivering difficult or bad news to a stakeholder, client, or team member.",
+          "manager": false
+        },
+        {
+          "text": "Describe a time you used written or verbal communication to persuade others to adopt your idea or proposal.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a situation where you adjusted your communication style to be more effective with a specific person or group.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of when active listening changed the outcome of a conversation or project.",
+          "manager": false
+        },
+        {
+          "text": "Describe a time you had to present to senior leadership or a skeptical audience. How did you prepare and what was the result?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you received feedback that your communication was unclear. What did you do about it?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of facilitating a discussion where people held strongly opposing views.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "adaptability-flexibility-change",
+      "name": "Adaptability, Flexibility & Change",
+      "kind": "competency",
+      "aliases": [
+        "adaptability",
+        "flexibility",
+        "pivot",
+        "ambiguity",
+        "change management"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time a project’s scope, requirements, or priorities changed significantly midstream. How did you adjust?",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you had to learn a new skill, tool, or domain quickly to meet a deadline or need.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of taking on responsibilities outside your job description because the situation required it.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time company strategy, structure, or direction shifted and your role or priorities changed as a result.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you worked effectively despite significant ambiguity or uncertainty.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you moved to a new team, role, company, or culture and had to adapt quickly.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where unexpected external factors forced major changes to your plans.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of embracing a change that initially made you uncomfortable.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "conflict-resolution-difficult-interpersonal-situations",
+      "name": "Conflict Resolution & Difficult Interpersonal Situations",
+      "kind": "competency",
+      "aliases": [
+        "conflict",
+        "conflict resolution",
+        "interpersonal",
+        "disagreement"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you resolved a disagreement between colleagues or team members.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you had a conflict with a manager, peer, or someone senior to you. How did you handle it?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time a conflict was rooted in personality, cultural, or style differences. How did you navigate it?",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you had to give direct or critical feedback to someone who was resistant.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of choosing not to escalate a conflict and resolving it informally instead.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time conflict with a client or external stakeholder threatened a relationship. How did you repair it?",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of working productively with someone you personally disagreed with or found difficult.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "resilience-handling-failure-learning-agility",
+      "name": "Resilience, Handling Failure & Learning Agility",
+      "kind": "competency",
+      "aliases": [
+        "resilience",
+        "setback",
+        "learning agility",
+        "handling failure"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you failed or made a significant mistake. What did you learn and what changed afterward?",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you faced a major setback. How did you recover?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you were working under significant pressure or stress. How did you manage yourself and the work?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of receiving critical or tough feedback. How did you respond?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time you had to persist through a long, difficult, or demotivating project to see it through.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a high-stakes situation that did not go as planned. How did you respond in the moment and afterward?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of maintaining composure in a tense or confrontational situation.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "initiative-drive-proactivity",
+      "name": "Initiative, Drive & Proactivity",
+      "kind": "competency",
+      "aliases": [
+        "initiative",
+        "proactivity",
+        "proactive",
+        "self motivated"
+      ],
+      "questions": [
+        {
+          "text": "Describe a time you identified an opportunity or problem that no one else had noticed and took action.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a project or goal you set for yourself entirely on your own initiative.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of going above and beyond what was expected of you.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you drove an improvement to a process, product, or way of working.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you achieved a goal with limited resources or support.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of volunteering for a challenging assignment others avoided.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you proactively sought feedback, training, or development to improve.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you pursued a goal despite initial pushback or skepticism.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "customer-client-focus",
+      "name": "Customer / Client Focus",
+      "kind": "competency",
+      "aliases": [
+        "client",
+        "client focus",
+        "customer focus",
+        "customer client"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you went above and beyond for a customer or client.",
+          "manager": false
+        },
+        {
+          "text": "Describe a difficult customer or client interaction and how you handled it.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of making a decision that prioritized the customer/client even when it conflicted with short-term internal metrics or convenience.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you used customer feedback or insights to drive a change in product, process, or service.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you identified an unmet customer need and acted on it.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of balancing competing customer needs or managing expectations under constraints.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you had to say no to a customer request and how you handled it.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "decision-making-judgment",
+      "name": "Decision Making & Judgment",
+      "kind": "competency",
+      "aliases": [
+        "decision making",
+        "decision-making",
+        "judgment",
+        "judgement"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you had to make an important decision without all the information you wanted.",
+          "manager": false
+        },
+        {
+          "text": "Describe a high-stakes decision you made under time pressure or uncertainty. How did you weigh the options?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of a time you made a poor decision. What happened and what did you learn?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you had to make an unpopular or difficult decision and stand by it.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you sought diverse input before deciding, or where you changed your mind based on new information.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of defending a decision when key stakeholders disagreed.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "time-management-prioritization-organization",
+      "name": "Time Management, Prioritization & Organization",
+      "kind": "competency",
+      "aliases": [
+        "time management",
+        "prioritization",
+        "organization",
+        "deadlines",
+        "competing priorities"
+      ],
+      "questions": [
+        {
+          "text": "Describe a time you had multiple high-priority deadlines or demands competing for your attention. How did you manage them?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a situation where you had to say no (or push back) on a request because it conflicted with higher priorities.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of improving a process or system that saved significant time for yourself or others.",
+          "manager": false
+        },
+        {
+          "text": "Describe a project where the timeline felt unrealistic. How did you handle it?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+          "manager": false
+        },
+        {
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "integrity-ethics-trust",
+      "name": "Integrity, Ethics & Trust",
+      "kind": "competency",
+      "aliases": [
+        "integrity",
+        "ethics",
+        "ethical",
+        "moral courage"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you witnessed unethical or questionable behavior at work. What did you do?",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you had to choose between what was easy/convenient and what was right.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of admitting a mistake openly even though you could have hidden it or minimized it.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you refused to cut corners despite pressure to do so.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where maintaining integrity cost you something (personally, professionally, or politically). How did you handle it?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of handling confidential or sensitive information under pressure.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "innovation-creativity-simplification",
+      "name": "Innovation, Creativity & Simplification",
+      "kind": "competency",
+      "aliases": [
+        "creativity",
+        "creative",
+        "simplification",
+        "original thinking"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a time you came up with a creative or non-obvious solution to a problem.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where you simplified a complex process, system, or approach with meaningful impact.",
+          "manager": false
+        },
+        {
+          "text": "Give an example of challenging conventional thinking or the status quo to drive improvement.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about an idea or initiative you proposed and saw through to implementation.",
+          "manager": false
+        },
+        {
+          "text": "Describe a time you introduced something new (process, tool, feature, approach) that improved outcomes.",
+          "manager": false
+        }
+      ]
+    },
+    {
+      "id": "attention-to-detail-quality",
+      "name": "Attention to Detail & Quality",
+      "kind": "competency",
+      "aliases": [
+        "attention to detail",
+        "thoroughness",
+        "accuracy",
+        "quality bar"
+      ],
+      "questions": [
+        {
+          "text": "Tell me about a job or project where great attention to detail was critical. How did you ensure accuracy?",
+          "manager": false
+        },
+        {
+          "text": "Describe a time a small oversight or error had (or could have had) major implications. How did you catch or correct it?",
+          "manager": false
+        },
+        {
+          "text": "Give an example of a process or checklist you implemented to maintain high standards of accuracy or quality.",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on.",
+          "manager": false
+        },
+        {
+          "text": "Describe a situation where diving deep into details revealed the true root cause of a problem.",
+          "manager": false
+        }
+      ]
+    }
+  ]
+}

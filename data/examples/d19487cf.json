@@ -1,0 +1,222 @@
+{
+  "question": "Give me an example of a time you proposed a novel approach to a problem. What was the problem and why did it require a novel approach? Was your approach successful?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had a flaky unit test suite that took 40 minutes to run on every PR. I suggested we split the tests into fast and slow buckets and run only the fast ones in CI, using a nightly job for the rest. I wrote a small script to tag them and measured the time drop."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the team to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the before/after numbers on our channel and asked two teammates to try it on their next PRs. It stuck after we saw three PRs go green in under 10 minutes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you proposed a novel approach to a problem...",
+        "Proposed test bucketing to cut CI time from 40 min to <10 min on PRs",
+        "Wrote tagging script, measured results, got two teammates to pilot",
+        "Quote: \"I showed the before/after numbers on our channel\"",
+        "Follow-up: How did you get the team to adopt it? -> Showed data and asked for pilot PRs"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. The candidate identified a local process pain point and introduced a simple partitioning approach instead of accepting the status quo. Story shows they measured impact and used data to drive adoption with peers. The scope stayed within their own work but demonstrated ownership and willingness to experiment. Biggest strength is the clear before/after measurement that made the idea concrete.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had slow builds so I suggested we add more machines to the Jenkins cluster. It helped a bit but the queue still grew."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did that require a novel approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just the obvious next step the team was already discussing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you proposed a novel approach...",
+        "Suggested adding more Jenkins machines for slow builds",
+        "Outcome: \"helped a bit but queue still grew\"",
+        "Quote: \"It was just the obvious next step the team was already discussing\"",
+        "Follow-up: Why did that require a novel approach? -> Could not articulate novelty"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at junior level. The suggestion was incremental scaling rather than rethinking the testing or build process. Candidate could not explain why the approach was novel or what problem constraints made standard solutions insufficient. No evidence of measurement or iteration after the change. Biggest gap is absence of any reframing of the problem itself."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product teams were duplicating effort on similar recommendation features. I proposed we extract a shared service with a thin abstraction layer so each team could still customize ranking while reusing the core model training pipeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team worried about latency. I ran a prototype that showed p99 under 40 ms and got their data scientist to co-own the first integration."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you proposed a novel approach to a problem...",
+        "Proposed shared recommendation service across two teams to stop duplication",
+        "Built prototype, addressed latency concern with data, secured co-ownership",
+        "Quote: \"I ran a prototype that showed p99 under 40 ms\"",
+        "Follow-up: What resistance did you hit? -> Latency worry resolved via prototype and joint ownership"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at senior level. Candidate spotted duplicated work across teams and proposed a shared abstraction that preserved team autonomy. Story includes concrete metrics from a prototype and cross-team influence without authority. The approach required reframing the problem from \"each team builds its own\" to \"common core with customization points.\" Biggest strength is the combination of technical prototype and stakeholder alignment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we use a new open-source library for one of our internal tools to reduce maintenance."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was mostly for my squad."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you proposed a novel approach to a problem...",
+        "Suggested swapping to an open-source library inside one internal tool",
+        "Scope remained inside own squad",
+        "Quote: \"Not really, it was mostly for my squad\"",
+        "Follow-up: Did this affect other teams? -> No cross-team angle"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at senior level. The proposal stayed within a single squad and did not address broader duplication or platform leverage. Candidate showed no evidence of influencing adjacent teams or measuring org-level impact. The change was tactical rather than a reframing of how work should be organized. Biggest gap is lack of cross-team scope or strategic framing."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our onboarding time for new engineers was 6 weeks because each team maintained separate setup docs. I proposed we create a single paved-path starter kit owned by a rotating platform squad, with each team contributing only their domain-specific extensions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle teams that wanted to keep their own process?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 4-week pilot with two new hires using the kit and shared the time-to-first-PR data with the other managers, then asked them to assign one person each to review the kit."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you proposed a novel approach to a problem...",
+        "Created shared onboarding starter kit to cut 6-week ramp time",
+        "Used pilot data and manager peer review to drive adoption",
+        "Quote: \"I ran a 4-week pilot with two new hires\"",
+        "Follow-up: How did you handle teams that wanted to keep their own process? -> Pilot data plus peer ownership"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at manager level. Candidate reframed onboarding from per-team tribal knowledge to a platform capability with clear ownership model. Story shows leverage through a small platform squad and use of data to influence peer managers. The approach created measurable team-level impact while preserving necessary customization. Biggest strength is the combination of structural change and peer alignment mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my team to write better onboarding docs after we noticed new hires were slow to contribute."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams adopt anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shared the docs but no one else changed their process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you proposed a novel approach to a problem...",
+        "Asked team to improve their own onboarding docs",
+        "No structural change or cross-team adoption",
+        "Quote: \"We shared the docs but no one else changed their process\"",
+        "Follow-up: Did other teams adopt anything? -> Shared but no adoption"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at manager level. The action stayed inside one team and produced only documentation rather than a reusable system. Candidate did not create leverage or drive adoption beyond their own group. No metrics tied to business outcomes like time-to-productivity. Biggest gap is absence of organizational framing or sustained mechanism."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing deals because enterprise prospects needed on-prem deployment but our cloud-only architecture made custom installs take 4-6 months. I proposed we productize a managed on-prem offering using the same control plane, starting with a single vertical that accounted for 30% of pipeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two cloud features by one quarter and accepted higher initial support cost, but closed three enterprise deals in the first six months that paid for the investment."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a time you proposed a novel approach to a problem...",
+        "Productized managed on-prem offering to unlock enterprise segment",
+        "Traded two cloud features and accepted support cost for three closed deals",
+        "Quote: \"closed three enterprise deals in the first six months\"",
+        "Follow-up: What trade-offs did you make? -> Feature delay and support cost justified by revenue"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at exec level. Candidate identified a market constraint that required rethinking the deployment model rather than incremental cloud improvements. Story shows clear strategic trade-off, quantified business impact, and willingness to deprioritize existing roadmap items. The approach connected technical architecture decisions directly to revenue outcomes. Biggest strength is the explicit linkage of product decision to pipeline and deal closure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we hire more solutions architects to handle custom on-prem requests faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change the product roadmap?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we kept the cloud focus and treated on-prem as professional services."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of a time you proposed a novel approach to a problem...",
+        "Suggested hiring more SAs for on-prem requests",
+        "Kept existing cloud roadmap unchanged",
+        "Quote: \"we kept the cloud focus and treated on-prem as professional services\"",
+        "Follow-up: Did this change the product roadmap? -> No change"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big at exec level. The proposal was a resource scaling move that left the core product strategy untouched. Candidate did not explore architectural or packaging changes that could have created a repeatable offering. No evidence of long-term leverage or willingness to trade off other priorities. Biggest gap is treating the problem as operational rather than strategic."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Local process change with peer pilots",
+      "senior": "Cross-team shared service with prototype data",
+      "manager": "Org onboarding system with manager peer ownership",
+      "exec": "Market segment unlock via productized offering and roadmap trade-offs"
+    },
+    {
+      "signal": "Evidence of metrics",
+      "junior": "Before/after CI time",
+      "senior": "p99 latency and integration ownership",
+      "manager": "Pilot time-to-first-PR data",
+      "exec": "Three closed deals and investment payback"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Data on channel plus two pilot PRs",
+      "senior": "Prototype plus co-ownership with data scientist",
+      "manager": "Pilot results plus peer manager review assignment",
+      "exec": "Explicit feature delay and support cost acceptance"
+    },
+    {
+      "signal": "Reframing vs incremental",
+      "junior": "Test bucketing instead of adding machines",
+      "senior": "Shared abstraction instead of duplicated features",
+      "manager": "Paved-path starter kit instead of per-team docs",
+      "exec": "Managed on-prem product instead of more SAs"
+    }
+  ],
+  "kind": "lp"
+}

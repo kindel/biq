@@ -1,0 +1,229 @@
+{
+  "question": "What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built an internal tool at my internship that automated reporting for the ops team, cutting their weekly work from 12 hours to 2. It got adopted by two other teams after I shared the code."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you think it could scale beyond your own team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I noticed the same data pull was happening in three places and figured if I made the script configurable it could save time elsewhere too."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Internship: automated reporting script, reduced 12h to 2h for ops",
+        "Shared code, adopted by two other teams",
+        "Quote: 'I figured if I made the script configurable it could save time elsewhere too'",
+        "Follow-up: What made you think it could scale? -> Saw duplicate work across teams"
+      ],
+      "raiseFeedback": "The candidate described an individual-contributor project with modest reach. They proactively shared the work and saw adoption beyond their immediate team. This shows early awareness of reuse rather than one-off fixes. The impact remains local and hours-saved rather than business or customer outcomes. Biggest strength is the instinct to make the tool configurable without being asked.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I fixed a critical bug in the checkout flow that was causing 5% of orders to fail."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect anything outside your sprint?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was the top priority ticket so the team was happy it got closed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Fixed checkout bug that caused 5% order failures",
+        "No mention of broader reach or follow-through",
+        "Quote: 'It was the top priority ticket so the team was happy it got closed'",
+        "Follow-up: How did that affect anything outside your sprint? -> Focused only on sprint closure"
+      ],
+      "lowerFeedback": "The candidate stayed strictly inside the ticket boundary and measured success by team relief rather than user or business impact. No evidence of considering downstream effects or reuse. The story never leaves the immediate sprint. Biggest gap is absence of any outward-looking framing even when prompted."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I led the migration of our core recommendation service to a new model that improved relevance by 18% and was rolled out to three regions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this bigger than a standard model upgrade?"
+        },
+        {
+          "role": "candidate",
+          "text": "I realized the old architecture couldn't support personalization at the scale our new markets needed, so I scoped a full rewrite and got two other teams to align on the new contract."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Led recs model migration: +18% relevance, rolled to three regions",
+        "Aligned two other teams on new contract",
+        "Quote: 'I realized the old architecture couldn't support personalization at the scale our new markets needed'",
+        "Follow-up: What made this bigger than a standard model upgrade? -> Saw market-scale limitation and drove cross-team alignment"
+      ],
+      "raiseFeedback": "The candidate connected a technical change to geographic expansion and secured cross-team alignment without formal authority. Metrics are concrete and tied to customer relevance. Story shows foresight about architecture limits rather than incremental tuning. Biggest strength is the ability to frame a project in terms of market reach.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I improved the latency of our recommendation API by 40 ms."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that change anything for customers or other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "The dashboards looked better and my manager mentioned it in the quarterly review."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Reduced recs API latency by 40 ms",
+        "Only internal dashboard and manager mention cited",
+        "Quote: 'The dashboards looked better and my manager mentioned it in the quarterly review'",
+        "Follow-up: Did that change anything for customers or other teams? -> Stayed at metrics and internal recognition"
+      ],
+      "lowerFeedback": "The candidate presented a performance improvement without linking it to customer behavior, revenue, or other teams. Follow-up answers remained inside engineering metrics. No attempt to enlarge the scope of the work. Biggest gap is treating the change as an isolated optimization rather than a lever for broader outcomes."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a new onboarding program that cut time-to-productivity for new engineers from 4 months to 6 weeks and has now been adopted by two other divisions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get other divisions to take it on?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tracked the before-and-after metrics for my team, then ran a pilot with one neighboring team and shared the results in a monthly managers forum."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Created onboarding program: 4mo to 6wks ramp, adopted by two divisions",
+        "Used metrics and pilot to drive adoption",
+        "Quote: 'I tracked the before-and-after metrics for my team, then ran a pilot with one neighboring team'",
+        "Follow-up: How did you get other divisions to take it on? -> Leveraged data and cross-manager forum"
+      ],
+      "raiseFeedback": "The candidate scaled a people-process improvement across organizational boundaries using data rather than mandate. Impact is expressed in productivity time rather than heroics. Story demonstrates leverage through repeatable mechanisms. Biggest strength is converting a local fix into an org-level asset.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I helped my team hit their OKRs three quarters in a row."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for anyone outside your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "We became the reference team for how to write good OKRs."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Helped team hit OKRs three quarters running",
+        "Became reference team for OKR writing",
+        "Quote: 'We became the reference team for how to write good OKRs'",
+        "Follow-up: What changed for anyone outside your team? -> Limited to internal reputation"
+      ],
+      "lowerFeedback": "The candidate measured success by their own team's goal attainment and internal reputation. No evidence of exporting the approach or measuring downstream effects on other teams. Story stays within one manager's span. Biggest gap is lack of deliberate scaling beyond the immediate team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sponsored the decision to open-source our internal workflow engine, which is now used by over 200 companies and has influenced how several standards bodies think about task orchestration."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you weigh before going open source?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled the support cost against the talent inflow and ecosystem leverage, then set up a dedicated team to manage contributions while protecting our core roadmap."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Sponsored open-sourcing of workflow engine: now used by 200+ companies, shaped standards",
+        "Modeled support cost vs talent/ecosystem upside",
+        "Quote: 'We modeled the support cost against the talent inflow and ecosystem leverage'",
+        "Follow-up: What trade-offs did you weigh before going open source? -> Explicit cost-benefit and dedicated support structure"
+      ],
+      "raiseFeedback": "The candidate describes a strategic choice with measurable industry-level reach and standards influence. Trade-off analysis and structural investment show long-term thinking. Impact is framed at ecosystem scale rather than internal metrics. Biggest strength is treating open source as a deliberate business and talent lever.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a new product line that added $40M in annual revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that move the industry or change external behavior?"
+        },
+        {
+          "role": "candidate",
+          "text": "It strengthened our position in two verticals and the board was pleased with the margin profile."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What's the thing you've accomplished that you think has had the biggest impact on the world at large? Why does it matter?",
+        "Launched product line adding $40M ARR",
+        "Strengthened position in verticals, board pleased",
+        "Quote: 'It strengthened our position in two verticals and the board was pleased with the margin profile'",
+        "Follow-up: How did that move the industry or change external behavior? -> Stayed at revenue and internal optics"
+      ],
+      "lowerFeedback": "The candidate anchored on revenue and internal stakeholder satisfaction without external or ecosystem effects. Follow-up answers did not expand beyond company boundaries. Story treats the launch as a financial event rather than a market-shaping one. Biggest gap is absence of outward strategic framing."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact described",
+      "junior": "Team or internship scale",
+      "senior": "Multi-region or cross-team",
+      "manager": "Multi-division process",
+      "exec": "Industry or standards level"
+    },
+    {
+      "signal": "Evidence of proactive scaling",
+      "junior": "Shared code, got two teams to adopt",
+      "senior": "Aligned two teams on new contract",
+      "manager": "Pilot + metrics to drive division adoption",
+      "exec": "Modeled trade-offs and stood up support team"
+    },
+    {
+      "signal": "Connection to external outcomes",
+      "junior": "Hours saved for ops",
+      "senior": "Relevance lift in new markets",
+      "manager": "Time-to-productivity for engineers",
+      "exec": "200+ companies and standards influence"
+    },
+    {
+      "signal": "Trade-off or strategic framing",
+      "junior": "Made script configurable",
+      "senior": "Saw architecture limit for market scale",
+      "manager": "Used data to convince peers",
+      "exec": "Weighed support cost vs talent inflow"
+    },
+    {
+      "signal": "Response to follow-up on breadth",
+      "junior": "Focused on sprint closure",
+      "senior": "Stayed at dashboard metrics",
+      "manager": "Limited to internal reputation",
+      "exec": "Stayed at revenue and board reaction"
+    }
+  ],
+  "kind": "lp"
+}

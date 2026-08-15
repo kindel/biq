@@ -1,0 +1,233 @@
+{
+  "question": "Tell me about a strategic decision you had to make without clear data or benchmarks. How did you make your final decision? What alternatives did you consider? What were the tradeoffs of each? How did you mitigate risk?",
+  "competency": "Are Right, A Lot",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to pick between two tech stacks for a small internal tool with no usage data. I listed the top three unknowns, ran a one-week spike on each, and picked the one that matched our existing team's skills most closely."
+        },
+        {
+          "role": "interviewer",
+          "text": "What alternatives did you consider and what were the tradeoffs?"
+        },
+        {
+          "role": "candidate",
+          "text": "Option A was faster to ship but locked us into one vendor; Option B was more flexible but required learning a new framework. Tradeoff was short-term velocity vs long-term maintainability. I mitigated by adding a two-week migration plan as a contingency."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the decision turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped on time. Later we realized the vendor lock-in was worse than expected, so I documented the lesson and shared it in our team retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a strategic decision you had to make without clear data or benchmarks...",
+        "Chose stack via 1-week spike + skill match",
+        "Alternatives: vendor lock-in vs learning curve; tradeoff velocity vs maintainability",
+        "Mitigated with migration contingency plan",
+        "Quote: \"I documented the lesson and shared it in our team retro\"",
+        "Follow-up: Asked about outcome; candidate owned the later discovery"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for junior. The candidate broke the decision into testable unknowns and ran a short spike instead of guessing. They explicitly weighed vendor lock-in against learning cost and built a simple contingency. The follow-up showed they later recognized the vendor issue and captured it for the team. This demonstrates ownership of their own work and learning from incomplete information. Biggest strength is the concrete mitigation step tied directly to the tradeoff they named.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked the stack my manager suggested because we didn't have time to research."
+        },
+        {
+          "role": "interviewer",
+          "text": "What alternatives did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really any; the PM said we needed to ship fast so I went with what was already in the repo."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a strategic decision...",
+        "Defaulted to manager suggestion due to time pressure",
+        "No alternatives evaluated",
+        "No tradeoff analysis or risk mitigation described",
+        "Follow-up: Candidate could not name any options considered"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for junior. The candidate deferred entirely to authority without examining unknowns or running even minimal checks. No alternatives or tradeoffs were surfaced, and risk was not addressed. This shows reliance on others rather than building judgment on their own work. The core gap is absence of any personal process for deciding when data is missing."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams needed to choose a shared event bus with no latency benchmarks available. I ran a lightweight simulation using production traffic samples, aligned the two tech leads on success criteria, and chose the option that minimized cross-team coordination cost."
+        },
+        {
+          "role": "interviewer",
+          "text": "What tradeoffs did you evaluate?"
+        },
+        {
+          "role": "candidate",
+          "text": "Kafka gave ordering guarantees but higher operational load; Kinesis was simpler but had unknown scaling limits. I mitigated by negotiating a joint on-call rotation and a 30-day rollback window if throughput missed targets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a strategic decision you had to make without clear data...",
+        "Used production samples for simulation across teams",
+        "Alternatives: Kafka ordering vs Kinesis simplicity",
+        "Tradeoff: operational load vs scaling uncertainty",
+        "Mitigated via joint on-call and 30-day rollback",
+        "Follow-up: Confirmed alignment with both tech leads"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for senior. The candidate created their own data via traffic samples and aligned two teams on criteria before deciding. They named the concrete tradeoff between guarantees and operational cost, then reduced risk through shared ownership and a time-boxed rollback. This shows cross-team influence without authority and clear risk mitigation tied to the decision. Biggest strength is turning an ambiguous choice into a jointly owned, measurable experiment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I recommended the option our platform team already supported because it was the safest choice."
+        },
+        {
+          "role": "interviewer",
+          "text": "What tradeoffs or alternatives did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't run any comparison; the other option looked more complex so I avoided it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a strategic decision...",
+        "Chose platform-supported option for safety",
+        "No alternatives or tradeoffs examined",
+        "No risk mitigation steps described",
+        "Follow-up: Could not articulate why the other option was more complex"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for senior. The candidate avoided analysis by defaulting to the internal platform choice without testing assumptions or comparing options. No tradeoffs were evaluated and risk mitigation was absent. This reflects limited influence beyond their immediate team and weak judgment under ambiguity. The main gap is lack of any mechanism to generate signal when benchmarks are missing."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org had to decide whether to build or buy a customer data platform with no clear ROI data. I had my two teams run parallel 3-week discovery tracks, then facilitated a joint review where we scored each option on integration cost, data quality, and team skill gaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you mitigate risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the build option scoped to one domain first and negotiated a 90-day exit clause with the vendor. I also assigned one engineer from each team to shadow the other's work so knowledge stayed shared."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a strategic decision you had to make without clear data...",
+        "Parallel discovery tracks across two teams",
+        "Scored on integration, quality, and skill gaps",
+        "Mitigated with scoped MVP and 90-day exit clause",
+        "Quote: \"Assigned one engineer from each team to shadow\"",
+        "Follow-up: Confirmed how the decision developed people"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for manager. The candidate created parallel discovery to generate data and involved multiple teams in scoring. They reduced risk through scoped rollout and an exit clause while deliberately building cross-team knowledge. This shows leverage through the team rather than heroics and clear ownership of org-level ambiguity. Biggest strength is linking the mitigation steps to both technical risk and people development.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I made the call after talking to a couple of vendors and went with the one that seemed more established."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did your teams do in the process?"
+        },
+        {
+          "role": "candidate",
+          "text": "They implemented whichever option I chose; I didn't run any formal comparison."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a strategic decision...",
+        "Decided after vendor conversations only",
+        "No team involvement in discovery or scoring",
+        "No tradeoff analysis or risk steps",
+        "Follow-up: Candidate treated decision as individual call"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for manager. The candidate made the decision with minimal input and no structured evaluation. Teams were not leveraged to generate alternatives or surface tradeoffs. Risk mitigation was not addressed. This shows a manager acting as a single point of failure rather than creating team leverage. The core gap is absence of any process that develops judgment in others."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to choose whether to enter a new vertical with no market benchmarks. I commissioned three small bets across different GMs, each with a 6-month runway and explicit kill criteria tied to contribution margin and customer acquisition cost."
+        },
+        {
+          "role": "interviewer",
+          "text": "What were the tradeoffs?"
+        },
+        {
+          "role": "candidate",
+          "text": "A full launch risked brand dilution and high fixed cost; waiting risked competitor lock-in. I mitigated by capping total spend at 2% of annual revenue and requiring monthly reviews with the CFO."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a strategic decision you had to make without clear data...",
+        "Three parallel bets with kill criteria",
+        "Tradeoff: brand dilution vs competitor lock-in",
+        "Mitigated with 2% revenue cap and CFO reviews",
+        "Follow-up: Confirmed how bets informed long-term strategy"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for exec. The candidate designed a portfolio of small bets with clear financial kill criteria instead of a single large decision. They explicitly balanced brand and competitive risks while capping downside at a measurable percentage of revenue. This demonstrates long-term strategic judgment and leverage through structured experimentation. Biggest strength is the direct link between risk controls and business-level tradeoffs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We moved forward because the board wanted growth in that space and the numbers looked promising on paper."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the lack of data?"
+        },
+        {
+          "role": "candidate",
+          "text": "We trusted the market research report and launched a full pilot."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a strategic decision...",
+        "Followed board direction with limited internal analysis",
+        "Relied on external report without internal validation",
+        "No portfolio approach or spend caps described",
+        "Follow-up: No kill criteria or rollback plan mentioned"
+      ],
+      "lowerFeedback": "Lowers the bar on Are Right, A Lot for exec. The candidate deferred to board pressure and an external report without generating internal signal or bounding downside. No alternatives or staged approach were used. This reflects reactive rather than strategic judgment at the business level. The main gap is lack of any mechanism to test assumptions before committing material resources."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "How candidate generates data under ambiguity",
+      "junior": "Runs small personal spike or test",
+      "senior": "Creates cross-team simulation using real traffic",
+      "manager": "Parallel discovery tracks with scoring rubric",
+      "exec": "Portfolio of bets with financial kill criteria"
+    },
+    {
+      "signal": "Risk mitigation approach",
+      "junior": "Simple contingency plan for own work",
+      "senior": "Rollback window plus shared on-call",
+      "manager": "Scoped MVP plus exit clause and knowledge sharing",
+      "exec": "Hard spend cap plus executive review cadence"
+    },
+    {
+      "signal": "Scope of alternatives considered",
+      "junior": "Two options, individual analysis",
+      "senior": "Two options, cross-team alignment",
+      "manager": "Build vs buy, team-led discovery",
+      "exec": "Multiple parallel bets vs wait"
+    },
+    {
+      "signal": "Evidence of learning or leverage",
+      "junior": "Documents lesson for team retro",
+      "senior": "Joint ownership model",
+      "manager": "Cross-team shadowing built in",
+      "exec": "Monthly CFO reviews tied to P&L"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,244 @@
+{
+  "question": "Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+  "competency": "Time Management, Prioritization & Organization",
+  "principle": "Time Management, Prioritization & Organization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a feature to finish by Friday but got pulled into a P1 support ticket at 3pm Thursday. I flagged it to my manager, moved two low-priority tests to the next sprint, and worked the ticket in focused blocks while updating the team chat every two hours. We shipped the feature on Monday morning instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started adding 20% buffer to my daily plan and asked for a quick priority check-in every morning."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Junior dev, feature deadline hit by P1 ticket at 3pm Thu",
+        "- Flagged to manager, dropped low-pri tests, used chat updates",
+        "- Outcome: shipped Monday, added daily buffer and morning check-ins",
+        "Quote: \"I started adding 20% buffer to my daily plan\"",
+        "Follow-up: Asked how they changed process; candidate described daily habit"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned the schedule change by escalating to their manager and making a clear trade-off on scope. Quote about adding buffer shows they turned the incident into a repeatable adjustment. They kept the team informed without over-communicating. Biggest gap is still limited scope; impact stayed within one feature.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer issue came in and I just started working on it. I ended up staying late but still missed the original deadline and had to explain to my lead the next day."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you reprioritize anything or ask for help?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried to do both but didn't finish either on time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Stayed late on customer issue, missed feature deadline",
+        "- No explicit trade-off or escalation mentioned",
+        "- Outcome: explained to lead next day, both items late",
+        "Quote: \"I tried to do both but didn't finish either on time\"",
+        "Follow-up: Asked about reprioritization; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate did not surface the conflict or make a deliberate scope decision, resulting in two missed items. No evidence of coachability or process change after the fact. The story shows reactive behavior without ownership of the schedule."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team migration alert broke our service at 2pm while I was midway through a roadmap review deck for execs. I pulled the on-call rotation into a 15-minute triage, delegated the deck polish to a teammate, and negotiated a one-day slip on the migration with the other team. We restored service by 6pm and the deck went out the next morning."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to own vs delegate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I kept the customer-facing fix because I had the context, then handed the deck to someone who had already reviewed the data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Senior, migration alert hit during exec deck prep",
+        "- 15-min triage, delegated deck, negotiated one-day slip",
+        "- Outcome: service restored 6pm, deck delivered next day",
+        "Quote: \"I kept the customer-facing fix because I had the context\"",
+        "Follow-up: Asked delegation logic; candidate explained context-based choice"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate protected the most visible deliverable by negotiating scope with another team and delegating internal work. Clear decision criteria on what they owned versus handed off. Cross-team coordination and visible outcome metrics are present. Biggest remaining gap is no mention of preventing similar conflicts in future planning.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The migration alert came in and I jumped on it because no one else was around. I worked through the night and got the deck done the next morning but it was rushed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve anyone else or adjust commitments?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to bother the team so I just powered through."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Senior, handled migration alone overnight",
+        "- No delegation or negotiation attempted",
+        "- Outcome: rushed deck delivered next morning",
+        "Quote: \"I didn't want to bother the team so I just powered through\"",
+        "Follow-up: Asked about involving others; candidate avoided it"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate defaulted to individual heroics instead of leveraging the team or negotiating with stakeholders. No evidence of influence without authority or protecting team capacity. The rushed outcome signals weak prioritization under pressure."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team lost two engineers to a sudden production incident the week before a quarterly planning deadline. I re-sequenced the plan in a 30-minute sync, moved two non-critical projects to the next quarter, and asked two peer teams for temporary code review support. The team still hit the core OKRs and the incident was resolved without burnout."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who felt their projects were deprioritized?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with each one, explained the business trade-off, and gave them explicit ownership of the next-quarter items so they saw the path forward."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Manager, two engineers pulled to incident week before Q planning",
+        "- Re-sequenced in 30-min sync, moved two projects, borrowed review help",
+        "- Outcome: core OKRs hit, no burnout",
+        "Quote: \"I met with each one and gave them explicit ownership of the next-quarter items\"",
+        "Follow-up: Asked about deprioritized engineers; candidate described 1:1s and path forward"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate protected team outcomes by making visible trade-offs and securing external help rather than overloading the team. They addressed morale directly with affected engineers. Leverage through process and peer coordination is evident. Biggest gap is lack of longer-term staffing or capacity modeling.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The incident pulled two people so I told the team to work harder and we pushed the planning deadline by a week. A couple people were unhappy but we got it done."
+        },
+        {
+          "role": "interviewer",
+          "text": "What conversations did you have with the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a Slack note about the delay and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Manager, incident pulled two engineers, pushed planning a week",
+        "- Told team to work harder, minimal communication",
+        "- Outcome: planning delayed, some unhappiness",
+        "Quote: \"I sent a Slack note about the delay and moved on\"",
+        "Follow-up: Asked about team conversations; candidate used one-way Slack update"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate shifted the burden to the team without structural changes or external support. Communication was one-way and did not address underperformance risk or morale. No evidence of creating leverage or owning team outcomes beyond delay."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A regulatory change announcement forced us to pause a $4M product launch two weeks before go-live. I convened the affected VPs, shifted launch resources to a compliance workstream, and reset the annual revenue target with the CFO to reflect a six-week delay. We maintained 92% of planned ARR by accelerating a smaller market instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide which bets to protect?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used the three-year strategy map to rank initiatives by strategic fit and customer commitment already made, then protected those two."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Exec, regulatory change paused $4M launch",
+        "- VP sync, resource shift to compliance, reset ARR target with CFO",
+        "- Outcome: 92% ARR protected via alternate market",
+        "Quote: \"I used the three-year strategy map to rank initiatives\"",
+        "Follow-up: Asked decision criteria; candidate tied to strategy map and commitments"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made a rapid org-level trade-off using a clear strategic framework and aligned finance leadership on the revised target. Business outcome (92% ARR) is stated with context. Long-term thinking is visible through the strategy map. Biggest gap is limited detail on how the change was socialized below VP level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The regulatory note came in and we delayed the launch by a month while legal reviewed everything. I updated the board on the new date and we absorbed the revenue hit."
+        },
+        {
+          "role": "interviewer",
+          "text": "What other options did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't have time to explore alternatives so we just delayed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time an unexpected task or crisis derailed your planned schedule. How did you recover?",
+        "- Exec, regulatory note delayed $4M launch one month",
+        "- Legal review, board update, absorbed revenue hit",
+        "- Outcome: delayed, no alternatives explored",
+        "Quote: \"We didn't have time to explore alternatives so we just delayed\"",
+        "Follow-up: Asked about other options; candidate cited time pressure"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate accepted a linear delay without exploring portfolio rebalancing or strategic offsets. No evidence of using ambiguity to create new options or protecting long-term business metrics. Decision process appears reactive rather than judgment-based."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature or task",
+      "senior": "Cross-team deliverables and negotiation",
+      "manager": "Team OKRs and resource allocation",
+      "exec": "Org-level revenue and multi-quarter targets"
+    },
+    {
+      "signal": "Recovery mechanism",
+      "junior": "Escalation + personal buffer",
+      "senior": "Delegation + stakeholder negotiation",
+      "manager": "Re-sequencing + external leverage",
+      "exec": "Strategic re-ranking + finance alignment"
+    },
+    {
+      "signal": "Communication style",
+      "junior": "Team chat updates",
+      "senior": "Targeted 1:1s and peer asks",
+      "manager": "Team syncs + affected-person 1:1s",
+      "exec": "VP convening + board/CFO reset"
+    },
+    {
+      "signal": "Prevention or learning",
+      "junior": "Added daily buffer habit",
+      "senior": "Context-based ownership rules",
+      "manager": "Capacity modeling gap noted",
+      "exec": "Three-year strategy map used"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Feature shipped Monday",
+      "senior": "Service restored + deck on time",
+      "manager": "Core OKRs hit, no burnout",
+      "exec": "92% ARR protected"
+    },
+    {
+      "signal": "Ownership under pressure",
+      "junior": "Asked manager for priority help",
+      "senior": "Kept customer-facing work, delegated rest",
+      "manager": "Owned trade-off conversations",
+      "exec": "Owned revenue target reset"
+    }
+  ],
+  "kind": "competency"
+}

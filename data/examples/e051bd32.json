@@ -1,0 +1,233 @@
+{
+  "question": "Describe a time when you constructed a team to accomplish a goal. What factors did you consider in constructing the team? Did you factor diversity into your team construction? How did you balance work requirements, team skill composition, and team stretch opportunities? What do you consider when you allocate work? How did you ensure team members were able to work effectively together? Would you have done anything differently?",
+  "competency": "Hire and Develop the Best",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "For my capstone project I needed to deliver a working prototype in 8 weeks. I picked three classmates: one strong in backend, one in UI, and one who had taken the same class before but wanted to learn deployment. I asked each what they wanted to get better at and matched two stretch items to their goals while keeping core deliverables covered. We met twice a week and used a simple RACI so no one was blocked."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the person who was weaker on one skill?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paired them with the stronger backend person for the first two sprints and checked in after each task so they could ask questions early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Constructed team for capstone prototype",
+        "Chose mix of skills + one repeat student for deployment stretch",
+        "Asked each about learning goals before assigning work",
+        "Used twice-weekly syncs and RACI to keep aligned",
+        "Quote: \"I matched two stretch items to their goals while keeping core deliverables covered\"",
+        "Follow-up: Paired weaker member with stronger peer and checked after each task"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate described deliberately choosing teammates for both coverage and individual growth goals rather than defaulting to friends. They allocated work by asking about learning objectives first and then pairing to close gaps. The RACI and cadence show basic ownership of team coordination. Biggest strength is the explicit link between stretch assignments and follow-up support.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I just asked two friends who were free that semester and we split the tasks evenly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What factors did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mainly who had time and who I already got along with."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Team for capstone",
+        "Selected friends based on availability and personal rapport",
+        "No mention of skill gaps or learning goals",
+        "Work split described as \"evenly\" with no follow-up mechanism",
+        "Follow-up: Could not name any adjustment when one member struggled"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Selection was driven only by convenience and existing relationships with no discussion of required skills or growth. Work allocation lacked any stated criteria or adjustment when issues arose. The absence of even basic coordination mechanisms shows limited ownership of team outcomes at this level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to launch a new internal tool across two teams. I pulled one engineer from each platform squad plus a TPM and a designer who had worked on similar tooling. I explicitly added someone from the EU office for time-zone and localization coverage. Each person had one core deliverable and one stretch item tied to their career goals documented in our quarterly planning."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep them effective together?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a 15-minute daily standup and a weekly retro focused only on process friction. After the first month I rotated the retro owner so quieter voices led."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Cross-team internal tool launch",
+        "Selected for platform coverage, TPM, design, and EU presence",
+        "Each had documented core + stretch work",
+        "Daily standup plus rotating retro ownership",
+        "Quote: \"I explicitly added someone from the EU office for time-zone and localization coverage\"",
+        "Follow-up: Rotated retro lead to surface quieter input"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate built for both technical coverage and geographic diversity while tying assignments to documented career goals. Process mechanisms were lightweight and iterated on. The rotation of retro ownership shows attention to inclusive team dynamics without over-engineering. Biggest strength is the combination of skill mix and explicit growth framing.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I staffed the project with the three strongest individual contributors I knew from prior work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider diversity or stretch?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I needed it done fast so I went with proven people."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Internal tool project",
+        "Chose top individual performers from past projects",
+        "No discussion of team composition beyond speed",
+        "No stated process for working together",
+        "Follow-up: Could not articulate any adjustment for team dynamics"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Staffing prioritized individual output over coverage, diversity, or development. The candidate showed no evidence of considering how the group would operate together or creating stretch opportunities. At senior level this reads as hero-mode rather than building repeatable team capability."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org needed a new payments service. I hired two experienced engineers, promoted one internal IC to tech lead, and brought in a contractor for the first six months to transfer knowledge. I also added a new grad on a rotation so the team would have future bench strength. Before finalizing offers I reviewed the slate for gender and background mix and adjusted sourcing when it was too narrow."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle allocation and development?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mapped every major workstream to both a primary owner and a secondary so knowledge spread. Quarterly I sat with each person to update their growth plan and rebalanced scope when someone was ready for more."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Built payments service team",
+        "Mix of external hires, internal promotion, contractor, and new-grad rotation",
+        "Reviewed slate for diversity before offers",
+        "Primary + secondary ownership on every workstream",
+        "Quote: \"I mapped every major workstream to both a primary owner and a secondary\"",
+        "Follow-up: Quarterly growth-plan reviews with scope rebalancing"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate constructed the team with deliberate attention to hiring, promotion, knowledge transfer, and long-term bench strength. Diversity was treated as a sourcing input rather than an afterthought. Primary/secondary ownership and quarterly growth conversations show active development of people. Biggest strength is the integration of team construction with ongoing talent development.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I backfilled two open roles with strong resumes and assigned the most experienced person as lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What about development or diversity?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were under headcount pressure so I focused on getting productive people in seats quickly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Payments service team build",
+        "Backfilled open roles with experienced hires",
+        "No mention of internal development or diversity review",
+        "Lead assignment based solely on experience",
+        "Follow-up: No process described for ongoing allocation or growth"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The approach was reactive backfill rather than intentional team construction. No evidence of developing internal talent or considering diversity in the slate. At manager level this signals limited investment in building organizational capability beyond immediate delivery."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After acquiring a company we needed a unified platform org of 180 people. I restructured into four outcome-oriented teams, moved two directors into new scope, hired an external VP for a missing capability, and created a cross-org council for shared infrastructure decisions. I required each new team to include at least one member from the acquired company and one from each legacy region to preserve institutional knowledge and decision speed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a three-month delay in one product line to give the acquired leaders time to ramp and to avoid losing key talent. I tracked retention and internal mobility metrics quarterly and adjusted leadership coaching where mobility was low."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Post-acquisition platform org restructure (180 people)",
+        "Four outcome teams, director moves, external VP hire, cross-org council",
+        "Mandated acquired + regional representation on each team",
+        "Accepted product delay to protect retention and integration",
+        "Quote: \"I required each new team to include at least one member from the acquired company and one from each legacy region\"",
+        "Follow-up: Quarterly retention and mobility reviews with targeted coaching"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate treated team construction as an org-level design problem that balanced capability, integration, and retention. Structural mechanisms such as the cross-org council and mandated representation show strategic judgment. The willingness to trade short-term delivery for long-term talent outcomes is a clear executive signal. Biggest strength is the explicit linkage between org design choices and measurable people metrics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept the existing structure and added headcount to the highest-performing teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you approach integration or development?"
+        },
+        {
+          "role": "candidate",
+          "text": "We focused on hitting the synergy targets first and addressed org design in the next planning cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Post-acquisition platform org",
+        "Preserved existing structure and added headcount to strong teams",
+        "No stated integration or diversity considerations",
+        "Synergy targets prioritized over people or structure changes",
+        "Follow-up: Org design deferred to future cycle"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The response shows preservation of the status quo rather than intentional redesign after a major event. No evidence of using team construction to drive integration, retention, or capability building. At exec level this reads as tactical rather than strategic ownership of organizational effectiveness."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Team construction intent",
+      "junior": "Explicit mix of coverage and growth goals",
+      "senior": "Coverage + geographic diversity + documented stretch",
+      "manager": "Hiring, promotion, rotation, and slate diversity review",
+      "exec": "Org design with mandated representation and retention trade-offs"
+    },
+    {
+      "signal": "Work allocation approach",
+      "junior": "Asked about learning goals then paired for support",
+      "senior": "Core + stretch per person with process cadence",
+      "manager": "Primary/secondary ownership plus quarterly growth reviews",
+      "exec": "Structural mechanisms plus tracked mobility metrics"
+    },
+    {
+      "signal": "Diversity consideration",
+      "junior": "Not mentioned",
+      "senior": "Added EU member for coverage",
+      "manager": "Reviewed slate and adjusted sourcing",
+      "exec": "Required acquired and regional members on every team"
+    },
+    {
+      "signal": "Coordination mechanisms",
+      "junior": "Twice-weekly syncs and RACI",
+      "senior": "Daily standup with rotating retro ownership",
+      "manager": "Knowledge spread via secondary owners",
+      "exec": "Cross-org council and quarterly people metrics"
+    },
+    {
+      "signal": "Trade-off awareness",
+      "junior": "Minimal",
+      "senior": "Limited",
+      "manager": "Balanced delivery with development",
+      "exec": "Accepted delivery delay for retention and integration"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,230 @@
+{
+  "question": "Describe a time when you didn't think you were going to meet a commitment you promised. How did you identify the risk and communicate it to stakeholders? Is there anything you would do differently?",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I committed to finishing a feature by Friday but by Wednesday saw my estimates were off due to an unexpected API change. I flagged it in our standup and told my manager I needed two more days, offered to work the weekend, and asked for a quick review of the approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped Monday. My manager said next time to surface the risk the moment I saw the API issue instead of trying to power through alone."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Junior IC on feature work, spotted API change mid-week",
+        "Flagged in standup, asked manager for help, offered weekend work",
+        "Quote: 'I told my manager I needed two more days'",
+        "Outcome: shipped Monday, got feedback on earlier surfacing",
+        "Follow-up: What would you do differently? -> 'Flag the moment the API changed instead of trying to power through'"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned the miss by surfacing the risk in standup and offering a concrete recovery plan rather than hiding it. The story shows they accepted feedback on earlier escalation. The follow-up answer directly names the gap in timing. Biggest strength is willingness to communicate the risk while still individual-scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was behind on a bug fix and just kept working late until the deadline passed. I didn't tell anyone until the next standup when it was already late."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you identify the risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I kind of knew on Thursday but thought I could still make it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Missed bug fix deadline, no early flag",
+        "Worked late in isolation until after deadline",
+        "Quote: 'I kind of knew on Thursday but thought I could still make it'",
+        "Outcome: late delivery, no stakeholder update until after",
+        "Follow-up: What would you do differently? -> vague answer about 'trying harder'"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate waited until after the deadline to communicate and showed no proactive risk identification. The story lacks any attempt to involve others or adjust the plan. Biggest gap is absence of ownership behaviors even at individual task level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team dependency on the payments service slipped by two weeks. I spotted it in the dependency tracker on a Monday, pulled the owning team lead into a quick sync, and sent a note to my PM and the downstream team with a revised date and a proposed workaround using a feature flag."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did stakeholders react?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM appreciated the heads-up and we adjusted the launch plan. I also documented the lesson in our team wiki so other services could see the pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Senior scope, payments service dependency slip",
+        "Identified via tracker, pulled in owning lead, notified PM and downstream team with workaround",
+        "Quote: 'sent a note to my PM and the downstream team with a revised date'",
+        "Outcome: adjusted launch plan, added to wiki for others",
+        "Follow-up: What would you do differently? -> 'Set up automated alerts on the dependency tracker earlier'"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate identified the risk through a dependency tracker and drove cross-team communication with a concrete mitigation. The outcome shows influence without authority and a lasting improvement via the wiki. Biggest strength is turning a personal commitment miss into a visible process fix for multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A dependency on another team delayed my project. I emailed the other team once and then waited for them to respond while the date slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve your stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not until the week before the deadline when it was obvious we would miss."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Dependency delay, single email then passive wait",
+        "No stakeholder update until week before deadline",
+        "Quote: 'waited for them to respond while the date slipped'",
+        "Outcome: missed date with no mitigation plan",
+        "Follow-up: What would you do differently? -> 'Follow up more aggressively'"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate relied on a single email and only escalated after the miss was inevitable. No evidence of cross-team influence or proactive stakeholder updates. Biggest gap is treating the issue as someone else's problem rather than owning the outcome."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team committed to a Q2 migration but one engineer's estimates were optimistic. I saw the burndown trending red in week three, brought the data to the 1:1, and together we adjusted scope and added a second reviewer. I then updated the director and product with the new timeline and offered to absorb the risk in my own OKRs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team member respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They appreciated the early intervention and later used the same burndown check in their next project."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Manager level, team migration at risk",
+        "Used burndown data in 1:1, adjusted scope with engineer, notified director and product",
+        "Quote: 'offered to absorb the risk in my own OKRs'",
+        "Outcome: timeline adjusted, engineer adopted the practice",
+        "Follow-up: What would you do differently? -> 'Run the burndown check in week two instead of week three'"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used data to surface risk early, coached the engineer, and took personal accountability by absorbing it in their OKRs. The story shows both team development and stakeholder transparency. Biggest strength is creating leverage so the fix became a repeatable team practice.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team was behind on a project. I told them to work harder and updated leadership only after we missed the date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What support did you give the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked them for daily status but didn't change scope or priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Team behind, told them to work harder",
+        "Updated leadership only after miss",
+        "Quote: 'asked them for daily status but didn't change scope'",
+        "Outcome: missed date, no coaching or scope adjustment",
+        "Follow-up: What would you do differently? -> 'Check status twice a week'"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate pushed the team without providing structural help and only communicated the miss after the fact. No evidence of developing people or owning team outcomes. Biggest gap is lack of leverage or accountability at the manager level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had committed to a board-level revenue target that depended on a new market launch. In month two the regulatory timeline slipped. I pulled the finance, legal, and product leads into a war room, modeled three scenarios with P&L impact, and presented the board with a revised target plus two mitigation bets we could fund from existing budget."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board approved the revised plan. We later institutionalized the scenario-modeling step into our annual planning process."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Exec scope, board revenue target at risk from regulatory slip",
+        "War room with finance/legal/product, modeled scenarios, presented board with revised target and funded mitigations",
+        "Quote: 'presented the board with a revised target plus two mitigation bets'",
+        "Outcome: board approved plan, institutionalized scenario modeling",
+        "Follow-up: What would you do differently? -> 'Run the regulatory check in parallel with initial planning instead of sequentially'"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate identified the org-level risk early, drove cross-functional scenario planning, and owned the outcome by presenting trade-offs directly to the board. The lasting change to planning process shows strategic judgment. Biggest strength is converting a missed commitment into durable leverage for the business.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A key initiative was delayed by external factors. I sent an update to the board noting the delay and that we were working on it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you present?"
+        },
+        {
+          "role": "candidate",
+          "text": "We listed the delay but didn't model alternatives or reallocate resources."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when you didn't think you were going to meet a commitment...",
+        "Initiative delayed by external factors, single update to board",
+        "No scenario modeling or resource reallocation",
+        "Quote: 'listed the delay but didn't model alternatives'",
+        "Outcome: board informed but no decision framework provided",
+        "Follow-up: What would you do differently? -> 'Send more frequent status emails'"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate treated the miss as an external event and provided no strategic options or trade-offs. Communication was passive rather than decision-oriented. Biggest gap is absence of long-term thinking or organizational leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Early risk identification",
+      "junior": "Flags issue within a few days of discovering it",
+      "senior": "Uses tracking tools to catch dependency slips before week three",
+      "manager": "Reviews team metrics proactively and intervenes in 1:1s",
+      "exec": "Runs parallel checks on regulatory and market assumptions during planning"
+    },
+    {
+      "signal": "Stakeholder communication",
+      "junior": "Tells direct manager in standup",
+      "senior": "Notifies PM and downstream teams with mitigation",
+      "manager": "Updates director and product with revised timeline",
+      "exec": "Presents board with scenarios and funded options"
+    },
+    {
+      "signal": "Personal accountability",
+      "junior": "Offers to work weekend to recover",
+      "senior": "Documents lesson in wiki for others",
+      "manager": "Absorbs risk in own OKRs",
+      "exec": "Funds mitigation bets from existing budget"
+    },
+    {
+      "signal": "Learning and prevention",
+      "junior": "Names the timing gap in follow-up",
+      "senior": "Adds automated alerts to dependency tracker",
+      "manager": "Coaches engineer to adopt burndown checks",
+      "exec": "Institutionalizes scenario modeling in annual planning"
+    }
+  ],
+  "kind": "lp"
+}

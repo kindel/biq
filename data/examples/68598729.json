@@ -1,0 +1,265 @@
+{
+  "question": "Tell me about a time when you established a vision for a (team, product, initiative) when there wasn't one. How did you gain buy-in and drive execution? What was the outcome? Would you have done anything differently?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed our onboarding docs were scattered so I wrote a single guide with steps and links. I showed it to two teammates who gave feedback and we used it for the next hire."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the team to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just asked them to try it once and asked for changes. It cut ramp time by about a week for the new person."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked the manager earlier instead of just the two peers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you established a vision for a (team, product, initiative) when there wasn't one...",
+        "Candidate created a single onboarding guide from scattered docs",
+        "Gained buy-in by sharing with two peers and iterating",
+        "Outcome: new hire ramp time cut by ~1 week",
+        "Quote: 'I would have asked the manager earlier'",
+        "Follow-up: Asked how they drove adoption; they described peer-level iteration only"
+      ],
+      "raiseFeedback": "The story shows the candidate spotting a local gap and creating a simple shared artifact without being asked. They sought input from peers and adjusted based on feedback, which produced a measurable improvement in ramp time. The scope stayed inside one project and one team, which matches junior expectations. They correctly identified that involving the manager sooner would have helped scale the change. The main gap is that the vision did not extend beyond their immediate work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told us the goal was to finish the feature so we just did the tasks in the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any point where you created a view of what success looked like when it was unclear?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the tickets were already written."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you established a vision...",
+        "Candidate described executing existing tickets",
+        "No evidence of creating a vision or seeking buy-in",
+        "Outcome: feature shipped per original plan",
+        "Follow-up: Probe on whether they ever defined success themselves; answer was no"
+      ],
+      "lowerFeedback": "The candidate stayed strictly inside assigned tickets and did not attempt to define what good looked like when direction was missing. There is no example of influencing even one peer or proposing an alternative path. At the junior level this shows a lack of ownership over their immediate surroundings and limited coachability on the principle of thinking beyond the task list."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were building overlapping alerting tools. I wrote a one-page vision for a shared platform, showed it to the two tech leads, and we ran a two-week spike together."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the second team to change direction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mapped their current work to the shared roadmap and let their lead present the combined plan in their own team meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after the spike?"
+        },
+        {
+          "role": "candidate",
+          "text": "We avoided duplicating three features and one engineer moved to the shared effort."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you established a vision...",
+        "Candidate wrote a one-page vision for a shared alerting platform",
+        "Gained buy-in by mapping work to the other team's roadmap and letting their lead present",
+        "Outcome: duplication avoided and one engineer reallocated",
+        "Quote: 'I let their lead present the combined plan'",
+        "Follow-up: How influence worked across teams; described letting the other lead own the message"
+      ],
+      "raiseFeedback": "The candidate identified duplication across teams and created a simple artifact that aligned two groups without formal authority. They deliberately let the other team's lead present the idea, which shows awareness of influence without authority. The result was concrete reuse and reallocation of one person. Scope and metrics fit senior expectations. The story would be stronger with a longer-term metric on maintenance cost.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we should build one tool instead of two but the other team kept working on theirs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to change their direction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent them the design doc I wrote and asked them to review it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you established a vision...",
+        "Candidate wrote a design doc but did not adapt approach when ignored",
+        "No evidence of adjusting influence tactics or securing cross-team commitment",
+        "Outcome: other team continued separate work",
+        "Follow-up: Asked what they tried after the doc was ignored; no further actions described"
+      ],
+      "lowerFeedback": "The candidate produced a document but did not adapt their influence approach when the other team did not engage. At the senior level we expect evidence of iterating on how to gain buy-in, not stopping after one attempt. The lack of any measurable shift in the other team's behavior is the clearest signal this answer lowers the bar for Think Big."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had no clear north star after a re-org. I ran a two-day offsite to define three outcomes for the next year and had each engineer draft how their work connected to one outcome."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who disagreed with the outcomes?"
+        },
+        {
+          "role": "candidate",
+          "text": "One person thought we should stay focused on reliability only. I asked them to own the reliability metric and show how the other two outcomes still depended on it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result six months later?"
+        },
+        {
+          "role": "candidate",
+          "text": "All three outcomes had owners and two were on track; the third needed scope adjustment."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you established a vision...",
+        "Candidate ran an offsite to define three outcomes after re-org",
+        "Addressed disagreement by giving the dissenting engineer ownership of a related metric",
+        "Outcome: two of three outcomes on track after six months",
+        "Quote: 'I asked them to own the reliability metric'",
+        "Follow-up: How disagreement was handled; described giving dissenting voice concrete ownership"
+      ],
+      "raiseFeedback": "The manager created a shared vision when none existed and involved the team in connecting their work to outcomes. They handled resistance by converting a skeptic into an owner rather than overriding them. Six-month tracking shows the vision was used in execution. This meets the manager bar for Think Big. The missing element is evidence of how the vision was refreshed or used to guide staffing decisions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wrote the team goals based on what my manager asked for and shared the slide deck in the next all-hands."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team contribute to or challenge the goals?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few people asked questions but we moved on because the deadline was tight."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you established a vision...",
+        "Candidate cascaded goals from their manager",
+        "Limited team input; dissent was noted but not addressed",
+        "Outcome: goals presented but no follow-up on adoption",
+        "Follow-up: Asked how they handled questions in the meeting; no further action taken"
+      ],
+      "lowerFeedback": "The candidate treated vision setting as a top-down communication task rather than a process to create alignment. At the manager level we look for active engagement of the team and handling of disagreement. The story shows neither, so the answer lowers the bar for Think Big."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the acquisition we had three overlapping product lines. I defined a single platform vision that would let two lines sunset and one scale, then spent six weeks meeting every director to map their P&L to the new model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "One business unit would lose short-term revenue. I proposed a two-year transition fund and tied it to the overall margin target the board had set."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the transition fund was approved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two product lines were retired on schedule and the platform team headcount grew while total R&D spend stayed flat."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you established a vision...",
+        "Candidate defined a platform vision to consolidate three product lines post-acquisition",
+        "Gained buy-in through one-on-one mapping of each director's P&L to the new model",
+        "Outcome: two lines retired, platform scaled with flat R&D spend",
+        "Quote: 'I proposed a two-year transition fund tied to board margin target'",
+        "Follow-up: Trade-offs discussed; described using existing board target as anchor"
+      ],
+      "raiseFeedback": "The executive created a multi-year consolidation vision in a high-ambiguity post-acquisition setting. They invested personal time mapping each leader's incentives and used an existing board metric to justify the transition fund. The result was measurable portfolio simplification without increasing total spend. This is a strong Think Big example at the exec level. The story would be tighter with a clearer statement of the original ambiguity and how alternatives were ruled out.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I presented a vision deck to the leadership team that showed we should focus on the enterprise segment."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other business units respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They agreed in the room but continued funding their own priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you established a vision...",
+        "Candidate presented a vision deck to leadership",
+        "No follow-up mechanism described when units continued prior work",
+        "Outcome: vision presented but no portfolio change",
+        "Follow-up: Asked what actions followed the meeting; none described beyond the presentation"
+      ],
+      "lowerFeedback": "The candidate stopped at presenting a slide deck and did not create mechanisms to align incentives or reallocate resources. At the exec level Think Big requires driving actual trade-offs and sustained execution, not just communication. The absence of any follow-through actions or measurable change lowers the bar."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of vision",
+      "junior": "Single project or workflow inside own team",
+      "senior": "Cross-team duplication or overlap",
+      "manager": "Team or org unit after re-org or change",
+      "exec": "Business-unit or portfolio level post-acquisition or market shift"
+    },
+    {
+      "signal": "How buy-in was gained",
+      "junior": "Peer feedback and iteration",
+      "senior": "Letting other leads own the message",
+      "manager": "Giving dissenters concrete ownership",
+      "exec": "Mapping individual P&L or incentives to the vision"
+    },
+    {
+      "signal": "Evidence of trade-offs",
+      "junior": "Minimal; mostly scope within own work",
+      "senior": "Avoided duplicating features",
+      "manager": "Handled one dissenting voice by reassigning ownership",
+      "exec": "Created transition fund tied to board metric"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Local metric such as ramp time",
+      "senior": "Engineer reallocation or feature reuse",
+      "manager": "Two of three outcomes on track at six months",
+      "exec": "Portfolio retired and R&D spend held flat"
+    },
+    {
+      "signal": "Reflection on what they would change",
+      "junior": "Involve manager earlier",
+      "senior": "Would add longer-term maintenance metric",
+      "manager": "Would refresh vision more frequently",
+      "exec": "Would surface alternatives considered earlier"
+    }
+  ],
+  "kind": "lp"
+}

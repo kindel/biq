@@ -1,0 +1,245 @@
+{
+  "question": "Give me an example of a change you implemented in your current team or organization to meet the needs of your customers. What has been the result?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed support tickets spiking on a login flow after a recent deploy. I added clearer error messages and a self-service password reset link."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted the change and how did you measure it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Tickets dropped 40% in two weeks. My mentor suggested tracking repeat contacts, which showed the same trend."
+        }
+      ],
+      "raiseNotes": [
+        "Q: change implemented to meet customer needs + result",
+        "Role: individual contributor on support-heavy feature",
+        "Situation: post-deploy ticket spike in login",
+        "Actions: added error messages + self-service reset",
+        "Outcome: 40% ticket drop in 2 weeks",
+        "Quote: \"My mentor suggested tracking repeat contacts\"",
+        "Follow-up: asked about measurement; candidate referenced mentor input"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a local customer pain point by shipping a targeted fix after noticing ticket volume. Quote: \"Tickets dropped 40% in two weeks.\" The story shows they acted on direct customer signals and incorporated feedback on measurement. This meets junior expectations for individual ownership and coachability. Biggest strength is closing the loop with a clear before-and-after metric rather than stopping at the implementation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I updated the FAQ page because customers kept asking the same questions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data or customer input drove the change and what was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager said it was a good idea. We haven't checked the numbers yet."
+        }
+      ],
+      "lowerNotes": [
+        "Q: change implemented + result",
+        "Role: IC",
+        "Situation: repeated customer questions",
+        "Actions: updated FAQ",
+        "Outcome: none measured",
+        "Quote: \"We haven't checked the numbers yet\"",
+        "Follow-up: probed for data; candidate deferred to manager and had no results"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate described a change but could not connect it to specific customer data or show any outcome. Quote: \"We haven't checked the numbers yet.\" The story lacks ownership of measurement and relies on manager direction. This falls short of even junior expectations for acting on customer signals with observable results. Biggest gap is absence of any follow-through on impact."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer NPS on checkout was dropping due to payment failures across two teams. I aligned the payments and frontend teams on a retry policy and added client-side diagnostics."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in and what were the results?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the shared failure data in a joint review. Failures fell 25% and NPS in that flow rose 8 points over the quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: cross-team change for customers + result",
+        "Role: senior IC influencing two teams",
+        "Situation: shared payment failure impacting NPS",
+        "Actions: aligned teams on retry + diagnostics",
+        "Outcome: 25% failure reduction, +8 NPS",
+        "Quote: \"I showed the shared failure data in a joint review\"",
+        "Follow-up: asked about influence; candidate used data to drive alignment"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove a cross-team change using customer NPS data as the forcing function. Quote: \"Failures fell 25% and NPS in that flow rose 8 points.\" They influenced without authority by surfacing shared metrics. This demonstrates the expected senior scope of impact beyond a single team. Biggest strength is linking technical alignment directly to a measurable customer outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed my team to add more logging so we could debug customer issues faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams need to change and what customer result did you see?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was mostly within my team. We saw fewer escalations but didn't track a customer metric."
+        }
+      ],
+      "lowerNotes": [
+        "Q: change + result",
+        "Role: senior",
+        "Situation: debugging customer issues",
+        "Actions: added logging",
+        "Outcome: fewer escalations, no customer metric",
+        "Quote: \"We saw fewer escalations but didn't track a customer metric\"",
+        "Follow-up: probed cross-team and results; candidate stayed within team and lacked metric"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate stayed within one team and produced no customer-facing metric. Quote: \"didn't track a customer metric.\" The change did not require or achieve cross-team influence. This does not meet senior expectations for driving broader impact from customer signals. Biggest gap is missing evidence of influence or measurable customer improvement."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our support team was overwhelmed by repeat billing questions. I had the team create a customer-facing billing dashboard and trained them to surface patterns to product."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team change and what was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reduced repeat contacts 30% and two product teams adopted the patterns we fed them, cutting similar issues in other flows."
+        }
+      ],
+      "raiseNotes": [
+        "Q: team-level change for customers + result",
+        "Role: manager developing team capability",
+        "Situation: repeat billing questions overloading support",
+        "Actions: built dashboard + trained team on pattern surfacing",
+        "Outcome: 30% repeat contact drop, product adoption",
+        "Quote: \"two product teams adopted the patterns we fed them\"",
+        "Follow-up: asked about team development; candidate showed leverage through training and handoff"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate created leverage by building team skill and a repeatable process instead of fixing issues themselves. Quote: \"two product teams adopted the patterns we fed them.\" The result shows both direct customer impact and downstream organizational benefit. This matches manager expectations for developing people and owning team outcomes. Biggest strength is turning a support burden into a product input mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team to prioritize customer tickets higher."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process or capability did you build and what result followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just reprioritized. Ticket volume stayed the same but the team felt more pressure."
+        }
+      ],
+      "lowerNotes": [
+        "Q: change + result",
+        "Role: manager",
+        "Situation: customer tickets",
+        "Actions: reprioritized work",
+        "Outcome: no volume change, added team pressure",
+        "Quote: \"the team felt more pressure\"",
+        "Follow-up: probed for process change; candidate only shifted priorities with negative side effect"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate applied pressure without building any new team capability or process. Quote: \"the team felt more pressure.\" No customer result was achieved and the change created downside for the team. This misses manager expectations for creating leverage through people. Biggest gap is lack of any sustainable mechanism or positive outcome."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Enterprise customers were churning because onboarding took 90 days. I shifted two product lines to a common self-serve onboarding platform and changed the sales compensation to reward time-to-value."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make and what was the business result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two roadmap items by a quarter. Enterprise churn dropped 18% and sales cycle shortened 22% in the following year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: org-level change + result",
+        "Role: exec making portfolio and comp changes",
+        "Situation: 90-day onboarding driving enterprise churn",
+        "Actions: unified onboarding platform + sales comp redesign",
+        "Outcome: 18% churn drop, 22% shorter sales cycle",
+        "Quote: \"We delayed two roadmap items by a quarter\"",
+        "Follow-up: asked about trade-offs; candidate named specific delays and multi-year metrics"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made a strategic bet that touched product priorities and sales incentives to solve a top-of-funnel customer problem. Quote: \"Enterprise churn dropped 18%.\" They explicitly called out the roadmap trade-off. This shows the long-term, org-level judgment expected at exec. Biggest strength is connecting a customer friction point to both retention and sales velocity with clear choices.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a customer advisory board to hear feedback more regularly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What org change or trade-off resulted and what metric moved?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board meets quarterly. We haven't tied it to any specific product or metric changes yet."
+        }
+      ],
+      "lowerNotes": [
+        "Q: change + result",
+        "Role: exec",
+        "Situation: need for customer input",
+        "Actions: created advisory board",
+        "Outcome: meetings happening, no metric impact",
+        "Quote: \"We haven't tied it to any specific product or metric changes yet\"",
+        "Follow-up: probed for trade-offs and results; candidate had activity without linkage to outcomes"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate created a listening mechanism but did not drive any organizational change or measurable result. Quote: \"haven't tied it to any specific product or metric changes yet.\" No evidence of strategic trade-offs or business impact. This falls short of exec expectations for using customer insight to reshape priorities at scale. Biggest gap is activity without leverage or results."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of customer-driven change",
+      "junior": "Individual feature or process tweak",
+      "senior": "Cross-team technical or process alignment",
+      "manager": "Team capability and handoff to product",
+      "exec": "Portfolio priority and incentive redesign"
+    },
+    {
+      "signal": "Use of customer metrics",
+      "junior": "Local ticket or contact volume",
+      "senior": "NPS or failure rate tied to flow",
+      "manager": "Repeat contacts plus downstream adoption",
+      "exec": "Churn and sales cycle at org level"
+    },
+    {
+      "signal": "Evidence of trade-offs",
+      "junior": "Rarely mentioned",
+      "senior": "Occasional cross-team cost",
+      "manager": "Team capacity reallocation",
+      "exec": "Explicit roadmap delays and comp changes"
+    },
+    {
+      "signal": "Leverage mechanism",
+      "junior": "Personal execution",
+      "senior": "Data-driven influence",
+      "manager": "Training and repeatable process",
+      "exec": "Policy and compensation shifts"
+    },
+    {
+      "signal": "Time horizon of result",
+      "junior": "Days to weeks",
+      "senior": "One quarter",
+      "manager": "Quarter plus product adoption",
+      "exec": "Year-plus business metrics"
+    }
+  ],
+  "kind": "lp"
+}

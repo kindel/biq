@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about stuff you don't love doing. What do you do with that work?",
+  "competency": "Learn and Be Curious + Ownership",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't love writing detailed test cases for edge scenarios. I used to just get them done, but then I started asking my mentor why certain cases kept failing in prod. That led me to read the service logs myself and spot a pattern in how we handle retries."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a small script to generate the missing cases automatically. It cut my time on that task by half, and the team started using it too."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: new grad on backend team, task: regression test cases",
+        "Action: asked mentor, read logs, built generator script",
+        "Outcome: time cut in half, script adopted by team",
+        "Quote: 'I started asking my mentor why certain cases kept failing in prod'",
+        "Follow-up: How did you know the script was good enough? Said they ran it on last three releases and compared results manually"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious. Junior candidate described turning disliked test case work into a learning loop by reading logs and asking a mentor, then built a small generator that saved time and spread to the team. The story shows ownership of their own output plus quick iteration from feedback. Lowering answers at this level usually stop at 'I just do it' with no attempt to understand or improve the task.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't love writing test cases. It's tedious so I try to finish them quickly and move on to coding."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever try to make it faster or learn why the cases matter?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just follow the template my lead gives me."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: new grad, task: test cases",
+        "Action: finish quickly to move on",
+        "Outcome: no change or learning",
+        "Quote: 'I just follow the template my lead gives me'",
+        "Follow-up: Any time you improved the process? No examples given"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate treats disliked work as something to rush through with no curiosity about why the task exists or how to improve it. At junior level we expect at least one instance of asking why or trying a small improvement; none appears here."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't enjoy creating the quarterly metrics deck for my two teams. Instead of just doing it, I sat with the PMs to understand which numbers actually drove decisions last quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We replaced half the slides with automated queries and a shared dashboard. I still own the narrative but the data pull is now two hours instead of two days, and other teams started copying the format."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: senior on platform team, task: metrics deck",
+        "Action: interviewed PMs, automated queries, created dashboard",
+        "Outcome: time reduced from days to hours, format adopted by others",
+        "Quote: 'We replaced half the slides with automated queries'",
+        "Follow-up: How did you get the PMs to agree? Said they showed early version and asked which slides they actually used in reviews"
+      ],
+      "raiseFeedback": "Raises the bar. Senior candidate converted disliked deck work into a cross-team improvement by talking to PMs, automating the data, and creating a reusable dashboard that others adopted. Shows both personal ownership and influence without authority. Weak senior answers stay inside their own team and produce no lasting change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't love building the metrics deck every quarter. I just block time on my calendar and get it done so my manager stops asking."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to change how it's created?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once in a retro but nothing happened so I stopped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: senior, task: metrics deck",
+        "Action: block time and finish",
+        "Outcome: no improvement",
+        "Quote: 'I mentioned it once in a retro but nothing happened'",
+        "Follow-up: Any follow-up after the retro? None"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate signals the work is unpleasant but shows no sustained curiosity or attempt to reduce the burden for themselves or others. At senior level we look for evidence of driving a better process across at least one boundary; this story has none."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't enjoy doing the first-pass performance reviews for the team. I used to dread them until I started pairing each review with a short coaching note on one skill the person could practice."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that land?"
+        },
+        {
+          "role": "candidate",
+          "text": "The notes became the basis for our quarterly growth plans. Two engineers later told me those specific comments helped them get promoted the next cycle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: engineering manager, task: performance reviews",
+        "Action: added coaching notes tied to growth plans",
+        "Outcome: notes used for promotion cases",
+        "Quote: 'The notes became the basis for our quarterly growth plans'",
+        "Follow-up: How did you measure if the notes helped? Tracked which engineers referenced them in promotion docs"
+      ],
+      "raiseFeedback": "Raises the bar. Manager candidate turned disliked review writing into a team development lever by linking each review to a concrete growth action, with visible promotion outcomes. Demonstrates leverage through the team rather than heroics. Weak manager answers focus only on completing the reviews faster with no people-development angle.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't enjoy writing performance reviews. I try to get them done early so I can focus on project work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any changes you made to the process for your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ask my directs to write their own self-reviews first to save me time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: manager, task: reviews",
+        "Action: ask directs to write self-reviews first",
+        "Outcome: saves manager time only",
+        "Quote: 'I ask my directs to write their own self-reviews first to save me time'",
+        "Follow-up: Did the quality of feedback improve? No follow-up mentioned"
+      ],
+      "lowerFeedback": "Lowers the bar. The manager only describes shifting work to reports to reduce personal load, with no evidence of using the process to develop people or improve team outcomes. At manager level the expectation is that disliked work is turned into a development opportunity; this does not."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't love running the annual planning offsite. The first year I did it the output was ignored by two product teams. So the next year I spent time with each org's leadership to surface the real constraints before we met."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We cut the offsite to one day, published the constraints publicly, and the plans that came out were actually funded. Two VPs later reused the constraint list as their own quarterly checklist."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: director/VP, task: annual planning offsite",
+        "Action: pre-work with org leaders to surface constraints",
+        "Outcome: shorter offsite, plans funded, process reused by other VPs",
+        "Quote: 'We cut the offsite to one day, published the constraints publicly'",
+        "Follow-up: How did you know the plans were actually used? Said they tracked which teams referenced the published constraints in their Q3 updates"
+      ],
+      "raiseFeedback": "Raises the bar. Exec candidate converted a low-value offsite into an org-level planning tool by doing pre-work to expose constraints, shortening the event, and creating a reusable artifact adopted by peer leaders. Shows long-term strategic judgment and leverage across the organization. Weak exec answers keep the focus on their own calendar or produce no cross-org reuse.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I don't love the annual planning offsite. I delegate most of the prep to my chief of staff and just show up for the sessions."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the output quality or adoption change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it's still the same format every year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about stuff you don't love doing. What do you do with that work?",
+        "Role: exec, task: planning offsite",
+        "Action: delegated prep",
+        "Outcome: no change to format or adoption",
+        "Quote: 'I delegate most of the prep to my chief of staff'",
+        "Follow-up: Any attempt to improve the output? None"
+      ],
+      "lowerFeedback": "Lowers the bar. The exec only describes delegation to reduce personal involvement, with no curiosity about why the offsite produced low-adoption plans or any attempt to improve the org-level outcome. At exec level we expect strategic redesign that creates leverage beyond the leader's own time."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Curiosity about root cause",
+      "junior": "Asks mentor why cases fail",
+      "senior": "Interviews PMs on decision drivers",
+      "manager": "Links reviews to growth actions",
+      "exec": "Surfaces org constraints before planning"
+    },
+    {
+      "signal": "Creates lasting improvement",
+      "junior": "Script adopted by team",
+      "senior": "Dashboard reused across teams",
+      "manager": "Notes used in promotion cases",
+      "exec": "Constraint list reused by peer VPs"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Own task only",
+      "senior": "Cross-team at peer level",
+      "manager": "Team-wide development",
+      "exec": "Org-level process change"
+    },
+    {
+      "signal": "Response to feedback",
+      "junior": "Iterates on mentor input",
+      "senior": "Adjusts deck based on PM usage",
+      "manager": "Tracks promotion outcomes",
+      "exec": "Shortens event after low adoption"
+    },
+    {
+      "signal": "Avoidance vs ownership",
+      "junior": "Rushes vs builds tool",
+      "senior": "Finishes vs automates",
+      "manager": "Delegates vs develops",
+      "exec": "Delegates vs redesigns"
+    }
+  ],
+  "kind": "lp"
+}

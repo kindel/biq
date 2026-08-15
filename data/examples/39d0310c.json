@@ -1,0 +1,258 @@
+{
+  "question": "Tell me about a time when you uncovered a significant problem in your team. What was it and how did you communicate it to your manager and other stakeholders? What did you do to address the problem? How did you manage the impact of this problem for the rest of your team?",
+  "competency": "Earn Trust (Communication, Ownership)",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was running our nightly data validation script and noticed the customer import numbers were off by 18% for two days. I double-checked my queries, then went to my manager right away instead of waiting for the weekly sync."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say to your manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told her exactly what I found, showed the query output, and said I wasn't sure if it was upstream or in our ETL. I offered to stay late to help investigate and asked if I should loop in the data team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I took the extra validation work myself so the rest of the team could keep their sprint commitments. Once we fixed it, I wrote up a short note on what to check in the future."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Uncovered significant problem in team",
+        "Found 18% data import discrepancy in nightly script",
+        "Went to manager same day with exact numbers and query output",
+        "Quote: \"I told her exactly what I found and offered to stay late\"",
+        "Follow-up: Asked whether to involve data team; took extra validation work to protect sprint",
+        "Outcome: Issue fixed, wrote short runbook note for future"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate surfaced a real data issue quickly and owned the communication instead of hoping it would resolve itself. Quote shows direct, fact-based delivery to the manager without speculation or blame. They protected team velocity by absorbing the extra work themselves. Biggest strength is prompt transparency paired with personal ownership of the follow-up effort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw some weird numbers in the import but figured the data team would catch it eventually so I just kept running my script."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you tell anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not right away. It got worse and then my manager asked about the numbers in the weekly meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Uncovered significant problem",
+        "Noticed import discrepancy but assumed data team would handle",
+        "Did not raise for several days",
+        "Only surfaced when manager asked in weekly meeting",
+        "No evidence of personal follow-up or protecting team"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate noticed a material discrepancy yet chose to stay silent and hope others would catch it. The problem only surfaced when the manager asked directly, showing avoidance rather than ownership. No attempt to communicate early or limit impact on the team. The core gap is treating bad news as someone else's problem instead of their own to surface."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "While reviewing cross-team metrics I spotted that our new recommendation model was causing a 12% drop in conversion for the search team. I pulled the data, confirmed the regression with A/B logs, then scheduled a quick sync with both my manager and the search lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you frame the conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I opened with the business impact number, showed the before/after curves, and said we needed to decide whether to roll back or accept the trade-off. I offered to run the rollback if they wanted."
+        },
+        {
+          "role": "interviewer",
+          "text": "Team impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I kept the search team updated daily on the investigation status so they weren't surprised by any decision. We ended up rolling back and I helped them adjust their own model tuning."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Significant problem across teams",
+        "Found 12% conversion regression from recs model affecting search",
+        "Brought data and business impact to joint sync with manager + search lead",
+        "Quote: \"I opened with the business impact number and offered to run the rollback\"",
+        "Follow-up: Daily updates to search team; helped them adjust after rollback",
+        "Outcome: Rollback executed, cross-team relationship preserved"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate connected a model change to downstream business harm and brought the data directly to the affected team instead of routing everything through their manager. They framed the discussion around impact and options rather than blame. Daily updates prevented the search team from feeling blindsided. Biggest strength is using transparency to maintain trust across team boundaries while still driving resolution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed the recs model was hurting search conversion but I didn't want to create friction so I just mentioned it in my 1:1."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve the search team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly. I assumed my manager would handle the conversation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Problem affecting another team",
+        "Identified conversion regression but avoided direct conversation",
+        "Only raised in 1:1 with manager",
+        "No direct outreach to search team",
+        "Outcome left to manager; no personal ownership of communication"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate recognized cross-team harm but deliberately avoided direct communication to prevent friction. They delegated the entire conversation to their manager instead of owning the stakeholder discussion. Lack of transparency with the affected team eroded potential trust. The main gap is choosing comfort over clear, timely information sharing at the senior level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our on-call rotation was burning out two new engineers. I saw the ticket volume and escalation pattern, then brought the data to my director and the other team leads whose services were generating the alerts."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate the problem?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the pager fatigue numbers and the names of the people affected, then proposed we redistribute some alerts and add a temporary shadow rotation. I asked the other leads what coverage they could provide."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you protect the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the two engineers what I was doing and that I would shield them from further escalation until we fixed the root causes. I also started weekly check-ins with them to surface any other issues early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Significant team problem uncovered",
+        "Pager fatigue data showed two new engineers at risk of burnout",
+        "Brought numbers and names to director + peer leads",
+        "Quote: \"I showed the pager fatigue numbers and proposed we redistribute alerts\"",
+        "Follow-up: Shielded the two engineers and ran weekly check-ins",
+        "Outcome: Alerts redistributed, root-cause work started"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used concrete data on individual impact to drive a cross-team discussion rather than absorbing the problem alone. They were transparent with both leadership and the affected engineers about the plan. Weekly check-ins created ongoing trust and surfaced issues earlier. Biggest strength is combining upward communication with direct protection of team members while still involving peer teams in the solution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw the on-call load was heavy on a couple of people but I didn't want to bother the other teams so I just asked my director for more headcount."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to the engineers?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in their next 1:1 but didn't share the full data or what I was doing about it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Team problem identified",
+        "Recognized pager fatigue but avoided peer teams",
+        "Only escalated for headcount to director",
+        "Limited transparency with affected engineers",
+        "No cross-team coordination attempted"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate saw clear burnout risk yet chose not to involve peer teams or share data transparently. They treated the issue as a headcount request instead of a coordination and communication problem. Limited updates to the engineers themselves reduced trust. The core gap is failing to use transparency and cross-team influence to solve a team-level issue."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our quarterly planning showed we were overcommitted on three major initiatives. I pulled the capacity numbers, confirmed the gap with finance, then walked the CEO and peer VPs through the trade-off options in a single meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the message?"
+        },
+        {
+          "role": "candidate",
+          "text": "I opened with the revenue risk if we missed two of the three and laid out the concrete choices: deprioritize one, add contractors, or accept slips. I took responsibility for the original overcommitment."
+        },
+        {
+          "role": "interviewer",
+          "text": "Team and org impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told my directs the same data and options before the CEO meeting so they could prepare their teams. We chose to drop one initiative and I personally owned the communication to the affected product team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Org-level overcommitment problem",
+        "Capacity gap across three major initiatives with revenue risk",
+        "Presented data and explicit trade-offs to CEO + peer VPs",
+        "Quote: \"I took responsibility for the original overcommitment\"",
+        "Follow-up: Pre-briefed directs; personally owned communication to dropped initiative team",
+        "Outcome: One initiative deprioritized, trust maintained across org"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate surfaced an overcommitment problem at the planning stage with clear business risk and owned the original planning error in front of the CEO. They gave leadership concrete choices instead of just bad news. Pre-briefing directs and personally communicating the decision to the affected team protected trust at multiple levels. Biggest strength is strategic transparency paired with personal accountability at the highest level of ambiguity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Planning showed we were overcommitted but I didn't want to push back on the CEO's priorities so I just told my team to work harder."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did leadership see the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly from me. I hoped the teams would surface issues later if needed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Org planning gap identified",
+        "Saw overcommitment but avoided raising to CEO",
+        "Told team to absorb the gap",
+        "No transparent options presented upward",
+        "No pre-communication to affected teams"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate recognized a material planning gap yet chose not to surface it or offer trade-offs to the CEO. They pushed the burden onto their teams without transparency. Lack of upward communication and personal ownership of the decision eroded trust across the organization. The main gap is avoiding strategic bad-news conversations at the exec level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Prompt transparency on bad news",
+      "junior": "Raises when issue raised same day with data",
+      "senior": "Raises when cross-team impact framed with options",
+      "manager": "Raises when data shared with peers and leadership",
+      "exec": "Raises when trade-offs presented to CEO with ownership"
+    },
+    {
+      "signal": "Personal ownership vs delegation",
+      "junior": "Raises when candidate absorbs extra work",
+      "senior": "Raises when candidate offers to run rollback",
+      "manager": "Raises when candidate shields team and owns communication",
+      "exec": "Raises when candidate owns original planning error"
+    },
+    {
+      "signal": "Protecting team from impact",
+      "junior": "Raises when extra validation taken on personally",
+      "senior": "Raises when daily updates prevent surprises",
+      "manager": "Raises when weekly check-ins and shielding used",
+      "exec": "Raises when pre-briefs directs before leadership meeting"
+    },
+    {
+      "signal": "Avoidance of direct communication",
+      "junior": "Lowers when waiting for weekly meeting",
+      "senior": "Lowers when routing everything through manager",
+      "manager": "Lowers when only asking for headcount",
+      "exec": "Lowers when hoping teams surface issues later"
+    }
+  ],
+  "kind": "lp"
+}

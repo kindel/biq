@@ -1,0 +1,321 @@
+{
+  "question": "Tell me about a time when you made a hard decision to sacrifice short term gain for something that would create long term value for the business. What was the outcome? Knowing what you know now, would you have done anything differently?",
+  "competency": "Ownership (long-term thinking, trade-off decisions)",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to ship a feature fast for a demo. Instead I spent two days adding integration tests because the module touched billing. It delayed the demo by a day."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the demo?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two weeks later a pricing change would have broken the flow. The tests caught it in CI. We fixed it before customers saw it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have flagged the risk to the PM earlier so the delay was a joint call."
+        }
+      ],
+      "raiseNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Situation: demo pressure vs adding tests on billing path",
+        "Action: chose tests, delayed demo one day",
+        "Outcome: caught pricing regression in CI before launch",
+        "Quote: \"The tests caught it in CI\"",
+        "Follow-up: would you do anything differently? \u2013 flagged risk to PM sooner"
+      ],
+      "raiseFeedback": "The candidate owned a local quality decision under delivery pressure. They traded a one-day demo delay for preventing a customer-facing billing bug. The outcome was concrete and measurable in CI. They also identified a communication gap in the follow-up. This shows basic ownership of their work plus coachability on how to involve stakeholders. It meets the bar for junior because the scope stayed within their code and they learned from the miss.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a tight deadline so I just patched the code to make the demo work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything break later?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yeah, the billing flow broke two weeks after. We had to hotfix it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably should have written tests but the deadline was the priority."
+        }
+      ],
+      "lowerNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Action: chose quick patch for demo",
+        "Outcome: billing broke post-launch, required hotfix",
+        "Quote: \"the deadline was the priority\"",
+        "Follow-up: would you change anything? \u2013 still frames as deadline constraint"
+      ],
+      "lowerFeedback": "The candidate defaulted to the short-term demo win without weighing downstream risk. The billing breakage happened exactly because they skipped the longer-term fix. In the reflection they still cite the deadline as the deciding factor rather than owning the trade-off. This lowers the bar for junior because ownership stayed reactive and they showed limited learning on how to balance speed and quality."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams wanted to reuse an old payments library for a new market launch. I pushed to rebuild the core with proper abstractions even though it meant missing the original launch date by three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the support tickets from the last three launches and ran a two-day spike with the other team leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Six months later the new market team launched two more countries in half the time. We also retired the old library."
+        },
+        {
+          "role": "interviewer",
+          "text": "Anything you would change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved finance earlier on the cost of maintaining two code paths."
+        }
+      ],
+      "raiseNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Situation: reuse old library vs rebuild for new markets",
+        "Action: drove rebuild after showing support data and spike",
+        "Outcome: two additional countries launched faster, old library retired",
+        "Quote: \"launched two more countries in half the time\"",
+        "Follow-up: would you change anything? \u2013 involve finance on dual-maintenance cost"
+      ],
+      "raiseFeedback": "The candidate made a cross-team trade-off that delayed one launch to reduce future maintenance and speed up subsequent market entries. They used data and a spike to influence without authority. The six-month outcome showed clear leverage across multiple launches. The reflection identified a missing stakeholder. This raises the bar for senior because the decision had measurable cross-team impact and they owned the coordination cost.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I agreed to reuse the old library so the launch could happen on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that play out?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the date but every new market since has needed custom patches."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do it differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe, but at the time the launch date was non-negotiable."
+        }
+      ],
+      "lowerNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Action: chose reuse to protect launch date",
+        "Outcome: repeated custom patches for every new market",
+        "Quote: \"the launch date was non-negotiable\"",
+        "Follow-up: would you do it differently? \u2013 still defers to the date constraint"
+      ],
+      "lowerFeedback": "The candidate protected the near-term launch at the expense of ongoing maintenance burden across markets. They did not attempt to quantify or escalate the long-term cost. The reflection continues to treat the date as an immovable external force rather than a decision they owned. This lowers the bar for senior because there is no evidence of cross-team influence or lasting value created."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was asked to deliver a quick dashboard for execs. I redirected two engineers to first build a reusable metrics platform even though it meant the dashboard slipped by a month."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team and stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reset expectations with the exec sponsor and used the extra time to let the team own the platform design."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Within four months three other teams adopted the platform and our on-call load for ad-hoc reports dropped by 60%."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have started the conversation with the sponsor two weeks earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Situation: quick dashboard vs reusable metrics platform",
+        "Action: redirected team, reset exec expectations",
+        "Outcome: three teams adopted platform, 60% drop in ad-hoc report tickets",
+        "Quote: \"on-call load for ad-hoc reports dropped by 60%\"",
+        "Follow-up: would you change anything? \u2013 engage sponsor earlier"
+      ],
+      "raiseFeedback": "The manager chose to invest team time in a platform that created leverage for multiple teams rather than delivering a one-off dashboard. They owned the stakeholder reset and used the delay to give the team design ownership. The 60% reduction in ad-hoc work is a clear team-level outcome. The reflection shows awareness of timing. This raises the bar for manager because they created leverage through the team and developed platform ownership in others.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We delivered the dashboard on the date the execs wanted."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it create any lasting value?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. Other teams still ask for their own one-off reports."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you have done anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "The request came from execs so we had to prioritize it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Action: delivered one-off dashboard on requested date",
+        "Outcome: continued stream of one-off report requests",
+        "Quote: \"we had to prioritize it\"",
+        "Follow-up: would you change anything? \u2013 defers to exec request"
+      ],
+      "lowerFeedback": "The manager delivered exactly what was asked without pushing for a higher-leverage alternative. The team remained in reactive report mode afterward. The reflection treats the exec request as non-negotiable rather than an opportunity to propose a better long-term approach. This lowers the bar for manager because there is no evidence of developing the team or creating team-level leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a chance to acquire a small competitor that would have boosted this year\u2019s revenue by 8%. I recommended passing because their tech stack would have slowed our platform modernization by 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you make the case?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled the combined tech debt and ran the numbers with the CFO on future product velocity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "We skipped the deal. Two years later we launched the new architecture and captured three new enterprise segments that the competitor could never have supported."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have brought the product and sales leads into the modeling earlier so the growth trade-off was clearer to them."
+        }
+      ],
+      "raiseNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Situation: 8% revenue acquisition vs platform modernization speed",
+        "Action: modeled tech debt impact with CFO",
+        "Outcome: skipped deal, launched new architecture, won three new enterprise segments",
+        "Quote: \"captured three new enterprise segments\"",
+        "Follow-up: would you change anything? \u2013 involve product and sales leads earlier"
+      ],
+      "raiseFeedback": "The executive rejected an acquisition that would have delivered immediate revenue because it conflicted with a multi-year platform strategy. They used financial modeling to align the CFO and accepted the short-term growth miss. The two-year outcome was entry into new segments the old stack could not support. The reflection identifies a broader stakeholder gap. This raises the bar for exec because the decision involved clear strategic trade-offs at the business level with measurable long-term segment impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We completed the acquisition to hit our annual revenue target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the integration go?"
+        },
+        {
+          "role": "candidate",
+          "text": "It added revenue but slowed two major platform initiatives for the next year."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "The revenue target made it the right call at the time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: hard decision to sacrifice short-term for long-term value",
+        "Action: completed acquisition to hit revenue target",
+        "Outcome: revenue up but two platform initiatives delayed a year",
+        "Quote: \"the revenue target made it the right call\"",
+        "Follow-up: would you change anything? \u2013 still prioritizes the annual target"
+      ],
+      "lowerFeedback": "The executive took the acquisition to protect the annual number without modeling the platform cost. The integration created a year-long drag on strategic work. The reflection continues to anchor on the revenue target rather than owning the longer-term platform consequence. This lowers the bar for exec because the decision shows short-term financial focus without evidence of protecting multi-year strategic options."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual code or task",
+      "senior": "Cross-team coordination",
+      "manager": "Team direction and expectations",
+      "exec": "Business-level M&A or platform strategy"
+    },
+    {
+      "signal": "Evidence of trade-off",
+      "junior": "Demo delay vs test coverage",
+      "senior": "Launch delay vs future market speed",
+      "manager": "Dashboard slip vs platform adoption",
+      "exec": "8% revenue vs 18-month modernization"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "CI catch before customer impact",
+      "senior": "Two extra countries in half the time",
+      "manager": "60% drop in ad-hoc tickets",
+      "exec": "Three new enterprise segments won"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Would flag risk to PM earlier",
+      "senior": "Would involve finance on dual cost",
+      "manager": "Would engage sponsor two weeks sooner",
+      "exec": "Would bring product and sales into modeling"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "Local quality win",
+      "senior": "Reusable library retired",
+      "manager": "Three teams adopted platform",
+      "exec": "New architecture enabled new segments"
+    }
+  ],
+  "kind": "lp"
+}

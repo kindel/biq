@@ -1,0 +1,252 @@
+{
+  "question": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on.",
+  "competency": "Attention to Detail & Quality",
+  "principle": "Attention to Detail & Quality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "In my first project I noticed a data validation edge case that would have corrupted reports for one customer segment. The team wanted to ship Friday but I pushed to add the check and retest that weekend."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you raised it?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager agreed after I showed the failing test. We shipped Monday instead and avoided a support ticket. I learned to surface issues with data sooner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you insisted on higher quality...",
+        "Role: new grad on first feature team",
+        "Situation: edge case in report generation that would corrupt one segment",
+        "Action: wrote failing test, showed PM and lead, offered to stay weekend",
+        "Outcome: slipped one day, zero customer impact",
+        "Quote: \"I showed the failing test and said we should fix it before it hits prod.\"",
+        "Follow-up: How did the team react? \"They were annoyed at first but thanked me after.\""
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned an individual deliverable and used concrete evidence (failing test) to push back on a ship decision. Story shows they accepted the one-day delay and learned to surface issues earlier. This matches the level expectation of local ownership and coachability. Biggest strength is linking the action directly to preventing a customer-visible bug without overclaiming scope.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "I once thought the UI looked a bit off so I mentioned it in standup but the designer said it was fine so we shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you insisted...",
+        "Role: intern-level task",
+        "Situation: vague UI polish concern",
+        "Action: mentioned it once in standup",
+        "Outcome: shipped as planned",
+        "Quote: \"The designer said it was fine so we shipped.\"",
+        "Follow-up: What data or example did you bring? None provided."
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The example shows passive mention rather than ownership; no evidence was prepared and the candidate accepted the first pushback. At this level we expect the person to own their work and use specific artifacts to drive quality. The story lacks any measurable impact or learning that would indicate they will improve future work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "Our service had intermittent 5xx errors under load that only appeared in one region. The owning team wanted to launch the new feature the next week; I built a load test that reproduced the issue and convinced the cross-team leads to add circuit breakers first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the test results and projected customer impact numbers. We delayed the launch by ten days and the error rate dropped to zero after the fix."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you insisted on higher quality...",
+        "Role: senior on platform team",
+        "Situation: latent reliability issue surfaced only under regional load",
+        "Action: built repro test, quantified impact, influenced two other teams",
+        "Outcome: ten-day delay, zero customer errors post-launch",
+        "Quote: \"I shared the test results and projected customer impact numbers.\"",
+        "Follow-up: What was the metric you used? \"P99 latency and error budget burn rate.\""
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate drove cross-team alignment using data and influenced a launch decision without authority. The story includes a clear metric (error budget) and measurable delay with positive outcome. This demonstrates the expected influence and ownership beyond their immediate team. Biggest strength is the concrete quantification that moved stakeholders.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "I told the team the code review comments were important and we should address them before merging but they merged anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you insisted on higher quality...",
+        "Role: senior individual contributor",
+        "Situation: code review feedback ignored",
+        "Action: stated opinion in chat",
+        "Outcome: code merged without changes",
+        "Quote: \"They merged anyway.\"",
+        "Follow-up: Did you escalate or provide data? No escalation shown."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate raised a concern but showed no follow-through or data to influence the outcome. At senior level we expect the person to drive resolution across teams, not stop at a single statement. The story has no metrics or evidence of impact, which fails to show the required influence without authority."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "My team had a feature that met the functional spec but had poor error messaging. I blocked the release and required the team to improve observability and add runbooks even though the PM wanted it out for a customer commitment."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers initially pushed back on the extra work. After we reviewed similar past incidents I assigned one person to own the runbooks and we shipped two weeks later with no on-call pages in the first month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you insisted on higher quality...",
+        "Role: engineering manager of 8",
+        "Situation: feature met spec but lacked operational readiness",
+        "Action: blocked release, required runbooks and better logging",
+        "Outcome: two-week delay, zero on-call incidents post-launch",
+        "Quote: \"I assigned one person to own the runbooks.\"",
+        "Follow-up: How did you handle the PM pushback? \"Used past incident data to align on risk.\""
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used team process and data to enforce standards, developed ownership in an engineer, and protected long-term team health over short-term delivery. The story shows leverage through assignment and measurable reduction in operational load. Biggest strength is turning a quality decision into a repeatable team practice.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "I usually let the team decide when something is ready to ship and only step in if there is a major outage risk."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you insisted on higher quality...",
+        "Role: manager",
+        "Situation: general philosophy only",
+        "Action: deferred to team",
+        "Outcome: no specific example",
+        "Quote: \"I usually let the team decide.\"",
+        "Follow-up: Can you give a concrete case? None provided."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. No specific story is offered, only a general stance that avoids intervention. At manager level we look for evidence of actively shaping team standards and handling trade-offs. The absence of any example or outcome data indicates the candidate does not consistently drive quality through the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "We were preparing to announce a major product expansion that would double our addressable market. Internal reviews showed the new surface area would increase support volume by 40 percent with current tooling. I halted the announcement timeline and required a six-week investment in self-service tooling and updated SLAs before proceeding."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "The delay shifted revenue recognition by one quarter but reduced support cost per customer by 25 percent and allowed us to staff the expansion without adding headcount."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you insisted on higher quality...",
+        "Role: VP owning P&L for a product line",
+        "Situation: product expansion announcement vs operational readiness",
+        "Action: stopped timeline, mandated tooling investment and SLA changes",
+        "Outcome: one-quarter revenue shift, 25 percent lower support cost",
+        "Quote: \"I halted the announcement timeline and required a six-week investment.\"",
+        "Follow-up: How did you align the exec team? \"Used projected support volume and cost model.\""
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made a strategic trade-off between near-term revenue and long-term operational leverage at org scale. The decision was backed by clear cost modeling and resulted in sustainable growth without added headcount. This shows the expected judgment on ambiguity and business-level impact. Biggest strength is quantifying the multi-quarter outcome.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you insisted on higher quality or standards even when others were ready to ship or move on."
+        },
+        {
+          "role": "candidate",
+          "text": "I always tell my teams quality matters and we should not ship broken things."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you insisted on higher quality...",
+        "Role: director/VP",
+        "Situation: generic statement",
+        "Action: repeated principle",
+        "Outcome: no specific decision or metric",
+        "Quote: \"I always tell my teams quality matters.\"",
+        "Follow-up: Give an example at your level? None provided."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The response offers only a high-level principle with no concrete org-level decision or trade-off. At this level we expect evidence of strategic judgment that affects revenue, cost, or risk at scale. Without a specific story or quantified outcome the candidate does not demonstrate the required long-term thinking."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "scope of decision",
+      "junior": "individual feature or test",
+      "senior": "cross-team launch",
+      "manager": "team process and assignment",
+      "exec": "org timeline and cost model"
+    },
+    {
+      "signal": "use of data/metrics",
+      "junior": "simple test result",
+      "senior": "error budget and latency",
+      "manager": "past incident data",
+      "exec": "support volume and cost per customer"
+    },
+    {
+      "signal": "influence mechanism",
+      "junior": "showed manager failing test",
+      "senior": "shared results with leads",
+      "manager": "assigned owner and aligned PM",
+      "exec": "halted announcement with model"
+    },
+    {
+      "signal": "time horizon",
+      "junior": "one-day slip",
+      "senior": "ten-day delay",
+      "manager": "two-week investment",
+      "exec": "one-quarter revenue shift"
+    },
+    {
+      "signal": "outcome ownership",
+      "junior": "prevented one bug",
+      "senior": "zero errors post-launch",
+      "manager": "zero on-call pages",
+      "exec": "25 percent lower support cost"
+    },
+    {
+      "signal": "learning or leverage",
+      "junior": "surface issues earlier",
+      "senior": "repro test reusable",
+      "manager": "runbooks became team practice",
+      "exec": "scalable without added headcount"
+    }
+  ],
+  "kind": "competency"
+}

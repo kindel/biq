@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about a time when you had to communicate a change in direction that you anticipated people would have concerns with. What did you do to understand the concerns and mitigate them? Were there any changes you made along the way after hearing these concerns? How did you handle questions and/or resistance? Were you able to get people comfortable with the change?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the PM shifted our feature from a dashboard to a simpler list view due to timeline pressure. I knew the designer would push back, so I scheduled 1:1s first. I asked what parts of the original mattered most to them and shared the timeline data. After hearing them, I suggested we keep a couple of key filters they cared about. They still had questions in the team meeting, but I walked through the trade-offs again and offered to pair on the new mocks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "They agreed and later told me they appreciated being asked early. The feature shipped on time and they used the new version without further issues."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: new grad on first feature team, change from dashboard to list view",
+        "Actions: scheduled 1:1s, asked what mattered, shared timeline data, kept two filters",
+        "Outcome: designer agreed, shipped on time, positive feedback received",
+        "Quote: 'They appreciated being asked early'",
+        "Follow-up: What happened after that meeting? - walked through trade-offs again and offered to pair"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for a junior. The candidate owned communication on their own work by holding 1:1s before the group meeting and adjusted scope after input. Quote about keeping two filters shows they incorporated feedback rather than just announcing. This produced a concrete outcome where the designer stayed engaged through launch. Biggest strength is treating concerns as input instead of obstacles at the individual-contributor level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to drop a nice-to-have report because of scope. I sent an email to the team explaining the decision and the new deadline. A couple people replied asking why, so I replied with the same timeline link. They stopped asking after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to anyone directly before sending the email?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured the email would cover it and we needed to move fast."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: individual contributor on feature team",
+        "Actions: sent one email with decision and link, replied to questions with same link",
+        "Outcome: questions stopped, no further engagement described",
+        "Quote: 'I figured the email would cover it'",
+        "Follow-up: Did you talk to anyone directly? - No, needed to move fast"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for a junior. The candidate defaulted to one-way email without first understanding concerns, then treated follow-up questions as noise rather than input. No adjustment was made after resistance surfaced. This approach left trust undemonstrated even at the scope of a single feature. Biggest gap is lack of proactive listening before announcing change."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams relied on a shared data pipeline I owned. We needed to change the schema for performance, which would break their dashboards. I ran a 30-minute sync with each team lead first, asked what reports they used daily, and mapped the impact. After feedback I added a six-week deprecation window and a migration script. In the joint meeting, when one lead pushed back on timing, I adjusted the window to eight weeks and offered to review their migration queries."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other team respond after the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped their updates on time and later asked me to review a follow-on change they made to their side."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: senior owning shared pipeline across two teams",
+        "Actions: 1:1s with leads, mapped daily reports, added deprecation and script, extended window after pushback",
+        "Outcome: both teams migrated on time, follow-on collaboration occurred",
+        "Quote: 'offered to review their migration queries'",
+        "Follow-up: How did the other team respond? - shipped on time and asked for review later"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for a senior. The candidate anticipated cross-team impact and used direct conversations to surface concerns before the joint meeting. Adjusting the timeline after resistance shows willingness to trade off their original plan. The outcome included sustained collaboration rather than just compliance. Biggest strength is turning potential blockers into ongoing partnership through listening.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I needed to change the data schema for performance. I posted the plan in the shared channel with a two-week notice and asked for comments. One team said it would break their reports, so I replied that the performance gain was required and the notice period was already set."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after their comment?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the timeline was fixed by the performance goal."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: senior on shared data pipeline",
+        "Actions: posted plan in channel, two-week notice, replied that timeline was fixed",
+        "Outcome: no adjustment made, compliance assumed",
+        "Quote: 'the timeline was fixed by the performance goal'",
+        "Follow-up: Did anything change after their comment? - No"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for a senior. The candidate relied on a channel post and treated the affected team's input as non-actionable. No evidence of exploring mitigation options or adjusting scope. This left the other team in a reactive position rather than building shared ownership. Biggest gap is missing influence without authority at the cross-team boundary."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had to shift from feature work to platform stability after a reliability incident. I expected pushback on career growth. I held skip-levels and asked each person what they wanted to learn in the next six months. After input I carved out 20% time for one skill-building project per person that still supported stability. When a senior engineer resisted the shift, I paired them with a platform lead for visibility and adjusted their OKRs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the retention outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The resister stayed and later led the next stability quarter. Two others said the skill projects helped them get promoted the following cycle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: manager shifting team from features to stability",
+        "Actions: skip-levels, 20% skill time carved out, paired resister with platform lead, adjusted OKRs",
+        "Outcome: resister stayed and led next quarter, two promotions tied to the change",
+        "Quote: 'carved out 20% time for one skill-building project per person'",
+        "Follow-up: What was the retention outcome? - resister stayed and led, two promotions"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for a manager. The candidate used skip-levels to surface individual concerns and created structural accommodations like 20% time. Adjusting OKRs for the vocal resister shows handling resistance without forcing compliance. Results included retention and promotions linked to the change. Biggest strength is building team ownership of an unpopular direction through personalized mitigation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the incident I told the team we were moving to stability work for the quarter. I held one all-hands and answered questions with the incident data. A few engineers asked about promotion impact; I said we would revisit in the next cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you make any adjustments after hearing those questions?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the priority was set at the director level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: manager after reliability incident",
+        "Actions: all-hands announcement, answered with data, deferred promotion questions",
+        "Outcome: no adjustments described",
+        "Quote: 'the priority was set at the director level'",
+        "Follow-up: Did you make any adjustments? - No"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for a manager. The candidate announced the shift without first exploring individual concerns and offered no concrete accommodations. Deferring promotion questions left team members without a path forward. This produced compliance rather than commitment. Biggest gap is treating the team as recipients of direction instead of co-owners."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to pivot from growth to profitability, which meant cutting three product lines. I expected concerns from the affected orgs about headcount and strategy. I ran listening sessions with the three GMs, shared the unit-economics data, and asked what customer commitments they needed to honor. After input I kept one line that had a clear path to break-even and extended the wind-down of the other two by a quarter. When the sales org pushed back hardest, I added a transition bonus pool and let them own the customer comms."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the orgs respond to the final plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "The GMs presented the pivot together in the all-hands and voluntary attrition stayed below target. Two of the three lines were wound down without customer escalations."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: exec leading profitability pivot",
+        "Actions: listening sessions with GMs, kept one line, extended timeline, added transition bonus, let sales own comms",
+        "Outcome: joint all-hands presentation, attrition below target, no customer escalations",
+        "Quote: 'let them own the customer comms'",
+        "Follow-up: How did the orgs respond? - GMs presented together, attrition controlled"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for an exec. The candidate used structured listening with GMs to surface concerns and made visible trade-offs, including keeping one line and adding a bonus pool. Letting sales own comms transferred ownership rather than dictating. Results showed coordinated leadership and controlled attrition. Biggest strength is strategic judgment that preserved relationships while executing a difficult business shift.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We announced the profitability pivot and product cuts in a company all-hands with the financial model. I took questions on the spot and pointed to the board mandate. Affected teams raised concerns in follow-up meetings; I reiterated that the decision was final and resources would be reallocated."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the plan change at all after the concerns?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the economics required the full cut."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to communicate a change in direction...",
+        "Role: exec on profitability pivot",
+        "Actions: all-hands with model, pointed to board mandate, reiterated decision was final",
+        "Outcome: no changes made after concerns",
+        "Quote: 'the economics required the full cut'",
+        "Follow-up: Did the plan change at all? - No"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for an exec. The candidate led with mandate and finality instead of exploring concerns for possible mitigation. No adjustments were made despite org-level resistance. This approach risked long-term trust and coordination across the business. Biggest gap is missing strategic trade-offs that could have preserved leadership alignment."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Proactive listening before announcement",
+      "junior": "1:1s before group meeting",
+      "senior": "1:1s with each team lead",
+      "manager": "skip-levels plus OKR adjustments",
+      "exec": "listening sessions with GMs and visible trade-offs"
+    },
+    {
+      "signal": "Incorporating feedback into plan",
+      "junior": "kept two filters after input",
+      "senior": "extended deprecation window",
+      "manager": "20% skill time and transition support",
+      "exec": "kept one line and added bonus pool"
+    },
+    {
+      "signal": "Handling resistance without forcing compliance",
+      "junior": "offered to pair on new mocks",
+      "senior": "offered to review migration queries",
+      "manager": "paired resister with platform lead",
+      "exec": "let sales own customer comms"
+    },
+    {
+      "signal": "Evidence of sustained trust post-change",
+      "junior": "designer used new version without issues",
+      "senior": "other team asked for follow-on review",
+      "manager": "resister later led next quarter",
+      "exec": "GMs presented pivot together, attrition controlled"
+    }
+  ],
+  "kind": "lp"
+}

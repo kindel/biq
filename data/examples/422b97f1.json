@@ -1,0 +1,233 @@
+{
+  "question": "Have you ever created a metric that helped identify a need for a change in your department? What was the metric? Why did you create it? How did this and other information influence change? What was the outcome of the change?",
+  "competency": "Dive Deep",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tracked average time to close my own support tickets after noticing some lingered. The metric was mean resolution days per ticket type. I made it because I kept missing follow-ups on complex ones and wanted to see patterns. It showed API tickets took 4x longer. I shared the sheet with my lead who added a checklist step. Resolution time dropped 30% for me over two months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data sources did you pull from?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just the ticket system export into a spreadsheet I updated weekly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Have you ever created a metric...",
+        "Tracked personal ticket resolution time by type",
+        "Created after noticing follow-up misses on complex items",
+        "Metric: mean days per ticket type; API tickets 4x longer",
+        "Shared with lead who added checklist; own time down 30%",
+        "Follow-up: Data from ticket export to weekly spreadsheet"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at junior level. The candidate built a narrow but actionable metric on their own tickets to surface a pattern in resolution time. Quote: \"API tickets took 4x longer.\" They connected the data directly to a process tweak by their lead and measured a 30% personal improvement. This shows ownership of their work and willingness to quantify a problem rather than just describe it. The scope stays appropriately individual. Biggest gap is lack of broader context on why the metric mattered beyond their queue.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I looked at our ticket volume and thought we needed more people. I didn't really make a formal metric, just counted tickets per week. My manager already knew we were busy so nothing changed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you calculate or track it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just glanced at the dashboard a few times."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Have you ever created a metric...",
+        "Vague reference to ticket volume without defining metric",
+        "No clear creation reason or data collection method",
+        "Outcome: nothing changed, manager already aware",
+        "Follow-up: Tracked by glancing at dashboard"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at junior level. The candidate offered only a loose observation about ticket volume without defining or tracking any specific metric. No evidence they dug into the data themselves or connected it to a concrete change. Quote: \"I didn't really make a formal metric.\" The story ends with no outcome or learning. This reflects passive reporting rather than active investigation of their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a metric for cross-team deploy failure rate by root cause after repeated incidents in our service. It was failures per 100 deploys tagged by category like config drift or test gaps. I created it because on-call pages were rising but no one had visibility across teams. The data showed 60% were config-related. I presented it in a joint review and we added a pre-deploy validation step. Failure rate fell from 12% to 4% over a quarter and two other teams adopted the metric."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "Shared raw data first and let them query it themselves before proposing the change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Have you ever created a metric...",
+        "Deploy failure rate by root cause across teams",
+        "Created due to rising on-call load without shared visibility",
+        "Metric: failures per 100 deploys; 60% config-related",
+        "Presented in joint review; added validation step; rate 12% to 4%",
+        "Follow-up: Shared raw data first for other teams to query"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at senior level. The candidate defined a cross-team metric on deploy failures with clear categorization and used it to drive a shared process change. Quote: \"60% were config-related.\" They influenced without authority by letting other teams explore the data first, then measured a sustained 8-point drop. The outcome extended beyond their team when others adopted the metric. Biggest strength is the combination of metric rigor and measurable cross-team impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our deploys were flaky so I started counting how many failed each week. I emailed the numbers to the team a few times but no one really acted on it and the rate stayed the same."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you break it down by cause or share with other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, just total count."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Have you ever created a metric...",
+        "Weekly deploy failure count without categorization",
+        "Emailed totals internally with no follow-through",
+        "Outcome: no change in rate",
+        "Follow-up: No breakdown or cross-team sharing"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at senior level. The candidate tracked only a raw weekly count of deploy failures without root-cause analysis or external sharing. No evidence the metric drove decisions or influenced others. Quote: \"I emailed the numbers to the team a few times but no one really acted on it.\" The story shows data collection without depth or leverage, which is below expectations for someone operating across teams."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I created a metric for team throughput variance after seeing inconsistent sprint outcomes. It measured story points delivered versus committed, segmented by team member experience level. I built it because underperformers were masked in averages and I needed to coach specifically. The data revealed two mid-level engineers consistently at 60% of committed work. I used it in 1:1s to set targeted pairing and reduced variance by 40% while lifting overall delivery 25%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react to the metric?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed individuals their own data privately first and framed it as a coaching tool."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Have you ever created a metric...",
+        "Throughput variance by experience level",
+        "Created to surface masked underperformance in averages",
+        "Metric: points delivered vs committed; two engineers at 60%",
+        "Used in 1:1s for targeted coaching; variance down 40%, delivery up 25%",
+        "Follow-up: Shared privately with individuals first as coaching tool"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at manager level. The candidate built a metric that exposed hidden performance variance within the team and used it to drive individual coaching. Quote: \"two mid-level engineers consistently at 60%.\" They protected psychological safety by sharing data privately and achieved both reduced variance and higher overall output. This demonstrates ownership of team outcomes through data rather than heroics. Biggest strength is linking the metric directly to people development actions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the team to track their own velocity and we discussed averages in retros. Nothing specific changed because people already knew we had some inconsistency."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you segment the data or act on individual gaps?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept it at the team level to avoid calling anyone out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Have you ever created a metric...",
+        "Team velocity average only",
+        "Discussed in retros with no segmentation or action",
+        "Outcome: no change, avoided individual focus",
+        "Follow-up: Kept data at team level"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at manager level. The candidate relied on existing velocity averages without creating a new metric or breaking it down to identify specific issues. No evidence of using data to address underperformance. Quote: \"We kept it at the team level to avoid calling anyone out.\" The approach avoided the core managerial responsibility of diagnosing and improving team performance through targeted insight."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sponsored a metric on end-to-end customer onboarding time segmented by acquisition channel after seeing retention gaps in quarterly reviews. It combined signup-to-first-value days with drop-off points. I created it because aggregate NPS hid channel-specific problems that affected long-term growth forecasts. The data showed paid channels took 11 days longer due to support handoff friction. We reallocated budget to organic channels and redesigned the handoff, lifting 90-day retention 18% and improving forecast accuracy for the next two quarters."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider on budget shift?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled impact on near-term revenue versus retention lift and phased the shift over two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Have you ever created a metric...",
+        "Onboarding time by acquisition channel with drop-off",
+        "Sponsored due to retention gaps hidden in aggregate NPS",
+        "Metric: days to first value; paid channels 11 days longer",
+        "Shifted budget to organic; redesigned handoff; retention +18%",
+        "Follow-up: Modeled revenue vs retention trade-offs before phasing"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at exec level. The candidate sponsored a cross-functional metric that revealed strategic misallocation between channels and drove a multi-quarter budget and process change. Quote: \"paid channels took 11 days longer.\" They weighed clear business trade-offs and delivered measurable retention and forecast gains. The work shows long-term thinking and leverage through data rather than direct execution. Biggest strength is connecting operational detail to growth forecasts.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We looked at overall onboarding time in business reviews and decided to invest more in support. The metric was just average days and we didn't break it down further."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the data shape the investment decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "It confirmed we were slow, so we added headcount."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Have you ever created a metric...",
+        "Aggregate onboarding days only",
+        "Led to generic support investment without segmentation",
+        "Outcome: added headcount with no measured result",
+        "Follow-up: No channel or drop-off analysis"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at exec level. The candidate used only a high-level average metric without segmentation or root-cause analysis to guide a major investment. No evidence of strategic trade-offs or measurable business impact. Quote: \"It confirmed we were slow, so we added headcount.\" The decision lacked the data depth expected when shaping org-level resource allocation and growth plans."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Metric definition and ownership",
+      "junior": "Own-ticket resolution time tracked weekly",
+      "senior": "Cross-team deploy failure rate by root cause",
+      "manager": "Throughput variance segmented by experience level",
+      "exec": "Onboarding time by channel with drop-off points"
+    },
+    {
+      "signal": "Reason for creating metric",
+      "junior": "Personal follow-up misses on complex tickets",
+      "senior": "Rising on-call load without shared visibility",
+      "manager": "Underperformers masked in team averages",
+      "exec": "Retention gaps hidden in aggregate NPS"
+    },
+    {
+      "signal": "Influence on change",
+      "junior": "Shared with lead who added checklist",
+      "senior": "Joint review led to validation step adopted by others",
+      "manager": "1:1 coaching with targeted pairing",
+      "exec": "Budget reallocation and handoff redesign phased over quarters"
+    },
+    {
+      "signal": "Measured outcome",
+      "junior": "30% personal time reduction",
+      "senior": "Failure rate 12% to 4%",
+      "manager": "Variance down 40%, delivery up 25%",
+      "exec": "Retention +18%, improved forecast accuracy"
+    },
+    {
+      "signal": "Scope and leverage",
+      "junior": "Individual work only",
+      "senior": "Cross-team data sharing without authority",
+      "manager": "Team performance and coaching",
+      "exec": "Org budget and multi-quarter growth trade-offs"
+    }
+  ],
+  "kind": "lp"
+}

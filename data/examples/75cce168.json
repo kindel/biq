@@ -1,0 +1,221 @@
+{
+  "question": "Give an example of a time you requested additional funding/budget to complete a project. Why was it needed? Did you try to figure out another approach? Did you get the additional resources? Why or why not?",
+  "competency": "Frugality",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a reporting dashboard and hit a limit with our free analytics tier. I first tried sampling data and open-source tools like Metabase to stay under budget, but accuracy dropped for leadership reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I documented the gap in coverage and asked my manager for a $400/month paid tier. She approved it after seeing the time saved in manual workarounds."
+        }
+      ],
+      "raiseNotes": [
+        "Q: requested budget for analytics tier",
+        "Tried Metabase + sampling first, accuracy suffered",
+        "Asked for $400/mo after showing time trade-off",
+        "Follow-up: How did you track the savings? - Logged 6 hrs/wk reduced"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality. Junior candidate first exhausted free options before requesting budget for an analytics tier. Quote: \"I first tried sampling data and open-source tools like Metabase.\" The request stayed small and tied directly to measurable time savings. Shows ownership of own work and coachability by looping in the manager only after alternatives failed. Biggest strength: documented the gap before asking.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The project needed a premium plugin so I asked my manager for the budget right away."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at free alternatives?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the premium one was the easiest."
+        }
+      ],
+      "lowerNotes": [
+        "Q: requested budget for premium plugin",
+        "No alternatives explored",
+        "Asked immediately for easiest option",
+        "Follow-up: Why no free tools? - Didn't check"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality. Junior candidate requested budget without first trying free or lower-cost options. Quote: \"Not really, the premium one was the easiest.\" Shows no ownership of finding resourceful paths and defaults to spending. Gap: did not demonstrate learning to exhaust existing tools before escalating cost."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team needed GPU hours for model training. I negotiated shared capacity with another team and rewrote the pipeline to run on cheaper spot instances first, but we still needed dedicated quota for production deadlines."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the shared schedule reduced their idle time by 30 percent. We got the extra budget approved after proving the hybrid approach cut the ask by half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: needed GPU quota for training",
+        "Tried cross-team sharing + spot instances first",
+        "Reduced ask by 50% via hybrid plan",
+        "Follow-up: What was the outcome metric? - Met deadline with 40% lower spend"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality. Senior candidate used cross-team influence and technical changes to shrink the budget request before asking. Quote: \"I negotiated shared capacity with another team and rewrote the pipeline.\" Demonstrates influence without authority and clear metrics on the reduced ask. Shows senior-level resourcefulness rather than defaulting to new spend. Biggest strength: halved the original ask through alternatives.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed more GPU hours so I put in the request for dedicated instances."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any other approaches?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tried spot instances but they were too unreliable for the timeline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: requested dedicated GPU instances",
+        "Spot instances tried but dismissed quickly",
+        "No cross-team exploration shown",
+        "Follow-up: Did you quantify the reliability gap? - No numbers"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality. Senior candidate moved to a budget request after only a brief attempt at cheaper instances. Quote: \"We tried spot instances but they were too unreliable.\" Lacks evidence of cross-team leverage or deeper optimization that seniors should drive. Gap: did not show influence or metrics to shrink the ask."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team needed additional contractor budget mid-quarter. I first reallocated internal headcount by shifting two engineers to critical path work and delayed a lower-priority feature."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "The engineers were initially stretched but we added a retro on workload. We still needed $25k for one specialist; I got it approved after showing the reallocation covered 70% of the gap."
+        }
+      ],
+      "raiseNotes": [
+        "Q: contractor budget mid-quarter",
+        "Reallocated internal engineers first",
+        "Covered 70% via team shifts",
+        "Follow-up: How did you handle underperformance risk? - Added workload retro"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality. Manager candidate created team leverage by reallocating people before requesting budget. Quote: \"I first reallocated internal headcount by shifting two engineers.\" Shows ownership of team outcomes and handling of workload trade-offs. Demonstrates frugality through internal resources rather than new spend. Biggest strength: quantified the 70% coverage before asking.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team was behind so I requested contractor budget to catch up."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust scope or reassign anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't want to change the roadmap."
+        }
+      ],
+      "lowerNotes": [
+        "Q: requested contractor budget",
+        "No scope or reallocation attempted",
+        "Roadmap treated as fixed",
+        "Follow-up: Any team-level trade-offs considered? - No"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality. Manager candidate requested external budget without first creating leverage inside the team. Quote: \"We didn't want to change the roadmap.\" Shows limited ability to drive team-level resourcefulness or trade-offs. Gap: did not demonstrate developing the team to absorb work before spending."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a $2M shortfall on a new market launch. I first redirected engineering effort from two non-strategic bets and negotiated vendor payment terms across three products to free up cash."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "The remaining $800k request was approved because the shifts protected core margins. We also set a new policy requiring every launch to run a 30% contingency plan using existing resources."
+        }
+      ],
+      "raiseNotes": [
+        "Q: $2M market launch shortfall",
+        "Redirected from non-strategic bets + vendor terms",
+        "Reduced ask to $800k with org-level policy change",
+        "Follow-up: How did you decide which bets to cut? - Margin and strategic fit analysis"
+      ],
+      "raiseFeedback": "Raises the bar on Frugality. Exec candidate drove org-level trade-offs and policy change before requesting funds. Quote: \"I first redirected engineering effort from two non-strategic bets.\" Shows strategic judgment under ambiguity and long-term leverage through new processes. Demonstrates frugality at business scale rather than heroics. Biggest strength: turned one request into reusable cost discipline.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The launch needed more budget so I presented the ask to finance with updated projections."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any internal shifts considered?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reviewed but the other initiatives were already committed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: presented budget ask for launch",
+        "Other initiatives treated as fixed",
+        "No org trade-offs or policy follow-up",
+        "Follow-up: What long-term guardrails were added? - None"
+      ],
+      "lowerFeedback": "Lowers the bar on Frugality. Exec candidate treated other work as immovable and moved straight to a funding request. Quote: \"The other initiatives were already committed.\" Lacks evidence of strategic trade-offs or long-term thinking expected at this level. Gap: did not create leverage or reusable frugality mechanisms across the organization."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Explored alternatives before requesting",
+      "junior": "Tried open-source first",
+      "senior": "Cross-team sharing + rewrites",
+      "manager": "Internal reallocation",
+      "exec": "Redirected from non-strategic bets"
+    },
+    {
+      "signal": "Quantified impact of request",
+      "junior": "Time saved logged",
+      "senior": "Ask cut 50%",
+      "manager": "70% covered internally",
+      "exec": "Reduced to $800k + policy"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "N/A (individual scope)",
+      "senior": "Negotiated shared capacity",
+      "manager": "Team workload shifts",
+      "exec": "Org-wide policy change"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Local fix",
+      "senior": "Hybrid approach documented",
+      "manager": "Workload retro added",
+      "exec": "New contingency policy set"
+    },
+    {
+      "signal": "Handling trade-offs",
+      "junior": "Accuracy vs cost",
+      "senior": "Timeline vs spend",
+      "manager": "Roadmap vs team capacity",
+      "exec": "Strategic bets vs margins"
+    }
+  ],
+  "kind": "lp"
+}

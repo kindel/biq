@@ -1,0 +1,214 @@
+{
+  "question": "Tell me about a time when you worked to improve the quality of a product / service / solution that was already getting good customer feedback. Why did you think it needed improvement? How did customers react?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our internal dashboard had 90% positive feedback but I noticed some queries took 8s on average and errored on edge dates. I added validation and optimized the query, cutting latency to 1.2s."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide this was worth time when feedback was already good?"
+        },
+        {
+          "role": "candidate",
+          "text": "The errors only showed up in logs, not tickets, so I thought we were masking problems customers hadn't hit yet."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about improving something with good feedback",
+        "Fixed dashboard query latency from 8s to 1.2s after spotting edge-date errors in logs",
+        "Quote: 'Errors only in logs, not tickets'",
+        "Follow-up: Why worth time? - Saw future breakage risk even without complaints"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Junior candidate spotted silent query errors on a dashboard that had 90% positive feedback and reduced latency from 8s to 1.2s. They said the errors only appeared in logs, not tickets. This shows early ownership of quality beyond surface signals. The action stayed within their own work but demonstrated proactive inspection. Biggest strength is recognizing hidden failure modes without waiting for customer complaints.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The tool had good reviews so I added a couple of extra buttons users asked for in one survey."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you think quality needed to improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "The survey mentioned it a few times so I just implemented the requests."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Improving something already getting good feedback",
+        "Added requested buttons after survey mentions",
+        "Quote: 'Survey mentioned it a few times so I implemented'",
+        "Follow-up: Why needed improvement? - Followed explicit requests only"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. Junior candidate only added buttons mentioned in a survey on a product with already good feedback. They gave no evidence of independent quality analysis or hidden issues. Story stayed reactive to stated requests rather than uncovering gaps. Biggest gap is lack of initiative to define higher standards themselves."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service had 92% CSAT but p99 latency sat at 600ms with occasional spikes. I drove a cross-team refactor of the hot path and added circuit breakers, bringing p99 to 180ms."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did customers react?"
+        },
+        {
+          "role": "candidate",
+          "text": "CSAT stayed flat but support tickets on timeouts dropped 40% and two enterprise renewals cited the new reliability numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Improving quality despite good feedback",
+        "Led cross-team refactor that cut p99 from 600ms to 180ms on service with 92% CSAT",
+        "Quote: 'Support tickets on timeouts dropped 40%'",
+        "Follow-up: Customer reaction - CSAT flat but timeout tickets down and renewals referenced reliability"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Senior candidate identified 600ms p99 latency as a quality risk on a service with 92% CSAT and drove cross-team changes that brought it to 180ms. Timeout tickets fell 40% and two renewals referenced the improvement. They looked past surface CSAT to internal metrics that predicted future churn. Biggest strength is translating latent quality debt into measurable business signals.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Feedback was good so I ran a small polish pass on error messages after a teammate suggested it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why push on quality here?"
+        },
+        {
+          "role": "candidate",
+          "text": "It seemed like low-hanging fruit and the team agreed it would be nicer."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Improving quality on well-received product",
+        "Polished error messages after teammate suggestion",
+        "Quote: 'Low-hanging fruit the team agreed would be nicer'",
+        "Follow-up: Why needed? - Team consensus on polish"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. Senior candidate performed a small error-message polish on a product already receiving good feedback because a teammate suggested it. No data or forward-looking risk analysis was presented. The scope stayed tactical and reactive. Biggest gap is absence of senior-level ownership to define and defend higher standards independently."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team's API had strong NPS but we saw rising integration failures in new customer setups. I set a team goal to reduce failure rate from 7% to under 1% and introduced weekly quality reviews plus pairing on integration tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team and customers respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Failure rate hit 0.8% in two quarters. Two customers who had escalated integrations became reference calls and one engineer on the team later led their own quality initiative."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Raising quality bar on product with good feedback",
+        "Set team goal to cut API integration failures from 7% to 0.8% via reviews and pairing",
+        "Quote: 'Two escalated customers became reference calls'",
+        "Follow-up: Team/customer reaction - Failure rate improved, references gained, engineer started own initiative"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Manager candidate noticed rising integration failures despite strong NPS and drove a team-wide goal that reduced failures from 7% to 0.8%. Two escalated customers became references and a team member later ran their own quality work. They used the goal-setting process to build team capability rather than just fixing the issue themselves. Biggest strength is creating leverage through standards and developing others.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "NPS was fine so I asked the team to fix a few known flaky tests when they had bandwidth."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome on quality?"
+        },
+        {
+          "role": "candidate",
+          "text": "They cleaned up some tests but nothing changed in customer metrics."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Improving quality on well-liked product",
+        "Asked team to fix flaky tests when they had time",
+        "Quote: 'Nothing changed in customer metrics'",
+        "Follow-up: Outcome - No measurable customer impact"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. Manager candidate asked the team to address flaky tests on a product with fine NPS but produced no customer-visible improvement. The request was optional and unfocused. No evidence of setting or enforcing a higher standard. Biggest gap is failure to create team-level accountability or measurable quality outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our flagship product held 85% renewal despite known data inconsistency issues that only appeared at scale. I made inconsistency rate a quarterly exec goal, funded a dedicated data-quality squad, and tied part of leadership bonuses to the metric, driving inconsistency from 4.2% to 0.3%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this affect the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "Renewals rose to 94% and two large deals that had been stalled on data concerns closed. The approach also became a model for other product areas."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Raising quality standard on product with strong renewals",
+        "Made data inconsistency an exec goal, funded squad, tied bonuses to metric; inconsistency fell from 4.2% to 0.3%",
+        "Quote: 'Renewals rose to 94% and stalled deals closed'",
+        "Follow-up: Business impact - Renewals up, deals closed, model adopted elsewhere"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Exec candidate treated 4.2% data inconsistency as unacceptable even with 85% renewal rates and institutionalized the fix through goals, funding, and compensation. Inconsistency dropped to 0.3%, renewals reached 94%, and stalled deals closed. They accepted short-term resource trade-offs to protect long-term trust. Biggest strength is embedding quality standards into org systems rather than one-off fixes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Renewal numbers looked solid so I encouraged product teams to keep an eye on quality during planning."
+        },
+        {
+          "role": "interviewer",
+          "text": "What concrete changes resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "Teams added a few quality items to their roadmaps but nothing was tracked at my level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Improving quality on product with good renewal rates",
+        "Encouraged teams to watch quality in planning",
+        "Quote: 'Nothing was tracked at my level'",
+        "Follow-up: Concrete changes - Roadmap items added but no oversight"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. Exec candidate gave only high-level encouragement to watch quality on a product with solid renewals and created no mechanisms for accountability. No metrics, funding, or incentives were altered. The effort stayed at the level of suggestion. Biggest gap is lack of executive leverage to enforce higher standards across the organization."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identified hidden quality risk despite good feedback",
+      "junior": "Local log inspection and fix",
+      "senior": "Cross-team metric improvement with business tie-in",
+      "manager": "Team goal + capability building",
+      "exec": "Org goal, funding, and compensation linkage"
+    },
+    {
+      "signal": "Customer reaction evidence",
+      "junior": "None measured",
+      "senior": "Tickets down, renewals referenced improvement",
+      "manager": "Reference calls gained, engineer developed",
+      "exec": "Renewals up, deals closed"
+    },
+    {
+      "signal": "Why push beyond current feedback",
+      "junior": "Future breakage risk in logs",
+      "senior": "p99 latency as churn predictor",
+      "manager": "Integration failures at scale",
+      "exec": "Data inconsistency at enterprise scale"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual change",
+      "senior": "Influenced peers",
+      "manager": "Team process and goals",
+      "exec": "Org systems and incentives"
+    }
+  ],
+  "kind": "lp"
+}

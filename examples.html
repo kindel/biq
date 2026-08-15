@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Behavioral interview example answers</title>
+  <link rel="stylesheet" href="css/biq.css">
+</head>
+<body>
+  <main class="bhiq-page">
+    <p class="biq-back"><a href="index.html">Back to questions</a></p>
+    <section class="bhiq-app" id="biq-examples-app">
+      <p class="bhiq-kind" id="biq-ex-principle"></p>
+      <h2 id="biq-ex-question">Loading question...</h2>
+      <p class="bhiq-level-label" id="bhiq-level-label">Level</p>
+      <div class="bhiq-level" role="radiogroup" aria-labelledby="bhiq-level-label">
+        <label><input type="radio" name="bhiq-level" value="junior"> Junior</label>
+        <label><input type="radio" name="bhiq-level" value="senior" checked> Senior</label>
+        <label><input type="radio" name="bhiq-level" value="exec"> Exec</label>
+      </div>
+      <div id="biq-ex-status" class="bhiq-empty">Loading examples...</div>
+      <div id="biq-ex-sheet" hidden></div>
+    </section>
+  </main>
+  <script src="js/biq-examples.js" defer></script>
+</body>
+</html>

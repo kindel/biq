@@ -1,0 +1,244 @@
+{
+  "question": "Tell me about a time where you took over something outside of your responsibility. What was the situation? What did you do? What was the outcome?",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was blocked by a flaky test in the shared infra repo that wasn't assigned to anyone on our squad. I pulled the failing logs, reproduced it locally, and fixed the timing issue in the test setup even though it was outside our service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it was okay to touch that code?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked with the owning team on Slack first, then opened the PR and tagged them for review. They merged it and the flake went away."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: flaky shared test blocking sprint",
+        "Action: reproduced, fixed, coordinated via Slack/PR",
+        "Outcome: test stable, owning team merged",
+        "Quote: \"I checked with the owning team on Slack first\"",
+        "Follow-up: Asked how they knew it was okay; they described the coordination step"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at junior level. Candidate identified a local blocker outside their service, reproduced the issue, and coordinated the fix with the owning team before submitting the change. The story stayed within individual scope yet showed initiative without escalation. The concrete coordination step (Slack check then PR tag) demonstrates appropriate boundaries for 0-2 years experience. Biggest strength is the clear handoff and verification that the fix landed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a deployment script that kept failing for our team but it belonged to another group. I emailed the owner once and when they didn't reply I just waited for the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything else?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured it wasn't my job."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: deployment script failing",
+        "Action: sent one email and stopped",
+        "Outcome: waited for next sprint",
+        "Quote: \"I figured it wasn't my job\"",
+        "Follow-up: Asked if they tried anything else; confirmed they did not"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at junior level. Candidate recognized a blocker but took only a single passive step and then disengaged entirely. The outcome shows no attempt to unblock the team or learn the context. The quote reveals a narrow view of responsibility that is typical for weak junior answers. Biggest gap is the absence of any follow-through or escalation within their own scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our release process was stalling because the on-call rotation for a partner service had gaps. I mapped the coverage, proposed a shared on-call model, and ran the first two weeks myself until the other team staffed it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics did you track?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mean time to page response dropped 40 percent in the first month and our release velocity went up two deploys per week."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: partner on-call gaps blocking releases",
+        "Action: mapped coverage, proposed model, ran it temporarily",
+        "Outcome: 40% faster response, +2 deploys/week",
+        "Quote: \"I ran the first two weeks myself until the other team staffed it\"",
+        "Follow-up: Asked for metrics; candidate gave concrete velocity and response time numbers"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at senior level. Candidate saw a cross-team process gap, defined a solution, and personally covered the gap to create momentum. The story shows influence without authority and measurable impact on release velocity. Temporary ownership with clear handoff to the other team demonstrates sustainable leverage. Biggest strength is the use of metrics to validate the change rather than just effort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The partner team's on-call was thin so releases kept paging us. I complained in the retro and asked my manager to bring it up with their manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you propose or run anything yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I wanted them to own fixing their rotation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: partner on-call gaps",
+        "Action: raised in retro and escalated to manager",
+        "Outcome: no change described",
+        "Quote: \"I wanted them to own fixing their rotation\"",
+        "Follow-up: Asked if they proposed or ran anything; they had not"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at senior level. Candidate identified a cross-team dependency issue but limited action to internal complaining and escalation. No attempt to define or temporarily own a solution shows lack of influence without authority. The outcome contains no measurable improvement. Biggest gap is treating the problem as someone else's to solve rather than driving a shared fix."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating effort on a shared data pipeline. I took the initiative to run a joint planning session, assigned clear owners, and tracked the merged roadmap for three months until both teams adopted the single pipeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle resistance from the other manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared usage data showing 30 percent duplicated work and offered to staff the migration for their team first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: duplicated data pipeline across teams",
+        "Action: ran joint planning, assigned owners, tracked merged roadmap",
+        "Outcome: single pipeline adopted, 30% duplication removed",
+        "Quote: \"I offered to staff the migration for their team first\"",
+        "Follow-up: Asked about resistance; candidate described data-driven approach and temporary staffing offer"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at manager level. Candidate stepped outside their team boundary to eliminate duplicated work and created a shared process with measurable savings. The story shows team-level leverage through temporary staffing and data rather than authority. Clear outcome of one pipeline adopted demonstrates ownership of org efficiency. Biggest strength is the willingness to absorb initial cost to drive adoption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed two teams building similar pipelines. I sent a note to both managers suggesting they talk and then moved on to my own team's priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or offer any help?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have bandwidth so I left it with them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: duplicated pipelines",
+        "Action: sent note suggesting they talk",
+        "Outcome: moved on to own priorities",
+        "Quote: \"I didn't have bandwidth so I left it with them\"",
+        "Follow-up: Asked if they followed up or offered help; they had not"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at manager level. Candidate spotted a team duplication issue but took only a one-way suggestion and explicitly declined further involvement. No evidence of creating leverage through the team or handling the coordination cost. The outcome shows the problem remained unaddressed. Biggest gap is the narrow definition of responsibility that stops at their own team's priorities."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three business units each building their own customer identity system. I sponsored a cross-org working group, set the success metric as single customer view within 18 months, and personally removed two blockers around data residency that were stalling the effort."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two product launches by one quarter to fund the migration and accepted a temporary increase in support tickets during cutover."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: three BUs building duplicate identity systems",
+        "Action: sponsored working group, set metric, removed data residency blockers",
+        "Outcome: single customer view in 18 months",
+        "Quote: \"We delayed two product launches by one quarter to fund the migration\"",
+        "Follow-up: Asked about trade-offs; candidate described launch delays and support ticket increase"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at exec level. Candidate identified a multi-org duplication problem and drove a multi-year consolidation with explicit business trade-offs. The story shows strategic judgment on scope, funding, and risk acceptance at the org level. Personal removal of regulatory blockers demonstrates long-term leverage rather than heroics. Biggest strength is the clear articulation of what was deprioritized to make the outcome possible.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw that three business units were each building identity systems. I asked the architecture team to produce a recommended standard and left the adoption to the BU leaders."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with adoption?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was slow; two BUs continued their own builds for another year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took over something outside your responsibility.",
+        "Situation: duplicate identity systems across BUs",
+        "Action: asked architecture team for a standard",
+        "Outcome: slow adoption, two BUs continued separate builds",
+        "Quote: \"I left the adoption to the BU leaders\"",
+        "Follow-up: Asked about adoption; confirmed it remained fragmented"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at exec level. Candidate recognized a strategic duplication but delegated the entire solution and outcome to another team without further involvement. No evidence of setting metrics, removing blockers, or making resource trade-offs. The outcome shows continued fragmentation for a year. Biggest gap is the absence of personal accountability for driving the org-level result."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of initiative",
+      "junior": "Individual task or test fix",
+      "senior": "Cross-team process with metrics",
+      "manager": "Multi-team duplication and roadmap ownership",
+      "exec": "Org-level system consolidation with trade-offs"
+    },
+    {
+      "signal": "Follow-through style",
+      "junior": "Coordination via Slack/PR then verify",
+      "senior": "Temporary personal coverage until handoff",
+      "manager": "Joint planning plus temporary staffing offer",
+      "exec": "Sponsor working group and remove regulatory blockers"
+    },
+    {
+      "signal": "Use of data",
+      "junior": "None required",
+      "senior": "40% response time, +2 deploys/week",
+      "manager": "30% duplicated work shown to other manager",
+      "exec": "Single customer view metric plus launch delay impact"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Checked with owners before touching code",
+      "senior": "Shared data and offered to run first",
+      "manager": "Offered to staff migration for their team",
+      "exec": "Personally removed data residency blockers"
+    },
+    {
+      "signal": "Trade-off shown",
+      "junior": "None",
+      "senior": "None explicit",
+      "manager": "Absorbed initial migration cost",
+      "exec": "Delayed two launches by one quarter"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Test stable after merge",
+      "senior": "Velocity improved after model adopted",
+      "manager": "Single pipeline adopted by both teams",
+      "exec": "Single customer view achieved in 18 months"
+    }
+  ],
+  "kind": "lp"
+}

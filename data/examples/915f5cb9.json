@@ -1,0 +1,301 @@
+{
+  "question": "Give me an example of a complex problem you solved with a simple solution. What made the problem complex? How do you know your solution addressed the problem?",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our deployment script kept failing on different OS versions. I wrote a 20-line wrapper that detected the OS once and called the right flags."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "Four different failure modes across Ubuntu, CentOS, and macOS. No one had documented the differences."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Zero failures in the next 12 runs and the team stopped asking me for help."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of a complex problem you solved with a simple solution...",
+        "Situation: deployment script failing across OSes",
+        "Action: wrote 20-line detection wrapper",
+        "Outcome: zero failures in 12 runs",
+        "Quote: \"the team stopped asking me for help\"",
+        "Follow-up: Asked what made it complex \u2192 candidate named four failure modes"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at junior level. Candidate identified an undocumented multi-OS failure pattern and replaced repeated manual fixes with a single detection script. The 20-line wrapper directly removed the need for repeated help requests. Measurement was concrete (12 clean runs) and local to their work. Biggest strength is clear ownership of a repeatable personal pain point without over-engineering.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The build kept breaking so I added more if-statements and logging until it passed on my machine."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the problem complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "Lots of edge cases kept appearing."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you know it addressed the root cause?"
+        },
+        {
+          "role": "candidate",
+          "text": "It worked after I added the last check."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "Situation: build failures",
+        "Action: added successive if-statements",
+        "Outcome: passed on their machine",
+        "Quote: \"It worked after I added the last check\"",
+        "Follow-up: Asked for root cause evidence \u2192 candidate pointed only to local success"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate responded to failures by layering conditional logic instead of finding a simpler root-cause fix. Outcome is only validated on their machine with no broader measurement. No evidence of simplification or reduced future toil for others. Main gap is treating symptoms rather than inventing a durable, minimal solution."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating customer profile data in separate stores causing sync bugs. I proposed a single lightweight service with a narrow API instead of a shared database."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "Teams had different SLAs and compliance rules. A shared DB would have created ownership fights."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Sync incidents dropped from 14 per quarter to 1; both teams shipped their features two weeks earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example...",
+        "Situation: duplicate profile data across teams",
+        "Action: proposed narrow single service instead of shared DB",
+        "Outcome: incidents 14 \u2192 1, features shipped early",
+        "Quote: \"a shared DB would have created ownership fights\"",
+        "Follow-up: Asked for measurement \u2192 candidate gave quarterly incident and delivery data"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate recognized cross-team duplication as the complexity driver and invented a minimal service boundary that avoided shared-state politics. Impact is shown with clear before/after metrics on incidents and delivery speed. Influence was achieved without authority. Biggest strength is using simplicity to remove future coordination cost.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a reconciliation job that ran every night and fixed mismatches between the two stores."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "The data models kept drifting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you know it addressed the problem?"
+        },
+        {
+          "role": "candidate",
+          "text": "Fewer tickets after the job ran for a month."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "Situation: data drift between stores",
+        "Action: nightly reconciliation job",
+        "Outcome: fewer tickets",
+        "Quote: \"The data models kept drifting\"",
+        "Follow-up: Asked why not prevent drift \u2192 candidate stayed with reactive fix"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate chose an ongoing reconciliation process rather than removing the duplication source. The solution adds operational load instead of simplifying the system. Measurement is vague (fewer tickets) without quantified impact or prevention of future drift. Main gap is accepting complexity instead of inventing a simpler architecture."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team and two partner teams were spending 30% of sprint time on manual status reporting. I replaced it with a single shared dashboard that pulled from existing tools."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "Each team used different trackers and had different stakeholder expectations."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Time on reporting fell to under 5% and all three managers agreed to drop their custom reports."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example...",
+        "Situation: 30% sprint time on manual reporting",
+        "Action: single dashboard from existing data sources",
+        "Outcome: reporting time <5%, three managers dropped custom reports",
+        "Quote: \"all three managers agreed to drop their custom reports\"",
+        "Follow-up: Asked about coordination \u2192 candidate described aligning three teams without new tooling"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate spotted a cross-team process tax and removed it with a minimal shared view instead of adding process or headcount. Leverage is clear: three teams reduced recurring work and eliminated duplicate reporting. Success is measured in time saved and stakeholder adoption. Biggest strength is creating team-level simplification that scales beyond their own org.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked everyone to fill out a weekly status template so we had one view."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "People kept missing the deadline or using different formats."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it helped?"
+        },
+        {
+          "role": "candidate",
+          "text": "I spent less time chasing updates."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "Situation: inconsistent status updates",
+        "Action: weekly status template",
+        "Outcome: manager spent less time chasing",
+        "Quote: \"People kept missing the deadline\"",
+        "Follow-up: Asked about team impact \u2192 candidate only measured own time saved"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate added a new reporting requirement instead of removing the underlying need for manual updates. The change increased process for the team while only benefiting the manager. No evidence of simplification or sustained adoption. Main gap is failing to invent a solution that reduces total team effort."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three overlapping platform efforts across the company each claiming they would become the standard. I shut two down and funded a single thin abstraction layer with clear migration incentives."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "Each effort had executive sponsors and real customer traction; choosing one would create winners and losers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the decision worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Platform spend dropped 22% YoY while feature velocity across consuming teams rose 15%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example...",
+        "Situation: three overlapping platform efforts",
+        "Action: shut two, funded single thin abstraction",
+        "Outcome: spend -22%, velocity +15%",
+        "Quote: \"each effort had executive sponsors\"",
+        "Follow-up: Asked about trade-offs \u2192 candidate described sponsor negotiations and migration incentives"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate made a high-ambiguity strategic call to consolidate three efforts into one minimal layer, accepting short-term political cost for long-term leverage. Impact is quantified at company spend and velocity levels. Decision shows clear judgment on when duplication creates more harm than competition. Biggest strength is using simplicity as an org-level lever rather than heroically scaling multiple efforts.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I created a platform steering committee so the three teams could coordinate and share roadmaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it complex?"
+        },
+        {
+          "role": "candidate",
+          "text": "Roadmaps kept conflicting and resources were split."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it helped?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had fewer surprises in quarterly reviews."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "Situation: overlapping platform work",
+        "Action: added steering committee for coordination",
+        "Outcome: fewer surprises in reviews",
+        "Quote: \"Roadmaps kept conflicting\"",
+        "Follow-up: Asked about simplification \u2192 candidate added process instead of reducing scope"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate responded to duplication by adding coordination overhead rather than making a hard choice to consolidate. The solution increases meeting load while preserving three separate efforts. Measurement is soft (fewer surprises) with no reduction in total cost or increase in leverage. Main gap is avoiding the simplification decision that would have created real organizational focus."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of problem",
+      "junior": "Individual script or task",
+      "senior": "Cross-team duplication or process",
+      "manager": "Team-wide recurring cost",
+      "exec": "Org-level platform or investment overlap"
+    },
+    {
+      "signal": "Nature of simple solution",
+      "junior": "Small detection wrapper or script",
+      "senior": "Narrow API or single data source",
+      "manager": "Shared dashboard replacing manual updates",
+      "exec": "Consolidation to one thin layer"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Personal run count or help requests",
+      "senior": "Incident count and feature delivery",
+      "manager": "% time saved and stakeholder adoption",
+      "exec": "Company spend and velocity deltas"
+    },
+    {
+      "signal": "Evidence of invention",
+      "junior": "Avoided repeated manual fixes",
+      "senior": "Avoided shared-state ownership fights",
+      "manager": "Removed process instead of adding it",
+      "exec": "Made hard scope decision despite sponsors"
+    },
+    {
+      "signal": "Risk of over-engineering",
+      "junior": "Added conditionals vs root fix",
+      "senior": "Reconciliation job vs prevention",
+      "manager": "New template vs removal of need",
+      "exec": "Steering committee vs consolidation"
+    }
+  ],
+  "kind": "lp"
+}

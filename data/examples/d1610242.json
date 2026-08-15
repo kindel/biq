@@ -1,0 +1,230 @@
+{
+  "question": "Give me an example of a tough or critical piece of feedback you received. What was it and what did you do about it?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me my code reviews were too shallow and I was missing edge cases that later caused bugs in production."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started keeping a checklist of common issues and asked for a second reviewer on bigger changes. Two months later my PRs had fewer rollbacks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: code reviews too shallow, missed edge cases causing prod bugs",
+        "- Action: created personal checklist, asked for second reviewer on complex changes",
+        "- Outcome: fewer rollbacks over next two months",
+        "Quote: \"I realized I was rushing to finish reviews\"",
+        "Follow-up: Asked how they tracked improvement; said they asked manager for specific examples each week"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at junior level. Candidate owned the feedback on shallow code reviews instead of pushing back, then built a checklist and sought second reviews. Quote shows they linked the issue to their own rushing. This demonstrates coachability and visible improvement in two months without needing hand-holding. Biggest strength is turning the feedback into repeatable personal process rather than one-off fixes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I got feedback that my code reviews were missing things. I thought the senior devs were just being picky."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just spent a bit more time on them but the same issues kept coming up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: code reviews missing edge cases",
+        "- Initial reaction: thought seniors were picky",
+        "- Action: spent a bit more time but no structured change",
+        "Quote: \"I thought they were just being picky\"",
+        "Follow-up: No evidence of seeking clarification or measuring improvement"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at junior level. Candidate dismissed the feedback as pickiness rather than reflecting on their own reviews. They made only a vague effort to spend more time without creating any process or asking for examples. No measurable change was described. Biggest gap is lack of ownership and failure to treat the feedback as actionable input for their own growth."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer on another team told me I was driving decisions without looping in the right stakeholders, which slowed their project."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a retro with both teams, added a stakeholder map to my planning, and started sending weekly updates. Their project velocity improved 20% in the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: driving decisions without looping stakeholders, slowing another team",
+        "- Action: ran joint retro, added stakeholder map, sent weekly updates",
+        "- Outcome: 20% velocity lift for the other team",
+        "Quote: \"I realized I had optimized only for my team\"",
+        "Follow-up: Confirmed the metric came from the other team's lead, not self-reported"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at senior level. Candidate accepted cross-team impact feedback and created a stakeholder map plus weekly updates. The 20% velocity improvement was verified with the affected team. Quote shows they connected the issue to their own narrow focus. Biggest strength is turning personal feedback into a repeatable coordination practice that benefited another team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was told I didn't include enough stakeholders on a decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried to remember to send more emails but it was hard to keep track so things stayed about the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: not including enough stakeholders",
+        "- Action: tried sending more emails but no system",
+        "- Outcome: no sustained change",
+        "Quote: \"It was hard to keep track\"",
+        "Follow-up: No evidence of measuring impact on other teams"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at senior level. Candidate acknowledged the feedback but implemented only an ad-hoc email habit without any process or measurement. No cross-team impact was shown. Biggest gap is treating the issue as a memory problem instead of building influence mechanisms that scale."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My skip told me I was shielding my team too much and not giving them direct exposure to senior stakeholders."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started having my directs present their own updates in leadership meetings and coached them beforehand. Two of them later got promoted and cited the exposure as key."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: shielding team from senior exposure",
+        "- Action: had directs present in leadership meetings with prep coaching",
+        "- Outcome: two promotions tied to the exposure",
+        "Quote: \"I had been protecting them too much\"",
+        "Follow-up: Asked who gave the promotion feedback; confirmed it came from skip-level"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at manager level. Candidate took feedback about over-shielding and deliberately moved directs into leadership meetings with coaching. Two promotions resulted, directly linked to the new exposure. Quote shows self-awareness about their protective instinct. Biggest strength is using the feedback to create leverage for the team's long-term growth rather than their own comfort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Feedback was that I needed to give my team more visibility."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you make any changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in one team meeting but didn't follow up because the team was already busy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: need to give team more visibility",
+        "- Action: mentioned once in team meeting, no follow-up",
+        "- Outcome: no visible change",
+        "Quote: \"The team was already busy\"",
+        "Follow-up: No evidence of coaching or tracking development outcomes"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at manager level. Candidate passed the feedback to the team once without any coaching or structural change. No development outcomes were tracked. Biggest gap is failing to own the development of their people as a core responsibility."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO told me our org was seen as risk-averse and that was blocking company bets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a risk framework workshop with my directs, changed our decision rights to push more to teams, and reported quarterly risk appetite metrics to the board. Two major product bets launched that year with their support."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: org seen as risk-averse, blocking company bets",
+        "- Action: risk framework workshop, pushed decision rights down, quarterly board metrics",
+        "- Outcome: two major bets launched with board support",
+        "Quote: \"I had created a culture that defaulted to no\"",
+        "Follow-up: Confirmed metrics were presented to board and bets were approved"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at exec level. Candidate accepted org-level feedback on risk aversion and implemented a new decision-rights model plus board-visible metrics. Two major bets launched as a direct result. Quote reveals they owned creating the culture. Biggest strength is converting the feedback into structural change that affected multiple teams and enabled business outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was told the org needed to take more risks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actions followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a note to my leadership team about being bolder but didn't change any processes or decision rights."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of tough feedback and what you did",
+        "- Received: org needed to take more risks",
+        "- Action: sent a note to leadership team",
+        "- Outcome: no process or rights changes",
+        "Quote: \"I told them to be bolder\"",
+        "Follow-up: No evidence of metrics or business impact"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at exec level. Candidate communicated the feedback but made no structural changes to decision rights or incentives. No business bets or metrics followed. Biggest gap is relying on messaging instead of owning the organizational levers required for strategic shift."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of feedback",
+      "junior": "Takes personal checklist action vs. dismisses as picky",
+      "senior": "Builds stakeholder map vs. ad-hoc emails",
+      "manager": "Creates exposure opportunities vs. one mention",
+      "exec": "Changes decision rights vs. sends note"
+    },
+    {
+      "signal": "Visible follow-through",
+      "junior": "Fewer rollbacks in two months",
+      "senior": "20% velocity lift verified by other team",
+      "manager": "Two promotions linked to change",
+      "exec": "Two bets approved by board"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual PR quality",
+      "senior": "Cross-team coordination",
+      "manager": "Direct reports' careers",
+      "exec": "Org-level risk culture"
+    },
+    {
+      "signal": "Self-awareness quote",
+      "junior": "Linked to own rushing",
+      "senior": "Narrow team focus",
+      "manager": "Protective instinct",
+      "exec": "Created no culture"
+    }
+  ],
+  "kind": "lp"
+}

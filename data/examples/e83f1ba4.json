@@ -1,0 +1,261 @@
+{
+  "question": "Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+  "competency": "Conflict Resolution & Difficult Interpersonal Situations",
+  "principle": "Conflict Resolution & Difficult Interpersonal Situations",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I kept pushing back on a teammate's code review comments because I thought my approach was faster. After the deadline slipped I realized I had ignored context about downstream tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed your view?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked me to walk through the test failures with her. I saw my changes broke two flows I didn't know existed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started asking 'what else does this affect?' before pushing back. The next review went smoother."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Junior dev vs teammate on code review; candidate dismissed comments to ship faster",
+        "Outcome: deadline slip; realized after manager walkthrough that tests broke",
+        "Quote: 'I started asking what else does this affect before pushing back'",
+        "Follow-up: How did you handle the next review? - Asked clarifying questions upfront"
+      ],
+      "raiseFeedback": "Candidate owns their contribution to the delay and ties the learning directly to a repeatable behavior change on reviews. The story stays within individual scope yet shows coachability after feedback. The concrete detail about test flows makes the reflection believable rather than generic. This meets the bar for junior because it demonstrates ownership of own work and quick adjustment from a single data point.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was this one engineer who kept rejecting my PRs for style reasons. I escalated to our manager because it felt personal."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything shift after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the manager just told us to talk more. I still think the comments were nitpicky."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Candidate describes PR conflict and escalation; frames other person as the issue",
+        "No self-reflection offered even after follow-up",
+        "Quote: 'I still think the comments were nitpicky'",
+        "Follow-up: Did anything shift after escalation? - Blames persistence of other person's behavior"
+      ],
+      "lowerFeedback": "Candidate never identifies their own role in the friction and defaults to external blame even after direct probing. The story lacks any behavior change or learning moment, which is the core ask. At junior level this signals low coachability and limited ownership of personal impact."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was pushing a new API design across two teams and kept dismissing the mobile team's latency concerns as future work. After launch we saw p99 spikes and on-call load doubled."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you come to see your part?"
+        },
+        {
+          "role": "candidate",
+          "text": "The mobile lead showed me the exact numbers from the staging run I had skipped. I had assumed backend scale would mask it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how you lead cross-team work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now require a one-page impact summary from every dependent team before locking the design. It added two days but cut post-launch incidents by half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Senior pushing API design; dismissed mobile latency concerns",
+        "Outcome: p99 spikes and doubled on-call after launch",
+        "Quote: 'I now require a one-page impact summary from every dependent team'",
+        "Follow-up: What changed in cross-team work? - Added required input step with measurable reduction in incidents"
+      ],
+      "raiseFeedback": "Candidate clearly articulates their assumption that created conflict, links it to a measurable business impact, and describes a process change that influenced other teams without authority. The metric on incidents shows the learning scaled beyond the original incident. This raises the bar for senior because it demonstrates influence without authority and cross-team ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a disagreement with the infra team about rollout order. They wanted canary first; I wanted to ship to all customers. We ended up in a meeting that went nowhere."
+        },
+        {
+          "role": "interviewer",
+          "text": "Looking back, what was your contribution?"
+        },
+        {
+          "role": "candidate",
+          "text": "I still think the data supported a full rollout. They just didn't want to take the risk."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Senior vs infra on rollout strategy; describes stalemate",
+        "No ownership; continues to defend original position after probe",
+        "Quote: 'I still think the data supported a full rollout'",
+        "Follow-up: What was your contribution? - Reiterates correctness of own view"
+      ],
+      "lowerFeedback": "Candidate stays in a defensive posture and never surfaces a personal assumption or behavior that contributed to the impasse. The absence of any adjusted approach afterward shows limited growth in handling cross-team friction, which is expected at senior level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two of my engineers were stuck in a loop arguing about ownership of a shared service. I had sided with the more senior one in the first meeting without hearing the full context."
+        },
+        {
+          "role": "interviewer",
+          "text": "When did you realize you were part of it?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the junior engineer put in a transfer request I sat with both and replayed the meeting. I had cut off the junior person's data points."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started using a rotating 'first listener' role in ambiguous ownership talks and required both people to state the other's constraints before proposing solutions. No transfers since."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Manager sided with senior engineer in ownership dispute; junior filed transfer",
+        "Realized after 1:1 replay that own facilitation cut off input",
+        "Quote: 'I started using a rotating first listener role'",
+        "Follow-up: What did you change? - Structural fix with no further attrition"
+      ],
+      "raiseFeedback": "Candidate owns how their facilitation bias escalated a team conflict into attrition risk and implements a repeatable team process that prevents recurrence. The outcome is framed at the team level rather than personal heroics. This raises the bar for manager because it shows development of team norms and handling of underperformance dynamics through process rather than one-off fixes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had two reports arguing about who should fix a production bug. I told them to figure it out and come back with a plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that resolve the tension?"
+        },
+        {
+          "role": "candidate",
+          "text": "Eventually one of them just did the work. I think the stronger one won."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Manager delegates ownership dispute without further involvement",
+        "Outcome described as stronger person prevailing; no self-reflection",
+        "Quote: 'I think the stronger one won'",
+        "Follow-up: Did that resolve the tension? - Focuses on result, not own role in escalation"
+      ],
+      "lowerFeedback": "Candidate shows no recognition that their hands-off approach may have prolonged or worsened the conflict. The framing celebrates the stronger individual rather than addressing team dynamics or underperformance, which is a core manager expectation."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two product orgs were fighting over roadmap priority for a shared platform investment. I had publicly backed the revenue org's timeline without checking the platform org's capacity model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you see your role?"
+        },
+        {
+          "role": "candidate",
+          "text": "Six months later the platform org missed their own OKRs and attrition spiked. The capacity data had been in the quarterly review I skimmed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that change your approach at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now require a joint capacity and dependency review with both org leads before any public commitment. It slowed two roadmaps but improved platform retention by 18% over the next year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Exec publicly backed one org's timeline; ignored capacity data from platform org",
+        "Outcome: missed OKRs and attrition spike six months later",
+        "Quote: 'I now require a joint capacity and dependency review before any public commitment'",
+        "Follow-up: How did that change your approach? - Org-level process with retention metric"
+      ],
+      "raiseFeedback": "Candidate identifies a strategic judgment error at the org interface, connects it to downstream business outcomes including retention, and installs a durable cross-org mechanism. The 18% retention lift shows leverage at scale rather than personal intervention. This raises the bar for exec because it demonstrates long-term thinking and trade-off ownership at the business level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing and engineering disagreed on launch sequencing for a major feature. I sided with marketing to hit the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Looking back, what was your contribution to the conflict?"
+        },
+        {
+          "role": "candidate",
+          "text": "The engineering concerns were valid but the quarter target was non-negotiable at the time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you later realized you were part of the problem in a conflict. What did you learn?",
+        "Exec sided with marketing on launch sequencing",
+        "No reflection on long-term cost; defends decision by external constraint",
+        "Quote: 'The quarter target was non-negotiable at the time'",
+        "Follow-up: What was your contribution? - Reiterates external pressure"
+      ],
+      "lowerFeedback": "Candidate offers no evidence of re-evaluating the trade-off or adjusting future decision processes. Framing remains focused on short-term delivery pressure rather than org-level leverage or strategic judgment, which lowers the bar at exec level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of own contribution to conflict",
+      "junior": "Names specific assumption and resulting behavior change",
+      "senior": "Links assumption to cross-team metric impact",
+      "manager": "Shows how facilitation bias created team attrition risk",
+      "exec": "Connects public stance to org retention and OKR misses"
+    },
+    {
+      "signal": "Evidence of learning applied at appropriate scope",
+      "junior": "Individual review habit",
+      "senior": "Required input step for dependent teams",
+      "manager": "Team process (rotating listener)",
+      "exec": "Joint org capacity review before commitments"
+    },
+    {
+      "signal": "Avoidance of external blame",
+      "junior": "Stops after seeing test data",
+      "senior": "Stops after seeing staging numbers",
+      "manager": "Stops after replaying own meeting",
+      "exec": "Stops after reviewing own skimmed data"
+    },
+    {
+      "signal": "Outcome framing",
+      "junior": "Faster next review",
+      "senior": "50% fewer incidents",
+      "manager": "No further transfers",
+      "exec": "18% retention lift"
+    },
+    {
+      "signal": "Depth of self-reflection after probe",
+      "junior": "Accepts manager walkthrough as trigger",
+      "senior": "Accepts peer data as trigger",
+      "manager": "Accepts transfer request as trigger",
+      "exec": "Accepts quarterly review miss as trigger"
+    }
+  ],
+  "kind": "competency"
+}

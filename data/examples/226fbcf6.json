@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about a time when you were trying to understand a complex problem on your team and you had to dig into the details to figure it out. Who did you talk with or where did you have to look to find the most valuable information? How did you use that information to help solve the problem?",
+  "competency": "Dive Deep",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a spike in customer support tickets about checkout failures. I pulled the logs myself and noticed errors in one payment path. I asked the on-call engineer to walk through the recent deploy with me, then checked the config files in the repo."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you find and how did you use it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The config had a stale API key. I updated it after confirming with the payments team and the errors dropped 80%. My manager suggested I write a short runbook so others could check the same thing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: complex checkout failure spike",
+        "Pulled logs, talked to on-call, checked configs",
+        "Found stale API key after deploy review",
+        "Outcome: 80% drop in errors, wrote runbook",
+        "Quote: 'I updated it after confirming with payments team'",
+        "Follow-up: Asked how they validated the fix; candidate described checking metrics and looping in manager for runbook"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned pulling logs and configs without waiting for direction. They identified the stale key through direct inspection and used a targeted conversation with the on-call engineer to confirm the deploy change. The 80% error reduction shows the information was applied effectively. They also incorporated feedback by creating a runbook, demonstrating coachability. Biggest strength is closing the loop from detail work to documented prevention.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team had some bugs in the app and tickets were up. I looked at the dashboard and saw numbers were higher than usual. My lead told me to check the code so I asked a few people what they thought was wrong."
+        },
+        {
+          "role": "interviewer",
+          "text": "What details did you find and how did you use them?"
+        },
+        {
+          "role": "candidate",
+          "text": "Someone said a recent change might be related. We rolled it back and things got better. I didn't really look at the logs myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: app bugs and higher tickets",
+        "Looked at dashboard, asked lead and others",
+        "Rolled back a change suggested by teammate",
+        "Outcome: things got better after rollback",
+        "Quote: 'I didn't really look at the logs myself'",
+        "Follow-up: Asked for specific data reviewed; candidate could not name metrics or files checked"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate relied on others to identify the change instead of examining logs or configs directly. No evidence of independent root-cause investigation or connecting specific details to the fix. The rollback worked but the story shows passive involvement rather than diving in. Biggest gap is lack of personal ownership over the data that drove the decision."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our recommendation service latency jumped after a cross-team migration. I pulled service mesh traces and datastore query logs, then met with the storage and frontend teams to map the new call paths."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that change the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Traces showed an N+1 query pattern introduced by the new API contract. I worked with the owning team to add batching and latency dropped below the SLO. I also added a shared dashboard so both teams could monitor the same signals."
+        }
+      ],
+      "raiseNotes": [
+        "Q: recommendation latency after migration",
+        "Traces + logs + meetings with storage/frontend",
+        "Discovered N+1 from new contract",
+        "Outcome: batching added, SLO met, shared dashboard",
+        "Quote: 'I worked with the owning team to add batching'",
+        "Follow-up: Asked about influence without authority; candidate described using data to align two teams on the fix"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate combined multiple data sources across teams and used the findings to drive a joint fix rather than handing off the problem. The shared dashboard shows lasting cross-team leverage. The story demonstrates influence through evidence instead of authority. Biggest strength is turning detailed analysis into a durable monitoring improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Latency increased after the migration. I looked at the main service metrics and saw it was higher. I emailed the other team and they said they would look into it. Eventually they fixed something and numbers improved."
+        },
+        {
+          "role": "interviewer",
+          "text": "What specific details did you examine?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly looked at the high-level dashboard. The other team handled the deep dive."
+        }
+      ],
+      "lowerNotes": [
+        "Q: post-migration latency",
+        "Checked main dashboard, emailed owning team",
+        "Waited for other team to fix",
+        "Outcome: numbers eventually improved",
+        "Quote: 'The other team handled the deep dive'",
+        "Follow-up: Asked what the candidate contributed to root cause; no specific data or analysis described"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate stopped at high-level metrics and delegated the investigation. No cross-team synthesis or personal use of detailed traces/logs appears in the story. The fix happened but the candidate did not drive it. Biggest gap is absence of the expected senior behavior of connecting details across boundaries to accelerate resolution."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our release process was causing repeated production incidents. I had my team pull incident data and postmortems, then sat with the release and platform groups to trace the common failure modes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We found that missing canary signals were the root. I coached one engineer to own the new gating process and the team reduced Sev-1 releases by half. I also used the data in my next skip-level to show why we needed more platform investment."
+        }
+      ],
+      "raiseNotes": [
+        "Q: repeated release incidents",
+        "Team pulled data, manager coordinated with platform/release",
+        "Identified missing canary signals",
+        "Outcome: 50% drop in Sev-1s, engineer coached to own process, used data for investment ask",
+        "Quote: 'I coached one engineer to own the new gating process'",
+        "Follow-up: Asked how underperformance was handled; candidate described targeted coaching with clear ownership transfer"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used team-generated data to surface a systemic gap and then developed an engineer to own the solution. The 50% reduction and skip-level use of the findings show leverage through both people and org influence. The story ties detail work to team capability building. Biggest strength is converting deep analysis into sustained process ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had some bad releases. I asked the team to look at the incidents and report back. They found a few issues and we added more checks. The number of problems went down after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you personally use the details?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly reviewed the summary they gave me and approved the new checks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: bad releases",
+        "Asked team to investigate and report",
+        "Approved additional checks",
+        "Outcome: fewer problems after changes",
+        "Quote: 'I mostly reviewed the summary they gave me'",
+        "Follow-up: Asked for specific coaching or development actions; candidate had none beyond approving the list"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate delegated the entire investigation and only reviewed a summary before approving changes. No evidence of developing people or using the details to drive team-level decisions. The improvement occurred but the manager did not create leverage. Biggest gap is treating the problem as a task list rather than an opportunity to build team capability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer churn was rising in one segment and the data was contradictory across finance, product, and support. I commissioned a cross-org data pull and personally reviewed the cohort analysis and ticket themes with the three VPs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What strategic decision followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "The data showed pricing friction combined with missing onboarding features. We shifted two quarters of roadmap and adjusted the renewal model, which stabilized that segment's retention within six months. I used the same dataset in the board update to justify the investment trade-off."
+        }
+      ],
+      "raiseNotes": [
+        "Q: rising churn with conflicting signals",
+        "Commissioned cross-org data pull, reviewed with three VPs",
+        "Found pricing + onboarding gap",
+        "Outcome: roadmap shift, renewal model change, retention stabilized, board update used data",
+        "Quote: 'We shifted two quarters of roadmap and adjusted the renewal model'",
+        "Follow-up: Asked about long-term trade-offs; candidate described protecting the decision against short-term revenue pressure"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate personally engaged with detailed cohort and ticket data across organizations to resolve ambiguity. The resulting multi-quarter roadmap change and board-level use of the analysis show strategic judgment under competing priorities. The story demonstrates leverage at the business level rather than heroics. Biggest strength is converting granular signals into a durable investment decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Churn was up in one area. I asked the teams for their reports and we discussed them in the staff meeting. We decided to add a few features and monitor the numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What details drove the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The reports were pretty high-level. We went with the consensus view from the VPs."
+        }
+      ],
+      "lowerNotes": [
+        "Q: churn increase",
+        "Requested reports, discussed in staff meeting",
+        "Added features based on consensus",
+        "Outcome: decided to monitor",
+        "Quote: 'We went with the consensus view from the VPs'",
+        "Follow-up: Asked how the candidate reconciled conflicting data; no personal review or synthesis described"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate relied on second-hand summaries and group consensus without engaging the underlying data. No evidence of personal judgment on trade-offs or long-term implications. The decision was made but lacked the strategic depth expected at this level. Biggest gap is absence of the executive practice of using detail work to shape org-level direction."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of personal data inspection",
+      "junior": "Candidate pulls logs/configs themselves",
+      "senior": "Combines traces across teams",
+      "manager": "Uses team data to coach ownership",
+      "exec": "Personally reviews cohort/ticket data to resolve VP conflicts"
+    },
+    {
+      "signal": "Scope of information sources",
+      "junior": "Individual tools and one peer",
+      "senior": "Multiple teams and shared dashboards",
+      "manager": "Postmortems + cross-group meetings",
+      "exec": "Finance/product/support + board narrative"
+    },
+    {
+      "signal": "Use of findings",
+      "junior": "Fixes immediate issue and documents",
+      "senior": "Drives cross-team technical change",
+      "manager": "Builds team process and secures investment",
+      "exec": "Shifts multi-quarter roadmap and renewal model"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Loops in manager for runbook",
+      "senior": "Aligns teams via data",
+      "manager": "Coaches engineer to own outcome",
+      "exec": "Uses data in board update for trade-off"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,245 @@
+{
+  "question": "Tell me about a time when you helped a remote team member develop their career. Can you give me an example of a specific team member and how you helped them develop across the geographic distance?",
+  "competency": "Hire and Develop the Best (secondary: Leadership)",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I paired with a new remote engineer on my team who wanted to move from backend to full-stack. We set up bi-weekly 1:1s over video to review their PRs and I shared a simple skill map I made for myself. Over four months they shipped two frontend features and got promoted to mid-level."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you do in those sessions?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed their code live, pointed out patterns, and connected them to two docs the team used. I also asked them what blockers they had each time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: junior IC helping peer new hire",
+        "Situation: remote engineer wanted full-stack shift",
+        "Actions: bi-weekly video reviews, shared personal skill map, connected to docs",
+        "Outcome: two features shipped, peer promoted",
+        "Quote: 'I reviewed their code live and asked about blockers each time'",
+        "Follow-up: Asked for session details; candidate described concrete review process"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The story shows the candidate took ownership of developing a peer despite distance and limited authority. They created a repeatable process (bi-weekly reviews + skill map) that produced a clear outcome. The quote about reviewing code live and asking about blockers demonstrates they treated development as part of their own work rather than extra. This meets the junior expectation of local ownership and coachability. Biggest strength is turning a simple pairing habit into measurable peer growth without needing manager direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a remote person on my team who asked for career advice once. I told them to look at the internal wiki and maybe talk to our manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "What follow-up did you do after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really follow up. They were in a different time zone so it was hard to schedule."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: junior IC",
+        "Situation: remote teammate asked for advice once",
+        "Actions: pointed to wiki and suggested talking to manager",
+        "Outcome: no follow-up due to time zone",
+        "Quote: 'They were in a different time zone so it was hard to schedule'",
+        "Follow-up: Asked about follow-up actions; candidate cited distance as reason for stopping"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate treated the request as a one-time handoff rather than an opportunity to own development. They stopped after the first suggestion and used time zone as the stopping point instead of finding a workaround. No evidence of any ongoing support or measurable impact. The story shows passive behavior that does not demonstrate even basic ownership of helping a teammate. Biggest gap is absence of any sustained action or learning from the interaction."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A remote engineer on another team wanted to lead projects but lacked visibility. I invited them to shadow two of my cross-team reviews, then co-authored a proposal with them that got funded. Six months later they were staffed as tech lead on a new initiative."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the distance in the shadowing?"
+        },
+        {
+          "role": "candidate",
+          "text": "We recorded the reviews and I added written annotations they could review async, then we met to discuss their takeaways."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: senior IC influencing across teams",
+        "Situation: remote engineer lacked project leadership visibility",
+        "Actions: invited to shadow reviews, co-authored proposal, used async recordings with annotations",
+        "Outcome: engineer staffed as tech lead on new initiative",
+        "Quote: 'We recorded the reviews and I added written annotations they could review async'",
+        "Follow-up: Asked how distance was handled; candidate described async shadowing method"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used influence without authority to create cross-team visibility for a remote peer. They adapted their process for distance by adding async annotations, showing practical problem-solving. The outcome of the peer becoming a tech lead is a concrete result tied to the candidate's actions. This demonstrates the expected senior level of cross-team impact and raising others. Biggest strength is turning a visibility gap into a staffed leadership role through repeatable mechanisms rather than one-off help.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once mentored a remote engineer by sending them some articles on leadership when they asked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change for them after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not that I tracked. We were on different teams so I didn't have much ongoing context."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: senior IC",
+        "Situation: remote engineer asked about leadership",
+        "Actions: sent articles",
+        "Outcome: no tracking of results, cited different teams",
+        "Quote: 'We were on different teams so I didn't have much ongoing context'",
+        "Follow-up: Asked about results; candidate had no visibility or follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate's action was limited to forwarding articles with no adaptation for remote work or cross-team context. They explicitly stopped tracking because of team boundaries, which contradicts the senior expectation of influence without authority. No evidence of any lasting development or measurable change. The story reads as minimal effort rather than deliberate investment. Biggest gap is lack of ownership beyond the initial request."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my remote reports wanted to move into management. I created a six-month plan with stretch projects, paired them with a skip-level mentor, and gave monthly feedback calibrated against our promotion rubric. They were promoted last cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the remote aspect of the stretch projects?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure their projects had visible cross-team stakeholders and scheduled bi-weekly syncs with those stakeholders so progress was documented in writing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: manager developing direct report",
+        "Situation: remote report wanted management track",
+        "Actions: six-month plan, stretch projects with visible stakeholders, skip-level mentor, monthly rubric feedback",
+        "Outcome: promoted last cycle",
+        "Quote: 'I made sure their projects had visible cross-team stakeholders and scheduled bi-weekly syncs'",
+        "Follow-up: Asked about remote handling; candidate described documented stakeholder syncs"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate built a structured development plan with clear milestones and external visibility, directly addressing the remote challenge through documented syncs. They used the promotion rubric as an objective tool and involved a skip-level mentor for broader perspective. The promotion outcome is tied to the plan. This matches the manager expectation of developing people and creating leverage through structured support. Biggest strength is the combination of plan, visibility mechanisms, and measurable result.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged a remote report who wanted to grow to take on more work and check in with me when needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structure did you put in place?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly informal. I was managing a lot of other things so the check-ins were ad hoc."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: manager",
+        "Situation: remote report wanted to grow",
+        "Actions: encouraged taking more work, ad hoc check-ins",
+        "Outcome: no structure or tracked progress",
+        "Quote: 'The check-ins were ad hoc'",
+        "Follow-up: Asked about structure; candidate cited other priorities as reason for informality"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate relied on informal encouragement without creating any plan or visibility mechanisms for the remote report. They acknowledged the ad hoc nature was due to their own workload rather than prioritizing development. No evidence of using tools like rubrics or mentors. This falls short of the manager bar for owning team member growth. Biggest gap is treating development as optional rather than a core responsibility."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our remote engineering offices had lower promotion rates. I launched a remote leadership accelerator program that paired high-potential engineers with exec sponsors and required them to own a cross-org initiative. After two cohorts, promotion rates in those offices rose 18% and three participants moved into director roles."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make to run the program?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reduced the number of new org-wide initiatives by one so we could staff the sponsors without overloading directors."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: exec addressing org-level gap",
+        "Situation: lower promotion rates in remote offices",
+        "Actions: launched accelerator program with exec sponsors and cross-org initiatives",
+        "Outcome: 18% promotion rate increase, three directors from program",
+        "Quote: 'I reduced the number of new org-wide initiatives by one so we could staff the sponsors'",
+        "Follow-up: Asked about trade-offs; candidate described deprioritizing other work"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate identified a systemic remote disadvantage and built an org-level program with measurable business impact. They made an explicit resource trade-off to sustain sponsor bandwidth, showing strategic judgment. The 18% lift and director placements demonstrate long-term leverage rather than individual heroics. This aligns with exec expectations of org-level impact and creating scalable development systems. Biggest strength is turning a geographic disparity into a repeatable accelerator with clear ROI.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my directs to pay extra attention to their remote reports during career conversations."
+        },
+        {
+          "role": "interviewer",
+          "text": "What org-level change resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "Nothing formal. It was more of a reminder in staff meetings."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about helping a remote team member develop their career",
+        "Role: exec",
+        "Situation: implied remote development need",
+        "Actions: reminded directs to pay attention in career conversations",
+        "Outcome: no formal change or measurement",
+        "Quote: 'It was more of a reminder in staff meetings'",
+        "Follow-up: Asked about org-level results; candidate described only verbal reminders"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate's response stayed at the level of a staff-meeting reminder with no program, measurement, or resource allocation. They did not diagnose the root cause or create any scalable mechanism. No evidence of strategic trade-offs or long-term thinking. This is well below the exec expectation of driving org-level development outcomes. Biggest gap is absence of any systemic action or accountability."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Remote adaptation",
+      "junior": "Uses async tools for peer reviews",
+      "senior": "Creates async shadowing with annotations",
+      "manager": "Builds documented stakeholder syncs into plans",
+      "exec": "Designs program with built-in remote visibility mechanisms"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Peer on same team",
+      "senior": "Engineer on another team",
+      "manager": "Direct report with structured plan",
+      "exec": "Multiple remote offices via accelerator"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Peer promotion after features shipped",
+      "senior": "Peer staffed as tech lead",
+      "manager": "Report promoted last cycle",
+      "exec": "18% promotion lift, three directors"
+    },
+    {
+      "signal": "Trade-off handling",
+      "junior": "N/A at this level",
+      "senior": "N/A",
+      "manager": "Uses promotion rubric to focus effort",
+      "exec": "Drops one org initiative to free sponsor time"
+    },
+    {
+      "signal": "Follow-through",
+      "junior": "Bi-weekly sessions over months",
+      "senior": "Co-authored proposal with outcome",
+      "manager": "Monthly feedback against rubric",
+      "exec": "Two cohorts with tracked results"
+    }
+  ],
+  "kind": "lp"
+}

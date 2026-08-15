@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you had to balance the needs of the customer with the needs of the business. What did you do? What was the result?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer wanted a full refund on a 3-month-old subscription after realizing they never used it. Policy was 30 days. I checked usage logs, saw zero activity, and offered a one-time courtesy extension instead of refund to protect revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "They accepted the extension. Churn dropped that month and they later upgraded. I logged the case so the team could update the FAQ."
+        }
+      ],
+      "raiseNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: refund request outside 30-day window, zero usage",
+        "Action: offered extension after checking logs, documented for team",
+        "Outcome: customer stayed and upgraded, revenue protected",
+        "Quote: 'I logged it so the team could update the FAQ'",
+        "Follow-up: asked about trade-off decision; said they checked with manager first time"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Story shows clear ownership of a single customer case while protecting revenue. Quote about logging for the team demonstrates early coachability. Follow-up revealed they sought guidance before deviating from policy, which is appropriate at this level. Biggest strength is connecting individual action to a repeatable process improvement without overstepping scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer was upset about a late delivery so I just gave them a refund even though it was outside policy. They were happy."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check with anyone or log it?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just wanted them to be happy so I approved it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: late delivery refund outside window",
+        "Action: approved refund without checking policy or logging",
+        "Outcome: customer happy but no mention of revenue or process impact",
+        "Quote: 'I just wanted them to be happy'",
+        "Follow-up: no evidence of considering business side or learning"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Candidate prioritized customer satisfaction without any reference to policy, revenue, or team learning. Follow-up showed no attempt to understand the trade-off or document the exception. Biggest gap is absence of ownership beyond making the immediate customer happy."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Enterprise customer wanted custom SLA that would require ops changes. I ran a cost model showing 18% margin hit and proposed phased rollout with two other teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the model and customer retention forecast. Ops agreed to pilot on one region. Customer renewed at higher tier and we later productized the SLA for others."
+        }
+      ],
+      "raiseNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: enterprise SLA request with ops cost impact",
+        "Action: built cost model, proposed phased pilot with two teams",
+        "Outcome: renewal at higher tier, SLA productized",
+        "Quote: 'I shared the model and customer retention forecast'",
+        "Follow-up: cross-team influence without authority, used data to align"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate drove cross-team alignment using data rather than escalation. Quote shows they quantified both customer retention and margin impact. Pilot approach protected the business while still delivering value. Biggest strength is turning a one-off request into a scalable product change with measurable renewal outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Big customer wanted a feature. I pushed engineering hard until they built it. Took three months but customer was satisfied."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the customer but engineering complained about the rush."
+        }
+      ],
+      "lowerNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: feature request from big customer",
+        "Action: pushed engineering to build without cost analysis",
+        "Outcome: customer stayed but team friction noted",
+        "Quote: 'I pushed engineering hard until they built it'",
+        "Follow-up: no metrics on cost or long-term value, no influence without authority"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Story relies on heroics and pressure rather than data or cross-team influence. No evidence of quantifying business cost or turning the request into broader value. Biggest gap is lack of strategic trade-off thinking and failure to raise the engineering team in the process."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Team was approving too many custom discounts that hurt margin. I created a decision framework and coached two underperformers on when to say no while still protecting customer relationships."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Discount rate dropped 12% while NPS held steady. One underperformer improved and the other moved to a different role."
+        }
+      ],
+      "raiseNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: team over-issuing discounts eroding margin",
+        "Action: built decision framework, coached two people",
+        "Outcome: 12% discount reduction, NPS stable, handled underperformance",
+        "Quote: 'Discount rate dropped 12% while NPS held steady'",
+        "Follow-up: addressed underperformance directly, created team leverage"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate owned team-level outcome by creating a repeatable framework and addressing underperformance. Quote ties margin improvement directly to coaching actions. Handling the second underperformer shows willingness to make personnel decisions. Biggest strength is creating leverage through process and people development rather than individual heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was giving away too much. I told them to stop discounting so much and sent an email with the policy."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone change behavior?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few did but others kept doing it. I had to approve every exception after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: team discount issue",
+        "Action: sent policy email and required personal approval",
+        "Outcome: inconsistent behavior change, created bottleneck",
+        "Quote: 'I told them to stop discounting so much'",
+        "Follow-up: no coaching or framework, created manager dependency"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Candidate relied on directive and personal approval rather than building team capability. No evidence of developing people or creating scalable process. Biggest gap is failure to improve team judgment, resulting in ongoing manager bottleneck instead of leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a choice between raising prices on a flagship product or cutting support headcount. I ran scenario modeling showing customer churn risk and chose a smaller price increase paired with self-service tools."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Churn stayed flat, support costs dropped 22% over 18 months, and we reinvested savings into new features that increased ARPU."
+        }
+      ],
+      "raiseNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: pricing vs support trade-off at business level",
+        "Action: scenario modeling, chose price increase + self-service investment",
+        "Outcome: flat churn, 22% support cost reduction, ARPU growth",
+        "Quote: 'Churn stayed flat, support costs dropped 22% over 18 months'",
+        "Follow-up: long-term thinking, reinvestment of savings"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate made a high-ambiguity trade-off using modeling and protected both customer experience and business health. Quote shows multi-year outcome with reinvestment into growth. Biggest strength is strategic judgment that turned a cost pressure into a customer and revenue positive cycle rather than a short-term fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to cut costs so we raised prices across the board. Customers complained but most stayed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the business over time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Revenue went up short-term but we lost some enterprise deals the next year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: balance customer vs business needs",
+        "Situation: cost pressure requiring price action",
+        "Action: broad price increase without modeling or alternatives",
+        "Outcome: short-term revenue but later enterprise losses",
+        "Quote: 'Customers complained but most stayed'",
+        "Follow-up: no long-term view or mitigation plan"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Decision was reactive and lacked strategic alternatives or customer impact modeling. Quote reveals acceptance of downstream enterprise loss without corrective action. Biggest gap is absence of long-term thinking and failure to turn the constraint into a sustainable business advantage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Quantifies trade-off with data",
+      "junior": "Checks usage logs before exception",
+      "senior": "Builds cost model and retention forecast",
+      "manager": "Tracks team discount rate and NPS together",
+      "exec": "Runs multi-year scenario modeling"
+    },
+    {
+      "signal": "Creates leverage beyond self",
+      "junior": "Logs case for team FAQ update",
+      "senior": "Influences two teams to pilot",
+      "manager": "Builds framework and coaches others",
+      "exec": "Reinvests savings into product growth"
+    },
+    {
+      "signal": "Handles underperformance",
+      "junior": "N/A at this scope",
+      "senior": "N/A",
+      "manager": "Coaches two people, moves one out",
+      "exec": "N/A"
+    },
+    {
+      "signal": "Thinks in customer lifetime value",
+      "junior": "Offers extension that leads to upgrade",
+      "senior": "Phased rollout protects renewal",
+      "manager": "Holds NPS steady while cutting discounts",
+      "exec": "Flat churn plus ARPU increase"
+    },
+    {
+      "signal": "Avoids heroics or bottlenecks",
+      "junior": "Seeks manager input first time",
+      "senior": "Uses data instead of pressure",
+      "manager": "Creates process instead of approving every case",
+      "exec": "Avoids blunt cost cuts"
+    }
+  ],
+  "kind": "lp"
+}

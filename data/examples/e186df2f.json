@@ -1,0 +1,261 @@
+{
+  "question": "Tell me about a time when you made a bad decision. What was the impact of that decision? What did you learn? How have you applied what you learned?",
+  "competency": "Are Right, A Lot",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I chose the wrong data structure for a feature that needed frequent lookups. It caused the feature to be slow in testing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had to delay the launch by three days to rewrite it. My manager had to help me fix it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn and how have you used it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I learned to check performance requirements first. Now I always write a quick benchmark before picking structures and ask a teammate to review the choice."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Chose wrong data structure for lookups",
+        "Impact: 3-day delay, needed manager help to fix",
+        "Quote: \"Now I always write a quick benchmark before picking structures\"",
+        "Follow-up: How did you change your process? - Now asks teammate for review on choices"
+      ],
+      "raiseFeedback": "The candidate owned a narrow technical choice that caused a short delay. They described the concrete impact and the specific process change they made afterward. The story stays within individual scope, which is appropriate for junior level. The learning is actionable and repeatable rather than abstract. This raises the bar for Are Right, A Lot at the junior level because it shows quick incorporation of feedback on their own work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked the wrong approach on a task once and it didn't work out well."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened and what did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "The task took longer than expected. I learned I should have asked more questions earlier."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Vague story about picking wrong approach",
+        "Impact: \"took longer than expected\"",
+        "Quote: \"I learned I should have asked more questions earlier\"",
+        "Follow-up: Can you give a specific example? - Still stayed high-level, no concrete change described"
+      ],
+      "lowerFeedback": "The answer remained high-level with no measurable impact or clear before-and-after behavior. The candidate did not show they actually changed how they work after the mistake. At junior level this lowers the bar because the competency requires evidence of learning from concrete feedback on individual work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to build a custom retry layer instead of using the existing library our other teams used."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two services we handed off had inconsistent behavior and the on-call team spent extra time debugging. We had to deprecate the custom layer after six weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how you decide now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now require a short doc comparing existing solutions before any new abstraction. Two other teams adopted the same check and reduced similar incidents."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Built custom retry instead of shared library",
+        "Impact: inconsistent behavior across services, extra on-call load, six-week deprecation",
+        "Quote: \"Two other teams adopted the same check\"",
+        "Follow-up: How did you influence others? - Required comparison doc before new abstractions"
+      ],
+      "raiseFeedback": "The candidate described a decision with cross-team effects and quantified the operational cost. They then introduced a lightweight process that other teams voluntarily adopted. This meets senior expectations for Are Right, A Lot by showing both personal correction and influence without authority. The example stays grounded and avoids claiming heroic recovery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once chose a design that later needed rework after feedback from another team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact and what did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had to update the design. I try to get input earlier now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Chose design needing later rework",
+        "Impact: had to update the design",
+        "Quote: \"I try to get input earlier now\"",
+        "Follow-up: Did any other teams change their process? - No evidence of broader application"
+      ],
+      "lowerFeedback": "The story lacks specific metrics or cross-team reach. The learning is stated but not shown to have been applied beyond the candidate themselves. At senior level this lowers the bar because the competency expects evidence of influence on how decisions are made more widely."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team chose to keep an underperforming vendor after an initial review showed marginal gains."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We missed our quarterly reliability target by 12 percent and two engineers spent significant time on workarounds."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the learning on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I introduced a required vendor scorecard reviewed by two peers before renewal. The next two vendor decisions used the scorecard and both were reversed early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Kept underperforming vendor after marginal review",
+        "Impact: missed reliability target by 12%, extra engineer time on workarounds",
+        "Quote: \"The next two vendor decisions used the scorecard and both were reversed early\"",
+        "Follow-up: How did you develop the team? - Required peer-reviewed scorecard before renewals"
+      ],
+      "raiseFeedback": "The candidate owned a team-level decision with clear business impact and created a repeatable mechanism that improved later decisions. The example shows both accountability for the outcome and leverage through process. This raises the bar at manager level for Are Right, A Lot by demonstrating how the leader changed how the team evaluates options.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We stayed with a vendor too long and it affected some metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the team learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now review vendors more carefully."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Stayed with vendor too long",
+        "Impact: affected some metrics",
+        "Quote: \"We now review vendors more carefully\"",
+        "Follow-up: Did you change any team process? - No specific mechanism described"
+      ],
+      "lowerFeedback": "The answer gives no measurable impact and no concrete change to how the team makes decisions. At manager level this lowers the bar because the competency requires showing how the leader creates leverage so the team makes better decisions going forward."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We committed to a multi-year platform migration based on optimistic adoption forecasts."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "After 18 months only 30 percent of teams had migrated and we were burning cash on parallel systems. We had to pause the program and reset priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how the org decides on large bets?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now require staged funding tied to adoption gates and an explicit exit trigger. Three subsequent platform efforts used the model and two were stopped early with lower sunk cost."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Committed to multi-year migration on optimistic forecasts",
+        "Impact: 18 months, only 30% adoption, parallel-system costs, program paused",
+        "Quote: \"Three subsequent platform efforts used the model and two were stopped early\"",
+        "Follow-up: How did this affect org strategy? - Introduced staged funding with adoption gates and exit triggers"
+      ],
+      "raiseFeedback": "The candidate described a high-ambiguity, multi-year decision with clear financial and strategic cost. They then installed an org-level decision framework that changed how later bets were funded. This raises the bar at exec level for Are Right, A Lot by showing long-term thinking and institutional learning rather than one-off recovery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We moved forward on a large initiative that didn't deliver as expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the organization learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "We are more careful with big bets now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision...",
+        "Large initiative didn't deliver as expected",
+        "Impact: not quantified",
+        "Quote: \"We are more careful with big bets now\"",
+        "Follow-up: Did you change any decision process at scale? - No mechanism or adoption data provided"
+      ],
+      "lowerFeedback": "The example stays vague and offers no evidence of a durable change to how the organization evaluates strategic choices. At exec level this lowers the bar because the competency requires demonstrating leverage through altered decision frameworks and measurable reduction in future risk."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of mistake",
+      "junior": "Names specific technical choice and delay",
+      "senior": "Names cross-team inconsistency and on-call cost",
+      "manager": "Names missed team target and engineer time",
+      "exec": "Names 18-month program pause and parallel costs"
+    },
+    {
+      "signal": "Depth of reflection",
+      "junior": "Added benchmark step and peer review",
+      "senior": "Required comparison doc before abstractions",
+      "manager": "Created peer-reviewed vendor scorecard",
+      "exec": "Installed staged funding with adoption gates"
+    },
+    {
+      "signal": "Evidence of application",
+      "junior": "Used on next personal tasks",
+      "senior": "Two other teams adopted the check",
+      "manager": "Next two vendor decisions reversed early",
+      "exec": "Three later efforts used model, two stopped early"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature",
+      "senior": "Multiple services",
+      "manager": "Team vendor choices",
+      "exec": "Org-level platform bets"
+    },
+    {
+      "signal": "Avoids blame",
+      "junior": "Owns the data-structure choice",
+      "senior": "Owns the custom-layer decision",
+      "manager": "Owns keeping the vendor",
+      "exec": "Owns the optimistic forecast commitment"
+    }
+  ],
+  "kind": "lp"
+}

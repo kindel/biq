@@ -1,0 +1,221 @@
+{
+  "question": "Give an example of delivering difficult or bad news to a stakeholder, client, or team member.",
+  "competency": "Communication",
+  "principle": "Communication",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I missed a small deadline on a bug fix due to underestimating the scope. I told my manager the same day, explained the root cause, and offered a revised timeline with what I would do differently."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction and outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "She appreciated the heads-up early. We adjusted the sprint and I documented the estimation mistake so the team could use it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Missed bug-fix deadline; told manager same day with root cause and revised plan",
+        "Quote: 'I explained what I would do differently next time'",
+        "Follow-up: Manager appreciated early notice; outcome was adjusted sprint and shared learning"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a local miss and surfaced it promptly with a concrete plan. The quote shows they focused on the fix rather than excuses. This matches the level expectation of individual ownership and coachability. The story stayed scoped to one task with visible follow-through. Biggest strength is the immediate transparency that prevented larger surprises.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to tell the stakeholder the feature would be late but I waited until the day before the deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you frame it and what happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just said it was delayed and gave the new date. They were unhappy but accepted it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Delayed telling stakeholder until day before",
+        "Quote: 'I just said it was delayed and gave the new date'",
+        "Follow-up: No prep or mitigation offered; stakeholder unhappy but accepted"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate waited until the last moment, which removed any chance for the stakeholder to adjust. The framing was purely transactional with no explanation or ownership of the delay. This shows weak individual accountability. The story lacks any learning or adjustment after the fact. Biggest gap is absence of proactive communication on a simple individual task."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team dependency slipped and would delay two other squads. I scheduled a joint meeting, shared the data on the slip, and proposed two mitigation options with trade-offs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics or follow-up did you track?"
+        },
+        {
+          "role": "candidate",
+          "text": "We picked the option that preserved the critical path. I sent a written summary and checked in weekly until the dependency was resolved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Cross-team dependency slip affecting two squads; called joint meeting with data and two options",
+        "Quote: 'I proposed two mitigation options with trade-offs'",
+        "Follow-up: Chose critical-path option, sent written summary, weekly check-ins"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used data and options to influence without authority across teams. The quote shows they presented trade-offs rather than a single answer. Follow-up included written artifacts and sustained coordination. This demonstrates the expected cross-team impact and clarity. Biggest strength is turning a bad-news moment into a structured decision with visible ownership of the outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I emailed the other team that our part was delayed and hoped they would figure it out."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you discuss options or track impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just sent the email and moved on to my next task."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Emailed other team about delay without discussion or options",
+        "Quote: 'I just sent the email and moved on'",
+        "Follow-up: No options presented; no tracking of downstream impact"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate relied on a one-way email instead of live coordination across teams. No options or trade-offs were offered, missing the influence-without-authority expectation. The story shows no follow-through or metric on downstream effect. This reflects purely local thinking. Biggest gap is lack of structured communication that would have helped multiple teams adapt."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my engineers missed a key commitment to a partner team. I had the engineer join the call so they could own the update, then I outlined the recovery plan and how we would prevent recurrence."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineer's development?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the call I coached them on escalation timing and had them present the post-mortem to the team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Engineer missed partner commitment; brought engineer on call to own it and presented recovery plan",
+        "Quote: 'I had the engineer join the call so they could own the update'",
+        "Follow-up: Coached on escalation and had them run the post-mortem"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used the moment to develop the engineer while still protecting the partner relationship. The quote illustrates deliberate delegation of ownership. Follow-up included coaching and a visible learning loop for the team. This shows leverage through the team rather than heroics. Biggest strength is balancing accountability with development in a high-stakes update.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the partner team myself that the work would slip and reassigned the task to someone else on my team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the original engineer learn anything from it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I handled it to keep things moving."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Told partner team directly and reassigned the work",
+        "Quote: 'I handled it to keep things moving'",
+        "Follow-up: No coaching or ownership given to the engineer"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate removed the engineer from the conversation entirely, missing a development opportunity. The approach was purely transactional with no team leverage. The story shows no post-incident learning or process change. This reflects manager-as-hero rather than multiplier. Biggest gap is failure to use the bad-news moment to build capability in the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to deprioritize a major product line that affected 30% of revenue. I briefed the board with scenario analysis, customer impact data, and a three-year reallocation plan before making the announcement."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board approved the shift. We redeployed the team and hit the new growth targets within 18 months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Deprioritized product line worth 30% revenue; briefed board with scenarios and multi-year plan",
+        "Quote: 'I briefed the board with scenario analysis and customer impact data'",
+        "Follow-up: Board approved; team redeployed and hit new targets in 18 months"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate framed a high-ambiguity strategic decision with clear trade-offs and long-term planning. The quote shows use of data at board level before external communication. The outcome reflects sustained business impact rather than a single announcement. This demonstrates org-level judgment. Biggest strength is converting a painful cut into a coherent multi-year pivot with measurable results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I announced the product cancellation in an all-hands and said we would share more details later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you prepare leadership and handle the fallout?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on the announcement itself and let the teams manage the details afterward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of delivering difficult or bad news...",
+        "Announced product cancellation in all-hands with no prior leadership alignment",
+        "Quote: 'I focused on the announcement itself'",
+        "Follow-up: No scenario planning or follow-through described"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate delivered the news without prior alignment or strategic framing for leadership. No trade-offs or long-term plan were presented. The story treats the announcement as an endpoint rather than the start of execution. This lacks the strategic judgment expected at this level. Biggest gap is absence of preparation that would have reduced organizational shock and drift."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Timing of disclosure",
+      "junior": "Raises when same-day; lowers when day-before",
+      "senior": "Raises when proactive with data; lowers when one-way email",
+      "manager": "Raises when used for coaching; lowers when manager owns it alone",
+      "exec": "Raises when pre-briefed leadership; lowers when surprise all-hands"
+    },
+    {
+      "signal": "Framing and options",
+      "junior": "Raises with simple revised plan; lowers with bare statement",
+      "senior": "Raises with trade-offs across teams; lowers with no mitigation",
+      "manager": "Raises when engineer owns part; lowers when purely transactional",
+      "exec": "Raises with scenario analysis; lowers with no long-term plan"
+    },
+    {
+      "signal": "Follow-through",
+      "junior": "Raises with documented learning; lowers with none",
+      "senior": "Raises with written summary and check-ins; lowers with move-on",
+      "manager": "Raises with coaching loop; lowers with no development",
+      "exec": "Raises with measurable redeployment; lowers with announcement-only"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task",
+      "senior": "Cross-team dependency",
+      "manager": "Team member + partner",
+      "exec": "Org revenue line"
+    },
+    {
+      "signal": "Leverage shown",
+      "junior": "Personal ownership",
+      "senior": "Influence without authority",
+      "manager": "Develops others",
+      "exec": "Strategic reallocation"
+    }
+  ],
+  "kind": "competency"
+}

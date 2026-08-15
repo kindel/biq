@@ -1,0 +1,223 @@
+{
+  "question": "Tell me about a specific metric you have used to identify a need for a change in your department. Did you create the metric or was it already available? How did this and other information influence the change? What was the outcome of this change?",
+  "competency": "Dive Deep",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tracked average time to close internal support tickets for my own queue. The metric wasn't standard so I pulled the data from our ticketing tool each week and calculated it manually. I noticed it spiked after a new tool rollout, so I dug into the ticket comments and found the new UI caused repeated login steps. I proposed a one-page cheat sheet to the team lead and the average time dropped from 4 days to 2.5 days over the next month."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you validate the data was accurate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I cross-checked ten random tickets against the raw logs to make sure my formula matched what actually happened."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a specific metric...",
+        "Created own weekly ticket close time metric from raw data",
+        "Spotted spike after tool change, analyzed comments for root cause",
+        "Outcome: cheat sheet reduced time 4d to 2.5d",
+        "Quote: \"I pulled the data... and calculated it manually\"",
+        "Follow-up: validated via manual cross-check of 10 tickets"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for junior. Candidate created and maintained their own metric rather than relying on dashboards, isolated the root cause through comment review, and showed a measurable local improvement. The manual validation step demonstrates care for data accuracy at their scope. Biggest strength is taking ownership of measurement instead of waiting for someone else to surface the signal.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a dashboard that showed ticket volume. It was already there so I didn't create anything. The numbers looked high one quarter so the manager asked us to work faster. I think volume went down after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the metric actually measure and how did you connect it to a specific change?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just total tickets opened. I'm not sure exactly which change caused it to drop."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a specific metric...",
+        "Used pre-existing volume dashboard only",
+        "No personal analysis or root cause work described",
+        "Outcome described as \"I think volume went down\"",
+        "Quote: \"It was already there so I didn't create anything\"",
+        "Follow-up: unable to link metric to specific change or verify accuracy"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for junior. Candidate stayed at the surface of an existing dashboard without creating or refining any metric, offered no root-cause analysis, and could not connect the data to a concrete change or outcome. The lack of personal ownership over measurement is the core gap at this level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our on-call paging rate per service was trending up but no one owned the metric. I built a weekly query that normalized pages by deployment count and service ownership. The data showed two services accounted for 60% of pages despite low deployment volume. I worked with the owning teams to add circuit breakers and the normalized rate fell 35% over two quarters while deployment velocity stayed flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "What other signals did you check before concluding the pages were actionable?"
+        },
+        {
+          "role": "candidate",
+          "text": "I also pulled error budget consumption and customer ticket correlation to confirm the pages were real toil and not false positives."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a specific metric...",
+        "Created normalized paging rate metric across services",
+        "Identified two services driving 60% of pages",
+        "Outcome: 35% reduction in normalized rate, velocity unchanged",
+        "Quote: \"I built a weekly query that normalized pages by deployment count\"",
+        "Follow-up: added error budget and ticket correlation checks"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for senior. Candidate defined a new normalized metric, isolated the highest-impact services, and drove cross-team changes with sustained results. The additional correlation checks show they went beyond the first signal. Biggest strength is turning raw page data into a decision-making tool that influenced multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The existing on-call dashboard showed rising pages. I flagged it in a meeting and the teams reduced some alerts. The number came down after a few weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you create or refine any metric, or look at correlations?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just pointed at the existing chart. I didn't have time to build anything new."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a specific metric...",
+        "Relied solely on pre-existing dashboard",
+        "No new analysis or normalization performed",
+        "Outcome stated as \"the number came down\"",
+        "Quote: \"I just pointed at the existing chart\"",
+        "Follow-up: no evidence of deeper investigation or cross-checks"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for senior. Candidate deferred entirely to an existing dashboard, performed no additional analysis or metric refinement, and could not demonstrate how their input drove the change. At senior level this reads as passive observation rather than deep ownership of the data."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team's escaped defect rate to production was climbing. I created a metric that tracked defects per engineer-week and segmented by review thoroughness. The data revealed that teams with <70% review coverage had 3x higher escapes. I worked with tech leads to adjust staffing so every change received two reviews and the escape rate dropped 40% over the next release cycle while headcount stayed flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback on the review policy?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the per-engineer data in 1:1s so leads could see the impact on their own people rather than imposing a top-down rule."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a specific metric...",
+        "Built defects-per-engineer-week metric segmented by review coverage",
+        "Found <70% coverage drove 3x escapes",
+        "Outcome: 40% drop in escapes, headcount flat",
+        "Quote: \"I created a metric that tracked defects per engineer-week\"",
+        "Follow-up: used data in 1:1s to gain buy-in from leads"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for manager. Candidate built a team-level metric, surfaced a clear lever (review coverage), and used the data to coach leads rather than mandate change. The sustained 40% reduction with flat headcount shows leverage through the team. Biggest strength is connecting metric insight directly to people-management actions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Defect numbers were high so I told the team to review more code. The numbers improved after I reminded them a few times."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metric did you use and how did it guide your decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at the monthly defect report the org already produced. I didn't build anything new."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a specific metric...",
+        "Used only the existing monthly defect report",
+        "No segmentation or new analysis described",
+        "Outcome: \"numbers improved after I reminded them\"",
+        "Quote: \"I looked at the monthly defect report the org already produced\"",
+        "Follow-up: no evidence of data-driven coaching or metric refinement"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for manager. Candidate relied on an org-level report without creating or tailoring any metric for their team, offered no analysis of root causes, and defaulted to reminders instead of using data to develop leads. The gap is lack of personal ownership over measurement at the team level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer churn was rising in our mid-market segment. I sponsored a metric that combined usage depth, support ticket velocity, and renewal probability scores at the account level. The analysis showed that accounts with support response times over 48 hours had 2.8x higher churn. I reallocated two headcount from the general queue to a dedicated mid-market response pod. Churn in that segment fell 22% within two quarters while overall support costs remained flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider before moving the headcount?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled the impact on enterprise accounts and set a 30-day checkpoint to rebalance if their response times degraded."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a specific metric...",
+        "Sponsored account-level churn prediction metric combining usage, tickets, and probability",
+        "Identified >48h response as 2.8x churn driver",
+        "Outcome: 22% churn reduction in segment, costs flat",
+        "Quote: \"I sponsored a metric that combined usage depth, support ticket velocity, and renewal probability scores\"",
+        "Follow-up: modeled trade-offs and set checkpoint before reallocating headcount"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for exec. Candidate commissioned a composite metric at the business-segment level, used it to justify a structural change, and protected the decision with explicit trade-off modeling. The 22% churn reduction with flat costs demonstrates org-level leverage. Biggest strength is strategic use of data to reallocate resources while managing downside risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Churn looked high in the reports so we asked support to answer tickets faster. The segment churn improved after a quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metric drove the decision and what analysis supported the headcount move?"
+        },
+        {
+          "role": "candidate",
+          "text": "We used the standard churn dashboard. I didn't commission any new analysis."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a specific metric...",
+        "Used only the standard churn dashboard",
+        "No new composite metric or segmentation performed",
+        "Outcome: \"churn improved after a quarter\"",
+        "Quote: \"We used the standard churn dashboard\"",
+        "Follow-up: no evidence of trade-off analysis or long-term metric ownership"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for exec. Candidate defaulted to existing dashboards without sponsoring deeper analysis, provided no evidence of modeling trade-offs, and described a generic \"ask them to work faster\" approach. At exec level this shows insufficient strategic engagement with the data."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Metric creation vs reuse",
+      "junior": "Raises: builds own weekly calculation; Lowers: uses only existing dashboard",
+      "senior": "Raises: normalizes pages by deployment; Lowers: points at existing chart",
+      "manager": "Raises: creates defects-per-engineer-week; Lowers: uses monthly org report",
+      "exec": "Raises: sponsors composite account metric; Lowers: uses standard churn dashboard"
+    },
+    {
+      "signal": "Depth of root-cause analysis",
+      "junior": "Raises: reviews ticket comments for UI steps; Lowers: no root cause work",
+      "senior": "Raises: adds error budget and ticket correlation; Lowers: no additional signals checked",
+      "manager": "Raises: segments by review coverage; Lowers: no segmentation",
+      "exec": "Raises: models response time vs churn multiplier; Lowers: no new analysis"
+    },
+    {
+      "signal": "Influence on change and outcome measurement",
+      "junior": "Raises: 4d to 2.5d local improvement; Lowers: vague \"volume went down\"",
+      "senior": "Raises: 35% normalized reduction, velocity flat; Lowers: \"number came down\"",
+      "manager": "Raises: 40% escape drop, headcount flat via leads; Lowers: \"reminded them\"",
+      "exec": "Raises: 22% segment churn drop, costs flat with checkpoint; Lowers: generic improvement claim"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,261 @@
+{
+  "question": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I noticed our test data setup took 45 minutes every morning. I wrote a small Python script that pulled from an existing internal API and cached the common fixtures locally."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide this was worth building versus just asking the team to improve the existing setup?"
+        },
+        {
+          "role": "candidate",
+          "text": "I timed it for a week, showed the numbers in standup, and got two other engineers to try the script. It cut setup to under five minutes for anyone who used it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: novel idea with business impact",
+        "Built local cache script after timing own workflow",
+        "Validated with two peers before sharing",
+        "Quote: \"cut setup to under five minutes\"",
+        "Follow-up: why build vs escalate - showed data first, then iterated"
+      ],
+      "raiseFeedback": "The candidate described a small, self-initiated automation that directly reduced their daily friction. They measured the time before and after and got peers to adopt it without being asked. The idea was novel in their immediate context because no one else had packaged the fixtures that way. They showed ownership by validating the problem themselves rather than waiting for a ticket. The impact stayed local, which is appropriate for the level. Biggest strength is the habit of measuring before building.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I suggested we use feature flags because I saw it on a podcast. The team added them and it helped with releases."
+        },
+        {
+          "role": "interviewer",
+          "text": "What part did you actually do versus what the team already had planned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought it up in a meeting. Someone else implemented the library."
+        }
+      ],
+      "lowerNotes": [
+        "Q: novel idea with business impact",
+        "Idea came from external podcast, no original framing",
+        "Only raised the topic, no measurement or follow-through",
+        "Quote: \"someone else implemented the library\"",
+        "Follow-up: ownership - candidate could not describe their own contribution beyond mentioning it"
+      ],
+      "lowerFeedback": "The candidate presented an idea they had heard elsewhere and did not adapt or measure it for their own situation. They could not articulate any personal work beyond suggesting it in a meeting. No evidence of simplification or invention at their level. The outcome was attributed to the team without showing the candidate's role in making it happen. This lowers the bar on Invent and Simplify because the action stayed at the level of passing along an external suggestion."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our two services were duplicating customer profile logic. I proposed we extract a shared profile service and deprecate the duplicate paths over two quarters."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a migration plan with rollback steps, ran a joint design review, and tracked duplication metrics weekly until both teams could delete their copies."
+        }
+      ],
+      "raiseNotes": [
+        "Q: novel idea with business impact",
+        "Proposed shared profile service to remove duplication",
+        "Drove adoption via migration plan and joint reviews",
+        "Quote: \"tracked duplication metrics weekly until both teams could delete their copies\"",
+        "Follow-up: influence - used data and rollback safety to reduce resistance"
+      ],
+      "raiseFeedback": "The candidate identified duplicated work across teams and created a concrete plan to consolidate it. They drove the change by producing a migration path and metrics that made the benefit visible to both sides. The novelty was in treating profile data as a single source rather than allowing continued divergence. Cross-team coordination without authority is expected at this level and was demonstrated. The biggest strength is the combination of technical simplification with a practical rollout that other teams actually followed.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I decided we should rewrite the checkout flow in React because the old one was slow."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data showed the rewrite would be better than incremental fixes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had some complaints about load time. The rewrite took six months and we eventually shipped it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: novel idea with business impact",
+        "Chose full rewrite with limited before/after data",
+        "No cross-team coordination described",
+        "Quote: \"we eventually shipped it\"",
+        "Follow-up: decision quality - candidate relied on anecdotal complaints rather than measured trade-offs"
+      ],
+      "lowerFeedback": "The candidate defaulted to a large rewrite without first quantifying the problem or exploring smaller simplifications. They did not show evidence of influencing the other teams involved or measuring impact before committing the time. The story stayed at the level of personal preference rather than a data-driven simplification. This lowers the bar because senior engineers are expected to reduce scope and coordinate before proposing large changes."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "My team was spending 30% of capacity on manual reporting. I created a self-serve dashboard program where each engineer owned one report and we retired the rest."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle engineers who resisted the extra work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied it to promotion criteria and had the most senior engineer on the team model the first dashboard. After two weeks the others saw the time savings and volunteered the rest."
+        }
+      ],
+      "raiseNotes": [
+        "Q: novel idea with business impact",
+        "Shifted manual reporting to self-serve ownership model",
+        "Used promotion tie-in and senior modeling to drive adoption",
+        "Quote: \"after two weeks the others saw the time savings\"",
+        "Follow-up: handling resistance - leveraged existing incentives instead of mandates"
+      ],
+      "raiseFeedback": "The manager created a structural change that reduced recurring team toil by reassigning ownership. They used team incentives and visible modeling rather than top-down orders. The novelty was in making reporting a distributed, career-linked responsibility instead of centralized work. This produced leverage because the team continued to maintain the dashboards after the initial push. The biggest strength is the way the change scaled beyond the manager's direct involvement.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the team to stop doing weekly status reports and just use the project tool."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the information the stakeholders needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few people complained but we stopped the reports. I think it saved time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: novel idea with business impact",
+        "Stopped reports without replacement process",
+        "No measurement of stakeholder impact",
+        "Quote: \"a few people complained but we stopped\"",
+        "Follow-up: team leverage - decision created downstream work for others"
+      ],
+      "lowerFeedback": "The manager removed a process without designing a substitute that preserved the needed information flow. No data was collected on whether stakeholders still received what they required. The change reduced visible team effort but shifted the burden elsewhere. This lowers the bar on Invent and Simplify because managers are expected to create sustainable leverage, not just eliminate visible work."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were losing deals because pricing required a custom quote every time. I decided to publish public, usage-based pricing and let customers self-serve."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you confident the change would not hurt revenue?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a six-week pilot with a segment of prospects, tracked win rate and average deal size, then rolled it out once the data showed no drop in either metric."
+        }
+      ],
+      "raiseNotes": [
+        "Q: novel idea with business impact",
+        "Moved from custom quotes to public usage-based pricing",
+        "Validated with pilot before full rollout",
+        "Quote: \"tracked win rate and average deal size\"",
+        "Follow-up: risk management - used controlled experiment to bound downside"
+      ],
+      "raiseFeedback": "The executive identified a structural sales friction and replaced it with a transparent, self-serve model. They protected the business by running a measurable pilot before committing the whole organization. The novelty was treating pricing as a product feature rather than a negotiated exception process. The approach created long-term leverage by removing sales and finance bottlenecks on every deal. The biggest strength is the combination of strategic simplification with disciplined validation at scale.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a novel idea you had or decision you made that had a big impact on your business. What was novel about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I decided we should enter the European market because competitors were there."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis supported the timing and approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "We saw their press releases and moved quickly. It took longer than expected to localize."
+        }
+      ],
+      "lowerNotes": [
+        "Q: novel idea with business impact",
+        "Market entry driven by competitor presence",
+        "No pilot or localized metrics described",
+        "Quote: \"it took longer than expected to localize\"",
+        "Follow-up: strategic judgment - decision lacked original framing or risk controls"
+      ],
+      "lowerFeedback": "The executive followed competitors into a new market without a differentiated thesis or controlled validation. The story showed reactive timing rather than a novel simplification of the go-to-market approach. No evidence was given that the decision reduced long-term complexity or created leverage. This lowers the bar because executives are expected to originate strategies that others later copy, not mirror existing plays."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "local workflow",
+      "senior": "cross-team duplication",
+      "manager": "team process ownership",
+      "exec": "business model friction"
+    },
+    {
+      "signal": "Evidence of measurement",
+      "junior": "timed own task before/after",
+      "senior": "tracked duplication metrics",
+      "manager": "time savings visible after two weeks",
+      "exec": "pilot with win-rate and deal-size data"
+    },
+    {
+      "signal": "Novelty vs copying",
+      "junior": "packaged internal fixtures",
+      "senior": "single source of truth for profiles",
+      "manager": "reporting as distributed promotion work",
+      "exec": "pricing as self-serve product feature"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "shared with peers who adopted",
+      "senior": "joint design review with rollback",
+      "manager": "used promotion criteria and modeling",
+      "exec": "controlled pilot before rollout"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "script used by others on team",
+      "senior": "both teams deleted duplicate code",
+      "manager": "engineers continued maintaining dashboards",
+      "exec": "removed sales bottleneck on every deal"
+    }
+  ],
+  "kind": "lp"
+}

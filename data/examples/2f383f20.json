@@ -1,0 +1,237 @@
+{
+  "question": "Give me an example of how you have helped save costs or eliminate waste within your role or organization. What was the situation? What was the impact?",
+  "competency": "Frugality",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed we were spinning up test instances every day and forgetting to shut them down. I wrote a small script that tagged and auto-terminated anything over 8 hours. It cut our monthly test spend by about 12 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the before-and-after numbers in our standup and asked if anyone wanted to review the script. Two people gave feedback and then we rolled it out."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: noticed idle test instances on first project",
+        "Action: wrote auto-termination script, showed numbers in standup",
+        "Outcome: 12% reduction in monthly test spend",
+        "Quote: \"I showed the before-and-after numbers in our standup\"",
+        "Follow-up: How did you get buy-in? Candidate shared script and got two reviews before rollout"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified waste in their own work without being asked and delivered a measurable 12 percent reduction. The story shows ownership of a local problem and willingness to share the fix with teammates. Follow-up reveals they sought light feedback rather than forcing the change. Biggest gap is narrow scope, which is acceptable at this level but would need to grow.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told us to turn off instances at the end of the day so I started doing that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you measure anything or suggest any improvements?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just followed the instruction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: manager asked team to shut down instances",
+        "Action: followed the instruction",
+        "Outcome: no measurement or further action mentioned",
+        "Quote: \"I just followed the instruction\"",
+        "Follow-up: Did you measure or suggest improvements? Candidate had no data or initiative"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate treated the request as a task to complete rather than an opportunity to own or improve. No attempt to quantify impact or look for additional waste. At this level we still expect some curiosity about the work even if scope is small."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three teams each paying for separate monitoring tools. I pulled the usage data, ran a bake-off, and moved everyone onto one platform. We dropped two contracts and saved roughly 85k a year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the teams that liked their current tools?"
+        },
+        {
+          "role": "candidate",
+          "text": "I let each team keep one custom dashboard for 30 days, then showed them the consolidated view had the same data plus better support. Two teams switched early once they saw the cost numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: three teams on duplicate monitoring tools",
+        "Action: ran bake-off, consolidated to single platform",
+        "Outcome: eliminated two contracts, 85k annual savings",
+        "Quote: \"I pulled the usage data, ran a bake-off, and moved everyone onto one platform\"",
+        "Follow-up: How did you handle resistant teams? Candidate offered 30-day parallel period and used cost data to build consensus"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate saw duplication across teams, used data to drive consolidation, and delivered clear annual savings without authority over the other teams. Follow-up shows they addressed adoption friction instead of declaring victory on the contract change. Scope and influence are appropriate for the level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I found a cheaper vendor for the monitoring tool our team used and switched us over."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect any other teams or create longer-term savings?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just for our team. The other teams kept their tools."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: found cheaper vendor for own team tool",
+        "Action: switched the team",
+        "Outcome: local savings only, no cross-team impact",
+        "Quote: \"It was just for our team\"",
+        "Follow-up: Did this affect other teams? Candidate stayed within team boundaries"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Savings were real but remained inside one team with no attempt to look for duplication elsewhere. The candidate did not use their seniority to drive broader efficiency. At this level we expect evidence of influence beyond direct ownership."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our on-call rotation was burning out engineers and triggering unnecessary escalations. I changed the paging policy and added a 15-minute triage step before paging seniors. Over six months we reduced after-hours pages by 40 percent and cut overtime spend by 22k."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the team to adopt the new policy?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran the numbers with the on-call leads first, then held a retro where we walked through two real incidents under the old and new rules. The team voted to keep the triage step."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: excessive after-hours pages and burnout",
+        "Action: introduced 15-min triage before escalation",
+        "Outcome: 40% fewer pages, 22k overtime reduction in six months",
+        "Quote: \"I changed the paging policy and added a 15-minute triage step\"",
+        "Follow-up: How did you get adoption? Candidate involved leads first then ran retro with real incidents"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate improved both cost and team health by changing a process, not by adding headcount. They involved the team in the decision and sustained the change over six months. Follow-up shows they built buy-in rather than mandating the policy. This is leverage through process and people.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team to be more careful with after-hours pages and we saw some improvement."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process or data did you use to drive the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just asked them to think twice before paging. No formal change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: high after-hours pages",
+        "Action: told team to be more careful",
+        "Outcome: vague improvement, no measurement or process change",
+        "Quote: \"I just asked them to think twice before paging\"",
+        "Follow-up: What process or data? Candidate relied on verbal request only"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate addressed cost through a one-time request instead of creating a repeatable process or involving the team in designing the fix. No data or sustained mechanism was put in place. Managers are expected to create leverage beyond personal reminders."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were spending 4 million a year on three overlapping data platforms. I led a six-month evaluation with finance and each product area, then consolidated onto one platform with a two-year migration plan. We saved 1.8 million annually and freed two platform teams to work on revenue features instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on the migration timeline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the legacy systems live for an extra quarter for the two highest-revenue teams so they could finish a customer launch. That delayed 400k of savings but protected 12 million in bookings."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: 4M annual spend on three overlapping data platforms",
+        "Action: led cross-org evaluation and two-year consolidation",
+        "Outcome: 1.8M annual savings plus two teams redirected to revenue work",
+        "Quote: \"I led a six-month evaluation with finance and each product area\"",
+        "Follow-up: What trade-offs on timeline? Candidate delayed 400k savings to protect 12M in bookings"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate tackled a multi-million-dollar overlap with clear financial impact and protected revenue by making an explicit trade-off. The story shows strategic judgment on timing and cross-org alignment rather than pure cost cutting. Follow-up reveals they weighed short-term savings against business risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each team to cut 10 percent from their cloud budgets and we hit the target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide where the cuts would come from?"
+        },
+        {
+          "role": "candidate",
+          "text": "I left it to the teams. We just tracked the total number."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of how you have helped save costs or eliminate waste...",
+        "Situation: high cloud spend",
+        "Action: asked teams to cut 10 percent each",
+        "Outcome: hit target number, no platform or strategic change",
+        "Quote: \"I left it to the teams\"",
+        "Follow-up: How did you decide where cuts would come from? Candidate had no prioritization or trade-off analysis"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The approach was a blunt percentage cut with no analysis of platform overlap or business impact. The candidate did not use their position to drive structural change or protect revenue. At exec level we look for strategic decisions, not pass-through targets."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "local project or tool",
+      "senior": "multiple teams or vendors",
+      "manager": "team process and health",
+      "exec": "org-wide platform or multi-million spend"
+    },
+    {
+      "signal": "Quantified results",
+      "junior": "small percentage on own work",
+      "senior": "tens to low hundreds of k",
+      "manager": "tens of k plus team metrics",
+      "exec": "millions with revenue trade-offs"
+    },
+    {
+      "signal": "Initiative source",
+      "junior": "noticed in daily work",
+      "senior": "spotted duplication across teams",
+      "manager": "process redesign for team",
+      "exec": "strategic platform decision"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "shared script for feedback",
+      "senior": "offered parallel period with data",
+      "manager": "ran retro with real incidents",
+      "exec": "delayed savings to protect bookings"
+    },
+    {
+      "signal": "Leverage mechanism",
+      "junior": "personal script",
+      "senior": "bake-off and contract change",
+      "manager": "policy plus team involvement",
+      "exec": "migration plan and org alignment"
+    }
+  ],
+  "kind": "lp"
+}

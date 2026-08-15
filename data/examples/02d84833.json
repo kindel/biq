@@ -1,0 +1,286 @@
+{
+  "question": "Tell me about the most innovative thing you've done and why you thought it was innovative. Probe: that sounds evolutionary; tell me about something truly revolutionary. Ask for one or two more examples to see if it is a pattern.",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a small internal tool that auto-generated test data from our API schemas instead of manually copying JSON. It cut my test setup time from 30 minutes to 2."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "For a class project I wrote a simple parser that turned natural language descriptions into basic SQL queries. It wasn't production but it was the first time I'd seen something like that in our curriculum."
+        },
+        {
+          "role": "interviewer",
+          "text": "Give me one more example."
+        },
+        {
+          "role": "candidate",
+          "text": "I also added a one-line change to our logging library that let us filter sensitive fields at the source instead of post-processing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing you've done",
+        "Built schema-driven test data generator; 30min -> 2min",
+        "Quote: 'first time I'd seen something like that in our curriculum'",
+        "Follow-up (revolutionary): class project natural-language to SQL parser",
+        "Follow-up (pattern): logging filter at source"
+      ],
+      "raiseFeedback": "Raises the bar. Competency: Invent and Simplify. Junior candidate described a local tool that removed manual test data work and a class project parser that turned text into SQL. The pattern of spotting repetitive steps and replacing them with a small generator shows early invention. They owned the full loop from idea to measurable time save without needing senior direction. Biggest strength is the willingness to build something new even at individual scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we use a new charting library in our dashboard because it looked nicer than the old one."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "We upgraded the framework version across the repo which let us use some new features."
+        },
+        {
+          "role": "interviewer",
+          "text": "One more example."
+        },
+        {
+          "role": "candidate",
+          "text": "I refactored a function to be a bit cleaner."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing you've done",
+        "Suggested new charting library for looks",
+        "Quote: 'it looked nicer than the old one'",
+        "Follow-up (revolutionary): framework upgrade to unlock features",
+        "Follow-up (pattern): refactored one function to be cleaner"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency: Invent and Simplify. Junior candidate framed upgrades and cosmetic library swaps as innovation without showing original creation or simplification of a process. The answers stayed at the level of adopting existing tools rather than inventing a new approach. No evidence of identifying a hard problem and reducing its complexity. Biggest gap is lack of personal invention even at individual scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I created a shared change-data-capture service that let three teams stop polling our main database every minute and instead react to events."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "I designed a lightweight rules engine that non-engineers could use to route customer tickets without writing code, replacing a 400-line if-else block."
+        },
+        {
+          "role": "interviewer",
+          "text": "Give me one more example."
+        },
+        {
+          "role": "candidate",
+          "text": "I built a diff-based config validator that prevented bad deploys by comparing proposed changes against production invariants."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing you've done",
+        "Built CDC service eliminating polling for three teams",
+        "Quote: 'replacing a 400-line if-else block'",
+        "Follow-up (revolutionary): rules engine for non-engineers to route tickets",
+        "Follow-up (pattern): diff-based config validator"
+      ],
+      "raiseFeedback": "Raises the bar. Competency: Invent and Simplify. Senior candidate showed repeated invention of small systems that removed coordination overhead and eliminated brittle code. The rules engine directly simplified work for non-engineers while the CDC service created leverage across teams. Clear pattern of spotting duplicated effort and replacing it with a simpler abstraction. Biggest strength is consistent invention at team and cross-team scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I led the migration to a new message queue that gave us better throughput."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "We introduced feature flags so we could turn things on and off more safely."
+        },
+        {
+          "role": "interviewer",
+          "text": "One more example."
+        },
+        {
+          "role": "candidate",
+          "text": "I helped standardize our API error responses across services."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing you've done",
+        "Led migration to new message queue for throughput",
+        "Quote: 'gave us better throughput'",
+        "Follow-up (revolutionary): introduced feature flags",
+        "Follow-up (pattern): standardized API error responses"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency: Invent and Simplify. Senior candidate described adoption of known patterns and infrastructure migrations without evidence of original invention. The answers focus on following industry practice rather than creating a simpler solution to a unique problem. No clear simplification of complexity for others. Biggest gap is treating standard engineering work as innovation."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team built an internal platform that let product managers generate and A/B test new landing pages without engineering involvement, cutting launch time from weeks to days."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "I created a 'builder' role and trained two engineers to own the platform so the team could focus on core product instead of one-off requests."
+        },
+        {
+          "role": "interviewer",
+          "text": "Give me one more example."
+        },
+        {
+          "role": "candidate",
+          "text": "We invented a lightweight incident taxonomy that reduced mean time to resolution by giving on-call engineers a shared language for severity."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing you've done",
+        "Platform letting PMs launch pages without eng",
+        "Quote: 'trained two engineers to own the platform'",
+        "Follow-up (revolutionary): created builder role to free team capacity",
+        "Follow-up (pattern): incident taxonomy for shared language"
+      ],
+      "raiseFeedback": "Raises the bar. Competency: Invent and Simplify. Manager candidate showed invention of both a self-service platform and an organizational role that created lasting leverage. The taxonomy example demonstrates simplifying coordination across the team. Clear pattern of removing recurring work through systems and role design. Biggest strength is using invention to scale team output rather than personal heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reorganized the team into two squads to improve focus."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "We adopted OKRs so everyone knew the priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "One more example."
+        },
+        {
+          "role": "candidate",
+          "text": "I started weekly office hours to answer questions faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing you've done",
+        "Reorganized team into two squads",
+        "Quote: 'to improve focus'",
+        "Follow-up (revolutionary): adopted OKRs",
+        "Follow-up (pattern): started weekly office hours"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency: Invent and Simplify. Manager candidate presented standard org design and process changes as innovation without showing original simplification of work. The answers lack evidence of creating new mechanisms that removed complexity for the team. No pattern of invention that scales beyond basic management practices. Biggest gap is absence of novel approaches to team leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a self-serve analytics product that turned our top customers into resellers by letting them embed our reports in their own offerings."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "I restructured the entire engineering org around two platform teams whose only job was to remove the top five recurring developer pain points each quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Give me one more example."
+        },
+        {
+          "role": "candidate",
+          "text": "We created a public API strategy that shifted 30 percent of new feature requests into partner-built extensions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: most innovative thing you've done",
+        "Self-serve analytics turned customers into resellers",
+        "Quote: 'remove the top five recurring developer pain points each quarter'",
+        "Follow-up (revolutionary): restructured eng org around platform teams",
+        "Follow-up (pattern): public API strategy shifting feature requests to partners"
+      ],
+      "raiseFeedback": "Raises the bar. Competency: Invent and Simplify. Exec candidate described org-level inventions that changed how value was delivered and how the company scaled. The platform team mandate and API strategy both simplified internal and external complexity at business scale. Clear pattern of using structural invention to create new growth vectors. Biggest strength is strategic simplification that affects the entire company trajectory.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We invested in a new data warehouse to improve reporting speed."
+        },
+        {
+          "role": "interviewer",
+          "text": "That sounds evolutionary; tell me about something truly revolutionary."
+        },
+        {
+          "role": "candidate",
+          "text": "I pushed for a company-wide agile transformation."
+        },
+        {
+          "role": "interviewer",
+          "text": "One more example."
+        },
+        {
+          "role": "candidate",
+          "text": "We created a new VP role to own customer success."
+        }
+      ],
+      "lowerNotes": [
+        "Q: most innovative thing you've done",
+        "Invested in new data warehouse for reporting speed",
+        "Quote: 'improve reporting speed'",
+        "Follow-up (revolutionary): company-wide agile transformation",
+        "Follow-up (pattern): created new VP role for customer success"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency: Invent and Simplify. Exec candidate described infrastructure upgrades and standard org adjustments without evidence of original strategic invention. The answers rely on conventional moves rather than creating new models that simplify or expand the business. No pattern of high-leverage simplification at org scale. Biggest gap is lack of novel approaches that change the operating model."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of invention",
+      "junior": "Individual tool or script",
+      "senior": "Cross-team service or abstraction",
+      "manager": "Team process or role redesign",
+      "exec": "Org structure or business model"
+    },
+    {
+      "signal": "Simplification target",
+      "junior": "Own repetitive task",
+      "senior": "Team coordination overhead",
+      "manager": "Recurring team requests",
+      "exec": "Company-wide friction or growth constraint"
+    },
+    {
+      "signal": "Evidence of pattern",
+      "junior": "Two small personal examples",
+      "senior": "Three examples with measurable impact",
+      "manager": "Platform plus role change plus taxonomy",
+      "exec": "Platform teams plus API strategy plus customer reseller model"
+    },
+    {
+      "signal": "Revolutionary vs evolutionary",
+      "junior": "Class project parser vs library swap",
+      "senior": "Rules engine vs message queue migration",
+      "manager": "Self-serve PM platform vs squad split",
+      "exec": "Org restructure around pain points vs data warehouse"
+    }
+  ],
+  "kind": "lp"
+}

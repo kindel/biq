@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you saw a peer struggling and decided to step in and help. What was the situation? Why did you decide to step in? What actions did you take?",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate was stuck on a bug in our shared service that was blocking our sprint goal. I noticed after standup when they mentioned being on it for two days. I decided to step in because the delay would push the whole team back and I had some free cycles that day. I paired with them for an afternoon, reproduced the issue, and we found a config mismatch. We fixed it and I documented the steps so others wouldn't hit it again."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted you to offer instead of waiting for them to ask?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just assumed it was part of getting the sprint done. My manager had said earlier that we own the outcome as a team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: peer blocked on shared service bug for two days",
+        "Actions: offered pairing, reproduced issue, fixed and documented",
+        "Quote: \"I just assumed it was part of getting the sprint done\"",
+        "Outcome: sprint goal met, added runbook entry",
+        "Follow-up: Why offer unprompted? -> team outcome mindset"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Ownership competency tested via peer help on shared sprint work. Candidate described noticing a two-day block on a service bug, stepping in without being asked because \"we own the outcome as a team,\" pairing to fix a config issue, and adding documentation. This shows local ownership of team results rather than just individual tasks. The story stays within individual scope but demonstrates initiative and learning from the situation. Biggest strength is treating unassigned team risk as their own responsibility.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer on my project was behind on their part of the feature. I saw it in standup but didn't jump in right away because I had my own tickets. They eventually asked for help on a Friday and I spent a couple hours reviewing their code."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why wait until they asked?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to step on their work or assume they needed help. My focus was making sure my own deliverables were on track first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: peer behind on feature, visible in standup",
+        "Actions: waited, helped only after explicit ask on Friday",
+        "Quote: \"My focus was making sure my own deliverables were on track first\"",
+        "Outcome: helped with code review but after delay",
+        "Follow-up: Why wait? -> own tickets prioritized over team signal"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Ownership tested by whether candidate treats peer blockers as personal scope. Candidate saw the issue in standup but waited until asked because \"my focus was making sure my own deliverables were on track first.\" This frames help as extra rather than core to team delivery. The delay and conditional action show narrow ownership limited to assigned work. Biggest gap is absence of initiative on visible team risk."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer on another team was struggling to get their service changes approved because our API contract kept shifting. I saw the friction in a cross-team sync and decided to step in because the back-and-forth was slowing both roadmaps. I set up a short working session, proposed a stable interface version, and worked with them to align our teams on it. We also added a simple compatibility test so future changes would surface earlier."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from your own team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the data on review cycles and showed it would reduce our own support load. Two engineers on my team volunteered to help maintain the test."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: cross-team API churn blocking another team's delivery",
+        "Actions: initiated working session, stabilized contract, added compatibility test",
+        "Quote: \"showed it would reduce our own support load\"",
+        "Outcome: both roadmaps unblocked, test adopted",
+        "Follow-up: How get buy-in? -> used data to align own team"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Ownership tested through influence on cross-team friction without formal authority. Candidate identified API instability slowing another team, stepped in to run a working session, stabilized the contract, and drove a compatibility test that benefited both sides. The story includes using data to gain own-team support and reducing future support load. This demonstrates ownership of system-level outcomes beyond direct responsibilities. Biggest strength is turning a peer's blocker into a durable process improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed a peer on another team hitting issues with our shared library. I sent them a couple of links to internal docs and offered to answer questions if they got stuck again."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. They thanked me but kept running into the same problems. I was busy with my own launch so didn't follow up further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: peer hitting shared library issues",
+        "Actions: sent docs and offered to answer questions",
+        "Quote: \"I was busy with my own launch so didn't follow up further\"",
+        "Outcome: no lasting change, repeated issues",
+        "Follow-up: Did anything change? -> no follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Ownership tested by willingness to drive cross-team resolution. Candidate noticed repeated library issues but limited response to sending docs and an open offer, then stopped following up due to own launch. No attempt to address root cause or create leverage for the other team. The story stays at low-effort information sharing without ownership of the friction. Biggest gap is lack of sustained action on a visible cross-team problem."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my engineers was struggling to deliver a critical migration while also mentoring a new hire. I saw the risk to both the migration date and the new hire's ramp. I stepped in by reallocating part of the migration to another senior on the team and carving out dedicated pairing time for the new hire. I also adjusted the engineer's goals for the quarter so the mentoring work was explicitly recognized."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the engineer react to the reallocation?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were relieved. We talked about it in our 1:1 and agreed the split let them focus on quality mentoring, which was a growth area for them."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: direct report overloaded on migration plus mentoring",
+        "Actions: reallocated work, protected mentoring time, adjusted goals",
+        "Quote: \"agreed the split let them focus on quality mentoring\"",
+        "Outcome: migration on track, new hire ramp improved",
+        "Follow-up: Engineer reaction? -> relief and goal alignment"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Ownership tested through team outcome management and people development. Candidate noticed an engineer overloaded between migration and mentoring, stepped in to reallocate scope, protected dedicated mentoring time, and updated goals to recognize the work. The story shows proactive load balancing and turning a risk into a growth opportunity. This reflects ownership of both delivery and team health. Biggest strength is treating people development as a lever for team results rather than an add-on.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw one of my engineers falling behind on a project. I sent them a note suggesting they reach out to another teammate for help if needed and checked in at the next 1:1."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the project?"
+        },
+        {
+          "role": "candidate",
+          "text": "They got it done eventually but it slipped by a week. I didn't have bandwidth to dig in myself so I left it with them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: engineer behind on project",
+        "Actions: suggested asking teammate, checked in at 1:1",
+        "Quote: \"I didn't have bandwidth to dig in myself so I left it with them\"",
+        "Outcome: one-week slip, no manager intervention",
+        "Follow-up: What happened to project? -> slip accepted"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Ownership tested by intervention on team delivery risk. Candidate observed an engineer behind but responded only with a suggestion and a standard 1:1 check-in, then accepted the slip because of limited personal bandwidth. No reallocation or coaching occurred. The story shows delegation of the problem back to the individual rather than manager ownership of the outcome. Biggest gap is passive response to a visible team risk."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product teams were duplicating effort on similar infrastructure work because each was optimizing for their own OKRs. I saw the pattern in quarterly reviews and decided to step in because the combined spend was material and the divergence would create long-term support costs. I sponsored a small cross-org working group, set a shared goal to consolidate on one platform within the year, and shifted incentives so both teams were measured on the joint outcome. We ended up retiring one of the parallel efforts and freed up headcount for new initiatives."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle resistance from the teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the total cost and support burden visible in leadership reviews and let the teams propose the consolidation plan themselves. That gave them ownership of the solution."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: two teams duplicating infrastructure due to separate OKRs",
+        "Actions: sponsored working group, set joint goal, shifted incentives, retired duplicate effort",
+        "Quote: \"made the total cost and support burden visible in leadership reviews\"",
+        "Outcome: consolidated platform, freed headcount",
+        "Follow-up: Handle resistance? -> used data and let teams own solution"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Ownership tested through org-level resource and incentive alignment. Candidate identified duplicated infrastructure spend across two teams driven by misaligned OKRs, sponsored a working group, changed measurement to joint outcomes, and enabled retirement of one effort. The story includes using visibility in leadership reviews to reduce resistance and creating leverage through team-proposed solutions. This shows strategic ownership of org efficiency rather than heroics on a single project. Biggest strength is converting a structural misalignment into sustained capacity gain.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed two teams had overlapping projects during a planning review. I mentioned it to their directors and suggested they coordinate more closely."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did coordination improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "Somewhat. They had a few syncs but both projects continued in parallel. I had bigger priorities so didn't push further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you saw a peer struggling...",
+        "Situation: overlapping projects across teams",
+        "Actions: mentioned to directors, suggested coordination",
+        "Quote: \"I had bigger priorities so didn't push further\"",
+        "Outcome: parallel work continued with minimal syncs",
+        "Follow-up: Did coordination improve? -> limited follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Ownership tested by action on org-level duplication. Candidate flagged overlapping projects in planning but limited response to a suggestion to directors and stopped pushing once other priorities appeared. No incentive change or structural intervention occurred. The story treats the issue as a handoff rather than an owned org problem. Biggest gap is absence of sustained leverage on a visible inefficiency."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of intervention",
+      "junior": "individual task or sprint goal",
+      "senior": "cross-team process or contract",
+      "manager": "direct report load and goals",
+      "exec": "org incentives and duplicated spend"
+    },
+    {
+      "signal": "Initiative trigger",
+      "junior": "visible sprint risk",
+      "senior": "roadmap friction data",
+      "manager": "team delivery + people risk",
+      "exec": "quarterly review pattern"
+    },
+    {
+      "signal": "Follow-through",
+      "junior": "pair and document",
+      "senior": "working session plus test",
+      "manager": "reallocate and adjust goals",
+      "exec": "working group plus incentive shift"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "sprint goal met",
+      "senior": "both teams unblocked",
+      "manager": "migration on track + mentoring quality",
+      "exec": "platform retired and headcount freed"
+    },
+    {
+      "signal": "Lower bar pattern",
+      "junior": "wait for explicit ask",
+      "senior": "send info, no follow-up",
+      "manager": "suggest, accept slip",
+      "exec": "mention, move on to bigger priorities"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,229 @@
+{
+  "question": "Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+  "competency": "Conflict Resolution & Difficult Interpersonal Situations",
+  "principle": "Conflict Resolution & Difficult Interpersonal Situations",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was told to use a legacy logging library that made debugging slow. I ran a quick benchmark on our test data showing 3x slower error tracing, then asked my mentor if we could switch to the standard one for new code."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you showed the numbers?"
+        },
+        {
+          "role": "candidate",
+          "text": "My mentor agreed for the new module but said the rest of the service had to stay on the old one for now. I documented the decision and moved on."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate picked a small technical choice on their own task",
+        "Brought data instead of opinion, looped in mentor",
+        "Quote: \"I documented the decision and moved on.\"",
+        "Follow-up: Asked what happened after data was shown; accepted partial outcome"
+      ],
+      "raiseFeedback": "Raises the bar for Conflict Resolution at junior level. The candidate surfaced a concrete disagreement on their individual task by running a quick benchmark and sharing results with their mentor rather than escalating or ignoring the issue. They accepted the partial outcome and documented it, showing ownership of their work and coachability. This matches the expected scope for 0-2 years where local results and learning from feedback matter most. Biggest strength is using data to influence without overstepping authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought the logging policy was bad so I just used the new library anyway and told my lead later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "They made me revert it and I got a note in my review."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate bypassed policy without discussion",
+        "Only outcome mentioned was a negative review note",
+        "Quote: \"I just used the new library anyway\"",
+        "Follow-up: Asked how it turned out; no reflection on approach"
+      ],
+      "lowerFeedback": "Lowers the bar for Conflict Resolution at junior level. The candidate chose to ignore the stated policy and only informed their lead after the fact, resulting in a forced revert and negative feedback. No attempt was made to understand constraints or bring data forward beforehand. This shows weak ownership and limited coachability on a simple individual task. Biggest gap is treating disagreement as permission to act unilaterally rather than seeking alignment."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were using different retry policies on a shared service, causing inconsistent customer errors. I pulled metrics across both teams, proposed a single policy with a 48-hour migration plan, and got the owning team to adopt it after a short review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team worried about latency spikes so I ran a canary and shared the p99 numbers before they agreed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate identified cross-team inconsistency on retry logic",
+        "Used metrics and a canary to drive alignment",
+        "Quote: \"I ran a canary and shared the p99 numbers\"",
+        "Follow-up: Asked about resistance; showed influence without authority"
+      ],
+      "raiseFeedback": "Raises the bar for Conflict Resolution at senior level. The candidate noticed inconsistent retry policies across two teams, gathered cross-service metrics, and drove adoption of a single approach through a canary and data review. They handled pushback by running targeted experiments rather than escalating. This demonstrates the expected cross-team impact and influence without authority. Biggest strength is converting a disagreement into measurable alignment with minimal drama.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent an email to both teams saying their retry approach was wrong and listed why mine was better."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they kept their policy and I stopped following up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate broadcast opinion via email without data or plan",
+        "No follow-through after initial pushback",
+        "Quote: \"I sent an email... and I stopped following up\"",
+        "Follow-up: Checked outcome; shows lack of persistence"
+      ],
+      "lowerFeedback": "Lowers the bar for Conflict Resolution at senior level. The candidate sent a one-way email declaring their view superior but did not follow up or adapt when teams resisted. No metrics or incremental experiments were used to build agreement. This falls short of the cross-team influence expected at 3-7 years. Biggest gap is absence of sustained effort to resolve the disagreement."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team disagreed with a new performance review calibration process that felt too rigid. I collected anonymous feedback, met with the HR partner, and negotiated a pilot where we could add one narrative field per review."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your team respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They felt heard and the pilot improved calibration scores by 12% in our org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate turned team disagreement into structured feedback",
+        "Negotiated a limited pilot with HR",
+        "Quote: \"the pilot improved calibration scores by 12%\"",
+        "Follow-up: Asked about team reaction; tied to team outcome"
+      ],
+      "raiseFeedback": "Raises the bar for Conflict Resolution at manager level. The candidate took team concerns about a rigid review process, aggregated input, and worked with HR to run a targeted pilot that added flexibility. They measured the result and reported improved scores. This shows the ability to create leverage through the team while owning outcomes. Biggest strength is converting disagreement into a constructive process change rather than simply advocating upward.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team the new calibration process was company policy so we had to follow it and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you raise any of their concerns?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it wasn't worth the political capital."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate dismissed team input without escalation",
+        "Explicitly avoided using political capital",
+        "Quote: \"it wasn't worth the political capital\"",
+        "Follow-up: Checked whether concerns were raised; shows limited advocacy"
+      ],
+      "lowerFeedback": "Lowers the bar for Conflict Resolution at manager level. The candidate chose not to surface team concerns about the calibration process, citing political cost. No attempt was made to test or adapt the policy. This misses the expectation that managers develop people and create leverage by addressing underperformance or process friction. Biggest gap is treating team disagreement as something to suppress rather than resolve."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a company-wide freeze on headcount growth that was slowing two critical product bets. I modeled three scenarios with revenue impact and presented a phased exception request to the board that preserved the freeze for 80% of roles while unlocking 12 key hires."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board approved the model and we used it for the next two planning cycles before relaxing the policy."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate challenged broad headcount freeze with scenario modeling",
+        "Secured board-level exception tied to business bets",
+        "Quote: \"we used it for the next two planning cycles\"",
+        "Follow-up: Checked long-term outcome; shows strategic judgment"
+      ],
+      "raiseFeedback": "Raises the bar for Conflict Resolution at exec level. The candidate identified that a company-wide headcount freeze was blocking strategic bets, built revenue-linked scenario models, and secured a targeted exception at the board level. They turned the exception into a reusable framework for future cycles. This reflects the high-ambiguity, org-level impact and long-term thinking required at 10+ years. Biggest strength is creating durable process leverage instead of one-off wins.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed back on the headcount freeze in a staff meeting but the CEO said no so we lived with it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you explore any alternatives?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just prioritized harder within the existing cap."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you disagreed with a policy, decision, or approach. What did you do?",
+        "Candidate raised issue once in a meeting and accepted the outcome",
+        "No modeling or alternative paths explored",
+        "Quote: \"the CEO said no so we lived with it\"",
+        "Follow-up: Checked for alternatives; shows limited strategic persistence"
+      ],
+      "lowerFeedback": "Lowers the bar for Conflict Resolution at exec level. The candidate voiced disagreement with the headcount freeze in one meeting and accepted the decision without further analysis or trade-off proposals. No attempt was made to quantify business impact or design a narrower exception. This falls short of the strategic judgment and long-term thinking expected at the executive level. Biggest gap is treating policy disagreement as a one-time event rather than an opportunity for org-level resolution."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of disagreement",
+      "junior": "Individual task or tool choice",
+      "senior": "Cross-team technical inconsistency",
+      "manager": "Team process affecting morale and output",
+      "exec": "Company-wide policy with revenue implications"
+    },
+    {
+      "signal": "Method of influence",
+      "junior": "Data plus mentor loop",
+      "senior": "Metrics plus canary experiment",
+      "manager": "Aggregated feedback plus negotiated pilot",
+      "exec": "Scenario modeling plus board-level proposal"
+    },
+    {
+      "signal": "Handling of resistance",
+      "junior": "Accepted partial outcome and documented",
+      "senior": "Ran targeted experiment to address concern",
+      "manager": "Secured limited flexibility while keeping HR aligned",
+      "exec": "Built reusable framework for future cycles"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Local documentation and move on",
+      "senior": "Measurable cross-team adoption",
+      "manager": "Team sentiment and calibration score improvement",
+      "exec": "Policy model reused across planning cycles"
+    },
+    {
+      "signal": "Reflection shown",
+      "junior": "Coachability on feedback received",
+      "senior": "Persistence after initial pushback",
+      "manager": "Advocacy balanced with org constraints",
+      "exec": "Long-term leverage over heroics"
+    }
+  ],
+  "kind": "competency"
+}

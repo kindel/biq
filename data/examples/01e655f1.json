@@ -1,0 +1,294 @@
+{
+  "question": "Tell me about a time when you enabled your team/a team member to implement a significant change or improvement. What problem were you trying to solve? How did you measure success? What was the end result/impact?",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our on-call rotation had a manual checklist that took 20 minutes per handoff. I noticed a teammate was duplicating steps in a spreadsheet, so I wrote a short internal wiki page and a simple Python wrapper that auto-pulled the last 24h metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did the teammate do after you shared it?"
+        },
+        {
+          "role": "candidate",
+          "text": "She took the wiki page, added two more fields we had missed, and rolled it out to the whole rotation. We tracked handoff time in a shared doc for two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What were the numbers?"
+        },
+        {
+          "role": "candidate",
+          "text": "Average handoff dropped from 20 min to 7 min. The team did 12 handoffs that month so roughly 2.5 hours saved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: enabled team member to implement change",
+        "Situation: manual 20-min handoff checklist",
+        "Action: wrote wiki + Python wrapper, teammate extended it",
+        "Outcome: 20min -> 7min, ~2.5h saved/month",
+        "Quote: \"She took the wiki page, added two more fields\"",
+        "Follow-up: metrics tracked in shared doc for two weeks"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at junior level. The candidate identified a repetitive local process, created a lightweight artifact, and handed ownership to a teammate who then improved it further. Concrete before/after numbers (20 min to 7 min) show the simplification had measurable effect even at individual scope. The story stays within expected junior boundaries while demonstrating coachability and willingness to let someone else finish the work. Main gap is lack of any cross-team ripple, which is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I refactored a function that was getting slow."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you enable anyone else?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the PR to my teammate and they merged it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What problem were you solving and how did you measure it?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just slow. I didn't track anything after the merge."
+        }
+      ],
+      "lowerNotes": [
+        "Q: enabled team member to implement change",
+        "Situation: vague \"slow function\"",
+        "Action: wrote PR, showed to teammate",
+        "Outcome: teammate merged it, no metrics",
+        "Quote: \"I didn't track anything after the merge\"",
+        "Follow-up: no before/after data or ownership transfer"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at junior level. The candidate describes a solo refactor with no evidence of enabling anyone else or simplifying a process others could reuse. Absence of any success metric or follow-up measurement shows weak ownership of outcomes. The story never moves beyond \"I fixed my code\" which does not demonstrate the principle even at the most local scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating the same data pipeline for reporting. I created a shared library with a thin abstraction and ran two working sessions so each team could migrate one report."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get both teams to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started with the most painful report, showed a 40% reduction in runtime, then let the other team own the next migration."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Four reports moved over three months. Duplicate code dropped from 1,800 lines to under 300. Both teams now contribute fixes back to the library."
+        }
+      ],
+      "raiseNotes": [
+        "Q: enabled team/a team member to implement change",
+        "Situation: duplicate reporting pipelines across two teams",
+        "Action: built shared library + ran working sessions",
+        "Outcome: 4 reports migrated, 1800 -> 300 LOC, cross-team contributions",
+        "Quote: \"let the other team own the next migration\"",
+        "Follow-up: showed 40% runtime win before asking for broader adoption"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at senior level. The candidate reduced duplication across team boundaries by creating a reusable abstraction and deliberately transferred ownership so others could extend it. Runtime and line-count metrics provide clear evidence of simplification. Influence without authority is visible in the decision to let the second team drive the next migration. Scope and leverage match senior expectations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a new internal tool that replaced three scripts."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any other team adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not yet, I was still cleaning it up when I moved to the next project."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure success?"
+        },
+        {
+          "role": "candidate",
+          "text": "It felt cleaner to me."
+        }
+      ],
+      "lowerNotes": [
+        "Q: enabled team to implement change",
+        "Situation: replaced three scripts with one tool",
+        "Action: built the tool alone",
+        "Outcome: no adoption outside own use, no metrics",
+        "Quote: \"It felt cleaner to me\"",
+        "Follow-up: project handed off before measuring or driving adoption"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at senior level. The candidate produced a local improvement but never enabled other teams or measured impact. Lack of adoption or quantifiable results shows the work stayed at individual scope rather than creating reusable leverage. Senior expectations for cross-team simplification are not met."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending 30% of sprint capacity on manual QA for a legacy flow. I asked an engineer to prototype a contract test harness and then had the whole team review and own the rollout."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle resistance to the new approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "One senior engineer preferred the old way. I had them run the first pilot so they could see the defect escape rate drop from 12 to 2 per release."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the team-level result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Manual QA time fell to 8% of capacity within two quarters. The same engineer later documented the harness and onboarded two new hires with it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: enabled team to implement change",
+        "Situation: 30% sprint capacity on manual QA",
+        "Action: sponsored contract test harness, let team own rollout",
+        "Outcome: QA time to 8%, defect escapes 12->2, senior engineer became owner",
+        "Quote: \"had them run the first pilot\"",
+        "Follow-up: used data to convert the resister"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at manager level. The candidate identified a systemic capacity drain, created space for a team-driven solution, and used measurable results to shift behavior. Development of others is clear in the decision to let the resistant senior engineer own the pilot. Team outcome metrics (capacity freed, quality improved) show the manager created leverage rather than performing the work themselves.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we needed to automate more tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple people started writing more unit tests but the manual QA load stayed about the same."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you track any metrics?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't set a baseline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: enabled team to implement change",
+        "Situation: high manual QA load",
+        "Action: told team to automate more",
+        "Outcome: no measurable reduction, no baseline",
+        "Quote: \"We didn't set a baseline\"",
+        "Follow-up: no ownership transfer or follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at manager level. The candidate issued a direction without creating structure, measurement, or ownership for the improvement. Absence of any baseline or sustained reduction shows the team did not gain new leverage. Manager expectations for developing repeatable team processes are not demonstrated."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three product lines were each building their own experimentation platform. I sponsored a single cross-org platform team and required all new experiments to route through it after a six-week pilot."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the product lines to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied platform funding to the shared service and showed the pilot delivered statistically significant results 3x faster than the old per-team approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the multi-quarter impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Within nine months we consolidated three platforms into one, reduced infra spend 35%, and increased experiment velocity by 2.4x across all lines."
+        }
+      ],
+      "raiseNotes": [
+        "Q: enabled teams to implement change at org scale",
+        "Situation: three duplicate experimentation platforms",
+        "Action: funded shared platform team, tied funding to adoption",
+        "Outcome: 3->1 platform, 35% infra reduction, 2.4x velocity",
+        "Quote: \"tied platform funding to the shared service\"",
+        "Follow-up: used pilot data to drive org-wide mandate"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at exec level. The candidate recognized redundant investment across the organization, created a structural solution (dedicated platform team), and used funding and data to drive adoption. Business-level metrics (infra cost, experiment velocity) demonstrate strategic simplification with lasting leverage. Trade-offs around funding allocation and pilot validation show mature judgment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each org to share their experimentation code."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did duplication decrease?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some teams looked at each other's repos but kept building separately."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics did you track?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't have a single source of truth for experiment velocity."
+        }
+      ],
+      "lowerNotes": [
+        "Q: enabled org-level change",
+        "Situation: duplicate experimentation efforts",
+        "Action: asked teams to share code",
+        "Outcome: no consolidation, no velocity metrics",
+        "Quote: \"kept building separately\"",
+        "Follow-up: no structural or funding lever applied"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at exec level. The candidate relied on voluntary sharing without creating incentives, structure, or measurement. No reduction in duplication or org-level impact was achieved. Executive expectations for strategic simplification and leverage through organizational design are not met."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change enabled",
+      "junior": "Individual teammate, local process",
+      "senior": "Two teams, reusable library",
+      "manager": "Own team capacity and ownership transfer",
+      "exec": "Multiple product lines, platform funding and mandate"
+    },
+    {
+      "signal": "Measurement of success",
+      "junior": "Simple time delta with shared doc",
+      "senior": "Runtime and LOC reduction with adoption data",
+      "manager": "Sprint capacity % and defect rate",
+      "exec": "Infra cost and experiment velocity at org scale"
+    },
+    {
+      "signal": "Ownership transfer",
+      "junior": "Teammate added fields and rolled out",
+      "senior": "Other team owned next migration",
+      "manager": "Resistant engineer became owner and onboarded others",
+      "exec": "Platform team and product lines sustain the service"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Not applicable at this scope",
+      "senior": "Showed data then stepped back",
+      "manager": "Gave pilot ownership to convert resister",
+      "exec": "Used funding tie and pilot results to mandate adoption"
+    }
+  ],
+  "kind": "lp"
+}

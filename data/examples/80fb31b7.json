@@ -1,0 +1,237 @@
+{
+  "question": "Walk me through a customer or operational consequence of a technical decision you made.",
+  "competency": "Dive Deep",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked a simpler ORM for a new reporting feature to ship faster. Two weeks later the dashboard queries started timing out for 15% of users during peak hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added query logging and traced it to N+1 joins. Switched two hot paths to raw SQL and cut p95 from 4s to 800ms."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm it was the root cause?"
+        },
+        {
+          "role": "candidate",
+          "text": "I compared before/after logs on the same traffic sample and showed the row counts matched the slowdown."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "Chose ORM for speed, saw 15% timeout rate on reports",
+        "Added logging, found N+1, switched to raw SQL",
+        "Quote: \"Compared before/after logs on same traffic sample\"",
+        "Follow-up: Confirmed root cause via row counts and p95 drop from 4s to 800ms"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep. Junior candidate described picking an ORM that later produced timeouts for 15% of users, then added targeted logging to isolate N+1 joins and validated the fix with before/after measurements on identical traffic. The concrete metrics and explicit root-cause step show they went past surface symptoms. The main strength is the willingness to instrument and measure their own change instead of guessing. Biggest gap is the scope stayed inside one feature; still appropriate for the level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We chose a new caching layer and some customers saw slower pages so we rolled it back."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data showed the slowdown was caused by the cache?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets went up and someone on the team said it was probably the cache."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "New cache caused slower pages, rolled back",
+        "Support tickets increased",
+        "Quote: \"Someone on the team said it was probably the cache\"",
+        "Follow-up: No personal investigation or metrics; relied on team opinion"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep. The candidate could only report that tickets rose after a cache change and that the team suspected the cause. No evidence of personal data collection, query tracing, or before/after measurement. The story stays at the level of hearsay rather than root-cause analysis. This is the core gap for a junior role where ownership of one's own technical decisions is expected."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed to move our image pipeline to a new resize service to cut costs. Three days later the mobile app saw a 12% drop in image load success and support volume doubled."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you isolate the cause?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled CDN logs, compared error codes by region and device, and found the new service was returning 403s on certain signed URLs. Fixed the signing logic and success rate recovered within four hours."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "Moved image pipeline to new resize service for cost; 12% load failure and doubled tickets",
+        "Pulled CDN logs, segmented by region/device, found 403s on signed URLs",
+        "Quote: \"Compared error codes by region and device\"",
+        "Follow-up: Root cause isolated to signing logic; fixed in four hours"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep. Senior candidate drove a cost-saving resize service change that produced a measurable 12% image failure rate, then personally segmented CDN logs by region and device to locate the 403s on signed URLs. The follow-up shows they treated the incident as their own to debug rather than delegating immediately. The concrete segmentation step demonstrates the expected senior depth. The single biggest strength is linking their technical decision directly to both customer impact and a precise fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We switched to a cheaper resize service and some images failed so we added more retries."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you look at to understand the failures?"
+        },
+        {
+          "role": "candidate",
+          "text": "The on-call person sent a graph of error rate and we decided retries would cover it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "Cheaper resize service caused image failures",
+        "Added retries based on on-call graph",
+        "Quote: \"The on-call person sent a graph\"",
+        "Follow-up: No personal log analysis or segmentation; treated symptom with retries"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep. The senior candidate described a resize service change that caused image failures but could only reference an on-call graph and a decision to add retries. They showed no evidence of pulling logs themselves or narrowing the failure mode. This misses the senior expectation of personally driving to root cause across services. The gap is reliance on others for the diagnostic work."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team chose to relax a validation rule in the order service to unblock a partner integration. Within a week we saw a 3% rise in failed downstream fulfillment jobs and two partners complained about bad data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do as the manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had the team add per-field audit logs and a daily data-quality dashboard. We traced the bad payloads to three specific partner fields and tightened the rule again with a fallback path."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "Team relaxed validation for partner integration; 3% fulfillment failures and partner complaints",
+        "Added audit logs and daily dashboard to trace bad fields",
+        "Quote: \"Traced the bad payloads to three specific partner fields\"",
+        "Follow-up: Re-tightened rule with fallback; team now owns data-quality metric"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep. The manager candidate owned the downstream impact of their team's relaxed validation change, which produced a 3% fulfillment failure spike and partner complaints. They drove the addition of field-level audit logs and a daily dashboard so the team could isolate the exact three fields causing issues. This shows the manager creating leverage through better observability rather than hero debugging. The core strength is turning a one-off incident into a repeatable team process. The story stays appropriately at the team-outcome level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team changed a validation rule and we got some fulfillment complaints so I asked them to revert it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any data together?"
+        },
+        {
+          "role": "candidate",
+          "text": "I saw the ticket volume in the standup and told them to roll back before it got worse."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "Team validation change led to fulfillment complaints",
+        "Asked for rollback after seeing ticket volume in standup",
+        "Quote: \"Told them to roll back before it got worse\"",
+        "Follow-up: No joint data review or root-cause process created"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep. The manager candidate responded to fulfillment complaints by directing a rollback after noticing ticket volume in standup, without any shared data review or deeper investigation. No evidence that the manager helped the team build visibility into the validation decision's effects. This falls short of the expectation that managers create diagnostic leverage for their teams. The gap is treating the symptom as a team execution issue rather than a diagnosable system problem."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We decided to sunset an internal payments batch job in favor of a real-time API to simplify architecture. Three weeks later the finance close process slipped by two days because a downstream reconciliation report was missing key fields."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get to the root cause at your level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked finance and the platform team to jointly map every report that consumed the old batch output. We found four unreported dependencies and stood up a temporary shadow feed while we rebuilt the reports."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "Sunset batch job for real-time API; finance close slipped two days",
+        "Drove joint mapping of all downstream reports with finance and platform",
+        "Quote: \"Found four unreported dependencies\"",
+        "Follow-up: Temporary shadow feed while reports rebuilt; org-level dependency visibility improved"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep. The exec candidate led the decision to replace a batch payments job with a real-time API, which later caused a two-day slip in finance close due to missing reconciliation fields. They personally sponsored a cross-functional mapping exercise that surfaced four previously unreported dependencies. The action shows strategic judgment in creating visibility at the org level rather than debugging a single system. The biggest strength is converting an operational surprise into lasting cross-team dependency awareness. Scope and trade-off thinking match the exec bar.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We moved to a real-time payments API and finance had some delays so we added headcount to the close process."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis did you sponsor?"
+        },
+        {
+          "role": "candidate",
+          "text": "I heard the delay was because the old batch was gone and approved more people for month-end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a customer or operational consequence of a technical decision you made.",
+        "Real-time API change caused finance delays",
+        "Approved more headcount for close process",
+        "Quote: \"Heard the delay was because the old batch was gone\"",
+        "Follow-up: No cross-team dependency mapping; treated as resourcing issue"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep. The exec candidate addressed a finance close delay after a payments API change by adding headcount rather than investigating the data dependencies that had been removed. They showed no sponsored analysis to surface the four missing reconciliation fields. This misses the exec requirement to drive org-level root cause and trade-off visibility. The core gap is defaulting to resource solutions instead of diagnostic leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Personal instrumentation of own change",
+      "junior": "Raises: added own logging and compared logs on same traffic",
+      "senior": "Raises: segmented CDN logs by region/device",
+      "manager": "Raises: created team audit logs and dashboard",
+      "exec": "Raises: sponsored joint dependency mapping"
+    },
+    {
+      "signal": "Link to quantified customer/operational impact",
+      "junior": "Raises: 15% timeout rate, p95 4s to 800ms",
+      "senior": "Raises: 12% load failure, doubled tickets",
+      "manager": "Raises: 3% fulfillment failures, partner complaints",
+      "exec": "Raises: two-day finance close slip"
+    },
+    {
+      "signal": "Root cause vs symptom treatment",
+      "junior": "Lowers: relied on team opinion, no metrics",
+      "senior": "Lowers: added retries without narrowing failure mode",
+      "manager": "Lowers: directed rollback after seeing ticket volume",
+      "exec": "Lowers: added headcount instead of mapping dependencies"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Raises: stayed inside one feature, appropriate",
+      "senior": "Raises: cross-service log analysis",
+      "manager": "Raises: created repeatable team process",
+      "exec": "Raises: org-level dependency visibility"
+    },
+    {
+      "signal": "Use of data vs hearsay",
+      "junior": "Lowers: support tickets and team suspicion",
+      "senior": "Lowers: on-call graph only",
+      "manager": "Lowers: standup ticket volume",
+      "exec": "Lowers: heard the delay was batch-related"
+    }
+  ],
+  "kind": "lp"
+}

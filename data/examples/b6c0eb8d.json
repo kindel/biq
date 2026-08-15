@@ -1,0 +1,233 @@
+{
+  "question": "Tell me about a time when you were unsatisfied with the status quo. What did you do to change it? What was the impact? Would you do anything differently in the future?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project the test coverage was only 40% and bugs kept escaping to staging. I wrote a short script to flag untested paths and added it to our CI, then walked my mentor through the gaps I found."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Coverage went to 78% in two weeks. My manager asked me to share the script with two other teams. If I did it again I would have asked for buy-in from the full team earlier instead of just my mentor."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Individual scope: own project test coverage 40% \u2192 78%",
+        "Action: built script, added to CI, showed mentor",
+        "Impact: two other teams adopted it",
+        "Quote: \"I would have asked for buy-in from the full team earlier\"",
+        "Follow-up: How did you pick which paths to target? Candidate explained prioritization by recent bugs"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at junior level. The candidate identified low test coverage on their own work, built a lightweight script, and drove coverage from 40% to 78%. Quote: \"I would have asked for buy-in from the full team earlier\" shows reflection. Story stays within individual scope yet demonstrates ownership and coachability when sharing the script. Biggest strength is clear before/after metric tied to their direct action.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The build was slow so I mentioned it in standup a few times."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I was waiting for the infra team. I guess I could have looked at the logs myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Mentioned slow build in standup but took no action",
+        "Outcome: no change, waited for infra team",
+        "Quote: \"I was waiting for the infra team\"",
+        "Follow-up: What would you do differently? Vague answer about maybe checking logs"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at junior level. Candidate only voiced dissatisfaction in standup without ownership or follow-through. Quote: \"I was waiting for the infra team\" shows passive stance. No measurable impact or concrete steps taken. Biggest gap is absence of personal initiative on a fixable issue within their scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two services had inconsistent error handling that caused customer-visible incidents. I wrote a shared library and ran a two-week migration for both teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the incident data and offered to pair on the first two services. Incidents dropped 60%. Next time I would run a short design review with both teams first to surface edge cases earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Cross-team scope: inconsistent error handling across two services",
+        "Action: built shared library, drove migration with data and pairing",
+        "Impact: 60% drop in incidents",
+        "Quote: \"I would run a short design review with both teams first\"",
+        "Follow-up: How did you handle pushback? Candidate described showing incident data and offering to pair"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at senior level. Candidate used incident data to drive adoption of a shared error-handling library across two teams, achieving a 60% reduction. Quote: \"I would run a short design review with both teams first\" demonstrates learning. Story shows influence without authority and measurable cross-team impact. Biggest strength is the concrete metric tied to their direct leadership of the change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed the two teams used different error formats and sent an email suggesting they align."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not that I saw. I moved on to my next project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Sent one email about inconsistent error formats",
+        "No follow-up or ownership after sending email",
+        "Outcome: no change observed",
+        "Follow-up: Why stop after the email? Candidate said they were busy with next project"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at senior level. Candidate limited action to a single email with no follow-through or influence. No measurable impact resulted. Quote is absent because no real change occurred. Biggest gap is lack of persistence or cross-team coordination expected at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was shipping features with high bug rates. I introduced a definition of done that required 80% coverage and a peer review checklist, then coached two engineers who were struggling with it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Bugs in production fell 45% over two quarters. One of the coached engineers later became a tech lead. I would have involved the team in creating the checklist instead of drafting it myself."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Team-level scope: high bug rates on shipped features",
+        "Action: defined done criteria, coached two engineers",
+        "Impact: 45% drop in production bugs, one engineer promoted to tech lead",
+        "Quote: \"I would have involved the team in creating the checklist\"",
+        "Follow-up: How did you handle the engineers who pushed back? Candidate described 1:1 coaching and pairing sessions"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at manager level. Candidate created and enforced a definition of done, coached struggling engineers, and delivered a 45% reduction in production bugs. Quote: \"I would have involved the team in creating the checklist\" shows self-awareness about team leverage. Story focuses on developing people and owning team outcomes. Biggest strength is the combination of process change and individual development with clear metrics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team they needed to write more tests but didn't change any reviews or metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did quality improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I think some people started writing a few more tests but it was inconsistent."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Told team to write more tests with no process change",
+        "No coaching or enforcement",
+        "Outcome: inconsistent and no measurable improvement",
+        "Follow-up: Why no follow-up mechanisms? Candidate had no answer"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at manager level. Candidate issued a directive without creating leverage through process or coaching. No measurable team outcome. Story shows no development of people or ownership of team results. Biggest gap is absence of any sustained mechanism to raise standards."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer NPS had plateaued for three quarters because of reliability issues in two regions. I launched a cross-org reliability program with new SLIs, quarterly reviews, and investment reallocation that lifted NPS 12 points in 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two feature launches by a quarter to fund the program. I would have started the SLI definition work six months earlier to build momentum before asking for headcount."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Org-level scope: NPS plateau due to regional reliability",
+        "Action: created cross-org program with SLIs, reviews, and budget shifts",
+        "Impact: +12 NPS points over 18 months",
+        "Quote: \"I would have started the SLI definition work six months earlier\"",
+        "Follow-up: How did you align the other VPs? Candidate described using customer data in quarterly business reviews"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards at exec level. Candidate drove an org-wide reliability program that moved NPS by 12 points through SLIs, reviews, and resource trade-offs. Quote: \"I would have started the SLI definition work six months earlier\" shows long-term strategic reflection. Story demonstrates high ambiguity handling and business-level impact. Biggest strength is clear linkage between standards initiative and measurable customer outcome at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the reliability team to look into the NPS plateau but didn't change any org priorities or reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They produced a report. We discussed it in one staff meeting and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you were unsatisfied with the status quo...",
+        "Delegated to reliability team without org-level changes",
+        "Single report and one discussion, no follow-through",
+        "Outcome: no sustained impact on NPS",
+        "Follow-up: Why no resource or priority shifts? Candidate cited competing business goals"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards at exec level. Candidate delegated without altering priorities, reviews, or resources. No lasting org impact. Story lacks strategic judgment or long-term leverage. Biggest gap is treating a business-level problem with a one-time report instead of sustained change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change",
+      "junior": "Individual project or task",
+      "senior": "Cross-team or multi-service",
+      "manager": "Team process and people development",
+      "exec": "Org-wide program with trade-offs"
+    },
+    {
+      "signal": "Persistence after initial pushback",
+      "junior": "Followed up with mentor",
+      "senior": "Used data and pairing to drive adoption",
+      "manager": "Coached individuals through resistance",
+      "exec": "Aligned VPs via customer data in reviews"
+    },
+    {
+      "signal": "Reflection on what to do differently",
+      "junior": "Would seek broader team input earlier",
+      "senior": "Would run design review before migration",
+      "manager": "Would co-create checklist with team",
+      "exec": "Would start SLI work earlier to build momentum"
+    },
+    {
+      "signal": "Use of metrics",
+      "junior": "Coverage % before/after",
+      "senior": "Incident reduction %",
+      "manager": "Bug reduction and promotion outcome",
+      "exec": "NPS lift over 18 months"
+    },
+    {
+      "signal": "Ownership vs delegation",
+      "junior": "Built and added script themselves",
+      "senior": "Built library and led migration",
+      "manager": "Defined criteria and coached",
+      "exec": "Launched program and shifted resources"
+    }
+  ],
+  "kind": "lp"
+}

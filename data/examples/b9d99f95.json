@@ -1,0 +1,226 @@
+{
+  "question": "Give me an example of an idea or vision you had which was adopted by global stakeholders. How did you drive adoption for your vision/ideas? How did you track adoption? Would you do anything differently?",
+  "competency": "Think Big + Influence",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our internal docs were fragmented so I proposed a single searchable wiki for the team. After getting my manager on board I ran a two-week pilot with three other engineers and tracked usage via page views and search logs. It spread to the whole org of 40 people within two months. I would have added a feedback form earlier to surface gaps faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the global stakeholders involved?"
+        },
+        {
+          "role": "candidate",
+          "text": "They weren't truly global; it stayed within our product line. I shared the metrics in the monthly all-hands and a few other teams copied the structure."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an idea... adopted by global stakeholders...",
+        "- Proposed team wiki after seeing fragmented docs",
+        "- Ran 2-week pilot, tracked page views + search",
+        "- Spread to 40-person org in 2 months",
+        "Quote: 'I shared metrics in monthly all-hands'",
+        "Follow-up: How did global stakeholders get involved? -> Stayed within product line, others copied structure"
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. The candidate identified a local friction, ran a measurable pilot, and saw organic spread beyond the immediate team. Concrete tracking via page views and search logs shows ownership of results. The follow-up reveals the scope remained regional rather than global, which is acceptable for 0-2 years but limits the signal. Biggest strength is the willingness to iterate on feedback collection. Biggest gap is lack of proactive outreach to stakeholders outside the product line.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we should use more emojis in Slack to make communication friendlier. A few people started doing it but it didn't really spread. I didn't track anything formally."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this a vision that needed global stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "It just felt like a good idea at the time. I mentioned it once in a team meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an idea... global stakeholders...",
+        "- Suggested more emojis in Slack for friendliness",
+        "- A few people started, no formal tracking",
+        "Quote: 'It just felt like a good idea at the time'",
+        "Follow-up: Why global stakeholders? -> Mentioned once in team meeting, no further action"
+      ],
+      "lowerFeedback": "Lowers the bar. The idea has no measurable business or operational impact and was never positioned as a vision requiring stakeholder alignment. No evidence of driving adoption beyond a casual mention or of tracking results. The candidate shows no reflection on scale or influence tactics. Main gap is treating a minor cultural suggestion as equivalent to a scalable idea. No ownership of outcomes demonstrated."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a lightweight cost-visibility dashboard that surfaced per-service spend. I got buy-in from three other service teams by running a joint working group and sharing weekly adoption metrics. After four months it was adopted by eight teams across two continents and reduced surprise over-spend tickets by 35%. I would have involved finance earlier to get official data feeds instead of scraping."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle stakeholders who pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead in Europe worried about data accuracy so I added a confidence score and let them annotate their own numbers before it went live."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an idea... global stakeholders...",
+        "- Created cost-visibility dashboard for per-service spend",
+        "- Ran joint working group across 3 teams, weekly metrics",
+        "- Adopted by 8 teams in 2 continents, 35% fewer over-spend tickets",
+        "Quote: 'Added confidence score so Europe lead could annotate numbers'",
+        "Follow-up: Handling pushback -> Let them annotate their own data before launch"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate defined a cross-team problem, created a working group to drive adoption without authority, and measured both usage and business outcome. Global reach across continents and concrete metric (35% reduction) show appropriate scope. Reflection on involving finance earlier demonstrates learning. Biggest strength is turning initial resistance into co-ownership via the annotation feature. Gap is that finance involvement happened late rather than upfront.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to standardize our API error codes across services. I sent a design doc to the architecture mailing list and a couple teams adopted parts of it. I didn't set up any tracking so I'm not sure how widely it landed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when adoption stalled?"
+        },
+        {
+          "role": "candidate",
+          "text": "I followed up once on the thread but then moved on to other work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an idea... global stakeholders...",
+        "- Sent design doc on standardizing API error codes",
+        "- A couple teams adopted parts, no tracking set up",
+        "Quote: 'I followed up once on the thread but then moved on'",
+        "Follow-up: When adoption stalled? -> Single follow-up then dropped"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate relied on passive broadcasting via email rather than active influence or working groups. Absence of any adoption tracking or follow-through after initial resistance shows limited ownership. Scope stayed narrow and impact unmeasured. Main gap is lack of persistence and measurement once the idea left the candidate's immediate control."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I proposed a unified incident-management platform after seeing duplicated tooling across three regions. I created a tiger team with leads from each region, defined success metrics around MTTR and tooling cost, and ran monthly steering reviews with directors. Within nine months all regions migrated and we cut tooling spend 28%. I would have started the metrics dashboard earlier so directors could see progress in real time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle a region that resisted the timeline?"
+        },
+        {
+          "role": "candidate",
+          "text": "The APAC lead had capacity concerns so we phased their migration last and let them keep a lightweight bridge for six weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an idea... global stakeholders...",
+        "- Proposed unified incident platform after seeing duplicated tooling",
+        "- Tiger team + monthly director steering reviews",
+        "- All regions migrated in 9 months, 28% tooling cost reduction",
+        "Quote: 'Phased APAC last and allowed a bridge for six weeks'",
+        "Follow-up: Handling regional resistance -> Adjusted timeline and allowed temporary bridge"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate framed a multi-region problem, built cross-regional governance, and tied the vision to measurable outcomes (MTTR and cost). Active steering with directors and willingness to adjust rollout based on capacity concerns show leverage through others. Biggest strength is creating shared accountability via the tiger team and reviews. Gap is delayed visibility into progress for leadership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted our teams to adopt a new sprint planning template. I presented it at the manager offsite and most teams tried it for a quarter. I didn't create any shared metrics so adoption was uneven."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive sustained global use?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked managers to report usage in their quarterly updates but didn't follow up if they skipped it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an idea... global stakeholders...",
+        "- Presented new sprint template at manager offsite",
+        "- Most teams tried it for a quarter, no shared metrics",
+        "Quote: 'Asked managers to report usage but didn't follow up if they skipped it'",
+        "Follow-up: Driving sustained global use -> No enforcement or visibility after initial ask"
+      ],
+      "lowerFeedback": "Lowers the bar. The idea stayed at the level of a process tweak without clear linkage to business outcomes. Passive reliance on quarterly updates without enforcement or visible tracking shows weak influence. No adjustment when adoption became uneven. Main gap is treating manager-level coordination as sufficient without creating mechanisms for sustained visibility or accountability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set the vision that every product surface would expose real-time experimentation so we could run 10x more tests per quarter. I aligned the CEO and CFO on a three-year investment case, created a central platform team, and tied regional P&Ls to experimentation velocity. After 18 months we reached 12x test volume and attributed $180M incremental revenue. I would have built the data-quality guardrails six months earlier to avoid noisy early results."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make with other priorities?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two non-experimentation platform features by a quarter to fund the initial build."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an idea... global stakeholders...",
+        "- Vision: every surface exposes real-time experimentation",
+        "- CEO/CFO alignment on 3-year case, tied to regional P&Ls",
+        "- 12x test volume, $180M incremental revenue in 18 months",
+        "Quote: 'Delayed two non-experimentation features by a quarter to fund build'",
+        "Follow-up: Trade-offs with other priorities -> Explicit delay of other platform work"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate articulated a multi-year, company-wide vision, secured C-level funding, and embedded adoption into P&L accountability. Clear linkage from platform investment to $180M revenue shows strategic judgment. Biggest strength is willingness to make explicit trade-offs and tie execution to measurable business results. Gap is delayed guardrails that created noisy early data.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted the company to move faster on AI features. I mentioned it in the annual strategy offsite and several teams started small pilots. I didn't set company-wide metrics or secure dedicated funding."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this become a global priority?"
+        },
+        {
+          "role": "candidate",
+          "text": "It gained momentum organically after a couple of teams showed early wins."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an idea... global stakeholders...",
+        "- Mentioned faster AI at annual strategy offsite",
+        "- Several teams started pilots, no company metrics or funding",
+        "Quote: 'Gained momentum organically after a couple teams showed wins'",
+        "Follow-up: How it became global priority -> Relied on organic spread, no formal mechanisms"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate surfaced an idea at an offsite but did not drive alignment, funding, or measurable adoption across the organization. Reliance on organic momentum without P&L linkage or dedicated resources shows insufficient executive ownership. Main gap is absence of any mechanism to convert a stated vision into tracked, resourced execution at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of vision",
+      "junior": "Team-level friction with organic spread to 40 people",
+      "senior": "Cross-team tooling adopted across two continents",
+      "manager": "Multi-region platform with director steering",
+      "exec": "Company-wide platform tied to P&L and $180M revenue"
+    },
+    {
+      "signal": "Driving adoption",
+      "junior": "Pilot + all-hands share",
+      "senior": "Working group + weekly metrics",
+      "manager": "Tiger team + monthly reviews",
+      "exec": "CEO/CFO alignment + P&L accountability"
+    },
+    {
+      "signal": "Tracking adoption",
+      "junior": "Page views and search logs",
+      "senior": "Weekly usage + business outcome (35% reduction)",
+      "manager": "MTTR and tooling cost tracked centrally",
+      "exec": "Test volume and attributed revenue tracked"
+    },
+    {
+      "signal": "Reflection on trade-offs",
+      "junior": "Would add feedback form earlier",
+      "senior": "Would involve finance earlier",
+      "manager": "Would launch metrics dashboard sooner",
+      "exec": "Would build data-quality guardrails earlier"
+    }
+  ],
+  "kind": "lp"
+}

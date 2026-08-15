@@ -1,0 +1,269 @@
+{
+  "question": "Describe balancing urgent operational work with important longer-term or strategic work.",
+  "competency": "Time Management, Prioritization & Organization",
+  "principle": "Time Management, Prioritization & Organization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "In my last project I had daily ticket triage plus a side task to document our onboarding process. I blocked two hours every morning for tickets and used the afternoon for the doc after checking with my mentor on priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to push when both felt urgent?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my manager which one had the bigger risk if delayed a day, then moved the doc work to the next sprint when tickets spiked."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: new grad on support rotation; situation: daily tickets vs onboarding doc task",
+        "Action: time-blocked mornings for ops, asked manager for risk-based priority when conflict arose",
+        "Outcome: finished doc in two weeks while keeping ticket SLA green",
+        "Quote: \"I asked my manager which one had the bigger risk if delayed a day\"",
+        "Follow-up: Asked about conflict resolution; candidate described one escalation to manager and accepted the call"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The story shows the candidate owns their own schedule and seeks guidance on trade-offs rather than guessing. Quote about asking for risk assessment demonstrates coachability. Scope stays individual and local, which matches level. Biggest strength is the explicit check-in habit; biggest gap is lack of any forward planning beyond the current week.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "I just did whatever was on fire that day. My manager usually told me what to do next."
+        },
+        {
+          "role": "interviewer",
+          "text": "What about the longer-term items?"
+        },
+        {
+          "role": "candidate",
+          "text": "They kept getting pushed. I figured someone else would pick them up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: support rotation; situation: daily tickets vs onboarding doc",
+        "Action: waited for manager direction, let long-term work slide",
+        "Outcome: doc never completed during rotation",
+        "Quote: \"I figured someone else would pick them up\"",
+        "Follow-up: Probing ownership; candidate said they did not track or surface the doc work"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Candidate shows no personal system for prioritization and defaults to waiting for direction. Quote reveals lack of ownership over their own queue. Scope is individual but they treat it as purely reactive. Biggest gap is absence of any attempt to surface or negotiate trade-offs."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "Our team had weekly on-call plus a cross-team migration that kept slipping. I proposed a 70/30 split for the quarter, got buy-in from the other team lead, and tracked both in the same dashboard so slippage was visible early."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed when on-call volume spiked?"
+        },
+        {
+          "role": "candidate",
+          "text": "I moved two migration tasks to the partner team and documented the decision in the shared doc so the delay was explicit rather than hidden."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: senior on platform team; situation: on-call plus cross-team migration",
+        "Action: set explicit 70/30 allocation, aligned with peer lead, used shared dashboard for visibility",
+        "Outcome: migration shipped one sprint late instead of three; on-call SLA held",
+        "Quote: \"I moved two migration tasks to the partner team and documented the decision\"",
+        "Follow-up: Asked about influence; candidate described one negotiation and the resulting trade-off"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate demonstrates cross-team influence and uses visible metrics to manage trade-offs. Quote shows they made the delay explicit instead of absorbing it. Scope reaches beyond their own team. Biggest strength is the shared dashboard approach; biggest gap is limited evidence of teaching the method to others on the team.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "I tried to do both but usually ended up staying late to finish the migration work after on-call shifts."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I just kept pushing on my own until the deadline slipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: senior; situation: on-call plus migration",
+        "Action: worked longer hours without renegotiating scope",
+        "Outcome: migration slipped two months, burnout noted in retro",
+        "Quote: \"I just kept pushing on my own until the deadline slipped\"",
+        "Follow-up: Probing influence; candidate admitted no conversations with partner teams"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Candidate relies on personal heroics instead of coordination or prioritization. Quote shows no attempt to create visibility or leverage peers. Scope stays within one team despite the cross-team nature of the work. Biggest gap is absence of any influence or negotiation skill."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "My team ran support rotations while also owning a multi-quarter platform rewrite. I created a capacity model that reserved 30% of engineer time for strategic work and rotated the on-call burden so no one lost more than two weeks per quarter on ops."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle underperformance on the strategic track?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer kept deprioritizing the rewrite. I paired them with a stronger peer for two sprints and made the rewrite deliverables part of their quarterly goals."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: engineering manager; situation: support rotations vs platform rewrite",
+        "Action: built capacity model, enforced 30% allocation, addressed one underperformer via pairing and goal-setting",
+        "Outcome: rewrite delivered on revised timeline; team satisfaction scores rose 12 points",
+        "Quote: \"I paired them with a stronger peer for two sprints and made the rewrite deliverables part of their quarterly goals\"",
+        "Follow-up: Asked about underperformance; candidate gave concrete coaching steps and outcome"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate shows they create team-level systems and directly address underperformance on strategic work. Quote ties coaching to measurable goals. Scope covers team outcomes and leverage. Biggest strength is the capacity model plus explicit goal adjustment; biggest gap is limited visibility into how they handled stakeholder pushback on the 30% allocation.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "I told the team to split their time but didn't track it. The rewrite kept getting deprioritized."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reminded them in standup a few times but didn't change the rotation or goals."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: engineering manager; situation: support vs rewrite",
+        "Action: gave verbal direction without tracking or consequences",
+        "Outcome: rewrite stalled for two quarters",
+        "Quote: \"I reminded them in standup a few times but didn't change the rotation or goals\"",
+        "Follow-up: Probing underperformance handling; candidate had no coaching or goal changes"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Candidate provides no team system and fails to address slippage. Quote reveals passive management. Scope stays at the team level but without leverage or accountability. Biggest gap is lack of any mechanism to protect strategic time or correct behavior."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "Our org faced constant incidents while trying to move to a new architecture. I set an org-wide rule that 25% of every team's capacity must go to the new platform, created a central triage team to absorb spikes, and tied the architecture milestones to the annual operating plan reviewed by the CFO."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the first quarter when incidents still consumed more than expected?"
+        },
+        {
+          "role": "candidate",
+          "text": "I delayed two product launches by six weeks and publicly reset the architecture timeline in the all-hands so the trade-off was visible at the company level."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: VP/Director; situation: org incidents vs multi-team architecture shift",
+        "Action: mandated 25% capacity rule, stood up central triage, linked milestones to annual operating plan",
+        "Outcome: architecture reached first major milestone; incident rate dropped 40% after triage team",
+        "Quote: \"I delayed two product launches by six weeks and publicly reset the architecture timeline\"",
+        "Follow-up: Asked about business trade-offs; candidate described CFO-level visibility and launch delays"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate shows org-level levers and willingness to make visible business trade-offs. Quote demonstrates strategic judgment under ambiguity. Scope reaches company operating plan. Biggest strength is tying architecture work to the annual plan; biggest gap is thin detail on how they handled resistance from product leaders.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Describe balancing urgent operational work with important longer-term or strategic work."
+        },
+        {
+          "role": "candidate",
+          "text": "I asked teams to do both and reviewed progress monthly. Incidents kept taking priority."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any plans or resources?"
+        },
+        {
+          "role": "candidate",
+          "text": "We adjusted a few timelines but nothing structural at the org level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe balancing urgent operational work with important longer-term or strategic work.",
+        "Role: VP/Director; situation: incidents vs architecture",
+        "Action: monthly reviews without capacity mandates or org changes",
+        "Outcome: architecture two years behind original plan",
+        "Quote: \"We adjusted a few timelines but nothing structural at the org level\"",
+        "Follow-up: Probing strategic judgment; candidate had no examples of changing operating plan or central resources"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Candidate relies on passive review instead of structural changes. Quote shows no willingness to make hard trade-offs at the right altitude. Scope stays tactical despite exec title. Biggest gap is absence of any org-level mechanism or public reset of priorities."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Explicit prioritization system",
+      "junior": "Uses time blocks and manager check-ins",
+      "senior": "Sets allocation percentages with peer alignment",
+      "manager": "Builds capacity model and enforces via goals",
+      "exec": "Mandates org-wide rule tied to operating plan"
+    },
+    {
+      "signal": "Handling trade-off visibility",
+      "junior": "Asks manager when conflict arises",
+      "senior": "Uses shared dashboard to surface slippage",
+      "manager": "Adjusts individual goals and pairs for support",
+      "exec": "Delays launches and resets timeline in all-hands"
+    },
+    {
+      "signal": "Ownership vs waiting for direction",
+      "junior": "Seeks guidance rather than guessing",
+      "senior": "Negotiates with peer teams",
+      "manager": "Creates team process and addresses underperformance",
+      "exec": "Changes company-level plans and resources"
+    },
+    {
+      "signal": "Metrics or tracking",
+      "junior": "Keeps ticket SLA green",
+      "senior": "Tracks both work streams in one dashboard",
+      "manager": "Monitors team satisfaction and rewrite progress",
+      "exec": "Links to annual operating plan and incident rate"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual tasks",
+      "senior": "Cross-team coordination",
+      "manager": "Team capacity and development",
+      "exec": "Org operating plan and product launches"
+    }
+  ],
+  "kind": "competency"
+}

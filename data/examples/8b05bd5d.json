@@ -1,0 +1,237 @@
+{
+  "question": "Sometimes customers make unreasonable requests. Tell me about a time when you've had to push back or say no to a customer request. What did you say or do in response to that request?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A support ticket came in asking for a custom export format that would have required rewriting our data pipeline. I explained the current limits, offered the closest existing option, and logged the request for the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the customer respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They accepted the workaround and later sent a note that it met 80% of their need. I followed up with my manager to see if we should prioritize it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Sometimes customers make unreasonable requests. Tell me about a time when you've had to push back or say no to a customer request.",
+        "Role: new support engineer handling Zendesk ticket",
+        "Action: explained limits, gave existing export option, logged request",
+        "Outcome: customer accepted workaround, later positive note",
+        "Quote: \"I told them the pipeline change would take weeks and break other flows, but here is what we can do today.\"",
+        "Follow-up: Asked how they decided it was unreasonable \u2013 candidate said they checked with senior engineer first and confirmed effort vs value."
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a junior role. The candidate owned an individual ticket, checked feasibility with a peer before responding, and left the customer with a workable path forward instead of a flat refusal. The quote shows they gave a concrete reason and alternative rather than hiding behind policy. This matches the expected scope of handling one request while still demonstrating learning by logging the ask for the team. Biggest strength is the quick loop back to a manager after the interaction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "They wanted a feature we don't support so I told them we can't do it and closed the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you offer anything else or check with anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it was clearly out of scope so I just said no."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Sometimes customers make unreasonable requests...",
+        "Role: support engineer",
+        "Action: closed ticket with no explanation or alternative",
+        "Outcome: none mentioned",
+        "Quote: \"It was clearly out of scope so I just said no.\"",
+        "Follow-up: Candidate could not recall the customer's reaction or any follow-up they took."
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession. The candidate treated the request as a binary yes/no without exploring why the customer needed it or offering any alternative that could have preserved the relationship. No evidence of checking with others or logging the request for visibility. This leaves the customer feeling dismissed rather than helped within realistic constraints. Biggest gap is absence of any ownership beyond closing the ticket."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "An enterprise customer wanted us to change our SLA to 15-minute response for all tickets. I pulled usage data showing their volume didn't justify it, proposed a dedicated support tier with clear pricing, and got the account team aligned before the call."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They moved to the paid tier and we added two similar customers in the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Sometimes customers make unreasonable requests...",
+        "Role: senior solutions architect",
+        "Action: used data to show mismatch, proposed paid tier instead, aligned account team",
+        "Outcome: customer upgraded, two more followed",
+        "Quote: \"I showed them their actual ticket volume and said a 15-minute SLA would require dedicated staff we could offer as a tier.\"",
+        "Follow-up: Asked how they influenced without authority \u2013 candidate described pre-call sync with support and sales leads."
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession at senior level. The candidate used concrete usage data to explain the boundary, then turned the pushback into a productized offering that benefited both the customer and the business. Cross-team alignment with account and support teams before the conversation shows influence without authority. The outcome of two additional upgrades indicates the approach scaled. Biggest strength is converting a refusal into measurable revenue while still addressing the underlying need.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "They asked for something that would have required changing our core architecture so I explained it wasn't possible and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve anyone else or look for a middle ground?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was a clear no so I didn't loop anyone in."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Sometimes customers make unreasonable requests...",
+        "Role: senior engineer",
+        "Action: stated it wasn't possible, no further exploration",
+        "Outcome: none shared",
+        "Quote: \"It was a clear no so I didn't loop anyone in.\"",
+        "Follow-up: Candidate had no data or alternative to share and no record of the request reaching product."
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a senior candidate. The response shows no attempt to understand the customer's underlying need or to bring in other teams that might have found a partial solution. Absence of data or follow-through means the organization learned nothing from the interaction. This level of candidate should be able to turn difficult requests into either product input or upsell opportunities. Biggest gap is treating the request as purely technical rather than a customer signal."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team kept getting requests for on-prem deployment from customers who didn't qualify. I created a decision tree for the team, trained them on how to redirect to our cloud offering, and tracked win rate on those conversations."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond to the new process?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers initially felt it was too rigid so we adjusted the tree after their feedback and saw the redirect rate improve."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Sometimes customers make unreasonable requests...",
+        "Role: support manager",
+        "Action: built decision tree, trained team, measured outcomes, iterated on feedback",
+        "Outcome: improved redirect rate after incorporating team input",
+        "Quote: \"I told the team we would only offer on-prem to accounts above a certain ARR and gave them the exact language.\"",
+        "Follow-up: Asked how they handled underperformance on the new process \u2013 candidate described one rep who kept over-promising and the coaching conversation that followed."
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession at manager level. The candidate built a repeatable process that protected team capacity while still giving reps tools to address customer needs. They incorporated frontline feedback and measured results, showing they treat the team's customer interactions as a system to improve. The coaching example demonstrates handling of individual performance issues tied directly to customer conversations. Biggest strength is creating leverage through process instead of handling every hard case personally.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team to just say no to anything outside our standard offering and let me know if customers complained."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you help the team handle those conversations?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have time to coach each one so they figured it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Sometimes customers make unreasonable requests...",
+        "Role: support manager",
+        "Action: told team to say no, asked to be escalated on complaints",
+        "Outcome: no metrics or follow-up described",
+        "Quote: \"I didn't have time to coach each one so they figured it out.\"",
+        "Follow-up: Candidate had no visibility into how often the team was saying no or whether customers were leaving."
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a manager. The candidate delegated the problem without providing tools, language, or coaching, then waited for escalations rather than owning team outcomes. No evidence of tracking impact on customers or retention. This approach risks inconsistent customer experience and team burnout from repeated difficult conversations. Biggest gap is lack of leverage or development of the team on a core customer skill."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were getting repeated asks for a feature that would have required a separate product line. I ran a six-week customer advisory board with our top 20 accounts, used the data to decide against building it, and instead published a public roadmap update explaining the trade-off and our focus areas."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Churn in that segment dropped 4 points and two competitors' reference customers switched to us citing the clarity."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Sometimes customers make unreasonable requests...",
+        "Role: VP Product",
+        "Action: ran structured advisory board, made go/no-go decision, published transparent roadmap",
+        "Outcome: churn down, competitive wins",
+        "Quote: \"I told the board we had evaluated the request across 47 accounts and the ROI didn't justify splitting our engineering focus.\"",
+        "Follow-up: Asked how they handled internal pushback from sales \u2013 candidate described a joint meeting where they aligned on the messaging and compensation adjustments."
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession at exec level. The candidate treated repeated unreasonable requests as a strategic signal, invested in structured customer input at scale, and made a clear trade-off decision that was then communicated transparently. The outcome of reduced churn and competitive switches shows the decision was validated by the market. Internal alignment with sales demonstrates they can drive hard choices across the organization. Biggest strength is using customer obsession to inform long-term product and business direction rather than reacting case by case.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I let the product team handle those requests and only stepped in when revenue was at risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide which requests reached you?"
+        },
+        {
+          "role": "candidate",
+          "text": "Whatever the account team flagged as urgent."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Sometimes customers make unreasonable requests...",
+        "Role: VP",
+        "Action: delegated to product, only engaged on revenue risk",
+        "Outcome: none shared",
+        "Quote: \"Whatever the account team flagged as urgent.\"",
+        "Follow-up: Candidate had no mechanism for spotting patterns across requests or feeding them into strategy."
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession at exec level. The candidate treated pushback as a tactical issue to be delegated rather than a source of strategic insight. No evidence of pattern recognition, proactive customer input, or willingness to make visible trade-off decisions. This leaves the organization reactive and risks missing broader market signals. Biggest gap is absence of personal ownership for turning customer friction into directional clarity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual ticket or request",
+      "senior": "Cross-team or account-level",
+      "manager": "Team process and coaching",
+      "exec": "Org or business-level trade-off"
+    },
+    {
+      "signal": "Use of data or alternatives",
+      "junior": "Basic workaround offered",
+      "senior": "Usage data to justify tier",
+      "manager": "Tracked redirect rate",
+      "exec": "Advisory board across 47 accounts"
+    },
+    {
+      "signal": "Handling of pushback",
+      "junior": "Checked with senior before responding",
+      "senior": "Pre-aligned account team",
+      "manager": "Iterated after team feedback",
+      "exec": "Aligned sales on messaging and comp"
+    },
+    {
+      "signal": "Learning loop",
+      "junior": "Logged request for roadmap",
+      "senior": "Two more customers converted",
+      "manager": "Improved process after iteration",
+      "exec": "Churn down and competitive wins"
+    },
+    {
+      "signal": "Ownership of outcome",
+      "junior": "Followed up with manager",
+      "senior": "Owned the upgrade conversation",
+      "manager": "Coached underperformer",
+      "exec": "Owned the go/no-go decision publicly"
+    }
+  ],
+  "kind": "lp"
+}

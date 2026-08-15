@@ -1,0 +1,286 @@
+{
+  "question": "Tell me about a time when you were able to make something simpler for customers. What drove you to implement this change? What was the impact?",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our onboarding form had 12 fields and customers kept dropping off. I noticed the last four fields were rarely used, so I moved them to an optional step after signup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets showed 40% of new users were confused by those fields. I pulled the data myself and prototyped the shorter flow in a weekend."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Signup completion went from 62% to 81% in the first month. I also wrote a short doc so the team could reuse the pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Moved 4 optional fields to post-signup after reviewing support data",
+        "Quote: \"I pulled the data myself and prototyped the shorter flow in a weekend.\"",
+        "Impact: signup rate 62% \u2192 81%",
+        "Follow-up: How did you get the change approved? - Talked to my manager and PM, they agreed after seeing the drop-off numbers"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at junior level. The candidate identified a customer friction point through support data, owned the simplification end-to-end, and measured the outcome. Quote shows personal initiative rather than waiting for direction. The change stayed within individual scope yet delivered clear customer impact. Biggest strength is the direct link from observation to measurable result with minimal process overhead.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once suggested we add a FAQ page because customers were asking the same questions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove it and what changed for customers?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked me to create the page. It took a few weeks to write the answers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you measure anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but the page is there now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Created FAQ page after manager request",
+        "No customer data or drop-off analysis mentioned",
+        "No metrics or follow-up on impact",
+        "Follow-up: How did you decide what to simplify? - Just followed the request"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at junior level. The candidate did not identify the problem or drive the change; they executed a request. No evidence of customer research or outcome measurement. The story stays at the level of task completion rather than simplification that improves customer experience. Biggest gap is absence of personal ownership or observable impact."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Multiple teams were maintaining separate checkout flows for different products, causing inconsistent customer experiences and duplicated bugs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Customer NPS comments repeatedly mentioned confusion at checkout. I aligned the three owning teams on a shared component library and a single simplified flow."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets about checkout dropped 35% and we removed two legacy code paths. Two other teams later adopted the same components."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Unified three product checkouts via shared components after seeing NPS themes",
+        "Quote: \"I aligned the three owning teams on a shared component library.\"",
+        "Impact: 35% drop in checkout support tickets, two teams adopted later",
+        "Follow-up: How did you influence without authority? - Used NPS data in joint review meetings and offered to own the migration for the first team"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at senior level. Candidate connected customer feedback to a cross-team duplication problem and drove consolidation that delivered measurable support reduction. The story shows influence across teams and reuse by others without owning those teams. Biggest strength is the combination of customer signal, technical simplification, and measurable downstream adoption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I refactored one of our internal admin tools to remove some duplicate buttons."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this affect customers?"
+        },
+        {
+          "role": "candidate",
+          "text": "It made the tool easier for our support agents to use, which indirectly helped customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any customer metrics?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't track any directly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Refactored internal admin tool buttons",
+        "Impact framed only as indirect for customers",
+        "No customer-facing metrics collected",
+        "Follow-up: What customer problem were you solving? - Mostly internal efficiency"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at senior level. The change targeted internal tooling with only indirect customer benefit and no measurement. Story lacks evidence of customer-driven simplification or cross-team influence. Biggest gap is the missing link between the work and observable customer impact or reuse by other teams."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our self-service portal had grown complex because each product team added its own section. Customers were calling support instead of using it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had my team audit the top 200 support tickets and run a simple task-completion test with 12 customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed and what was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We collapsed six sections into three guided flows. Ticket volume fell 28% over the next quarter and my team now owns the portal experience end-to-end."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Led team audit of support tickets and customer task test, collapsed six sections into three flows",
+        "Quote: \"Ticket volume fell 28% over the next quarter.\"",
+        "Impact: 28% reduction in support tickets, team now owns portal experience",
+        "Follow-up: How did you handle pushback from product teams? - Ran the customer test results in a shared review and offered to measure their section's usage afterward"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at manager level. The manager used team resources to surface a customer problem, drove a structural simplification, and delivered a clear business metric. Story demonstrates developing the team\u2019s ability to own customer experience and handling cross-team coordination. Biggest strength is the combination of team-led discovery, measurable outcome, and sustained ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked one of my engineers to clean up the settings page because it looked cluttered."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove it and what was the customer impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was a known complaint in team meetings. We shipped a cleaner layout."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team measure anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "We saw fewer internal complaints after the change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Asked engineer to clean up settings page after internal complaints",
+        "No customer research or metrics tied to the change",
+        "Impact described only as fewer internal complaints",
+        "Follow-up: How did you involve the team in deciding what to simplify? - Mostly delegated the task"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at manager level. The manager delegated a visual cleanup without customer data or outcome tracking. Story shows limited team development and no evidence of broader leverage or sustained simplification ownership. Biggest gap is the absence of customer-driven discovery or measurable customer results."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three overlapping customer portals across regions, each with different navigation and billing flows. Customers moving between regions had to relearn everything."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "Churn analysis showed 9% higher churn for multi-region customers. I sponsored a single global portal with region-aware defaults and one billing system."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Multi-region churn dropped 6 points. We retired two legacy portals and reduced annual portal operating costs by $1.8M."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Sponsored consolidation of three regional portals into one global experience after churn analysis",
+        "Quote: \"Multi-region churn dropped 6 points.\"",
+        "Impact: 6-point churn reduction, $1.8M annual cost savings, two portals retired",
+        "Follow-up: How did you make the trade-off on timeline vs completeness? - Phased rollout starting with highest-churn region, kept local billing quirks for first six months"
+      ],
+      "raiseFeedback": "Raises the bar for Invent and Simplify at exec level. The leader used business-level churn data to justify a multi-year consolidation that simplified the customer experience across regions. Story shows strategic prioritization, measurable customer and financial outcomes, and long-term platform leverage. Biggest strength is the clear connection between customer friction, org-level decision, and sustained business impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a new help center that consolidated some of our documentation sites."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove it and what customer impact did you see?"
+        },
+        {
+          "role": "candidate",
+          "text": "Several teams had asked for better search. We picked a new platform and migrated content."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any business metrics?"
+        },
+        {
+          "role": "candidate",
+          "text": "Usage of the help center increased, but we didn't tie it to retention or cost."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made something simpler for customers.",
+        "Sponsored new help center platform after team requests",
+        "No customer churn or cost metrics linked to the change",
+        "Impact limited to increased usage numbers",
+        "Follow-up: What trade-offs did you evaluate? - Focused mainly on platform selection"
+      ],
+      "lowerFeedback": "Lowers the bar for Invent and Simplify at exec level. The initiative responded to internal requests rather than a strategic customer or business problem. Story lacks evidence of org-level trade-offs or measurable impact on retention, cost, or customer behavior. Biggest gap is the absence of strategic judgment connecting simplification to business outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of simplification",
+      "junior": "Individual feature or flow",
+      "senior": "Cross-team component or process",
+      "manager": "Team-owned customer journey",
+      "exec": "Multi-region or multi-product platform"
+    },
+    {
+      "signal": "Source of insight",
+      "junior": "Personal observation or support tickets",
+      "senior": "NPS or shared data reviewed with peers",
+      "manager": "Team-run customer tests tied to metrics",
+      "exec": "Churn or business analysis at org level"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Local conversion or ticket change",
+      "senior": "Support reduction plus reuse by others",
+      "manager": "Sustained metric ownership by team",
+      "exec": "Churn, cost, and platform retirement"
+    },
+    {
+      "signal": "Drive vs delegation",
+      "junior": "Candidate owns prototype and data pull",
+      "senior": "Aligns teams without formal authority",
+      "manager": "Uses team to discover and measure",
+      "exec": "Sponsors multi-year decision and trade-offs"
+    }
+  ],
+  "kind": "lp"
+}

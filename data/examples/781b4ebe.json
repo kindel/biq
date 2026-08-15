@@ -1,0 +1,250 @@
+{
+  "question": "Tell me about a time when you strongly disagreed with your manager or peer on something you considered very important to the business. What was it and how did you handle it? Knowing what you know now, would you do anything differently?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I thought the API design my peer proposed would create tech debt that would slow us down in two sprints. I pulled data from the last release showing similar patterns caused 30% more bugs. I raised it in our 1:1, then went to our manager with both options and a recommendation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you escalated?"
+        },
+        {
+          "role": "candidate",
+          "text": "Manager chose the peer's approach. I documented the risks, implemented the chosen design cleanly, and added a follow-up ticket for a refactor. Three months later we hit the predicted issues and the refactor got prioritized."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked the peer to run a quick spike together first so we had shared data before the escalation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you strongly disagreed with manager or peer on something important to the business...",
+        "Disagreed with peer on API design that would create tech debt; brought metrics from prior release",
+        "Escalated to manager with both options and recommendation; committed after decision by documenting risks and shipping cleanly",
+        "Quote: \"I documented the risks, implemented the chosen design cleanly, and added a follow-up ticket\"",
+        "Follow-up: Would you change anything? -> Would run a joint spike first for shared data"
+      ],
+      "raiseFeedback": "Raises the bar. Competency tested is Have Backbone; Disagree and Commit on an individual-contributor scope. Candidate described a clear disagreement with a peer, used prior-release data to support their view, escalated once, then fully committed by shipping the chosen design and tracking the risk. The reflection shows coachability. This meets the bar for junior because the scope stayed within their own project and they accepted the outcome without lingering resistance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with my manager on the priority of a bug fix versus a new feature. I thought the bug was more important but they wanted the feature. I mentioned it once and then just did the feature."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share any data or try to understand their reasoning?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured they had more context so I dropped it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you strongly disagreed...",
+        "Disagreed with manager on bug vs feature priority but only mentioned it once then dropped it",
+        "No data presented; no escalation; no visible commitment shown beyond compliance",
+        "Follow-up: Did you share data or seek reasoning? -> \"I figured they had more context so I dropped it\""
+      ],
+      "lowerFeedback": "Lowers the bar. The story shows surface-level disagreement without any attempt to influence or gather data, then passive acceptance rather than active commitment. For a junior role we expect at least one clear escalation attempt plus evidence the candidate owned the outcome afterward; neither is present here."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were about to duplicate a payments integration. I disagreed with the other tech lead's plan because it would double our support load. I ran a two-day joint design session, produced a shared service proposal with cost estimates, and presented both options to the directors."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and how did you commit?"
+        },
+        {
+          "role": "candidate",
+          "text": "They still chose the duplicate route for speed. I staffed the shared service as a side project for one engineer from each team and we deprecated the duplicates six months later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved the finance stakeholder earlier so the cost argument landed with more weight."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you strongly disagreed with manager or peer...",
+        "Disagreed with another tech lead on duplicate payments integration; ran joint design session and presented costed options to directors",
+        "Outcome was duplicate build chosen; candidate committed by driving a shared service side project that later consolidated",
+        "Quote: \"I staffed the shared service as a side project... and we deprecated the duplicates six months later\"",
+        "Follow-up: Would you change anything? -> Involve finance stakeholder earlier"
+      ],
+      "raiseFeedback": "Raises the bar. Senior-level expectation is cross-team influence without authority and measurable downstream impact. Candidate used a joint working session and cost data to surface the disagreement, accepted the speed trade-off, then created leverage by building the better path anyway. The reflection shows strategic judgment on stakeholder timing.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with a peer on whether to build a new dashboard or extend the existing one. I sent a long email with my opinion and when they didn't reply I just built what I thought was right."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "They ended up redoing parts of it later. I still think my approach was better."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you strongly disagreed...",
+        "Disagreed on dashboard build vs extend; sent email then built own version without alignment",
+        "Resulted in duplicate work later; candidate shows no commitment to the decided path and still defends their view",
+        "Follow-up: How did that affect the other team? -> \"They ended up redoing parts of it later. I still think my approach was better\""
+      ],
+      "lowerFeedback": "Lowers the bar. Senior candidates must demonstrate influence across teams and willingness to commit once a decision is made. This story shows unilateral action and lingering disagreement, which creates friction rather than leverage."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My director wanted to cut the mobile team's headcount to fund a new initiative. I disagreed because the data showed mobile drove 40% of new revenue. I prepared retention and revenue scenarios, brought the mobile tech lead into the discussion, and proposed a phased reallocation instead of a cut."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened and how did your team experience it?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the headcount but shifted two engineers to the new initiative after three months. The mobile metrics stayed flat and the new initiative launched on time. I spent time with the two engineers explaining the trade-off so they felt ownership."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have surfaced the revenue data two weeks earlier when the first rumors started."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you strongly disagreed with manager or peer on something important...",
+        "Disagreed with director on cutting mobile headcount; prepared revenue scenarios and included tech lead in discussion",
+        "Proposed phased reallocation; outcome kept headcount with controlled shift; protected team morale by explaining trade-offs directly",
+        "Quote: \"I spent time with the two engineers explaining the trade-off so they felt ownership\"",
+        "Follow-up: Would you change anything? -> Surface revenue data two weeks earlier"
+      ],
+      "raiseFeedback": "Raises the bar. Manager-level evaluation focuses on protecting team outcomes while still committing to org priorities. Candidate used data and included their report in the conversation, accepted a controlled trade-off, and invested in helping the affected engineers stay engaged. The reflection shows awareness of timing leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My skip wanted to move two of my engineers to another project. I disagreed but the decision was made above me so I told the team it was happening and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you help the team through the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have much to say because the decision was already final."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you strongly disagreed...",
+        "Disagreed with skip on moving two engineers but accepted decision without pushback or data",
+        "Told team it was happening with no further support; shows no attempt to create leverage or own the outcome for the team",
+        "Follow-up: How did you help the team? -> \"I didn't have much to say because the decision was already final\""
+      ],
+      "lowerFeedback": "Lowers the bar. Managers are expected to advocate for their team with data and then actively own the outcome even when they lose. This candidate stopped at compliance and provided no evidence of helping the team absorb the change."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO wanted to acquire a company whose product overlapped ours by 70%. I believed the integration cost and culture risk outweighed the revenue synergy. I commissioned an independent diligence report, shared it with the board, and recommended building the missing capability instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final decision and how did you align the organization?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board approved the acquisition. I assigned my best integration lead to run the post-merger workstream and personally briefed all VPs on the revised three-year roadmap so the build-versus-buy debate ended."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have run a small joint workshop with the target company's leadership before the board meeting to test cultural fit earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you strongly disagreed with manager or peer on something important to the business...",
+        "Disagreed with CEO on acquisition with 70% overlap; commissioned independent diligence and recommended build alternative to board",
+        "Board approved acquisition anyway; candidate committed by assigning top integration lead and aligning all VPs on revised roadmap",
+        "Quote: \"I personally briefed all VPs on the revised three-year roadmap so the build-versus-buy debate ended\"",
+        "Follow-up: Would you change anything? -> Run joint workshop with target leadership earlier to test culture"
+      ],
+      "raiseFeedback": "Raises the bar. At exec level we look for strategic judgment under high ambiguity and the ability to create organizational alignment after losing. Candidate surfaced a clear alternative with external data, accepted the board decision, then used personal leverage to drive integration success and close debate across the leadership team. The reflection shows long-term thinking on cultural risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with the CEO on entering a new vertical because the margins looked thin. I raised it in the exec meeting but the decision went ahead. I focused my teams on the existing verticals."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the org-wide implications?"
+        },
+        {
+          "role": "candidate",
+          "text": "I let the other leaders worry about the new vertical."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you strongly disagreed...",
+        "Disagreed on new vertical entry due to thin margins; raised once then disengaged",
+        "No evidence of commitment to the chosen strategy; left alignment and implications to others",
+        "Follow-up: How did you handle org-wide implications? -> \"I let the other leaders worry about the new vertical\""
+      ],
+      "lowerFeedback": "Lowers the bar. Exec disagreement must be paired with visible commitment that protects the broader organization. This candidate raised the point once and then stepped back, showing neither strategic follow-through nor leverage across the leadership team."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Escalation approach and data used",
+      "junior": "Brought prior-release metrics to manager once",
+      "senior": "Ran joint working session and cost model before director escalation",
+      "manager": "Prepared retention/revenue scenarios and included report in discussion",
+      "exec": "Commissioned independent diligence and presented build alternative to board"
+    },
+    {
+      "signal": "Commitment after losing the argument",
+      "junior": "Shipped chosen design and tracked risk ticket",
+      "senior": "Drove shared-service side project that later consolidated work",
+      "manager": "Assigned engineers to new initiative and explained trade-offs personally",
+      "exec": "Assigned top integration lead and aligned all VPs on revised roadmap"
+    },
+    {
+      "signal": "Reflection on what they would change",
+      "junior": "Would run joint spike first for shared data",
+      "senior": "Would involve finance stakeholder earlier",
+      "manager": "Would surface revenue data two weeks earlier",
+      "exec": "Would test cultural fit with target leadership before board meeting"
+    },
+    {
+      "signal": "Scope of impact shown",
+      "junior": "Single project, own code",
+      "senior": "Two teams, measurable consolidation six months later",
+      "manager": "Own team plus controlled org reallocation",
+      "exec": "Board-level decision and company-wide roadmap alignment"
+    }
+  ],
+  "kind": "lp"
+}

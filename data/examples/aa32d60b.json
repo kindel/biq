@@ -1,0 +1,237 @@
+{
+  "question": "Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+  "competency": "Ownership & Accountability",
+  "principle": "Ownership & Accountability",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our deployment script kept failing on the same environment variable mismatch every sprint. I was the one who noticed the pattern after three incidents, so I added a pre-flight check script and updated the onboarding README with the exact values."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact after the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Zero repeats in the next six sprints. My manager asked me to walk the new hires through it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate noticed repeated env-var failures in their own deploys",
+        "Added pre-flight check and updated README",
+        "Outcome: zero repeats for six sprints; used in onboarding",
+        "Quote: \"I was the one who noticed the pattern after three incidents\"",
+        "Follow-up: Asked about impact; confirmed sustained fix and shared with others"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership & Accountability for junior level. The candidate identified a recurring deployment failure in their own work, added a pre-flight check, and updated the README so the issue stopped repeating. \"I was the one who noticed the pattern after three incidents\" shows they moved beyond repeated firefighting. The change produced six sprints without recurrence and was adopted for new-hire onboarding. This demonstrates local ownership and coachability. Biggest strength is turning personal repetition into a durable, shareable fix rather than continued one-off fixes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The builds were breaking a lot so I just reran them a few times until they passed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look into why they kept failing?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just needed to get my PR through each time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate reran failing builds repeatedly",
+        "No investigation into root cause",
+        "Outcome: PRs eventually merged but pattern continued",
+        "Quote: \"I just needed to get my PR through each time\"",
+        "Follow-up: Asked if they investigated; confirmed they did not"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership & Accountability for junior level. The candidate responded to repeated build failures by simply rerunning the job until it passed. \"I just needed to get my PR through each time\" shows focus on personal throughput over root cause. No attempt was made to identify or prevent recurrence. This leaves the systemic issue untouched and creates ongoing waste for the team. Biggest gap is absence of any move from symptom treatment to prevention even at individual scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three teams kept hitting the same rate-limit errors on the shared billing service every quarter-end. I mapped the call patterns, found the missing idempotency keys, and worked with the billing team to add a shared client library with exponential backoff."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a brown-bag, published usage metrics showing 40% drop in errors, and got the platform team to own the library going forward."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate traced recurring rate-limit errors across three teams",
+        "Added idempotency and shared client library with backoff",
+        "Drove adoption via brown-bag and metrics; handed to platform team",
+        "Quote: \"I mapped the call patterns, found the missing idempotency keys\"",
+        "Follow-up: Asked how adoption happened; confirmed cross-team influence and sustained ownership transfer"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership & Accountability for senior level. The candidate traced quarterly rate-limit errors affecting multiple teams, introduced a shared client library, and drove adoption through a brown-bag and published metrics. \"I mapped the call patterns, found the missing idempotency keys\" illustrates moving from repeated incidents to a cross-team preventive solution. Error volume dropped 40% and ownership transferred to the platform team. This shows influence without authority and measurable, lasting impact. Biggest strength is converting recurring pain into a reusable fix owned by the right team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept seeing the same rate-limit errors so I added retry logic in my service."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the other teams still see the problem?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yeah, but at least my service stopped failing as often."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate added retries only in their own service",
+        "Did not address root cause or other teams",
+        "Outcome: local improvement only",
+        "Quote: \"at least my service stopped failing as often\"",
+        "Follow-up: Checked scope; confirmed no cross-team or systemic change"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership & Accountability for senior level. The candidate addressed recurring rate-limit errors by adding retries only inside their own service. \"at least my service stopped failing as often\" reveals a local, symptom-focused response. No effort was made to identify the missing idempotency keys or create a solution usable by the other teams still affected. This leaves the systemic issue intact. Biggest gap is staying within individual boundaries instead of driving a durable, cross-team fix."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending 30% of sprint capacity on the same three customer data inconsistencies every release. I ran a root-cause analysis with the team, created a shared data-validation service, and shifted two engineers to own its maintenance while changing our definition of done to require the new checks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the capacity trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused one feature for a sprint; the reduction in support tickets paid for itself in two releases."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate identified recurring data inconsistencies consuming 30% capacity",
+        "Built shared validation service and updated definition of done",
+        "Reallocated two engineers and paused a feature temporarily",
+        "Quote: \"I ran a root-cause analysis with the team\"",
+        "Follow-up: Asked about capacity decision; confirmed deliberate trade-off and measured payback"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership & Accountability for manager level. The candidate recognized that recurring data issues were consuming 30% of team capacity, led a root-cause analysis, and delivered a shared validation service with updated definition of done. \"I ran a root-cause analysis with the team\" shows they involved the team in creating leverage rather than assigning more tickets. They accepted a one-sprint feature delay that was repaid by reduced support load. This demonstrates creating team-level leverage and owning outcomes over heroics. Biggest strength is converting recurring team tax into a durable process and ownership change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team to be more careful with data checks and added it to the weekly stand-up reminders."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the volume of issues go down?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just got better at triaging them faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate added reminders and asked team to be careful",
+        "No structural change or root-cause work",
+        "Outcome: faster triage only",
+        "Quote: \"we just got better at triaging them faster\"",
+        "Follow-up: Checked results; confirmed no reduction in underlying volume"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership & Accountability for manager level. The candidate responded to recurring data inconsistencies by reminding the team to be more careful and improving triage speed. \"we just got better at triaging them faster\" shows continued focus on managing symptoms rather than eliminating the source. No shared service, definition-of-done change, or capacity reallocation occurred. The team remained stuck in the same cycle. Biggest gap is absence of structural ownership or leverage creation at the team level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer churn was rising because of repeated billing disputes that our support org handled case-by-case. I sponsored a cross-functional program to rebuild the billing reconciliation engine, moved the ownership to finance ops, and tied the new SLA to the quarterly business review so it stayed resourced."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two growth experiments by a quarter; the reduction in support headcount and churn more than offset it within nine months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate identified recurring billing disputes driving churn",
+        "Sponsored new reconciliation engine and shifted ownership to finance ops",
+        "Tied to QBR for sustained resourcing; accepted delay on growth work",
+        "Quote: \"I sponsored a cross-functional program to rebuild the billing reconciliation engine\"",
+        "Follow-up: Asked about trade-offs; confirmed strategic prioritization and measured business impact"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership & Accountability for exec level. The candidate recognized that case-by-case billing disputes were driving measurable churn, sponsored a cross-org rebuild of the reconciliation engine, and shifted ownership to finance ops with QBR accountability. \"I sponsored a cross-functional program to rebuild the billing reconciliation engine\" shows strategic judgment on where to apply leverage. They accepted a quarter delay on growth experiments that was repaid by lower support costs and churn. This reflects long-term thinking and org-level ownership rather than repeated local fixes. Biggest strength is converting a recurring business problem into a permanently resourced, owned solution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked support to create better macros for the common billing disputes so they could close tickets faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the churn trend change?"
+        },
+        {
+          "role": "candidate",
+          "text": "It slowed a bit but we still see the same disputes every quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you fixed a systemic or recurring issue rather than just treating the symptom.",
+        "Candidate improved support macros for faster ticket handling",
+        "No change to billing system or ownership",
+        "Outcome: marginal slowdown in churn, disputes continue",
+        "Quote: \"we still see the same disputes every quarter\"",
+        "Follow-up: Checked business result; confirmed issue remains systemic"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership & Accountability for exec level. The candidate addressed recurring billing disputes by improving support macros for faster ticket closure. \"we still see the same disputes every quarter\" shows the underlying system problem was left untouched. No cross-org program, ownership shift, or resourcing commitment was made. The churn driver persists. Biggest gap is remaining at the level of operational tweaks instead of driving structural, org-wide accountability."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of fix",
+      "junior": "Individual work or single service",
+      "senior": "Cross-team or platform component",
+      "manager": "Team process and capacity reallocation",
+      "exec": "Org-level system and ownership transfer"
+    },
+    {
+      "signal": "Evidence of prevention",
+      "junior": "Added check or doc that stopped repeats",
+      "senior": "Shared library plus adoption metrics",
+      "manager": "Definition of done change plus measured capacity recovery",
+      "exec": "New engine with QBR accountability and churn reduction"
+    },
+    {
+      "signal": "Trade-off handling",
+      "junior": "Minimal; focus on own time",
+      "senior": "Brown-bag and influence to gain adoption",
+      "manager": "Paused feature for one sprint",
+      "exec": "Delayed growth experiments for a quarter"
+    },
+    {
+      "signal": "Sustained ownership",
+      "junior": "Used in onboarding",
+      "senior": "Handed to platform team",
+      "manager": "Updated team rituals",
+      "exec": "Finance ops owns SLA"
+    },
+    {
+      "signal": "Metric linkage",
+      "junior": "Zero repeats for six sprints",
+      "senior": "40% error drop",
+      "manager": "Support tickets repaid capacity",
+      "exec": "Churn and support headcount offset"
+    }
+  ],
+  "kind": "competency"
+}

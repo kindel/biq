@@ -1,0 +1,233 @@
+{
+  "question": "Give an example of when you set a vision or direction for a group and then executed on it.",
+  "competency": "Leadership & Influence",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my internship, our three-person feature team kept missing deadlines on a shared dashboard. I proposed we shift from individual tickets to a weekly demo cadence where we'd review one integrated slice together. We ran it for six weeks and hit the release date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One teammate wanted to keep working solo. I asked him to pick the first demo topic so he could show his part first. After that he joined in."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Internship; 3-person feature team missing deadlines on dashboard",
+        "Proposed weekly integrated demo cadence instead of solo tickets",
+        "Ran 6 weeks, hit release date",
+        "Quote: 'I asked him to pick the first demo topic'",
+        "Follow-up: Asked about resistance; candidate described simple 1:1 ask that worked"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a local process change on a three-person team and described a concrete mechanism (weekly integrated demos) plus a direct follow-up to bring the resister along. The outcome was modest but measurable (hit release). This shows early ownership and willingness to adjust when pushback appeared rather than waiting for a lead. Biggest strength is the specific ask used to gain buy-in.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told my project group we should finish early so we wouldn't be stressed. We all agreed and submitted on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you do to set direction or handle any issues?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just reminded everyone at the start of each meeting that we wanted to finish early."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Project group; suggested finishing early to avoid stress",
+        "Outcome: submitted on time",
+        "Quote: 'I just reminded everyone at the start of each meeting'",
+        "Follow-up: Probing for actions; candidate stayed at high-level reminders only"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story stays at the level of a general suggestion with no mechanism, ownership of trade-offs, or handling of real obstacles. The candidate could not describe a specific action that changed behavior beyond repeating the goal. This leaves unclear whether the candidate can move from idea to coordinated execution even at small scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams were duplicating auth work. I wrote a one-pager framing a shared identity service as the default for new services and ran a brown-bag to surface concerns. Four teams adopted it over the next quarter and duplication dropped."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the second team to switch?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paired with their lead on the first migration ticket so they saw the support level before committing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Two platform teams duplicating auth; wrote one-pager proposing shared service",
+        "Ran brown-bag, addressed concerns, drove adoption",
+        "Four teams adopted in one quarter; duplication reduced",
+        "Quote: 'I paired with their lead on the first migration ticket'",
+        "Follow-up: How second team switched; candidate described concrete pairing step"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate defined a cross-team direction without formal authority, used a lightweight artifact to align stakeholders, and then invested personal time to de-risk adoption for the next team. The metric (four teams, reduced duplication) is clear and tied to the original problem. Biggest strength is the follow-through step that converted skeptics rather than declaring victory after the brown-bag.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we standardize on one auth library across teams. I sent an email with the recommendation and a few teams started using it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the teams that didn't adopt?"
+        },
+        {
+          "role": "candidate",
+          "text": "They kept their own approach; I didn't have time to chase everyone."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Suggested standard auth library via email",
+        "Some teams adopted; others did not",
+        "Quote: 'I didn't have time to chase everyone'",
+        "Follow-up: Non-adopters; candidate accepted partial result without further action"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate surfaced a direction but treated influence as a one-time broadcast. No evidence of adapting the message to different teams or removing adoption friction. The outcome remained partial by design, which signals limited expectation of cross-team follow-through at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team of eight was reactive on incidents. I set a goal that every on-call engineer would own one preventive fix per quarter and changed the on-call rotation to give them dedicated time. Repeat incidents fell 40 percent in nine months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineer who kept pushing back on the new rotation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sat with him, showed his incident load data, and let him pick which preventive area he owned first. He picked the biggest one."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Team of 8 reactive on incidents; set per-engineer preventive fix goal",
+        "Changed rotation to create dedicated time",
+        "Repeat incidents down 40% in 9 months",
+        "Quote: 'I sat with him, showed his incident load data, and let him pick'",
+        "Follow-up: Handling pushback; candidate used data and choice to gain ownership"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate translated a team-level problem into a structural change (rotation + explicit goal) and then used 1:1 coaching to bring along the resister while preserving their agency. The result is a sustained team metric rather than a one-off win. Biggest strength is the combination of process change and individual development that produced compounding effect.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we needed to be more proactive on incidents. I added a slide to the quarterly review and asked everyone to think about it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change in how the team worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple people mentioned ideas in standup but we stayed mostly reactive."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Told team to be more proactive; added slide to quarterly review",
+        "Some ideas mentioned in standup",
+        "No structural change; remained mostly reactive",
+        "Follow-up: Actual change; candidate could not point to new team practices"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate communicated a desired direction but did not create the conditions (time, goals, accountability) for the team to act differently. The story ends with awareness rather than execution or team-level outcome, which is the core expectation at this level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the acquisition, our combined org had three overlapping roadmaps. I framed a single north-star metric around customer retention and re-sequenced the top three investments to serve it. Two quarters later retention was up 6 points and we dropped two duplicate workstreams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make explicit?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the growth team their new feature would slip one quarter so the reliability work could land first; they agreed once they saw the retention correlation data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Post-acquisition org with three overlapping roadmaps",
+        "Defined single retention north-star and re-sequenced investments",
+        "Retention +6 pts; two workstreams dropped",
+        "Quote: 'I told the growth team their new feature would slip one quarter'",
+        "Follow-up: Trade-offs; candidate described specific sequencing decision and data used"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate operated at org scale under post-acquisition ambiguity, chose a single measurable direction, and made visible prioritization trade-offs across teams. The outcome includes both a business metric and reduced duplication. Biggest strength is the willingness to delay a high-visibility feature in service of the larger goal rather than adding scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a company goal around customer obsession and asked each VP to align their OKRs. Most teams updated their slides."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in actual investment or sequencing?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept most of the original plans and added customer-related OKR language."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of when you set a vision or direction for a group and then executed on it.",
+        "Set company goal on customer obsession; asked VPs to align OKRs",
+        "Most teams updated slides and added language",
+        "Original plans largely unchanged",
+        "Follow-up: Investment change; candidate described surface alignment only"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate announced a direction but did not drive the hard reallocation or sequencing decisions required at this scope. The story shows activity (OKR updates) without evidence of changed business outcomes or reduced overlap, which is the minimum bar for org-level leadership."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Clarity of vision",
+      "junior": "Local process change with clear mechanism",
+      "senior": "Cross-team direction via lightweight artifact",
+      "manager": "Team-level goal plus structural change",
+      "exec": "Org-level north-star with explicit trade-offs"
+    },
+    {
+      "signal": "Execution ownership",
+      "junior": "Drove small cadence for 6 weeks",
+      "senior": "Paired to de-risk first migration",
+      "manager": "Changed rotation and tracked metric 9 months",
+      "exec": "Re-sequenced investments across VPs"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "1:1 ask to pick first demo topic",
+      "senior": "Paired on migration ticket",
+      "manager": "Used data + choice in 1:1",
+      "exec": "Shared correlation data and accepted delay"
+    },
+    {
+      "signal": "Scale of impact",
+      "junior": "3-person team, on-time release",
+      "senior": "4 teams, reduced duplication",
+      "manager": "8-person team, 40% fewer repeats",
+      "exec": "Org-wide, +6 pts retention, dropped workstreams"
+    },
+    {
+      "signal": "Sustained outcome",
+      "junior": "Hit release date",
+      "senior": "Adoption held for quarter",
+      "manager": "Metric tracked over 9 months",
+      "exec": "Two quarters of retention lift"
+    }
+  ],
+  "kind": "competency"
+}

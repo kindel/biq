@@ -1,0 +1,230 @@
+{
+  "question": "How did you get it shipped? (Probe after a delivery story: constraints, tradeoffs, what you personally owned.)",
+  "competency": "Deliver Results",
+  "principle": "Deliver Results",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a hard deadline for the new checkout flow. I owned the backend integration and realized the payment service had rate limits we hadn't tested. I cut the scope to only the top two payment methods, wrote a simple retry wrapper myself, and shipped on time. The rest of the team handled frontend."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the tradeoff and how did you decide?"
+        },
+        {
+          "role": "candidate",
+          "text": "I talked to the PM and we agreed the 80% coverage was enough for launch. I logged the decision and followed up with a post-launch fix for the other methods."
+        }
+      ],
+      "raiseNotes": [
+        "Q: How did you get it shipped?",
+        "Owned backend integration on checkout flow",
+        "Identified rate-limit constraint, scoped to top 2 methods, built retry wrapper",
+        "Quote: \"I logged the decision and followed up with a post-launch fix\"",
+        "Follow-up: tradeoff discussion with PM, accepted 80% coverage for launch"
+      ],
+      "raiseFeedback": "The candidate owned a concrete piece of the delivery and made a clear scope tradeoff after checking with the PM. They shipped on the original date and documented the gap for later work. This shows local ownership and basic judgment on constraints. The story stays within individual scope, which matches the level. Biggest strength is the explicit follow-up on the deferred items.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We just worked late and got it done. I fixed a few bugs the day before launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What constraints or tradeoffs did you face?"
+        },
+        {
+          "role": "candidate",
+          "text": "The deadline was tight so we skipped some tests."
+        }
+      ],
+      "lowerNotes": [
+        "Q: How did you get it shipped?",
+        "Vague answer about working late and fixing bugs",
+        "No ownership of specific component or decision",
+        "Quote: \"We just worked late and got it done\"",
+        "Follow-up: skipped tests due to tight deadline, no mention of tradeoffs or follow-up"
+      ],
+      "lowerFeedback": "The answer lacks any specific ownership or tradeoff discussion. The candidate describes reacting to the deadline rather than driving a decision. No evidence of scoping work or communicating constraints to stakeholders. This lowers the bar for Deliver Results at the junior level because results appear driven by heroics instead of deliberate choices."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The migration had a hard infra cost cap. I negotiated with the platform team to get a temporary quota increase and split the rollout into two phases. I owned the data migration script and the rollback plan. We hit the deadline with zero customer impact."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the projected cost savings after migration and offered to take on their on-call load for one week in exchange."
+        }
+      ],
+      "raiseNotes": [
+        "Q: How did you get it shipped?",
+        "Owned migration script and rollback under cost cap",
+        "Negotiated temporary quota with platform team via cost-savings pitch and on-call trade",
+        "Phased rollout, zero customer impact",
+        "Quote: \"I offered to take on their on-call load for one week in exchange\"",
+        "Follow-up: cross-team influence without authority"
+      ],
+      "raiseFeedback": "The candidate drove a cross-team dependency through a clear value exchange and owned the technical rollback path. Metrics (zero customer impact, on-time) are stated without exaggeration. The story shows influence and explicit tradeoff management. This raises the bar for a senior because the result required coordination beyond their immediate team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I made sure my part was done and the PM handled the rest."
+        },
+        {
+          "role": "interviewer",
+          "text": "What tradeoffs or constraints came up?"
+        },
+        {
+          "role": "candidate",
+          "text": "There were some infra limits but the team just worked around them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: How did you get it shipped?",
+        "Delegated coordination to PM",
+        "No personal ownership of constraints or influence",
+        "Quote: \"the team just worked around them\"",
+        "Follow-up: no evidence of cross-team action or metrics"
+      ],
+      "lowerFeedback": "The candidate stayed within their lane and showed no attempt to resolve blockers or influence others. Tradeoffs are mentioned only in passing with no personal action or outcome attached. This lowers the bar because senior Deliver Results requires evidence of removing cross-team friction, not just completing assigned tasks."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned the new billing service launch. One engineer was struggling with the retry logic. I paired with them for two sessions, then had them own the final review. We also deprioritized a nice-to-have dashboard feature after reviewing the risk with the finance team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the underperforming engineer turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped their piece cleanly and later led a similar effort on the next project."
+        }
+      ],
+      "raiseNotes": [
+        "Q: How did you get it shipped?",
+        "Team owned billing service; candidate coached struggling engineer and deprioritized dashboard",
+        "Explicit people development action and scope tradeoff with finance",
+        "Quote: \"They shipped their piece cleanly and later led a similar effort\"",
+        "Follow-up: engineer outcome shows leverage through coaching"
+      ],
+      "raiseFeedback": "The manager used direct coaching to lift an individual contributor and made a visible scope decision with stakeholders. The follow-on leadership by the same engineer demonstrates lasting leverage. The story ties team outcome to the manager's actions on both people and priorities. This raises the bar for a manager because results are achieved through the team rather than despite it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team the deadline and they delivered. One person needed help but we got it done."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about the person who needed help?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reassigned the work to someone else so we wouldn't slip."
+        }
+      ],
+      "lowerNotes": [
+        "Q: How did you get it shipped?",
+        "Deadline-driven; reassigned work instead of developing the person",
+        "No coaching or long-term leverage described",
+        "Quote: \"I reassigned the work to someone else\"",
+        "Follow-up: outcome focused on schedule only, not team capability"
+      ],
+      "lowerFeedback": "The manager resolved the delivery risk by moving work rather than developing the individual. No evidence of creating team leverage or making deliberate tradeoffs with stakeholders. This lowers the bar because manager-level Deliver Results requires building repeatable team capacity, not just redistributing tasks."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to choose between two major product bets under a fixed headcount. I killed the lower-ROI initiative after modeling three-year revenue impact and moved the entire team to the higher-bet area. We launched six months later and captured the segment."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team that lost their project?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with each lead, explained the data, and gave them first pick of roles on the winning bet plus a clear growth path."
+        }
+      ],
+      "raiseNotes": [
+        "Q: How did you get it shipped?",
+        "Made org-level bet choice under fixed headcount, killed lower-ROI project",
+        "Modeled three-year revenue, moved whole team, provided growth paths to affected leads",
+        "Quote: \"gave them first pick of roles on the winning bet plus a clear growth path\"",
+        "Follow-up: strategic judgment and people impact at scale"
+      ],
+      "raiseFeedback": "The executive made a high-ambiguity resource allocation decision with multi-year financial modeling and executed the change while preserving talent. The outcome is a clear business result tied to the choice. This raises the bar at the exec level because it shows strategic prioritization and long-term organizational health rather than short-term delivery heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We shipped the roadmap items we committed to. I pushed the teams to hit their dates."
+        },
+        {
+          "role": "interviewer",
+          "text": "What big tradeoffs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed one non-critical project but nothing major."
+        }
+      ],
+      "lowerNotes": [
+        "Q: How did you get it shipped?",
+        "Roadmap execution focus with no strategic reallocation",
+        "Minimal evidence of high-ambiguity decisions or long-term modeling",
+        "Quote: \"We delayed one non-critical project but nothing major\"",
+        "Follow-up: no org-level leverage or talent retention actions described"
+      ],
+      "lowerFeedback": "The answer stays at the level of pushing existing commitments without showing strategic judgment or resource reallocation. No evidence of long-term modeling or handling talent implications of hard choices. This lowers the bar for an exec because Deliver Results at this level requires creating leverage through portfolio decisions, not just driving the current plan."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task or component",
+      "senior": "Cross-team coordination or influence",
+      "manager": "Team outcome and people development",
+      "exec": "Org-level resource allocation and strategy"
+    },
+    {
+      "signal": "Tradeoff handling",
+      "junior": "Local scope cut with PM input",
+      "senior": "Negotiation or phasing with metrics",
+      "manager": "Deprioritization tied to team capacity",
+      "exec": "Portfolio kill decision with multi-year model"
+    },
+    {
+      "signal": "People element",
+      "junior": "Coachability and follow-up on own work",
+      "senior": "Influence without authority",
+      "manager": "Coaching and reassignment outcomes",
+      "exec": "Talent retention after hard choices"
+    },
+    {
+      "signal": "Evidence of results",
+      "junior": "On-time ship with documented gap",
+      "senior": "Zero customer impact, stated metrics",
+      "manager": "Team ships and individual grows",
+      "exec": "Business segment captured after bet"
+    },
+    {
+      "signal": "Common failure mode",
+      "junior": "Vague \"worked late\" or skipped tests",
+      "senior": "Stayed in lane, no cross-team action",
+      "manager": "Reassigned work instead of developing",
+      "exec": "No strategic reallocation, just pushed dates"
+    }
+  ],
+  "kind": "lp"
+}

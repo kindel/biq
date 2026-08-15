@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with a peer on the priority of a bug fix versus a new feature we were both assigned to. I gathered usage data showing the bug affected 40% of daily active users, shared it in our 1:1, and proposed we split the work."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you shared the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "My peer still wanted to ship the feature first. I asked our manager to join the next sync. We decided on the bug fix and committed to the feature in the next sprint. The bug reduction improved our NPS by 8 points."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: new SWE on payments team; Situation: peer wanted to prioritize feature over high-impact bug",
+        "Actions: pulled usage data, proposed split, escalated to manager with options",
+        "Outcome: bug fixed first, +8 NPS; Quote: \"I asked our manager to join so we could decide together.\"",
+        "Follow-up: Asked how they handled the peer relationship afterward; Candidate: scheduled a retro to align on criteria for next time"
+      ],
+      "raiseFeedback": "Candidate described a clear individual-scope disagreement on a payments bug versus feature. They used data to surface the issue and escalated cleanly to the manager when direct discussion stalled. The outcome included both the technical decision and a follow-up retro to improve future alignment. This shows appropriate backbone for a junior without overstepping authority. The story stayed local to their work and demonstrated learning from the process. Biggest strength is willingness to escalate with options rather than forcing or avoiding.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with my peer on whether to add more logging to our service. I thought it was unnecessary overhead so I just implemented what I thought was right."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your peer respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were annoyed and we ended up duplicating some work. My manager later told us to align but the feature shipped late."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: junior SWE; Situation: logging debate on shared service",
+        "Actions: decided unilaterally and implemented own view",
+        "Outcome: duplicated work, delayed ship; Quote: \"I just implemented what I thought was right.\"",
+        "Follow-up: Asked what they would do differently; Candidate: \"Probably talk to them earlier but I still think I was correct\""
+      ],
+      "lowerFeedback": "Candidate resolved the disagreement by acting unilaterally on a shared service change. No data or escalation path was used, leading to duplicated effort and a late delivery. The follow-up answer showed limited reflection on collaboration. This lowers the bar on Disagree and Commit because the candidate prioritized their own view over team alignment. The story remained purely individual but lacked any attempt to influence or commit after discussion. Biggest gap is absence of any mechanism to reach resolution beyond doing it their way."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing wanted to launch a campaign that would increase support tickets by an estimated 30%. I modeled the ticket volume against our current staffing and shared the forecast with the marketing lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when they pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a joint experiment on a smaller segment that confirmed the ticket spike. We agreed to delay the full launch by two weeks and add self-service content first. Support CSAT held steady and campaign revenue still hit target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: senior SWE partnering with marketing; Situation: campaign launch would overload support",
+        "Actions: built ticket forecast, ran joint experiment, negotiated delay plus mitigation",
+        "Outcome: launch delayed 2 weeks, self-service added, revenue and CSAT both protected; Quote: \"We agreed to delay and add content first.\"",
+        "Follow-up: How did you maintain the relationship; Candidate: followed up with joint retrospective and shared credit in launch review"
+      ],
+      "raiseFeedback": "Senior candidate handled a cross-team disagreement by quantifying downstream impact and proposing an experiment instead of a veto. The resolution protected both marketing goals and operational stability with measurable results. Post-decision commitment was shown through joint execution and shared credit. This raises the bar because the candidate influenced without authority and left the relationship stronger. The story included clear metrics and a concrete trade-off. Biggest strength is using data to change the decision rather than simply winning the argument.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with the product manager on scope for a new integration. I told them the timeline was unrealistic and kept pushing back in every planning meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How was it ultimately resolved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Leadership eventually cut the scope. The PM was frustrated and we had tension for the rest of the quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: senior engineer; Situation: unrealistic integration scope with PM",
+        "Actions: repeated pushback in meetings without alternatives or data",
+        "Outcome: leadership cut scope; Quote: \"The PM was frustrated and we had tension for the rest of the quarter.\"",
+        "Follow-up: What would you do differently; Candidate: \"I would have escalated earlier to leadership\""
+      ],
+      "lowerFeedback": "Candidate relied on repeated objections without offering data or alternatives, forcing escalation to leadership. The outcome created lasting tension with the PM rather than a committed path forward. No attempt to find a joint solution or experiment is visible. This lowers the bar on Disagree and Commit for a senior because influence without authority was not demonstrated. The story stayed within one team but left damage to the working relationship. Biggest gap is lack of any mechanism to reach alignment before external intervention."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two of my teams disagreed on API ownership for a new capability. One team wanted to own it for speed, the other argued it belonged in their platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the disagreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had both teams present trade-offs with cost and velocity data. We chose the platform team route and I committed headcount from my team to help them deliver the first two integrations. Velocity recovered within one quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: engineering manager of two teams; Situation: API ownership dispute between feature and platform teams",
+        "Actions: structured trade-off discussion, made decision, loaned headcount to support outcome",
+        "Outcome: platform ownership chosen, integrations delivered, velocity recovered; Quote: \"I committed headcount from my team to help them deliver.\"",
+        "Follow-up: How did you handle the losing team's morale; Candidate: gave them clear next bets and public credit for the decision framework"
+      ],
+      "raiseFeedback": "Manager candidate turned an inter-team disagreement into a structured decision with data and then provided resources to make the chosen path succeed. By loaning headcount they demonstrated commitment to the outcome rather than just declaring a winner. The story shows team-level leverage and attention to long-term velocity. This raises the bar because the candidate owned the full resolution including follow-through support. Clear metrics on recovery were provided. Biggest strength is using their own team's capacity to reduce friction after the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My two teams could not agree on who should own a shared component. I told them to figure it out themselves and come back with a plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They kept negotiating for three weeks. Eventually I had to step in and assign ownership, which hurt trust on both sides."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: EM; Situation: shared component ownership between two teams",
+        "Actions: delegated resolution without guidance or timeline",
+        "Outcome: three weeks of delay then forced decision with trust damage; Quote: \"I told them to figure it out themselves.\"",
+        "Follow-up: What would you change; Candidate: \"I would have set a deadline earlier\""
+      ],
+      "lowerFeedback": "Candidate delegated the disagreement without providing a decision framework or timebox, allowing it to drag for three weeks. When forced to intervene they created resentment rather than buy-in. No evidence of coaching either team on how to disagree productively. This lowers the bar for a manager because the outcome damaged team trust and required heroic intervention. The story shows lack of leverage through process. Biggest gap is absence of any mechanism to reach a committed decision without manager escalation."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Sales and engineering disagreed on whether to build a custom integration for a $4M deal. Sales argued it was strategic, engineering cited 6-month opportunity cost."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your role in the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked both sides to model the three-year revenue impact and support cost. We decided against the custom work and instead funded a self-serve path. Sales hit their number through other deals and engineering capacity went to a platform that unlocked three additional large accounts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: VP engineering; Situation: $4M custom integration request vs platform work",
+        "Actions: required joint three-year model, chose self-serve investment, protected engineering roadmap",
+        "Outcome: custom work rejected, self-serve unlocked three more deals; Quote: \"We decided against the custom work and funded a self-serve path.\"",
+        "Follow-up: How did you handle the sales relationship; Candidate: met with sales leadership to align on future qualification criteria"
+      ],
+      "raiseFeedback": "Exec candidate required both organizations to produce a multi-year model rather than making a short-term call. The decision protected long-term engineering leverage while still enabling sales success through a different path. Post-decision they invested in alignment mechanisms with sales. This raises the bar because the story shows strategic judgment under ambiguity and org-level trade-offs. Revenue and capacity outcomes were both protected. Biggest strength is refusing a one-off solution in favor of a scalable alternative.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The sales team wanted a custom feature for a large customer. I told them engineering did not have bandwidth and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that land?"
+        },
+        {
+          "role": "candidate",
+          "text": "They escalated to the CEO and we ended up building it anyway. It delayed two platform projects by a quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had a major disagreement with a peer or internal partner. How did you resolve it? What was the outcome?",
+        "Role: VP; Situation: custom feature request from sales",
+        "Actions: stated no bandwidth without modeling or alternatives",
+        "Outcome: CEO escalation forced the work, two platform projects delayed; Quote: \"They escalated to the CEO and we ended up building it anyway.\"",
+        "Follow-up: What would you do differently; Candidate: \"I would have involved the CEO earlier myself\""
+      ],
+      "lowerFeedback": "Candidate stated a position without data or alternatives and lost the decision through escalation. The outcome created roadmap damage and required CEO intervention. No attempt to find a mutually acceptable path or protect strategic priorities is visible. This lowers the bar at the exec level because the candidate did not demonstrate strategic judgment or cross-org influence. The story shows reactive rather than proactive leadership. Biggest gap is failure to own the business trade-off before it reached the CEO."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Escalation approach",
+      "junior": "Uses manager as tie-breaker after direct attempt",
+      "senior": "Escalates with data and options only when needed",
+      "manager": "Provides process so teams rarely need escalation",
+      "exec": "Frames decisions at business level to avoid escalation"
+    },
+    {
+      "signal": "Use of data",
+      "junior": "Brings simple usage metrics",
+      "senior": "Builds cross-team impact models",
+      "manager": "Requires teams to produce trade-off data",
+      "exec": "Demands multi-year revenue and capacity models"
+    },
+    {
+      "signal": "Post-decision commitment",
+      "junior": "Follows the decided path",
+      "senior": "Helps execute the chosen option",
+      "manager": "Loans resources to make the decision succeed",
+      "exec": "Funds alternative path that still achieves goals"
+    },
+    {
+      "signal": "Relationship impact",
+      "junior": "Maintains peer rapport through retro",
+      "senior": "Shares credit and runs joint retrospective",
+      "manager": "Protects morale of teams that did not win",
+      "exec": "Aligns on future decision criteria with partner org"
+    }
+  ],
+  "kind": "lp"
+}

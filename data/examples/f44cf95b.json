@@ -1,0 +1,262 @@
+{
+  "question": "Tell me about a time when a team member was not performing well and impacted your work. How did you handle that situation? Why were they not performing well? What was the outcome? What did you learn from that situation?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed the new hire on my feature was missing deadlines on their part of the API work, which blocked my integration tests. I asked them directly if they were stuck on anything and they said the requirements were unclear. We walked through the spec together and I flagged the gap to our lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say to them exactly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told them the delay was affecting my work and asked what help they needed. They opened up about being new to the codebase."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome and what you learned?"
+        },
+        {
+          "role": "candidate",
+          "text": "We finished on time after the lead clarified scope. I learned to check in early instead of waiting for the deadline."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was not performing well and impacted your work...",
+        "Role: new grad on first project, teammate missing API deadlines",
+        "Action: asked directly what was blocking them, walked through spec, escalated gap to lead",
+        "Outcome: feature shipped on time after clarification",
+        "Quote: 'I told them the delay was affecting my work and asked what help they needed'",
+        "Follow-up: Asked for exact words used; candidate described checking in early rather than waiting"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for a junior. The candidate owned their own blocked work by initiating a direct conversation instead of complaining or waiting. They quoted telling the teammate the delay was affecting their work and asking what help was needed, which shows basic transparency. The outcome was scope clarification from the lead and on-time delivery. This demonstrates coachability and willingness to surface issues early rather than letting resentment build. Biggest strength is the clear individual ownership of the conversation; the gap is that impact stayed local to one feature with no evidence of repeated application.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate kept missing commits so my tests were blocked. I just worked around it and stayed late to finish my part."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to them?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I didn't want to cause drama. I told my manager at the end of the sprint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was not performing well...",
+        "Role: junior dev, teammate missing commits",
+        "Action: worked around the issue and stayed late; told manager at sprint end",
+        "Outcome: candidate finished their part but no resolution for teammate",
+        "Quote: 'I didn't want to cause drama'",
+        "Follow-up: Confirmed no direct conversation occurred"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for a junior. The candidate avoided any direct conversation and instead worked around the problem while staying late. They only raised it with the manager after the sprint ended, showing preference for avoiding discomfort over transparency. The story contains no attempt to understand why the teammate was struggling. Biggest gap is the absence of any ownership in addressing the performance issue directly, which is a core expectation even at junior level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer on another team was late delivering shared service changes that my launch depended on. I scheduled a 1:1, shared the launch date and customer impact, and asked what was getting in their way."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did they say?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were overloaded with their own OKRs. We agreed on a smaller scope for the first release and I helped them prioritize the minimal viable change."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the launch date. Later they asked me to review their planning process for the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was not performing well and impacted your work...",
+        "Role: senior, cross-team dependency on peer delivering service changes",
+        "Action: scheduled 1:1, shared customer impact, negotiated smaller scope and offered help",
+        "Outcome: launch met; peer later asked for planning review",
+        "Quote: 'We agreed on a smaller scope for the first release and I helped them prioritize'",
+        "Follow-up: Confirmed peer initiated follow-up request for help"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for a senior. The candidate treated the peer as a partner by sharing concrete launch stakes and customer impact rather than issuing demands. They negotiated a reduced scope that allowed both teams to succeed and earned enough trust that the peer later sought their input on planning. The story shows influence without authority and a focus on mutual success. Biggest strength is turning a blocked dependency into an ongoing relationship; the minor gap is that metrics on time saved are not quantified.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The other team kept pushing dates. I escalated to both our managers and asked them to sort it out."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to the peer first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a few status emails but didn't get a response so I went straight to escalation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was not performing well...",
+        "Role: senior, cross-team dependency",
+        "Action: sent status emails then escalated to managers",
+        "Outcome: managers got involved but relationship stayed strained",
+        "Quote: 'I went straight to escalation'",
+        "Follow-up: Confirmed no direct conversation beyond email"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for a senior. The candidate defaulted to escalation after minimal email contact instead of investing in a direct conversation to understand constraints. This approach damaged the cross-team relationship and required manager intervention to resolve. No evidence of attempting to build trust or find a joint solution. Biggest gap is treating the other team as an obstacle rather than a partner, which is the opposite of what is expected at senior level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my directs was consistently missing code review turnaround, which slowed the whole team's velocity. I pulled the data, sat down with them, and asked what was preventing them from getting reviews done."
+        },
+        {
+          "role": "interviewer",
+          "text": "What surfaced?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were spending too much time in meetings and on support tickets. We adjusted their on-call load and set a weekly review goal with check-ins."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Review time dropped from five days to two. The direct later said the conversation helped them feel supported rather than punished."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was not performing well and impacted your work...",
+        "Role: manager, direct missing code review SLAs",
+        "Action: brought data to 1:1, diagnosed meeting load, adjusted on-call and set goals with follow-up",
+        "Outcome: review time improved from 5 days to 2; direct felt supported",
+        "Quote: 'The direct later said the conversation helped them feel supported rather than punished'",
+        "Follow-up: Confirmed specific metric improvement and direct's feedback"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for a manager. The candidate used data to make the issue objective, then focused on root cause rather than blame. They made a concrete adjustment to workload and followed up with check-ins, which produced measurable improvement. The direct's comment that they felt supported shows the manager built trust while addressing performance. Biggest strength is the combination of accountability and support; the only missing element is longer-term sustainment data.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a direct who was slow on reviews. I put them on a PIP after two months of missing targets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened in between?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a couple of 1:1s but didn't dig into why or change anything on their plate."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was not performing well...",
+        "Role: manager, direct slow on reviews",
+        "Action: mentioned issue in 1:1s then placed on PIP after two months",
+        "Outcome: PIP initiated with no prior support or diagnosis",
+        "Quote: 'I mentioned it in a couple of 1:1s but didn't dig into why'",
+        "Follow-up: Confirmed no workload or process changes were attempted"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for a manager. The candidate allowed two months of underperformance before taking formal action and never investigated root causes or offered support. Placing someone on a PIP without prior coaching or adjustments signals a lack of investment in the person's success. Biggest gap is the absence of any attempt to earn trust through honest, supportive feedback before moving to formal process."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two directors in my org were in conflict over resource allocation, which was delaying a critical product bet. I brought them together, had each lay out their constraints and customer commitments, and facilitated a trade-off discussion."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reallocated two engineers and adjusted the roadmap milestone. Both directors later told their teams the decision was fair and they owned the outcome."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "I learned that making the trade-offs visible and letting them own the decision increased trust in the org more than any single project win."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was not performing well and impacted your work...",
+        "Role: exec, directors in resource conflict delaying product bet",
+        "Action: facilitated joint session with constraints and commitments surfaced, drove visible trade-off",
+        "Outcome: reallocation agreed; both directors owned the decision publicly",
+        "Quote: 'Both directors later told their teams the decision was fair and they owned the outcome'",
+        "Follow-up: Confirmed directors communicated ownership to their teams"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust at exec level. The candidate addressed org-level friction by creating a forum where constraints were aired transparently rather than arbitrating behind closed doors. The result was a jointly owned decision that both directors defended to their teams. This shows strategic judgment in using conflict as an opportunity to model trust at scale. Biggest strength is the long-term org effect; the story would be stronger with a quantified business impact metric.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had two teams fighting over priorities. I made the call on resource allocation and sent the decision down."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the teams accept it?"
+        },
+        {
+          "role": "candidate",
+          "text": "One director pushed back in the next staff meeting but eventually complied."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was not performing well...",
+        "Role: exec, priority conflict between teams",
+        "Action: made unilateral resource decision and communicated downward",
+        "Outcome: compliance achieved after pushback in staff meeting",
+        "Quote: 'I made the call on resource allocation and sent the decision down'",
+        "Follow-up: Confirmed no joint discussion occurred before decision"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust at exec level. The candidate chose unilateral decision-making without first surfacing constraints or allowing the directors to participate in the trade-off. This produced compliance rather than ownership and required later defense in a staff meeting. Biggest gap is missing the opportunity to build lasting trust across the organization by treating directors as partners in the decision."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Direct conversation vs escalation",
+      "junior": "Raises: initiates direct check-in; Lowers: avoids and escalates late",
+      "senior": "Raises: uses 1:1 with shared impact; Lowers: relies on email then escalation",
+      "manager": "Raises: data-driven 1:1 with root cause; Lowers: mentions issue then jumps to PIP",
+      "exec": "Raises: facilitates joint constraint discussion; Lowers: makes unilateral call"
+    },
+    {
+      "signal": "Focus on understanding why",
+      "junior": "Raises: asks what help is needed; Lowers: no inquiry",
+      "senior": "Raises: explores peer's OKR load; Lowers: no diagnosis",
+      "manager": "Raises: adjusts on-call after diagnosis; Lowers: no workload change",
+      "exec": "Raises: surfaces constraints before trade-off; Lowers: skips to decision"
+    },
+    {
+      "signal": "Outcome ownership by others",
+      "junior": "Raises: teammate gets help; Lowers: no change for teammate",
+      "senior": "Raises: peer asks for future help; Lowers: relationship strained",
+      "manager": "Raises: direct feels supported; Lowers: formal process only",
+      "exec": "Raises: both directors own decision publicly; Lowers: compliance only"
+    },
+    {
+      "signal": "Scope of trust built",
+      "junior": "Local to one project",
+      "senior": "Cross-team relationship",
+      "manager": "Direct's sustained performance",
+      "exec": "Org-level director alignment"
+    }
+  ],
+  "kind": "lp"
+}

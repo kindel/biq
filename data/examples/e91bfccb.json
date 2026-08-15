@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time you shipped something you later realized was wrong. What happened? What did you learn?",
+  "competency": "Are Right, A Lot (Ownership, Learning from mistakes)",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I shipped a checkout flow change that pre-filled the wrong address for 8% of users. Two days after launch support tickets spiked. I owned the rollback and added a unit test I had skipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a post-mortem, showed it to my mentor, and started requiring peer review on any address logic. No repeat issues in the next two releases."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Shipped checkout pre-fill bug affecting 8% of users",
+        "Rolled back, added test, ran post-mortem with mentor",
+        "Quote: \"I started requiring peer review on address logic\"",
+        "Follow-up: What changed in your process? -> Added peer review and tests"
+      ],
+      "raiseFeedback": "Raises the bar on Are Right, A Lot for junior. Candidate owned a small but real defect, rolled it back, and added a concrete process change after feedback. The story shows quick recognition and coachability rather than defensiveness. Biggest strength is the direct link from mistake to an ongoing safeguard they still use.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a new filter that didn't work on mobile. QA missed it and users complained."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you personally do after you realized it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the PM and moved on to the next ticket. The team fixed it later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Blames QA for mobile filter bug",
+        "Told PM and moved on",
+        "Quote: \"The team fixed it later\"",
+        "Follow-up: What did you change in your own work? -> No clear personal action"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate describes a defect but shows no ownership or learning; the fix is attributed to others and no process change is mentioned. At junior level we expect the individual to internalize the mistake and demonstrate a concrete adjustment after feedback."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I drove a cross-team search ranking change that boosted CTR by 4% but increased zero-result queries for power users. We shipped in two regions before the metric showed up."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you course-correct?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the data, convinced the other team to add a fallback, and wrote a shared runbook so future ranking experiments include the zero-result guardrail."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Search ranking change raised CTR 4% but hurt power users in two regions",
+        "Pulled data, influenced other team on fallback, created shared runbook",
+        "Quote: \"Wrote a shared runbook so future experiments include the guardrail\"",
+        "Follow-up: How did you get the other team to adopt it? -> Used data and made it reusable"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate shows cross-team influence and turned a localized mistake into a reusable safeguard that protects future work. The story includes measurable impact and a concrete mechanism that outlives the incident. Biggest strength is moving from personal fix to systemic prevention without authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our new recommendation model performed worse on long-tail items. We rolled it back after a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change for future models?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. The modeling team owns that now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Recommendation model hurt long-tail performance",
+        "Rolled back after a week",
+        "Quote: \"The modeling team owns that now\"",
+        "Follow-up: What influence did you have on future experiments? -> None"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate reports a cross-team impact but shows no attempt to influence the owning team or prevent recurrence. At senior level we look for evidence of raising the bar for others; here the candidate hands the problem off without leverage."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team shipped a pricing experiment that looked good in A/B but caused support load to spike in one segment. I had approved the launch criteria."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran the retro, had the ICs update the launch checklist, and used the incident in our next promotion calibration to show how we handle trade-offs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Pricing experiment approved by candidate caused support spike",
+        "Ran retro, updated team checklist, used in promotion calibration",
+        "Quote: \"Used the incident in promotion calibration to show how we handle trade-offs\"",
+        "Follow-up: How did the team change afterward? -> Checklist and visible learning in reviews"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate owns the approval decision, turns the mistake into team process and visible development signal. The story demonstrates creating leverage through updated guardrails and using the event to coach on judgment. Biggest strength is linking the incident to how the team now evaluates risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team launched a feature that missed an edge case in billing. We fixed it in the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team's learning?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told them to be more careful next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Billing edge case missed by team",
+        "Fixed in next sprint",
+        "Quote: \"I told them to be more careful next time\"",
+        "Follow-up: Did you change any team process? -> No"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate accepts the outcome but provides no evidence of developing the team or installing mechanisms. At manager level we expect the leader to convert team mistakes into repeatable learning; a generic admonition does not meet that bar."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We rolled out a new fulfillment policy that improved cost by 6% but created delivery delays for 12% of high-value customers. I had signed off on the rollout plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What org-level change resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "I created a cross-org risk review board and required any policy change above a certain threshold to model customer lifetime value impact before launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Fulfillment policy improved cost 6% but delayed high-value customers",
+        "Stood up cross-org risk review board with LTV modeling requirement",
+        "Quote: \"Required any policy change above threshold to model customer LTV impact\"",
+        "Follow-up: How widely is the board used now? -> Applies to all policy changes meeting the bar"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate owns a strategic policy decision with broad downside, then installs an org-wide mechanism that changes how future decisions are made. The story shows long-term leverage over heroics. Biggest strength is converting one mistake into a durable decision filter at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A regional pricing test we ran created churn we didn't anticipate. We reversed it after two months."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this lead to any broader changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tightened the approval process for that region."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shipped something you later realized was wrong.",
+        "Regional pricing test caused unexpected churn",
+        "Reversed after two months",
+        "Quote: \"We tightened the approval process for that region\"",
+        "Follow-up: Did the change apply beyond that region? -> No"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate describes a high-ambiguity decision but the response stays local and does not create lasting org capability. At exec level we expect strategic judgment that produces durable systems; a regional process tweak does not demonstrate that."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Owns the decision publicly",
+      "junior": "Mentions rollback and test addition",
+      "senior": "Pulls data and influences peer team",
+      "manager": "Runs retro and updates team checklist",
+      "exec": "Creates cross-org review board"
+    },
+    {
+      "signal": "Creates lasting mechanism",
+      "junior": "Adds peer review requirement",
+      "senior": "Writes shared runbook for future experiments",
+      "manager": "Uses incident in promotion calibration",
+      "exec": "Institutes LTV modeling threshold for all policy changes"
+    },
+    {
+      "signal": "Shows learning beyond the incident",
+      "junior": "Applies change to next releases",
+      "senior": "Protects other ranking experiments",
+      "manager": "Develops team judgment on trade-offs",
+      "exec": "Changes how org evaluates risk at scale"
+    },
+    {
+      "signal": "Avoids blame or hand-off",
+      "junior": "Does not blame QA",
+      "senior": "Does not hand problem to modeling team",
+      "manager": "Does not tell team to just be careful",
+      "exec": "Does not limit fix to one region"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,221 @@
+{
+  "question": "Give an example of improving a process or system that saved significant time for yourself or others.",
+  "competency": "Time Management, Prioritization & Organization",
+  "principle": "Time Management, Prioritization & Organization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was manually copying weekly sales numbers from three dashboards into a spreadsheet every Monday. I wrote a small Python script that pulled the data via APIs and formatted it automatically."
+        },
+        {
+          "role": "interviewer",
+          "text": "How much time did it save?"
+        },
+        {
+          "role": "candidate",
+          "text": "About 90 minutes each week. I also added error checks so bad data got flagged instead of me catching it later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Owns a repetitive personal task, builds simple automation",
+        "Quote: '90 minutes each week... added error checks'",
+        "Follow-up: Asked about measurement; candidate had before/after timing and shared the script with two teammates"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Candidate identified a repeatable personal pain point, built a lightweight fix, and quantified the 90-minute weekly saving. The added error checks show ownership beyond the initial request. Story stays within individual scope, which is appropriate for the level. Biggest strength is turning a one-off annoyance into a reusable tool that others adopted without being asked.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I started using a to-do list app instead of sticky notes so I wouldn't forget tasks."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that save time for anyone else or change a process?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was just for me. I got better at not missing deadlines."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Personal productivity tool only, no process change or measurement",
+        "Quote: 'it was just for me'",
+        "Follow-up: Probing for broader impact yields nothing beyond individual recall"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The example is limited to adopting an existing tool for personal use with no measurable time saved or process changed. No evidence of ownership or extending the benefit to others. The answer stays entirely reactive and local without showing initiative to improve how work gets done."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team and the marketing team were both pulling the same customer data from different sources, causing duplicate work and version conflicts. I proposed a shared query layer in our data warehouse and wrote the initial views."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Marketing stopped running their own extracts. We cut roughly four hours of duplicated effort per week across both teams and reduced data mismatch tickets by half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Cross-team duplication identified and fixed with shared infrastructure",
+        "Quote: 'cut roughly four hours... reduced data mismatch tickets by half'",
+        "Follow-up: Asked how they drove adoption; candidate showed they ran a short demo and got both teams to switch"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate spotted duplicated effort between teams, designed a shared solution, and delivered a concrete four-hour weekly saving plus reduced support load. Influence without authority is visible through the demo and voluntary adoption. Story demonstrates clear metrics and cross-team scope appropriate for the level. Biggest strength is turning a recurring coordination tax into a durable shared asset.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I cleaned up our internal wiki so pages were easier to find."
+        },
+        {
+          "role": "interviewer",
+          "text": "How much time did that save and for whom?"
+        },
+        {
+          "role": "candidate",
+          "text": "Hard to say exactly, but people said it felt better organized."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Vague wiki cleanup with no metrics or confirmed time savings",
+        "Quote: 'people said it felt better organized'",
+        "Follow-up: Probing for hours saved or affected teams produces no numbers"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The improvement is described only as 'felt better' with no measurable time saved or confirmed users. Lack of metrics and unclear scope make it hard to judge real impact. Senior-level answers should show cross-team reach and concrete results; this stays too local and subjective."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team spent too much time in status meetings. I replaced the weekly 60-minute meeting with a shared dashboard plus 15-minute async updates and a monthly deep-dive only when needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond and what was the time impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Engineers reported saving about three hours a week. I tracked meeting load before and after and coached two leads on running the new format. Attrition in the team dropped that quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Replaced recurring meeting with async system, measured impact, coached leads",
+        "Quote: 'saving about three hours a week... coached two leads'",
+        "Follow-up: Asked about underperformers or resistance; candidate addressed one engineer who missed the meetings and adjusted the dashboard"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate replaced a costly recurring ritual with an async alternative, quantified three hours saved per person, and developed leads by having them run the new format. The story shows leverage through the team and a side benefit on attrition. Biggest strength is treating meeting load as a team outcome to own rather than an individual complaint.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team to be more careful with their calendars and not overbook themselves."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any team process or measure results?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a one-on-one a few times. Some people got better."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Verbal advice only, no system change or measurement",
+        "Quote: 'I mentioned it in a one-on-one a few times'",
+        "Follow-up: Probing for process or metrics yields no concrete changes"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate relied on individual coaching without creating a repeatable team process or tracking outcomes. No evidence of leverage or developing others at scale. Manager-level answers should demonstrate changes that affect the whole team and produce measurable time savings; this remains ad-hoc and unquantified."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Product and engineering were running separate quarterly planning cycles that overlapped and created constant re-work. I merged them into a single integrated planning process with shared milestones and a joint review cadence."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We eliminated roughly six weeks of duplicated planning effort per year across 200 people. Feature delivery predictability improved from 60% to 85% on target quarter, and we reduced last-minute scope cuts in two consecutive quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Org-level planning merge with clear time and predictability gains",
+        "Quote: 'eliminated roughly six weeks... predictability improved from 60% to 85%'",
+        "Follow-up: Asked about trade-offs; candidate described pushback from one VP and how they aligned incentives before rollout"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate identified duplicated planning cycles at org scale, designed and drove a merged process, and delivered both a six-week annual time saving and improved delivery predictability. Shows strategic judgment in aligning incentives and handling resistance. Biggest strength is converting a chronic coordination cost into a durable operating rhythm with measurable business outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked teams to share their roadmaps earlier so there would be fewer surprises."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change any planning process or produce measurable savings?"
+        },
+        {
+          "role": "candidate",
+          "text": "It helped in a few cases but mostly stayed the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of improving a process or system that saved significant time for yourself or others.",
+        "Informal request with no structural change or metrics",
+        "Quote: 'mostly stayed the same'",
+        "Follow-up: Probing for org-level process or quantified impact produces no evidence"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The action is limited to an informal ask with no new system, cadence, or measured result. Executive examples must show org-scale leverage and clear business impact; this stays at the level of a suggestion without follow-through or outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task automation",
+      "senior": "Cross-team duplication removed",
+      "manager": "Team operating rhythm changed",
+      "exec": "Org planning process redesigned"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Weekly minutes tracked and shared",
+      "senior": "Hours per week + ticket reduction",
+      "manager": "Hours per person + attrition link",
+      "exec": "Weeks per year + predictability %"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Built and shared script",
+      "senior": "Demo + voluntary adoption",
+      "manager": "Coached leads on new format",
+      "exec": "Aligned incentives before rollout"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "N/A",
+      "senior": "N/A",
+      "manager": "Adjusted dashboard for one engineer",
+      "exec": "Addressed VP pushback directly"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "Tool others copied",
+      "senior": "Shared data layer",
+      "manager": "Async system + lead development",
+      "exec": "Single integrated planning cycle"
+    }
+  ],
+  "kind": "competency"
+}

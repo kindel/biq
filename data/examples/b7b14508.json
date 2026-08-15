@@ -1,0 +1,230 @@
+{
+  "question": "Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+  "competency": "Adaptability, Flexibility & Change",
+  "principle": "Adaptability, Flexibility & Change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I spent three weeks building a custom parser for log files in Python because the existing library felt too slow for our small dataset. After a code review my mentor pointed out the library had improved and our volume was actually low, I dropped it and switched to the standard one."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The task finished two days early and the code was much simpler to maintain. I learned to check assumptions earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Junior candidate described 3-week custom parser effort",
+        "Mentor feedback triggered switch to standard library",
+        "Outcome: task done early, simpler code",
+        "Quote: 'I learned to check assumptions earlier'",
+        "Follow-up: Asked about outcome; candidate tied to personal learning and local task speed"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a junior role. The candidate owned the sunk-cost decision after receiving feedback and delivered a simpler local result. The story shows coachability and quick adjustment without defensiveness. The concrete quote about checking assumptions earlier demonstrates reflection. Biggest strength is the direct link between feedback and faster delivery on an individual task.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I worked on a new dashboard for two months but the PM changed the requirements so we had to start over. It was frustrating but we just did what they asked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you suggest any alternatives before pivoting?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just followed the new spec."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Candidate described two-month dashboard that was scrapped due to PM change",
+        "No evidence of personal initiative in the pivot",
+        "Outcome described only as 'frustrating' with no metrics",
+        "Quote: 'we just did what they asked'",
+        "Follow-up: Probe on alternatives; candidate showed passive compliance"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a junior role. The candidate frames the pivot as external direction rather than an active choice and provides no evidence of learning or improved outcome. The story lacks ownership of the decision or any measurable result after the change. Biggest gap is absence of personal agency or reflection on how to handle future requirement shifts."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had spent four months building a real-time notification system that two other teams were counting on. After usage data from a pilot showed adoption below 15 percent I proposed we sunset it and redirect effort to improving the existing batch notification path."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the pilot metrics in a cross-team sync and worked with the dependent teams to define a six-week migration plan. We met the original launch date with the simpler approach."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Senior candidate described four-month real-time notification effort",
+        "Pilot data showed <15% adoption",
+        "Proposed sunset and redirect to batch path",
+        "Quote: 'shared the pilot metrics in a cross-team sync'",
+        "Follow-up: Asked about buy-in; candidate described migration plan and on-time delivery"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a senior role. The candidate used pilot metrics to drive a cross-team pivot after four months of investment and delivered the original date with a simpler path. The story shows influence without authority through data sharing and joint planning. Biggest strength is the clear tie between data, stakeholder coordination, and measurable delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We built a new search indexing approach for six months until leadership decided the priorities had shifted and we moved to something else. I updated the wiki with the new direction."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring to the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't have strong data at the time; it was mostly a priority call from above."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Candidate described six-month indexing project ended by leadership priority shift",
+        "No personal data or recommendation mentioned",
+        "Outcome limited to updating documentation",
+        "Quote: 'it was mostly a priority call from above'",
+        "Follow-up: Probe on data; candidate showed reactive stance"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a senior role. The candidate presents the pivot as a top-down decision without evidence of personal analysis or cross-team influence. No metrics or alternative proposals are described. Biggest gap is lack of ownership in surfacing data or shaping the pivot outcome."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had invested five months in a new onboarding flow that was showing high drop-off in A/B tests. I decided to stop the work and reassign two engineers to fix the existing flow while the third person ran a quick experiment on a different angle."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team's reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I held a retro where we reviewed the A/B numbers together and identified what we had learned. One engineer who was most attached led the experiment on the new angle, which improved activation by 8 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Manager described five-month onboarding flow with high drop-off",
+        "Stopped work and reassigned team based on A/B data",
+        "Used retro to surface learnings and give ownership to attached engineer",
+        "Quote: 'One engineer who was most attached led the experiment'",
+        "Follow-up: Asked about team reaction; candidate tied retro to 8% activation lift"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for a manager role. The candidate used A/B data to stop a five-month team investment and created leverage by reassigning work while preserving team ownership through a retro. The story shows handling emotional attachment by giving the most invested person a new experiment that delivered an 8 percent lift. Biggest strength is the combination of data-driven decision and people development during the pivot.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team spent four months on a reporting dashboard that leadership later said wasn't needed. I told them to stop and move to the next ticket in the backlog."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team feel about the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were disappointed but understood it was out of our control."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Manager described four-month dashboard ended by leadership",
+        "Pivot communicated as direct order with no team input",
+        "Outcome described only as disappointment",
+        "Quote: 'They were disappointed but understood it was out of our control'",
+        "Follow-up: Probe on team reaction; candidate showed limited coaching"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for a manager role. The candidate frames the pivot as an external mandate with no data presented to the team or effort to extract learnings. No evidence of developing people or creating leverage after the change. Biggest gap is absence of team involvement or outcome ownership beyond compliance."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After nine months building a new vertical product line that was consuming 30 percent of engineering, market signals showed the TAM was smaller than modeled. I recommended we wind it down, reallocate the teams to core growth areas, and negotiate a partnership instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "The reallocated teams contributed to a 22 percent increase in core revenue the following year while the partnership delivered the vertical access without the build cost. We used the decision in our annual planning as a case study on when to exit."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Exec described nine-month vertical product consuming 30% of engineering",
+        "Recommended wind-down based on TAM signals and shift to partnership",
+        "Reallocated teams drove 22% core revenue increase",
+        "Quote: 'used the decision in our annual planning as a case study on when to exit'",
+        "Follow-up: Asked about long-term impact; candidate tied to revenue and org learning"
+      ],
+      "raiseFeedback": "Raises the bar on Adaptability for an exec role. The candidate made a strategic exit decision after nine months and 30 percent resource commitment based on updated TAM data, then created org-level leverage through reallocation and partnership. The story includes both the 22 percent revenue outcome and embedding the decision as a planning case study. Biggest strength is the combination of long-term trade-off judgment and organizational learning.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We ran a new market initiative for a year before realizing the economics didn't work and we wound it down. The teams were moved back to their original groups."
+        },
+        {
+          "role": "interviewer",
+          "text": "What strategic signals did you track?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tracked the usual KPIs but the decision came after the board asked for an updated business case."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of abandoning a project or approach you had invested significant time in and pivoting successfully.",
+        "Exec described year-long market initiative ended after economics review",
+        "Pivot triggered by board request rather than proactive analysis",
+        "Outcome limited to teams returning to original groups",
+        "Quote: 'the decision came after the board asked for an updated business case'",
+        "Follow-up: Probe on signals; candidate showed reactive rather than strategic framing"
+      ],
+      "lowerFeedback": "Lowers the bar on Adaptability for an exec role. The candidate presents the pivot as a response to external prompting rather than proactive strategic judgment. No evidence of long-term trade-offs considered or organizational leverage created. Biggest gap is lack of ownership in surfacing the issue early or shaping a forward-looking outcome."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of the pivot decision",
+      "junior": "Candidate owns decision after feedback on local task",
+      "senior": "Candidate owns decision using pilot data and influences peers",
+      "manager": "Candidate owns decision and uses it to develop team",
+      "exec": "Candidate owns decision with org-level resource and partnership trade-offs"
+    },
+    {
+      "signal": "Use of data or signals",
+      "junior": "Simple post-facto reflection on assumptions",
+      "senior": "Pilot metrics shared cross-team to drive change",
+      "manager": "A/B test data used to reassign and measure 8% lift",
+      "exec": "TAM signals plus revenue outcome tied to reallocation"
+    },
+    {
+      "signal": "Handling of sunk cost / emotion",
+      "junior": "Learns to check assumptions earlier",
+      "senior": "Shares data openly to reduce attachment",
+      "manager": "Gives attached engineer new experiment ownership",
+      "exec": "Embeds decision as org case study for future exits"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task completed earlier",
+      "senior": "Cross-team migration met original date",
+      "manager": "Team reallocation plus activation lift",
+      "exec": "22% core revenue and partnership model"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,250 @@
+{
+  "question": "Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our onboarding docs were missing steps for new hires using the internal tools, and no team owned the full guide. I pulled together the scattered info from Slack threads and created a single page."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide this wasn't someone's job?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets kept mentioning the same gaps, but each team said it was outside their charter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you posted it?"
+        },
+        {
+          "role": "candidate",
+          "text": "It reduced repeat questions by about a third in the first month. My manager later asked me to keep it updated."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Candidate spotted missing onboarding steps affecting new hires",
+        "Compiled scattered info into one page after noticing repeated support tickets",
+        "Quote: \"each team said it was outside their charter\"",
+        "Follow-up: What happened after? Reduced repeat questions ~30% in first month; manager asked them to maintain it"
+      ],
+      "raiseFeedback": "The candidate identified a gap in onboarding documentation that crossed team boundaries and took ownership by compiling existing information into a usable page. They described the problem surfacing through support tickets and the lack of any single owner. After posting the page, they tracked a measurable drop in repeat questions and accepted ongoing maintenance when asked. This shows local ownership and responsiveness to feedback without overstepping scope. The story stays within an individual contributor's expected reach for a junior role.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw the docs were messy so I mentioned it in a team meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything with it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it wasn't assigned to me so I waited for someone else to pick it up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Candidate noticed messy docs but only raised in a meeting",
+        "No action taken because \"it wasn't assigned to me\"",
+        "Follow-up: Did you do anything with it? Waited for someone else"
+      ],
+      "lowerFeedback": "The candidate noticed a documentation issue but limited their response to mentioning it in a meeting and then stopped because it was unassigned. They did not attempt to gather information or produce any output. This shows a lack of ownership even at the individual level expected for juniors. The example never moves past awareness into action."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer data exports were failing intermittently across three products because each team used different retry logic. No single team owned the shared export service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get traction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a short proposal, got the three leads to agree on a shared library, and implemented the first version myself before handing it off."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Export failure rate dropped from 4% to under 1% and two other teams adopted the library within a quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Identified inconsistent retry logic in shared export path affecting three products",
+        "Wrote proposal and aligned three team leads on a common library",
+        "Quote: \"no single team owned the shared export service\"",
+        "Follow-up: How did you get traction? Implemented first version then handed off; failure rate 4% to <1%"
+      ],
+      "raiseFeedback": "The candidate recognized a cross-product reliability issue with no clear owner and drove alignment across three teams by creating a shared library. They personally delivered the initial implementation to reduce friction before transitioning ownership. The outcome included a clear metric improvement and adoption by additional teams. This demonstrates the cross-team influence and measurable impact expected at senior level without requiring formal authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I flagged the export failures in a weekly sync and suggested someone should fix the retry logic."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any of the teams act on it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not that I saw. I moved on to my next project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Flagged export failures in a sync meeting",
+        "Suggested someone should fix it but took no further steps",
+        "Follow-up: Did any teams act? No evidence of follow-through"
+      ],
+      "lowerFeedback": "The candidate surfaced a cross-team issue in a meeting but did not pursue alignment or produce any artifact to move it forward. They stopped once the suggestion was made. At senior level this falls short because the role expects driving resolution across boundaries rather than handing off responsibility after raising awareness."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our support team was manually triaging the same class of billing escalations every week because no engineering team owned the root cause."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do as a manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had one of my engineers shadow support for two weeks, then created a small tiger team with another manager to ship a fix and a runbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure success?"
+        },
+        {
+          "role": "candidate",
+          "text": "Escalations in that category fell 60% and my engineer later became the go-to for similar issues."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Noticed repeated billing escalations with no engineering owner",
+        "Assigned engineer to shadow support and formed cross-team tiger team",
+        "Quote: \"no engineering team owned the root cause\"",
+        "Follow-up: How did you measure? Escalations down 60%; engineer became domain expert"
+      ],
+      "raiseFeedback": "The manager identified a recurring customer pain with no clear engineering owner and created leverage by having their engineer gather data through support shadowing. They then formed a temporary cross-team effort that delivered both a fix and documentation. The result reduced escalations substantially and developed deeper expertise in one of their reports. This reflects the expected focus on team leverage and developing others rather than solo heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team to keep an eye out for billing issues and mentioned it to the support manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change for the escalations?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it stayed a recurring problem."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Asked team to watch for issues and notified support manager",
+        "No further structure or follow-up created",
+        "Follow-up: Did anything change? Problem remained recurring"
+      ],
+      "lowerFeedback": "The manager delegated awareness to their team and passed the issue to another manager without creating any mechanism for resolution. No measurable improvement occurred. At the manager level this does not demonstrate the ability to drive team-level outcomes on problems that fall between groups."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had no consistent way to measure customer effort across products, so each org was optimizing locally and customers still hit friction at handoffs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you approach it at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sponsored a small cross-org working group, secured budget for a shared measurement platform, and made adoption part of quarterly reviews for the affected VPs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What shifted as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Within two quarters we had a single customer-effort score used in planning, and three product areas reduced handoff friction by double digits."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Identified inconsistent customer-effort measurement across products",
+        "Sponsored working group, funded platform, tied to VP reviews",
+        "Quote: \"each org was optimizing locally\"",
+        "Follow-up: What shifted? Single score adopted; three areas saw double-digit friction reduction in two quarters"
+      ],
+      "raiseFeedback": "The executive recognized a systemic measurement gap that no single organization owned and created the structural conditions for progress by funding a platform and embedding the metric into existing review cadences. The outcome produced a shared language and visible reductions in customer friction across multiple areas. This level of intervention shows the strategic judgment and organizational leverage expected at the executive tier.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I raised the lack of a shared customer-effort metric in the leadership offsite."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you drive any follow-up?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the relevant VPs to discuss it among themselves."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example of an initiative you undertook because you saw that it could benefit the whole company or your customers, but wasn't within any group's individual responsibility so nothing was being done.",
+        "Raised metric gap in offsite",
+        "Asked VPs to discuss without providing structure or resources",
+        "Follow-up: Did you drive any follow-up? No further action taken by candidate"
+      ],
+      "lowerFeedback": "The executive surfaced the issue at a leadership forum but delegated resolution entirely to the VPs without allocating resources or establishing accountability mechanisms. No organizational change resulted. At the executive level this does not meet the bar for owning ambiguous, cross-org problems through to measurable impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of the gap identified",
+      "junior": "Local to own workflow or immediate team",
+      "senior": "Spans 2-3 teams or products",
+      "manager": "Affects team outcomes and requires cross-manager coordination",
+      "exec": "Org-wide process or metric with no natural owner"
+    },
+    {
+      "signal": "How ownership was exercised",
+      "junior": "Personal action on unowned task",
+      "senior": "Influence across teams plus initial implementation",
+      "manager": "Created team process or temporary structure",
+      "exec": "Sponsored platform, funding, and review cadence"
+    },
+    {
+      "signal": "Evidence of follow-through",
+      "junior": "Completed the task and accepted maintenance",
+      "senior": "Handed off after proving value",
+      "manager": "Developed report and reduced recurring load",
+      "exec": "Embedded into existing operating rhythm"
+    },
+    {
+      "signal": "Impact measurement",
+      "junior": "Simple local metric (tickets, questions)",
+      "senior": "Clear before/after with adoption by others",
+      "manager": "Team-level reduction plus skill development",
+      "exec": "Multi-quarter, multi-area business result"
+    }
+  ],
+  "kind": "lp"
+}

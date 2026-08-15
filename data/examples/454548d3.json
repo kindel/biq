@@ -1,0 +1,258 @@
+{
+  "question": "Give an example of a time when you challenged your team to come up with a more efficient solution or process. What drove the request? How did you help? What were some of your biggest challenges? What were the end results?",
+  "competency": "Frugality",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our weekly status report took 4 hours every Friday because we pulled data from three tools manually. I suggested we script it instead of asking for more headcount."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove you to push for the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM kept asking why it cost so much time and I realized we were repeating the same copy-paste every week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you help and what challenges came up?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a first version of the script in Python and asked two teammates to test it. One said it was too risky to change the process; I added a manual fallback and ran both in parallel for two weeks."
+        },
+        {
+          "role": "candidate",
+          "text": "We cut the report time to 20 minutes and the team adopted it after seeing the numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: challenged team on more efficient process",
+        "Drove by noticing 4-hour manual report each week",
+        "Wrote initial script, added fallback for skeptics",
+        "Outcome: 20 min instead of 4 hrs",
+        "Follow-up: teammate resistance - ran parallel for two weeks"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a repeatable local waste and took first ownership by building the script rather than waiting for someone else. Quote: 'I wrote a first version... ran both in parallel for two weeks.' This shows coachability when resistance appeared and a clear before/after metric. The scope stayed within one process they owned, which matches junior expectations. Biggest strength is turning observation into a working prototype without overclaiming team leadership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager said we should automate the status report so I helped copy the data into a shared doc instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you propose or build anything new?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just followed what the senior engineer told me to do."
+        }
+      ],
+      "lowerNotes": [
+        "Q: challenged team on efficiency",
+        "Only followed manager instruction",
+        "No own proposal or prototype",
+        "No metrics or challenges described",
+        "Follow-up: confirmed no initiative taken"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story shows the candidate executing an instruction rather than identifying waste or driving a change. No evidence of personal ownership or learning from resistance. Quote: 'I just followed what the senior engineer told me.' At junior level we look for at least one case of spotting a local inefficiency and trying to fix it; this example does not provide it."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were each maintaining separate dashboards that pulled the same metrics from the data lake, duplicating compute cost."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the request and how did you help?"
+        },
+        {
+          "role": "candidate",
+          "text": "Finance flagged rising Athena spend; I ran a query audit and showed both teams the overlap, then facilitated a shared view with access controls."
+        },
+        {
+          "role": "interviewer",
+          "text": "Biggest challenges and results?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team worried about losing customization; I let them keep private tabs on top of the shared layer. Spend dropped 35% in the next quarter and both teams now use the single source."
+        }
+      ],
+      "raiseNotes": [
+        "Q: challenged on efficient process",
+        "Drove by finance flag on duplicated Athena spend",
+        "Audited queries, facilitated shared dashboard",
+        "Challenge: customization concerns - added private tabs",
+        "Outcome: 35% spend reduction"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate spotted cross-team duplication and used data to influence without authority. Quote: 'I ran a query audit and showed both teams the overlap.' They addressed the real objection (customization) with a practical compromise and delivered a measurable cost win. This matches senior scope of influence across teams rather than just their own work. Biggest strength is connecting a business signal (finance flag) to a technical solution that others adopted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the other team they should reuse our dashboard but they kept their own version."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you try to change that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent one email with the link and moved on when they didn't reply."
+        }
+      ],
+      "lowerNotes": [
+        "Q: challenged on efficiency",
+        "Identified duplication but only sent email",
+        "No follow-up or compromise offered",
+        "No metrics achieved",
+        "Follow-up: confirmed minimal effort"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate noticed duplication yet stopped at a single email without building alignment or addressing concerns. No measurable outcome resulted. At senior level we expect evidence of influence across teams and persistence through objections; this example shows neither."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending 30% of sprint capacity on manual QA regression that could be covered by two new test suites."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove it and how did you help?"
+        },
+        {
+          "role": "candidate",
+          "text": "Velocity was flat while headcount stayed the same; I asked the team to propose automation options and picked the one that covered the top three customer flows."
+        },
+        {
+          "role": "interviewer",
+          "text": "Challenges and results?"
+        },
+        {
+          "role": "candidate",
+          "text": "One senior engineer preferred manual testing for edge cases; I paired them with a new hire to build the suites and gave them ownership of the edge-case list. Manual QA time fell to under 10% and we shipped one extra feature per quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: challenged team on efficient process",
+        "Drove by flat velocity with fixed headcount",
+        "Asked team for options, selected top flows",
+        "Challenge: senior preference for manual - paired ownership",
+        "Outcome: manual QA <10%, +1 feature/quarter"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used a capacity constraint to drive team-owned process change rather than adding people. Quote: 'I asked the team to propose automation options.' They handled underperformance risk by giving the resistant engineer ownership instead of mandating. Result shows leverage through the team. Biggest strength is converting a resource limit into higher output without increasing headcount.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team to write more tests because manual QA was taking too long."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated to their tech lead when they kept doing manual checks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: challenged on efficiency",
+        "Directed without team input",
+        "Used escalation instead of coaching",
+        "No clear metrics",
+        "Follow-up: no ownership transfer shown"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The story relies on top-down direction and escalation rather than developing the team to own the solution. No evidence of creating leverage or handling underperformance constructively. At manager level we look for the leader to turn a constraint into team-driven improvement; this example shows neither."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three product lines were each running their own data platform instances at roughly 2x the needed capacity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the request?"
+        },
+        {
+          "role": "candidate",
+          "text": "Board asked why infra spend grew faster than revenue; I commissioned a platform audit and set a target to consolidate to one shared instance within 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "Challenges and results?"
+        },
+        {
+          "role": "candidate",
+          "text": "Each GM worried about losing control; I created a governance board with rotating leads and let each line keep SLAs. Total infra cost fell 28% while release frequency stayed flat."
+        }
+      ],
+      "raiseNotes": [
+        "Q: challenged org on efficiency",
+        "Drove by board question on infra vs revenue",
+        "Commissioned audit, set consolidation target",
+        "Challenge: GM control concerns - added governance board",
+        "Outcome: 28% infra reduction, release freq flat"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate translated a board-level signal into a multi-year platform consolidation that required trade-offs across business units. Quote: 'I created a governance board with rotating leads.' They preserved local autonomy while delivering org-level savings. This shows strategic judgment on where to centralize versus federate. Biggest strength is achieving measurable leverage at scale without slowing product velocity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each product line to cut 10% of their cloud spend."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the GMs?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent the target in the quarterly review and let them figure it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: challenged on efficiency",
+        "Set top-down % cut without shared solution",
+        "No governance or trade-off design",
+        "No sustained result tracked",
+        "Follow-up: minimal cross-org leadership shown"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The approach stayed at a simple mandate without building the mechanisms or addressing control concerns that would make savings durable. No evidence of long-term thinking or org-level leverage. At exec level we expect the leader to design the system that sustains frugality across units; this example does not."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identifying waste",
+      "junior": "Notices own-task repetition",
+      "senior": "Spots cross-team duplication",
+      "manager": "Uses capacity data to drive team change",
+      "exec": "Links board metric to platform strategy"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Adds fallback and runs parallel",
+      "senior": "Offers compromise layer on shared view",
+      "manager": "Gives resistor ownership of edge cases",
+      "exec": "Creates rotating governance board"
+    },
+    {
+      "signal": "Measuring outcome",
+      "junior": "Local time saved (hours to minutes)",
+      "senior": "Cross-team cost % reduction",
+      "manager": "Team velocity lift without added headcount",
+      "exec": "Org infra cost vs revenue growth"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Own workflow",
+      "senior": "Two teams",
+      "manager": "Own team + one peer process",
+      "exec": "Multiple product lines and GMs"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time a decision you made as a leader did not produce the expected results. How did you respond?",
+  "competency": "Leadership & Influence (Decision Accountability)",
+  "principle": "Leadership & Influence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I decided we should skip the extra test cycle to hit the deadline. The feature shipped with two bugs that customers hit in week one."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I owned it in the retro, wrote the post-mortem, and asked my mentor to review my risk checklist for the next release. We added two lightweight checks and the following launch had zero P1s."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a decision you made as a leader did not produce the expected results. How did you respond?",
+        "Chose to skip test cycle on first project to meet deadline",
+        "Two customer bugs surfaced in week one",
+        "Quote: \"I owned it in the retro and asked my mentor to review my risk checklist\"",
+        "Follow-up: Asked what changed next release; added two lightweight checks, zero P1s"
+      ],
+      "raiseFeedback": "Raises the bar on Leadership & Influence for junior level. Candidate took full ownership of a local decision that missed results and used mentor feedback to adjust process. Story shows quick loop from outcome to concrete action on their own work. Biggest strength is the explicit request for coaching and visible change in the next cycle rather than defensiveness.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we should move faster and skip some tests. It didn't work out and the bugs were found later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told my manager the tests were too slow and we needed better tooling. The team eventually added more automation but I wasn't involved."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Pushed team to skip tests for speed",
+        "Bugs found post-launch",
+        "Quote: \"I told my manager the tests were too slow\"",
+        "Follow-up: No personal ownership or learning loop described"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate attributes the poor outcome to external factors like tooling and does not describe any personal response or adjustment after the decision failed. Story lacks ownership of results and shows no evidence of learning or coachability on their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I influenced two teams to adopt a shared service model for a new API to reduce duplication. Adoption lagged and one team built their own anyway."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a retro with both teams, published the actual usage numbers, and shifted to a lighter integration pattern that gave them an on-ramp. Three months later both teams were using the shared service."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Pushed shared service model across two teams",
+        "One team built their own; adoption missed target",
+        "Quote: \"I ran a retro with both teams and published the actual usage numbers\"",
+        "Follow-up: Shifted to lighter pattern; both teams using shared service in 3 months"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate influenced without authority on a cross-team decision, measured the gap, and iterated with data to change the approach. Story includes concrete follow-through and eventual adoption metric. Biggest strength is treating the miss as a signal to adjust influence tactics rather than pushing harder on the original plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I convinced the other team to use our new framework. They didn't fully adopt it and we ended up with two versions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond after the results came in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated to their manager that they weren't following the agreed direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Convinced another team to adopt framework",
+        "Dual versions persisted",
+        "Quote: \"I escalated to their manager\"",
+        "Follow-up: No iteration or data-driven adjustment shown"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate relied on escalation instead of adjusting their influence approach after the decision produced split outcomes. No evidence of revisiting the decision, gathering data, or changing tactics to drive cross-team results."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided our team would own the full migration to reduce dependencies on platform. Velocity dropped 30% in the first quarter and two engineers asked to transfer."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with each engineer, adjusted scope to keep critical platform support, and created a rotation so no one was on migration full-time. Attrition stopped and we still completed the migration in six months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Chose full in-house migration to cut platform dependencies",
+        "30% velocity drop and two transfer requests",
+        "Quote: \"I met with each engineer and created a rotation so no one was on migration full-time\"",
+        "Follow-up: Attrition stopped, migration finished in six months"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate owned a team-level decision that hurt both output and retention, then made targeted scope and workload changes based on direct input. Story shows clear leverage through team adjustments and measurable recovery. Biggest strength is linking the decision miss to people outcomes and fixing both.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set the goal for the team to own the entire migration. Progress was slower than planned."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when you saw the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reminded the team of the long-term benefit and kept the original plan."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Directed team to own full migration",
+        "Slower progress",
+        "Quote: \"I reminded the team of the long-term benefit\"",
+        "Follow-up: No adjustment to plan or workload despite signals"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate maintained the original decision despite clear negative signals on team velocity and morale. No evidence of adjusting scope, supporting individuals, or owning the team outcome when results diverged from expectations."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I approved a major re-org to align product and engineering under one leader to speed decisions. Six months in, cross-org handoffs increased and two key product launches slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your response?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a structured review with skip-levels and data on decision latency, then reversed the product alignment while keeping engineering reporting lines. Launch cadence recovered within two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Approved re-org to align product and engineering",
+        "Handoffs rose and two launches slipped",
+        "Quote: \"I ran a structured review with skip-levels and reversed the product alignment\"",
+        "Follow-up: Launch cadence recovered in two quarters"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate made a high-ambiguity org decision with clear business intent, measured the downstream effects on launches, and executed a targeted reversal based on data. Story demonstrates long-term thinking and willingness to change course at scale. Biggest strength is using the miss to refine org design rather than defending the original structure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I restructured to put product and engineering together for faster decisions. Some launches slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond to the slips?"
+        },
+        {
+          "role": "candidate",
+          "text": "I communicated the vision again and asked leaders to work through the friction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Led re-org for decision speed",
+        "Launches slipped",
+        "Quote: \"I asked leaders to work through the friction\"",
+        "Follow-up: No structural adjustment or data review described"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate stayed committed to the re-org despite measurable business impact and did not demonstrate strategic judgment to revisit the decision or trade-offs. Story shows persistence without evidence of long-term course correction at org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of poor outcome",
+      "junior": "Owns decision and loops in mentor for personal improvement",
+      "senior": "Owns cross-team influence miss and iterates with data",
+      "manager": "Owns team velocity and retention impact, adjusts workload",
+      "exec": "Owns org-level launch impact and reverses structure"
+    },
+    {
+      "signal": "Response to feedback or data",
+      "junior": "Seeks and applies mentor input quickly",
+      "senior": "Runs retro and publishes numbers to change approach",
+      "manager": "Meets 1:1 with engineers and creates rotation",
+      "exec": "Uses skip-levels and decision latency data to reverse"
+    },
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual project choice with local results",
+      "senior": "Cross-team model with adoption metric",
+      "manager": "Team migration scope affecting retention",
+      "exec": "Org re-org affecting launch cadence"
+    },
+    {
+      "signal": "Evidence of iteration",
+      "junior": "Added two checks next release",
+      "senior": "Shifted to lighter pattern, adoption followed",
+      "manager": "Reduced scope and rotation, attrition stopped",
+      "exec": "Reversed alignment, cadence recovered in two quarters"
+    }
+  ],
+  "kind": "competency"
+}

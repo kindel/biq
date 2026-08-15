@@ -1,0 +1,223 @@
+{
+  "question": "Give me an example of a time when you asked for customer feedback. How did you use that feedback to drive innovation or improvement? How did the customer respond?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a dashboard bug and reached out to three users via email for quick input on what was slowing them down. One said the filter was confusing, so I added a tooltip and reordered the options before shipping."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for the customer?"
+        },
+        {
+          "role": "candidate",
+          "text": "They replied that the change made their weekly report 10 minutes faster and thanked me directly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Asked for feedback on dashboard fix",
+        "Emailed 3 users, acted on filter complaint by adding tooltip",
+        "Shipped change in same sprint",
+        "Quote: 'made their weekly report 10 minutes faster'",
+        "Follow-up: Customer replied with thanks"
+      ],
+      "raiseFeedback": "Raises the bar for Junior on Customer Obsession. The candidate proactively reached out to three users while fixing a dashboard bug, incorporated one specific piece of feedback into a tooltip change, and received direct confirmation that it saved the customer 10 minutes per report. This shows ownership of their individual work and closing the loop with the customer. The story stays local in scope, which matches the level, but demonstrates clear learning from feedback rather than just collecting it. Biggest strength is the direct customer response tied to their action.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me to send a survey after a release, so I forwarded the link to a few customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything with the responses?"
+        },
+        {
+          "role": "candidate",
+          "text": "I forwarded the results to the team and moved on to the next ticket."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Sent survey because manager asked",
+        "Forwarded link, no follow-up actions described",
+        "Quote: 'forwarded the results to the team'",
+        "Follow-up: Moved to next ticket after sending results"
+      ],
+      "lowerFeedback": "Lowers the bar for Junior on Customer Obsession. The candidate only sent a survey because instructed by their manager and took no ownership of acting on responses, simply forwarding results before moving to the next task. No evidence of using feedback for any improvement or checking customer reaction. The story lacks individual initiative or learning, which is the core expectation at this level. Biggest gap is treating feedback as a checkbox rather than a driver of their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After noticing drop-off in our reporting feature, I ran 8 customer calls across two teams and found the export format was incompatible with their tools. I partnered with the data platform team to add CSV and JSON options."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Export usage rose 35% in the next quarter and one customer who had threatened to churn renewed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Ran 8 calls on reporting drop-off",
+        "Identified export incompatibility, influenced data platform team",
+        "Added CSV/JSON options",
+        "Quote: 'one customer who had threatened to churn renewed'",
+        "Follow-up: 35% usage increase next quarter"
+      ],
+      "raiseFeedback": "Raises the bar for Senior on Customer Obsession. The candidate initiated eight cross-team customer calls after spotting a usage drop, drove a concrete change with the data platform team to support new export formats, and tied it to a 35% usage lift plus a renewal. This shows influence without authority and clear metrics from customer input. Scope extends beyond their immediate team, fitting the level. Biggest strength is linking feedback directly to both product improvement and business outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I collected feedback from a few customers on the reporting feature and shared a summary in the team channel."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM said they would look at it in the next planning cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Collected feedback on reporting",
+        "Shared summary in Slack, no further action",
+        "Quote: 'PM said they would look at it'",
+        "Follow-up: No evidence of driving change or customer response"
+      ],
+      "lowerFeedback": "Lowers the bar for Senior on Customer Obsession. The candidate gathered feedback but stopped at sharing a summary without influencing any team to act or measuring results. No cross-team impact or follow-through on customer input is shown. At senior level, expectation includes driving improvement beyond their immediate work, which is missing here. Biggest gap is lack of ownership to convert feedback into shipped change."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was hearing complaints about onboarding time, so I had each engineer shadow two customers and bring back one improvement idea. We prioritized three changes and I coached the owners on rollout."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team and customers respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Onboarding time dropped from 14 days to 9, and two engineers later used the same shadowing approach on their own features."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Had team shadow customers on onboarding complaints",
+        "Prioritized three changes, coached owners",
+        "Quote: 'two engineers later used the same shadowing approach'",
+        "Follow-up: Onboarding time from 14 to 9 days"
+      ],
+      "raiseFeedback": "Raises the bar for Manager on Customer Obsession. The candidate institutionalized customer shadowing across the team, coached engineers on acting on feedback, and achieved a measurable reduction in onboarding time from 14 to 9 days while seeing the practice spread. This demonstrates leverage through the team and developing others rather than doing the work themselves. Scope is team-wide with clear outcome ownership. Biggest strength is building a repeatable mechanism that raised the team's overall customer focus.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the team to gather customer feedback during support tickets and report it in our weekly meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What improvements came from it?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed the top issues but didn't have bandwidth to change anything that quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Asked team to report feedback from tickets",
+        "Discussed issues in meetings, no actions shipped",
+        "Quote: 'didn't have bandwidth to change anything'",
+        "Follow-up: No team development or customer outcome shown"
+      ],
+      "lowerFeedback": "Lowers the bar for Manager on Customer Obsession. The candidate delegated feedback collection but provided no coaching or prioritization, resulting in discussions without any shipped improvements. No evidence of developing the team or owning team-level customer outcomes. At manager level, the expectation is creating leverage through others, which is absent. Biggest gap is treating customer input as a reporting exercise rather than a driver of team results."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing enterprise deals due to perceived lack of compliance features. I commissioned a structured interview program with 25 strategic customers and used the patterns to reprioritize the three-year roadmap around audit logging and data residency."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Win rate on those accounts improved 22 points and we secured two new logos that had previously cited compliance as the blocker."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Commissioned 25 strategic customer interviews on compliance",
+        "Reprioritized three-year roadmap based on patterns",
+        "Quote: 'secured two new logos that had previously cited compliance'",
+        "Follow-up: Win rate improved 22 points"
+      ],
+      "raiseFeedback": "Raises the bar for Exec on Customer Obsession. The candidate drove a company-level input program with 25 strategic accounts, made a multi-year roadmap trade-off, and delivered measurable win-rate gains plus new logos. This reflects strategic judgment under ambiguity and long-term business impact rather than tactical fixes. Scope is org-wide with clear leverage on direction. Biggest strength is using customer patterns to change investment priorities at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reviewed NPS comments quarterly and asked product teams to address the top themes."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that change any major decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "They made some incremental updates but the overall roadmap stayed the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Reviewed NPS comments and asked teams to address themes",
+        "Incremental updates only, roadmap unchanged",
+        "Quote: 'overall roadmap stayed the same'",
+        "Follow-up: No evidence of strategic trade-offs or business-level impact"
+      ],
+      "lowerFeedback": "Lowers the bar for Exec on Customer Obsession. The candidate relied on passive NPS review and delegated without enforcing strategic shifts, resulting in only incremental updates and no roadmap change. No high-ambiguity decisions or org-level leverage are demonstrated. At exec level, the bar requires using customer insight to drive major trade-offs and long-term direction. Biggest gap is absence of personal ownership for business outcomes tied to customer input."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initiative in seeking feedback",
+      "junior": "Proactive outreach on own work",
+      "senior": "Cross-team calls after spotting trend",
+      "manager": "Built process for whole team",
+      "exec": "Commissioned structured org-wide program"
+    },
+    {
+      "signal": "Use of feedback for improvement",
+      "junior": "Small personal change shipped",
+      "senior": "Influenced another team to ship",
+      "manager": "Coached team to deliver changes",
+      "exec": "Changed multi-year roadmap priorities"
+    },
+    {
+      "signal": "Customer response captured",
+      "junior": "Direct thank-you note",
+      "senior": "Renewal after churn threat",
+      "manager": "Team practice spread internally",
+      "exec": "New logos won on prior blocker"
+    },
+    {
+      "signal": "Scope and leverage",
+      "junior": "Individual task level",
+      "senior": "Feature impact with metrics",
+      "manager": "Team outcome and development",
+      "exec": "Business-level win rate and roadmap"
+    },
+    {
+      "signal": "Ownership vs delegation",
+      "junior": "Did the work themselves",
+      "senior": "Drove without authority",
+      "manager": "Coached others to act",
+      "exec": "Set direction, measured business result"
+    }
+  ],
+  "kind": "lp"
+}

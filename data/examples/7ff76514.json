@@ -1,0 +1,294 @@
+{
+  "question": "Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on support rotation when a customer reported slow checkout in our mobile app. The root cause was in the backend service owned by another team, but no one was responding. I dug into their logs, found a missing index, and wrote a small patch. I looped in their on-call and got it deployed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide to go beyond just escalating?"
+        },
+        {
+          "role": "candidate",
+          "text": "The ticket was aging and the customer was a top account. I figured I could at least narrow it down so the right team could move faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Checkout latency dropped 40% for that flow. My manager later used it as an example in our retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: new grad on support rotation, noticed aging ticket in another team's service",
+        "Action: investigated logs, identified missing index, wrote patch and coordinated with their on-call",
+        "Outcome: 40% latency drop on checkout flow",
+        "Quote: \"I figured I could at least narrow it down so the right team could move faster.\"",
+        "Follow-up: Why take it on? -> Customer impact and desire to unblock the owning team"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for a junior. The candidate saw an aging customer issue outside their service and moved from escalation to diagnosis and a concrete fix without being asked. The 40% latency improvement is a local but measurable result tied directly to their extra effort. They framed the decision around customer impact rather than personal credit. The story stays within individual scope, which is appropriate for the level. Biggest strength is the willingness to cross team boundaries when the ticket was stalling.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Once I noticed our team wiki was out of date so I updated a few pages with new runbooks."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was that outside your area?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was more for the whole team, but it wasn't assigned to me."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "People said thanks in Slack and it was easier to find things."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: updated team wiki pages with runbooks",
+        "Action: noticed outdated docs and refreshed them",
+        "Outcome: team said thanks in Slack; easier to find info",
+        "Quote: \"It was more for the whole team, but it wasn't assigned to me.\"",
+        "Follow-up: What changed? -> Positive Slack messages, no measurable business or customer impact"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for a junior. The example stays inside the immediate team and consists of routine documentation hygiene rather than a significant stretch. No evidence of customer or business impact, only internal thanks. The candidate did not need to cross team boundaries or solve an ambiguous problem. The story reads as helpful but not ownership of something material. Biggest gap is lack of scope or measurable outcome that would show initiative beyond normal team maintenance."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments service was dropping 2% of transactions during peak. The owning team was heads-down on a migration so I pulled the on-call data, reproduced the issue in staging, and proposed a retry wrapper plus a new metric. I got the change reviewed and rolled out by their team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to prioritize it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the revenue impact number and offered to own the rollout and monitoring for the first two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Drop rate went to 0.1%. The owning team later adopted the same pattern for two other flows."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: senior engineer, payments drop rate at 2% during peak",
+        "Action: reproduced issue, designed retry wrapper, secured buy-in by showing revenue impact and offered to own rollout",
+        "Outcome: drop rate to 0.1%; owning team adopted pattern elsewhere",
+        "Quote: \"I showed the revenue impact number and offered to own the rollout and monitoring for the first two weeks.\"",
+        "Follow-up: How did you get prioritization? -> Quantified revenue impact and took on the operational burden"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for a senior. The candidate identified a cross-team reliability gap, quantified revenue impact, and drove the fix including offering to own rollout to reduce load on the other team. The result moved a 2% error rate to 0.1% with the pattern spreading further. Influence happened without authority through data and taking on extra work. Scope is appropriately larger than junior, showing cross-team coordination. Biggest strength is converting an external problem into a durable improvement and reusable pattern.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once wrote a script that cleaned up old logs in a shared bucket even though storage wasn't my team's responsibility."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why was that important?"
+        },
+        {
+          "role": "candidate",
+          "text": "The bucket was filling up and causing alerts."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and did it stick?"
+        },
+        {
+          "role": "candidate",
+          "text": "It ran for a month until the owning team turned it off because of permission changes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: wrote a one-off cleanup script for shared storage bucket",
+        "Action: noticed alerts and built a script to delete old logs",
+        "Outcome: ran for a month then was disabled due to permission issues",
+        "Quote: \"It ran for a month until the owning team turned it off because of permission changes.\"",
+        "Follow-up: Did it stick? -> Short-term fix that did not last or transfer ownership"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for a senior. The initiative addressed a symptom with a temporary script that was later disabled and never became a lasting solution. No evidence of coordination with the owning team or lasting cross-team impact. The scope feels like an individual workaround rather than driving a real fix. Outcome was short-lived and did not improve the underlying process. Biggest gap is absence of sustained influence or measurable, durable result beyond the candidate's own environment."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating work on a shared data pipeline. I pulled the leads together, ran a joint planning session, and had one team own the core while the other consumed it. I staffed a shared on-call rotation for the first quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted a short-term slowdown on one team's roadmap to free up capacity for the shared service."
+        },
+        {
+          "role": "interviewer",
+          "text": "Outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Duplicate work dropped, both teams shipped faster after two months, and we promoted one engineer to tech lead on the shared service."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: engineering manager, noticed two teams duplicating pipeline work",
+        "Action: convened leads, negotiated ownership split, staffed shared on-call, accepted short-term roadmap hit",
+        "Outcome: duplicate work eliminated, both teams accelerated, one engineer promoted to tech lead",
+        "Quote: \"I accepted a short-term slowdown on one team's roadmap to free up capacity for the shared service.\"",
+        "Follow-up: What trade-offs? -> Explicitly traded roadmap velocity for long-term leverage and team development"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for a manager. The candidate stepped outside their direct team to eliminate duplicated effort across two groups by creating shared ownership and on-call. They made a deliberate short-term roadmap trade-off to enable longer-term leverage and used the work to develop a new tech lead. Result included faster shipping for both teams and reduced waste. Focus is on team outcomes and leverage rather than individual heroics. Biggest strength is creating structure that outlasted the initial intervention.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I helped another manager's team by reviewing their design docs when they were short on senior engineers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you make time for it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I did it in the evenings for a couple of weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for their team or yours?"
+        },
+        {
+          "role": "candidate",
+          "text": "They got their docs approved faster and my team didn't notice any delay."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: reviewed design docs for another manager's team",
+        "Action: spent evenings doing reviews to help them meet deadline",
+        "Outcome: their docs approved faster; own team unaffected",
+        "Quote: \"I did it in the evenings for a couple of weeks.\"",
+        "Follow-up: What changed? -> Local speed-up for the other team with no broader leverage or team development"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for a manager. The effort was personal overtime rather than creating leverage or changing how work gets done across teams. No evidence of developing others, handling trade-offs, or producing a repeatable process. Impact stayed with one set of design docs and did not scale. The candidate protected their own team but did not use the situation to raise standards elsewhere. Biggest gap is absence of team-level or org-level leverage from the extra work."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three product lines building overlapping infrastructure for regulatory reporting. I formed a small tiger team, set a six-month sunset for the duplicates, and tied part of each GM's OKRs to the migration. I also created a central platform budget line so no single product absorbed the cost."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you face?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two GMs pushed back on timeline. I adjusted the OKRs to reward early migration and offered to fund two contractors from central budget."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result after a year?"
+        },
+        {
+          "role": "candidate",
+          "text": "We retired two redundant systems, reduced audit findings by 60%, and freed roughly eight engineers for new feature work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: exec, three product lines duplicating regulatory reporting infrastructure",
+        "Action: created tiger team, set sunset timeline, aligned GM OKRs, moved cost to central budget",
+        "Outcome: retired two systems, 60% fewer audit findings, eight engineers freed",
+        "Quote: \"I adjusted the OKRs to reward early migration and offered to fund two contractors from central budget.\"",
+        "Follow-up: What resistance? -> Negotiated with GMs using OKR incentives and central funding"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for an exec. The candidate addressed duplicated regulatory infrastructure across three product lines by creating cross-org structure, aligning incentives through OKRs, and shifting cost to a central budget. They absorbed pushback by adjusting incentives and funding rather than forcing compliance. Outcome included retired systems, reduced risk, and reallocated headcount. Shows strategic judgment on trade-offs and long-term leverage. Biggest strength is turning a fragmented problem into org-level efficiency with measurable business and compliance gains.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my directs to help another org with their quarterly planning when they were behind."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your role?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the ask and checked in once mid-quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the lasting impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "They met their planning deadline and we repeated the favor the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you took on something significant outside your area of responsibility. Why was it important? What was the outcome?",
+        "Role: asked directs to support another org's planning",
+        "Action: delegated the request and did a single mid-quarter check-in",
+        "Outcome: other org met deadline; favor was later returned",
+        "Quote: \"I made the ask and checked in once mid-quarter.\"",
+        "Follow-up: Lasting impact? -> Temporary assistance with no structural change or reduced duplication"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for an exec. The action amounted to delegating a short-term favor rather than addressing root causes of duplicated effort or creating lasting capability. No evidence of strategic trade-offs, incentive alignment, or org-level measurement. The pattern of mutual assistance continued without reducing overall load. Impact stayed transactional. Biggest gap is lack of systemic change or business-level outcome from the intervention."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of initiative",
+      "junior": "Individual task outside immediate ticket queue",
+      "senior": "Cross-team reliability or efficiency fix with measurable result",
+      "manager": "Eliminated duplicated work across teams and developed others",
+      "exec": "Org-level infrastructure or compliance duplication with incentive and budget changes"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Local metric improvement tied to extra effort",
+      "senior": "Error rate reduction plus pattern adoption by owning team",
+      "manager": "Faster shipping for multiple teams and new tech lead",
+      "exec": "Retired systems, reduced risk, reallocated headcount"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Coordinated with on-call of another team",
+      "senior": "Used data and offered operational ownership to gain buy-in",
+      "manager": "Negotiated roadmap trade-off and shared on-call",
+      "exec": "Aligned GM OKRs and shifted costs to central budget"
+    },
+    {
+      "signal": "Sustainability of outcome",
+      "junior": "One-time fix with positive team feedback",
+      "senior": "Pattern reused beyond original scope",
+      "manager": "Ongoing shared service and promotion",
+      "exec": "Systems retired and audit findings permanently lower"
+    }
+  ],
+  "kind": "lp"
+}

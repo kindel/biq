@@ -1,0 +1,240 @@
+{
+  "question": "Tell me about a time you used customer feedback or insights to drive a change in product, process, or service.",
+  "competency": "Customer / Client Focus",
+  "principle": "Customer / Client Focus",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on support rotation and noticed three tickets about the same onboarding step failing for new users. I pulled the exact error logs and user comments, then proposed a one-line validation fix to my mentor."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you suggested the fix?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped it in the next sprint. Support tickets on that step dropped from three per week to zero. My mentor had me write the post-mortem so I could practice summarizing customer impact."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Junior dev noticed repeat onboarding tickets",
+        "Pulled logs + comments, proposed validation fix",
+        "Outcome: tickets went to zero; wrote post-mortem",
+        "Quote: \"I wanted to make sure the next person on rotation wouldn't see the same tickets\"",
+        "Follow-up: Asked about ownership of the change - candidate described checking metrics and looping in mentor"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Candidate owned a narrow but real customer pain, used direct feedback to propose a fix, and followed through to verify impact. The post-mortem step shows coachability and willingness to document learning. Story stays within individual scope yet demonstrates clear action from customer input rather than just logging tickets.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer complained about the UI being confusing so I forwarded the ticket to the design team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "I think they updated the mockups later but I moved to another project so I'm not sure."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Candidate forwarded one complaint and stopped",
+        "No follow-up on outcome or personal action",
+        "Quote: \"I forwarded the ticket to design\"",
+        "Follow-up: Probing for ownership - candidate had no visibility into whether change happened"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate treated customer input as something to hand off rather than act on. No evidence of digging into the feedback, proposing a solution, or checking results. At junior level we expect at least individual ownership of closing the loop on a small issue."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Support data showed a cluster of enterprise customers abandoning a workflow after hitting a 10k record limit. I ran a quick analysis of their usage patterns and took the findings to the platform team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I built a one-page summary with retention numbers and proposed raising the limit with a soft quota. Two teams adopted it; we saw a 12% lift in weekly active enterprise accounts over the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Senior IC spotted enterprise drop-off at record limit",
+        "Analyzed usage, created summary, influenced platform team",
+        "Outcome: limit raised, 12% WAU lift in enterprise",
+        "Quote: \"I needed the data to be crisp so platform would take it seriously\"",
+        "Follow-up: Asked about cross-team pushback - candidate described sharing the one-pager and iterating on the quota design"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate converted raw customer signals into cross-team influence using concrete metrics, not just anecdotes. The change required persuasion without authority and produced measurable retention impact. Story shows the expected scope expansion beyond a single team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customers kept asking for dark mode so I added it to the backlog and mentioned it in standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the change ship?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not while I was on the team. The PM said it was low priority."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Candidate logged repeated requests but took no further action",
+        "Relied on PM to prioritize",
+        "No metrics or follow-through shown",
+        "Follow-up: Probing for influence - candidate stopped at backlog entry"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate surfaced feedback but did not drive any outcome or influence prioritization. At senior level we expect evidence of moving an idea across teams or using data to change the decision, not simply adding an item to a list."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our NPS for the reporting feature sat at 22 for two quarters. I had my team run customer interviews and surface three recurring workflow gaps. We re-prioritized the roadmap and assigned one engineer to each gap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team capacity trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "I deprioritized two internal tooling projects and tracked the NPS weekly. After the changes shipped, NPS rose to 41 and support volume on reporting dropped 30%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Manager saw persistent low NPS on reporting",
+        "Drove team interviews, reallocated roadmap capacity",
+        "Outcome: NPS +19, 30% drop in support tickets",
+        "Quote: \"I made the call to pause the internal tools work so we could fix what customers actually used\"",
+        "Follow-up: Asked about underperformance handling - candidate described coaching the engineer who initially resisted the shift"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate used customer data to make a clear team-level trade-off, protected capacity for the fix, and measured the business result. Shows leverage through the team rather than personal heroics plus willingness to address resistance inside the team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the team to collect customer feedback but the product team ultimately decided what shipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your role in driving the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure the feedback was documented and reviewed in our quarterly planning."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Manager delegated collection but did not own outcome",
+        "Deferred final decision to product",
+        "No evidence of team leverage or trade-offs",
+        "Follow-up: Probing for ownership of results - candidate stayed at documentation level"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate did not treat customer insights as something their team owned end-to-end. At manager level we look for explicit prioritization decisions and accountability for team outcomes, not just passing information upstream."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Churn analysis showed mid-market customers leaving after the first renewal when self-serve onboarding failed at scale. I commissioned a cross-org working group with Sales, Support, and Product to redesign the onboarding tier."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the strategic trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shifted 15% of the services budget from custom implementations to a new guided onboarding product. Twelve-month retention in that segment improved 8 points and services margin expanded because custom work moved to higher-value accounts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Exec linked churn data to onboarding at scale",
+        "Created cross-org group and reallocated services budget",
+        "Outcome: +8pt retention, improved services margin",
+        "Quote: \"We had to stop doing some custom work that looked good on paper but masked the real scaling problem\"",
+        "Follow-up: Asked about long-term org impact - candidate described embedding the new onboarding as a permanent product line"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate connected customer signals to a multi-quarter org-level decision, accepted a visible budget trade-off, and delivered measurable retention and margin results. Demonstrates strategic judgment and willingness to change how the business operates rather than incremental fixes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a customer advisory board and collected a lot of great ideas that the teams are now working through."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in the business because of it?"
+        },
+        {
+          "role": "candidate",
+          "text": "It's still early. The teams are prioritizing the feedback now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you used customer feedback...",
+        "Exec set up advisory board but shows no concrete business change",
+        "Defers action to teams with no timeline or trade-offs",
+        "No metrics tied to the effort",
+        "Follow-up: Probing for strategic ownership - candidate had no specific outcomes or decisions to share"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate stopped at creating a feedback mechanism without driving an actual business decision or resource shift. At exec level we expect visible trade-offs and measurable impact on the P&L or strategy, not just process setup."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task or small fix",
+      "senior": "Cross-team influence with metrics",
+      "manager": "Team roadmap trade-offs and results",
+      "exec": "Org-level budget/strategy shift"
+    },
+    {
+      "signal": "Use of data vs anecdote",
+      "junior": "Direct tickets or logs",
+      "senior": "Usage patterns + retention numbers",
+      "manager": "NPS trend + support volume",
+      "exec": "Churn analysis tied to P&L"
+    },
+    {
+      "signal": "Evidence of trade-off",
+      "junior": "Mentor time or sprint slot",
+      "senior": "Platform team priority",
+      "manager": "Paused internal tooling",
+      "exec": "Shifted 15% services budget"
+    },
+    {
+      "signal": "Follow-through verification",
+      "junior": "Checked ticket volume post-fix",
+      "senior": "Tracked WAU lift",
+      "manager": "Weekly NPS and support metrics",
+      "exec": "12-month retention + margin"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "N/A or mentor support",
+      "senior": "Iterated on quota design",
+      "manager": "Coached resisting engineer",
+      "exec": "Changed services model"
+    },
+    {
+      "signal": "Learning documented",
+      "junior": "Wrote post-mortem",
+      "senior": "One-page summary shared",
+      "manager": "Roadmap re-prioritization process",
+      "exec": "New permanent product line"
+    }
+  ],
+  "kind": "competency"
+}

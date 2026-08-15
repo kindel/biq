@@ -1,0 +1,261 @@
+{
+  "question": "Best example of picking something new up and running with it. What was it? How did you get up to speed? What was the outcome?",
+  "competency": "Invent and Simplify",
+  "principle": "Invent and Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a small feature team and our PM asked us to switch from our old internal dashboard tool to a new one called Looker that none of us had used. I volunteered to learn it first so we could migrate our weekly reports."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you actually get up to speed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I spent two evenings going through the free training videos and then rebuilt one of our existing reports from scratch in Looker. Once it worked I showed the team the steps and we moved the rest over in about a week. The new reports loaded faster and we stopped paying for the old tool license."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently next time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked the Looker support team earlier instead of trying to figure out the scheduling feature on my own for two days."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Built and migrated weekly reports to Looker after 2 evenings of training",
+        "Outcome: faster reports, saved license cost, trained rest of team",
+        "Quote: \"I rebuilt one of our existing reports from scratch in Looker\"",
+        "Follow-up: Asked support earlier on scheduling feature"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a junior. The candidate took ownership of learning Looker without being asked and delivered a working migration in one week. Quote about rebuilding the report from scratch shows concrete action rather than just watching videos. Outcome included both speed and cost savings, which is appropriate scope for 0-2 years experience. Biggest gap is limited evidence of simplifying the process for future use beyond their immediate team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me to learn a new internal tool for logging bugs so I watched the onboarding video and started using it on my tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "I logged my bugs in the new tool instead of the old one. It was required so everyone had to switch eventually."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Watched onboarding video for new bug logging tool",
+        "Outcome: switched because it was required",
+        "No evidence of initiative or simplification",
+        "Follow-up: Candidate could not describe any personal improvement or team benefit"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify. The candidate treated the request as a compliance task rather than an opportunity to improve anything. No attempt to get up to speed beyond the required video and no measurable outcome beyond following the mandate. Story stays at the level of individual ticket logging with zero simplification or teaching others. Biggest gap is complete absence of ownership or curiosity about why the change was happening."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our search team was still using a custom ranking script from 2018 that took three engineers two days to tweak for each experiment. I decided to replace it with an open-source library plus a thin wrapper we could own."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the rest of the team on board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I built a prototype in one weekend that matched 95 percent of the old behavior, then ran a side-by-side on live traffic for two weeks showing 12 percent faster p99 latency. After that the other teams agreed to migrate their experiments over the next month."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We lost some of the very custom business rules but gained the ability for any engineer to run an experiment without waiting on the ranking specialists."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Replaced 2018 custom ranking script with open-source library + wrapper",
+        "Prototype built in weekend, validated with live traffic showing 12% p99 improvement",
+        "Outcome: any engineer could run experiments without specialists",
+        "Follow-up: Traded off some custom rules for broader accessibility"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a senior. The candidate identified a multi-day bottleneck and replaced it with something maintainable by a wider group. Live traffic validation and the 12 percent latency number provide clear evidence of impact beyond their own team. Quote about enabling any engineer shows the simplification mindset. Biggest gap is that the story still centers on one system rather than influencing how other teams adopt similar patterns.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I learned a new internal config system because the old one was getting deprecated. I read the docs and updated the services I owned."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything get simpler for anyone else?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was just the migration that had to happen anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Migrated own services to new config system after reading docs",
+        "Outcome: compliance with deprecation",
+        "No cross-team impact or simplification described",
+        "Follow-up: Candidate confirmed no broader benefit created"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify. The candidate performed a required migration with no evidence of making the underlying process simpler or faster for anyone else. Story stays strictly within the scope of their own services and contains no metrics or teaching. Biggest gap is treating the new system as just another tool to learn rather than an opportunity to reduce future toil."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending roughly 30 percent of sprint capacity on manual data pulls for finance every month. I had one engineer prototype an automated pipeline using our existing ETL framework plus a self-serve UI."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the initial resistance?"
+        },
+        {
+          "role": "candidate",
+          "text": "Finance was worried about accuracy so we ran the automated version in parallel for three months and reconciled every number. Once they signed off we moved the whole process to on-demand and freed up eight engineer days per month."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to make sure the team kept the habit of automating?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a standing agenda item in retros to surface any recurring manual work and assigned the next one to a different engineer each quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Automated monthly finance data pulls that consumed 30% sprint capacity",
+        "Three-month parallel run to build trust, then moved to on-demand",
+        "Outcome: eight engineer days per month freed up",
+        "Follow-up: Added retro agenda item so team continues surfacing manual work"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a manager. The candidate converted recurring team toil into a durable self-serve process with clear capacity numbers. Parallel run and reconciliation show disciplined change management rather than hero automation. Quote about the retro agenda item demonstrates building the habit into the team. Biggest gap is that the example stays within one team's boundary and does not show influence on how peer teams adopted the same pattern.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had the team switch to a new project management tool because leadership wanted better visibility. We did the migration over two sprints."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team get any time back?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just had better dashboards for leadership."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Migrated team to new PM tool per leadership request",
+        "Outcome: better visibility for leadership",
+        "No capacity freed or process simplified for the team",
+        "Follow-up: Candidate confirmed no measurable team benefit"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify. The change was driven by external mandate with no evidence the manager looked for ways to reduce team effort. Story contains no metrics on time saved or process improvement. Biggest gap is the complete lack of ownership over whether the new tool actually simplified anything for the people doing the work."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were maintaining four separate customer support portals across regions, each with its own codebase and data model. I sponsored a single unified platform and moved all regions onto it over 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you confident this was the right bet?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled the fully loaded cost of the four systems including security patches and on-call rotations. The model showed we would break even in 14 months and then save roughly 22 FTEs of maintenance work annually."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the regions that pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "I let each region keep one custom workflow they cared about most but forced everything else onto the shared data model. That compromise kept the project moving while still achieving 80 percent code reduction."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Unified four regional support portals into one platform",
+        "Business case modeled 22 FTE annual maintenance savings",
+        "Outcome: 80% code reduction with regional compromise on one workflow each",
+        "Follow-up: 18-month rollout with clear cost modeling upfront"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify at the exec level. The candidate used cost modeling to justify a multi-year consolidation and delivered measurable reduction in ongoing maintenance. Quote about the 22 FTE savings shows business-level thinking rather than just technical cleanup. Regional compromise demonstrates strategic judgment on where to simplify versus where to allow necessary variation. Biggest gap is limited detail on how the freed capacity was redeployed into new product work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We adopted a new company-wide OKR tool because the old spreadsheet process was getting too messy at scale."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable impact on the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now have cleaner OKR data in one place. Adoption was high after the first quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Best example of picking something new up and running with it.",
+        "Rolled out new OKR tool to replace spreadsheets",
+        "Outcome: cleaner data and high adoption",
+        "No quantified simplification or leverage created",
+        "Follow-up: Candidate could not tie the change to any capacity or cost outcome"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify at the exec level. The story describes a tooling swap with no evidence of strategic simplification or measurable leverage. Outcome stays at the level of cleaner data rather than business impact. Biggest gap is absence of trade-off decisions or long-term thinking about how the organization would operate differently after the change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of simplification",
+      "junior": "Individual report or small feature",
+      "senior": "One system affecting multiple teams",
+      "manager": "Team capacity and recurring process",
+      "exec": "Org-wide systems and FTE-level cost"
+    },
+    {
+      "signal": "Evidence of getting up to speed",
+      "junior": "Personal evenings plus prototype",
+      "senior": "Weekend prototype plus live validation",
+      "manager": "Parallel run with stakeholders",
+      "exec": "Cost model plus phased rollout"
+    },
+    {
+      "signal": "Outcome metrics",
+      "junior": "Faster reports, saved license",
+      "senior": "12% p99, broader experiment access",
+      "manager": "8 engineer days per month",
+      "exec": "22 FTE annual maintenance"
+    },
+    {
+      "signal": "Teaching or leverage created",
+      "junior": "Trained immediate team",
+      "senior": "Enabled any engineer",
+      "manager": "Retro habit for future toil",
+      "exec": "Shared data model with limited exceptions"
+    },
+    {
+      "signal": "Handling resistance or trade-offs",
+      "junior": "Asked support earlier",
+      "senior": "Lost custom rules for accessibility",
+      "manager": "Three-month reconciliation",
+      "exec": "Allowed one regional workflow per group"
+    }
+  ],
+  "kind": "lp"
+}

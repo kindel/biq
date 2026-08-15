@@ -1,0 +1,237 @@
+{
+  "question": "Give an example of challenging conventional thinking or the status quo to drive improvement.",
+  "competency": "Innovation, Creativity & Simplification",
+  "principle": "Innovation, Creativity & Simplification",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed the team was manually copying test data between environments every sprint. I suggested we script it with a simple Python job and showed a 30-minute demo to my mentor."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "My mentor helped me refine the script and we rolled it out. It cut setup time from 45 minutes to under 5. The team adopted it for the next two sprints."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: New grad on first project, noticed manual test data copy",
+        "Action: Built and demoed a simple Python script after checking with mentor",
+        "Outcome: Reduced setup from 45 min to <5 min; team adopted it",
+        "Quote: 'I showed a 30-minute demo to my mentor'",
+        "Follow-up: Asked what happened next; candidate described refinement and adoption"
+      ],
+      "raiseFeedback": "Raises the bar for Innovation at junior level. The candidate identified a repetitive manual step in their own work, proposed a lightweight script, and validated it with a mentor before rolling it out. Quote: 'I showed a 30-minute demo to my mentor.' This shows ownership of a local process and willingness to surface a better way without overstepping scope. The result was measurable time savings adopted by the immediate team. Biggest strength is translating a simple observation into a working improvement with minimal risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought the build process was slow but I just followed what the senior engineers told me to do."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you suggest any changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured they had reasons for doing it that way so I didn't push."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: Junior engineer on first project",
+        "Situation: Believed build process was slow",
+        "Action: Did nothing and followed existing instructions",
+        "Quote: 'I figured they had reasons for doing it that way so I didn't push'",
+        "Follow-up: Asked if they suggested changes; candidate confirmed they did not"
+      ],
+      "lowerFeedback": "Lowers the bar for Innovation at junior level. The candidate noticed a slow build process but chose not to surface any alternative. Quote: 'I figured they had reasons for doing it that way so I didn't push.' This reflects a lack of ownership even at the individual task level. No attempt was made to experiment or ask questions that could lead to simplification. Biggest gap is absence of any proactive behavior around improving the work they directly touch."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were maintaining duplicate config files for the same service. I proposed we consolidate into one shared repo with clear ownership rules and ran a two-week pilot with the other team's lead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed a diff of the duplicated settings and the error rate from drift. The other lead agreed after seeing three production incidents traced to mismatches. We merged the repos and cut config-related bugs by 40% over the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: Senior engineer, cross-team duplication of config files",
+        "Action: Proposed shared repo, ran pilot, used incident data for buy-in",
+        "Outcome: 40% reduction in config-related bugs",
+        "Quote: 'I showed a diff of the duplicated settings and the error rate from drift'",
+        "Follow-up: Asked how they got buy-in; candidate tied it to concrete incidents"
+      ],
+      "raiseFeedback": "Raises the bar for Innovation at senior level. The candidate identified duplicated config work across teams and drove consolidation using production incident data rather than opinion. Quote: 'I showed a diff of the duplicated settings and the error rate from drift.' This produced a 40% drop in config bugs and required influence without authority. The approach stayed within senior scope while delivering measurable cross-team simplification. Biggest strength is using evidence to shift two teams away from the status quo.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested to my manager that we should use a newer framework but the team decided to stay with the old one."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just continued with the existing framework as asked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: Senior engineer",
+        "Situation: Wanted to adopt newer framework",
+        "Action: Made one suggestion then dropped it",
+        "Quote: 'I just continued with the existing framework as asked'",
+        "Follow-up: Asked what happened after the decision; candidate stopped advocating"
+      ],
+      "lowerFeedback": "Lowers the bar for Innovation at senior level. The candidate floated an idea to adopt a newer framework but accepted the first rejection without further exploration or data. Quote: 'I just continued with the existing framework as asked.' No attempt was made to quantify benefits or run a small experiment that could influence the outcome. This shows limited cross-team impact and weak persistence on simplification opportunities. Biggest gap is treating the first 'no' as final rather than using evidence to drive change."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team inherited a legacy approval workflow that required five sign-offs. I asked them to map every step and we removed three approvals after showing the delays were causing missed release windows."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the stakeholders who lost approval rights?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with each one, shared the delay data, and gave them a weekly summary report instead. Two of them later thanked us because they only needed to review exceptions. Release cycle time dropped from 12 days to 4."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: Manager, legacy 5-approval workflow",
+        "Action: Had team map process, removed 3 approvals, replaced with exception reports",
+        "Outcome: Release cycle from 12 days to 4; stakeholder acceptance",
+        "Quote: 'I met with each one, shared the delay data, and gave them a weekly summary report instead'",
+        "Follow-up: Asked how stakeholders were handled; candidate described data-driven replacement"
+      ],
+      "raiseFeedback": "Raises the bar for Innovation at manager level. The candidate involved the team in questioning a five-step approval process and replaced it with lighter exception reporting. Quote: 'I met with each one, shared the delay data, and gave them a weekly summary report instead.' This delivered a 3x improvement in release speed while maintaining necessary oversight. The manager used team leverage and stakeholder management rather than heroics. Biggest strength is creating a simpler process that scaled beyond the immediate team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we should simplify our deployment checklist but they said it was required by compliance."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you explore any alternatives?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, compliance requirements are non-negotiable so we left it alone."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: Manager",
+        "Situation: Deployment checklist seen as too long",
+        "Action: Accepted compliance explanation without investigation",
+        "Quote: 'compliance requirements are non-negotiable so we left it alone'",
+        "Follow-up: Asked if alternatives were explored; candidate did not pursue"
+      ],
+      "lowerFeedback": "Lowers the bar for Innovation at manager level. The candidate identified a lengthy deployment checklist but accepted the compliance explanation at face value without testing assumptions. Quote: 'compliance requirements are non-negotiable so we left it alone.' No effort was made to engage compliance owners or run a controlled change that could demonstrate simplification. This reflects limited leverage through the team and weak ownership of process outcomes. Biggest gap is treating status-quo constraints as immovable rather than negotiable with data."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were still running on-prem data centers for a product line that had moved to the cloud in every other region. I challenged the assumption that local regulations required it and commissioned a six-month legal and cost analysis."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The analysis showed we could move 80% of workloads to the cloud with a small in-country gateway. We shut down two data centers, saved $4.2M annually, and reduced our carbon footprint by 35% for that product line."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: Exec, on-prem data centers for cloud-migrated product",
+        "Action: Commissioned legal/cost analysis to test regulatory assumption",
+        "Outcome: Shut down two centers, $4.2M annual savings, 35% carbon reduction",
+        "Quote: 'I challenged the assumption that local regulations required it'",
+        "Follow-up: Asked outcome; candidate gave concrete financial and sustainability metrics"
+      ],
+      "raiseFeedback": "Raises the bar for Innovation at exec level. The candidate questioned a long-standing on-prem requirement that no longer matched the product's cloud reality and drove a formal analysis to test it. Quote: 'I challenged the assumption that local regulations required it.' The result was closure of two data centers with $4.2M savings and a 35% carbon reduction. This shows strategic judgment on cost, risk, and sustainability trade-offs at org scale. Biggest strength is converting an unexamined assumption into measurable business and environmental leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We kept our on-prem setup because that's how we've always done it for this market."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you review whether the original reasons still applied?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team said the regulations hadn't changed so we didn't revisit it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of challenging conventional thinking or the status quo to drive improvement.",
+        "Role: Exec",
+        "Situation: On-prem data centers for migrated product",
+        "Action: Accepted 'always done it this way' without review",
+        "Quote: 'The team said the regulations hadn't changed so we didn't revisit it'",
+        "Follow-up: Asked if original reasons were reviewed; candidate did not pursue"
+      ],
+      "lowerFeedback": "Lowers the bar for Innovation at exec level. The candidate accepted the on-prem status quo for a cloud-migrated product without testing whether regulatory or business conditions had shifted. Quote: 'The team said the regulations hadn't changed so we didn't revisit it.' No strategic analysis or trade-off evaluation was commissioned despite clear cost and sustainability implications. This reflects limited long-term thinking and weak leverage on org-level simplification. Biggest gap is allowing legacy assumptions to persist without executive-level scrutiny."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change",
+      "junior": "Individual task or single sprint improvement",
+      "senior": "Cross-team process or shared tooling",
+      "manager": "Team-owned workflow with stakeholder impact",
+      "exec": "Org-level infrastructure or regulatory assumption"
+    },
+    {
+      "signal": "Evidence used",
+      "junior": "Simple before/after timing on own work",
+      "senior": "Incident data and pilot results across teams",
+      "manager": "Process mapping plus delay metrics",
+      "exec": "Commissioned legal/financial analysis with quantified savings"
+    },
+    {
+      "signal": "Persistence after pushback",
+      "junior": "Checks with mentor then iterates",
+      "senior": "Uses data to gain buy-in from peer lead",
+      "manager": "Replaces lost control with lighter reporting",
+      "exec": "Tests core assumption rather than accepting it"
+    },
+    {
+      "signal": "Risk management",
+      "junior": "Low-risk script with mentor review",
+      "senior": "Two-week pilot before full merge",
+      "manager": "Exception reports maintain necessary oversight",
+      "exec": "Six-month analysis before committing to shutdown"
+    },
+    {
+      "signal": "Leverage mechanism",
+      "junior": "Personal ownership and demo",
+      "senior": "Influence without authority via evidence",
+      "manager": "Team mapping plus stakeholder redesign",
+      "exec": "Strategic analysis driving capital decision"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,230 @@
+{
+  "question": "Describe a project or initiative you drove end-to-end because you felt it was important, even though it wasn\u2019t assigned to you.",
+  "competency": "Ownership & Accountability",
+  "principle": "Ownership & Accountability",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first rotation I noticed our onboarding script kept failing for new hires on Windows. It wasn\u2019t my ticket but three people had mentioned it in Slack. I reproduced the issue, added a fix, wrote a one-page runbook, and got it reviewed by the on-call person."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you shipped it?"
+        },
+        {
+          "role": "candidate",
+          "text": "It reduced first-day support tickets by about a third. My manager asked me to own the next rotation of the script."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: new grad on platform team, noticed Windows onboarding failures",
+        "Actions: reproduced, fixed, wrote runbook, got review from on-call",
+        "Outcome: tickets down ~1/3, asked to own next rotation",
+        "Quote: \u201cIt wasn\u2019t my ticket but three people had mentioned it\u201d",
+        "Follow-up: What happened after you shipped it? \u2192 manager gave ongoing ownership"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified an unowned pain point in their immediate environment and completed the full loop from reproduction to documentation without being asked. Quote shows they noticed repeated signals rather than waiting for assignment. Outcome was local but measurable and led to expanded scope. Shows appropriate junior ownership: they stayed within their tools and sought review instead of acting in isolation. Biggest strength is finishing the runbook and getting it adopted rather than stopping at the code change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager once asked the team to improve test coverage but didn\u2019t give me a specific task. I added a few tests to the file I was already editing."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you drive anything from start to finish on your own?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just did what was in the ticket."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: new grad, mentions manager\u2019s request for test coverage",
+        "Actions: added a few tests to an existing file",
+        "Outcome: no clear end-to-end ownership or follow-through",
+        "Quote: \u201cI just did what was in the ticket\u201d",
+        "Follow-up: Did you drive anything from start to finish on your own? \u2192 candidate retreats to assigned work"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate reframed the question back to assigned work and showed no initiative beyond the scope of an existing ticket. No evidence of identifying a gap, defining success, or closing the loop. Quote reveals they default to waiting for explicit direction. Biggest gap is absence of any self-started scope, even at the individual-contributor level expected for 0-2 years."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two services kept duplicating customer data because there was no shared contract. It wasn\u2019t on any roadmap. I wrote a lightweight schema, got the three owning teams to review it, built a small validation layer, and migrated the highest-volume path first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them their own incident data and ran a two-week pilot. After the pilot they agreed to switch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: senior engineer, noticed cross-service data duplication",
+        "Actions: defined schema, drove reviews across three teams, built validation, piloted",
+        "Outcome: highest-volume path migrated, other teams adopted after seeing their data",
+        "Quote: \u201cI showed them their own incident data\u201d",
+        "Follow-up: How did you get the other teams to adopt it? \u2192 used data + pilot instead of authority"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate took an unowned cross-team problem, created a minimal shared artifact, and used influence (data + pilot) rather than escalation. Story shows measurable adoption without formal ownership. Quote illustrates how they persuaded peers. Biggest strength is completing the migration path instead of stopping at the design. Demonstrates the cross-team impact and influence without authority expected at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw that our deployment process was slow so I wrote a document with suggestions and sent it to the infra team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not that I know of. They never followed up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: senior, noticed slow deployments",
+        "Actions: wrote a document with suggestions and emailed it",
+        "Outcome: no adoption or follow-through",
+        "Quote: \u201cThey never followed up\u201d",
+        "Follow-up: Did anything change as a result? \u2192 candidate stopped after sending the doc"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate produced a document but took no further steps to drive adoption or measure impact. No evidence of cross-team influence or iteration. Quote shows they handed off responsibility rather than owning the outcome. Biggest gap is lack of any execution loop or willingness to pilot, which is required for senior scope."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our support queue had recurring issues that no single team owned. I pulled the top ten tickets, ran a blameless review with the affected teams, and created a small on-call rotation among the senior engineers to fix root causes instead of just triaging."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the engineers who didn\u2019t want the extra work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made it a six-week rotation with clear scope and tied it to their promotion packets. Two people later asked to extend it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: manager, recurring support issues with no owner",
+        "Actions: analyzed tickets, ran review, stood up cross-team rotation",
+        "Outcome: root causes addressed, engineers asked to extend rotation",
+        "Quote: \u201ctied it to their promotion packets\u201d",
+        "Follow-up: How did you handle the engineers who didn\u2019t want the extra work? \u2192 created incentives and scope"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Candidate identified an unowned operational burden, created a lightweight team process, and aligned incentives so the work became developmental rather than punitive. Quote shows they thought about leverage and retention. Outcome moved from triage to prevention. Biggest strength is turning an extra ask into something engineers voluntarily extended. Demonstrates owning team-level outcomes and developing people through the work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed the team was overloaded so I sent a note to my director asking for headcount."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do in the meantime?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just prioritized the existing backlog harder."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: manager, team overload",
+        "Actions: escalated for headcount",
+        "Outcome: no interim process or ownership change",
+        "Quote: \u201cWe just prioritized the existing backlog harder\u201d",
+        "Follow-up: What did you do in the meantime? \u2192 defaulted to existing processes"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate\u2019s only action was escalation rather than creating any team-owned mechanism. No evidence of developing people or finding leverage inside current constraints. Quote reveals they accepted the status quo instead of experimenting with process. Biggest gap is absence of any self-generated solution at the team level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing renewal revenue because customers couldn\u2019t easily expand usage after the initial contract. It wasn\u2019t on the product roadmap. I pulled finance, sales, and product data, defined a usage-based expansion motion, and ran a six-month pilot with the top accounts before handing it to the product team with clear metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "We limited the pilot to existing customers only and deferred new logo pricing so we could learn without changing the sales comp plan mid-year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: exec, renewal revenue leakage from expansion friction",
+        "Actions: synthesized cross-org data, defined motion, ran pilot, handed off with metrics",
+        "Outcome: pilot completed, clear handoff to product",
+        "Quote: \u201climited the pilot to existing customers only\u201d",
+        "Follow-up: What trade-offs did you make on scope? \u2192 protected sales comp and focused learning"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate spotted a business-level leakage, synthesized data across functions, designed a contained experiment, and explicitly managed trade-offs around compensation and scope. Quote shows long-term thinking about incentives. Handed off with metrics rather than heroically owning it forever. Biggest strength is the deliberate scoping decision that enabled learning without org disruption. Demonstrates strategic judgment and leverage at the business level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw we were losing renewals so I asked the product team to add an expansion feature to the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "It got deprioritized. I raised it again in the next quarter planning."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project you drove end-to-end even though it wasn\u2019t assigned.",
+        "Role: exec, renewal leakage",
+        "Actions: asked product to add feature to roadmap",
+        "Outcome: deprioritized, raised again later",
+        "Quote: \u201cIt got deprioritized\u201d",
+        "Follow-up: What happened next? \u2192 repeated request without alternative action"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate relied on a single request to another team and accepted deprioritization without creating an alternative path. No evidence of data synthesis, pilot design, or trade-off decisions. Quote shows passive follow-up rather than ownership of the business outcome. Biggest gap is absence of any self-directed mechanism to test or drive the change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identified unowned problem",
+      "junior": "Notices local friction in daily work",
+      "senior": "Spots cross-team duplication or gaps",
+      "manager": "Creates team process for recurring issues",
+      "exec": "Links to business metric like revenue leakage"
+    },
+    {
+      "signal": "Drove to measurable outcome",
+      "junior": "Local metric improvement and expanded scope",
+      "senior": "Adoption by peer teams via pilot",
+      "manager": "Rotation sustained and requested by engineers",
+      "exec": "Pilot handed off with clear metrics and scope guardrails"
+    },
+    {
+      "signal": "Used influence vs authority",
+      "junior": "Sought review from on-call peer",
+      "senior": "Used incident data to persuade",
+      "manager": "Tied work to promotion incentives",
+      "exec": "Limited scope to protect sales comp plan"
+    },
+    {
+      "signal": "Handled ambiguity",
+      "junior": "Stayed within own tools and asked for review",
+      "senior": "Defined minimal schema without roadmap coverage",
+      "manager": "Stood up rotation without new headcount",
+      "exec": "Ran pilot before roadmap commitment"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about a time when your team's goals were out of alignment with another team you relied on in order to meet your goal. How did you work with the other team? Were you able to achieve your goals?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I needed design assets from the marketing team whose priority was a campaign launch. I scheduled a 15-minute sync, shared my exact deadline and dependencies, and asked what would make it easier for them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "They gave me a partial set early and I adjusted my timeline by two days. I followed up with a thank-you note and updated my manager so there were no surprises."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment with another team...",
+        "Shared exact deadline and constraints with marketing",
+        "Asked what would make it easier for them",
+        "Delivered partial assets early and adjusted own timeline",
+        "Quote: \"I updated my manager so there were no surprises.\"",
+        "Follow-up: Asked what made the handoff easier; candidate described concrete ask"
+      ],
+      "raiseFeedback": "Candidate owned their dependency and created transparency instead of waiting for the other team. They adjusted their own plan after hearing constraints and closed the loop with their manager. This shows basic trust-building through clear communication and follow-through. The story stays within individual scope, which is appropriate for junior level. Biggest strength is proactive clarification rather than blame.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing kept pushing back on my requests because their campaign was more important. I sent a few emails and then just waited until my manager escalated it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to understand their constraints?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured they should just deliver since my deadline was fixed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment...",
+        "Blamed marketing for not delivering",
+        "Only sent emails then waited for escalation",
+        "Did not explore their constraints",
+        "Quote: \"I figured they should just deliver since my deadline was fixed.\"",
+        "Follow-up: Asked about understanding constraints; candidate showed no attempt"
+      ],
+      "lowerFeedback": "Candidate treated the misalignment as the other team's problem and relied on escalation rather than direct communication. No evidence of trying to understand constraints or offering trade-offs. This lowers trust because it shows avoidance of ownership. Story remains local but lacks the basic steps of clarifying needs or adjusting own work. Main gap is absence of proactive dialogue."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The infra team had a reliability goal that conflicted with our feature velocity target. I proposed a joint weekly sync and shared our risk register so they could see downstream impact."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I volunteered to run the first two syncs and documented decisions in a shared doc. We ended up splitting the work so they handled the risky migration while we took a simpler rollout path."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment...",
+        "Proposed joint sync and shared risk register",
+        "Volunteered to run initial syncs and documented decisions",
+        "Negotiated split of work across teams",
+        "Quote: \"We ended up splitting the work so they handled the risky migration.\"",
+        "Follow-up: Asked how influence happened; candidate described concrete mechanisms"
+      ],
+      "raiseFeedback": "Candidate created a repeatable forum and made the shared risk visible, which built trust across teams. They took on coordination overhead to keep momentum. Outcome included a negotiated trade-off that protected both teams' goals. This demonstrates senior-level influence without authority and cross-team impact. Biggest strength is turning conflict into a documented joint plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Infra kept rejecting our PRs over reliability concerns. I complained in our team meeting and asked my manager to talk to their manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you meet with them directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple times but it stayed at the level of 'we need this' versus 'we can't do that.'"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment...",
+        "Escalated to managers instead of driving alignment",
+        "Meetings stayed positional with no trade-offs found",
+        "No shared artifacts or follow-up process",
+        "Quote: \"It stayed at the level of 'we need this' versus 'we can't do that.'\"",
+        "Follow-up: Asked about direct meetings; candidate described stalled positional talks"
+      ],
+      "lowerFeedback": "Candidate defaulted to escalation and positional arguments rather than exploring constraints or offering options. No visible effort to create shared visibility or take coordination work. This lowers the bar for senior because cross-team friction was not resolved through personal influence. Main gap is lack of mechanisms to build ongoing trust."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our product goals required a data pipeline the analytics team could not prioritize. I asked my peer manager to assign one of their analysts to a joint working group and offered to cover part of their quarterly OKR."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the people side?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure the analyst got visible credit in our launch review and later advocated for their promotion case using the work we did together."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment...",
+        "Negotiated shared OKR coverage with peer manager",
+        "Created joint working group",
+        "Ensured credit and advocated for the other team's person",
+        "Quote: \"I advocated for their promotion case using the work we did together.\"",
+        "Follow-up: Asked about people development; candidate described credit and advocacy"
+      ],
+      "raiseFeedback": "Candidate treated the other team as partners by sharing credit and investing in their person's growth. They used OKR trade-offs to create leverage instead of heroics. Result protected both teams' goals while strengthening the relationship. This meets manager expectations around developing people and owning team outcomes through others. Biggest strength is the promotion advocacy that built long-term trust.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Analytics was understaffed so I pulled one of my engineers to do the pipeline work even though it wasn't their strength. We hit the date but the quality was lower than planned."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve the analytics manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "Only after the fact to explain why we had done it ourselves."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment...",
+        "Absorbed work into own team instead of aligning",
+        "Did not involve peer manager until after the fact",
+        "Resulted in lower quality",
+        "Quote: \"I pulled one of my engineers to do the pipeline work even though it wasn't their strength.\"",
+        "Follow-up: Asked about involving peer; candidate described post-facto notification"
+      ],
+      "lowerFeedback": "Candidate chose to absorb the work rather than negotiate alignment, which masked the trust issue and produced lower quality. No evidence of developing the other team or creating shared ownership. This lowers the bar for manager because team outcomes were protected at the expense of cross-team health. Main gap is absence of people-level investment in the partner team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two business units had conflicting OKRs on a shared platform investment. I created a joint steering group with P&L owners and tied part of each leader's bonus to the combined platform metric."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "After six months the groups began sharing roadmap items proactively. We later used the same model for two other platform decisions, reducing duplicate spend by roughly 15 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment...",
+        "Created joint steering group with P&L owners",
+        "Tied bonuses to shared platform metric",
+        "Model reused for other decisions with measurable spend reduction",
+        "Quote: \"We later used the same model for two other platform decisions.\"",
+        "Follow-up: Asked about longer-term effect; candidate described reuse and metric impact"
+      ],
+      "raiseFeedback": "Candidate addressed root misalignment through structural changes (shared metrics and steering) rather than one-off negotiation. They accepted short-term complexity to create reusable trust mechanisms at org scale. Outcome included both goal achievement and reduced future friction. This fits exec expectations for strategic judgment and org-level leverage. Biggest strength is turning a single conflict into a durable operating model.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I let the two VPs negotiate directly and stepped in only when the launch slipped. We eventually met the date by adding headcount to both teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any underlying incentives?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we treated it as a one-time resource issue."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when your team's goals were out of alignment...",
+        "Allowed direct VP negotiation then added headcount when late",
+        "No change to incentives or governance",
+        "Treated as one-time resource fix",
+        "Quote: \"We treated it as a one-time resource issue.\"",
+        "Follow-up: Asked about incentives; candidate confirmed no structural change"
+      ],
+      "lowerFeedback": "Candidate relied on escalation and additional spend instead of addressing conflicting incentives. No lasting mechanism was created, so similar conflicts are likely to recur. This lowers the bar at exec level because the response stayed tactical rather than strategic. Main gap is absence of org-level leverage or trade-off design."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Transparency on constraints",
+      "junior": "Shares own deadline and asks what helps the other side",
+      "senior": "Creates shared risk register and joint forum",
+      "manager": "Negotiates OKR coverage and ensures credit",
+      "exec": "Ties incentives to combined metric via steering group"
+    },
+    {
+      "signal": "Follow-through and ownership",
+      "junior": "Updates own manager and delivers partial work",
+      "senior": "Runs initial syncs and documents decisions",
+      "manager": "Advocates for partner team member's promotion",
+      "exec": "Reuses model across multiple platform decisions"
+    },
+    {
+      "signal": "Avoidance vs. direct action",
+      "junior": "Sends emails then waits for escalation",
+      "senior": "Escalates to managers after positional meetings stall",
+      "manager": "Absorbs work into own team without peer discussion",
+      "exec": "Adds headcount after launch slip with no incentive change"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task adjustment",
+      "senior": "Cross-team work split",
+      "manager": "Team-level people development and OKR trade",
+      "exec": "Org-level operating model and spend reduction"
+    }
+  ],
+  "kind": "lp"
+}

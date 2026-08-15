@@ -1,0 +1,262 @@
+{
+  "question": "Tell me about a time when you didn't have enough resources to do something you felt was important but found a creative way to get it done anyway. What was the situation? What other options did you consider? How did you decide on a path forward? What was the outcome?",
+  "competency": "Frugality",
+  "principle": "Frugality",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team needed a simple dashboard to track test coverage but had no budget for a BI tool. I wrote a Python script that pulled data from our CI logs into a shared Google Sheet and added basic charts."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you consider first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the manager for a $200/month tool but was told no. Then I looked for free tiers and open-source options but they required install permissions we didn't have. The script was the only path that stayed inside our existing tools."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Coverage visibility improved from zero to weekly updates. My manager later used the same approach for another team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Built Python script + Google Sheet for test coverage dashboard after tool request denied",
+        "Considered free tiers and open-source but hit permission limits",
+        "Outcome: weekly visibility created and reused by another team",
+        "Quote: \"The script was the only path that stayed inside our existing tools.\"",
+        "Follow-up: Asked about other options; candidate walked through rejected paths clearly"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at junior level. The candidate identified a coverage gap, asked for a tool, accepted the constraint, then built a lightweight solution using only approved tools. The outcome created reuse value beyond their own work. This shows ownership of the problem and learning within limits rather than waiting for resources. Biggest strength is the clear decision path after the initial ask was denied.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed better reporting but IT wouldn't give us Tableau so nothing got done."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you explore any alternatives?"
+        },
+        {
+          "role": "candidate",
+          "text": "I emailed the manager twice asking for budget but didn't hear back so I moved on to other tickets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Stated need for reporting but stopped after two emails",
+        "No alternatives explored beyond asking for budget",
+        "Outcome: nothing shipped",
+        "Quote: \"IT wouldn't give us Tableau so nothing got done.\"",
+        "Follow-up: Asked about alternatives; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at junior level. The candidate treated the resource constraint as a hard stop instead of looking for workarounds. No evidence of trying existing tools or simple scripts. The story ends with inaction. Biggest gap is absence of any creative attempt after the request was denied."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed a shared integration test environment but we only had budget for one. I negotiated with the infra team to repurpose an under-used staging cluster during off-peak hours and wrote a lightweight scheduler script."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get cross-team agreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mapped the usage patterns of both teams, showed the 70% idle time on the cluster, and proposed a simple booking calendar. Both leads signed off after seeing the data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Integration issues dropped 40% over two quarters and the approach was adopted by a third team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Repurposed under-used staging cluster for two teams via scheduler script and booking calendar",
+        "Mapped usage data to win agreement from both leads",
+        "Outcome: 40% drop in integration issues, adopted by third team",
+        "Quote: \"I mapped the usage patterns of both teams, showed the 70% idle time.\"",
+        "Follow-up: Asked how cross-team agreement was reached; candidate used data to influence"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at senior level. The candidate turned a resource shortage into a cross-team win by analyzing existing capacity and creating a low-overhead sharing mechanism. Influence came through data rather than authority. The result scaled beyond the original two teams. Biggest strength is combining technical workaround with stakeholder alignment to multiply impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed more test environments but budget was tight so I asked the other team to share and they said no."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any existing capacity?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have time to dig into their usage metrics so we just reduced test coverage instead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Asked another team to share environments and was refused",
+        "No analysis of existing capacity or usage patterns",
+        "Outcome: reduced test coverage",
+        "Quote: \"I didn't have time to dig into their usage metrics.\"",
+        "Follow-up: Asked about existing capacity; candidate had not investigated"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at senior level. The candidate stopped at the first refusal without exploring data or alternatives. No attempt to influence through evidence or creative sharing. The outcome was a reduction in quality rather than a workaround. Biggest gap is lack of initiative to understand current resource utilization before giving up."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team of eight needed a new onboarding program but had no dedicated L&D budget. I had senior engineers record short videos during their existing 1:1s and built a lightweight wiki using our internal Confluence space."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the time cost for the engineers?"
+        },
+        {
+          "role": "candidate",
+          "text": "I protected their recording time by trading off two low-value meetings each and tracked the hours so it stayed under four hours total per person."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "New-hire ramp time fell from 12 weeks to 8 and two other managers copied the model."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Created onboarding program using engineer-recorded videos and existing Confluence",
+        "Protected engineer time by trading off low-value meetings",
+        "Outcome: ramp time reduced from 12 to 8 weeks, model copied by two managers",
+        "Quote: \"I protected their recording time by trading off two low-value meetings.\"",
+        "Follow-up: Asked how time cost was managed; candidate showed explicit trade-off"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at manager level. The candidate delivered a needed program by repurposing existing tools and protecting team capacity through deliberate trade-offs. The solution created leverage by being adopted by other teams. Biggest strength is treating team time as the scarce resource and managing it explicitly while still shipping.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We wanted an onboarding program but had no budget so I told the team we'd wait until next year."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider using any existing assets?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to add work to the engineers so I didn't explore internal tools or recordings."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Decided to wait for budget rather than explore alternatives",
+        "No use of existing tools or engineer time trade-offs",
+        "Outcome: program delayed a full year",
+        "Quote: \"I didn't want to add work to the engineers so I didn't explore.\"",
+        "Follow-up: Asked about existing assets; candidate avoided the topic"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at manager level. The candidate defaulted to waiting for budget instead of finding ways to leverage current team capacity or tools. No evidence of protecting or reallocating time. The outcome was a full year of delay. Biggest gap is treating the team as unable to contribute rather than finding low-cost ways to involve them."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The company needed to expand into a new vertical but had only half the usual M&A budget. I redirected two existing product teams to build a thin integration layer on top of an acquired small startup's API instead of a full rebuild."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you choose which teams to redirect?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at roadmap overlap and picked teams whose current work had the lowest strategic value, then ran a two-week experiment to validate the integration approach before committing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We entered the vertical six months earlier than the original plan and at 40% lower cost, which became the model for two later expansions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Redirected two product teams to build thin integration on acquired API instead of full rebuild",
+        "Chose teams via roadmap overlap analysis and ran two-week experiment first",
+        "Outcome: entered vertical 6 months early at 40% lower cost, model reused",
+        "Quote: \"I looked at roadmap overlap and picked teams whose current work had the lowest strategic value.\"",
+        "Follow-up: Asked how teams were selected; candidate used strategic value and validation"
+      ],
+      "raiseFeedback": "Raises the bar for Frugality at exec level. The candidate solved a capital constraint by reallocating existing teams to a lower-cost integration path and validated the approach before scaling. The decision was grounded in roadmap analysis and produced a reusable model. Biggest strength is making a portfolio-level trade-off that accelerated business impact while staying inside resource limits.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We didn't have enough M&A budget so we paused the vertical expansion."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider any alternatives using existing teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to disrupt current roadmaps so we waited for the next budget cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you didn't have enough resources...",
+        "Paused expansion due to budget",
+        "No exploration of team reallocation or integration options",
+        "Outcome: delayed one full cycle",
+        "Quote: \"I didn't want to disrupt current roadmaps so we waited.\"",
+        "Follow-up: Asked about existing teams; candidate avoided reallocation"
+      ],
+      "lowerFeedback": "Lowers the bar for Frugality at exec level. The candidate treated the budget limit as immovable and chose delay over exploring internal resource reallocation. No evidence of strategic trade-offs or experiments. The outcome was a full cycle of lost time. Biggest gap is absence of portfolio-level thinking to find lower-cost paths using current assets."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of resource constraint",
+      "junior": "Individual task or tool request",
+      "senior": "Cross-team sharing or repurposing",
+      "manager": "Team capacity and program delivery",
+      "exec": "Business vertical or portfolio trade-off"
+    },
+    {
+      "signal": "How alternatives are evaluated",
+      "junior": "Tries existing tools or simple scripts",
+      "senior": "Analyzes usage data to influence others",
+      "manager": "Protects and reallocates team time",
+      "exec": "Roadmap overlap analysis plus quick experiment"
+    },
+    {
+      "signal": "Evidence of leverage created",
+      "junior": "Solution reused by one other person or team",
+      "senior": "Adopted by a third team",
+      "manager": "Copied by other managers",
+      "exec": "Became model for later expansions"
+    },
+    {
+      "signal": "Decision process after denial",
+      "junior": "Moves to next feasible technical path",
+      "senior": "Uses data to gain agreement",
+      "manager": "Makes explicit time trade-offs",
+      "exec": "Validates low-cost path before committing"
+    }
+  ],
+  "kind": "lp"
+}

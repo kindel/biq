@@ -1,0 +1,229 @@
+{
+  "question": "Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+  "competency": "Time Management, Prioritization & Organization",
+  "principle": "Time Management, Prioritization & Organization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was assigned a 4-month feature to build a reporting dashboard. I split it into four phases: requirements and wireframes in month 1, backend data model in month 2, frontend UI in month 3, and testing plus handoff in month 4. Each phase had a clear deliverable and review with my mentor."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when requirements shifted mid-project?"
+        },
+        {
+          "role": "candidate",
+          "text": "The data sources changed in phase 2. I flagged the impact, adjusted the backend milestone by two weeks, and deprioritized a nice-to-have chart so we still hit the original launch date."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "Broke 4-month dashboard into 4 clear phases with deliverables and mentor reviews",
+        "Adjusted scope when data sources changed to protect launch date",
+        "Quote: 'I deprioritized a nice-to-have chart so we still hit the original launch date'",
+        "Follow-up: Handled requirement shift by trading scope; kept original date"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned an individual 4-month feature and defined explicit phases with review points. When data sources changed, they traded a non-critical chart to protect the date rather than asking for more time. This shows basic prioritization and ownership of their own work. The story stays at individual scope, which matches the level. Biggest strength is the concrete scope trade-off that protected the milestone.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I worked on a dashboard project that took about four months. I just kept working on tasks until it was done."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to work on each week?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager told me what to do next so I didn't really set milestones myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "Described 4-month dashboard but gave no phases or structure",
+        "Relied on manager for weekly priorities",
+        "Quote: 'My manager told me what to do next'",
+        "Follow-up: No evidence of personal prioritization or milestone planning"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate completed a multi-month project but showed no ownership of breaking it into phases or adjusting priorities. All direction came from the manager, which signals weak time management at the individual level. No concrete deliverables or trade-offs were described. The biggest gap is absence of any self-directed planning."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I led a 9-month cross-team migration of our billing system. We defined five milestones: discovery, parallel run, cutover for one product, full cutover, and decommission. Each milestone had success metrics and a go/no-go with the other teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep the other teams aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran bi-weekly syncs and published a shared milestone dashboard. When one team slipped on their parallel-run data, I negotiated a two-week buffer on the next milestone and shifted a low-risk product earlier to keep overall momentum."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "9-month cross-team billing migration with 5 milestones and go/no-go criteria",
+        "Used shared dashboard and bi-weekly syncs for alignment",
+        "Quote: 'I negotiated a two-week buffer and shifted a low-risk product earlier'",
+        "Follow-up: Influenced without authority to protect overall timeline"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove a 9-month cross-team effort with clear milestones and published metrics that other teams adopted. When slippage occurred they negotiated scope movement across teams rather than escalating. This demonstrates influence without authority and visible cross-team impact. The story stays grounded with specific trade-offs. Biggest strength is the use of shared milestones to create leverage across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was the tech lead on a billing migration that lasted almost a year. We had some phases but mostly followed the original plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle teams that fell behind?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent updates in the weekly email and hoped they would catch up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "Year-long billing migration mentioned but phases were vague",
+        "Relied on weekly email updates when teams slipped",
+        "Quote: 'I sent updates in the weekly email and hoped they would catch up'",
+        "Follow-up: No evidence of active coordination or milestone adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate led a long project yet provided no evidence of driving milestone definition or cross-team coordination. Updates were passive and produced no visible change in behavior from other teams. Lack of metrics or trade-off examples shows limited organizational skill. The biggest gap is missing influence and proactive prioritization across teams."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned a 12-month platform rewrite. I broke it into quarterly OKRs with four major milestones and assigned each to a different engineer as a growth opportunity. We reviewed progress in monthly business reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when one engineer missed their milestone?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paired them with a stronger peer for the next phase, adjusted their scope to something smaller, and used the situation in their performance review to set clearer expectations."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "12-month platform rewrite split into quarterly OKRs and four milestones",
+        "Used milestones as growth opportunities for team members",
+        "Quote: 'I paired them with a stronger peer... and used the situation in their performance review'",
+        "Follow-up: Addressed underperformance through coaching and scope adjustment"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate turned a year-long rewrite into quarterly OKRs that also served as development opportunities for the team. When a milestone was missed they combined coaching with scope adjustment and documented it in performance management. This shows both project structure and people development. The story focuses on team outcomes rather than personal heroics. Biggest strength is using milestones to develop people while protecting delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team did a year-long platform rewrite. I set some quarterly goals but mostly checked in monthly."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle someone who missed a milestone?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reminded them in the next 1:1 and hoped the next quarter would be better."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "Year-long rewrite with quarterly goals but no clear milestone ownership",
+        "Handled misses with reminders only",
+        "Quote: 'I reminded them in the next 1:1 and hoped the next quarter would be better'",
+        "Follow-up: No coaching, scope change, or performance linkage"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate ran a long project but treated milestones as status checkpoints rather than tools for delivery or development. Missed milestones received only reminders with no coaching or consequence. This shows weak leverage through the team and no visible handling of underperformance. The biggest gap is absence of people development tied to project structure."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sponsored a two-year initiative to move our entire infrastructure to a new cloud region. We defined three phases: pilot with two products, migrate the top 20 revenue services, and full decommission of the old region. Each phase had board-level milestones and risk gates."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the order of services?"
+        },
+        {
+          "role": "candidate",
+          "text": "We prioritized by revenue impact and dependency risk, then accepted a six-month delay on two low-volume services to protect the overall decommission date and budget."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "Two-year cloud region migration with three board-level phases and risk gates",
+        "Prioritized services by revenue and dependency; accepted targeted delays",
+        "Quote: 'We accepted a six-month delay on two low-volume services to protect the overall decommission date'",
+        "Follow-up: Made strategic trade-offs at org and budget level"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate sponsored a multi-year org-level migration with explicit phases tied to board milestones and financial gates. They made a deliberate revenue-based prioritization and accepted targeted scope delay to protect the larger outcome. The story demonstrates long-term strategic judgment and clear trade-offs. Biggest strength is the willingness to deprioritize revenue services for overall program integrity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sponsored a two-year cloud migration. We had a high-level plan with some phases but execution was mostly left to the teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle budget or timeline pressure?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the teams to work harder and reported the original dates to the board."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give an example of successfully managing a long-term project by breaking it into milestones or phases.",
+        "Two-year migration with high-level phases only",
+        "Responded to pressure by asking teams to work harder",
+        "Quote: 'I asked the teams to work harder and reported the original dates to the board'",
+        "Follow-up: No evidence of strategic reprioritization or risk gates"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate sponsored a long initiative but left milestone definition and trade-offs to individual teams. Under pressure they doubled down on the original plan instead of making visible strategic choices. No board-level risk gates or prioritization logic were described. The biggest gap is lack of long-term judgment and willingness to adjust scope at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Milestone definition clarity",
+      "junior": "Explicit 4 phases with deliverables",
+      "senior": "5 milestones with go/no-go criteria",
+      "manager": "Quarterly OKRs tied to growth",
+      "exec": "3 board-level phases with risk gates"
+    },
+    {
+      "signal": "Handling change or slippage",
+      "junior": "Traded one chart to protect date",
+      "senior": "Negotiated buffer and moved low-risk work",
+      "manager": "Paired engineer + adjusted scope",
+      "exec": "Accepted delay on low-volume services"
+    },
+    {
+      "signal": "Metrics and visibility",
+      "junior": "Mentor reviews per phase",
+      "senior": "Shared dashboard across teams",
+      "manager": "Monthly business reviews",
+      "exec": "Board-level milestones and budget gates"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature",
+      "senior": "Cross-team coordination",
+      "manager": "Team development + delivery",
+      "exec": "Org-wide budget and timeline trade-offs"
+    },
+    {
+      "signal": "People development",
+      "junior": "N/A at this level",
+      "senior": "Limited evidence",
+      "manager": "Milestones used as growth opportunities",
+      "exec": "N/A; focus on strategic judgment"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,223 @@
+{
+  "question": "Describe a time when you took an unpopular stance in a meeting with peers and your leader. What was it? Why did you feel strongly about it? What did you do? What was the outcome?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project, the team wanted to skip writing unit tests for a new feature to hit the deadline. I said we should still write them because the module touched payments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed a quick example of how a recent bug would have been caught. My manager asked the team to add a minimal set. We shipped on time and had zero payment defects in the first month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time you took unpopular stance with peers + leader",
+        "Situation: first project, skip unit tests for payments feature to hit date",
+        "Action: brought example of prior bug, proposed minimal test set",
+        "Outcome: team added tests, zero defects post-ship",
+        "Quote: 'I showed how the last payments bug would have been caught'",
+        "Follow-up: asked why felt strongly - 'had just fixed a similar issue and didn't want repeat'"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate chose a small-scope technical disagreement and backed it with a concrete prior example rather than opinion. They accepted the compromise of minimal tests instead of demanding full coverage, showing they understood trade-offs. The outcome was measurable at their level (zero defects) and they owned the follow-through. This demonstrates early backbone without derailing the team. Biggest strength is tying the stance to a specific past bug they had fixed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought we should use a different framework but everyone wanted the one we already had. I told them it was better."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the meeting go?"
+        },
+        {
+          "role": "candidate",
+          "text": "They disagreed so I stopped pushing. We used the old one and it worked fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: unpopular stance with peers + leader",
+        "Situation: wanted different framework, no data given",
+        "Action: stated preference then dropped it when pushback came",
+        "Outcome: used existing framework, 'worked fine'",
+        "Quote: 'They disagreed so I stopped pushing'",
+        "Follow-up: why feel strongly - 'I had read about the new one online'"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The stance had no supporting evidence or connection to team goals, so it read as preference rather than conviction. When challenged the candidate immediately yielded instead of exploring a middle path or asking clarifying questions. No ownership of outcome or learning shown. The story stays at the level of 'I suggested something and it didn't happen.' Biggest gap is absence of any attempt to influence or learn from the disagreement."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were aligning on a shared API contract that would force extra work on my service. I pushed back in the planning meeting because it would double our error-handling code."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought latency numbers from our current endpoints and proposed an alternative contract shape. The lead agreed to a revised version that kept our changes under 10%. Both teams shipped on schedule."
+        }
+      ],
+      "raiseNotes": [
+        "Q: unpopular stance with peers + leader",
+        "Situation: shared API contract increasing error handling in own service",
+        "Action: brought latency data, proposed alternative shape in meeting",
+        "Outcome: revised contract, <10% change, on-time ship",
+        "Quote: 'I showed the numbers and offered a different shape'",
+        "Follow-up: how did leader react - 'asked me to own the alternative proposal'"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate surfaced a cross-team cost with data rather than preference and offered a concrete alternative that reduced scope for everyone. They stayed in the room and negotiated instead of escalating or conceding. Outcome shows measurable impact on their service without blocking the broader program. This reflects the level expectation of influence without authority. Biggest strength is converting disagreement into a jointly owned better contract.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with the API design because it felt overly complex. I said so in the meeting and listed my concerns."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, they went ahead. I documented my concerns in the ticket and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: unpopular stance with peers + leader",
+        "Situation: felt API design was too complex",
+        "Action: listed concerns verbally in meeting",
+        "Outcome: no change, documented in ticket",
+        "Quote: 'I documented my concerns in the ticket and moved on'",
+        "Follow-up: any follow-up after meeting - 'sent the notes and stopped'"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The disagreement stayed at the level of personal judgment without data or alternatives, so it had no leverage. After the meeting the candidate treated documentation as sufficient closure rather than continuing to influence. No evidence of cross-team impact or willingness to commit once overruled. The story shows voicing an opinion but not the persistence or problem-solving expected at this level. Biggest gap is lack of any attempt to find a workable path forward."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was asked to take on an additional compliance project that would delay two roadmap items. I said we should decline and protect the existing commitments."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your leader respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back in the meeting. I brought capacity numbers and risk to the two delayed features. We agreed to staff the compliance work with two contractors instead. Roadmap stayed on track and compliance was delivered."
+        }
+      ],
+      "raiseNotes": [
+        "Q: unpopular stance with peers + leader",
+        "Situation: asked to absorb compliance project at expense of roadmap",
+        "Action: shared capacity data and proposed contractor staffing",
+        "Outcome: roadmap protected, compliance delivered via contractors",
+        "Quote: 'I showed the impact on the two committed features'",
+        "Follow-up: how did you handle team morale - 'explained the decision and why we protected their work'"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate protected team delivery by quantifying the trade-off and offering a resourcing solution instead of simply saying no. They used the disagreement to surface capacity reality and negotiated an outcome that preserved both compliance and roadmap. This shows creating leverage through the team rather than heroics. Outcome is owned at the team level. Biggest strength is converting a resource conflict into a staffing plan the leader accepted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership wanted us to take on extra work. I told them my team was already at capacity and we couldn't do it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They assigned it anyway. The team worked extra hours and we missed one roadmap item."
+        }
+      ],
+      "lowerNotes": [
+        "Q: unpopular stance with peers + leader",
+        "Situation: asked to take extra work beyond capacity",
+        "Action: stated capacity limit without data or alternatives",
+        "Outcome: work assigned anyway, missed roadmap item, overtime",
+        "Quote: 'They assigned it anyway'",
+        "Follow-up: any mitigation attempted - 'none, just executed'"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate presented a binary refusal without data or options, which left no room for the leader to adjust. After being overruled there was no further attempt to protect the team or renegotiate scope. The outcome was predictable missed commitments and burnout. This reflects a lack of strategic judgment on how to create leverage. Biggest gap is treating the disagreement as a one-time statement rather than an ongoing negotiation."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were about to announce a pricing change that would have hurt our mid-market segment. I argued in the exec meeting that we should delay and run a pilot first."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared win-rate data showing 18% drop in that segment under the new model. We ran a 60-day pilot with 12 accounts. Results confirmed the risk so we adjusted the packaging instead. ARR impact was neutral and we kept the segment."
+        }
+      ],
+      "raiseNotes": [
+        "Q: unpopular stance with peers + leader",
+        "Situation: pricing change risking mid-market segment",
+        "Action: brought segment win-rate data, proposed 60-day pilot",
+        "Outcome: adjusted packaging, neutral ARR, segment retained",
+        "Quote: 'The data showed an 18% win-rate drop'",
+        "Follow-up: how did you align the rest of the exec team - 'one-on-ones with finance and sales leads before the pilot decision'"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate used segment-level data to surface a strategic risk and proposed a low-cost experiment that allowed the organization to test assumptions. They invested in pre-alignment with other execs rather than winning the room in one meeting. The outcome preserved revenue and customer segment without blocking the broader pricing initiative. This shows long-term thinking and leverage at the business level. Biggest strength is turning a potential revenue mistake into a validated packaging change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with a proposed org change because it would slow decision-making. I raised it in the leadership offsite."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the structure change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, it went through. I focused on executing the new model."
+        }
+      ],
+      "lowerNotes": [
+        "Q: unpopular stance with peers + leader",
+        "Situation: org change expected to slow decisions",
+        "Action: raised concern in offsite meeting",
+        "Outcome: change implemented, focused on execution",
+        "Quote: 'I focused on executing the new model'",
+        "Follow-up: any data or alternatives offered - 'shared qualitative view only'"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The stance lacked quantitative business impact or a concrete alternative, so it could not influence at the org level. After the decision the candidate defaulted to execution without attempting to mitigate the downside they had identified. No evidence of strategic trade-off analysis or long-term leverage. The story stays tactical rather than demonstrating judgment under ambiguity. Biggest gap is absence of any attempt to shape the outcome beyond the initial statement."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of data vs opinion",
+      "junior": "Raises when ties stance to specific past bug; lowers when cites reading online",
+      "senior": "Raises when brings latency numbers and alternative shape; lowers when lists concerns without evidence",
+      "manager": "Raises when quantifies capacity and offers contractor option; lowers when states limit without data",
+      "exec": "Raises when cites 18% win-rate drop and proposes pilot; lowers when gives qualitative view only"
+    },
+    {
+      "signal": "Persistence after pushback",
+      "junior": "Raises when accepts minimal tests compromise; lowers when immediately drops the point",
+      "senior": "Raises when negotiates revised contract; lowers when documents and moves on",
+      "manager": "Raises when negotiates staffing solution; lowers when accepts overtime outcome",
+      "exec": "Raises when runs pre-alignment and pilot; lowers when defaults to execution"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature, local defect prevention",
+      "senior": "Cross-team API contract, measurable service change",
+      "manager": "Team roadmap protection via resourcing",
+      "exec": "Segment-level pricing and packaging decision"
+    }
+  ],
+  "kind": "lp"
+}

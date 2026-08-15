@@ -1,0 +1,236 @@
+{
+  "question": "Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later. What did you learn that you were able to apply?",
+  "competency": "Are Right, A Lot (learning from mistakes, judgment improvement)",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to implement a quick fix for a data parsing bug without checking edge cases, which caused a production incident on a customer report. After the postmortem I learned to always run the change against our full test dataset first. Two weeks later a similar parsing request came in and I spent the extra hour building the test harness, which caught two other issues before I shipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What specifically changed in how you approached the second decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a step to compare input distributions against the last 30 days of data, which I had skipped the first time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Individual scope bug fix that caused incident",
+        "Learned to run full test dataset and compare distributions",
+        "Applied on next parsing request, caught two issues",
+        "Quote: 'I spent the extra hour building the test harness'",
+        "Follow-up: Added explicit data-distribution check step"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at junior level. Candidate owned an individual-scope decision that produced an incident, identified the missing validation step, and applied a concrete new check on the next similar task. The quote about spending the extra hour shows the learning was operationalized rather than abstract. Scope stays appropriately local for 0-2 years experience. Biggest strength is the clear before-and-after behavior change on their own work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked the wrong library for a feature because I didn't have time to benchmark, and it got slow in prod. Later I just asked my manager what to use instead and it worked better."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you personally change in your decision process?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started asking more questions before choosing libraries."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Chose slow library, asked manager next time",
+        "No specific process change described",
+        "Quote: 'I started asking more questions'",
+        "Follow-up: Learning reduced to 'ask manager' rather than new personal method"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at junior level. The candidate describes a bad decision but the follow-up learning is limited to deferring to the manager rather than adding any repeatable personal check. No concrete metric or new step is shown on the second decision. Ownership feels incomplete because the improvement is external. Biggest gap is absence of an internalized change the candidate can apply independently."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed to consolidate two services into one without enough cross-team input, which increased latency for a partner team and required a rollback. I learned to run a lightweight design review with affected teams before committing to architecture changes. Six months later when we needed to split a different service, I scheduled those reviews early and the partner teams surfaced two integration risks that we mitigated before launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure the improvement?"
+        },
+        {
+          "role": "candidate",
+          "text": "The second split had zero latency regressions reported by partners and went live two weeks ahead of the original schedule."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Consolidated services without cross-team input, caused rollback",
+        "Learned to run design reviews with affected teams",
+        "Applied on later service split, caught two risks",
+        "Quote: 'zero latency regressions reported by partners'",
+        "Follow-up: Measured against schedule and partner-reported metrics"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at senior level. The initial decision had cross-team impact and the candidate added a repeatable process of early design reviews. The second story shows the new step prevented issues and delivered measurable schedule and quality gains. Evidence of influence without authority is present through the review mechanism. Biggest strength is the clear translation of learning into a process that benefited multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I chose an approach for a shared component that didn't scale for another team. After feedback I involved more people earlier on the next project."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in the outcome or your decision criteria?"
+        },
+        {
+          "role": "candidate",
+          "text": "The next project had fewer complaints."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Shared component choice caused scaling issues",
+        "Learned to involve more people earlier",
+        "Applied on next project with fewer complaints",
+        "Quote: 'fewer complaints'",
+        "Follow-up: No specific process or metric beyond 'involve more people'"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at senior level. The story stays at the level of 'involve more people' without describing a concrete mechanism or decision criteria that was updated. Outcome is described only as 'fewer complaints' with no cross-team metrics or influence evidence. Scope feels individual rather than demonstrating the expected senior-level cross-team leverage. Biggest gap is lack of an operationalized change that can be reused by others."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to staff a new initiative with only senior engineers to move fast, which left the mid-levels without growth opportunities and hurt retention on two teams. After seeing the impact I started requiring every new project to include at least one stretch assignment for a mid-level engineer. On the following two launches we used that rule and both teams retained their mid-level engineers while still hitting the original dates."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you enforce the new rule across teams you didn't directly manage?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made it part of the intake checklist that all team leads had to review with their managers before staffing was approved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Staffed only seniors, hurt mid-level retention",
+        "Learned to require stretch assignments on every project",
+        "Applied via intake checklist, retained mid-levels on two launches",
+        "Quote: 'made it part of the intake checklist'",
+        "Follow-up: Used manager review to influence without direct authority"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at manager level. The candidate owned a staffing decision that affected team health, created a lightweight process (intake checklist), and drove it through other managers. Retention and delivery metrics are cited for multiple teams. Evidence of creating leverage through the organization rather than heroics. Biggest strength is turning personal learning into a scalable staffing rule that protected development opportunities.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I over-staffed a project with seniors and some juniors felt stuck. After that I tried to remember to give juniors more visibility on future projects."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process or expectation did you put in place for your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started reminding leads to think about juniors during planning."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Over-staffed with seniors, juniors felt stuck",
+        "Learned to remind leads about juniors",
+        "Applied by 'reminding' during planning",
+        "Quote: 'reminding leads to think about juniors'",
+        "Follow-up: No durable mechanism or measured outcome"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at manager level. The learning remains at the level of personal reminders rather than a repeatable team process or expectation. No metrics on retention or project outcomes are provided. Influence is limited to verbal reminders instead of changing how staffing decisions are made. Biggest gap is absence of organizational leverage or a mechanism that outlasts the candidate's direct involvement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I approved a major market expansion without requiring a full competitive-response model, which led to margin compression when two incumbents reacted faster than modeled. I instituted a new requirement that every expansion proposal must include a pre-mortem with the strategy and finance teams plus a 3-year sensitivity table on competitor moves. The next two expansions used this gate and both maintained or improved margins despite competitive pressure."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the organization to adopt the new gate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied it to the capital-commitment process so no expansion funding could be released without the pre-mortem sign-off."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Approved expansion without competitive pre-mortem, margin hit",
+        "Added pre-mortem + sensitivity table requirement",
+        "Applied via capital-commitment gate on next two expansions",
+        "Quote: 'tied it to the capital-commitment process'",
+        "Follow-up: Embedded in funding approval to drive org behavior"
+      ],
+      "raiseFeedback": "Raises the bar for Are Right, A Lot at exec level. The initial decision was high-ambiguity and org-scale; the candidate created a durable strategic gate (pre-mortem + sensitivity table) and embedded it in the capital process. Two subsequent expansions showed sustained margins under competitive conditions. Evidence of long-term thinking and leverage through existing approval mechanisms. Biggest strength is converting a costly strategic miss into an institutionalized decision-quality control.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We entered a new market too quickly and got margin pressure. After that I asked the team to do more competitive analysis on the next opportunity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how capital or strategic decisions were made going forward?"
+        },
+        {
+          "role": "candidate",
+          "text": "We now discuss competitive scenarios in the review meetings."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you made a bad decision and the learning from that experience enabled you to make a good decision later.",
+        "Entered market too quickly, margin pressure",
+        "Asked for more competitive analysis",
+        "Applied by discussing scenarios in meetings",
+        "Quote: 'discuss competitive scenarios in the review meetings'",
+        "Follow-up: No structural change to decision process or funding gates"
+      ],
+      "lowerFeedback": "Lowers the bar for Are Right, A Lot at exec level. The learning stays at the level of 'discuss more' in existing meetings without altering any approval process or capital criteria. No org-level mechanism or measured long-term impact is shown. Scope of change is tactical rather than strategic. Biggest gap is lack of leverage or institutionalization that would affect future high-ambiguity decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision and impact",
+      "junior": "Individual task or bug",
+      "senior": "Cross-team technical choice",
+      "manager": "Team staffing and retention",
+      "exec": "Market or capital allocation"
+    },
+    {
+      "signal": "Nature of learning applied",
+      "junior": "Personal checklist or test step",
+      "senior": "Lightweight review process others can follow",
+      "manager": "Intake rule enforced through peer managers",
+      "exec": "Capital or strategy gate embedded in existing process"
+    },
+    {
+      "signal": "Evidence of repeated application",
+      "junior": "One subsequent task",
+      "senior": "One or two later projects with metrics",
+      "manager": "Multiple teams over time",
+      "exec": "Multiple expansions with sustained business results"
+    },
+    {
+      "signal": "Ownership vs. external attribution",
+      "junior": "Owns the validation step missed",
+      "senior": "Owns the missing cross-team input",
+      "manager": "Owns the staffing rule that hurt growth",
+      "exec": "Owns the missing pre-mortem requirement"
+    },
+    {
+      "signal": "Metrics or outcome clarity",
+      "junior": "Caught two issues before ship",
+      "senior": "Zero regressions, on schedule",
+      "manager": "Retained mid-levels while hitting dates",
+      "exec": "Maintained or improved margins"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,254 @@
+{
+  "question": "Tell me about a time where you picked up something that was languishing. What was it? What did you do? What was the outcome?",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer onboarding script had been sitting in our backlog for three months because the original owner moved teams. I asked my manager if I could take it over even though it was outside my sprint work."
+        },
+        {
+          "role": "interviewer",
+          "text": "What specifically did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the old spec, updated it for our new API version, ran it by two engineers for feedback, and shipped a first version in two weeks. We reduced manual onboarding tickets by about 30 percent that quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the fact that requirements had changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a quick sync with the support team to validate the new edge cases before I started coding."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Junior picked up stale onboarding script after owner left",
+        "Updated spec, got feedback, shipped in two weeks, 30% drop in tickets",
+        "Quote: \"I asked my manager if I could take it over even though it was outside my sprint work\"",
+        "Follow-up: How did you handle changed requirements? -> Validated with support team first"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for junior. The candidate proactively claimed an abandoned task without being asked and delivered measurable local impact. Quote: \"I asked my manager if I could take it over even though it was outside my sprint work.\" They showed initiative within their scope, incorporated feedback quickly, and tracked a concrete outcome. This is exactly the ownership behavior we want at 0-2 years: taking responsibility for something that was not their assigned work and finishing it. The single biggest strength is self-initiated follow-through with visible results rather than waiting for direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was an old dashboard that nobody was using anymore. My manager asked me to look at it so I cleaned up a few queries."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you pick it up and how long did it take?"
+        },
+        {
+          "role": "candidate",
+          "text": "It came up in a team meeting. I spent a couple afternoons on it but then got pulled into other priorities so it never really shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Candidate only touched the dashboard after manager prompted",
+        "Spent a couple afternoons but abandoned when other work appeared",
+        "Quote: \"I spent a couple afternoons on it but then got pulled into other priorities\"",
+        "Follow-up: What was the outcome? -> Never shipped"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for junior. The candidate only acted after explicit direction and did not drive the work to completion once competing priorities appeared. Quote: \"I spent a couple afternoons on it but then got pulled into other priorities so it never really shipped.\" There is no evidence of personal initiative or persistence. At junior level we expect individuals to finish what they start and own the outcome even when it is not glamorous. The biggest gap is lack of sustained ownership and results."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The billing reconciliation process between two teams had been broken for six months and was causing weekly escalations. No one owned it after a reorg."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mapped the data flow across both teams, proposed a shared runbook, and got both engineering leads to agree on a weekly handoff. I ran the first three cycles myself to surface gaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Escalations dropped from eight per month to zero within two months and the process is now part of the on-call rotation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Senior took on cross-team billing reconciliation broken for six months",
+        "Mapped flows, created runbook, ran first cycles to prove it worked",
+        "Quote: \"I ran the first three cycles myself to surface gaps\"",
+        "Follow-up: How did you get both teams aligned? -> Proposed shared runbook and got leads to agree"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for senior. The candidate voluntarily owned a cross-team process that had no clear owner and drove it to a stable, measurable state. Quote: \"I ran the first three cycles myself to surface gaps.\" They used influence without authority to align two teams and created lasting leverage through a runbook and rotation. This demonstrates the expected senior scope: impact beyond their immediate team with clear metrics. The biggest strength is turning an ambiguous, multi-team problem into a repeatable solution without needing a mandate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A reporting job had been failing intermittently. I mentioned it in a meeting and someone else eventually fixed the cron schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up after mentioning it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged it once but the owning team was busy so I moved on to my own roadmap items."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Senior only flagged a failing job and waited for the owning team",
+        "Did not drive resolution or create any lasting fix",
+        "Quote: \"I flagged it once but the owning team was busy so I moved on\"",
+        "Follow-up: Did you follow up? -> No, moved on to own roadmap"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for senior. The candidate identified a problem but did not take personal responsibility for solving it or influencing the right people to completion. Quote: \"I flagged it once but the owning team was busy so I moved on to my own roadmap items.\" At senior level we expect individuals to drive cross-team issues to resolution rather than handing them off. The biggest gap is absence of influence and sustained ownership when the work is not in their direct lane."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our quarterly planning process was consistently late and caused the team to start sprints without clear priorities. I decided to own fixing the end-to-end process."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you approach it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a retro with the team, created a new timeline with clear owners for each step, and coached two leads on running the prep meetings. I stayed in the loop for the first two quarters to remove blockers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Planning now finishes two weeks earlier and team satisfaction with priorities went from 62 percent to 89 percent in the next survey."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Manager owned broken quarterly planning process",
+        "Created timeline, coached leads, stayed involved for two quarters",
+        "Quote: \"I coached two leads on running the prep meetings\"",
+        "Follow-up: How did you measure success? -> Planning two weeks earlier, satisfaction up to 89 percent"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for manager. The candidate took ownership of a team-level process failure and built sustainable capability in others rather than doing the work themselves. Quote: \"I coached two leads on running the prep meetings.\" They created leverage through coaching and produced a clear, lasting team outcome. This matches the manager expectation of owning team results and developing people. The biggest strength is shifting from heroics to building repeatable team ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our backlog grooming kept slipping. I sent a note to the team reminding them of the process."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything improve after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I ended up doing most of the grooming myself for the next two cycles until we hired a new TPM."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Manager sent a reminder but then did the work themselves",
+        "No lasting process change or team development",
+        "Quote: \"I ended up doing most of the grooming myself for the next two cycles\"",
+        "Follow-up: What was the long-term outcome? -> Relied on new TPM hire"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for manager. The candidate defaulted to individual execution instead of building team capability or fixing the underlying process. Quote: \"I ended up doing most of the grooming myself for the next two cycles until we hired a new TPM.\" Manager-level ownership requires creating leverage and developing others so the team owns outcomes. The biggest gap is lack of delegation and process improvement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After a major reorg, three product areas had overlapping roadmaps that had been stalled for a quarter. No single leader was driving alignment."
+        },
+        {
+          "role": "interviewer",
+          "text": "What action did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I created a joint prioritization framework, facilitated three leadership offsites, and assigned clear decision rights. I also changed the OKR structure so overlapping goals were consolidated under one owner."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We canceled two duplicate initiatives, freed up 18 FTEs, and hit the combined annual target two months early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Exec owned org-level roadmap overlap after reorg",
+        "Built framework, ran offsites, changed OKR structure",
+        "Quote: \"I changed the OKR structure so overlapping goals were consolidated under one owner\"",
+        "Follow-up: What was the business impact? -> Canceled duplicates, freed 18 FTEs, hit target early"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for exec. The candidate stepped into high-ambiguity org-level dysfunction and created structural changes that delivered significant business leverage. Quote: \"I changed the OKR structure so overlapping goals were consolidated under one owner.\" They focused on long-term mechanisms rather than short-term heroics. This is the expected executive scope: strategic judgment and org-wide impact. The biggest strength is turning ambiguity into clear ownership and measurable resource efficiency.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed two teams were working on similar features. I asked their directors to coordinate more closely."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any structures or incentives?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I left it to them to figure out. One initiative eventually got deprioritized after several months of duplicated effort."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time where you picked up something that was languishing...",
+        "Exec flagged overlap but did not drive structural change",
+        "Left resolution to directors with no follow-through mechanisms",
+        "Quote: \"I left it to them to figure out\"",
+        "Follow-up: Did you change structures? -> No"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for exec. The candidate identified a strategic issue but did not apply the authority or structural changes needed to resolve it. Quote: \"I left it to them to figure out.\" Executive ownership requires making hard trade-offs and embedding lasting mechanisms rather than hoping for coordination. The biggest gap is absence of strategic leverage and accountability at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initiative without prompting",
+      "junior": "Actively volunteers for abandoned work",
+      "senior": "Claims cross-team issues proactively",
+      "manager": "Owns team process failures end-to-end",
+      "exec": "Steps into org-level ambiguity with no owner"
+    },
+    {
+      "signal": "Persistence and completion",
+      "junior": "Finishes the task despite competing priorities",
+      "senior": "Drives resolution across teams",
+      "manager": "Builds lasting team capability",
+      "exec": "Embeds structural changes that persist"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local task with measurable output",
+      "senior": "Cross-team process with clear metrics",
+      "manager": "Team outcome and development of others",
+      "exec": "Business-level resource or target impact"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "Ships the item",
+      "senior": "Creates runbook or rotation",
+      "manager": "Coaches leads and changes process",
+      "exec": "Alters OKRs and decision rights"
+    }
+  ],
+  "kind": "lp"
+}

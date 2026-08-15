@@ -1,0 +1,222 @@
+{
+  "question": "Describe a time when you had to transition a project you owned to a new owner. What steps did you take to make sure the transition went smoothly? Tell me about a time that you chose to get involved in a project that you had already transitioned to somebody else. What was the situation? Why was it important to get involved?",
+  "competency": "Ownership",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I owned a small internal dashboard for tracking support tickets. When I moved teams I wrote a 3-page handoff doc with runbooks, data sources, and common issues, then did two 30-min walkthroughs with the new owner. Six weeks later the dashboard broke after a schema change; I noticed the alerts and jumped in to fix the query before it hit the new owner."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted you to step back in instead of just flagging it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The ticket queue was already high that week and the new owner was still ramping; I had the context so it took me 20 minutes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: transition + re-involvement story",
+        "Owned support dashboard; wrote runbook + two walkthroughs",
+        "Later fixed schema break proactively to avoid queue impact",
+        "Quote: 'it took me 20 minutes and the new owner was still ramping'",
+        "Follow-up: why step back in? - context made it faster than waiting"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at junior level. Candidate described owning a concrete individual deliverable, producing usable documentation, and then voluntarily fixing a downstream issue after handoff. The quote about fixing the schema change in 20 minutes shows they still felt responsible post-transition without overstepping. This matches junior scope expectations focused on personal work and coachability. Biggest strength is the low-friction re-engagement that protected the new owner.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I handed off a reporting script by emailing the repo link to the new person and saying 'let me know if you have questions.' A month later it stopped working and they never reached out so I didn't touch it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the report ever get fixed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Eventually someone else rewrote it; I was already on another project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: transition + re-involvement story",
+        "Emailed repo link only, no docs or walkthrough",
+        "Never followed up after breakage; waited for others",
+        "Quote: 'I was already on another project'",
+        "Follow-up: outcome of the report? - someone else rewrote it"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at junior level. The transition consisted of a single email with no documentation or live transfer, showing minimal personal accountability. When the script broke the candidate took no action and treated the project as fully someone else's problem. This reflects weak ownership of their own prior work. Biggest gap is absence of any proactive steps or post-handoff responsibility."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I led a cross-team latency reduction project for the payments service. For transition I created a shared decision log, paired the new owner with the infra team for two weeks, and set up weekly syncs for the first month. Three months later a new dependency risk appeared in another service; I flagged it in the shared channel and offered to review the mitigation plan with the new owner."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the new owner respond to your involvement?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were grateful for the heads-up and we co-authored the risk note that went to leadership."
+        }
+      ],
+      "raiseNotes": [
+        "Q: transition + re-involvement story",
+        "Led payments latency project across teams; created decision log + paired new owner",
+        "Later flagged dependency risk and co-authored mitigation",
+        "Quote: 'we co-authored the risk note that went to leadership'",
+        "Follow-up: new owner's reaction? - grateful, joint ownership of note"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at senior level. Candidate drove a cross-team project with clear transition artifacts and then re-engaged on a downstream risk without taking over. The co-authored risk note demonstrates influence without authority and sustained responsibility. This aligns with senior expectations of cross-team impact and raising the new owner. Biggest strength is the lightweight but effective re-involvement that produced a leadership artifact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I transitioned the payments latency work by sending the new owner my final deck and wishing them luck. When a dependency issue came up later I assumed they had it covered and focused on my new team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the dependency issue get resolved?"
+        },
+        {
+          "role": "candidate",
+          "text": "It delayed the next quarter's rollout by a few weeks; I heard about it in a retro."
+        }
+      ],
+      "lowerNotes": [
+        "Q: transition + re-involvement story",
+        "Sent final deck only, no ongoing support structure",
+        "Ignored later dependency risk; no action taken",
+        "Quote: 'I heard about it in a retro'",
+        "Follow-up: impact of the delay? - slipped next quarter's rollout"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at senior level. Transition was limited to a final deck with no mechanisms for knowledge transfer or ongoing visibility. When a cross-team dependency surfaced the candidate stayed silent, allowing a multi-week delay. This shows weak sustained ownership and lack of cross-team influence. Biggest gap is treating the project as fully handed off despite visible downstream impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned the onboarding flow. When I moved the project to another team I documented the open risks, introduced the new manager to key stakeholders, and scheduled a 1:1 with their lead engineer for the first month. Six weeks later a customer-impacting regression appeared; I reached out to the new manager, offered my team's capacity for a quick fix, and we paired an engineer from each team to resolve it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide to offer help without undermining the new owner?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as optional support and let them decide scope; they accepted the pair and owned the comms."
+        }
+      ],
+      "raiseNotes": [
+        "Q: transition + re-involvement story",
+        "Transitioned onboarding flow; documented risks + stakeholder intros + paired leads",
+        "Later offered cross-team capacity for regression and let new owner set scope",
+        "Quote: 'I framed it as optional support and let them decide scope'",
+        "Follow-up: how avoid undermining? - optional framing, new owner owned comms"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at manager level. Candidate created structured transition support and later provided team leverage on a regression while preserving the new owner's authority. The optional framing and paired resolution show ability to create leverage without heroics. This matches manager expectations of developing others and owning team outcomes. Biggest strength is the calibrated re-engagement that protected both teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I handed the onboarding flow to the other team with a 15-minute briefing and moved on. When the regression hit I told my team not to get involved because it was no longer our project."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for the customer?"
+        },
+        {
+          "role": "candidate",
+          "text": "It took them longer to fix and we got some support tickets, but it wasn't my team's metric anymore."
+        }
+      ],
+      "lowerNotes": [
+        "Q: transition + re-involvement story",
+        "15-min briefing only; no stakeholder prep or risk log",
+        "Explicitly blocked own team from helping on regression",
+        "Quote: 'it wasn't my team's metric anymore'",
+        "Follow-up: customer impact? - longer fix time, support tickets"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at manager level. Transition was minimal and the candidate actively prevented their team from assisting when a customer issue surfaced. Treating the metric as fully transferred despite visible customer pain reflects narrow ownership. Biggest gap is refusal to create team leverage on a project they previously owned."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I owned the company-wide reliability program. Transition included a written charter update, RACI for all VPs, and a quarterly review cadence with the new owner. When a major incident exposed gaps in the new process I joined the post-mortem as an observer, highlighted org-level trade-offs in the write-up, and recommended a structural change to the staffing model that the new owner then drove."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the involvement necessary at your level?"
+        },
+        {
+          "role": "candidate",
+          "text": "The incident had P0 customer impact and the staffing model change required budget trade-offs only I could unblock."
+        }
+      ],
+      "raiseNotes": [
+        "Q: transition + re-involvement story",
+        "Company reliability program; charter update + VP RACI + quarterly cadence",
+        "Later joined post-mortem, surfaced org trade-offs, enabled budget change",
+        "Quote: 'staffing model change required budget trade-offs only I could unblock'",
+        "Follow-up: why step in at exec level? - P0 impact + unique budget authority"
+      ],
+      "raiseFeedback": "Raises the bar for Ownership at exec level. Candidate built durable transition mechanisms at org scale and then re-engaged on a P0 incident to remove a structural blocker. The budget trade-off call shows strategic judgment and long-term leverage rather than heroics. This fits exec expectations of org-level impact and ambiguity handling. Biggest strength is using positional authority only when needed to enable the new owner.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I transitioned the reliability program with a single all-hands announcement and assumed the new owner would run it. When the P0 incident revealed staffing gaps I stayed out because the program was no longer in my OKRs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the staffing model?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed under-resourced for two quarters until leadership escalated it again."
+        }
+      ],
+      "lowerNotes": [
+        "Q: transition + re-involvement story",
+        "Single all-hands announcement; no RACI or review cadence",
+        "Declined involvement in P0 post-mortem due to OKR ownership",
+        "Quote: 'the program was no longer in my OKRs'",
+        "Follow-up: long-term effect? - under-resourced for two quarters"
+      ],
+      "lowerFeedback": "Lowers the bar for Ownership at exec level. Transition lacked any structural mechanisms and the candidate refused to engage on a P0 issue due to OKR boundaries. Allowing under-resourcing to persist for two quarters shows poor strategic judgment. Biggest gap is absence of long-term thinking or leverage on an org-critical program."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Documentation & handoff process",
+      "junior": "Written runbook + walkthroughs vs single email",
+      "senior": "Decision log + paired ramp vs final deck only",
+      "manager": "Risk log + stakeholder intros + paired leads vs 15-min briefing",
+      "exec": "Charter update + VP RACI + quarterly cadence vs all-hands announcement"
+    },
+    {
+      "signal": "Post-transition involvement trigger",
+      "junior": "Proactive fix using personal context",
+      "senior": "Flagged cross-team dependency risk",
+      "manager": "Offered team capacity on regression while preserving authority",
+      "exec": "Joined P0 post-mortem to unblock org budget trade-off"
+    },
+    {
+      "signal": "Boundary respect",
+      "junior": "Helped without taking ownership back",
+      "senior": "Co-authored note, new owner led",
+      "manager": "Made support optional, new owner set scope",
+      "exec": "Observer role + enabled new owner to drive change"
+    },
+    {
+      "signal": "Impact scope",
+      "junior": "Individual deliverable protected",
+      "senior": "Cross-team rollout protected",
+      "manager": "Customer regression resolved with shared resources",
+      "exec": "Org staffing model adjusted after P0"
+    }
+  ],
+  "kind": "lp"
+}

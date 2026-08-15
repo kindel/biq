@@ -1,0 +1,230 @@
+{
+  "question": "Describe a time when you took on work outside of your comfort area. How did you identify what you needed to learn to be successful? How did you go about building expertise to meet your goal? Did you meet your goal?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to own the on-call rotation for a service I'd never touched. First I listed the top five failure modes from the runbook and asked my mentor which two were most common. Then I spent two afternoons pairing on incidents and wrote a one-page cheat sheet for the next person."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when you hit something not in the runbook?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated once, but after that I started keeping a running doc of questions and answers so the next on-call wouldn't have to ask the same things."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time outside comfort area and how learned",
+        "Took on-call for unfamiliar service",
+        "Identified needs via runbook + mentor chat",
+        "Built expertise by pairing and writing cheat sheet",
+        "Quote: \"kept a running doc so next person wouldn't ask same questions\"",
+        "Follow-up: escalated once then documented answers"
+      ],
+      "raiseFeedback": "Raises the bar. Competency tested: Learn and Be Curious. Junior candidate described taking an on-call rotation for an unknown service, listing failure modes from the runbook, then pairing with a mentor and creating a cheat sheet. \"I started keeping a running doc of questions and answers so the next on-call wouldn't have to ask the same things.\" This shows clear ownership of personal learning and coachability at the individual scope expected for 0-2 years. The single biggest strength is turning personal gaps into reusable artifacts rather than repeated escalations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager gave me a ticket to fix a bug in a language I didn't know. I tried for a couple days, then asked for help and someone else finished it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you figure out what to learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just started reading the code and googled errors as they came up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time outside comfort area and how learned",
+        "Assigned bug in unknown language",
+        "Tried googling errors as they appeared",
+        "Outcome: handed off after a couple days",
+        "Quote: \"someone else finished it\"",
+        "Follow-up: no structured identification of skills needed"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency tested: Learn and Be Curious. Junior candidate was assigned a bug in an unfamiliar language, relied on ad-hoc googling, and handed the work off after two days. \"Someone else finished it\" shows limited ownership of building expertise. The single biggest gap is absence of any deliberate step to identify required knowledge or create lasting value from the attempt."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I joined a cross-team project to migrate our auth system to a new provider. I interviewed the security and platform teams to map the delta in flows, then built a small prototype and ran it by both groups for feedback before scaling."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure success across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tracked migration time per service and error rate post-cutover; the project landed two weeks early with zero Sev-2s."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time outside comfort area and how learned",
+        "Led auth migration across teams without prior domain depth",
+        "Identified needs by interviewing security and platform",
+        "Built expertise via prototype + iterative feedback",
+        "Quote: \"tracked migration time per service and error rate\"",
+        "Follow-up: project two weeks early, zero Sev-2s"
+      ],
+      "raiseFeedback": "Raises the bar. Competency tested: Learn and Be Curious. Senior candidate stepped into an unfamiliar auth domain, interviewed two teams to surface requirements, prototyped, and iterated. \"We tracked migration time per service and error rate post-cutover\" produced measurable cross-team impact. The single biggest strength is converting personal learning into shared, data-driven progress rather than solo heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was pulled into a new payments integration. I read the docs over a weekend and started coding. A few weeks later the integration worked but the other team had to rewrite parts of it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check your approach with anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured I'd learn by doing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time outside comfort area and how learned",
+        "Payments integration outside domain",
+        "Read docs then coded independently",
+        "Outcome: integration worked but required rework by others",
+        "Quote: \"I figured I'd learn by doing\"",
+        "Follow-up: no stakeholder alignment during learning"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency tested: Learn and Be Curious. Senior candidate read docs in isolation for a payments integration and produced code that later needed rework by the partner team. \"I figured I'd learn by doing\" shows no attempt to identify gaps through others or measure downstream impact. The single biggest gap is missing influence without authority at the scope expected for 3-7 years."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was asked to own a new compliance reporting product. I had the team map required skills, assigned each engineer a domain to research, then ran weekly teach-backs so we built shared expertise instead of single points of failure."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle someone who struggled?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer kept missing deadlines on their research. I paired them with a peer reviewer and adjusted scope so they could demonstrate progress sooner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time outside comfort area and how learned",
+        "Team took on compliance reporting product",
+        "Identified needs via team skill mapping",
+        "Built expertise through assigned research + teach-backs",
+        "Quote: \"ran weekly teach-backs so we built shared expertise\"",
+        "Follow-up: adjusted scope for struggling engineer"
+      ],
+      "raiseFeedback": "Raises the bar. Competency tested: Learn and Be Curious. Manager candidate had the team own a new compliance product, mapped skills collectively, and used teach-backs to distribute learning. \"One engineer kept missing deadlines on their research. I paired them with a peer reviewer\" shows active development of others and leverage through the team. The single biggest strength is creating a repeatable learning system rather than directing individuals.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to deliver a new analytics feature. I told the team to learn the new stack on their own time and checked in every two weeks on progress."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when progress was slow?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ended up doing some of the modeling myself to keep the date."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time outside comfort area and how learned",
+        "New analytics feature for team",
+        "Told team to learn on own time",
+        "Outcome: manager stepped in to meet date",
+        "Quote: \"I ended up doing some of the modeling myself\"",
+        "Follow-up: no structured team learning plan"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency tested: Learn and Be Curious. Manager candidate delegated learning of a new analytics stack without support structure and ultimately completed modeling personally. \"I told the team to learn the new stack on their own time\" shows no investment in team capability building. The single biggest gap is defaulting to individual heroics instead of creating team leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We decided to enter a regulated vertical that required new data-handling practices. I commissioned a small tiger team to run a three-month discovery, then used their findings to set org-wide policy and a phased rollout plan that balanced speed with risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the trade-offs?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled three scenarios for time-to-market versus compliance exposure and picked the middle path that let us launch in six months with acceptable residual risk."
+        }
+      ],
+      "raiseNotes": [
+        "Q: time outside comfort area and how learned",
+        "Org entered regulated vertical requiring new practices",
+        "Identified needs via commissioned tiger team discovery",
+        "Built expertise into org policy and phased rollout",
+        "Quote: \"modeled three scenarios for time-to-market versus compliance exposure\"",
+        "Follow-up: chose middle path balancing launch and risk"
+      ],
+      "raiseFeedback": "Raises the bar. Competency tested: Learn and Be Curious. Exec candidate drove entry into a regulated vertical by commissioning discovery, then converted findings into org policy and a risk-balanced rollout. \"We modeled three scenarios for time-to-market versus compliance exposure\" demonstrates strategic judgment under ambiguity at business level. The single biggest strength is turning exploratory learning into durable organizational choices rather than one-off projects.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted us to expand into healthcare. I asked the legal team for a summary and then green-lit the first pilot based on their notes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What follow-up learning happened after the pilot?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran into several issues and had to pause the effort for six months."
+        }
+      ],
+      "lowerNotes": [
+        "Q: time outside comfort area and how learned",
+        "Healthcare expansion at org level",
+        "Relied on single legal summary before pilot",
+        "Outcome: pilot paused after issues surfaced",
+        "Quote: \"We ran into several issues and had to pause\"",
+        "Follow-up: no proactive scenario planning or deeper discovery"
+      ],
+      "lowerFeedback": "Lowers the bar. Competency tested: Learn and Be Curious. Exec candidate green-lit a healthcare pilot after only a legal summary and later paused the effort. \"We ran into several issues and had to pause the effort for six months\" reveals insufficient strategic learning before committing resources. The single biggest gap is absence of long-term trade-off analysis at the scale expected for 10+ years."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identification of learning needs",
+      "junior": "Asks mentor or uses existing docs",
+      "senior": "Interviews stakeholders and maps deltas",
+      "manager": "Facilitates team skill mapping",
+      "exec": "Commissions structured discovery with trade-off models"
+    },
+    {
+      "signal": "Method of building expertise",
+      "junior": "Pairs and creates personal artifacts",
+      "senior": "Prototypes and iterates with feedback loops",
+      "manager": "Uses teach-backs and peer support systems",
+      "exec": "Converts findings into policy and phased plans"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Local task completed with documentation",
+      "senior": "Cross-team metrics improved",
+      "manager": "Team capability increased, not just delivery",
+      "exec": "Org-level risk and speed balanced"
+    },
+    {
+      "signal": "Handling of gaps or struggle",
+      "junior": "Escalates then documents for reuse",
+      "senior": "Surfaces issues to partners early",
+      "manager": "Adjusts scope and adds peer support",
+      "exec": "Models scenarios before committing further"
+    }
+  ],
+  "kind": "lp"
+}

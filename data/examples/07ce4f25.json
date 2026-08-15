@@ -1,0 +1,230 @@
+{
+  "question": "We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed my code reviews were taking too long and missing edge cases, which slowed the team. I asked my manager for feedback and she suggested pairing with a senior engineer once a week. I also started using the internal wiki and a couple of online courses on testing patterns."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after a few months?"
+        },
+        {
+          "role": "candidate",
+          "text": "My review turnaround dropped from four days to one, and I caught issues earlier. The pairing sessions helped me see patterns I was missing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: slow code reviews missing edge cases",
+        "Action: asked manager, weekly pairing, internal wiki + online courses on testing",
+        "Outcome: turnaround 4 days to 1, caught issues earlier",
+        "Quote: 'The pairing sessions helped me see patterns I was missing.'",
+        "Follow-up: What changed after a few months? - described measurable shift and learning source"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at the junior level. The candidate owned a personal effectiveness gap in code review speed and quality, then used manager input plus internal and external resources to close it. The concrete before-and-after metrics and the quote about seeing new patterns show they turned feedback into visible skill growth rather than just completing a task. This matches the expectation that juniors demonstrate coachability and local ownership of their own work. Biggest strength is the direct link between identified resources and measurable impact on daily output.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to get better at communication so I read a couple articles online."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resources did you use and what changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just some blog posts. I think my emails are a bit clearer now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: vague desire to improve communication",
+        "Action: read a couple articles online",
+        "Outcome: 'I think my emails are a bit clearer now'",
+        "Quote: 'Just some blog posts.'",
+        "Follow-up: What resources did you use and what changed? - no specific resources or measurable results"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at the junior level. The candidate offered only a generic self-improvement area with no concrete problem statement or follow-through. Resources were unnamed and the impact remained speculative rather than observed. Juniors are expected to show they can turn feedback or self-identified gaps into owned action with visible results; this example stays at the level of intention without execution. Biggest gap is the absence of any specific resource or outcome tied to the effort."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My design docs were not landing well with platform teams, causing repeated rework. I asked two principal engineers for examples of docs that had succeeded, then joined their bi-weekly design review sessions as an observer."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "I rewrote my next three docs using their structure and got them approved in one round. Two other engineers on my team started using the same template after I shared it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: design docs causing cross-team rework",
+        "Action: sought principal examples, observed their review sessions",
+        "Outcome: one-round approvals; template adopted by two peers",
+        "Quote: 'Two other engineers on my team started using the same template after I shared it.'",
+        "Follow-up: What was the result? - showed both personal and small-team leverage"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at the senior level. The candidate diagnosed a cross-team friction point in their own output, proactively extracted patterns from senior peers, and produced a reusable artifact that spread beyond their own work. The outcome demonstrates both individual skill growth and light influence without authority, which is expected at this level. The quote about others adopting the template directly ties curiosity-driven learning to broader impact. Biggest strength is the combination of external input and measurable reduction in rework cycles.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I took an online course on system design to get better at architecture reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it change how your docs or reviews landed with other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but I felt more confident."
+        }
+      ],
+      "lowerNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: wanted to improve architecture reviews",
+        "Action: took an online course on system design",
+        "Outcome: 'I felt more confident'",
+        "Quote: 'Not really, but I felt more confident.'",
+        "Follow-up: Did it change how your docs or reviews landed with other teams? - no cross-team evidence"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at the senior level. The candidate selected a learning activity but produced no observable change in cross-team effectiveness or influence. At senior scope we look for evidence that new skills reduce friction or raise standards beyond the individual; here the only reported outcome is internal confidence. The lack of any follow-on action or shared artifact shows the learning remained isolated. Biggest gap is missing the expected translation of personal development into team or cross-team results."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My 1:1s were too tactical and my directs weren't growing. I asked two other managers what structure they used, then started a monthly skip-level with my team and a shared growth tracker."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Three directs moved into stretch roles within six months. Attrition dropped and two peers asked to copy the 1:1 template."
+        }
+      ],
+      "raiseNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: 1:1s too tactical, directs not growing",
+        "Action: consulted peer managers, added skip-levels and growth tracker",
+        "Outcome: three stretch moves in six months, lower attrition, peers adopted format",
+        "Quote: 'Three directs moved into stretch roles within six months.'",
+        "Follow-up: What happened with the team? - team-level metrics and peer leverage"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at the manager level. The candidate identified a gap in their own leadership practice that affected team development, sought input from peers, and implemented structural changes that produced clear promotion and retention results. The outcome shows both personal skill growth and leverage through the team, which is central to the manager bar. Sharing the template with peers further demonstrates the curiosity extending beyond their own org. Biggest strength is the direct connection between the manager's learning and accelerated growth of multiple reports.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I read a management book to get better at delegation."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change for your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried a few things but the team is still pretty overloaded."
+        }
+      ],
+      "lowerNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: wanted to improve delegation",
+        "Action: read a management book",
+        "Outcome: 'the team is still pretty overloaded'",
+        "Quote: 'I tried a few things but the team is still pretty overloaded.'",
+        "Follow-up: Did anything change for your team? - no team-level improvement"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at the manager level. The candidate chose an individual learning resource but showed no sustained change in team outcomes or leverage. Managers are expected to convert personal development into team capability and results; here the only signal is an attempt without measurable relief for the team. The persistent overload indicates the learning did not translate into effective practice. Biggest gap is the absence of any team or organizational impact from the development effort."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our incident response was reactive and draining senior engineers. I interviewed leaders at two peer companies, then piloted a blameless post-mortem process with data collection across three teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the broader effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mean time to resolve dropped 35 percent in the first quarter. The practice spread to five other orgs and became part of the company playbook."
+        }
+      ],
+      "raiseNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: reactive incident response draining senior talent",
+        "Action: interviewed peer-company leaders, piloted blameless post-mortems with metrics",
+        "Outcome: 35 percent MTTR reduction, spread to five orgs, became company standard",
+        "Quote: 'The practice spread to five other orgs and became part of the company playbook.'",
+        "Follow-up: What was the broader effect? - org-level adoption and business metric"
+      ],
+      "raiseFeedback": "Raises the bar for Learn and Be Curious at the exec level. The candidate recognized a systemic effectiveness problem at organizational scale, gathered external benchmarks, and introduced a process that produced both a clear metric improvement and durable cross-org adoption. This reflects the expected executive pattern of using curiosity to drive strategic, long-term leverage rather than heroics. The quote about becoming part of the company playbook shows the learning was institutionalized. Biggest strength is turning external input into an org-wide capability with sustained business impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I attended an executive program on operational excellence."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that change how the company handled incidents or other processes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed some ideas but nothing was rolled out company-wide."
+        }
+      ],
+      "lowerNotes": [
+        "Q: We all have things about ourselves we'd like to improve on at work. Give me an example of something that you've worked on to improve your overall work effectiveness. What resources did you identify to help you develop? What was the impact?",
+        "Situation: wanted to improve operational excellence",
+        "Action: attended an executive program",
+        "Outcome: 'nothing was rolled out company-wide'",
+        "Quote: 'We discussed some ideas but nothing was rolled out company-wide.'",
+        "Follow-up: Did that change how the company handled incidents or other processes? - no org-level change"
+      ],
+      "lowerFeedback": "Lowers the bar for Learn and Be Curious at the exec level. The candidate invested in personal development but generated no organizational change or strategic leverage. At the executive level we expect learning to address high-ambiguity problems and produce durable, scaled impact; here the activity remained isolated with no rollout. The lack of any company-wide outcome shows the curiosity did not convert into judgment or trade-off decisions that moved the business. Biggest gap is the complete absence of org-level or long-term results from the development effort."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Resource identification",
+      "junior": "names specific internal + external sources tied to feedback",
+      "senior": "extracts patterns from senior peers and applies them",
+      "manager": "consults peer managers and implements structural changes",
+      "exec": "benchmarks peer companies and pilots scalable process"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "individual output metrics (review time)",
+      "senior": "cross-team rework reduced plus peer adoption",
+      "manager": "multiple reports promoted, attrition down",
+      "exec": "org-wide MTTR improvement and company playbook"
+    },
+    {
+      "signal": "Evidence of curiosity turning into action",
+      "junior": "asks manager then follows through with pairing",
+      "senior": "observes sessions and shares template",
+      "manager": "adds skip-levels and growth tracker",
+      "exec": "interviews external leaders then pilots data-driven process"
+    },
+    {
+      "signal": "Ownership vs. external credit",
+      "junior": "owns the gap and seeks help directly",
+      "senior": "initiates peer learning without waiting for mandate",
+      "manager": "changes own 1:1 practice to drive team outcomes",
+      "exec": "drives systemic change from personal insight"
+    }
+  ],
+  "kind": "lp"
+}

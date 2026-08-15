@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when a team member was struggling to keep up or fit in and you stepped in to help out. Why did you think they were struggling or not fitting in? Why did you decide to step in and support? What did you do to help out? How did it impact your work? What was the outcome? What did you learn from that situation?",
+  "competency": "Earn Trust",
+  "principle": "Earn Trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a new hire on my squad was missing standup updates and falling behind on their tickets. I thought they were struggling because they kept asking clarifying questions in Slack that had already been answered in the wiki. I decided to help because I remembered how lost I felt my first month and wanted them to feel supported. I set up a 30-minute walkthrough of our deployment process and shared my notes from onboarding. It took about two hours of my time that week but I finished my own tasks on schedule. They started shipping their first feature the next sprint and later told me the session helped them feel part of the team. I learned that checking in early prevents small gaps from becoming big ones."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you notice they were struggling before anyone else mentioned it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I saw their PRs were open for days with no activity and their standup updates were vague, so I asked them directly if they needed context on anything."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: new grad on first project, noticed new hire missing updates and asking repeated questions",
+        "Action: offered 30-min walkthrough and shared onboarding notes",
+        "Outcome: new hire shipped first feature next sprint; own work stayed on track",
+        "Quote: \"I remembered how lost I felt my first month\"",
+        "Follow-up: What made you notice before others? - Saw open PRs and vague updates, asked directly"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at the junior level. The candidate noticed a teammate's repeated questions and open PRs without being asked and proactively offered a short walkthrough. They explicitly tied the decision to their own recent onboarding experience and kept their own deliverables on schedule. The outcome was the new hire shipping their first feature the following sprint. This shows local ownership and willingness to invest small amounts of time to build trust with a peer. The single biggest strength is the direct, low-overhead action taken without waiting for a manager prompt.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was someone on the team who seemed quiet in meetings. I didn't really step in because I figured the manager would handle it. I was focused on finishing my own tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever check in with them one-on-one?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I didn't want to assume they needed help."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: individual contributor, observed quiet teammate but took no action",
+        "Reason given: assumed manager would handle it",
+        "Impact on own work: stayed focused on personal tickets",
+        "Quote: \"I didn't want to assume they needed help\"",
+        "Follow-up: Did you ever check in? - No"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at the junior level. The candidate noticed a teammate appearing quiet in meetings yet chose not to engage because they assumed the manager would handle it. They explicitly prioritized finishing their own tickets over any outreach. No concrete action or outcome is described. This shows a narrow focus on individual deliverables without demonstrating willingness to build trust through direct support. The single biggest gap is the absence of any proactive step despite recognizing the issue."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A mid-level engineer on another team was consistently missing deadlines on a shared service we depended on. I saw the pattern in their JIRA comments and decided to reach out because our roadmap depended on their output. I offered to pair on their next story and introduced them to our team's review checklist. It cost me one afternoon a week for three weeks but unblocked two of my own features. Their delivery stabilized and the joint retro showed improved handoff quality. I learned that cross-team trust is built by sharing concrete tools rather than just offering generic advice."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get their manager's buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a short note explaining the dependency risk and offered the pairing as a one-time experiment; they approved it the same day."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: senior on platform team, observed repeated misses on dependent service",
+        "Action: offered pairing and shared review checklist across teams",
+        "Outcome: delivery stabilized; two of own features unblocked",
+        "Quote: \"cross-team trust is built by sharing concrete tools\"",
+        "Follow-up: How did you get manager buy-in? - Short note on dependency risk, approved same day"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at the senior level. The candidate identified a pattern of missed deadlines on a shared service through JIRA data and proactively offered pairing time across team boundaries. They secured quick manager approval by framing the dependency risk and limited the time investment to three afternoons. Their own features were unblocked and the other engineer\u2019s delivery improved. This demonstrates influence without authority and measurable cross-team impact. The single biggest strength is the concrete, repeatable tool shared rather than vague support.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw someone on another team was behind but I didn't reach out because it wasn't my team's problem. I kept my head down on my own deliverables."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the delays affect your work?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, but I just adjusted my timeline and didn't want to get involved in their issues."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: senior, noticed delays on dependent team but took no action",
+        "Reason given: not my team's problem",
+        "Impact: adjusted own timeline quietly",
+        "Quote: \"I didn't want to get involved in their issues\"",
+        "Follow-up: Did the delays affect your work? - Yes, but stayed out"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at the senior level. The candidate recognized repeated delays on a dependent team yet chose not to engage because it was outside their direct scope. They absorbed the impact by adjusting their own timeline without attempting any cross-team outreach. No action or positive outcome is shown. This reflects a narrow definition of ownership that avoids building trust across boundaries. The single biggest gap is the lack of any attempt to influence without authority despite clear downstream effects."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my directs was missing sprint goals and seemed disengaged in 1:1s. I reviewed their recent commits and ticket comments, then scheduled a dedicated coaching session to understand blockers. I paired them with a peer mentor and adjusted their scope for one sprint while protecting their growth goals. The time investment was about four hours across two weeks but their output returned to green and the team\u2019s velocity improved. I learned that early, structured support prevents quiet attrition."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the performance conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as support rather than a warning, shared specific examples from their work, and asked what they needed from me first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: manager, noticed direct missing goals and disengaged in 1:1s",
+        "Action: coaching session, peer mentor, temporary scope adjustment",
+        "Outcome: output returned to green; team velocity improved",
+        "Quote: \"early, structured support prevents quiet attrition\"",
+        "Follow-up: How did you handle the performance conversation? - Framed as support, shared examples, asked what they needed"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at the manager level. The candidate used data from commits and 1:1s to identify disengagement and responded with a structured coaching plan that included a peer mentor and temporary scope relief. They invested four hours over two weeks and protected the direct\u2019s growth goals during the adjustment. Team velocity improved as a result. This shows clear ownership of team outcomes and deliberate people development. The single biggest strength is the balance of short-term support with long-term growth framing.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a team member who was behind but I waited until the next performance cycle to address it. I didn't want to have an awkward conversation mid-sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on the rest of the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "They absorbed some of the work but I didn't step in directly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: manager, delayed addressing performance issue until cycle review",
+        "Reason given: avoid awkward mid-sprint talk",
+        "Impact: team absorbed extra work without manager intervention",
+        "Quote: \"I didn't want to have an awkward conversation\"",
+        "Follow-up: What was the impact on the rest of the team? - They absorbed the work"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at the manager level. The candidate noticed a direct falling behind yet postponed any conversation until the formal performance cycle to avoid discomfort. The rest of the team absorbed the shortfall without manager support or intervention. No coaching, scope adjustment, or outcome improvement is described. This demonstrates avoidance of difficult people conversations. The single biggest gap is the lack of timely ownership over team member development."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was seeing higher attrition in one region after a reorg. I reviewed exit data and skip-level notes, then created a cross-functional working group to address onboarding friction and manager load. I personally sponsored the pilot that added a 90-day check-in cadence and manager training. The program required two quarters of my time allocation but reduced regretted attrition by 18% in the pilot region. I learned that trust at scale requires visible, sustained investment in manager capability rather than one-off fixes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you secure resources for the working group?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied the pilot directly to the annual retention target in the business review and got the CFO to fund it as a retention experiment."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: exec, identified regional attrition spike post-reorg via exit data",
+        "Action: sponsored cross-functional group, 90-day check-ins, manager training",
+        "Outcome: 18% reduction in regretted attrition in pilot region",
+        "Quote: \"trust at scale requires visible, sustained investment in manager capability\"",
+        "Follow-up: How did you secure resources? - Tied to annual retention target, CFO funded as experiment"
+      ],
+      "raiseFeedback": "Raises the bar for Earn Trust at the exec level. The candidate used exit data and skip-level input to diagnose a systemic attrition issue and built a cross-functional program with measurable manager training and check-in cadence. They personally sponsored the pilot and secured CFO funding by linking it to the annual retention target. The pilot delivered an 18% reduction in regretted attrition. This reflects strategic, org-level leverage and long-term thinking on building trust through manager capability. The single biggest strength is the data-driven framing that turned a people issue into a funded business experiment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had some attrition after the reorg but I left it to the HRBP and regional VPs to handle. I focused on the broader business strategy."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you review any of the exit data yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I saw the summary slides but didn't dig into the regional patterns."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when a team member was struggling...",
+        "Role: exec, saw post-reorg attrition but delegated entirely to HRBP and VPs",
+        "Reason given: focus on broader business strategy",
+        "Impact: no personal review of regional patterns",
+        "Quote: \"I left it to the HRBP and regional VPs\"",
+        "Follow-up: Did you review any of the exit data yourself? - Saw summary slides only"
+      ],
+      "lowerFeedback": "Lowers the bar for Earn Trust at the exec level. The candidate observed post-reorg attrition yet fully delegated diagnosis and response to HR and regional leaders without personal review of patterns. They prioritized broader strategy over engaging with the data. No program, investment, or measurable outcome is described. This shows limited ownership of org-level people issues. The single biggest gap is the absence of visible executive sponsorship or strategic framing around retention."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Proactive outreach vs. waiting for escalation",
+      "junior": "Raises: asked directly after seeing open PRs; Lowers: assumed manager would handle",
+      "senior": "Raises: reached across teams with pairing offer; Lowers: adjusted own timeline silently",
+      "manager": "Raises: scheduled coaching session with data examples; Lowers: waited for formal cycle",
+      "exec": "Raises: built funded cross-org program from exit data; Lowers: delegated without reviewing patterns"
+    },
+    {
+      "signal": "Time investment and trade-off clarity",
+      "junior": "Raises: two hours, own work on track; Lowers: no investment shown",
+      "senior": "Raises: three afternoons, features unblocked; Lowers: no cross-team cost accepted",
+      "manager": "Raises: four hours over two weeks, velocity improved; Lowers: no manager time allocated",
+      "exec": "Raises: two quarters sponsorship, 18% attrition drop; Lowers: no exec time committed"
+    },
+    {
+      "signal": "Concrete actions vs. generic intent",
+      "junior": "Raises: shared onboarding notes and walkthrough; Lowers: no action taken",
+      "senior": "Raises: shared review checklist; Lowers: stayed out of issues",
+      "manager": "Raises: added peer mentor and scope relief; Lowers: avoided conversation",
+      "exec": "Raises: 90-day cadence and manager training pilot; Lowers: relied on summary slides only"
+    },
+    {
+      "signal": "Link to measurable outcome",
+      "junior": "Raises: new hire shipped first feature; Lowers: no outcome described",
+      "senior": "Raises: delivery stabilized and features unblocked; Lowers: no outcome",
+      "manager": "Raises: output green and team velocity up; Lowers: no outcome",
+      "exec": "Raises: 18% attrition reduction; Lowers: no outcome"
+    },
+    {
+      "signal": "Learning tied to trust-building",
+      "junior": "Raises: checking in early prevents gaps; Lowers: none stated",
+      "senior": "Raises: concrete tools build cross-team trust; Lowers: none stated",
+      "manager": "Raises: structured support prevents attrition; Lowers: none stated",
+      "exec": "Raises: sustained manager investment builds org trust; Lowers: none stated"
+    }
+  ],
+  "kind": "lp"
+}

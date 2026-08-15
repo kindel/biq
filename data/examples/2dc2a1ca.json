@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you had to validate the assumptions underlying a direct report's project. How did you decide follow up was necessary? What steps, if any, did you take to validate the assumptions? What was the result?",
+  "competency": "Dive Deep + People Development",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was supporting a peer on a small feature rollout and noticed their timeline assumed the API would return under 50ms. I pulled the last two weeks of prod logs myself and saw p95 at 180ms."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide to check that instead of just trusting the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "The peer had flagged it as low risk in standup, but I knew from my own prior ticket that the endpoint had cache misses. I shared the numbers and we adjusted the design to add pagination."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about validating assumptions on a direct report's project...",
+        "Role: Individual contributor helping peer; noticed latency assumption in shared feature",
+        "Action: Pulled own prod logs, compared to stated 50ms target",
+        "Outcome: Adjusted design before launch; no perf regression",
+        "Quote: 'I knew from my own prior ticket that the endpoint had cache misses'",
+        "Follow-up: How did you decide to dig in? -> Tied to recent personal experience"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a flawed assumption through direct data review on a shared task rather than waiting for escalation. They tied the decision to a concrete prior ticket and produced numbers that changed the approach. This shows ownership of details at their scope and willingness to surface evidence. The result stayed local but prevented a downstream issue. Biggest strength is using personal context to decide when to validate instead of blanket trust.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate said the feature would be done in two weeks so I just checked in at the end of sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any data or assumptions behind the two-week estimate?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they seemed confident so I moved on to my own work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: ...",
+        "Role: No direct report; treated as peer task",
+        "Action: Relied on verbal status, no data pull",
+        "Outcome: No validation performed",
+        "Quote: 'they seemed confident so I moved on'",
+        "Follow-up: Why no metrics? -> No specific trigger identified"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate accepted a timeline at face value without probing the underlying assumptions or pulling any data. No evidence of deciding when follow-up was needed; they defaulted to trust. This keeps scope too narrow and misses opportunities to learn from details. The story shows passive handoff rather than ownership. Biggest gap is absence of any validation step or metric that drove action."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A direct report planned a migration assuming our current DB would handle 3x traffic with no schema changes. I asked for the query plan review after seeing the ticket lacked load-test data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What triggered the deeper check?"
+        },
+        {
+          "role": "candidate",
+          "text": "The projected growth number came from marketing slides, not our telemetry. I ran a 10% traffic replay in staging and found two N+1 queries that would break at 2x."
+        }
+      ],
+      "raiseNotes": [
+        "Q: ...",
+        "Role: Senior IC with one direct report on migration project",
+        "Action: Challenged marketing-sourced growth number, ran staging replay",
+        "Outcome: Found N+1 queries; scope reduced before full rollout",
+        "Quote: 'The projected growth number came from marketing slides, not our telemetry'",
+        "Follow-up: How did you pick the 10% replay? -> Tied to specific risk in query patterns"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate questioned a growth assumption sourced outside engineering data and ran a targeted replay to surface concrete query issues. They connected the decision to a mismatch between external slides and internal telemetry. Impact stayed within the project but influenced scope and prevented a scaling failure. Shows cross-team data awareness without owning the full org. Biggest strength is converting a high-level assumption into a measurable test that changed the plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my report for weekly updates and trusted they would flag issues."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any assumption get validated with data?"
+        },
+        {
+          "role": "candidate",
+          "text": "They presented a slide deck; I didn't re-run any tests myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: ...",
+        "Role: Senior with direct report",
+        "Action: Relied on status updates and deck",
+        "Outcome: No independent validation",
+        "Quote: 'I didn't re-run any tests myself'",
+        "Follow-up: What data source would have changed your mind? -> None identified"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate deferred entirely to the report's updates and deck without any independent data check. No trigger was defined for when assumptions needed validation. This misses the cross-team influence expected at senior level and leaves risk unexamined. The story shows delegation without verification. Biggest gap is lack of any metric-driven step that would have caught issues early."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My report's project assumed the new onboarding flow would lift activation by 15% based on a small beta. I pulled the full funnel data and saw the lift only appeared in one cohort."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide to go deeper?"
+        },
+        {
+          "role": "candidate",
+          "text": "The beta size was under 200 users and excluded mobile. I had the analyst re-segment and we adjusted the rollout plan and headcount forecast."
+        }
+      ],
+      "raiseNotes": [
+        "Q: ...",
+        "Role: Manager with direct report owning activation project",
+        "Action: Re-segmented funnel data by cohort and device",
+        "Outcome: Revised rollout and forecast; avoided over-hire",
+        "Quote: 'The beta size was under 200 users and excluded mobile'",
+        "Follow-up: What coaching did you give the report afterward? -> Walked through cohort analysis together"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate identified a sample-size and segment assumption in the report's beta and drove a re-analysis that changed team planning. They used the moment to develop the report by reviewing the segmentation together. Result affected hiring forecast and rollout risk. Shows leverage through both data dive and people development. Biggest strength is linking assumption validation directly to team-level decisions and coaching.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reviewed the project doc and signed off once the report confirmed the numbers looked good."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you examine the beta cohort details yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I focused on whether the timeline stayed on track."
+        }
+      ],
+      "lowerNotes": [
+        "Q: ...",
+        "Role: Manager",
+        "Action: Doc review only",
+        "Outcome: No data validation or coaching moment",
+        "Quote: 'I focused on whether the timeline stayed on track'",
+        "Follow-up: How do you normally decide when to re-analyze? -> No process described"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate limited review to timeline confirmation and never examined the underlying cohort data or assumptions. No evidence of using the situation to develop the report's analytical skills. This keeps impact at task level instead of team outcomes. The story lacks any metric that drove a different decision. Biggest gap is absence of both deep validation and people-development leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A business unit lead assumed our new market expansion would reach $40M in year two based on top-line TAM. I requested the bottom-up unit economics model and found CAC assumptions were 3x lower than our established markets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you press on the model?"
+        },
+        {
+          "role": "candidate",
+          "text": "The TAM slide ignored channel mix differences. I had finance rebuild the model with actual CAC from two similar launches; we reduced the year-two target by 60% and reallocated headcount."
+        }
+      ],
+      "raiseNotes": [
+        "Q: ...",
+        "Role: Exec reviewing business-unit expansion plan",
+        "Action: Challenged TAM with actual CAC from prior launches",
+        "Outcome: 60% target reduction and headcount reallocation",
+        "Quote: 'The TAM slide ignored channel mix differences'",
+        "Follow-up: How did you communicate the change org-wide? -> Used the model rebuild as teaching example for future planning"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate surfaced a CAC assumption mismatch between new and existing markets and drove a model rebuild that altered multi-year targets and resource allocation. They treated the review as an opportunity to improve planning discipline across the org. Impact reached business-level trade-offs and long-term headcount. Shows strategic judgment under ambiguity. Biggest strength is converting a single assumption into org-wide leverage on forecasting accuracy.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The business unit presented their TAM-based plan and I approved it after a high-level discussion."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you examine any unit economics or prior launch data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I trusted the team's local knowledge and moved to the next agenda item."
+        }
+      ],
+      "lowerNotes": [
+        "Q: ...",
+        "Role: Exec",
+        "Action: High-level discussion and approval",
+        "Outcome: No model validation or reallocation",
+        "Quote: 'I trusted the team's local knowledge'",
+        "Follow-up: What signals would prompt deeper review in future? -> None articulated"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate accepted the TAM-based plan after discussion without testing unit economics against historical data. No trigger or process for when assumptions required validation at business scale. This leaves strategic risk unexamined and forgoes leverage on planning quality. The story shows delegation without verification. Biggest gap is missing the long-term org impact that should come from an exec-level assumption check."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Trigger for validation",
+      "junior": "Tied to personal prior ticket",
+      "senior": "Mismatch between external slide and telemetry",
+      "manager": "Beta size and segment exclusion",
+      "exec": "CAC gap vs established markets"
+    },
+    {
+      "signal": "Data step taken",
+      "junior": "Pulled own logs",
+      "senior": "Staging traffic replay",
+      "manager": "Re-segmented funnel",
+      "exec": "Finance model rebuild with prior launches"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local feature design",
+      "senior": "Project scope and queries",
+      "manager": "Rollout and headcount forecast",
+      "exec": "Year-two target and org allocation"
+    },
+    {
+      "signal": "People development",
+      "junior": "N/A (peer)",
+      "senior": "Limited",
+      "manager": "Walked through analysis with report",
+      "exec": "Used as org planning example"
+    },
+    {
+      "signal": "Decision ownership",
+      "junior": "Individual evidence pull",
+      "senior": "Cross-team data awareness",
+      "manager": "Team outcome change",
+      "exec": "Business trade-off and reallocation"
+    }
+  ],
+  "kind": "lp"
+}

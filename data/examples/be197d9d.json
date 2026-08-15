@@ -1,0 +1,300 @@
+{
+  "question": "Tell me about a time when you had to make a decision between standards and delivery. What tradeoffs did you have to make? What was the outcome? Knowing what you know now, would you have done anything differently?",
+  "competency": "Insist on the Highest Standards (Tradeoff Analysis and Delivery)",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship project I found a validation gap in the checkout flow that could let bad data through. The PM wanted to ship on Friday so the feature hit the quarterly target. I fixed the validation and added two unit tests, which pushed us to Monday."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the actual tradeoff and how did you decide?"
+        },
+        {
+          "role": "candidate",
+          "text": "The tradeoff was missing the date versus shipping with a known data-quality risk. I checked with my mentor, showed the failing test case, and we agreed the fix was small enough. Outcome was clean data in prod and the PM thanked me later for catching it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you do anything differently now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have flagged the risk in writing earlier so the PM had visibility before the day-of decision."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Intern fixed validation gap instead of shipping Friday",
+        "Checked with mentor, showed failing test, accepted Monday slip",
+        "Quote: 'I would have flagged the risk in writing earlier'",
+        "Follow-up: Asked about tradeoff decision process; candidate described concrete test case and small scope"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate chose to fix a real data-quality issue over a date, consulted a mentor, and accepted a one-day slip. The outcome was clean production data with no rollback. The reflection shows they now see the value of written risk flagging. The story stays within individual scope yet demonstrates ownership and coachability. Biggest strength is the willingness to surface the problem rather than hide it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a bug in the UI where buttons overlapped on mobile. The deadline was tight so we shipped and planned to fix in the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh the standard versus the date?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM said customers on desktop were the priority so mobile could wait. We met the date and only a few users complained."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change anything now?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe add a note in the ticket so someone remembers to fix it later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Shipped with known mobile UI overlap bug to hit date",
+        "PM decided desktop mattered more; few complaints after launch",
+        "Quote: 'Maybe add a note in the ticket'",
+        "Follow-up: Pressed on how tradeoff was weighed; candidate deferred entirely to PM without personal analysis"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate accepted a visible UI defect without pushing for a minimal fix or documenting the customer impact. The decision rested solely with the PM and the reflection is limited to adding a ticket note. No evidence of ownership over the quality bar. The story shows compliance rather than insistence on standards. Main gap is absence of any attempt to quantify or escalate the risk."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service had inconsistent error handling across three teams. Marketing needed a new endpoint live in two weeks. I proposed a shared error library and refactored the three callers, adding two days to the schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "What tradeoffs did you surface and how did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the on-call reduction we would get and that future endpoints would be faster. Two teams pushed back on the extra work so I offered to pair-program the changes. We shipped on time plus one day and cut P2 errors by 40 percent that quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have involved the third team earlier instead of assuming they would adopt the library after the fact."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Built shared error library across three teams to avoid inconsistent handling",
+        "Traded two days of schedule for on-call reduction and future velocity",
+        "Quote: 'I would have involved the third team earlier'",
+        "Follow-up: Asked how buy-in was achieved; candidate offered pairing and showed error metric impact"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove a cross-team standard that reduced future operational load while still meeting a marketing deadline with only a one-day slip. They used data on P2 errors to influence peers and offered concrete help. The reflection identifies a sequencing gap. The story demonstrates influence without authority and measurable quality improvement. Biggest strength is connecting the standard to both delivery speed and operational health.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams had different logging formats. The new feature needed to launch so we kept both formats and documented the difference."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We spent extra time in on-call for the first month parsing logs but the feature shipped on schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you handle it differently now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I might have asked for more time but the teams were already overloaded."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Kept two logging formats to protect launch date",
+        "Extra on-call time accepted as cost of speed",
+        "Quote: 'I might have asked for more time but the teams were already overloaded'",
+        "Follow-up: Explored long-term impact; candidate accepted ongoing tax without pushing for convergence"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate allowed inconsistent logging to persist across teams to protect a single launch date. No attempt was made to quantify the ongoing operational cost or to negotiate a small convergence effort. The reflection shows deference to team load rather than ownership of the standard. The story stays local and does not show cross-team influence. Main gap is treating the quality issue as someone else's problem."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team had a pattern of shipping with tech-debt tickets left open. I introduced a 'debt budget' rule: no more than 15 percent of sprint capacity on new work if debt exceeded a threshold. One quarter we delayed a customer-facing feature by three weeks to pay down critical debt."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the stakeholder pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the on-call and incident data to the director and showed the trend line of rising support tickets. We agreed on the three-week slip and I had my team present the before-and-after metrics in the quarterly review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have set the debt threshold earlier in the year instead of waiting for the data to get bad."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Created debt budget rule and delayed feature three weeks to reduce tech debt",
+        "Used incident data to justify slip to director; team presented metrics",
+        "Quote: 'I would have set the debt threshold earlier'",
+        "Follow-up: Pressed on stakeholder management; candidate showed data-driven conversation and team ownership"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate created a team-level mechanism to protect quality and accepted a three-week delay on a customer feature after presenting clear incident trends. They involved the team in presenting results and took responsibility for earlier threshold setting. The outcome included reduced support load. The story shows how the manager used data and process to create leverage. Biggest strength is turning a recurring quality problem into a repeatable team practice.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team kept missing dates because of refactor work. I told them to focus on new features and handle debt only when it blocked a ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to quality over time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Incidents went up but we hit more of our feature commitments that quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you adjust the approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe track debt in a separate board so it is visible."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Directed team to deprioritize refactor work to protect feature dates",
+        "Incidents rose while feature delivery improved",
+        "Quote: 'Maybe track debt in a separate board'",
+        "Follow-up: Explored quality trend; candidate accepted higher incidents without changing the rule"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The candidate explicitly told the team to deprioritize debt work to protect feature dates, resulting in rising incidents. No mechanism was created to manage the accumulating risk. The suggested improvement is only visibility rather than a control. The story shows the manager optimizing for short-term delivery metrics at the expense of long-term team health. Main gap is absence of any structural safeguard for standards."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a choice between launching a new market expansion on the original date or delaying to meet our new reliability SLOs. I chose the delay, moved two senior engineers to the reliability program, and reset the market launch by six weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh the business tradeoffs at the time?"
+        },
+        {
+          "role": "candidate",
+          "text": "The expansion was expected to add 8 percent revenue; the reliability gap was already causing 2 percent churn per quarter. I modeled the net present value over 18 months and the reliability investment won. I briefed the board on the decision and the updated forecast."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently with hindsight?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have started the reliability program six months earlier so the market launch did not have to move."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Delayed market expansion six weeks to meet new SLOs; moved two senior engineers",
+        "NPV model showed reliability reduced churn more than expansion added revenue",
+        "Quote: 'I would have started the reliability program six months earlier'",
+        "Follow-up: Asked about business modeling; candidate showed 18-month NPV and board briefing"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made an org-level call to delay a revenue-generating market launch in favor of reliability standards after running an 18-month NPV comparison. They reallocated senior talent and briefed the board directly. The reflection identifies an earlier start as the missed opportunity. The story demonstrates long-term strategic judgment and willingness to trade short-term growth for sustainable quality. Biggest strength is linking the standard directly to measurable business outcomes at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched the new market on schedule even though the error budget was already exhausted. I asked the team to improve monitoring after launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the customer and financial impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Churn increased in the first two months but we still captured the planned revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "Would you change the call?"
+        },
+        {
+          "role": "candidate",
+          "text": "In hindsight we could have added a small reliability team sooner but the launch timing was critical for competitive reasons."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you had to make a decision between standards and delivery...",
+        "Launched market expansion despite exhausted error budget",
+        "Churn rose post-launch while revenue target was met",
+        "Quote: 'the launch timing was critical for competitive reasons'",
+        "Follow-up: Pressed on customer impact; candidate accepted higher churn as acceptable cost of speed"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate prioritized the market launch date over an already exhausted error budget, resulting in increased churn. The decision was justified by competitive timing rather than a quantitative comparison of long-term value. No pre-launch reallocation of resources occurred. The reflection treats the quality shortfall as a post-launch fix. Main gap is optimizing for near-term optics instead of protecting the reliability foundation that enables sustained growth."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual task or single feature",
+      "senior": "Cross-team or multi-service",
+      "manager": "Team process and metrics",
+      "exec": "Org-level revenue and SLO tradeoffs"
+    },
+    {
+      "signal": "Use of data in tradeoff",
+      "junior": "Simple test case or bug report",
+      "senior": "On-call or error metrics",
+      "manager": "Incident trends and sprint capacity",
+      "exec": "NPV or churn modeling over 18 months"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Mentor or PM conversation",
+      "senior": "Peer pairing and data sharing",
+      "manager": "Director briefing and team presentation",
+      "exec": "Board-level forecast and resource reallocation"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Earlier written flag",
+      "senior": "Earlier team involvement",
+      "manager": "Earlier threshold setting",
+      "exec": "Earlier program start"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Clean data in own feature",
+      "senior": "Reduced P2 errors across teams",
+      "manager": "Lower support load via team rule",
+      "exec": "Sustainable quality enabling growth"
+    },
+    {
+      "signal": "Risk of lowering bar",
+      "junior": "Accepts defect without pushback",
+      "senior": "Allows inconsistency to persist",
+      "manager": "De-prioritizes debt to hit dates",
+      "exec": "Trades reliability for launch optics"
+    }
+  ],
+  "kind": "lp"
+}

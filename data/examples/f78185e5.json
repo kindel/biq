@@ -1,0 +1,252 @@
+{
+  "question": "Tell me about a time when the business gained something because you persisted for a length of time. Why were you so determined? How did it turn out?",
+  "competency": "Have Backbone; Disagree and Commit",
+  "principle": "Have Backbone; Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a data validation bug in our checkout flow that kept failing on edge cases. My mentor wanted to ship and fix later, but I kept testing and found it would drop 3% of orders. After two weeks of back-and-forth and extra test cases, we held the release and fixed it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you push for two weeks on your own work?"
+        },
+        {
+          "role": "candidate",
+          "text": "The numbers showed real revenue loss and I had already seen similar issues get worse in prior internships. Once I had the data I just kept showing it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: New grad on checkout bug fix",
+        "Situation: Mentor wanted to ship; candidate ran extra tests over 2 weeks",
+        "Actions: Collected order-drop data, kept resurfacing evidence",
+        "Outcome: Held release, fixed before launch",
+        "Quote: \"The numbers showed real revenue loss\"",
+        "Follow-up: What made you push for two weeks? Candidate tied it to prior internship pattern and data"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for a junior. The candidate persisted two weeks on their own code despite a mentor's preference to ship, using concrete order-drop data to make the case. This produced a clear local win by preventing a 3% revenue leak. The story stays within individual scope while showing they did not fold after first pushback. The follow-up answer links the persistence to a repeatable pattern rather than ego. Biggest strength is using data to sustain the disagreement instead of just insisting.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to add a new logging statement but my lead said it wasn't worth the time so I dropped it after one conversation."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after you dropped it?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we shipped and later had to add it in a hotfix."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: New grad on logging change",
+        "Situation: Lead said skip it",
+        "Actions: Asked once then stopped",
+        "Outcome: Shipped without it, later hotfix required",
+        "Quote: \"I dropped it after one conversation\"",
+        "Follow-up: Did anything change? No, hotfix later"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for a junior. The candidate raised one concern then immediately conceded without data or follow-up. The outcome required a later hotfix, showing the business paid a cost for the quick surrender. The story never moves beyond a single conversation. Follow-up confirms there was no sustained effort. Biggest gap is treating the first disagreement as the end rather than an invitation to bring evidence."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams wanted to deprecate an old reporting API that three enterprise customers still used. I kept the deprecation on hold for six weeks while I ran usage analysis and found a migration path that kept revenue intact."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep the other teams from moving forward?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the usage numbers and customer contract clauses to the weekly sync and got the PMs to agree on a phased cutover instead."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: Senior on cross-team API deprecation",
+        "Situation: Two teams pushing to drop API used by 3 enterprise customers",
+        "Actions: Ran usage analysis, surfaced contract data in weekly syncs for 6 weeks",
+        "Outcome: Phased migration preserved revenue",
+        "Quote: \"I kept the deprecation on hold for six weeks\"",
+        "Follow-up: How did you keep teams from moving? Used numbers and contracts to align PMs"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for a senior. The candidate blocked a cross-team deprecation for six weeks using usage data and contract terms, resulting in a phased migration that protected enterprise revenue. Influence happened through existing syncs rather than authority. The persistence produced a measurable business outcome instead of just delaying work. Follow-up shows they converted disagreement into a concrete plan. Biggest strength is sustaining the position long enough for data to change the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with a product change that would hurt one customer segment but after the roadmap meeting I moved on to my next project."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the customer impact ever get addressed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not that I know of; the change shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: Senior on product change",
+        "Situation: Change hurt one segment",
+        "Actions: Raised point in one meeting then moved on",
+        "Outcome: Change shipped with no mitigation",
+        "Quote: \"After the roadmap meeting I moved on\"",
+        "Follow-up: Did impact get addressed? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for a senior. The candidate voiced disagreement once in a roadmap meeting then dropped the issue without data or follow-through. The change shipped and the customer segment impact was never addressed. Story shows no attempt to influence beyond the initial meeting. Follow-up confirms absence of sustained effort. Biggest gap is treating cross-team disagreement as a one-time event rather than something requiring ongoing evidence."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team wanted to cut a reliability investment to hit a feature date. I kept the investment in the plan for eight weeks while we built a simple dashboard showing incident cost. That data convinced leadership to fund the work and reduced outages by 40% the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team's frustration during those weeks?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the dashboard visible to the team and let them update it so they saw the numbers themselves."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: Manager protecting reliability work",
+        "Situation: Team wanted to drop investment for feature date",
+        "Actions: Kept item in plan 8 weeks, built visible dashboard with team",
+        "Outcome: Leadership funded, 40% fewer outages next quarter",
+        "Quote: \"I kept the investment in the plan for eight weeks\"",
+        "Follow-up: How did you handle team frustration? Made dashboard visible so team updated it"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for a manager. The candidate protected a reliability investment for eight weeks against team pressure, using a team-built dashboard to surface incident costs. This produced a 40% outage reduction the following quarter. The approach created leverage by involving the team in the evidence rather than mandating the decision. Follow-up shows they turned potential resentment into ownership. Biggest strength is converting sustained disagreement into a team-owned data artifact that changed the outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we needed to keep a testing initiative but they pushed back so we dropped it to stay on schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to quality after that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had more escaped bugs and spent the next release fixing them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: Manager on testing initiative",
+        "Situation: Team wanted to drop testing for schedule",
+        "Actions: Raised need once then conceded",
+        "Outcome: More escaped bugs, extra fix work next release",
+        "Quote: \"They pushed back so we dropped it\"",
+        "Follow-up: What happened to quality? More bugs and rework"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for a manager. The candidate advocated for a testing initiative once then yielded to team pressure without data or escalation. The result was increased escaped bugs and rework in the next release. Story shows no attempt to create leverage or surface long-term cost. Follow-up confirms the business paid for the concession. Biggest gap is prioritizing short-term team harmony over protecting a known quality lever."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The company was set to sunset a product line that still generated 12% of revenue. I spent four months building a retention plan with finance and sales, then presented a three-year projection showing we could stabilize it at 8% with minimal new investment. Leadership reversed the decision and the line contributed steady cash for the next two years."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface during those months?"
+        },
+        {
+          "role": "candidate",
+          "text": "We explicitly compared the cash flow against two acquisition opportunities and chose to keep the line because the NPV was higher with lower risk."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: Exec reversing product sunsetting decision",
+        "Situation: Company planning to sunset line worth 12% revenue",
+        "Actions: Spent 4 months with finance/sales building retention plan and 3-year projection",
+        "Outcome: Reversed decision, steady cash for 2 years",
+        "Quote: \"I spent four months building a retention plan\"",
+        "Follow-up: What trade-offs surfaced? Compared NPV to two acquisitions, chose lower-risk option"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone for an exec. The candidate spent four months building a cross-functional retention case that reversed a sunsetting decision, preserving a revenue stream for two years. The story includes explicit trade-off analysis against acquisition options using NPV. Persistence operated at the business-portfolio level rather than inside one team. Follow-up shows strategic judgment on risk and cash flow. Biggest strength is converting sustained disagreement into a quantified alternative that changed an org-level decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with exiting a market but after the strategy offsite the decision was made and I focused on the next initiative."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the market exit perform as expected?"
+        },
+        {
+          "role": "candidate",
+          "text": "We later re-entered at higher cost."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when the business gained something because you persisted...",
+        "Role: Exec on market exit",
+        "Situation: Disagreed with exiting a market",
+        "Actions: Raised point at offsite then moved on",
+        "Outcome: Exited then re-entered at higher cost",
+        "Quote: \"After the strategy offsite the decision was made\"",
+        "Follow-up: Did exit perform as expected? Later re-entry at higher cost"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone for an exec. The candidate raised disagreement at one offsite then accepted the decision without further analysis or escalation. The market exit later required a costly re-entry. Story shows no attempt to build a competing long-term view. Follow-up confirms the business absorbed avoidable cost. Biggest gap is failing to sustain a strategic disagreement long enough to surface quantified alternatives."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Duration of persistence",
+      "junior": "2 weeks on individual bug fix",
+      "senior": "6 weeks across two teams",
+      "manager": "8 weeks protecting team investment",
+      "exec": "4 months reversing org decision"
+    },
+    {
+      "signal": "Evidence used",
+      "junior": "Order drop data from own tests",
+      "senior": "Usage numbers plus contract clauses",
+      "manager": "Team-built incident cost dashboard",
+      "exec": "3-year NPV projection vs acquisitions"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local code quality",
+      "senior": "Cross-team API and 3 customers",
+      "manager": "Team reliability and next-quarter outages",
+      "exec": "Product line revenue and portfolio trade-offs"
+    },
+    {
+      "signal": "Handling of resistance",
+      "junior": "Resurfaced data to mentor",
+      "senior": "Brought numbers to weekly syncs",
+      "manager": "Made dashboard visible to team",
+      "exec": "Built finance/sales coalition over months"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Prevented 3% revenue leak",
+      "senior": "Phased migration preserved revenue",
+      "manager": "40% outage reduction",
+      "exec": "Stabilized 8% revenue for 2 years"
+    },
+    {
+      "signal": "Strategic judgment",
+      "junior": "N/A at this level",
+      "senior": "Converted disagreement into plan",
+      "manager": "Turned team frustration into ownership",
+      "exec": "Explicit NPV comparison to other opportunities"
+    }
+  ],
+  "kind": "lp"
+}

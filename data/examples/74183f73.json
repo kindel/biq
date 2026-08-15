@@ -1,0 +1,229 @@
+{
+  "question": "Walk me through a technical decision you made that you had to live with later. What was the decision? What were the consequences?",
+  "competency": "Dive Deep",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I chose to use a simple in-memory cache for a reporting feature instead of persisting to the database because we were under time pressure. Six months later the cache kept getting invalidated incorrectly on restarts, causing stale data in customer reports."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when you realized the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added logging to track invalidations, wrote a one-off script to backfill from logs, and proposed moving to Redis with TTLs in the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Chose in-memory cache over DB for speed; later caused stale reports on restarts",
+        "Added logging, backfill script, proposed Redis",
+        "Quote: \"I didn't think about restarts at the time.\"",
+        "Follow-up: Owned the fix and suggested durable alternative"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate described choosing an in-memory cache over database persistence for a reporting feature. When restarts caused stale data, they instrumented logging, wrote a backfill script, and proposed Redis with TTLs. This shows they went back into the details after the fact and took ownership of the fix. The story stays within individual scope, which is appropriate for junior level. Biggest strength is connecting the original shortcut to the concrete downstream symptom without external prompting.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We picked the first library that worked in our prototype because the PM needed it shipped that week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after launch?"
+        },
+        {
+          "role": "candidate",
+          "text": "It broke on some edge cases but we just added more if-statements. It's still in production."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Picked first library that worked in prototype",
+        "Added if-statements for edge cases after launch",
+        "Quote: \"We just patched it as we went.\"",
+        "Follow-up: No root cause analysis or plan to replace"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate selected the first library that passed prototype testing and later handled edge cases only with additional if-statements that remain in production. They did not investigate why the library failed or evaluate alternatives. The answer stays at the surface level of \"it worked at first\" without showing how they diagnosed the long-term maintenance cost. This indicates limited depth in understanding trade-offs or consequences."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to keep our existing MySQL schema normalized for an order-processing service instead of introducing a denormalized read model. Two quarters later query latency on the reporting dashboard tripled as order volume grew."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure and respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the slow-query logs, ran EXPLAIN on the top three joins, and built a read replica with a materialized view. The change cut p99 latency from 4s to 180ms for the dashboard team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Kept normalized MySQL schema; latency tripled with volume growth",
+        "Analyzed slow-query logs, added read replica + materialized view",
+        "Quote: \"I pulled the logs and measured the join cost myself.\"",
+        "Follow-up: Cross-team impact shown via dashboard metrics"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate chose to retain a normalized schema and later traced the 3x latency increase to specific join patterns using slow-query logs and EXPLAIN output. They shipped a read replica with a materialized view that improved p99 from 4s to 180ms for another team. The story demonstrates they revisited the original decision with data and delivered measurable cross-team relief. Biggest strength is the concrete instrumentation and quantified outcome without claiming heroic effort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We decided to use the framework's default ORM because it was already in the repo and everyone knew it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the choice create any later problems?"
+        },
+        {
+          "role": "candidate",
+          "text": "N+1 queries showed up in production but we just added caching at the app layer. It mostly worked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Used default ORM without evaluating alternatives",
+        "Added app-layer caching for N+1 issues",
+        "Quote: \"It mostly worked after caching.\"",
+        "Follow-up: No measurement of cache hit rates or schema impact"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate defaulted to the existing ORM and addressed resulting N+1 queries only with generic app-layer caching. They provided no evidence of reviewing query plans, measuring cache effectiveness, or considering schema changes. The answer lacks the data-driven diagnosis expected at senior level and shows no cross-team coordination on the performance regression."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team chose to build a custom retry library instead of adopting an existing one to avoid adding another dependency. A year later we discovered it lacked circuit-breaker logic, causing cascading failures during partial outages."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actions did you take as manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had the team run a blameless postmortem, assign the original author to document the gap, and we migrated to Resilience4j with the owning team owning the migration plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Built custom retry library; missed circuit-breaker causing cascades",
+        "Ran postmortem, assigned owner, migrated to Resilience4j",
+        "Quote: \"I made sure the original author documented the gap.\"",
+        "Follow-up: Focused on team process and ownership transfer"
+      ],
+      "raiseFeedback": "Raises the bar. The manager allowed a custom retry library decision that later lacked circuit breakers and produced cascading failures. They drove a blameless postmortem, assigned the original author to document the gap, and coordinated migration to Resilience4j with clear ownership. The response shows they used the incident to improve team practices rather than just fixing the code. Biggest strength is turning a technical debt item into a repeatable learning process for the team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team picked a queue technology we already had license for to keep costs down."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that decision age?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit scaling limits but I told them to tune the config. Eventually we had to rewrite the consumers anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Chose licensed queue to control cost",
+        "Told team to tune config when limits appeared",
+        "Quote: \"We had to rewrite the consumers anyway.\"",
+        "Follow-up: No evidence of developing team on trade-off analysis"
+      ],
+      "lowerFeedback": "Lowers the bar. The manager supported choosing a queue based on existing license and later responded to scaling limits by directing config tuning rather than revisiting the technology choice. The eventual consumer rewrite is presented as inevitable rather than something the team could have anticipated. The account shows no coaching on how to evaluate long-term operational costs or how the decision affected team skill development."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We standardized on a single cloud region for all new services to simplify compliance reviews. Eighteen months later a regional outage took down 40% of revenue-generating traffic for six hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "What strategic changes followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sponsored a multi-region active-active program, reallocated two platform teams to build the abstraction layer, and changed the investment review to require explicit outage budget sign-off for any single-region dependency."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Standardized on single region for compliance simplicity; 40% revenue hit in outage",
+        "Funded multi-region program, changed investment criteria",
+        "Quote: \"We now require outage budget sign-off for single-region choices.\"",
+        "Follow-up: Org-level policy and resource reallocation shown"
+      ],
+      "raiseFeedback": "Raises the bar. The executive approved single-region standardization that later caused a six-hour outage affecting 40% of revenue. They responded by funding a multi-region platform effort, reallocating two teams, and embedding outage-budget reviews into investment decisions. The story illustrates strategic judgment on trade-offs between compliance speed and resilience at business scale. Biggest strength is converting the incident into an org-wide policy change rather than a one-time technical fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We delayed moving to a new database engine because the migration effort looked large on the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What were the long-term effects?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support costs kept rising and we lost two key engineers who wanted to work on modern stacks. We eventually migrated but it took longer than planned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a technical decision you made that you had to live with later.",
+        "Delayed database migration due to roadmap size",
+        "Lost engineers and faced rising support costs",
+        "Quote: \"It took longer than planned.\"",
+        "Follow-up: No discussion of strategic options considered or business trade-offs"
+      ],
+      "lowerFeedback": "Lowers the bar. The executive deferred a database migration citing roadmap size and later cited rising support costs and engineer attrition as consequences. The response offers no evidence of evaluating alternative migration strategies, quantifying the talent risk in advance, or adjusting investment priorities. The outcome is described as inevitable rather than the result of a deliberate, revisited strategic choice."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of post-decision analysis",
+      "junior": "Uses logs or simple reproduction to find root cause",
+      "senior": "Reviews query plans or metrics across services",
+      "manager": "Runs structured postmortem with assigned owners",
+      "exec": "Links incident to org investment and policy changes"
+    },
+    {
+      "signal": "Ownership of consequences",
+      "junior": "Fixes own code or config",
+      "senior": "Coordinates fix with affected teams",
+      "manager": "Ensures team owns documentation and migration",
+      "exec": "Changes funding and review processes"
+    },
+    {
+      "signal": "Quantification of impact",
+      "junior": "Describes the symptom (stale data)",
+      "senior": "Reports p99 latency before/after",
+      "manager": "Notes team velocity or attrition effects",
+      "exec": "States revenue or compliance exposure"
+    },
+    {
+      "signal": "Learning loop",
+      "junior": "Proposes better alternative next sprint",
+      "senior": "Adds instrumentation for future visibility",
+      "manager": "Embeds blameless review into team process",
+      "exec": "Requires explicit risk budget in investment reviews"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Individual feature or service",
+      "senior": "Cross-team dashboard or dependency",
+      "manager": "Team practices and ownership assignment",
+      "exec": "Org-wide policy and resource allocation"
+    }
+  ],
+  "kind": "lp"
+}

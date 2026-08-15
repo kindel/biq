@@ -1,0 +1,237 @@
+{
+  "question": "Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+  "competency": "Problem-Solving & Analytical Thinking",
+  "principle": "Problem-Solving & Analytical Thinking",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "While running unit tests on my feature, I noticed one test was flaky only on Tuesdays. I dug into the logs and found it was tied to a shared test DB cleanup job that ran on a schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I filed a ticket, added a retry in the test, and told my mentor. The mentor escalated it to the infra team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: new grad on feature team; noticed flaky test during own work",
+        "Action: checked logs, found pattern tied to Tuesday DB job",
+        "Outcome: filed ticket, added retry, looped in mentor who escalated",
+        "Quote: 'I just kept seeing the same failure on Tuesdays and checked the schedule'",
+        "Follow-up: Asked if they owned the fix; said no, but documented it for the team"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate spotted a pattern in their own test runs and traced it to an external schedule rather than dismissing it as noise. Quote on checking the schedule shows basic analytical steps. They escalated appropriately instead of trying to own the infra fix. Biggest strength is treating an intermittent failure as a signal worth investigating instead of a one-off.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a production issue last quarter where a job ran out of memory. I was the one who restarted it after it failed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you catch it before it became a crisis?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really; the alert fired and then I fixed it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: junior; describes reacting to an alert after failure",
+        "Action: restarted job once it broke",
+        "Outcome: issue resolved after the fact",
+        "Quote: 'I didn't really catch it early'",
+        "Follow-up: Asked for any proactive step; candidate said they now check memory in their code reviews"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story is purely reactive after an alert fired. No evidence of noticing a signal ahead of time or analyzing why the job failed. The follow-up mention of checking memory in reviews is post-hoc and not connected to the original incident. Biggest gap is lack of any early-detection behavior."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service was seeing a slow rise in 5xx errors on one endpoint. I pulled the last 30 days of metrics and saw the error rate correlated with a new downstream dependency rollout."
+        },
+        {
+          "role": "interviewer",
+          "text": "What action did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I opened a ticket with the owning team, added a circuit breaker, and reduced our blast radius before the next deploy wave hit us."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: senior; pulled 30-day metrics on rising 5xx",
+        "Action: correlated with downstream rollout, added circuit breaker",
+        "Outcome: prevented impact on next deploy wave",
+        "Quote: 'The error rate was climbing 0.3% per week, not spiking yet'",
+        "Follow-up: Asked about cross-team coordination; candidate drove the ticket to resolution without authority"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used trend analysis on metrics to surface a creeping risk before it became customer-visible. Quote shows they quantified the slow climb. They influenced the downstream team and added a defensive control. Biggest strength is turning a subtle metric signal into a cross-team mitigation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once saw a high CPU alert and restarted the instance before it affected users."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any pattern or early signal you acted on?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just the standard alert threshold; I acted fast once it fired."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: senior; story is alert-driven restart",
+        "Action: responded to threshold breach",
+        "Outcome: instance recovered",
+        "Quote: 'It was just the standard alert threshold'",
+        "Follow-up: Asked for any pre-alert analysis; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The example stays at the level of fast reaction to an existing alert rather than proactive identification. No metrics trend or root-cause analysis is described. Biggest gap is absence of the broader analytical or preventive thinking expected at this level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was onboarding a new service and I noticed the runbooks were missing failure scenarios. I had the team run a premortem exercise and we found three gaps in our alerting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect the launch?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added the missing alerts and the launch had zero paging events in the first month, unlike the prior two services."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: manager; spotted missing runbook coverage during onboarding",
+        "Action: ran premortem with team, added three alerts",
+        "Outcome: zero pages in first month post-launch",
+        "Quote: 'The team had never written failure scenarios before'",
+        "Follow-up: Asked how they handled resistance; said one engineer pushed back but data from prior launches convinced them"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The candidate used a structured exercise to surface risks the team had not considered. Quote highlights the process gap they addressed. They turned the finding into concrete alerting improvements that changed the launch outcome. Biggest strength is creating a repeatable mechanism that protects the whole team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a Sev-2 last year. After it happened I made sure the team updated the runbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you catch anything early on that incident?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't; it was the post-mortem that drove the change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: manager; story centers on post-mortem action",
+        "Action: updated runbook after the fact",
+        "Outcome: better documentation for next time",
+        "Quote: 'We didn't catch anything early'",
+        "Follow-up: Asked for any preventive ritual; candidate mentioned they now do post-mortems faster"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. The example is entirely reactive and relies on post-incident fixes. No evidence of creating early-warning processes or coaching the team to spot risks proactively. Biggest gap is lack of leverage through team mechanisms."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our growth projections assumed linear infrastructure cost. I asked finance to model three demand spikes and we found we would hit capacity limits in two regions within six months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shifted 15% of traffic to a new region and renegotiated capacity contracts, avoiding a $4M emergency purchase."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: exec; challenged linear cost assumption in planning",
+        "Action: requested scenario modeling with finance, identified regional limits",
+        "Outcome: shifted traffic and renegotiated contracts ahead of need",
+        "Quote: 'The model showed we would be 30% over in EU-West by Q3'",
+        "Follow-up: Asked about trade-offs considered; said they delayed one product launch by a quarter to free budget"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate questioned a core planning assumption and drove cross-functional modeling that revealed a multi-million-dollar exposure. Quote shows they quantified the regional shortfall. They made a clear trade-off decision and executed mitigation at business scale. Biggest strength is long-horizon risk identification tied to concrete financial impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a capacity crunch last year and I approved extra spend to cover it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any earlier signal you could have acted on?"
+        },
+        {
+          "role": "candidate",
+          "text": "It came up during the annual planning cycle; we just moved fast once we saw the numbers."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time you identified a problem or risk before it became a crisis. How did you catch it early?",
+        "Role: exec; describes reacting inside the planning cycle",
+        "Action: approved extra spend after crunch appeared",
+        "Outcome: capacity covered at higher cost",
+        "Quote: 'We just moved fast once we saw the numbers'",
+        "Follow-up: Asked about scenario planning; candidate said they now ask for quarterly updates"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The story remains inside standard planning rhythms rather than surfacing an off-cycle strategic risk. No evidence of challenging assumptions or driving preemptive action at org scale. Biggest gap is absence of the forward-looking judgment expected at this level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of problem identified",
+      "junior": "Single test or local job",
+      "senior": "Service-level metric trend",
+      "manager": "Team process gap",
+      "exec": "Business planning assumption"
+    },
+    {
+      "signal": "Method of early detection",
+      "junior": "Manual log check during own work",
+      "senior": "30-day metric correlation",
+      "manager": "Premortem exercise",
+      "exec": "Scenario modeling with finance"
+    },
+    {
+      "signal": "Time horizon before impact",
+      "junior": "Days",
+      "senior": "Weeks",
+      "manager": "One launch cycle",
+      "exec": "Two quarters"
+    },
+    {
+      "signal": "Leverage mechanism",
+      "junior": "Escalated to mentor",
+      "senior": "Cross-team ticket + circuit breaker",
+      "manager": "Team ritual + alerting change",
+      "exec": "Contract renegotiation + traffic shift"
+    },
+    {
+      "signal": "Evidence of quantification",
+      "junior": "Tuesday pattern",
+      "senior": "0.3% weekly climb",
+      "manager": "Zero pages post-launch",
+      "exec": "$4M avoided, 30% over in model"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,222 @@
+{
+  "question": "What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+  "competency": "Hire and Develop the Best (mentoring, coaching)",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I focus on customer problems first, then work backward from the data. One principle is to always validate assumptions with at least two sources before committing to a roadmap. For mentoring, I pair with new PMs on writing PRDs and give feedback on clarity."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you apply that with a peer?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sat with a new PM who kept adding features without metrics. We rewrote one spec together and added success criteria; their next launch hit the target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Candidate listed 2-3 clear principles tied to validation and metrics",
+        "Described pairing on PRD writing and one concrete rewrite session",
+        "Quote: \"We rewrote one spec together and added success criteria\"",
+        "Follow-up: Asked how applied with peer; showed direct, local coaching"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Competency is Hire and Develop the Best. Story centered on validating assumptions with two data sources and rewriting a spec with a peer PM so the launch hit its target metric. This shows ownership of their own work plus willingness to help others improve. The example is small in scope but demonstrates coachability and concrete feedback delivery. Biggest strength is grounding principles in repeatable actions rather than platitudes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I try to ship fast and talk to customers when I can. For mentoring I answer questions when people ask me."
+        },
+        {
+          "role": "interviewer",
+          "text": "Can you give an example of mentoring?"
+        },
+        {
+          "role": "candidate",
+          "text": "I once told a new PM to add more features because leadership wanted them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Principles stayed high-level: ship fast, talk to customers",
+        "Mentoring described as answering questions when asked",
+        "Quote: \"I once told a new PM to add more features because leadership wanted them\"",
+        "Follow-up: Pushed for example; showed reactive and non-specific help"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Competency is Hire and Develop the Best. Story offered only vague principles and reactive mentoring limited to answering questions on request. The single example showed directing a peer to add features to satisfy leadership without any validation or learning focus. This indicates limited ownership of developing others and no evidence of structured coaching. Biggest gap is absence of any repeatable mentoring approach or outcome tied to the mentee."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My three principles are start with the customer, define measurable outcomes before solutions, and remove blockers for the team. I mentor by running bi-weekly spec reviews across two squads and teaching PMs how to influence engineering without authority."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after your reviews?"
+        },
+        {
+          "role": "candidate",
+          "text": "One PM reduced scope by 30% after we added outcome metrics; the other team shipped two weeks early and the metric moved 8%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Listed three principles with clear tie to outcomes and cross-team work",
+        "Runs bi-weekly spec reviews across squads and teaches influence skills",
+        "Quote: \"One PM reduced scope by 30% after we added outcome metrics\"",
+        "Follow-up: Asked what changed; gave specific metric and timeline impact"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Competency is Hire and Develop the Best. Story described running cross-squad spec reviews that taught PMs how to define outcome metrics and influence engineering peers. One review led a PM to cut scope 30% and another team shipped two weeks early with an 8% metric lift. This shows influence without authority and measurable development of others. Biggest strength is linking mentoring directly to delivery results beyond their own team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I believe in customer obsession and clear roadmaps. I mentor by giving feedback in 1:1s when someone asks for it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any cross-team example?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed one doc for another squad last quarter but did not follow up on results."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Principles remained generic: customer obsession and clear roadmaps",
+        "Mentoring limited to 1:1 feedback on request",
+        "Quote: \"I reviewed one doc for another squad last quarter but did not follow up on results\"",
+        "Follow-up: Asked for cross-team example; showed no sustained impact"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Competency is Hire and Develop the Best. Story kept principles at a high level and described mentoring as occasional 1:1 feedback only when requested. The single cross-team example was a one-off doc review with no follow-up or outcome tracked. This lacks evidence of consistent influence or raising the bar for other PMs. Biggest gap is absence of repeatable mechanisms or measurable development impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Principles are outcome over output, clear ownership, and building a learning culture. I mentor by running a monthly PM guild where we review underperforming launches and assign coaches to struggling PMs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle one underperformer?"
+        },
+        {
+          "role": "candidate",
+          "text": "A PM kept missing deadlines. We paired them with a senior peer for two sprints, reset expectations on scoping, and their on-time rate went from 40% to 85%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Principles focused on outcomes, ownership, and learning culture",
+        "Runs PM guild and assigns coaches to struggling PMs",
+        "Quote: \"We paired them with a senior peer for two sprints... on-time rate went from 40% to 85%\"",
+        "Follow-up: Asked about underperformer; showed structured intervention and metric improvement"
+      ],
+      "raiseFeedback": "Raises the bar for manager. Competency is Hire and Develop the Best. Story described creating a PM guild and assigning coaches to underperforming PMs, including one case where pairing raised on-time delivery from 40% to 85%. This demonstrates handling underperformance through team leverage and creating repeatable development processes. Biggest strength is owning team-level outcomes rather than individual heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I value data-driven decisions and good communication. I mentor by giving advice in team meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you handle underperformance?"
+        },
+        {
+          "role": "candidate",
+          "text": "I usually wait to see if it improves on its own before stepping in."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Principles stayed at data-driven and communication",
+        "Mentoring described as advice in team meetings",
+        "Quote: \"I usually wait to see if it improves on its own before stepping in\"",
+        "Follow-up: Asked about underperformance; showed passive approach"
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Competency is Hire and Develop the Best. Story offered generic principles and mentoring limited to ad-hoc advice in meetings. The approach to underperformance was to wait and see rather than intervene. This shows little evidence of building team capability or addressing performance gaps systematically. Biggest gap is lack of proactive development mechanisms or ownership of team outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My principles are long-term platform bets over short-term features, building a talent bench, and making trade-offs visible to the business. I mentor by creating a PM leadership program that rotates high-potentials across orgs and tracks their promotion rates."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "After two years the program produced four directors; two of them drove platform launches that reduced infrastructure costs 22% while increasing release velocity."
+        }
+      ],
+      "raiseNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Principles tied to long-term bets, talent bench, and visible trade-offs",
+        "Created PM leadership program with cross-org rotations and promotion tracking",
+        "Quote: \"After two years the program produced four directors; two of them drove platform launches that reduced infrastructure costs 22%\"",
+        "Follow-up: Asked business impact; showed org-level leverage and quantified results"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Competency is Hire and Develop the Best. Story described building a PM leadership program with rotations that produced four directors whose platform work cut infrastructure costs 22%. This reflects strategic judgment on talent development at org scale and clear linkage to business outcomes. Biggest strength is treating mentoring as a long-term org capability rather than individual coaching.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I focus on customer value and hiring strong people. I mentor by reviewing promotion packets once a year."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any org-level program or result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hired a few senior PMs last year but have not measured downstream impact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: What are your principles of product management? How do you mentor other PMs on how to get stuff done?",
+        "Principles limited to customer value and hiring",
+        "Mentoring described as annual promotion packet reviews",
+        "Quote: \"We hired a few senior PMs last year but have not measured downstream impact\"",
+        "Follow-up: Asked for org-level program; showed no sustained measurement or leverage"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Competency is Hire and Develop the Best. Story kept principles narrow and mentoring to yearly packet reviews with no follow-through on hires. No org-level program or tracked business impact was presented. This indicates a tactical rather than strategic approach to talent development. Biggest gap is absence of long-term thinking or leverage through systematic development at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Specificity of PM principles",
+      "junior": "Tied to daily validation steps",
+      "senior": "Linked to cross-team influence and metrics",
+      "manager": "Connected to team processes and underperformance handling",
+      "exec": "Framed as org strategy and long-term bets"
+    },
+    {
+      "signal": "Mentoring mechanism",
+      "junior": "Direct pairing on own work artifacts",
+      "senior": "Recurring reviews with measurable delivery impact",
+      "manager": "Guild plus assigned coaching for struggling PMs",
+      "exec": "Leadership program with rotation and promotion tracking"
+    },
+    {
+      "signal": "Evidence of raising others",
+      "junior": "One peer improved a single spec",
+      "senior": "Multiple PMs showed scope and velocity gains",
+      "manager": "Underperformer moved from 40% to 85% on-time",
+      "exec": "Four directors produced, two drove 22% cost reduction"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual and immediate peer",
+      "senior": "Cross-squad without authority",
+      "manager": "Team outcomes and performance management",
+      "exec": "Org talent bench and business results"
+    }
+  ],
+  "kind": "lp"
+}

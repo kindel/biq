@@ -1,0 +1,244 @@
+{
+  "question": "Describe a situation where you had to learn a new skill, tool, or domain quickly to meet a deadline or need.",
+  "competency": "Adaptability, Flexibility & Change",
+  "principle": "Adaptability, Flexibility & Change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My first project needed a reporting dashboard in Looker, which I'd never used. I spent two evenings on their training modules and built a basic version by Thursday. The team lead gave feedback on filters and I iterated overnight to ship Friday."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and how did you track your own learning?"
+        },
+        {
+          "role": "candidate",
+          "text": "Dashboard went live on time and reduced manual Excel work by about 4 hours a week for the analyst. I kept a one-page cheat sheet of Looker functions that I still reference."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Junior IC: picked up Looker for first dashboard project",
+        "Actions: two evenings on training, shipped basic version, iterated on feedback overnight",
+        "Outcome: live on deadline, saved 4 hrs/wk manual work",
+        "Quote: \"I kept a one-page cheat sheet of Looker functions that I still reference.\"",
+        "Follow-up: outcome and self-tracking; described measurable time save and personal reference material"
+      ],
+      "raiseFeedback": "Raises the bar for Adaptability at junior level. The candidate described learning Looker from zero in two evenings to meet a Friday deadline, then incorporating feedback overnight. The concrete quote about creating a personal cheat sheet shows coachability and self-directed follow-through. Local scope and individual ownership match expectations for 0-2 years. Biggest strength is the explicit link between quick learning and a repeatable artifact that benefited ongoing work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to switch to a new ticketing system mid-sprint. I asked my manager for training but the deadline was tight so I just tried to figure it out while doing tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that go and did you ask anyone else for help?"
+        },
+        {
+          "role": "candidate",
+          "text": "It took longer than expected and a few tickets got delayed. I eventually watched one YouTube video but didn't finish it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Junior: new ticketing system mid-sprint",
+        "Actions: asked manager for training, tried to learn while working tickets",
+        "Outcome: tickets delayed, watched partial YouTube video",
+        "Quote: \"It took longer than expected and a few tickets got delayed.\"",
+        "Follow-up: help-seeking; only passive video, no peer outreach or structured approach"
+      ],
+      "lowerFeedback": "Lowers the bar for Adaptability at junior level. The candidate relied on waiting for manager training and only partially watched a video after delays occurred. The quote about delayed tickets shows limited ownership of the learning gap. No evidence of proactive steps like asking teammates or creating a simple plan. Biggest gap is absence of coachability signals or any attempt to turn the situation into a repeatable learning habit."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our partner team adopted a new data platform two weeks before a joint launch. I learned their pipeline and schema on nights and weekends, then wrote a migration script and ran a knowledge-share session for both teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics improved and how did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "Launch stayed on track; data freshness improved from daily to near-real-time. I documented the script in the shared repo so the partner team could maintain it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Senior: learned new data platform two weeks before partner launch",
+        "Actions: nights/weekends study, wrote migration script, ran cross-team knowledge-share",
+        "Outcome: launch on track, freshness from daily to near-real-time",
+        "Quote: \"I documented the script in the shared repo so the partner team could maintain it.\"",
+        "Follow-up: metrics and influence; cited freshness gain and repo documentation for cross-team leverage"
+      ],
+      "raiseFeedback": "Raises the bar for Adaptability at senior level. The candidate learned an unfamiliar data platform in under two weeks to protect a partner launch, then created a reusable script and ran a knowledge-share. The quote about repo documentation shows influence without authority and cross-team impact. Clear metrics on data freshness differentiate this from junior scope. Biggest strength is turning personal learning into team leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing asked us to support a new analytics tool for a campaign. I read the docs but the integration kept breaking so we missed the initial campaign window."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve other engineers or escalate trade-offs?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried a few more config changes on my own. By the time I asked the infra team the campaign had already started without our data."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Senior: new analytics tool for marketing campaign",
+        "Actions: read docs alone, config changes on own",
+        "Outcome: missed campaign window, asked infra too late",
+        "Quote: \"By the time I asked the infra team the campaign had already started without our data.\"",
+        "Follow-up: collaboration; no early escalation or cross-team coordination"
+      ],
+      "lowerFeedback": "Lowers the bar for Adaptability at senior level. The candidate attempted to learn the analytics tool in isolation and only escalated after the campaign window closed. The quote about missing the window highlights lack of cross-team influence. No evidence of raising the bar for others or creating reusable artifacts. Biggest gap is absence of the expected senior behavior of coordinating early to protect shared deadlines."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two new hires joined right before a re-platforming. I created a two-week onboarding curriculum on the new stack and paired each with a mentor. I also adjusted sprint capacity so the team could absorb the learning curve without missing the migration date."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle any underperformance during the transition?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer struggled with the new ORM. I moved them to a simpler service first, gave targeted pair sessions, and they delivered their migration piece on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Manager: new hires + re-platforming, created onboarding curriculum and mentoring",
+        "Actions: two-week curriculum, mentor pairing, adjusted sprint capacity",
+        "Outcome: migration on date; one struggling engineer recovered via targeted support",
+        "Quote: \"I moved them to a simpler service first, gave targeted pair sessions, and they delivered their migration piece on time.\"",
+        "Follow-up: underperformance handling; described concrete re-assignment and pair sessions"
+      ],
+      "raiseFeedback": "Raises the bar for Adaptability at manager level. The candidate built a structured onboarding curriculum and mentoring system so the team could absorb a re-platform while meeting the deadline. The quote about moving the struggling engineer to a simpler service and delivering on time shows active people development. Focus on team capacity and underperformance handling matches manager scope. Biggest strength is creating leverage through process rather than individual heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team had to adopt a new deployment tool mid-quarter. I sent them the vendor docs and told them to figure it out while keeping velocity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with delivery and team morale?"
+        },
+        {
+          "role": "candidate",
+          "text": "Velocity dropped for three sprints. A couple of engineers complained they didn't have enough time to learn it properly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Manager: new deployment tool mid-quarter",
+        "Actions: sent vendor docs, instructed team to maintain velocity",
+        "Outcome: velocity dropped three sprints, morale complaints",
+        "Quote: \"A couple of engineers complained they didn't have enough time to learn it properly.\"",
+        "Follow-up: delivery and morale impact; no coaching or capacity adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar for Adaptability at manager level. The candidate delegated learning via vendor docs without adjusting team capacity or providing structure. The quote about velocity dropping for three sprints and morale issues shows failure to create team leverage. No evidence of developing people or handling the learning curve as a manager responsibility. Biggest gap is treating adaptation as an individual rather than team outcome."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When we acquired a company using a completely different tech stack, I decided we would run dual stacks for six months rather than force a rushed migration. I sponsored an internal \"integration office\" that rotated engineers across both codebases and set quarterly OKRs around knowledge transfer instead of immediate unification."
+        },
+        {
+          "role": "interviewer",
+          "text": "What long-term trade-offs did you accept and how did it affect retention?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted higher short-term infra cost but retained 85% of the acquired engineering team. Two years later the unified platform launched with original engineers still leading it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Exec: post-acquisition dual-stack decision and integration office",
+        "Actions: chose six-month dual run, sponsored rotating integration office, set knowledge-transfer OKRs",
+        "Outcome: 85% retention, original engineers led unified platform two years later",
+        "Quote: \"We accepted higher short-term infra cost but retained 85% of the acquired engineering team.\"",
+        "Follow-up: trade-offs and retention; cited 85% retention and long-term ownership"
+      ],
+      "raiseFeedback": "Raises the bar for Adaptability at exec level. The candidate made a deliberate strategic choice to run dual stacks post-acquisition and created an integration office with knowledge-transfer OKRs. The quote about accepting higher infra cost for 85% retention demonstrates long-term thinking and org-level impact. High ambiguity and focus on leverage through structure rather than speed align with exec expectations. Biggest strength is turning a forced change into sustained talent retention and platform ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the acquisition we mandated everyone move to our stack within 90 days. Many acquired engineers left and we had to hire replacements while the migration slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What signals did you miss and what would you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We underestimated how different their domain knowledge was. I would have asked for more time from the board but the integration timeline was already public."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a situation where you had to learn a new skill, tool, or domain quickly...",
+        "Exec: 90-day stack mandate post-acquisition",
+        "Actions: mandated move to own stack, no dual-run option",
+        "Outcome: many departures, migration slipped, hired replacements",
+        "Quote: \"We underestimated how different their domain knowledge was.\"",
+        "Follow-up: missed signals; admitted underestimation but pointed to board timeline"
+      ],
+      "lowerFeedback": "Lowers the bar for Adaptability at exec level. The candidate imposed a 90-day mandate without accounting for domain differences, resulting in departures and a slipped migration. The quote about underestimating domain knowledge shows limited strategic judgment on trade-offs. No evidence of creating org-level structures to absorb change. Biggest gap is prioritizing a public timeline over long-term talent and platform health."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed of learning",
+      "junior": "Learns tool in days via self-study and artifacts",
+      "senior": "Learns platform in weeks and creates cross-team reusable assets",
+      "manager": "Builds team curriculum and adjusts capacity for learning curve",
+      "exec": "Designs org structures (integration office, OKRs) to absorb multi-quarter change"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task or project deadline",
+      "senior": "Cross-team launch or shared metric",
+      "manager": "Team delivery and people development",
+      "exec": "Org retention and multi-year platform ownership"
+    },
+    {
+      "signal": "Handling ambiguity",
+      "junior": "Asks for training then iterates on feedback",
+      "senior": "Coordinates peers without waiting for permission",
+      "manager": "Reassigns work and provides targeted coaching",
+      "exec": "Chooses dual-run strategy despite public pressure"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Personal cheat sheet for future use",
+      "senior": "Script in shared repo for partner team",
+      "manager": "Mentor pairing and capacity planning",
+      "exec": "Knowledge-transfer OKRs and rotating office"
+    },
+    {
+      "signal": "Underperformance response",
+      "junior": "N/A at this level",
+      "senior": "N/A at this level",
+      "manager": "Moves engineer to simpler service with pair sessions",
+      "exec": "Accepts short-term cost to retain talent"
+    },
+    {
+      "signal": "Follow-through metric",
+      "junior": "4 hrs/wk time save",
+      "senior": "Daily to near-real-time freshness",
+      "manager": "Migration on original date",
+      "exec": "85% retention, original engineers lead two years later"
+    }
+  ],
+  "kind": "competency"
+}

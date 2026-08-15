@@ -1,0 +1,229 @@
+{
+  "question": "Tell me about a project or goal you set for yourself entirely on your own initiative.",
+  "competency": "Initiative, Drive & Proactivity",
+  "principle": "Initiative, Drive & Proactivity",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our onboarding docs were outdated so I rewrote the top 5 pages in my spare time and asked my manager for feedback before publishing them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you published?"
+        },
+        {
+          "role": "candidate",
+          "text": "New hires started using them and one told me it cut their ramp time. I updated them twice based on comments."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate spotted outdated onboarding docs and rewrote top pages independently.",
+        "Asked manager for review before publishing; iterated on feedback.",
+        "Quote: \"New hires started using them and one told me it cut their ramp time.\"",
+        "Follow-up: Impact was local but showed ownership and coachability."
+      ],
+      "raiseFeedback": "Raises the bar for junior. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate identified outdated onboarding docs and rewrote the top pages without being asked, then sought manager feedback before publishing. The story shows clear ownership of their own work and quick iteration after input. This meets junior expectations where scope is individual and results are local. Biggest strength is demonstrating they close the loop on feedback rather than stopping at the first draft.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to learn Python on my own because I thought it would be useful."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you apply it to anything at work?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not yet, I just finished the online course last month."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate chose to learn Python independently.",
+        "No work application or outcome described.",
+        "Quote: \"Not yet, I just finished the online course last month.\"",
+        "Follow-up: Probe revealed no visible impact or ownership beyond personal learning."
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate described taking an online Python course but could not connect it to any work deliverable or result. The story stays entirely personal with no evidence of applying the learning or seeking feedback. This falls short of junior expectations where even local impact should be visible. Biggest gap is lack of follow-through from learning to any observable outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw two teams duplicating effort on reporting so I built a shared dashboard and got both leads to adopt it without a mandate."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 30-minute demo showing time saved and asked each team for one change; they both started using it within a week."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate noticed cross-team duplication on reporting and built shared dashboard.",
+        "Influenced two team leads without authority; secured adoption via demo.",
+        "Quote: \"I ran a 30-minute demo showing time saved and asked each team for one change.\"",
+        "Follow-up: Clear cross-team impact and influence without authority."
+      ],
+      "raiseFeedback": "Raises the bar for senior. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate spotted duplicate reporting work across teams and proactively built a shared dashboard that both adopted. The story includes concrete influence without authority and a measurable time-saving outcome. This aligns with senior expectations of cross-team impact and driving results beyond their own team. Biggest strength is the combination of spotting the gap and securing adoption through demonstration rather than escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I started a side project to automate one of my own reports and it saved me a few hours a month."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it help anyone else?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a team meeting but no one else picked it up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate automated one personal report.",
+        "Outcome stayed individual; no broader adoption.",
+        "Quote: \"I mentioned it in a team meeting but no one else picked it up.\"",
+        "Follow-up: Probe showed limited scope and no influence on others."
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate automated one of their own reports and mentioned it in a meeting but did not drive any cross-team use. The story lacks evidence of influence without authority or broader impact. This falls short of senior expectations where initiative should extend beyond personal efficiency. Biggest gap is absence of attempts to scale the solution or engage other teams."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had no structured way to track career growth so I created a quarterly development planning process and coached every report through their first plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Retention improved and two people got promoted within six months; I later handed the process to a peer manager."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate built and ran quarterly development planning for entire team.",
+        "Coached all reports; handed off process after proving value.",
+        "Quote: \"Retention improved and two people got promoted within six months.\"",
+        "Follow-up: Shows leverage through team and raising others."
+      ],
+      "raiseFeedback": "Raises the bar for manager. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate created a development planning process and personally coached every team member through it. The story produced measurable team outcomes including promotions and improved retention before handing it off. This meets manager expectations of creating leverage and developing people. Biggest strength is the combination of building the system and ensuring it transferred to others rather than remaining dependent on the candidate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided to start 1:1s with my team because I wanted to know what they were working on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything based on those conversations?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listened but mostly kept doing what we were already doing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate started regular 1:1s on their own.",
+        "No visible changes or team-level outcomes from the effort.",
+        "Quote: \"I listened but mostly kept doing what we were already doing.\"",
+        "Follow-up: Probe revealed no development or leverage impact."
+      ],
+      "lowerFeedback": "Lowers the bar for manager. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate began holding 1:1s but did not translate the conversations into any team process or development actions. The story shows no evidence of creating leverage or improving team outcomes. This falls short of manager expectations where initiative should produce team-level results. Biggest gap is lack of follow-through from listening to driving change."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I launched an internal marketplace for unused engineering capacity after seeing we were consistently over-hiring for peaks and under-utilizing troughs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "It reduced contractor spend by 18 percent in year one and became the model for two other business units."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate identified chronic capacity mismatch and created internal marketplace.",
+        "Drove org-level change with measurable cost reduction.",
+        "Quote: \"It reduced contractor spend by 18 percent in year one and became the model for two other business units.\"",
+        "Follow-up: Long-term thinking and strategic leverage across units."
+      ],
+      "raiseFeedback": "Raises the bar for exec. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate spotted systemic capacity waste and launched an internal marketplace that cut contractor costs and spread to other units. The story demonstrates strategic judgment on a business-level problem with clear trade-offs and lasting leverage. This aligns with exec expectations of org impact and long-term thinking. Biggest strength is turning a personal observation into a repeatable model rather than a one-time fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for a new OKR framework because I thought our goal setting was too vague."
+        },
+        {
+          "role": "interviewer",
+          "text": "How widely was it adopted?"
+        },
+        {
+          "role": "candidate",
+          "text": "My team used it but it didn't spread beyond us."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a project or goal you set for yourself entirely on your own initiative.",
+        "Candidate introduced new OKR framework.",
+        "Adoption stayed limited to own team.",
+        "Quote: \"My team used it but it didn't spread beyond us.\"",
+        "Follow-up: Probe showed no org-level traction or strategic scaling."
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Competency tested is Initiative, Drive & Proactivity on the question about self-started goals. Candidate introduced an OKR framework that remained confined to their own team. The story lacks evidence of strategic judgment or business-level impact. This falls short of exec expectations where initiative must produce leverage at scale. Biggest gap is absence of efforts to drive broader adoption or measure org outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of initiative",
+      "junior": "Individual task or personal skill",
+      "senior": "Cross-team or multi-person impact",
+      "manager": "Team process or development system",
+      "exec": "Org or business model change"
+    },
+    {
+      "signal": "Evidence of follow-through",
+      "junior": "Completed and iterated on feedback",
+      "senior": "Secured adoption from others",
+      "manager": "Produced team metrics then handed off",
+      "exec": "Created repeatable model with sustained results"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asked manager for input",
+      "senior": "Demo and peer buy-in",
+      "manager": "Coached reports directly",
+      "exec": "Designed system others copied"
+    },
+    {
+      "signal": "Outcome visibility",
+      "junior": "Local efficiency or quality gain",
+      "senior": "Time saved across teams",
+      "manager": "Retention or promotion lift",
+      "exec": "Cost or capacity impact at scale"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Updated docs after launch",
+      "senior": "Asked for team input on changes",
+      "manager": "Transferred ownership to peer",
+      "exec": "Became model for other units"
+    }
+  ],
+  "kind": "competency"
+}

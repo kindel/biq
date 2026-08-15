@@ -1,0 +1,262 @@
+{
+  "question": "Describe a time when someone on your team challenged you to think differently about a problem. What was the situation? How did you respond? What was the outcome?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate pointed out I was overcomplicating a script by writing custom parsing instead of using an existing library. I had spent two days on it. They showed me the library docs during standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stopped, read the docs that afternoon, refactored in half a day, and the script ran cleaner. I asked them to review my next two changes so I wouldn't repeat the pattern."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any follow-up impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started checking the internal wiki for similar tools before starting new work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: teammate flagged custom parsing vs existing library after 2 days of work",
+        "Action: stopped, read docs same day, refactored, asked for review on next changes",
+        "Outcome: script done faster, started checking wiki before new work",
+        "Quote: \"I asked them to review my next two changes so I wouldn't repeat the pattern\"",
+        "Follow-up: Asked what changed in how they approach new tasks; candidate described checking internal tools first"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for junior level. The candidate described a teammate pointing out custom parsing after two days of work and immediately switching to the library after reading the docs. They then asked for review on the next two tasks to avoid repeating the mistake. This shows quick adoption of feedback on an individual task with a small process change afterward. The story stays within individual scope, which matches expectations. Biggest strength is the direct follow-through on the suggested approach rather than defending the original code.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A teammate said I should have used a library instead of writing my own parser. I explained why my approach was more tailored to our exact data format."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try the library?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at it briefly but the examples didn't match our edge cases so I kept what I had. It worked in the end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: teammate suggested library over custom parser",
+        "Action: explained why custom was better, looked at examples briefly",
+        "Outcome: kept original approach, said it worked",
+        "Quote: \"the examples didn't match our edge cases so I kept what I had\"",
+        "Follow-up: Asked if any later change happened; candidate said no further adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for junior level. The candidate received a direct suggestion to use an existing library but chose to keep the custom parser after a brief look because examples did not match edge cases. No change in approach or process followed. The outcome stayed limited to completing the original task without incorporating the input. Biggest gap is absence of any demonstrated openness to adjust based on the challenge."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer from another team questioned why we were building a new retry mechanism instead of extending the shared client library. I had scoped it as a two-week project for our service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a 30-minute sync, walked through our requirements, and they showed two extension points I had missed. We landed on a three-day change to the shared library plus a small adapter in our service."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Saved the team roughly a week and the change was adopted by two other services within a month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: peer challenged new retry mechanism vs extending shared client library",
+        "Action: scheduled sync, reviewed requirements, incorporated extension points",
+        "Outcome: reduced scope from two weeks to three days plus adapter; adopted by two other services",
+        "Quote: \"Saved the team roughly a week\"",
+        "Follow-up: Asked about influence without authority; candidate described documenting the adapter for reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for senior level. The candidate accepted a cross-team challenge on a retry mechanism, held a short sync, and shifted to extending the shared library after seeing missed extension points. Scope dropped from two weeks to three days plus a small adapter, with later adoption by two other services. This demonstrates influence without authority and cross-team leverage. Biggest strength is converting the challenge into a reusable improvement rather than defending the original two-week plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone from platform suggested we extend the shared client instead of building our own retry logic. I explained our timeline and kept the original plan because the shared library changes would require coordination."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you explore the extension points?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed the code but decided the coordination overhead was too high for our sprint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: platform peer suggested extending shared client library",
+        "Action: reviewed code, cited coordination cost, kept original plan",
+        "Outcome: delivered on original two-week timeline",
+        "Quote: \"the coordination overhead was too high for our sprint\"",
+        "Follow-up: Asked about later reflection; candidate said they did not revisit the decision"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for senior level. The candidate received a suggestion to extend the shared library but rejected it due to coordination overhead without testing the extension points. The original two-week plan stayed in place. No cross-team impact or reuse resulted. Biggest gap is treating the challenge as a timeline risk instead of an opportunity to simplify and influence shared infrastructure."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My engineer proposed a different rollout strategy for a feature after seeing data that our initial A/B test assumptions were off. I had approved the original plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked them to present the data in the next team meeting and had the team re-scope the rollout in two days. I updated the stakeholder update to reflect the change and noted the engineer's contribution."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team benefit?"
+        },
+        {
+          "role": "candidate",
+          "text": "The revised rollout reduced risk and two other engineers later referenced the same data pattern in their planning."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: engineer flagged flawed A/B assumptions after manager-approved plan",
+        "Action: had engineer present data, re-scoped rollout as team, updated stakeholders",
+        "Outcome: lower-risk rollout; two other engineers adopted the pattern",
+        "Quote: \"two other engineers later referenced the same data pattern in their planning\"",
+        "Follow-up: Asked how they handle underperformance on curiosity; candidate described coaching a different engineer to surface data earlier"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for manager level. The candidate's engineer challenged an approved rollout after spotting flawed assumptions and the manager had the engineer present the data to the full team. The team re-scoped in two days, the manager updated stakeholders, and two other engineers later used the same pattern. This shows creating leverage through the team and raising the bar on data-driven decisions. Biggest strength is publicly crediting the challenge and embedding the new approach into team planning.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "An engineer questioned our rollout plan based on early data. I thanked them and said we would stick with the approved approach to avoid delaying the launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team discuss the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "We noted it in the retro but kept the original timeline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: engineer raised concern on rollout assumptions",
+        "Action: thanked engineer, kept original plan for timeline reasons",
+        "Outcome: launched on schedule; data noted only in retro",
+        "Quote: \"we would stick with the approved approach to avoid delaying the launch\"",
+        "Follow-up: Asked about team learning; candidate said no further process change was made"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for manager level. The candidate received a data-based challenge to an approved rollout but maintained the original plan to protect the timeline. The concern was only captured in the retro with no team re-scoping or shared learning. No evidence of developing the team's habit of surfacing contrary data. Biggest gap is prioritizing schedule over incorporating the input and failing to turn the challenge into team leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A director on another org questioned our multi-year platform investment thesis after seeing early customer adoption data that contradicted our original TAM assumptions. I had presented the plan to the leadership team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked them to join the next exec review, had my team model three alternative investment levels using the new data, and recommended shifting 30% of the budget to a narrower set of use cases. The CEO approved the adjusted plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The revised thesis became the basis for the next annual planning cycle and prevented overcommitment on low-adoption areas."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: director challenged multi-year platform thesis with contradicting adoption data",
+        "Action: invited to exec review, modeled three investment alternatives, recommended 30% budget shift",
+        "Outcome: CEO approved adjusted plan; became basis for next annual planning",
+        "Quote: \"prevented overcommitment on low-adoption areas\"",
+        "Follow-up: Asked about strategic judgment under ambiguity; candidate described updating the three-year roadmap with explicit kill criteria"
+      ],
+      "raiseFeedback": "Raises the bar on Learn and Be Curious for exec level. The candidate received a challenge from another director on a multi-year platform investment thesis based on new adoption data. They brought the challenger into the exec review, modeled three alternatives, and shifted 30% of budget to higher-adoption use cases. The adjusted thesis was adopted for the next annual planning cycle. This reflects strategic judgment and long-term leverage at org scale. Biggest strength is converting external input into a durable planning change rather than defending the original TAM assumptions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer exec raised concerns that our platform investment assumptions no longer matched early data. I acknowledged the point and said the current plan had already been locked with the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was any modeling redone?"
+        },
+        {
+          "role": "candidate",
+          "text": "We captured the feedback for the next board update but did not change the committed investment levels."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a time when someone on your team challenged you to think differently about a problem.",
+        "Situation: peer exec challenged platform investment assumptions with new data",
+        "Action: acknowledged point, cited locked board plan",
+        "Outcome: no change to investment levels; feedback deferred to next update",
+        "Quote: \"the current plan had already been locked with the board\"",
+        "Follow-up: Asked about long-term trade-offs; candidate said the original roadmap stayed intact"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn and Be Curious for exec level. The candidate received a data-driven challenge to a multi-year investment thesis but maintained the locked board plan without re-modeling alternatives. Feedback was noted for a future update with no shift in resource allocation. No evidence of adjusting strategic direction based on new information. Biggest gap is treating the challenge as an input to capture rather than an opportunity to revise org-level commitments."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Openness to input that contradicts own plan",
+      "junior": "Immediately tested the library suggestion on their task",
+      "senior": "Shifted scope after reviewing extension points with peer",
+      "manager": "Had team re-scope rollout after engineer surfaced data",
+      "exec": "Modeled alternatives and shifted 30% budget after director input"
+    },
+    {
+      "signal": "Evidence of lasting behavior change",
+      "junior": "Started checking internal wiki before new work",
+      "senior": "Documented adapter for cross-service reuse",
+      "manager": "Two other engineers adopted the data pattern in planning",
+      "exec": "Revised thesis became basis for next annual planning cycle"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task completion and small personal process tweak",
+      "senior": "Cross-team reuse and week of time saved",
+      "manager": "Team-level risk reduction and shared planning habit",
+      "exec": "Org-level budget reallocation and multi-year roadmap update"
+    },
+    {
+      "signal": "Handling of pushback or coordination cost",
+      "junior": "Asked teammate for review on next changes",
+      "senior": "Chose three-day shared change over isolated two-week build",
+      "manager": "Publicly credited engineer and updated stakeholders",
+      "exec": "Brought challenger into exec review instead of defending original thesis"
+    }
+  ],
+  "kind": "lp"
+}

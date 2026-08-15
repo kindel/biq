@@ -1,0 +1,244 @@
+{
+  "question": "Tell me about a time when you felt your team was not moving to action quickly enough. What was the situation? What did you do? What was the outcome? Would you have done anything differently?",
+  "competency": "Bias for Action",
+  "principle": "Bias for Action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project after onboarding, the team kept debating the right test framework for two weeks instead of shipping a basic prototype. I flagged the delay in our daily sync, proposed we pick one framework and iterate, then volunteered to set up the initial test harness that afternoon."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you set it up?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had a working smoke test by end of week. The team moved faster on the next two features. I would have looped in the tech lead earlier instead of waiting for the next retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: two-week debate on test framework, no prototype shipped",
+        "- Action: flagged in sync, proposed pick-one-and-iterate, built initial harness same day",
+        "- Outcome: smoke test live by Friday, next features unblocked",
+        "- Quote: \"I would have looped in the tech lead earlier instead of waiting for the next retro\"",
+        "Follow-up: What happened after you set it up? Candidate described concrete next-day progress"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a junior. The candidate identified a local stall, took individual ownership by building the harness, and delivered a measurable unblock within days. The reflection shows coachability. Story stays within individual scope with no overclaim on team influence.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was slow deciding on the test framework. I mentioned it in a retro a few weeks later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you take any steps before the retro?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured the lead would handle it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: prolonged framework debate",
+        "- Action: only raised at retro weeks later",
+        "- Outcome: no personal follow-through described",
+        "- Quote: \"I figured the lead would handle it\"",
+        "Follow-up: Did you take any steps before the retro? Candidate deferred entirely"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate waited for a retro instead of acting and showed no ownership when the delay was visible. This signals weak Bias for Action at the junior level where we expect individuals to unblock their own work quickly."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams were stuck in design-review loops on a shared auth migration, risking a Q3 customer deadline. I pulled the leads into a 30-minute working session, proposed a thin vertical slice we could ship in two weeks, and created a shared tracking doc with clear owners."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the slice would unblock both teams' dependent work and got verbal commits in the meeting. We shipped the slice on time and the full migration moved two weeks ahead of the original plan. I would have documented the decision in email the same day for the skip-levels."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: cross-team auth migration stalled in design reviews, Q3 deadline at risk",
+        "- Action: convened leads, proposed vertical slice, created shared tracker with owners",
+        "- Outcome: slice shipped in two weeks, migration advanced two weeks",
+        "- Quote: \"I would have documented the decision in email the same day for the skip-levels\"",
+        "Follow-up: How did you get buy-in across teams? Candidate used concrete evidence of downstream impact"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used influence without authority to create a cross-team decision mechanism and produced a clear metric (two-week acceleration). Reflection is specific and shows awareness of documentation needs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The auth migration was dragging. I sent a Slack message to the other team asking if they needed help."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the response and what changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "They said they were busy. We ended up shipping late."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: cross-team migration delayed",
+        "- Action: one Slack message offering help",
+        "- Outcome: no acceleration, shipped late",
+        "- Quote: \"They said they were busy. We ended up shipping late\"",
+        "Follow-up: What was the response and what changed? Candidate had no follow-up mechanism"
+      ],
+      "lowerFeedback": "Lowers the bar. A single low-effort message with no escalation path or structural change shows insufficient senior-level bias for action when cross-team coordination is required."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was spending excessive time on upfront design docs for every feature, slowing delivery. I set a two-day timebox for initial design, required a working prototype before further review, and coached two engineers on how to run quick stakeholder syncs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond and what were the results?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers initially pushed back, so I paired with them on the first prototype. Velocity increased 30% over the next quarter and we reduced design-doc churn by half. I would have measured the time spent on docs before making the change so the data was visible to the team."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: excessive upfront design slowing delivery",
+        "- Action: imposed two-day timebox, mandated prototype-first, coached two engineers",
+        "- Outcome: 30% velocity lift, halved design churn; handled pushback with pairing",
+        "- Quote: \"I would have measured the time spent on docs before making the change\"",
+        "Follow-up: How did the team respond and what were the results? Candidate addressed underperformance through direct coaching"
+      ],
+      "raiseFeedback": "Raises the bar for manager. The story shows creating team-level process leverage, handling resistance, and delivering a quantified outcome. The reflection focuses on better data use to drive adoption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team was slow because they over-designed. I told them to move faster in a team meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not much. I think they needed more direction from me on the process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: over-design slowing delivery",
+        "- Action: told team to move faster in meeting",
+        "- Outcome: no visible change",
+        "- Quote: \"I think they needed more direction from me on the process\"",
+        "Follow-up: What changed after that? Candidate showed no coaching or process change"
+      ],
+      "lowerFeedback": "Lowers the bar. Issuing a directive without follow-up mechanisms or coaching indicates weak manager-level bias for action and poor leverage through the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was six months into a platform rewrite with no production traffic and mounting business pressure. I canceled the remaining big-bang work, carved out a narrow customer-facing slice, and reassigned two teams to ship it in eight weeks while the rest of the org continued the long-term effort."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage the trade-offs and stakeholder reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the revenue risk of continued delay to the leadership team and got explicit sign-off. The slice went live in seven weeks, generated early usage data, and gave the broader rewrite clearer prioritization. I would have involved finance earlier to quantify the opportunity cost."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: six-month platform rewrite with zero production traffic and business pressure",
+        "- Action: canceled big-bang, carved narrow slice, reassigned teams, secured leadership sign-off",
+        "- Outcome: slice live in seven weeks, produced usage data and clearer priorities",
+        "- Quote: \"I would have involved finance earlier to quantify the opportunity cost\"",
+        "Follow-up: How did you manage the trade-offs and stakeholder reaction? Candidate showed org-level judgment and explicit trade-off communication"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made a high-ambiguity strategic call that traded long-term purity for near-term leverage, secured alignment at the leadership level, and generated measurable business signal. Reflection is appropriately scoped to cross-org coordination.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The rewrite was taking too long so I asked the teams to prioritize better."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural change did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I left the teams to figure it out and checked in monthly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time when you felt your team was not moving to action quickly enough...",
+        "- Situation: prolonged rewrite with no production impact",
+        "- Action: asked teams to prioritize better, monthly check-ins",
+        "- Outcome: no reallocation or scope change described",
+        "- Quote: \"I left the teams to figure it out and checked in monthly\"",
+        "Follow-up: What structural change did you make? Candidate delegated without providing direction or removing blockers"
+      ],
+      "lowerFeedback": "Lowers the bar. Monthly check-ins without scope decisions or resource reallocation show insufficient exec-level bias for action in a high-ambiguity, org-impacting situation."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed of personal intervention",
+      "junior": "Raises when candidate acts within days on visible local stall",
+      "senior": "Raises when candidate creates cross-team mechanism within a week",
+      "manager": "Raises when candidate changes team process and coaches within a sprint",
+      "exec": "Raises when candidate makes org-scope scope decision in days"
+    },
+    {
+      "signal": "Use of data or metrics to drive action",
+      "junior": "Raises with simple before/after outcome (e.g., smoke test shipped)",
+      "senior": "Raises with acceleration metric (weeks saved) and cross-team visibility",
+      "manager": "Raises with team velocity or churn reduction numbers",
+      "exec": "Raises with revenue or customer-usage signal tied to decision"
+    },
+    {
+      "signal": "Handling resistance or pushback",
+      "junior": "Raises with willingness to loop in senior for support",
+      "senior": "Raises with evidence-based working session to gain commits",
+      "manager": "Raises with direct coaching and pairing to overcome resistance",
+      "exec": "Raises with explicit leadership alignment and trade-off communication"
+    },
+    {
+      "signal": "Reflection and learning",
+      "junior": "Raises with specific, low-scope improvement (e.g., involve lead sooner)",
+      "senior": "Raises with documentation or communication improvement",
+      "manager": "Raises with measurement of change impact",
+      "exec": "Raises with earlier involvement of finance or other org functions"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task unblock",
+      "senior": "Cross-team coordination",
+      "manager": "Team process and coaching",
+      "exec": "Org-level scope and resource reallocation"
+    },
+    {
+      "signal": "Escalation vs. direct action",
+      "junior": "Raises when candidate acts first then escalates if needed",
+      "senior": "Raises when candidate uses influence before formal escalation",
+      "manager": "Raises when candidate removes team-level blockers directly",
+      "exec": "Raises when candidate makes decision and secures alignment in one step"
+    }
+  ],
+  "kind": "lp"
+}

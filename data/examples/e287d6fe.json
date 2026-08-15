@@ -1,0 +1,233 @@
+{
+  "question": "Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+  "competency": "Teamwork & Collaboration",
+  "principle": "Teamwork & Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a feature launch, my teammate was stuck on API integration tests. I spent two afternoons pairing with them to fix flaky tests even though my own UI work was due the same week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for their work and yours?"
+        },
+        {
+          "role": "candidate",
+          "text": "Their tests passed in time for the release. I finished my UI two days late but the PM accepted it because the integration risk was higher. My manager noted it in my review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Role: new grad on 4-person feature team; helped peer unblock API tests",
+        "Action: paired two afternoons, shared test patterns learned from prior project",
+        "Outcome: peer\u2019s tests green, own UI slipped 2 days but accepted; noted by manager",
+        "Quote: \"I finished my UI two days late but the PM accepted it because the integration risk was higher.\"",
+        "Follow-up: Asked about trade-off; candidate said they checked with lead first and documented the help"
+      ],
+      "raiseFeedback": "Raises the bar for Teamwork & Collaboration on the given question. Junior candidate described helping a peer finish API tests by pairing two afternoons while their own UI work slipped two days. They checked with the lead first and the PM accepted the delay because integration risk was higher. This shows appropriate scope for 0-2 years: local ownership plus willingness to trade personal delivery for team outcome. The concrete follow-up on the trade-off decision adds credibility. Biggest strength is clear coachability signal without claiming credit for the other person\u2019s feature.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I finished my part of the dashboard ahead of schedule and the project went live on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you contribute to anyone else\u2019s success?"
+        },
+        {
+          "role": "candidate",
+          "text": "I answered a couple Slack questions when people asked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Candidate stayed focused on own dashboard work; only mentioned answering Slack questions",
+        "No evidence of proactive help or trade-off",
+        "Outcome described only as \"project went live on time\"",
+        "Follow-up: Pressed on what the questions were; candidate said they were minor clarifications about their own code"
+      ],
+      "lowerFeedback": "Lowers the bar for Teamwork & Collaboration on the given question. Junior candidate described finishing their dashboard early and answering a couple Slack questions about their own code. No story of adjusting personal priorities or unblocking someone else\u2019s deliverable. At junior level we expect at least one example of trading personal velocity for team outcome when asked directly. The answer stays strictly inside individual scope with no evidence of coachability or collaboration beyond minimal response. Main gap is absence of any concrete help that changed another person\u2019s result."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The payments team was two weeks behind on a compliance change that blocked our checkout launch. I joined their standups, reviewed their PRs, and wrote the retry logic they were missing while still shipping my search improvements."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Payments hit their date, checkout launched on schedule, and two of their engineers later reused the retry pattern. My search work shipped one sprint later but with no customer impact."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Senior IC helped payments team unblock compliance change",
+        "Actions: joined standups, reviewed PRs, wrote missing retry logic",
+        "Outcome: payments on time, checkout launched, pattern reused; own search slipped one sprint",
+        "Quote: \"My search work shipped one sprint later but with no customer impact.\"",
+        "Follow-up: Confirmed influence without authority; candidate had no formal role on payments team"
+      ],
+      "raiseFeedback": "Raises the bar for Teamwork & Collaboration on the given question. Senior candidate joined a different team\u2019s standups, reviewed PRs, and wrote retry logic that unblocked their compliance change, allowing checkout to launch on time. Their own search work slipped one sprint with no customer impact. This demonstrates expected senior scope: cross-team influence without authority and clear metric (on-time launch). The reuse of the retry pattern by the other team shows lasting leverage. Biggest strength is the explicit trade-off decision and measurable result for another team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I gave the payments team some advice in a meeting about their compliance work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that change their timeline or outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they still missed the date and we delayed checkout."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Candidate offered advice in one meeting to payments team",
+        "No follow-through or ownership of outcome",
+        "Result: payments missed date, checkout delayed",
+        "Follow-up: Asked for specifics of advice; candidate could not recall details or any action taken"
+      ],
+      "lowerFeedback": "Lowers the bar for Teamwork & Collaboration on the given question. Senior candidate described giving advice in one meeting to the payments team, after which the team still missed their date and checkout was delayed. At senior level we expect evidence of sustained influence without authority and a concrete change in another team\u2019s result. The story shows no follow-through and no ownership of the shared outcome. Main gap is lack of any measurable contribution or willingness to adjust personal deliverables to help the other team succeed."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team\u2019s roadmap was full but the infra team was short on capacity for a critical migration. I loaned one engineer for three weeks, adjusted our sprint goals, and personally reviewed the migration design so their on-call load dropped."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the impact on your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deprioritized two nice-to-have features. The loaned engineer came back with new skills and the infra team\u2019s migration succeeded two weeks early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Manager loaned engineer to infra team for migration",
+        "Actions: adjusted sprint goals, reviewed design, accepted feature deprioritization",
+        "Outcome: migration two weeks early, loaned engineer gained skills",
+        "Quote: \"We deprioritized two nice-to-have features.\"",
+        "Follow-up: Confirmed team outcome ownership; candidate tracked both teams\u2019 metrics"
+      ],
+      "raiseFeedback": "Raises the bar for Teamwork & Collaboration on the given question. Manager candidate loaned an engineer for three weeks to an understaffed infra team, adjusted their own sprint goals, and reviewed the migration design. The migration finished two weeks early and the loaned engineer returned with new skills. This matches manager expectations: creating leverage for another team while owning the trade-off on their own roadmap. The explicit deprioritization of two features shows clear team-level decision making. Biggest strength is the dual outcome tracking for both teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the infra team they could ask my engineers questions if they needed help."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any of your team actually spend time on their work?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of quick Slack answers, but we kept our roadmap intact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Manager offered availability but did not reallocate resources",
+        "No change to own team\u2019s roadmap or goals",
+        "Outcome: infra team received only quick answers",
+        "Follow-up: Asked about any actual time spent; candidate confirmed no meaningful reallocation"
+      ],
+      "lowerFeedback": "Lowers the bar for Teamwork & Collaboration on the given question. Manager candidate told the infra team they could ask questions but made no resource trade-off and kept their own roadmap intact. At manager level we expect the candidate to create leverage for other teams by adjusting their team\u2019s priorities when needed. The answer shows no willingness to absorb cost on behalf of another team\u2019s success. Main gap is absence of any team-level decision or outcome ownership beyond offering availability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two business units were competing for the same platform resources and both roadmaps were at risk. I redirected two platform teams to a shared foundation layer, delayed one non-critical product launch by a quarter, and created a joint governance model that both VPs signed off on."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both units hit their annual targets, platform utilization rose 40%, and the governance model was adopted by three additional teams the following year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Exec redirected platform teams and delayed a launch to resolve resource conflict between two BUs",
+        "Actions: created joint governance, accepted launch delay",
+        "Outcome: both BUs hit annual targets, platform utilization +40%, model scaled to three more teams",
+        "Quote: \"Both units hit their annual targets, platform utilization rose 40%.\"",
+        "Follow-up: Confirmed strategic trade-off; candidate owned the one-quarter delay decision"
+      ],
+      "raiseFeedback": "Raises the bar for Teamwork & Collaboration on the given question. Exec candidate redirected two platform teams to a shared foundation, delayed one product launch by a quarter, and established joint governance that allowed two competing business units to both hit their annual targets. Platform utilization rose 40% and the model later scaled to three additional teams. This demonstrates executive scope: org-level resource trade-offs and long-term leverage through governance. The concrete metrics and multi-year adoption show strategic judgment. Biggest strength is owning a visible delay to enable broader organizational success.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged the two business units to coordinate better on platform requests."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any resource allocation or timelines?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I left that to the teams below me."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Describe a project where you contributed to someone else\u2019s success rather than focusing primarily on your own deliverables.",
+        "Exec encouraged coordination but made no resource or timeline changes",
+        "No ownership of cross-BU conflict resolution",
+        "Outcome: no reported change in delivery or utilization",
+        "Follow-up: Asked about any decisions made at exec level; candidate deferred entirely to lower teams"
+      ],
+      "lowerFeedback": "Lowers the bar for Teamwork & Collaboration on the given question. Exec candidate encouraged two business units to coordinate but made no resource allocation or timeline decisions. At executive level we expect the candidate to make visible org-level trade-offs that enable multiple teams to succeed. The answer shows complete delegation without personal ownership of the conflict or its resolution. Main gap is absence of any strategic leverage or measurable cross-organizational outcome."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of contribution",
+      "junior": "Local pairing or code help",
+      "senior": "Cross-team PRs and patterns",
+      "manager": "Resource reallocation across teams",
+      "exec": "Org-wide governance and launch delays"
+    },
+    {
+      "signal": "Willingness to trade personal/team deliverables",
+      "junior": "Accept 2-day slip on own task",
+      "senior": "Slip one sprint with no customer impact",
+      "manager": "Deprioritize two features",
+      "exec": "Delay product launch one quarter"
+    },
+    {
+      "signal": "Evidence of lasting impact",
+      "junior": "Peer\u2019s tests passed",
+      "senior": "Pattern reused by other team",
+      "manager": "Engineer returned with new skills",
+      "exec": "Model adopted by three additional teams"
+    },
+    {
+      "signal": "Ownership of trade-off decision",
+      "junior": "Checked with lead first",
+      "senior": "No formal authority but joined standups",
+      "manager": "Adjusted sprint goals explicitly",
+      "exec": "Personally signed off on governance model"
+    },
+    {
+      "signal": "Metric clarity",
+      "junior": "Tests green, noted in review",
+      "senior": "Checkout on time, utilization implied",
+      "manager": "Migration two weeks early",
+      "exec": "+40% platform utilization, both BUs hit targets"
+    }
+  ],
+  "kind": "competency"
+}

@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+  "competency": "Insist on the Highest Standards",
+  "principle": "Insist on the Highest Standards",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed our test coverage was at 40% and the team was okay shipping with that. I wrote additional unit tests for the core paths and asked my mentor to review them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you added the tests?"
+        },
+        {
+          "role": "candidate",
+          "text": "Coverage went to 78%. My manager asked me to document the approach so the next intern could follow it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: first project, team accepted 40% coverage",
+        "Action: wrote tests for core paths, asked mentor to review",
+        "Outcome: coverage to 78%, asked to document for next intern",
+        "Quote: 'I just added the tests and showed the diff in standup'",
+        "Follow-up: Asked what happened after; candidate described manager requesting documentation"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Junior candidate described noticing 40% coverage on their first project and adding tests for core paths without being asked, lifting coverage to 78%. The concrete outcome was the manager requesting the approach be documented for the next intern. This shows individual ownership and learning from feedback rather than waiting for direction. The story stays within individual scope, which is appropriate for the level. Biggest strength is the follow-through that produced a reusable artifact instead of stopping at personal contribution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought the code reviews were too loose so I started leaving more comments."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team change their review standards?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, people just stopped asking me for reviews."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: felt code reviews were loose",
+        "Action: left more comments in reviews",
+        "Outcome: people stopped asking for reviews, no standard change",
+        "Quote: 'I just left more comments'",
+        "Follow-up: Asked if standards changed; candidate admitted no change and withdrawal"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The candidate identified loose reviews but responded only by increasing comment volume, which resulted in teammates avoiding their reviews rather than raising quality. No evidence of ownership to improve the actual process or seeking feedback on their approach. The outcome stayed negative and local. Biggest gap is lack of any attempt to understand team constraints or propose a concrete improvement that could be adopted."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service had p99 latency at 800ms and the team treated it as acceptable. I instrumented the hot path, found the DB call was the bottleneck, and proposed a caching layer with a two-week experiment."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran the experiment on 5% traffic first, showed 40% p99 drop, then rolled out after the other teams using the service signed off."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: 800ms p99 treated as acceptable",
+        "Action: instrumented path, proposed caching experiment on 5% traffic",
+        "Outcome: 40% p99 reduction, cross-team sign-off before full rollout",
+        "Quote: 'I showed the data from the limited experiment'",
+        "Follow-up: Asked how buy-in was achieved; candidate described staged rollout and cross-team approval"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Senior candidate identified 800ms p99 as unacceptable, instrumented the path, and ran a controlled 5% experiment that delivered 40% improvement before seeking broader adoption. The approach included cross-team coordination and data-driven validation rather than unilateral change. Story demonstrates influence without authority and measurable impact. Biggest strength is the staged rollout that converted skeptics with evidence instead of mandate.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept pushing the team to add more monitoring until they got tired of the requests."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did monitoring actually improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a few dashboards but no one looked at them after the first week."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: wanted better monitoring",
+        "Action: repeatedly requested more dashboards",
+        "Outcome: dashboards added but ignored after one week",
+        "Quote: 'I kept pushing until they added them'",
+        "Follow-up: Asked if monitoring improved; candidate confirmed low adoption"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The candidate repeatedly requested more monitoring but produced dashboards that saw no ongoing use. No attempt to understand why the team viewed current visibility as sufficient or to tie the request to a specific customer or operational pain. Outcome shows persistence without leverage. Biggest gap is absence of any experiment or data that would have made the higher standard compelling to others."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was shipping features with known edge-case bugs because 'customers rarely hit them.' I added a definition of done that required documented test cases for those edges and coached two engineers through writing them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Velocity dropped 15% for two sprints then recovered; bug escapes in that area went to zero and the team started suggesting their own edge cases."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: team accepted known edge-case bugs",
+        "Action: added definition of done requiring documented test cases, coached two engineers",
+        "Outcome: 15% velocity dip then recovery, zero bug escapes, team began suggesting own cases",
+        "Quote: 'I made the bar explicit and coached through the first two'",
+        "Follow-up: Asked about team response; candidate described temporary slowdown followed by ownership shift"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Manager candidate introduced an explicit definition of done for edge-case coverage and personally coached two engineers, accepting a temporary 15% velocity drop. The result was zero escapes in that category and the team proactively suggesting additional cases. Story shows development of people and creation of team leverage rather than heroics. Biggest strength is turning a one-time standard into ongoing team behavior.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team we needed fewer bugs and put it in the performance review doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the number of bugs change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but I could point to the expectation during reviews."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: too many bugs",
+        "Action: stated expectation and documented in review materials",
+        "Outcome: no measurable change in bug rate",
+        "Quote: 'I put it in the performance review doc'",
+        "Follow-up: Asked if bugs decreased; candidate admitted no change"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The manager candidate communicated a desire for fewer bugs by adding language to review documents but produced no observable improvement. No coaching, process change, or measurement was introduced. Outcome remained unchanged while the manager relied on documentation for later accountability conversations. Biggest gap is treating the standard as a written expectation rather than something the team was helped to achieve."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The org was prioritizing speed to market and accepting 3% monthly customer-impacting incidents. I set a new target of 0.5% and reallocated two platform teams to build self-service tooling that caught issues pre-prod."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two revenue features by a quarter. Incident rate dropped to 0.6% within six months and the tooling became a selling point for enterprise customers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: org accepted 3% monthly incidents for speed",
+        "Action: set 0.5% target, reallocated two platform teams to pre-prod tooling",
+        "Outcome: 0.6% rate in six months, tooling became enterprise selling point",
+        "Quote: 'I traded two features for the tooling investment'",
+        "Follow-up: Asked about trade-offs; candidate described delaying revenue features and long-term customer benefit"
+      ],
+      "raiseFeedback": "Raises the bar for Insist on the Highest Standards. Executive candidate shifted an organization from accepting 3% monthly incidents to a 0.5% target by reallocating two platform teams and accepting a one-quarter delay on revenue features. The result was 0.6% incidents plus new enterprise differentiation. Story demonstrates strategic judgment and long-term leverage over short-term heroics. Biggest strength is converting a quality investment into a business advantage rather than a cost center.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent a note to all hands saying quality was now our top priority."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did incident rates move?"
+        },
+        {
+          "role": "candidate",
+          "text": "They stayed flat; teams continued shipping at the same pace."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your standards were higher than the team's standards. What did you do? What was the outcome?",
+        "Situation: high incident tolerance",
+        "Action: sent all-hands note declaring quality top priority",
+        "Outcome: incident rates unchanged, pace unchanged",
+        "Quote: 'I sent the note to the whole org'",
+        "Follow-up: Asked if rates moved; candidate confirmed no change"
+      ],
+      "lowerFeedback": "Lowers the bar for Insist on the Highest Standards. The executive candidate issued an all-hands communication elevating quality but triggered no measurable reduction in incidents. No resource reallocation, target setting, or process change accompanied the message. Outcome shows communication without follow-through or trade-off decisions. Biggest gap is reliance on a single broadcast rather than structural changes that would enforce the new standard."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual code or test changes",
+      "senior": "Cross-team experiment with data",
+      "manager": "Team process and coaching",
+      "exec": "Org-wide resource shift and business trade-off"
+    },
+    {
+      "signal": "How standard was raised",
+      "junior": "Added tests and asked for review",
+      "senior": "Ran controlled experiment then scaled",
+      "manager": "Defined done, coached engineers",
+      "exec": "Reallocated teams and accepted feature delay"
+    },
+    {
+      "signal": "Evidence of outcome",
+      "junior": "Coverage metric + documentation request",
+      "senior": "40% latency drop + cross-team sign-off",
+      "manager": "Zero escapes + team ownership shift",
+      "exec": "Incident rate drop + new revenue angle"
+    },
+    {
+      "signal": "Response to resistance",
+      "junior": "Sought mentor input",
+      "senior": "Used staged data to convince",
+      "manager": "Accepted temporary velocity cost",
+      "exec": "Explicitly traded features for quality"
+    },
+    {
+      "signal": "Long-term effect",
+      "junior": "Reusable artifact for next person",
+      "senior": "Adopted by dependent teams",
+      "manager": "Team began suggesting own improvements",
+      "exec": "Tooling became customer differentiator"
+    }
+  ],
+  "kind": "lp"
+}

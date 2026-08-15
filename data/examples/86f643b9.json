@@ -1,0 +1,237 @@
+{
+  "question": "Walk me through a big problem or issue in your organization that you helped to solve. How did you become aware of it? What information did you gather? What information was missing and how did you fill the gaps? Did you do a reflection at the conclusion of the project? If so, what did you learn?",
+  "competency": "Dive Deep (root cause analysis, data-driven decisions)",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our checkout page had a 12% drop in conversion after a deploy. I started by looking at the error logs and saw increased 500s on the payment service. I pulled the last week of CloudWatch metrics and compared success rates before and after the change."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was missing?"
+        },
+        {
+          "role": "candidate",
+          "text": "The deploy touched three services so I couldn't tell which one caused it. I asked the owning team for their recent changes and reproduced the issue locally with the exact payload from logs. After fixing the null handling, we added a unit test. At the end my manager and I reviewed the incident and I learned to always check downstream dependencies before merging."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a big problem...",
+        "Noticed checkout conversion drop post-deploy via dashboard alert",
+        "Gathered: error logs, CloudWatch metrics, before/after comparison",
+        "Missing: which service change caused it; filled via cross-team chat + local repro",
+        "Quote: 'I learned to always check downstream dependencies before merging'",
+        "Follow-up: Reflection? Yes, post-incident review with manager on dependency checks"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at junior level. The candidate described becoming aware through a metric drop, gathering logs and metrics, identifying the missing cross-service context, and closing the gap with reproduction and teammate input. The reflection quote shows they internalized a concrete process change. This stays within individual scope but demonstrates ownership and coachability through the review step. Biggest strength is the explicit loop from data to gap-filling to documented learning.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a bug where users couldn't save their profile. My manager told me to fix it so I looked at the code for an hour and changed a few lines until it worked."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you look at?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't pull any metrics or logs, just read the file. We didn't do a formal review afterward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a big problem...",
+        "Became aware only because manager assigned the ticket",
+        "Gathered: none beyond reading source code",
+        "Missing: no metrics, logs, or reproduction steps mentioned",
+        "Quote: 'I didn't pull any metrics or logs'",
+        "Follow-up: Reflection? No formal review done"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at junior level. Awareness came solely from assignment rather than observation, with no evidence of data gathering or gap identification. The fix was described as trial-and-error without metrics or reproduction. Absence of any reflection step shows limited learning orientation. The story remains purely local with no indication of coachability on process."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Latency in our recommendation service was spiking during peak hours and affecting two downstream teams. I pulled p99 latency, CPU, and cache hit rates across the last month and correlated with traffic patterns. The missing piece was whether the issue was in our model inference or the shared cache layer."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you close that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I instrumented additional tracing on the cache calls and ran a controlled experiment disabling the new feature flag. After the fix we ran a retro with the two affected teams and documented the cache sizing rule we missed. I now require that any new model change includes a load test against the shared cache."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a big problem...",
+        "Aware via cross-team escalation on recommendation latency spikes",
+        "Gathered: p99, CPU, cache metrics over 30 days + traffic correlation",
+        "Missing: cache vs inference root cause; filled with new tracing + experiment",
+        "Quote: 'I now require that any new model change includes a load test'",
+        "Follow-up: Reflection? Cross-team retro produced documented rule"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at senior level. The candidate surfaced a cross-team issue through metrics correlation, explicitly called out the information gap, and closed it with targeted instrumentation and an experiment. The reflection produced an enforceable process change that affected future work. Influence without authority is visible in the multi-team retro outcome. Biggest strength is turning the root-cause finding into a lasting guardrail.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The recommendation service was slow so I added more instances and the alerts went away. I didn't have time to dig into the cache metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve the other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just fixed it for my service and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a big problem...",
+        "Aware via alert, responded with scale-up only",
+        "Gathered: minimal, skipped cache metrics",
+        "Missing: root cause never investigated",
+        "Quote: 'I didn't have time to dig into the cache metrics'",
+        "Follow-up: Reflection? None; no cross-team involvement"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at senior level. The response shows quick tactical action without data-driven diagnosis or gap analysis. No attempt to understand cross-team impact or gather the missing cache information. Lack of reflection or process change means the same class of issue is likely to recur. Scope stayed narrow despite the opportunity for broader influence."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our on-call load was causing burnout on two teams. I pulled ticket volume, MTTR, and escalation data for six months and saw that one service accounted for 60% of pages. The gap was whether the root cause was code quality or missing runbooks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had the service owner run a blameless post-mortem template with their team and coached them on writing actionable runbooks. We then reduced on-call burden by 40% and I used the outcome in the next performance cycle to recognize the engineer who drove the runbook work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a big problem...",
+        "Aware via team health signals and on-call burnout reports",
+        "Gathered: 6-month ticket volume, MTTR, escalation trends",
+        "Missing: code vs runbook root cause; filled by coaching service owner through blameless post-mortem",
+        "Quote: 'I used the outcome in the next performance cycle to recognize the engineer'",
+        "Follow-up: Reflection? Yes, tied to performance management and team recognition"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at manager level. The candidate used quantitative signals to identify a systemic issue, diagnosed the information gap, and addressed it by developing the owning team through structured post-mortems. The reflection step was operationalized into performance recognition, showing leverage through others. Biggest strength is connecting deep analysis to both team health improvement and people development.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "On-call was heavy so I told the teams to rotate more frequently. I didn't look at the ticket data because it would take too long."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know rotation was the right fix?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just assumed based on what I heard in 1:1s. We didn't run any retro or track whether it helped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a big problem...",
+        "Aware only through anecdotal 1:1 complaints",
+        "Gathered: none; skipped ticket volume and MTTR",
+        "Missing: root cause never diagnosed",
+        "Quote: 'I didn't look at the ticket data because it would take too long'",
+        "Follow-up: Reflection? No retro or measurement of impact"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at manager level. Awareness relied on anecdotes rather than data, and the chosen action bypassed any attempt to identify root cause or missing information. No evidence of coaching the team or creating leverage. Absence of reflection or outcome tracking shows limited ownership of team-level results."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer churn in our enterprise segment was rising 8% quarter-over-quarter. I commissioned an analysis of win-loss data, NPS comments, and renewal contract terms across 200 accounts. The missing signal was whether churn correlated more with product gaps or with pricing and support experience."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you resolve the ambiguity?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sponsored a cross-functional tiger team that ran 30 customer interviews and built a churn-prediction model. The model showed support response time as the top predictor. We reallocated 15% of support headcount and changed the renewal process; churn dropped 5 points. In the quarterly business review I highlighted the model and the reallocation decision as a template for future trade-offs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Walk me through a big problem...",
+        "Aware via enterprise churn trend in QBR metrics",
+        "Gathered: win-loss, NPS, renewal terms for 200 accounts + predictive model",
+        "Missing: product vs pricing/support correlation; filled via 30 interviews + model",
+        "Quote: 'I highlighted the model and the reallocation decision as a template for future trade-offs'",
+        "Follow-up: Reflection? Used in QBR as org-level learning on resource allocation"
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at exec level. The candidate started with a clear business metric, commissioned broad data collection, and explicitly surfaced the key information gap before investing in interviews and modeling. The reflection was turned into an organizational template for handling similar trade-offs. Scope is org-wide with strategic leverage through reallocation and process change. Biggest strength is converting deep analysis into repeatable decision-making infrastructure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Churn was up so I asked sales leadership to offer bigger discounts on renewals. We didn't have time to analyze the full dataset."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Discounts helped short-term but churn came back the next quarter. We didn't do a formal review."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Walk me through a big problem...",
+        "Aware via high-level churn number only",
+        "Gathered: none beyond asking for discounts",
+        "Missing: root cause never investigated",
+        "Quote: 'We didn't have time to analyze the full dataset'",
+        "Follow-up: Reflection? None; problem recurred"
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at exec level. The response shows reactive, low-information action without any attempt to surface or close information gaps. No strategic analysis or modeling occurred, and the lack of reflection allowed the issue to recur. Scope stayed tactical despite the org-level signal."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Problem awareness source",
+      "junior": "Dashboard alert vs manager assignment",
+      "senior": "Cross-team escalation vs alert only",
+      "manager": "Team health metrics vs 1:1 anecdotes",
+      "exec": "QBR churn trend vs high-level number"
+    },
+    {
+      "signal": "Information gathered",
+      "junior": "Logs + metrics before/after",
+      "senior": "p99, CPU, cache over 30 days + correlation",
+      "manager": "6-month volume/MTTR/escalation trends",
+      "exec": "Win-loss, NPS, renewal terms + predictive model"
+    },
+    {
+      "signal": "Gap identification & closure",
+      "junior": "Cross-team chat + local repro",
+      "senior": "New tracing + controlled experiment",
+      "manager": "Coached team through blameless post-mortem",
+      "exec": "30 interviews + model to isolate support time"
+    },
+    {
+      "signal": "Reflection & learning",
+      "junior": "Post-incident review with manager",
+      "senior": "Cross-team retro producing process rule",
+      "manager": "Tied outcome to performance recognition",
+      "exec": "QBR template for future resource trade-offs"
+    },
+    {
+      "signal": "Scope & leverage",
+      "junior": "Individual fix + personal learning",
+      "senior": "Multi-team impact + guardrail",
+      "manager": "Team development + on-call reduction",
+      "exec": "Org reallocation + repeatable decision model"
+    }
+  ],
+  "kind": "lp"
+}

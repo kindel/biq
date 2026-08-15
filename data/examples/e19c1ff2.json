@@ -1,0 +1,265 @@
+{
+  "question": "Tell me about a time you took a big risk. What was the risk, how did you decide to do it, and what was the outcome?",
+  "competency": "Think Big",
+  "principle": "Think Big",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a small feature team and our estimates were off. I proposed rewriting the core module in a new language instead of patching it, even though it meant delaying the launch by three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-day spike, shared the data with my manager, and we agreed the long-term maintainability win was worth it. The rewrite shipped and cut bug reports by half over the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have looped in the on-call engineer earlier; they had context I missed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk: rewrite core module after spike showed 3-week delay vs ongoing bugs",
+        "Decision: ran spike, shared data with manager, got buy-in",
+        "Outcome: shipped, bug reports halved next quarter",
+        "Quote: \"I would have looped in the on-call engineer earlier\"",
+        "Follow-up: What would you do differently? Candidate named a concrete gap in communication."
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at junior level. Candidate identified a local technical risk, used a quick spike to gather data, and secured manager approval before committing. The outcome showed measurable improvement in maintainability. The follow-up answer demonstrated coachability by naming a specific missed stakeholder. This is stronger than typical junior answers that stay inside the original plan. Biggest strength is the explicit decision process tied to data rather than gut feel.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I volunteered to present our sprint demo to the director even though I had never done it before."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the actual risk to the project or team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not much, just personal discomfort. It went fine and my manager said good job."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk described: presenting a demo (personal discomfort only)",
+        "Decision: volunteered, no data or trade-off analysis",
+        "Outcome: \"went fine\", manager said good job",
+        "Follow-up: What was the actual risk? Candidate could not tie it to business or technical impact."
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big. The story describes a personal stretch with no project-level downside or upside. No evidence of weighing options or considering trade-offs. The outcome is purely positive feedback with no measurable result. This is common for juniors who equate any discomfort with bold thinking. Biggest gap is absence of any scope beyond the individual task."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were building overlapping services. I proposed we consolidate into one platform team even though it meant my own team would lose headcount and scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get agreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a one-pager with usage data and cost projections, then ran a two-week joint prototype with the other team lead. Both directors signed off and we reduced duplicated infra spend by 40%."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer worried about career growth; I created a rotation plan so they could still own key components."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk: proposed consolidating two teams, own team loses scope",
+        "Decision: one-pager with data, two-week joint prototype",
+        "Outcome: 40% reduction in duplicated spend, directors approved",
+        "Quote: \"I created a rotation plan so they could still own key components\"",
+        "Follow-up: What resistance? Candidate addressed both org and individual concerns."
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at senior level. Candidate surfaced an overlap across teams, used data and a prototype to drive alignment, and accepted scope loss for their own team. The result delivered clear efficiency gains. The follow-up showed influence without authority by addressing career concerns. This matches the expectation that seniors drive cross-team decisions. Biggest strength is willingness to shrink their own domain for broader impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed to add a new monitoring dashboard that the team had not planned for."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this a big risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "It took extra time but the team was supportive so it was low risk overall."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk: adding an unplanned dashboard",
+        "Decision: pushed for it because team was supportive",
+        "Outcome: not described beyond extra time spent",
+        "Follow-up: What made this a big risk? Candidate could not articulate downside or cross-team stakes."
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big. The change stayed inside one team and carried no real downside. No data or trade-off analysis was shared with other stakeholders. Outcome is vague and does not show broader leverage. Seniors are expected to surface and resolve conflicts across boundaries. Biggest gap is lack of any scope beyond the immediate team."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was still building point solutions. I proposed we pause two active projects and redirect the teams to a shared platform, knowing we would miss two quarterly commitments."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide and communicate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled the three-year cost of continued fragmentation, presented to the VP and peer managers, then held team forums to explain the trade-off. Two quarters later the platform was live and three new teams adopted it without building their own."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the missed commitments?"
+        },
+        {
+          "role": "candidate",
+          "text": "I owned the miss in my review and used the platform wins to renegotiate the following quarter's goals."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk: paused two projects, missed quarterly commitments for platform",
+        "Decision: three-year cost model, VP + peer alignment, team forums",
+        "Outcome: platform live, three new teams adopted",
+        "Quote: \"I owned the miss in my review\"",
+        "Follow-up: How did you handle missed commitments? Candidate took personal accountability."
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at manager level. Candidate redirected multiple teams toward a shared platform despite short-term goal misses. The decision used long-term modeling and cross-manager alignment. Outcome created leverage for other teams. Follow-up showed ownership of the miss rather than deflection. This matches the expectation that managers create leverage through structural changes. Biggest strength is balancing short-term pain against multi-year platform value.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I let one of my teams try a new process for two sprints even though it slowed them down."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term bet?"
+        },
+        {
+          "role": "candidate",
+          "text": "We went back to the old process after the experiment. It was low stakes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk: two-sprint process experiment that slowed the team",
+        "Decision: allowed experiment with no modeling or stakeholder buy-in",
+        "Outcome: reverted after two sprints",
+        "Follow-up: What was the longer-term bet? Candidate had none."
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big. The experiment was small, time-boxed, and produced no lasting change. No evidence of strategic modeling or willingness to absorb larger team-level trade-offs. Managers are expected to make bets that affect multiple quarters and teams. Biggest gap is absence of any sustained org-level impact."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were losing to a competitor on enterprise deals. I recommended we open-source our core differentiation layer, accepting that we would give away IP we had spent three years building."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis drove the call?"
+        },
+        {
+          "role": "candidate",
+          "text": "I built a scenario model showing ecosystem growth versus direct revenue loss, then aligned the CEO and board on a phased open-source rollout. Within 18 months we gained three times the developer mindshare and closed two strategic enterprise wins we had previously lost."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the biggest internal pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "Product leadership worried about differentiation; I created a paid enterprise tier and tied their OKRs to adoption metrics so they owned the upside."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk: open-sourced core IP built over three years",
+        "Decision: scenario model, CEO + board alignment, phased rollout",
+        "Outcome: 3x developer mindshare, two enterprise wins",
+        "Quote: \"I created a paid enterprise tier and tied their OKRs to adoption metrics\"",
+        "Follow-up: Biggest pushback? Candidate converted opponents into owners via OKRs."
+      ],
+      "raiseFeedback": "Raises the bar for Think Big at exec level. Candidate proposed open-sourcing core IP to change competitive dynamics, backed by scenario modeling and board alignment. The outcome shifted market position and created new enterprise paths. Follow-up showed strategic handling of internal resistance by redesigning incentives. This reflects the high-ambiguity, long-horizon decisions expected at exec level. Biggest strength is converting a defensive posture into an ecosystem play.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I approved a pilot in one region that used a new pricing model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this decision big or risky?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was a controlled pilot so downside was limited to that region."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took a big risk...",
+        "Risk: regional pricing pilot with limited downside",
+        "Decision: approved controlled pilot",
+        "Outcome: not described beyond pilot scope",
+        "Follow-up: What made this decision big? Candidate emphasized control rather than strategic upside."
+      ],
+      "lowerFeedback": "Lowers the bar for Think Big. The move stayed inside a single region with explicit downside containment. No evidence of org-wide modeling or willingness to bet the business direction. Execs are expected to make ambiguous calls that reshape the company trajectory. Biggest gap is preference for containment over leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scale of the bet",
+      "junior": "Local code or task change",
+      "senior": "Cross-team scope or resource shift",
+      "manager": "Multi-team structural change with goal trade-offs",
+      "exec": "Company direction or IP decision with market impact"
+    },
+    {
+      "signal": "Decision process",
+      "junior": "Spike + manager input",
+      "senior": "Data + prototype + peer alignment",
+      "manager": "Long-term model + VP/board alignment",
+      "exec": "Scenario modeling + CEO/board + incentive redesign"
+    },
+    {
+      "signal": "Willingness to absorb short-term pain",
+      "junior": "Personal time or small delay",
+      "senior": "Own team loses scope",
+      "manager": "Missed quarterly commitments",
+      "exec": "Give away three-year IP investment"
+    },
+    {
+      "signal": "Ownership of outcome",
+      "junior": "Names a personal lesson",
+      "senior": "Addresses affected individuals",
+      "manager": "Owns the miss publicly",
+      "exec": "Redesigns incentives for opponents"
+    },
+    {
+      "signal": "Evidence of leverage created",
+      "junior": "Local metric improvement",
+      "senior": "Efficiency gain for two teams",
+      "manager": "Platform adopted by three new teams",
+      "exec": "3x mindshare and new enterprise wins"
+    }
+  ],
+  "kind": "lp"
+}

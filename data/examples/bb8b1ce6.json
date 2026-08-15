@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time when you made a difficult decision with input from many different sources (customers, stakeholders, partner teams, etc.). What was the situation and how did you arrive at your decision? Did the decision turn out to be the correct one? Why or why not?",
+  "competency": "Are Right, A Lot",
+  "principle": "Are Right, A Lot",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had conflicting feedback on whether to add a new logging flag. Customers wanted it for debugging, but infra said it would increase costs. I collected the inputs, ran a small A/B on our test env, and decided to ship a limited version behind a config."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the outcome show?"
+        },
+        {
+          "role": "candidate",
+          "text": "After two weeks the usage was low, so we turned it off. I learned to check cost impact earlier next time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: decision with multi-source input",
+        "Situation: logging flag request from customers vs infra cost concern",
+        "Actions: gathered inputs, ran small A/B test, chose limited rollout",
+        "Outcome: low usage led to disable; reflected on missing cost check upfront",
+        "Quote: \"I learned to check cost impact earlier next time\"",
+        "Follow-up: outcome reflection - admitted gap and stated specific learning"
+      ],
+      "raiseFeedback": "The candidate described a small-scope individual decision on a logging flag where customer and infra inputs conflicted. They ran a limited test and later disabled the feature after seeing low usage. This shows basic ownership of their own work and willingness to learn from the result. The story stays local and does not claim broad impact, which fits junior expectations. The reflection on checking cost earlier demonstrates coachability. Biggest strength is the clear link between decision, data, and personal takeaway.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked a few people what they thought about adding a new report and went with what most said."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh the inputs or measure if it was right?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just picked the option that had the most votes and moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: decision with multi-source input",
+        "Situation: vague report request",
+        "Actions: asked a few people, chose majority vote",
+        "Outcome: no measurement mentioned",
+        "Quote: \"I just picked the option that had the most votes and moved on\"",
+        "Follow-up: no evidence of weighing tradeoffs or checking result"
+      ],
+      "lowerFeedback": "The candidate gave a thin story about choosing a report based on majority vote without describing how inputs were evaluated or whether the choice was validated. No metrics or post-decision review appear. This lowers the bar for Are Right, A Lot at junior level because the candidate shows little ownership of the reasoning process or learning from outcome. The decision process stays passive. Biggest gap is absence of any data-driven step or reflection on correctness."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two partner teams and three customer segments wanted different prioritization for a shared API change. I ran a structured review with usage data, cost models, and customer interviews, then chose a phased rollout that delayed one team by a quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the data in a joint doc and offered the delayed team a temporary workaround we could support. Adoption metrics later showed the change reduced errors by 18%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: decision with multi-source input",
+        "Situation: API prioritization conflict across partners and customers",
+        "Actions: structured review with data + interviews, phased rollout decision",
+        "Outcome: 18% error reduction; workaround offered to delayed team",
+        "Quote: \"I shared the data in a joint doc and offered the delayed team a temporary workaround\"",
+        "Follow-up: handling pushback - used data and mitigation to maintain alignment"
+      ],
+      "raiseFeedback": "The candidate managed cross-team input on an API change by combining usage data, cost models, and interviews before selecting a phased approach. They addressed pushback with a concrete workaround and later measured an 18% error drop. This demonstrates senior-level judgment in balancing competing needs and driving measurable results without authority. The story shows influence through data rather than escalation. Biggest strength is the explicit connection between decision process and downstream metric.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I collected opinions from the teams and picked the option that seemed fairest to everyone."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you use and what was the measured result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly what people told me in meetings; we didn't track anything specific after launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: decision with multi-source input",
+        "Situation: API prioritization",
+        "Actions: collected opinions, chose fairest option",
+        "Outcome: no metrics tracked",
+        "Quote: \"Mostly what people told me in meetings; we didn't track anything specific after launch\"",
+        "Follow-up: data and result - no quantitative grounding or validation"
+      ],
+      "lowerFeedback": "The candidate described gathering opinions on an API change and selecting the fairest option without referencing data models or post-launch measurement. No evidence of trade-off analysis or cross-team influence appears. This lowers the bar for Are Right, A Lot at senior level because the process relies on subjective fairness rather than evidence. The outcome remains unverified. Biggest gap is lack of any concrete metric tying the decision to impact."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned a migration that affected three other orgs. After customer calls and partner reviews showed conflicting timelines, I facilitated a decision framework with the leads, assigned data owners, and ultimately chose a delayed cutover to protect reliability."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your team handle the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a retro that surfaced gaps in our risk model. I had the leads update the playbook and coached one engineer on leading the next cross-org review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: decision with multi-source input",
+        "Situation: migration timeline conflict across orgs and customers",
+        "Actions: facilitated framework, assigned data owners, chose delayed cutover",
+        "Outcome: retro led to playbook update and coaching on next review",
+        "Quote: \"I had the leads update the playbook and coached one engineer on leading the next cross-org review\"",
+        "Follow-up: team development - used outcome to build capability in others"
+      ],
+      "raiseFeedback": "The candidate led a cross-org migration decision by creating a shared framework and accepting a delay to protect reliability. They then ran a retro that produced a playbook update and coached an engineer to own the next review. This meets manager expectations for Are Right, A Lot by turning a difficult call into team leverage and process improvement. The story shows ownership of both the decision and the team's growth. Biggest strength is the explicit coaching step that raised future decision quality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I made the call on the migration date after hearing everyone out and told my team to execute."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened afterward and how did you develop anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "It mostly worked; I didn't do anything special with the team after."
+        }
+      ],
+      "lowerNotes": [
+        "Q: decision with multi-source input",
+        "Situation: migration timeline",
+        "Actions: heard inputs then decided and directed team",
+        "Outcome: mostly worked, no follow-up development",
+        "Quote: \"I didn't do anything special with the team after\"",
+        "Follow-up: team development - no evidence of raising others"
+      ],
+      "lowerFeedback": "The candidate decided on a migration date after collecting inputs but provided no follow-up on team development or process improvement. The outcome is described only as mostly worked with no metrics or learning loop. This lowers the bar for Are Right, A Lot at manager level because the focus stays on the single decision rather than building team capability. No leverage is created. Biggest gap is absence of any action to develop others from the experience."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a product pivot that required reallocating resources across two business units. Customer data, finance models, and partner commitments pointed in different directions, so I set up a steering group, defined success criteria upfront, and ultimately approved a phased investment that deprioritized one unit for 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The pivot delivered 2x growth in the target segment within two years. I later used the same decision framework for two other org-level bets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: decision with multi-source input",
+        "Situation: product pivot requiring cross-BU resource shift",
+        "Actions: created steering group, defined criteria, approved phased investment",
+        "Outcome: 2x growth; framework reused for other org bets",
+        "Quote: \"I later used the same decision framework for two other org-level bets\"",
+        "Follow-up: strategic leverage - institutionalized the approach beyond single decision"
+      ],
+      "raiseFeedback": "The candidate navigated an org-level product pivot by establishing a steering group and clear criteria before committing to a phased investment that traded off one business unit. The result was 2x growth and reuse of the framework on subsequent bets. This raises the bar for Are Right, A Lot at exec level through strategic judgment under ambiguity and creation of reusable leverage. The story shows long-term thinking rather than heroics. Biggest strength is the institutionalization of the decision process across multiple initiatives.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reviewed the inputs from the teams and approved the pivot that looked strongest on paper."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this affect other parts of the org and what structures did you leave behind?"
+        },
+        {
+          "role": "candidate",
+          "text": "It worked for the main business; the other unit adjusted on their own."
+        }
+      ],
+      "lowerNotes": [
+        "Q: decision with multi-source input",
+        "Situation: product pivot",
+        "Actions: reviewed inputs and approved strongest option",
+        "Outcome: worked for main business, no org structures created",
+        "Quote: \"the other unit adjusted on their own\"",
+        "Follow-up: org leverage - no evidence of reusable frameworks or long-term mechanisms"
+      ],
+      "lowerFeedback": "The candidate approved a pivot after reviewing inputs but left no reusable structures or cross-org mechanisms. The outcome is stated only as working for the main business with other units adjusting independently. This lowers the bar for Are Right, A Lot at exec level because the decision stays tactical rather than strategic. No long-term leverage or trade-off judgment at org scale is shown. Biggest gap is lack of any institutionalized process or multi-year impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Handling conflicting inputs",
+      "junior": "Seeks basic feedback and runs small test",
+      "senior": "Uses data models plus interviews to phase rollout",
+      "manager": "Builds shared framework and assigns owners",
+      "exec": "Creates steering group with predefined criteria"
+    },
+    {
+      "signal": "Measuring outcome",
+      "junior": "Checks usage after limited rollout",
+      "senior": "Tracks 18% error reduction",
+      "manager": "Runs retro that produces playbook update",
+      "exec": "Delivers 2x growth and reuses framework"
+    },
+    {
+      "signal": "Ownership of reasoning",
+      "junior": "Owns personal learning on cost check",
+      "senior": "Balances cross-team needs with workaround",
+      "manager": "Accepts delay to protect reliability",
+      "exec": "Makes explicit 18-month trade-off across BUs"
+    },
+    {
+      "signal": "Raising others",
+      "junior": "States individual takeaway",
+      "senior": "Shares data to align teams",
+      "manager": "Coaches engineer to lead next review",
+      "exec": "Institutionalizes decision framework org-wide"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single feature flag",
+      "senior": "Shared API across partners",
+      "manager": "Cross-org migration",
+      "exec": "Product pivot affecting two BUs"
+    }
+  ],
+  "kind": "lp"
+}

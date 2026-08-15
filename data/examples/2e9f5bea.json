@@ -1,0 +1,229 @@
+{
+  "question": "Give me an example of a time when you explored a new or unexpected area of an existing space. Why hadn't this been explored already? Why did you move forward? What were the results or what was the impact?",
+  "competency": "Learn and Be Curious",
+  "principle": "Learn and Be Curious",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship project on the backend service, I noticed we were always using the same three logging libraries. I spent two evenings reading about structured logging with OpenTelemetry and prototyped it on a small endpoint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why hadn't anyone looked at it before?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team was heads-down on a tight migration deadline and the existing logs worked for basic debugging. I moved forward because the prototype showed 40% faster query times on our log dashboard. After showing my manager, we rolled it out to two more services."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of exploring a new area of an existing space...",
+        "Internship project, noticed repeated use of same logging libs",
+        "Read docs, built small prototype on one endpoint",
+        "Quote: 'Existing logs worked for basic debugging but I wanted to see structured fields'",
+        "Follow-up: Why move forward? -> Faster queries, shared with manager, adopted on two services"
+      ],
+      "raiseFeedback": "The candidate described picking up OpenTelemetry on their own time during an internship project. They noted the team had skipped it due to a migration deadline and existing logs being sufficient for basic needs. The prototype delivered measurable query improvement and was adopted more broadly. This shows individual curiosity and willingness to experiment beyond assigned scope. The story stays local but demonstrates clear learning and follow-through. Biggest strength is tying the exploration directly to a concrete outcome rather than stopping at research.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once tried a different sorting algorithm in my college assignment because the professor mentioned it in class."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the existing space and why explore it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The assignment already had the standard sort working. I just wanted to see if the other one was faster for the test cases."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "College assignment, tried alternate sort after professor mention",
+        "Standard sort already worked",
+        "Quote: 'I just wanted to see if the other one was faster'",
+        "Follow-up: Impact? -> No further adoption or sharing mentioned"
+      ],
+      "lowerFeedback": "The example stayed inside a single college assignment with no connection to a real team or production context. The candidate could not articulate why the space had remained unexplored or any downstream impact beyond personal curiosity. The story shows basic compliance with an assignment rather than proactive exploration. No evidence of applying the learning beyond the immediate task. Biggest gap is lack of ownership or results that extend past the original scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments service had a long-standing assumption that all retries should be immediate. I pulled six months of failure data and found a cluster of timeouts only during batch reconciliation windows. I built a small delay-and-retry experiment on one partner integration."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why hadn't this been explored?"
+        },
+        {
+          "role": "candidate",
+          "text": "The original design came from an early incident where any delay looked like data loss. I moved forward after the data showed the pattern was predictable. The experiment cut our partner retry errors by 35% and we later generalized the logic across three other integrations."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of exploring a new area...",
+        "Payments service, challenged immediate-retry assumption with data",
+        "Pulled six months of failure logs, found batch-window pattern",
+        "Quote: 'Original design treated any delay as data loss risk'",
+        "Follow-up: Results? -> 35% error reduction, generalized to three integrations"
+      ],
+      "raiseFeedback": "The candidate used production data to challenge a long-held retry assumption in the payments domain. They explained the original design choice came from an early incident that made the team risk-averse. The targeted experiment produced a 35% reduction and was expanded cross-team. This demonstrates senior-level curiosity that influences shared infrastructure. The impact is concrete and moved beyond their immediate service. Biggest strength is connecting personal exploration to measurable cross-team leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I read a paper on a new caching strategy and mentioned it in a design review for our service."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. The team decided to keep the current approach because it was already working."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "Read paper on caching, brought it up in design review",
+        "No change to existing approach",
+        "Quote: 'Team decided to keep current approach because it was working'",
+        "Follow-up: Why no follow-through? -> No experiment or data gathered"
+      ],
+      "lowerFeedback": "The candidate surfaced an idea from external reading but did not drive any experiment or data collection. The team dismissed the suggestion without pushback or analysis. No evidence of influencing the existing space or creating measurable impact. The story remains at the level of suggestion rather than ownership. Biggest gap is absence of follow-through that would be expected at senior scope."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned the internal tooling platform. One engineer flagged that we had never measured time-to-first-commit for new hires. I carved out two weeks for a small onboarding telemetry project even though it was outside our roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why hadn't this been explored?"
+        },
+        {
+          "role": "candidate",
+          "text": "Onboarding pain was always treated as an HR issue, not an engineering metric. We ran the pilot, found the median time was 4.5 days, and used the data to justify two self-service improvements that cut it to 2 days."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example...",
+        "Team owned tooling platform, explored onboarding telemetry",
+        "Engineer flag led to two-week pilot outside roadmap",
+        "Quote: 'Onboarding was always seen as HR not engineering'",
+        "Follow-up: Impact? -> Reduced median time from 4.5 to 2 days, two self-service tools shipped"
+      ],
+      "raiseFeedback": "The manager allowed an engineer to surface an unexplored metric and protected time to measure it despite roadmap pressure. They reframed onboarding as an engineering problem rather than an HR one. The pilot produced clear before-and-after numbers and drove two concrete improvements. This shows the manager creating space for team curiosity that improves team-level outcomes. The story illustrates leverage through enabling others. Biggest strength is turning individual curiosity into a repeatable team practice.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged my team to read one new paper per quarter and share notes in a doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any of those notes lead to changes in how you work?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of ideas were discussed but nothing was implemented because priorities stayed on the committed roadmap."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "Asked team to read papers quarterly and share notes",
+        "Ideas discussed but never implemented",
+        "Quote: 'Priorities stayed on the committed roadmap'",
+        "Follow-up: Why no movement? -> No protected time or ownership taken"
+      ],
+      "lowerFeedback": "The manager created a lightweight reading habit but did not connect it to any actual change in team processes or roadmap. Ideas remained in a doc without protected time or decision rights. No measurable impact on team outcomes. The approach treats curiosity as an add-on rather than a lever for better results. Biggest gap is lack of follow-through that would demonstrate managerial ownership of learning."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two years ago our enterprise sales motion assumed all large deals needed heavy custom integration. I asked the strategy team to analyze win rates on deals that never reached that stage. The data showed we were losing early because prospects could not test value quickly."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why hadn't this been looked at before?"
+        },
+        {
+          "role": "candidate",
+          "text": "The org had optimized for the deals that made it to contract, not the ones that died in discovery. We funded a self-serve pilot for a narrow vertical. It generated $8M in new pipeline within nine months and changed how we qualify enterprise opportunities."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Give me an example of exploring a new area...",
+        "Enterprise sales assumed custom integration for large deals",
+        "Strategy team analyzed early-stage win rates",
+        "Quote: 'We optimized for deals that reached contract, not those that died early'",
+        "Follow-up: Results? -> $8M new pipeline, changed qualification process org-wide"
+      ],
+      "raiseFeedback": "The executive used data to question a core sales assumption that had shaped years of investment. They explained the blind spot came from focusing only on deals that reached contract stage. The resulting self-serve pilot produced $8M in pipeline and shifted qualification criteria across the organization. This demonstrates strategic curiosity at business scale with clear trade-off decisions. The impact is org-level and long-term. Biggest strength is reframing an existing space to unlock new growth rather than optimizing the current path.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each business unit to run one exploratory project per year on adjacent use cases."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with those projects?"
+        },
+        {
+          "role": "candidate",
+          "text": "Most stayed small and were deprioritized when core metrics came under pressure."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Give me an example...",
+        "Directed BUs to run one adjacent-use-case project yearly",
+        "Projects deprioritized when core metrics pressured",
+        "Quote: 'Most stayed small and were deprioritized'",
+        "Follow-up: Why no sustained impact? -> No org-level resource or strategic follow-up"
+      ],
+      "lowerFeedback": "The executive issued a directive for exploratory projects but did not protect resources or adjust incentives when core metrics were threatened. Projects remained marginal and produced no visible business shift. The story shows intent without the strategic judgment needed to sustain exploration at scale. No evidence of changing org behavior or long-term trade-offs. Biggest gap is absence of leverage that would turn curiosity into sustained business impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of exploration",
+      "junior": "Individual task or assignment",
+      "senior": "Service or cross-team process",
+      "manager": "Team process or metric",
+      "exec": "Business model or org assumption"
+    },
+    {
+      "signal": "Why space was unexplored",
+      "junior": "Deadline or habit",
+      "senior": "Past incident created risk aversion",
+      "manager": "Treated as non-engineering problem",
+      "exec": "Optimization bias toward visible deals"
+    },
+    {
+      "signal": "Driver to move forward",
+      "junior": "Personal interest + quick prototype",
+      "senior": "Data pattern + targeted experiment",
+      "manager": "Protected team time for pilot",
+      "exec": "Strategic data reframing + funded pilot"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Local adoption on 1-2 services",
+      "senior": "35% error reduction, generalized to 3 integrations",
+      "manager": "Reduced onboarding time, two tools shipped",
+      "exec": "$8M pipeline, org-wide qualification change"
+    },
+    {
+      "signal": "Learning posture",
+      "junior": "Reads docs, builds small thing",
+      "senior": "Uses production data to test assumption",
+      "manager": "Enables engineer and measures outcome",
+      "exec": "Challenges core org belief with new lens"
+    }
+  ],
+  "kind": "lp"
+}

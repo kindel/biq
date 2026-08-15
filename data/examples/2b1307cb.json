@@ -1,0 +1,234 @@
+{
+  "question": "Tell me about a time when you went above and beyond for a customer. Why did you do it? How did the customer respond? What was the outcome?",
+  "competency": "Customer Obsession",
+  "principle": "Customer Obsession",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer reported that our checkout flow was dropping their orders on mobile. I stayed late to reproduce it on three devices, found a CSS overflow bug, and pushed a hotfix the same night after getting quick review from my mentor."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did you take it on yourself instead of handing it to on-call?"
+        },
+        {
+          "role": "candidate",
+          "text": "The ticket was assigned to me and the customer had already waited two days. I didn't want to lose their trust."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the customer respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They emailed back saying the fix worked and they completed their purchase. They also left a positive review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Fixed mobile checkout bug same day after reproducing on multiple devices",
+        "Quote: \"I didn't want to lose their trust\"",
+        "Outcome: customer completed purchase and left positive review",
+        "Follow-up: Why take it yourself? -> Owned because ticket was assigned to me and prior delay"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a junior. The candidate took personal ownership of a customer-impacting bug instead of routing it elsewhere. They reproduced the issue across devices and shipped a fix the same evening after securing a quick review. The customer completed their purchase and left positive feedback, directly tying the extra effort to a concrete result. This shows appropriate individual scope and willingness to go beyond assigned hours. The main strength is clear ownership of their own work with visible customer outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer asked for a feature we didn't have. I told them we'd consider it for the roadmap and closed the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything else?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was outside my team's current sprint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Customer requested missing feature",
+        "Response: told them it would be considered for roadmap and closed ticket",
+        "Follow-up: Did you do anything else? -> No, outside current sprint"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a junior. The candidate treated the request as a standard ticket closure without exploring any workaround or escalation. No attempt was made to understand the customer's need or protect their experience. The follow-up confirmed the decision was driven by sprint boundaries rather than customer impact. This reflects minimal ownership even at the individual contributor level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "An enterprise customer was hitting rate limits that blocked their integration. I worked with the platform team to temporarily raise their limits and then drove a change to make limits configurable per tier."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The customer renewed and expanded their contract. The change also reduced similar tickets by 40% across the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Enterprise customer blocked by rate limits",
+        "Coordinated with platform team for temp raise then made limits configurable",
+        "Quote: \"The customer renewed and expanded their contract\"",
+        "Outcome: 40% reduction in similar tickets",
+        "Follow-up: What drove the permanent change? -> Cross-team influence to prevent recurrence"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a senior. The candidate did not stop at a temporary workaround and instead influenced another team to make limits configurable. This produced both a renewed contract and a 40% drop in related tickets. The story shows cross-team impact and a focus on systemic customer pain rather than one-off heroics. The biggest strength is turning a single customer issue into a durable product improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer complained about slow responses. I forwarded the ticket to support and checked in a week later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the response time improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assume so, but I didn't follow up further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Slow response complaint",
+        "Forwarded to support and checked in once",
+        "Follow-up: Did response time improve? -> Assumed yes without further follow-up"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a senior. The candidate delegated the issue and performed only a single check-in without verifying resolution or looking for patterns. No attempt was made to influence process changes or reduce future occurrences. This shows limited ownership and no cross-team leverage despite the level."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was consistently missing SLAs for a key customer segment. I ran a retro with the team, identified root causes, and created a rotation where senior engineers paired with support on high-severity tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the customer respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "NPS for that segment rose 18 points and the team reported higher confidence handling escalations."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Team missing SLAs for key segment",
+        "Ran retro, created engineer-support rotation",
+        "Outcome: NPS up 18 points and team confidence improved",
+        "Follow-up: What changed for the team? -> Built process that raised both customer and team metrics"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for a manager. The candidate diagnosed a team-level SLA problem and introduced a new operating rhythm that improved both customer NPS and internal capability. The 18-point NPS lift and reported team confidence demonstrate leverage through the team rather than personal heroics. The story shows clear ownership of team outcomes tied directly to customer results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer was unhappy with delivery delays. I asked the team to prioritize their requests going forward."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any team processes?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not formally, just reminded them in standup."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Delivery delay complaint",
+        "Asked team to prioritize the customer's requests",
+        "Follow-up: Any process change? -> Informal reminder only"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for a manager. The candidate issued a one-time instruction without creating any lasting team mechanism or tracking impact. No evidence of coaching or systemic improvement was shown. This reflects weak leverage and limited ownership of team-level customer outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer research showed our pricing was creating friction for mid-market segments and risking long-term growth. I led a pricing restructure that traded short-term revenue for broader adoption, despite internal pushback."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mid-market revenue grew 3x in 18 months and churn dropped 12%. We also used the same customer insight process for two subsequent product bets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Pricing friction blocking mid-market growth",
+        "Led pricing restructure trading short-term revenue for adoption",
+        "Outcome: 3x mid-market revenue, 12% churn drop",
+        "Follow-up: How did you handle internal resistance? -> Used customer data to drive strategic trade-off"
+      ],
+      "raiseFeedback": "Raises the bar on Customer Obsession for an exec. The candidate used customer insight to drive a strategic pricing change that accepted short-term revenue pressure for long-term market position. The 3x revenue growth and 12% churn reduction show org-level impact. The approach also scaled into a repeatable process for future decisions. The core strength is strategic judgment grounded in customer data over internal comfort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We received feedback that customers wanted more integrations. I asked product to add it to the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you personally engage with customers or change investment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed the quarterly roadmap updates."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went above and beyond for a customer",
+        "Request for more integrations",
+        "Asked product to add to roadmap",
+        "Follow-up: Personal engagement or investment change? -> Only reviewed roadmap updates"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer Obsession for an exec. The candidate delegated the request and performed only passive oversight without reallocating resources or engaging directly. No strategic trade-off or long-term thinking was demonstrated. This shows insufficient leverage at the organizational level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Single ticket or bug fix",
+      "senior": "Cross-team process change",
+      "manager": "Team operating rhythm and metrics",
+      "exec": "Org-level strategic trade-off"
+    },
+    {
+      "signal": "Why they acted",
+      "junior": "Personal ownership of assigned work",
+      "senior": "Prevent recurrence beyond one customer",
+      "manager": "Team capability and SLA ownership",
+      "exec": "Long-term growth vs short-term revenue"
+    },
+    {
+      "signal": "Customer response measured",
+      "junior": "Direct reply or review",
+      "senior": "Renewal plus ticket reduction",
+      "manager": "NPS movement",
+      "exec": "Revenue and churn at scale"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "None expected",
+      "senior": "Influenced another team",
+      "manager": "Created rotation and retro process",
+      "exec": "Scaled insight process to future bets"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "N/A",
+      "senior": "Coordinated with platform team",
+      "manager": "Led team retro",
+      "exec": "Overcame internal pushback with data"
+    }
+  ],
+  "kind": "lp"
+}

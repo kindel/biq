@@ -1,0 +1,230 @@
+{
+  "question": "Tell me about a time you had to say no to a customer request and how you handled it.",
+  "competency": "Customer / Client Focus",
+  "principle": "Customer / Client Focus",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer asked for a custom export format we didn't support. I told them we couldn't do it in the current release but walked through the data they could pull today via our standard reports and offered to log the request for the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They used the workaround and later emailed that it covered 80% of what they needed. My manager added the request to our quarterly planning notes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: New support engineer on a small team",
+        "Situation: Customer wanted unsupported export format",
+        "Action: Explained limit, gave immediate workaround, logged request",
+        "Outcome: Customer used workaround; request added to roadmap notes",
+        "Quote: 'I told them we couldn't do it in the current release but walked through the data they could pull today'",
+        "Follow-up: How did you decide what to offer instead? - Checked with senior teammate first, then proposed the closest standard report"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for junior level. The candidate described telling a customer the requested export format was unsupported, then immediately providing a standard report workaround and logging the ask. The customer later confirmed the workaround met 80% of needs. This shows ownership of the interaction and basic judgment on when to escalate a request rather than simply refusing. The story stays within individual scope and demonstrates coachability by checking with a teammate before responding. Biggest gap is limited evidence of following up after the initial exchange.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "They wanted something we don't offer so I said we can't do that and moved to the next ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you offer any alternative or log the request?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, our policy is pretty clear we don't do custom work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: Junior support",
+        "Action: Flat refusal with no alternative or follow-up",
+        "Quote: 'I said we can't do that and moved to the next ticket'",
+        "Follow-up: Did you offer any alternative? - No, policy is clear we don't do custom work"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for junior level. The candidate described refusing a request and immediately moving on without offering any workaround or noting the ask. The follow-up confirmed no attempt to help the customer or escalate. This shows minimal ownership of the customer outcome and treats the interaction as purely transactional. The story lacks any learning or adjustment after the refusal."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A key customer wanted a feature that would have required changes across two other teams. I explained the cross-team cost and timeline, proposed a narrower scope that our team could deliver in two weeks, and coordinated with the other teams to get the full request prioritized for the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the customer respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They took the short-term option and later thanked us for the clear trade-off discussion. The full request made it into Q3 planning."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: Senior engineer with cross-team influence",
+        "Situation: Customer request needed changes in two other teams",
+        "Action: Explained cost, offered scoped alternative, coordinated prioritization",
+        "Outcome: Customer accepted short-term fix; full request entered Q3 plan",
+        "Quote: 'I explained the cross-team cost and timeline, proposed a narrower scope'",
+        "Follow-up: How did you get the other teams to agree? - Shared the customer impact data and asked them to weigh in on sequencing"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for senior level. The candidate turned down a broad feature request by explaining cross-team impact, delivered a scoped alternative in two weeks, and influenced two other teams to schedule the full request. The customer accepted the trade-off and the request reached quarterly planning. This demonstrates influence without authority and clear communication of constraints while still advancing the customer's goal. Biggest strength is the coordination across teams rather than stopping at a simple refusal.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the customer the request was too big and we'd have to say no unless they reduced scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back so I escalated to my manager and let them handle it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: Senior engineer",
+        "Action: Refused request and escalated without proposing options",
+        "Quote: 'I told the customer the request was too big and we'd have to say no'",
+        "Follow-up: What happened after escalation? - Manager handled the follow-up"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for senior level. The candidate refused a request by citing scope and immediately escalated without offering alternatives or attempting to influence other teams. The follow-up showed no ownership of the outcome after escalation. This approach misses the expected cross-team coordination and leaves the customer relationship to someone else."
+    },
+    "manager": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my team's accounts asked for a custom integration that would have pulled two engineers off a committed roadmap for six weeks. I met with the customer, showed the revenue impact of delaying the roadmap, and helped them define a phased approach where we delivered a lighter version first while my team trained their internal devs on the full integration."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your team feel about the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "They appreciated having clear criteria and later used the same framework on two other accounts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: Engineering manager",
+        "Situation: Custom integration would derail team roadmap",
+        "Action: Showed revenue trade-off, defined phased delivery, trained customer devs",
+        "Outcome: Lighter version shipped; team adopted the decision framework",
+        "Quote: 'I showed the revenue impact of delaying the roadmap and helped them define a phased approach'",
+        "Follow-up: How did you handle the team? - Shared the criteria upfront and let them see the customer discussion notes"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for manager level. The candidate declined a six-week custom integration by walking the customer through roadmap revenue impact, delivered a lighter version, and trained the customer's developers so the team could stay on track. The team later reused the same decision framework on other accounts. This shows the manager created leverage by developing repeatable criteria rather than handling each refusal individually. Biggest strength is the combination of protecting team capacity while still advancing the customer relationship.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the customer we couldn't take on the work because it wasn't on the roadmap and that was the end of the discussion."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did your team learn anything from the situation?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was a one-off decision."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: Engineering manager",
+        "Action: Simple refusal citing roadmap",
+        "Quote: 'I told the customer we couldn't take on the work because it wasn't on the roadmap'",
+        "Follow-up: Did the team learn from it? - No, it was a one-off decision"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for manager level. The candidate refused the request by citing the roadmap and ended the conversation without exploring options or creating any team process. The follow-up confirmed no learning or leverage was created for future decisions. This treats the refusal as an isolated event rather than an opportunity to build team capability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A strategic customer asked us to build a vertical solution that would have required reallocating 30% of R&D for a year. I led a cross-functional review that showed the solution would cannibalize two higher-margin product lines. We offered the customer a partnership model instead and redirected the investment toward a platform capability that served five other strategic accounts."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The partnership generated new revenue within nine months and the platform capability became a standard offering used by twelve accounts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: VP / Exec",
+        "Situation: Request would cannibalize higher-margin lines",
+        "Action: Cross-functional review, offered partnership model, redirected to platform",
+        "Outcome: Partnership revenue in 9 months; platform adopted by 12 accounts",
+        "Quote: 'We offered the customer a partnership model instead and redirected the investment toward a platform capability'",
+        "Follow-up: How did you align the organization? - Ran the review with product, finance, and sales leads and shared the margin analysis"
+      ],
+      "raiseFeedback": "Raises the bar on Customer / Client Focus for exec level. The candidate declined a vertical solution that would have taken 30% of R&D by running a cross-functional review that revealed margin cannibalization, then pivoted to a partnership model and a platform capability serving twelve accounts. The partnership produced revenue within nine months. This reflects strategic judgment on long-term business trade-offs rather than tactical refusal. Biggest strength is turning the no into an org-level capability that scaled beyond the original customer.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We couldn't justify the investment so we declined and focused on our existing roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change how the company approached similar requests?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed at the account level; we didn't create any new process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to say no to a customer request and how you handled it.",
+        "Role: Exec",
+        "Action: Declined based on investment justification",
+        "Quote: 'We couldn't justify the investment so we declined'",
+        "Follow-up: Did this change company approach? - Stayed at account level, no new process"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer / Client Focus for exec level. The candidate declined the request citing investment justification and kept the decision at the account level without creating any broader process or capability. The follow-up confirmed no org-level learning or leverage resulted. This approach misses the strategic and long-term thinking expected at the exec level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Explained the 'why' behind the no",
+      "junior": "Gave limit and offered workaround",
+      "senior": "Explained cross-team cost and timeline",
+      "manager": "Showed revenue impact of the request",
+      "exec": "Cross-functional review on margin cannibalization"
+    },
+    {
+      "signal": "Offered alternative or path forward",
+      "junior": "Suggested standard report",
+      "senior": "Narrowed scope and coordinated prioritization",
+      "manager": "Phased delivery plus customer training",
+      "exec": "Partnership model plus new platform capability"
+    },
+    {
+      "signal": "Created leverage or repeatability",
+      "junior": "Logged request for roadmap",
+      "senior": "Influenced two other teams",
+      "manager": "Team reused decision framework",
+      "exec": "Platform adopted by twelve accounts"
+    },
+    {
+      "signal": "Protected team or business capacity",
+      "junior": "Stayed within own ticket queue",
+      "senior": "Avoided derailing committed work",
+      "manager": "Kept engineers on roadmap",
+      "exec": "Redirected 30% R&D investment"
+    }
+  ],
+  "kind": "competency"
+}
