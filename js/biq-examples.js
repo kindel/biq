@@ -1,4 +1,8 @@
 (function () {
+  var cfg = window.BIQ || {};
+  var examplesData = cfg.examplesData || "/data/examples/";
+  if (examplesData.slice(-1) !== "/") examplesData += "/";
+
   var params = new URLSearchParams(window.location.search);
   var principle = params.get("p") || "";
   var question = params.get("q") || "";
@@ -205,7 +209,7 @@
       });
   }
 
-  fetch("/data/examples/" + slugFor(principle, question) + ".json")
+  fetch(examplesData + slugFor(principle, question) + ".json")
     .then(function (r) {
       if (r.status === 404) return null;
       if (!r.ok) throw new Error("bad pack");

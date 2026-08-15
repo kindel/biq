@@ -1,4 +1,16 @@
 (function () {
+  var cfg = window.BIQ || {};
+  var questionsUrl = cfg.questions || "/data/questions.json";
+  var examplesPage = cfg.examplesPage || "examples.html";
+
+  function examplesHref(principle, question, level) {
+    var u = new URL(examplesPage, window.location.origin);
+    if (principle) u.searchParams.set("p", principle);
+    if (question) u.searchParams.set("q", question);
+    u.searchParams.set("l", level);
+    return u.pathname + u.search;
+  }
+
   var input = document.getElementById("bhiq-input");
   var chips = document.getElementById("bhiq-chips");
   var results = document.getElementById("bhiq-results");
@@ -51,7 +63,9 @@
       try {
         var u = new URL(links[i].href, window.location.origin);
         u.searchParams.set("l", level);
-        links[i].href = u.pathname + u.search;
+        var q = u.searchParams.get("q") || "";
+        var pr = u.searchParams.get("p") || "";
+        links[i].href = examplesHref(pr, q, level);
       } catch (e) {}
     }
   }
@@ -239,7 +253,7 @@
         var ex = document.createElement("a");
         ex.className = "bhiq-examples-btn";
         ex.textContent = "Examples";
-        ex.href = "examples.html?p=" + encodeURIComponent(p.name) + "&q=" + encodeURIComponent(q.text) + "&l=" + encodeURIComponent(level);
+        ex.href = examplesHref(p.name, q.text, level);
         row.appendChild(text);
         row.appendChild(ex);
         li.appendChild(row);
@@ -255,7 +269,7 @@
 
   bindLevel();
 
-  fetch("/data/questions.json")
+  fetch(questionsUrl)
     .then(function (r) {
       if (!r.ok) throw new Error("bank missing");
       return r.json();
