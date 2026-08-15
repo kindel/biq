@@ -4,10 +4,13 @@
   var examplesPage = cfg.examplesPage || "examples.html";
 
   function examplesHref(principle, question, level) {
-    var u = new URL(examplesPage, window.location.origin);
+    // Resolve against the current document, not the origin root, so a relative
+    // examplesPage still works when the site is served from a subdirectory.
+    var u = new URL(examplesPage, document.baseURI || window.location.href);
     if (principle) u.searchParams.set("p", principle);
     if (question) u.searchParams.set("q", question);
     u.searchParams.set("l", level);
+    if (u.origin !== window.location.origin) return u.href;
     return u.pathname + u.search;
   }
 
@@ -61,8 +64,7 @@
     var links = results.querySelectorAll(".bhiq-examples-btn");
     for (var i = 0; i < links.length; i++) {
       try {
-        var u = new URL(links[i].href, window.location.origin);
-        u.searchParams.set("l", level);
+        var u = new URL(links[i].href, document.baseURI || window.location.href);
         var q = u.searchParams.get("q") || "";
         var pr = u.searchParams.get("p") || "";
         links[i].href = examplesHref(pr, q, level);
