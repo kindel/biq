@@ -2,6 +2,7 @@
   var cfg = window.BIQ || {};
   var examplesData = cfg.examplesData || "/data/examples/";
   if (examplesData.slice(-1) !== "/") examplesData += "/";
+  var examplesFallback = cfg.examplesFallback || "/data/biq-examples.json";
 
   var params = new URLSearchParams(window.location.search);
   var principle = params.get("p") || "";
@@ -189,7 +190,7 @@
   }
 
   function loadFallback() {
-    return fetch("/data/biq-examples.json")
+    return fetch(examplesFallback)
       .then(function (r) {
         if (!r.ok) throw new Error("missing");
         return r.json();
@@ -209,9 +210,14 @@
       });
   }
 
+  var packMissing = false;
+
   fetch(examplesData + slugFor(principle, question) + ".json")
     .then(function (r) {
-      if (r.status === 404) return null;
+      if (r.status === 404) {
+        packMissing = true;
+        return null;
+      }
       if (!r.ok) throw new Error("bad pack");
       return r.json();
     })
@@ -221,11 +227,11 @@
       showCurrent();
     })
     .catch(function () {
-      return loadFallback().catch(function () {
-        statusEl.hidden = false;
-        sheetEl.hidden = true;
-        statusEl.textContent = "Could not load the example bank.";
-      });
+      statusEl.hidden = false;
+      sheetEl.hidden = true;
+      statusEl.textContent = packMissing
+        ? "No saved examples for this question yet."
+        : "Could not load the example bank.";
     });
 
   function renderSheet(b) {

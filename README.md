@@ -14,6 +14,23 @@ python3 -m http.server
 
 Open http://127.0.0.1:8000/
 
+## Host configuration
+
+The default URLs are root-relative, which assumes the site is served from `/`. A host that mounts biq
+somewhere else can override them by setting `window.BIQ` in an inline script *before* `js/biq.js` or
+`js/biq-examples.js` loads:
+
+```html
+<script>
+  window.BIQ = {
+    questions: "/biq/data/questions.json",   // question bank
+    examplesData: "/biq/data/examples/",     // per-question example packs
+    examplesFallback: "/biq/data/biq-examples.json", // optional legacy single-file bank
+    examplesPage: "examples.html"            // resolved against the current page
+  };
+</script>
+```
+
 ## Regenerate examples
 
 Needs `XAI_API_KEY`. Resume-safe. Writes `data/examples/{slug}.json` for any question that does not already have a valid junior / senior / exec pack.
