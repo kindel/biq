@@ -123,5 +123,17 @@
       "id": "dive-deep",
       "note": "You cannot own a leak you refuse to inspect. Details are how owners find the source."
     }
+  ],
+  "blog": [
+    {
+      "title": "Ownership",
+      "url": "https://blog.kindel.com/2018/05/27/ownership/",
+      "note": "Owners do not say that is not my job, and they do not stop at their team's scoreboard."
+    },
+    {
+      "title": "How We Scaled Alexa: One Problem, One Leader",
+      "url": "https://blog.kindel.com/2025/04/14/how-we-scaled-alexa-one-problem-one-leader/",
+      "note": "One owner for one problem. That is how you scale without the work becoming nobody's."
+    }
   ]
 }
