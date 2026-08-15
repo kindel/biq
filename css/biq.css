@@ -1,13 +1,13 @@
 :root {
-  --biq-ink: #17202b;
-  --biq-paper: #f6f1e8;
-  --biq-line: #d5cbb8;
-  --biq-muted: #6b6258;
-  --biq-accent: #b85c38;
-  --biq-accent-dark: #8c3f24;
-  --biq-wash: #efe8dc;
-  --biq-raise: #2f5d73;
-  --biq-lower: #b85c38;
+  --biq-ink: var(--kld-ink, #17202b);
+  --biq-paper: var(--kld-paper, #f6f1e8);
+  --biq-line: var(--kld-line, #d5cbb8);
+  --biq-muted: var(--kld-muted, #6b6258);
+  --biq-accent: var(--kld-rust, #b85c38);
+  --biq-accent-dark: var(--kld-rust-dark, #8c3f24);
+  --biq-wash: var(--kld-wash, #efe8dc);
+  --biq-raise: var(--kld-blue, #2f5d73);
+  --biq-lower: var(--kld-rust, #b85c38);
 }
 
 *,
