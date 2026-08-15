@@ -3,6 +3,18 @@
   var questionsUrl = cfg.questions || "/data/questions.json";
   var examplesPage = cfg.examplesPage || "examples.html";
 
+  function track(name, params) {
+    if (typeof window.gtag !== "function") return;
+    var clean = {};
+    Object.keys(params || {}).forEach(function (k) {
+      var v = params[k];
+      if (v == null || v === "") return;
+      if (typeof v === "string" && v.length > 100) v = v.slice(0, 97) + "...";
+      clean[k] = v;
+    });
+    window.gtag("event", name, clean);
+  }
+
   function examplesHref(principle, question, level) {
     // Resolve against the current document, not the origin root, so a relative
     // examplesPage still works when the site is served from a subdirectory.
@@ -81,6 +93,7 @@
         setLevel(this.value);
         syncLevelRadios();
         rewriteExampleLinks();
+        track("biq_level", { biq_level: this.value, biq_page: "bank" });
       });
     }
   }
@@ -280,11 +293,39 @@
       var principles = bank.principles || [];
       renderSelects(principles);
       renderResults([], "");
+      var searchTimer = null;
       input.addEventListener("input", function () {
         var q = norm(input.value);
         var hits = q ? principles.filter(function (p) { return matches(p, q); }) : [];
         syncSelects(principles);
         renderResults(hits, q);
+        clearTimeout(searchTimer);
+        if (!q) return;
+        searchTimer = setTimeout(function () {
+          var questions = 0;
+          for (var i = 0; i < hits.length; i++) questions += hits[i].questions.length;
+          track("biq_search", {
+            search_term: String(input.value || "").trim(),
+            biq_hit_groups: hits.length,
+            biq_questions: questions
+          });
+        }, 600);
+      });
+      results.addEventListener("click", function (e) {
+        var a = e.target.closest ? e.target.closest(".bhiq-examples-btn") : null;
+        if (!a) return;
+        var pr = "";
+        var qtext = "";
+        try {
+          var u = new URL(a.href, document.baseURI || window.location.href);
+          pr = u.searchParams.get("p") || "";
+          qtext = u.searchParams.get("q") || "";
+        } catch (err) {}
+        track("biq_examples_open", {
+          biq_principle: pr,
+          biq_question: qtext,
+          biq_level: getLevel()
+        });
       });
     })
     .catch(function () {
