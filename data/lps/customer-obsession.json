@@ -118,5 +118,22 @@
       "id": "dive-deep",
       "note": "Every customer anecdote is an audit. Research it before you dismiss it as a sample of one."
     }
+  ],
+  "blog": [
+    {
+      "title": "Focusing on users is not Customer Obsession",
+      "url": "https://blog.kindel.com/2019/05/30/focusing-on-users-is-not-customer-obsession/",
+      "note": "A customer pays you for value. A user is someone you force, addict, or sell."
+    },
+    {
+      "title": "Work Backwards From The Customer",
+      "url": "https://blog.kindel.com/2020/02/04/work-backwards-from-the-customer/",
+      "note": "Start with the customer outcome, not the technology you already built."
+    },
+    {
+      "title": "How To: Write a Working Backwards Doc",
+      "url": "https://blog.kindel.com/2024/07/23/how-to-write-a-working-backwards-doc/",
+      "note": "The mechanism: write the press release and FAQ before you pick a stack."
+    }
   ]
 }

@@ -54,6 +54,9 @@ Never write the raw company name or product names. Principle names stay.
   ],
   "related": [
     {"id": "ownership", "note": "Why they connect, one sentence."}
+  ],
+  "blog": [
+    {"title": "Post title", "url": "https://blog.kindel.com/...", "note": "Why this post belongs here."}
   ]
 }
 ```
@@ -68,5 +71,6 @@ Rules:
 - `examples` 2-4 teaching cases. Generalize retail/ops specifics. Drop named-exec anecdotes you cannot restate without the company.
 - `deepen` 6-12 questions. Each is a full sentence ending with `?`.
 - `related` is the union of every `{lp:id}` token in the prose fields plus any extra curated links. Ids must exist. Two is a floor, not a cap.
+- `blog` is published tig.log posts that amplify this principle. Same shape on every file. Empty is allowed when there is no real post. `index.json` may have a `blog` list for the set.
 - Every string: no em dash, no `---`, Oxford commas, numbers under 10 spelled out.
 - No source-company names, products, executives, internal tools, or wiki chrome.
