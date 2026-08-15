@@ -1,0 +1,144 @@
+{
+  "id": "have-backbone-disagree-and-commit",
+  "name": "Have Backbone; Disagree and Commit",
+  "sort": 13,
+  "aliases": [
+    "dac",
+    "d&c",
+    "d and c",
+    "backbone",
+    "disagree",
+    "disagree and commit",
+    "commit",
+    "have backbone",
+    "unpopular"
+  ],
+  "definition": "Leaders are obligated to respectfully challenge decisions when they disagree, even when doing so is uncomfortable or exhausting. Leaders have conviction and are tenacious. They do not compromise for the sake of social cohesion. Once a decision is determined, they commit wholly.",
+  "why": [
+    "Social cohesion is the quiet deal where people set the truth down so nobody has to be uncomfortable. It is useful in a lot of life. It is how teams ship bad decisions. Have Backbone; Disagree and Commit is the antidote. You are obligated to challenge the call when you disagree, even when it is tiring, even when the person across the table outranks you.",
+    "I want interviewers to listen for two halves, not one. The first half is conviction: data, a real alternative, and a willingness to be misunderstood. Compromise is easier than getting the tape measure. If you are competing with people who measure, and you are the ones who split the difference so nobody is wrong, you lose. The goal is the right decision for the customer over the long term, not winning the argument.",
+    "The second half is the hard one. Once the decision is made, you commit as if it were yours. You present it that way to your team. You do not narrate that you were overruled. You do not hope it fails so you can be right later. You can still bring a new fact if the facts change. You cannot keep a private opposition party after the room has decided.",
+    "There is never an excuse for rudeness. You stand up for the idea and you listen all the way through the opposing view. Debate the issue, not the person. Escalate only when you truly believe the call is bad for the company, and escalate with data and an alternate plan. Then, when the decision comes back, you still commit."
+  ],
+  "calibrationIntro": "Score both halves: the disagree, and the commit. Under is silence or fake agreement. Over is arguing for sport, sabotaging the decision, or never letting the room decide.",
+  "rows": [
+    {
+      "id": "speak-with-an-alternative",
+      "situation": "When you disagree in the meeting",
+      "under": "Disagrees privately and stays quiet if nobody else speaks. The room never hears the other view.",
+      "justRight": "Offers an alternative, names the flaws and benefits of each path, and asks for the follow-up if more data is required.",
+      "over": "Lists the flaws and never proposes another way forward."
+    },
+    {
+      "id": "data-then-commit",
+      "situation": "When your view is unpopular",
+      "under": "Sits quietly despite having data that cuts against the popular position, then nods once the decision is made.",
+      "justRight": "Disagrees with peers and with people above them, using data. Once the decision is made, works to make it succeed, and still raises an unaddressed fact if one appears.",
+      "over": "States the counter-position with heat and no facts. Takes offense. After the decision, withholds support and keeps criticizing."
+    },
+    {
+      "id": "escalate-then-commit",
+      "situation": "When the first room did not move",
+      "under": "Nods at the boss, then complains in the hallway.",
+      "justRight": "Makes the case, loses, and escalates once with relevant data. Does not turn the escalation into a campaign.",
+      "over": "Tells everyone the group is making a mistake, builds an emotional case, and hopes the work fails."
+    },
+    {
+      "id": "conviction-and-commit",
+      "situation": "When the evidence starts to move",
+      "under": "Never states a point of view. Agrees too fast and does not test the other side.",
+      "justRight": "Advocates clearly and with conviction, then fully commits to the outcome once the decision is made, including when the evidence changed their mind.",
+      "over": "Sticks to the original opinion after better evidence arrives, and sabotages the final call."
+    },
+    {
+      "id": "issue-not-person",
+      "situation": "When the debate gets personal",
+      "under": "Will not engage. Suffers in silence.",
+      "justRight": "Debates the issue, not the person. Knows when to agree, then sells the decision as if it were their own.",
+      "over": "Too argumentative to support a consensus, even after the call is made."
+    },
+    {
+      "id": "style-in-the-room",
+      "situation": "When the room needs to hear you",
+      "under": "Style is weak and without conviction. Nobody buys in, because the speaker does not seem to care.",
+      "justRight": "Is direct, invites the other views, and keeps the discussion about the customer and the long term.",
+      "over": "Style is so aggressive that other people stop sharing. The loudest voice wins, and the data leaves the room."
+    },
+    {
+      "id": "after-the-decision",
+      "situation": "When the decision did not go your way",
+      "under": "Completes the work they disagree with and stays silent. No energy, and no honest commit.",
+      "justRight": "Supports the group decision as if it were their own. Knows when to move on. Brings a new fact if the world changes.",
+      "over": "Argues their point after the decision, or works at half speed so they can say they were right later."
+    },
+    {
+      "id": "social-cohesion",
+      "situation": "When agreement would be easier",
+      "under": "Splits the difference so nobody is wrong. The customer gets the worse outcome.",
+      "justRight": "Gets the tape measure. Holds the uncomfortable fact in the room until the decision is actually better.",
+      "over": "Delays the decision so they can keep talking. Debates to look smart, not to improve the call."
+    },
+    {
+      "id": "failed-path",
+      "situation": "When the committed path is failing",
+      "under": "Leaves the failing path in place and suffers through it.",
+      "justRight": "Meets the original proponent, reviews the evidence, and agrees the next step. Does not use the miss as a chance to say I told you so.",
+      "over": "Presents the failure in public as proof the original direction was foolish."
+    },
+    {
+      "id": "manager-translation",
+      "situation": "When you have to carry a decision to your team",
+      "under": "Tells the team you were overruled, so they inherit your opposition.",
+      "justRight": "Presents the decision as the team's decision, walks through the alternatives that lost, and lines people up to make it true.",
+      "over": "Sells a fake enthusiasm nobody believes, or refuses to explain the reasoning at all."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Get the tape measure",
+      "body": "Two options are on the table. Compromise would let nobody be wrong. Measuring would make one of them wrong. The leader asks for the measurement. If you skip that step so the room stays friendly, you will lose to the team that measured. Social cohesion is not a strategy."
+    },
+    {
+      "title": "Disagree and commit as a time saver",
+      "body": "You have conviction and the room does not. You have already had the real debate. You say: I know we disagree. Will you gamble with me on this? Disagree and commit. Nobody can know the answer for sure yet. You get a yes, and you stop burning the calendar. The phrase only works if you have actually heard them, and if you will own the result."
+    },
+    {
+      "title": "Carry the decision you lost",
+      "body": "A new manager loses a call about a staffing or compensation decision, then walks back to the team and narrates the loss. The team now has permission to half-commit. The calibrated move is the opposite: explain the options that were considered, state the decision as ours, and execute it with a straight face. Your credibility is the commit, not the recap of your dissent."
+    }
+  ],
+  "looksLike": {
+    "individual": "An individual with backbone speaks in the room that can still change the decision, not in the hallway after. They bring data and an alternative. They can lose, escalate once, and then work the plan they argued against. You will not hear them campaign against a call they already lost.",
+    "manager": "A manager with backbone invites dissent while the decision is open, then demands a clean commit after. They do not punish the person who disagreed well. When they carry a decision they lost, they do not leak opposition to the team. They escalate rarely, with facts and a proposed alternative, and they do not use escalation as theater."
+  },
+  "deepen": [
+    "When did you last disagree with someone who outranked you, in the room, with data?",
+    "What alternative did you put on the table, or did you only name the flaws in theirs?",
+    "After the decision went against you, what did you say to your team in the next meeting?",
+    "Are you still running a private opposition party on a call the room already made?",
+    "When did you change your mind because the other person had the better fact?",
+    "Did you escalate because the customer would lose, or because you were not heard?",
+    "Where are you splitting the difference so nobody has to be wrong?",
+    "If I asked the last person you debated whether you committed, what would they say?",
+    "Do people stop sharing when you enter the argument, and if so, what in your style is doing that?",
+    "When the committed path started to fail, did you help fix it, or did you wait to be proven right?"
+  ],
+  "related": [
+    {
+      "id": "earn-trust",
+      "note": "People will only hear your dissent if they already trust your motives and your respect."
+    },
+    {
+      "id": "are-right-a-lot",
+      "note": "Backbone without a habit of disconfirming your own belief is just stubbornness."
+    },
+    {
+      "id": "deliver-results",
+      "note": "Commit is how a decision turns into a result. Dissent that lingers is drag."
+    },
+    {
+      "id": "customer-obsession",
+      "note": "The thing you refuse to compromise is the customer outcome, not your ego."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "customer-obsession",
+  "name": "Customer Obsession",
+  "sort": 1,
+  "aliases": [
+    "customer",
+    "customers",
+    "co",
+    "customer first",
+    "customer obsessed",
+    "customer-obsession",
+    "obsession",
+    "customer experience"
+  ],
+  "definition": "Leaders start with the customer and work backwards. They work hard to earn and keep customer trust. They watch competitors. They obsess over customers.",
+  "why": [
+    "Customer Obsession is where the energy comes from. You can invent impressive technology, solve hard problems, and still fail if you are not meeting a real customer need. Competitor-watching is limiting. Learn from competitors. Live for customers.",
+    "At every meeting, the customer is the person who is not in the room. Someone has to advocate for them. If you do not, the room will optimize for the people who showed up.",
+    "Many jobs never touch the end customer. That does not let you off. Your customer may be another team. You still work backwards from their need, and you still understand how their work reaches the person who pays.",
+    "Mature teams get arrogant. They start believing they know better than the people they depend on. The habit that prevents that: in every decision, ask how this affects the customer."
+  ],
+  "calibrationIntro": "I want interviewers to listen for a named customer and a real tradeoff. A story that starts with an internal plan and retrofits a customer line is not this principle. Neither is making a process exception for every loud person, or ignoring a complaint because it is only one.",
+  "rows": [
+    {
+      "id": "decision-making",
+      "situation": "In decision making",
+      "under": "Optimizes for internal convenience. Does not put the customer experience first.",
+      "justRight": "Starts with the customer and works backwards. Seeks feedback and uses it to improve.",
+      "over": "Makes too many exceptions to a sound process because one customer asked."
+    },
+    {
+      "id": "collecting-and-responding-to-feedback",
+      "situation": "Collecting and responding to feedback",
+      "under": "Asks customers too late, or not at all, when building something new.",
+      "justRight": "Looks for feedback on a cadence. Builds service metrics. Seeks input before the plan is frozen.",
+      "over": "Changes the plan with every single comment. Loses the greater customer good."
+    },
+    {
+      "id": "setting-priorities-and-delivering-results",
+      "situation": "Setting priorities and delivering results",
+      "under": "The wrong work gets done. No customer feels heard. The people doing the work are on a death march.",
+      "justRight": "Customers understand the vision. Even when their request is not first, they can see why the current work is best for the collective good. You listen, then push back so the long-term right thing ships.",
+      "over": "Promises too much to keep every customer happy. Cannot rank requests. Deadlines slip and the team burns out from churn."
+    },
+    {
+      "id": "responding-to-a-complaint",
+      "situation": "A customer complains about a product they bought",
+      "under": "Ignores the complaint because it is only one customer.",
+      "justRight": "Investigates. Confirms the product is described accurately and is not defective. Fixes it if it is faulty. Tells the customer what you found. Replaces it when that is the honest fix.",
+      "over": "Pulls the entire listing because one person complained."
+    },
+    {
+      "id": "accidental-overcharge",
+      "situation": "You discover an accidental overcharge",
+      "under": "Ignores it if the amount is small.",
+      "justRight": "Refunds the exact overcharge without being asked. If you caused extra fees (an overdraft, a penalty), you cover those too.",
+      "over": "Sends a gift certificate well above the error and calls that the process."
+    },
+    {
+      "id": "responding-to-customer-comments",
+      "situation": "Responding to customer comments",
+      "under": "Feedback arrives only through escalations. It is not part of weekly measurement.",
+      "justRight": "Customer need is a regular part of the week. You know whether they had a good week, and whether the work ahead will help them in a significant way.",
+      "over": "Treats every comment as an urgent daily priority. Rewrites the plan weekly for feedback that is not researched or understood."
+    },
+    {
+      "id": "product-design",
+      "situation": "On product design",
+      "under": "Builds it and hopes they will come. Falls in love with the technology.",
+      "justRight": "Works backwards from the end-user need. Delivers value in increments. Rechecks whether the product is meeting the need.",
+      "over": "Tries to build the perfect product that meets every demand at once."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Keep a broken promise in person",
+      "body": "A customer was promised a gift by a hard date. The system failed. Someone bought the item locally and put it in the customer's hands. That is not a scalable process. It is a signal: the promise mattered more than the org chart. I want interviewers to hear what the candidate did next so it would not happen again. Heroics without a fix is theater. Heroics that produce a process change are Customer Obsession plus {lp:ownership}."
+    },
+    {
+      "title": "Treat clumsy feedback as an audit",
+      "body": "Customers write short, messy, even \"simple minded\" reviews. Teams that are not obsessed discard them. Teams that are obsessed research each one, because a real person just audited your process for free. The candidate who can tell you what they changed after a clumsy comment is the one I want in the loop."
+    },
+    {
+      "title": "Say no to a request that would hurt them later",
+      "body": "A loud customer wants a shortcut that would help this week and damage the experience for everyone else. The under move is to hide. The over move is to say yes and churn the team. The just-right move is to explain the tradeoff, ship the thing that is best for the collective good, and stay in the conversation. That is how you earn trust with customers without becoming a vending machine."
+    }
+  ],
+  "looksLike": {
+    "individual": "You can name who consumes your work and how it shows up in their week. You close the loop when something breaks. You do not wait for an escalation to discover a problem you could have seen in the product.",
+    "manager": "You do not let the team hide behind \"the business asked for it.\" You force the doc to name the customer. You kill work that is internally elegant and customer-useless. You teach the team when to say no to one customer so you can say yes to the customer set."
+  },
+  "deepen": [
+    "Who is your customer, and who is not your customer but should be?",
+    "If your customer is internal, how does their work reach the person who pays?",
+    "When did you last sit with a customer using the product, and what friction did you see?",
+    "Are you implementing the request they asked for, or solving the problem they are actually trying to solve?",
+    "What did you say no to because it would have been a short-term win and a long-term loss for the customer?",
+    "How do customers reach you, and how are you doing against the response time you promised?",
+    "When a problem sits outside your area, what do you do to make sure it stays fixed?",
+    "How will you know the customer had a good week because of your team's work?",
+    "What part of your system causes the most customer pain, and what is the root cause?",
+    "If you cannot hit the date, how do you renegotiate with the customer instead of going silent?"
+  ],
+  "related": [
+    {
+      "id": "ownership",
+      "note": "Obsession without ownership is a speech. Someone has to stay until the customer problem stays fixed."
+    },
+    {
+      "id": "earn-trust",
+      "note": "You earn customer trust by advocating for the person who is not in the room, then telling them what you found."
+    },
+    {
+      "id": "invent-and-simplify",
+      "note": "Working backwards from the customer is how you decide what to invent, and what to stop adding."
+    },
+    {
+      "id": "dive-deep",
+      "note": "Every customer anecdote is an audit. Research it before you dismiss it as a sample of one."
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "id": "hire-and-develop-the-best",
+  "name": "Hire and Develop the Best",
+  "sort": 6,
+  "aliases": [
+    "hdtb",
+    "hire",
+    "hiring",
+    "develop",
+    "develop the best",
+    "talent",
+    "coaching",
+    "hire and develop"
+  ],
+  "definition": "Leaders raise the performance bar with every hire and every promotion. They recognize exceptional talent and move those people across the organization. They develop leaders and take coaching seriously.",
+  "why": [
+    "The hiring bar is the culture. Lower it once because you need six people by year end, and you will spend years managing the damage. I would rather slip a date than put a weak person on a strong team. Interview until you are sure. Empty is better than wrong.",
+    "Hiring people who might be smarter than you is the job. You are not filling a seat. You are looking for someone who will get bored doing the same work and will raise the standard around them.",
+    "Hiring is not enough. If you are an individual, your career is yours. Take the learning. Demand stretch work. Do not wait to be developed. If you are a manager, developing people is the day job, not the leftover. When they get better, the product gets better.",
+    "Holding a star because they make your team look good is a local optimization. Moving them is how the company gets stronger, and it opens stretch roles behind them. Net exporters of talent are doing this principle. Hoarders are not."
+  ],
+  "calibrationIntro": "I want interviewers to listen for a hire they walked away from, a person they developed and then let go, and a low performer they actually moved. \"I care about people\" is not this principle. Neither is hunting for a reason not to hire anyone, or filling a seat so a program can start.",
+  "rows": [
+    {
+      "id": "new-hire-quality",
+      "situation": "Quality of people you hire and later rate",
+      "under": "Half of new hires land below the bar in their first year.",
+      "justRight": "Most new hires meet the bar, and more than half clearly exceed it within two years.",
+      "over": "Claims every new hire is top tier in year one. That usually means the bar was not real, or the ratings are not."
+    },
+    {
+      "id": "underperformers-and-stretch",
+      "situation": "Stretch, feedback, and people below the bar",
+      "under": "Underperformers hang around too long. The bar is unclear. Morale drops.",
+      "justRight": "The team is stretched into work they did not think they could do. Expectations are clear. Feedback is fast. People below the bar leave or are moved.",
+      "over": "Turnover is high because the bar is impossible and career paths are a mirage."
+    },
+    {
+      "id": "mentoring-beyond-your-team",
+      "situation": "Who you coach",
+      "under": "Mentors only direct reports.",
+      "justRight": "Coaches people on the team and off it. Growing others is not limited by the org chart.",
+      "over": "Says yes to every mentoring request and becomes a bottleneck."
+    },
+    {
+      "id": "principles-over-function",
+      "situation": "What you optimize for in a hire",
+      "under": "Hires a functional expert who cannot meet the leadership bar.",
+      "justRight": "Hires for the leadership principles and the core competencies, then for the craft.",
+      "over": "Interviews for months hunting a perfect combination that does not exist."
+    },
+    {
+      "id": "raising-the-bar",
+      "situation": "Whether this person raises the bar",
+      "under": "Raises team output but not the standard for how the work gets done.",
+      "justRight": "Looks for people who raise the bar for the team and the company. They set a new standard.",
+      "over": "Takes no risk. Votes no at the first missing skill or the first negative signal."
+    },
+    {
+      "id": "exporting-talent",
+      "situation": "Developing people and then moving them",
+      "under": "Develops only the people already at the top. Ignores everyone else.",
+      "justRight": "Rotates people. Becomes a net exporter once they are ready. Looks for stretch on the team and around it.",
+      "over": "Exports everyone so fast there is no senior core left for new hires to learn from."
+    },
+    {
+      "id": "hiring-for-a-deadline",
+      "situation": "A program needs people now",
+      "under": "Hires someone who will not fit long term so a near-term deliverable can start.",
+      "justRight": "Hires someone likely to shine on more than a few leadership principles, even if the seat stays open longer.",
+      "over": "Waits for the person who is perfect in every way."
+    },
+    {
+      "id": "goal-setting-with-employees",
+      "situation": "Setting goals with someone you are developing",
+      "under": "No shared goals. Even the leader cannot say how they will be hit.",
+      "justRight": "Sets goals with the person, with real agreement on the outcome.",
+      "over": "Agrees the goals, then spoons out the method in detail."
+    },
+    {
+      "id": "coaching-follow-up",
+      "situation": "Following up after you set a development goal",
+      "under": "No follow-up. No attention to whether anything changed.",
+      "justRight": "Guides toward the result. Checks in on a cadence. Gives feedback and a few sharp suggestions.",
+      "over": "Follows up in so much detail the person never has to think."
+    },
+    {
+      "id": "hiring-bigger",
+      "situation": "The level and caliber of the hire",
+      "under": "Cannot decide at the needed level, so offers a more junior seat. Fills a chair. Hires someone junior to do the work they do not want.",
+      "justRight": "Hires someone who could do their job. That should scare them a little. Hires them anyway.",
+      "over": "Insists on the 99th percentile for every seat, or expects a junior hire to already operate at the next level."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Empty is better than wrong",
+      "body": "You need six people by year end. A candidate is fine, not great. The under move is to hire them so the initiative can start. I would rather miss the initiative. Weak hires hire more weak hires. I want interviewers to hear a time the candidate held the seat open, and what they shipped (or slipped) because of it."
+    },
+    {
+      "title": "Export the star",
+      "body": "Your best person has outgrown the team. Keeping them makes your metrics look good this year. Moving them makes the company stronger and opens a stretch role behind them. Tell me about the person you developed and then let go. If every star is still on the org chart, this principle is not landing."
+    },
+    {
+      "title": "Hire someone who scares you",
+      "body": "The just-right hire could do your job. That is uncomfortable. The under move is to hire someone junior to take the work you do not like. The over move is to wait for a unicorn or to expect a more junior person to already operate at your level. Hire bigger."
+    }
+  ],
+  "looksLike": {
+    "individual": "You take your own development seriously. You ask for stretch work. You coach peers without being asked. In a hiring loop you will vote no when the person would not raise the bar, even if the team is tired of interviewing.",
+    "manager": "You treat coaching as the day job. You move low performers with speed and clarity. You export talent on purpose. You would rather slip a date than lower the bar, and you hire people who might make you look less like the smartest person in the room."
+  },
+  "deepen": [
+    "When did you last walk away from a candidate because they would not raise the bar?",
+    "Who have you developed and then moved to another team, and what happened to both sides?",
+    "What did you do with the last person on your team who was below the bar?",
+    "When you hire, are you filling a seat or raising the standard for the people already there?",
+    "Who do you coach who does not report to you?",
+    "What stretch work did you give someone, and how did you follow up without taking the work back?",
+    "When did you hire someone who could do your job, and how did that change the team?",
+    "How do you keep a senior core so new hires have someone to learn from?",
+    "What hiring miss did you make, and what did you change about how you interview?",
+    "If you need the work done this quarter and the candidate is only fine, what do you do?"
+  ],
+  "related": [
+    {
+      "id": "insist-on-the-highest-standards",
+      "note": "The hiring bar is the first standard. If you let it slip, every other standard follows."
+    },
+    {
+      "id": "learn-and-be-curious",
+      "note": "Development is structured curiosity. You cannot grow people you will not let learn in public."
+    },
+    {
+      "id": "ownership",
+      "note": "Your people are not a local asset. Moving a star is owning the company's future, not your org chart."
+    },
+    {
+      "id": "earn-trust",
+      "note": "Coaching only works if people believe you will tell them the truth and still be for them."
+    }
+  ]
+}

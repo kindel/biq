@@ -1,0 +1,127 @@
+{
+  "id": "ownership",
+  "name": "Ownership",
+  "sort": 2,
+  "aliases": [
+    "own",
+    "owner",
+    "owners",
+    "owned",
+    "outside your area",
+    "languishing"
+  ],
+  "definition": "Leaders are owners. They think long term and do not sacrifice long-term value for short-term results. They act on behalf of the whole company, not just their own team. They never say \"that's not my job.\"",
+  "why": [
+    "Renters pay the bills and call someone when something breaks. Owners fix the problem, or they bring in an expert and stay until the work is done to a high standard.",
+    "You own what you own. You take responsibility for your area, you own your mistakes, and you deliver on your commitments. You do not put a bucket under a leak. You find the leak and seal it, even if that means replacing the roof.",
+    "You also own what you do not own. You speak up when you see a problem outside your area, and you do not let go until someone capable is on it. \"It is not my fault\" is almost never an acceptable answer. You own your dependencies.",
+    "You own the future. You examine whether today's foundations can support growth. You make the long-term call even when the short-term call is easier and more popular.",
+    "In some ways Ownership is the other principles applied. {lp:customer-obsession} tells you what is worth owning. {lp:deliver-results} is what ownership looks like when the date arrives. {lp:have-backbone-disagree-and-commit} is how you fight for the long-term fix when it is unpopular."
+  ],
+  "calibrationIntro": "I want interviewers to listen for what the candidate did when the work sat outside their job description, and what they did when a dependency failed. \"I flagged it\" is not ownership. Neither is annexing someone else's area so you can be the hero.",
+  "rows": [
+    {
+      "id": "knowing-what-you-own",
+      "situation": "Knowing what you own",
+      "under": "Gives up ownership without asking whether the customer or the company is better served. Fine as long as \"someone\" is on the hook.",
+      "justRight": "Knows what they own and what they do not. Inventories it. Looks for ways to make it better, including giving it to a better owner.",
+      "over": "Never lets go of anything, even when another owner would be better for customers. Treats other groups as threats."
+    },
+    {
+      "id": "credit-and-blame",
+      "situation": "Credit and blame",
+      "under": "Passes the blame. Steals the credit.",
+      "justRight": "Everything they put their name next to, they are proud of.",
+      "over": "Acts like a sole proprietor. Owns everything. Cannot delegate."
+    },
+    {
+      "id": "unowned-blockers",
+      "situation": "Something blocks you and has no clear owner",
+      "under": "Blames the blocker. Avoids owning anything that is not already theirs.",
+      "justRight": "Takes responsibility for the unowned blocker and drives it to a real owner or a real fix.",
+      "over": "Takes over work that already has an owner, just because it is in the way."
+    },
+    {
+      "id": "holding-responsibility",
+      "situation": "Holding responsibility",
+      "under": "Avoids responsibility by blaming others.",
+      "justRight": "Works until the items they are responsible for are actually taken care of.",
+      "over": "Micromanages everyone else's work to make sure they are being good owners."
+    },
+    {
+      "id": "owning-dependencies",
+      "situation": "A dependency is late or broken",
+      "under": "Lets the dependency derail the work. Blames them. Does not try to fix what is broken.",
+      "justRight": "Owns the dependency. Follows up. Escalates when needed. Still responsible for the outcome.",
+      "over": "Never gives the dependency the benefit of the doubt. Micromanages their work instead of setting an audit and letting them do the job."
+    },
+    {
+      "id": "tough-decisions",
+      "situation": "A tough decision with a local vs company tradeoff",
+      "under": "Does not make the tough call. Lets what happens happen.",
+      "justRight": "Makes the call that is in the long-term interest of the customer, and therefore the company.",
+      "over": "Makes the short-term call that optimizes their team and hurts customers or other teams."
+    },
+    {
+      "id": "long-term-bets",
+      "situation": "Investing in the future",
+      "under": "Never thinks about the future. Downplays problems that will show up later.",
+      "justRight": "Makes big bets they believe will pay off long term. Examines the risks. Moves when they have enough information.",
+      "over": "Protects what they have. Treats any suggested change as a threat."
+    },
+    {
+      "id": "problems-outside-your-area",
+      "situation": "You see a problem outside your area",
+      "under": "Assumes someone else will take care of it.",
+      "justRight": "Points out the problem and stays until a fix is in place, in their area or not. Makes sure the problem stays solved.",
+      "over": "Points out other people's problems to gain control of their space. Cares more about enlarging what they own than solving it."
+    }
+  ],
+  "examples": [
+    {
+      "title": "The leaky roof",
+      "body": "A renter puts a bucket under the drip. An owner finds the leak and seals it, even if that means replacing the roof. I want interviewers to hear which one the candidate did when a tactical fix would have made this quarter look fine and next year worse."
+    },
+    {
+      "title": "The silent dependency",
+      "body": "Another team missed a date that your launch needed. The under story is a status update that blames them. The over story is you rewriting their plan. The just-right story is you followed up, escalated, offered help, and still treated the customer outcome as yours. That is owning a dependency, not annexing a team."
+    },
+    {
+      "title": "Give it to a better owner",
+      "body": "You built a tool. Another team would serve customers better if they ran it. Owners inventory what they have and can give it away. Hoarders call that a threat. I want to hear a time the candidate let go because the customer got a better owner, not because they were tired of the work."
+    }
+  ],
+  "looksLike": {
+    "individual": "You pick up work that is languishing. You do not wait to be assigned the unowned gap. When you miss, you say so early and stay on the hook. You document what you know so the next owner is not starting from zero.",
+    "manager": "You make the long-term call when it costs your team this quarter. You do not let \"not my org\" be the end of a customer problem. You build the relationships and the audit mechanisms so dependencies do not become surprises, and you export ownership instead of collecting it."
+  },
+  "deepen": [
+    "When is the last time you picked up something languishing that would not have happened without you?",
+    "What did you do the last time a dependency failed to deliver to you?",
+    "What have you given away because another owner would be better for the customer?",
+    "When did you sacrifice a short-term result for long-term value, and what did it cost you?",
+    "Do you measure your work in effort exerted or in value delivered?",
+    "What problem sits outside your area right now, and what have you done to make sure it is owned?",
+    "How do you share what you invent so other teams can use it?",
+    "When you dropped the ball, how early did you say so, and what did you do next?",
+    "Are you doing something easy today that will cause a customer or another team a problem tomorrow?"
+  ],
+  "related": [
+    {
+      "id": "customer-obsession",
+      "note": "Ownership without a customer is busywork. Obsession without ownership is a speech."
+    },
+    {
+      "id": "deliver-results",
+      "note": "Owners keep the commitments they make. Results are how you know the ownership was real."
+    },
+    {
+      "id": "have-backbone-disagree-and-commit",
+      "note": "Owners respectfully challenge a bad long-term call, then commit when the decision is made."
+    },
+    {
+      "id": "dive-deep",
+      "note": "You cannot own a leak you refuse to inspect. Details are how owners find the source."
+    }
+  ]
+}

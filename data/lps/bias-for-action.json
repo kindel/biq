@@ -1,0 +1,130 @@
+{
+  "id": "bias-for-action",
+  "name": "Bias for Action",
+  "sort": 9,
+  "aliases": [
+    "bfa",
+    "action",
+    "speed",
+    "bias",
+    "bias for action",
+    "move"
+  ],
+  "definition": "Speed matters in business. Many decisions and actions are reversible and do not need extensive study. Leaders value calculated risk taking.",
+  "why": [
+    "If you only do the things you already know will work, you leave a lot of opportunity on the table. An experiment is not an experiment if you know the outcome. Some of those bets fail. You often learn more from the miss than you would have from a safe success.",
+    "I want interviewers to listen for whether the candidate can tell a two-way door from a one-way door. If the decision is reversible, act. More study after you have enough information is waste. If the decision is irreversible, that is when you {lp:dive-deep} and slow down on purpose.",
+    "Bias for Action also looks like initiative. It is walking down the hall when yesterday's message got silence. It is picking up the next useful task while you wait. It is booking the meeting, showing up on time, and not expecting someone else to do the work you can do.",
+    "It also looks like impatience when a customer is hurting. You join the investigation before anyone proves it is your team's bug. You do the right thing for the customer without waiting for a permission slip. Calculated risk is the point. Motion without a target is not."
+  ],
+  "calibrationIntro": "Score whether the candidate moves with calculated risk and then course-corrects. Under is paralysis or passivity. Over is steamrolling, no focus, and a pile of unfinished work.",
+  "rows": [
+    {
+      "id": "team-effectiveness",
+      "situation": "When the team has to move",
+      "under": "Nothing gets done. Customers and peers see the group as ineffective.",
+      "justRight": "Takes calculated risks. Decisions are quick, and course correction is fluid. Other people want to work with them.",
+      "over": "Customers and peers feel steamrolled. Everything is priority one. Deadlines are missed."
+    },
+    {
+      "id": "step-up",
+      "situation": "When work is sitting unowned",
+      "under": "Passes the work up or leaves it sitting.",
+      "justRight": "Moves the work forward. Steps up and owns it.",
+      "over": "Tackles everything and has no sense of priority."
+    },
+    {
+      "id": "follow-through",
+      "situation": "When the group agrees a change is needed",
+      "under": "Talks about the change and never does the action part.",
+      "justRight": "Names the reversible next step, takes it, and checks whether it worked.",
+      "over": "Fixes the local issue in a hurry and never looks at the larger picture."
+    },
+    {
+      "id": "fear-of-wrong",
+      "situation": "When the path is new",
+      "under": "Afraid to be wrong. Overanalyzes. Says we cannot, or we have never done that. Does not roll up sleeves.",
+      "justRight": "Starts on the problem, even if the first move is small. Reaches across teams to learn faster. Title does not mean less work.",
+      "over": "Does the work at any cost. Gets a lot of the wrong things done. Never reflects, and never finishes."
+    },
+    {
+      "id": "motion-vs-progress",
+      "situation": "When the calendar is full",
+      "under": "Bias for thinking, or for doing nothing.",
+      "justRight": "Execution is what matters. Prefers incremental progress in the right direction over waiting for a perfect plan.",
+      "over": "Constant motion with no focus."
+    },
+    {
+      "id": "prototype",
+      "situation": "When the data is incomplete",
+      "under": "Analysis paralysis. Waits for a complete picture that will not arrive.",
+      "justRight": "Reads the data they have, picks a solid next step, and goes forward with a prototype.",
+      "over": "Takes action on a path they cannot even describe."
+    },
+    {
+      "id": "input-and-reversibility",
+      "situation": "When a decision needs input",
+      "under": "Delays for weeks waiting to hear from everyone before acting.",
+      "justRight": "Consults the people who matter, takes an acceptable amount of risk, and moves.",
+      "over": "Acts with no input, and does not stop to ask whether the move is reversible."
+    },
+    {
+      "id": "customer-pain",
+      "situation": "When a customer is hurting",
+      "under": "Waits for a ticket, an assignment, or proof it is their issue.",
+      "justRight": "Joins the investigation early, even when it may not be their team's bug, and does the next right thing for the customer.",
+      "over": "Charges in, breaks a one-way door, and creates a second incident."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Two-way door, then correct",
+      "body": "A team can A/B a change, ship it to a slice of customers, and roll it back in an afternoon. The leader does not commission a six-week study. They ship the slice, read the result, and either widen it or revert. That is calculated risk. The irreversible launch to every customer is the door you do not kick open."
+    },
+    {
+      "title": "The experiment that taught more than a win",
+      "body": "A team spends three years on a new front end for a capability they licensed. Nobody uses it. They shut it down. The useful story is not the failure. It is that they were willing to run a real experiment, call the miss, and stop. If you only fund the sure things, you do not invent."
+    },
+    {
+      "title": "Do not wait for the alert",
+      "body": "Metrics start to look wrong in the afternoon. The person who has been watching them joins the call before the alert fires, and starts the investigation before anyone assigns a team. Bias for Action is that impatience when a customer is about to get hurt, not a personality that cannot sit still in a meeting."
+    }
+  ],
+  "looksLike": {
+    "individual": "An individual with Bias for Action unblocks themselves. They send the note, then they walk over. They keep a next useful task ready for the idle time. They can tell you which recent decision was reversible, what they did with incomplete data, and what they changed when the result came back.",
+    "manager": "A manager with Bias for Action removes the approval theater that turns two-way doors into projects. They expect calculated risk, they do not punish a well-run miss, and they stop the person who is generating motion without finishing. They also know when to force a pause because the door only swings one way."
+  },
+  "deepen": [
+    "Was the last decision you delayed a two-way door, and if so, why did you wait?",
+    "What is the smallest reversible step you could take this week with the information you already have?",
+    "When a customer was hurting, did you join before the work was assigned to you, or did you wait for proof it was your bug?",
+    "Whose input do you actually need before you move, and whose input are you collecting only to avoid being wrong?",
+    "What did you finish in the last month, and what did you start and abandon?",
+    "How do you tell a calculated risk from doing the work at any cost?",
+    "What did the last failed experiment teach you that a safe success would not have?",
+    "When yesterday's message got silence, what did you do instead of sending a second one into the same void?",
+    "Where are you still studying after you already have enough information to act?"
+  ],
+  "related": [
+    {
+      "id": "dive-deep",
+      "note": "Dive Deep on one-way doors. Bias for Action on two-way doors. The skill is telling them apart."
+    },
+    {
+      "id": "deliver-results",
+      "note": "Action that does not finish is motion. Results are the point."
+    },
+    {
+      "id": "invent-and-simplify",
+      "note": "Invention requires experiments, and experiments require a willingness to be wrong."
+    },
+    {
+      "id": "are-right-a-lot",
+      "note": "Speed without judgment is thrash. Judgment without speed is a memo."
+    },
+    {
+      "id": "ownership",
+      "note": "Stepping up when the work is unowned is Bias for Action with an owner's signature on it."
+    }
+  ]
+}
