@@ -1,0 +1,146 @@
+{
+  "id": "invent-and-simplify",
+  "name": "Invent and Simplify",
+  "sort": 3,
+  "aliases": [
+    "invent",
+    "simplify",
+    "i&s",
+    "ias",
+    "innovation",
+    "innovative",
+    "invent-and-simplify",
+    "simple",
+    "novel"
+  ],
+  "definition": "Leaders expect invention from their teams and always find ways to simplify. They look for new ideas from everywhere and are not limited by \"not invented here.\" When they do new things, they accept that they may be misunderstood for a long time.",
+  "why": [
+    "Textbook solutions will not get you there. Sometimes the problem has no parallel. Sometimes last year's solution will not scale. Invention imagines a future that is markedly different, then figures out how to get there. Innovation blows apart the constraints that make today's process behave the way it does.",
+    "Invention without Simplify is decoration. Teams add features to a thing that is already too hard to use. They keep a step because \"that is how we have always done it.\" Simplifying an existing process often frees more time than a new feature ever will.",
+    "The work is disruptive. If you champion a new idea, expect resistance. Push it forward without listening and you erode {lp:earn-trust}, and you may miss the fact that would make the idea better. You need {lp:have-backbone-disagree-and-commit} when the scrutiny comes. Run a pilot. Measure whether the idea actually delivers. Say out loud what you are worried about.",
+    "If a good solution already exists, inventing your own is usually vanity. If the off-the-shelf thing will not scale, say why, with evidence. Keep a critical eye. Do not reject a solution just because you did not write it.",
+    "Inventing well means being stubborn and flexible at the same time. Stubborn, or you quit the experiment too soon. Flexible, or you pound the wall and miss the other solution."
+  ],
+  "calibrationIntro": "I want interviewers to listen for a simpler path that still solved the customer problem. \"We added a feature\" is not this principle. Neither is rewriting a working system so the candidate could feel clever. Listen for experiments, pilots, and a willingness to use someone else's idea.",
+  "rows": [
+    {
+      "id": "complexity-vs-novelty",
+      "situation": "Living with complexity vs changing what works",
+      "under": "Lets complexity live. Lets past output drive future thinking.",
+      "justRight": "Creates room to find new ways of thinking, with the customer outcome always in mind.",
+      "over": "Changes things that are working well. Discards a sound decision so they can propose something brand new."
+    },
+    {
+      "id": "scalability-thinking",
+      "situation": "Deciding whether the current approach will scale",
+      "under": "Accepts the status quo because growth is easy right now. Does not understand the underlying numbers.",
+      "justRight": "Pushes a thought process that asks whether the idea still works at the next order of scale.",
+      "over": "Makes the change too fast, in the interest of change itself."
+    },
+    {
+      "id": "product-simplicity",
+      "situation": "Software or product design",
+      "under": "The product works and is too complex. Bugs take a long time to fix. Every new engineer wants to rewrite it.",
+      "justRight": "The result meets the goal. It is simple enough to maintain.",
+      "over": "Sacrifices the goal or the needed features for elegance."
+    },
+    {
+      "id": "team-independence",
+      "situation": "How product teams are organized",
+      "under": "Teams are too interdependent. New work is blocked too often.",
+      "justRight": "Teams are relatively independent and fast. They know their roles. They still share what they learn.",
+      "over": "Teams are siloed. Lots of \"not invented here\" and duplicated work."
+    },
+    {
+      "id": "maintainable-features",
+      "situation": "Shipping a new feature",
+      "under": "Ships a complex solution with a high operational burden.",
+      "justRight": "Delivers features that solve the customer problem and stay maintainable and reliable.",
+      "over": "Simplifies so far that the customer problem is no longer solved."
+    },
+    {
+      "id": "build-vs-buy",
+      "situation": "Build, buy, or reuse",
+      "under": "Re-implements the same solution without moving forward.",
+      "justRight": "Builds when the customer problem is new. Reuses or buys when a good solution already exists.",
+      "over": "Builds new technology where there is no need."
+    },
+    {
+      "id": "simplifying-a-process",
+      "situation": "A process has become a maze",
+      "under": "Crosses out one box, claims genius, and leaves the maze in place.",
+      "justRight": "Reduces the maze to a small, correct path. People in the room say it cannot be that easy. It is.",
+      "over": "Reduces it to two steps on their laptop, then tells someone else to implement it without talking to the people in the process or plotting where it can go wrong."
+    },
+    {
+      "id": "bureaucracy-vs-novelty",
+      "situation": "Waste, policy, and new ideas",
+      "under": "Adds layers of policy and hierarchy. Argues why you cannot change.",
+      "justRight": "Finds ways to cut waste and bureaucracy. Endorses good ideas from inside and outside. Balances both sources.",
+      "over": "Rejects anything that is not new. Tries any new thing even when the data says no."
+    },
+    {
+      "id": "purpose-of-innovation",
+      "situation": "Why you are inventing",
+      "under": "No innovation.",
+      "justRight": "Builds new things that have a purpose and improve the customer experience.",
+      "over": "Innovates for innovation's sake. Not solving a problem."
+    }
+  ],
+  "examples": [
+    {
+      "title": "The whiteboard in the corner",
+      "body": "The room is staring at a chart of arrows. Someone walks to the board, crosses out half of it, and the whole thing fits in a corner. People say it cannot be that easy. I want interviewers to hear the candidate who did that, and also hear whether they checked the failure cases with the people who run the process. Simplifying in private and throwing the result over the wall is the over move."
+    },
+    {
+      "title": "Pilot it",
+      "body": "A big invention that can only be tested after three years and a giant spend will not get many cycles. Find a team willing to try it, or a slice of the audience. Measure whether it delivers. Be vocal about what you are worried about. Partner with the loudest critic. If you cannot say how the change helps the customer, you are not ready to invent it."
+    },
+    {
+      "title": "Not invented here",
+      "body": "A good solution already exists on another team, or outside the company. Building your own feels like invention and is usually waste. The other failure is the reverse: rejecting the external thing because it was not born here. I want the candidate who can say what they reused, what they refused, and the evidence for both."
+    }
+  ],
+  "looksLike": {
+    "individual": "You notice when you are solving the same problem for the third time. You ask what you could remove. You look outside your team before you write a new system. You can explain the customer problem in a sentence, then show the simpler path.",
+    "manager": "You require invention and you require simplicity. You fund small experiments and kill the ones that do not move a customer metric. You do not let \"not invented here\" become a team sport, and you do not let elegance eat the goal."
+  },
+  "deepen": [
+    "When did you last recognize that last year's solution was no longer scaling?",
+    "What experiment did you run to lower the cost of being wrong?",
+    "What did you remove from a process, and how did you know the customer problem was still solved?",
+    "Where did the idea come from if it was not invented on your team?",
+    "What would the process look like if you had a tenth of the time, or ten times the traffic?",
+    "When is the last time you set aside delivery work to look at the bigger picture?",
+    "Which part of the current process takes the most time, and what happens if you remove it?",
+    "Are you stuck re-implementing the same fix, or did you change the system underneath?",
+    "How do you reward invention on your team without rewarding novelty for its own sake?",
+    "What criticism of your idea was right, and what did you change because of it?"
+  ],
+  "related": [
+    {
+      "id": "customer-obsession",
+      "note": "Invent on behalf of a customer. Invention with no customer is a hobby."
+    },
+    {
+      "id": "think-big",
+      "note": "{lp:think-big} sets the destination. Invent and Simplify is the non-obvious path that gets you there."
+    },
+    {
+      "id": "learn-and-be-curious",
+      "note": "Curiosity is how you notice the constraint that can be blown apart."
+    },
+    {
+      "id": "frugality",
+      "note": "Constraints force simpler designs. Extra headcount is often how teams avoid inventing."
+    },
+    {
+      "id": "earn-trust",
+      "note": "Champions who will not listen while they invent lose the room, and often the better idea."
+    },
+    {
+      "id": "have-backbone-disagree-and-commit",
+      "note": "A new idea will get scrutiny. You need backbone to keep it alive, and you need to commit when the call goes the other way."
+    }
+  ]
+}

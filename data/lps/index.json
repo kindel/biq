@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "title": "Leadership Principles: Under, Just Right, Over",
+  "source": "Kindel interviewer calibration tool. Classic 14 leadership principles. Rewritten from an internal raises/lowers wiki; company, product, and exec references removed.",
+  "howTo": [
+    "Use this when you are writing a loop, sitting in a debrief, or coaching someone who is over-rotating on a principle.",
+    "Under is not trying. Over is the principle eating the job. Just Right is the bar.",
+    "I want interviewers to score the story against a row, not against a vibe. Pick the situation that matches what you heard, then say under, just right, or over, and write the evidence.",
+    "Cross-refs look like {lp:ownership}. Render them as links. Agents treat them as hard links to that principle file.",
+    "These files pair with data/questions.json. Same ids. Do not add competency-cut principles here."
+  ],
+  "crossRef": {
+    "token": "{lp:<id>}",
+    "example": "{lp:customer-obsession}",
+    "render": "Replace the token with a link to that LP. Agents treat tokens as hard links."
+  },
+  "principles": [
+    {
+      "id": "customer-obsession",
+      "name": "Customer Obsession",
+      "sort": 1,
+      "file": "customer-obsession.json"
+    },
+    {
+      "id": "ownership",
+      "name": "Ownership",
+      "sort": 2,
+      "file": "ownership.json"
+    },
+    {
+      "id": "invent-and-simplify",
+      "name": "Invent and Simplify",
+      "sort": 3,
+      "file": "invent-and-simplify.json"
+    },
+    {
+      "id": "are-right-a-lot",
+      "name": "Are Right, A Lot",
+      "sort": 4,
+      "file": "are-right-a-lot.json"
+    },
+    {
+      "id": "learn-and-be-curious",
+      "name": "Learn and Be Curious",
+      "sort": 5,
+      "file": "learn-and-be-curious.json"
+    },
+    {
+      "id": "hire-and-develop-the-best",
+      "name": "Hire and Develop the Best",
+      "sort": 6,
+      "file": "hire-and-develop-the-best.json"
+    },
+    {
+      "id": "insist-on-the-highest-standards",
+      "name": "Insist on the Highest Standards",
+      "sort": 7,
+      "file": "insist-on-the-highest-standards.json"
+    },
+    {
+      "id": "think-big",
+      "name": "Think Big",
+      "sort": 8,
+      "file": "think-big.json"
+    },
+    {
+      "id": "bias-for-action",
+      "name": "Bias for Action",
+      "sort": 9,
+      "file": "bias-for-action.json"
+    },
+    {
+      "id": "frugality",
+      "name": "Frugality",
+      "sort": 10,
+      "file": "frugality.json"
+    },
+    {
+      "id": "earn-trust",
+      "name": "Earn Trust",
+      "sort": 11,
+      "file": "earn-trust.json"
+    },
+    {
+      "id": "dive-deep",
+      "name": "Dive Deep",
+      "sort": 12,
+      "file": "dive-deep.json"
+    },
+    {
+      "id": "have-backbone-disagree-and-commit",
+      "name": "Have Backbone; Disagree and Commit",
+      "sort": 13,
+      "file": "have-backbone-disagree-and-commit.json"
+    },
+    {
+      "id": "deliver-results",
+      "name": "Deliver Results",
+      "sort": 14,
+      "file": "deliver-results.json"
+    }
+  ]
+}

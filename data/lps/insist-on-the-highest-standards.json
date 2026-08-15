@@ -1,0 +1,153 @@
+{
+  "id": "insist-on-the-highest-standards",
+  "name": "Insist on the Highest Standards",
+  "sort": 7,
+  "aliases": [
+    "ihs",
+    "standards",
+    "quality",
+    "highest standards",
+    "bar",
+    "insist on the highest standards",
+    "high bar"
+  ],
+  "definition": "Leaders have relentlessly high standards. Many people will think those standards are unreasonably high. Leaders keep raising the bar and drive their teams to deliver high-quality products, services, and processes. They do not send defects down the line. They fix problems so they stay fixed.",
+  "why": [
+    "A high hiring bar is only the start. Today's standard will not be enough tomorrow. Everyone is expected to raise their own bar. Customers will not lower theirs.",
+    "Quality is how you keep trust. When a product, a service, or a process fails, confidence drops in the thing and in the people who shipped it. That is true whether the consumer is an end customer or another team.",
+    "This principle shows up as operational excellence. You never assume the current process is good enough. You pick the few metrics that tell you the truth. You fix the root cause so the defect cannot travel. You balance this with {lp:bias-for-action}. Highest standards is not a reason to block the business while you polish.",
+    "It also shows up in the thinking. The best calls come from writing: a press release for the vision, a FAQ for the hard questions, a short narrative that tests the assertions with data. Inviting scrutiny on the writing is how the work gets better. Sloppy prose is sloppy thought."
+  ],
+  "calibrationIntro": "I want interviewers to listen for a defect the candidate stopped from going downstream, and a launch they held for a real reason. \"I have high standards\" is a slogan. Perfection that never ships is the over move. Shipping junk and calling it {lp:bias-for-action} is the under move.",
+  "rows": [
+    {
+      "id": "reviewing-work",
+      "situation": "Reviewing someone else's work",
+      "under": "Does not review at all.",
+      "justRight": "Reviews the work. Offers specific feedback. Critiques the actual mistakes.",
+      "over": "Is so critical that no mistake is acceptable, including the ones you learn from."
+    },
+    {
+      "id": "holding-accountable",
+      "situation": "Holding people accountable",
+      "under": "Does not hold people accountable. Does not offer feedback.",
+      "justRight": "Makes managers and ICs own the quality of what leaves their hands. Helps them get there.",
+      "over": "Expects flawless execution and leaves no room to learn."
+    },
+    {
+      "id": "setting-goals",
+      "situation": "Setting the goal",
+      "under": "Sandbags. The team hits the goal easily and stops pushing.",
+      "justRight": "Sets goals that are hard and real. Hitting them is an accomplishment.",
+      "over": "Sets goals so high the team does not believe they can be hit."
+    },
+    {
+      "id": "underachievers",
+      "situation": "Someone is below the standard",
+      "under": "Lets underachievers slide, on purpose.",
+      "justRight": "Makes the expected performance explicit, gets agreement, and helps the person reach it.",
+      "over": "Demands the result without tools, guidance, or support."
+    },
+    {
+      "id": "confronting-issues",
+      "situation": "An issue shows up on the team",
+      "under": "Avoids the conversation because they want to be liked.",
+      "justRight": "Does not cut corners. Names the issue. Stays respectful. Fixes it so it stays fixed.",
+      "over": "Hunts errors so constantly that people stop taking initiative."
+    },
+    {
+      "id": "catalog-quality",
+      "situation": "Launching a product into the catalog",
+      "under": "Launches fast and skips the information a customer needs to decide.",
+      "justRight": "Launches only when the fundamentals are in place: accurate description, price, and the facts a customer will use.",
+      "over": "Stops an entire category because one or two items have a pricing problem."
+    },
+    {
+      "id": "tracking-goals",
+      "situation": "Goals, metrics, and drift",
+      "under": "Sacrifices quality for speed. Sets loose goals. Does not investigate when the line goes sideways.",
+      "justRight": "Commits to a few measurable goals. Tracks them. Investigates as soon as the signal looks wrong. Finds the root cause.",
+      "over": "Sets too many goals. Tracks metrics that do not matter. Escalates noise."
+    },
+    {
+      "id": "right-vs-perfect",
+      "situation": "Building it right vs waiting for perfect",
+      "under": "Accepts a lower standard in development and does not think about the long-term cost.",
+      "justRight": "Builds for scale, availability, and performance the first time, and still hits a responsible time to market.",
+      "over": "Will launch only when the product is perfect."
+    },
+    {
+      "id": "launch-triage",
+      "situation": "What must be true to launch",
+      "under": "Ships a poor customer experience. Contact volume tells you later.",
+      "justRight": "Triages features. Holds the launch for a real defect. Lets the rest follow.",
+      "over": "Never launches on time. Chases perfection at high cost."
+    },
+    {
+      "id": "diving-into-problems",
+      "situation": "How you handle a problem the team brings you",
+      "under": "Accepts the first answer. Solves the symptom.",
+      "justRight": "Drives to root cause. Asks why until the answer is real. Does not accept a quick, easy story.",
+      "over": "Humiliates people. Will not move on. Never praises."
+    },
+    {
+      "id": "launch-defects",
+      "situation": "A bad bug, a sloppy doc, an untested path",
+      "under": "Launches a process that customers have never seen. Numbers in the doc do not match. Typos everywhere. \"It is no big deal.\"",
+      "justRight": "Will hold a launch a couple of days for a bad bug. Will not treat every nit as a blocker.",
+      "over": "Will not launch unless everything is perfect. Treats every defect as priority one."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Stop the line",
+      "body": "A defect is about to travel to the next team, or to a customer. The just-right move is to stop the line, fix the cause, and start again. Passing it downstream so your date looks clean is the under move. I want interviewers to hear a time the candidate pulled that cord, and what stayed fixed afterward."
+    },
+    {
+      "title": "Hold the launch two days, not two months",
+      "body": "A bad bug is a reason to slip a couple of days. A typo in an appendix is not. Highest standards without triage is fear. {lp:bias-for-action} without standards is hope. The candidate should be able to name the defect that was worth the hold, and the defects they shipped on purpose."
+    },
+    {
+      "title": "The writing is the thinking",
+      "body": "A short narrative, a press release, and a FAQ will expose a weak idea faster than a slide deck. If the numbers in the appendix do not match the body, the thinking is not done. I want to hear how the candidate invited other people to tear the document apart, and what got better because of it."
+    }
+  ],
+  "looksLike": {
+    "individual": "Your docs match themselves. You do not send a known defect to the next person. You can say which standard you raised after you hit the old one. You get annoyed by \"good enough\" when the customer will feel it, and you can still ship when the leftover work is truly leftover.",
+    "manager": "You set goals the team is proud to hit, not ones they sandbag or ones they cannot believe. You review work. You name the miss. You fix the system so the miss cannot recur. You do not confuse relentless standards with a culture where nobody will take a swing."
+  },
+  "deepen": [
+    "What defect did you stop from going downstream, and what did you change so it could not recur?",
+    "When did you hold a launch, and which defect was worth the hold?",
+    "Which standard did you raise after the team had already hit the old one?",
+    "Where are you accepting a lower standard right now because the date is close?",
+    "How do you decide a goal is a stretch instead of a sandbag or a fantasy?",
+    "When the first answer on a problem was tidy, what did you do next?",
+    "What did you refuse to compromise on, and who was the customer of that refusal?",
+    "How do you review work without creating a team that is afraid to start?",
+    "Where do the numbers in the document disagree with each other, and what does that tell you?",
+    "How do you keep {lp:bias-for-action} from turning into an excuse to ship junk?"
+  ],
+  "related": [
+    {
+      "id": "hire-and-develop-the-best",
+      "note": "The hiring bar is the first standard you insist on. Weak hires cannot hold a high bar."
+    },
+    {
+      "id": "dive-deep",
+      "note": "You cannot insist on a standard you will not inspect. Root cause is how defects die."
+    },
+    {
+      "id": "deliver-results",
+      "note": "Standards that never ship are a hobby. Results without standards are a reset waiting to happen."
+    },
+    {
+      "id": "bias-for-action",
+      "note": "Hold the real defect. Ship the rest. Highest standards is not a veto on speed."
+    },
+    {
+      "id": "earn-trust",
+      "note": "Quality is how other teams decide whether to believe you next time."
+    }
+  ]
+}

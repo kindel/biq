@@ -1,0 +1,145 @@
+{
+  "id": "think-big",
+  "name": "Think Big",
+  "sort": 8,
+  "aliases": [
+    "tb",
+    "think-big",
+    "vision",
+    "think big",
+    "big bet",
+    "risk"
+  ],
+  "definition": "Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently, and they look around corners for ways to serve customers.",
+  "why": [
+    "Thinking big is how you challenge assumptions about what is possible. It shocks people out of hunting for the problem with a simple patch, and it is often the only way to invent out of a dead end.",
+    "I want interviewers to listen for a vision that is bigger than current reality, and for a path that is bold, rational, and still achievable. \"Good idea. What would it look like at 50x?\" is a thought stimulator, not a threat. The answer is usually a different approach, not a louder version of the same plan.",
+    "Why is a good question. Why not is just as good. Short-term math will talk you out of the durable bet. Over a decade, the thing that raises how often customers return, how much of their work they do with you, and how satisfied they stay is often the thing the quarterly model rejects.",
+    "Thinking big is disruptive. It is not accepted quickly. It raises problems with no known solution, it asks people to change, and it usually requires influence beyond your span of control. If the candidate only optimizes the process in front of them, they are not thinking big. If they cannot name how they would get from here to there, they are daydreaming."
+  ],
+  "calibrationIntro": "Use the rows to score whether the candidate sets a bold, defensible direction, or whether they either sandbag or boil the ocean. Listen for a stretch goal with a path, not a slogan.",
+  "rows": [
+    {
+      "id": "stretch-goals",
+      "situation": "When setting objectives",
+      "under": "Objectives are too easy. The candidate thinks in constraints and blockers.",
+      "justRight": "Sees past barriers and resets the bar. Direction is bold, rational, defensible, and still a stretch.",
+      "over": "Direction has no basis in reality. Benefits require a leap of faith and no path from here to there."
+    },
+    {
+      "id": "existing-processes",
+      "situation": "When reviewing an existing process",
+      "under": "Optimizes the current process and never asks whether the process should exist.",
+      "justRight": "Willing to disrupt the current process. Makes a critical review of existing processes a priority.",
+      "over": "Treats every process as something to overhaul or abolish. Constantly demands new ideas and never lets the team finish the current solution."
+    },
+    {
+      "id": "status-quo",
+      "situation": "When the team is comfortable",
+      "under": "Satisfied with the status quo. Does not ask the team to do more. Does not start new work that matters.",
+      "justRight": "Thinks past the limits of current technology and names the next problem worth solving.",
+      "over": "Works too many ideas at once and commits to goals nobody can hit."
+    },
+    {
+      "id": "larger-problem",
+      "situation": "When handed a tactical task",
+      "under": "Heads straight into tactical execution without examining the larger problem.",
+      "justRight": "Finds a way around the limitation so the customer use case becomes possible.",
+      "over": "Takes risks the whole room believes will fail, and cannot explain why the bet is still sound."
+    },
+    {
+      "id": "delivery-vs-opportunity",
+      "situation": "When delivery pressure is high",
+      "under": "Focused only on delivery and misses the opportunity in front of them.",
+      "justRight": "Pushes the boundary and still ships. Names the new thing and the work that makes it real.",
+      "over": "Gets lost inventing new things and fails to {lp:deliver-results}."
+    },
+    {
+      "id": "strategy-direction",
+      "situation": "When strategy is being set",
+      "under": "Goes with the flow. Lets others drive strategy and direction.",
+      "justRight": "Challenges the status quo with a better direction and a reason.",
+      "over": "Questions everything to the point of being obstructionist."
+    },
+    {
+      "id": "time-horizon",
+      "situation": "When planning the work",
+      "under": "Fully tactical. Plans month to month with no longer-term objective. Goals do not inspire anyone to solve a larger problem.",
+      "justRight": "Sets and executes a small set of medium and long-term objectives, and still responds to nearer-term customer needs.",
+      "over": "Tries to solve every problem at once. Puts so much weight on the long term that current customers lose."
+    },
+    {
+      "id": "landscape",
+      "situation": "When the customer or industry shifts",
+      "under": "Fails to see a strategic change in the customer or the industry. Wakes up out of date.",
+      "justRight": "Makes a bold bet, elevates a little-noticed idea, or reaches a unique conclusion, then restructures the team's objectives to match.",
+      "over": "Pushes a cutting-edge change without tying it to the team's charter, and never explains how to get from here to there."
+    },
+    {
+      "id": "growth-goals",
+      "situation": "When setting a growth goal",
+      "under": "Sets a modest year-over-year goal that does not change the business (for example, 10 percent more subscribers).",
+      "justRight": "Sets a bold, named goal early (for example, 10 million subscribers) and can defend why it is the right stretch.",
+      "over": "Sets an arbitrarily high goal that nobody believes (for example, 90 percent of all customers) and the goal becomes noise."
+    },
+    {
+      "id": "solution-scope",
+      "situation": "When designing the solution",
+      "under": "Settles for a good-enough design that meets today's need and is too rigid, expensive, or hard to adopt later.",
+      "justRight": "Builds something that solves the problem at hand and can help other teams. Drives adoption beyond the home team.",
+      "over": "Architects an all-singing solution for a pile of theoretical issues that will take years. The result is a science project that cannot turn with the market."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Ask what 50x looks like",
+      "body": "A team has a good idea that would make a painful step faster. The leader asks what the work would look like if the goal were 50 times larger. The team stops speeding up the step and designs a way to remove it. That is thinking big. The question changed the approach; it did not just inflate the slide."
+    },
+    {
+      "title": "Bet on what is durable",
+      "body": "Short-term math says do not invest, because this quarter will look worse. The leader still makes the bet because the thing is durable: it raises how often customers come back, how much of their work they do with you, and how satisfied they stay. A strategy built on a fad has to be rewritten every year."
+    },
+    {
+      "title": "Solve it so other teams can use it",
+      "body": "The team could ship a one-off that only they can run. Instead they build a service that solves their problem and is simple enough for other teams to adopt. The bold part is not the feature list. It is the decision to create a platform instead of a local fix."
+    }
+  ],
+  "looksLike": {
+    "individual": "An individual who thinks big does not wait for a vice president to issue a vision. They reframe the problem they were handed, name a bigger customer outcome, and show a path that is bold and still defensible. They can say what they would do if the problem were 10 times larger, and they can say what they would stop doing to make room.",
+    "manager": "A manager who thinks big sets a small set of medium and long-term objectives, communicates them so the team can repeat them, and still protects near-term customer needs. They hire and aim people at the larger problem. They do not run a science project that never ships, and they do not let the team hide in month-to-month tactics."
+  },
+  "deepen": [
+    "Are you letting the current state define the solution, or are you looking for something that removes the pain point altogether?",
+    "What would the work look like if the problem were 10 times larger than it is now?",
+    "Which assumptions about team size, capability, market, or customer behavior are you treating as facts, and how are you testing them?",
+    "Who is not your customer today, but should be, and what would it take to serve them?",
+    "Is cost, history, or a failed attempt somewhere else constraining the idea before you have invented around it?",
+    "Are you building a me-too product, or are you thinking big on behalf of the customer?",
+    "How often do you run a session that is about possibilities rather than risks, and whose voice is missing from that room?",
+    "If this idea still has to make sense in ten years, what part of the current plan is transient and should not be load-bearing?",
+    "Can you explain how to get from the current charter to the bold direction, or are you asking the team to take a leap of faith?",
+    "What would you stop, so the bigger bet has the people and time it needs?"
+  ],
+  "related": [
+    {
+      "id": "invent-and-simplify",
+      "note": "A 50x goal is useless if the team cannot invent a simpler path to it."
+    },
+    {
+      "id": "customer-obsession",
+      "note": "Think big on behalf of customers, not on behalf of a competitor slide."
+    },
+    {
+      "id": "bias-for-action",
+      "note": "A bold direction that never ships is a speech. Two-way doors let you start."
+    },
+    {
+      "id": "deliver-results",
+      "note": "The test of the vision is whether the team still hits the nearer-term results."
+    },
+    {
+      "id": "ownership",
+      "note": "Thinking big past your team's box is ownership of the larger customer problem."
+    }
+  ]
+}

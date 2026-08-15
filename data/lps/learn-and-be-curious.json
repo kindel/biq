@@ -1,0 +1,107 @@
+{
+  "id": "learn-and-be-curious",
+  "name": "Learn and Be Curious",
+  "sort": 5,
+  "aliases": [
+    "labc",
+    "curious",
+    "curiosity",
+    "learn",
+    "learning",
+    "learn and be curious"
+  ],
+  "definition": "Leaders are never done learning and always seek to improve themselves. They are curious about new possibilities and act to explore them.",
+  "why": [
+    "If customer needs, competitors, technology, and knowledge never changed, complacent leaders would win forever. That is not the world. The best leaders never stop working on their craft.",
+    "Great leaders are voracious learners. They do not limit curiosity to the job at hand. They read, they seek people from different backgrounds, and they put themselves in situations that are uncomfortable on purpose. Negative situations count. They are tuition if you extract the lesson.",
+    "Change is disorienting. Skills you mastered stop fitting the problem. Leaders use that discomfort to grow. They will not get it right the first time. Trial, help, practice, then new mastery.",
+    "Curiosity is also how you {lp:invent-and-simplify}. You do not just ask why it works that way. You ask what other ways it could work, and what would happen if. You learn the nuts and bolts of what you own before the outage teaches you.",
+    "You cannot see yourself accurately without other people. Feedback from peers, mentors, customers, and managers shows you strengths you are using by accident and gaps that are capping you. Being vocally self-critical is not weakness. It is the ingredient that lets {lp:are-right-a-lot} compound."
+  ],
+  "calibrationIntro": "I want interviewers to listen for a concrete thing the candidate did not know, what they did to learn it, and what changed in the work. \"I read a lot\" is not this principle. Neither is turning every miss into a new framework, or forcing the whole team through training they do not need.",
+  "rows": [
+    {
+      "id": "new-process-missed-deadline",
+      "situation": "You tried a new planning process and missed the deadline",
+      "under": "Blames the people, not the process. Forces the old process on the next project.",
+      "justRight": "Talks to the people who used it. Keeps what worked. Adjusts what did not. Tries the improved version next time.",
+      "over": "Throws the process out and tries a third one."
+    },
+    {
+      "id": "single-customer-contradicts-the-aggregate",
+      "situation": "One customer report contradicts a positive aggregate",
+      "under": "Calls it a rounding error. Ignores the single report because the overall response looks fine.",
+      "justRight": "Digs in. Finds what went wrong and what it will take to fix.",
+      "over": "Launches a three-month study aimed at that one issue."
+    },
+    {
+      "id": "teammate-causes-an-outage",
+      "situation": "A teammate makes a mistake that takes the site down",
+      "under": "Puts up a wall of shame so nobody ever makes that mistake again.",
+      "justRight": "Changes the system so that class of mistake cannot happen, or cannot have the same blast radius.",
+      "over": "Insists everyone must personally experience the mistake as training."
+    },
+    {
+      "id": "sharing-a-new-technique",
+      "situation": "Someone learns a useful technique on a project",
+      "under": "Uses it on their project and stops.",
+      "justRight": "Writes it down and teaches it in a short team session so others can use it.",
+      "over": "Makes the technique mandatory training for the whole team."
+    },
+    {
+      "id": "choosing-new-storage",
+      "situation": "The team needs a new data store",
+      "under": "Insists on the one technology everyone already knows.",
+      "justRight": "Researches options, prototypes the top two or three, and takes the findings to a design review.",
+      "over": "Prototypes every available option and stress-tests all of them before anyone can choose."
+    }
+  ],
+  "examples": [
+    {
+      "title": "Iterate the process, do not blame the people",
+      "body": "A new planning process missed the date. The under move is \"the people failed the process.\" The over move is a brand-new process by Monday. The just-right move is a short, honest pass with the people who used it, then one more attempt with the sharp edges filed off. I want interviewers to hear that the candidate can learn without thrashing."
+    },
+    {
+      "title": "Change the system after the outage",
+      "body": "Someone on the team took production down. Curiosity does not mean a public shaming, and it does not mean everyone has to page themselves as a rite of passage. It means you understand the steps that got you there, you change the system, and that class of mistake dies. The write-up is for learning, not for checking a box."
+    },
+    {
+      "title": "Learn it, then put it back into the work",
+      "body": "The last new thing you learned only counts if it showed up in the product, the process, or how you work with customers. A talk you watched and a book on the nightstand are inputs. I want the output. What did you apply, and who else can now use it?"
+    }
+  ],
+  "looksLike": {
+    "individual": "You can name the last thing you did not understand and the specific thing you did about it. You know the parts of your system you have not opened yet. You ask for examples when feedback is vague, and you change a behavior where someone can see it.",
+    "manager": "You put people into stretch work on purpose, then you make it safe to extract the lesson when they miss. You do not run a wall of shame. You do not mandate a class for a technique one person needed. You model changing your mind when a teammate teaches you something."
+  },
+  "deepen": [
+    "When is the last time you took on work outside your comfort zone, and what did you have to learn to finish it?",
+    "What do you do in the first hour after you hit something you do not understand?",
+    "Are you focused on the fact that you were wrong, or on how the next attempt will be different?",
+    "Who did you ask for feedback, and what did they see you change afterward?",
+    "Which part of your system have you never actually opened, and why not?",
+    "What did you do with two pieces of feedback that contradicted each other?",
+    "How did a miss on your team change the system, not just the slide deck?",
+    "What new skill have you practiced on purpose in the last quarter?",
+    "When a teammate challenged how you saw a problem, what did you do with that challenge?",
+    "What are you reading or studying that is not required for this week's deliverable?"
+  ],
+  "related": [
+    {
+      "id": "invent-and-simplify",
+      "note": "Curiosity is the question. {lp:invent-and-simplify} is what you build when the answer is \"it does not have to work that way.\""
+    },
+    {
+      "id": "are-right-a-lot",
+      "note": "You get righter by learning in public. Stubborn consistency is how judgment rots."
+    },
+    {
+      "id": "dive-deep",
+      "note": "Learn the nuts and bolts before the outage. Curiosity without depth is browsing."
+    },
+    {
+      "id": "hire-and-develop-the-best",
+      "note": "You cannot develop people you will not let learn, and you cannot hire learners if you punish the first miss."
+    }
+  ]
+}
