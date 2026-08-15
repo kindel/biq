@@ -14,11 +14,11 @@
   "definition": "Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.",
   "why": [
     "If you do not understand the details of the business, you will fail. Dive Deep is getting to the root cause. Good leaders peel layers. They ask why until they hit something they can fix so it stays fixed. When a senior person does that, the team gets more rigorous, because sloppy stories stop surviving contact with the facts.",
-    "I want interviewers to listen for skepticism when the metric and the anecdote disagree. Intuition is a starting point. Then you test it. When the data is not sitting in a dashboard, good people go get it. They do not take a deck at face value, and they do not derail a meeting with twelve more cuts that will not change the decision.",
+    "Look for skepticism when the metric and the anecdote disagree. Intuition is a starting point. Then you test it. When the data is not sitting in a dashboard, good people go get it. They do not take a deck at face value, and they do not derail a meeting with twelve more cuts that will not change the decision.",
     "Diving deep is how you learn what matters. You demystify the process, the system, and the tool. You find the breaking point before it breaks. You understand a defect well enough to build a fix that scales, not a point patch that comes back next month. That is also how you train {lp:are-right-a-lot}. Judgment without details is a guess you got away with.",
     "It is not micromanagement. Micromanagement is controlling the minutiae and doing the owner's job for them. Dive Deep is understanding the details, then setting audits that keep your hand on the pulse without living in the spreadsheet. You test the assumption, then you step back and let the owner own it. No task is beneath you. That does not mean every task is yours."
   ],
-  "calibrationIntro": "Score whether the candidate can get to root cause and then let the owner run. Under accepts the slide. Over lives in the data and never decides. Product-line and unit-economics stories count; jargon does not make the answer deeper.",
+  "calibrationIntro": "Score whether someone can get to root cause and then let the owner run. Under accepts the slide. Over lives in the data and never decides. Product-line and unit-economics stories count; jargon does not make the answer deeper.",
   "rows": [
     {
       "id": "unit-economics",

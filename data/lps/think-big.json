@@ -13,16 +13,16 @@
   "definition": "Thinking small is a self-fulfilling prophecy. Leaders create and communicate a bold direction that inspires results. They think differently, and they look around corners for ways to serve customers.",
   "why": [
     "Thinking big is how you challenge assumptions about what is possible. It shocks people out of hunting for the problem with a simple patch, and it is often the only way to invent out of a dead end.",
-    "I want interviewers to listen for a vision that is bigger than current reality, and for a path that is bold, rational, and still achievable. \"Good idea. What would it look like at 50x?\" is a thought stimulator, not a threat. The answer is usually a different approach, not a louder version of the same plan.",
+    "Look for a vision that is bigger than current reality, and for a path that is bold, rational, and still achievable. \"Good idea. What would it look like at 50x?\" is a thought stimulator, not a threat. The answer is usually a different approach, not a louder version of the same plan.",
     "Why is a good question. Why not is just as good. Short-term math will talk you out of the durable bet. Over a decade, the thing that raises how often customers return, how much of their work they do with you, and how satisfied they stay is often the thing the quarterly model rejects.",
-    "Thinking big is disruptive. It is not accepted quickly. It raises problems with no known solution, it asks people to change, and it usually requires influence beyond your span of control. If the candidate only optimizes the process in front of them, they are not thinking big. If they cannot name how they would get from here to there, they are daydreaming."
+    "Thinking big is disruptive. It is not accepted quickly. It raises problems with no known solution, it asks people to change, and it usually requires influence beyond your span of control. If someone only optimizes the process in front of them, they are not thinking big. If they cannot name how they would get from here to there, they are daydreaming."
   ],
-  "calibrationIntro": "Use the rows to score whether the candidate sets a bold, defensible direction, or whether they either sandbag or boil the ocean. Listen for a stretch goal with a path, not a slogan.",
+  "calibrationIntro": "Use the rows to score whether someone sets a bold, defensible direction, or whether they either sandbag or boil the ocean. Look for a stretch goal with a path, not a slogan.",
   "rows": [
     {
       "id": "stretch-goals",
       "situation": "When setting objectives",
-      "under": "Objectives are too easy. The candidate thinks in constraints and blockers.",
+      "under": "Objectives are too easy. They think in constraints and blockers.",
       "justRight": "Sees past barriers and resets the bar. Direction is bold, rational, defensible, and still a stretch.",
       "over": "Direction has no basis in reality. Benefits require a leap of faith and no path from here to there."
     },

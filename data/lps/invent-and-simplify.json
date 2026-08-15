@@ -21,7 +21,7 @@
     "If a good solution already exists, inventing your own is usually vanity. If the off-the-shelf thing will not scale, say why, with evidence. Keep a critical eye. Do not reject a solution just because you did not write it.",
     "Inventing well means being stubborn and flexible at the same time. Stubborn, or you quit the experiment too soon. Flexible, or you pound the wall and miss the other solution."
   ],
-  "calibrationIntro": "I want interviewers to listen for a simpler path that still solved the customer problem. \"We added a feature\" is not this principle. Neither is rewriting a working system so the candidate could feel clever. Listen for experiments, pilots, and a willingness to use someone else's idea.",
+  "calibrationIntro": "Look for a simpler path that still solved the customer problem. \"We added a feature\" is not this principle. Neither is rewriting a working system so someone could feel clever. Look for experiments, pilots, and a willingness to use someone else's idea.",
   "rows": [
     {
       "id": "complexity-vs-novelty",
@@ -90,7 +90,7 @@
   "examples": [
     {
       "title": "The whiteboard in the corner",
-      "body": "The room is staring at a chart of arrows. Someone walks to the board, crosses out half of it, and the whole thing fits in a corner. People say it cannot be that easy. I want interviewers to hear the candidate who did that, and also hear whether they checked the failure cases with the people who run the process. Simplifying in private and throwing the result over the wall is the over move."
+      "body": "The room is staring at a chart of arrows. Someone walks to the board, crosses out half of it, and the whole thing fits in a corner. People say it cannot be that easy. Look for the person who did that, and also whether they checked the failure cases with the people who run the process. Simplifying in private and throwing the result over the wall is the over move."
     },
     {
       "title": "Pilot it",
@@ -98,7 +98,7 @@
     },
     {
       "title": "Not invented here",
-      "body": "A good solution already exists on another team, or outside the company. Building your own feels like invention and is usually waste. The other failure is the reverse: rejecting the external thing because it was not born here. I want the candidate who can say what they reused, what they refused, and the evidence for both."
+      "body": "A good solution already exists on another team, or outside the company. Building your own feels like invention and is usually waste. The other failure is the reverse: rejecting the external thing because it was not born here. Look for the person who can say what they reused, what they refused, and the evidence for both."
     }
   ],
   "looksLike": {
