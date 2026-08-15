@@ -2,7 +2,7 @@
 
 A behavioral interview question bank with hire / no-hire example sheets at Junior, Senior, and Exec.
 
-MIT. Live site: [https://kindel.com/biq/](https://kindel.com/biq/).
+Live site: [https://kindel.com/biq/](https://kindel.com/biq/).
 
 ## Run
 
