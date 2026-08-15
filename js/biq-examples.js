@@ -189,49 +189,63 @@
     renderSheet(sheet);
   }
 
+  function showMissing() {
+    statusEl.hidden = false;
+    sheetEl.hidden = true;
+    statusEl.textContent = "No saved examples for this question yet.";
+  }
+
+  function showLoadError() {
+    statusEl.hidden = false;
+    sheetEl.hidden = true;
+    statusEl.textContent = "Could not load the example bank.";
+  }
+
+  // Resolves true if a legacy sheet was shown, false if the fallback
+  // file or sheet is missing. Rejects on unexpected fallback errors.
   function loadFallback() {
     return fetch(examplesFallback)
       .then(function (r) {
-        if (!r.ok) throw new Error("missing");
+        if (r.status === 404) return null;
+        if (!r.ok) throw new Error("bad fallback");
         return r.json();
       })
       .then(function (bank) {
+        if (!bank) return false;
         var sheet = findSheet(bank);
-        if (!sheet) {
-          statusEl.hidden = false;
-          sheetEl.hidden = true;
-          statusEl.textContent = "No saved examples for this question yet.";
-          return;
-        }
+        if (!sheet) return false;
         loaded = { kind: "sheet", data: sheet };
         statusEl.hidden = false;
         statusEl.textContent = "These examples are not split by level yet.";
         showCurrent();
+        return true;
       });
   }
 
-  var packMissing = false;
-
   fetch(examplesData + slugFor(principle, question) + ".json")
     .then(function (r) {
-      if (r.status === 404) {
-        packMissing = true;
-        return null;
-      }
+      if (r.status === 404) return { missing: true };
       if (!r.ok) throw new Error("bad pack");
-      return r.json();
+      return r.json().then(function (pack) { return { pack: pack }; });
     })
-    .then(function (pack) {
-      if (!pack) return loadFallback();
+    .then(function (result) {
+      if (result.missing) {
+        return loadFallback().then(function (found) {
+          if (!found) showMissing();
+        }).catch(function () {
+          showLoadError();
+        });
+      }
+      var pack = result.pack;
       loaded = pack.levels ? { kind: "pack", data: pack } : { kind: "sheet", data: pack };
       showCurrent();
     })
     .catch(function () {
-      statusEl.hidden = false;
-      sheetEl.hidden = true;
-      statusEl.textContent = packMissing
-        ? "No saved examples for this question yet."
-        : "Could not load the example bank.";
+      return loadFallback().then(function (found) {
+        if (!found) showLoadError();
+      }).catch(function () {
+        showLoadError();
+      });
     });
 
   function renderSheet(b) {
