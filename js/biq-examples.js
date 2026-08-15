@@ -4,6 +4,18 @@
   if (examplesData.slice(-1) !== "/") examplesData += "/";
   var examplesFallback = cfg.examplesFallback || "/data/biq-examples.json";
 
+  function track(name, params) {
+    if (typeof window.gtag !== "function") return;
+    var clean = {};
+    Object.keys(params || {}).forEach(function (k) {
+      var v = params[k];
+      if (v == null || v === "") return;
+      if (typeof v === "string" && v.length > 100) v = v.slice(0, 97) + "...";
+      clean[k] = v;
+    });
+    window.gtag("event", name, clean);
+  }
+
   var params = new URLSearchParams(window.location.search);
   var principle = params.get("p") || "";
   var question = params.get("q") || "";
@@ -75,6 +87,7 @@
         if (!this.checked) return;
         currentLevel = setLevel(this.value);
         showCurrent();
+        track("biq_level", { biq_level: currentLevel, biq_page: "examples" });
       });
     }
   }
@@ -155,10 +168,24 @@
         statusEl.hidden = false;
         sheetEl.hidden = true;
         statusEl.textContent = missingLevelMessage();
+        track("biq_examples_view", {
+          biq_principle: principle,
+          biq_question: question,
+          biq_level: currentLevel,
+          biq_slug: slugFor(principle, question),
+          biq_status: "missing_level"
+        });
         return;
       }
       statusEl.hidden = true;
       sheetEl.hidden = false;
+      track("biq_examples_view", {
+        biq_principle: principle,
+        biq_question: question,
+        biq_level: currentLevel,
+        biq_slug: slugFor(principle, question),
+        biq_status: "ok"
+      });
       renderSheet({
         question: pack.question,
         competency: pack.competency,
@@ -177,6 +204,12 @@
       statusEl.hidden = false;
       sheetEl.hidden = true;
       statusEl.textContent = missingLevelMessage();
+      track("biq_examples_view", {
+        biq_principle: principle,
+        biq_question: question,
+        biq_level: currentLevel,
+        biq_status: "missing_level"
+      });
       return;
     }
     if (loaded.kind === "sheet") {
@@ -186,6 +219,12 @@
       statusEl.hidden = true;
     }
     sheetEl.hidden = false;
+    track("biq_examples_view", {
+      biq_principle: principle,
+      biq_question: question,
+      biq_level: currentLevel,
+      biq_status: loaded.kind === "sheet" ? "legacy" : "ok"
+    });
     renderSheet(sheet);
   }
 
@@ -193,12 +232,24 @@
     statusEl.hidden = false;
     sheetEl.hidden = true;
     statusEl.textContent = "No saved examples for this question yet.";
+    track("biq_examples_view", {
+      biq_principle: principle,
+      biq_question: question,
+      biq_level: currentLevel,
+      biq_status: "missing"
+    });
   }
 
   function showLoadError() {
     statusEl.hidden = false;
     sheetEl.hidden = true;
     statusEl.textContent = "Could not load the example bank.";
+    track("biq_examples_view", {
+      biq_principle: principle,
+      biq_question: question,
+      biq_level: currentLevel,
+      biq_status: "error"
+    });
   }
 
   // Resolves true if a legacy sheet was shown, false if the fallback
