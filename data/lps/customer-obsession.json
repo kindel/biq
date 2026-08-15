@@ -19,7 +19,7 @@
     "Many jobs never touch the end customer. That does not let you off. Your customer may be another team. You still work backwards from their need, and you still understand how their work reaches the person who pays.",
     "Mature teams get arrogant. They start believing they know better than the people they depend on. The habit that prevents that: in every decision, ask how this affects the customer."
   ],
-  "calibrationIntro": "I want interviewers to listen for a named customer and a real tradeoff. A story that starts with an internal plan and retrofits a customer line is not this principle. Neither is making a process exception for every loud person, or ignoring a complaint because it is only one.",
+  "calibrationIntro": "Look for a named customer and a real tradeoff. A story that starts with an internal plan and retrofits a customer line is not this principle. Neither is making a process exception for every loud person, or ignoring a complaint because it is only one.",
   "rows": [
     {
       "id": "decision-making",
@@ -74,11 +74,11 @@
   "examples": [
     {
       "title": "Keep a broken promise in person",
-      "body": "A customer was promised a gift by a hard date. The system failed. Someone bought the item locally and put it in the customer's hands. That is not a scalable process. It is a signal: the promise mattered more than the org chart. I want interviewers to hear what the candidate did next so it would not happen again. Heroics without a fix is theater. Heroics that produce a process change are Customer Obsession plus {lp:ownership}."
+      "body": "A customer was promised a gift by a hard date. The system failed. Someone bought the item locally and put it in the customer's hands. That is not a scalable process. It is a signal: the promise mattered more than the org chart. The next question is what they did so it would not happen again. Heroics without a fix is theater. Heroics that produce a process change are Customer Obsession plus {lp:ownership}."
     },
     {
       "title": "Treat clumsy feedback as an audit",
-      "body": "Customers write short, messy, even \"simple minded\" reviews. Teams that are not obsessed discard them. Teams that are obsessed research each one, because a real person just audited your process for free. The candidate who can tell you what they changed after a clumsy comment is the one I want in the loop."
+      "body": "Customers write short, messy, even \"simple minded\" reviews. Teams that are not obsessed discard them. Teams that are obsessed research each one, because a real person just audited your process for free. The person who can tell you what they changed after a clumsy comment is the one who is actually obsessed."
     },
     {
       "title": "Say no to a request that would hurt them later",

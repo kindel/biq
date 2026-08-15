@@ -18,7 +18,7 @@
     "This principle shows up as operational excellence. You never assume the current process is good enough. You pick the few metrics that tell you the truth. You fix the root cause so the defect cannot travel. You balance this with {lp:bias-for-action}. Highest standards is not a reason to block the business while you polish.",
     "It also shows up in the thinking. The best calls come from writing: a press release for the vision, a FAQ for the hard questions, a short narrative that tests the assertions with data. Inviting scrutiny on the writing is how the work gets better. Sloppy prose is sloppy thought."
   ],
-  "calibrationIntro": "I want interviewers to listen for a defect the candidate stopped from going downstream, and a launch they held for a real reason. \"I have high standards\" is a slogan. Perfection that never ships is the over move. Shipping junk and calling it {lp:bias-for-action} is the under move.",
+  "calibrationIntro": "Look for a defect they stopped from going downstream, and a launch they held for a real reason. \"I have high standards\" is a slogan. Perfection that never ships is the over move. Shipping junk and calling it {lp:bias-for-action} is the under move.",
   "rows": [
     {
       "id": "reviewing-work",
@@ -101,15 +101,15 @@
   "examples": [
     {
       "title": "Stop the line",
-      "body": "A defect is about to travel to the next team, or to a customer. The just-right move is to stop the line, fix the cause, and start again. Passing it downstream so your date looks clean is the under move. I want interviewers to hear a time the candidate pulled that cord, and what stayed fixed afterward."
+      "body": "A defect is about to travel to the next team, or to a customer. The just-right move is to stop the line, fix the cause, and start again. Passing it downstream so your date looks clean is the under move. Look for a time they pulled that cord, and what stayed fixed afterward."
     },
     {
       "title": "Hold the launch two days, not two months",
-      "body": "A bad bug is a reason to slip a couple of days. A typo in an appendix is not. Highest standards without triage is fear. {lp:bias-for-action} without standards is hope. The candidate should be able to name the defect that was worth the hold, and the defects they shipped on purpose."
+      "body": "A bad bug is a reason to slip a couple of days. A typo in an appendix is not. Highest standards without triage is fear. {lp:bias-for-action} without standards is hope. Name the defect that was worth the hold, and the defects you shipped on purpose."
     },
     {
       "title": "The writing is the thinking",
-      "body": "A short narrative, a press release, and a FAQ will expose a weak idea faster than a slide deck. If the numbers in the appendix do not match the body, the thinking is not done. I want to hear how the candidate invited other people to tear the document apart, and what got better because of it."
+      "body": "A short narrative, a press release, and a FAQ will expose a weak idea faster than a slide deck. If the numbers in the appendix do not match the body, the thinking is not done. Look for how they invited other people to tear the document apart, and what got better because of it."
     }
   ],
   "looksLike": {

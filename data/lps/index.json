@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "title": "Leadership Principles: Under, Just Right, Over",
-  "source": "Kindel interviewer calibration tool. Classic 14 leadership principles. Rewritten from an internal raises/lowers wiki; company, product, and exec references removed.",
+  "title": "Leadership Principles: a user's manual",
+  "source": "Kindel leadership principles user's manual. Classic 14. Rewritten from an internal raises/lowers wiki; company, product, and exec references removed.",
   "howTo": [
-    "Use this when you are writing a loop, sitting in a debrief, or coaching someone who is over-rotating on a principle.",
+    "Use this when you are applying a principle, studying one, reviewing work, or coaching someone who is over-rotating.",
     "Under is not trying. Over is the principle eating the job. Just Right is the bar.",
-    "I want interviewers to score the story against a row, not against a vibe. Pick the situation that matches what you heard, then say under, just right, or over, and write the evidence.",
+    "Score the situation against a row, not against a vibe. Pick the row that matches what happened, then say under, just right, or over, and write the evidence.",
     "Cross-refs look like {lp:ownership}. Render them as links. Agents treat them as hard links to that principle file.",
     "These files pair with data/questions.json. Same ids. Do not add competency-cut principles here."
   ],

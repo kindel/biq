@@ -1,7 +1,7 @@
 # Leadership Principles JSON (kindel/biq data/lps)
 
-Calibration tool: Under / Just Right / Over for each classic leadership principle.
-One file per principle. Agents and the /biq/ site both consume these files.
+User's manual: Under / Just Right / Over for each classic leadership principle.
+One file per principle. The /lps/ pages, the /biq/ site, and agents consume these files.
 
 ## Files
 
@@ -50,7 +50,7 @@ Never write the raw company name or product names. Principle names stay.
     "manager": "What it looks like for a manager."
   },
   "deepen": [
-    "Diagnostic question you ask yourself or a candidate."
+    "Diagnostic question you ask yourself, a teammate, or anyone you are reviewing."
   ],
   "related": [
     {"id": "ownership", "note": "Why they connect, one sentence."}
