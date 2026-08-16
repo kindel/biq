@@ -148,7 +148,10 @@
     var min = Math.min(a.length, b.length);
     while (shared < min && a.charAt(shared) === b.charAt(shared)) shared++;
     if (shared >= 5) return true;
-    if (shared >= 4 && shared === min) return true;
+    // Same stem, and what is left of both is short enough to be an ending:
+    // works / working, which neither the prefix nor the typo rule catches.
+    if (shared >= 4 && (shared === min ||
+        (a.length - shared <= 3 && b.length - shared <= 3))) return true;
     return min >= 6 && oneEditApart(a, b);
   }
 
