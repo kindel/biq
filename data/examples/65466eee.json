@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you sought candid feedback on your own work and it stung. What did you do with it?",
+  "competency": "Build extraordinary teams (self-awareness and coachability)",
+  "principle": "Build extraordinary teams",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my mentor to review a feature spec I wrote in my first month. She said the success metrics were vague and the user flow assumptions were off. It stung because I had spent a week on it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I rewrote the metrics section with actual numbers from our logs and scheduled a 30-minute follow-up. I also added two edge cases she flagged. The second version got used in planning."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you sought candid feedback on your own work and it stung. What did you do with it?",
+        "Role: new engineer on first feature spec",
+        "Action: rewrote metrics with log data and added edge cases after one round of feedback",
+        "Outcome: spec used in planning meeting",
+        "Quote: 'It stung because I had spent a week on it.'",
+        "Follow-up: Asked how they handled the emotional part; said they waited 24 hours then focused on concrete changes"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate proactively asked for feedback on their own work and translated stinging input into a revised spec that was actually adopted. Story shows quick iteration on concrete items rather than defensiveness. At junior level this demonstrates the coachability we need. Biggest strength is turning feedback into a usable artifact within one cycle.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me my code review comments were too nitpicky. It hurt because I was trying to be thorough."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried to be nicer but didn't really change how I reviewed. I figured it was just their preference."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you sought candid feedback on your own work and it stung. What did you do with it?",
+        "Role: mid-level on code reviews",
+        "Action: said they 'tried to be nicer' but kept same approach",
+        "Outcome: no visible change in behavior or results",
+        "Quote: 'I figured it was just their preference.'",
+        "Follow-up: Asked for example of a changed review; none provided"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate reports receiving direct feedback but shows no evidence of adjusting their approach or measuring impact. At junior level we expect visible iteration on personal work; here the response stays at the level of feeling without action. Biggest gap is lack of follow-through on the feedback received."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I ran a retro on a cross-team launch I led and asked the other team\u2019s tech lead for blunt input on my coordination. He said I had under-communicated trade-off decisions, which created last-minute work for them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote up the specific decisions I had skipped sharing, sent it to both teams, and started a weekly sync note. Their next launch had fewer escalations."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you sought candid feedback on your own work and it stung. What did you do with it?",
+        "Role: senior leading cross-team launch",
+        "Action: documented skipped trade-offs and added weekly sync note",
+        "Outcome: fewer escalations on next launch",
+        "Quote: 'He said I had under-communicated trade-off decisions.'",
+        "Follow-up: Asked how they got the other team to adopt the new process; said they proposed it in the retro and followed up in writing"
+      ],
+      "raiseFeedback": "Raises the bar. Candidate sought feedback from a peer on cross-team coordination and converted it into a repeatable process that reduced escalations. Shows influence without authority and measurable team-level impact. At senior level this is the expected pattern. Biggest strength is turning personal feedback into a coordination improvement that benefited another team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer told me my project updates were too high-level for their team. I felt it was unfair since I was already sending weekly notes."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a one-sentence summary but kept the same format. They still complained sometimes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you sought candid feedback on your own work and it stung. What did you do with it?",
+        "Role: senior on project updates",
+        "Action: added one sentence but kept format unchanged",
+        "Outcome: complaints continued",
+        "Quote: 'I felt it was unfair since I was already sending weekly notes.'",
+        "Follow-up: Asked for before/after example of a note; candidate could not produce one"
+      ],
+      "lowerFeedback": "Lowers the bar. Feedback was received but the candidate made only a token adjustment and did not test whether it addressed the root issue. At senior level we look for cross-team leverage and clear before/after results; neither appears here. Biggest gap is minimal adaptation with no evidence of impact."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After our re-org I asked two directors who now reported to me for direct feedback on my leadership style. One said I was still operating at the VP level and not delegating enough strategic context."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stopped attending their staff meetings, created a monthly strategy memo instead, and tracked how many decisions they made without me. Two quarters later their teams owned roadmap trade-offs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you sought candid feedback on your own work and it stung. What did you do with it?",
+        "Role: new VP after re-org",
+        "Action: stopped attending staff meetings, shifted to monthly memo, measured decisions owned by directs",
+        "Outcome: directs' teams owned roadmap trade-offs within two quarters",
+        "Quote: 'I was still operating at the VP level and not delegating enough strategic context.'",
+        "Follow-up: Asked how they handled the emotional reaction at their level; said they took a week to process then focused on org leverage"
+      ],
+      "raiseFeedback": "Raises the bar. Candidate solicited feedback from new directs on their own leadership and made structural changes that increased delegation at the org level. Demonstrates long-term thinking and leverage through others. At exec level this is the standard. Biggest strength is converting personal feedback into measurable ownership shift for two teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer exec told me my skip-levels were too tactical. It was uncomfortable."
+        },
+        {
+          "role": "interviewer",
+          "text": "What followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in my next staff meeting and asked my directs to handle more. I didn't track whether it stuck."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you sought candid feedback on your own work and it stung. What did you do with it?",
+        "Role: exec on skip-level meetings",
+        "Action: mentioned in staff meeting but no follow-up mechanism",
+        "Outcome: no tracking or reported change",
+        "Quote: 'It was uncomfortable.'",
+        "Follow-up: Asked for org-level metric that improved; none given"
+      ],
+      "lowerFeedback": "Lowers the bar. Feedback was acknowledged but the candidate stopped at a single mention without creating accountability or measuring org impact. At exec level we expect strategic delegation and visible leverage; the story shows neither. Biggest gap is absence of sustained action or results tied to the feedback."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Proactively sought stinging feedback",
+      "junior": "Asked mentor directly on first spec",
+      "senior": "Asked peer tech lead after cross-team launch",
+      "exec": "Asked new directs after re-org"
+    },
+    {
+      "signal": "Translated feedback into concrete action",
+      "junior": "Rewrote metrics and added edge cases",
+      "senior": "Created weekly sync note and documented trade-offs",
+      "exec": "Shifted to monthly memo and stopped attending staff meetings"
+    },
+    {
+      "signal": "Measured or showed downstream impact",
+      "junior": "Spec adopted in planning",
+      "senior": "Fewer escalations on next launch",
+      "exec": "Directs' teams owned roadmap trade-offs in two quarters"
+    },
+    {
+      "signal": "Handled emotional response productively",
+      "junior": "Waited 24 hours then focused on revisions",
+      "senior": "Processed for a day then acted on coordination",
+      "exec": "Took a week then focused on org leverage"
+    },
+    {
+      "signal": "Evidence of raising bar for others",
+      "junior": "N/A at this level",
+      "senior": "Improved process for another team",
+      "exec": "Increased ownership for two reporting teams"
+    }
+  ],
+  "kind": "factor"
+}

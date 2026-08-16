@@ -1,0 +1,238 @@
+{
+  "question": "Tell me about a time you challenged a decision because it did not make sense. How did you do it, and what happened?",
+  "competency": "Challenge skillfully + judgment and influence",
+  "principle": "Challenge skillfully",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed the team was using a manual spreadsheet for tracking test cases instead of the existing automation tool. I thought it was inefficient so after the standup I asked my mentor if I could run the numbers on time spent."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say in that conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed a quick count of hours lost over two sprints and asked whether the team had considered switching. She agreed and we moved the data into the tool the next week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react when you brought it up?"
+        },
+        {
+          "role": "candidate",
+          "text": "One person was annoyed at first because they were used to the old way, but after seeing the time savings they thanked me."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you challenged a decision because it did not make sense.",
+        "Individual contributor on first project; spotted manual spreadsheet vs existing tool",
+        "Brought data to mentor after standup instead of in meeting",
+        "Outcome: switched to tool in one week; one teammate initially resistant",
+        "Quote: \"I showed a quick count of hours lost over two sprints and asked whether the team had considered switching\"",
+        "Follow-up: How did the team react? - One annoyed at first then thanked her"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a local inefficiency and escalated it through their mentor with simple data rather than forcing the point in the meeting. The story shows they owned the follow-up and accepted that a teammate needed time to adjust. The outcome was small but measurable and the candidate did not overclaim credit. Biggest strength is the willingness to surface the issue while staying coachable on how to raise it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once thought the PM was wrong about the priority of a bug so I told them in the standup that we should fix it first."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you spoke up?"
+        },
+        {
+          "role": "candidate",
+          "text": "They said they had already considered it and the meeting moved on. I just did the assigned work after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up one-on-one?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured they knew more so I dropped it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you challenged a decision because it did not make sense.",
+        "Raised priority disagreement in standup without data or context",
+        "PM pushed back; candidate did not follow up",
+        "Outcome: dropped the issue and completed assigned work",
+        "Quote: \"I just did the assigned work after that\"",
+        "Follow-up: Did you follow up one-on-one? - No"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate raised the concern in a public forum without supporting data and then accepted the first pushback without further inquiry. No attempt was made to understand the PM's reasoning or to own the next step. The story shows limited ownership once resistance appeared. Biggest gap is the absence of any follow-up or learning from the exchange."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Last year two teams could not agree on whether to build a shared service or keep duplicating logic. I pulled the usage metrics and cost estimates and scheduled a 30-minute working session with the two tech leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to the table?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as a one-time decision that would affect both roadmaps and asked each to bring their top two concerns. We landed on the shared service with a clear owner and timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead worried about losing control of their release cadence. We added a simple SLA and they agreed to pilot for one quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you challenged a decision because it did not make sense.",
+        "Senior IC; two teams duplicating logic vs shared service",
+        "Pulled metrics and cost data then ran a short working session",
+        "Outcome: agreed on shared service with SLA and pilot quarter",
+        "Quote: \"I framed it as a one-time decision that would affect both roadmaps\"",
+        "Follow-up: What resistance? - One lead worried about control; added SLA"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used data to surface the duplication problem and created a neutral forum rather than pushing their own solution. They addressed the real concern about release control with a concrete SLA and limited the risk with a pilot. Cross-team scope and measurable framing distinguish this from individual heroics. Biggest strength is turning disagreement into a structured decision with clear next steps.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with another team's choice to build their own logging library so I sent an email listing why our internal one was better."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few people replied but the other team kept building their version."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I moved on because it was not my team and I had my own deliverables."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you challenged a decision because it did not make sense.",
+        "Sent email criticizing another team's logging choice",
+        "No follow-up meeting or data discussion",
+        "Outcome: other team continued; candidate dropped it",
+        "Quote: \"I moved on because it was not my team\"",
+        "Follow-up: What did you do next? - Nothing"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate relied on an email broadcast without first understanding the other team's constraints or offering a joint discussion. When there was no immediate agreement they disengaged rather than iterating. Cross-team impact was attempted but not sustained. Biggest gap is the lack of persistence or adaptation after initial resistance."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Six months before launch the product org committed to a new market that our infrastructure could not support at scale. I asked the CFO and head of product to walk through the unit economics and capacity model together."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome of that meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shifted the launch to a smaller initial market and delayed the larger one by two quarters while we stood up the required capacity."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the political pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the capacity gap visible in the same financial model the CFO already trusted rather than arguing in strategy meetings."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you challenged a decision because it did not make sense.",
+        "Exec level; product org committed to market launch infrastructure could not scale",
+        "Brought CFO and product head together on unit economics and capacity model",
+        "Outcome: delayed larger market by two quarters; smaller initial launch",
+        "Quote: \"I made the capacity gap visible in the same financial model the CFO already trusted\"",
+        "Follow-up: How did you handle pushback? - Used existing trusted model instead of new arguments"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate surfaced a fundamental mismatch between growth ambition and infrastructure reality by connecting the right stakeholders around a shared model. They accepted a two-quarter delay as the trade-off rather than forcing a heroic fix. Strategic judgment appears in the choice to use the CFO's existing model as the vehicle for the challenge. Biggest strength is protecting long-term viability while still enabling a controlled market entry.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the CEO the proposed acquisition would not integrate with our stack and that we should walk away."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had run the integration cost estimate internally but had not shared it with finance or the deal team yet."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the deal proceed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes. I raised it in the final exec review but the momentum was already there."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you challenged a decision because it did not make sense.",
+        "Challenged acquisition on integration grounds",
+        "Cost estimate kept internal; not socialized with finance or deal team",
+        "Outcome: deal closed despite objection",
+        "Quote: \"I raised it in the final exec review but the momentum was already there\"",
+        "Follow-up: What data did you bring? - Internal estimate only"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate identified a material risk but kept the analysis inside their own team instead of building alignment with finance and the deal lead early. By the time the concern reached the final review the decision momentum was irreversible. The story shows limited strategic leverage. Biggest gap is the failure to convert a valid technical objection into an organizational decision before it was too late."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Uses data to frame the challenge",
+      "junior": "Simple local counts shown to mentor",
+      "senior": "Cross-team metrics and cost estimates",
+      "exec": "Shared financial model with CFO"
+    },
+    {
+      "signal": "Handles resistance",
+      "junior": "Accepts initial pushback then sees adjustment",
+      "senior": "Adds SLA and pilot to address control concern",
+      "exec": "Uses existing trusted model instead of new arguments"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Own project or immediate team",
+      "senior": "Two teams or roadmaps",
+      "exec": "Market launch or acquisition decision"
+    },
+    {
+      "signal": "Follow-through after first no",
+      "junior": "Drops issue when told PM knows more",
+      "senior": "Moves on without iterating",
+      "exec": "Raises late when momentum already set"
+    },
+    {
+      "signal": "Trade-off clarity",
+      "junior": "Not articulated",
+      "senior": "Pilot quarter limits risk",
+      "exec": "Two-quarter delay accepted for capacity"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "After standup via mentor",
+      "senior": "Neutral working session with leads",
+      "exec": "Stakeholder alignment before final review"
+    }
+  ],
+  "kind": "factor"
+}

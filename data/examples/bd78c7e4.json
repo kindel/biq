@@ -1,0 +1,175 @@
+{
+  "question": "Tell me about a time you gave candid feedback that changed how someone worked. What did you say, and what changed?",
+  "competency": "Build extraordinary teams",
+  "principle": "Build extraordinary teams",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a new teammate's PRs were consistently missing edge cases. After our second review I said, 'Your logic is solid but you're not catching the null states we hit in staging. Here's the pattern I use\u2014can you walk me through how you'd apply it to this ticket?'"
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "They started adding a checklist to their PR template. Three weeks later their defect rate dropped and the team lead asked them to review junior tickets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave candid feedback that changed how someone worked.",
+        "Peer dev missing edge cases on PRs",
+        "Said: 'Logic solid but missing null states\u2014walk me through applying this pattern'",
+        "Follow-up: They added checklist to template; defect rate dropped in 3 weeks",
+        "Outcome stayed inside own squad"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The story shows the candidate owning a local quality issue and delivering specific, actionable input rather than generic criticism. Quote captures the direct but supportive phrasing that helped the peer improve. Change is visible in the teammate's process and the team's willingness to give them more review work. Keeps scope appropriately small for 0-2 years. Biggest strength is the concrete before-and-after on the peer's output without claiming team-wide impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told a teammate their code was hard to read and they should make it cleaner."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you say and what changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "They said thanks and I think they tried to be neater after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave candid feedback that changed how someone worked.",
+        "Vague comment on readability",
+        "No specific example or follow-up given",
+        "Follow-up: Candidate could not name any observable change in the other person's work"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Feedback was too high-level to be useful and produced no measurable shift in behavior. Candidate could not articulate what they actually said or point to any concrete improvement. Shows limited ownership of developing others even at the individual-contributor level. Biggest gap is absence of specificity and follow-through that would demonstrate basic coaching skill."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A PM on another squad kept promising features without engineering input, creating unrealistic roadmaps. In a joint planning meeting I said, 'When we commit to dates before sizing, we set the team up for missed expectations. Let's run a quick t-shirt sizing session first so we can give you real trade-offs.'"
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "They started bringing me into roadmap drafts two weeks earlier. Over the next quarter their committed dates matched delivery 80 percent of the time instead of 40."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave candid feedback that changed how someone worked.",
+        "Cross-team PM over-committing without engineering input",
+        "Said: 'We need sizing before dates so we can show trade-offs'",
+        "Follow-up: PM invited candidate into drafts earlier; on-time delivery rose from 40% to 80%",
+        "Impact crossed team boundary"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate used influence without authority to fix a planning anti-pattern affecting two teams. The feedback was direct, tied to business impact, and produced a repeatable process change. Quote shows they offered a concrete alternative rather than just criticism. Result is quantified and sustained over a quarter. Biggest strength is the combination of cross-team scope and measurable outcome without formal authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told a PM on another team they were over-promising and it was hurting engineering morale."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They listened but kept the same process. I stopped getting pulled into their planning."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave candid feedback that changed how someone worked.",
+        "Feedback to cross-team PM about over-promising",
+        "No alternative process offered",
+        "Follow-up: No sustained change; relationship actually weakened"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Feedback stayed at the level of complaint without offering a workable alternative, so no process change occurred. Candidate could not demonstrate influence or lasting impact across teams. Shows limited ability to raise standards beyond their immediate circle. Biggest gap is lack of evidence that the candidate can drive behavioral change at the scope expected for 3-7 years."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our director was shielding the team from customer escalations, which kept us from learning. I said, 'By filtering every escalation, we're training the org that engineering doesn't own outcomes. We need to sit in the next three calls so the team sees the full impact.'"
+        },
+        {
+          "role": "interviewer",
+          "text": "What shifted?"
+        },
+        {
+          "role": "candidate",
+          "text": "We joined the calls. Within two quarters the team started owning post-mortems end-to-end and escalations dropped 60 percent because fixes happened earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave candid feedback that changed how someone worked.",
+        "Director filtering customer escalations from team",
+        "Said: 'We need to sit in calls so the team owns outcomes'",
+        "Follow-up: Team joined calls; escalations fell 60% as ownership increased",
+        "Org-level behavior change over two quarters"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate challenged a senior leader's protective instinct with a clear link to organizational learning and accountability. Quote directly addresses the long-term cost of the current approach. Change affected how an entire team interacted with customers and produced a sustained drop in escalations. Demonstrates strategic judgment on culture and leverage. Biggest strength is the willingness to surface an uncomfortable truth at the director level with measurable org impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested to my VP that we should be more transparent with the team about customer issues."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actually changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "They agreed in principle but the filtering continued. I raised it again six months later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave candid feedback that changed how someone worked.",
+        "Feedback to VP on transparency with escalations",
+        "No concrete mechanism proposed",
+        "Follow-up: No process change after six months"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Feedback remained high-level and produced no structural shift despite multiple attempts. Candidate did not drive a change in how the organization handled customer signals. Shows limited strategic leverage when facing resistance from senior stakeholders. Biggest gap is absence of sustained, measurable impact on team or org behavior at the scope required for 10+ years."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Specificity of feedback given",
+      "junior": "Names exact behavior and offers a repeatable pattern",
+      "senior": "Ties feedback to cross-team process and offers alternative workflow",
+      "exec": "Challenges leader behavior with org-learning consequence and clear next step"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single peer inside own squad",
+      "senior": "Cross-team planning change with quantified delivery lift",
+      "exec": "Org-wide ownership shift and sustained escalation reduction"
+    },
+    {
+      "signal": "Evidence of follow-through",
+      "junior": "Peer adopted checklist; defect rate dropped",
+      "senior": "PM changed planning cadence; 40% to 80% on-time",
+      "exec": "Team joined calls; 60% escalation drop over two quarters"
+    },
+    {
+      "signal": "Comfort with directness",
+      "junior": "Supportive but specific phrasing to peer",
+      "senior": "Direct challenge to peer function with business framing",
+      "exec": "Direct challenge to director on shielding behavior"
+    },
+    {
+      "signal": "Ability to influence without authority",
+      "junior": "Limited\u2014stayed inside immediate team",
+      "senior": "Clear\u2014changed PM behavior across teams",
+      "exec": "High\u2014shifted director practice and team culture"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,160 @@
+{
+  "question": "Tell me about a time you raised the bar on a hire or a promotion and took heat for it. What was the bar?",
+  "competency": "Build extraordinary teams (High Standards + Courage)",
+  "principle": "Build extraordinary teams",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, we were hiring a new grad for the team. The team wanted to move fast on someone who had done a few LeetCode problems well but struggled to explain trade-offs. I pushed to add a design question and a follow-up with our senior engineer. The hiring manager pushed back saying we were over-indexing on one candidate."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote up the bar we were missing\u2014ability to own a small feature end-to-end\u2014and shared it with the team. We passed on the candidate. Two weeks later we found someone who shipped their first PR in week three. The manager later told me the extra time was worth it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised the bar on a hire or a promotion and took heat for it. What was the bar?",
+        "Role: new grad on first project team",
+        "Situation: team wanted to close quickly on weak design skills",
+        "Action: added design question, wrote explicit bar (own feature end-to-end)",
+        "Outcome: passed, hired stronger candidate who shipped week 3",
+        "Quote: \"the manager later told me the extra time was worth it\"",
+        "Follow-up: How did you handle the pushback in the moment? Candidate: stayed factual, shared written bar with team"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Competency is Build extraordinary teams. Story shows the candidate defined a concrete bar (own a feature end-to-end) and documented it when the team wanted speed. They absorbed the heat by staying data-driven instead of emotional. The outcome was local but measurable. Biggest strength is willingness to slow a process they did not own.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were hiring a new grad and the team liked one candidate who was fast at coding problems. I thought maybe we should check if they could work with the team but everyone was tired of interviewing so we just went with the first choice."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised the bar on a hire or a promotion and took heat for it. What was the bar?",
+        "Role: new grad hire",
+        "Situation: team wanted to close fast",
+        "Action: none\u2014agreed with the group",
+        "Outcome: hired the candidate",
+        "Quote: \"everyone was tired of interviewing so we just went with the first choice\"",
+        "Follow-up: Did you ever revisit whether that hire worked out? Candidate: not really, it was early in my career"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Competency is Build extraordinary teams. Candidate describes no attempt to define or defend a higher bar and explicitly deferred to group fatigue. No evidence of ownership or coachability on the topic. The story shows the candidate treated hiring as someone else's problem. Biggest gap is absence of any action when standards were at risk."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our sister team wanted to promote a strong IC to senior. I sat on the promo committee and the packet showed solid execution but weak evidence of influencing beyond their own team. I wrote a note that the bar for senior should include at least one cross-team project with measurable adoption and voted no."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "The manager was frustrated and said we were blocking their only strong performer. I offered to help rewrite the packet around influence examples. Six months later the same person came back with two cross-team launches and was promoted. The manager thanked me afterward."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised the bar on a hire or a promotion and took heat for it. What was the bar?",
+        "Role: promo committee member for sister team",
+        "Situation: strong executor but weak cross-team influence",
+        "Action: defined bar (one cross-team project with adoption), voted no, offered to help rewrite",
+        "Outcome: candidate returned stronger and was promoted six months later",
+        "Quote: \"the manager thanked me afterward\"",
+        "Follow-up: How did you stay in relationship with the frustrated manager? Candidate: stayed available and helped improve the packet"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Competency is Build extraordinary teams. Candidate set a clear, written bar around cross-team influence and absorbed direct pushback from a peer manager. They followed through by offering help rather than just blocking. Result was a stronger promotion case six months later. Biggest strength is turning conflict into a better outcome for the individual and the org.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A manager on another team pushed a promotion for someone who mostly delivered on their own roadmap. I had concerns about the influence bar but the manager was senior to me so I didn't push hard and the promo went through."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised the bar on a hire or a promotion and took heat for it. What was the bar?",
+        "Role: promo committee reviewer",
+        "Situation: weak influence evidence",
+        "Action: raised concern privately but deferred",
+        "Outcome: promo approved",
+        "Quote: \"the manager was senior to me so I didn't push hard\"",
+        "Follow-up: Did the promoted person struggle later? Candidate: a bit, but it wasn't my team"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Competency is Build extraordinary teams. Candidate identified a gap in the influence bar but chose not to press because of hierarchy. No attempt to influence without authority or improve the outcome. The story ends with an accepted lower standard. Biggest gap is lack of courage to advocate for the bar when it mattered."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had an open VP role and the CEO wanted to move fast on an internal candidate who had scaled one product line. I argued the org needed someone who had built and run a multi-product engineering org before. I blocked the internal move and insisted on an external search even though it delayed the org chart by four months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that land?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO and two directors pushed back hard, saying we were losing momentum. I showed the gap in scope and succession risk if we promoted too early. We hired externally. Two years later that VP rebuilt the platform org and two of their directs were promoted to director. The CEO later said it was the right call."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised the bar on a hire or a promotion and took heat for it. What was the bar?",
+        "Role: exec blocking internal VP move",
+        "Situation: CEO favored fast internal promotion with narrow scope",
+        "Action: defined bar (multi-product org experience), blocked, ran external search",
+        "Outcome: external hire, two directs promoted two years later",
+        "Quote: \"the CEO later said it was the right call\"",
+        "Follow-up: What was the cost of the four-month delay? Candidate: short-term velocity hit but avoided bigger org risk"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Competency is Build extraordinary teams. Candidate defined an org-level bar (multi-product scope) and accepted direct heat from the CEO to protect long-term capability. The decision created measurable downstream promotions. Biggest strength is willingness to trade short-term speed for org health.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed a new director and the only internal option had never managed more than eight people. The team was stretched so we promoted them anyway. It took about a year to realize the scope was too big."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised the bar on a hire or a promotion and took heat for it. What was the bar?",
+        "Role: exec deciding on director promotion",
+        "Situation: internal candidate lacked scope experience",
+        "Action: promoted anyway due to team pressure",
+        "Outcome: took a year to see the mismatch",
+        "Quote: \"the team was stretched so we promoted them anyway\"",
+        "Follow-up: What did you do after realizing the gap? Candidate: added more support but didn't revisit the original decision"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Competency is Build extraordinary teams. Candidate recognized the scope mismatch but chose speed over standards. No evidence of strategic trade-off or long-term thinking. The outcome required a year to correct. Biggest gap is prioritizing short-term relief over building an extraordinary leadership bench."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Defines explicit bar",
+      "junior": "States concrete criteria (own feature end-to-end)",
+      "senior": "Writes influence requirement before voting",
+      "exec": "Sets multi-product scope as non-negotiable"
+    },
+    {
+      "signal": "Absorbs heat from peers/leaders",
+      "junior": "Shares written bar with team despite pushback",
+      "senior": "Offers to help after voting no",
+      "exec": "Blocks CEO favorite and runs external search"
+    },
+    {
+      "signal": "Creates downstream impact",
+      "junior": "New hire ships week 3",
+      "senior": "Same person promoted six months later",
+      "exec": "Two directs promoted within two years"
+    },
+    {
+      "signal": "Shows learning or iteration",
+      "junior": "Follows up with hiring manager post-hire",
+      "senior": "Helps improve rejected packet",
+      "exec": "Accepts four-month delay as necessary cost"
+    }
+  ],
+  "kind": "factor"
+}

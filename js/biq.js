@@ -112,7 +112,7 @@
   }
 
   function hasExamples() {
-    return currentCompany && currentCompany.id === "amazon";
+    return !!(currentCompany && currentCompany.examples !== false);
   }
 
   function kindLabel() {

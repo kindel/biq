@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
+  "competency": "Build extraordinary teams + Team development and coaching",
+  "principle": "Build extraordinary teams",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project after onboarding, our three-person feature squad kept missing handoffs. I set up a 15-minute daily sync and a shared checklist for code reviews and test coverage. After two weeks the bugs dropped and we shipped two days early."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you personally do when someone skipped the checklist?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked them in the next sync what was blocking them and offered to pair on the review. They started using it after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
+        "Situation: first project squad missing handoffs on a small feature",
+        "Actions: created daily sync + shared checklist; offered to pair when someone skipped",
+        "Outcome: bugs down, shipped two days early",
+        "Quote: 'I asked them what was blocking them and offered to pair'",
+        "Follow-up: Asked about handling skippers; candidate described direct, low-friction coaching"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a local process gap and used simple rituals plus direct coaching to improve output. Story shows they noticed friction and acted without waiting for a manager. The pairing offer demonstrates coachability in reverse. Biggest strength is turning individual misses into repeatable team behavior on a small scope. Gap is that impact stayed within one squad and one release.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a team where one person was really strong so the rest of us just followed what they did and we finished the project."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to make the team stronger than that one person?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just made sure my part was done on time so I didn't slow them down."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
+        "Situation: relied on one strong teammate to carry the project",
+        "Actions: focused only on delivering own tasks on time",
+        "Outcome: project finished but no team-level improvement described",
+        "Quote: 'I just made sure my part was done on time'",
+        "Follow-up: Pressed on personal contribution; candidate stayed at individual task level"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story shows passive reliance on a strong individual rather than any effort to build collective strength. Candidate took no actions to create shared practices or lift others. Outcome stayed at 'I didn't slow things down.' Biggest gap is lack of ownership over team dynamics even at the smallest scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two backend teams were duplicating work on a shared service. I created a lightweight guild with rotating leads, defined API review standards, and ran bi-weekly knowledge shares. Within a quarter the duplicated code dropped 40 percent and the on-call load spread across both teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the second team to participate without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started with one engineer from each team who had the pain, showed the metrics on duplicated effort, then let them run the first guild meeting so ownership felt shared."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
+        "Situation: two backend teams duplicating service work across org boundary",
+        "Actions: stood up cross-team guild, set review standards, rotated leads, ran knowledge shares",
+        "Outcome: 40 percent less duplication, on-call load shared",
+        "Quote: 'Let them run the first guild meeting so ownership felt shared'",
+        "Follow-up: How influence worked without authority; candidate used data + early adopters to seed participation"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate identified a cross-team inefficiency and used influence to create a durable guild structure that improved both teams' output. Story includes concrete mechanisms (standards, rotation, metrics) and shows how they seeded ownership rather than dictating. Impact moved beyond one team. Biggest strength is turning duplicated individual effort into leveraged team capability. Minor gap is limited detail on long-term sustainability after the candidate moved on.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I staffed a new project with the strongest engineers I could find from each team and gave them clear requirements."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after staffing to make the group stronger than the sum?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran status meetings and escalated blockers so they could focus on coding."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
+        "Situation: assembled high-skill individuals for a new project",
+        "Actions: ran status meetings and escalated blockers",
+        "Outcome: no evidence of team-level synergy or lasting practices",
+        "Quote: 'I ran status meetings and escalated blockers so they could focus on coding'",
+        "Follow-up: Asked about post-staffing actions; candidate stayed at coordination level"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Candidate treated team building as selecting strong individuals plus basic coordination. No mechanisms created for knowledge sharing, standards, or raising collective capability. Story shows management of individuals rather than building a team that compounds. Biggest gap is absence of cross-team influence or durable practices."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I joined, engineering had high attrition and siloed delivery. I restructured into mission-aligned pods, introduced a principal-engineer track with explicit coaching expectations, and tied promotion to team outcomes rather than individual features. Two years later attrition fell to 8 percent and three pods delivered platform capabilities used by the whole company."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on the promotion change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some high individual contributors left because they didn't want the coaching requirement. We accepted that and hired for the new bar; retention of the remaining population improved enough to offset it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
+        "Situation: high attrition and siloed engineering org at scale",
+        "Actions: restructured to mission pods, created principal track with coaching mandate, shifted promotions to team outcomes",
+        "Outcome: attrition to 8 percent, multiple pods produced company-wide platforms",
+        "Quote: 'We accepted some IC exits and hired for the new bar'",
+        "Follow-up: Trade-offs on promotion change; candidate described deliberate choice and measured result"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Candidate made structural changes that shifted the organization from individual heroics to collective strength at scale. Story shows strategic choices on promotion criteria and willingness to accept short-term attrition for long-term leverage. Impact is org-level and multi-year. Biggest strength is aligning incentives so team outcomes became the path to advancement. Gap is limited visibility into how they handled resistance from senior leaders during the restructure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I hired a few strong directors and let them run their own teams while I focused on the business roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you ensure the teams became stronger than the directors you hired?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed their headcount plans and made sure they had budget for good people."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
+        "Situation: delegated to directors after hiring",
+        "Actions: reviewed headcount plans and approved budget",
+        "Outcome: no org-level mechanisms or cultural shifts described",
+        "Quote: 'I reviewed their headcount plans and made sure they had budget for good people'",
+        "Follow-up: How teams were strengthened beyond hiring; candidate stayed at resourcing level"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Candidate reduced the problem to hiring strong directors and providing budget. No evidence of strategic levers such as incentive redesign, cultural change, or mechanisms that amplify output beyond the individuals hired. Story lacks org-level impact or long-term thinking. Biggest gap is treating team strength as a staffing exercise rather than a leadership system."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Created durable team practices or structures",
+      "junior": "Daily sync + checklist that one squad adopted",
+      "senior": "Cross-team guild with standards and rotation",
+      "exec": "Pod restructure plus promotion criteria tied to team outcomes"
+    },
+    {
+      "signal": "Used influence without direct authority",
+      "junior": "Offered to pair when checklist skipped",
+      "senior": "Seeded guild via early adopters and data",
+      "exec": "Shifted promotion bar across the org"
+    },
+    {
+      "signal": "Measured and owned team-level results",
+      "junior": "Bugs down and on-time ship for one feature",
+      "senior": "40 percent reduction in duplicated code",
+      "exec": "Attrition to 8 percent and platform capabilities shipped"
+    },
+    {
+      "signal": "Handled resistance or trade-offs explicitly",
+      "junior": "Asked blocker and adjusted in real time",
+      "senior": "Let engineers run first meeting to build ownership",
+      "exec": "Accepted some IC exits to raise the coaching bar"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single squad, one release",
+      "senior": "Two teams, quarter-long improvement",
+      "exec": "Full engineering org, multi-year retention and delivery gains"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
+  "competency": "Optimize for endurance and resilience",
+  "principle": "Optimize for endurance and resilience",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a six-month migration of our internal tools to a new stack while still supporting daily tickets. In week one I blocked two hours every Friday for a retro on what was draining me, set a hard stop at 6pm three days a week, and wrote down the three metrics I would track weekly so I could see burnout signals early."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when the retro showed you were falling behind?"
+        },
+        {
+          "role": "candidate",
+          "text": "I adjusted scope with my manager instead of adding nights, and we dropped one non-critical feature."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
+        "Role: new grad on tools migration + ticket queue",
+        "Actions: weekly retro block, hard stop 3x/week, defined burnout metrics",
+        "Outcome: adjusted scope after retro instead of overtime",
+        "Quote: \"I wrote down the three metrics I would track weekly so I could see burnout signals early\"",
+        "Follow-up: What happened when the retro showed falling behind? -> adjusted scope with manager"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience. The candidate described a six-month individual migration plus support load and put three concrete mechanisms in place in week one: a recurring retro slot, explicit hard stops, and tracked metrics. When the retro flagged risk they negotiated scope reduction rather than adding hours. This shows early ownership of personal sustainability at the junior level. The story is local but demonstrates coachability and learning from feedback. Biggest strength is the explicit metrics chosen in week one; the gap is lack of any cross-team element, which is acceptable for this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a big launch coming in six months so I just started working longer hours from the start and kept a to-do list."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently in week one versus a normal sprint?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a second to-do list for the long-term items so nothing got forgotten."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
+        "Role: individual contributor on launch",
+        "Actions: worked longer hours, kept two to-do lists",
+        "Outcome: no mention of sustainability or adjustment",
+        "Quote: \"I just started working longer hours from the start\"",
+        "Follow-up: What did you do differently in week one? -> added second to-do list"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience. The candidate framed the six-month effort as simply working longer hours from week one with no structural changes. The only addition was a second to-do list, which does not address energy or risk of burnout. No evidence of reflection, metrics, or willingness to adjust scope. At junior level we expect at least basic personal planning and coachability; this answer shows neither. The story stays entirely reactive. Biggest gap is absence of any mechanism that would let them detect or correct unsustainable pace."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team had an 18-month re-architecture that touched three other squads. In week one I created a shared capacity model so each team could see their allocation across quarters, set a monthly cross-team retro on process debt, and defined a \"sustainability metric\" we reviewed in every planning meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the capacity model change behavior?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams reduced their committed scope after seeing the model; we avoided the usual mid-project crunch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
+        "Role: senior IC leading cross-team re-architecture",
+        "Actions: capacity model, monthly cross-team retro on process debt, sustainability metric in planning",
+        "Outcome: two teams reduced scope after seeing model",
+        "Quote: \"I created a shared capacity model so each team could see their allocation across quarters\"",
+        "Follow-up: How did the capacity model change behavior? -> teams reduced committed scope"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience. The candidate led an 18-month cross-team effort and installed three durable structures in week one: a visible capacity model, recurring process-debt retros, and a sustainability metric reviewed in planning. When teams saw the model they voluntarily reduced scope, showing influence without authority. The story includes measurable downstream effect rather than heroics. At senior level this demonstrates leverage through systems instead of personal output. Biggest strength is the capacity model that created visibility across teams; the only minor gap is limited detail on how they coached others to maintain the practices.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had an 18-month project so I made sure my own JIRA board had all the epics broken down and I scheduled weekly 1:1s with the other leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the 1:1s surface any sustainability issues?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of times people mentioned being busy but we just kept going."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
+        "Role: senior on cross-team project",
+        "Actions: broke down own JIRA board, scheduled weekly 1:1s",
+        "Outcome: 1:1s noted busy signals but no action",
+        "Quote: \"I made sure my own JIRA board had all the epics broken down\"",
+        "Follow-up: Did the 1:1s surface sustainability issues? -> kept going"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience. The candidate described an 18-month cross-team project yet only described personal JIRA hygiene and weekly 1:1s. When sustainability signals appeared in the 1:1s the response was to continue without adjustment. No shared mechanisms, no metrics, and no evidence of raising the bar for other teams. At senior level we expect influence on process and some cross-team leverage; this answer remains individual and reactive. The story shows planning but not endurance planning. Biggest gap is lack of any visible system that would protect team energy over time."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After a series of missed quarters I launched a company-wide initiative to move from quarterly OKRs to a rolling 18-month roadmap with explicit health metrics. In week one I published a simple capacity and attrition model, created a quarterly \"endurance review\" with the leadership team, and tied part of every VP's comp to whether their org stayed within sustainable load bands."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to attrition after the first year?"
+        },
+        {
+          "role": "candidate",
+          "text": "It dropped 12 points in the two orgs that adopted the model first; we then rolled it out more broadly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
+        "Role: exec resetting company planning cadence",
+        "Actions: capacity/attrition model, quarterly endurance review, tied VP comp to load bands",
+        "Outcome: attrition dropped 12 points in pilot orgs",
+        "Quote: \"I tied part of every VP's comp to whether their org stayed within sustainable load bands\"",
+        "Follow-up: What happened to attrition after the first year? -> dropped 12 points"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience. The candidate addressed repeated missed quarters by changing the company's planning system and embedded three durable levers in week one: a published capacity model, recurring endurance reviews, and compensation linkage for VPs. The 12-point attrition drop in pilot orgs provides concrete evidence of org-level impact. At exec level this shows strategic judgment and use of leverage rather than direct heroics. The story demonstrates long-term thinking and willingness to change incentives. Biggest strength is the compensation tie-in that created accountability; the only gap is limited visibility into how the model handled ambiguity in early quarters.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were burning out after back-to-back launches so I told my directs to watch their teams' hours and report up monthly."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did reporting change any decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "It gave us visibility but the launches still had to ship."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
+        "Role: exec after burnout wave",
+        "Actions: told directs to watch hours and report monthly",
+        "Outcome: visibility improved but launches unchanged",
+        "Quote: \"I told my directs to watch their teams' hours and report up monthly\"",
+        "Follow-up: Did reporting change any decisions? -> launches still had to ship"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience. The candidate responded to burnout with a reporting request to directs and no structural changes. When the reports arrived, launch dates remained fixed, showing no willingness to trade short-term output for long-term health. At exec level we expect org-level systems, incentive alignment, and strategic trade-offs; this answer contains only visibility without leverage. The story stays at the level of exhortation rather than redesign. Biggest gap is absence of any mechanism that would actually alter behavior or priorities across the organization."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Week-one structural changes",
+      "junior": "Defined personal metrics and hard stops",
+      "senior": "Shared capacity model across teams",
+      "exec": "Capacity model + comp linkage for VPs"
+    },
+    {
+      "signal": "Evidence of adjustment under pressure",
+      "junior": "Negotiated scope after retro",
+      "senior": "Teams reduced scope after seeing model",
+      "exec": "Attrition drop after pilot"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual workload",
+      "senior": "Cross-team visibility and decisions",
+      "exec": "Org-level incentives and reviews"
+    },
+    {
+      "signal": "Sustainability mechanisms",
+      "junior": "Weekly retro and tracked metrics",
+      "senior": "Monthly process-debt retro + planning metric",
+      "exec": "Quarterly endurance review + load-band comp"
+    },
+    {
+      "signal": "Reactive vs proactive",
+      "junior": "Added second to-do list vs. metrics and stops",
+      "senior": "JIRA hygiene vs. capacity model",
+      "exec": "Monthly reports vs. tied incentives"
+    }
+  ],
+  "kind": "factor"
+}

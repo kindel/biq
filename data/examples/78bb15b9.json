@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you made a call with incomplete information. How did you revisit it?",
+  "competency": "Be decisive in ambiguity and change + Decision making under uncertainty",
+  "principle": "Be decisive in ambiguity and change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I had to pick a logging library with only two days of research time and partial requirements. I chose the simpler one that matched what we had, documented the trade-offs, and told my manager I would revisit after the first sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you shipped?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the first deploy we hit a performance issue with high volume. I pulled the metrics, compared against the other option, and switched libraries in the next sprint with a one-page migration plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made a call with incomplete information. How did you revisit it?",
+        "Role: new grad on first team project; Situation: logging library selection with partial reqs and tight timeline",
+        "Actions: chose simpler option, wrote trade-offs doc, flagged revisit point to manager",
+        "Outcome: switched after first sprint once volume metrics appeared; migration took one sprint",
+        "Quote: \"I told my manager I would revisit after the first sprint.\"",
+        "Follow-up: What happened after you shipped? -> pulled metrics, compared, executed switch"
+      ],
+      "raiseFeedback": "The candidate described an individual-scope decision on a logging library choice with limited requirements. They documented assumptions upfront and set an explicit revisit trigger with their manager. After the first sprint they used new volume metrics to compare options and executed a clean switch. The story shows they treated the initial call as provisional rather than final. They owned the follow-up without needing escalation. The main gap is that the impact stayed inside one team and one sprint; there is no evidence yet of handling larger ambiguity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to pick between two designs but the data was missing so I waited for more info from the PM."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the PM didn't reply?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just used the first design that seemed okay and hoped it would be fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made a call with incomplete information. How did you revisit it?",
+        "Role: junior on small feature; Situation: design choice with missing data",
+        "Actions: waited, then picked first option without documented rationale or revisit plan",
+        "Outcome: shipped without checking later; no adjustment described",
+        "Quote: \"I just used the first design that seemed okay and hoped it would be fine.\"",
+        "Follow-up: What did you do when the PM didn't reply? -> no structured follow-up"
+      ],
+      "lowerFeedback": "The candidate avoided making the call until forced and then defaulted to the first available option without recording assumptions. No mechanism for revisiting was described, and no new information was actively sought or used. The story shows passivity rather than decisive action under ambiguity. The outcome stayed local but produced no learning loop or adjustment. This lowers the bar for the competency because the candidate did not demonstrate ownership of the decision or its later correction."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams disagreed on rollout order for a shared service change. I had partial adoption data and a hard customer deadline, so I picked the sequence that protected the largest revenue cohort first and committed to a checkpoint at 30 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the checkpoint go?"
+        },
+        {
+          "role": "candidate",
+          "text": "Metrics showed the other cohort was more sensitive than expected. I called both teams, reversed the remaining order, and updated the risk model for the next launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made a call with incomplete information. How did you revisit it?",
+        "Role: senior owning cross-team rollout; Situation: rollout order with partial adoption data and deadline",
+        "Actions: chose revenue-protecting sequence, set 30% checkpoint, documented decision",
+        "Outcome: reversed remaining order after checkpoint; updated risk model for future",
+        "Quote: \"I called both teams, reversed the remaining order, and updated the risk model.\"",
+        "Follow-up: How did the checkpoint go? -> reversed based on new cohort sensitivity data"
+      ],
+      "raiseFeedback": "The candidate made a cross-team rollout sequencing decision with incomplete adoption data and a fixed deadline. They protected the highest-revenue cohort and built an explicit checkpoint at 30 percent rollout. When new data contradicted the assumption they reversed the remaining order and updated the risk model used by both teams. The story shows influence without authority and a clear learning loop that affected future launches. Metrics were used to drive the change rather than opinion. The main remaining question is how they would scale this pattern to larger, multi-quarter ambiguity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked the rollout order that my team preferred because the other team had not sent their data yet."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you revisit after the other team's data arrived?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were already mid-rollout so we kept going and fixed issues as they came up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made a call with incomplete information. How did you revisit it?",
+        "Role: senior on cross-team rollout; Situation: sequencing decision with missing data from partner team",
+        "Actions: defaulted to own team's preference, no checkpoint or revisit mechanism",
+        "Outcome: continued original order despite later data; only tactical fixes applied",
+        "Quote: \"We were already mid-rollout so we kept going and fixed issues as they came up.\"",
+        "Follow-up: Did you revisit after the other team's data arrived? -> no reversal or model update"
+      ],
+      "lowerFeedback": "The candidate defaulted to their own team's preference when partner data was missing and did not create a checkpoint or revisit trigger. Once the missing data arrived they continued the original path and only applied tactical fixes. No evidence of updating a shared model or influencing the other team. The outcome stayed inside the original plan rather than adapting to new information. This lowers the bar because the candidate showed limited ownership of the cross-team decision and no structured way to correct course."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to decide whether to sunset a legacy product line or invest in a migration with only directional customer signals and no full financial model. I chose to run a controlled wind-down for the bottom 20 percent of SKUs while funding a small migration team, with a board-level checkpoint at six months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed at the checkpoint?"
+        },
+        {
+          "role": "candidate",
+          "text": "New retention data showed the legacy line was subsidizing a key enterprise segment. I recommended reversing the wind-down for that segment, reallocating the migration budget, and shifting the P&L owner to the enterprise org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made a call with incomplete information. How did you revisit it?",
+        "Role: exec deciding on legacy product line; Situation: sunsetting vs migration with directional signals only",
+        "Actions: structured controlled wind-down on 20% SKUs + funded small migration team + 6-month board checkpoint",
+        "Outcome: reversed wind-down for enterprise segment, reallocated budget, changed P&L ownership",
+        "Quote: \"I recommended reversing the wind-down for that segment, reallocating the migration budget, and shifting the P&L owner.\"",
+        "Follow-up: What changed at the checkpoint? -> reversed based on retention data, changed org ownership"
+      ],
+      "raiseFeedback": "The candidate framed a high-ambiguity product-line decision with only directional signals and set a controlled experiment plus a board checkpoint. At six months they used new retention data to reverse part of the wind-down, reallocate budget, and change P&L ownership across organizations. The story demonstrates strategic judgment on trade-offs between short-term cost and long-term customer leverage. They treated the initial call as a hypothesis rather than a fixed plan. The adjustment affected org structure and budget, not just tactics. This raises the bar for executive-level handling of ambiguity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We decided to keep the legacy line running because the signals were unclear and we didn't want to risk revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you revisit that later?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept reviewing it every quarter but never made a material change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made a call with incomplete information. How did you revisit it?",
+        "Role: exec on legacy product decision; Situation: sunsetting vs keep with unclear signals",
+        "Actions: chose to keep running with no experiment or checkpoint structure",
+        "Outcome: quarterly reviews produced no material change or reallocation",
+        "Quote: \"We kept reviewing it every quarter but never made a material change.\"",
+        "Follow-up: How did you revisit that later? -> no structural adjustment or ownership shift"
+      ],
+      "lowerFeedback": "The candidate defaulted to maintaining the status quo because signals were unclear and avoided structuring any controlled experiment or checkpoint. Quarterly reviews occurred but produced no reallocation, ownership change, or strategic shift. The story shows risk aversion rather than decisive action under ambiguity. No evidence of using partial data to create optionality or learning. This lowers the bar at the executive level because the candidate did not demonstrate the ability to make and then correct a high-stakes, org-level call."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Single feature or small tool choice inside one team",
+      "senior": "Cross-team rollout sequencing with shared metrics",
+      "exec": "Product-line sunsetting and org P&L ownership change"
+    },
+    {
+      "signal": "How initial call was framed",
+      "junior": "Documented trade-offs and told manager about revisit trigger",
+      "senior": "Protected largest revenue cohort and set 30% checkpoint",
+      "exec": "Controlled wind-down on 20% SKUs plus funded migration team and board checkpoint"
+    },
+    {
+      "signal": "Revisit mechanism",
+      "junior": "Used first-sprint volume metrics to switch library",
+      "senior": "Reversed remaining order and updated shared risk model",
+      "exec": "Reversed segment wind-down, reallocated budget, changed P&L owner"
+    },
+    {
+      "signal": "Evidence of learning loop",
+      "junior": "Local to one sprint and one team",
+      "senior": "Affected next launch across two teams",
+      "exec": "Changed org structure and future budget allocation"
+    },
+    {
+      "signal": "Handling of missing data",
+      "junior": "Waited then defaulted (lower) vs set revisit (raise)",
+      "senior": "Defaulted to own team (lower) vs set cross-team checkpoint (raise)",
+      "exec": "Avoided experiment (lower) vs created controlled test + governance (raise)"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time your team was busy and not effective. What did you stop?",
+  "competency": "Root out inefficiencies",
+  "principle": "Root out inefficiencies",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was doing daily status meetings plus three different Slack syncs that overlapped. I noticed we were spending 8 hours a week just updating each other instead of coding. I proposed we drop the afternoon Slack sync and move to a single 15-minute standup. After two weeks our velocity went up about 15 percent on my tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the team to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tracked the time we spent in meetings for one week and showed the numbers in our retro. My manager liked it and we tried it for a sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was busy and not effective. What did you stop?",
+        "Role: new grad on 4-person team, first project",
+        "Situation: overlapping daily syncs eating 8 hrs/wk",
+        "Action: tracked time, proposed dropping one Slack sync in retro",
+        "Outcome: 15% velocity lift on own tickets",
+        "Quote: \"I showed the numbers in our retro\"",
+        "Follow-up: How did you get agreement? -> Used data and manager support"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a clear local inefficiency (overlapping syncs) and stopped one meeting after collecting their own data. The story shows ownership of their immediate workflow rather than waiting for someone else to fix it. Quote about bringing numbers to the retro demonstrates basic initiative and coachability. The outcome is modest but believable for 0-2 years experience. Biggest strength is taking a small but concrete step instead of just complaining about busyness.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were all working really hard but the project kept slipping. I think we had too many meetings but I didn't really push to change anything because I was new."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you suggest stopping anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once in a one-on-one but nothing happened so I just focused on my tasks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was busy and not effective. What did you stop?",
+        "Role: intern/new grad",
+        "Situation: project slipping due to too many meetings",
+        "Action: mentioned issue once in 1:1, then dropped it",
+        "Outcome: nothing changed, focused on own tasks",
+        "Quote: \"I mentioned it once... nothing happened\"",
+        "Follow-up: Did you suggest stopping anything? -> No follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate noticed the inefficiency but took no real action beyond a single mention, then defaulted to individual work. No evidence of ownership or trying to remove even a small obstacle. The story stays entirely at the level of observation without any attempt to experiment or influence their immediate team. Biggest gap is lack of follow-through on the very thing the question asks for\u2014what they stopped."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams were running parallel weekly planning meetings plus a joint sync that duplicated work. I mapped the overlap, showed both teams we were duplicating 30 percent of planning effort, and convinced the leads to drop the joint sync and share a single planning doc instead. The change freed up 4 hours per week for each team and reduced cross-team escalations by half over the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a short experiment for two weeks where we skipped the joint sync and measured duplicate questions that came up. The data convinced the other lead to make it permanent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was busy and not effective. What did you stop?",
+        "Role: senior on platform team, cross-team scope",
+        "Situation: duplicated planning across two teams",
+        "Action: mapped overlap, ran 2-week experiment, shared data",
+        "Outcome: 4 hrs/wk freed, 50% fewer escalations",
+        "Quote: \"I ran a short experiment... measured duplicate questions\"",
+        "Follow-up: How did you get buy-in? -> Used data from experiment"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate moved beyond their own team to identify duplicated effort across two groups and used a lightweight experiment to create evidence. The result shows measurable time savings and reduced friction without requiring authority. Quote about running the experiment illustrates influence without authority. Biggest strength is turning a busy-but-ineffective pattern into a concrete, data-backed change that persisted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team and the adjacent team were both doing similar weekly syncs. I brought it up in our staff meeting a few times but the other team kept their process so we just kept going."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "Nothing on their side. We tried to make our own sync shorter but it didn't really stick."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was busy and not effective. What did you stop?",
+        "Role: senior engineer",
+        "Situation: duplicated syncs with adjacent team",
+        "Action: raised in staff meeting multiple times",
+        "Outcome: no change on other team, own attempt didn't stick",
+        "Quote: \"I brought it up... but the other team kept their process\"",
+        "Follow-up: What did you actually stop? -> Nothing durable"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate identified cross-team duplication but relied only on discussion without running any experiment or creating shared data. No lasting change occurred on either side. The story shows awareness of inefficiency but lacks the persistence or creativity expected at this level to remove the waste. Biggest gap is absence of measurable impact or influence beyond their own team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our engineering org was running 12 concurrent top-priority initiatives with heavy context switching. I consolidated the list to four bets, killed the other eight, and redirected the freed capacity into the remaining work. Within two quarters we shipped the top two priorities on time and reduced voluntary attrition in engineering by 8 points."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide which eight to stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a portfolio review with the leadership team using revenue impact and customer data, then got explicit agreement from the CEO to deprioritize the rest."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was busy and not effective. What did you stop?",
+        "Role: director/VP, org-level scope",
+        "Situation: 12 concurrent priorities causing switching",
+        "Action: portfolio review, explicit kill list, CEO alignment",
+        "Outcome: on-time delivery of top 2, 8pt attrition drop",
+        "Quote: \"I consolidated the list to four bets, killed the other eight\"",
+        "Follow-up: How did you decide? -> Revenue and customer data + CEO agreement"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate addressed org-wide inefficiency by making hard priority calls and stopping eight initiatives rather than adding more process. The decision process involved data and explicit leadership alignment. Quote about killing initiatives shows strategic judgment under ambiguity. Biggest strength is linking the stop decision to both delivery results and retention impact at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had too many projects going at once. I asked teams to focus more but didn't force any projects to stop because the business kept adding new asks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you personally stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't stop anything at the org level. We added a new prioritization framework but it didn't reduce the load."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was busy and not effective. What did you stop?",
+        "Role: director/VP",
+        "Situation: too many concurrent projects",
+        "Action: asked teams to focus, added framework",
+        "Outcome: no projects killed, load unchanged",
+        "Quote: \"I didn't stop anything at the org level\"",
+        "Follow-up: What did you personally stop? -> Nothing"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate recognized the overload but avoided making the difficult decisions to stop work, defaulting to process instead. No evidence of using authority to create focus or trade-offs. The story stays at the level of aspiration without the strategic judgment or leverage expected at this level. Biggest gap is unwillingness to kill initiatives despite clear org-level impact opportunity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identifying what to stop",
+      "junior": "Flags local meeting waste and proposes one change",
+      "senior": "Spots duplicated effort across teams and runs experiment",
+      "exec": "Kills multiple org initiatives using portfolio data"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Own tickets or immediate team",
+      "senior": "Two teams, measurable hours and escalations",
+      "exec": "Org-wide priority list, delivery and retention metrics"
+    },
+    {
+      "signal": "Use of data or experiment",
+      "junior": "Simple time tracking shared in retro",
+      "senior": "Two-week experiment with shared metrics",
+      "exec": "Leadership portfolio review with revenue/customer inputs"
+    },
+    {
+      "signal": "Persistence when resisted",
+      "junior": "Uses manager support after one data point",
+      "senior": "Secures peer lead agreement via experiment",
+      "exec": "Obtains CEO explicit deprioritization decision"
+    },
+    {
+      "signal": "Outcome durability",
+      "junior": "One sprint velocity bump",
+      "senior": "Change persists, reduces ongoing friction",
+      "exec": "Sustained focus plus retention improvement"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,175 @@
+{
+  "question": "Tell me about a time the idea was vague and you turned it into an execution plan. What did you throw away?",
+  "competency": "Be decisive in ambiguity and change",
+  "principle": "Be decisive in ambiguity and change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager gave me a one-line request to 'improve the onboarding flow' with no metrics or scope. I listed the three most common drop-off points from the last sprint data, picked the top one, and built a simple checklist plus email reminder. I threw away the idea of redesigning the whole UI because we had no designer time that quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to measure?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my manager for the single success signal he cared about most and used the existing completion-rate number we already tracked."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the idea was vague and you turned it into an execution plan. What did you throw away?",
+        "Candidate took one-line request, used existing drop-off data, scoped to one drop-off point",
+        "Threw away full UI redesign due to no designer capacity",
+        "Quote: 'I asked my manager for the single success signal he cared about most'",
+        "Follow-up: How did you decide what to measure? -> Used existing completion-rate metric"
+      ],
+      "raiseFeedback": "Raises the bar for Be decisive in ambiguity and change at the junior level. The candidate took a one-line request, used existing drop-off data to pick one focus area, and explicitly dropped a full UI redesign because of missing designer capacity. Quote: 'I asked my manager for the single success signal he cared about most.' This shows appropriate individual scope and willingness to seek clarification rather than over-scope. The decision to reuse the existing completion-rate metric kept the plan executable inside one sprint. Biggest strength is the clear trade-off stated upfront instead of attempting heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The PM said we needed better onboarding so I started sketching a new dashboard and asked three teammates for ideas. We kept adding features until the ticket got too big and was deprioritized."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you decide not to build?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just kept everything and hoped the PM would pick later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the idea was vague and you turned it into an execution plan. What did you throw away?",
+        "Started with vague PM request, sketched new dashboard, pulled in three teammates",
+        "No explicit scope cut; ticket grew and was deprioritized",
+        "Follow-up: What did you decide not to build? -> 'We just kept everything and hoped the PM would pick later'"
+      ],
+      "lowerFeedback": "Lowers the bar for Be decisive in ambiguity and change at the junior level. The candidate responded to a vague request by expanding scope across multiple teammates without any prioritization, resulting in a ticket that grew until it was dropped. No concrete item was thrown away; the answer to the follow-up was essentially 'we kept everything.' This reflects a lack of ownership over narrowing an ambiguous task to something shippable. The absence of any data or manager input to guide the cut shows limited coachability on scope control. Biggest gap is treating ambiguity as permission to explore rather than a signal to define boundaries."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product teams had conflicting asks for a shared recommendation service. I ran a two-week discovery with both teams, mapped the three overlapping use cases, and proposed we deprecate the lowest-volume one. We threw away the custom ranking logic for that use case and reused the existing model, which let us ship in six weeks instead of the original four-month estimate."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the teams to agree on the cut?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each team the projected impact on their own metrics if we delayed the whole project versus shipping the shared path first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the idea was vague and you turned it into an execution plan. What did you throw away?",
+        "Two teams with conflicting asks on shared service; ran two-week discovery",
+        "Deprecated lowest-volume use case and its custom ranking logic",
+        "Quote: 'showed each team the projected impact on their own metrics'",
+        "Follow-up: How did you get the teams to agree? -> Used metric trade-offs per team"
+      ],
+      "raiseFeedback": "Raises the bar for Be decisive in ambiguity and change at the senior level. The candidate converted two conflicting team requests into a shared six-week plan by deprecating the lowest-volume use case and its custom ranking logic. Quote: 'showed each team the projected impact on their own metrics if we delayed.' This demonstrates cross-team influence without authority and a measurable outcome. The decision was grounded in usage data rather than opinion. Biggest strength is the explicit link between the thrown-away scope and the reduced timeline.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing and Eng both wanted a new campaign tool. I scheduled a lot of meetings to gather requirements and eventually built a prototype that tried to cover both needs. The project slipped two quarters and we still didn't launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What scope did you cut?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't really cut anything; we just kept negotiating."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the idea was vague and you turned it into an execution plan. What did you throw away?",
+        "Marketing and Eng conflicting asks; ran many meetings, built broad prototype",
+        "No scope cut; project slipped two quarters",
+        "Follow-up: What scope did you cut? -> 'We didn't really cut anything; we just kept negotiating'"
+      ],
+      "lowerFeedback": "Lowers the bar for Be decisive in ambiguity and change at the senior level. The candidate responded to cross-team ambiguity by holding repeated meetings and expanding the prototype to satisfy everyone, resulting in a two-quarter slip with no launch. The follow-up answer confirmed no scope was ever removed. This shows an inability to make trade-offs that would have enabled delivery. The story stays at the level of process instead of outcomes or influence. Biggest gap is the lack of any data-driven decision to drop work despite visible timeline risk."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO asked for a new self-serve enterprise tier with no defined pricing or target segment. I ran a six-week option analysis across three possible segments, recommended we drop the mid-market play entirely, and redirected the team to only the top 200 accounts with a custom onboarding path. We threw away the self-serve pricing model and the associated billing infrastructure work, freeing two quarters of platform capacity for higher-priority reliability fixes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction from the CEO?"
+        },
+        {
+          "role": "candidate",
+          "text": "He initially pushed back on losing the volume play, but the segment sizing showed the top 200 accounts represented 70 percent of the revenue upside within 18 months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the idea was vague and you turned it into an execution plan. What did you throw away?",
+        "CEO vague ask for new enterprise tier; six-week option analysis across segments",
+        "Dropped mid-market and self-serve pricing model entirely",
+        "Quote: 'top 200 accounts represented 70 percent of the revenue upside within 18 months'",
+        "Follow-up: What was the reaction from the CEO? -> Used revenue sizing to align"
+      ],
+      "raiseFeedback": "Raises the bar for Be decisive in ambiguity and change at the exec level. The candidate converted a CEO-level vague request into a focused plan by eliminating the mid-market segment and the entire self-serve pricing and billing workstream. Quote: 'top 200 accounts represented 70 percent of the revenue upside within 18 months.' This shows strategic judgment under high ambiguity with clear org-level trade-offs. The freed capacity was explicitly redirected to reliability. Biggest strength is the long-term revenue framing used to gain alignment rather than short-term feature delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted a new growth initiative. I asked each region to propose ideas and we ran pilots in four different areas for nine months. Eventually we picked one that showed traction but the overall program never scaled."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you stop doing?"
+        },
+        {
+          "role": "candidate",
+          "text": "We let the pilots run their course and then focused on the winner."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the idea was vague and you turned it into an execution plan. What did you throw away?",
+        "Board growth initiative; ran four parallel regional pilots for nine months",
+        "No early cuts; eventually picked one winner after long runway",
+        "Follow-up: What did you stop doing? -> 'We let the pilots run their course'"
+      ],
+      "lowerFeedback": "Lowers the bar for Be decisive in ambiguity and change at the exec level. The candidate responded to board-level ambiguity by launching four parallel pilots that ran for nine months before any selection occurred. No proactive scope was removed; the answer to the follow-up was simply letting all pilots finish. This reflects an absence of strategic prioritization or willingness to kill options early despite clear resource cost. The outcome stayed at pilot stage with no scaling. Biggest gap is the lack of any org-level trade-off or timeline compression."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ambiguity handled",
+      "junior": "Single manager request, individual task",
+      "senior": "Two-team conflict, shared service",
+      "exec": "CEO/board ask, multi-quarter org impact"
+    },
+    {
+      "signal": "What was explicitly thrown away",
+      "junior": "Full UI redesign due to capacity",
+      "senior": "Lowest-volume use case and custom ranking logic",
+      "exec": "Mid-market segment plus entire self-serve billing infrastructure"
+    },
+    {
+      "signal": "Use of data for the cut",
+      "junior": "Existing completion-rate metric",
+      "senior": "Per-team metric impact projections",
+      "exec": "18-month revenue sizing (70 percent upside)"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Shipped in one sprint",
+      "senior": "Shipped in six weeks vs original four-month estimate",
+      "exec": "Freed two quarters of platform capacity for reliability"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asked manager for single success signal",
+      "senior": "Showed metric trade-offs to each team",
+      "exec": "Used revenue framing to align CEO"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you backed yourself against a room. What evidence did you bring, and when did you stop arguing?",
+  "competency": "Challenge skillfully + Influence without authority",
+  "principle": "Challenge skillfully",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I pushed to use a simpler logging approach instead of the team's default. I pulled the last two sprints' incident data showing 40% of time was spent parsing logs and brought a one-page comparison of the two options. After the team lead walked through their scaling concerns I dropped it and switched to documenting the current approach better."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "The scaling numbers they showed were from production traffic I hadn't seen yet, so I asked for the doc link and moved on."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you backed yourself against a room. What evidence did you bring, and when did you stop arguing?",
+        "Role: new grad on first team project",
+        "Situation: wanted simpler logging; brought sprint incident data and one-page comparison",
+        "Actions: presented numbers, listened to scaling counter-data, asked for doc and dropped it",
+        "Outcome: documented current approach instead; quote: 'The scaling numbers they showed were from production traffic I hadn't seen yet'",
+        "Follow-up: What made you stop? -> acknowledged missing context and moved on"
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at junior level. The candidate described pushing a concrete alternative with their own data on a scoped task, then stopping once higher-context evidence appeared. Quote: 'The scaling numbers they showed were from production traffic I hadn't seen yet.' This shows ownership of their input plus coachability when new facts surfaced. The story stays local to one project with no over-claim on impact. Biggest strength is the clean stop condition tied directly to the evidence gap.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team their API design was wrong because it didn't match what I learned in school. I kept bringing it up in standups until the tech lead told me to just implement what was spec'd."
+        },
+        {
+          "role": "interviewer",
+          "text": "What evidence did you share?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly the textbook patterns and that it felt cleaner. I didn't have any metrics from our service."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you backed yourself against a room...",
+        "Role: new grad",
+        "Situation: disagreed with API design on first project",
+        "Actions: repeatedly cited school patterns in standups with no service data",
+        "Outcome: told to follow spec; quote: 'Mostly the textbook patterns and that it felt cleaner'",
+        "Follow-up: What evidence did you share? -> admitted no metrics from the actual service"
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at junior level. The candidate argued from external textbook knowledge without tying it to team metrics or constraints and continued after clear direction. Quote: 'Mostly the textbook patterns and that it felt cleaner.' No evidence of adjusting when new information appeared. The story shows persistence without ownership of the outcome or learning from the pushback. Biggest gap is the absence of any stop condition or data from the actual system."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were about to launch overlapping features that would create duplicate customer workflows. I pulled usage data from both services plus support ticket volume and presented a merged roadmap in the joint planning meeting. After the other team's PM showed their Q3 commitment to execs I agreed to deprioritize my side and instead contributed review capacity to their launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the tradeoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "Their exec commitment and the ticket volume numbers made the overlap cost higher than I had modeled, so I shifted to review help."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you backed yourself against a room...",
+        "Role: senior on platform team",
+        "Situation: overlapping features across two teams creating duplicate workflows",
+        "Actions: aggregated usage + ticket data, proposed merged roadmap in joint meeting",
+        "Outcome: deprioritized own feature after seeing exec commitments; quote: 'Their exec commitment and the ticket volume numbers made the overlap cost higher than I had modeled'",
+        "Follow-up: How did you decide the tradeoff? -> adjusted based on cross-team constraints"
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at senior level. The candidate used cross-team data to surface duplication risk and then adjusted scope once the other team's hard commitments surfaced. Quote: 'Their exec commitment and the ticket volume numbers made the overlap cost higher than I had modeled.' Story shows influence across teams without authority and a clear evidence-based stop. Scope is larger than individual work yet still grounded. Biggest strength is the tradeoff decision tied to visible constraints rather than personal preference.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept pushing in the planning meeting that my service should own the new capability because it was architecturally cleaner. The other team had already staffed it so I escalated to the director."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly diagrams and that it would reduce future tech debt. No customer or cost numbers from either team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you backed yourself against a room...",
+        "Role: senior",
+        "Situation: capability ownership dispute between teams",
+        "Actions: argued architectural cleanliness and escalated when outstaffed",
+        "Outcome: no resolution mentioned; quote: 'Mostly diagrams and that it would reduce future tech debt'",
+        "Follow-up: What data did you bring? -> no customer or cost metrics"
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at senior level. The candidate escalated without customer or cost data and framed the argument around architecture alone. Quote: 'Mostly diagrams and that it would reduce future tech debt.' No evidence of adjusting position when team capacity facts appeared. Story lacks cross-team leverage or measurable impact. Biggest gap is the missing stop condition and reliance on escalation instead of data-driven influence."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were six months into a market expansion that the board had approved when new regulatory signals made the original timeline unrealistic. I brought the updated compliance timeline plus three scenario P&Ls to the exec team and recommended pausing two regions. After the CFO showed the cash runway impact of a full pause I shifted the recommendation to a phased approach with one region delayed and the others proceeding under tighter controls."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed your view?"
+        },
+        {
+          "role": "candidate",
+          "text": "The runway math showed a full pause would force a later re-entry at higher cost, so I traded scope for speed on the viable regions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you backed yourself against a room...",
+        "Role: exec leading market expansion",
+        "Situation: regulatory signals conflicting with board-approved timeline",
+        "Actions: prepared compliance timeline + three scenario P&Ls, recommended pause",
+        "Outcome: adjusted to phased rollout after runway data; quote: 'The runway math showed a full pause would force a later re-entry at higher cost'",
+        "Follow-up: What changed your view? -> traded scope based on cash impact"
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at exec level. The candidate surfaced a strategic conflict with board-level implications using scenario financials and then revised the recommendation when runway constraints were quantified. Quote: 'The runway math showed a full pause would force a later re-entry at higher cost.' Story demonstrates long-term trade-off thinking and leverage across finance and compliance. Scope is org-level with clear ambiguity. Biggest strength is the evidence-driven pivot that preserved optionality rather than forcing the original position.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the board the expansion plan needed to change because of new risks and kept pushing for a full stop until they agreed to review it again."
+        },
+        {
+          "role": "interviewer",
+          "text": "What evidence did you present?"
+        },
+        {
+          "role": "candidate",
+          "text": "High-level risk slides and my assessment that the timeline was aggressive. No updated financial models or alternative scenarios."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you backed yourself against a room...",
+        "Role: exec",
+        "Situation: market expansion facing new risks",
+        "Actions: pushed for full stop with high-level risk slides",
+        "Outcome: board agreed to review; quote: 'High-level risk slides and my assessment that the timeline was aggressive'",
+        "Follow-up: What evidence did you present? -> no financial models or scenarios"
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at exec level. The candidate advocated a major strategic change with only high-level risk slides and no quantified alternatives. Quote: 'High-level risk slides and my assessment that the timeline was aggressive.' No evidence of adjusting when financial constraints surfaced. Story shows persistence without strategic trade-off analysis. Biggest gap is the absence of scenario modeling or long-term leverage considerations."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Evidence quality and specificity",
+      "junior": "Uses own sprint data and stops when missing production context",
+      "senior": "Aggregates cross-team metrics and adjusts to exec commitments",
+      "exec": "Brings scenario P&Ls and revises on runway math"
+    },
+    {
+      "signal": "Knowing when to stop",
+      "junior": "Stops after new facts from lead; asks for the doc",
+      "senior": "Shifts scope once other team's hard constraints appear",
+      "exec": "Trades full pause for phased approach after cash impact shown"
+    },
+    {
+      "signal": "Scope of challenge",
+      "junior": "Single project logging choice",
+      "senior": "Duplicate feature ownership across teams",
+      "exec": "Market expansion timeline vs regulatory and financial risk"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Presents data then yields to lead input",
+      "senior": "Proposes merged roadmap in joint planning meeting",
+      "exec": "Revises board-level recommendation based on CFO data"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Documents current approach instead of forcing change",
+      "senior": "Contributes review capacity after deprioritizing own work",
+      "exec": "Preserves optionality on viable regions rather than forcing original plan"
+    }
+  ],
+  "kind": "factor"
+}

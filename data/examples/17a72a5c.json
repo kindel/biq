@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you waited for instructions and it cost the work. What did you change after?",
+  "competency": "Own it (Ownership)",
+  "principle": "Own it",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a small dashboard component and waited two days for the exact API contract from the backend owner. The sprint ended without the feature, which pushed a demo. After that I started writing down my assumptions in the ticket and pinging the owner with a proposed contract if I hadn't heard back in 24 hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened the next time a spec was unclear?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged it in standup the same day and shipped a stub version that the PM could review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you waited for instructions and it cost the work. What did you change after?",
+        "Role: new grad on small UI task",
+        "Situation: waited for API contract, missed sprint demo",
+        "Action: began documenting assumptions and proposing contracts after 24h",
+        "Outcome: next unclear spec was flagged same day and stub shipped",
+        "Quote: \"I started writing down my assumptions in the ticket\"",
+        "Follow-up: next unclear spec handled proactively"
+      ],
+      "raiseFeedback": "Raises the bar on Own it for junior level. The candidate described waiting on an API contract that caused a demo slip, then changed behavior by documenting assumptions and proposing contracts after 24 hours. The follow-up showed the new habit applied immediately on the next unclear task. This matches the expected scope for 0-2 years: individual work, clear learning from feedback, and local results. Biggest strength is the concrete, repeatable change rather than a one-off fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was waiting on the design file for a button component and the project slipped a week because the designer was out. I didn't want to guess and get it wrong."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently on the next task?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just asked more questions in the next standup."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you waited for instructions and it cost the work. What did you change after?",
+        "Role: new grad on small UI task",
+        "Situation: waited for design file, project slipped a week",
+        "Action: none beyond waiting; blamed designer absence",
+        "Outcome: no ownership shown",
+        "Quote: \"I didn't want to guess and get it wrong\"",
+        "Follow-up: change limited to asking more questions in standup"
+      ],
+      "lowerFeedback": "Lowers the bar on Own it for junior level. The candidate waited for a design file and accepted a week slip without attempting to unblock themselves. The follow-up change was limited to asking more questions in standup, which did not demonstrate initiative or learning beyond the immediate task. For 0-2 years the bar requires showing coachability and ownership of individual work; this example stays passive and externalizes the delay."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed alignment on a shared data model before a quarterly launch. I waited for the architecture guild to publish the decision and the launch date slipped three weeks. After that I started running weekly syncs between the teams and wrote a lightweight decision log that anyone could update."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect later cross-team work?"
+        },
+        {
+          "role": "candidate",
+          "text": "The same two teams reused the log for three more decisions and cut alignment time by half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you waited for instructions and it cost the work. What did you change after?",
+        "Role: senior owning cross-team data model",
+        "Situation: waited for guild decision, launch slipped three weeks",
+        "Action: created weekly syncs and shared decision log",
+        "Outcome: three later decisions reused the log and cut time by half",
+        "Quote: \"I started running weekly syncs between the teams\"",
+        "Follow-up: process reused by the same teams"
+      ],
+      "raiseFeedback": "Raises the bar on Own it for senior level. The candidate waited on an architecture guild decision that delayed a quarterly launch by three weeks, then introduced weekly syncs and a reusable decision log. The follow-up showed the change scaled to three additional decisions across teams. This meets the 3-7 year expectation of cross-team impact and influence without authority. Biggest strength is the measurable reuse of the new process rather than a single heroic effort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were blocked waiting for another team's API spec and the launch moved out a month. I escalated to my manager but nothing happened."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process did you put in place afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure to check in with that team earlier in the next planning cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you waited for instructions and it cost the work. What did you change after?",
+        "Role: senior on cross-team launch",
+        "Situation: waited for API spec, launch slipped a month",
+        "Action: escalated to manager only",
+        "Outcome: no lasting change",
+        "Quote: \"I escalated to my manager but nothing happened\"",
+        "Follow-up: change was only earlier check-ins in planning"
+      ],
+      "lowerFeedback": "Lowers the bar on Own it for senior level. The candidate accepted a month launch slip after waiting on an external API spec and relied solely on escalation. The follow-up change was limited to earlier check-ins, which did not create lasting cross-team leverage. At 3-7 years the bar requires evidence of influence without authority and repeatable mechanisms; this story shows neither."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We delayed a market expansion decision for six weeks waiting on a formal OKR from the CEO's staff. Revenue in that segment flattened while competitors moved. I then created a lightweight decision-rights framework that let regional leads move on 80 percent of opportunities without new exec sign-off."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business result over the following year?"
+        },
+        {
+          "role": "candidate",
+          "text": "The framework was adopted by three regions and we closed the gap on two delayed opportunities within a quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you waited for instructions and it cost the work. What did you change after?",
+        "Role: exec level on market expansion",
+        "Situation: waited for CEO staff OKR, expansion delayed six weeks and revenue flattened",
+        "Action: built decision-rights framework allowing 80 percent local moves",
+        "Outcome: adopted by three regions, closed two delayed opportunities in a quarter",
+        "Quote: \"I then created a lightweight decision-rights framework\"",
+        "Follow-up: framework scaled across regions with measurable close rate"
+      ],
+      "raiseFeedback": "Raises the bar on Own it for exec level. The candidate waited on a formal OKR that delayed market expansion by six weeks and flattened revenue, then introduced a decision-rights framework that empowered regional leads on 80 percent of opportunities. The follow-up showed adoption by three regions and recovery of two delayed opportunities. This aligns with 10+ year expectations of org-level impact and strategic judgment under ambiguity. Biggest strength is the structural change that reduced future dependency rather than faster personal escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A product line decision sat with the CEO for five weeks and we missed a partnership window. I kept reminding the staff but the process didn't change."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural change did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked for clearer RACI on future big decisions."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you waited for instructions and it cost the work. What did you change after?",
+        "Role: exec on product line decision",
+        "Situation: waited five weeks for CEO, missed partnership window",
+        "Action: repeated reminders only",
+        "Outcome: no structural improvement",
+        "Quote: \"I kept reminding the staff but the process didn't change\"",
+        "Follow-up: asked for clearer RACI"
+      ],
+      "lowerFeedback": "Lowers the bar on Own it for exec level. The candidate accepted a five-week delay on a product-line decision that missed a partnership window and relied on repeated reminders. The follow-up request for clearer RACI did not demonstrate strategic trade-off or long-term leverage. At 10+ years the bar requires org-level mechanisms and judgment on ambiguity; this remained tactical and passive."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initiative without explicit direction",
+      "junior": "Flags unclear items same day and proposes next step",
+      "senior": "Creates reusable cross-team process after one slip",
+      "exec": "Builds decision-rights framework that changes org behavior"
+    },
+    {
+      "signal": "Learning from setback",
+      "junior": "Applies new habit on next individual task",
+      "senior": "Process reused by multiple teams with time savings",
+      "exec": "Framework adopted by regions and recovers missed opportunities"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual work and sprint demo",
+      "senior": "Cross-team launch and alignment time",
+      "exec": "Market expansion and regional autonomy"
+    },
+    {
+      "signal": "Response to ambiguity",
+      "junior": "Documents assumptions after 24h wait",
+      "senior": "Runs own syncs instead of waiting on guild",
+      "exec": "Defines 80 percent local decision rights"
+    },
+    {
+      "signal": "Externalizing vs owning delay",
+      "junior": "Blames absence vs proposing contract",
+      "senior": "Escalates only vs building log",
+      "exec": "Reminds staff vs creating framework"
+    }
+  ],
+  "kind": "factor"
+}

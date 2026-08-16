@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
+  "competency": "Deliver as One Arm (cross-group alignment and unified planning)",
+  "principle": "Deliver as One Arm",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a small feature team and the backend squad had a different rollout timeline than frontend. I scheduled a 30-minute sync, wrote down both plans on a shared doc, and we merged the dates into one milestone list."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when they disagreed on priorities?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each lead what their top constraint was, put both on the doc, and we picked the one that unblocked the other team first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
+        "Role: new grad on feature team connecting backend and frontend squads",
+        "Situation: mismatched rollout timelines for same feature",
+        "Actions: called short sync, captured both plans in shared doc, surfaced constraints, merged into single milestone list",
+        "Outcome: teams aligned on one sequence and shipped on revised date",
+        "Quote: \"I asked each lead what their top constraint was and we picked the one that unblocked the other team first\"",
+        "Follow-up: Asked about disagreement on priorities; candidate described surfacing constraints and joint decision"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate took ownership of connecting two small squads on a single feature without waiting for a manager. They created a shared artifact and used a simple constraint question to resolve conflict. Quote shows they focused on unblocking rather than pushing their own view. This matches the level expectation of local ownership and learning how to align immediate teams. Biggest strength is the concrete step of turning two plans into one visible list.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The backend team and frontend team had different ideas so I just did my tasks and let the PM sort it out."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever bring the two sides together?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I mentioned it in standup once but nothing changed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
+        "Role: new grad on feature team",
+        "Situation: backend and frontend had different timelines",
+        "Actions: did own work and hoped PM would fix it; mentioned issue once in standup",
+        "Outcome: no shared plan created",
+        "Quote: \"I just did my tasks and let the PM sort it out\"",
+        "Follow-up: Asked if candidate brought sides together; response was passive and produced no alignment"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate avoided any bridging action and deferred entirely to the PM. Even after a direct follow-up they could not describe creating a shared artifact or surfacing trade-offs. At this level we expect the individual to own the connection between the immediate teams they work with. The gap is lack of initiative to turn two plans into one."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams had separate migration plans for the same service. I ran a two-week working group, pulled the dependency map, and we converged on one phased rollout with shared checkpoints."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the team that lost their preferred sequence?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had the losing team own the first checkpoint so their risk was addressed early and they stayed invested in the joint plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
+        "Role: senior engineer bridging two platform teams",
+        "Situation: separate migration plans for shared service with conflicting sequences",
+        "Actions: formed short working group, created dependency map, converged on single phased rollout with checkpoints",
+        "Outcome: one plan adopted; first checkpoint given to the team that lost their sequence",
+        "Quote: \"I had the losing team own the first checkpoint so their risk was addressed early\"",
+        "Follow-up: Asked how losing team was kept invested; candidate described giving them early ownership"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate drove cross-team alignment on a service migration that affected two platform groups. They used a working group and dependency map to create one plan rather than letting parallel efforts continue. The follow-up answer shows influence without authority by giving the disadvantaged team early ownership. This demonstrates the expected cross-team impact and ability to keep both sides committed. Biggest strength is turning conflict into a joint sequence with measurable checkpoints.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent the two teams each other's plans and asked them to coordinate."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did a single plan ever emerge?"
+        },
+        {
+          "role": "candidate",
+          "text": "They had a few meetings but kept separate timelines; I moved on to my next project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
+        "Role: senior engineer",
+        "Situation: two platform teams with separate migration plans",
+        "Actions: forwarded plans to each side and asked them to coordinate",
+        "Outcome: teams continued on separate timelines; candidate disengaged",
+        "Quote: \"I sent the two teams each other's plans and asked them to coordinate\"",
+        "Follow-up: Asked if single plan emerged; candidate admitted no convergence and moved on"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Simply forwarding plans does not create alignment. The candidate took no further steps to resolve conflicts or produce one sequence. At senior level we expect the person to actively shape a shared plan across teams rather than hoping coordination happens. The gap is absence of sustained influence or concrete artifacts that forced convergence."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two business units were running parallel cost-reduction programs that would have duplicated vendor negotiations. I created a joint steering committee, aligned on one savings target and timeline, and had each unit own complementary workstreams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make to get both units to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a six-week delay in one unit's savings realization so the combined program could negotiate better terms; the total savings still exceeded the original separate targets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
+        "Role: director connecting two business units",
+        "Situation: parallel cost-reduction programs with overlapping vendor work",
+        "Actions: formed joint steering committee, set single savings target and timeline, assigned complementary workstreams",
+        "Outcome: one program; better vendor terms achieved despite short delay",
+        "Quote: \"We accepted a six-week delay in one unit's savings realization so the combined program could negotiate better terms\"",
+        "Follow-up: Asked about trade-offs; candidate described accepting delay for larger total outcome"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate aligned two business units on a duplicated cost program by creating a steering body and single target. They made an explicit long-term trade-off (short delay for better total savings) that required strategic judgment. The answer shows org-level leverage rather than personal heroics. Biggest strength is converting two independent plans into one with measurable shared outcome and clear ownership split.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked both units to share their roadmaps in a joint meeting and hoped they would align themselves."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did a single program or target ever get adopted?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shared some slides but kept running their own programs; the duplication continued."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
+        "Role: director",
+        "Situation: two business units with parallel cost programs",
+        "Actions: called one joint meeting and asked them to share roadmaps",
+        "Outcome: units continued separate programs; no unified plan or target",
+        "Quote: \"I asked both units to share their roadmaps in a joint meeting and hoped they would align themselves\"",
+        "Follow-up: Asked if single program was adopted; candidate confirmed duplication persisted"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. A single meeting without a steering structure or forced convergence is insufficient at this level. The candidate did not drive a shared target, timeline, or ownership model. We expect execs to resolve org-level duplication through explicit trade-offs and governance. The gap is lack of sustained leadership to produce one plan with measurable business impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Creates shared artifact or governance",
+      "junior": "Short doc with merged milestones",
+      "senior": "Working group plus dependency map and checkpoints",
+      "exec": "Steering committee with single target and workstream split"
+    },
+    {
+      "signal": "Resolves conflicting priorities",
+      "junior": "Surfaces constraints and picks one that unblocks",
+      "senior": "Gives disadvantaged team early ownership",
+      "exec": "Accepts short delay for larger combined outcome"
+    },
+    {
+      "signal": "Sustains alignment effort",
+      "junior": "One sync meeting",
+      "senior": "Two-week working group",
+      "exec": "Ongoing steering committee"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Two squads on one feature",
+      "senior": "Two platform teams on shared service",
+      "exec": "Two business units on cost program"
+    },
+    {
+      "signal": "Handles trade-offs explicitly",
+      "junior": "Basic constraint question",
+      "senior": "Ownership adjustment to keep both invested",
+      "exec": "Timeline concession for better total result"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time speed and uncertainty were the job. What did you do in the first day?",
+  "competency": "Move with urgency and find a way",
+  "principle": "Move with urgency and find a way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My first week on a new team, a key API integration broke the night before a customer demo. I didn't know the codebase yet. First day I pulled the latest logs, reproduced the failure locally in two hours, then asked my manager which two files were most likely to be the root cause."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you asked?"
+        },
+        {
+          "role": "candidate",
+          "text": "She pointed me to the auth module. I fixed a hardcoded timeout by end of day and wrote a one-page note so the next person wouldn't hit it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time speed and uncertainty were the job. What did you do in the first day?",
+        "Situation: first week, broken API before demo",
+        "Actions: reproduced failure, asked targeted question, shipped fix + note",
+        "Outcome: demo unblocked same day",
+        "Quote: \"I fixed a hardcoded timeout by end of day\"",
+        "Follow-up: Asked what happened after the question; candidate described concrete next step and artifact"
+      ],
+      "raiseFeedback": "Raises the bar for Move with Urgency at junior level. The candidate treated an ambiguous first-week failure as their problem and started by reproducing the issue before seeking help. Quote shows they shipped a fix plus documentation the same day. This demonstrates ownership of their own work and quick learning rather than waiting for full context. The story stays appropriately scoped to individual contribution. Biggest strength is the immediate bias to action followed by a narrow ask for guidance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a production issue on my second day. I waited for my onboarding buddy to come online so I wouldn't break anything."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do while you waited?"
+        },
+        {
+          "role": "candidate",
+          "text": "I read the runbook and Slack history but didn't touch the code until I had approval."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time speed and uncertainty were the job. What did you do in the first day?",
+        "Situation: production issue on day two",
+        "Actions: waited for buddy, read docs, sought approval before touching code",
+        "Outcome: no personal action described",
+        "Quote: \"I waited for my onboarding buddy\"",
+        "Follow-up: Asked what they did while waiting; candidate stayed in passive mode"
+      ],
+      "lowerFeedback": "Lowers the bar for Move with Urgency at junior level. The candidate defaulted to waiting for an onboarding buddy rather than reproducing the issue themselves. No evidence of independent first steps despite having access to logs and runbooks. The story shows risk aversion instead of bias to action on an individual-scope problem. Biggest gap is absence of any concrete output or decision made in the first day."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team announced they were sunsetting an API we depended on with two weeks notice. First day I pulled the top three customers by usage, wrote a one-pager on migration options, and booked a 30-minute sync with their lead to align on a joint timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the usage data so fast?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the data analyst on my team for a quick query and used an existing dashboard the partner had shared earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time speed and uncertainty were the job. What did you do in the first day?",
+        "Situation: partner API sunset with two-week notice",
+        "Actions: identified top customers, wrote options doc, aligned with partner lead same day",
+        "Outcome: joint timeline created within 24 hours",
+        "Quote: \"wrote a one-pager on migration options\"",
+        "Follow-up: How did you get the usage data; candidate described lightweight cross-team ask"
+      ],
+      "raiseFeedback": "Raises the bar for Move with Urgency at senior level. The candidate moved from announcement to a concrete plan and cross-team alignment in one day without waiting for formal project kickoff. Story shows influence without authority by using an existing dashboard and a short sync. Metrics are implied through top-three customers rather than heroic claims. Biggest strength is turning uncertainty into a shared plan quickly while staying within senior scope of coordination.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When the partner told us about the API change I started building a replacement service myself so we wouldn't be blocked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve the partner or other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not on day one. I wanted to have something working first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time speed and uncertainty were the job. What did you do in the first day?",
+        "Situation: partner API sunset",
+        "Actions: started solo replacement build",
+        "Outcome: no coordination mentioned on day one",
+        "Quote: \"I started building a replacement service myself\"",
+        "Follow-up: Did you involve the partner; candidate chose isolation over alignment"
+      ],
+      "lowerFeedback": "Lowers the bar for Move with Urgency at senior level. The candidate chose to work in isolation rather than establishing a joint plan with the partner team. No evidence of cross-team influence or prioritization of customer impact on day one. Story stays at individual heroics instead of the coordination expected at this level. Biggest gap is lack of leverage through quick alignment."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We learned a major regulatory change would take effect in 10 days across three product lines. First day I stood up a small tiger team, set a daily standup, and made the call to pause two non-critical launches so we could reallocate PM and legal resources."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you surface to leadership?"
+        },
+        {
+          "role": "candidate",
+          "text": "I recommended we accept a two-week delay on a low-revenue feature to protect the three lines that represented 70% of Q3 bookings."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time speed and uncertainty were the job. What did you do in the first day?",
+        "Situation: regulatory change in 10 days across three lines",
+        "Actions: formed tiger team, set cadence, paused launches, made explicit trade-off",
+        "Outcome: resources shifted to highest-impact areas same day",
+        "Quote: \"made the call to pause two non-critical launches\"",
+        "Follow-up: What trade-off did you surface; candidate described org-level prioritization"
+      ],
+      "raiseFeedback": "Raises the bar for Move with Urgency at exec level. The candidate made an explicit resource trade-off and stood up lightweight governance within 24 hours of ambiguous regulatory news. Story shows strategic judgment by protecting 70% of bookings rather than trying to do everything. Actions demonstrate leverage through team formation and cadence instead of personal heroics. Biggest strength is rapid decision-making under high ambiguity with clear business framing.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When the regulatory deadline appeared I asked each team to assess their own risk and report back in a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you decide on day one?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted more data before making any resource changes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time speed and uncertainty were the job. What did you do in the first day?",
+        "Situation: regulatory change across product lines",
+        "Actions: delegated assessment to teams, waited for reports",
+        "Outcome: no decisions or reallocation on day one",
+        "Quote: \"I wanted more data before making any resource changes\"",
+        "Follow-up: What did you decide on day one; candidate deferred all action"
+      ],
+      "lowerFeedback": "Lowers the bar for Move with Urgency at exec level. The candidate avoided making any resource or priority decisions on day one despite a 10-day regulatory deadline. Story shows delegation without leadership or trade-off framing. No evidence of org-level impact or strategic judgment under ambiguity. Biggest gap is absence of decisive action when speed was required."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed of first concrete action",
+      "junior": "Reproduced issue before asking for help",
+      "senior": "Produced options doc and booked alignment sync",
+      "exec": "Stood up tiger team and made resource trade-off"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task with narrow ask for guidance",
+      "senior": "Cross-team coordination and customer prioritization",
+      "exec": "Org-level resource reallocation and launch pauses"
+    },
+    {
+      "signal": "Handling of uncertainty",
+      "junior": "Asked targeted question after initial investigation",
+      "senior": "Used existing data and short sync to reduce ambiguity",
+      "exec": "Made explicit trade-off call with 70% bookings framing"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Shipped fix plus one-page note",
+      "senior": "Created joint timeline with partner",
+      "exec": "Daily standup and paused launches to free capacity"
+    },
+    {
+      "signal": "Risk of over-waiting",
+      "junior": "Waited for buddy instead of starting",
+      "senior": "Built in isolation instead of aligning",
+      "exec": "Delegated assessment without any day-one decision"
+    }
+  ],
+  "kind": "factor"
+}

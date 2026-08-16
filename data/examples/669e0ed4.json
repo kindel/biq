@@ -1,0 +1,235 @@
+{
+  "question": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
+  "competency": "Relentlessly push boundaries",
+  "principle": "Relentlessly push boundaries",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project, the team shipped a login flow after basic testing passed. I felt the error handling was thin and pushed to add retry logic plus better logging before release."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you pushed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We spent two extra days. Two weeks later a network blip hit and the logs showed exactly where it failed. The fix was quick because of the logging I added."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react to the extra time?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were annoyed at first but later said it saved them a support ticket."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
+        "- Junior dev on login flow; team ready to ship after basic tests",
+        "- Pushed for retry logic + logging; spent 2 extra days",
+        "- Outcome: network blip hit, logs isolated issue fast",
+        "Quote: 'They were annoyed at first but later said it saved them a support ticket'",
+        "Follow-up: How did the team react? - Acknowledged initial friction, saw later value"
+      ],
+      "raiseFeedback": "Raises the bar on Relentlessly push boundaries. The candidate described a local feature where the team accepted the MVP but they added retry and logging anyway. The concrete result was faster diagnosis during a later outage. The story stayed within individual scope yet showed they did not stop at team consensus. The follow-up revealed they absorbed short-term pushback and still delivered measurable local improvement. Biggest strength is owning the gap between 'works in test' and 'observable in prod' without needing senior direction.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "We finished the feature and everyone was happy with the demo. I didn't really push anything else because the requirements were met."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any part you felt could be stronger?"
+        },
+        {
+          "role": "candidate",
+          "text": "Maybe the error messages, but the PM said it was fine so we moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
+        "- Team happy after demo; candidate stopped at requirements met",
+        "- Mentioned error messages as possible gap but deferred to PM",
+        "- No action taken, no outcome described",
+        "Follow-up: Was there any part you felt could be stronger? - Deferred without trying"
+      ],
+      "lowerFeedback": "Lowers the bar on Relentlessly push boundaries. The candidate surfaced a possible gap (error messages) yet immediately accepted the PM's view and moved on. No evidence of any attempt to improve the work or gather data to change the team's mind. The story ends with zero friction and zero additional result. The core gap is treating team satisfaction as the stopping condition rather than a signal to examine further."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our service team was happy with p99 latency at 800 ms. I thought that would hurt two downstream teams during peak events so I pushed for a 300 ms target and a new caching layer."
+        },
+        {
+          "role": "interviewer",
+          "text": "What broke as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had to rewrite two internal clients and the cache added complexity. One team missed their quarterly goal because of the client changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the impact on the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I helped them reprioritize and we split the work so they still hit their main OKR. Latency dropped to 250 ms and incidents fell 40 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
+        "- Team satisfied at 800 ms p99; candidate pushed for 300 ms target across services",
+        "- Introduced caching layer; forced client rewrites in two teams",
+        "- One team missed quarterly goal; candidate helped recover their main OKR",
+        "Quote: 'Latency dropped to 250 ms and incidents fell 40 percent'",
+        "Follow-up: How did you handle the impact? - Took ownership of cross-team coordination"
+      ],
+      "raiseFeedback": "Raises the bar on Relentlessly push boundaries. The candidate identified a cross-team risk the owning team had accepted and drove a stricter latency target. The push created real breakage (missed quarterly goal for another team) yet the candidate stayed involved to help recover the primary OKR. Outcome metrics (250 ms, 40 percent fewer incidents) show the change delivered measurable value beyond the original team. The story demonstrates influence without authority and willingness to absorb coordination cost. Biggest strength is balancing the boundary push with accountability for downstream impact.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team was happy with the current release cadence. I suggested we could move faster but didn't have data so I let it go."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to get any data or talk to other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a retro but the lead said the current pace was fine so I focused on my own tickets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
+        "- Team content with release cadence; candidate suggested faster pace without data",
+        "- Dropped the idea after one retro comment",
+        "- No follow-up with other teams or metrics gathered",
+        "Follow-up: Did you try to get any data? - Stopped at first objection"
+      ],
+      "lowerFeedback": "Lowers the bar on Relentlessly push boundaries. The candidate noticed a potential improvement area but abandoned it after a single objection and lack of immediate data. No attempt to influence stakeholders or quantify the cost of the status quo. The story shows the candidate defaulting to individual work once the team signaled satisfaction. The main gap is absence of persistence or cross-team exploration when initial resistance appeared."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "The org was satisfied with 18 percent annual growth. I believed the market window was closing and pushed to reallocate 30 percent of engineering to a new product line even though it meant pausing two profitable bets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "We lost two key engineers who disagreed with the shift and one paused bet never recovered its momentum. The new line launched nine months late."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you evaluate the decision now?"
+        },
+        {
+          "role": "candidate",
+          "text": "The new product now contributes 12 percent of revenue. I still think the call was right but the execution cost more leadership time than I budgeted."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
+        "- Org satisfied at 18 percent growth; candidate forced 30 percent reallocation to new line",
+        "- Paused two profitable bets; lost two engineers and delayed launch by 9 months",
+        "- New product now at 12 percent of revenue",
+        "Quote: 'I still think the call was right but the execution cost more leadership time than I budgeted'",
+        "Follow-up: How do you evaluate the decision now? - Owns both the outcome and the under-estimated cost"
+      ],
+      "raiseFeedback": "Raises the bar on Relentlessly push boundaries. The candidate challenged an org-level growth target that leadership had accepted and forced a major resource shift with clear downside (lost engineers, paused bets). The nine-month delay and talent loss are stated plainly rather than minimized. Current revenue contribution provides evidence the boundary was worth pushing. The reflection shows strategic judgment on both the upside and the under-estimated leadership cost. Biggest strength is willingness to break short-term plans and absorb personal accountability for long-term leverage.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?"
+        },
+        {
+          "role": "candidate",
+          "text": "The leadership team felt the current roadmap was solid. I raised a concern about competitive pressure once but the discussion didn't go anywhere so we stayed the course."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you stop after one attempt?"
+        },
+        {
+          "role": "candidate",
+          "text": "Without clear board support I didn't want to create unnecessary conflict at that level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
+        "- Leadership satisfied with roadmap; candidate raised competitive concern once",
+        "- Dropped the topic after lack of immediate traction",
+        "- No further action or alternative framing attempted",
+        "Follow-up: What made you stop after one attempt? - Avoided conflict without board backing"
+      ],
+      "lowerFeedback": "Lowers the bar on Relentlessly push boundaries. The candidate identified a strategic risk yet abandoned the point after a single discussion and absence of top-down cover. No evidence of building a coalition, gathering external data, or framing trade-offs to change the org's view. The story ends with the original plan intact and the concern unaddressed. The core gap is treating executive satisfaction as a hard stop rather than a starting point for sustained strategic pressure."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of what was challenged",
+      "junior": "Individual feature quality or tests",
+      "senior": "Cross-team metrics or shared infrastructure",
+      "exec": "Org-level roadmap or resource allocation"
+    },
+    {
+      "signal": "Willingness to create breakage",
+      "junior": "Extra days on own work",
+      "senior": "Forced changes on peer teams",
+      "exec": "Paused bets and lost talent"
+    },
+    {
+      "signal": "Ownership of downstream cost",
+      "junior": "Noted team annoyance then moved on",
+      "senior": "Helped affected team recover OKR",
+      "exec": "Explicitly owns under-estimated leadership time"
+    },
+    {
+      "signal": "Evidence of outcome",
+      "junior": "Faster incident diagnosis",
+      "senior": "40 percent fewer incidents, 250 ms latency",
+      "exec": "New product at 12 percent of revenue"
+    },
+    {
+      "signal": "Persistence after resistance",
+      "junior": "Pushed once, accepted initial pushback",
+      "senior": "Continued coordination across teams",
+      "exec": "Maintained course despite engineer exits"
+    },
+    {
+      "signal": "Reflection quality",
+      "junior": "Saw later value in logging",
+      "senior": "Balanced result against coordination cost",
+      "exec": "Still endorses decision while naming execution shortfall"
+    }
+  ],
+  "kind": "factor"
+}

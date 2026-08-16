@@ -1,0 +1,211 @@
+{
+  "question": "Tell me about a time a constraint was real and unmoveable. How did you still remove waste around it?",
+  "competency": "Root out inefficiencies (secondary: Ownership)",
+  "principle": "Root out inefficiencies",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a hard deadline to ship a feature in two weeks and the test environment was shared so we could only run full tests overnight. I mapped every manual step in my local setup and scripted the ones that didn't need the shared env, cutting my daily validation time from 90 minutes to 20."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the constraint exactly?"
+        },
+        {
+          "role": "candidate",
+          "text": "The shared test cluster was booked solid; no way to get more capacity. I focused on what I controlled."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone else benefit?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the script with the other new hire on the team; she used it too."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a constraint was real and unmoveable. How did you still remove waste around it?",
+        "Junior SWE, 14 months exp; fixed shared test env + 2-week deadline",
+        "Mapped manual steps, scripted local validation, reduced own cycle from 90min to 20min",
+        "Quote: 'I focused on what I controlled.'",
+        "Follow-up: Shared script with teammate; no broader rollout attempted",
+        "Follow-up: Showed willingness to iterate on feedback in next sprint"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate accepted the immovable shared test cluster and removed waste inside their own workflow. Quote 'I focused on what I controlled' shows ownership without escalation theater. Actions stayed local but produced measurable time savings and a small teammate benefit. Biggest strength is recognizing personal scope and acting inside it rather than waiting for the constraint to change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The constraint was the fixed two-week deadline and we couldn't get more servers. I asked my manager if we could push the date but she said no so I just worked longer hours to finish testing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What waste did you remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stayed late and tested on weekends. The team still hit the date."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Candidate treated deadline as the constraint and asked to move it; when denied, defaulted to more hours",
+        "No process change or measurement of waste; outcome described only as 'we shipped'",
+        "Follow-up: Could not name a single step eliminated or automated",
+        "Follow-up: Viewed extra hours as the solution"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate did not treat the shared environment or manual steps as removable waste; instead they asked to relax the constraint and fell back to longer hours. Story shows no ownership of process improvement and no observable efficiency gain beyond personal overtime. Biggest gap is absence of any attempt to optimize inside the fixed boundary."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Regulatory requirement locked us into a 30-day review window with an external auditor who would only accept PDF exports from one specific system. I mapped the handoff points across three teams and replaced two manual approval loops with templated checklists that the auditor pre-approved."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 45-minute walkthrough showing the exact time each team lost per cycle and got written agreement from the owning managers before the next audit cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measured impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Cycle time dropped from 22 days to 11; two teams reclaimed roughly 6 hours each per audit."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Senior SWE, cross-team audit process; immovable 30-day regulatory window + single PDF system",
+        "Replaced two manual approval loops with pre-approved checklists after stakeholder walkthrough",
+        "Quote: 'Got written agreement from the owning managers'",
+        "Follow-up: Measured 22-to-11 day reduction and hours saved per team",
+        "Follow-up: Did not attempt to change the auditor or PDF requirement"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate accepted the regulatory window and single-system constraint, then removed waste at the handoff points between teams. Influence without authority is visible in the written agreements from managers after showing time data. Concrete metrics (22 to 11 days, 6 hours reclaimed) tie actions to outcomes. Biggest strength is treating the constraint as fixed and still driving cross-team process change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The auditor would only take PDFs from their system and the deadline was fixed. I created a detailed checklist for my team and told the other teams they should do the same, but they didn't always follow it so we still had delays."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you measure anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really; we just tried to be more careful next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Senior candidate; constraint accepted but actions stayed inside own team",
+        "Checklist created but no coordination or data shared with other teams",
+        "Follow-up: No metrics collected; outcome described as 'tried to be more careful'",
+        "Follow-up: Did not secure agreements or remove cross-team loops"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate recognized the fixed regulatory and system constraints yet limited waste removal to their own checklist without engaging the other two teams. No data was used to influence stakeholders and no measurable reduction occurred. Biggest gap is lack of cross-team leverage; the story stays at individual heroics rather than systemic improvement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a hard cap on cloud spend that could not be increased for the next two quarters due to a board mandate. I shifted the org from per-service on-demand instances to a shared reservation pool and introduced a weekly spend-review ritual that forced teams to justify any new workload before launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback from teams that wanted to launch faster?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tied the review to the quarterly planning process so teams could still ship; they just had to surface cost earlier. Two product lines delayed non-critical features and saved $1.8M in the first quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The reservation model became the default for all new services; spend growth flattened while deployment volume rose 40%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Exec, org-level cloud spend cap from board mandate; two-quarter immovable limit",
+        "Moved to shared reservation pool + weekly spend-review tied to planning",
+        "Quote: 'Tied the review to the quarterly planning process'",
+        "Follow-up: $1.8M saved; 40% more deployments with flat spend",
+        "Follow-up: Made reservation model the new default across the org"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate treated the board-mandated spend cap as fixed and removed waste at the org level by changing the reservation model and planning process. Strategic judgment appears in linking cost review to existing quarterly planning rather than adding bureaucracy. Long-term leverage is evident in the new default model and 40% deployment growth with flat spend. Biggest strength is converting an immovable financial constraint into a durable operating rhythm.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board froze cloud spend. I told all teams to cut their usage by 20% and tracked it in a spreadsheet. Some teams hit the target, others didn't, so we ended up slightly over anyway."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural change did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent the target and let the teams figure it out. We didn't change any tooling or planning process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Exec candidate; constraint accepted but response was a top-down percentage cut",
+        "No process or tooling change; relied on teams self-managing",
+        "Follow-up: No durable mechanism created; spend still exceeded target",
+        "Follow-up: No evidence of long-term operating change"
+      ],
+      "lowerFeedback": "Lowers the bar. The executive responded to the spend cap with a percentage target and tracking spreadsheet but introduced no structural change to reservations, planning, or tooling. Outcome remained dependent on individual team compliance and still missed the goal. Biggest gap is absence of leverage; the story shows direction without redesigning the system that created the waste."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of constraint handled",
+      "junior": "Own workflow only",
+      "senior": "Cross-team handoffs",
+      "exec": "Org-level process and defaults"
+    },
+    {
+      "signal": "Evidence of waste removal",
+      "junior": "Personal time saved, script shared",
+      "senior": "Two loops removed, hours reclaimed",
+      "exec": "Reservation model + planning ritual"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "None needed; individual action",
+      "senior": "Data walkthrough + written agreements",
+      "exec": "Tied to existing planning cycle"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Before/after minutes for self",
+      "senior": "22-to-11 days, hours per team",
+      "exec": "$1.8M and 40% deployment growth"
+    },
+    {
+      "signal": "Long-term change",
+      "junior": "Script reused by one peer",
+      "senior": "Checklists adopted by three teams",
+      "exec": "New default for all services"
+    },
+    {
+      "signal": "Coachability signal",
+      "junior": "Iterated after feedback on next sprint",
+      "senior": "Adjusted after manager input on rollout",
+      "exec": "Refined review cadence based on first quarter results"
+    }
+  ],
+  "kind": "factor"
+}

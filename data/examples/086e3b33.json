@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you stopped polishing because delivery mattered more. How did you decide?",
+  "competency": "Relentlessly push boundaries (knowing when to ship vs. perfect)",
+  "principle": "Relentlessly push boundaries",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a reporting dashboard for my team. After the core queries and charts worked, I kept tweaking the layout and colors. My manager flagged that stakeholders needed the data for a quarterly review in two days."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listed the remaining polish items, estimated another three days, and realized the data itself was accurate. I shipped the functional version and noted the UI tweaks as follow-up. The team used it on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stopped polishing because delivery mattered more. How did you decide?",
+        "Role: Individual contributor on internal dashboard",
+        "Situation: Core data ready, UI still being iterated",
+        "Action: Listed remaining items, compared to deadline, shipped functional version",
+        "Outcome: Team met quarterly review date",
+        "Quote: \"I realized the data itself was accurate.\"",
+        "Follow-up: How did you know the data was accurate enough? Candidate: Ran the same queries against source tables and matched totals."
+      ],
+      "raiseFeedback": "Raises the bar on Relentlessly push boundaries. Junior candidate described stopping UI polish on an internal dashboard once core queries were verified. They explicitly compared remaining work (three days) against a hard stakeholder deadline and chose to ship. The decision stayed within their individual scope and showed they could weigh trade-offs without being told. Biggest strength is the concrete stopping criterion tied to an external date rather than vague \"good enough\" language.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was working on a feature and kept fixing small bugs because I wanted it to be really solid. My manager eventually told me to just hand it over."
+        },
+        {
+          "role": "interviewer",
+          "text": "What signal made you realize you should have stopped earlier?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really have one. I just thought more fixes would make it better until the deadline passed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stopped polishing because delivery mattered more. How did you decide?",
+        "Role: Individual contributor",
+        "Situation: Feature with accumulating small bugs",
+        "Action: Continued fixing without external deadline check",
+        "Outcome: Missed handoff date, manager intervened",
+        "Quote: \"I didn't really have one.\"",
+        "Follow-up: Did you track remaining effort vs. deadline? Candidate: No, focused only on quality."
+      ],
+      "lowerFeedback": "Lowers the bar on Relentlessly push boundaries. Junior candidate described continuing to fix bugs past the handoff date with no personal stopping rule. They relied on manager intervention rather than surfacing the trade-off themselves. The story shows ownership of quality but no evidence of weighing delivery impact or making an explicit decision. Biggest gap is absence of any decision criteria the candidate owned."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was launching a shared API used by three other squads. We had a list of edge-case error messages still in progress. Two days before the agreed launch window, one partner team said their integration was blocked until we shipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to cut?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the three squads into a quick sync, ranked the open items by blast radius, and moved two low-impact messages to post-launch. We documented the gaps and shipped the core contract on the original date."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stopped polishing because delivery mattered more. How did you decide?",
+        "Role: Senior engineer coordinating across teams",
+        "Situation: Shared API with open error handling items",
+        "Action: Convened dependent teams, ranked by blast radius, deferred two items",
+        "Outcome: Core contract shipped on agreed date, gaps documented",
+        "Quote: \"Ranked the open items by blast radius.\"",
+        "Follow-up: What happened to the deferred items? Candidate: Tracked them in the next sprint and closed within two weeks."
+      ],
+      "raiseFeedback": "Raises the bar on Relentlessly push boundaries. Senior candidate described a cross-team API launch where they facilitated a ranking session across three squads to defer low-impact items. The decision used explicit criteria (blast radius) and protected the launch date while documenting trade-offs. Story shows influence without authority and measurable coordination impact. Biggest strength is the repeatable process they used to align multiple teams on the cut line.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had an API launch and kept adding more validation because we wanted it robust. The other teams started complaining about the delay so we eventually shipped what we had."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide which validation could wait?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't run a formal review. We just felt the pressure and cut the last two items the day before launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stopped polishing because delivery mattered more. How did you decide?",
+        "Role: Senior engineer",
+        "Situation: Shared API with ongoing validation work",
+        "Action: Continued adding items until partner complaints forced a cut",
+        "Outcome: Shipped under pressure, no documented decision process",
+        "Quote: \"We just felt the pressure.\"",
+        "Follow-up: Did you involve the dependent teams before the cut? Candidate: Only after they complained."
+      ],
+      "lowerFeedback": "Lowers the bar on Relentlessly push boundaries. Senior candidate described shipping an API only after partner teams complained, with no proactive ranking or cross-team alignment. The decision lacked criteria and was reactive rather than deliberate. Story shows awareness of delivery pressure but no evidence of using influence to drive a structured trade-off. Biggest gap is absence of any repeatable decision mechanism or preemptive stakeholder sync."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were six weeks from a new market launch that the board had tied to annual revenue targets. The product still had two major reliability gaps. I asked the team to run a forced ranking against the revenue model and customer commitments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the ranking produce?"
+        },
+        {
+          "role": "candidate",
+          "text": "We moved one reliability feature to a day-two release, accepted a monitored degradation in one region, and launched on schedule. Post-launch we recovered the feature in four weeks and hit the revenue number."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stopped polishing because delivery mattered more. How did you decide?",
+        "Role: Exec owning market launch",
+        "Situation: Revenue-tied launch with open reliability gaps",
+        "Action: Forced ranking against revenue model and customer commitments",
+        "Outcome: Deferred one feature, accepted monitored risk, hit revenue target",
+        "Quote: \"Moved one reliability feature to a day-two release.\"",
+        "Follow-up: How did you communicate the risk to the board? Candidate: Sent a one-page memo with the trade-off and mitigation plan two weeks prior."
+      ],
+      "raiseFeedback": "Raises the bar on Relentlessly push boundaries. Exec candidate described a market launch tied to board revenue targets where they ran an explicit ranking of reliability gaps against business commitments. They accepted a monitored regional degradation and deferred one feature to protect the date, then recovered it post-launch. Story demonstrates strategic judgment at org level with clear metrics and long-term mitigation. Biggest strength is the direct linkage between the technical decision and quantified business outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team wanted to keep hardening the system but the launch date was slipping. I told them to ship what was ready so we wouldn't miss the window."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis supported that call?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly timeline pressure. We didn't have a formal model tying the gaps to revenue or customer impact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stopped polishing because delivery mattered more. How did you decide?",
+        "Role: Exec",
+        "Situation: Slipping launch with hardening work remaining",
+        "Action: Directed team to ship based on timeline pressure",
+        "Outcome: Met date but without documented trade-off analysis",
+        "Quote: \"Mostly timeline pressure.\"",
+        "Follow-up: Did you update the board on accepted risks? Candidate: Updated after the fact."
+      ],
+      "lowerFeedback": "Lowers the bar on Relentlessly push boundaries. Exec candidate described directing a launch based primarily on timeline pressure without a formal ranking against revenue or customer commitments. The decision lacked strategic analysis or preemptive stakeholder communication. Story shows awareness of delivery importance but no evidence of org-level trade-off modeling. Biggest gap is missing linkage between the technical choice and measurable business impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision criteria owned by candidate",
+      "junior": "Explicit comparison of remaining work vs. deadline",
+      "senior": "Cross-team ranking by blast radius",
+      "exec": "Forced ranking against revenue model"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task / one team",
+      "senior": "Three dependent squads",
+      "exec": "Board-level revenue target"
+    },
+    {
+      "signal": "Preemptive vs. reactive",
+      "junior": "Manager flagged deadline; candidate acted",
+      "senior": "Candidate convened sync before launch",
+      "exec": "Candidate produced memo two weeks prior"
+    },
+    {
+      "signal": "Post-decision ownership",
+      "junior": "Noted UI tweaks as follow-up",
+      "senior": "Tracked deferred items in next sprint",
+      "exec": "Recovered feature in four weeks"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "None required (individual scope)",
+      "senior": "Facilitated multi-team alignment",
+      "exec": "Aligned board expectations via memo"
+    }
+  ],
+  "kind": "factor"
+}

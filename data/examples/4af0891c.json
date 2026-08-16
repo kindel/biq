@@ -1,0 +1,214 @@
+{
+  "question": "Tell me about a time change kept rewriting the goal. How did you keep the team focused?",
+  "competency": "Be decisive in ambiguity and change",
+  "principle": "Be decisive in ambiguity and change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project the PM kept shifting priorities every sprint because of new stakeholder input. I started writing a one-page change log each week and brought it to my manager for a quick sync."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the team started losing momentum?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each person to pick one task they could finish that week and we reviewed it in standup. We shipped two small features instead of the original big one."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about the constant changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was frustrating at first, but my manager told me to treat it as data so I started tracking how often things moved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time change kept rewriting the goal. How did you keep the team focused?",
+        "Role: new grad on first feature team; situation: weekly priority flips from stakeholders",
+        "Actions: created weekly change log, synced with manager, broke work into one-week wins",
+        "Outcome: shipped two small features; team stayed in standup",
+        "Quote: \"My manager told me to treat it as data\"",
+        "Follow-up: How did you feel about the constant changes? \u2192 Started tracking frequency"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate owned a small but repeatable process for handling goal churn instead of waiting for direction. The change log and weekly manager sync show coachability and local ownership. The quote about treating shifts as data indicates early learning agility. Biggest gap is that impact stayed inside one team and one manager relationship.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The requirements changed three times in a month and I just kept re-planning my tasks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the rest of the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were confused too but we all waited for the PM to decide. I finished my part late."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time change kept rewriting the goal. How did you keep the team focused?",
+        "Role: new grad; situation: monthly requirement churn",
+        "Actions: kept re-planning personal tasks and waited for PM",
+        "Outcome: delivered late; team stayed confused",
+        "Quote: \"We all waited for the PM to decide\"",
+        "Follow-up: How did the rest of the team react? \u2192 No proactive steps taken"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate treated goal changes as something to endure rather than manage, showing limited ownership. Waiting for the PM to decide and delivering late indicates weak local agency. No evidence of asking for help or creating any visibility for the team. Biggest gap is absence of even small proactive steps."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our cross-team migration got hit by three org reorgs in six months. I started running a bi-weekly \"goal reset\" meeting with the three tech leads and we published a shared risk register."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics did you use to keep people aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tracked migration completion rate and on-call load per team. When the goal moved again we cut the scope to the top two services and moved the rest to the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback from one of the teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked their lead to bring their data to the reset meeting so the decision was visible instead of top-down."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time change kept rewriting the goal. How did you keep the team focused?",
+        "Role: senior on platform migration; situation: three reorgs in six months",
+        "Actions: ran bi-weekly goal reset with tech leads, published risk register, used completion and on-call metrics",
+        "Outcome: cut scope to top two services; decision made visible",
+        "Quote: \"I asked their lead to bring their data to the reset meeting\"",
+        "Follow-up: What metrics did you use? \u2192 Completion rate and on-call load; Follow-up: How did you handle pushback? \u2192 Made decision visible"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used a repeatable reset ritual and visible metrics to drive cross-team decisions without authority. Cutting scope based on data shows decisive trade-off making. Involving the dissenting team lead in the meeting demonstrates influence without authority. Biggest strength is turning repeated ambiguity into a process others could follow.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to keep the original plan alive by working extra hours and updating the roadmap every time leadership changed direction."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams adopt your updates?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. One team just ignored the new dates and we missed the migration deadline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time change kept rewriting the goal. How did you keep the team focused?",
+        "Role: senior on migration; situation: repeated leadership direction changes",
+        "Actions: worked extra hours and updated roadmap alone",
+        "Outcome: one team ignored dates; missed deadline",
+        "Quote: \"One team just ignored the new dates\"",
+        "Follow-up: Did other teams adopt your updates? \u2192 No cross-team alignment achieved"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate relied on personal heroics and solo roadmap updates instead of creating shared mechanisms. Missing the deadline after repeated changes shows lack of influence without authority. No metrics or visible decision process was introduced. Biggest gap is absence of any leverage beyond individual effort."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the acquisition the product direction flipped twice in a quarter. I created a two-page decision framework with the CEO and used it to kill two initiatives and double down on the integration path."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term signal you protected?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the metric of active enterprise customers and showed that the new direction would drop it by 30 percent in year two."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the teams whose work was deprioritized?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with each director, explained the framework, and gave them a 60-day runway to find new homes for their people inside the combined org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time change kept rewriting the goal. How did you keep the team focused?",
+        "Role: exec post-acquisition; situation: two direction flips in one quarter",
+        "Actions: built decision framework with CEO, used customer metric to kill initiatives, gave 60-day runway to directors",
+        "Outcome: protected enterprise customer metric; people moved inside org",
+        "Quote: \"I gave them a 60-day runway to find new homes for their people\"",
+        "Follow-up: What was the long-term signal? \u2192 Active enterprise customers; Follow-up: How did you handle deprioritized teams? \u2192 60-day runway"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate made visible strategic trade-offs using a shared framework and protected a multi-year customer metric. Giving directors a 60-day runway shows long-term thinking about org leverage rather than short-term heroics. The decision to kill initiatives based on quantified impact demonstrates decisive judgment under high ambiguity. Biggest strength is turning repeated goal changes into a durable decision system.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept communicating the latest direction in all-hands and asked teams to stay flexible."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the original roadmap commitments?"
+        },
+        {
+          "role": "candidate",
+          "text": "We slipped most of them and lost two key engineering leads who left because priorities kept moving."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time change kept rewriting the goal. How did you keep the team focused?",
+        "Role: exec post-acquisition; situation: repeated direction changes",
+        "Actions: sent all-hands updates and asked for flexibility",
+        "Outcome: slipped commitments; lost two engineering leads",
+        "Quote: \"We slipped most of them\"",
+        "Follow-up: What happened to the original roadmap commitments? \u2192 Attrition and missed dates"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate relied on broadcast communication without creating decision mechanisms or trade-off visibility. Losing engineering leads after repeated changes shows failure to provide long-term clarity or leverage. No evidence of strategic judgment or quantified impact assessment. Biggest gap is absence of any durable process that outlasted the ambiguity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Creates repeatable process for goal churn",
+      "junior": "Weekly change log + manager sync",
+      "senior": "Bi-weekly reset meeting with metrics",
+      "exec": "Two-page decision framework with CEO"
+    },
+    {
+      "signal": "Uses data to make scope trade-offs",
+      "junior": "Tracked change frequency",
+      "senior": "Completion rate and on-call load",
+      "exec": "30 percent drop in enterprise customers year two"
+    },
+    {
+      "signal": "Influences without direct authority",
+      "junior": "Asked manager for guidance",
+      "senior": "Made dissenting lead bring data to meeting",
+      "exec": "Gave directors 60-day runway for people moves"
+    },
+    {
+      "signal": "Protects long-term signal",
+      "junior": "None visible",
+      "senior": "Kept migration on top two services",
+      "exec": "Protected active enterprise customer metric"
+    },
+    {
+      "signal": "Handles team impact of deprioritization",
+      "junior": "Broke work into one-week wins",
+      "senior": "Made decision visible to all leads",
+      "exec": "Explicit 60-day runway for role placement"
+    },
+    {
+      "signal": "Outcome under repeated change",
+      "junior": "Shipped two small features",
+      "senior": "Cut scope and met revised target",
+      "exec": "Killed two initiatives, retained org capability"
+    }
+  ],
+  "kind": "factor"
+}

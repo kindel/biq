@@ -1,0 +1,229 @@
+{
+  "question": "Tell me about a time the mission was unclear to your team. How did you make it concrete?",
+  "competency": "Passion for the mission",
+  "principle": "Passion for the mission",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project after onboarding, the team was told to 'improve search relevance' but no one knew what success looked like or which customers mattered most. I scheduled a 30-minute chat with my manager to ask for the top three use cases we were optimizing for."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that chat?"
+        },
+        {
+          "role": "candidate",
+          "text": "She pointed me to two internal dashboards and a recent customer interview. I summarized the three use cases into a short doc and shared it in our next standup. Two engineers said it helped them prioritize their experiments."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team adopt it or was it just your doc?"
+        },
+        {
+          "role": "candidate",
+          "text": "It became the reference we used in planning the next sprint. I updated it once when we got new data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the mission was unclear to your team. How did you make it concrete?",
+        "Junior dev on first project; search relevance goal was vague",
+        "Asked manager for top 3 use cases, turned into one-pager shared in standup",
+        "Two engineers used it to prioritize; became sprint reference",
+        "Quote: 'I summarized the three use cases into a short doc'",
+        "Follow-up: Asked if team adopted it; candidate said it became planning reference and was updated once"
+      ],
+      "raiseFeedback": "Raises the bar for Passion for the Mission at the junior level. The candidate described a first-project situation where the goal was vague and took ownership by asking their manager for the top three use cases then turning them into a shared one-pager. The story includes the concrete action of updating the doc once when new data arrived. This shows local ownership and coachability without overclaiming scope. The main gap is that impact stayed within one small team and one sprint cycle.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The mission felt unclear a lot on my last project. We just kept getting new tickets without knowing why."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my teammates but nobody really knew either. We just did the tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you go to your manager or try to clarify the goal yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I figured someone higher up would tell us eventually so I focused on finishing my assigned work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the mission was unclear to your team. How did you make it concrete?",
+        "Vague project with shifting tickets",
+        "Asked teammates but got no clarity; defaulted to executing tickets",
+        "Quote: 'I figured someone higher up would tell us eventually'",
+        "Follow-up: Asked if candidate went to manager; response was passive wait-and-see"
+      ],
+      "lowerFeedback": "Lowers the bar for Passion for the Mission at the junior level. The candidate recognized the mission was unclear but stopped after asking teammates and chose to wait for direction instead of seeking clarification from their manager. The story shows no attempt to make the goal concrete even at an individual level. The main gap is lack of ownership over turning ambiguity into something actionable for their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams I worked with had conflicting priorities on a shared infrastructure migration. One team thought the mission was speed to deprecate old systems; the other thought it was zero customer impact during cutover."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you surface and resolve the misalignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the two tech leads into a working session and had each write their top three success criteria on the board. We found only one overlapped. I then wrote a short joint mission statement focused on the overlap and ran it by both managers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both teams started using the same migration checklist and the cutover date slipped only two weeks instead of the six weeks people had been predicting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the mission was unclear to your team. How did you make it concrete?",
+        "Cross-team platform migration with conflicting speed vs safety views",
+        "Facilitated working session; had leads write success criteria; created joint mission statement",
+        "Both teams adopted same checklist; slip reduced from expected 6 weeks to 2",
+        "Quote: 'I wrote a short joint mission statement focused on the overlap'",
+        "Follow-up: Asked what changed; candidate cited shared checklist and reduced slip"
+      ],
+      "raiseFeedback": "Raises the bar for Passion for the Mission at the senior level. The candidate identified conflicting interpretations of the migration goal across two teams and used a working session to surface the single overlapping criterion before writing a joint mission statement. The outcome was a shared checklist and a measurable reduction in schedule slip. This demonstrates influence without authority and cross-team impact. The main limitation is that the candidate still needed manager sign-off on the statement rather than driving the alignment entirely through peers.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a project where the two teams had different ideas about whether we were optimizing for cost or reliability."
+        },
+        {
+          "role": "interviewer",
+          "text": "What steps did you take to align them?"
+        },
+        {
+          "role": "candidate",
+          "text": "I raised it in the weekly sync a couple times but the leads kept talking past each other."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try any other approach like a dedicated session or written proposal?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly focused on my own team's deliverables and let the program manager handle the bigger alignment."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the mission was unclear to your team. How did you make it concrete?",
+        "Conflicting cost vs reliability goals between teams",
+        "Raised issue in weekly syncs with no resolution",
+        "Quote: 'I mostly focused on my own team's deliverables'",
+        "Follow-up: Asked about other approaches; candidate deferred to program manager"
+      ],
+      "lowerFeedback": "Lowers the bar for Passion for the Mission at the senior level. The candidate noticed conflicting goals between teams but limited action to raising the issue in existing syncs and then deferred entirely to the program manager. No attempt was made to create a concrete shared definition or run a targeted alignment activity. The main gap is absence of cross-team influence or ownership beyond their immediate deliverables."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After an acquisition the combined engineering org had two very different views of what 'customer obsession' meant in practice. One legacy group measured it by feature velocity; the other by support ticket reduction."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do at the organizational level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week exercise with the staff engineers and directors to define three observable behaviors that would count as customer obsession. We then embedded those behaviors into the quarterly planning template and the promotion rubric."
+        },
+        {
+          "role": "interviewer",
+          "text": "How widely did this land and what metrics moved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Within one quarter 80 percent of teams referenced the behaviors in their OKRs and support ticket volume dropped 18 percent while feature velocity stayed flat."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the mission was unclear to your team. How did you make it concrete?",
+        "Post-acquisition org with conflicting velocity vs support definitions of customer obsession",
+        "Led two-week exercise with staff engineers and directors to define three observable behaviors",
+        "Embedded behaviors into planning template and promotion rubric",
+        "Quote: 'We embedded those behaviors into the quarterly planning template and the promotion rubric'",
+        "Follow-up: Asked for adoption and metrics; candidate cited 80% OKR reference and 18% ticket drop"
+      ],
+      "raiseFeedback": "Raises the bar for Passion for the Mission at the executive level. The candidate recognized that two legacy cultures held incompatible definitions of a core company value and ran a structured exercise to translate the value into three observable behaviors. Those behaviors were then institutionalized through planning templates and promotion criteria. The result included 80 percent OKR adoption and an 18 percent reduction in support tickets. This shows strategic judgment and org-level leverage rather than heroics on a single project.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the acquisition we had the usual confusion about priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you clarify the mission for the broader organization?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a few all-hands notes reminding people of the original company values."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any operating mechanisms like planning or reviews?"
+        },
+        {
+          "role": "candidate",
+          "text": "We left the existing planning process in place and let each VP translate the mission for their teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the mission was unclear to your team. How did you make it concrete?",
+        "Post-acquisition priority confusion",
+        "Sent reminder all-hands notes on company values",
+        "Quote: 'We left the existing planning process in place'",
+        "Follow-up: Asked about operating mechanisms; candidate deferred to individual VPs"
+      ],
+      "lowerFeedback": "Lowers the bar for Passion for the Mission at the executive level. The candidate addressed post-acquisition ambiguity only through high-level reminder notes and explicitly chose not to adjust planning or review mechanisms. Translation of the mission was left entirely to individual VPs with no org-wide concrete definition or accountability structure. The main gap is lack of strategic action to institutionalize clarity at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initiative in ambiguity",
+      "junior": "Raises: asked manager and created one-pager; Lowers: waited for direction",
+      "senior": "Raises: ran working session across teams; Lowers: raised in sync then deferred",
+      "exec": "Raises: ran two-week org exercise and changed rubrics; Lowers: sent reminder notes only"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Raises: one team, one sprint; Lowers: none beyond own tickets",
+      "senior": "Raises: two teams, measurable schedule improvement; Lowers: own team only",
+      "exec": "Raises: org-wide OKRs and promotion criteria; Lowers: no mechanism change"
+    },
+    {
+      "signal": "Concrete output created",
+      "junior": "Raises: shared one-pager updated once; Lowers: no artifact",
+      "senior": "Raises: joint mission statement and checklist; Lowers: no written alignment",
+      "exec": "Raises: three behaviors embedded in templates; Lowers: verbal reminders only"
+    },
+    {
+      "signal": "Use of data or metrics",
+      "junior": "Raises: referenced dashboards and later updates; Lowers: none",
+      "senior": "Raises: reduced slip from 6w to 2w; Lowers: none tracked",
+      "exec": "Raises: 80% adoption and 18% ticket drop; Lowers: none tracked"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Raises: updated doc when data changed; Lowers: short-term ticket focus",
+      "senior": "Raises: checklist used ongoing; Lowers: sync-only discussion",
+      "exec": "Raises: changed planning and promotion systems; Lowers: left processes untouched"
+    }
+  ],
+  "kind": "factor"
+}

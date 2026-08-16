@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time collaboration was not consensus. How did you keep the work moving?",
+  "competency": "Deliver as One Arm (collaboration without consensus, decision velocity)",
+  "principle": "Deliver as One Arm",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, two engineers disagreed on the API design for a new feature. I scheduled a 30-minute sync, presented both options with pros/cons, and we picked one after 20 minutes. I owned documenting the decision and updating the ticket so we didn't block the sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when one person still pushed back after the sync?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked them to write their concern in the doc, then moved forward with the chosen path and checked in after the first implementation to see if we needed to adjust."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time collaboration was not consensus. How did you keep the work moving?",
+        "Situation: First project, API design disagreement between two engineers",
+        "Action: Called short sync, presented options, documented decision",
+        "Outcome: Sprint unblocked; followed up post-implementation",
+        "Quote: 'I asked them to write their concern in the doc, then moved forward'",
+        "Follow-up: Asked about continued pushback; candidate described escalation to written record and check-in"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver as One Arm at junior level. The candidate described a local disagreement on API design and kept the sprint moving by running a short sync and writing the decision down. Quote: 'I asked them to write their concern in the doc, then moved forward.' This shows ownership of their own work and basic coachability in accepting that not everyone will agree. The follow-up answer demonstrated they did not stall waiting for perfect alignment. Biggest strength is treating the decision as a team output rather than personal victory. Gap is limited scope, which is expected at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a disagreement on the design and I just went with what my manager said because I didn't want to cause issues."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep the work moving when people weren't aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I waited until the next standup and hoped it would get sorted out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time collaboration was not consensus. How did you keep the work moving?",
+        "Situation: Design disagreement on team",
+        "Action: Deferred to manager, waited for standup",
+        "Outcome: No clear resolution or ownership shown",
+        "Quote: 'I just went with what my manager said because I didn't want to cause issues'",
+        "Follow-up: Asked how work kept moving; candidate described passive waiting"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver as One Arm at junior level. The candidate avoided driving any resolution and simply deferred without documenting or following up. Quote: 'I just went with what my manager said because I didn't want to cause issues.' This shows no ownership of keeping work moving and treats disagreement as something to wait out. The follow-up revealed passive behavior rather than any attempt to unblock. Biggest gap is lack of initiative on their own deliverables when alignment is imperfect."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed different data models for a shared service. I ran a working session with the leads, surfaced the trade-offs on latency versus consistency, and proposed a phased approach. We aligned on the first phase even though one team wanted the full model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the second team kept lobbying for their version?"
+        },
+        {
+          "role": "candidate",
+          "text": "I got their concerns in writing, added a future-phase milestone in the roadmap, and had the teams commit to the current cut so the launch date stayed intact."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time collaboration was not consensus. How did you keep the work moving?",
+        "Situation: Cross-team data model disagreement on shared service",
+        "Action: Ran working session, proposed phased approach, captured concerns",
+        "Outcome: Launch date protected; future work queued",
+        "Quote: 'I got their concerns in writing, added a future-phase milestone'",
+        "Follow-up: Asked about continued lobbying; candidate described written record plus roadmap commitment"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver as One Arm at senior level. The candidate drove cross-team alignment on a shared service by running a working session and committing to a phased plan that protected the launch date. Quote: 'I got their concerns in writing, added a future-phase milestone in the roadmap.' This demonstrates influence without authority and clear decision velocity. The follow-up showed they converted disagreement into documented future work rather than letting it block progress. Biggest strength is protecting the outcome while still acknowledging the dissenting view. Gap is modest evidence of raising the bar for others on the teams involved.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The two teams disagreed on the data model so I escalated to the directors and let them decide."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep the work moving in the meantime?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused the integration work until leadership gave direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time collaboration was not consensus. How did you keep the work moving?",
+        "Situation: Cross-team data model conflict",
+        "Action: Escalated to directors, paused integration",
+        "Outcome: Work stalled pending leadership decision",
+        "Quote: 'We paused the integration work until leadership gave direction'",
+        "Follow-up: Asked how work kept moving; candidate described escalation and pause"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver as One Arm at senior level. The candidate escalated immediately and halted cross-team work rather than driving a decision themselves. Quote: 'We paused the integration work until leadership gave direction.' This shows lack of influence without authority and treats disagreement as a reason to stop. The follow-up confirmed they did not attempt to create a path forward. Biggest gap is waiting for consensus at the director level instead of owning the outcome at their level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two business units had incompatible requirements for a platform migration that threatened a $40M revenue stream. I convened the VPs, framed the decision around customer impact and P&L, and chose the path that de-risked the largest revenue segment first even though one unit would take a short-term hit."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the unit that lost out in the short term?"
+        },
+        {
+          "role": "candidate",
+          "text": "I committed to a dedicated investment review in the next quarter and had their leader present the case to the exec team so the trade-off was visible at the right level."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time collaboration was not consensus. How did you keep the work moving?",
+        "Situation: Incompatible requirements across two BUs threatening $40M revenue",
+        "Action: Convened VPs, framed around P&L and customer impact, chose revenue-protecting path",
+        "Outcome: Migration de-risked; follow-up investment review scheduled",
+        "Quote: 'I committed to a dedicated investment review in the next quarter'",
+        "Follow-up: Asked about the losing unit; candidate described visible trade-off and future forum"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver as One Arm at exec level. The candidate made an explicit trade-off between two business units to protect $40M revenue and kept the platform migration on track. Quote: 'I committed to a dedicated investment review in the next quarter and had their leader present the case.' This shows strategic judgment under ambiguity and long-term thinking by creating a visible path for the dissenting unit. The follow-up demonstrated they converted disagreement into an org-level process rather than forcing consensus. Biggest strength is treating the decision as a business outcome with clear ownership of the trade-off. Gap is limited detail on how they built ongoing decision-making muscle in the organization.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The two business units couldn't agree so I asked them to keep negotiating until they found common ground."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on the timeline and revenue?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed the migration by two quarters while they worked it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time collaboration was not consensus. How did you keep the work moving?",
+        "Situation: Incompatible BU requirements on platform migration",
+        "Action: Asked units to keep negotiating",
+        "Outcome: Two-quarter delay to revenue stream",
+        "Quote: 'We delayed the migration by two quarters while they worked it out'",
+        "Follow-up: Asked about timeline impact; candidate described extended negotiation"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver as One Arm at exec level. The candidate allowed extended negotiation between business units instead of making the call, resulting in a two-quarter delay. Quote: 'We delayed the migration by two quarters while they worked it out.' This shows avoidance of strategic trade-offs and treats consensus as the only acceptable path. The follow-up confirmed the revenue impact was accepted rather than mitigated. Biggest gap is lack of executive judgment in ambiguous, high-stakes situations."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision velocity when alignment is absent",
+      "junior": "Owns local documentation and short syncs",
+      "senior": "Drives cross-team phased plans and written records",
+      "exec": "Makes P&L-framed trade-offs with visible future forums"
+    },
+    {
+      "signal": "Handling dissenting stakeholders",
+      "junior": "Captures concerns and checks in later",
+      "senior": "Queues future work and protects launch date",
+      "exec": "Creates org-level review process for the losing side"
+    },
+    {
+      "signal": "Scope of impact shown",
+      "junior": "Individual deliverable or sprint",
+      "senior": "Cross-team launch or integration",
+      "exec": "Business unit revenue or multi-quarter platform"
+    },
+    {
+      "signal": "Evidence of raising others",
+      "junior": "Minimal; focuses on own ticket",
+      "senior": "Gets leads to commit to roadmap",
+      "exec": "Surfaces trade-offs to exec team for visibility"
+    },
+    {
+      "signal": "Response to continued disagreement",
+      "junior": "Moves forward then follows up",
+      "senior": "Adds milestone and secures commitment",
+      "exec": "Commits investment review and makes decision visible"
+    }
+  ],
+  "kind": "factor"
+}

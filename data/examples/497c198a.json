@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you simplified work that had grown a tail. What did you cut, and what stayed?",
+  "competency": "Root out inefficiencies",
+  "principle": "Root out inefficiencies",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our weekly status report had ballooned to 12 slides with duplicate metrics from three teams. I mapped every slide to who actually used it, cut the ones no one opened, and kept only the three that fed the exec deck. Time dropped from 4 hours to 45 minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what stayed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each stakeholder for the last time they referenced each slide. If they couldn't remember, it went."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you simplified work that had grown a tail. What did you cut, and what stayed?",
+        "Mapped 12-slide report to actual usage",
+        "Cut unused slides after stakeholder check",
+        "Outcome: 4h \u2192 45min",
+        "Quote: 'If they couldn't remember, it went.'",
+        "Follow-up: Asked how decision was made; candidate used direct stakeholder input"
+      ],
+      "raiseFeedback": "Raises the bar on Root out inefficiencies for junior level. Candidate owned a single recurring task, identified duplication through direct questions, and reduced effort from four hours to 45 minutes. The concrete quote about asking stakeholders when they last used each slide shows they validated cuts instead of guessing. This matches the expected individual-scope ownership at 0-2 years. Biggest strength is the clear before-and-after metric tied to their own effort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The report was long so I removed a couple slides that looked old and it was shorter after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you pick which ones to remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just looked at them and picked the ones that seemed least important."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you simplified work that had grown a tail. What did you cut, and what stayed?",
+        "Removed 'a couple' slides that 'looked old'",
+        "No stakeholder check or usage data",
+        "Outcome described only as 'shorter'",
+        "Quote: 'I just looked at them and picked'",
+        "Follow-up: Decision criteria; candidate relied on personal judgment only"
+      ],
+      "lowerFeedback": "Lowers the bar on Root out inefficiencies for junior level. The candidate described removing slides based on personal opinion with no validation or measurement of impact. No evidence they understood which work was actually consuming time or whether the cuts helped anyone else. At this level we expect at least basic ownership of their own process and a willingness to check with others before changing shared artifacts. The gap is lack of any data or feedback loop on what stayed versus what was cut."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three teams were running separate weekly data pulls that fed the same planning meeting. I consolidated the queries into one shared pipeline, removed two redundant dashboards, and kept only the metrics the planning owners had signed off on. The combined run time went from 18 hours of engineer time per week to 4."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each team their exact metrics still present and offered to own the first two weeks of maintenance so they could see it worked."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you simplified work that had grown a tail. What did you cut, and what stayed?",
+        "Consolidated three teams' data pulls into one pipeline",
+        "Cut two redundant dashboards after metric sign-off",
+        "Impact: 18h \u2192 4h engineer time/week",
+        "Quote: 'Showed each team their exact metrics still present'",
+        "Follow-up: Adoption approach; candidate used visible continuity plus temporary ownership"
+      ],
+      "raiseFeedback": "Raises the bar on Root out inefficiencies for senior level. The candidate identified duplicated effort across teams, drove consolidation without formal authority, and delivered a measurable reduction in weekly engineering hours. They kept the metrics the downstream owners needed rather than cutting arbitrarily. The follow-up shows they used continuity and short-term ownership to influence adoption. This demonstrates the cross-team scope and influence-without-authority expected at 3-7 years. Biggest strength is the combination of technical simplification and stakeholder alignment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I rewrote the data pull script to be faster and the other teams started using my version."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you remove any of the duplicate work?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they just pointed at my script instead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you simplified work that had grown a tail. What did you cut, and what stayed?",
+        "Rewrote one script to run faster",
+        "No dashboards or queries removed",
+        "Other teams 'pointed at my script' but duplication remained",
+        "Quote: 'Not really, they just pointed at my script instead'",
+        "Follow-up: Scope of cuts; candidate improved speed but left redundant processes intact"
+      ],
+      "lowerFeedback": "Lowers the bar on Root out inefficiencies for senior level. The candidate improved runtime on one script but did not address the duplicated work across teams or remove any of the redundant artifacts. No metrics were shared on total time saved or whether downstream consumers could stop their own pulls. At senior level we look for evidence of removing work, not just making existing work faster. The gap is treating optimization as sufficient when the question asked what was cut."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our quarterly planning process had accreted 47 distinct review steps across product, finance, and engineering. I mapped every step to a decision that actually changed the plan, eliminated 31 of them, and kept only the six that surfaced true resource conflicts. The cycle time dropped from 11 weeks to 3 and the planning team headcount stayed flat while revenue grew 40%."
+        },
+        {
+          "role": "interviewer",
+          "text": "What pushed back and how did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Finance wanted to keep a cash-flow checkpoint that didn't change any decisions. I ran a two-quarter A/B test showing the checkpoint added no variance reduction and removed it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you simplified work that had grown a tail. What did you cut, and what stayed?",
+        "Removed 31 of 47 review steps after mapping to actual decisions",
+        "Kept six steps tied to resource conflicts",
+        "Impact: 11 weeks \u2192 3 weeks cycle time at flat headcount",
+        "Quote: 'Ran a two-quarter A/B test showing the checkpoint added no variance reduction'",
+        "Follow-up: Pushback handling; candidate used data experiment to retire a sacred step"
+      ],
+      "raiseFeedback": "Raises the bar on Root out inefficiencies for exec level. The candidate treated an org-scale process as the unit of work, used decision-mapping to cut two-thirds of the steps, and protected only the reviews that affected real trade-offs. They defended the cuts with a controlled experiment against a powerful stakeholder group. The outcome shows leverage: same planning team supported 40% revenue growth. This matches the high-ambiguity, org-level scope expected at 10+. Biggest strength is the willingness to retire process steps that no longer changed outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We moved the planning reviews to a new tool that had better templates and it felt lighter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the number of reviews or decisions change?"
+        },
+        {
+          "role": "candidate",
+          "text": "The steps were the same, just in a different system."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you simplified work that had grown a tail. What did you cut, and what stayed?",
+        "Changed planning tool for better templates",
+        "Number of reviews and decisions unchanged",
+        "Outcome described only as 'felt lighter'",
+        "Quote: 'The steps were the same, just in a different system'",
+        "Follow-up: Scope of change; candidate altered surface without touching underlying process volume"
+      ],
+      "lowerFeedback": "Lowers the bar on Root out inefficiencies for exec level. The candidate described a tooling change that left the actual review volume and decision points untouched. No evidence of mapping work to outcomes or removing steps that no longer drove decisions. At exec level we expect leaders to tackle accumulated process drag at the organizational layer, not just change the interface. The gap is confusing cosmetic improvement with structural simplification."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of inefficiency addressed",
+      "junior": "Single recurring task owned by candidate",
+      "senior": "Duplicated work across 2-3 teams",
+      "exec": "Org-scale process with 40+ steps"
+    },
+    {
+      "signal": "Evidence of what was cut",
+      "junior": "Slides removed after usage check",
+      "senior": "Redundant dashboards and queries retired",
+      "exec": "31 review steps eliminated via decision mapping"
+    },
+    {
+      "signal": "Validation method used",
+      "junior": "Direct stakeholder questions",
+      "senior": "Metric sign-off plus temporary ownership",
+      "exec": "Two-quarter A/B test against stakeholder objection"
+    },
+    {
+      "signal": "Outcome metric",
+      "junior": "Personal time saved (4h \u2192 45min)",
+      "senior": "Team hours reduced (18h \u2192 4h/week)",
+      "exec": "Cycle time and leverage (11w \u2192 3w at flat headcount)"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Not required at this level",
+      "senior": "Showed continuity and offered short-term ownership",
+      "exec": "Data experiment to retire sacred step"
+    },
+    {
+      "signal": "Risk of superficial change",
+      "junior": "Removing slides based on opinion only",
+      "senior": "Faster script without removing duplicates",
+      "exec": "New tool while steps stayed identical"
+    }
+  ],
+  "kind": "factor"
+}

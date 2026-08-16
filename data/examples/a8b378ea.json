@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you protected your energy, or someone else's, and still hit the outcome. What did you stop?",
+  "competency": "Optimize for endurance and resilience",
+  "principle": "Optimize for endurance and resilience",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was staying late every night rewriting tests. My manager flagged I looked drained. I stopped the nightly rewrites, switched to pairing on the hardest cases twice a week, and shipped the feature on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you stop doing?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stopped reviewing every single PR comment after 7pm and instead batched them the next morning. My velocity stayed the same and I stopped making silly mistakes from fatigue."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you protected your energy, or someone else's, and still hit the outcome. What did you stop?",
+        "Junior dev on first project noticed fatigue after late nights rewriting tests",
+        "Stopped reviewing PRs after 7pm and batched them next morning; switched to twice-weekly pairing",
+        "Outcome: feature shipped on time with fewer mistakes",
+        "Quote: 'I stopped making silly mistakes from fatigue'",
+        "Follow-up: Asked what changed in daily routine; candidate described batching and pairing"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience for a junior. The candidate described a concrete individual action: stopping after-hours PR reviews and moving to batched morning reviews plus limited pairing. This preserved energy while still delivering the feature on time. The story stayed within the scope of their own work and showed quick adoption of the manager's feedback. The outcome was local but measurable in reduced errors. Biggest strength is the direct link between the boundary and maintained delivery quality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to protect my energy by taking a day off but then I had to work the weekend to catch up so the sprint still slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really stop anything, I just tried to rest one day but the work was still there so I ended up working more."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you protected your energy, or someone else's, and still hit the outcome. What did you stop?",
+        "Candidate took one day off but worked the weekend anyway",
+        "No specific action stopped; sprint still slipped",
+        "Quote: 'I didn't really stop anything'",
+        "Follow-up: Probing what changed in work habits; candidate could not name a sustained change"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience for a junior. The candidate took a single day off yet still worked the weekend and missed the sprint goal. No concrete behavior was stopped or adjusted long-term. The story shows the candidate did not own the outcome or learn from the attempt. The result remained negative with no evidence of protecting energy while delivering. Biggest gap is absence of any lasting change that preserved both energy and results."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was on-call rotation every two weeks and burnout was rising. I stopped the 24/7 expectation by pushing for a follow-the-sun model with two other teams and we still met our 99.9 SLA."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the on-call ticket volume data and proposed they only take daytime pages; their managers signed off after seeing the reduced escalations."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you protected your energy, or someone else's, and still hit the outcome. What did you stop?",
+        "Senior engineer saw rising burnout from bi-weekly on-call",
+        "Stopped 24/7 single-team rotation; moved to follow-the-sun with two partner teams",
+        "Outcome: 99.9 SLA maintained, on-call load cut in half",
+        "Quote: 'I showed the ticket volume data and their managers signed off'",
+        "Follow-up: How agreement was reached; candidate described data-driven pitch to peer managers"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience for a senior. The candidate identified team-wide burnout risk and stopped the single-team 24/7 rotation by implementing follow-the-sun coverage. They influenced two other teams without authority by sharing ticket data that showed mutual benefit. The SLA remained at 99.9 while on-call volume dropped. The action had cross-team scope and a clear metric. Biggest strength is the use of data to gain alignment and sustain the change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team to take more breaks but I kept taking the night pages myself because no one else knew the system."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't stop anything really. I just reminded people to rest while I kept handling the load."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you protected your energy, or someone else's, and still hit the outcome. What did you stop?",
+        "Senior told team to rest but continued taking all night pages",
+        "No change to rotation or delegation",
+        "Outcome: team still burned out, candidate remained overloaded",
+        "Quote: 'I kept taking the night pages myself'",
+        "Follow-up: Probing delegation attempts; candidate had no plan to transfer knowledge"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience for a senior. The candidate told the team to rest yet continued carrying the full on-call load personally. No process or coverage model was changed. The story stayed at the level of individual heroics without creating sustainable team capacity. No cross-team influence or measurable improvement in energy or outcomes occurred. Biggest gap is failure to stop the unsustainable pattern or build leverage through others."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Last year our engineering org was at 65 percent retention risk after two re-orgs. I stopped the quarterly re-org cadence and moved to annual planning with clear 18-month roadmaps; retention rose to 88 percent and we still delivered the two largest platform migrations on schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you accept?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two smaller product experiments by a quarter so teams could focus on the migrations without context switching."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you protected your energy, or someone else's, and still hit the outcome. What did you stop?",
+        "Exec saw 65 percent retention risk after repeated re-orgs",
+        "Stopped quarterly re-orgs; instituted annual planning with 18-month roadmaps",
+        "Outcome: retention to 88 percent, two major migrations delivered on time",
+        "Quote: 'We delayed two smaller product experiments by a quarter'",
+        "Follow-up: Trade-offs accepted; candidate named specific delayed experiments and rationale"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience for an exec. The candidate stopped the quarterly re-org cycle that was draining the organization and replaced it with stable annual planning. Retention improved from 65 to 88 percent while the two largest platform migrations stayed on schedule. The decision involved an explicit trade-off of delaying smaller experiments. Scope was org-wide and the impact was sustained over multiple quarters. Biggest strength is the strategic judgment to trade short-term feature velocity for long-term organizational capacity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged managers to watch for burnout but we kept the same aggressive roadmap and added two new OKRs mid-year."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you stop at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't stop any initiatives. We just asked people to be mindful of their energy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you protected your energy, or someone else's, and still hit the outcome. What did you stop?",
+        "Exec encouraged managers to watch burnout but added two new mid-year OKRs",
+        "No initiatives or cadence were stopped",
+        "Outcome: continued high load with no retention or delivery metric improvement",
+        "Quote: 'We didn't stop any initiatives'",
+        "Follow-up: Probing org-level changes; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience for an exec. The candidate asked managers to monitor burnout while continuing to add mid-year OKRs and keeping the aggressive roadmap. No structural change was made to planning cadence or initiative volume. The story shows no org-level leverage or willingness to make trade-offs. Retention and delivery metrics showed no improvement. Biggest gap is absence of strategic prioritization that would have protected organizational energy while still achieving key outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change",
+      "junior": "Individual task or habit",
+      "senior": "Team process with peer influence",
+      "exec": "Org cadence and roadmap trade-offs"
+    },
+    {
+      "signal": "Evidence of sustained boundary",
+      "junior": "Daily routine adjustment",
+      "senior": "New coverage model adopted by multiple teams",
+      "exec": "Annual planning locked in with explicit delays"
+    },
+    {
+      "signal": "Outcome linkage",
+      "junior": "Local delivery quality maintained",
+      "senior": "SLA and on-call volume metrics",
+      "exec": "Retention plus two major migrations on schedule"
+    },
+    {
+      "signal": "Trade-off clarity",
+      "junior": "Minimal",
+      "senior": "Data shared with peer managers",
+      "exec": "Named delayed experiments"
+    },
+    {
+      "signal": "Learning applied",
+      "junior": "Quick adoption after manager feedback",
+      "senior": "Data-driven pitch to gain alignment",
+      "exec": "Long-term org capacity over short-term velocity"
+    }
+  ],
+  "kind": "factor"
+}

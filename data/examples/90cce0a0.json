@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you asked how this could be better and then changed the work. What was the old bar?",
+  "competency": "Relentlessly push boundaries",
+  "principle": "Relentlessly push boundaries",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was writing test cases for a new API endpoint. The old bar was just hitting 70% coverage like the team had done before. I asked my mentor if we could aim higher and she suggested adding edge cases for error handling."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I rewrote the test suite to cover rate limiting and invalid inputs, pushing coverage to 92%. The team adopted the new template for the next two services."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you asked how this could be better and then changed the work. What was the old bar?",
+        "Role: new grad on first API project, individual scope",
+        "Situation: existing 70% coverage bar accepted by team",
+        "Action: asked mentor, added edge cases for rate limiting and errors",
+        "Outcome: 92% coverage, template reused by team",
+        "Quote: \"I rewrote the test suite to cover rate limiting and invalid inputs\"",
+        "Follow-up: What did you actually change? -> described specific additions and reuse"
+      ],
+      "raiseFeedback": "Raises the bar for Relentlessly push boundaries. The candidate described starting from an explicit old bar of 70% coverage on their first project and proactively asking a mentor how to improve it. They then rewrote the test suite to reach 92% and created a reusable template. This shows ownership of their own work and coachability when they incorporated feedback on edge cases. The impact stayed local but was concrete and adopted by others. The main strength is that they surfaced and raised a measurable standard rather than accepting the status quo.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was writing tests and noticed coverage was low so I added a few more cases to match what the senior engineer had done on the last project."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ask anyone if there was a better approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just followed the existing pattern so it would be consistent."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you asked how this could be better and then changed the work. What was the old bar?",
+        "Role: new grad, individual task",
+        "Situation: low coverage on API tests",
+        "Action: added cases to match existing pattern",
+        "Outcome: consistency only, no new bar set",
+        "Quote: \"I just followed the existing pattern so it would be consistent\"",
+        "Follow-up: Did you ask anyone if there was a better approach? -> no, stayed within status quo"
+      ],
+      "lowerFeedback": "Lowers the bar for Relentlessly push boundaries. The candidate stayed inside the existing pattern without questioning the old bar or seeking input on how to improve it. They described only adding cases for consistency rather than raising coverage or quality. No evidence of asking \"how could this be better\" or driving any change. The story shows compliance with the current standard instead of pushing it. The gap is the absence of any attempt to identify or lift the bar even at an individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout service had a 200ms p99 target but real latency was often 350ms during peaks. I asked the platform team if we could redefine the bar using customer-visible metrics instead of synthetic tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after you raised it?"
+        },
+        {
+          "role": "candidate",
+          "text": "We switched to real-user monitoring and cut p99 to 180ms by adding two caching layers. Three other services adopted the same measurement approach within a quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you asked how this could be better and then changed the work. What was the old bar?",
+        "Role: senior on checkout service, cross-team scope",
+        "Situation: 350ms real latency vs 200ms synthetic target",
+        "Action: challenged platform team on metric choice, proposed real-user monitoring",
+        "Outcome: 180ms p99, two caching layers, three services adopted method",
+        "Quote: \"We switched to real-user monitoring and cut p99 to 180ms\"",
+        "Follow-up: What changed after you raised it? -> described metric shift and adoption"
+      ],
+      "raiseFeedback": "Raises the bar for Relentlessly push boundaries. The candidate identified that the old synthetic 200ms target did not reflect customer experience and pushed the platform team to adopt real-user monitoring. They then drove concrete changes that lowered p99 to 180ms and influenced three other services. This shows influence without authority and cross-team impact at the senior level. The story includes a clear before-and-after metric and reuse of the new standard. The strength is the willingness to question an accepted target and replace it with a more relevant one.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Latency on checkout was high so I optimized a few queries and got it down a bit. The team was happy with the improvement."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you question what the right target should be?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just tried to beat the previous numbers; no one redefined the goal."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you asked how this could be better and then changed the work. What was the old bar?",
+        "Role: senior, service-level work",
+        "Situation: high checkout latency",
+        "Action: optimized queries locally",
+        "Outcome: incremental improvement, no new target defined",
+        "Quote: \"We just tried to beat the previous numbers; no one redefined the goal\"",
+        "Follow-up: Did you question what the right target should be? -> stayed within existing goal"
+      ],
+      "lowerFeedback": "Lowers the bar for Relentlessly push boundaries. The candidate optimized queries for incremental gains but never questioned or proposed a new bar for latency. They accepted the prior numbers as the goal and did not engage other teams on whether the measurement approach itself needed change. No cross-team influence or redefinition of success occurred. The story demonstrates execution within existing constraints rather than pushing boundaries. The gap is the lack of any attempt to redefine what \"better\" meant beyond local tweaks."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our enterprise renewal rate had plateaued at 78% for two years. I asked the leadership team whether the real bar should be 90%+ and whether our product packaging was the constraint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched usage-based pricing and a customer success motion that lifted renewal to 91% within 18 months and became the model for two other business units."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you asked how this could be better and then changed the work. What was the old bar?",
+        "Role: exec, org-level renewal problem",
+        "Situation: 78% renewal plateau accepted for two years",
+        "Action: challenged leadership on whether 90%+ was the right target and on packaging",
+        "Outcome: usage-based pricing + CS motion, 91% renewal, adopted by two BUs",
+        "Quote: \"We launched usage-based pricing and a customer success motion that lifted renewal to 91%\"",
+        "Follow-up: What did you change at the org level? -> described new pricing model and reuse"
+      ],
+      "raiseFeedback": "Raises the bar for Relentlessly push boundaries. The candidate surfaced that a two-year 78% renewal plateau was the de-facto standard and asked whether 90%+ should be the explicit goal. They then drove packaging and go-to-market changes that reached 91% and were adopted by two other business units. This reflects strategic judgment and long-term org-level leverage rather than heroics on a single team. The story shows clear before-and-after metrics and scaling of the new standard. The strength is redefining the acceptable bar for the entire business.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Renewals were stuck so I asked the sales team to follow up more with at-risk accounts and we saw a small uptick."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you question whether the overall target or model needed to change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We focused on execution within the current packaging and pricing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you asked how this could be better and then changed the work. What was the old bar?",
+        "Role: exec, renewal focus",
+        "Situation: stuck renewal rate",
+        "Action: asked sales for more follow-up",
+        "Outcome: small uptick, stayed inside existing model",
+        "Quote: \"We focused on execution within the current packaging and pricing\"",
+        "Follow-up: Did you question whether the overall target or model needed to change? -> no, execution only"
+      ],
+      "lowerFeedback": "Lowers the bar for Relentlessly push boundaries. The candidate addressed renewal stagnation through additional sales follow-up but never challenged the underlying packaging, pricing, or the 78% target itself. They stayed within the existing business model rather than proposing a new bar. No evidence of org-level strategic change or scaling a new approach. The story shows operational focus instead of redefining what success should be. The gap is the absence of any attempt to question or shift the accepted organizational standard."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identified explicit old bar",
+      "junior": "Named 70% coverage as starting point",
+      "senior": "Named 350ms real latency vs 200ms target",
+      "exec": "Named 78% renewal plateau accepted for two years"
+    },
+    {
+      "signal": "Questioned the bar with others",
+      "junior": "Asked mentor for higher target",
+      "senior": "Challenged platform team on metric choice",
+      "exec": "Asked leadership whether 90%+ should be goal"
+    },
+    {
+      "signal": "Drove concrete change",
+      "junior": "Rewrote tests to 92% coverage",
+      "senior": "Added caching layers, reached 180ms",
+      "exec": "Launched usage-based pricing and CS motion"
+    },
+    {
+      "signal": "Impact beyond own work",
+      "junior": "Template reused by next two services",
+      "senior": "Three services adopted measurement approach",
+      "exec": "Became model for two other business units"
+    },
+    {
+      "signal": "Stayed within status quo (lower)",
+      "junior": "Matched existing pattern only",
+      "senior": "Beat previous numbers without new goal",
+      "exec": "Focused on execution inside current model"
+    }
+  ],
+  "kind": "factor"
+}

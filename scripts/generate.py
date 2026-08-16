@@ -197,8 +197,17 @@ def main():
 
     os.makedirs(OUT_DIR, exist_ok=True)
     bank = json.load(open(BANK))
+    company = (os.environ.get("BIQ_COMPANY") or "").strip().lower()
+    principles = []
+    if bank.get("companies"):
+        for c in bank["companies"]:
+            if company and c.get("id") != company:
+                continue
+            principles.extend(c.get("principles") or [])
+    else:
+        principles = bank.get("principles") or []
     jobs = []
-    for p in bank.get("principles") or []:
+    for p in principles:
         for q in p.get("questions") or []:
             jobs.append(
                 {
