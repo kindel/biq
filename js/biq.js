@@ -106,6 +106,52 @@
       .trim();
   }
 
+  // "i&s" and "d&c" normalise to "i and s" and "d and c", so an unfiltered
+  // "and" would drag in every principle whose name contains one.
+  var STOP = { and: true, the: true };
+
+  function words(s) {
+    return s.split(" ").filter(function (t) { return t.length > 2 && !STOP[t]; });
+  }
+
+  // True when a and b differ by at most one insert, delete, or substitution.
+  function oneEditApart(a, b) {
+    var la = a.length;
+    var lb = b.length;
+    if (Math.abs(la - lb) > 1) return false;
+    var i = 0;
+    var j = 0;
+    var edits = 0;
+    while (i < la && j < lb) {
+      if (a.charAt(i) === b.charAt(j)) {
+        i++;
+        j++;
+        continue;
+      }
+      if (++edits > 1) return false;
+      if (la > lb) i++;
+      else if (lb > la) j++;
+      else {
+        i++;
+        j++;
+      }
+    }
+    return edits + (la - i) + (lb - j) <= 1;
+  }
+
+  // Near miss: the same word in a different form (originality / original,
+  // mentoring / mentor) or one typo away. Compared word to word, so a long
+  // shared prefix cannot be borrowed from a neighbouring word.
+  function nearWord(a, b) {
+    if (a === b) return true;
+    var shared = 0;
+    var min = Math.min(a.length, b.length);
+    while (shared < min && a.charAt(shared) === b.charAt(shared)) shared++;
+    if (shared >= 5) return true;
+    if (shared >= 4 && shared === min) return true;
+    return min >= 6 && oneEditApart(a, b);
+  }
+
   function matches(principle, query) {
     if (!query) return false;
     var names = [principle.name]
@@ -115,14 +161,21 @@
     for (var i = 0; i < names.length; i++) {
       var n = names[i];
       if (!n || n.length <= 3) continue;
-      if (n.indexOf(query) !== -1) return true;
+      // A query too short to be a word is an abbreviation or a half-typed one,
+      // so anchor it. Otherwise "co" reaches into "redu[ce co]mplexity".
+      var at = n.indexOf(query);
+      if (at === 0 || (at > 0 && query.length >= 4)) return true;
       if (query.length >= 4 && query.indexOf(n) !== -1) return true;
     }
-    var tokens = query.split(" ").filter(function (t) { return t.length > 2; });
+    var tokens = words(query);
     if (!tokens.length) return false;
     return names.some(function (n) {
       if (!n || n.length <= 3) return false;
-      return tokens.every(function (t) { return n.indexOf(t) !== -1; });
+      var nameWords = words(n);
+      return tokens.every(function (t) {
+        if (n.indexOf(t) !== -1) return true;
+        return nameWords.some(function (w) { return nearWord(t, w); });
+      });
     });
   }
 

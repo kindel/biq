@@ -40,6 +40,11 @@ both are matched the same way:
 - `synonyms` — how everyone else says it (`move fast`, `strive for excellence`, `do more with less`), so
   someone who doesn't know the LP names can still find the questions.
 
+Search tolerates near misses, so entries only need one form of a word: a different ending
+(`originality` finds `original thinking`, `mentors` finds `mentoring`) or a single typo
+(`frugalty`, `integrety`) still matches. Queries shorter than four characters are treated as
+abbreviations and anchored to the start of a word, which is what keeps `co` and `et` meaningful.
+
 ## Regenerate examples
 
 Needs `XAI_API_KEY`. Resume-safe. Writes `data/examples/{slug}.json` for any question that does not already have a valid junior / senior / exec pack.
