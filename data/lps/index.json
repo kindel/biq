@@ -7,7 +7,7 @@
     "Under is not trying. Over is the principle eating the job. Just Right is the bar.",
     "Score the situation against a row, not against a vibe. Pick the row that matches what happened, then say under, just right, or over, and write the evidence.",
     "Cross-refs look like {lp:ownership}. Render them as links. Agents treat them as hard links to that principle file.",
-    "These files pair with data/questions.json. Same ids. Do not add competency-cut principles here."
+    "These files pair with data/questions.json. Same ids."
   ],
   "crossRef": {
     "token": "{lp:<id>}",

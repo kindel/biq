@@ -8,7 +8,7 @@ One file per principle. The /lps/ pages, the /biq/ site, and agents consume thes
 - `data/lps/index.json` catalog
 - `data/lps/{id}.json` one principle
 
-Ids match `data/questions.json` (classic 14 only; no competency-cut files).
+Ids match `data/questions.json` (classic 14 only).
 
 ## Cross-refs
 
