@@ -30,6 +30,7 @@ Never write the raw company name or product names. Principle names stay.
   "name": "Customer Obsession",
   "sort": 1,
   "aliases": ["customer", "co"],
+  "synonyms": ["voice of the customer", "user empathy"],
   "definition": "Official short definition, company-agnostic, Kindel voice if tightened.",
   "why": ["Short paragraph.", "Another paragraph."],
   "calibrationIntro": "How to use the rows below.",
@@ -65,7 +66,10 @@ Rules:
 
 - `id` kebab-case, matches filename without `.json`.
 - `sort` 1-14 in teaching order (Customer Obsession first, Deliver Results last).
-- `aliases` copied from questions.json for that id.
+- `aliases` copied from questions.json for that id. Amazon short forms, `bfa` and `high bar`.
+- `synonyms` copied from questions.json for that id. How everyone else says it, `move fast` and
+  `do more with less`, so a reader who does not know the LP names can still land on the right one.
+  Both lists must stay in step with questions.json.
 - `why` is 3-6 short paragraphs. Each array item is one paragraph.
 - `rows` 5-12 real situations. Drop header-only rows (Under/Over/Just right as values). Invent a short `situation` label when the source left it blank. Give each row a kebab `id`.
 - `examples` 2-4 teaching cases. Generalize retail/ops specifics. Drop named-exec anecdotes you cannot restate without the company.
