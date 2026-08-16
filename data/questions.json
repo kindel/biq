@@ -780,7 +780,8 @@
           "kind": "lp"
         }
       ],
-      "examples": true
+      "examples": true,
+      "item": "Leadership principle"
     },
     {
       "id": "arm",
@@ -1097,7 +1098,8 @@
           ]
         }
       ],
-      "examples": true
+      "examples": true,
+      "item": "10x factor"
     }
   ]
 }

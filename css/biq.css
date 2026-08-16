@@ -444,3 +444,9 @@ h1, h2, h3 {
   margin: 0;
   color: var(--biq-ink);
 }
+
+#bhiq-company {
+  display: block;
+  max-width: 22rem;
+  margin: 0 0 1rem;
+}

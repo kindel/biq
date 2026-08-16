@@ -116,8 +116,7 @@
   }
 
   function kindLabel() {
-    if (currentCompany && currentCompany.id === "arm") return "10x factor";
-    return "Leadership principle";
+    return (currentCompany && currentCompany.item) || "Principle";
   }
 
   function selectLabel() {
@@ -125,47 +124,47 @@
   }
 
   function emptyHint() {
-    if (currentCompany && currentCompany.id === "arm") {
-      return "Type a 10x factor, or pick one from the dropdown.";
-    }
-    return "Type a principle, or pick one from the dropdown.";
+    return "Type a name, or pick one from the dropdown.";
   }
 
   function missHint() {
-    if (currentCompany && currentCompany.id === "arm") {
-      return "No match for that. Try Own it, One Arm, or urgency.";
-    }
-    return "No match for that. Try an LP (BFA, DAC, Dive Deep).";
+    return "No match for that. Try a name or a short form.";
   }
 
   function placeholderFor() {
-    if (currentCompany && currentCompany.id === "arm") return "Own it, One Arm, urgency";
-    return "Customer Obsession, Earn Trust, BFA";
+    var list = principles();
+    var names = [];
+    for (var i = 0; i < list.length && names.length < 3; i++) names.push(list[i].name);
+    return names.join(", ") || "Name or short form";
   }
 
-  function syncCompanyRadios() {
-    var id = currentCompany ? currentCompany.id : "";
-    var inputs = document.querySelectorAll('input[name="bhiq-company"]');
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].checked = inputs[i].value === id;
-      var lab = inputs[i].parentElement;
-      if (lab && lab.tagName === "LABEL") {
-        if (inputs[i].checked) lab.classList.add("is-on");
-        else lab.classList.remove("is-on");
-      }
+  function fillCompanySelect() {
+    var sel = document.getElementById("bhiq-company");
+    if (!sel) return;
+    sel.innerHTML = "";
+    for (var i = 0; i < companies.length; i++) {
+      var o = document.createElement("option");
+      o.value = companies[i].id;
+      o.textContent = companies[i].name;
+      sel.appendChild(o);
     }
+  }
+
+  function syncCompanySelect() {
+    var sel = document.getElementById("bhiq-company");
+    if (sel && currentCompany) sel.value = currentCompany.id;
     if (input) input.setAttribute("placeholder", placeholderFor());
     var chipsEl = document.getElementById("bhiq-chips");
     if (chipsEl) chipsEl.setAttribute("aria-label", currentCompany && currentCompany.set ? currentCompany.set : "Principles");
     var inputLabel = document.getElementById("bhiq-input-label");
-    if (inputLabel) inputLabel.textContent = currentCompany && currentCompany.id === "arm" ? "Factor" : "Principle";
+    if (inputLabel) inputLabel.textContent = kindLabel();
     var levelBlock = document.getElementById("bhiq-level-block");
     if (levelBlock) levelBlock.hidden = !hasExamples();
   }
 
   function applyCompany(id, rerender) {
     setCompany(id);
-    syncCompanyRadios();
+    syncCompanySelect();
     if (!rerender) return;
     if (input) input.value = "";
     renderSelects(principles());
@@ -173,15 +172,14 @@
   }
 
   function bindCompany() {
-    syncCompanyRadios();
-    var inputs = document.querySelectorAll('input[name="bhiq-company"]');
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].addEventListener("change", function () {
-        if (!this.checked) return;
-        applyCompany(this.value, true);
-        track("biq_company", { biq_company: this.value, biq_page: "bank" });
-      });
-    }
+    fillCompanySelect();
+    syncCompanySelect();
+    var sel = document.getElementById("bhiq-company");
+    if (!sel) return;
+    sel.addEventListener("change", function () {
+      applyCompany(this.value, true);
+      track("biq_company", { biq_company: this.value, biq_page: "bank" });
+    });
   }
 
   function syncLevelRadios() {
