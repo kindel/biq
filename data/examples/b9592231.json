@@ -1,0 +1,208 @@
+{
+  "question": "Tell me about a time you chose work because of customer or product impact, not because it was the interesting technical problem.",
+  "competency": "Passion for the mission",
+  "principle": "Passion for the mission",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship I was assigned a data pipeline refactor that looked interesting, but I noticed the checkout flow had a 12% drop-off on mobile. I asked to switch to instrumenting the mobile checkout instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you switched?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team let me own the instrumentation. We found the address validation was failing on 8% of attempts. Fixing it lifted conversion 3.1% in two weeks. The refactor got done by someone else later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about giving up the pipeline work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was disappointed at first but the numbers made it clear this mattered more."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose work because of customer or product impact, not because it was the interesting technical problem.",
+        "Intern chose mobile checkout instrumentation over pipeline refactor",
+        "Found 8% address validation failures; +3.1% conversion",
+        "Quote: 'The numbers made it clear this mattered more'",
+        "Follow-up: How did you feel about giving up the pipeline work? - 'Disappointed at first but...'",
+        "Scope stayed within own ticket; clear learning from outcome"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate identified a customer-facing drop-off and voluntarily took the lower-visibility instrumentation work. They directly link their change to a 3.1% conversion lift. The story shows they prioritized measurable user impact over the more technically appealing pipeline task. They acknowledge initial disappointment, which demonstrates self-awareness. Biggest strength is the willingness to pivot based on data rather than personal interest.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked the pipeline refactor because it used newer Spark features and would look good on my resume. The checkout issue was mentioned but I figured someone else would handle it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the checkout problem get fixed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Eventually, a few months later. My pipeline work shipped and got positive feedback from the tech lead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose work because of customer or product impact, not because it was the interesting technical problem.",
+        "Candidate selected Spark refactor for resume value",
+        "Checkout issue left unaddressed for months",
+        "Quote: 'It would look good on my resume'",
+        "Follow-up: Did the checkout problem get fixed? - 'Eventually, a few months later'",
+        "No evidence of weighing customer impact"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate explicitly chose the work for resume optics rather than user impact. They left a known conversion problem untouched for months while focusing on the technically interesting task. No attempt to quantify or advocate for the customer outcome. The story shows the opposite behavior the question is probing. Biggest gap is absence of any customer-first reasoning."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Last year our team was staffed on a new recommendation engine. I pushed to first fix the search relevance scoring because search drove 60% of revenue and had a 22% zero-result rate."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the team aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the revenue data, showed the zero-result impact on conversion, and got the PM and two other teams to agree to a two-sprint search fix before the recs work. We dropped zero results to 9% and added $1.8M annualized revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I delayed my own promotion packet by one cycle because the recs project was what the org expected from me."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose work because of customer or product impact, not because it was the interesting technical problem.",
+        "Senior pushed search relevance fix over staffed recs engine project",
+        "60% revenue driver; zero-result rate 22% -> 9%; +$1.8M",
+        "Quote: 'I delayed my own promotion packet by one cycle'",
+        "Follow-up: How did you get the team aligned? - Pulled revenue data and aligned PM + two teams",
+        "Follow-up: What trade-off did you make? - Delayed promotion"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate used revenue data to redirect two teams away from a high-visibility recommendation project toward a search fix that delivered $1.8M. They influenced without authority and accepted a personal promotion delay. The outcome is tied to a clear business metric. Biggest strength is the combination of data-driven persuasion and willingness to deprioritize their own career optics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I stayed on the recommendation engine because it was the project the director had personally sponsored. Search relevance was important but it wasn't the assigned work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone address the 22% zero-result rate?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not while I was on the team. The recs project shipped and got good internal reviews."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose work because of customer or product impact, not because it was the interesting technical problem.",
+        "Stayed on director-sponsored recs project despite known search issue",
+        "Zero-result rate left at 22%",
+        "Quote: 'It wasn't the assigned work'",
+        "Follow-up: Did anyone address the 22% zero-result rate? - 'Not while I was on the team'",
+        "No cross-team influence attempted"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate deferred to the director's priority even after identifying a larger revenue impact in search. They made no attempt to influence scope or surface the data. The story shows compliance rather than mission-driven judgment. Biggest gap is lack of evidence that they can redirect resources toward customer impact when it conflicts with stated priorities."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I joined, the company was doubling down on an enterprise analytics suite. I redirected two quarters of platform investment to rebuild the SMB onboarding flow after seeing that SMB churn was 3x enterprise and accounted for 40% of total revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you face?"
+        },
+        {
+          "role": "candidate",
+          "text": "The analytics work was already in the board deck as the growth bet. I had to present a revised three-year P&L showing SMB retention would add more ARR than the analytics upsell path."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We cut SMB churn 38% in nine months. The analytics suite launch was delayed six months but overall ARR grew 27% instead of the projected 19%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose work because of customer or product impact, not because it was the interesting technical problem.",
+        "Exec redirected two quarters of platform work from enterprise analytics to SMB onboarding",
+        "SMB = 40% revenue but 3x churn; churn down 38%; ARR +27% vs 19% plan",
+        "Quote: 'I had to present a revised three-year P&L'",
+        "Follow-up: What resistance did you face? - Board-level commitment to analytics",
+        "Follow-up: What was the outcome? - Delayed analytics but beat ARR plan"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate overrode a board-backed enterprise analytics investment to address SMB churn that represented 40% of revenue. They built a multi-year financial model to win the argument and accepted a six-month delay on the original priority. The result was an 8-point beat on ARR growth. Biggest strength is the strategic trade-off made at the business level with clear financial accountability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We kept the enterprise analytics investment because it was the clearest path to higher ASP and the board had already approved the plan. SMB churn was tracked but not reprioritized."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on overall growth?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the analytics targets but total ARR came in at 19% instead of the 25% we had modeled earlier."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose work because of customer or product impact, not because it was the interesting technical problem.",
+        "Kept board-approved analytics investment despite SMB churn data",
+        "ARR missed by 6 points",
+        "Quote: 'It was the clearest path to higher ASP'",
+        "Follow-up: What was the impact on overall growth? - 'Hit analytics targets but total ARR came in at 19%'",
+        "No reallocation attempted"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate stayed aligned to the board-approved plan even after data showed SMB churn was limiting total ARR. They accepted a 6-point growth miss rather than making a difficult scope trade-off. The story demonstrates execution against stated priorities rather than re-evaluating priorities against mission impact. Biggest gap is absence of strategic re-prioritization at the P&L level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Single ticket or sprint",
+      "senior": "Cross-team two-sprint redirect",
+      "exec": "Two-quarter org investment and board-level trade-off"
+    },
+    {
+      "signal": "Evidence of impact measurement",
+      "junior": "Conversion % from own change",
+      "senior": "$1.8M annualized with team alignment",
+      "exec": "Revised three-year P&L and +8pp ARR beat"
+    },
+    {
+      "signal": "Personal cost accepted",
+      "junior": "Gave up interesting technical work",
+      "senior": "Delayed own promotion packet",
+      "exec": "Delayed board-backed initiative and accepted timeline criticism"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asked to switch own assignment",
+      "senior": "Data + PM alignment to change team scope",
+      "exec": "Multi-year financial model to override approved plan"
+    },
+    {
+      "signal": "Time horizon considered",
+      "junior": "Immediate ticket outcome",
+      "senior": "Two-sprint impact plus promotion cycle",
+      "exec": "Three-year P&L and nine-month churn result"
+    }
+  ],
+  "kind": "factor"
+}

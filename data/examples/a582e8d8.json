@@ -1,0 +1,178 @@
+{
+  "question": "Tell me about a time you brought a solution instead of a problem. What was the solution, and who had to move?",
+  "competency": "Own it (bringing solutions not problems)",
+  "principle": "Own it",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout page had a validation error that was causing 5% of mobile users to abandon. I reproduced it locally, wrote a fix in the form handler, tested it with three device sizes, and opened the PR with screenshots and a rollback plan. My teammate on the frontend had to review and merge it after their current task."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide this was your problem to solve?"
+        },
+        {
+          "role": "candidate",
+          "text": "It showed up in the error logs I was already monitoring for my feature. I figured fixing it was faster than filing a ticket and waiting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you brought a solution instead of a problem. What was the solution, and who had to move?",
+        "Junior dev noticed mobile checkout validation bug in logs",
+        "Reproduced, coded fix, tested across devices, PR with rollback plan",
+        "Quote: \"fixing it was faster than filing a ticket\"",
+        "Follow-up: How did you decide this was your problem? - \"It was in my monitoring\""
+      ],
+      "raiseFeedback": "Raises the bar for Own it at junior level. The candidate owned an issue outside their direct feature by reproducing the bug, shipping a tested fix, and providing a rollback plan. Quote: \"fixing it was faster than filing a ticket and waiting.\" This shows individual ownership and proactive behavior without waiting for permission. The scope stayed within their work but demonstrated they treat shared reliability as their responsibility. Biggest strength is the clear action-to-outcome loop with minimal escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The build was broken for two days and nobody was fixing it. I told my manager it was blocking me and asked who was going to fix the CI step."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at the failing step yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I saw the error but it looked like something the infra team owns. I didn't want to touch it without approval."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you brought a solution instead of a problem. What was the solution, and who had to move?",
+        "Candidate reported broken build to manager",
+        "Did not investigate the CI error",
+        "Quote: \"it looked like something the infra team owns\"",
+        "Follow-up: Did you look at the failing step? - Waited for approval"
+      ],
+      "lowerFeedback": "Lowers the bar for Own it at junior level. The candidate identified a blocking issue but immediately escalated without attempting any diagnosis or small fix. Quote: \"it looked like something the infra team owns.\" This shows a pattern of treating problems as someone else's job rather than taking initial ownership of their own environment. The outcome required manager intervention instead of local action. Biggest gap is lack of any attempt to move the problem forward themselves before raising it."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating work on a shared recommendation service. I mapped the overlap, proposed a single ownership model with a thin API contract, and got both leads to agree on a 6-week migration plan. The other team had to deprecate their version and adopt the shared one."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed this was worth the effort?"
+        },
+        {
+          "role": "candidate",
+          "text": "We cut duplicate compute spend by 18% and reduced on-call burden for both teams by roughly one incident per month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you brought a solution instead of a problem. What was the solution, and who had to move?",
+        "Senior identified duplicated recommendation service across teams",
+        "Proposed ownership model and API contract, drove 6-week migration",
+        "Quote: \"cut duplicate compute spend by 18%\"",
+        "Follow-up: What metrics showed value? - 18% spend reduction and lower on-call load"
+      ],
+      "raiseFeedback": "Raises the bar for Own it at senior level. The candidate spotted duplicated effort between teams, defined a concrete solution with clear ownership and a migration plan, then influenced both sides to adopt it. Quote: \"cut duplicate compute spend by 18%.\" This demonstrates cross-team impact and influence without authority while delivering measurable efficiency gains. The other team had to change their approach, showing the candidate drove real movement. Biggest strength is turning an observed problem into an agreed structural change with quantified results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The two recommendation services were overlapping and causing confusion. I raised it in the platform sync and said we should pick one owner."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you raised it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The teams discussed it for a few weeks but nothing changed. I moved on to my own roadmap items."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you brought a solution instead of a problem. What was the solution, and who had to move?",
+        "Senior flagged overlapping services in a meeting",
+        "Suggested picking an owner but provided no plan",
+        "Quote: \"the teams discussed it for a few weeks but nothing changed\"",
+        "Follow-up: What happened after? - Moved on to own roadmap"
+      ],
+      "lowerFeedback": "Lowers the bar for Own it at senior level. The candidate surfaced a cross-team inefficiency but offered only a high-level suggestion without a concrete proposal or follow-through. Quote: \"the teams discussed it for a few weeks but nothing changed.\" This shows identification of a problem without driving resolution or securing commitments. The lack of movement from either team indicates the candidate did not treat the duplication as their responsibility to resolve. Biggest gap is absence of any sustained effort to create alignment or measurable progress."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two main product lines were competing for the same infrastructure budget and headcount. I ran a portfolio review, recommended consolidating one line into the other with a phased sunset, and presented the P&L impact to the leadership team. The VP of the smaller line had to reallocate their entire team and budget to the surviving product."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the resistance?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the full cost model and customer overlap data upfront, then ran weekly check-ins with the affected VP to surface risks early so we could adjust the timeline without derailing the overall savings."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you brought a solution instead of a problem. What was the solution, and who had to move?",
+        "Exec identified competing product lines draining shared resources",
+        "Recommended consolidation with P&L model and phased sunset",
+        "Quote: \"VP of the smaller line had to reallocate their entire team\"",
+        "Follow-up: How did you handle resistance? - Shared data early and ran weekly alignment"
+      ],
+      "raiseFeedback": "Raises the bar for Own it at exec level. The candidate identified a strategic resource conflict at the portfolio level, built a data-driven consolidation proposal, and secured agreement that required another VP to fully move their team and budget. Quote: \"VP of the smaller line had to reallocate their entire team.\" This reflects high-ambiguity decision making with clear long-term trade-offs and sustained leadership through execution. The outcome delivered org-level efficiency rather than local fixes. Biggest strength is the willingness to make a hard structural call and own the resulting organizational movement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had two product lines pulling in opposite directions on infrastructure. I flagged the duplication in the quarterly review and asked the CFO to decide the priority."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your recommended path?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't push one. I wanted the finance team to weigh the options so it wouldn't look like I was picking sides."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you brought a solution instead of a problem. What was the solution, and who had to move?",
+        "Exec noted competing product lines in quarterly review",
+        "Escalated to CFO without a recommendation",
+        "Quote: \"I wanted the finance team to weigh the options\"",
+        "Follow-up: What was your recommended path? - Avoided picking sides"
+      ],
+      "lowerFeedback": "Lowers the bar for Own it at exec level. The candidate recognized a strategic conflict but deferred the decision entirely to finance without offering analysis or a point of view. Quote: \"I wanted the finance team to weigh the options so it wouldn't look like I was picking sides.\" This shows avoidance of accountability for a high-stakes trade-off that required executive judgment. No team movement occurred because no clear direction was provided. Biggest gap is treating an org-level problem as something to escalate rather than own and resolve."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership",
+      "junior": "Fixes issues in own monitoring or code",
+      "senior": "Resolves duplication across two teams with metrics",
+      "exec": "Drives portfolio-level consolidation affecting multiple VPs"
+    },
+    {
+      "signal": "Level of ambiguity handled",
+      "junior": "Tactical bug that appeared in logs",
+      "senior": "Team overlap requiring coordination and a plan",
+      "exec": "Strategic resource conflict with P&L trade-offs"
+    },
+    {
+      "signal": "Who had to move",
+      "junior": "One teammate for a code review",
+      "senior": "Peer team deprecates their service",
+      "exec": "Another VP reallocates entire team and budget"
+    },
+    {
+      "signal": "Evidence of follow-through",
+      "junior": "Shipped PR with rollback plan",
+      "senior": "Secured agreement and tracked 18% savings",
+      "exec": "Ran weekly check-ins through execution"
+    },
+    {
+      "signal": "Escalation pattern",
+      "junior": "Acted first, involved others only for merge",
+      "senior": "Influenced without authority, no manager escalation needed",
+      "exec": "Owned the decision and change management directly"
+    }
+  ],
+  "kind": "factor"
+}

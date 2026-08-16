@@ -1,0 +1,244 @@
+{
+  "question": "Tell me about a time you had to understand work outside your function to deliver. What did you miss at first?",
+  "competency": "Deliver as One Arm (cross-functional collaboration and delivery)",
+  "principle": "Deliver as One Arm",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on the backend team and we had a tight deadline for a new reporting feature. Marketing needed different data cuts that weren't in our original spec."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you miss initially?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed their request was just a UI tweak. After talking to their analyst I realized they needed a new aggregation job that touched compliance data. I had to learn their tagging process and the legal review steps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after you understood that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a two-day buffer for legal review and paired with their analyst on the query. We shipped on time and the report was used in the quarterly deck."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to understand work outside your function to deliver. What did you miss at first?",
+        "Role: backend engineer on reporting feature",
+        "Situation: marketing needed different data cuts",
+        "Actions: learned compliance tagging and legal review steps after initial assumption it was UI only",
+        "Outcome: added buffer, paired with analyst, shipped on time",
+        "Quote: \"I assumed their request was just a UI tweak\"",
+        "Follow-up: What changed after you understood that? - added two-day buffer and paired on query"
+      ],
+      "raiseFeedback": "The story shows the candidate initially scoped the request too narrowly to their own function. After the follow-up they described learning the compliance process and adjusting their plan. This meets the bar for junior because they owned the gap in their understanding and delivered without escalation. The concrete detail about the legal review buffer ties the learning directly to the outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to work with the frontend team on a dashboard. They kept asking for different endpoints so I just built what they asked."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you miss at first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't realize they needed the data in a specific format for their charts. Once they told me I updated the API."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect the timeline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We slipped by a week but it was fine because they were behind too."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to understand work outside your function to deliver. What did you miss at first?",
+        "Role: backend engineer",
+        "Situation: frontend needed different endpoints",
+        "Actions: built what was asked then updated after feedback",
+        "Outcome: one-week slip attributed to both teams",
+        "Quote: \"We slipped by a week but it was fine because they were behind too\"",
+        "Follow-up: How did that affect the timeline? - no proactive learning shown"
+      ],
+      "lowerFeedback": "The candidate treated the request as a simple handoff and only adjusted after the other team flagged the issue. The slip is explained away rather than owned. For a junior role this lowers the bar because there is no evidence of seeking to understand the other function's constraints before execution."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments service needed a new fraud rule. The fraud team had a model but it required features from the risk platform that lived in another org."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you miss at first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed we could just call their existing API. After two weeks the risk team explained their SLA and data freshness constraints."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set up a weekly sync, mapped the data latency requirements, and negotiated a lightweight batch export. We launched the rule two weeks later than planned but with no production incidents."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to understand work outside your function to deliver. What did you miss at first?",
+        "Role: senior engineer leading payments change",
+        "Situation: fraud rule needed risk platform features",
+        "Actions: moved from API assumption to weekly sync and negotiated batch export after learning SLA constraints",
+        "Outcome: launched two weeks late but clean",
+        "Quote: \"I assumed we could just call their existing API\"",
+        "Follow-up: What did you do next? - set up sync and mapped latency requirements"
+      ],
+      "raiseFeedback": "The candidate initially underestimated cross-org dependencies. After the follow-up they describe building a regular sync and adjusting scope based on the other team's constraints. This raises the bar for senior because the story shows influence without authority and a measurable trade-off on timeline to protect quality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I needed data from the risk team for a fraud feature. Their API wasn't documented well so I reverse-engineered it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you miss at first?"
+        },
+        {
+          "role": "candidate",
+          "text": "Their data was delayed by a day. I found out after we started testing."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve them?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just added a cache layer on our side to mask the delay."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to understand work outside your function to deliver. What did you miss at first?",
+        "Role: senior engineer",
+        "Situation: risk data needed for fraud feature",
+        "Actions: reverse-engineered API then added cache after discovering delay",
+        "Outcome: masked the issue locally",
+        "Quote: \"I just added a cache layer on our side to mask the delay\"",
+        "Follow-up: Did you involve them? - no collaboration shown"
+      ],
+      "lowerFeedback": "The candidate worked around the other team rather than understanding their constraints. The cache solution hid the problem instead of resolving it. For a senior this lowers the bar because there is no evidence of cross-team influence or sustainable delivery."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were rolling out a new subscription tier. Finance needed a different revenue recognition model that required changes to our billing ledger."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you miss at first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed the ledger change was a one-quarter project. Finance walked me through ASC 606 implications and the audit trail requirements that would affect two future quarters."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you adjust the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reprioritized the billing roadmap, added a finance liaison to the steering committee, and delayed the tier launch by one quarter to avoid restatement risk. The change reduced audit findings by 40 percent the following year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to understand work outside your function to deliver. What did you miss at first?",
+        "Role: VP leading subscription tier rollout",
+        "Situation: finance revenue recognition model needed ledger changes",
+        "Actions: moved from one-quarter assumption to adding finance liaison and delaying launch after learning ASC 606 and audit requirements",
+        "Outcome: launch delayed one quarter, 40 percent fewer audit findings next year",
+        "Quote: \"I assumed the ledger change was a one-quarter project\"",
+        "Follow-up: How did you adjust the plan? - reprioritized roadmap and added liaison"
+      ],
+      "raiseFeedback": "The candidate initially scoped the work inside their own function's timeline. After the follow-up they describe incorporating finance constraints at the steering level and making a deliberate trade-off on launch timing. This raises the bar for exec because the decision shows long-term risk management and organizational leverage rather than local heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Finance asked for changes to the billing system for the new tier. We added their requirements to the backlog."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you miss at first?"
+        },
+        {
+          "role": "candidate",
+          "text": "Their audit requirements meant we had to keep two sets of books for a while."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched on time and dealt with the audit issues in the next cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to understand work outside your function to deliver. What did you miss at first?",
+        "Role: VP",
+        "Situation: finance changes for new tier",
+        "Actions: added requirements to backlog then handled audit issues post-launch",
+        "Outcome: on-time launch with deferred audit work",
+        "Quote: \"We launched on time and dealt with the audit issues in the next cycle\"",
+        "Follow-up: What was the impact? - no strategic adjustment shown"
+      ],
+      "lowerFeedback": "The candidate treated the finance request as an add-on rather than a strategic constraint. The decision to launch on time and fix audit issues later shows short-term focus. For an exec this lowers the bar because there is no evidence of weighing long-term business risk or adjusting plans across functions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initial assumption about scope",
+      "junior": "Assumed request was UI only",
+      "senior": "Assumed existing API would work",
+      "exec": "Assumed one-quarter project"
+    },
+    {
+      "signal": "Learning approach",
+      "junior": "Talked to analyst after initial miss",
+      "senior": "Set up weekly sync after two weeks",
+      "exec": "Added liaison to steering committee"
+    },
+    {
+      "signal": "Trade-off made",
+      "junior": "Added two-day buffer",
+      "senior": "Accepted two-week delay",
+      "exec": "Delayed launch one quarter to avoid restatement"
+    },
+    {
+      "signal": "Cross-team mechanism",
+      "junior": "Paired with analyst",
+      "senior": "Negotiated batch export",
+      "exec": "Reprioritized billing roadmap"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Shipped on time",
+      "senior": "Clean production launch",
+      "exec": "40 percent fewer audit findings next year"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Local adjustment",
+      "senior": "Regular sync with another team",
+      "exec": "Changed org-level roadmap and governance"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you killed a process or a meeting because it did not matter. How did you know?",
+  "competency": "Root out inefficiencies (judgment, ownership)",
+  "principle": "Root out inefficiencies",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a team that had a weekly 30-minute sync where we each gave status updates. After two weeks I noticed the same updates were already in our shared doc, so I asked my manager if I could stop attending and just update the doc instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "She agreed after I showed her the doc. We dropped the meeting and saved everyone 30 minutes. I checked in after a month to confirm no one missed the verbal updates."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you killed a process or meeting because it did not matter. How did you know?",
+        "Candidate noticed weekly status sync duplicated existing doc",
+        "Asked manager, showed evidence, proposed change",
+        "Outcome: meeting removed, followed up after a month",
+        "Quote: 'I checked in after a month to confirm no one missed the verbal updates'",
+        "Follow-up: How did you decide it was safe to stop? - 'I looked at the doc history and asked two teammates if they relied on the meeting'"
+      ],
+      "raiseFeedback": "The candidate identified a duplicated weekly sync by comparing it to an existing shared document. They gathered simple evidence and checked with their manager before stopping the meeting. After removal they followed up a month later to confirm the change had no negative impact. This shows basic ownership of their own time and willingness to surface an inefficiency at the individual level. The action stayed within their direct control and did not require cross-team coordination. The story is small but appropriate for a junior scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a lot of meetings but I never really killed any. I just stopped going to one that felt useless after a while."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone notice or say anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I just put it on my calendar as optional and eventually people stopped inviting me."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you killed a process or meeting because it did not matter. How did you know?",
+        "Candidate quietly stopped attending a meeting without discussion",
+        "No evidence or conversation with owner",
+        "Outcome: eventually dropped from invite list",
+        "Quote: 'I just put it on my calendar as optional'",
+        "Follow-up: How did you know it was safe? - No clear answer beyond 'it felt useless'"
+      ],
+      "lowerFeedback": "The candidate disengaged from a meeting without speaking to the owner or confirming the impact. They provided no data or feedback loop to validate the decision. The action was passive and left the process unchanged for the rest of the team. This shows limited ownership and no attempt to improve the system. At junior level we still expect explicit communication and a small follow-up check."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams were running a joint monthly planning meeting that had grown to 12 people. I pulled the last three agendas and saw 70% of items were already covered in our weekly stand-ups and quarterly OKR reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the analysis with both leads, proposed we cancel the monthly meeting, and offered to route any remaining items into the existing forums. Both teams agreed; we tracked attendance and decision velocity for the next quarter and saw no drop."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you killed a process or meeting because it did not matter. How did you know?",
+        "Analyzed three months of agendas, found 70% overlap with existing rituals",
+        "Shared data with both team leads and proposed cancellation",
+        "Routed remaining items into stand-ups and OKR reviews",
+        "Quote: 'we tracked attendance and decision velocity for the next quarter and saw no drop'",
+        "Follow-up: How did you get buy-in? - 'I showed the overlap numbers and asked each lead what they would lose'"
+      ],
+      "raiseFeedback": "The candidate used agenda analysis to quantify overlap before proposing the change. They influenced two teams without authority by sharing clear data and offering a migration path. Post-cancellation they measured attendance and decision velocity to confirm no regression. The scope crossed team boundaries and produced a sustained reduction in meeting load. This matches senior expectations for measurable cross-team impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my team we should stop the monthly planning meeting because it felt redundant. A couple people agreed so we just stopped scheduling it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the other team know?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in passing. They kept sending invites for a while but eventually it faded."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you killed a process or meeting because it did not matter. How did you know?",
+        "Decision based on feeling of redundancy, limited data shared",
+        "Only informed own team; other team continued inviting",
+        "Outcome: process faded rather than being deliberately retired",
+        "Quote: 'I mentioned it in passing'",
+        "Follow-up: What metrics did you track? - None reported"
+      ],
+      "lowerFeedback": "The candidate acted on a feeling rather than data and did not secure agreement from the partner team. The meeting was not formally retired; it simply faded. No follow-up measurement was performed to confirm the change was safe. At senior level we expect explicit influence across teams and a lightweight validation step."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I joined, the company ran a quarterly all-hands that consumed 8 hours of prep across 20 leaders and had declining attendance. I compared prep hours to survey scores on usefulness and found the meeting ranked last among our five recurring forums."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to replace it with?"
+        },
+        {
+          "role": "candidate",
+          "text": "I canceled the all-hands, redirected the saved hours into two monthly deep-dive sessions run by the teams themselves, and set a six-month review with the leadership team. After six months, employee NPS on information flow rose 12 points and leader prep time dropped 60%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you killed a process or meeting because it did not matter. How did you know?",
+        "Compared prep hours and survey usefulness across all company forums",
+        "Canceled quarterly all-hands; redirected time to team-led deep dives",
+        "Six-month review showed +12 NPS and 60% prep time reduction",
+        "Quote: 'employee NPS on information flow rose 12 points'",
+        "Follow-up: What trade-off did you accept? - 'We lost one broad broadcast but gained depth; we accepted that risk and measured it'"
+      ],
+      "raiseFeedback": "The candidate used company-wide data on prep cost versus usefulness to justify canceling a large recurring meeting. They made an explicit trade-off by replacing it with smaller, team-owned sessions and set a clear review point. The outcome included both time savings and an employee NPS lift. This demonstrates org-level leverage and comfort with measured ambiguity. The decision affected hundreds of people and freed leadership capacity for higher-value work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I stopped the big quarterly all-hands because it was expensive and people were tuning out. We just moved updates to email instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure whether email worked better?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't run a formal review. A few leaders said it felt lighter so we kept it that way."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you killed a process or meeting because it did not matter. How did you know?",
+        "Decision based on cost and anecdotal feedback",
+        "Replaced with email without defined success criteria",
+        "No review or measurement after the change",
+        "Quote: 'A few leaders said it felt lighter'",
+        "Follow-up: What was the org impact? - No data collected"
+      ],
+      "lowerFeedback": "The candidate removed a high-cost meeting but replaced it with an unmeasured alternative. No success metrics or review cadence were established. The decision lacked the strategic framing or trade-off analysis expected at exec level. Without data, it is unclear whether information flow improved or degraded across the organization."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Data used to decide",
+      "junior": "Simple comparison to existing doc",
+      "senior": "Agenda overlap analysis across teams",
+      "exec": "Prep cost vs usefulness survey across all forums"
+    },
+    {
+      "signal": "Scope of change",
+      "junior": "Own calendar / single meeting",
+      "senior": "Two-team recurring ritual",
+      "exec": "Company-wide quarterly all-hands"
+    },
+    {
+      "signal": "Follow-up measurement",
+      "junior": "One-month check with teammates",
+      "senior": "Quarterly attendance and decision velocity",
+      "exec": "Six-month NPS and prep-time review"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asked manager with evidence",
+      "senior": "Shared data with peer leads, offered migration path",
+      "exec": "Set explicit trade-off and review with leadership team"
+    },
+    {
+      "signal": "Risk tolerance",
+      "junior": "Low - small local change",
+      "senior": "Medium - cross-team coordination",
+      "exec": "High - accepted possible drop in broadcast reach"
+    }
+  ],
+  "kind": "factor"
+}

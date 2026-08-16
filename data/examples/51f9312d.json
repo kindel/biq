@@ -1,0 +1,178 @@
+{
+  "question": "Tell me about a time a miss was yours. How did you tell the room, and what did you own next?",
+  "competency": "Own it (accountability, transparency, and recovery ownership)",
+  "principle": "Own it",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I missed a code review deadline on my first feature because I underestimated test coverage. I told my manager in our next 1:1, said the miss was mine, and committed to finishing the tests that weekend."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you told them?"
+        },
+        {
+          "role": "candidate",
+          "text": "They asked if I needed help. I said no but asked for a quick check-in the next day. I shipped the next Monday and added a note in the PR about the delay cause so the team could see it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a miss was yours. How did you tell the room, and what did you own next?",
+        "Individual task miss on feature tests",
+        "Told manager directly in 1:1, named it as my underestimate",
+        "Follow-up: Asked for check-in instead of help; added delay note in PR",
+        "Outcome: shipped Monday, no further impact"
+      ],
+      "raiseFeedback": "The candidate described a contained individual miss on test coverage for their first feature. They stated the delay was their underestimate and told the manager in the next 1:1. They then owned the fix by working the weekend and added a visible note in the PR so others could learn from the cause. This shows basic ownership and transparency at the junior level. The follow-up probe confirmed they did not deflect or wait for escalation. Biggest strength is prompt, direct communication without waiting to be asked.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The tests took longer than expected because the requirements changed mid-sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who owned the miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "I think the PM should have frozen the spec earlier. I still got it done by the end of the next sprint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Candidate pointed to changing requirements first",
+        "Did not name their own role in the delay",
+        "Follow-up: Blamed PM for not freezing spec; claimed it was done next sprint",
+        "No mention of proactive communication to the room"
+      ],
+      "lowerFeedback": "The candidate immediately attributed the delay to changing requirements and the PM not freezing the spec. They never stated the miss was theirs or described telling anyone in real time. The recovery was simply finishing one sprint late with no visible ownership actions. This lowers the bar on Own it because the story shows deflection rather than accountability. The single biggest gap is absence of any proactive communication or personal recovery steps."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team API change I led broke two downstream services. I called a 30-minute sync with the affected teams the same afternoon, said the change was mine, and walked through the breakage."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you own next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I owned the rollback decision and the follow-up fix. I also created a shared runbook so the other teams could validate their services before future changes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Cross-team API change broke two services",
+        "Called same-day sync, named it as their change",
+        "Follow-up: Owned rollback and created shared runbook for validation",
+        "Outcome: services restored, other teams had new process"
+      ],
+      "raiseFeedback": "The candidate owned a cross-team breakage they introduced and immediately convened the affected teams. They explicitly told the room the change was theirs and then owned both the rollback and a permanent process fix via a shared runbook. This demonstrates the expected senior scope of influence without authority and raising the bar for others. The story includes concrete next actions that reduced future risk. Biggest strength is turning a personal miss into a durable team safeguard.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had an API change that caused some issues for other teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in the weekly sync and offered to help if they hit problems. The issues were fixed in the next release."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Vague on who introduced the change",
+        "Mentioned in weekly sync only after issues appeared",
+        "Follow-up: Offered help but did not own rollback or process fix",
+        "Outcome: fixed in next release, no visible ownership actions"
+      ],
+      "lowerFeedback": "The candidate described an API change that caused issues but never stated it was their miss or that they called the issue out promptly. Communication happened only in the regular weekly sync after problems surfaced. They offered help but did not own recovery steps or create lasting fixes. This lowers the bar because senior Own it requires clear ownership language and proactive cross-team recovery. The gap is treating the miss as a shared problem rather than a personal one to fix."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We missed our annual revenue target by 12 percent because our pricing model did not account for a competitor move. I told the leadership team and board in the quarterly review that the model decision was mine and laid out the three options we were evaluating."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you own next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I owned the decision to pause two new market launches and reallocate the team to a pricing experiment. I also updated the board on the revised forecast and the new review cadence."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Missed annual revenue target due to pricing model",
+        "Told leadership and board directly, named it as their model decision",
+        "Follow-up: Owned pausing launches, reallocating team, and new board cadence",
+        "Outcome: revised forecast and experiment in place"
+      ],
+      "raiseFeedback": "The candidate owned a company-level revenue miss tied to a pricing model they approved and communicated it directly to both the leadership team and the board. They then owned concrete strategic trade-offs including pausing launches and changing the forecast process. This matches exec expectations for handling high-ambiguity business impact with transparent judgment and long-term process changes. The story shows leverage through reallocation rather than heroics. Biggest strength is treating the miss as a signal to adjust org-level priorities.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team missed the revenue number because the market shifted faster than we expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you communicate to leadership?"
+        },
+        {
+          "role": "candidate",
+          "text": "We presented the miss in the QBR and said we would adjust the plan going forward. The next quarter looked better."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Attributed miss to market shift, not internal decision",
+        "Presented in QBR without naming ownership",
+        "Follow-up: No specific actions owned; relied on next-quarter improvement",
+        "No evidence of strategic trade-offs or process changes"
+      ],
+      "lowerFeedback": "The candidate attributed the revenue miss to an external market shift and did not claim ownership of the pricing model or any internal decision. Communication occurred only in the scheduled QBR with no proactive escalation. Recovery was described as adjusting the plan with no visible trade-offs or new mechanisms. This lowers the bar at the exec level because Own it requires naming personal accountability for business outcomes and driving org-level recovery. The core gap is lack of strategic ownership language or demonstrated leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Naming the miss as theirs",
+      "junior": "States it was their underestimate",
+      "senior": "Names the API change as theirs in the room",
+      "exec": "Names the pricing model decision to board"
+    },
+    {
+      "signal": "Speed of communication",
+      "junior": "Tells manager in next 1:1",
+      "senior": "Calls same-day cross-team sync",
+      "exec": "Tells leadership and board in quarterly review"
+    },
+    {
+      "signal": "Scope of recovery",
+      "junior": "Finishes the tests themselves",
+      "senior": "Rollback plus shared runbook for other teams",
+      "exec": "Pauses launches and changes forecast process"
+    },
+    {
+      "signal": "Raising others",
+      "junior": "Adds note in PR for visibility",
+      "senior": "Creates runbook others can use",
+      "exec": "Sets new board review cadence"
+    },
+    {
+      "signal": "Deflection risk",
+      "junior": "Blames changing requirements or PM",
+      "senior": "Says issues were fixed next release with no ownership",
+      "exec": "Attributes miss to market shift only"
+    }
+  ],
+  "kind": "factor"
+}

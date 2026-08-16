@@ -1,0 +1,202 @@
+{
+  "question": "Tell me about a time independent thinking was unwelcome. What did you do anyway?",
+  "competency": "Challenge skillfully (influence without authority)",
+  "principle": "Challenge skillfully",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the team lead wanted to hardcode a config value because it was faster to ship. I thought it would break future deploys so I wrote a short doc showing the two-line change and what it would cost us in six months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when you shared it?"
+        },
+        {
+          "role": "candidate",
+          "text": "He still said no, so I asked if I could add it as a comment in the code for the next person. He agreed. Later the same config caused an incident and the comment helped us fix it in ten minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about the initial pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was uncomfortable but I realized I needed to show the concrete risk instead of just saying it was bad practice."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time independent thinking was unwelcome. What did you do anyway?",
+        "Role: new grad on first project, lead wanted to hardcode config",
+        "Action: wrote one-page doc with future cost, then asked for a comment when doc was rejected",
+        "Outcome: comment saved 10 min on later incident",
+        "Quote: \"I realized I needed to show the concrete risk instead of just saying it was bad practice\"",
+        "Follow-up: How did you feel about the initial pushback? \u2192 focused on showing data next time"
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at junior level. Candidate described a small-scope situation where the lead rejected their input yet still found a low-friction way to protect the code. The concrete quote about learning to show risk rather than opinion shows coachability. The outcome (comment used in incident) is local but measurable. Biggest strength is that they adapted their approach after the first no instead of escalating or dropping it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me to just copy the old design even though I knew it had a bug. I mentioned it once in standup and he said we don't have time so I dropped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just did what he asked. I figured he had more context."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time independent thinking was unwelcome. What did you do anyway?",
+        "Role: junior dev, manager rejected fix for known bug",
+        "Action: mentioned once in standup then stopped",
+        "Outcome: followed the instruction without further attempt",
+        "Quote: \"I figured he had more context\"",
+        "Follow-up: Did you do anything after that? \u2192 no further action"
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at junior level. The candidate stopped after one mention and explicitly deferred to authority without trying any other approach. The story shows no ownership of the known bug and no attempt to document the risk even for their own learning. Biggest gap is absence of any follow-up action once resistance appeared."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were about to duplicate a payments service because leadership wanted both to hit their quarterly OKRs. I pulled the data on overlap and shared a one-pager with both leads showing 40% shared code paths."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the leads respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead still pushed to build separately. I asked if we could run a two-week spike together instead of committing to full builds. We did the spike and ended up sharing the service."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the maintenance cost would hit both teams in the next year and that the spike let us keep both OKRs while reducing long-term load."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time independent thinking was unwelcome. What did you do anyway?",
+        "Situation: two teams duplicating payments work for OKRs",
+        "Action: data one-pager then proposed joint spike after initial rejection",
+        "Outcome: shared service instead of duplicate",
+        "Quote: \"I showed the maintenance cost would hit both teams in the next year\"",
+        "Follow-up: What trade-off did you surface? \u2192 maintenance cost and OKR compatibility"
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at senior level. Candidate used data and a low-cost experiment to change direction across two teams without authority. The spike proposal after the first rejection shows influence without forcing a binary fight. Concrete metric (40% shared paths) and the maintenance-cost framing demonstrate strategic judgment. Biggest strength is turning resistance into a joint experiment that preserved both teams' goals.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership wanted to split a shared library into two copies so each team could move faster. I sent an email with my concerns and never heard back so I moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up with anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in one 1:1 with my manager but he said the decision was already made."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time independent thinking was unwelcome. What did you do anyway?",
+        "Situation: leadership splitting shared library",
+        "Action: sent one email then mentioned in 1:1",
+        "Outcome: accepted the decision after no reply",
+        "Quote: \"I mentioned it in one 1:1 with my manager but he said the decision was already made\"",
+        "Follow-up: Did you follow up with anyone? \u2192 only the single 1:1"
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at senior level. The candidate relied on a single email and one manager conversation without attempting cross-team influence or proposing an alternative path. No metrics or trade-offs were surfaced to the actual decision makers. Biggest gap is lack of persistence or creative workaround once the first channel was closed."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted to acquire a company whose product overlapped 70% with our roadmap. I built a short model showing the integration cost would erase the revenue synergy in year two."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you surface this given the momentum?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the CEO for a private 30-minute walk-through before the next board meeting and framed it as a diligence gap rather than opposition. We ended up renegotiating the deal terms instead of walking away."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board now requires a 2-page integration-risk memo on any acquisition above $50M."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time independent thinking was unwelcome. What did you do anyway?",
+        "Situation: board pushing acquisition with heavy overlap",
+        "Action: private model shared with CEO framed as diligence gap",
+        "Outcome: renegotiated terms and new board process for future deals",
+        "Quote: \"I asked the CEO for a private 30-minute walk-through before the next board meeting\"",
+        "Follow-up: What was the longer-term effect? \u2192 new required memo process"
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at exec level. Candidate changed a board-level acquisition path by using a private channel and neutral framing instead of public opposition. The creation of an ongoing process (integration-risk memo) shows organizational leverage beyond the single decision. The story balances short-term deal protection with long-term governance improvement. Biggest strength is strategic judgment in choosing the right audience and framing to make independent analysis land.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The CEO announced a re-org that removed two layers of review I thought were necessary for risk. I raised it in the exec meeting and was told the decision was final so I focused on executing the new structure."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any other steps taken?"
+        },
+        {
+          "role": "candidate",
+          "text": "I documented my concerns in an email to the CEO after the meeting but did not pursue further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time independent thinking was unwelcome. What did you do anyway?",
+        "Situation: CEO re-org removing risk review layers",
+        "Action: raised once in exec meeting then sent one follow-up email",
+        "Outcome: accepted decision and moved to execution",
+        "Quote: \"I documented my concerns in an email to the CEO after the meeting but did not pursue further\"",
+        "Follow-up: Any other steps taken? \u2192 no further action"
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at exec level. The candidate treated a single meeting plus one email as sufficient even though the change affected org-wide risk posture. No alternative structures or phased rollout were proposed. Biggest gap is absence of strategic persistence or escalation paths once initial resistance was encountered."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Framing of resistance",
+      "junior": "Shows data in a follow-up format after first no",
+      "senior": "Proposes low-cost experiment across teams",
+      "exec": "Uses private channel and diligence framing with CEO"
+    },
+    {
+      "signal": "Persistence after pushback",
+      "junior": "Adds comment when full change rejected",
+      "senior": "Runs joint spike instead of accepting duplicate build",
+      "exec": "Creates permanent board process after single deal"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Protects own code path",
+      "senior": "Prevents duplication across two teams",
+      "exec": "Changes acquisition governance for entire company"
+    },
+    {
+      "signal": "Trade-off language",
+      "junior": "Mentions future incident risk",
+      "senior": "Shows maintenance cost vs OKR speed",
+      "exec": "Shows integration cost erasing year-two synergy"
+    }
+  ],
+  "kind": "factor"
+}

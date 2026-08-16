@@ -1,0 +1,178 @@
+{
+  "question": "Tell me about a time you listened, then drove a decision quickly. Who disagreed, and how did you close it?",
+  "competency": "Challenge skillfully",
+  "principle": "Challenge skillfully",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager wanted to push a new logging format to prod without a rollback plan. I asked clarifying questions on the risk, then proposed a two-hour phased rollout with a quick revert script. One teammate on the on-call rotation disagreed because it added prep work for their shift."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the two of us into a 10-minute chat, showed the revert script I had already written, and asked what would make them comfortable. They agreed once they saw the exact commands. We shipped in the window and it stuck."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you listened, then drove a decision quickly. Who disagreed, and how did you close it?",
+        "Role: junior engineer on logging change",
+        "Listened to manager request then asked risk questions before proposing phased rollout + revert",
+        "Disagreement: on-call teammate worried about extra prep",
+        "Action: 10-min 1:1, shared concrete revert script, asked what would make them comfortable",
+        "Outcome: shipped in window, revert not needed",
+        "Follow-up: What signals told you the disagreement was resolved? Candidate: they verbally confirmed the commands and stopped raising blockers in the channel."
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at junior level. The candidate described listening to the manager's intent, then quickly surfacing a concrete rollback option that addressed the on-call teammate's concern. Quote: 'I pulled the two of us into a 10-minute chat, showed the revert script.' This shows ownership of their own work and basic influence without authority. The story stays local to one change and one peer, which matches expectations. Biggest gap is lack of any measurable outcome or follow-up learning applied to later work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager wanted to change the logging format. I said we should do it in stages but they wanted it faster. I just did what they asked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who disagreed and how did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The on-call person said it was risky. I told them the manager had already decided so there was nothing else to do."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Candidate restated the request without adding questions or options",
+        "Disagreement noted but candidate deferred entirely to manager",
+        "No concrete action taken to resolve the peer concern",
+        "Follow-up: Did you offer any alternative? Candidate: No, I assumed the manager had already made the call."
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at junior level. The candidate did not demonstrate listening followed by driving a decision; they simply followed the initial direction. Quote: 'I told them the manager had already decided so there was nothing else to do.' This shows passivity rather than ownership of their own scope. No attempt to close the disagreement with data or a small proposal. The story provides no evidence of coachability or learning from the moment."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams disagreed on whether to adopt a shared retry library or keep custom logic. I spent a day with each team hearing their edge cases, then ran a 30-minute decision meeting with a one-page comparison. The payments team still wanted their custom version."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you close it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the payments lead what metric would change their mind. They said p99 latency under load. We agreed to run a one-week A/B test on 5% traffic. Results showed the shared library was 12 ms faster, so they switched."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Senior scope: cross-team retry decision",
+        "Listened to both teams' edge cases before framing options",
+        "Disagreement: payments team wanted to keep custom logic",
+        "Action: one-page comparison + metric-based A/B test",
+        "Outcome: 12 ms improvement, payments adopted shared library",
+        "Follow-up: What happened after the test? Candidate: documented the result and updated the shared library onboarding guide for future teams."
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at senior level. The candidate listened across teams, then used a data-driven close rather than authority. Quote: 'I asked the payments lead what metric would change their mind.' This shows influence without authority and cross-team impact. The A/B test created a clear, low-risk path to resolution. Biggest strength is the follow-through of updating documentation so the decision scaled beyond the original disagreement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams disagreed on a retry library. I scheduled a meeting, presented my recommendation, and the payments team still pushed back so we kept both versions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you try to close the disagreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I explained why the shared one was better but they had production concerns I couldn't address in the meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Presented recommendation without first synthesizing both teams' input",
+        "Disagreement left unresolved; both versions kept",
+        "No follow-up experiment or metric to force a decision",
+        "Follow-up: Did you follow up after the meeting? Candidate: No, the teams moved on to other priorities."
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at senior level. The candidate did not drive a decision; they presented an opinion and accepted stalemate. Quote: 'we kept both versions.' This shows weak cross-team influence and no attempt to find a measurable close. The story lacks any evidence of raising the bar for the broader organization or learning from the disagreement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two largest product lines were building duplicate experimentation platforms. After listening to both VPs for two weeks on their constraints, I proposed we consolidate under one platform with a six-month migration plan. The growth VP disagreed because their experiments would pause."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you close it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked what revenue impact would make the pause acceptable. We modeled a 4% lift from faster iteration on the unified platform versus a 2-week experiment freeze. The growth VP agreed to the freeze once we ring-fenced two high-priority experiments. The consolidation finished in five months and reduced infra spend 18%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Exec scope: duplicate experimentation platforms across product lines",
+        "Two-week listening tour with both VPs before proposing consolidation",
+        "Disagreement: growth VP concerned about experiment pause",
+        "Action: modeled revenue trade-off and ring-fenced two experiments",
+        "Outcome: 18% infra reduction, five-month delivery",
+        "Follow-up: What was the long-term effect on the growth team? Candidate: they now run 30% more experiments per quarter on the shared platform."
+      ],
+      "raiseFeedback": "Raises the bar for Challenge skillfully at exec level. The candidate listened at the VP level, then framed the decision around revenue trade-offs rather than technology preference. Quote: 'We modeled a 4% lift from faster iteration on the unified platform versus a 2-week experiment freeze.' This demonstrates strategic judgment and long-term leverage across organizations. The ring-fence showed respect for the disagreeing team's priorities while still driving the outcome. Biggest strength is the measurable business impact and sustained improvement in experiment velocity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product lines were duplicating experimentation work. I told both VPs we needed one platform. The growth VP pushed back on timeline so we delayed the decision six months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the disagreement?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted the delay because their concerns were valid and we had other priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Stated the need for consolidation without first exploring constraints",
+        "Disagreement led to six-month delay with no alternative path",
+        "No attempt to quantify trade-offs or find a narrow agreement",
+        "Follow-up: Did you revisit the decision later? Candidate: It stayed on the backlog."
+      ],
+      "lowerFeedback": "Lowers the bar for Challenge skillfully at exec level. The candidate did not drive a decision under ambiguity; they deferred when faced with pushback. Quote: 'I accepted the delay because their concerns were valid.' This shows absence of strategic trade-off framing or long-term leverage. The story provides no evidence of org-level impact or raising the standard for how disagreements are resolved at the VP level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Listened before proposing",
+      "junior": "Asked clarifying questions on risk before suggesting phased rollout",
+      "senior": "Spent a day with each team synthesizing edge cases before framing options",
+      "exec": "Two-week listening tour with VPs to surface constraints before consolidation proposal"
+    },
+    {
+      "signal": "Speed to decision",
+      "junior": "Moved from concern to 10-minute 1:1 close in same day",
+      "senior": "One-page comparison plus agreed A/B test closed disagreement in one week",
+      "exec": "Modeled revenue trade-off and ring-fence in single meeting after listening period"
+    },
+    {
+      "signal": "Handling disagreement",
+      "junior": "Shared concrete revert script and asked peer what would make them comfortable",
+      "senior": "Used metric the disagreeing team defined to run a test",
+      "exec": "Ring-fenced two high-priority experiments to address growth VP concern while still driving consolidation"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Local change shipped; no further follow-up mentioned",
+      "senior": "Updated onboarding guide so decision scaled to future teams",
+      "exec": "18% infra reduction and 30% higher experiment velocity sustained after migration"
+    }
+  ],
+  "kind": "factor"
+}

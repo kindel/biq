@@ -1,0 +1,196 @@
+{
+  "question": "Tell me about a time you chose winning over a local definition of done. Who disagreed?",
+  "competency": "Relentlessly push boundaries",
+  "principle": "Relentlessly push boundaries",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was asked to finish the API endpoint and mark the ticket done once unit tests passed. I kept going and added integration tests plus a small perf fix because the endpoint was timing out in staging. My teammate on the same pod said the ticket was already closed and we should move on."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and how did you handle the pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "The endpoint stayed under 200ms in prod and the PM noticed the improvement. I told the teammate I would own any bugs from my extra changes and asked him to review the extra tests."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose winning over a local definition of done. Who disagreed?",
+        "Role: new grad on first project, API endpoint work",
+        "Situation: ticket considered done after unit tests",
+        "Actions: added integration tests + perf fix anyway; offered to own bugs",
+        "Outcome: endpoint stable in prod; teammate reviewed changes",
+        "Quote: \"I told the teammate I would own any bugs from my extra changes\"",
+        "Follow-up: Asked how they handled pushback; candidate stayed collaborative and took ownership"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate describes extending scope on their own work when the local definition of done would have left a slow endpoint. Quote shows they took personal ownership of risk rather than escalating. This matches the expected junior focus on individual ownership and learning from feedback. The disagreement stayed within the pod and was resolved without authority issues. Biggest strength is the willingness to keep working past the ticket boundary while still offering accountability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I finished the feature but the tests were flaky so I just skipped the last two and closed the ticket. My manager later asked why we had incidents and I said the definition of done didn't require full coverage."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide that was the right call?"
+        },
+        {
+          "role": "candidate",
+          "text": "The sprint was ending and the team just wanted the ticket moved to done. I figured we could fix it later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose winning over a local definition of done. Who disagreed?",
+        "Role: junior dev, feature work",
+        "Situation: flaky tests at end of sprint",
+        "Actions: skipped coverage to close ticket; blamed definition of done later",
+        "Outcome: incidents occurred; no ownership shown",
+        "Quote: \"The sprint was ending and the team just wanted the ticket moved to done\"",
+        "Follow-up: Asked decision process; candidate defaulted to sprint pressure and external blame"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story shows the candidate stopping at a weak local definition of done and later attributing problems to the process rather than their own choices. No evidence of pushing for a better outcome or taking ownership after the fact. The disagreement is mentioned only in hindsight as an excuse. Biggest gap is lack of individual accountability for the quality of their own work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service team defined done as passing the internal load test. I pushed to also run the test against the new downstream dependency because I knew it would surface a 15% latency regression that would affect two other teams. The owning team disagreed and said their SLA was already met."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next and what was the measurable result?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran the cross-team test on my own time, shared the data in the weekly sync, and got the dependency owner to agree to a fix. Latency stayed flat after launch and the two affected teams avoided an on-call spike."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose winning over a local definition of done. Who disagreed?",
+        "Role: senior engineer, service launch",
+        "Situation: internal load test considered sufficient by owning team",
+        "Actions: ran broader test independently; shared data across teams; drove fix",
+        "Outcome: no regression; protected two other teams from on-call",
+        "Quote: \"I ran the cross-team test on my own time\"",
+        "Follow-up: Asked for measurable result; candidate cited latency stability and reduced on-call risk for peer teams"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate identified a cross-team risk that the local definition of done ignored and used data to influence without authority. Quote illustrates willingness to do extra work to surface the issue. Result shows clear impact beyond their own service. The disagreement was handled through evidence rather than escalation. Biggest strength is translating a boundary-pushing action into protection for dependent teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team said the migration was done once the old code path was removed. I wanted to keep both paths for another sprint to be safe but the tech lead overruled it. We launched and had two customer incidents the first week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond after the incidents?"
+        },
+        {
+          "role": "candidate",
+          "text": "I logged a ticket for the rollback path but the team was already on the next project so it never got prioritized."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose winning over a local definition of done. Who disagreed?",
+        "Role: senior on migration project",
+        "Situation: tech lead defined done as removal of old path",
+        "Actions: suggested keeping dual path but accepted override",
+        "Outcome: incidents occurred; follow-up ticket deprioritized",
+        "Quote: \"the team was already on the next project so it never got prioritized\"",
+        "Follow-up: Asked post-incident response; candidate showed limited follow-through or influence"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate recognized a risk but did not push hard enough to change the local definition of done. After incidents occurred, ownership of the follow-up work was weak. No evidence of cross-team influence or metrics-driven persuasion. Biggest gap is failure to convert disagreement into a better outcome for the broader system."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org defined a successful quarter as hitting the revenue target for the new product line. I argued we should also measure and fix the support ticket volume because early data showed it would grow faster than headcount and damage retention. The product VP and finance disagreed and said support metrics were a later-quarter problem."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make and what was the longer-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I redirected two engineers to build self-service tooling in Q2, accepted a 3-point miss on the revenue goal, and reduced support tickets by 40% by Q4. Retention held while competitors saw churn on similar launches."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose winning over a local definition of done. Who disagreed?",
+        "Role: exec leading new product line",
+        "Situation: org defined done as revenue target only",
+        "Actions: traded short-term revenue for support tooling investment",
+        "Outcome: 40% ticket reduction; retention protected vs competitors",
+        "Quote: \"I redirected two engineers... accepted a 3-point miss on the revenue goal\"",
+        "Follow-up: Asked for trade-offs and long-term impact; candidate showed deliberate short-term cost for multi-quarter durability"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate overrode a narrow revenue definition of done with a broader view of customer retention and operational leverage. Quote captures a clear, quantified trade-off at the org level. Result demonstrates strategic judgment that protected the business beyond the current quarter. Disagreement was with peer VPs and resolved through resource allocation rather than consensus. Biggest strength is willingness to accept a visible miss to avoid larger downstream damage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership wanted the new market launch by end of quarter. I agreed even though the ops team warned about scaling issues. We hit the launch date but spent the next two quarters fixing capacity and lost the follow-on budget round."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have asked for more headcount earlier but the timeline was non-negotiable from the CEO."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose winning over a local definition of done. Who disagreed?",
+        "Role: exec on market launch",
+        "Situation: launch date treated as definition of done",
+        "Actions: accepted timeline despite scaling warnings",
+        "Outcome: post-launch capacity fire drill; lost follow-on budget",
+        "Quote: \"the timeline was non-negotiable from the CEO\"",
+        "Follow-up: Asked what they would change; candidate pointed to external constraint rather than own strategic choice"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate treated the launch date as the boundary and did not push for a more durable definition of success. After the predictable capacity issues, accountability was placed on the CEO constraint rather than their own judgment. No evidence of long-term trade-off decisions or org-level leverage. Biggest gap is absence of strategic foresight that would have protected later quarters."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual ticket or feature",
+      "senior": "Cross-team or multi-service",
+      "exec": "Org-level metrics and retention"
+    },
+    {
+      "signal": "Nature of disagreement",
+      "junior": "Peer on same pod",
+      "senior": "Owning team or tech lead",
+      "exec": "Peer VPs or finance"
+    },
+    {
+      "signal": "Trade-off shown",
+      "junior": "Extra personal work for quality",
+      "senior": "Independent data to influence peers",
+      "exec": "Short-term metric miss for durability"
+    },
+    {
+      "signal": "Ownership after pushback",
+      "junior": "Offers to own bugs",
+      "senior": "Drives fix via evidence",
+      "exec": "Redirects resources despite revenue cost"
+    },
+    {
+      "signal": "Result orientation",
+      "junior": "Endpoint stays fast",
+      "senior": "Protects dependent teams",
+      "exec": "Retention holds vs competitors"
+    },
+    {
+      "signal": "Accountability language",
+      "junior": "I will own any issues",
+      "senior": "I ran the test on my own time",
+      "exec": "I accepted the 3-point miss"
+    }
+  ],
+  "kind": "factor"
+}

@@ -1,0 +1,187 @@
+{
+  "question": "Tell me about a time the pace was not sustainable. What did you change so the work could last?",
+  "competency": "Optimize for endurance and resilience",
+  "principle": "Optimize for endurance and resilience",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first big feature, we were doing daily deploys and late nights for three weeks. I noticed my error rate climbing and told my manager I needed to drop one side task."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I moved my work to a two-day batch review instead of daily, and asked a teammate to pair on the riskiest module. We shipped on time and I didn't have to redo anything the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the pace was not sustainable. What did you change so the work could last?",
+        "- Individual contributor on first major feature",
+        "- Saw rising error rate after 3 weeks of late nights",
+        "- Asked manager to drop one side task; switched to 2-day batch reviews",
+        "- Paired on riskiest module",
+        "Quote: \"I noticed my error rate climbing\"",
+        "Follow-up: Asked what changed; candidate described batching and pairing, shipped without rework"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience for a junior. The candidate owned their own unsustainable pace on a single feature and made two concrete adjustments: batching reviews and pairing on risk. They directly linked the change to lower rework in the next sprint. This shows early self-awareness and willingness to ask for scope relief rather than heroics. Biggest strength is the clear before-and-after on their personal output quality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were working late every night on the launch. I just kept going until it shipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the next project was the same. I figured that's how it is."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the pace was not sustainable. What did you change so the work could last?",
+        "- Individual contributor on launch",
+        "- Worked late nights with no adjustment",
+        "- No change described for next project",
+        "Quote: \"I just kept going until it shipped\"",
+        "Follow-up: Asked if anything changed; candidate said next project was identical and accepted it"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience for a junior. The story shows recognition that the pace was unsustainable but contains zero concrete changes or requests for help. The candidate treated the pattern as normal for the next project. This signals low ownership of personal sustainability and limited coachability on adjusting scope or process."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two-team migration was burning people out after six weeks of nightly deploys. I proposed we move to weekly releases with a shared rollback playbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the on-call ticket spike data to both leads, then ran a two-week pilot on one service. Burnout tickets dropped 40% and we still hit the migration date."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the pace was not sustainable. What did you change so the work could last?",
+        "- Senior IC influencing two teams on migration",
+        "- Nightly deploys for 6 weeks causing burnout",
+        "- Proposed weekly releases + shared rollback playbook",
+        "- Used ticket data and ran pilot to get buy-in",
+        "Quote: \"Burnout tickets dropped 40%\"",
+        "Follow-up: Asked how buy-in was secured; candidate described data + pilot"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience for a senior. The candidate identified cross-team burnout, used data to influence without authority, and introduced a process change that preserved the deadline while cutting burnout metrics. The pilot approach shows pragmatic testing rather than top-down mandate. Biggest strength is the measurable outcome tied to a sustainable cadence change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team was doing too many deploys and people were tired. I told them to slow down but nothing really shifted."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data or follow-up did you use?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in standup a couple times. The leads kept the same schedule."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the pace was not sustainable. What did you change so the work could last?",
+        "- Senior trying to influence team on deploy pace",
+        "- Noted tiredness but no structured change",
+        "- Only verbal mentions in standup",
+        "Quote: \"I told them to slow down but nothing really shifted\"",
+        "Follow-up: Asked about data or follow-up; candidate had none beyond standup comments"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience for a senior. The candidate observed unsustainable pace but relied on informal comments without data, pilots, or process changes. No influence without authority was demonstrated and the schedule remained unchanged. This shows limited ability to drive cross-team endurance improvements."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was running quarterly all-hands launches that left engineering exhausted for the following month. I shifted the planning cadence to a rolling 18-month roadmap with quarterly checkpoints instead of hard launches."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a 10% drop in visible feature announcements for the first two quarters in exchange for 25% lower voluntary attrition in engineering. The business accepted the change after seeing retention data six months later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the pace was not sustainable. What did you change so the work could last?",
+        "- Exec-level change to org planning cadence",
+        "- Quarterly launches causing post-launch exhaustion",
+        "- Moved to 18-month rolling roadmap with checkpoints",
+        "- Traded announcement volume for retention gains",
+        "Quote: \"25% lower voluntary attrition\"",
+        "Follow-up: Asked about trade-offs; candidate described announcement volume vs attrition data"
+      ],
+      "raiseFeedback": "Raises the bar on Optimize for endurance and resilience for an exec. The candidate diagnosed org-level unsustainability in the launch rhythm and made a structural change to roadmap planning. They explicitly weighed business visibility against retention and accepted short-term trade-offs for long-term health. The six-month data follow-through shows strategic patience. Biggest strength is the clear leverage of a process change that affected multiple teams without requiring heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering was burning out from the launch cycles. I asked the teams to work smarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural change did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a note about work-life balance. The launch rhythm stayed the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the pace was not sustainable. What did you change so the work could last?",
+        "- Exec observing org burnout",
+        "- Sent note on work-life balance",
+        "- No structural change to planning or launches",
+        "Quote: \"I asked the teams to work smarter\"",
+        "Follow-up: Asked about structural change; candidate described only a note"
+      ],
+      "lowerFeedback": "Lowers the bar on Optimize for endurance and resilience for an exec. The candidate recognized org-level exhaustion but responded only with a generic note and no change to planning cadence or priorities. No trade-offs were evaluated and the unsustainable rhythm continued. This indicates lack of strategic leverage on long-term organizational resilience."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognizing unsustainability",
+      "junior": "Notices personal error rate rise",
+      "senior": "Tracks cross-team burnout metrics",
+      "exec": "Diagnoses org launch rhythm impact"
+    },
+    {
+      "signal": "Scope of change",
+      "junior": "Adjusts own workflow or asks manager for scope relief",
+      "senior": "Introduces process for 1-2 teams with pilot",
+      "exec": "Redesigns planning cadence with explicit business trade-offs"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Direct request to manager",
+      "senior": "Uses data and pilot to gain peer buy-in",
+      "exec": "Aligns retention data with business outcomes over months"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Reduced personal rework in next sprint",
+      "senior": "40% drop in burnout tickets",
+      "exec": "25% lower attrition after six months"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Avoids repeating same pattern on next task",
+      "senior": "Prevents recurrence on similar migrations",
+      "exec": "Changes org rhythm to prevent recurring exhaustion cycles"
+    }
+  ],
+  "kind": "factor"
+}

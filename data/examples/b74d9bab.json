@@ -1,0 +1,202 @@
+{
+  "question": "Tell me about a time you acted before the data was complete. What did you risk, and what did you learn?",
+  "competency": "Move with urgency and find a way",
+  "principle": "Move with urgency and find a way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my last internship I was fixing a login bug. The logs were incomplete so I couldn't see the full error path. I shipped a targeted fix based on the partial stack trace and added extra logging."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "Risk was breaking login for a subset of users if my guess was wrong. I rolled it out behind a flag and monitored for two hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "I learned the value of reversible decisions. Next time I'll also write a one-pager on assumptions so the team can review faster."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you acted before the data was complete...",
+        "Intern fixed login bug with partial logs, used feature flag",
+        "Risk: subset of users; rolled back plan ready",
+        "Quote: 'I learned the value of reversible decisions'",
+        "Follow-up: How did you decide the risk was acceptable? Said they checked similar past incidents and got quick TL sign-off"
+      ],
+      "raiseFeedback": "Candidate described an individual task where they shipped with incomplete logs but contained risk via a flag and monitoring. They explicitly named the assumption they made and how they made the change reversible. This shows appropriate junior-level ownership and coachability. The learning was tied directly to their action rather than generic. Biggest strength is recognizing reversibility as the key control.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a customer report and the data was still coming in. I waited until the full report was ready before doing anything."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you take any interim steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I didn't want to guess wrong so I just told the customer we were investigating."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time...",
+        "Candidate waited for complete data before acting",
+        "No interim action taken",
+        "Quote: 'I didn't want to guess wrong'",
+        "Follow-up: What was the impact of waiting? Said customer followed up twice"
+      ],
+      "lowerFeedback": "Candidate defaulted to waiting for complete information with no visible action or risk mitigation. Story shows no ownership of moving forward and no concrete learning about when partial action is warranted. At junior level this signals low bias for action. The gap is absence of any reversible step or assumption testing."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams had conflicting metrics on checkout conversion. I launched a narrow A/B with the new flow to 5% of traffic while the data team finished reconciling the dashboards."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "Risk was a temporary dip in conversion or support tickets. I aligned with the other team's lead first and set a 48-hour kill switch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "We found the new flow lifted conversion 3% before full data arrived. I now always run a small live test in parallel with data cleanup when timelines conflict."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you acted before the data was complete...",
+        "Senior ran narrow A/B on checkout while data teams reconciled metrics",
+        "Risk: conversion dip; coordinated with peer team and set kill switch",
+        "Quote: 'I now always run a small live test in parallel'",
+        "Follow-up: How did you get the other team on board? Described 30-min sync and shared success metric"
+      ],
+      "raiseFeedback": "Candidate showed cross-team influence by aligning with another team before acting and used a narrow rollout plus kill switch to limit risk. The decision produced measurable results and generated a repeatable process. This meets senior expectations for moving with urgency across boundaries. Biggest strength is turning an ambiguous data situation into a controlled experiment with clear ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The dashboards didn't match so I escalated to ask leadership to decide which number was right."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you propose any experiment?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I felt we needed the authoritative data first before touching production."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time...",
+        "Escalated conflicting metrics instead of acting",
+        "No experiment or interim step proposed",
+        "Quote: 'We needed the authoritative data first'",
+        "Follow-up: What was the outcome? Said decision took two weeks"
+      ],
+      "lowerFeedback": "Candidate escalated rather than proposing a contained way forward, showing no attempt to de-risk or influence peers. Story lacks any personal ownership of the outcome or learning about parallel action. At senior level this lowers the bar because it demonstrates reliance on authority instead of finding a reversible path."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Market data on a new vertical was still weeks away. I committed the team to a limited pilot in one region using existing infrastructure and set a 30-day go/no-go based on early signals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "Risk was sunk cost and distraction from core business. I protected the core roadmap by ring-fencing the pilot to three people and pre-agreed exit criteria with the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "The pilot showed the vertical was smaller than modeled so we stopped cleanly. I now require every new bet to have an explicit kill metric before any headcount is allocated."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you acted before the data was complete...",
+        "Exec launched limited regional pilot with incomplete market data",
+        "Risk: sunk cost and distraction; ring-fenced to three people and board exit criteria",
+        "Quote: 'I now require every new bet to have an explicit kill metric'",
+        "Follow-up: How did you handle board pushback on ambiguity? Said they framed it as option value with capped downside"
+      ],
+      "raiseFeedback": "Candidate made a strategic bet under high ambiguity by limiting scope, headcount, and time while securing explicit exit criteria. The decision protected core business and produced a clear stop decision plus an org-level process change. This demonstrates executive judgment on trade-offs and leverage. Biggest strength is institutionalizing the learning into future decision hygiene.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We didn't have full market sizing so I delayed the investment decision until the next quarter's data arrived."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the cost of waiting?"
+        },
+        {
+          "role": "candidate",
+          "text": "Competitor entered the space. We ended up paying more later to catch up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time...",
+        "Delayed strategic investment until complete data",
+        "No pilot or limited action taken",
+        "Quote: 'Competitor entered the space'",
+        "Follow-up: What would you do differently? Said they would ask for more analysts"
+      ],
+      "lowerFeedback": "Candidate chose to wait for complete data on a strategic bet, resulting in competitive loss and no evidence of exploring limited-risk options. Story shows no strategic framing of trade-offs or long-term process change. At exec level this lowers the bar because it reflects risk aversion rather than calculated urgency with bounded downside."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Risk containment",
+      "junior": "Uses flag or monitoring for individual change",
+      "senior": "Aligns peers and sets kill switch across teams",
+      "exec": "Ring-fences resources and pre-agrees exit criteria with stakeholders"
+    },
+    {
+      "signal": "Scope of decision",
+      "junior": "Single task or bug",
+      "senior": "Feature or cross-team process",
+      "exec": "Business vertical or investment bet"
+    },
+    {
+      "signal": "Learning application",
+      "junior": "Personal process tweak",
+      "senior": "Team-level repeatable experiment",
+      "exec": "Org policy or decision hygiene"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Gets quick TL sign-off",
+      "senior": "Coordinates with peer leads",
+      "exec": "Secures board-level exit criteria"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Local result with rollback plan",
+      "senior": "Measurable lift plus process",
+      "exec": "Clean stop plus institutional learning"
+    }
+  ],
+  "kind": "factor"
+}

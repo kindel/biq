@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you found the common thread in conflicting asks. What was the thread?",
+  "competency": "Be decisive in ambiguity and change + stakeholder synthesis",
+  "principle": "Be decisive in ambiguity and change",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two PMs on my team wanted different sorting logic for the same dashboard table. One wanted by date, the other by priority score. I mapped both requests back to the same user complaint about missing recent high-impact items."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm that was the real thread?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the last 30 support tickets and showed the overlap in the data. Both PMs agreed the sort should surface items that were both recent and high priority, so we added a weighted column."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you found the common thread in conflicting asks. What was the thread?",
+        "Role: new grad on small internal tool team",
+        "Situation: two PMs wanted opposite sort orders on same table",
+        "Action: mapped both to one support-ticket pattern and proposed weighted sort",
+        "Outcome: both PMs signed off, table used by 40 people",
+        "Quote: \"I pulled the last 30 support tickets and showed the overlap\"",
+        "Follow-up: How did you confirm that was the real thread? - Candidate referenced tickets and got agreement"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Competency tested is decisiveness in ambiguity through synthesis of conflicting asks. Candidate described two PMs requesting opposite sort orders on one dashboard table and identified the thread as \"items that were both recent and high priority.\" They validated the thread with 30 support tickets before proposing a weighted column that both stakeholders accepted. This shows ownership of their own scope and use of data to reduce ambiguity without needing senior intervention. The story stays local but demonstrates the core behavior cleanly. Biggest strength is the quick move from conflict to shared data point rather than picking a side.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had two engineers asking for different API fields on the same endpoint. One wanted more metadata, the other wanted fewer fields for speed. I just asked my manager which one to do."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look for any overlap between the two requests?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they seemed opposite so I escalated."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you found the common thread in conflicting asks. What was the thread?",
+        "Role: junior dev on backend service",
+        "Situation: two engineers wanted conflicting fields on one endpoint",
+        "Action: treated requests as opposite and escalated to manager",
+        "Outcome: manager chose one; no synthesis attempted",
+        "Quote: \"they seemed opposite so I escalated\"",
+        "Follow-up: Did you look for any overlap? - Candidate said no"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The candidate received two conflicting field requests for the same endpoint and immediately escalated without attempting to find a shared requirement. When probed, they stated the asks \"seemed opposite,\" showing no effort to surface underlying user needs or data that could resolve the ambiguity. At junior level we expect at least an attempt to own the synthesis locally before handing off. The story reveals a pattern of treating conflict as binary rather than looking for the common thread. Main gap is lack of initiative in reducing ambiguity at their scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Product wanted a new onboarding flow in two weeks; infra wanted to freeze deploys for a migration the same month. I mapped both to the shared goal of reducing support tickets from new sign-ups."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data connected the two?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support volume showed 60 percent of new-user tickets came from config issues that the migration would also fix. We delayed the freeze by one sprint and shipped a slimmed flow that used the migration tooling."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you found the common thread in conflicting asks. What was the thread?",
+        "Role: senior on platform team",
+        "Situation: product onboarding deadline vs infra deploy freeze",
+        "Action: linked both requests to new-user support ticket reduction",
+        "Outcome: one-sprint delay + slim flow shipped using migration tools",
+        "Quote: \"60 percent of new-user tickets came from config issues that the migration would also fix\"",
+        "Follow-up: What data connected the two? - Candidate cited support volume and negotiated timeline"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate faced a product onboarding deadline colliding with an infra deploy freeze and identified the common thread as reducing new-user support tickets. They used ticket data showing 60 percent of issues stemmed from config problems that the migration would resolve, then negotiated a one-sprint delay to ship a slim flow. This demonstrates cross-team influence and the ability to turn ambiguity into a shared metric without authority. The outcome stayed within one quarter and involved two teams. Biggest strength is converting two opposing timelines into one data-backed priority rather than forcing a choice.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing needed campaign pages live by end of month while security required a full audit that would take six weeks. I told both teams the dates didn't work and asked them to pick one."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any overlap in what they actually needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't dig into that; the timelines were just incompatible."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you found the common thread in conflicting asks. What was the thread?",
+        "Role: senior on web platform",
+        "Situation: marketing campaign deadline vs security audit timeline",
+        "Action: declared timelines incompatible and forced a binary choice",
+        "Outcome: one team delayed; no synthesis attempted",
+        "Quote: \"the timelines were just incompatible\"",
+        "Follow-up: Was there any overlap? - Candidate had not investigated"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate received a marketing launch deadline and a six-week security audit requirement and immediately concluded the timelines were incompatible without exploring shared objectives. When asked about overlap they admitted they had not investigated. At senior level we expect the candidate to surface a common thread such as risk reduction or user impact that could allow partial progress on both. The story shows a pattern of treating conflicting asks as zero-sum rather than synthesizing them into a joint plan. Main gap is absence of cross-team influence or data-driven reconciliation."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two business units wanted opposite investment priorities for the next year: one pushed for new market expansion, the other for deepening existing accounts. Both were framed as revenue growth but used different time horizons."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you surface the thread at org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a joint forecast showing that existing-account upsell would fund the first phase of expansion in 18 months. We sequenced the investments instead of choosing one."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you found the common thread in conflicting asks. What was the thread?",
+        "Role: VP running two business units",
+        "Situation: new-market expansion vs existing-account focus for annual plan",
+        "Action: used joint forecast to show upsell funds expansion in 18 months",
+        "Outcome: sequenced investments accepted by both units and CFO",
+        "Quote: \"existing-account upsell would fund the first phase of expansion in 18 months\"",
+        "Follow-up: How did you surface the thread at org level? - Candidate described 18-month sequencing model"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate faced two business units with opposing investment priorities\u2014one for new market expansion and one for existing-account growth\u2014and identified the thread as revenue growth across different time horizons. They produced a joint forecast showing that account upsell could fund the first phase of expansion within 18 months, leading to a sequenced plan accepted by both units and finance. This reflects strategic judgment under high ambiguity and the ability to create leverage across the organization rather than heroically picking a winner. The decision affected multi-year planning. Biggest strength is turning a binary resource conflict into a self-funding sequence with clear trade-off visibility.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Sales wanted headcount in new verticals while customer success wanted more support engineers for churn reduction. I approved both requests and let finance sort out the budget."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you identify any shared outcome between the two asks?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not explicitly; both sounded important so we tried to do both."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you found the common thread in conflicting asks. What was the thread?",
+        "Role: VP of operations",
+        "Situation: sales headcount for new verticals vs CS headcount for churn",
+        "Action: approved both without finding shared thread",
+        "Outcome: budget overrun; no sequencing or prioritization",
+        "Quote: \"both sounded important so we tried to do both\"",
+        "Follow-up: Did you identify any shared outcome? - Candidate had not connected them"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The candidate received two large headcount requests\u2014one from sales for new verticals and one from customer success for churn reduction\u2014and approved both without identifying a common thread such as net revenue retention or long-term growth efficiency. When probed they stated both \"sounded important\" and deferred to finance. At exec level we expect the leader to surface an org-level outcome that allows sequencing or trade-offs rather than adding scope. The story shows a pattern of avoiding decisive synthesis under resource ambiguity. Main gap is lack of strategic prioritization that creates leverage across competing business needs."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Finding shared outcome in conflicting stakeholder requests",
+      "junior": "Uses local data (tickets) to align two PMs on one table feature",
+      "senior": "Links product and infra goals to one support metric and negotiates timeline",
+      "exec": "Sequences two business-unit investments into self-funding 18-month plan"
+    },
+    {
+      "signal": "Handling ambiguity without full information",
+      "junior": "Pulls 30 tickets to validate thread before proposing change",
+      "senior": "Uses existing support volume data to justify one-sprint adjustment",
+      "exec": "Builds joint forecast model to reveal funding path across horizons"
+    },
+    {
+      "signal": "Avoiding binary choice",
+      "junior": "Proposes weighted sort instead of picking one PM's request",
+      "senior": "Delays freeze instead of forcing product or infra to lose",
+      "exec": "Sequences expansion after upsell instead of choosing one priority"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Resolves conflict inside one dashboard used by 40 people",
+      "senior": "Aligns two teams on a shared metric within one quarter",
+      "exec": "Creates org-level investment sequence accepted by CFO and two BUs"
+    }
+  ],
+  "kind": "factor"
+}

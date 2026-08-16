@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
+  "competency": "Move with urgency and find a way (Adaptability, Ownership)",
+  "principle": "Move with urgency and find a way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was two days from a feature release when a dependency library update broke our build. I dropped the remaining polish tasks, spent the next day isolating the root cause, and rewrote the integration points instead of waiting for the vendor."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change that week specifically?"
+        },
+        {
+          "role": "candidate",
+          "text": "I switched from daily standups to twice-daily syncs with just the two engineers who could unblock me, and I cut the test matrix to the three critical paths so we could still ship on Friday."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
+        "Role: New grad on payments team, week before launch",
+        "Situation: Library update broke build two days out",
+        "Action: Isolated root cause same day, rewrote integration, cut test matrix to three paths",
+        "Outcome: Shipped Friday with no customer impact",
+        "Quote: \"I switched to twice-daily syncs with just the two people who could unblock me\"",
+        "Follow-up: Asked about trade-offs; candidate said they flagged the risk to manager but still owned the fix themselves"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a junior. The candidate owned the breakage immediately instead of escalating and waiting. They changed their own cadence and scope within 24 hours, quoting the decision to run twice-daily syncs with only the two unblockers. This kept the ship date while staying inside individual scope. The story shows clear ownership of both the problem and the adjustment rather than hoping someone else would fix the dependency. Biggest strength is the speed from discovery to concrete change without needing permission.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The API we depended on changed format the day before our demo. I updated the ticket and waited for the platform team to give us a new spec."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change that week?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my manager if we could push the demo. We ended up showing the old version and noted it as a known issue."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
+        "Role: New grad, demo week",
+        "Situation: External API format change",
+        "Action: Updated ticket and waited; asked manager to push date",
+        "Outcome: Showed old version with caveat",
+        "Quote: \"I updated the ticket and waited for the platform team\"",
+        "Follow-up: Candidate said they didn't have access to change the integration themselves"
+      ],
+      "lowerFeedback": "Lowers the bar for a junior. The candidate treated the API change as someone else's problem and defaulted to waiting and rescheduling rather than attempting any workaround. They changed nothing about their own work that week beyond updating a ticket. The outcome was simply documenting the issue instead of finding a way to still deliver value. Biggest gap is absence of any personal ownership or urgency once the plan broke."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team's schema change landed mid-sprint and would have broken three of our downstream services. I pulled the on-call rotation from both teams into a war room that afternoon and we shipped a compatibility shim by Thursday so the partner could keep their timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you personally change that week?"
+        },
+        {
+          "role": "candidate",
+          "text": "I moved my own roadmap items to the next sprint and spent the rest of the week coordinating the shim instead of coding my original feature. I also started a weekly cross-team sync that is still running six months later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
+        "Role: Senior on growth platform, cross-team dependency",
+        "Situation: Partner schema change threatened three services",
+        "Action: Convened war room same day, drove shim, deprioritized own roadmap",
+        "Outcome: Partner shipped on time; created ongoing sync",
+        "Quote: \"I moved my own roadmap items to the next sprint\"",
+        "Follow-up: Asked about influence; candidate described convincing the partner to accept the shim without changing their release"
+      ],
+      "raiseFeedback": "Raises the bar at senior level. The candidate absorbed the impact on their own roadmap to protect a partner team's date and created a lasting cross-team mechanism. They changed both their personal priorities and the operating rhythm between teams within one week. The story includes a concrete metric of sustained value (sync still running six months later) rather than a one-off hero fix. Biggest strength is using urgency to build leverage instead of just recovering the original plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team changed their API contract without notice and it affected our service. I filed a bug against them and kept working on my sprint items."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change that week?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had to add a follow-up story in the next sprint to handle the new contract. The partner team eventually fixed it two sprints later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
+        "Role: Senior engineer",
+        "Situation: Undocumented API contract change",
+        "Action: Filed bug, continued original sprint work",
+        "Outcome: Added story two sprints later; partner fixed later",
+        "Quote: \"I filed a bug against them and kept working on my sprint items\"",
+        "Follow-up: Candidate said they lacked authority to force the other team to respond faster"
+      ],
+      "lowerFeedback": "Lowers the bar for a senior. The candidate protected their own sprint at the expense of the broader system and treated the issue as a future story rather than something requiring immediate cross-team action. They changed nothing about their week except logging a ticket. The outcome relied on the other team eventually fixing it. Biggest gap is missing influence without authority when the unexpected event crossed team boundaries."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We lost a major supplier two weeks before a product launch that represented 18% of projected Q3 revenue. I canceled the original launch plan, redirected the entire marketing budget to a smaller alternative SKU, and stood up a new supplier qualification process that same week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change that week?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled all three regional GMs into a daily 30-minute standup for the rest of the month and personally owned the supplier search while the product team rebuilt the launch assets around the alternative SKU."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
+        "Role: VP/GM of hardware category",
+        "Situation: Key supplier loss two weeks pre-launch, 18% revenue at risk",
+        "Action: Canceled original plan, redirected budget, created daily GMs standup, owned supplier search personally",
+        "Outcome: Launched alternative SKU on time; new qualification process stood up",
+        "Quote: \"I pulled all three regional GMs into a daily 30-minute standup\"",
+        "Follow-up: Asked about long-term trade-offs; candidate described accepting short-term margin hit to protect revenue"
+      ],
+      "raiseFeedback": "Raises the bar at exec level. The candidate made a rapid strategic pivot that touched budget, org rhythm, and product scope within days of the supplier loss. They personally owned the supplier search while changing the operating cadence for three GMs. The decision traded short-term margin for revenue protection and created a durable process. Biggest strength is the combination of speed and willingness to alter multiple levers at once under high ambiguity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A key supplier notified us they couldn't deliver. We escalated to legal and procurement and asked the product team to assess the delay impact."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change that week?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed the launch by six weeks and used the time to qualify two backup suppliers for future cycles."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
+        "Role: VP of a business unit",
+        "Situation: Supplier failure pre-launch",
+        "Action: Escalated to legal/procurement, asked product team for delay assessment",
+        "Outcome: Six-week launch delay; qualified backups for future",
+        "Quote: \"We escalated to legal and procurement\"",
+        "Follow-up: Candidate said they could not move budget or change product scope without further approvals"
+      ],
+      "lowerFeedback": "Lowers the bar at exec level. The candidate defaulted to escalation and a long delay instead of driving immediate cross-functional changes. They altered nothing about their own leadership cadence or resource allocation that week. The outcome was a passive six-week slip with future-oriented mitigation only. Biggest gap is absence of strategic judgment or personal ownership when the plan broke at business scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed from discovery to concrete change",
+      "junior": "Same day isolated cause and adjusted testing",
+      "senior": "Same afternoon convened war room and deprioritized own work",
+      "exec": "Within 48 hours redirected budget and stood up new operating rhythm"
+    },
+    {
+      "signal": "Scope of what they personally changed",
+      "junior": "Own tasks and daily cadence with two peers",
+      "senior": "Own roadmap plus cross-team sync process",
+      "exec": "Budget, product scope, and three GMs' operating rhythm"
+    },
+    {
+      "signal": "Willingness to trade off original goals",
+      "junior": "Cut test matrix to ship on date",
+      "senior": "Moved own features to protect partner timeline",
+      "exec": "Accepted margin hit to protect revenue"
+    },
+    {
+      "signal": "Creation of lasting mechanism",
+      "junior": "None mentioned",
+      "senior": "Weekly cross-team sync still running",
+      "exec": "New supplier qualification process"
+    },
+    {
+      "signal": "Default response to external blocker",
+      "junior": "Wait for platform team vs. own the fix",
+      "senior": "File bug vs. drive shim",
+      "exec": "Escalate vs. personally redirect resources"
+    }
+  ],
+  "kind": "factor"
+}

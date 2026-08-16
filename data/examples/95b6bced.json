@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you were accountable for an outcome that nobody had assigned to you. What did you do first?",
+  "competency": "Own it (initiative + follow-through)",
+  "principle": "Own it",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our on-call rotation had gaps after a teammate left. I noticed alerts were going unacknowledged for hours. First I pulled the last three weeks of tickets and mapped who was actually responding."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a short proposal for a new rotation, showed it to my manager, and volunteered to run it for the first month while we hired. We closed the gap in two weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were accountable for an outcome that nobody had assigned to you. What did you do first?",
+        "Situation: on-call gaps after teammate exit",
+        "Action: pulled ticket data, mapped coverage, wrote proposal",
+        "Outcome: new rotation stood up in two weeks",
+        "Quote: \"I volunteered to run it for the first month while we hired\"",
+        "Follow-up: How did you decide to surface it to your manager? \"I wanted data first so it wasn't just a complaint\""
+      ],
+      "raiseFeedback": "Raises the bar for Own it at junior level. Candidate identified an unowned operational gap, started with data collection rather than escalation, and volunteered to carry the load temporarily. The story stays within individual scope but shows clear initiative and follow-through without being asked. Quote about pulling three weeks of tickets first demonstrates the right sequence. Biggest strength is moving from observation to concrete proposal without waiting for direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw that some bugs were sitting in the backlog for months. I mentioned it in standup a few times."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you take any further steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, my manager said they would look into it so I waited."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were accountable for an outcome that nobody had assigned to you. What did you do first?",
+        "Situation: stale bugs in backlog",
+        "Action: mentioned in standup a few times",
+        "Outcome: waited for manager to look into it",
+        "Quote: \"my manager said they would look into it so I waited\"",
+        "Follow-up: What did you do after mentioning it? No further action taken"
+      ],
+      "lowerFeedback": "Lowers the bar for Own it at junior level. Candidate noticed a problem but stopped at verbal mentions and deferred entirely once the manager acknowledged it. No evidence of personal follow-through or steps taken to drive the outcome. The story shows awareness without ownership. Biggest gap is treating the issue as someone else's responsibility after the initial comment."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating work on a shared data pipeline because ownership was unclear. First I booked short 1:1s with the leads on both sides and mapped the overlapping efforts."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to agree on a path forward?"
+        },
+        {
+          "role": "candidate",
+          "text": "I put together a one-page options doc with effort and risk for each choice, then facilitated a joint decision. We consolidated under one team and I stayed on as the bridge for the first quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were accountable for an outcome that nobody had assigned to you. What did you do first?",
+        "Situation: duplicated pipeline work across two teams",
+        "Action: 1:1s with leads, mapped overlap, created options doc",
+        "Outcome: consolidated ownership, acted as bridge for a quarter",
+        "Quote: \"I put together a one-page options doc with effort and risk\"",
+        "Follow-up: What trade-offs did you surface? Reduced duplication but required one team to take on extra support"
+      ],
+      "raiseFeedback": "Raises the bar for Own it at senior level. Candidate spotted cross-team duplication without a clear owner, began with direct conversations to gather facts, then drove alignment through a lightweight options document. Took temporary responsibility to bridge teams. Story shows influence without authority and measurable reduction in duplicated work. Biggest strength is starting with stakeholder mapping before proposing solutions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed two teams were building similar reporting features. I sent an email suggesting they should coordinate."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after the email?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. Both teams kept going and I moved on to my assigned work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were accountable for an outcome that nobody had assigned to you. What did you do first?",
+        "Situation: duplicated reporting features",
+        "Action: sent one email suggesting coordination",
+        "Outcome: no change, moved on to assigned work",
+        "Quote: \"Both teams kept going and I moved on to my assigned work\"",
+        "Follow-up: Why stop after the email? \"It wasn't my project so I didn't push further\""
+      ],
+      "lowerFeedback": "Lowers the bar for Own it at senior level. Candidate identified a cross-team inefficiency but limited action to a single email and abandoned the issue when there was no immediate response. No follow-up, no attempt to influence, and explicit retreat to assigned work. The story lacks evidence of sustained ownership or cross-team impact. Biggest gap is absence of personal accountability once initial outreach was ignored."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer churn was rising in a segment we weren't tracking closely. First I asked finance for the last 18 months of cohort data and had my chief of staff pull win-loss notes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed three possible investment paths with revenue impact ranges and took it to the exec team. We chose to staff a dedicated retention pod reporting to me for six months. Churn in that segment dropped 4 points."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were accountable for an outcome that nobody had assigned to you. What did you do first?",
+        "Situation: rising churn in under-tracked segment",
+        "Action: pulled cohort data and win-loss notes, framed investment options",
+        "Outcome: created retention pod, 4-point churn reduction",
+        "Quote: \"I framed three possible investment paths with revenue impact ranges\"",
+        "Follow-up: How did you decide to own the pod yourself? \"It was the fastest way to get traction and model the behavior\""
+      ],
+      "raiseFeedback": "Raises the bar for Own it at exec level. Candidate identified an unowned business risk, started by assembling data across functions, then presented clear strategic options with quantified impact. Personally took on the new pod to drive execution. Story demonstrates strategic judgment and long-term leverage rather than heroics. Biggest strength is converting an ambiguous signal into a resourced org-level initiative with measurable results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw customer complaints trending up in one region. I asked the regional VP to look into it during our next sync."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up on the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked in once but it stayed with the region. I had bigger priorities on my plate."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were accountable for an outcome that nobody had assigned to you. What did you do first?",
+        "Situation: rising complaints in one region",
+        "Action: asked regional VP to look into it",
+        "Outcome: stayed with region, no further ownership taken",
+        "Quote: \"I had bigger priorities on my plate\"",
+        "Follow-up: What was the impact of not owning it? \"Complaints kept rising but it wasn't in my direct scope\""
+      ],
+      "lowerFeedback": "Lowers the bar for Own it at exec level. Candidate noticed a business signal but delegated immediately and did not create any mechanism for visibility or accountability. Explicitly deprioritized once it was outside direct scope. No strategic framing or trade-off analysis was offered. The story shows awareness without willingness to own ambiguous, cross-org outcomes. Biggest gap is treating the issue as someone else's problem rather than a leadership opportunity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "First action taken",
+      "junior": "Pulled data before escalating",
+      "senior": "Mapped stakeholders and overlap first",
+      "exec": "Assembled cross-functional data and framed options"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual/team process gap",
+      "senior": "Cross-team duplication",
+      "exec": "Org-level churn trend with P&L impact"
+    },
+    {
+      "signal": "Sustained follow-through",
+      "junior": "Volunteered to run rotation temporarily",
+      "senior": "Acted as bridge for a quarter",
+      "exec": "Created and led new pod for six months"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Data + proposal to manager",
+      "senior": "Options doc + joint facilitation",
+      "exec": "Revenue-framed paths to exec team"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Gap closed in two weeks",
+      "senior": "Consolidated ownership, reduced duplication",
+      "exec": "4-point churn reduction in segment"
+    },
+    {
+      "signal": "Deference to hierarchy",
+      "junior": "Waited after manager acknowledged",
+      "senior": "Stopped after one email",
+      "exec": "Delegated and moved on to other priorities"
+    }
+  ],
+  "kind": "factor"
+}

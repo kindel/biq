@@ -1,0 +1,196 @@
+{
+  "question": "Tell me about a time intensity became the culture and quality slipped. How did you reset the team?",
+  "competency": "Optimize for endurance and resilience",
+  "principle": "Optimize for endurance and resilience",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project we hit a hard deadline and started doing 12-hour days. After two weeks the number of bugs in review doubled and one feature had to be rolled back."
+        },
+        {
+          "role": "candidate",
+          "text": "I noticed my own PRs were getting sloppier so I started blocking two hours each morning for focused work and asked my mentor if we could add a quick quality checklist in the PR template."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you suggested the checklist?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team tried it for a week, bug count dropped, and the manager made it standard. I still use the same habit on new projects."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time intensity became the culture and quality slipped. How did you reset the team?",
+        "Junior dev on first project, 12-hour days led to doubled bugs and rollback",
+        "Candidate added personal focus blocks and proposed PR checklist",
+        "Quote: \"bug count dropped and the manager made it standard\"",
+        "Follow-up: Asked what changed after suggestion; candidate described one-week trial and ongoing use"
+      ],
+      "raiseFeedback": "Raises the bar for Optimize for endurance and resilience at junior level. Story centers on noticing personal output decline during crunch and adding a PR checklist that the team adopted. The concrete change (bug count drop after one-week trial) shows ownership of own work and quick learning from feedback. Candidate stayed within individual scope while still influencing the immediate team process. Biggest strength is the direct link between personal habit change and measurable quality recovery without claiming team leadership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were pushing hard on a release and things got messy with bugs slipping through."
+        },
+        {
+          "role": "candidate",
+          "text": "I just tried to work faster and stay late like everyone else. Eventually the manager told us to slow down."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything to change how the team was working?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured it was above my pay grade so I waited for direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time intensity became the culture and quality slipped. How did you reset the team?",
+        "Described crunch leading to bugs but stayed at observation level",
+        "No personal action taken beyond working longer hours",
+        "Quote: \"I figured it was above my pay grade\"",
+        "Follow-up: Asked about changing team process; candidate deferred to manager"
+      ],
+      "lowerFeedback": "Lowers the bar for Optimize for endurance and resilience at junior level. Candidate recognized quality issues during intense period but took no ownership of even their own workflow. Response shows passive waiting for manager direction rather than any attempt to adjust pace or raise a simple flag. The story never moves beyond describing the problem. Biggest gap is absence of any concrete step taken by the candidate to protect quality despite being directly affected."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were racing toward a shared launch and velocity pressure turned into daily standups that ran long and skipped design reviews."
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the tech leads together, showed the rising defect rate from the last three sprints, and proposed we reinstate design reviews plus a hard stop on new work after 6pm for two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other leads respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "One pushback was that we would miss the date. We agreed to track escaped defects for the next sprint and the rate fell 40 percent while still shipping on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time intensity became the culture and quality slipped. How did you reset the team?",
+        "Cross-team launch pressure caused skipped reviews and rising defects",
+        "Candidate convened leads, shared data, and negotiated design reviews plus work-hour boundary",
+        "Quote: \"defect rate fell 40 percent while still shipping on time\"",
+        "Follow-up: Asked about pushback; candidate described data-driven agreement and measured outcome"
+      ],
+      "raiseFeedback": "Raises the bar for Optimize for endurance and resilience at senior level. Candidate used defect data to influence peer leads across teams and secured a two-week boundary on new work. The 40 percent defect reduction while meeting the date provides clear evidence of cross-team impact without authority. Story shows strategic judgment in choosing a short, measurable reset rather than permanent slowdown. Biggest strength is the combination of data, negotiation, and sustained quality recovery at team boundaries.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a big push and quality started to slip across a couple of services."
+        },
+        {
+          "role": "candidate",
+          "text": "I raised it in the weekly sync but the other teams kept the same pace."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the sync?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on protecting my own service and let the broader issue ride until the launch was over."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time intensity became the culture and quality slipped. How did you reset the team?",
+        "Noted cross-service quality drop during push",
+        "Raised concern once in sync with no follow-through",
+        "Quote: \"I focused on protecting my own service\"",
+        "Follow-up: Asked about action after sync; candidate limited scope to own service"
+      ],
+      "lowerFeedback": "Lowers the bar for Optimize for endurance and resilience at senior level. Candidate identified quality erosion across services but stopped at a single mention in a sync. No attempt to gather data, influence peers, or propose even a limited reset. The decision to protect only their own service shows limited scope for a senior engineer. Biggest gap is lack of any sustained effort to change team behavior or measure impact beyond their immediate area."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After two quarters of aggressive OKRs the org saw a 25 percent rise in Sev-2 incidents and developer survey scores on sustainable pace dropped to the bottom quartile."
+        },
+        {
+          "role": "candidate",
+          "text": "I reset the planning process to require explicit capacity buffers and made incident trends a standing exec review item with trade-off discussions before adding new goals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you face from other leaders?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some VPs worried about missing annual targets. We ran a six-month pilot on two teams that showed 30 percent fewer incidents and stable feature output, then rolled the buffer rule org-wide."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time intensity became the culture and quality slipped. How did you reset the team?",
+        "Org-level OKR pressure drove 25 percent Sev-2 increase and low sustainable-pace scores",
+        "Candidate changed planning process to mandate capacity buffers and tied incidents to exec reviews",
+        "Quote: \"30 percent fewer incidents and stable feature output\" after pilot",
+        "Follow-up: Asked about leader resistance; candidate described pilot results and org-wide rollout"
+      ],
+      "raiseFeedback": "Raises the bar for Optimize for endurance and resilience at exec level. Candidate diagnosed systemic intensity through incident and survey data, then changed the planning process with capacity buffers. The six-month pilot that produced 30 percent fewer incidents before org-wide adoption demonstrates strategic judgment and long-term leverage. Story includes explicit trade-off conversations with peers and measurable org-level recovery. Biggest strength is the structural change that outlasted the immediate crisis.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a stretch of high-pressure quarters and reliability metrics started trending the wrong way."
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a note to the leadership team about watching pace and asked managers to keep an eye on burnout."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the metrics improve after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not immediately. We eventually slowed down after the next planning cycle when the data got worse."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time intensity became the culture and quality slipped. How did you reset the team?",
+        "Org reliability metrics declined under pressure",
+        "Sent one note to leaders and delegated to managers",
+        "Quote: \"We eventually slowed down after the next planning cycle\"",
+        "Follow-up: Asked if metrics improved; candidate described passive waiting for data to worsen"
+      ],
+      "lowerFeedback": "Lowers the bar for Optimize for endurance and resilience at exec level. Candidate observed org-wide reliability decline but responded with a single note and delegation to managers. No structural change to planning or review cadence was introduced. The eventual slowdown occurred only after metrics worsened further, showing reactive rather than proactive leadership. Biggest gap is absence of any measurable intervention or trade-off decision at the organizational level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of reset attempted",
+      "junior": "Individual habit or small team process",
+      "senior": "Cross-team influence and data-driven negotiation",
+      "exec": "Org planning process and leadership review cadence"
+    },
+    {
+      "signal": "Evidence of measured outcome",
+      "junior": "Bug count drop after one-week trial",
+      "senior": "40 percent defect reduction while shipping",
+      "exec": "30 percent fewer incidents after six-month pilot"
+    },
+    {
+      "signal": "Handling of resistance",
+      "junior": "Mentor adopted checklist after suggestion",
+      "senior": "Addressed lead concerns with short pilot",
+      "exec": "Ran pilot to counter VP target worries"
+    },
+    {
+      "signal": "Time horizon of thinking",
+      "junior": "Next project or sprint",
+      "senior": "Next two sprints with boundary",
+      "exec": "Six months to org-wide rollout"
+    }
+  ],
+  "kind": "factor"
+}

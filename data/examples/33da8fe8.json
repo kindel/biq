@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
+  "competency": "Passion for the mission",
+  "principle": "Passion for the mission",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a two-person feature team shipping a new dashboard. Two days before launch our PM flagged that the core onboarding flow was broken for 15% of users. My local goal was to hit the dashboard deadline, but I paused my work, paired with the onboarding owner for a day, and helped rewrite the error handling. We slipped the dashboard by a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did that cost you personally?"
+        },
+        {
+          "role": "candidate",
+          "text": "My own PR review got delayed and I missed the on-call rotation I had signed up for. My manager noted it in my next 1:1."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
+        "Role: new grad on dashboard team",
+        "Situation: onboarding flow broken two days pre-launch",
+        "Action: paused own work, paired for a day on error handling",
+        "Outcome: dashboard slipped a week; own PR delayed",
+        "Quote: \"I missed the on-call rotation I had signed up for\"",
+        "Follow-up: What did that cost you personally? \u2192 manager noted it"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate chose to fix a customer-blocking issue outside their dashboard scope even though it delayed their own deliverable. They explicitly gave up a scheduled on-call slot and accepted the manager note. This shows early ownership of end-to-end outcome rather than local task completion. The story is small but grounded and the trade-off is concrete. Main gap is limited evidence of sustaining this behavior over multiple quarters.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team owned search ranking. We had a tight deadline for a relevance tweak. Another team asked for help on their recommendation model but I stayed focused on my tickets so we could ship on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the recommendation issue affect customers?"
+        },
+        {
+          "role": "candidate",
+          "text": "It did for some users, but my manager's goal was to finish the ranking work so I didn't switch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
+        "Role: new grad on search ranking",
+        "Situation: other team needed help on recommendations",
+        "Action: stayed on own tickets to hit ranking deadline",
+        "Outcome: shipped ranking; recommendation issue left for users",
+        "Quote: \"my manager's goal was to finish the ranking work so I didn't switch\"",
+        "Follow-up: Did the recommendation issue affect customers? \u2192 yes but stayed in scope"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate prioritized the local ranking deadline over a customer-visible recommendation problem because it was outside their assigned tickets. They did not surface the trade-off or seek guidance; they simply stayed in scope. No evidence of weighing overall outcome. The story shows task compliance rather than mission focus."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I led the payments service. We were three weeks from a major merchant migration when the fraud team discovered a new attack vector that would hit conversion. I pulled two of my senior engineers onto the fraud fix for ten days even though it meant de-scoping a payments performance win we had promised the CFO."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the CFO commitment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reset the CFO expectation myself and offered a smaller perf improvement in the next quarter. The migration succeeded with no fraud losses."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
+        "Role: payments tech lead",
+        "Situation: merchant migration vs new fraud vector",
+        "Action: loaned two senior engineers for ten days; de-scoped own perf work",
+        "Outcome: migration clean; CFO commitment reset",
+        "Quote: \"I reset the CFO expectation myself\"",
+        "Follow-up: How did you handle the CFO commitment? \u2192 owned the reset"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate sacrificed a visible performance commitment to the CFO to protect merchant conversion during migration. They personally reset the stakeholder and redeployed their own team resources. Cross-team impact and explicit trade-off are clear. The outcome is measurable (no fraud losses). Still room to show how they built similar behavior in their team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout team owned latency SLAs. Another service had a scaling issue that risked overall site stability, but I kept my team on the latency roadmap because that was our OKR."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to site stability?"
+        },
+        {
+          "role": "candidate",
+          "text": "It degraded for a few hours until the other team fixed it. We still hit our latency number."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
+        "Role: checkout tech lead",
+        "Situation: other service scaling issue threatened site",
+        "Action: kept team on latency OKR",
+        "Outcome: site degraded; own SLA met",
+        "Quote: \"We still hit our latency number\"",
+        "Follow-up: What happened to site stability? \u2192 degraded for hours"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate kept their team on the local latency OKR despite a cross-service issue that affected overall site stability. They did not offer resources or escalate the trade-off. Result was measurable customer impact while protecting a narrow metric. Shows functional focus over mission outcome."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As VP of Growth I owned acquisition targets. Our infrastructure costs were projected to spike 40% if we hit the number because of an unoptimized data pipeline. I paused two acquisition campaigns and redirected the budget to the platform team to fix the pipeline, accepting a 12% miss on quarterly sign-ups."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction from the CEO and board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the trade-off to the CEO before the quarter closed and we agreed to reset the target. The following quarter we scaled cleanly and beat the original number by 8%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
+        "Role: VP Growth",
+        "Situation: acquisition target vs 40% infra cost spike",
+        "Action: paused campaigns, redirected budget to platform fix",
+        "Outcome: 12% quarterly miss; next quarter beat by 8%",
+        "Quote: \"I brought the trade-off to the CEO before the quarter closed\"",
+        "Follow-up: What was the reaction from the CEO and board? \u2192 reset target jointly"
+      ],
+      "raiseFeedback": "Raises the bar. The executive voluntarily took a 12% miss on their own acquisition target to prevent a 40% infrastructure cost explosion that would have hurt the business long-term. They owned the reset with the CEO and board and showed the payoff in the next quarter. Demonstrates strategic judgment and willingness to absorb short-term pain for sustainable growth. Evidence of leverage through budget reallocation rather than heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I ran the ads org and our goal was 30% YoY spend efficiency. Another product area was losing market share because of weak recommendations. I kept headcount on ad optimization because that was the metric tied to my bonus."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the market-share issue resolve?"
+        },
+        {
+          "role": "candidate",
+          "text": "It continued to slip for two quarters until recommendations got more resources. We still delivered our efficiency target."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
+        "Role: ads VP",
+        "Situation: recommendations losing share",
+        "Action: kept headcount on ad efficiency",
+        "Outcome: market share slipped two quarters; efficiency target hit",
+        "Quote: \"We still delivered our efficiency target\"",
+        "Follow-up: How did the market-share issue resolve? \u2192 slipped until other team got resources"
+      ],
+      "lowerFeedback": "Lowers the bar. The executive protected their own efficiency metric and bonus even while another product area lost market share due to underinvestment. They did not surface or act on the broader business trade-off. Result was sustained customer and revenue impact outside their function. Shows local optimization over org-level outcome."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of trade-off",
+      "junior": "Individual task vs adjacent task",
+      "senior": "Own team vs cross-team deliverable",
+      "exec": "Own org metric vs multi-quarter business health"
+    },
+    {
+      "signal": "What was given up",
+      "junior": "Personal on-call slot or PR timing",
+      "senior": "CFO-visible performance commitment",
+      "exec": "Quarterly acquisition target and bonus alignment"
+    },
+    {
+      "signal": "Stakeholder handling",
+      "junior": "Told manager after the fact",
+      "senior": "Reset expectation with CFO directly",
+      "exec": "Brought trade-off to CEO before quarter close"
+    },
+    {
+      "signal": "Evidence of outcome focus",
+      "junior": "Fixed onboarding for 15% of users",
+      "senior": "Protected merchant migration conversion",
+      "exec": "Enabled clean scale and 8% beat next quarter"
+    },
+    {
+      "signal": "Sustained behavior",
+      "junior": "Single instance shown",
+      "senior": "One clear example with metrics",
+      "exec": "Pattern implied by repeated budget and target resets"
+    }
+  ],
+  "kind": "factor"
+}

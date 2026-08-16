@@ -1,0 +1,196 @@
+{
+  "question": "Tell me about a time two teams optimized locally and the product suffered. What did you do?",
+  "competency": "Deliver as One Arm (cross-team alignment, avoiding local optimization)",
+  "principle": "Deliver as One Arm",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project the backend team tuned for throughput while frontend tuned for perceived speed, so the combined flow added 800 ms of latency on checkout. I flagged it in standup, pulled the two leads into a 30-minute sync, and we added a shared latency budget test that caught the regression."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say in that sync?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the before/after numbers from our canary and asked each team what trade-off they were willing to make. We agreed on a joint target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time two teams optimized locally and the product suffered. What did you do?",
+        "Role: new grad on checkout flow",
+        "Situation: backend throughput vs frontend perceived speed created 800 ms regression",
+        "Action: flagged in standup, pulled leads into sync, proposed shared latency budget",
+        "Outcome: joint target set and regression caught in canary",
+        "Quote: \"I showed the numbers and asked what trade-off each was willing to make\"",
+        "Follow-up: Asked what the candidate said in the sync; candidate described showing data and seeking joint target"
+      ],
+      "raiseFeedback": "The candidate described a local integration issue between two teams and took the step of convening a short sync with data. The story stayed within individual scope but showed ownership by surfacing the problem and proposing a shared metric rather than just reporting it. This raises the bar for junior because the candidate moved from observation to a concrete coordination step without waiting for a manager. The follow-up confirmed the candidate used numbers to drive the discussion instead of opinion. Biggest strength is the willingness to bridge the two teams despite being new.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The infra team picked a new cache that broke our build pipeline and the product went down for an hour. I logged a ticket and waited for the next planning meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to anyone on the infra team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly, I figured the ticket would route to them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time two teams optimized locally and the product suffered. What did you do?",
+        "Role: new grad supporting build pipeline",
+        "Situation: infra cache change broke pipeline and caused outage",
+        "Action: filed ticket and waited for planning meeting",
+        "Outcome: one-hour outage resolved later by others",
+        "Quote: \"I figured the ticket would route to them\"",
+        "Follow-up: Asked if candidate spoke to infra team; candidate said no, relied on ticket"
+      ],
+      "lowerFeedback": "The candidate observed a cross-team breakage but limited action to filing a ticket and waiting. No attempt was made to reach the other team directly or to prevent recurrence. This lowers the bar for junior because even at entry level we expect basic ownership to connect with the owning team when a shared system is impacted. The follow-up confirmed the candidate chose passive routing over direct coordination. Biggest gap is absence of any proactive step to align the two teams."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Search and recommendations each optimized their own latency SLAs, which caused the combined recommendation surface to drop 12 % CTR. I ran a joint experiment with both teams, defined a shared success metric on end-to-end session value, and we rolled back the independent changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get both teams to agree on the new metric?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each team their local metric improving while the joint metric declined, then asked them to own one half of the session-value number."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time two teams optimized locally and the product suffered. What did you do?",
+        "Role: senior owning recommendations surface",
+        "Situation: search and recs each hit their latency SLA but joint CTR dropped 12 %",
+        "Action: ran joint experiment, defined shared session-value metric, convinced teams to own halves of it",
+        "Outcome: independent changes rolled back, CTR recovered",
+        "Quote: \"I showed each team their local metric improving while the joint metric declined\"",
+        "Follow-up: Asked how agreement on metric was reached; candidate described showing opposing trends and splitting ownership"
+      ],
+      "raiseFeedback": "The candidate identified a product-level regression caused by two teams hitting separate local targets and drove a joint experiment that changed the metric both teams owned. Influence happened without authority by using data that made the local-vs-global trade-off visible. This raises the bar for senior because the story shows cross-team impact and the candidate left a durable shared metric in place. The follow-up confirmed the candidate facilitated ownership split rather than mandating it. Biggest strength is converting a local-optimization problem into aligned incentives.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Payments and checkout each shipped their own performance wins, but conversion fell 8 %. I sent a summary to both managers and asked them to coordinate."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the email?"
+        },
+        {
+          "role": "candidate",
+          "text": "They each said they would look at it in their next quarter planning."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time two teams optimized locally and the product suffered. What did you do?",
+        "Role: senior on checkout flow",
+        "Situation: payments and checkout performance changes caused 8 % conversion drop",
+        "Action: sent summary email to both managers and requested coordination",
+        "Outcome: managers deferred to future quarter planning; no immediate fix",
+        "Quote: \"I sent a summary to both managers and asked them to coordinate\"",
+        "Follow-up: Asked what happened after the email; candidate reported deferral to next quarter"
+      ],
+      "lowerFeedback": "The candidate recognized the cross-team regression but stopped at an email to managers without further follow-through or direct engagement. The outcome remained deferred. This lowers the bar for senior because we expect the person in the role to drive alignment rather than hand off to management. The follow-up showed no attempt to create a joint experiment or shared metric. Biggest gap is reliance on escalation instead of using influence to produce a concrete fix."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams each optimized their own cost and reliability numbers, which raised overall infrastructure spend 18 % while availability stayed flat. I created a single P&L owner for the combined platform surface, reset both teams' OKRs to a joint cost-per-request target, and we reduced spend 9 % in two quarters without availability loss."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you face when changing the OKRs?"
+        },
+        {
+          "role": "candidate",
+          "text": "Both directors worried their individual scorecards would suffer, so I made the joint target the only number that counted for their next review cycle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time two teams optimized locally and the product suffered. What did you do?",
+        "Role: exec owning platform org",
+        "Situation: two platform teams optimized cost and reliability separately, raising total spend 18 %",
+        "Action: created single P&L owner, reset OKRs to joint cost-per-request target, tied reviews to joint number",
+        "Outcome: 9 % spend reduction in two quarters, availability flat",
+        "Quote: \"I made the joint target the only number that counted for their next review cycle\"",
+        "Follow-up: Asked about resistance to OKR change; candidate described tying reviews to the new joint metric"
+      ],
+      "raiseFeedback": "The candidate addressed an org-level incentive misalignment that was driving up cost without improving the product and restructured both reporting lines and review criteria to enforce joint ownership. The change produced measurable spend reduction while protecting availability. This raises the bar for exec because the story demonstrates strategic judgment on structural fixes rather than one-off coordination. The follow-up confirmed the candidate used review-cycle leverage to overcome director resistance. Biggest strength is converting a recurring local-optimization pattern into durable org design.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two infrastructure teams each hit their own efficiency targets but total cloud spend rose 22 %. I asked the VPs to form a working group and review the numbers quarterly."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the working group change any incentives or targets?"
+        },
+        {
+          "role": "candidate",
+          "text": "They produced a report but left the existing team OKRs unchanged."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time two teams optimized locally and the product suffered. What did you do?",
+        "Role: exec responsible for infrastructure",
+        "Situation: infrastructure teams hit local efficiency targets while total spend rose 22 %",
+        "Action: asked VPs to form working group for quarterly reviews",
+        "Outcome: report delivered but team OKRs and incentives left unchanged",
+        "Quote: \"They produced a report but left the existing team OKRs unchanged\"",
+        "Follow-up: Asked if incentives changed; candidate confirmed no change to OKRs"
+      ],
+      "lowerFeedback": "The candidate identified an org-scale spend problem but responded with a working group whose output did not alter incentives or targets. No structural change occurred. This lowers the bar for exec because the role requires using authority to reset misaligned goals rather than commissioning analysis. The follow-up confirmed the candidate accepted a report without enforcing joint accountability. Biggest gap is absence of any durable mechanism to prevent repeated local optimization."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of story",
+      "junior": "Individual integration issue between two teams",
+      "senior": "Cross-team experiment and shared metric",
+      "exec": "Org-level P&L and OKR redesign"
+    },
+    {
+      "signal": "Action taken",
+      "junior": "Convened short sync and proposed shared test",
+      "senior": "Ran joint experiment and split ownership of metric",
+      "exec": "Changed reporting lines and tied reviews to joint target"
+    },
+    {
+      "signal": "Use of data",
+      "junior": "Showed before/after latency numbers",
+      "senior": "Showed local metrics improving while joint metric declined",
+      "exec": "Tracked total spend and availability over two quarters"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Direct conversation with leads",
+      "senior": "Data-driven joint experiment without authority",
+      "exec": "Structural change via P&L owner and review criteria"
+    },
+    {
+      "signal": "Outcome durability",
+      "junior": "One-time regression caught in canary",
+      "senior": "Shared metric left in place after rollback",
+      "exec": "9 % spend reduction sustained for two quarters"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "N/A at this level",
+      "senior": "Used opposing trends to gain buy-in",
+      "exec": "Tied performance reviews to new joint target"
+    }
+  ],
+  "kind": "factor"
+}

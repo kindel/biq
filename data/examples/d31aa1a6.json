@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time the path you were given was blocked. How did you find a way?",
+  "competency": "Move with urgency and find a way",
+  "principle": "Move with urgency and find a way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My onboarding task was to set up the new monitoring dashboard, but the access request to the prod metrics store was stuck in security review for two weeks. I checked the ticket daily, then asked my mentor what else I could do in parallel. She suggested I build a local mock using sample data from the staging dump so I could still write and test the queries. I finished the dashboard logic in four days and swapped in real data once access came through."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the ticket stayed open?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pinged the security team once more with a short note on why it mattered for my ramp-up, but kept moving on the mock so I didn't lose the week."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the path you were given was blocked. How did you find a way?",
+        "Role: new hire, blocked on prod access for onboarding dashboard task",
+        "Action: asked mentor, built local mock with staging data, finished queries anyway",
+        "Outcome: dashboard logic complete in 4 days, swapped data later",
+        "Quote: \"I kept moving on the mock so I didn't lose the week.\"",
+        "Follow-up: What did you do when the ticket stayed open? -> pinged once more but focused on parallel work"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency. The candidate owned an onboarding task that hit a two-week access block and created a local mock using staging data to finish the queries in four days. When the security ticket lingered they sent one targeted ping but kept progress on the mock instead of waiting. This shows individual ownership and quick adaptation without needing cross-team authority. The story stays local in scope, which fits junior expectations. Biggest strength is treating the block as a solvable constraint rather than a stop signal.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was supposed to deploy a small feature but the CI pipeline approval was delayed. I waited for the ticket to move and followed up every few days. After two weeks the approver finally responded and I deployed it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything else while waiting?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I didn't have another environment set up and wasn't sure what else to work on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the path you were given was blocked. How did you find a way?",
+        "Role: new hire, blocked on CI approval for feature deploy",
+        "Action: waited and followed up every few days",
+        "Outcome: deployed after two weeks when approver responded",
+        "Quote: \"I didn't have another environment set up and wasn't sure what else to work on.\"",
+        "Follow-up: Did you try anything else while waiting? -> no parallel path attempted"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate described a two-week CI approval delay and responded only by periodic follow-ups with no attempt to create a parallel path or local test setup. When asked about alternatives they stated they lacked another environment and were unsure what else to do. This shows passive waiting rather than ownership of their own ramp-up. The outcome was simply eventual approval with no acceleration. Biggest gap is absence of any workaround or escalation that would demonstrate individual agency."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team changed their API contract two weeks before our launch, breaking our integration. I scheduled a same-day sync, mapped the delta, and proposed we absorb the change on our side while they kept their timeline. I split the work across two engineers and had a working build by the end of the week using the new contract in staging."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get their buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as protecting the joint launch date and showed the exact diff plus the effort estimate so they could see we weren't asking them to slip."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the path you were given was blocked. How did you find a way?",
+        "Role: senior, partner API contract change two weeks pre-launch",
+        "Action: same-day sync, absorbed change internally, split work, delivered build in staging",
+        "Outcome: launch date protected with working integration",
+        "Quote: \"I framed it as protecting the joint launch date and showed the exact diff.\"",
+        "Follow-up: How did you get their buy-in? -> used shared date and clear effort breakdown"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency. The candidate faced a breaking API change from a partner team two weeks before launch and drove a same-day alignment meeting to absorb the delta internally. They split the work and delivered a staging build within the week while protecting the shared launch date. Influence came through clear diff analysis and framing around the joint goal rather than authority. Cross-team coordination and visible metrics on effort make this a senior-level example. Biggest strength is converting a blocker into an internal delivery plan without shifting blame or dates.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team updated their service and our calls started failing. I filed a ticket and waited for them to provide a migration guide. We missed the original launch window but shipped two weeks later once the guide arrived."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any way to move faster?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't have bandwidth to reverse-engineer their changes ourselves."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the path you were given was blocked. How did you find a way?",
+        "Role: senior, partner service update broke integration",
+        "Action: filed ticket and waited for migration guide",
+        "Outcome: missed launch window, shipped two weeks late",
+        "Quote: \"We didn't have bandwidth to reverse-engineer their changes ourselves.\"",
+        "Follow-up: Was there any way to move faster? -> no attempt to unblock internally"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate responded to a breaking partner service change by filing a ticket and waiting for an external migration guide, resulting in a two-week launch slip. When probed on alternatives they cited lack of bandwidth to investigate the changes themselves. This reflects reliance on the other team rather than driving an internal path forward. No evidence of cross-team influence or trade-off decisions to protect the date. Biggest gap is treating the blocker as something to be waited out instead of actively resolved."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We lost our primary data-center region mid-quarter due to a regulatory change. I convened the leadership team, ran a two-day scenario exercise, and chose to accelerate our secondary-region rollout by six months while negotiating a short-term exemption. We shifted 40 percent of traffic within eight weeks and kept customer SLAs intact."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deprioritized two feature teams for the quarter and accepted higher cloud spend temporarily to buy time on the exemption."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the path you were given was blocked. How did you find a way?",
+        "Role: exec, regulatory loss of primary data-center region mid-quarter",
+        "Action: convened leadership, ran scenario exercise, accelerated secondary region, negotiated exemption",
+        "Outcome: 40% traffic shifted in 8 weeks, SLAs maintained",
+        "Quote: \"We deprioritized two feature teams for the quarter and accepted higher cloud spend temporarily.\"",
+        "Follow-up: What trade-offs did you make? -> explicit prioritization and spend decisions"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency. The candidate faced a regulatory block on their primary data-center region and quickly aligned leadership on accelerating the secondary-region rollout by six months plus a short-term exemption. They made explicit trade-offs including deprioritizing two feature teams and accepting temporary cost increases to protect customer SLAs. The outcome moved 40 percent of traffic in eight weeks at org scale. This demonstrates strategic judgment and leverage under high ambiguity. Biggest strength is converting a business-level constraint into a deliberate, resourced plan with visible trade-offs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A regulatory notice blocked our main region. We escalated to legal and started planning the next year's budget request for a backup site. Migration work began the following quarter after approvals."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you protect the current quarter's commitments?"
+        },
+        {
+          "role": "candidate",
+          "text": "We communicated the risk to customers and adjusted our internal targets downward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the path you were given was blocked. How did you find a way?",
+        "Role: exec, regulatory block on primary region",
+        "Action: escalated to legal, planned budget request for next year",
+        "Outcome: migration started following quarter after approvals",
+        "Quote: \"We communicated the risk to customers and adjusted our internal targets downward.\"",
+        "Follow-up: How did you protect the current quarter's commitments? -> lowered targets instead of accelerating alternatives"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate treated a regulatory block on the primary region as a multi-quarter planning item, escalating to legal and deferring migration until the next budget cycle. When asked how they protected current-quarter commitments they responded by lowering internal targets and notifying customers of risk. No evidence of rapid scenario planning or resource reallocation to create an alternative path. The story shows reactive adjustment rather than proactive org-level leverage. Biggest gap is absence of strategic trade-offs or acceleration to limit business impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed of response to blocker",
+      "junior": "Creates local workaround within days",
+      "senior": "Drives cross-team alignment in 24-48 hours",
+      "exec": "Makes org-level trade-offs and reallocates within a week"
+    },
+    {
+      "signal": "Scope of workaround",
+      "junior": "Individual task or environment",
+      "senior": "Team delivery and partner coordination",
+      "exec": "Business commitments and resource shifts"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Asks mentor or peers",
+      "senior": "Frames shared goals with data",
+      "exec": "Aligns leadership and sets priorities"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Finds parallel work while waiting",
+      "senior": "Proposes internal absorption of change",
+      "exec": "Runs scenario exercises and accepts cost trade-offs"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Finishes assigned work despite delay",
+      "senior": "Protects launch date with metrics",
+      "exec": "Maintains customer SLAs at scale"
+    },
+    {
+      "signal": "Passivity vs action",
+      "junior": "Waits for ticket vs builds mock",
+      "senior": "Files ticket vs negotiates contract change",
+      "exec": "Escalates vs accelerates secondary path"
+    }
+  ],
+  "kind": "factor"
+}

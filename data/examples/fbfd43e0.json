@@ -1,0 +1,178 @@
+{
+  "question": "Tell me about a time you had to internalize a strategy that was not yours and then make it real in your work. What did you do first?",
+  "competency": "Passion for the mission",
+  "principle": "Passion for the mission",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager rolled out a new focus on reducing support ticket volume by 20% through better self-service docs. First I read the full strategy doc and pulled the three metrics they were tracking. Then I mapped every ticket type I handled in the last month against those metrics and picked the two I could influence most in my code changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did that mapping actually change in your day-to-day?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started writing the doc updates before the code PRs instead of after, and I added a short 'why this matters' note in every ticket I closed. My tickets dropped 18% in the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to internalize a strategy that was not yours and then make it real in your work. What did you do first?",
+        "Junior IC on support reduction strategy",
+        "First action: read full doc then mapped own tickets to the three metrics",
+        "Quote: 'I started writing the doc updates before the code PRs'",
+        "Follow-up: Asked what changed in day-to-day; candidate gave concrete ticket-volume delta"
+      ],
+      "raiseFeedback": "Raises the bar for Passion for the Mission at junior level. The candidate described reading the full strategy document first, then mapping their own recent tickets against the three tracked metrics before changing their workflow. They shifted to writing docs before code and added context to ticket closures, resulting in an 18% drop in their own volume. This shows quick ownership of someone else's goal at the individual-contributor scope. The concrete first step and measurable local outcome demonstrate coachability and willingness to make the strategy real without needing extra direction. Biggest strength is the direct link between reading the doc and adjusting personal output.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager said we needed to cut support tickets so I just started closing tickets faster and told customers to check the docs more."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do first to understand the actual strategy?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really read the full thing. I just heard the 20% number and tried to close things quicker."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to internalize a strategy that was not yours and then make it real in your work. What did you do first?",
+        "Candidate focused on closing tickets faster without understanding root metrics",
+        "First action described as 'I didn't really read the full thing'",
+        "Quote: 'I just heard the 20% number and tried to close things quicker'",
+        "Follow-up: Probe on understanding the strategy produced no concrete steps or learning"
+      ],
+      "lowerFeedback": "Lowers the bar for Passion for the Mission at junior level. The candidate skipped reading the strategy document and defaulted to working faster on ticket closures without connecting to the actual metrics or self-service goal. When asked what they did first, they could not describe any step to internalize the strategy beyond hearing the headline number. This shows limited ownership and little evidence of turning someone else's plan into personal action. The outcome stayed at surface-level speed rather than addressing the root cause the strategy targeted. Biggest gap is absence of any deliberate first step to understand the mission before acting."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership set a new platform strategy to drive adoption through three partner teams instead of building more internal features. First I scheduled 1:1s with the three partner leads to map their top objections and success metrics, then I rewrote our roadmap priorities to unblock their integration paths."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the partner teams to actually change their plans?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought data from our shared customers showing the joint win and offered to take the first integration spike so they saw proof before committing headcount. Two teams shifted their Q3 priorities as a result."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to internalize a strategy that was not yours and then make it real in your work. What did you do first?",
+        "Senior IC drove cross-team adoption of new platform strategy",
+        "First action: 1:1s with partner leads to surface objections and metrics",
+        "Quote: 'I brought data from our shared customers showing the joint win'",
+        "Follow-up: How did you influence partner plans; candidate described offering first integration spike"
+      ],
+      "raiseFeedback": "Raises the bar for Passion for the Mission at senior level. The candidate began by running 1:1s with the three partner leads to surface objections and shared metrics rather than pushing their own feature ideas. They then adjusted the internal roadmap to remove integration blockers and offered to lead the first spike, which prompted two teams to reprioritize. The story shows influence without authority and measurable cross-team impact on a strategy the candidate did not originate. Concrete customer data and the willingness to do the first integration work illustrate how they made the mission real beyond their own team. Biggest strength is the deliberate first step of listening across boundaries before acting.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "When leadership announced the partner-adoption strategy I updated our internal roadmap to list the new integrations as top priority and sent the slide deck to the partner teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What conversations did you have with the partner teams before changing priorities?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't schedule any upfront. I assumed the strategy doc would be enough to get them on board."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to internalize a strategy that was not yours and then make it real in your work. What did you do first?",
+        "Candidate updated roadmap and forwarded slides without partner input",
+        "First action: changed priorities and sent deck",
+        "Quote: 'I didn't schedule any upfront'",
+        "Follow-up: Probe on partner conversations showed no outreach before acting"
+      ],
+      "lowerFeedback": "Lowers the bar for Passion for the Mission at senior level. The candidate's first action was to reprioritize their own roadmap and forward the strategy deck rather than engaging the partner teams whose adoption was required. When probed, they confirmed they had not held any conversations to understand objections or shared metrics before acting. This approach stayed inside their own scope and produced no evidence of cross-team influence or adjusted plans. The story lacks the influence-without-authority behavior expected at this level. Biggest gap is treating the strategy as a task list instead of an organizational mission requiring early alignment work."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board pushed a new enterprise strategy to move from product-led growth to a land-and-expand model with named-account focus. First I ran a two-week listening tour with the top 12 sales leaders and customer-success heads to surface the biggest capability and incentive gaps, then I stood up a small cross-functional team to pilot the new account-planning process in one region."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on the pilot scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "We dropped two planned feature releases to free up the pilot team and accepted a 15% short-term slowdown in new logo adds so we could measure expansion revenue in the same quarter. The pilot region hit 2.3x expansion within six months and we rolled the process out more broadly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to internalize a strategy that was not yours and then make it real in your work. What did you do first?",
+        "Exec ran listening tour with sales and CS leaders on land-and-expand shift",
+        "First action: two-week listening tour to identify capability and incentive gaps",
+        "Quote: 'We dropped two planned feature releases to free up the pilot team'",
+        "Follow-up: Trade-offs on pilot scope; candidate described accepting short-term new-logo slowdown for expansion data"
+      ],
+      "raiseFeedback": "Raises the bar for Passion for the Mission at exec level. The candidate started with a structured listening tour across sales and customer-success leadership to identify real capability and incentive gaps before designing any rollout. They then made explicit trade-offs, deprioritizing two feature releases and accepting a temporary slowdown in new logos to generate clean expansion data from the pilot region. The pilot delivered 2.3x expansion and informed a broader rollout. This demonstrates strategic judgment under ambiguity and long-term leverage by changing operating processes rather than heroically driving results themselves. Biggest strength is the willingness to surface and resolve organizational misalignments as the first step.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the board set the land-and-expand direction I sent a company-wide note explaining the new model and asked all teams to update their OKRs accordingly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to understand where the organization was not ready?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed the note plus updated OKRs would surface issues. We later discovered sales comp and account-planning tools were still misaligned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to internalize a strategy that was not yours and then make it real in your work. What did you do first?",
+        "Exec sent company note and asked teams to update OKRs",
+        "First action: broadcast announcement without diagnostic work",
+        "Quote: 'I assumed the note plus updated OKRs would surface issues'",
+        "Follow-up: Understanding organizational readiness produced no pre-work or trade-off examples"
+      ],
+      "lowerFeedback": "Lowers the bar for Passion for the mission at exec level. The candidate's first action was a company-wide announcement and a request for OKR updates rather than any diagnostic work to identify capability or incentive gaps. When probed on readiness, they admitted later discovering that sales compensation and account-planning tools remained misaligned. This approach relied on top-down communication without creating the conditions for the strategy to succeed. It shows limited strategic judgment and no evidence of the long-term organizational leverage expected at this level. Biggest gap is the absence of any upfront effort to surface and resolve the real barriers before rolling out the mission."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "First action taken after receiving strategy",
+      "junior": "Reads the doc then maps own work to metrics",
+      "senior": "Holds 1:1s to surface objections before changing roadmap",
+      "exec": "Runs structured listening tour to identify capability and incentive gaps"
+    },
+    {
+      "signal": "Scope of impact shown",
+      "junior": "Individual ticket volume or task output",
+      "senior": "Two partner teams shift Q3 priorities",
+      "exec": "Pilot region reaches 2.3x expansion; process rolled out broadly"
+    },
+    {
+      "signal": "Evidence of trade-offs accepted",
+      "junior": "Shifts personal workflow order",
+      "senior": "Offers to lead first integration spike",
+      "exec": "Drops two feature releases and accepts short-term new-logo slowdown"
+    },
+    {
+      "signal": "Handling of resistance or misalignment",
+      "junior": "Not probed",
+      "senior": "Uses shared customer data to create joint win",
+      "exec": "Surfaces and resolves sales-comp and tooling gaps before scale"
+    },
+    {
+      "signal": "Learning or iteration shown",
+      "junior": "Uses feedback on own tickets",
+      "senior": "Adjusts based on partner response to first spike",
+      "exec": "Uses pilot data to inform company-wide rollout"
+    }
+  ],
+  "kind": "factor"
+}
