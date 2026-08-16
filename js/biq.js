@@ -22,6 +22,7 @@
     if (principle) u.searchParams.set("p", principle);
     if (question) u.searchParams.set("q", question);
     u.searchParams.set("l", level);
+    if (currentCompany && currentCompany.id) u.searchParams.set("c", currentCompany.id);
     if (u.origin !== window.location.origin) return u.href;
     return u.pathname + u.search;
   }
@@ -34,6 +35,9 @@
   var lpSelect = null;
   var LEVELS = ["junior", "senior", "exec"];
   var LEVEL_KEY = "bhiq-level";
+  var COMPANY_KEY = "bhiq-company";
+  var companies = [];
+  var currentCompany = null;
 
   function validLevel(v) {
     v = String(v || "").toLowerCase();
@@ -55,6 +59,129 @@
       sessionStorage.setItem(LEVEL_KEY, v);
     } catch (e) {}
     return v;
+  }
+
+  function normalizeBank(bank) {
+    if (bank && bank.companies && bank.companies.length) return bank.companies;
+    return [{
+      id: "amazon",
+      name: "Amazon",
+      set: "Leadership Principles",
+      principles: (bank && bank.principles) || []
+    }];
+  }
+
+  function companyById(id) {
+    id = String(id || "").toLowerCase();
+    for (var i = 0; i < companies.length; i++) {
+      if (companies[i].id === id) return companies[i];
+    }
+    return companies[0] || null;
+  }
+
+  function urlCompany() {
+    try {
+      return new URL(window.location.href).searchParams.get("c") || "";
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function getCompanyId() {
+    var fromUrl = urlCompany();
+    if (fromUrl && companyById(fromUrl)) return companyById(fromUrl).id;
+    return (companies[0] && companies[0].id) || "amazon";
+  }
+
+  function setCompany(id) {
+    currentCompany = companyById(id) || companies[0];
+    try {
+      sessionStorage.setItem(COMPANY_KEY, currentCompany.id);
+    } catch (e) {}
+    try {
+      var u = new URL(window.location.href);
+      if (currentCompany.id === (companies[0] && companies[0].id)) u.searchParams.delete("c");
+      else u.searchParams.set("c", currentCompany.id);
+      window.history.replaceState({}, "", u.pathname + u.search + u.hash);
+    } catch (e) {}
+    return currentCompany;
+  }
+
+  function principles() {
+    return (currentCompany && currentCompany.principles) || [];
+  }
+
+  function hasExamples() {
+    return currentCompany && currentCompany.id === "amazon";
+  }
+
+  function kindLabel() {
+    if (currentCompany && currentCompany.id === "arm") return "10x factor";
+    return "Leadership principle";
+  }
+
+  function selectLabel() {
+    return kindLabel();
+  }
+
+  function emptyHint() {
+    if (currentCompany && currentCompany.id === "arm") {
+      return "Type a 10x factor, or pick one from the dropdown.";
+    }
+    return "Type a principle, or pick one from the dropdown.";
+  }
+
+  function missHint() {
+    if (currentCompany && currentCompany.id === "arm") {
+      return "No match for that. Try Own it, One Arm, or urgency.";
+    }
+    return "No match for that. Try an LP (BFA, DAC, Dive Deep).";
+  }
+
+  function placeholderFor() {
+    if (currentCompany && currentCompany.id === "arm") return "Own it, One Arm, urgency";
+    return "Customer Obsession, Earn Trust, BFA";
+  }
+
+  function syncCompanyRadios() {
+    var id = currentCompany ? currentCompany.id : "";
+    var inputs = document.querySelectorAll('input[name="bhiq-company"]');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].checked = inputs[i].value === id;
+      var lab = inputs[i].parentElement;
+      if (lab && lab.tagName === "LABEL") {
+        if (inputs[i].checked) lab.classList.add("is-on");
+        else lab.classList.remove("is-on");
+      }
+    }
+    if (input) input.setAttribute("placeholder", placeholderFor());
+    var chipsEl = document.getElementById("bhiq-chips");
+    if (chipsEl) chipsEl.setAttribute("aria-label", currentCompany && currentCompany.set ? currentCompany.set : "Principles");
+    var inputLabel = document.getElementById("bhiq-input-label");
+    if (inputLabel) inputLabel.textContent = currentCompany && currentCompany.id === "arm" ? "Factor" : "Principle";
+    var levelBlock = document.getElementById("bhiq-level-block");
+    if (levelBlock) levelBlock.hidden = !hasExamples();
+  }
+
+  function applyCompany(id, rerender) {
+    setCompany(id);
+    syncCompanyRadios();
+    if (!rerender) return;
+    if (input) input.value = "";
+    renderSelects(principles());
+    renderResults([], "");
+  }
+
+  function bindCompany() {
+    syncCompanyRadios();
+    var inputs = document.querySelectorAll('input[name="bhiq-company"]');
+    for (var i = 0; i < inputs.length; i++) {
+      inputs[i].addEventListener("change", function () {
+        if (!this.checked) return;
+        applyCompany(this.value, true);
+        track("biq_company", { biq_company: this.value, biq_page: "bank" });
+      });
+    }
   }
 
   function syncLevelRadios() {
@@ -124,10 +251,6 @@
     });
   }
 
-  function kindLabel(kind) {
-    return "Leadership principle";
-  }
-
   function fillSelect(sel, placeholder, items) {
     sel.innerHTML = "";
     var opt0 = document.createElement("option");
@@ -179,8 +302,8 @@
     lpSelect = document.createElement("select");
     lpSelect.id = "bhiq-lp";
     lpSelect.className = "bhiq-select is-placeholder";
-    lpSelect.setAttribute("aria-label", "Leadership principle");
-    fillSelect(lpSelect, "Leadership principle", principles);
+    lpSelect.setAttribute("aria-label", selectLabel());
+    fillSelect(lpSelect, selectLabel(), principles);
 
     lpSelect.addEventListener("change", function () {
       if (!lpSelect.value) {
@@ -200,11 +323,11 @@
   function renderResults(hits, query) {
     results.innerHTML = "";
     if (!query) {
-      results.innerHTML = '<p class="bhiq-empty">Type a principle, or pick one from the dropdown.</p>';
+      results.innerHTML = '<p class="bhiq-empty">' + emptyHint() + "</p>";
       return;
     }
     if (!hits.length) {
-      results.innerHTML = '<p class="bhiq-empty">No match for that. Try an LP (BFA, DAC, Dive Deep).</p>';
+      results.innerHTML = '<p class="bhiq-empty">' + missHint() + "</p>";
       return;
     }
     var level = getLevel();
@@ -213,7 +336,7 @@
       section.className = "bhiq-group";
       var k = document.createElement("p");
       k.className = "bhiq-kind";
-      k.textContent = kindLabel(p.kind);
+      k.textContent = kindLabel();
       var h2 = document.createElement("h2");
       h2.textContent = p.name;
       var count = document.createElement("p");
@@ -233,12 +356,14 @@
           tag.textContent = "Manager";
           text.appendChild(tag);
         }
-        var ex = document.createElement("a");
-        ex.className = "bhiq-examples-btn";
-        ex.textContent = "Examples";
-        ex.href = examplesHref(p.name, q.text, level);
         row.appendChild(text);
-        row.appendChild(ex);
+        if (hasExamples()) {
+          var ex = document.createElement("a");
+          ex.className = "bhiq-examples-btn";
+          ex.textContent = "Examples";
+          ex.href = examplesHref(p.name, q.text, level);
+          row.appendChild(ex);
+        }
         li.appendChild(row);
         ol.appendChild(li);
       });
@@ -258,14 +383,17 @@
       return r.json();
     })
     .then(function (bank) {
-      var principles = bank.principles || [];
-      renderSelects(principles);
+      companies = normalizeBank(bank);
+      applyCompany(getCompanyId(), false);
+      bindCompany();
+      renderSelects(principles());
       renderResults([], "");
       var searchTimer = null;
       input.addEventListener("input", function () {
+        var list = principles();
         var q = norm(input.value);
-        var hits = q ? principles.filter(function (p) { return matches(p, q); }) : [];
-        syncSelects(principles);
+        var hits = q ? list.filter(function (p) { return matches(p, q); }) : [];
+        syncSelects(list);
         renderResults(hits, q);
         clearTimeout(searchTimer);
         if (!q) return;
@@ -275,7 +403,8 @@
           track("biq_search", {
             search_term: String(input.value || "").trim(),
             biq_hit_groups: hits.length,
-            biq_questions: questions
+            biq_questions: questions,
+            biq_company: currentCompany ? currentCompany.id : ""
           });
         }, 600);
       });

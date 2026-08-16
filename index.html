@@ -13,6 +13,12 @@
       <p>A question bank for interviewers who care about only hiring excellent candidates.</p>
     </header>
     <section class="bhiq-app" aria-labelledby="bhiq-input-label">
+      <p class="bhiq-level-label" id="bhiq-company-label">Company</p>
+      <div class="bhiq-level" role="radiogroup" aria-labelledby="bhiq-company-label">
+        <label><input type="radio" name="bhiq-company" value="amazon" checked> Amazon</label>
+        <label><input type="radio" name="bhiq-company" value="arm"> Arm</label>
+      </div>
+      <div id="bhiq-level-block">
       <p class="bhiq-level-label" id="bhiq-level-label">Level</p>
       <div class="bhiq-level" role="radiogroup" aria-labelledby="bhiq-level-label">
         <label><input type="radio" name="bhiq-level" value="junior"> Junior</label>
@@ -20,6 +26,7 @@
         <label><input type="radio" name="bhiq-level" value="exec"> Exec</label>
       </div>
       <p class="bhiq-level-hint">Example answers are written for this level.</p>
+      </div>
       <label id="bhiq-input-label" for="bhiq-input">Principle</label>
       <input id="bhiq-input" type="search" autocomplete="off" spellcheck="false" placeholder="Customer Obsession, Earn Trust, BFA">
       <div id="bhiq-chips" class="bhiq-chip-wrap" aria-label="Leadership principles"></div>
