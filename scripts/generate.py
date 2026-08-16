@@ -26,7 +26,7 @@ Return JSON only. No markdown. No fence.
 All-levels keys:
 {
   "question": "restated question",
-  "competency": "main competency + any secondary",
+  "principle": "main principle + any secondary",
   "levels": {
     "junior": {
       "raiseTranscript": [{"role":"candidate","text":"..."},{"role":"interviewer","text":"..."}],
@@ -45,7 +45,7 @@ All-levels keys:
 Single-level keys (only when the user asks for one level):
 {
   "question": "...",
-  "competency": "...",
+  "principle": "...",
   "level": "senior",
   "raiseTranscript": [...],
   "raiseNotes": [...],
@@ -145,7 +145,7 @@ def system_prompt():
 def call(job, sys_prompt, api_key):
     user = "\n".join(
         [
-            "Competency / principle: " + job["principle"],
+            "Principle: " + job["principle"],
             "Question: " + job["question"],
             "Generate all three levels: junior, senior, and exec. Use the all-levels JSON keys.",
         ]

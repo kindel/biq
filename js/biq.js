@@ -32,7 +32,6 @@
   if (!input || !chips || !results) return;
 
   var lpSelect = null;
-  var compSelect = null;
   var LEVELS = ["junior", "senior", "exec"];
   var LEVEL_KEY = "bhiq-level";
 
@@ -126,7 +125,7 @@
   }
 
   function kindLabel(kind) {
-    return kind === "competency" ? "Competency" : "Leadership principle";
+    return "Leadership principle";
   }
 
   function fillSelect(sel, placeholder, items) {
@@ -159,37 +158,20 @@
   }
 
   function syncSelects(principles) {
-    if (!lpSelect || !compSelect) return;
+    if (!lpSelect) return;
     var raw = String(input.value || "").trim();
     if (!raw) {
       lpSelect.value = "";
-      compSelect.value = "";
       markPlaceholder(lpSelect);
-      markPlaceholder(compSelect);
       return;
     }
-    var lps = principles.filter(function (p) { return p.kind !== "competency"; });
-    var comps = principles.filter(function (p) { return p.kind === "competency"; });
-    var lpHit = findExact(lps, raw);
-    var compHit = findExact(comps, raw);
-    if (lpHit) {
-      lpSelect.value = lpHit.name;
-      compSelect.value = "";
-    } else if (compHit) {
-      compSelect.value = compHit.name;
-      lpSelect.value = "";
-    } else {
-      lpSelect.value = "";
-      compSelect.value = "";
-    }
+    var hit = findExact(principles, raw);
+    lpSelect.value = hit ? hit.name : "";
     markPlaceholder(lpSelect);
-    markPlaceholder(compSelect);
   }
 
   function renderSelects(principles) {
     chips.innerHTML = "";
-    var lps = principles.filter(function (p) { return p.kind !== "competency"; });
-    var comps = principles.filter(function (p) { return p.kind === "competency"; });
 
     var wrap = document.createElement("div");
     wrap.className = "bhiq-selects";
@@ -198,45 +180,31 @@
     lpSelect.id = "bhiq-lp";
     lpSelect.className = "bhiq-select is-placeholder";
     lpSelect.setAttribute("aria-label", "Leadership principle");
-    fillSelect(lpSelect, "Leadership principle", lps);
+    fillSelect(lpSelect, "Leadership principle", principles);
 
-    compSelect = document.createElement("select");
-    compSelect.id = "bhiq-comp";
-    compSelect.className = "bhiq-select is-placeholder";
-    compSelect.setAttribute("aria-label", "Competency");
-    fillSelect(compSelect, "Competency", comps);
-
-    function onPick(sel, other) {
-      return function () {
-        if (!sel.value) {
-          markPlaceholder(sel);
-          return;
-        }
-        other.value = "";
-        markPlaceholder(other);
-        markPlaceholder(sel);
-        input.value = sel.value;
-        input.dispatchEvent(new Event("input"));
-        input.focus();
-      };
-    }
-
-    lpSelect.addEventListener("change", onPick(lpSelect, compSelect));
-    compSelect.addEventListener("change", onPick(compSelect, lpSelect));
+    lpSelect.addEventListener("change", function () {
+      if (!lpSelect.value) {
+        markPlaceholder(lpSelect);
+        return;
+      }
+      markPlaceholder(lpSelect);
+      input.value = lpSelect.value;
+      input.dispatchEvent(new Event("input"));
+      input.focus();
+    });
 
     wrap.appendChild(lpSelect);
-    wrap.appendChild(compSelect);
     chips.appendChild(wrap);
   }
 
   function renderResults(hits, query) {
     results.innerHTML = "";
     if (!query) {
-      results.innerHTML = '<p class="bhiq-empty">Type a principle or a competency, or pick one from a dropdown.</p>';
+      results.innerHTML = '<p class="bhiq-empty">Type a principle, or pick one from the dropdown.</p>';
       return;
     }
     if (!hits.length) {
-      results.innerHTML = '<p class="bhiq-empty">No match for that. Try an LP (BFA, DAC, Dive Deep) or a competency (teamwork, communication, judgment).</p>';
+      results.innerHTML = '<p class="bhiq-empty">No match for that. Try an LP (BFA, DAC, Dive Deep).</p>';
       return;
     }
     var level = getLevel();

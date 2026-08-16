@@ -137,7 +137,7 @@
     var keys = Object.keys(sheets);
     for (var i = 0; i < keys.length; i++) {
       var s = sheets[keys[i]];
-      if (norm(s.question) === qn && (!principle || norm(s.principle) === norm(principle) || norm(s.competency || "") === norm(principle))) {
+      if (norm(s.question) === qn && (!principle || norm(s.principle) === norm(principle))) {
         return s;
       }
     }
@@ -188,7 +188,6 @@
       });
       renderSheet({
         question: pack.question,
-        competency: pack.competency,
         raiseTranscript: levelSheet.raiseTranscript,
         raiseNotes: levelSheet.raiseNotes,
         raiseFeedback: levelSheet.raiseFeedback,
@@ -301,12 +300,6 @@
 
   function renderSheet(b) {
     sheetEl.innerHTML = "";
-    if (b.competency) {
-      var comp = document.createElement("p");
-      comp.className = "bhiq-hint";
-      comp.textContent = "Competency primarily tested: " + b.competency;
-      sheetEl.appendChild(comp);
-    }
     var levelName = LEVEL_LABEL[currentLevel] || "Senior";
     sheetEl.appendChild(side("Raises the bar", levelName + " hire-level transcript, notes, and scorecard", b.raiseTranscript, b.raiseNotes, b.raiseFeedback, "raise"));
     sheetEl.appendChild(side("Lowers the bar", levelName + " no-hire transcript, notes, and scorecard", b.lowerTranscript, b.lowerNotes, b.lowerFeedback, "lower"));
