@@ -31,6 +31,15 @@ somewhere else can override them by setting `window.BIQ` in an inline script *be
 </script>
 ```
 
+## Question bank
+
+`data/questions.json` holds the 14 leadership principles. Two separate fields feed the search box, and
+both are matched the same way:
+
+- `aliases` — how the principle is written at Amazon: abbreviations and short forms (`bfa`, `d&c`, `high bar`).
+- `synonyms` — how everyone else says it (`move fast`, `strive for excellence`, `do more with less`), so
+  someone who doesn't know the LP names can still find the questions.
+
 ## Regenerate examples
 
 Needs `XAI_API_KEY`. Resume-safe. Writes `data/examples/{slug}.json` for any question that does not already have a valid junior / senior / exec pack.

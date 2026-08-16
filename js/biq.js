@@ -108,7 +108,9 @@
 
   function matches(principle, query) {
     if (!query) return false;
-    var names = [principle.name].concat(principle.aliases || []).map(norm);
+    var names = [principle.name]
+      .concat(principle.aliases || [], principle.synonyms || [])
+      .map(norm);
     if (names.indexOf(query) !== -1) return true;
     for (var i = 0; i < names.length; i++) {
       var n = names[i];

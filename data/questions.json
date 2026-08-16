@@ -20,6 +20,12 @@
         "obsession",
         "customer experience"
       ],
+      "synonyms": [
+        "voice of the customer",
+        "user empathy",
+        "customer advocacy",
+        "working backwards from the customer"
+      ],
       "questions": [
         {
           "text": "Describe a difficult interaction you had with a customer. How did you deal with it? What was the outcome? How would you handle it differently?",
@@ -70,6 +76,12 @@
         "owned",
         "outside your area",
         "languishing"
+      ],
+      "synonyms": [
+        "act like an owner",
+        "end to end responsibility",
+        "long term thinking",
+        "takes responsibility"
       ],
       "questions": [
         {
@@ -133,6 +145,12 @@
         "simple",
         "novel"
       ],
+      "synonyms": [
+        "creative problem solving",
+        "do things differently",
+        "reduce complexity",
+        "original thinking"
+      ],
       "questions": [
         {
           "text": "Give me an example of a complex problem you solved with a simple solution. What made the problem complex? How do you know your solution addressed the problem?",
@@ -190,6 +208,12 @@
         "decision quality",
         "good judgment"
       ],
+      "synonyms": [
+        "good instincts",
+        "seeks diverse perspectives",
+        "seeks disconfirming evidence",
+        "sound judgment under uncertainty"
+      ],
       "questions": [
         {
           "text": "Tell me about a time when you didn't have enough data to make the right decision. What did you do? What path did you take? Did the decision turn out to be the correct one?",
@@ -245,6 +269,12 @@
         "learning",
         "learn and be curious"
       ],
+      "synonyms": [
+        "always learning",
+        "growth mindset",
+        "intellectual curiosity",
+        "self improvement"
+      ],
       "questions": [
         {
           "text": "Tell me about a time when you realized you needed a deeper level of subject matter expertise to do your job well. What did you do about it? What was the outcome? Is there anything you would have done differently?",
@@ -297,6 +327,12 @@
         "talent",
         "coaching",
         "hire and develop"
+      ],
+      "synonyms": [
+        "raise the bar",
+        "mentoring",
+        "grows people",
+        "talent development"
       ],
       "questions": [
         {
@@ -358,6 +394,12 @@
         "insist on the highest standards",
         "high bar"
       ],
+      "synonyms": [
+        "strive for excellence",
+        "better every day",
+        "continuous improvement",
+        "high expectations"
+      ],
       "questions": [
         {
           "text": "Describe a time when you refused to compromise your standards around quality/customer service, etc. Who was your customer? What was the result?",
@@ -408,6 +450,12 @@
         "think big",
         "big bet",
         "risk"
+      ],
+      "synonyms": [
+        "bold vision",
+        "strategic thinking",
+        "long term bets",
+        "moonshot"
       ],
       "questions": [
         {
@@ -472,6 +520,12 @@
         "bias for action",
         "move"
       ],
+      "synonyms": [
+        "move fast",
+        "sense of urgency",
+        "calculated risk taking",
+        "decisiveness"
+      ],
       "questions": [
         {
           "text": "Give me an example of a calculated risk that you have taken where speed was critical. What was the situation and how did you handle it? What steps did you take to mitigate the risk? What was the outcome? Knowing what you know now, would you have done anything differently?",
@@ -523,6 +577,12 @@
         "constraints",
         "no extra budget"
       ],
+      "synonyms": [
+        "do more with less",
+        "resourcefulness",
+        "scrappy",
+        "cost consciousness"
+      ],
       "questions": [
         {
           "text": "Give me an example of how you have helped save costs or eliminate waste within your role or organization. What was the situation? What was the impact?",
@@ -569,6 +629,12 @@
         "earn trust",
         "feedback",
         "morale"
+      ],
+      "synonyms": [
+        "listens openly",
+        "speaks candidly",
+        "acts with integrity",
+        "builds relationships"
       ],
       "questions": [
         {
@@ -625,6 +691,12 @@
         "metrics",
         "dive deep",
         "dig"
+      ],
+      "synonyms": [
+        "get into the weeds",
+        "data driven",
+        "hands on",
+        "audits the details"
       ],
       "questions": [
         {
@@ -684,6 +756,12 @@
         "have backbone",
         "unpopular"
       ],
+      "synonyms": [
+        "respectfully challenge",
+        "push back",
+        "speak up",
+        "commit once decided"
+      ],
       "questions": [
         {
           "text": "Tell me about a time when you strongly disagreed with your manager or peer on something you considered very important to the business. What was it and how did you handle it? Knowing what you know now, would you do anything differently?",
@@ -736,6 +814,12 @@
         "deliver results",
         "deadline",
         "goal"
+      ],
+      "synonyms": [
+        "get it done",
+        "focus on outcomes",
+        "meets commitments",
+        "rise to the occasion"
       ],
       "questions": [
         {
