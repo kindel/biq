@@ -191,9 +191,10 @@ def write_log(payload):
 
 
 def main():
+    # BIQ_DRY_RUN reports what a run would cost and writes nothing, so the
+    # count can be checked before spending. It needs no API key.
+    dry_run = bool((os.environ.get("BIQ_DRY_RUN") or "").strip())
     api_key = os.environ.get("XAI_API_KEY") or ""
-    if not api_key:
-        raise SystemExit("Set XAI_API_KEY to regenerate example packs.")
 
     os.makedirs(OUT_DIR, exist_ok=True)
     bank = json.load(open(BANK))
@@ -227,6 +228,12 @@ def main():
             pending.append(j)
 
     print(f"total={len(jobs)} have={have} pending={len(pending)}", flush=True)
+    if dry_run:
+        print(f"dry run, {len(pending)} api calls would be made, nothing written",
+              flush=True)
+        return
+    if pending and not api_key:
+        raise SystemExit("Set XAI_API_KEY to regenerate example packs.")
     if not pending:
         write_log({"ok": 0, "fail": 0, "have": have, "pending": 0, "failures": []})
         print(f"done have={have} new_ok=0 fail=0", flush=True)

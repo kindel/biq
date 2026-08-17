@@ -35,10 +35,28 @@ somewhere else can override them by setting `window.BIQ` in an inline script *be
 
 ## Regenerate examples
 
-Needs `XAI_API_KEY`. Resume-safe. Writes `data/examples/{slug}.json` for any question that does not already have a valid junior / senior / exec pack.
+Run the **Generate example packs** action. It is manual only, because every
+real run spends xAI credits. Pick a company, leave `dry_run` on for the first
+pass to see how many calls it would make, then run it again with `dry_run` off.
+The packs arrive as a pull request rather than on the default branch, because
+they are model-written interview content and a human should read a few first.
+
+The key lives in the `XAI_API_KEY` repository secret. There is no reason to
+hold it locally.
+
+Resume-safe. It writes `data/examples/{slug}.json` only for a question that
+does not already have a valid junior / senior / exec pack, so re-running after
+a partial failure costs only what is still missing.
+
+Locally, for a count without a key:
 
 ```
-python3 scripts/generate.py
+BIQ_DRY_RUN=1 python3 scripts/generate.py
+BIQ_DRY_RUN=1 BIQ_COMPANY=gitlab python3 scripts/generate.py
 ```
+
+`BIQ_COMPANY` scopes a run to one company. Generating does not turn the
+buttons on: `"examples": true` in `data/questions.json` is a separate,
+deliberate edit.
 
 The slug is an 8-character FNV-1a of `norm(principle)|norm(question)`. The generator reads `prompt.md` and calls xAI `grok-4.3`.
