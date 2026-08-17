@@ -1100,6 +1100,837 @@
       ],
       "examples": true,
       "item": "10x factor"
+    },
+    {
+      "id": "coupang",
+      "name": "Coupang",
+      "set": "Leadership Principles",
+      "source": "https://www.coupang.jobs/en/coupang-leadership-principles/",
+      "howTo": [
+        "Pick two or three questions per assigned leadership principle.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "Leadership principle",
+      "principles": [
+        {
+          "id": "wow-the-customer",
+          "name": "Wow the Customer",
+          "aliases": [
+            "wow",
+            "wow the customer",
+            "customer obsession",
+            "customer first"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time a metric improved but the customer experience did not. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "ruthless-prioritization",
+          "name": "Ruthless Prioritization",
+          "aliases": [
+            "ruthless prioritization",
+            "laser focus",
+            "focus",
+            "say no"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you said no to someone senior. How did you handle it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "company-wide-perspective",
+          "name": "Company-wide Perspective",
+          "aliases": [
+            "company-wide perspective",
+            "not my job",
+            "think like an owner",
+            "global optimization"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you took the option that was worse for your team and better for the company.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a problem you raised that was outside your own area.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time work fell between two teams. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "dive-deep",
+          "name": "Dive Deep",
+          "aliases": [
+            "dive deep",
+            "hands-on",
+            "get into the details",
+            "go and see"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a problem you found only because you went into the details yourself.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time the data and what people were telling you disagreed. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about the most unglamorous work you have done to understand how something really worked.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "think-systematically",
+          "name": "Think Systematically",
+          "aliases": [
+            "think systematically",
+            "mechanisms",
+            "build the system, not the fix",
+            "prevention over correction"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a defect you had to fix twice. What did you do differently the second time?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a manual workaround you replaced with something that held on its own.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a process that only worked because one person was watching it. What did you change?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "simplify",
+          "name": "Simplify",
+          "aliases": [
+            "simplify",
+            "complexity",
+            "reduce complexity",
+            "make it simpler"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about something complicated you inherited and left simpler than you found it.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to explain complex work to someone outside it.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "disagree-and-commit",
+          "name": "Disagree and Commit",
+          "aliases": [
+            "disagree and commit",
+            "constructive confrontation",
+            "speak up",
+            "have backbone"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you were the only person in the room who disagreed.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you committed fully to a decision you had argued against.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you disagreed with someone significantly more senior than you.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time someone junior disagreed with you. What did you do?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "hire-and-develop-the-best",
+          "name": "Hire and Develop the Best",
+          "aliases": [
+            "hire and develop the best",
+            "raise the bar",
+            "talent",
+            "grow people"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+              "manager": true
+            },
+            {
+              "text": "Tell me about someone you developed. What did you actually do?",
+              "manager": true
+            },
+            {
+              "text": "Tell me about a time you backed a strong performer moving off your team.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "deliver-results-with-grit",
+          "name": "Deliver Results with Grit",
+          "aliases": [
+            "deliver results with grit",
+            "grit",
+            "get it done",
+            "no excuses"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you delivered despite a dependency you did not control.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you finished the unglamorous last part of a project that everyone else had moved on from.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to choose between the date and the quality bar.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "influence-without-authority",
+          "name": "Influence without Authority",
+          "aliases": [
+            "influence without authority",
+            "knowledge trumps position",
+            "bring people with you",
+            "align through data"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you got something done through people who did not report to you.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you changed someone's mind with data or evidence.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you failed to persuade someone. What did you do next?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about something you wrote that had to carry the argument without you in the room.",
+              "manager": false
+            }
+          ]
+        },
+        {
+          "id": "aim-high-and-find-a-way",
+          "name": "Aim High and Find a Way",
+          "aliases": [
+            "aim high and find a way",
+            "jaw-dropping",
+            "think big",
+            "work backwards"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about the most ambitious goal you have set. Did you reach it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you changed the conditions rather than lower the goal.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to make an intimidating goal feel real to your team.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "learn-voraciously",
+          "name": "Learn Voraciously",
+          "aliases": [
+            "learn voraciously",
+            "ego is the enemy",
+            "stay curious",
+            "vocally self-critical"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you were wrong in public. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about something you learned from outside your own company and then applied.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about feedback you disagreed with. What did you do with it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about the most uncomfortable thing you have had to become good at.",
+              "manager": false
+            }
+          ]
+        },
+        {
+          "id": "demand-excellence",
+          "name": "Demand Excellence",
+          "aliases": [
+            "demand excellence",
+            "mediocrity",
+            "high standards",
+            "raise the bar perpetually"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you sent work back. How did you say what was missing?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about something broken that everyone had learned to live with. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you noticed the standard on your team had quietly dropped.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "move-with-urgency",
+          "name": "Move with Urgency",
+          "aliases": [
+            "move with urgency",
+            "sense of crisis",
+            "bias for action",
+            "speed"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you treated something as urgent when nobody else did.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time moving fast produced a defect. What did you change?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a decision that had been open too long. How did you force it?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "hate-waste",
+          "name": "Hate Waste",
+          "aliases": [
+            "hate waste",
+            "save not cut",
+            "frugality",
+            "do more with less"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you got the same outcome for materially less money.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a cheap decision that cost more later. What did you learn?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about waste you removed that was other people's time rather than budget.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you drove cost per unit down while volume was growing.",
+              "manager": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "delivery-hero",
+      "name": "Delivery Hero",
+      "set": "Leadership Principles",
+      "source": "https://careers.deliveryhero.com/delivery-hero/2025-4/launching-our-leadership-principles",
+      "howTo": [
+        "Pick two or three questions per assigned leadership principle.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "Leadership principle",
+      "principles": [
+        {
+          "id": "own-it",
+          "name": "Own It",
+          "aliases": [
+            "own it",
+            "ownership",
+            "act like an owner",
+            "think long term"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a problem you took on that had no owner.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time something you owned failed. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time your team could have won at the wider group's expense. What did you do?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "dive-deep",
+          "name": "Dive Deep",
+          "aliases": [
+            "dive deep",
+            "hands-on",
+            "challenge the data",
+            "get into the details"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a number you refused to take at face value. What did you find?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about an issue that kept coming back until you traced it to its real cause.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "deliver-value-fast",
+          "name": "Deliver Value Fast",
+          "aliases": [
+            "deliver value fast",
+            "speed",
+            "bias for action",
+            "focus on what matters"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you shipped a smaller version to get value out sooner.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time the market moved under your plan. How quickly did you change it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time speed started to hurt quality. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time everything was a priority. How did you decide what mattered most?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "bring-good-vibes",
+          "name": "Bring Good Vibes",
+          "aliases": [
+            "bring good vibes",
+            "good vibes",
+            "positive energy",
+            "support each other"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you supported a colleague who was having a hard time.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a sharp disagreement you managed to keep on the work and off the person.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time the numbers were bad. How did you handle the team?",
+              "manager": true
+            },
+            {
+              "text": "Tell me about a time you had to deliver bad news to people who worked for you.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "raise-the-bar",
+          "name": "Raise the Bar",
+          "aliases": [
+            "raise the bar",
+            "high bar",
+            "high standards",
+            "ambitious goals"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a time you accepted work that was only acceptable. What happened next?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about the most ambitious target you have set for a team.",
+              "manager": true
+            },
+            {
+              "text": "Tell me about feedback that was uncomfortable to give. How did you give it?",
+              "manager": true
+            },
+            {
+              "text": "Tell me about a time you had to change the shape of a team to raise its level.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "stay-humble",
+          "name": "Stay Humble",
+          "aliases": [
+            "stay humble",
+            "humility",
+            "no entitlement",
+            "open minded"
+          ],
+          "kind": "lp",
+          "questions": [
+            {
+              "text": "Tell me about a big win. How much of it was the plan and how much was luck?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time someone told you that you were wrong, and they were right.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about something you learned from a smaller or less resourced competitor.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you could have used your title to win an argument. What did you do?",
+              "manager": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gitlab",
+      "name": "GitLab",
+      "set": "CREDIT Values",
+      "source": "https://handbook.gitlab.com/handbook/values/",
+      "howTo": [
+        "Pick two or three questions per assigned CREDIT value.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "CREDIT value",
+      "principles": [
+        {
+          "id": "collaboration",
+          "name": "Collaboration",
+          "aliases": [
+            "collaboration",
+            "short toes",
+            "help others",
+            "assume good intent"
+          ],
+          "kind": "value",
+          "questions": [
+            {
+              "text": "Tell me about a time you helped someone when it did nothing for your own goals.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you were stuck. How long did you wait before asking for help?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you changed something inside someone else's area.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you gave critical feedback and kept the relationship intact.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "results-for-customers",
+          "name": "Results for Customers",
+          "aliases": [
+            "results for customers",
+            "results",
+            "customer success",
+            "outcomes"
+          ],
+          "kind": "value",
+          "questions": [
+            {
+              "text": "Tell me about an ambitious goal you set and then had to report honestly against.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about work you questioned because you could not trace it to a customer.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time a customer asked for the wrong thing. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time customer results conflicted with another priority. How did you decide?",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "efficiency",
+          "name": "Efficiency",
+          "aliases": [
+            "efficiency",
+            "boring solutions",
+            "do more with less",
+            "global optimization"
+          ],
+          "kind": "value",
+          "questions": [
+            {
+              "text": "Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you made your own team slower in order to make the whole organization faster.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about something you wrote down once instead of explaining repeatedly.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a process you removed because it bought consistency and nothing else.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "diversity-inclusion-and-belonging",
+          "name": "Diversity, Inclusion & Belonging",
+          "aliases": [
+            "diversity, inclusion & belonging",
+            "dib",
+            "inclusion",
+            "belonging"
+          ],
+          "kind": "value",
+          "questions": [
+            {
+              "text": "Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time a colleague said something exclusionary. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time the same few people were doing all the talking. What did you change?",
+              "manager": true
+            },
+            {
+              "text": "Tell me about a time you noticed the visible, career-making work going to the same people.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "iteration",
+          "name": "Iteration",
+          "aliases": [
+            "iteration",
+            "mvc",
+            "smallest valuable thing",
+            "ship small"
+          ],
+          "kind": "value",
+          "questions": [
+            {
+              "text": "Tell me about the smallest valuable thing you shipped in order to get feedback.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you validated an iteration and it told you to change direction.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time iterating would have made the user experience worse. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about work you argued genuinely could not be broken down.",
+              "manager": true
+            }
+          ]
+        },
+        {
+          "id": "transparency",
+          "name": "Transparency",
+          "aliases": [
+            "transparency",
+            "public by default",
+            "be open",
+            "work out loud"
+          ],
+          "kind": "value",
+          "questions": [
+            {
+              "text": "Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a mistake you admitted publicly.",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time something was documented but still not understood. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about information you decided not to share. How did you handle the boundary?",
+              "manager": true
+            }
+          ]
+        }
+      ]
     }
   ]
 }
