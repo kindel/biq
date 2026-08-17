@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time the data and what people were telling you disagreed. What did you do?",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the dashboard showed 15% drop in conversion after a UI change, but the PM and designer kept saying users loved the new flow from their interviews. I pulled the raw event logs myself and found the tracking tag was firing twice on the new button."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I walked through the exact user sessions with the data, showed the duplicate events, and fixed the tag. Conversion recovered once we had clean numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the data and what people were telling you disagreed. What did you do?",
+        "Role: new grad on first feature team",
+        "Situation: post-launch conversion drop vs PM/designer interview feedback",
+        "Actions: pulled raw logs, found duplicate tracking tag, walked through sessions",
+        "Outcome: fixed instrumentation, numbers recovered",
+        "Quote: \"I walked through the exact user sessions with the data\"",
+        "Follow-up: Asked what they did next; they described fixing the tag and verifying"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for junior level. Candidate owned their own instrumentation bug instead of stopping at conflicting signals. They went to raw logs rather than accepting either the dashboard or the anecdotes. Quote about walking through exact sessions shows they did the detailed work themselves. Biggest strength is taking personal responsibility for reconciling the mismatch at the data level instead of escalating or ignoring it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The metrics said one thing but the team thought it was fine so I just reported both and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at the raw data?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured the PM knew what was going on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the data and what people were telling you disagreed. What did you do?",
+        "Role: new grad",
+        "Situation: vague metrics vs team opinion",
+        "Actions: reported both sides, did not investigate",
+        "Outcome: moved on",
+        "Quote: \"I figured the PM knew what was going on\"",
+        "Follow-up: Asked about raw data; candidate had not looked"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep. Candidate accepted the conflict without digging into root cause and deferred to the PM. No evidence of examining raw data or attempting to resolve the discrepancy themselves. The story stays at the level of reporting rather than investigating, which is below expectations even for junior individual contributors."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams had conflicting views on whether a new recommendation model improved retention. Product said yes from qualitative feedback, but the A/B test showed flat results. I pulled per-cohort retention curves and found the lift was real only for users acquired in the last 30 days."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a follow-up analysis segmented by acquisition channel and shared the cohort tables with both teams so they could see where the model actually moved the needle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the data and what people were telling you disagreed. What did you do?",
+        "Role: senior on recommendation platform",
+        "Situation: product qualitative vs A/B test flat on retention",
+        "Actions: built cohort curves, segmented by acquisition channel, shared tables",
+        "Outcome: teams aligned on targeted rollout",
+        "Quote: \"I ran a follow-up analysis segmented by acquisition channel\"",
+        "Follow-up: Asked how they influenced; they described sharing segmented tables"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for senior. Candidate did not stop at the surface A/B result and instead built deeper cohort views that explained the disagreement. The follow-up segmentation created clarity that both teams could act on. Biggest strength is using detailed analysis to resolve cross-team conflict without authority, which is the expected senior behavior.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The test was flat but product was pushing for launch so I flagged the mismatch in the weekly sync and let leadership decide."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do any deeper cuts?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have time to segment further before the decision meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the data and what people were telling you disagreed. What did you do?",
+        "Role: senior",
+        "Situation: flat A/B vs product push",
+        "Actions: flagged in sync, no further analysis",
+        "Outcome: deferred to leadership",
+        "Quote: \"I didn't have time to segment further\"",
+        "Follow-up: Asked about deeper cuts; candidate cited time constraints"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for senior. Candidate identified the conflict but stopped at flagging it instead of driving resolution through additional analysis. Lack of segmentation or follow-up investigation means the disagreement remained unresolved by data. This is below the cross-team influence expected at senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Business reviews showed strong top-line growth but regional leaders insisted churn was rising in key markets. I commissioned a full customer-level cohort rebuild across all regions and discovered the growth was coming from low-LTV segments while high-value cohorts were churning faster than reported."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paused the new market expansion, reallocated marketing spend to retention programs for the high-value segment, and reset the board forecast with the corrected cohort view."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the data and what people were telling you disagreed. What did you do?",
+        "Role: exec overseeing growth",
+        "Situation: top-line growth vs regional churn signals",
+        "Actions: commissioned full cohort rebuild, identified LTV skew, paused expansion",
+        "Outcome: reallocated spend and reset forecast",
+        "Quote: \"I paused the new market expansion\"",
+        "Follow-up: Asked about trade-offs; they described pausing expansion and resetting forecast"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for exec. Candidate drove an org-wide data rebuild that revealed a strategic mismatch between reported growth and actual cohort economics. The decision to pause expansion based on the deeper view shows long-term judgment over short-term optics. Biggest strength is using detailed analysis to change business direction at scale rather than defending the existing narrative.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The numbers looked good overall so I told the regions their local data must be incomplete and kept the expansion plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you validate the cohort view yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I trusted the central dashboard and moved forward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the data and what people were telling you disagreed. What did you do?",
+        "Role: exec",
+        "Situation: growth vs regional churn reports",
+        "Actions: dismissed regional input, trusted central dashboard",
+        "Outcome: kept original plan",
+        "Quote: \"I trusted the central dashboard and moved forward\"",
+        "Follow-up: Asked about validation; candidate did not investigate"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for exec. Candidate overrode field signals without deeper investigation and protected the existing plan. No evidence of personally driving cohort-level analysis or adjusting strategy based on the mismatch. This reflects poor strategic judgment at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of data investigation",
+      "junior": "Went to raw logs to find duplicate events",
+      "senior": "Built cohort curves and acquisition segments",
+      "exec": "Commissioned full customer-level cohort rebuild across regions"
+    },
+    {
+      "signal": "Handling conflicting inputs",
+      "junior": "Owned own instrumentation bug instead of deferring",
+      "senior": "Used segmented tables to align two teams",
+      "exec": "Paused expansion and reset forecast based on LTV findings"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Fixed tracking on own feature",
+      "senior": "Enabled targeted rollout decision across teams",
+      "exec": "Changed org-wide resource allocation and board forecast"
+    },
+    {
+      "signal": "Response to pushback",
+      "junior": "Walked through sessions with data to prove the issue",
+      "senior": "Shared follow-up analysis instead of arguing",
+      "exec": "Used new data view to override prior growth narrative"
+    },
+    {
+      "signal": "Time and ambiguity management",
+      "junior": "Acted quickly on clear data discrepancy",
+      "senior": "Invested analysis time to resolve cross-team disagreement",
+      "exec": "Accepted short-term delay for long-term accuracy"
+    }
+  ],
+  "kind": "lp"
+}

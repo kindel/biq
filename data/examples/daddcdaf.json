@@ -1,0 +1,234 @@
+{
+  "question": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+  "principle": "Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "In my last project I was writing unit tests and noticed we had an extra approval step in the CI pipeline that required a manual sign-off from the team lead for every build. I checked the commit history and saw it had been added two years ago for a specific incident that no longer applied."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran the last 20 builds without the step and compared failure rates, then showed the data to my mentor who agreed we could remove it. We dropped average build time by 12 minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm nothing would break?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a temporary alert that would page me if any build failed in the first week after removal."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+        "Junior dev noticed manual CI approval step from old incident",
+        "Checked history, ran 20 builds without it, showed data to mentor",
+        "Quote: 'I added a temporary alert that would page me if any build failed'",
+        "Outcome: 12 min faster builds",
+        "Follow-up: What did you do next? -> compared failure rates and got mentor buy-in"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify for a junior. The candidate identified a local process step that added friction, gathered simple before-and-after data, and involved a mentor before acting. Quote: 'I added a temporary alert that would page me if any build failed in the first week after removal' shows ownership and risk mitigation at the individual level. This is appropriate scope for 0-2 years experience. The story stays within one pipeline rather than claiming cross-team impact. Biggest strength is the explicit safety check via the alert; the gap is lack of any attempt to measure downstream effects beyond build time.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had this extra review step in our ticket process and I just stopped doing it after a while because it felt slow."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone notice or approve the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just started routing tickets differently and no one complained so I guess it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+        "Candidate removed ticket review step because 'it felt slow'",
+        "No data or stakeholder check before removing",
+        "Quote: 'no one complained so I guess it was fine'",
+        "Follow-up: Did anyone notice or approve? -> no formal approval, just observed lack of complaints"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify for a junior. The candidate removed a process step without data, without involving others, and justified the decision only by absence of complaints. Quote: 'no one complained so I guess it was fine' reveals passive rather than deliberate simplification. At junior level we expect at least individual ownership and a basic safety net such as testing or asking a mentor. The story shows no learning loop or measurable outcome. Biggest gap is lack of any proactive validation before making the change."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our team and two partner teams were using a shared spreadsheet for release sign-offs that required three different managers to approve. I pulled six months of data showing the spreadsheet caused an average 4-day delay and zero defects caught."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams on board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot where we replaced it with an automated status page and notified the managers daily. After zero issues we deprecated the sheet and updated the runbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics did you track post-removal?"
+        },
+        {
+          "role": "candidate",
+          "text": "Release cycle time dropped 3.8 days on average across three teams and we saved roughly 15 manager hours per release."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+        "Senior removed shared spreadsheet approval across three teams",
+        "Used 6 months data showing 4-day delay, zero defects caught",
+        "Pilot with automated status page, notified managers",
+        "Quote: 'Release cycle time dropped 3.8 days on average across three teams'",
+        "Follow-up: How did you get the other teams on board? -> two-week pilot then updated runbook"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify for a senior. The candidate removed a cross-team approval tool after quantifying delay and risk, ran a controlled pilot, and measured impact across teams. Quote: 'Release cycle time dropped 3.8 days on average across three teams and we saved roughly 15 manager hours per release' demonstrates influence without authority and clear metrics. Scope matches 3-7 years experience with evidence of raising the process for others. The approach stayed pragmatic rather than over-engineering a replacement. Biggest strength is the data-driven pilot that reduced resistance; the gap is limited discussion of long-term maintenance of the new status page.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "I convinced my team to drop a weekly status meeting that was taking an hour. I just told everyone we could email updates instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams that depended on the meeting have input?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in our standup but didn't run any data or pilot with partners."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+        "Senior removed weekly status meeting for their team only",
+        "No data collected, no pilot with dependent teams",
+        "Quote: 'I mentioned it in our standup but didn't run any data or pilot with partners'",
+        "Follow-up: Did other teams that depended on the meeting have input? -> minimal communication, no validation"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify for a senior. The candidate removed a recurring meeting without metrics or input from partner teams that relied on the output. Quote: 'I mentioned it in our standup but didn't run any data or pilot with partners' shows influence limited to their own team and no attempt to quantify value or risk. At senior level we expect cross-team coordination and evidence that the removal did not create hidden work elsewhere. The story lacks any follow-up measurement. Biggest gap is absence of stakeholder alignment before acting."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had an annual vendor audit process that required every team to submit 12-page compliance decks to legal. I commissioned an analysis across 40 teams that showed 92 percent of findings were already covered by automated tooling we had deployed the prior year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the legal and compliance stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "I proposed a six-month sunset with a monthly exception report instead of the full deck. Legal agreed after we showed zero material findings in the first two cycles."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We eliminated roughly 2,400 hours of annual prep work and redirected two FTEs to product work while maintaining audit pass rate."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+        "Exec removed annual vendor audit deck process across 40 teams",
+        "Analysis showed 92% of findings covered by existing automation",
+        "Six-month sunset with exception reports, legal sign-off",
+        "Quote: 'We eliminated roughly 2,400 hours of annual prep work and redirected two FTEs to product work'",
+        "Follow-up: How did you handle the legal and compliance stakeholders? -> proposed exception report and validated over cycles"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify at exec level. The candidate removed a company-wide compliance ritual after quantifying coverage by existing tools, negotiated a controlled sunset with legal, and tracked both hours saved and audit outcomes. Quote: 'We eliminated roughly 2,400 hours of annual prep work and redirected two FTEs to product work while maintaining audit pass rate' illustrates strategic judgment and org-level leverage. Scope fits 10+ years with clear trade-off between risk and productivity. The approach used phased validation rather than abrupt removal. Biggest strength is sustained audit integrity post-change; the gap is limited detail on how the exception report process itself was later simplified.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the compliance team we could stop the quarterly vendor review because the numbers looked fine last year."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis or stakeholder alignment supported that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't run new numbers; I just felt the process had outlived its usefulness and pushed to drop it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a step, an approval, or a tool you removed. How did you know it was safe to remove?",
+        "Exec attempted to drop quarterly vendor review based on prior year numbers",
+        "No fresh analysis or broad stakeholder work",
+        "Quote: 'I just felt the process had outlived its usefulness and pushed to drop it'",
+        "Follow-up: What analysis or stakeholder alignment supported that? -> relied on feeling, no new data"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify at exec level. The candidate proposed removing a recurring compliance process based on intuition rather than current data or cross-functional alignment. Quote: 'I just felt the process had outlived its usefulness and pushed to drop it' shows strategic judgment without supporting evidence or risk mitigation. At exec level we expect org-level impact framed with trade-offs and stakeholder buy-in. The story contains no measurement of downstream audit or legal risk. Biggest gap is absence of any validation mechanism before advocating removal."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Data before removal",
+      "junior": "Simple local comparison of builds",
+      "senior": "6-month cross-team delay metrics",
+      "exec": "40-team coverage analysis tied to automation"
+    },
+    {
+      "signal": "Safety mechanism",
+      "junior": "Personal paging alert for one week",
+      "senior": "Two-week pilot with daily notifications",
+      "exec": "Six-month sunset plus exception reports"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Own pipeline only",
+      "senior": "Three teams, measurable cycle time",
+      "exec": "Org-wide hours saved and FTE reallocation"
+    },
+    {
+      "signal": "Stakeholder handling",
+      "junior": "Mentor consulted",
+      "senior": "Managers notified and runbook updated",
+      "exec": "Legal negotiated with phased validation"
+    },
+    {
+      "signal": "Risk awareness",
+      "junior": "Basic alert fallback",
+      "senior": "Zero defects in pilot data",
+      "exec": "Maintained audit pass rate post-change"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Build time reduction",
+      "senior": "3.8-day cycle time, manager hours",
+      "exec": "2,400 hours and two FTEs redirected"
+    }
+  ],
+  "kind": "lp"
+}

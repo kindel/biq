@@ -1,0 +1,174 @@
+{
+  "question": "Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+  "principle": "Demand Excellence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first internship project, we had a tight deadline for a dashboard. I made the data query and core calculations excellent because errors there would break everything, but left the UI styling and some edge-case error messages at good-enough level so we could ship on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What feedback did you get on that choice?"
+        },
+        {
+          "role": "candidate",
+          "text": "My mentor said the query was solid but one error message caused a support ticket; next time I flagged the risk earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+        "Intern, solo dashboard feature; chose query accuracy over UI polish",
+        "Outcome: shipped on time, one minor support ticket",
+        "Quote: 'I left the styling at good-enough so we met the deadline'",
+        "Follow-up: What feedback did you get? -> Mentor noted risk flag missing on error messages"
+      ],
+      "raiseFeedback": "Raises the bar. Principle tested is Demand Excellence on a junior-scope individual task. Candidate described deliberately making data logic excellent while accepting good-enough UI, directly addressing the trade-off question. The follow-up revealed they incorporated feedback about surfacing risks earlier, showing coachability. Story stays local to one feature with no inflated metrics. Biggest strength is clear ownership of the decision and learning from the small miss on error messaging.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to make everything excellent on my last task but the deadline slipped so my manager had to cut scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what could be only good?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really decide ahead of time; we just ran out of time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+        "Candidate says tried to do everything excellent, deadline slipped",
+        "No proactive trade-off described",
+        "Follow-up: How did you decide what could be only good? -> 'We just ran out of time'"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle tested is Demand Excellence. Candidate did not articulate any deliberate decision on where excellence was required versus acceptable quality; instead described scope being cut reactively after missing the deadline. Story shows no ownership of prioritization and no evidence of learning how to make such calls. The response stays at the level of hoping to do everything perfectly, which is the opposite of the principle. Biggest gap is absence of any framework or reflection on trade-offs even at junior scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leading a cross-team migration, I decided the new API contracts and backward compatibility tests had to be excellent because they affected five teams, while the internal logging dashboard only needed to be good enough for our on-call use."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to accept the dashboard quality level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the risk assessment and they agreed to use the old dashboard temporarily; we later upgraded it in the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+        "Senior, cross-team migration; made API contracts excellent, logging dashboard good-enough",
+        "Influenced five teams via risk assessment",
+        "Quote: 'API contracts had to be excellent because they affected five teams'",
+        "Follow-up: How did you get buy-in? -> Shared assessment, temporary workaround accepted"
+      ],
+      "raiseFeedback": "Raises the bar. Principle tested is Demand Excellence with senior-level cross-team scope. Candidate explicitly chose excellence on API contracts impacting multiple teams while accepting lower quality on an internal tool, backed by a shared risk assessment. Follow-up shows influence without authority through transparent trade-off communication. Metrics are implicit in team count rather than heroic numbers. Biggest strength is demonstrating how the decision enabled on-time delivery while protecting critical interfaces.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed my team to make every part of the service excellent but other teams complained about delays so we had to drop some tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve the other teams in the quality decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just told them what we were doing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+        "Pushed for excellence everywhere, delays occurred, tests dropped",
+        "No cross-team involvement in trade-off",
+        "Follow-up: Did you involve other teams? -> 'Not really, I just told them'"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle tested is Demand Excellence. Candidate defaulted to uniform excellence without defining where good-enough was acceptable, resulting in delays and forced cuts. No evidence of involving stakeholders or using data to drive the decision. Response shows lack of influence skills expected at senior level. Biggest gap is treating excellence as an all-or-nothing mandate rather than a strategic choice."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As VP, our org had to choose between perfecting the new billing system or accelerating a customer-facing feature launch. I set excellence requirements only on revenue reconciliation and compliance, while allowing the feature to ship with known monitoring gaps that we accepted for three months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact on the org?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the revenue target and later used the extra runway to raise the monitoring bar; attrition in the billing team dropped because they weren't over-indexing on non-critical work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+        "Exec, org-level billing vs feature trade-off; excellence only on revenue and compliance",
+        "Accepted monitoring gaps for 3 months",
+        "Quote: 'Excellence requirements only on revenue reconciliation and compliance'",
+        "Follow-up: Long-term impact? -> Hit target, later raised bar, billing team attrition down"
+      ],
+      "raiseFeedback": "Raises the bar. Principle tested is Demand Excellence at executive scope with high ambiguity. Candidate defined excellence narrowly around revenue and compliance while explicitly accepting temporary gaps elsewhere to protect a business launch. Follow-up reveals strategic leverage through reduced team burnout and sustained delivery. Trade-offs are framed at org level with measurable downstream effects. Biggest strength is showing long-term thinking on where to apply excellence to drive both results and sustainability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the teams they needed to deliver excellence across the board on the new platform; we missed the launch window and had to reset expectations with the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide where excellence was truly required?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't narrow it; I expected the same standard everywhere."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to decide which part of the work had to be excellent and which part could be good.",
+        "Exec pushed uniform excellence, missed launch",
+        "No strategic narrowing of scope",
+        "Follow-up: How did you decide where excellence was required? -> 'I didn't narrow it'"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle tested is Demand Excellence. Candidate applied an undifferentiated excellence standard at org level, resulting in missed commitments and board-level resets. No evidence of strategic prioritization or willingness to accept calculated trade-offs. Response lacks the judgment expected at exec level for navigating ambiguity. Biggest gap is absence of any mechanism to direct finite excellence resources toward highest business leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Defines explicit quality trade-offs",
+      "junior": "Names one component for excellence vs one for good-enough",
+      "senior": "Names cross-team interfaces vs internal tools",
+      "exec": "Frames at revenue/compliance vs feature speed"
+    },
+    {
+      "signal": "Uses data or risk to justify the call",
+      "junior": "Mentions mentor feedback after the fact",
+      "senior": "Shares risk assessment with affected teams",
+      "exec": "Ties to revenue target and team attrition"
+    },
+    {
+      "signal": "Shows influence on others",
+      "junior": "Incorporates mentor input",
+      "senior": "Gets buy-in for temporary workaround",
+      "exec": "Drives org-level behavior change on where to focus"
+    },
+    {
+      "signal": "Reflects on long-term effects",
+      "junior": "Notes single support ticket and next-time action",
+      "senior": "Plans upgrade in following quarter",
+      "exec": "Links decision to sustained delivery and retention"
+    },
+    {
+      "signal": "Avoids all-or-nothing excellence",
+      "junior": "Accepts UI polish trade-off",
+      "senior": "Accepts logging dashboard quality level",
+      "exec": "Accepts three-month monitoring gap"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,195 @@
+{
+  "question": "Tell me about the most uncomfortable thing you have had to become good at.",
+  "principle": "Learn Voraciously",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After my first code review, my manager said my Python was hard to read. I hated it but started doing daily exercises on clean code and asked for weekly feedback."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in your work?"
+        },
+        {
+          "role": "candidate",
+          "text": "My PRs went from 5 comments to 1-2, and I started reviewing others' code too. I still feel awkward asking for reviews but do it every time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most uncomfortable thing you have had to become good at.",
+        "Role: new engineer on small team",
+        "Situation: poor code style flagged in first review",
+        "Actions: daily practice + weekly feedback sessions",
+        "Outcome: PR comments dropped, began reviewing peers",
+        "Quote: \"I still feel awkward asking but do it every time.\"",
+        "Follow-up: How did you track progress? - Used a simple checklist and logged improvements"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously. The candidate described receiving direct feedback on code readability and choosing to practice daily while requesting weekly reviews. Quote: \"My PRs went from 5 comments to 1-2.\" This shows ownership of an individual skill gap and measurable local improvement within two months. The follow-up confirmed they still feel discomfort yet continue the habit. Biggest strength is turning feedback into repeated action rather than one-off effort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to learn the internal deployment tool. It was confusing so I asked a teammate to pair with me once."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you keep using it after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just avoided deployments after that and let others handle them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most uncomfortable thing you have had to become good at.",
+        "Role: junior engineer",
+        "Situation: deployment tool felt confusing",
+        "Actions: one pairing session only",
+        "Outcome: avoided the task afterward",
+        "Quote: \"I just avoided deployments after that.\"",
+        "Follow-up: Any follow-up practice? - No, handed off to others"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate identified a skill gap in the deployment tool but limited action to a single pairing session and then avoided the work. Quote: \"I just avoided deployments after that.\" No evidence of repeated practice or applying feedback to close the gap. The story stays at the level of discomfort without ownership or improvement. Biggest gap is lack of persistence after initial exposure."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to learn facilitation for cross-team planning sessions. I recorded myself, got feedback from two leads, and ran four dry runs before the first real session."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "The sessions finished on time and two teams adopted the format. I now coach two other engineers on running them."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most uncomfortable thing you have had to become good at.",
+        "Role: senior engineer leading cross-team work",
+        "Situation: facilitation needed for quarterly planning",
+        "Actions: self-recording, lead feedback, multiple dry runs",
+        "Outcome: on-time sessions adopted by two teams, now coaching others",
+        "Quote: \"I now coach two other engineers on running them.\"",
+        "Follow-up: How did you measure success? - Tracked agenda adherence and follow-up action items completed"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously. The candidate took on facilitation discomfort by recording sessions, soliciting lead feedback, and iterating through dry runs before scaling. Quote: \"The sessions finished on time and two teams adopted the format.\" This produced cross-team impact and extended to raising others through coaching. The follow-up showed concrete metrics on session effectiveness. Biggest strength is moving from personal learning to enabling broader process adoption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I needed to get better at stakeholder updates. I read a book on it and tried once."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust based on feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "The first one went okay so I kept the same format without changes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most uncomfortable thing you have had to become good at.",
+        "Role: senior engineer",
+        "Situation: stakeholder updates required",
+        "Actions: read one book and attempted once",
+        "Outcome: no iteration after initial try",
+        "Quote: \"I kept the same format without changes.\"",
+        "Follow-up: Any metrics or follow-up feedback? - None collected"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate recognized a need for better stakeholder communication but stopped at reading one book and a single attempt without iteration. Quote: \"I kept the same format without changes.\" No cross-team influence or evidence of raising others appears. The story lacks metrics or sustained practice. Biggest gap is absence of feedback loops or measurable improvement beyond the first try."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to learn capital allocation modeling when we shifted to a new business line. I spent time with finance, built three scenarios, and presented trade-offs to the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it affect the org?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reallocated 15 percent of budget to the new line and I embedded the modeling approach into the annual planning process so other leaders now use it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most uncomfortable thing you have had to become good at.",
+        "Role: exec driving org-level shift",
+        "Situation: new business line required capital modeling skill",
+        "Actions: partnered with finance, built scenarios, board presentation",
+        "Outcome: 15 percent budget shift and process embedded for other leaders",
+        "Quote: \"Other leaders now use it.\"",
+        "Follow-up: What was the long-term result? - Modeling became standard in planning cycles"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously. The candidate described acquiring capital allocation skills amid a strategic pivot by collaborating with finance and building board-level scenarios. Quote: \"We reallocated 15 percent of budget to the new line and I embedded the modeling approach.\" This produced org-level leverage and changed planning processes for other leaders. The follow-up confirmed sustained adoption. Biggest strength is turning personal learning into scalable strategic infrastructure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to understand our new pricing model. I had the team run the numbers and reviewed the summary."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change how decisions were made?"
+        },
+        {
+          "role": "candidate",
+          "text": "We used the summary for that quarter and stayed with the old process afterward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most uncomfortable thing you have had to become good at.",
+        "Role: exec",
+        "Situation: new pricing model introduced",
+        "Actions: delegated analysis and reviewed summary",
+        "Outcome: one-time use with no process change",
+        "Quote: \"We used the summary for that quarter and stayed with the old process.\"",
+        "Follow-up: Any org-wide adoption? - No, kept prior approach"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate delegated pricing model analysis and limited engagement to reviewing a summary for one quarter. Quote: \"We used the summary for that quarter and stayed with the old process afterward.\" No strategic judgment or long-term process change resulted. The story shows avoidance of personal discomfort rather than building org capability. Biggest gap is lack of leverage or sustained decision-making improvement."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of reflection on discomfort",
+      "junior": "Raises: linked feedback directly to daily practice and tracked PR improvement",
+      "senior": "Raises: used recordings and lead feedback to iterate facilitation",
+      "exec": "Raises: built and presented multiple capital scenarios to board"
+    },
+    {
+      "signal": "Evidence of sustained practice",
+      "junior": "Raises: continued requesting reviews despite ongoing awkwardness",
+      "senior": "Raises: coached two peers after initial success",
+      "exec": "Raises: embedded modeling into annual planning cycles"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Raises: improved own PR quality and began peer reviews",
+      "senior": "Raises: two teams adopted the format",
+      "exec": "Raises: 15 percent budget shift plus org-wide process change"
+    },
+    {
+      "signal": "Response to feedback",
+      "junior": "Lowers: stopped after one pairing and avoided task",
+      "senior": "Lowers: no iteration after first stakeholder update",
+      "exec": "Lowers: delegated and kept prior process unchanged"
+    },
+    {
+      "signal": "Metrics or outcomes tied to learning",
+      "junior": "Lowers: no metrics collected",
+      "senior": "Lowers: no tracking of update effectiveness",
+      "exec": "Lowers: limited to single-quarter summary"
+    },
+    {
+      "signal": "Raising others",
+      "junior": "Raises: started reviewing peers' code",
+      "senior": "Raises: now coaching two engineers on facilitation",
+      "exec": "Raises: other leaders adopted the modeling approach"
+    }
+  ],
+  "kind": "lp"
+}

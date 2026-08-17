@@ -1,0 +1,219 @@
+{
+  "question": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+  "principle": "Company-wide Perspective",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "On my project, the backend team wanted to ship a new API quickly while my frontend team needed stability for a demo. I flagged it in standup and asked my manager for help aligning priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with the backend lead to share the demo deadline and we agreed to a small change that let both move forward. The demo went well and we learned to check dependencies earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+        "Role: Individual contributor on frontend",
+        "Situation: Backend push for fast API vs frontend demo stability",
+        "Action: Flagged in standup, asked manager, then met backend lead to find compromise",
+        "Outcome: Demo succeeded, learned to check dependencies early",
+        "Quote: \"I met with the backend lead to share the demo deadline and we agreed to a small change\"",
+        "Follow-up: What did you do next? - Candidate described direct conversation and compromise"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Company-wide Perspective question. Candidate described noticing API vs demo conflict and escalating to manager before coordinating a small compromise with the other team. \"I met with the backend lead to share the demo deadline and we agreed to a small change\" shows ownership of their local scope and willingness to learn. This meets expectations at junior level where individual initiative and coachability matter more than cross-team strategy. Biggest strength is quick escalation combined with follow-through on the fix.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The other team just wouldn't prioritize our request so we missed our deadline. I told my manager and we waited for them to finish."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try talking to them directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I assumed they knew our timeline already."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+        "Role: Individual contributor",
+        "Situation: Other team deprioritized work causing missed deadline",
+        "Action: Told manager and waited",
+        "Outcome: Deadline missed with no resolution",
+        "Quote: \"I assumed they knew our timeline already\"",
+        "Follow-up: Did you try talking to them directly? - Candidate had not attempted direct conversation"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Company-wide Perspective question. Candidate waited for manager after another team deprioritized their work and made no attempt to align directly. \"I assumed they knew our timeline already\" shows lack of ownership even at individual scope. This falls short because juniors are still expected to surface conflicts and seek simple resolutions before defaulting to waiting. Biggest gap is absence of any proactive step to understand the other team's constraints."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Marketing wanted faster feature releases while Platform focused on stability SLOs. I pulled both leads into a review of release metrics and we created a joint process with staged rollouts."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed data on customer impact from both fast features and incidents, then proposed a pilot that reduced incidents 20% while keeping release cadence. Both teams adopted it and we tracked it for two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+        "Role: Senior engineer influencing two teams",
+        "Situation: Marketing release speed vs Platform stability SLOs",
+        "Action: Convened leads, shared joint metrics, proposed staged rollout pilot",
+        "Outcome: 20% incident reduction, maintained cadence, adopted for two quarters",
+        "Quote: \"I showed data on customer impact from both fast features and incidents, then proposed a pilot\"",
+        "Follow-up: How did you get buy-in? - Candidate used data and pilot to align both teams"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Company-wide Perspective question. Candidate identified speed vs stability conflict and drove a data-backed pilot with staged rollouts that both teams adopted. \"I showed data on customer impact from both fast features and incidents\" demonstrates influence without authority and measurable cross-team results. This meets senior expectations where cross-team impact and clear metrics are required. Biggest strength is turning opposing goals into a shared process with tracked outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent an email to both teams explaining the conflict but nothing changed so we kept our original plans."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you meet with the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have time and figured leadership would sort it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+        "Role: Senior engineer",
+        "Situation: Unspecified team goal conflict",
+        "Action: Sent email then stopped",
+        "Outcome: No change, plans unchanged",
+        "Quote: \"I didn't have time and figured leadership would sort it out\"",
+        "Follow-up: Did you meet with the other team? - Candidate avoided direct engagement"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Company-wide Perspective question. Candidate sent one email about a goal conflict and took no further action expecting leadership to fix it. \"I didn't have time and figured leadership would sort it out\" reveals missing influence without authority. This falls short at senior level where driving cross-team alignment is expected rather than deferring. Biggest gap is lack of follow-through or attempt to find common ground."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Sales committed to custom features while Engineering was measured on platform reliability. I restructured incentives so both orgs shared a customer retention metric and created a joint roadmap review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted slower feature velocity for six months to stabilize the platform, which improved retention 15% and let us renegotiate sales targets. This became the model for other product areas."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+        "Role: Exec leading multiple orgs",
+        "Situation: Sales custom features vs Engineering platform reliability",
+        "Action: Changed shared incentives to retention metric and added joint roadmap",
+        "Outcome: 15% retention lift, slower velocity accepted temporarily, model scaled",
+        "Quote: \"We accepted slower feature velocity for six months to stabilize the platform, which improved retention 15%\"",
+        "Follow-up: What trade-offs did you make? - Candidate described long-term org-level incentive change"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Company-wide Perspective question. Candidate aligned Sales and Engineering by shifting to shared retention metric and accepting short-term velocity trade-off for long-term stability. \"We accepted slower feature velocity for six months to stabilize the platform\" shows strategic judgment on org-level trade-offs with measurable business impact. This meets exec expectations for high-ambiguity resolution and leverage through incentives. Biggest strength is creating scalable process beyond the initial teams.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told both VPs the goals were misaligned and asked them to work it out between themselves."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They never aligned and we lost several customers before priorities shifted."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
+        "Role: Exec",
+        "Situation: Unspecified VP-level goal misalignment",
+        "Action: Directed VPs to resolve themselves",
+        "Outcome: No alignment, customer loss",
+        "Quote: \"They never aligned and we lost several customers before priorities shifted\"",
+        "Follow-up: What was the result? - Candidate took no further ownership"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Company-wide Perspective question. Candidate flagged goal misalignment to two VPs and took no further role in resolution. \"They never aligned and we lost several customers\" shows absence of strategic ownership at org level. This falls short at exec level where driving long-term alignment and trade-offs is core. Biggest gap is delegation without accountability or structural change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Surfaced conflicting goals",
+      "junior": "Raised in standup and asked manager",
+      "senior": "Convened team leads with data",
+      "exec": "Restructured incentives across orgs"
+    },
+    {
+      "signal": "Drove resolution",
+      "junior": "Met other lead for small compromise",
+      "senior": "Proposed and piloted joint process",
+      "exec": "Changed metrics and roadmap reviews"
+    },
+    {
+      "signal": "Measured impact",
+      "junior": "Demo succeeded, learned dependency check",
+      "senior": "20% incident reduction tracked two quarters",
+      "exec": "15% retention lift, scaled model"
+    },
+    {
+      "signal": "Handled trade-offs",
+      "junior": "Local scope only",
+      "senior": "Balanced speed and stability via pilot",
+      "exec": "Accepted velocity hit for platform stability"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Escalated then coordinated directly",
+      "senior": "Used data to gain buy-in without authority",
+      "exec": "Altered org incentives for lasting alignment"
+    },
+    {
+      "signal": "Scope of thinking",
+      "junior": "Individual project level",
+      "senior": "Cross-team with clear metrics",
+      "exec": "Org-wide with long-term leverage"
+    }
+  ],
+  "kind": "lp"
+}

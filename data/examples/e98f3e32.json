@@ -1,0 +1,213 @@
+{
+  "question": "Tell me about a decision that had been open too long. How did you force it?",
+  "principle": "Move with Urgency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A PR for a small logging fix sat in review for two weeks because the owner was out. I pinged the reviewer twice, then asked my manager in standup if we could assign a backup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Manager assigned someone else same day and we merged it. The delay was hurting our on-call alerts."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide two weeks was too long?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our team norm is 3-day reviews, so I flagged it once it hit that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision that had been open too long. How did you force it?",
+        "Role: new grad on logging PR stuck 2 weeks",
+        "Action: double-pinged reviewer then escalated in standup to manager",
+        "Outcome: backup assigned same day, merged quickly",
+        "Quote: 'Our team norm is 3-day reviews, so I flagged it once it hit that.'",
+        "Follow-up: Asked how they chose the threshold; candidate pointed to team norm and on-call impact"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a junior. The candidate owned a local review stall and escalated inside the team process after hitting the documented norm. Quote shows they used an existing standard rather than personal judgment. This kept the fix from blocking on-call work. Biggest strength is recognizing the stall early and using the right channel (standup) without overstepping scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A design doc for a feature I was on stayed in review for a month. I kept updating it but the architect never replied."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything to move it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent one more email and waited. Eventually the PM canceled the project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision that had been open too long. How did you force it?",
+        "Role: new grad on design doc stalled a month",
+        "Action: sent one follow-up email then stopped",
+        "Outcome: project canceled with no decision reached",
+        "Quote: 'I sent one more email and waited.'",
+        "Follow-up: Asked what threshold triggered action; candidate had none beyond 'it felt long'"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate let a month pass with only a single email and accepted cancellation instead of forcing closure. No evidence of using team norms or escalating to the right person. The outcome was loss of the work rather than resolution. Biggest gap is treating the stall as someone else's problem instead of owning the next step."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams could not agree on a shared retry policy for six weeks, blocking a migration. I pulled usage data, booked a 30-minute sync with both leads, and proposed a default with a 2-week opt-out."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the sync happen?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent the data deck the day before and asked each lead to bring one alternative. Both showed up."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you track success?"
+        },
+        {
+          "role": "candidate",
+          "text": "Migration started the next sprint; zero production incidents from the policy in first month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision that had been open too long. How did you force it?",
+        "Role: senior on cross-team retry policy stalled 6 weeks",
+        "Action: gathered data, booked sync, proposed default with opt-out",
+        "Outcome: policy set, migration unblocked, clean first month",
+        "Quote: 'I sent the data deck the day before and asked each lead to bring one alternative.'",
+        "Follow-up: Asked how they chose the 2-week opt-out window; candidate tied it to migration timeline"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a senior. The candidate used data and a short structured meeting to close a cross-team deadlock that had lasted six weeks. They influenced without authority by giving leads a concrete proposal and clear next step. Metrics show both decision speed and downstream stability. Biggest strength is converting an open item into a time-boxed choice that others accepted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A vendor selection for a shared service dragged on for three months across three teams. I kept asking in the weekly sync for an update."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the decision move?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. We ended up extending the current vendor another quarter because no one picked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision that had been open too long. How did you force it?",
+        "Role: senior on vendor choice stalled 3 months",
+        "Action: asked for updates in existing weekly sync",
+        "Outcome: extended current vendor, no selection made",
+        "Quote: 'I kept asking in the weekly sync for an update.'",
+        "Follow-up: Asked what data or proposal they brought; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate relied on passive status checks in an existing meeting and accepted a default extension after three months. No evidence of creating a forcing function or bringing options to the table. The result was continued ambiguity rather than closure. Biggest gap is lack of personal leverage to drive the cross-team outcome."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had debated entering a new vertical for nine months with no call. I set a 60-day deadline tied to the next board meeting, ran a small team on a build-vs-partner analysis, and presented a recommendation with revenue and risk trade-offs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get alignment on the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the leadership team the board would ask anyway and that delaying past the meeting would cost us a full quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We chose to partner, signed in 45 days, and hit first-year revenue target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision that had been open too long. How did you force it?",
+        "Role: exec on 9-month market entry debate",
+        "Action: imposed 60-day deadline tied to board meeting, ran focused analysis",
+        "Outcome: partner choice, signed in 45 days, hit revenue target",
+        "Quote: 'I told the leadership team the board would ask anyway and that delaying past the meeting would cost us a full quarter.'",
+        "Follow-up: Asked how the revenue target was set; candidate linked it to the analysis presented"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for an exec. The candidate imposed an external forcing function (board calendar) on a nine-month strategic stall and drove a time-boxed analysis with clear trade-offs. The decision produced a signed partnership and measurable revenue. Biggest strength is using organizational rhythm and quantified downside to create urgency without heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A pricing model change had been discussed in exec staff for eight months. I asked for it to be added to the next offsite agenda."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it get decided?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it again but tabled it for more modeling. It stayed open another quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision that had been open too long. How did you force it?",
+        "Role: exec on 8-month pricing model debate",
+        "Action: added to existing offsite agenda",
+        "Outcome: re-discussed and tabled again",
+        "Quote: 'We discussed it again but tabled it for more modeling.'",
+        "Follow-up: Asked what deadline or downside they introduced; candidate introduced none"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate added an already-stalled item to a standing meeting without creating a deadline or consequence. The item remained open after the discussion. No evidence of strategic framing or willingness to make a call under ambiguity. Biggest gap is treating a high-stakes org decision as a scheduling problem rather than an ownership problem."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "How deadline was created",
+      "junior": "Used existing team review norm",
+      "senior": "Booked short meeting with data and opt-out window",
+      "exec": "Tied to board calendar with quarter-level cost"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single PR / local on-call",
+      "senior": "Cross-team migration blocked",
+      "exec": "Market entry and board-level revenue"
+    },
+    {
+      "signal": "Use of data or proposal",
+      "junior": "None beyond norm",
+      "senior": "Usage data deck and concrete default",
+      "exec": "Build-vs-partner analysis with trade-offs"
+    },
+    {
+      "signal": "Escalation path",
+      "junior": "Manager in standup",
+      "senior": "Direct 1:1 booking with leads",
+      "exec": "Leadership team framing"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Got merge after escalation",
+      "senior": "Migration started next sprint, clean metrics",
+      "exec": "Signed deal in 45 days, hit target"
+    },
+    {
+      "signal": "What happened when stalled",
+      "junior": "Waited then one email",
+      "senior": "Kept asking in weekly sync",
+      "exec": "Added to offsite, tabled again"
+    }
+  ],
+  "kind": "lp"
+}

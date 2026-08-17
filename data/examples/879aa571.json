@@ -1,0 +1,182 @@
+{
+  "question": "Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+  "principle": "Deliver Results with Grit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first big feature, the team spent six weeks building a reporting module. We hit every sprint goal but the customer rejected it because the data was stale. I owned the follow-up and suggested we add a daily refresh job instead of the weekly one we planned."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped a v2 in two weeks that met the SLA. My manager said the key was admitting the original design didn't match real usage."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+        "Junior dev, first major feature, 6-week reporting module",
+        "Team hit internal goals but customer rejected for stale data",
+        "Action: proposed daily refresh job after rejection",
+        "Outcome: v2 shipped in 2 weeks, met SLA",
+        "Quote: \"admitting the original design didn't match real usage\"",
+        "Follow-up: Asked what changed; candidate described scope adjustment based on feedback"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit. The candidate described a clear case where extra hours did not close the gap and then adjusted the technical approach after external feedback. The story stayed within individual scope yet showed ownership of the miss and a concrete change. The quote about admitting the design mismatch illustrates coachability. The outcome was local but measurable. Biggest strength is the willingness to change the plan rather than just work harder.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We worked weekends on a dashboard but the PM kept adding requests so we missed the date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you personally change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the PM we needed more time but nothing really shifted after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+        "Team worked weekends on dashboard, missed date due to PM scope adds",
+        "No personal ownership stated beyond communicating the problem",
+        "Outcome: nothing shifted after the request for more time",
+        "Follow-up: Asked what candidate personally changed; response stayed at telling the PM without further action"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit. The candidate attributed the miss entirely to external scope changes and did not describe any adjustment they made to the work itself. The follow-up revealed no concrete change in approach or prioritization. The story lacks evidence of learning from the failure or adapting when effort alone failed. Biggest gap is absence of personal ownership or iteration."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams spent three months on a shared data pipeline. Both sides delivered their pieces but the combined system failed load tests. I facilitated a joint retro and we agreed to reduce batch sizes and add a staging gate between teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The next release passed load at 3x traffic. I also started a monthly cross-team sync that prevented similar misalignment later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+        "Senior, two-team data pipeline, 3-month effort",
+        "Both teams delivered but integration failed load",
+        "Action: ran joint retro, reduced batch sizes, added staging gate",
+        "Outcome: passed at 3x traffic plus ongoing monthly sync",
+        "Quote: focused on \"prevented similar misalignment later\"",
+        "Follow-up: Asked result; candidate tied change to both immediate fix and process improvement"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit. The candidate showed cross-team influence when hard work produced an integration failure and then drove a process change that improved throughput. The metrics were concrete and the monthly sync demonstrated lasting impact beyond the single project. The story reflects senior scope without claiming heroics. Biggest strength is converting a delivery miss into a repeatable coordination mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The other team kept changing requirements so our joint project slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change to get delivery back on track?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated to my manager and we got a new deadline but the root issues stayed the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+        "Senior, joint project slipped due to other team's requirement changes",
+        "Response stayed at escalation without describing personal influence",
+        "Outcome: new deadline granted but root issues unchanged",
+        "Follow-up: Asked what changed to get delivery back; answer remained at escalation"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit. The candidate framed the miss as caused by another team and relied on escalation rather than attempting to influence the other side directly. The follow-up confirmed no structural change was attempted. The story shows no evidence of raising the bar for cross-team delivery. Biggest gap is lack of influence without authority."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a new product line with heavy investment. After six months usage was below target. I led a strategy reset that shifted from broad market to a narrower vertical where we already had strong relationships."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide on the pivot?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used win-rate data from the sales team and customer interviews to show the original TAM assumption was off. We reallocated the remaining budget and hit the revised target in the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+        "Exec, new product line, 6-month investment below target",
+        "Action: used sales data and interviews to validate pivot to narrower vertical",
+        "Outcome: budget reallocation, hit revised target next quarter",
+        "Quote: \"original TAM assumption was off\"",
+        "Follow-up: Asked how pivot was decided; candidate tied decision to specific data sources"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit. The candidate described an org-level investment that missed and then made a strategic trade-off based on data rather than pushing harder on the original plan. The pivot included clear metrics and budget reallocation showing long-term judgment. The story demonstrates comfort with ambiguity at scale. Biggest strength is willingness to change direction at the business level after evidence accumulated.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The market shifted and our product didn't land. We kept the same roadmap and added more headcount to close the gap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed cutting scope but decided the original vision was still right so we stayed the course."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team worked very hard and still did not deliver. What did you change?",
+        "Exec, product missed due to market shift, added headcount instead of pivot",
+        "No strategic change described beyond more resources",
+        "Outcome: stayed the course on original vision",
+        "Follow-up: Asked what trade-offs considered; answer showed resistance to changing direction"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit. The candidate responded to a market miss by adding resources without revisiting the underlying strategy. The follow-up revealed reluctance to make trade-offs or adjust the vision. The story lacks evidence of strategic judgment under ambiguity. Biggest gap is treating grit as persistence on the original plan rather than adapting when results did not appear."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of the miss",
+      "junior": "Owns individual feature gap and adjusts after feedback",
+      "senior": "Owns cross-team integration failure and drives process fix",
+      "exec": "Owns org investment miss and makes data-driven strategy pivot"
+    },
+    {
+      "signal": "Change vs. more effort",
+      "junior": "Switches from weekly to daily refresh",
+      "senior": "Adds staging gate and monthly sync instead of more hours",
+      "exec": "Reallocates budget to narrower vertical instead of adding headcount"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local feature and SLA",
+      "senior": "Two-team throughput plus ongoing coordination",
+      "exec": "Product-line target and budget decision"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Quotes admitting design mismatch",
+      "senior": "Prevents similar misalignment later",
+      "exec": "Uses win-rate data and interviews to update TAM view"
+    },
+    {
+      "signal": "Response to external feedback",
+      "junior": "Incorporates customer rejection",
+      "senior": "Facilitates joint retro across teams",
+      "exec": "Uses sales data and customer interviews to validate pivot"
+    }
+  ],
+  "kind": "lp"
+}

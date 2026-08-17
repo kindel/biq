@@ -1,0 +1,219 @@
+{
+  "question": "Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+  "principle": "Aim High and Find a Way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a goal to finish a new dashboard feature two weeks early so the team could test it sooner. I missed by four days because of an unexpected data schema change."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who did you tell and what exactly did you say?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told my manager in our 1:1 the day I realized the slip. I said the original date was at risk, showed the root cause, and gave a revised date with the extra work I would do to recover."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked me to write a short note to the two engineers waiting on the feature. I did that and we shipped two days later than the new date. Next sprint I added buffer checks on schema changes."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+        "Individual feature goal, missed by 4 days due to schema change",
+        "Told manager in 1:1 same day with root cause and revised date",
+        "Quote: \"I said the original date was at risk, showed the root cause\"",
+        "Follow-up: Who did you tell? Candidate added note to waiting engineers and added buffer checks next sprint"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way for a junior. The candidate chose an ambitious internal deadline on their own work and owned the miss immediately with their manager rather than waiting for the deadline. They described exactly what they reported and followed up with a concrete process change. This shows early ownership and coachability on a local scope. The story is small but the transparency and learning loop are clear. Biggest strength is prompt reporting plus the follow-up action that prevents repeat misses.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to finish the dashboard early but some other work got in the way so we missed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who did you tell about the miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in the team standup after the original date passed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say about why it slipped?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said the schema change was unexpected and we just needed more time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+        "Missed self-set early deadline on dashboard",
+        "Only mentioned in standup after the date had passed",
+        "Quote: \"I said the schema change was unexpected and we just needed more time\"",
+        "Follow-up: Who did you tell? Candidate waited until after deadline and gave no recovery plan"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way for a junior. The candidate waited until after the deadline to mention the miss and offered no forward plan or root-cause detail. Reporting happened in a public standup instead of a direct conversation with the manager. No evidence of ownership or learning from the shortfall. The story shows passive behavior rather than proactive transparency. Biggest gap is lack of timely, direct reporting and absence of any corrective action."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed the team to deliver a cross-org search improvement that would lift result relevance by 12 percent. We hit 7 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who did you report the miss to and how?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a written update to the two partner team leads and my director with the actual metric, the main blocker in ranking signals, and the next two experiments we would run."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The director asked me to run a retro with the partner teams. We adjusted the signal priorities and the follow-on work later reached 11 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+        "Cross-org search project aimed for 12 percent lift, delivered 7 percent",
+        "Written update to partner leads and director with metric, blocker, and next experiments",
+        "Quote: \"I sent a written update... with the actual metric, the main blocker\"",
+        "Follow-up: Outcome? Candidate ran retro and adjusted priorities to reach 11 percent later"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way for a senior. The candidate set a measurable cross-team goal, reported the shortfall directly to the right stakeholders with data and a path forward, and drove a retro that produced further gains. The story shows influence without authority and clear metric ownership. Reporting was proactive and written rather than reactive. Biggest strength is the combination of ambitious target, transparent update, and follow-through that improved the result.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We aimed for a big relevance lift on search but only got partway there because ranking work took longer than expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who received the update on the shortfall?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought it up in the monthly cross-team sync."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share the actual numbers or next steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said we were still working on it and would update when we had more data."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+        "Cross-org search relevance goal missed",
+        "Mentioned only in monthly sync after the fact",
+        "Quote: \"I said we were still working on it and would update when we had more data\"",
+        "Follow-up: Did you share numbers? Candidate gave no metric or recovery plan"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way for a senior. The candidate set an ambitious goal but delayed any formal report until a routine sync and provided neither the actual metric nor a recovery plan. Stakeholders were not given timely visibility or asked for input. No evidence of driving follow-up work across teams. Biggest gap is absence of proactive, data-driven reporting and lack of ownership after the miss."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We set a company goal to reach 40 percent contribution margin in two years. After 18 months we were at 31 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who did you report this to and what did you say?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented to the board with the full margin bridge, the two largest product bets that underperformed, and the revised three-year plan that still targeted 38 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board asked for a deeper review of the underperforming bets. We sunset one and reallocated headcount, which moved us to 35 percent within nine months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+        "Company-level 40 percent margin goal, at 31 percent after 18 months",
+        "Board presentation with margin bridge, underperforming bets, and revised plan",
+        "Quote: \"I presented to the board with the full margin bridge\"",
+        "Follow-up: Outcome? Board review led to sunsetting one bet and reaching 35 percent"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way for an exec. The candidate set a stretch company-wide financial target, delivered a transparent board-level update with root causes and a revised multi-year path, and used the miss to drive portfolio decisions. The story demonstrates strategic judgment under ambiguity and long-term leverage rather than heroics. Reporting was direct to the highest audience with clear trade-offs. Biggest strength is owning the miss at the business level and converting it into resource reallocation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our margin target was aggressive and we fell short due to macro conditions and a couple of product delays."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate this to the board or leadership team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I covered it in the QBR narrative and noted we would revisit the target in the next planning cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you propose any concrete changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We decided to keep the original target and monitor progress."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you aimed high and landed short. What did you report, and to whom?",
+        "Company margin goal missed",
+        "Covered in QBR narrative without specific actions",
+        "Quote: \"We decided to keep the original target and monitor progress\"",
+        "Follow-up: Concrete changes? Candidate avoided trade-offs or reallocation decisions"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way for an exec. The candidate set a high bar but reported the shortfall only in routine QBR materials without surfacing root causes or trade-offs to the board. No portfolio or resource decisions were proposed despite the miss. The response shows avoidance of difficult strategic conversations. Biggest gap is lack of direct, decision-oriented reporting at the org level and failure to use the miss to drive leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Transparency on shortfall",
+      "junior": "Raises: immediate 1:1 with root cause and revised date; Lowers: waited until after deadline, vague update",
+      "senior": "Raises: written update to partner leads with metric and next experiments; Lowers: only mentioned in monthly sync, no numbers",
+      "exec": "Raises: board presentation with margin bridge and revised plan; Lowers: buried in QBR, no trade-offs proposed"
+    },
+    {
+      "signal": "Ownership of outcome",
+      "junior": "Raises: added buffer checks next sprint; Lowers: blamed schema change, no recovery plan",
+      "senior": "Raises: ran retro and adjusted priorities across teams; Lowers: said still working on it, no follow-up",
+      "exec": "Raises: sunset underperforming bet and reallocated headcount; Lowers: kept original target, just monitor"
+    },
+    {
+      "signal": "Audience and timing",
+      "junior": "Raises: told manager same day; Lowers: public standup after deadline",
+      "senior": "Raises: proactive written note to stakeholders; Lowers: routine sync only",
+      "exec": "Raises: direct board presentation; Lowers: routine QBR narrative"
+    },
+    {
+      "signal": "Learning and leverage",
+      "junior": "Raises: process change on schema checks; Lowers: none shown",
+      "senior": "Raises: later reached 11 percent after retro; Lowers: no visible improvement",
+      "exec": "Raises: reached 35 percent after reallocation; Lowers: no action taken"
+    }
+  ],
+  "kind": "lp"
+}

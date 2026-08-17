@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you got the same outcome for materially less money.",
+  "principle": "Hate Waste",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my last project I needed a data viz tool for a one-off analysis. Instead of buying the $800 license the team usually used, I found a free open-source alternative and spent two days learning it. We got the exact same charts and insights for the stakeholder meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and did anyone else use it after?"
+        },
+        {
+          "role": "candidate",
+          "text": "The meeting went fine and the PM asked if we could standardize on it for future one-offs. I wrote a short internal guide so two other engineers could pick it up without the learning curve."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you got the same outcome for materially less money.",
+        "Junior IC on analytics project; swapped paid tool for OSS alternative to avoid $800 license",
+        "Action: spent 2 days ramping, delivered identical output, wrote quick internal guide",
+        "Outcome: meeting succeeded; two peers later adopted the cheaper path",
+        "Quote: \"The PM asked if we could standardize on it for future one-offs.\"",
+        "Follow-up: Asked about reuse; candidate confirmed guide enabled others without extra cost"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste for a junior. The candidate identified an $800 license spend on their own work and replaced it with an equivalent free tool while still delivering the required analysis. They owned the two-day learning cost and added a short guide that let peers reuse the cheaper option. The story stays within individual scope but shows clear ownership and coachability through the documented handoff. The concrete dollar figure and reuse signal make the waste reduction real rather than aspirational. Biggest strength is turning a personal tool choice into a repeatable lower-cost pattern without needing permission or budget.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were going to buy a new monitor for testing but I found one in the storage room that still worked so we didn't spend the $300."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was that the only time or did it change how the team buys hardware?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just that one time; the monitor was already there so it was basically free."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you got the same outcome for materially less money.",
+        "Junior found spare monitor in storage instead of buying new one for $300",
+        "Action: checked storage room, used existing hardware for one test cycle",
+        "Outcome: avoided single $300 purchase",
+        "Quote: \"It was just that one time; the monitor was already there.\"",
+        "Follow-up: Probe on broader impact; no process change or reuse by others"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. The candidate describes a one-time opportunistic find rather than any deliberate cost decision or process improvement. The $300 saving is real but isolated and required no trade-off or learning. No evidence of ownership beyond noticing the spare item or of sharing the approach so the team avoids future purchases. The story stays purely reactive and local with no follow-through. Biggest gap is absence of repeatable action or measurable ongoing waste reduction."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was paying $18k/year for a third-party alerting service. I ran a bake-off showing we could replicate the same SLO alerts with existing CloudWatch and a 40-line Lambda. After a two-week pilot the other three squads in the org switched and we canceled the contract."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other squads to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the Terraform module and a one-page runbook in our guild channel; two squad leads volunteered to migrate first because their on-call load dropped 15%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you got the same outcome for materially less money.",
+        "Senior engineer replaced $18k alerting SaaS with internal CloudWatch + Lambda",
+        "Action: built bake-off, 2-week pilot, published Terraform + runbook",
+        "Outcome: three squads migrated, contract canceled, on-call load down 15%",
+        "Quote: \"I shared the Terraform module and a one-page runbook in our guild channel.\"",
+        "Follow-up: Asked about influence; candidate showed voluntary adoption via guild without authority"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste at senior level. The candidate replaced an $18k annual contract with an internal solution that delivered identical alerting while cutting on-call load. They drove cross-squad adoption through a reusable module and runbook rather than mandates. The pilot and voluntary uptake demonstrate influence without authority and measurable org-level savings. The story includes concrete cost, time, and operational metrics. Biggest strength is turning a single-team tool replacement into a repeatable pattern adopted by three squads.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I negotiated our SaaS renewal down 10% by threatening to leave, saving about $2k."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the scope or usage change, or was it just the price?"
+        },
+        {
+          "role": "candidate",
+          "text": "Same usage, just better price after I pushed on the account rep."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you got the same outcome for materially less money.",
+        "Senior negotiated 10% discount on existing SaaS, saving $2k",
+        "Action: threatened to churn during renewal call",
+        "Outcome: lower annual bill, no change in service or usage",
+        "Quote: \"Same usage, just better price after I pushed on the account rep.\"",
+        "Follow-up: Checked for broader impact; no replication or process change"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. The candidate achieved a modest price reduction through negotiation but left scope and consumption unchanged. The $2k saving is small relative to senior scope and shows no effort to reduce actual usage or find alternatives. No evidence of sharing the tactic or preventing similar spend elsewhere. The story reflects tactical haggling rather than structural waste elimination. Biggest gap is lack of lasting process or consumption change."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were running four overlapping observability platforms across the company at $4.2M annual run rate. I sponsored a 90-day consolidation program that picked one primary stack, migrated the top 60 services, and sunset the other three tools. Run rate dropped to $1.8M while SLO visibility stayed flat or improved."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on the migration timeline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a six-week window where two legacy tools stayed in read-only mode for audit teams; the CFO signed off because the quarterly savings still hit the target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you got the same outcome for materially less money.",
+        "Exec consolidated four observability platforms from $4.2M to $1.8M run rate",
+        "Action: 90-day program, chose single stack, migrated 60 services, read-only bridge for audits",
+        "Outcome: $2.4M annual savings, SLO visibility maintained or better",
+        "Quote: \"The CFO signed off because the quarterly savings still hit the target.\"",
+        "Follow-up: Explored trade-offs; candidate balanced speed, risk, and finance approval"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste at exec level. The leader identified $4.2M in redundant tooling spend and drove a company-wide consolidation that cut run rate by more than half while protecting SLO visibility. They made explicit trade-offs on migration timeline and secured CFO buy-in for a controlled bridge period. The scale, cross-org coordination, and sustained savings reflect strategic judgment and long-term leverage. The story shows how one decision affected the entire company's cost structure. Biggest strength is achieving material, recurring savings through deliberate scope reduction rather than incremental negotiation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked finance to delay two non-critical vendor payments by 60 days, improving cash flow by about $800k for the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this change any contracts or future spend?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, just timing; we still paid the full amounts later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you got the same outcome for materially less money.",
+        "Exec delayed vendor payments 60 days for $800k quarterly cash-flow improvement",
+        "Action: worked with finance on payment timing shift",
+        "Outcome: temporary cash improvement, full amounts still paid",
+        "Quote: \"No, just timing; we still paid the full amounts later.\"",
+        "Follow-up: Checked for structural change; confirmed one-time timing only"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. The executive describes a cash-flow timing shift rather than any reduction in actual spend or elimination of waste. The $800k is a deferral, not a saving, and leaves future obligations untouched. No evidence of reviewing whether the vendors or services were still needed. The story stays at a financial close maneuver without addressing root consumption. Biggest gap is absence of lasting cost-structure improvement."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Dollar impact and recurrence",
+      "junior": "$800 one-time tool swap with reuse guide",
+      "senior": "$18k annual contract canceled after cross-squad migration",
+      "exec": "$2.4M run-rate reduction via platform consolidation"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual project and immediate peers",
+      "senior": "Multiple squads via guild influence",
+      "exec": "Company-wide tooling and CFO-level trade-offs"
+    },
+    {
+      "signal": "Evidence of influence without authority",
+      "junior": "Shared guide; peers opted in",
+      "senior": "Terraform module adopted voluntarily by other squads",
+      "exec": "90-day program with read-only bridge accepted by audit teams"
+    },
+    {
+      "signal": "Trade-off clarity",
+      "junior": "Two days of learning vs license cost",
+      "senior": "Two-week pilot vs ongoing $18k",
+      "exec": "Six-week read-only window vs quarterly savings target"
+    },
+    {
+      "signal": "Process vs one-off",
+      "junior": "Internal guide created for reuse",
+      "senior": "Reusable module and runbook published",
+      "exec": "Consolidation program and single-stack standard set"
+    }
+  ],
+  "kind": "lp"
+}

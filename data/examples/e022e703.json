@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time a colleague said something exclusionary. What did you do?",
+  "principle": "Diversity, Inclusion & Belonging",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project, a teammate joked about how 'the non-native speakers slow us down in standups.' I waited until after the meeting and said it came across as exclusionary because it singled out accents instead of focusing on clarity. He apologized and we agreed to slow down or use chat for questions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Standups stayed the same length but two newer teammates started speaking up more. I checked in with them a week later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a colleague said something exclusionary. What did you do?",
+        "Junior IC on first project; teammate made accent joke in standup",
+        "Pulled colleague aside privately, explained impact, suggested chat for questions",
+        "Outcome: two teammates spoke up more; checked in later",
+        "Quote: 'I waited until after the meeting and said it came across as exclusionary'",
+        "Follow-up: How did you decide to speak up? Candidate: 'I remembered feedback from my mentor on addressing small things early'"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Principle is Diversity, Inclusion & Belonging on the question of handling exclusionary comments. Candidate described noticing an accent joke, addressing it one-on-one, and following up with affected teammates. This shows ownership of their immediate environment and coachability from prior feedback. The action stayed within individual scope yet produced a visible local result. Biggest strength is the private, specific conversation paired with a later check-in rather than public call-out or silence.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone made a comment about accents slowing the meeting. I didn't say anything in the moment because it was my first week and I didn't want to rock the boat."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it to my manager in our next 1:1 but nothing changed so I just moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a colleague said something exclusionary. What did you do?",
+        "Junior IC; accent joke in standup during first week",
+        "Stayed silent in moment due to newness",
+        "Escalated to manager in 1:1 with no follow-through",
+        "Quote: 'I didn't say anything in the moment because it was my first week'",
+        "Follow-up: What would you do differently now? Candidate: 'Probably the same unless my manager told me to act'"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Principle is Diversity, Inclusion & Belonging on the question of handling exclusionary comments. Candidate stayed silent during the comment and only raised it once in a 1:1 with no further action. The story shows no ownership of the immediate situation and treats the issue as someone else's problem. Lack of any personal follow-up or learning moment keeps the impact at zero. Biggest gap is the absence of even a low-risk attempt to address the comment directly."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a cross-team project a peer said the design docs from the India office were 'always late and low quality.' I raised it in our next sync, shared anonymized velocity data showing no difference, and proposed we rotate doc reviews across sites. The other lead agreed and we added it to the team charter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other lead on board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the data first, then asked what problem they were actually seeing. It turned out to be one delayed handoff, not a pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a colleague said something exclusionary. What did you do?",
+        "Senior on cross-team project; peer generalized about India office quality",
+        "Brought data to next sync, proposed rotating reviews, updated charter",
+        "Outcome: practice changed and reduced site-based assumptions",
+        "Quote: 'I raised it in our next sync, shared anonymized velocity data'",
+        "Follow-up: What resistance did you face? Candidate: 'Initial defensiveness but data shifted the conversation'"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Principle is Diversity, Inclusion & Belonging on the question of handling exclusionary comments. Candidate used data and a process change to address a generalization about an entire office location. The response influenced a peer without authority and produced a documented team norm. Scope moved beyond one conversation to affect multiple teams. Biggest strength is turning a single comment into a repeatable practice that reduced future bias.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer complained that the India team always delivered late. I told them that wasn't fair but didn't push further because it wasn't my direct team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after your comment?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. The comment came up again in another meeting a month later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a colleague said something exclusionary. What did you do?",
+        "Senior; peer generalized about India team delivery",
+        "Said it wasn't fair but took no further steps",
+        "Comment repeated later with no intervention",
+        "Quote: 'I told them that wasn't fair but didn't push further'",
+        "Follow-up: Why stop after one comment? Candidate: 'It felt like a one-off and I had my own deliverables'"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Principle is Diversity, Inclusion & Belonging on the question of handling exclusionary comments. Candidate offered a single verbal pushback but took no further action despite the comment recurring. No attempt to influence process or gather data to change behavior. The story stays at the level of an individual opinion without measurable effect. Biggest gap is the lack of leverage or follow-through expected at senior scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a leadership offsite a VP said we should 'stop hiring from certain universities because they produce too many activists.' I asked for the specific performance data behind the view, then commissioned an anonymized hiring and promotion audit across those schools. Results showed no difference; we added a training module for leaders on sourcing bias and tracked offer acceptance rates from those schools for the next two cycles."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider before the audit?"
+        },
+        {
+          "role": "candidate",
+          "text": "I weighed the risk of surfacing the comment publicly versus quietly fixing the underlying assumption. Quiet data collection won because it avoided defensiveness while still changing the decision."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a colleague said something exclusionary. What did you do?",
+        "Exec at offsite; VP generalized about certain universities",
+        "Requested data, ran hiring audit, added leader training, tracked metrics",
+        "Outcome: sourcing bias module rolled out and acceptance rates monitored",
+        "Quote: 'I asked for the specific performance data behind the view'",
+        "Follow-up: How did you handle the VP relationship afterward? Candidate: 'We discussed the audit findings one-on-one and he supported the training'"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Principle is Diversity, Inclusion & Belonging on the question of handling exclusionary comments. Candidate responded to a VP's university generalization by driving an organization-wide audit and training program. The approach used data and process to shift leadership behavior at scale. High ambiguity was managed through private data collection before broader rollout. Biggest strength is converting a single comment into sustained org-level measurement and capability building.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A VP made a comment about avoiding certain universities. I noted it but didn't raise it because the person was senior to me and the hiring decision wasn't mine to own."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the comment affect any later decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "I don't know. It didn't come up in the meetings I attended after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a colleague said something exclusionary. What did you do?",
+        "Exec; VP generalized about universities at offsite",
+        "Noted comment but took no action due to hierarchy",
+        "No visibility into whether it influenced decisions",
+        "Quote: 'I noted it but didn't raise it because the person was senior to me'",
+        "Follow-up: What would have made you act? Candidate: 'If it was repeated or directly impacted my org headcount'"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Principle is Diversity, Inclusion & Belonging on the question of handling exclusionary comments. Candidate observed a VP's exclusionary generalization and chose inaction due to hierarchy. No strategic judgment applied to assess downstream risk or leverage. The story shows no attempt to create visibility or change at the org level. Biggest gap is the absence of long-term thinking or use of positional influence expected at executive scope."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of response",
+      "junior": "Individual conversation and local check-in",
+      "senior": "Cross-team process change with data",
+      "exec": "Org-wide audit and sustained metrics"
+    },
+    {
+      "signal": "Use of influence",
+      "junior": "Direct peer conversation",
+      "senior": "Peer lead alignment without authority",
+      "exec": "Leadership behavior change via data"
+    },
+    {
+      "signal": "Follow-through",
+      "junior": "One-week teammate check-in",
+      "senior": "Charter update and repeated meetings",
+      "exec": "Two-cycle tracking and training rollout"
+    },
+    {
+      "signal": "Learning orientation",
+      "junior": "Referenced prior mentor feedback",
+      "senior": "Shifted from assumption to evidence",
+      "exec": "Weighed visibility trade-offs before acting"
+    },
+    {
+      "signal": "Risk tolerance",
+      "junior": "Low-risk private talk",
+      "senior": "Public data share in sync",
+      "exec": "Private audit before broader exposure"
+    }
+  ],
+  "kind": "value"
+}

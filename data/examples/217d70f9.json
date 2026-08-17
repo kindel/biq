@@ -1,0 +1,202 @@
+{
+  "question": "Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate owned a bug fix in our service. I reviewed the logs and metrics daily but only shared observations in our 1:1s."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually do with the details?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the exact error rates and pointed to two queries that looked off. She then decided to add the index and close the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you know when to stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "Once the fix went in and metrics improved, I stopped checking daily."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+        "Junior dev on shared service bug",
+        "Reviewed logs/metrics daily, shared observations only in 1:1",
+        "Pointed to two queries; owner added index",
+        "Quote: 'Once the fix went in and metrics improved, I stopped checking daily'",
+        "Follow-up: How did you know when to stop? Stopped after metrics recovered"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep. The candidate described reviewing error rates and query details daily while leaving the fix decision and implementation to the owner. Quote: 'I pulled the exact error rates and pointed to two queries that looked off.' This shows appropriate depth for a junior without ownership takeover. The follow-up confirmed they disengaged once metrics recovered. Biggest strength is the clear hand-back after the detail work was complete.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed a bug in my teammate's code so I just fixed it myself to save time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you tell them first?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just pushed the change and mentioned it later in standup."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+        "Junior fixed teammate bug directly",
+        "Pushed change without discussion",
+        "Mentioned after the fact in standup",
+        "Follow-up: Did you tell them first? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep. Candidate took over the fix instead of staying close to the detail while preserving ownership. No evidence of sharing observations or letting the owner decide. The action was direct intervention without communication. Biggest gap is absence of any boundary between staying informed and executing the work themselves."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team owned a latency regression affecting our joint customers. I pulled their service metrics and request traces every day for two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you share the detail?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent them a one-page summary of the top three paths with p99 numbers and asked what they needed from me."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: What was the outcome and how did you step back?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped a change that cut latency 40 ms. I stopped the daily pulls once their on-call confirmed steady state."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+        "Senior supported another team's latency issue",
+        "Daily metrics and traces for two weeks",
+        "Sent one-page summary with p99 numbers",
+        "Quote: 'I sent them a one-page summary of the top three paths with p99 numbers and asked what they needed from me'",
+        "Follow-up: Stepped back after their on-call confirmed steady state"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep. Candidate maintained daily visibility into another team's metrics and traces for two weeks and surfaced a concise summary rather than directing fixes. Quote: 'I sent them a one-page summary of the top three paths with p99 numbers and asked what they needed from me.' This demonstrates cross-team influence while respecting ownership. Stepped back cleanly once steady state was reached. Biggest strength is the disciplined data hand-off that enabled the owning team to act.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I joined their standups and started assigning tasks to their engineers until the latency improved."
+        },
+        {
+          "role": "interviewer",
+          "text": "Were you asked to do that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly, but I had the data so it seemed faster."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+        "Senior joined another team's standups",
+        "Began assigning tasks to their engineers",
+        "Follow-up: Were you asked to do that? Not directly"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep. Candidate moved from detail gathering directly into task assignment on another team's work. No evidence of sharing raw observations or letting the owner retain control. The action crossed into execution ownership without invitation. Biggest gap is the lack of boundary between staying close and directing the owning team's work."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our new market launch had unclear conversion metrics owned by the product org. I reviewed the raw funnel data and cohort tables weekly with the GM."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you avoid taking over?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged two segments where drop-off exceeded the model and asked the GM what additional instrumentation they wanted before their next planning cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: When did you stop the weekly reviews?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the GM presented an updated model to the leadership team and the board accepted the revised forecast."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+        "Exec reviewed funnel data for new market launch",
+        "Weekly raw data and cohort tables with GM",
+        "Flagged two segments and asked what instrumentation GM wanted",
+        "Quote: 'I flagged two segments where drop-off exceeded the model and asked the GM what additional instrumentation they wanted'",
+        "Follow-up: Stopped after GM presented updated model to leadership and board"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep. Candidate maintained weekly review of raw funnel and cohort data at the business level while directing questions back to the GM for instrumentation decisions. Quote: 'I flagged two segments where drop-off exceeded the model and asked the GM what additional instrumentation they wanted.' This shows strategic judgment on when to stay close versus delegate. Stepped back once the GM owned the revised forecast at the board. Biggest strength is the long-term leverage through the owning leader rather than direct intervention.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I took over the weekly metric reviews myself because the product team was too slow to surface issues to the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the GM stay involved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Eventually I just presented the numbers myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
+        "Exec took over weekly metric reviews",
+        "Presented numbers to board instead of GM",
+        "Follow-up: Did the GM stay involved? Eventually presented myself"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep. Candidate shifted from review to direct ownership and board presentation, displacing the GM. No evidence of building the owner's capability or stepping back. The action centralized control rather than preserving it. Biggest gap is the absence of any mechanism to return detail ownership to the accountable leader."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Boundary between detail and ownership",
+      "junior": "Shared observations only; stopped after metrics recovered",
+      "senior": "One-page summary then asked what owner needed; stepped back after steady state",
+      "exec": "Flagged segments then asked GM for instrumentation decision; stepped back after board presentation"
+    },
+    {
+      "signal": "Data depth shown",
+      "junior": "Error rates and two specific queries",
+      "senior": "p99 numbers on top three paths for two weeks",
+      "exec": "Raw funnel data and cohort tables weekly"
+    },
+    {
+      "signal": "Cross-team or org leverage",
+      "junior": "Single teammate interaction",
+      "senior": "Supported another team's regression",
+      "exec": "Enabled GM to own revised forecast at board level"
+    },
+    {
+      "signal": "Disengagement trigger",
+      "junior": "Metrics improved",
+      "senior": "On-call confirmed steady state",
+      "exec": "GM presented updated model and board accepted forecast"
+    },
+    {
+      "signal": "Risk of takeover",
+      "junior": "Lower example shows direct code push",
+      "senior": "Lower example shows task assignment to other team",
+      "exec": "Lower example shows direct board presentation"
+    }
+  ],
+  "kind": "lp"
+}

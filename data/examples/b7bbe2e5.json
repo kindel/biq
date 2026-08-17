@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about a sharp disagreement you managed to keep on the work and off the person",
+  "principle": "Bring Good Vibes",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship project, the backend dev and I disagreed on using a new library vs sticking to the existing stack. I said the perf gain wasn't worth the maintenance risk for a small feature."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the tension?"
+        },
+        {
+          "role": "candidate",
+          "text": "We scheduled a 20-min sync, listed pros/cons on a doc, and I asked him to walk me through his past experience with the library. Ended up using the existing stack but documented the decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Feature shipped on time. He later told me the discussion helped him see the ops side better. I learned to always surface trade-offs in writing first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a sharp disagreement you managed to keep on the work and off the person",
+        "Role: intern on small feature team, disagreed with senior backend on library choice",
+        "Actions: proposed 20-min sync, shared pros/cons doc, asked for his experience",
+        "Outcome: decision documented, feature on time, relationship stayed positive",
+        "Quote: 'I learned to always surface trade-offs in writing first'",
+        "Follow-up: Asked how they handled pushback; said they thanked the other person for their time and followed up in chat with summary"
+      ],
+      "raiseFeedback": "Raises the bar for Bring Good Vibes on the given question. Junior candidate described a scoped disagreement over library choice during an internship project and kept discussion to documented trade-offs rather than personal preference. Quote: 'I learned to always surface trade-offs in writing first.' This shows early ownership of process and coachability when the other engineer shared ops experience. The 20-minute sync format demonstrates they treated the disagreement as a shared problem instead of a contest. Biggest strength is the explicit follow-up summary sent in chat, which modeled keeping the record factual for a junior level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We disagreed on whether my approach was over-engineered. I felt the other person was just being defensive about their own code."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just implemented my version anyway and showed it worked. They stopped arguing after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a sharp disagreement you managed to keep on the work and off the person",
+        "Role: intern, disagreed on over-engineering claim",
+        "Actions: decided other person was defensive, shipped own version without further discussion",
+        "Outcome: 'they stopped arguing'",
+        "Quote: 'I felt the other person was just being defensive about their own code'",
+        "Follow-up: Asked if they sought any feedback after shipping; said no, it was clear their version was better"
+      ],
+      "lowerFeedback": "Lowers the bar for Bring Good Vibes on the given question. Junior candidate framed the disagreement as the other person being defensive rather than engaging the technical point. Quote: 'I felt the other person was just being defensive about their own code.' They skipped any structured discussion and simply shipped their version, which does not demonstrate separating work from person at even an individual-contributor level. No evidence of seeking feedback or documenting the decision. Biggest gap is treating the outcome as 'they stopped arguing' instead of a collaborative resolution."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams disagreed on API contract changes that would affect three downstream services. I facilitated a working session with data on latency and error rates instead of ownership claims."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep it from getting personal?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started by stating the shared goal of reducing p99 by 15 percent, then rotated who presented each option. We captured concerns in a shared doc and voted on criteria before solutions."
+        },
+        {
+          "role": "interviewer",
+          "text": "Result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Adopted a hybrid approach. One team lead later asked me to help run the same format for their internal roadmap debate."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a sharp disagreement you managed to keep on the work and off the person",
+        "Role: senior on platform team, cross-team API contract dispute affecting 3 services",
+        "Actions: ran working session, led with shared p99 goal, rotated presenters, captured concerns in doc",
+        "Outcome: hybrid approach chosen; another team later requested same format",
+        "Quote: 'I started by stating the shared goal of reducing p99 by 15 percent'",
+        "Follow-up: Asked how they handled the losing side; said they scheduled 1:1s to hear remaining concerns and added them to the doc"
+      ],
+      "raiseFeedback": "Raises the bar for Bring Good Vibes on the given question. Senior candidate described a cross-team API contract disagreement and kept focus on measurable p99 goal and rotating presenters rather than ownership. Quote: 'I started by stating the shared goal of reducing p99 by 15 percent.' The shared doc and criteria-first voting show influence without authority and raising the process for others. Follow-up 1:1s with the losing side demonstrate long-term relationship maintenance. Biggest strength is the downstream request from another team to reuse the format, indicating repeatable positive impact at senior scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The other team kept pushing scope that would delay our launch. I told them in the meeting that their proposal ignored the data and we were moving forward."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the relationship recover?"
+        },
+        {
+          "role": "candidate",
+          "text": "We still ship together but I now route most decisions through my manager to avoid direct conflict."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a sharp disagreement you managed to keep on the work and off the person",
+        "Role: senior, cross-team scope dispute",
+        "Actions: told other team their proposal ignored data and declared decision in meeting",
+        "Outcome: 'still ship together but route through manager to avoid conflict'",
+        "Quote: 'I told them in the meeting that their proposal ignored the data'",
+        "Follow-up: Asked if they ever revisited the decision process; said they now avoid direct discussion"
+      ],
+      "lowerFeedback": "Lowers the bar for Bring Good Vibes on the given question. Senior candidate escalated a scope disagreement by declaring the decision in the meeting rather than structuring the discussion. Quote: 'I told them in the meeting that their proposal ignored the data.' Routing future decisions through a manager shows the relationship was damaged instead of strengthened. No evidence of cross-team influence or raising the bar for others. Biggest gap is treating avoidance as the solution instead of building durable working norms at senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two product orgs had fundamentally different views on whether to double down on the existing market or pivot to a new vertical. I ran a six-week structured debate with external benchmarks and customer interviews instead of internal advocacy."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you prevent it from becoming personal at the leadership level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assigned each side a 'red team' role to argue the opposite view and required every claim to cite either data or a named customer. After the final readout I made the call and published the full rationale plus what we would measure in 90 days."
+        },
+        {
+          "role": "interviewer",
+          "text": "Long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The losing org lead later used the same red-team format for their own reorg decision. Attrition in both groups stayed flat during the transition."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a sharp disagreement you managed to keep on the work and off the person",
+        "Role: exec, org-level market vs pivot decision between two product orgs",
+        "Actions: six-week structured debate with external benchmarks and customer interviews, assigned red-team roles, required data-backed claims",
+        "Outcome: call published with 90-day metrics; other org adopted format; attrition flat",
+        "Quote: 'I assigned each side a red team role to argue the opposite view'",
+        "Follow-up: Asked how they handled the losing leader; said they gave them first choice on which 90-day metrics to own and publicly credited the work"
+      ],
+      "raiseFeedback": "Raises the bar for Bring Good Vibes on the given question. Exec candidate described a high-ambiguity market-direction disagreement between two product orgs and used red-team roles plus data requirements to keep debate on substance. Quote: 'I assigned each side a red team role to argue the opposite view.' Publishing the full rationale and giving the losing leader ownership of success metrics shows strategic judgment and long-term relationship leverage. Flat attrition during the transition indicates the approach protected org health. Biggest strength is the other org voluntarily adopting the format, demonstrating scalable cultural impact at executive scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership disagreed on whether to acquire or build. I made the build decision after the third meeting because the acquire camp kept repeating the same points without new data."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the acquire advocates respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "One of them left six months later. The rest aligned once the build started showing progress."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a sharp disagreement you managed to keep on the work and off the person",
+        "Role: exec, acquire vs build strategic call",
+        "Actions: ended debate after third meeting citing repeated points, made unilateral call",
+        "Outcome: 'one of them left six months later'",
+        "Quote: 'I made the build decision after the third meeting because the acquire camp kept repeating the same points'",
+        "Follow-up: Asked what they did to retain the dissenting leader; said they focused on execution instead of revisiting the process"
+      ],
+      "lowerFeedback": "Lowers the bar for Bring Good Vibes on the given question. Exec candidate ended a strategic acquire-versus-build debate after three meetings by citing repetition rather than creating structure. Quote: 'I made the build decision after the third meeting because the acquire camp kept repeating the same points.' One leader departing six months later shows the approach did not preserve relationships at org scale. No evidence of long-term thinking or leverage through process. Biggest gap is treating attrition of a dissenting voice as an acceptable outcome instead of a signal to improve decision hygiene."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Separates ideas from people",
+      "junior": "Uses docs and time-boxed syncs; thanks the other person",
+      "senior": "Rotates presenters and captures concerns in shared doc",
+      "exec": "Assigns red-team roles and publishes full rationale with metrics"
+    },
+    {
+      "signal": "Creates repeatable process",
+      "junior": "Documents decision after the fact",
+      "senior": "Other team requests same format later",
+      "exec": "Losing org adopts format for their own decisions"
+    },
+    {
+      "signal": "Handles power dynamics",
+      "junior": "Seeks feedback from more senior peer",
+      "senior": "Influences without authority across teams",
+      "exec": "Gives losing leader ownership of success metrics"
+    },
+    {
+      "signal": "Protects long-term relationships",
+      "junior": "Sends summary chat after meeting",
+      "senior": "Holds 1:1s with losing side post-decision",
+      "exec": "Attrition stays flat; dissenting leader stays engaged"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single feature, individual contributor level",
+      "senior": "Cross-team API affecting multiple services",
+      "exec": "Org-level market direction with 90-day business measures"
+    }
+  ],
+  "kind": "lp"
+}

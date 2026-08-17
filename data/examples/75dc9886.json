@@ -1,0 +1,174 @@
+{
+  "question": "Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+  "principle": "Ruthless Prioritization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our squad had three parallel features plus a refactor. I listed everything I owned, scored each by user impact and my capacity, then dropped the lowest one after checking with my manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you score impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Talked to two PMs and looked at ticket data showing only 12% of users would see the refactor benefit soon."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+        "Candidate owned personal scope only, listed own tasks, scored by user impact and capacity",
+        "Cut lowest-impact item after manager check",
+        "Quote: 'Talked to two PMs and looked at ticket data showing only 12% of users would see the refactor benefit soon'",
+        "Follow-up: How did you score impact? -> Used PM input and ticket data"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for the question asked. Junior candidate described narrowing their own work from three features plus refactor by listing tasks and scoring on user impact and capacity. They cut the lowest item after a manager check and cited a concrete data point: only 12 percent of users would see the refactor benefit. The approach shows ownership of individual scope and use of simple data plus coach input rather than heroics. Biggest strength is the explicit decision rule tied to limited evidence they could gather themselves.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a lot going on so I just worked longer hours and tried to get through the list."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually stop doing?"
+        },
+        {
+          "role": "candidate",
+          "text": "Nothing really, we finished most of it eventually."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+        "Candidate responded with longer hours instead of cuts",
+        "No items removed, claimed they finished most eventually",
+        "Follow-up: What did you actually stop doing? -> Nothing really"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for the question asked. Junior candidate answered by describing longer hours with no actual cuts made. When probed they confirmed nothing was stopped and the team simply finished most items later. The story shows no evidence of prioritization mechanics or willingness to drop work. Biggest gap is absence of any decision framework or outcome from reducing scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams and three product squads were all pushing features on the same service. I mapped every initiative to revenue risk and support load, then led a cross-team review that dropped two low-value experiments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics drove the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "We used projected support tickets per week and one experiment showed under 5k monthly active users against a 50k threshold we set."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+        "Mapped initiatives across two platform and three product teams to revenue risk and support load",
+        "Led cross-team review that cut two experiments",
+        "Quote: 'one experiment showed under 5k monthly active users against a 50k threshold we set'",
+        "Follow-up: What metrics drove the decision? -> Support tickets and MAU threshold"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for the question asked. Senior candidate described coordinating across five teams by mapping work to revenue risk and support load, then running a review that removed two experiments. They anchored the call on a clear threshold of 50k MAU versus observed 5k and weekly ticket projections. Story demonstrates influence without authority and use of shared metrics. Biggest strength is the cross-team scope combined with a repeatable decision rule that others accepted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had too many projects so I asked the manager to reassign some work to another group."
+        },
+        {
+          "role": "interviewer",
+          "text": "What criteria did you use?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just picked the ones that felt least urgent to me."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+        "Candidate deferred decision to manager by requesting reassignments",
+        "No criteria beyond personal sense of urgency",
+        "Follow-up: What criteria did you use? -> Least urgent to me"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for the question asked. Senior candidate answered by asking a manager to reassign work and admitted the selection was based only on personal sense of urgency. No cross-team coordination or data appeared in the account. The response shows reliance on authority rather than influence. Biggest gap is lack of any shared framework or measurable outcome from the cuts."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The business had eight active bets across three regions with flat growth. I ran a portfolio review using contribution margin and strategic fit, then shut down three bets and redirected headcount to the two highest-margin areas."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the regional pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each region the three-year margin forecast and let them choose which single bet to keep locally."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+        "Portfolio review across eight bets and three regions using contribution margin and strategic fit",
+        "Shut down three bets and redirected headcount",
+        "Quote: 'showed each region the three-year margin forecast and let them choose which single bet to keep locally'",
+        "Follow-up: How did you handle the regional pushback? -> Margin forecast and local choice"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for the question asked. Executive candidate described a portfolio review of eight bets using contribution margin and strategic fit, resulting in three shutdowns and headcount reallocation to the top two. They addressed regional resistance by sharing three-year forecasts and granting local choice on one remaining bet. The account shows strategic judgment under ambiguity and long-term leverage. Biggest strength is the org-level scope and explicit trade-off mechanism that aligned stakeholders.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had too many initiatives so I told the teams to focus on the top three priorities I set."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in resource allocation?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept running the others at lower priority but didn't stop any."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
+        "Announced top-three priorities without stopping work",
+        "Other initiatives continued at lower priority",
+        "Follow-up: What changed in resource allocation? -> Kept running others at lower priority"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for the question asked. Executive candidate answered by declaring top-three priorities while allowing all other initiatives to continue at reduced effort. No actual cuts or reallocation of headcount occurred. The story lacks evidence of hard trade-offs or measurable business impact. Biggest gap is absence of strategic shutdown decisions despite org-level scope."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision framework used",
+      "junior": "Simple scoring with manager input",
+      "senior": "Cross-team metrics and thresholds",
+      "exec": "Portfolio margin and strategic fit with multi-year view"
+    },
+    {
+      "signal": "Scope of cuts",
+      "junior": "Individual tasks only",
+      "senior": "Multiple teams and experiments",
+      "exec": "Org bets and headcount reallocation"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Asked manager once",
+      "senior": "Shared data in review",
+      "exec": "Offered local choice after forecast"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "User impact percentage cited",
+      "senior": "MAU and ticket projections",
+      "exec": "Contribution margin and three-year forecast"
+    },
+    {
+      "signal": "Willingness to stop work",
+      "junior": "One item dropped after check",
+      "senior": "Two experiments fully removed",
+      "exec": "Three bets shut down"
+    }
+  ],
+  "kind": "lp"
+}

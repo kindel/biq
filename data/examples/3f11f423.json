@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about something complicated you inherited and left simpler than you found it.",
+  "principle": "Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I took over a messy onboarding script from a teammate who left. It had 12 steps and three different tools that didn't talk to each other."
+        },
+        {
+          "role": "candidate",
+          "text": "I consolidated it into a single Python script that ran the checks in order and logged everything in one place. New hires went from 4 hours to under 90 minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What feedback did you get on the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked me to document it so the next person could maintain it without me."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something complicated you inherited and left simpler than you found it.",
+        "Inherited 12-step onboarding script using three disconnected tools.",
+        "Consolidated into single Python script with ordered checks and unified logging.",
+        "Outcome: reduced time from 4 hours to 90 minutes.",
+        "Quote: \"My manager asked me to document it so the next person could maintain it.\"",
+        "Follow-up: What feedback did you get on the change? - Documented for handoff."
+      ],
+      "raiseFeedback": "Raises the bar on Simplify. The candidate described taking over a fragmented 12-step onboarding script and replacing it with a single ordered Python script. New-hire time dropped from 4 hours to 90 minutes. They noted the manager's request to document the change for future ownership. The story shows clear ownership of an inherited mess at the individual level and willingness to make the work maintainable. The main gap is limited evidence of measuring the simplification beyond their own team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I cleaned up some old config files that were hard to read."
+        },
+        {
+          "role": "candidate",
+          "text": "I moved a few settings around and added comments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was easier for me to understand later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something complicated you inherited and left simpler than you found it.",
+        "Cleaned up old config files by moving settings and adding comments.",
+        "Impact described only as \"easier for me to understand later.\"",
+        "Follow-up: What was the impact? - Personal benefit only."
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify. The candidate mentioned moving settings in config files and adding comments but gave no measurable outcome beyond personal convenience. There is no indication of scope, adoption by others, or sustained simplification. The story stays at the level of minor cleanup without evidence of ownership or learning from feedback."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our shared data pipeline had five teams each running their own ETL jobs with duplicated logic and no common schema."
+        },
+        {
+          "role": "candidate",
+          "text": "I proposed a single canonical model and worked with the other teams to migrate over six months. We cut pipeline incidents by 60% and reduced storage costs 35%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot with one team, shared the metrics, then used those results to get buy-in from the rest."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something complicated you inherited and left simpler than you found it.",
+        "Inherited duplicated ETL logic across five teams with no common schema.",
+        "Drove canonical model and six-month migration.",
+        "Outcome: 60% fewer incidents, 35% lower storage costs.",
+        "Quote: \"I ran a two-week pilot with one team, shared the metrics, then used those results to get buy-in.\"",
+        "Follow-up: How did you get the other teams to agree? - Pilot then metrics-driven influence."
+      ],
+      "raiseFeedback": "Raises the bar on Simplify. The candidate inherited duplicated ETL across five teams and drove a canonical data model plus migration. Pipeline incidents fell 60% and storage costs dropped 35%. They described using a pilot with one team to create evidence that influenced the others without authority. The account shows cross-team impact and measurable simplification at the senior level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I refactored a service that had grown complicated over time."
+        },
+        {
+          "role": "candidate",
+          "text": "I split a few classes and updated the README."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams adopt any of the changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they kept using their own approaches."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something complicated you inherited and left simpler than you found it.",
+        "Refactored a service by splitting classes and updating README.",
+        "No adoption by other teams.",
+        "Follow-up: Did other teams adopt any of the changes? - No."
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify. The candidate described splitting classes in one service and updating documentation but reported no adoption outside their immediate work. There is no evidence of influence across teams or sustained reduction in complexity. The story lacks the cross-team scope expected at senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I joined, every product line had its own billing system and pricing rules, creating 18 different customer experiences and high support load."
+        },
+        {
+          "role": "candidate",
+          "text": "I led a two-year program to consolidate onto one billing platform with unified pricing tiers. Support tickets related to billing dropped 70% and we launched two new products in half the previous time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept legacy pricing for one large customer segment for an extra year to avoid revenue risk while migrating the rest."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something complicated you inherited and left simpler than you found it.",
+        "Inherited 18 separate billing systems across product lines.",
+        "Led two-year consolidation to single platform and unified pricing.",
+        "Outcome: 70% drop in billing tickets, faster product launches.",
+        "Quote: \"We kept legacy pricing for one large customer segment for an extra year to avoid revenue risk.\"",
+        "Follow-up: What trade-offs did you make? - Staged migration protecting revenue."
+      ],
+      "raiseFeedback": "Raises the bar on Simplify. The candidate inherited 18 separate billing systems and drove a two-year consolidation to one platform. Billing-related support tickets fell 70% and new product launches accelerated. They described a deliberate trade-off of preserving legacy pricing for a key segment during transition. The story demonstrates org-level impact, strategic sequencing, and long-term simplification.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We standardized our internal tools across the company."
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each team to pick from a short list of approved tools."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for customers or revenue?"
+        },
+        {
+          "role": "candidate",
+          "text": "It mostly helped internal reporting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something complicated you inherited and left simpler than you found it.",
+        "Standardized internal tools via approved list.",
+        "Impact limited to internal reporting.",
+        "Follow-up: What changed for customers or revenue? - Internal only."
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify. The candidate described creating an approved list of internal tools but tied the outcome only to internal reporting. There is no evidence of customer impact, revenue effect, or org-level trade-offs. The account stays at a tactical level without the strategic scope required at exec."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of inherited problem",
+      "junior": "Individual script or config",
+      "senior": "Multi-team process or system",
+      "exec": "Org-wide platform or policy"
+    },
+    {
+      "signal": "Evidence of simplification",
+      "junior": "Time saved for self or immediate team",
+      "senior": "Cross-team metrics and adoption",
+      "exec": "Business-level outcomes and trade-offs"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Direct ownership and documentation",
+      "senior": "Pilot then data-driven persuasion",
+      "exec": "Staged rollout protecting revenue or risk"
+    },
+    {
+      "signal": "Sustainability",
+      "junior": "Handoff to next person",
+      "senior": "Shared model other teams maintain",
+      "exec": "Platform that enables future products"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Anecdotal improvement",
+      "senior": "Clear before/after metrics",
+      "exec": "Long-term business indicators"
+    },
+    {
+      "signal": "Learning from feedback",
+      "junior": "Incorporated manager request to document",
+      "senior": "Used pilot results to adjust rollout",
+      "exec": "Adjusted timeline for key customer segment"
+    }
+  ],
+  "kind": "lp"
+}

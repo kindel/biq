@@ -1,0 +1,187 @@
+{
+  "question": "Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+  "principle": "Move with Urgency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a customer-facing latency issue in our service. Data showed two possible root causes but we only had partial logs. I chose to roll back the latest deploy rather than debug further because it was low-risk and we could re-deploy quickly."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the rollback was reversible?"
+        },
+        {
+          "role": "candidate",
+          "text": "The change was behind a feature flag so we could re-enable it in five minutes if metrics didn't improve. We saw 30% latency drop in the first hour and later confirmed the root cause with full data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+        "Junior IC on service latency fix with partial logs",
+        "Chose rollback over continued debug; used feature flag as reversibility lever",
+        "Outcome: 30% latency improvement in first hour; later confirmed root cause",
+        "Quote: 'We could re-enable it in five minutes if metrics didn't improve'",
+        "Follow-up: How did you know the rollback was reversible? -> Explained flag and monitoring plan"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a junior. The candidate picked a bounded decision (rollback behind flag) when data was incomplete and explicitly checked reversibility before acting. Quote: 'We could re-enable it in five minutes if metrics didn't improve' shows they treated reversibility as a concrete mechanism rather than a feeling. Story stayed within individual scope and delivered a measurable local result. Biggest strength is linking the quick choice directly to an observable safeguard and outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to pick a library for a new feature but the benchmarks were still running. I just went with the one our team used last time because I didn't want to block the sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made that choice reversible?"
+        },
+        {
+          "role": "candidate",
+          "text": "We could always swap it later if it caused problems, I guess."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+        "Junior picked library without waiting for benchmarks",
+        "Reason: avoid blocking sprint, defaulted to prior team choice",
+        "Outcome: no metrics or follow-up mentioned",
+        "Quote: 'We could always swap it later if it caused problems, I guess'",
+        "Follow-up: What made that choice reversible? -> Vague assumption, no concrete plan or signal"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency for a junior. The candidate acted to avoid delay but showed no assessment of risk or reversibility mechanism, only a vague 'we could swap later.' Quote 'We could always swap it later if it caused problems, I guess' reveals passive rather than deliberate thinking. Story lacks any observable outcome or learning from the choice. Biggest gap is absence of a clear reversibility test or signal that would have justified the speed."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed the same data pipeline change. One had a hard deadline and the other had flexibility. With only partial usage data I decided to prioritize the deadline team and ship a minimal version first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm reversibility across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the old path live for 48 hours with a kill switch and monitored both teams' SLIs. If the flexible team saw issues we could flip back without their release being blocked."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+        "Senior coordinated two teams on shared pipeline with partial data",
+        "Prioritized deadline team and shipped minimal version",
+        "Reversibility: 48-hour dual path with kill switch and SLI monitoring",
+        "Outcome: met deadline; no reported issues for second team",
+        "Quote: 'If the flexible team saw issues we could flip back without their release being blocked'",
+        "Follow-up: How did you confirm reversibility across teams? -> Concrete kill switch and monitoring plan"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a senior. The candidate used incomplete data to sequence work across teams and defined an explicit cross-team rollback path. Quote 'If the flexible team saw issues we could flip back without their release being blocked' demonstrates influence without authority through a shared safeguard. Impact stayed at the two-team level with clear metrics (deadline met, no SLI regression). Biggest strength is treating reversibility as a coordination tool rather than an individual safety net.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing needed a quick decision on which experiment to launch first. I picked the one that looked bigger based on the early numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide it was reversible?"
+        },
+        {
+          "role": "candidate",
+          "text": "We could always pause the experiment if it didn't perform."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+        "Senior chose experiment for marketing with early numbers only",
+        "No cross-team coordination or risk assessment described",
+        "Reversibility claim: 'We could always pause'",
+        "Outcome: none provided",
+        "Quote: 'We could always pause the experiment if it didn't perform'",
+        "Follow-up: How did you decide it was reversible? -> No concrete mechanism or stakeholder alignment"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency for a senior. The candidate made a cross-team decision on thin data but offered only a generic pause as reversibility, with no alignment or monitoring plan. Quote 'We could always pause the experiment if it didn't perform' shows no evidence of influencing stakeholders or defining success signals. Story lacks metrics or follow-through. Biggest gap is missing the cross-team coordination and explicit rollback design expected at this level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to choose between two acquisition targets with only 60% of the diligence data complete. I picked the smaller one because it had clearer integration paths and lower regulatory risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the choice reversible at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We structured the deal with a 30-day termination clause and kept the larger target's team engaged in parallel talks. If integration modeling showed problems we could exit without material sunk cost."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+        "Exec chose between two acquisitions with 60% diligence data",
+        "Selected smaller target for integration clarity and regulatory profile",
+        "Reversibility: 30-day termination clause plus parallel talks",
+        "Outcome: avoided large sunk cost; maintained optionality on second target",
+        "Quote: 'If integration modeling showed problems we could exit without material sunk cost'",
+        "Follow-up: What made the choice reversible at the org level? -> Deal structure and parallel engagement as levers"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for an exec. The candidate committed to an acquisition path with incomplete diligence and embedded reversibility through deal structure and parallel options. Quote 'If integration modeling showed problems we could exit without material sunk cost' illustrates strategic judgment on long-term trade-offs and leverage. Impact is at the business-portfolio level with clear risk containment. Biggest strength is using contractual and relational mechanisms to preserve optionality rather than relying on speed alone.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to pick a new market to enter. I went with the one the sales team was most excited about even though the TAM model was still rough."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide it was reversible?"
+        },
+        {
+          "role": "candidate",
+          "text": "We could always pull back if the numbers didn't work out after launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision you made quickly on incomplete information. How did you decide it was reversible?",
+        "Exec chose market entry based on sales enthusiasm with rough TAM",
+        "No org-level risk framing or optionality design",
+        "Reversibility: 'We could always pull back'",
+        "Outcome: none provided",
+        "Quote: 'We could always pull back if the numbers didn't work out after launch'",
+        "Follow-up: How did you decide it was reversible? -> No structural or strategic safeguards described"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency for an exec. The candidate moved on incomplete market data but treated reversibility as a simple retreat rather than a designed option. Quote 'We could always pull back if the numbers didn't work out after launch' reveals absence of strategic levers or long-term trade-off analysis. Story shows no org-level impact or stakeholder leverage. Biggest gap is lack of structural mechanisms to bound downside at the business-portfolio scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Explicit reversibility mechanism",
+      "junior": "Feature flag or monitoring plan",
+      "senior": "Cross-team kill switch or dual path",
+      "exec": "Deal clause or parallel optionality"
+    },
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual task or service",
+      "senior": "Two-team coordination",
+      "exec": "Business or portfolio choice"
+    },
+    {
+      "signal": "Use of incomplete data",
+      "junior": "Local metrics to pick bounded action",
+      "senior": "Sequencing work across teams",
+      "exec": "Strategic trade-off with exit path"
+    },
+    {
+      "signal": "Outcome linkage",
+      "junior": "Local measurable result",
+      "senior": "Deadline met plus no SLI impact",
+      "exec": "Avoided sunk cost while preserving options"
+    },
+    {
+      "signal": "Vague reversibility language",
+      "junior": "'We could swap later'",
+      "senior": "'We could pause'",
+      "exec": "'We could pull back'"
+    }
+  ],
+  "kind": "lp"
+}

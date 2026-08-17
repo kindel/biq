@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time speed started to hurt quality. What did you do?",
+  "principle": "Deliver Value Fast",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a two-week sprint to ship a login flow. We cut testing to hit the date, and three days after launch we saw duplicate account errors in prod. I owned the fix, added a simple unit test for the edge case, and suggested we add a 30-minute regression pass before any future hotfix."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome on velocity after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped the next two features on time and had zero repeat issues. My manager said the test saved us from another incident."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time speed started to hurt quality. What did you do?",
+        "Role: junior dev on login flow; cut testing for deadline",
+        "Action: owned fix, added unit test, proposed short regression pass",
+        "Outcome: next features on time, zero repeats; manager noted prevention",
+        "Quote: \"We shipped the next two features on time and had zero repeat issues.\"",
+        "Follow-up: What was the outcome on velocity after that? - kept cadence, added lightweight check"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast for a junior. The candidate owned a clear quality regression from rushed delivery and introduced a minimal process change that protected future speed. The quote about shipping the next two features on time shows they understood the trade-off without slowing the team. They stayed within individual scope while demonstrating coachability by acting on the incident. Biggest strength is linking the quick fix back to sustained velocity rather than just describing the bug.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to ship fast so we skipped some tests. A few bugs showed up but we fixed them in the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything about how you worked after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the PM just said to move faster next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time speed started to hurt quality. What did you do?",
+        "Role: junior dev; skipped tests for speed",
+        "Action: fixed bugs in next sprint only",
+        "Outcome: no process change",
+        "Quote: \"the PM just said to move faster next time\"",
+        "Follow-up: Did you change anything about how you worked after that? - no ownership of improvement"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast for a junior. The candidate describes a quality hit from speed but took no ownership to prevent recurrence, deferring entirely to the PM. The follow-up reveals zero reflection or individual action, which is the core expectation at this level. Story stays at the level of \"bugs happened\" without any metric or learning attached. Biggest gap is absence of any attempt to balance speed with quality going forward."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was pushing weekly releases for a new dashboard. After the third release, support tickets for data mismatches tripled. I pulled the on-call data, showed the team the 4x increase, and convinced two other squads to adopt a shared contract test before merging. Releases stayed weekly but tickets dropped 70%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other squads to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 20-minute demo of the failing cases and offered to own the initial test setup for the first month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time speed started to hurt quality. What did you do?",
+        "Role: senior on dashboard releases; weekly cadence caused 3x support tickets",
+        "Action: analyzed data, influenced two squads to add contract tests",
+        "Outcome: kept weekly releases, 70% ticket reduction",
+        "Quote: \"Releases stayed weekly but tickets dropped 70%.\"",
+        "Follow-up: How did you get the other squads to agree? - demo plus offered to own setup for a month"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast for a senior. The candidate used cross-team influence to insert a quality gate without changing release cadence, backed by concrete support-ticket metrics. The follow-up shows they removed friction for others by volunteering setup work, a classic senior move. Story demonstrates both local ownership and broader impact on two squads. Biggest strength is preserving speed while measurably improving quality through lightweight process change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were releasing every week and quality slipped on data issues. I told my team to slow down a bit on the next one."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that affect other teams or release frequency?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just our team; we pushed the date by a week and fixed the bugs internally."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time speed started to hurt quality. What did you do?",
+        "Role: senior; weekly releases caused data issues",
+        "Action: told own team to slow down one release",
+        "Outcome: one-week slip, no cross-team change",
+        "Quote: \"It was just our team\"",
+        "Follow-up: Did that affect other teams or release frequency? - isolated change, no influence"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast for a senior. The candidate reacted to quality issues by delaying only their own team instead of finding a way to protect cadence across teams. The follow-up confirms zero influence without authority, which is a key senior expectation. Story lacks any metrics or sustained improvement. Biggest gap is treating the problem as local rather than driving a repeatable solution that keeps velocity high."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was on a quarterly release train but customer NPS on reliability was dropping. I traded off one feature in the next train to fund a reliability squad that introduced automated canary analysis. Two quarters later we returned to full feature velocity and NPS recovered 12 points."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make explicit to the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the board the correlation between reliability incidents and churn, then proposed the squad as a six-month experiment with clear success metrics."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time speed started to hurt quality. What did you do?",
+        "Role: exec; quarterly train, dropping NPS on reliability",
+        "Action: traded one feature for reliability squad and canary analysis",
+        "Outcome: restored full velocity after two quarters, +12 NPS",
+        "Quote: \"Two quarters later we returned to full feature velocity and NPS recovered 12 points.\"",
+        "Follow-up: What trade-off did you make explicit to the business? - showed churn correlation, framed as six-month experiment"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast for an exec. The candidate made a deliberate, org-level trade-off between features and reliability infrastructure, then measured the long-term return to velocity. The board-level framing and six-month experiment show strategic judgment under ambiguity. Story ties speed, quality, and business outcome (NPS and churn) together. Biggest strength is the explicit sequencing that protected long-term delivery capacity rather than heroically fixing symptoms.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Quality started slipping because we were moving too fast on releases. I asked the teams to add more manual reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect overall release pace or business metrics?"
+        },
+        {
+          "role": "candidate",
+          "text": "We slowed releases for a quarter while we stabilized, then went back to the old cadence."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time speed started to hurt quality. What did you do?",
+        "Role: exec; quality slip from fast releases",
+        "Action: asked for more manual reviews",
+        "Outcome: slowed releases for a quarter then reverted",
+        "Quote: \"We slowed releases for a quarter while we stabilized\"",
+        "Follow-up: How did that affect overall release pace or business metrics? - temporary slowdown, no lasting change"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast for an exec. The candidate defaulted to adding manual process that slowed the entire org instead of making a structural investment that would sustain speed. The follow-up reveals no long-term leverage or business metric linkage. Story shows short-term heroics rather than strategic trade-offs. Biggest gap is absence of any attempt to restore or exceed prior velocity after the quality issue."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognized quality regression from speed",
+      "junior": "Links bug to rushed testing and owns fix",
+      "senior": "Uses support data to quantify impact across releases",
+      "exec": "Ties reliability incidents to NPS and churn at org level"
+    },
+    {
+      "signal": "Preserved or restored velocity",
+      "junior": "Next two features still on time after adding test",
+      "senior": "Kept weekly releases while adding contract tests",
+      "exec": "Returned to full feature velocity after two quarters"
+    },
+    {
+      "signal": "Influenced beyond own scope",
+      "junior": "Suggested change within own team",
+      "senior": "Convinced two other squads via demo and setup help",
+      "exec": "Secured board-level funding for new squad via experiment"
+    },
+    {
+      "signal": "Used concrete metrics",
+      "junior": "Zero repeat issues after change",
+      "senior": "70% drop in support tickets",
+      "exec": "+12 NPS and correlation to churn"
+    },
+    {
+      "signal": "Made explicit trade-off",
+      "junior": "Added 30-min regression pass",
+      "senior": "Offered to own test setup for first month",
+      "exec": "Traded one feature for six-month reliability investment"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,174 @@
+{
+  "question": "Tell me about a time a metric improved but the customer experience did not. What did you do?",
+  "principle": "Wow the Customer",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I owned ticket resolution time. After we added canned replies the average dropped 40 percent, but NPS for those tickets fell 12 points. I pulled 20 tickets, saw customers were getting generic answers that didn't solve their issue, then rewrote the templates with specific troubleshooting steps and added a follow-up question. Resolution time stayed flat but NPS recovered and repeat tickets dropped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did your manager say when you brought this up?"
+        },
+        {
+          "role": "candidate",
+          "text": "She asked me to run the change through the team retro so everyone could see the data. I did and we adopted the new templates across the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a metric improved but the customer experience did not. What did you do?",
+        "Owned ticket resolution time; canned replies cut time 40% but NPS dropped 12 pts",
+        "Pulled 20 tickets, rewrote templates with real troubleshooting steps",
+        "Quote: 'NPS recovered and repeat tickets dropped'",
+        "Follow-up: Manager feedback - ran change through retro and team adopted it"
+      ],
+      "raiseFeedback": "Raises the bar for Wow the Customer at junior level. The candidate owned a local metric, spotted the customer gap themselves, and fixed the templates with concrete steps. Quote shows they connected the metric change directly to customer outcome. They also accepted the manager's coaching to share the fix with the team. Biggest strength is taking initiative on customer impact without being asked. Biggest gap is scope stayed within one project.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a new checkout flow that cut cart abandonment by 15 percent. A few customers emailed support saying it was confusing but the numbers looked good so we moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any of those support emails?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, my manager said the metric was the main goal so we focused on the next sprint."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a metric improved but the customer experience did not. What did you do?",
+        "Checkout flow reduced abandonment 15% but support emails mentioned confusion",
+        "Did not review the emails; manager said metric was the goal",
+        "Follow-up: Candidate accepted manager direction without further action"
+      ],
+      "lowerFeedback": "Lowers the bar for Wow the Customer at junior level. The candidate saw customer complaints but stopped at the metric win and did not investigate. Quote shows deference to manager without ownership of the customer signal. They did not attempt even a small follow-up like reviewing a sample of emails. Biggest gap is treating the metric as the end goal instead of a signal. No evidence of learning or curiosity about the customer experience."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team reduced support handle time by 25 percent through better routing. Post-change CSAT for the affected segment dropped 8 points. I pulled ticket samples and ride-alongs with the support team, found the new routing sent complex issues to generalists. I worked with the support manager to create a tiered handoff and updated the routing logic. Handle time held and CSAT returned while two other teams adopted the handoff process."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the support manager to change their process?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the CSAT data tied to specific ticket types and offered to own the first month of monitoring so they wouldn't carry extra load."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a metric improved but the customer experience did not. What did you do?",
+        "Reduced handle time 25% but CSAT dropped 8 pts in segment",
+        "Ride-alongs and sample review revealed routing sent complex issues to wrong tier",
+        "Quote: 'Two other teams adopted the handoff process'",
+        "Follow-up: Influenced support manager by offering to own monitoring"
+      ],
+      "raiseFeedback": "Raises the bar for Wow the Customer at senior level. The candidate connected a team-level metric to downstream CSAT, did ride-alongs to find root cause, and influenced another team to change process. Quote shows the fix scaled beyond their own team. They used data plus offered to reduce load on the other manager to gain buy-in. Biggest strength is cross-team influence without authority. Biggest gap is impact was still within support rather than product-level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We improved our on-time delivery metric by 18 percent by tightening the SLA with carriers. Some enterprise customers complained about missed delivery windows but the metric was green so the program was considered successful."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you surface those customer complaints to the carrier team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in one sync but they said their SLA was met so there was nothing to change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a metric improved but the customer experience did not. What did you do?",
+        "On-time delivery up 18% after tightening carrier SLA but enterprise complaints rose",
+        "Mentioned complaints once; carrier team declined to act",
+        "Follow-up: Did not escalate or bring data to leadership"
+      ],
+      "lowerFeedback": "Lowers the bar for Wow the Customer at senior level. The candidate saw enterprise complaints but treated them as outside their scope once the metric improved. They made one low-effort mention and accepted pushback without bringing data or proposing a joint review. No evidence of raising the issue to leadership or quantifying the revenue risk. Biggest gap is lack of ownership when influence without authority was needed. Story stays at the level of reporting rather than driving customer outcome."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After we shifted to a self-serve renewal model, renewal rate rose 11 points. However, our top 50 accounts showed a 9 percent increase in support tickets and a drop in expansion revenue. I commissioned a win-loss style review with the account teams, found the self-serve path removed the strategic planning conversation that used to surface upsell opportunities. We introduced a hybrid renewal track for accounts above a certain ARR threshold and gave account managers a lightweight planning template. Renewal rate held and expansion revenue in those accounts recovered within two quarters."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make on the self-serve model?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a small increase in cost to serve for the largest accounts in exchange for protecting the expansion pipeline and relationship quality."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a metric improved but the customer experience did not. What did you do?",
+        "Self-serve renewal lifted rate 11 pts but top accounts saw more tickets and lower expansion",
+        "Commissioned account-team review that revealed lost strategic conversations",
+        "Quote: 'Expansion revenue recovered within two quarters'",
+        "Follow-up: Accepted higher cost-to-serve for largest accounts as deliberate trade-off"
+      ],
+      "raiseFeedback": "Raises the bar for Wow the Customer at exec level. The candidate identified an org-level metric win that masked damage to the most valuable customer segment and drove a hybrid process change. Quote shows measurable recovery in expansion revenue. They made an explicit strategic trade-off on cost versus relationship quality. Biggest strength is long-term thinking on customer segment value rather than overall metric. Biggest gap is the fix was still within renewals rather than broader go-to-market strategy.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We moved to usage-based pricing and saw ARR growth accelerate 22 percent. Several large customers told us the new model was hard to forecast but the overall numbers were strong so we kept the model."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider any adjustments for the forecasting complaints?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a FAQ page. The growth metric stayed healthy so we prioritized other initiatives."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a metric improved but the customer experience did not. What did you do?",
+        "Usage-based pricing drove 22% ARR growth but large customers struggled with forecasting",
+        "Added FAQ page only; no further changes because growth metric remained strong",
+        "Follow-up: Prioritized other initiatives over customer friction"
+      ],
+      "lowerFeedback": "Lowers the bar for Wow the Customer at exec level. The candidate saw clear signals from large customers but treated the growth metric as sufficient justification to stop. The only action was a low-effort FAQ with no measurement of whether it helped. No evidence of strategic judgment on long-term relationship risk or willingness to revisit the pricing model. Biggest gap is prioritizing short-term metric over customer trust at the accounts that matter most. Story shows metric-driven rather than customer-driven decision making."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of customer signal beyond metric",
+      "junior": "Candidate investigated and fixed templates themselves",
+      "senior": "Candidate drove cross-team process change with data and load-sharing offer",
+      "exec": "Candidate commissioned review and accepted cost trade-off for top segment"
+    },
+    {
+      "signal": "Root cause depth",
+      "junior": "Reviewed 20 tickets and rewrote templates",
+      "senior": "Ride-alongs plus ticket samples identified routing mismatch",
+      "exec": "Win-loss style review with account teams revealed lost strategic conversations"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Shared fix in retro at manager request",
+      "senior": "Gained support manager buy-in by owning monitoring",
+      "exec": "Aligned multiple teams on hybrid renewal track"
+    },
+    {
+      "signal": "Strategic trade-off clarity",
+      "junior": "Not expected at this level",
+      "senior": "Limited evidence of explicit trade-offs",
+      "exec": "Explicitly accepted higher cost-to-serve to protect expansion"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single project, local templates",
+      "senior": "Multiple teams adopted handoff",
+      "exec": "Org-level renewal model adjustment with revenue recovery"
+    }
+  ],
+  "kind": "lp"
+}

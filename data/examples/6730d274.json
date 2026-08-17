@@ -1,0 +1,197 @@
+{
+  "question": "Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was mentoring a new hire on their first feature. I reviewed the design doc and asked questions on edge cases instead of rewriting it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when you spotted a gap?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged the gap in a comment and asked them to propose the fix. We met once to walk through their updated plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped on time and later said the questions helped them think through trade-offs they had missed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+        "Role: mentored new hire on first feature",
+        "Situation: spotted gap in design doc",
+        "Action: flagged in comment, asked for their proposed fix, one review meeting",
+        "Outcome: shipped on time; new hire said questions helped",
+        "Quote: 'I asked them to propose the fix instead of rewriting it'",
+        "Follow-up: What did you do when you spotted a gap? They updated plan themselves"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for a junior. The candidate described reviewing a new hire's design doc and asking targeted questions on edge cases rather than rewriting it. They flagged a gap via comment and requested the owner propose the fix, then held one walkthrough meeting. The feature shipped on time and the new hire credited the questions with surfacing missed trade-offs. This shows appropriate individual-scope detail orientation paired with clear respect for ownership. The single biggest strength is the explicit hand-back of the fix to the owner instead of taking it over.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was assigned a bug that my teammate owned. I started digging into the logs and ended up fixing it myself because it was faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve the owner?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told them after I had the patch ready so they could review it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+        "Role: took over teammate's bug",
+        "Situation: assigned bug owned by teammate",
+        "Action: dug into logs and produced patch alone",
+        "Outcome: delivered fix and asked owner to review",
+        "Quote: 'I ended up fixing it myself because it was faster'",
+        "Follow-up: Did you involve the owner? Told them after patch was ready"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for a junior. The candidate described taking over a teammate's bug because fixing it themselves was faster, then sharing the completed patch for review. They stayed in the details but removed ownership instead of guiding the owner through the investigation. This reflects a common junior pattern of heroics over coaching. The single biggest gap is the absence of any attempt to keep the owner in the driver seat while still verifying the root cause."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a cross-team migration, I noticed metric discrepancies in the shared dashboard. I scheduled a working session with the owning team to walk through their data pipeline instead of pulling the numbers myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you stay involved without owning the fix?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked them to own the investigation and shared the exact queries that looked off. We met twice; they surfaced the root cause and implemented the correction."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+        "Role: cross-team migration metric owner",
+        "Situation: spotted discrepancies in shared dashboard",
+        "Action: called working session, shared queries, asked owning team to investigate",
+        "Outcome: they found root cause and fixed",
+        "Quote: 'I asked them to own the investigation'",
+        "Follow-up: How did you stay involved without owning the fix? Two meetings, handed queries to them"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for a senior. The candidate identified metric discrepancies during a cross-team migration and convened the owning team to review their data pipeline rather than extracting and fixing the numbers themselves. They shared specific queries, asked the owners to lead the investigation, and limited involvement to two working sessions. The owning team identified the root cause and implemented the correction. This demonstrates influence without authority and measurable cross-team impact. The single biggest strength is the deliberate choice to surface the exact queries and then step back so the owners could drive the fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a platform rollout I saw the downstream team was missing key telemetry. I pulled their logs, built the missing alerts, and sent them the PR."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was their reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were grateful but asked to be looped in earlier next time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+        "Role: platform rollout telemetry",
+        "Situation: downstream team missing telemetry",
+        "Action: pulled logs, built alerts, sent PR",
+        "Outcome: team grateful but requested earlier involvement",
+        "Quote: 'I pulled their logs, built the missing alerts'",
+        "Follow-up: What was their reaction? Asked to be looped in earlier"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for a senior. The candidate noticed missing telemetry on a platform rollout, extracted logs, built alerts, and delivered a completed PR to the downstream team. While they reached the right level of detail, they performed the work instead of enabling the owners to do it. The feedback from the team requesting earlier involvement highlights the ownership gap. The single biggest gap is substituting execution for coaching and joint problem-solving."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were evaluating a major vendor switch. I asked the finance lead to model three scenarios and then spent time with them on the assumptions around churn and support costs rather than building the model myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "They surfaced a support-cost assumption that changed the NPV by 18 percent. The team owned the final recommendation and the board approved it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+        "Role: vendor switch financial model",
+        "Situation: evaluating major vendor change",
+        "Action: asked finance lead to model three scenarios, reviewed assumptions together",
+        "Outcome: surfaced 18 percent NPV impact; team owned recommendation",
+        "Quote: 'I asked the finance lead to model three scenarios'",
+        "Follow-up: How did that affect the decision? 18 percent NPV change from support costs"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for an exec. The candidate directed the finance lead to build three vendor-switch scenarios and then jointly examined the churn and support-cost assumptions instead of constructing the model. This uncovered an 18 percent NPV swing that altered the recommendation. The owning team presented the final analysis and the board approved it. The approach shows strategic judgment at the business level while preserving ownership. The single biggest strength is the willingness to engage deeply on assumptions without displacing the finance lead's accountability for the output.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Ahead of a board meeting I rebuilt the unit-economics model because the numbers did not feel right. I presented the revised version and the team updated their slides."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who owned the original model?"
+        },
+        {
+          "role": "candidate",
+          "text": "The finance team, but I wanted the board to see the accurate picture."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
+        "Role: unit-economics model for board",
+        "Situation: numbers did not feel right",
+        "Action: rebuilt model personally and presented it",
+        "Outcome: team updated slides to match",
+        "Quote: 'I rebuilt the unit-economics model because the numbers did not feel right'",
+        "Follow-up: Who owned the original model? Finance team"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for an exec. The candidate rebuilt the unit-economics model themselves ahead of a board meeting because the numbers felt off, then presented the revised version. Although the detail work was accurate, they supplanted the finance team's ownership instead of guiding them to surface the issues. The team simply updated their slides afterward. The single biggest gap is modeling the work at the executive level rather than creating the conditions for the owners to reach the same insight."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Respects ownership while verifying detail",
+      "junior": "Asks owner to propose fix after flagging gap",
+      "senior": "Shares queries and asks owning team to investigate",
+      "exec": "Directs modeling but reviews assumptions jointly"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature or bug with new hire",
+      "senior": "Cross-team migration metrics",
+      "exec": "Vendor decision with board-level NPV impact"
+    },
+    {
+      "signal": "Use of follow-up questions",
+      "junior": "One review meeting to walk through updated plan",
+      "senior": "Two working sessions limited to assumption review",
+      "exec": "Joint review of churn and support-cost assumptions"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "New hire ships and credits the questions",
+      "senior": "Owning team finds root cause and implements",
+      "exec": "Team owns final recommendation presented to board"
+    },
+    {
+      "signal": "Common failure mode",
+      "junior": "Fixes bug themselves because it is faster",
+      "senior": "Builds alerts and sends completed PR",
+      "exec": "Rebuilds model and presents revised version"
+    }
+  ],
+  "kind": "lp"
+}

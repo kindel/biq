@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about something you wrote that had to carry the argument without you in the room.",
+  "principle": "Influence without Authority",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wrote a short migration guide for our internal tool after noticing teammates kept asking the same questions in chat. I included code snippets, common pitfalls, and a decision tree. A week later two new hires used it to complete the work without pinging anyone."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the document succeed where chat threads had failed?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was structured so people could find their exact scenario quickly. I added a one-page checklist at the end so they didn't have to read everything."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you wrote that had to carry the argument without you in the room.",
+        "Situation: Internal migration guide after repeated chat questions",
+        "Actions: Added code snippets, decision tree, one-page checklist",
+        "Outcome: Two new hires completed migration independently",
+        "Quote: 'It was structured so people could find their exact scenario quickly.'",
+        "Follow-up: Asked what made it succeed; candidate tied structure to reduced pings"
+      ],
+      "raiseFeedback": "Raises the bar for Influence without Authority at the junior level. The candidate described writing a migration guide that let two new hires complete work without further help. The concrete quote about the one-page checklist shows they thought about how the document would be used in their absence. Scope stayed local to their team, which matches expectations for 0-2 years. Biggest strength is clear ownership of making their own output reusable rather than relying on real-time answers.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wrote a README for a side project I did at school. It explained how the code worked so others could clone it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone actually use it without you around?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not sure, but I put it on GitHub so it could."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you wrote that had to carry the argument without you in the room.",
+        "Situation: School side project README",
+        "Actions: Explained code so others could clone it",
+        "Outcome: Posted on GitHub, unsure of usage",
+        "Quote: 'Not sure, but I put it on GitHub so it could.'",
+        "Follow-up: Usage question; candidate had no evidence of independent adoption"
+      ],
+      "lowerFeedback": "Lowers the bar for Influence without Authority at the junior level. The candidate referenced a school README with no evidence that it actually enabled work without them present. The quote shows they stopped at posting the document rather than verifying impact. Scope is individual hobby work, which does not demonstrate even local influence. Biggest gap is lack of any observable outcome tied to the writing."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wrote a two-page trade-off doc comparing three approaches for a shared logging service. The teams could not align in meetings so I circulated the doc with cost, latency, and operational numbers. Two teams adopted option B without further discussion and the third followed two weeks later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the data without authority over the teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled public metrics from each team's existing dashboards and ran a small benchmark on a shared test account. I credited the source teams in the doc so they felt represented."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you wrote that had to carry the argument without you in the room.",
+        "Situation: Logging service alignment stuck in meetings",
+        "Actions: Circulated two-page trade-off doc with metrics and benchmark",
+        "Outcome: All three teams adopted same option without further meetings",
+        "Quote: 'I credited the source teams in the doc so they felt represented.'",
+        "Follow-up: Data source question; candidate explained reuse of existing dashboards"
+      ],
+      "raiseFeedback": "Raises the bar for Influence without Authority at the senior level. The candidate used a two-page trade-off document to resolve a cross-team logging decision that meetings had failed to settle. The outcome of all three teams converging on one option without further discussion shows the writing carried the argument. The quote about crediting source teams illustrates awareness of influence mechanics. Biggest strength is turning ambiguous disagreement into documented alignment with measurable adoption.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wrote a design doc for a new feature my team owned. I sent it to the other teams that would be affected."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it change any decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "They gave some comments but we mostly did what we had planned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you wrote that had to carry the argument without you in the room.",
+        "Situation: Design doc for team-owned feature",
+        "Actions: Sent to affected teams for comments",
+        "Outcome: Comments received but no change to original plan",
+        "Quote: 'They gave some comments but we mostly did what we had planned.'",
+        "Follow-up: Decision impact question; candidate showed no evidence of influence"
+      ],
+      "lowerFeedback": "Lowers the bar for Influence without Authority at the senior level. The candidate sent a design doc but produced no evidence that it altered other teams' positions. The quote reveals the document served mainly as notification rather than persuasion. Cross-team reach existed on paper but delivered no observable shift. Biggest gap is treating distribution as influence instead of demonstrating changed outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wrote a memo outlining why we should sunset two under-used products and reinvest the headcount into a new platform area. It included three-year revenue projections and customer migration risk. The memo went to the leadership team; six weeks later the decision was made in a meeting I did not attend."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface that others had not considered?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled the support cost trajectory if we kept the products at current usage and showed the platform investment would break even in eighteen months only if we freed those engineers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you wrote that had to carry the argument without you in the room.",
+        "Situation: Leadership decision on product sunsetting and reinvestment",
+        "Actions: Circulated memo with three-year projections and migration risk",
+        "Outcome: Decision reached in meeting candidate did not attend",
+        "Quote: 'The memo went to the leadership team; six weeks later the decision was made in a meeting I did not attend.'",
+        "Follow-up: Trade-off depth; candidate tied cost trajectory to headcount reallocation"
+      ],
+      "raiseFeedback": "Raises the bar for Influence without Authority at the exec level. The candidate's memo drove a multi-product sunsetting decision that was finalized without their presence. The quote about the six-week timeline and absent meeting demonstrates the document alone carried the strategic argument. Scope covers org-level resource allocation and long-term projections. Biggest strength is using written analysis to create irreversible momentum on an ambiguous, high-stakes choice.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wrote a quarterly business review that summarized what my organization had delivered."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it drive any decision made without you?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was referenced in the next planning cycle but I was in most of those meetings."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you wrote that had to carry the argument without you in the room.",
+        "Situation: Quarterly business review summary",
+        "Actions: Summarized org deliveries",
+        "Outcome: Referenced in planning but candidate attended most meetings",
+        "Quote: 'It was referenced in the next planning cycle but I was in most of those meetings.'",
+        "Follow-up: Decision impact; candidate could not isolate influence from their own attendance"
+      ],
+      "lowerFeedback": "Lowers the bar for Influence without Authority at the exec level. The quarterly review was referenced but the candidate could not point to any decision reached in their absence. The quote shows they remained present for the conversations the document supposedly influenced. Org-level scope is claimed but evidence stays tied to the candidate's direct involvement. Biggest gap is conflating documentation with standalone strategic influence."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Evidence of independent adoption",
+      "junior": "Strong: two new hires completed work independently",
+      "senior": "Strong: three teams converged without further meetings",
+      "exec": "Strong: decision finalized in absent meeting"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local team process",
+      "senior": "Cross-team technical choice",
+      "exec": "Org-level resource allocation"
+    },
+    {
+      "signal": "Handling of disagreement",
+      "junior": "Replaced repeated questions",
+      "senior": "Replaced stalled meetings",
+      "exec": "Replaced leadership discussion"
+    },
+    {
+      "signal": "Use of data or structure",
+      "junior": "Checklist and decision tree",
+      "senior": "Metrics and benchmark with credit",
+      "exec": "Three-year projections and cost trajectory"
+    },
+    {
+      "signal": "Verification of outcome",
+      "junior": "Direct observation of new hires",
+      "senior": "Adoption across teams",
+      "exec": "Timeline to decision without presence"
+    },
+    {
+      "signal": "Crediting others",
+      "junior": "Not shown",
+      "senior": "Explicit credit to source teams",
+      "exec": "Not shown"
+    }
+  ],
+  "kind": "lp"
+}

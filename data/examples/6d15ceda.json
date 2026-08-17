@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time the market moved under your plan. How quickly did you change it?",
+  "principle": "Deliver Value Fast",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a reporting dashboard for our sales team. Two weeks before launch a competitor added a similar feature. I flagged it in standup, got feedback to drop two non-critical charts, and shipped the core in five days instead of pushing the date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked if the feature still solved the original pain. I realized it didn't fully, so we cut scope."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the market moved under your plan. How quickly did you change it?",
+        "Role: New grad on internal tools team",
+        "Situation: Competitor launched similar dashboard mid-build",
+        "Action: Flagged in standup, cut two charts after manager input, shipped core in 5 days",
+        "Outcome: Tool live before sales quarter close; used by 12 reps",
+        "Quote: \"I realized it didn't fully solve the pain so we cut scope\"",
+        "Follow-up: How did you decide what to drop? Said checked with 3 sales reps for priority"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast. The candidate described an individual-scope project where a competitor feature appeared mid-build. After a manager prompt they dropped two charts and shipped the core in five days. Quote: \"I realized it didn't fully solve the pain so we cut scope.\" This shows quick ownership of their own work and responsiveness to feedback without over-engineering. The result stayed local but measurable. Biggest strength is the immediate pivot after external input rather than defending the original plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a feature to add export options. A week before release the PM said the market wanted filters instead. I finished the exports anyway because the code was almost done and handed it off."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team use the exports?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but I met the original deadline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the market moved under your plan. How quickly did you change it?",
+        "Role: New grad on internal tools team",
+        "Situation: PM flagged shift from exports to filters",
+        "Action: Finished exports because code was nearly complete",
+        "Outcome: Feature delivered on date but saw low adoption",
+        "Quote: \"I met the original deadline\"",
+        "Follow-up: What happened after handoff? Said handed off and moved to next ticket"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast. The candidate continued building exports after the PM signaled a market shift toward filters. They completed the original work to hit the date even though adoption was low. Quote: \"I met the original deadline.\" This shows limited ownership of the outcome and weak response to changing signals. The impact remained local and the choice prioritized process over value. Biggest gap is absence of any pivot or learning from the feedback."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments integration plan assumed a single PSP. When Stripe changed pricing mid-quarter I pulled data from three teams, ran a two-day spike with finance, and convinced the PMs to switch to a hybrid model. We launched the revised flow in six weeks and saved 18% on fees."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the cost curve to the other leads and let them run their own numbers before deciding."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the market moved under your plan. How quickly did you change it?",
+        "Role: Senior engineer leading payments work",
+        "Situation: Stripe pricing change invalidated single-PSP assumption",
+        "Action: Pulled cross-team data, ran spike with finance, influenced PMs to hybrid model",
+        "Outcome: Revised flow shipped in 6 weeks; 18% fee reduction",
+        "Quote: \"I showed the cost curve to the other leads and let them run their own numbers\"",
+        "Follow-up: What trade-offs surfaced? Said reliability vs cost; chose staged rollout"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast. The candidate faced a pricing shift from a key vendor and drove a cross-team pivot from single-PSP to hybrid. They used data to influence peers without authority and delivered the change in six weeks. Quote: \"I showed the cost curve to the other leads and let them run their own numbers.\" This produced measurable business impact and showed influence plus metrics. Biggest strength is the speed from signal to coordinated outcome across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments plan used one PSP. When pricing changed I updated the design doc with a note about the new rates and continued the original build. The team shipped on schedule."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did usage or costs change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the date but later saw higher fees in the first month."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the market moved under your plan. How quickly did you change it?",
+        "Role: Senior engineer leading payments work",
+        "Situation: PSP pricing change",
+        "Action: Added note to design doc and kept original plan",
+        "Outcome: Shipped on date; fees rose in month one",
+        "Quote: \"We hit the date but later saw higher fees\"",
+        "Follow-up: Why no pivot? Said schedule risk was higher priority"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast. The candidate noted a vendor pricing change but kept the original single-PSP plan and shipped on schedule. Quote: \"We hit the date but later saw higher fees.\" The story shows no cross-team influence or adjustment despite clear cost impact. Biggest gap is treating the market signal as documentation rather than a trigger for value-preserving change."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a three-year marketplace expansion roadmap. When a new regulation hit two regions I paused the rollout, ran a 10-day scenario model with legal and finance, and shifted to a partner-led model in those markets. We preserved 70% of projected revenue and freed two product teams for higher-growth areas."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The partner model became the default for regulated markets and we used the freed capacity to enter two new verticals six months early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the market moved under your plan. How quickly did you change it?",
+        "Role: VP Marketplace",
+        "Situation: New regulation invalidated direct expansion in two regions",
+        "Action: 10-day cross-functional model, chose partner-led approach",
+        "Outcome: 70% revenue preserved; two teams redirected to new verticals",
+        "Quote: \"The partner model became the default for regulated markets\"",
+        "Follow-up: How did you decide the trade-off? Said compared 3-year NPV and team leverage"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast. The candidate faced a regulatory shock to a multi-year roadmap and executed a rapid strategic pivot to a partner model. They used a short modeling window to protect 70% of revenue and reallocate teams. Quote: \"The partner model became the default for regulated markets.\" This demonstrates org-level judgment, clear trade-offs, and long-term leverage. Biggest strength is turning an external constraint into reusable leverage across the business.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our expansion plan targeted direct entry in new regions. When regulation appeared I asked the teams to add compliance steps to the roadmap and kept the original timeline. We launched six months late but met the original scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the revenue impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We captured the markets but two competitors had already entered."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the market moved under your plan. How quickly did you change it?",
+        "Role: VP Marketplace",
+        "Situation: Regulation delayed direct expansion",
+        "Action: Added compliance tasks to existing roadmap",
+        "Outcome: Launched late; competitors entered first",
+        "Quote: \"We captured the markets but two competitors had already entered\"",
+        "Follow-up: Why keep original model? Said scope commitments to board"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast. The candidate responded to regulation by layering compliance work onto the original direct-entry plan and accepted a six-month delay. Quote: \"We captured the markets but two competitors had already entered.\" The approach shows no strategic re-evaluation or leverage creation. Biggest gap is prioritizing roadmap commitments over timely value in a high-ambiguity environment."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Speed from signal to decision",
+      "junior": "Days after feedback",
+      "senior": "1-2 weeks with cross-team input",
+      "exec": "Days to weeks with org trade-offs"
+    },
+    {
+      "signal": "Scope of pivot",
+      "junior": "Own feature or ticket",
+      "senior": "Team or multi-team flow",
+      "exec": "Business unit or multi-year roadmap"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Manager or standup",
+      "senior": "Peer data sharing and buy-in",
+      "exec": "Scenario modeling and capacity reallocation"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Local usage or date met",
+      "senior": "Cost or adoption metrics",
+      "exec": "Revenue preserved and team leverage"
+    },
+    {
+      "signal": "Learning applied",
+      "junior": "Next individual task",
+      "senior": "Process change for team",
+      "exec": "New default model for org"
+    }
+  ],
+  "kind": "lp"
+}

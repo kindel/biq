@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time you changed the conditions rather than lower the goal.",
+  "principle": "Aim High and Find a Way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was told to ship a feature with a known perf regression because the deadline was fixed. I asked my manager if I could move two other low-priority tasks to the next sprint so I could spend the time fixing the root cause instead of adding a workaround."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you asked?"
+        },
+        {
+          "role": "candidate",
+          "text": "She agreed after I showed the benchmark numbers. I fixed the allocation issue in two days and we hit the original deadline with no regression. My skip later used it as an example in team meeting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed the conditions rather than lower the goal.",
+        "Role: new grad on first feature team; situation was fixed deadline + known perf issue",
+        "Action: proposed moving two tasks to next sprint to buy time for root-cause fix instead of workaround",
+        "Outcome: hit original deadline with no regression; skip-level cited it later",
+        "Quote: 'I showed the benchmark numbers and she agreed'",
+        "Follow-up: Asked what data convinced the manager; candidate described two-line benchmark summary"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way for a junior. The candidate treated the deadline as movable constraint rather than immovable target and used data to renegotiate scope with their manager. Story stays within individual work yet shows ownership of outcome instead of accepting the workaround. Concrete quote about showing benchmark numbers makes the influence visible. Biggest strength is choosing to change conditions (task list) instead of lowering quality bar.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The PM said we had to cut two test cases to meet the date so I just removed them and shipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to change anything first?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the date was already set and I didn't want to push back on my first project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed the conditions rather than lower the goal.",
+        "Role: new grad; situation was test coverage cut to hit date",
+        "Action: removed the two test cases without proposing alternatives",
+        "Outcome: shipped but with reduced coverage",
+        "Quote: 'I didn't want to push back on my first project'",
+        "Follow-up: Asked why no pushback; candidate said date felt non-negotiable"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way for a junior. The candidate accepted the lowered quality bar immediately without attempting to adjust scope or timeline. Story shows no evidence of trying to change conditions even at an individual level. Quote about not wanting to push back on first project reveals limited ownership. Biggest gap is treating the constraint as fixed rather than exploring a small trade that could have preserved the goal."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two partner teams were blocking our launch because their SLAs didn't cover the new traffic pattern. Instead of reducing our reliability target I ran a joint capacity review and got both teams to agree to a shared on-call rotation for the first month."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the projected QPS numbers and showed the gap was only 18% for 30 days. We split the extra pager load three ways and documented it in a one-page addendum to the existing SLA."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed the conditions rather than lower the goal.",
+        "Role: senior on platform team; situation was partner SLA gaps blocking launch",
+        "Action: ran joint capacity review and negotiated shared on-call rotation",
+        "Outcome: preserved original reliability target; three teams shared 30-day load",
+        "Quote: 'I showed the gap was only 18% for 30 days'",
+        "Follow-up: Asked how agreement was reached; candidate described one-page SLA addendum"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way for a senior. The candidate refused to lower the reliability target and instead changed cross-team operating conditions through a temporary shared rotation. Influence without authority is visible in the joint review and one-page addendum. Metrics (18% gap, 30 days) ground the story. Biggest strength is protecting the original goal while creating a bounded, documented solution that raised the other teams as well.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The partner team couldn't meet the SLA so we dropped our p99 target from 200 ms to 350 ms for the launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you explore any other options?"
+        },
+        {
+          "role": "candidate",
+          "text": "We asked once but they said no, so we adjusted the goal."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed the conditions rather than lower the goal.",
+        "Role: senior; situation was partner SLA shortfall",
+        "Action: lowered p99 target after single request was declined",
+        "Outcome: shipped with relaxed goal",
+        "Quote: 'We asked once but they said no'",
+        "Follow-up: Asked what other levers were considered; candidate mentioned only the one ask"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way for a senior. The candidate accepted a lower reliability target after one unsuccessful ask instead of changing conditions such as process, staffing, or timeline. Story lacks evidence of cross-team influence attempts beyond the initial request. Quote shows quick capitulation. Biggest gap is treating the partner constraint as fixed rather than exploring structural changes that could have preserved the goal."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our biggest customer segment was shrinking so the team wanted to cut the target by 30%. I instead changed the GTM motion: moved from product-led to a hybrid sales-assisted model and hired two vertical specialists. We hit the original number in nine months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused two new market bets and reallocated those heads. The board accepted the six-month delay on the bets because the core segment stayed intact."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed the conditions rather than lower the goal.",
+        "Role: exec; situation was shrinking segment threatening revenue target",
+        "Action: shifted GTM from PLG to hybrid sales-assisted and added vertical specialists",
+        "Outcome: hit original target in nine months; paused two market bets",
+        "Quote: 'The board accepted the six-month delay on the bets'",
+        "Follow-up: Asked about the reallocation decision; candidate described pausing new bets to fund specialists"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way at exec level. The candidate refused to lower the revenue target and instead changed fundamental go-to-market conditions and resource allocation. Strategic judgment is shown in the GTM pivot and the explicit trade-off with new market bets. Board-level alignment and nine-month outcome demonstrate long-term thinking. Biggest strength is using org-level levers (hiring, model change) to protect the goal rather than accepting a reduced target.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Market conditions changed so we reduced the annual recurring revenue target by 25% for the year."
+        },
+        {
+          "role": "interviewer",
+          "text": "What conditions did you try to change first?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reviewed pricing twice but the sales team said it wouldn't move the needle enough."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed the conditions rather than lower the goal.",
+        "Role: exec; situation was market pressure on revenue",
+        "Action: lowered ARR target after pricing reviews",
+        "Outcome: accepted reduced goal",
+        "Quote: 'the sales team said it wouldn't move the needle enough'",
+        "Follow-up: Asked what other levers were considered beyond pricing; candidate cited only pricing reviews"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way at exec level. The candidate lowered the revenue target after limited exploration instead of changing structural conditions such as GTM, product packaging, or channel strategy. Story shows quick acceptance of the lowered goal with minimal evidence of broader trade-off analysis. Quote about sales feedback reveals narrow scope. Biggest gap is absence of org-level leverage attempts that could have preserved the original ambition."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change attempted",
+      "junior": "Individual task list or sprint content",
+      "senior": "Cross-team process or rotation",
+      "exec": "GTM model and resource reallocation"
+    },
+    {
+      "signal": "Use of data to influence",
+      "junior": "Benchmark numbers shown to manager",
+      "senior": "QPS gap and 30-day projection",
+      "exec": "Segment trend plus board trade-off"
+    },
+    {
+      "signal": "Willingness to accept lower goal",
+      "junior": "Only when no other option explored",
+      "senior": "After single ask declined",
+      "exec": "After pricing reviews only"
+    },
+    {
+      "signal": "Evidence of raising others",
+      "junior": "Not expected at this level",
+      "senior": "Partner teams shared on-call load",
+      "exec": "Board aligned on delayed bets"
+    },
+    {
+      "signal": "Time horizon of outcome",
+      "junior": "Days to weeks",
+      "senior": "One month temporary fix",
+      "exec": "Nine months with board-level trade-offs"
+    },
+    {
+      "signal": "Ownership of constraint",
+      "junior": "Own sprint items",
+      "senior": "Partner SLA process",
+      "exec": "Company revenue target and GTM"
+    }
+  ],
+  "kind": "lp"
+}

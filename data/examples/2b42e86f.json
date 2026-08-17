@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about work you questioned because you could not trace it to a customer.",
+  "principle": "Results for Customers",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was asked to add a logging toggle to an internal dashboard. I asked my manager why because I could not see which customer pain it solved. She explained it was for a support team workflow that reduced ticket resolution time by 15 percent. I still built it but documented the customer link in the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after learning the link?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a note in the PR and asked the support lead for a quick validation call so I could see the actual flow."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about work you questioned because you could not trace it to a customer.",
+        "Role: new grad on first team, situation: internal dashboard logging toggle with unclear purpose.",
+        "Action: asked manager, accepted explanation after seeing support workflow link, added PR note and validated with support lead.",
+        "Outcome: completed task with documented customer tie, learned to ask earlier.",
+        "Quote: \"I could not see which customer pain it solved.\"",
+        "Follow-up: Asked what happened after learning the link; candidate described adding validation step."
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers for a junior. The candidate proactively questioned an internal task whose customer link was not obvious. They accepted coaching once the support workflow impact was shown and added a concrete step to confirm it. This shows early ownership of tracing work to customers rather than assuming all assigned tasks are valid. The scope stayed individual but the behavior of asking and documenting is exactly what we want to see develop. Biggest strength is treating the missing customer trace as a signal to investigate instead of a reason to disengage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was told to build a new metric endpoint for our service. I just implemented it because that is what the ticket said to do."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever ask why it was needed?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the PM owns the why so I focused on getting the code done on time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about work you questioned because you could not trace it to a customer.",
+        "Role: new grad, situation: metric endpoint request with no visible customer tie.",
+        "Action: implemented exactly as ticket described without questioning.",
+        "Outcome: delivered on time but never connected the work to a customer outcome.",
+        "Quote: \"The PM owns the why so I focused on getting the code done on time.\"",
+        "Follow-up: Asked if they ever questioned the need; candidate said no because PM owns requirements."
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers for a junior. The candidate treated the ticket as sufficient justification and did not attempt to trace the endpoint to any customer or support outcome. They explicitly deferred the \"why\" to the PM rather than treating it as part of their own scope. This shows a narrow view of ownership limited to code delivery. The behavior is common at this level but the absence of any curiosity about customer linkage is a gap we would need to close quickly. Biggest gap is the assumption that questioning work is outside the junior role."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was asked to build a new internal reporting table that ops requested. I could not map it to any customer-visible metric so I pushed back in planning and asked for the downstream customer impact. After two meetings we discovered it was duplicating data already available in an existing service, so we dropped the work."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the decision across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the ops lead and the metrics owner together and showed the overlap in a shared doc; both agreed to cancel after seeing the duplication."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about work you questioned because you could not trace it to a customer.",
+        "Role: senior on platform team, situation: ops-requested internal reporting table with unclear customer value.",
+        "Action: pushed back in planning, facilitated cross-team meeting to surface duplication, drove cancellation.",
+        "Outcome: avoided building redundant work that had no customer tie.",
+        "Quote: \"I could not map it to any customer-visible metric.\"",
+        "Follow-up: How did you influence across teams; candidate described bringing leads together and showing overlap."
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers for a senior. The candidate identified an internal request that lacked any traceable customer metric and used influence without authority to surface duplication. They converted their own uncertainty into a concrete cross-team conversation that led to canceling the work. This demonstrates the expected senior behavior of protecting customer focus even when the ask comes from another internal team. The result was time saved rather than heroic delivery. Biggest strength is treating missing customer linkage as a reason to stop work, not just a question to ask once.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Ops asked for a new internal table. I built it because it was a high-priority ticket from another team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check whether it connected to any customer outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed ops had already done that validation so I focused on delivery speed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about work you questioned because you could not trace it to a customer.",
+        "Role: senior, situation: ops internal reporting table request.",
+        "Action: delivered without investigating customer linkage.",
+        "Outcome: completed the table but never validated downstream value.",
+        "Quote: \"I assumed ops had already done that validation.\"",
+        "Follow-up: Asked about checking customer outcome; candidate deferred to requesting team."
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers for a senior. The candidate accepted an internal request at face value and did not attempt to trace it to customer impact even when given the chance in the interview. They relied on the requesting team to have done the validation rather than treating cross-team requests as requiring their own scrutiny. This misses the senior expectation of influence and customer focus beyond their immediate ticket list. The outcome was efficient delivery of potentially low-value work. Biggest gap is the lack of any mechanism to question or validate customer linkage on work originating outside their team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a proposal to invest in a new self-serve analytics product because two large customers mentioned it in QBRs. I asked the team to quantify how many customers would actually adopt it versus the support cost of maintaining another surface. The data showed only a small segment would use it while the majority preferred existing APIs, so we redirected the resources to API improvements instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make explicit to the organization?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a short memo showing the adoption projection versus the ongoing maintenance burden and used it to align the roadmap review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about work you questioned because you could not trace it to a customer.",
+        "Role: exec leading platform org, situation: proposed self-serve analytics feature driven by two vocal customers.",
+        "Action: required quantification of total addressable customers versus maintenance cost, redirected to API work.",
+        "Outcome: avoided building low-adoption product and focused resources on higher-impact API improvements.",
+        "Quote: \"Only a small segment would use it while the majority preferred existing APIs.\"",
+        "Follow-up: What trade-off was made explicit; candidate described writing a memo for roadmap alignment."
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers at the exec level. The candidate applied a customer-segment lens to a feature request that appeared customer-driven and used data to reveal limited actual adoption. They converted the insight into an organizational trade-off decision that protected roadmap focus. This shows the strategic judgment expected at exec scope where the cost of building the wrong thing is measured in org capacity. The action protected long-term customer results rather than chasing visible requests. Biggest strength is using customer data to stop work that would have diluted focus across the broader customer base.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A couple of enterprise customers asked for a new analytics dashboard so we staffed a team to build it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you validate it would matter to the wider customer base?"
+        },
+        {
+          "role": "candidate",
+          "text": "We trusted the account teams on those two logos and moved forward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about work you questioned because you could not trace it to a customer.",
+        "Role: exec, situation: analytics dashboard request from two enterprise accounts.",
+        "Action: staffed a team based on the request without broader validation.",
+        "Outcome: invested in a feature whose reach was never quantified.",
+        "Quote: \"We trusted the account teams on those two logos and moved forward.\"",
+        "Follow-up: Asked about validating wider base; candidate relied on account teams."
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers at the exec level. The candidate treated requests from two large customers as sufficient justification to allocate org resources without checking broader adoption or maintenance cost. They deferred validation to account teams rather than requiring the data-driven trade-off discussion expected at this scope. This risks building features that serve vocal customers at the expense of the majority. The decision process shows reactive rather than strategic customer focus. Biggest gap is the absence of any mechanism to quantify customer reach before committing significant org capacity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Questions work lacking customer trace",
+      "junior": "Asks manager once, accepts answer",
+      "senior": "Facilitates cross-team discussion to cancel",
+      "exec": "Requires quantified adoption data before staffing"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task level",
+      "senior": "Team and adjacent team level",
+      "exec": "Org roadmap and capacity level"
+    },
+    {
+      "signal": "Use of data or evidence",
+      "junior": "Accepts verbal explanation",
+      "senior": "Shows duplication in shared doc",
+      "exec": "Produces adoption projection memo"
+    },
+    {
+      "signal": "Outcome orientation",
+      "junior": "Documents the link after the fact",
+      "senior": "Stops redundant work",
+      "exec": "Redirects resources to higher-impact area"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Raises question upward",
+      "senior": "Brings stakeholders together",
+      "exec": "Writes memo to align leadership review"
+    }
+  ],
+  "kind": "value"
+}

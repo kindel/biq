@@ -1,0 +1,195 @@
+{
+  "question": "Tell me about a time you failed to persuade someone. What did you do next?",
+  "principle": "Influence without Authority",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a small feature team and wanted to use a simpler data store for our new reporting tool. My teammate pushed for a more complex one. I explained my reasons but they weren't convinced and we went with their choice."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "After launch we saw performance issues. I went back to them with the data, asked what we could learn, and we refactored together. It worked better."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you approach the second conversation differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on the shared goal of reliability instead of just my preference and brought usage numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you failed to persuade someone. What did you do next?",
+        "Candidate described individual feature choice disagreement on data store",
+        "Failed first attempt, went back with metrics after launch issues",
+        "Quote: 'I focused on the shared goal of reliability instead of just my preference'",
+        "Follow-up: Asked how second conversation differed; candidate said brought data and aligned on goal"
+      ],
+      "raiseFeedback": "Raises the bar on Influence without Authority for a junior. Story centered on a local feature disagreement where the candidate lost the first discussion on data store choice. After seeing performance problems post-launch the candidate returned with usage numbers and reframed around shared reliability goals, leading to a joint refactor. This shows ownership of the outcome and quick adjustment based on evidence rather than digging in. The concrete quote about shifting from preference to shared goal illustrates coachability at the individual scope expected for 0-2 years. Biggest strength is the clear learning loop from failed persuasion to data-driven follow-up without escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to get my manager to approve a different approach on my task but they said no so we did it their way."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the initial no?"
+        },
+        {
+          "role": "candidate",
+          "text": "Nothing really, it was their call so I just moved on and finished the task."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you failed to persuade someone. What did you do next?",
+        "Candidate gave brief story of disagreeing with manager on task approach",
+        "Stopped after first rejection with no follow-up actions described",
+        "Quote: 'it was their call so I just moved on'",
+        "Follow-up: Probing what happened next yielded minimal reflection or adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar on Influence without Authority for a junior. The account is limited to a single disagreement with a manager where the candidate accepted the no and stopped without further effort or learning. No evidence of trying alternative framing, gathering data, or reflecting on why persuasion failed. The quote about it being their call and moving on shows limited ownership of the outcome or interest in improving influence skills. At this level we expect at least basic coachability and local ownership when persuasion does not work. Biggest gap is absence of any next step or adjustment after the initial failure."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two engineering teams disagreed on API contract changes for a shared service. I tried to align them in a meeting but the other team lead stayed with their plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled 1:1s, mapped the downstream impact for both teams, and proposed a phased rollout that reduced their risk. We agreed on a compromise that shipped on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: What metric showed the influence worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Reduced integration bugs by 40% in the quarter after launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you failed to persuade someone. What did you do next?",
+        "Candidate described cross-team API disagreement with another lead",
+        "Initial meeting failed; followed with 1:1s and impact mapping",
+        "Quote: 'proposed a phased rollout that reduced their risk'",
+        "Follow-up: Asked for metric; candidate cited 40% drop in integration bugs"
+      ],
+      "raiseFeedback": "Raises the bar on Influence without Authority for a senior. The candidate lost an initial cross-team alignment meeting on API changes then shifted to individual conversations and a risk-reducing phased plan that both teams accepted. The follow-up produced a clear outcome metric of 40% fewer integration bugs. This demonstrates the expected ability to influence without authority across teams and iterate after failure. The story stays grounded in a realistic shared-service conflict rather than heroic wins. Biggest strength is the concrete sequence from failed group persuasion to targeted follow-up that delivered measurable cross-team benefit.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I presented my case in a meeting with another team but they didn't agree so the project used their approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything after that meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a follow-up email with my slides but didn't get a response so I let it go."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you failed to persuade someone. What did you do next?",
+        "Candidate mentioned cross-team meeting on project approach that failed",
+        "Only sent one email after the meeting with no further action",
+        "Quote: 'I sent a follow-up email with my slides but didn't get a response so I let it go'",
+        "Follow-up: Probing post-meeting steps showed single passive attempt"
+      ],
+      "lowerFeedback": "Lowers the bar on Influence without Authority for a senior. The candidate describes losing a cross-team meeting and following up with only a single email before dropping the issue. No evidence of adapting the approach, understanding the other side's constraints, or pursuing alternative influence paths. At the senior level we look for persistence and creativity when initial persuasion fails across teams. The passive email-and-stop sequence shows limited ownership of cross-team outcomes. Biggest gap is lack of any iterative effort or measurable impact after the initial failure."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I proposed shifting our org to a new platform strategy but the CEO and two VPs favored staying the course. The initial pitch meeting did not land."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a six-week pilot with one product area, collected cost and velocity data, then brought the three leaders together with a side-by-side comparison and recommended a phased migration starting in one region."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: What was the long-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We moved two regions over 18 months with 15% lower infra spend and no customer impact."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you failed to persuade someone. What did you do next?",
+        "Candidate described failed org-level platform strategy pitch to CEO and VPs",
+        "Followed with targeted pilot and data-driven re-pitch",
+        "Quote: 'brought the three leaders together with a side-by-side comparison'",
+        "Follow-up: Asked for outcome; candidate cited 15% lower spend over 18 months"
+      ],
+      "raiseFeedback": "Raises the bar on Influence without Authority for an exec. After an initial strategy pitch to the CEO and two VPs failed, the candidate ran a contained pilot, gathered comparative data, and reconvened the leaders with a phased recommendation. The 18-month outcome of 15% lower spend across two regions without customer issues shows strategic judgment and long-term leverage. This matches the high-ambiguity org-level scope expected at 10+ years. The story illustrates trade-off thinking by starting small rather than forcing a full change. Biggest strength is turning a clear persuasion failure into an evidence-based path that aligned senior stakeholders over time.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I made the case for a new org direction in the leadership offsite but the group decided against it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actions followed the offsite decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted the decision and focused on executing the current plan for the next year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you failed to persuade someone. What did you do next?",
+        "Candidate described failed org direction pitch at leadership offsite",
+        "No further actions taken after the decision",
+        "Quote: 'I accepted the decision and focused on executing the current plan'",
+        "Follow-up: Probing next steps showed immediate acceptance without iteration"
+      ],
+      "lowerFeedback": "Lowers the bar on Influence without Authority for an exec. The candidate lost a leadership offsite discussion on org direction and took no further steps beyond accepting the outcome. At the executive level we expect strategic persistence, use of pilots or data, and long-term thinking when initial influence fails. The quick pivot to execution without exploring alternatives shows limited leverage or judgment under ambiguity. Biggest gap is absence of any post-failure action that could have shifted stakeholder views over time."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership after failed persuasion",
+      "junior": "Raises: returned with data and reframed around shared goal; Lowers: accepted no and stopped",
+      "senior": "Raises: ran 1:1s and impact mapping to reach compromise; Lowers: sent one email then dropped",
+      "exec": "Raises: ran pilot and reconvened with phased data; Lowers: accepted decision immediately"
+    },
+    {
+      "signal": "Adaptation of approach",
+      "junior": "Raises: shifted from preference to shared reliability; Lowers: no change attempted",
+      "senior": "Raises: moved from group meeting to targeted 1:1s; Lowers: repeated same slides in email",
+      "exec": "Raises: used pilot data to address risk concerns; Lowers: no iteration on original pitch"
+    },
+    {
+      "signal": "Evidence of cross-boundary impact",
+      "junior": "N/A at level; focus stays local",
+      "senior": "Raises: 40% bug reduction across teams; Lowers: none shown",
+      "exec": "Raises: 15% spend reduction over 18 months org-wide; Lowers: none shown"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "N/A at level",
+      "senior": "N/A at level",
+      "exec": "Raises: phased migration plan over 18 months; Lowers: stopped at single offsite"
+    }
+  ],
+  "kind": "lp"
+}

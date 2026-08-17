@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you gave critical feedback and kept the relationship intact.",
+  "principle": "Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was pairing with a new teammate on a small feature. Their PR had a logic error that would break edge cases. I said, 'This approach works for happy path but misses the error case we discussed last week\u2014want to pair on fixing it?' They agreed and we shipped together."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did they react right after?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were quiet at first so I asked if the feedback landed okay. They said it helped and we grabbed coffee later that week."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave critical feedback and kept the relationship intact.",
+        "Role: Individual contributor on 2-person feature team",
+        "Situation: Peer PR had logic gap on edge case",
+        "Action: Specific, actionable feedback + offered to pair",
+        "Outcome: Shipped together, teammate followed up positively",
+        "Quote: 'This approach works for happy path but misses the error case we discussed last week'",
+        "Follow-up: How did they react right after? Candidate asked clarifying question and relationship stayed open"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate described giving peer feedback on a small feature PR by pointing out a specific logic gap and offering to pair. They quoted their own words and noted the teammate was initially quiet so they checked in, which kept the exchange open. This shows ownership of their own delivery and quick adjustment when the other person seemed off. At junior level the scope stays local and individual, which matches expectations. Biggest strength is the follow-up question that prevented the relationship from cooling.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my teammate their code was messy and they needed to fix it before review. They got defensive and stopped asking me questions after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say exactly?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just that it was messy and they should clean it up. I didn't want to sugarcoat it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave critical feedback and kept the relationship intact.",
+        "Role: Individual on small feature",
+        "Situation: Teammate PR needed fixes",
+        "Action: Called code messy and told them to fix it",
+        "Outcome: Teammate became defensive and stopped collaborating",
+        "Quote: 'I didn't want to sugarcoat it'",
+        "Follow-up: What did you say exactly? Candidate repeated blunt phrasing with no adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The candidate described blunt feedback that caused the teammate to stop asking questions afterward. They admitted they called the code messy without offering specifics or pairing. At junior level we expect basic awareness of how delivery affects working relationships and willingness to adjust. The story shows neither. Biggest gap is lack of any attempt to repair or adapt after seeing defensiveness."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A product manager on another team kept changing requirements mid-sprint. I scheduled a 1:1 and said the churn was causing the engineering team to lose two days of velocity each time. We agreed on a change-freeze window and I checked in weekly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome on the relationship?"
+        },
+        {
+          "role": "candidate",
+          "text": "They now loop me in earlier on roadmap shifts and we delivered the next two quarters without the same friction."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave critical feedback and kept the relationship intact.",
+        "Role: Senior on cross-team project",
+        "Situation: PM changes caused repeated velocity loss",
+        "Action: Private 1:1 with data on impact, proposed concrete process change",
+        "Outcome: New working rhythm and earlier involvement",
+        "Quote: 'The churn was causing the engineering team to lose two days of velocity each time'",
+        "Follow-up: What was the outcome on the relationship? Candidate reported ongoing collaboration improvement"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate gave cross-team feedback to a PM by quantifying velocity impact and suggesting a change-freeze window. They followed up weekly and the relationship evolved into earlier involvement on roadmap items. At senior level this demonstrates influence without authority and measurable cross-team improvement. The story stays grounded in a realistic project friction rather than heroics. Biggest strength is turning one conversation into sustained process change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I emailed the PM that their changes were hurting the team and they should stop. They replied once and then avoided me on the project."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured they got the message."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave critical feedback and kept the relationship intact.",
+        "Role: Senior on cross-team project",
+        "Situation: PM changes disrupted sprint",
+        "Action: Sent email stating changes were hurting the team",
+        "Outcome: PM avoided further interaction",
+        "Quote: 'I figured they got the message'",
+        "Follow-up: Did you try to follow up? Candidate made no attempt to repair"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The candidate sent an email criticizing the PM's changes and received no further engagement. They chose not to follow up after seeing avoidance. At senior level we expect the ability to influence peers across teams and recover from initial missteps. The story shows neither. Biggest gap is treating one blunt message as sufficient without any relationship repair."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two directors were in open conflict over resource allocation for a new initiative. I met each separately, shared the business trade-off data, and asked what outcome would make the other look successful. We aligned on a phased split that both signed off on."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback from the stronger personality?"
+        },
+        {
+          "role": "candidate",
+          "text": "I acknowledged their concern on risk and showed how the phased approach reduced their exposure while still hitting the revenue target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave critical feedback and kept the relationship intact.",
+        "Role: Exec managing director-level conflict",
+        "Situation: Resource fight between two directors blocking initiative",
+        "Action: Separate meetings with data, reframed around mutual success",
+        "Outcome: Phased agreement both accepted",
+        "Quote: 'What outcome would make the other look successful'",
+        "Follow-up: How did you handle pushback from the stronger personality? Candidate tied proposal to the director's own risk metric"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate addressed director-level conflict by meeting each party separately, surfacing business data, and reframing around mutual success metrics. They adjusted the proposal to address the stronger personality's risk concern and secured joint sign-off. At exec level this shows strategic judgment in high-ambiguity org dynamics and long-term leverage through alignment. The story focuses on process and trade-offs rather than personal heroics. Biggest strength is converting conflict into a workable phased plan without damaging either relationship.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told both directors in a group meeting that their fighting was unprofessional and they needed to figure it out. One stopped attending planning sessions after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next with the initiative?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed the launch by a quarter while I tried to mediate separately."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave critical feedback and kept the relationship intact.",
+        "Role: Exec on director conflict",
+        "Situation: Resource allocation fight blocking initiative",
+        "Action: Public group feedback calling behavior unprofessional",
+        "Outcome: One director disengaged, launch delayed",
+        "Quote: 'Their fighting was unprofessional'",
+        "Follow-up: What happened next with the initiative? Candidate described quarter delay and separate mediation"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The candidate delivered public feedback labeling director behavior unprofessional, resulting in disengagement and a quarter delay. They later attempted private mediation but the initial approach had already damaged trust. At exec level we expect handling of org-level ambiguity with strategic framing that preserves leverage. The story shows the opposite. Biggest gap is choosing a high-risk public setting without first testing private alignment."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Specificity of feedback given",
+      "junior": "Names exact code issue and offers to pair",
+      "senior": "Quantifies velocity impact and proposes process change",
+      "exec": "Uses mutual-success framing and business trade-off data"
+    },
+    {
+      "signal": "Handling of initial resistance",
+      "junior": "Checks in when teammate is quiet",
+      "senior": "Follows up weekly after agreement",
+      "exec": "Adjusts proposal to address risk concern"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Stays within 2-person feature team",
+      "senior": "Improves cross-team working rhythm",
+      "exec": "Resolves director conflict affecting initiative timeline"
+    },
+    {
+      "signal": "Recovery after misstep",
+      "junior": "Asks clarifying question in moment",
+      "senior": "No recovery shown in lower story",
+      "exec": "Public approach leads to disengagement"
+    }
+  ],
+  "kind": "value"
+}

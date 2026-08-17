@@ -1,0 +1,201 @@
+{
+  "question": "Tell me about something you learned from outside your own company and then applied.",
+  "principle": "Learn Voraciously",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I read a blog post on a new testing pattern from a Google engineer and tried it on my feature tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after you applied it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Bug escapes dropped in my module and my manager asked me to share the pattern in our team retro."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you decide it was worth trying?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tested it on a small piece first and measured the time to write and run tests before rolling it out."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you learned from outside your own company and then applied.",
+        "Read external blog on testing pattern, applied to own feature tests",
+        "Outcome: fewer bug escapes in module, shared in team retro",
+        "Quote: \"I tested it on a small piece first and measured the time\"",
+        "Follow-up: How did you decide it was worth trying? -> small pilot with metrics"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously for a junior. The candidate identified a testing pattern from an external Google engineer blog and applied it directly to their feature work. They ran a small pilot, measured write and run time, then saw fewer bug escapes. The pattern later reached the team retro. This shows initiative to seek outside input and close the loop with application and measurement. Biggest strength is the explicit pilot step that turned external reading into local results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw a talk at a conference about clean code but we already had our own style guide so I didn't change anything."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share any of the ideas with your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it felt like it was already covered internally."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you learned from outside your own company and then applied.",
+        "Attended conference talk on clean code",
+        "Outcome: no change because internal style guide existed",
+        "Quote: \"it felt like it was already covered internally\"",
+        "Follow-up: Did you share any ideas? -> no"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously for a junior. The candidate attended an external conference talk on clean code yet made no changes because an internal style guide already existed. They did not share the ideas or run any experiment. This shows external input was consumed but produced zero application or influence. The single biggest gap is the absence of any attempt to test or adapt the learning locally."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked up a zero-trust networking pattern from a Stripe engineering post and adapted it for our service-to-service calls."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reduced lateral movement risk across two teams and the security team adopted the pattern for three more services."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you get the other teams to try it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a short internal doc with before-and-after metrics and ran a brown-bag that two teams attended."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you learned from outside your own company and then applied.",
+        "Adapted zero-trust pattern from Stripe post to service-to-service calls",
+        "Impact: reduced lateral movement risk across two teams; security adopted for three more services",
+        "Quote: \"I wrote a short internal doc with before-and-after metrics\"",
+        "Follow-up: How did you get the other teams to try it? -> doc plus brown-bag"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously for a senior. The candidate took a zero-trust pattern from a Stripe post and adapted it to internal service calls. They produced before-and-after metrics, wrote an internal doc, and ran a brown-bag that led two teams to adopt it. Security later extended the pattern to three additional services. This demonstrates external learning turned into cross-team influence with measurable risk reduction. Biggest strength is the combination of adaptation and lightweight internal sharing that scaled the idea.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I read a paper on database sharding from a MongoDB blog and mentioned it in a design review but the team stayed with the current approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you run any experiment or share the paper?"
+        },
+        {
+          "role": "candidate",
+          "text": "I linked the paper in the review doc but no one followed up so we moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you learned from outside your own company and then applied.",
+        "Read MongoDB sharding paper, mentioned in design review",
+        "Outcome: no experiment or adoption",
+        "Quote: \"I linked the paper in the review doc but no one followed up\"",
+        "Follow-up: Did you run any experiment? -> none"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously for a senior. The candidate read an external MongoDB sharding paper and referenced it once in a design review but took no further action. No experiment was run and the link received no follow-up. The learning stayed at the level of a single mention without adaptation or influence. The core gap is lack of ownership to drive the idea past the first conversation."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I studied how Stripe scaled their risk platform through external conference talks and papers, then introduced a similar risk review cadence at our company."
+        },
+        {
+          "role": "interviewer",
+          "text": "What business result followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We cut fraud losses by 18 percent in the first year and the process became the model for two acquired companies."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you handle the ambiguity of importing an external model?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started with a six-week pilot on one product line, compared loss rates to control, and only then rolled it out with clear trade-off notes for the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you learned from outside your own company and then applied.",
+        "Imported risk review cadence from Stripe external talks and papers",
+        "Business result: 18 percent fraud loss reduction; adopted by two acquired companies",
+        "Quote: \"I started with a six-week pilot on one product line, compared loss rates to control\"",
+        "Follow-up: How did you handle ambiguity? -> pilot with metrics before broader rollout"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously for an exec. The candidate studied Stripe's risk platform approach from external talks and papers, then introduced a comparable risk review cadence. A six-week pilot on one product line produced an 18 percent fraud loss reduction that later became the model for two acquired companies. The approach included explicit trade-off documentation for the board. This reflects strategic judgment in adapting external learning at org scale with measurable business impact. Biggest strength is the disciplined pilot that de-risked the import before wider application.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I heard about OKR frameworks at an industry summit and suggested we look into them but the initiative stayed at the planning stage."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you run any pilot or compare results?"
+        },
+        {
+          "role": "candidate",
+          "text": "We formed a working group but never moved past defining objectives because priorities shifted."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you learned from outside your own company and then applied.",
+        "Suggested OKR framework after industry summit",
+        "Outcome: working group formed but no pilot or rollout",
+        "Quote: \"We formed a working group but never moved past defining objectives\"",
+        "Follow-up: Did you run any pilot? -> none"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously for an exec. The candidate encountered OKR frameworks at an industry summit and formed an internal working group, yet no pilot was launched and the effort stalled when priorities shifted. External learning produced discussion without any tested application or org-level change. The main gap is absence of the strategic follow-through needed to convert an idea into measurable business leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Source of external learning",
+      "junior": "Single blog or talk with direct personal use",
+      "senior": "Industry post plus cross-team sharing",
+      "exec": "Multiple external sources adapted at org scale"
+    },
+    {
+      "signal": "Evidence of application",
+      "junior": "Small pilot with local metrics",
+      "senior": "Metrics plus internal doc or brown-bag",
+      "exec": "Pilot with control comparison and board-level trade-offs"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Own module or feature",
+      "senior": "Two or more teams",
+      "exec": "Business metric plus acquired entities"
+    },
+    {
+      "signal": "Handling of resistance or ambiguity",
+      "junior": "Tested on small piece first",
+      "senior": "Lightweight sharing to gain traction",
+      "exec": "Explicit pilot before broader rollout"
+    },
+    {
+      "signal": "Follow-through after initial mention",
+      "junior": "Shared in team retro",
+      "senior": "Security team extended the pattern",
+      "exec": "Became standard model for acquisitions"
+    }
+  ],
+  "kind": "lp"
+}

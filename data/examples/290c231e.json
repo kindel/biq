@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time you made your own team slower in order to make the whole organization faster.",
+  "principle": "Efficiency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made your own team slower in order to make the whole organization faster."
+        },
+        {
+          "role": "candidate",
+          "text": "In my first project I was building a reporting script for our squad. I realized three other teams were writing similar one-offs, so I spent two extra days turning it into a small shared library with docs instead of just shipping my version."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on your own delivery?"
+        },
+        {
+          "role": "candidate",
+          "text": "My feature landed four days late, but the other teams reused the library within a month and cut their similar work from two weeks to two days."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the trade-off was worth it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked with the other team leads first to confirm they would actually use it before I invested the extra time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made your own team slower in order to make the whole organization faster.",
+        "Role: new grad on reporting script",
+        "Situation: noticed duplicate work across squads",
+        "Action: spent 2 extra days building shared library + docs instead of quick script",
+        "Outcome: own feature +4 days late; other teams cut 2-week task to 2 days",
+        "Quote: \"I checked with the other team leads first to confirm they would actually use it\"",
+        "Follow-up: impact on own delivery? -> confirmed delay but measurable reuse"
+      ],
+      "raiseFeedback": "Raises the bar. Principle is Efficiency. Candidate described deliberately extending their own work to create a reusable library after validating demand with peer teams. The concrete quote about checking with leads first shows they weighed the trade-off rather than assuming. Local cost was explicit (feature four days late) while org benefit was measurable reuse. Biggest strength is the small-scope but clear local-to-global calculation at junior level.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made your own team slower in order to make the whole organization faster."
+        },
+        {
+          "role": "candidate",
+          "text": "I once spent time writing extra unit tests because the org had a new coverage rule. It slowed us down that sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any other teams benefit from that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was mainly for our own compliance score."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made your own team slower in order to make the whole organization faster.",
+        "Role: new grad",
+        "Situation: new coverage rule appeared",
+        "Action: wrote extra tests to meet rule",
+        "Outcome: sprint slowed; no mention of other teams",
+        "Quote: \"Not really, it was mainly for our own compliance score\"",
+        "Follow-up: other team benefit? -> none identified"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle is Efficiency. Story shows added local work to meet a rule but produced no observable benefit to other teams, so the \"whole organization faster\" claim is missing. The follow-up answer confirms the impact stayed inside the team. Gap is lack of evidence that the candidate evaluated or achieved a broader trade-off."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made your own team slower in order to make the whole organization faster."
+        },
+        {
+          "role": "candidate",
+          "text": "My team owned the payments service. We paused a high-priority feature to first extract a common retry and circuit-breaker library that three downstream services could use."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the feature delay with your own stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "I got the payments PM and two consuming team leads to agree on the priority shift in writing, then tracked the reuse metrics for the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What were the results?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our feature slipped six weeks; the three other teams reduced their incident rate by 40% over the following quarter because they adopted the shared resilience code."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made your own team slower in order to make the whole organization faster.",
+        "Role: senior owning payments service",
+        "Situation: three downstream teams duplicating resilience logic",
+        "Action: paused feature to build shared retry/circuit-breaker library",
+        "Outcome: own feature -6 weeks; downstream incident rate -40%",
+        "Quote: \"I got the payments PM and two consuming team leads to agree on the priority shift in writing\"",
+        "Follow-up: stakeholder handling? -> written alignment and tracked metrics"
+      ],
+      "raiseFeedback": "Raises the bar. Principle is Efficiency. Senior candidate paused a committed feature to extract a shared library after securing written buy-in from dependent teams. The six-week local delay and 40% incident reduction provide a clear before-and-after metric across teams. Quote shows influence without authority. Biggest strength is the documented cross-team alignment and measurable org-level reliability gain.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made your own team slower in order to make the whole organization faster."
+        },
+        {
+          "role": "candidate",
+          "text": "We adopted a new code-review checklist that the architecture group published. It added review time for us."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that change anything for other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were encouraged to use it too, but I didn't track whether they did."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made your own team slower in order to make the whole organization faster.",
+        "Role: senior",
+        "Situation: new org checklist released",
+        "Action: adopted checklist in own team",
+        "Outcome: added review time; no tracking of other teams",
+        "Quote: \"They were encouraged to use it too, but I didn't track whether they did\"",
+        "Follow-up: other team impact? -> no measurement"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle is Efficiency. Candidate adopted an org checklist that slowed their team but never verified or drove adoption elsewhere, so no evidence of making the organization faster. Follow-up answer shows absence of cross-team measurement or influence. Gap is treating the action as compliance rather than a deliberate local-to-global trade-off."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made your own team slower in order to make the whole organization faster."
+        },
+        {
+          "role": "candidate",
+          "text": "As VP I moved our platform team from building product-specific tools to a self-service platform, which meant deprioritizing three roadmap items our biggest customer had requested."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage the customer and internal pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I created a six-month transition plan with explicit SLAs, ran a pilot with two smaller teams first, and tied the platform investment to a company-wide OKR on developer productivity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our team velocity dropped 25% for two quarters; within nine months 60% of product teams were self-serve and overall developer onboarding time fell from six weeks to ten days."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made your own team slower in order to make the whole organization faster.",
+        "Role: VP of platform",
+        "Situation: product teams blocked on platform team capacity",
+        "Action: shifted platform team to self-service model, deprioritized three big-customer items",
+        "Outcome: team velocity -25% for two quarters; 60% self-serve adoption; onboarding 6w -> 10d",
+        "Quote: \"I created a six-month transition plan with explicit SLAs, ran a pilot with two smaller teams first\"",
+        "Follow-up: customer pushback handling? -> written SLAs + pilot + company OKR"
+      ],
+      "raiseFeedback": "Raises the bar. Principle is Efficiency. Exec candidate deliberately slowed their own team's velocity for two quarters to build a self-service platform that unlocked the rest of the organization. The 25% local drop versus 60% adoption and onboarding reduction shows a multi-quarter trade-off at org scale. Quote demonstrates structured rollout with SLAs and pilots. Biggest strength is the strategic framing and quantified company-wide leverage.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you made your own team slower in order to make the whole organization faster."
+        },
+        {
+          "role": "candidate",
+          "text": "We centralized a shared hiring panel process across all engineering teams, which added coordination overhead for my org."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable effect on the rest of the company?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was intended to improve consistency, but we didn't have baseline metrics before the change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made your own team slower in order to make the whole organization faster.",
+        "Role: exec",
+        "Situation: rolled out centralized hiring panels",
+        "Action: added coordination steps for own org",
+        "Outcome: added overhead; no pre-change baseline",
+        "Quote: \"It was intended to improve consistency, but we didn't have baseline metrics before the change\"",
+        "Follow-up: company-wide effect? -> no metrics captured"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle is Efficiency. Exec story describes adding process overhead to their organization under the banner of consistency but never established baselines or measured acceleration elsewhere. Follow-up answer confirms absence of data to validate the trade-off. Gap is lack of strategic measurement or evidence that the change produced net organizational speed."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Single feature or script reused by peer teams",
+      "senior": "Multiple downstream services adopt shared component",
+      "exec": "Org-wide self-service platform changes onboarding velocity"
+    },
+    {
+      "signal": "Evidence of trade-off decision",
+      "junior": "Checked with leads before investing extra days",
+      "senior": "Written alignment from PM and consuming leads",
+      "exec": "Six-month plan with SLAs and pilot before full rollout"
+    },
+    {
+      "signal": "Local cost made explicit",
+      "junior": "Own feature four days late",
+      "senior": "Feature slipped six weeks",
+      "exec": "Team velocity down 25% for two quarters"
+    },
+    {
+      "signal": "Global benefit measured",
+      "junior": "Other teams cut task from 2 weeks to 2 days",
+      "senior": "Incident rate down 40%",
+      "exec": "Onboarding 6 weeks to 10 days, 60% adoption"
+    },
+    {
+      "signal": "Follow-up depth on influence",
+      "junior": "Confirmed demand before acting",
+      "senior": "Tracked reuse metrics post-change",
+      "exec": "Tied to company OKR and ran controlled pilot"
+    }
+  ],
+  "kind": "value"
+}

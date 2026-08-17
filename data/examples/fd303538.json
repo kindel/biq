@@ -1,0 +1,201 @@
+{
+  "question": "Tell me about a time someone junior disagreed with you. What did you do?",
+  "principle": "Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was pairing with an intern on a small feature. He pushed back on my plan to hardcode a config value, saying it would make testing brittle later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked him to walk me through his concern with an example. We sketched both approaches on the whiteboard and I realized his version was only a few lines more but clearly better for maintainability. I updated the task and told the intern we would go with his approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about changing your plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was fine. I logged the change in the ticket so the team lead saw it and we moved on."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone junior disagreed with you. What did you do?",
+        "Candidate described intern pushing back on hardcoded config during pairing",
+        "Listened, whiteboarded both options, adopted intern's approach",
+        "Quote: 'I updated the task and told the intern we would go with his approach'",
+        "Follow-up: Asked how they felt changing plan - said it was fine and logged it"
+      ],
+      "raiseFeedback": "Raises the bar for Disagree and Commit at junior level. The candidate described a concrete, low-scope disagreement with an intern over a config decision and showed they listened long enough to change their mind. They explicitly adopted the better idea and communicated the update. This meets the expectation that juniors own their work and remain coachable rather than defensive. The main gap is lack of any follow-up on whether the change actually improved outcomes, but that is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "An intern once said my approach to a logging statement was overkill. I explained why I wanted it that way and we kept my version."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at their suggestion at all?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I had already thought it through and the ticket was due that day."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone junior disagreed with you. What did you do?",
+        "Intern disagreed on logging statement approach",
+        "Candidate explained their reasoning and kept original plan",
+        "Quote: 'I had already thought it through and the ticket was due that day'",
+        "Follow-up: Asked if they considered the suggestion - no, due to time"
+      ],
+      "lowerFeedback": "Lowers the bar for Disagree and Commit at junior level. The candidate did not engage with the intern's input beyond restating their own view and cited a deadline as the reason to move on. This shows limited openness to junior input and misses the opportunity to model learning from others even on small decisions. The story stays entirely local but demonstrates the wrong behavior for the principle."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A new engineer on my team disagreed with the rollout plan for a shared service change that affected two other teams. He thought we should add a feature flag first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked him to write a short doc with the risks he saw. After reviewing it I agreed the flag reduced blast radius, so I updated the plan, sent a note to the dependent teams, and had the new engineer own the flag implementation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped a day later but had zero incidents. The other teams appreciated the extra control."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone junior disagreed with you. What did you do?",
+        "New engineer disagreed on rollout plan for shared service change",
+        "Asked for doc, adopted flag idea, updated dependent teams, gave ownership to the engineer",
+        "Quote: 'I updated the plan, sent a note to the dependent teams'",
+        "Follow-up: Outcome was one day delay but zero incidents"
+      ],
+      "raiseFeedback": "Raises the bar for Disagree and Commit at senior level. The candidate turned a junior's disagreement into a documented risk discussion, changed the plan, and gave the junior ownership of the mitigation. Cross-team impact is visible through the note to dependent teams and the clean rollout result. The story shows influence without authority and willingness to slow down for a better outcome rather than pushing their original plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A junior engineer wanted to add more tests before we merged a change. I told him the existing coverage was sufficient and we merged anyway."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the change cause issues?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few minor ones in staging, but we fixed them quickly after."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone junior disagreed with you. What did you do?",
+        "Junior wanted more tests before merge",
+        "Candidate overruled and merged",
+        "Quote: 'I told him the existing coverage was sufficient'",
+        "Follow-up: Minor issues in staging were fixed quickly"
+      ],
+      "lowerFeedback": "Lowers the bar for Disagree and Commit at senior level. The candidate dismissed the junior's input without exploration and accepted downstream issues as acceptable. This misses the senior expectation of modeling how to incorporate dissenting views and protecting dependent teams from avoidable risk. The quick fix does not offset the initial refusal to engage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a reorg planning meeting a director two levels below me argued that merging two teams would hurt retention more than the efficiency gain. I had already decided on the merge."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked him to share his retention data and concerns in a one-pager. After reviewing it I kept the merge but added a six-month review checkpoint and let the director own the transition metrics. I also adjusted the communication to the affected teams to acknowledge the risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why keep the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The business case still held at the org level, but the checkpoint gave us an off-ramp if retention data moved against us."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone junior disagreed with you. What did you do?",
+        "Director disagreed with team merge during reorg",
+        "Requested data, kept decision but added checkpoint and ownership for the director",
+        "Quote: 'I kept the merge but added a six-month review checkpoint'",
+        "Follow-up: Explained business case still held but checkpoint provided off-ramp"
+      ],
+      "raiseFeedback": "Raises the bar for Disagree and Commit at exec level. The candidate treated a significant strategic disagreement with data, preserved the org-level decision, and built in a measurable review point plus ownership for the dissenting leader. This demonstrates long-term thinking and leverage by turning disagreement into a controlled experiment rather than either overruling or reversing. The approach shows strategic judgment under ambiguity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A director pushed back on a headcount reallocation I had approved. I listened but ultimately told the team to proceed because the numbers supported it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you revisit the decision later?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the reallocation happened and we hit our hiring targets for the year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone junior disagreed with you. What did you do?",
+        "Director disagreed with headcount reallocation",
+        "Listened but proceeded with original plan",
+        "Quote: 'I listened but ultimately told the team to proceed'",
+        "Follow-up: No revisit; hiring targets were hit"
+      ],
+      "lowerFeedback": "Lowers the bar for Disagree and Commit at exec level. The candidate heard the concern but did not create any mechanism to test or revisit the decision, relying only on the initial numbers. This misses the exec expectation of using disagreement to surface long-term risks and building in feedback loops at the organizational level. Hitting hiring targets does not address whether retention or team health suffered."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Engages with the dissenting view",
+      "junior": "Asks clarifying questions and considers change",
+      "senior": "Requests data or doc and updates plan with cross-team visibility",
+      "exec": "Creates measurable checkpoint or off-ramp while preserving org decision"
+    },
+    {
+      "signal": "Gives ownership to the junior person",
+      "junior": "Lets intern own part of the task",
+      "senior": "Gives new engineer the flag work and credit",
+      "exec": "Assigns director transition metrics and review"
+    },
+    {
+      "signal": "Shows outcome or learning",
+      "junior": "Logs the change",
+      "senior": "Zero incidents after delay",
+      "exec": "Business case held with built-in review"
+    },
+    {
+      "signal": "Handles pushback without dismissal",
+      "junior": "Avoids citing only time pressure",
+      "senior": "Avoids overruling without exploration",
+      "exec": "Avoids finality without feedback mechanism"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task level",
+      "senior": "Team plus dependent teams",
+      "exec": "Org reorg or headcount level"
+    }
+  ],
+  "kind": "lp"
+}

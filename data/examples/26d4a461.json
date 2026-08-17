@@ -1,0 +1,177 @@
+{
+  "question": "Tell me about a time someone told you that you were wrong, and they were right.",
+  "principle": "Stay Humble",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was writing a script to parse logs and assumed all timestamps were UTC. A teammate on the same project said the logs from one service were in local time and showed me a failing test case."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked the service docs, confirmed he was right, fixed the parser, and added a comment plus a unit test for timezone handling. I also started asking for a second set of eyes on any date logic after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone told you that you were wrong, and they were right.",
+        "Junior dev on log parser script, assumed UTC timestamps",
+        "Teammate flagged local time for one service with failing test",
+        "Admitted error, updated code + tests, quote: \"I just assumed and didn't check the docs\"",
+        "Follow-up: Asked for reviews on date logic going forward"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble. The candidate described a clear correction on a small script where they had assumed UTC timestamps. After the teammate showed the failing test, they checked docs, fixed the parser, and added a test plus a comment. They also started requesting reviews on date logic. This shows quick ownership of the mistake without defensiveness and a concrete change in behavior. The story stays within individual scope, which fits the level. Biggest strength is the direct admission paired with an immediate process change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone on my team said my approach to a small feature was inefficient, but I had already tested it and it worked fine for the cases we had."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you end up changing anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the cases we shipped passed so I kept it as is."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone told you that you were wrong, and they were right.",
+        "Candidate pushed back on inefficiency feedback for a feature",
+        "Claimed their tests already covered it and it worked",
+        "No change made after feedback, quote: \"it worked fine for the cases we had\"",
+        "Follow-up: No follow-up action described"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble. The candidate described receiving feedback that their implementation was inefficient but dismissed it because their limited test cases passed. They made no change and offered no reflection on why the input might have been valid. The story shows no ownership or learning. At junior level this misses the basic expectation of coachability on individual work. Biggest gap is the absence of any adjustment after being shown they were wrong."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I proposed a new API contract for a shared service that another team would consume. A senior engineer from that team reviewed it and pointed out it would break their pagination model."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a short sync, walked through their example, and realized my design missed a real constraint. We revised the contract together and I updated the design doc with their input credited. The change also reduced future support tickets for both teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone told you that you were wrong, and they were right.",
+        "Proposed API contract for shared service",
+        "Cross-team senior engineer flagged pagination breakage",
+        "Admitted gap, revised design together, quote: \"I missed their constraint\"",
+        "Follow-up: Credited input in doc and reduced support load"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble. The candidate owned a design flaw in an API contract after a cross-team engineer showed the pagination breakage. They scheduled a sync, incorporated the feedback, credited the input, and noted the downstream reduction in support tickets. This demonstrates influence without authority and measurable cross-team impact. The story fits senior scope. Biggest strength is turning the correction into a documented, credited improvement that benefited multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "An engineer from another team said my proposed rollout plan would overload their system, but our metrics showed headroom so I moved forward."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after launch?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had some throttling issues that required a hotfix, but the core feature still shipped on time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone told you that you were wrong, and they were right.",
+        "Dismissed cross-team warning on rollout plan due to own metrics",
+        "Throttling issues appeared post-launch requiring hotfix",
+        "No ownership of the miss, quote focused on on-time shipping",
+        "Follow-up: No process change mentioned"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble. The candidate received a concrete warning from another team about rollout risk but relied on their own metrics and proceeded anyway. After throttling issues forced a hotfix, they still framed the outcome around shipping on time rather than the missed input. This shows limited cross-team influence and no learning applied. At senior level the expectation is visible adjustment from external feedback. Biggest gap is treating the correction as noise instead of updating the approach."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I advocated for acquiring a small analytics startup to accelerate our data capabilities. The CEO and two VPs pushed back that integration cost and culture risk were higher than modeled."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in your thinking?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked for a deeper integration-cost model and customer overlap analysis. The new data showed payback would take 30% longer than I projected. We declined the deal and instead funded an internal platform build that delivered 70% of the value at lower risk. I presented the revised recommendation to the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone told you that you were wrong, and they were right.",
+        "Pushed for startup acquisition at exec level",
+        "CEO and VPs flagged integration cost and culture risk",
+        "Requested deeper model, accepted longer payback, quote: \"the data showed 30% longer\"",
+        "Follow-up: Shifted to internal build, presented to board"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble. The candidate described advocating for an acquisition, then accepting higher integration costs and culture risks after the CEO and VPs challenged the model. They commissioned new analysis, reversed the recommendation, and redirected resources to an internal build that captured most of the value. This shows strategic judgment and long-term trade-off thinking at org level. Biggest strength is publicly reversing a high-stakes position based on better data and presenting the updated plan to the board.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board questioned my plan to enter a new market, citing competitive intensity I had downplayed. I maintained the original forecast was still achievable."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the market entry go?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit revenue targets in year one but spent more on sales enablement than planned and later adjusted the GTM approach."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone told you that you were wrong, and they were right.",
+        "Board challenged market entry assumptions on competition",
+        "Maintained original forecast despite input",
+        "Higher costs appeared, GTM adjusted later",
+        "No admission or strategic pivot described"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble. The candidate received direct board pushback on competitive intensity in a market entry plan but held to the original forecast. After higher-than-expected sales costs forced a GTM adjustment, the story still centered on hitting revenue rather than acknowledging the missed risk assessment. This lacks the strategic recalibration expected at exec level. Biggest gap is absence of any visible change in judgment or process after being shown the original view was incomplete."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of error",
+      "junior": "Names specific mistake and fix",
+      "senior": "Revises cross-team deliverable",
+      "exec": "Reverses org-level recommendation"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Adds review habit on similar work",
+      "senior": "Credits input and reduces future tickets",
+      "exec": "Redirects resources and updates board"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task or script",
+      "senior": "Shared service or API",
+      "exec": "Acquisition or market entry"
+    },
+    {
+      "signal": "Defensiveness",
+      "junior": "Dismisses feedback if tests pass",
+      "senior": "Proceeds despite external warning",
+      "exec": "Holds forecast after board input"
+    },
+    {
+      "signal": "Follow-up action",
+      "junior": "Requests reviews going forward",
+      "senior": "Updates design doc with credit",
+      "exec": "Presents revised plan publicly"
+    }
+  ],
+  "kind": "lp"
+}

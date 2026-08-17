@@ -1,0 +1,201 @@
+{
+  "question": "Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+  "principle": "Wow the Customer",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was split on whether customers wanted a simpler onboarding flow or more tutorial videos. I suggested we pull support tickets and run a quick 5-user test instead of debating."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I owned pulling the last 30 tickets and shared a one-page summary. The data showed 70% dropped at the first step due to unclear labels. We shipped the simpler flow and saw activation up 12%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react to your suggestion?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer pushed back at first, but after seeing the tickets they agreed. I learned to bring a small artifact early rather than argue."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+        "Candidate pulled support tickets and ran 5-user test on own initiative",
+        "Outcome: activation +12% after simpler flow",
+        "Quote: 'I learned to bring a small artifact early rather than argue'",
+        "Follow-up: Asked how team reacted; candidate owned the follow-through and noted coachability on bringing data sooner"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer for a junior. The candidate moved from opinion debate to pulling tickets and running a small test without waiting for permission. Quote shows they owned the artifact creation and later reflected on bringing data earlier. This matches junior scope where individual initiative and learning from the outcome matter most. The 12% activation lift is local but concrete. Biggest strength is shifting the team from argument to evidence with minimal process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We kept going back and forth on whether customers needed more features or a cleaner UI. I thought cleaner UI made sense from my own experience."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone suggest looking at data?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just voted and went with the majority view. Later the feature usage was low but we didn't revisit it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+        "Candidate relied on personal opinion and team vote",
+        "No data or customer touchpoint mentioned",
+        "Outcome: low usage but no follow-up action",
+        "Follow-up: Asked about data; candidate said they just voted and moved on"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer for a junior. The candidate stayed in opinion territory and accepted a vote without pushing for evidence. No attempt to pull tickets, talk to support, or run a test. The low usage outcome was noted but not used as a learning loop. At junior level this shows limited ownership of moving the team to customer signals. Biggest gap is defaulting to consensus instead of seeking observable customer behavior."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two squads disagreed on whether enterprise customers wanted deeper integrations or faster self-serve setup. I organized a joint review of win-loss notes and ran three customer calls with the account team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in across squads?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared anonymized call clips and a simple table of requests vs current gaps. Both squads aligned on prioritizing self-serve improvements first."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Self-serve conversion rose 18% in the next quarter and the other squad later reused the call format on their own roadmap."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+        "Candidate drove cross-squad review of win-loss notes plus three customer calls",
+        "Shared clips and gap table to align teams without authority",
+        "Outcome: 18% self-serve conversion lift; other squad adopted the format",
+        "Follow-up: Asked about buy-in; candidate used artifacts to influence without mandate"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer for a senior. The candidate used existing win-loss notes and ran targeted calls to replace debate with shared evidence across two squads. Influence came through artifacts rather than authority. The 18% lift is tied to the decision and the practice spread to another team. This shows the expected cross-team scope and raising the bar on how decisions are made. Biggest strength is turning a disagreement into reusable customer insight process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The backend and frontend teams argued for weeks about whether customers cared more about speed or new reporting features."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get to evidence?"
+        },
+        {
+          "role": "candidate",
+          "text": "I suggested we decide in the next planning meeting. We ended up splitting the difference and building a bit of both."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+        "Candidate proposed splitting the difference in planning meeting",
+        "No customer data or calls introduced",
+        "Outcome: partial build of both options",
+        "Follow-up: Asked how evidence was gathered; candidate stayed at compromise level"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer for a senior. The candidate defaulted to compromise instead of introducing customer data or calls. No attempt to influence the teams toward evidence gathering despite cross-team scope. The split-the-difference approach shows lack of leverage on decision quality. At senior level this misses the expectation of using influence to shift teams to observable customer signals. Biggest gap is treating the argument as a negotiation rather than a signal to seek real customer input."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product lines were locked in a roadmap debate about whether customers valued breadth of integrations or depth in core workflows. I commissioned a quarterly customer research cadence and required both teams to reference the same dataset before any prioritization discussion."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two integration projects by a quarter to fund the research program. The first round showed depth mattered more for retention, so we redirected investment and saw net revenue retention improve 7 points over 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did this change org behavior?"
+        },
+        {
+          "role": "candidate",
+          "text": "Other directors started requiring the same research link in their PRDs. We later embedded a small research budget into every major initiative."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+        "Candidate created org-level research cadence and required dataset reference for roadmap decisions",
+        "Trade-off: delayed integrations to fund research; NRR +7 pts over 18 months",
+        "Quote on spreading practice: 'Other directors started requiring the same research link'",
+        "Follow-up: Asked about trade-offs and org change; candidate showed long-term leverage"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer at exec level. The candidate addressed repeated cross-org debates by institutionalizing a shared research cadence instead of resolving one instance. The explicit trade-off of delaying projects to fund research demonstrates strategic judgment on where to spend leverage. The 7-point NRR lift over 18 months and adoption by other directors show durable org impact. This matches exec scope of creating systems that reduce future opinion-based arguments. Biggest strength is turning a recurring problem into a scalable decision filter.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Product and sales leadership disagreed on whether customers wanted more enterprise features or SMB self-serve tools."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked both sides to present their strongest case in the quarterly offsite and we picked the option that aligned with our growth targets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
+        "Candidate used offsite presentation and growth target alignment to decide",
+        "No new customer research commissioned",
+        "Outcome: picked one side based on internal goals",
+        "Follow-up: Asked about customer input; candidate stayed at internal debate level"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer at exec level. The candidate treated the disagreement as an internal prioritization exercise rather than creating mechanisms for customer evidence. No investment in research or requirement for data-backed arguments. At exec scope this misses the opportunity to build long-term leverage against opinion-driven decisions. The choice was tied to growth targets instead of observable customer outcomes. Biggest gap is lack of strategic intervention to change how the organization gathers and uses customer signals."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Moves from opinion to evidence",
+      "junior": "Pulls own tickets and runs small test",
+      "senior": "Runs cross-team calls and shares artifacts",
+      "exec": "Institutes required research cadence"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local feature activation lift",
+      "senior": "Two squads adopt new practice",
+      "exec": "Org-wide NRR lift and process adoption"
+    },
+    {
+      "signal": "Handling of disagreement",
+      "junior": "Brings artifact and learns from pushback",
+      "senior": "Influences without authority via shared data",
+      "exec": "Creates system that prevents future debates"
+    },
+    {
+      "signal": "Trade-off clarity",
+      "junior": "N/A at this level",
+      "senior": "N/A at this level",
+      "exec": "Delays projects to fund research program"
+    },
+    {
+      "signal": "Learning loop",
+      "junior": "Reflects on bringing data earlier",
+      "senior": "Other team reuses format",
+      "exec": "Research budget embedded in initiatives"
+    }
+  ],
+  "kind": "lp"
+}

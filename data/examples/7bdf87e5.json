@@ -1,0 +1,191 @@
+{
+  "question": "Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+  "principle": "Ruthless Prioritization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a nice-to-have dashboard polish feature that looked good in demos. My manager flagged we needed to hit a core latency target for the release or we'd miss the customer SLA. I stopped the dashboard work mid-sprint, moved the two weeks to the perf fix, and we shipped on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the dashboard work 'genuinely good'?"
+        },
+        {
+          "role": "candidate",
+          "text": "It had positive internal feedback and would have reduced support tickets a bit, but the data showed the latency issue was blocking three enterprise deals."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about stopping it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Disappointed at first, but my manager walked me through the trade-off and I could see the numbers. I documented what we had so we could pick it up later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+        "Role: Individual contributor on a small feature team",
+        "Situation: Mid-sprint choice between polish dashboard and latency fix blocking revenue",
+        "Action: Stopped dashboard work after manager input, redirected effort to perf",
+        "Outcome: Hit SLA, preserved three deals; kept notes for future",
+        "Quote: \"It had positive internal feedback... but the data showed the latency issue was blocking three enterprise deals.\"",
+        "Follow-up: How did you feel about stopping it? -> Disappointed but accepted after seeing numbers and documented for later"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for the question. The candidate described stopping a dashboard feature with positive feedback to redirect two weeks to a latency fix that unblocked revenue. They accepted the call after their manager showed the data and kept notes so the work could resume later. This shows individual ownership and coachability rather than attachment to their own output. The story stays local in scope, which matches junior expectations. Biggest strength is the willingness to document and move on without lingering resentment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a dashboard feature that was going well and I really wanted to finish it. The team said we had a latency issue but I thought we could do both if we worked a bit harder."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you end up shipping the dashboard?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we missed the SLA and had to cut the dashboard anyway at the last minute. It felt like a waste."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+        "Role: Individual contributor",
+        "Situation: Dashboard feature vs latency issue",
+        "Action: Tried to do both instead of choosing",
+        "Outcome: Missed SLA and still lost the dashboard work",
+        "Quote: \"I thought we could do both if we worked a bit harder.\"",
+        "Follow-up: Did you end up shipping the dashboard? -> No, cut at last minute and it felt like a waste"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for the question. The candidate attempted to keep the dashboard feature alongside the latency work instead of making an explicit cut. The result was missing the SLA and losing the dashboard anyway. No evidence of using data or accepting external input to decide earlier. The outcome shows attachment to their own task over team priority. Biggest gap is lack of proactive decision-making even at individual scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had started a cross-team API integration that partners liked in early reviews. At the same time the org needed headcount for a billing overhaul that would unlock self-serve revenue. I proposed we stop the integration, moved two engineers to billing, and worked with the partner teams to set expectations."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the partner teams react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were disappointed but we gave them a clear timeline and a lighter interim option so they could still unblock their work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+        "Role: Senior engineer influencing two partner teams",
+        "Situation: Promising API integration vs billing overhaul for self-serve revenue",
+        "Action: Proposed stopping integration, reallocated two engineers, set partner expectations with interim option",
+        "Outcome: Billing shipped; partners kept moving with lighter path",
+        "Quote: \"I proposed we stop the integration, moved two engineers to billing, and worked with the partner teams to set expectations.\"",
+        "Follow-up: How did the partner teams react? -> Disappointed but accepted with clear timeline and interim option"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for the question. The candidate stopped a cross-team API integration that had early positive feedback to free two engineers for a billing overhaul tied to self-serve revenue. They handled the influence piece by giving partners a timeline and interim path. The decision was framed around measurable revenue impact rather than preference. Scope shows cross-team coordination and some people impact, fitting senior level. Biggest strength is the explicit reallocation combined with expectation management.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had this integration work that was moving forward and a billing project that needed more people. I mentioned the conflict in a meeting but the teams kept both going until leadership stepped in."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Billing launched late and the integration got deprioritized anyway. The partner teams were frustrated we didn't decide sooner."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+        "Role: Senior engineer",
+        "Situation: API integration vs billing project",
+        "Action: Raised conflict in meeting but did not drive a decision",
+        "Outcome: Billing late, integration dropped anyway, partners frustrated",
+        "Quote: \"I mentioned the conflict in a meeting but the teams kept both going until leadership stepped in.\"",
+        "Follow-up: What was the final result? -> Billing late and partners frustrated we didn't decide sooner"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for the question. The candidate surfaced the resource conflict but did not drive an explicit cut, leaving both efforts running until leadership intervened. The billing launch slipped and partners were left frustrated by the delay in deciding. No evidence of using metrics to argue the trade-off or managing downstream impact. The story shows influence without authority was not exercised. Biggest gap is waiting for escalation instead of owning the prioritization call."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a promising new vertical that was showing early traction in one region. At the same time the core business needed investment to defend against a new competitor. I made the call to wind down the vertical, redirected the budget and two senior leaders to the core defense, and communicated the three-year implication to the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data drove the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The vertical's three-year projection was 8% of revenue while the competitor threat put 30% at risk. We kept a small skeleton team to retain optionality."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+        "Role: Exec level, org-wide scope",
+        "Situation: New vertical with traction vs core business defense against competitor",
+        "Action: Wound down vertical, redirected budget and two senior leaders, kept skeleton team for optionality",
+        "Outcome: Core defended; board aligned on three-year trade-off",
+        "Quote: \"The vertical's three-year projection was 8% of revenue while the competitor threat put 30% at risk.\"",
+        "Follow-up: What data drove the decision? -> 8% vs 30% risk projection; retained optionality"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for the question. The candidate shut down a vertical showing traction to protect the core business from a competitor threat that put 30% of revenue at risk. They redirected budget and senior leaders while preserving a small team for future optionality and aligned the board on the multi-year view. The decision used clear financial framing and long-term strategic judgment. Scope is org-level with visible trade-offs. Biggest strength is the willingness to kill something with momentum for a larger defensive need.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a new vertical that was doing okay and a core business that needed more focus. I asked the teams to find efficiencies so we wouldn't have to cut anything."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the vertical?"
+        },
+        {
+          "role": "candidate",
+          "text": "It kept running at reduced pace. Eighteen months later the competitor took share and we had to make a bigger cut."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you killed work that was genuinely good in order to fund something that mattered more.",
+        "Role: Exec level",
+        "Situation: New vertical vs core business needs",
+        "Action: Asked teams to find efficiencies instead of making a cut",
+        "Outcome: Competitor gained share; larger cut required later",
+        "Quote: \"I asked the teams to find efficiencies so we wouldn't have to cut anything.\"",
+        "Follow-up: What happened to the vertical? -> Kept running at reduced pace; bigger cut needed after 18 months"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for the question. The candidate avoided an explicit shutdown by asking teams to find efficiencies, allowing the new vertical to continue at reduced pace. The competitor gained share and a larger cut was eventually required. No evidence of using forward-looking financial projections or making the trade-off early. The story shows reluctance to make hard portfolio decisions at the org level. Biggest gap is deferring the prioritization instead of owning the strategic choice."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual feature choice with manager input",
+      "senior": "Cross-team resource reallocation with partner communication",
+      "exec": "Org portfolio trade-off with board alignment and multi-year view"
+    },
+    {
+      "signal": "Use of data/metrics",
+      "junior": "Latency issue blocking three deals",
+      "senior": "Self-serve revenue impact",
+      "exec": "8% vs 30% revenue risk projection"
+    },
+    {
+      "signal": "Handling of stakeholders",
+      "junior": "Accepted manager direction and documented work",
+      "senior": "Set expectations and provided interim path",
+      "exec": "Aligned board and retained optionality"
+    },
+    {
+      "signal": "Willingness to cut",
+      "junior": "Stopped mid-sprint after seeing numbers",
+      "senior": "Proposed and executed stop proactively",
+      "exec": "Wound down vertical with momentum"
+    }
+  ],
+  "kind": "lp"
+}

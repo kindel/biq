@@ -1,0 +1,216 @@
+{
+  "question": "Tell me about a time you had to choose between the date and the quality bar.",
+  "principle": "Deliver Results with Grit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was asked to ship a dashboard by Friday. I found a data mismatch that would mislead users on metrics. I told my manager I needed two more days to fix the query logic."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you asked for the extension?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped Monday instead. The fix caught a 15% error in the calculations. My manager later said it saved us from a support ticket spike."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the bug was worth the delay?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked with one other engineer on the team and we both agreed the numbers were wrong enough to matter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to choose between the date and the quality bar.",
+        "Role: new grad on first dashboard project",
+        "Situation: data mismatch found two days before deadline",
+        "Action: asked manager for two-day extension after confirming with peer",
+        "Outcome: shipped Monday, avoided misleading users on 15% error",
+        "Quote: \"I checked with one other engineer... the numbers were wrong enough to matter.\"",
+        "Follow-up: What happened after you asked? - Got extension and positive feedback later",
+        "Follow-up: How did you decide? - Peer confirmation on severity"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results with Grit at the junior level. The candidate described a clear individual trade-off on their first project and chose to protect data accuracy over the original Friday date. They sought quick input from one peer before escalating the request to their manager. The outcome was a two-day slip that prevented misleading users on metrics. This shows early ownership of quality without overstepping scope. The main strength is the willingness to surface the issue and accept the date impact rather than shipping flawed work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a deadline and I just worked late to get the feature out even though I knew some edge cases were broken."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone push back on the quality?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager said to ship and we'd fix it later so I did."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to choose between the date and the quality bar.",
+        "Role: junior on feature work",
+        "Situation: edge cases known before deadline",
+        "Action: worked late and shipped with known issues",
+        "Outcome: feature shipped on date, fixes deferred",
+        "Quote: \"My manager said to ship and we'd fix it later so I did.\"",
+        "Follow-up: Did anyone push back? - Manager directed to ship anyway"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results with Grit. The candidate defaulted to shipping despite known broken edge cases and treated the decision as entirely the manager's call. No evidence of personal assessment of user impact or attempt to quantify the risk. The story shows compliance rather than ownership of the quality-date tension. The core gap is lack of initiative to raise or mitigate the quality issue before the deadline."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team committed to a Q3 launch for a new reporting module. Two weeks out, integration tests showed latency spikes under load that would break the SLA for two partner teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with that data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the partner teams into a review, showed the numbers, and we jointly recommended slipping two weeks to add caching and retest. The PM agreed after seeing the cross-team blast radius."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the decision without owning the PM role?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed the choice around the shared SLA metric and offered the caching approach as a scoped fix rather than a full redesign."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to choose between the date and the quality bar.",
+        "Role: senior engineer on reporting module",
+        "Situation: latency spikes found two weeks before Q3 launch affecting partner SLAs",
+        "Action: convened partner review, recommended two-week slip with caching fix",
+        "Outcome: PM approved slip; launch met SLA",
+        "Quote: \"I framed the choice around the shared SLA metric and offered the caching approach.\"",
+        "Follow-up: What did you do with the data? - Cross-team review and joint recommendation",
+        "Follow-up: How did you influence without owning PM role? - Used shared metric and scoped fix"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results with Grit at the senior level. The candidate surfaced a cross-team SLA risk and drove a joint recommendation to slip the date by two weeks rather than ship a broken integration. They used concrete latency data and offered a scoped technical mitigation to make the trade-off acceptable to the PM. The result protected partner teams without expanding scope. This demonstrates influence without authority and clear focus on measurable outcomes. The biggest strength is turning a quality issue into a collaborative decision with visible metrics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The date was set by leadership so we shipped and logged the latency issues for the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the partner teams know about the risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "We mentioned it in the standup but didn't have time to run the full load test again."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to choose between the date and the quality bar.",
+        "Role: senior on reporting module",
+        "Situation: known latency risk before launch",
+        "Action: shipped on date and deferred fixes",
+        "Outcome: launch happened but SLA risk remained",
+        "Quote: \"We mentioned it in the standup but didn't have time to run the full load test again.\"",
+        "Follow-up: Did partners know? - Casual mention only, no retest"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results with Grit. The candidate accepted the date pressure without pushing for visibility or mitigation across affected teams. The risk was noted but not quantified or escalated in a way that allowed partners to prepare. No attempt to influence the outcome beyond logging the issue. The core gap is treating the date as immovable rather than presenting data-driven options for a grit-based decision."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were six weeks from announcing a major platform expansion. Internal benchmarks showed the new service would degrade tail latencies by 40% for existing high-volume customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh the business trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled the revenue impact of the latency hit against the expansion's projected ARR and recommended delaying the announcement by one quarter to redesign the data path. The CEO accepted after we showed the customer retention risk exceeded the delay cost."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched in Q4 with the fix; churn stayed flat and we hit the original ARR target two months later than planned."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to choose between the date and the quality bar.",
+        "Role: exec on platform expansion",
+        "Situation: 40% tail latency degradation found six weeks before announcement",
+        "Action: modeled revenue vs retention risk, recommended one-quarter delay for redesign",
+        "Outcome: CEO approved; launch in Q4 with flat churn and ARR hit two months late",
+        "Quote: \"The customer retention risk exceeded the delay cost.\"",
+        "Follow-up: How did you weigh the business trade-off? - Revenue modeling and retention comparison",
+        "Follow-up: What was the longer-term result? - Flat churn, ARR achieved shortly after"
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Results with Grit at the exec level. The candidate used revenue and retention modeling to recommend delaying a major platform announcement by a full quarter rather than accepting degraded performance for high-volume customers. They presented a clear business case to the CEO that prioritized long-term customer trust over the original timeline. The outcome protected existing revenue while still achieving the ARR target shortly after the revised launch. This shows strategic judgment under ambiguity and willingness to absorb short-term schedule pain for durable results. The key strength is framing the quality decision in terms of measurable business risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership wanted the announcement on schedule so we launched and planned a post-launch optimization program."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the customer impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some high-volume accounts saw slower responses but we addressed them in the next release cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to choose between the date and the quality bar.",
+        "Role: exec on platform expansion",
+        "Situation: known latency degradation before announcement",
+        "Action: launched on schedule with post-launch fixes planned",
+        "Outcome: some customer impact deferred to next cycle",
+        "Quote: \"We addressed them in the next release cycle.\"",
+        "Follow-up: What was the customer impact? - High-volume accounts affected but handled reactively"
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Results with Grit. The candidate defaulted to the announced timeline despite clear performance degradation for key customers. No proactive modeling of retention or revenue risk was shared with leadership before the decision. The approach treated quality issues as something to be fixed reactively after launch. The main gap is absence of strategic trade-off analysis or willingness to absorb schedule pressure at the business level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual feature or bug",
+      "senior": "Cross-team SLA or integration",
+      "exec": "Business-level revenue and retention modeling"
+    },
+    {
+      "signal": "Use of data for trade-off",
+      "junior": "Peer confirmation of severity",
+      "senior": "Latency numbers and shared SLA metric",
+      "exec": "Revenue impact vs retention risk quantified"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Escalated to manager with peer input",
+      "senior": "Joint recommendation with partners",
+      "exec": "Presented modeled options to CEO"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Accepted two-day slip and later feedback",
+      "senior": "Secured PM agreement and met SLA",
+      "exec": "Delayed quarter but protected ARR and churn"
+    },
+    {
+      "signal": "Time horizon considered",
+      "junior": "Immediate deadline and next sprint",
+      "senior": "Q3 launch and partner impact",
+      "exec": "One-quarter delay for long-term customer trust"
+    }
+  ],
+  "kind": "lp"
+}

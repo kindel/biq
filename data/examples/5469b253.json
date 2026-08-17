@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you validated an iteration and it told you to change direction.",
+  "principle": "Iteration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a simple dashboard filter for our internal tool. After shipping to 10 users I checked usage logs and saw only 2 people used it. I asked them why and they said it didn't match their workflow, so I removed the filter and added a search bar instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the data actually show?"
+        },
+        {
+          "role": "candidate",
+          "text": "The logs showed zero clicks after day 3. I followed up with a quick survey and pivoted within a week."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you validated an iteration and it told you to change direction.",
+        "Role: new grad on internal tooling team",
+        "Situation: added filter, low usage in logs",
+        "Action: surveyed users, removed feature, added search",
+        "Outcome: feature retired quickly",
+        "Quote: \"Logs showed zero clicks after day 3\"",
+        "Follow-up: How did you decide on the survey? Said kept it to 3 questions to avoid bias."
+      ],
+      "raiseFeedback": "Raises the bar on Iteration. The candidate described shipping a small change, checking usage data, and reversing course when metrics showed no adoption. The concrete quote about zero clicks after day 3 shows they treated the iteration as a test rather than a permanent addition. This fits junior scope where the focus is on owning one's own work and responding to direct feedback. The quick pivot within one week demonstrates coachability and learning without over-investing. Biggest strength is the willingness to kill their own work based on evidence rather than defending it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I added a new button to the app because the PM asked for it. After launch a few people said it was confusing so we left it and added a tooltip instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the data support keeping the button?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't check logs, just went by the feedback we heard in standup."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you validated an iteration and it told you to change direction.",
+        "Role: new grad",
+        "Situation: added button per PM request",
+        "Action: added tooltip after verbal complaints",
+        "Outcome: kept original feature",
+        "Quote: \"We didn't check logs\"",
+        "Follow-up: What would have made you remove it? Candidate said they would have needed more complaints."
+      ],
+      "lowerFeedback": "Lowers the bar on Iteration. The candidate changed direction only after hearing complaints in standup rather than validating with usage data. No attempt was made to measure impact before or after the tooltip addition. This shows a junior who treats iteration as reacting to loud voices instead of testing hypotheses. The story stays at the level of following instructions without ownership of the outcome. Biggest gap is the absence of any data-driven decision to change course."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team launched a new onboarding flow that increased activation by 8% in the first cohort. When we expanded to the full user base the lift dropped to 2%. I pulled cohort data and discovered power users were driving the signal, so we redesigned the flow for new users only and handed the change to the growth team."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the growth team to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the cohort breakdown in their weekly review and offered to run the next A/B test for them."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you validated an iteration and it told you to change direction.",
+        "Role: senior on growth platform",
+        "Situation: onboarding flow lift collapsed at scale",
+        "Action: segmented cohort data, scoped change to new users",
+        "Outcome: handed off to growth team with data",
+        "Quote: \"lift dropped to 2%\"",
+        "Follow-up: What trade-off did you make on scope? Said stopped optimizing for power users to protect new-user metrics."
+      ],
+      "raiseFeedback": "Raises the bar on Iteration. The candidate shipped an onboarding change, measured the full rollout, and used cohort analysis to realize the benefit was narrow, then adjusted scope accordingly. The quote about the lift dropping to 2% shows they let data override the initial positive result. At senior level this demonstrates cross-team handoff and influence without authority by bringing data to the growth team. The decision to stop optimizing for power users illustrates clear prioritization. Biggest strength is turning a scaling failure into a narrower, higher-impact iteration that another team adopted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We rolled out a new checkout step that looked good in internal testing. After launch conversion dipped so we added more help text and monitored it for two months."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider removing the step?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM wanted to keep it so we kept iterating on the copy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you validated an iteration and it told you to change direction.",
+        "Role: senior engineer",
+        "Situation: checkout step hurt conversion",
+        "Action: added help text, monitored",
+        "Outcome: kept the step",
+        "Quote: \"PM wanted to keep it\"",
+        "Follow-up: What data would have changed your mind? Said they needed a bigger dip."
+      ],
+      "lowerFeedback": "Lowers the bar on Iteration. The candidate saw a conversion dip after rollout but continued iterating on copy instead of questioning the underlying step. They deferred to the PM rather than using data to advocate for removal or rollback. At senior level this shows limited influence and an unwillingness to challenge scope when evidence appeared. The two-month monitoring period without a clear decision point indicates weak ownership of the iteration outcome. Biggest gap is treating iteration as incremental improvement instead of a signal to change direction."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We invested in a new self-serve analytics product because win-rate data suggested it would close larger deals. After six months the attach rate was below forecast and renewal data showed customers weren't using the reports. I recommended we sunset the product line and reallocate the team to strengthening the core platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction from the board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the renewal cohort analysis and the projected headcount cost, and they approved the pivot within one quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you validated an iteration and it told you to change direction.",
+        "Role: VP Product",
+        "Situation: analytics product underperformed on attach and renewal",
+        "Action: ran cohort analysis, recommended sunset",
+        "Outcome: team reallocated after board approval",
+        "Quote: \"renewal data showed customers weren't using the reports\"",
+        "Follow-up: How did you handle the sunk cost conversation? Said framed it as protecting core platform roadmap."
+      ],
+      "raiseFeedback": "Raises the bar on Iteration. The candidate led an org-level bet on a new product line, used attach-rate and renewal metrics to validate the outcome, and made the strategic call to sunset rather than continue investing. The quote about customers not using the reports shows they treated the launch as a test with a kill criterion. At exec level this reflects long-term thinking by reallocating resources to the core platform instead of protecting a visible investment. The board approval within one quarter demonstrates clear communication of trade-offs. Biggest strength is using iteration data to make a high-ambiguity portfolio decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We launched a premium tier because sales asked for it. Usage was lower than expected so we added more features and ran another pricing test six months later."
+        },
+        {
+          "role": "interviewer",
+          "text": "At what point would you have stopped?"
+        },
+        {
+          "role": "candidate",
+          "text": "We still believe the market will come around so we kept the tier live."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you validated an iteration and it told you to change direction.",
+        "Role: VP",
+        "Situation: premium tier underperformed",
+        "Action: added features and retested pricing",
+        "Outcome: kept the tier",
+        "Quote: \"we still believe the market will come around\"",
+        "Follow-up: What metric would trigger a sunset? Candidate said they had not defined one."
+      ],
+      "lowerFeedback": "Lowers the bar on Iteration. The candidate launched a premium tier based on sales input, saw lower usage, yet continued adding features without a clear stop condition. No evidence of using renewal or cohort data to reassess the strategic bet. At exec level this reflects an inability to make portfolio trade-offs when data contradicts the original hypothesis. The lack of a defined kill metric shows weak strategic judgment under ambiguity. Biggest gap is protecting the iteration instead of letting validation drive a directional change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of data to change direction",
+      "junior": "Checks logs and acts on clear zero-usage signal",
+      "senior": "Segments cohorts at scale and adjusts scope",
+      "exec": "Uses attach and renewal data to sunset product line"
+    },
+    {
+      "signal": "Scope of the iteration",
+      "junior": "Single feature owned by the candidate",
+      "senior": "Cross-team handoff after data review",
+      "exec": "Org-level product bet with resource reallocation"
+    },
+    {
+      "signal": "Response to negative signal",
+      "junior": "Removes own work quickly",
+      "senior": "Influences another team with data",
+      "exec": "Kills visible investment and resets roadmap"
+    },
+    {
+      "signal": "Ownership of outcome",
+      "junior": "Owns the pivot decision",
+      "senior": "Drives handoff without authority",
+      "exec": "Secures leadership approval for pivot"
+    }
+  ],
+  "kind": "value"
+}

@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time you accepted work that was only acceptable. What happened next?",
+  "principle": "Raise the Bar",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reviewed a PR from a teammate that met the basic requirements but had unclear error handling and no tests for edge cases. I approved it to unblock a deadline but flagged the gaps in comments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the release I paired with the teammate on a follow-up refactor. We added the missing tests and I documented the pattern so the next similar task would be stronger."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you accepted work that was only acceptable. What happened next?",
+        "Role: new grad on small feature team",
+        "Situation: approved PR with gaps to meet sprint deadline",
+        "Actions: noted issues in comments, then paired post-release to fix and document",
+        "Outcome: added tests and shared pattern for future work",
+        "Quote: 'I approved it to unblock but flagged the gaps'",
+        "Follow-up: How did you decide the gaps were acceptable? Said they were low-risk and deadline-driven, then used it as learning to push for earlier reviews next time."
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar. The candidate owned the decision to ship acceptable work under deadline pressure but then drove a concrete improvement afterward. Story centers on a PR with missing tests and error handling; they approved with comments, then paired to close the gaps and documented the pattern. This shows local ownership and learning from the choice rather than repeating it. The follow-up revealed they treated the acceptance as temporary and used it to raise standards on the next similar task. Biggest strength is turning the compromise into a lasting process improvement instead of treating it as one-off.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager asked me to merge a feature branch that still had a few open bugs. I merged it because the manager said it was fine."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we just moved on to the next ticket."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you accepted work that was only acceptable. What happened next?",
+        "Role: intern-level task",
+        "Situation: merged branch with open bugs on manager direction",
+        "Actions: followed direction without pushback or notes",
+        "Outcome: moved to next ticket, no follow-up",
+        "Quote: 'I merged it because the manager said it was fine'",
+        "Follow-up: What would you do differently now? Said they would still merge if told to."
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar. Candidate accepted incomplete work solely because a manager directed it and showed no ownership or follow-through afterward. Story is limited to merging a branch with open bugs and then moving on without any attempt to close gaps or prevent recurrence. The follow-up confirmed the behavior would repeat under similar pressure. This reflects purely individual compliance without learning or raising standards even at a local level. Biggest gap is absence of any reflection or action after accepting the work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team delivered an integration that met the contract but had poor performance under load and missing monitoring. I signed off for the launch date but scheduled a post-launch review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I worked with their tech lead to add the missing metrics and a simple load test. We then updated the shared integration template so other teams would catch the same issues earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you accepted work that was only acceptable. What happened next?",
+        "Role: senior IC coordinating with partner team",
+        "Situation: accepted integration with perf and monitoring gaps to hit launch",
+        "Actions: signed off then drove post-launch fixes and updated shared template",
+        "Outcome: added metrics, load test, and new template used by multiple teams",
+        "Quote: 'I signed off for the launch date but scheduled a post-launch review'",
+        "Follow-up: How did you influence without authority? Used data from the review meeting to show the risk and got voluntary buy-in from their lead."
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar. Candidate accepted a subpar integration to protect the launch date but then used the decision to create cross-team leverage. Story involves a partner deliverable missing performance and monitoring; they followed up by adding metrics and updating the shared template that other teams adopted. This demonstrates influence without authority and measurable process improvement beyond the immediate task. The follow-up showed they converted the acceptance into a repeatable standard rather than a one-time exception. Biggest strength is scaling the fix from one integration to a template used across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team handed off code that was slower than expected. I accepted it because the project was already behind."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything after launch?"
+        },
+        {
+          "role": "candidate",
+          "text": "We logged a ticket for later but it stayed open."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you accepted work that was only acceptable. What happened next?",
+        "Role: senior IC on cross-team project",
+        "Situation: accepted slower integration due to schedule pressure",
+        "Actions: accepted and logged a ticket",
+        "Outcome: ticket remained open with no follow-up",
+        "Quote: 'I accepted it because the project was already behind'",
+        "Follow-up: Why didn't the ticket get addressed? Said ownership sat with the other team and they had higher priorities."
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar. Candidate accepted underperforming work due to schedule pressure and took no meaningful action to close the gap afterward. Story reduces to signing off on slower code and opening a ticket that stayed open. The follow-up revealed the candidate placed ownership entirely on the other team without attempting to drive resolution. This shows no influence or process change despite the senior scope. Biggest gap is treating the acceptance as permanent rather than using it to raise standards."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A business unit launched a feature set that met revenue targets but had high support costs and customer complaints about reliability. I approved the launch metrics but initiated a quarterly review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sponsored a cross-org program to shift investment toward reliability tooling and changed the launch criteria to include support-cost thresholds. Within two quarters the support tickets dropped 40 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you accepted work that was only acceptable. What happened next?",
+        "Role: director-level, multi-org scope",
+        "Situation: approved launch that hit revenue but created support burden",
+        "Actions: approved then sponsored reliability program and updated launch criteria",
+        "Outcome: support tickets down 40 percent after two quarters",
+        "Quote: 'I approved the launch metrics but initiated a quarterly review'",
+        "Follow-up: How did you get buy-in at exec level? Presented support-cost data against long-term margin goals and tied it to retention targets."
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar. Candidate accepted a revenue-positive but high-cost launch then used the decision to drive org-level change. Story involves approving a feature set with reliability issues, followed by sponsoring a cross-org reliability program and revising launch criteria to include support thresholds. This produced a 40 percent drop in tickets within two quarters. The follow-up showed strategic use of data to align multiple leaders around long-term trade-offs. Biggest strength is converting a single acceptance into durable criteria and tooling that affected multiple business units.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "One of my teams shipped a product that met the OKRs but had quality issues. I noted it in the review but didn't change the process."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any follow-up actions?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it in the next planning cycle but kept the same launch bar."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you accepted work that was only acceptable. What happened next?",
+        "Role: director with multiple teams",
+        "Situation: team met OKRs but shipped with quality issues",
+        "Actions: noted in review, no process change",
+        "Outcome: same launch bar carried into next cycle",
+        "Quote: 'I noted it in the review but didn't change the process'",
+        "Follow-up: Why keep the same bar? Said revenue pressure made it hard to add criteria."
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar. Candidate recognized quality shortfalls in a shipped product yet made no structural changes to prevent recurrence. Story is limited to noting the issue in a review and carrying forward the same launch criteria. The follow-up confirmed revenue pressure was used as justification for inaction rather than a reason to adjust trade-offs. This reflects absence of strategic leverage or long-term thinking at the org level. Biggest gap is failing to translate awareness into updated standards or investment."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership after accepting subpar work",
+      "junior": "Drives personal follow-up fix and documents pattern",
+      "senior": "Influences partner team and updates shared template",
+      "exec": "Sponsors org program and revises launch criteria with measurable results"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task or PR level",
+      "senior": "Cross-team process change",
+      "exec": "Business-unit or org-wide criteria and tooling"
+    },
+    {
+      "signal": "Use of data or metrics",
+      "junior": "Basic reflection on risk",
+      "senior": "Performance data to gain voluntary buy-in",
+      "exec": "Support costs tied to margin and retention goals"
+    },
+    {
+      "signal": "Handling of trade-offs",
+      "junior": "Deadline vs quality, learns for next time",
+      "senior": "Launch date vs reliability, creates repeatable standard",
+      "exec": "Revenue vs support cost, changes investment and criteria"
+    },
+    {
+      "signal": "Evidence of raising standards",
+      "junior": "Prevents same gap on next similar task",
+      "senior": "Template adopted by other teams",
+      "exec": "40 percent ticket reduction and new launch thresholds"
+    }
+  ],
+  "kind": "lp"
+}

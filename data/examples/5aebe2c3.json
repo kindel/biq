@@ -1,0 +1,204 @@
+{
+  "question": "Tell me about something broken that everyone had learned to live with. What did you do?",
+  "principle": "Demand Excellence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship, our test environment had flaky builds that everyone just reran until they passed. I spent two evenings mapping the failures to a specific dependency version mismatch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I filed a ticket with a one-line fix and a before/after log. My mentor reviewed it and we merged it. Build success rate went from 60% to 95%."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "At first they kept rerunning; I had to add a README note and mention it in standup twice before people stopped."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something broken that everyone had learned to live with. What did you do?",
+        "Intern noticed flaky test builds everyone reran",
+        "Mapped failures to dependency mismatch, proposed one-line fix",
+        "Build success 60% -> 95%",
+        "Quote: 'I had to add a README note and mention it in standup twice'",
+        "Follow-up: Team reaction - initial resistance, then adoption after persistence"
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence for a junior. The candidate identified a local broken process and owned the fix through to adoption rather than accepting the status quo. The quote about adding the README and repeating the message in standup shows they did not stop at the code change. This is appropriate scope for 0-2 years: individual contribution plus basic follow-through. The main strength is persistence after the initial merge; the gap is that impact stayed within one team and was not measured beyond the build metric.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our builds were flaky but everyone just reran them so I mentioned it once in standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the team said it was always like that so I moved on to my assigned tickets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something broken that everyone had learned to live with. What did you do?",
+        "Noticed flaky builds",
+        "Mentioned once in standup, no further action",
+        "Quote: 'the team said it was always like that so I moved on'",
+        "Follow-up: Nothing changed, candidate accepted status quo"
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence. The candidate surfaced the issue but immediately accepted the team's explanation and returned to assigned work without attempting a fix or escalation. For a junior this shows insufficient ownership even at the individual level. The story lacks any attempt to understand root cause or drive adoption, which is the minimum expectation for this principle."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three teams shared a deployment pipeline that had a 40-minute manual approval step everyone treated as normal. I pulled the last six months of tickets and showed the cumulative delay was adding two days per release."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get traction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot with one team using a scripted checklist instead, then presented the time savings to the other leads and got agreement to roll it out."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: What was the final result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Average release time dropped 35% and the security team adopted the checklist as their new standard."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something broken that everyone had learned to live with. What did you do?",
+        "Shared deployment pipeline with 40-min manual step across three teams",
+        "Quantified impact as two days per release",
+        "Ran pilot then influenced peer teams",
+        "Quote: 'got agreement to roll it out'",
+        "Follow-up: 35% reduction and security team adopted it"
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence at senior level. The candidate quantified a cross-team pain point, ran a controlled pilot, and drove adoption through influence rather than authority. The 35% release time reduction and security team adoption provide concrete evidence of impact beyond their immediate team. This matches the 3-7 year expectation of measurable cross-team change. The biggest strength is the data-driven approach that converted skeptics; the only gap is that the initial analysis took personal time outside normal hours.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The shared pipeline had a long manual step. I suggested automating it in a meeting but the other teams had higher priorities so we left it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "I raised it in the next quarterly planning but it never made the roadmap."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something broken that everyone had learned to live with. What did you do?",
+        "Identified manual step in shared pipeline",
+        "Suggested automation once, no pilot or data",
+        "Quote: 'it never made the roadmap'",
+        "Follow-up: No further action after initial pushback"
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence for a senior. The candidate identified a cross-team inefficiency but treated a single suggestion as sufficient effort and accepted roadmap rejection without further influence or data. At this level we expect evidence of driving change through peers; the story shows only passive escalation. The absence of any attempt to quantify or pilot makes the outcome predictable and below the bar."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer support volume was growing 18% YoY while resolution time stayed flat; everyone accepted it as a hiring problem. I commissioned a root-cause analysis that traced 60% of tickets to three onboarding flows."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused two new product features for a quarter, fixed the flows, and redeployed the saved support headcount to a new self-service team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: Business outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets per active user dropped 42% and we hit the next two quarters without adding headcount despite 15% user growth."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something broken that everyone had learned to live with. What did you do?",
+        "Support volume up 18% YoY accepted as hiring issue",
+        "Root cause showed 60% from three onboarding flows",
+        "Paused features for a quarter to fix root cause",
+        "Quote: 'redeployed the saved support headcount'",
+        "Follow-up: 42% drop in tickets per user, no headcount add"
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence at exec level. The candidate rejected the default 'hire more' assumption, used data to surface a product root cause, and made an explicit short-term feature trade-off for long-term leverage. The 42% reduction and zero headcount growth through 15% user increase demonstrate org-level impact and strategic judgment. This is the right scope for 10+ years. The strength is the willingness to pause revenue work; the only visible gap is that the initial analysis required an external commission rather than an existing mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Support tickets were rising but we were told it was just growth so we added headcount each year."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at root causes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran one analysis but the fixes were deprioritized against new features."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something broken that everyone had learned to live with. What did you do?",
+        "Support volume rising accepted as growth",
+        "One analysis run but fixes deprioritized",
+        "Quote: 'fixes were deprioritized against new features'",
+        "Follow-up: Continued annual headcount increases"
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence at exec level. The candidate accepted the narrative that rising support volume required only headcount and allowed a single analysis to be overridden by feature work without pushing for a decision framework or trade-off discussion. At this scope we look for leaders who force clarity on whether the organization is solving symptoms or causes; the story shows neither. The repeated headcount additions without leverage is the clearest signal this does not meet the principle."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of broken state",
+      "junior": "Identified and fixed locally after initial pushback",
+      "senior": "Quantified cross-team impact then piloted change",
+      "exec": "Rejected default assumption and forced product trade-off"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Used README and standup repetition",
+      "senior": "Secured peer-team agreement via pilot data",
+      "exec": "Aligned multiple orgs on pausing features"
+    },
+    {
+      "signal": "Use of data/metrics",
+      "junior": "Before/after build success rate",
+      "senior": "40-min step translated to two days per release",
+      "exec": "18% YoY volume and 60% root-cause attribution"
+    },
+    {
+      "signal": "Long-term vs short-term thinking",
+      "junior": "Added documentation so fix stuck",
+      "senior": "Checklist became new security standard",
+      "exec": "Zero headcount growth through 15% user increase"
+    },
+    {
+      "signal": "Response to resistance",
+      "junior": "Repeated message until adoption",
+      "senior": "Ran controlled pilot to overcome skepticism",
+      "exec": "Commissioned analysis and made explicit pause decision"
+    }
+  ],
+  "kind": "lp"
+}

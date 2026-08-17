@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time you noticed the visible, career-making work going to the same people.",
+  "principle": "Diversity, Inclusion & Belonging",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team the same two engineers kept getting the customer-facing demos and the high-visibility features. I tracked the last four assignments and saw the pattern. I brought the list to my manager in our 1:1 and asked if we could rotate the next one to someone newer."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you raised it?"
+        },
+        {
+          "role": "candidate",
+          "text": "She agreed and we gave the next demo to a teammate who had never done one. He did well and now gets considered more often."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed the visible, career-making work going to the same people.",
+        "Role: new engineer on 8-person team",
+        "Situation: noticed same two people always picked for demos and big features",
+        "Action: logged four assignments, raised in 1:1 with manager, suggested rotation",
+        "Outcome: next demo given to teammate who had never done one; pattern started to shift",
+        "Quote: \"I brought the list to my manager and asked if we could rotate the next one.\"",
+        "Follow-up: What happened after you raised it? - Manager agreed and change stuck"
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question about noticing visible work going to the same people. The candidate tracked assignments on their own team and raised the pattern directly with their manager using a simple list. The quote shows they focused on a concrete, local fix rather than waiting for someone else. This produced an immediate rotation that benefited a teammate. The story stays within individual scope, which is appropriate for junior level. Biggest strength is the willingness to surface the issue with data instead of staying silent.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw that the same senior people always got the good projects but I figured that was just how it worked so I didn't say anything."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever mention it to anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just kept my head down and waited for my turn."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed the visible, career-making work going to the same people.",
+        "Role: new engineer",
+        "Situation: observed same seniors always selected for visible work",
+        "Action: noticed the pattern but took no steps to surface it",
+        "Outcome: no change; candidate waited passively",
+        "Quote: \"I figured that was just how it worked so I didn't say anything.\"",
+        "Follow-up: Did you ever mention it to anyone? - No action taken"
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question about noticing visible work going to the same people. The candidate identified the pattern but chose not to raise it or propose any adjustment. The quote reveals an assumption that the distribution was fixed and outside their control. No ownership was shown even at the individual level. The outcome produced zero movement for teammates. Biggest gap is the absence of any attempt to address an observed inequity."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Across two product teams the same four engineers were always chosen for the launch demos and the customer escalations that led to promotions. I pulled assignment data for the prior two quarters and shared it with the two tech leads plus the TPM."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the leads respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They agreed the data showed concentration. We set up a lightweight rotation process and tracked it for the next quarter; three additional people got visible work and one was promoted six months later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed the visible, career-making work going to the same people.",
+        "Role: senior engineer spanning two teams",
+        "Situation: same four engineers monopolizing launch demos and escalations",
+        "Action: collected two quarters of assignment data, presented to both tech leads and TPM",
+        "Outcome: rotation process created; three more people received visible work; one promotion followed",
+        "Quote: \"I pulled assignment data for the prior two quarters and shared it with the two tech leads plus the TPM.\"",
+        "Follow-up: How did the leads respond? - Agreement and sustained rotation"
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question about noticing visible work going to the same people. The candidate moved beyond their own team by collecting cross-team data and influencing two tech leads without formal authority. The quote shows they used evidence rather than opinion to start the conversation. A lightweight process was adopted that produced measurable distribution and a later promotion. Scope and impact align with senior expectations. Biggest strength is turning an observation into a repeatable mechanism that benefited multiple people.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed the same people kept getting the visible projects on my team and mentioned it once in a team meeting but nothing changed so I stopped bringing it up."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to involve the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured it was their call and didn't push further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed the visible, career-making work going to the same people.",
+        "Role: senior engineer",
+        "Situation: repeated concentration of visible work on own team",
+        "Action: raised once in a meeting with no follow-through",
+        "Outcome: no process change; issue left unaddressed across teams",
+        "Quote: \"I mentioned it once in a team meeting but nothing changed so I stopped bringing it up.\"",
+        "Follow-up: Did you try to involve the other team? - No cross-team effort"
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question about noticing visible work going to the same people. The candidate surfaced the issue only once and then disengaged when there was no immediate response. The quote indicates they limited their scope to their own team and did not attempt to influence peers or leads on adjacent teams. No data or sustained effort was used. The result was no improvement in opportunity distribution. Biggest gap is the lack of persistence or cross-team influence expected at senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw that promotion and visibility opportunities were heavily concentrated among a small set of teams. I commissioned an org-wide review of project assignments and promotion cases over 18 months and found clear skews by team and tenure."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with the findings?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the data to the leadership team and we changed the promotion calibration process to require explicit review of underrepresented teams. We also created a central visibility program; over the next year the share of promotions from previously overlooked teams rose from 12 percent to 29 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed the visible, career-making work going to the same people.",
+        "Role: director/VP",
+        "Situation: promotion and visibility skewed toward a small number of teams",
+        "Action: commissioned 18-month org review, presented data to leadership, drove process changes",
+        "Outcome: new calibration requirement and visibility program; promotion share from overlooked teams rose from 12% to 29%",
+        "Quote: \"I commissioned an org-wide review of project assignments and promotion cases over 18 months.\"",
+        "Follow-up: What did you do with the findings? - Changed calibration and launched program with measurable lift"
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question about noticing visible work going to the same people. The candidate treated the pattern as an org-level signal and commissioned broad data collection rather than handling it locally. The quote shows strategic use of 18-month evidence to drive leadership discussion. Changes to calibration and a new program produced a clear shift in promotion distribution. Scope and long-term leverage match executive expectations. Biggest strength is converting an observation into durable process changes that scaled beyond any single team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed some teams seemed to get more visibility than others but I assumed the business units were handling their own talent development."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever look at the data across the org?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really; I stayed focused on my own division's numbers."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed the visible, career-making work going to the same people.",
+        "Role: director/VP",
+        "Situation: observed uneven visibility across teams",
+        "Action: assumed business units owned the issue and took no further steps",
+        "Outcome: no org-level review or intervention",
+        "Quote: \"I assumed the business units were handling their own talent development.\"",
+        "Follow-up: Did you ever look at the data across the org? - Stayed within own division"
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question about noticing visible work going to the same people. The candidate observed concentration but defaulted to a hands-off stance without examining the pattern. The quote reveals a choice to treat the issue as outside their remit rather than an org-wide opportunity. No data review or leadership discussion occurred. The result was continued skew with no corrective action. Biggest gap is the absence of strategic ownership or long-term thinking required at executive level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of observation",
+      "junior": "Noticed pattern inside own team",
+      "senior": "Collected data across two teams and influenced peers",
+      "exec": "Commissioned org-wide review and changed leadership process"
+    },
+    {
+      "signal": "Use of data",
+      "junior": "Simple list of four assignments",
+      "senior": "Two quarters of cross-team assignments",
+      "exec": "18-month org review with promotion metrics"
+    },
+    {
+      "signal": "Action taken",
+      "junior": "Raised once to manager",
+      "senior": "Proposed and helped implement rotation",
+      "exec": "Drove new calibration requirement and visibility program"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "One teammate received a demo",
+      "senior": "Three additional people got visible work; one promotion",
+      "exec": "Promotion share from overlooked teams rose 12% to 29%"
+    },
+    {
+      "signal": "Persistence",
+      "junior": "Single conversation that produced quick win",
+      "senior": "Followed through to sustain rotation",
+      "exec": "Institutionalized changes with measurable multi-quarter impact"
+    }
+  ],
+  "kind": "value"
+}

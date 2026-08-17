@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first team, we were hiring a new analyst. I reviewed the resumes and pushed back on a candidate the team liked because their coding samples were weak compared to the job description."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared specific examples from their work with the hiring manager and suggested we interview two more people from the pipeline. We ended up hiring someone stronger who ramped up faster."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+        "Candidate reviewed resumes individually and flagged weak coding samples vs JD.",
+        "Pushed hiring manager to interview two more candidates from pipeline.",
+        "Outcome: hired stronger analyst who ramped faster.",
+        "Quote: 'I shared specific examples from their work...'",
+        "Follow-up: Asked about resistance; candidate said they documented feedback and let data drive the decision."
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for a junior. The candidate owned their individual review of resumes and used concrete examples to argue against a weak coding sample. They escalated to the hiring manager with data rather than opinion. This led to interviewing additional candidates and selecting one who ramped faster. The story stays within individual scope but shows coachability through documented feedback. Biggest strength is tying the argument directly to job requirements instead of personal preference.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were hiring and the team had a favorite candidate. I thought maybe we should check references more carefully but everyone else was ready to move forward so I didn't push."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share any specific concerns?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just went with the group decision since it was my first hiring loop."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+        "Candidate noticed team favorite but only thought about more reference checks.",
+        "Did not raise concerns or share data with the group.",
+        "Outcome: went along with the hire without input.",
+        "Quote: 'I just went with the group decision since it was my first hiring loop.'",
+        "Follow-up: Candidate confirmed they stayed silent to avoid conflict on first loop."
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for a junior. The candidate identified a potential issue with references but chose not to voice it or provide evidence. They deferred entirely to the group without attempting to influence the decision. No ownership of the hiring outcome is shown. The response stays passive and lacks any attempt to learn or document feedback for next time. Biggest gap is absence of even a minimal effort to raise the bar at the individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As a senior engineer I sat on a cross-team loop for a mid-level role. I argued against a candidate who had strong individual coding but had led two projects that missed deadlines due to poor coordination."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled data from their prior teams on missed milestones and ran a calibration with two other loops. We rejected and later hired someone who improved on-time delivery by 30 percent across the org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+        "Argued against strong coder who missed deadlines due to coordination issues.",
+        "Pulled cross-team data on missed milestones and ran calibration meeting.",
+        "Outcome: rejection followed by hire who improved on-time delivery 30%.",
+        "Quote: 'I pulled data from their prior teams...'",
+        "Follow-up: Candidate described sharing the calibration notes with the other hiring managers."
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for a senior. The candidate used cross-team data to argue against a candidate whose coordination failures had real project impact. They ran a calibration across loops rather than deciding in isolation. The result was a hire who delivered measurable improvement in on-time delivery. Influence without authority is shown through shared calibration notes. Biggest strength is connecting the hiring decision to org-level delivery metrics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a hiring loop and felt one candidate was not quite ready but the recruiter really wanted to close the role. I mentioned it once in the debrief but didn't push hard."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly my gut feeling from the interview; the rest of the panel wanted to move forward so we did."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+        "Felt candidate not ready but only mentioned once in debrief.",
+        "Brought no data beyond personal impression.",
+        "Outcome: panel moved forward without change.",
+        "Quote: 'I mentioned it once in the debrief but didn't push hard.'",
+        "Follow-up: Candidate admitted they deferred after one comment to avoid blocking the close."
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for a senior. The candidate had a concern about readiness but limited their input to a single comment without data or follow-up. No attempt was made to influence across the panel or calibrate with other loops. The decision defaulted to the recruiter's timeline. Lack of cross-team leverage is evident. Biggest gap is treating the hiring bar as someone else's responsibility rather than owning influence at the senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "At the VP level I reviewed our org's hiring funnel and found we were passing candidates who lacked strategic systems thinking. I argued against filling two open director roles until we adjusted the rubric."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two backfills by six weeks, rewrote the interview scorecard with input from peer orgs, and later measured that new directors reduced roadmap slippage by 25 percent over the next two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+        "Identified pattern of weak strategic thinking in funnel and paused two director hires.",
+        "Rewrote scorecard with peer org input and delayed backfills six weeks.",
+        "Outcome: new directors cut roadmap slippage 25% over two quarters.",
+        "Quote: 'I argued against filling two open director roles until we adjusted the rubric.'",
+        "Follow-up: Candidate explained the long-term org impact and how they communicated the delay to the business."
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for an exec. The candidate identified a systemic gap in strategic thinking across the funnel and made a deliberate trade-off to pause hiring. They drove rubric changes with peer input and accepted short-term delay for long-term quality. The result was measurable reduction in roadmap slippage at the org level. Strategic judgment is shown in weighing speed versus capability. Biggest strength is treating hiring as a lever for org performance rather than a transactional activity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had pressure to hire quickly for two director roles. I thought the bar was a bit low but the business needed headcount so I supported the hires that came through."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider changing the process?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not at the time; we were in growth mode and filling seats was the priority."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised the bar on a hiring decision, including one you argued against.",
+        "Noted low bar but supported hires due to headcount pressure.",
+        "No process change or rubric adjustment attempted.",
+        "Outcome: filled roles without raising standards.",
+        "Quote: 'the business needed headcount so I supported the hires.'",
+        "Follow-up: Candidate confirmed they viewed hiring velocity as the overriding goal."
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for an exec. The candidate recognized a low bar but subordinated hiring quality to immediate headcount needs. No strategic intervention or process change was pursued. The decision prioritized short-term growth over long-term org capability. Absence of trade-off analysis or downstream measurement is clear. Biggest gap is failing to use executive authority to protect the hiring bar during ambiguous growth periods."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of hiring decision",
+      "junior": "Raises when candidate uses personal review to flag issues with data; lowers when they defer without input.",
+      "senior": "Raises when candidate drives cross-loop calibration; lowers when they limit input to one comment.",
+      "exec": "Raises when candidate pauses roles to fix systemic rubric; lowers when they accept velocity over quality."
+    },
+    {
+      "signal": "Use of data vs opinion",
+      "junior": "Raises with specific coding sample examples; lowers with gut feel only.",
+      "senior": "Raises with cross-team milestone data; lowers with personal impression.",
+      "exec": "Raises with org-level rubric rewrite and slippage metrics; lowers with no process data."
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Raises by sharing examples with manager; lowers by staying silent.",
+      "senior": "Raises by running multi-loop calibration; lowers by deferring to recruiter.",
+      "exec": "Raises by aligning peer orgs on scorecard; lowers by supporting status quo hires."
+    },
+    {
+      "signal": "Long-term vs short-term trade-off",
+      "junior": "Raises when faster ramp is noted; lowers when no outcome tracked.",
+      "senior": "Raises when on-time delivery improves 30%; lowers when no metric pursued.",
+      "exec": "Raises when roadmap slippage drops 25% after delay; lowers when headcount pressure wins."
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual resume review and suggestion.",
+      "senior": "Cross-team loop influence and calibration.",
+      "exec": "Org funnel change and rubric ownership."
+    }
+  ],
+  "kind": "lp"
+}

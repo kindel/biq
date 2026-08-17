@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you were stuck. How long did you wait before asking for help?",
+  "principle": "Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was implementing a new logging module in my first project and got stuck on an edge case with log rotation after two days of trying different approaches. I asked my mentor for a quick review, and we fixed it in 30 minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted you to ask then?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had documented three failed attempts and realized the pattern wasn't matching any internal examples, so I flagged it in our daily sync."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were stuck. How long did you wait before asking for help?",
+        "Role: new grad on first team project",
+        "Situation: stuck on logging edge case after 2 days",
+        "Action: documented attempts, asked mentor in sync",
+        "Outcome: resolved in 30 min, added note to team wiki",
+        "Quote: \"I realized the pattern wasn't matching any internal examples\"",
+        "Follow-up: How did you decide 2 days was enough? Said they set a personal rule of 1-2 days max before surfacing blockers."
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration for a junior. The candidate described getting stuck on a logging module and asking after two days once they had documented attempts. They said \"I realized the pattern wasn't matching any internal examples\" before flagging it in a sync. This shows timely escalation and coachability without waiting indefinitely. The outcome was quick resolution and a wiki note that helped the team. Biggest strength is the explicit rule they set for when to surface blockers rather than persisting alone.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was working on a feature and got stuck on some API calls for about a week. I kept trying different things until my manager noticed in a 1:1 and asked what was going on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why wait a full week?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to bother anyone and thought I should figure it out myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were stuck. How long did you wait before asking for help?",
+        "Role: new grad on first team project",
+        "Situation: stuck on API integration",
+        "Action: worked alone for a week",
+        "Outcome: manager noticed in 1:1, no prior escalation",
+        "Quote: \"I didn't want to bother anyone\"",
+        "Follow-up: Did you document attempts? No written record shared with team."
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration for a junior. The candidate stayed stuck on an API issue for a full week without raising it, only surfacing when the manager asked in a 1:1. They said \"I didn't want to bother anyone\" as the reason for waiting. This shows a pattern of avoiding help rather than treating collaboration as a tool to unblock work. No evidence of trying structured escalation or sharing partial progress. Biggest gap is the lack of any personal rule or signal for when to ask, which risks repeated delays on small tasks."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service had a scaling issue before a launch and after three days of data analysis I pulled in the infra team lead for a joint debug session. We identified a config mismatch and shipped the fix with a shared runbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide to loop them in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had metrics showing the bottleneck and a hypothesis that needed their domain knowledge, so I booked 30 minutes instead of continuing solo."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were stuck. How long did you wait before asking for help?",
+        "Role: senior on cross-team launch",
+        "Situation: scaling issue pre-launch",
+        "Action: 3 days analysis then brought in infra lead",
+        "Outcome: joint fix plus shared runbook",
+        "Quote: \"I had metrics showing the bottleneck and a hypothesis\"",
+        "Follow-up: What was the impact on timeline? Said launch stayed on track and the runbook prevented repeat issues in two other teams."
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration for a senior. The candidate hit a scaling issue and after three days brought in the infra lead once they had metrics and a hypothesis. They said \"I had metrics showing the bottleneck and a hypothesis\" before booking time. This produced a joint fix and a runbook that other teams reused. The story shows influence without authority by using data to make the ask efficient. Biggest strength is turning a personal blocker into reusable team knowledge rather than just unblocking themselves.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I spent two weeks debugging a performance regression in my service before asking the platform team for help. They pointed out a known issue with the new library version."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why two weeks?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted to be sure it wasn't something in my code before involving others."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were stuck. How long did you wait before asking for help?",
+        "Role: senior on cross-team launch",
+        "Situation: performance regression",
+        "Action: solo debug for two weeks",
+        "Outcome: platform team identified known library issue",
+        "Quote: \"I wanted to be sure it wasn't something in my code\"",
+        "Follow-up: Any cross-team coordination after? No, fix was applied locally without updating other services."
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration for a senior. The candidate spent two weeks on a performance regression before involving the platform team, only to learn it was a known library issue. They said \"I wanted to be sure it wasn't something in my code\" to justify the delay. This approach wasted time and missed an opportunity to share the known issue across teams. No evidence of using data to make a targeted ask earlier. Biggest gap is treating collaboration as a last resort instead of a way to accelerate resolution at the right scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org missed Q3 targets due to capacity gaps across three teams. After two weeks of internal analysis I convened the other VPs to align on a shared hiring plan and reallocated two projects, which recovered the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What signal told you to escalate beyond your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "The metrics showed the gap was systemic, not local, so I used my staff meeting to propose the cross-VP session."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were stuck. How long did you wait before asking for help?",
+        "Role: exec leading org-level delivery",
+        "Situation: org missed targets from capacity gaps",
+        "Action: 2 weeks analysis then convened VPs for shared plan",
+        "Outcome: reallocated projects and recovered quarter",
+        "Quote: \"The metrics showed the gap was systemic, not local\"",
+        "Follow-up: Long-term effect? Said they institutionalized quarterly capacity reviews across the org."
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration for an exec. The candidate saw org-level target misses and after two weeks of analysis convened other VPs to create a shared hiring and reallocation plan. They said \"The metrics showed the gap was systemic, not local\" before escalating. The result was recovering the quarter and adding ongoing capacity reviews. This demonstrates strategic judgment on when individual teams cannot solve the problem alone. Biggest strength is converting a stuck org state into a durable cross-team process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to fix our delivery issues by pushing my own team harder for six weeks before realizing we needed to renegotiate scope with product leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after six weeks?"
+        },
+        {
+          "role": "candidate",
+          "text": "The numbers kept missing and my team was burning out, so I finally scheduled the conversation."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were stuck. How long did you wait before asking for help?",
+        "Role: exec leading org-level delivery",
+        "Situation: repeated delivery misses",
+        "Action: pushed own team for six weeks",
+        "Outcome: eventual scope renegotiation after burnout signals",
+        "Quote: \"The numbers kept missing and my team was burning out\"",
+        "Follow-up: Any org-wide learning captured? No process change implemented beyond that one project."
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration for an exec. The candidate spent six weeks pushing their own team on delivery issues before involving product leadership to renegotiate scope. They said \"The numbers kept missing and my team was burning out\" as the trigger. This delayed org-level alignment and created unnecessary burnout. No evidence of using early signals to pull in peers sooner. Biggest gap is waiting for visible failure instead of treating cross-leadership collaboration as a proactive lever for ambiguous problems."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Time to ask",
+      "junior": "Raises: 2 days with documented attempts; Lowers: 1 week with no escalation",
+      "senior": "Raises: 3 days with metrics and hypothesis; Lowers: 2 weeks chasing local root cause",
+      "exec": "Raises: 2 weeks systemic analysis then cross-VP; Lowers: 6 weeks internal push before peer conversation"
+    },
+    {
+      "signal": "Use of data to justify ask",
+      "junior": "Raises: showed failed attempts; Lowers: none shared",
+      "senior": "Raises: metrics plus hypothesis; Lowers: none",
+      "exec": "Raises: org metrics showing systemic gap; Lowers: none until burnout"
+    },
+    {
+      "signal": "Outcome beyond self",
+      "junior": "Raises: wiki note for team; Lowers: no sharing",
+      "senior": "Raises: runbook reused by two teams; Lowers: local fix only",
+      "exec": "Raises: institutionalized quarterly reviews; Lowers: no process change"
+    },
+    {
+      "signal": "Scope of stuck problem",
+      "junior": "Raises: individual module; Lowers: individual task",
+      "senior": "Raises: service scaling pre-launch; Lowers: service regression",
+      "exec": "Raises: org capacity across teams; Lowers: own team delivery"
+    }
+  ],
+  "kind": "value"
+}

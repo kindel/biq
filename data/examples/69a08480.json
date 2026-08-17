@@ -1,0 +1,213 @@
+{
+  "question": "Tell me about a number you refused to take at face value. What did you find?",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a number you refused to take at face value. What did you find?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our dashboard showed 92% task completion. I pulled the raw logs because the number felt high compared to what I was seeing in tickets. It turned out the query was counting partial saves as complete, so real completion was 67%. I fixed the query and added a validation step."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted you to check the logs instead of just reporting the 92%?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager had asked why velocity looked off, so I wanted to make sure the metric matched what the team actually delivered."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a number you refused to take at face value. What did you find?",
+        "Role: new grad on support tooling team",
+        "Situation: dashboard showed 92% completion but velocity felt off",
+        "Action: pulled raw logs, found partial saves counted as complete",
+        "Outcome: corrected to 67%, added validation step",
+        "Quote: \"I wanted to make sure the metric matched what the team actually delivered.\"",
+        "Follow-up: Asked what prompted the check; candidate tied it to manager feedback on velocity"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep. The candidate questioned a completion metric on their own dashboard after noticing a mismatch with observed velocity. They pulled raw logs, discovered partial saves were inflating the number from 67% to 92%, and fixed the query plus added validation. This shows ownership of their own output and willingness to dig when something felt inconsistent. The follow-up confirmed the trigger came from manager feedback rather than external pressure. Biggest strength is treating a single metric as suspect and verifying it at the data level instead of reporting it upward.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a number you refused to take at face value. What did you find?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had a 95% uptime number in the weekly report. I just used it as is because that was what the monitoring tool gave us."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever look behind that number?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was already calculated so I assumed it was correct."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a number you refused to take at face value. What did you find?",
+        "Role: new grad on support tooling team",
+        "Situation: weekly uptime report showed 95%",
+        "Action: used the number directly from the tool",
+        "Outcome: no further investigation",
+        "Quote: \"I assumed it was correct.\"",
+        "Follow-up: Asked if they looked behind the number; candidate said they took the tool output as given"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep. The candidate accepted a 95% uptime figure from the monitoring tool without any verification. When asked if they looked behind the number they stated they assumed the tool output was correct. No evidence of questioning data sources or reconciling with other signals. The story stays entirely at the surface level of reporting an existing metric. Biggest gap is lack of any attempt to validate or understand how the number was produced."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a number you refused to take at face value. What did you find?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our launch readiness score was 88% across three teams. I asked for the underlying incident data because the score didn't match the on-call load we were seeing. It turned out two teams were under-reporting Sev-2s due to a shared ticket template. We aligned the taxonomy and the real readiness dropped to 71%, which changed the launch date."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to change their reporting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the ticket volume mismatch in a shared doc and let them see the on-call pager data themselves."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a number you refused to take at face value. What did you find?",
+        "Role: senior on platform team",
+        "Situation: launch readiness score at 88% across three teams",
+        "Action: requested incident data, found under-reporting of Sev-2s from shared template",
+        "Outcome: corrected to 71%, shifted launch date, aligned taxonomy",
+        "Quote: \"I showed them the ticket volume mismatch in a shared doc.\"",
+        "Follow-up: Asked how they influenced other teams; candidate described sharing raw pager and ticket data"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep. The candidate challenged an 88% readiness score that conflicted with observed on-call load across three teams. They surfaced under-reported Sev-2s caused by a shared ticket template, corrected the figure to 71%, and used the data to influence launch timing. Influence happened by sharing raw pager and ticket evidence rather than authority. The follow-up showed they enabled other teams to reach the same conclusion. Biggest strength is turning a single questionable metric into cross-team process change with measurable impact on a launch decision.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a number you refused to take at face value. What did you find?"
+        },
+        {
+          "role": "candidate",
+          "text": "The readiness score was 88%. I flagged it in the meeting but the PM said it was fine so we moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you dig into the underlying data at all?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't have time to pull the incidents myself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a number you refused to take at face value. What did you find?",
+        "Role: senior on platform team",
+        "Situation: readiness score at 88%",
+        "Action: flagged concern in meeting but accepted PM response",
+        "Outcome: no further investigation or data pull",
+        "Quote: \"I didn't have time to pull the incidents myself.\"",
+        "Follow-up: Asked if they examined the data; candidate cited lack of time"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep. The candidate noted an 88% readiness score but accepted the PM's assurance without examining the underlying incident data. They explicitly stated they did not have time to pull the incidents. No attempt to reconcile the score with on-call signals or cross-team reporting practices. The story shows awareness of a potential issue but no follow-through. Biggest gap is stopping at a verbal flag instead of using data to test the number."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a number you refused to take at face value. What did you find?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our quarterly cost-per-acquisition target looked on track at $42. I asked finance for the cohort-level LTV curves because CAC alone didn't explain why retention was flattening. We discovered the number excluded the top 8% of high-value customers who were being routed through a different attribution path. Adjusting for that showed true blended CAC at $61 and forced us to re-forecast the entire growth plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface to the leadership team?"
+        },
+        {
+          "role": "candidate",
+          "text": "We presented three options: accept lower volume at the real cost, change channel mix, or adjust the profitability target. They chose the channel mix change."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a number you refused to take at face value. What did you find?",
+        "Role: VP of Growth",
+        "Situation: quarterly CAC target at $42 looked on track",
+        "Action: requested cohort LTV curves, found high-value customers excluded from attribution",
+        "Outcome: true blended CAC $61, re-forecast growth plan, leadership chose channel mix change",
+        "Quote: \"We presented three options: accept lower volume at the real cost, change channel mix, or adjust the profitability target.\"",
+        "Follow-up: Asked about trade-offs presented; candidate described three concrete options given to leadership"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep. The candidate questioned a $42 CAC figure that appeared on track and requested cohort LTV curves, revealing that high-value customers were excluded from attribution. The corrected blended CAC of $61 triggered a full growth re-forecast. They framed three explicit trade-offs for leadership rather than simply flagging the error. The follow-up confirmed they drove a strategic decision on channel mix. Biggest strength is connecting a single metric discrepancy to org-level planning and forcing a choice among quantified options.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a number you refused to take at face value. What did you find?"
+        },
+        {
+          "role": "candidate",
+          "text": "CAC was reported at $42. I asked my team to double-check the spreadsheet and they confirmed the number."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the check change any downstream plans?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it stayed the same so we kept the original forecast."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a number you refused to take at face value. What did you find?",
+        "Role: VP of Growth",
+        "Situation: CAC at $42",
+        "Action: asked team to verify spreadsheet",
+        "Outcome: number confirmed, no change to forecast",
+        "Quote: \"It stayed the same so we kept the original forecast.\"",
+        "Follow-up: Asked if verification altered plans; candidate said it did not"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep. The candidate asked their team to verify a $42 CAC figure in the spreadsheet and accepted the confirmation without further scrutiny. No exploration of attribution paths, cohort effects, or LTV linkage occurred. The verification produced no change to the growth forecast. The story remains limited to confirming an existing calculation. Biggest gap is treating verification as a one-time spreadsheet check rather than questioning whether the metric itself captured the right population."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Willingness to question surface metrics",
+      "junior": "Questions own dashboard output after noticing mismatch with daily work",
+      "senior": "Questions cross-team score and surfaces root reporting issue",
+      "exec": "Questions top-line target and traces to attribution path affecting org forecast"
+    },
+    {
+      "signal": "Depth of data investigation",
+      "junior": "Pulls raw logs to correct completion rate",
+      "senior": "Pulls incident data across teams to correct readiness",
+      "exec": "Requests cohort LTV curves to correct CAC"
+    },
+    {
+      "signal": "Influence on outcome",
+      "junior": "Fixes query and adds validation for own work",
+      "senior": "Aligns taxonomy and shifts launch date via shared evidence",
+      "exec": "Forces re-forecast and drives channel-mix decision"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task and immediate team visibility",
+      "senior": "Three teams and launch timing",
+      "exec": "Growth plan and leadership trade-off choice"
+    },
+    {
+      "signal": "Response to pushback or constraints",
+      "junior": "Ties check to manager feedback on velocity",
+      "senior": "Uses raw data to let other teams reach conclusion",
+      "exec": "Presents three quantified options instead of single recommendation"
+    }
+  ],
+  "kind": "lp"
+}

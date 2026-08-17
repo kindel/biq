@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about a time you sent work back. How did you say what was missing?",
+  "principle": "Demand Excellence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reviewed a PR from a teammate on a small feature. The logic was incomplete on edge cases so I sent it back with comments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What exactly did you write in the comments?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listed the three missing cases, gave a one-line example for each, and asked them to add tests. They fixed it and thanked me later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide it wasn't ready?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran the test suite myself and saw two failures I could reproduce."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you sent work back. How did you say what was missing?",
+        "Situation: Reviewed teammate PR on small feature; found incomplete edge cases",
+        "Action: Wrote specific comments listing three cases + one-line examples + request for tests",
+        "Outcome: Fixed and teammate thanked; candidate had run tests first",
+        "Quote: 'I listed the three missing cases, gave a one-line example for each'",
+        "Follow-up: How did you decide? - Ran suite and reproduced failures"
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence for junior level. The candidate owned their review by running tests themselves before pushing back and gave concrete, actionable gaps rather than vague comments. Quote shows they translated 'not ready' into specific cases with examples. This kept scope individual while demonstrating ownership of quality on their own work. The follow-up confirmed they had data, not opinion. Biggest strength is the clear, replicable feedback method that produced a fix without escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Once I got a doc that felt off so I told the person it needed more work."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually say was missing?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said it should be clearer and maybe add some details. They updated it after a couple rounds."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you sent work back. How did you say what was missing?",
+        "Situation: Received a doc that felt off",
+        "Action: Told owner it needed more work and should be clearer",
+        "Outcome: Updated after a couple rounds",
+        "Quote: 'I said it should be clearer and maybe add some details'",
+        "Follow-up: What specifically? - No concrete examples given"
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence for junior level. Feedback stayed at high level without naming concrete gaps or providing examples, forcing multiple rounds. The candidate did not show they had verified issues themselves before sending back. Quote reveals reliance on subjective language instead of specific, actionable items. This approach risks unclear expectations and repeated work. Biggest gap is absence of ownership in defining exactly what excellence looked like."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team service spec had inconsistent error handling across three teams. I sent it back with a proposed standard."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate the gaps?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mapped the three patterns in a table, showed the customer impact on one flow, and suggested one unified approach with code snippets. Two teams adopted it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metric improved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets on that flow dropped 18% in the next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you sent work back. How did you say what was missing?",
+        "Situation: Cross-team service spec had inconsistent error handling",
+        "Action: Created table of three patterns, showed customer impact, proposed unified approach with snippets",
+        "Outcome: Two teams adopted; support tickets down 18%",
+        "Quote: 'I mapped the three patterns in a table, showed the customer impact'",
+        "Follow-up: Metric? - 18% drop in tickets next quarter"
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence for senior level. The candidate drove consistency across teams by making gaps visible with a clear comparison and customer data rather than opinion. Quote illustrates influence without authority through concrete artifacts. The outcome included a measurable result that affected multiple teams. This shows the expected scope expansion beyond individual work. Biggest strength is turning a quality issue into an adopted standard with visible business impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed back on a spec from another team because the requirements were vague."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you tell them was missing?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said we needed clearer acceptance criteria and left it at that. They eventually clarified after I escalated."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you sent work back. How did you say what was missing?",
+        "Situation: Pushed back on vague requirements from another team",
+        "Action: Stated need for clearer acceptance criteria",
+        "Outcome: Clarified only after escalation",
+        "Quote: 'I said we needed clearer acceptance criteria and left it at that'",
+        "Follow-up: How did you show the gap? - No examples or proposed fix provided"
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence for senior level. The feedback lacked specificity and required escalation instead of using data or examples to influence peers directly. Quote shows the candidate stopped at a general request rather than modeling the expected standard. This limited cross-team leverage and delayed resolution. The story stays local despite the cross-team setup. Biggest gap is missing evidence of raising the quality bar for others."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was shipping features with rising defect rates in production. I returned a major launch plan and required a quality gate."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you frame what was missing?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the trend line of escaped defects over six quarters, tied it to customer NPS, and defined a new pre-launch review with explicit criteria. The process was adopted org-wide."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two launches by three weeks but reduced P1 incidents 40% the following year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you sent work back. How did you say what was missing?",
+        "Situation: Rising defect rates across org before major launch",
+        "Action: Presented six-quarter defect trend + NPS link, defined new pre-launch review criteria",
+        "Outcome: Process adopted org-wide; P1 incidents down 40%",
+        "Quote: 'I showed the trend line of escaped defects over six quarters, tied it to customer NPS'",
+        "Follow-up: Trade-off? - Delayed launches but 40% fewer P1s"
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence for exec level. The candidate addressed systemic quality decline with long-term data and tied it directly to customer outcomes before imposing a new standard. Quote demonstrates strategic framing that connected defects to business metrics. The result was an org-wide process change with a clear trade-off acknowledged. This reflects the required scope of high ambiguity and leverage over heroics. Biggest strength is institutionalizing excellence rather than fixing one instance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I rejected a launch because quality felt low across the board."
+        },
+        {
+          "role": "interviewer",
+          "text": "What specific gaps did you call out?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told leadership the bar needed to be higher and asked teams to self-review more carefully. Adoption was uneven."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you sent work back. How did you say what was missing?",
+        "Situation: Felt quality was low on a launch",
+        "Action: Told leadership the bar needed to be higher and asked for more self-review",
+        "Outcome: Uneven adoption",
+        "Quote: 'I told leadership the bar needed to be higher'",
+        "Follow-up: Specific gaps? - No data or defined criteria shared"
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence for exec level. The intervention stayed at a general directive without data, criteria, or a sustainable mechanism, leading to uneven results. Quote reveals reliance on exhortation rather than structural change. This approach failed to create lasting leverage at org scale. The story lacks evidence of long-term thinking or measured trade-offs. Biggest gap is absence of a repeatable system to enforce excellence."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Specificity of feedback given",
+      "junior": "Lists exact cases with examples",
+      "senior": "Uses tables and customer impact data",
+      "exec": "Shows multi-quarter trends tied to NPS"
+    },
+    {
+      "signal": "Evidence of verification before pushback",
+      "junior": "Ran tests themselves",
+      "senior": "Mapped patterns across teams",
+      "exec": "Analyzed six-quarter defect data"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Direct comments on own work",
+      "senior": "Proposed standard adopted by peers",
+      "exec": "Defined org-wide process with trade-offs"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Teammate fixed and thanked",
+      "senior": "18% ticket reduction",
+      "exec": "40% fewer P1 incidents org-wide"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual PR or doc",
+      "senior": "Cross-team consistency",
+      "exec": "Org process and metrics"
+    }
+  ],
+  "kind": "lp"
+}

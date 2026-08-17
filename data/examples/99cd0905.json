@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you delivered despite a dependency you did not control.",
+  "principle": "Deliver Results with Grit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I needed data from another team's legacy system that was two weeks behind schedule. I checked in daily with the owner, offered to help script a workaround, and when it slipped again I built a local mock that let my feature ship on time while the real feed came later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the first follow-up got no response?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a short email summarizing the impact and asked for a 15-minute sync; they replied the next day with a partial extract I could use."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you delivered despite a dependency you did not control.",
+        "Junior IC on first project, dependency on legacy system two weeks late",
+        "Daily check-ins, offered to script workaround, built local mock to unblock",
+        "Outcome: feature shipped on schedule, real feed integrated post-launch",
+        "Quote: \"I built a local mock that let my feature ship on time\"",
+        "Follow-up: Asked what happened on first non-response; candidate sent impact summary and got partial extract next day"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit for a junior. The candidate owned an individual deliverable and kept momentum when a dependency slipped without escalating or waiting. Concrete quote about building the local mock shows they took the next step rather than stopping at the blocker. Follow-up response demonstrates coachability by acting on the interviewer's probe. The result stayed local to one feature, which matches level expectations. Biggest strength is consistent follow-through instead of passive waiting.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The other team was late with the API so my task got pushed. I emailed them once and then waited for them to finish."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything else to move it forward?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured it was their problem."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you delivered despite a dependency you did not control.",
+        "Junior candidate waited on API delay after one email",
+        "No further action taken once initial outreach failed",
+        "Outcome: task slipped with no workaround attempted",
+        "Quote: \"I figured it was their problem\"",
+        "Follow-up: Candidate confirmed they stopped after first email"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit for a junior. The story shows the candidate stopped after a single email and assigned the delay entirely to the other team. Follow-up response confirms lack of ownership or additional attempts. No evidence of even basic persistence or local workarounds that would be expected at this level. The outcome was simply accepting slippage rather than protecting the deliverable. Biggest gap is absence of any personal action once the dependency became visible."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed the same new data pipeline but the owning team had capacity issues. I mapped the shared requirements, got both teams to agree on a phased rollout, and staffed a small joint working group that delivered the first slice in six weeks instead of missing the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the second team to prioritize?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them the revenue impact numbers we had modeled and offered to take the first integration ticket so they saw progress quickly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you delivered despite a dependency you did not control.",
+        "Senior candidate coordinated two teams on shared pipeline with capacity constraint",
+        "Mapped requirements, negotiated phased rollout, formed joint working group",
+        "Outcome: first slice live in six weeks, quarter not missed",
+        "Quote: \"staffed a small joint working group that delivered the first slice\"",
+        "Follow-up: Explained using revenue impact and offering first integration ticket to build momentum"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit for a senior. The candidate used influence without authority to align two teams around a shared dependency and produced a measurable cross-team outcome. Quote about forming the joint working group and delivering the first slice shows concrete leverage. Follow-up detail on revenue framing and taking the first ticket illustrates how they created momentum. Scope and metrics are appropriate for senior level. Biggest strength is turning an uncontrolled dependency into a coordinated delivery without heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The infra team kept deprioritizing our request so we missed the launch date. I escalated twice but nothing changed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you explore before escalating?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly waited for the escalation to land."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you delivered despite a dependency you did not control.",
+        "Senior candidate missed launch after infra deprioritized request",
+        "Only action was two escalations with no other attempts",
+        "Outcome: date missed, no alternative path created",
+        "Quote: \"I mostly waited for the escalation to land\"",
+        "Follow-up: Confirmed reliance on escalation rather than direct influence"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit for a senior. The candidate treated escalation as the primary lever and accepted the missed date once it failed. Follow-up response shows limited exploration of influence tactics such as joint planning or phased options. No evidence of cross-team coordination or metrics-driven persuasion expected at this level. The result was simply a slipped commitment rather than any recovered value. Biggest gap is lack of ownership beyond formal channels."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a critical vendor dependency that threatened a multi-quarter product bet. I ran a make-vs-buy analysis with finance and product, decided to build a thin internal abstraction layer, and re-sequenced two roadmaps so the team could deliver the customer-facing milestone on the original timeline while the vendor issue was resolved in parallel."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you accept on the roadmap?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deferred two non-critical features by one quarter and used that capacity for the abstraction; the net customer impact stayed neutral because we front-loaded the highest-value use case."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you delivered despite a dependency you did not control.",
+        "Exec candidate faced vendor risk on multi-quarter bet",
+        "Ran make-vs-buy, built thin internal layer, re-sequenced roadmaps",
+        "Outcome: customer milestone hit on time, vendor issue handled separately",
+        "Quote: \"re-sequenced two roadmaps so the team could deliver the customer-facing milestone\"",
+        "Follow-up: Explained deferring two features with neutral net customer impact"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit for an exec. The candidate made a strategic call under high ambiguity and protected a business-level outcome by creating an internal option. Quote on re-sequencing roadmaps shows long-term trade-off thinking rather than short-term heroics. Follow-up detail on neutral customer impact demonstrates disciplined prioritization. Scope and leverage match executive expectations. Biggest strength is converting an uncontrolled external dependency into controlled internal progress with clear business metrics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The vendor kept missing SLAs so we just kept pushing the launch and eventually had to reset expectations with customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What strategic options did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "We mostly tracked the vendor issues and hoped they would recover."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you delivered despite a dependency you did not control.",
+        "Exec candidate accepted repeated vendor SLA misses",
+        "Primary action was tracking issues and resetting customer expectations",
+        "Outcome: launch delayed with no alternative path created",
+        "Quote: \"We mostly tracked the vendor issues and hoped they would recover\"",
+        "Follow-up: Confirmed reliance on vendor recovery rather than internal options"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit for an exec. The candidate defaulted to passive tracking and eventual expectation reset instead of evaluating strategic alternatives. Follow-up response confirms absence of make-vs-buy or roadmap re-sequencing analysis. No evidence of long-term leverage or business-level trade-offs required at this level. The outcome was simply a delayed commitment with customer impact. Biggest gap is lack of proactive ownership over an org-level risk."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership when dependency slips",
+      "junior": "Builds local workaround after follow-up",
+      "senior": "Creates joint plan and phased delivery",
+      "exec": "Runs make-vs-buy and re-sequences roadmaps"
+    },
+    {
+      "signal": "Use of influence",
+      "junior": "Daily check-ins and offers to help",
+      "senior": "Revenue framing plus taking first ticket",
+      "exec": "Aligns finance/product on strategic option"
+    },
+    {
+      "signal": "Scope of result",
+      "junior": "Protects single feature timeline",
+      "senior": "Delivers cross-team slice on quarter goal",
+      "exec": "Protects multi-quarter business milestone"
+    },
+    {
+      "signal": "Response to failure of first attempt",
+      "junior": "Sends impact summary and gets partial data",
+      "senior": "Negotiates working group instead of escalating only",
+      "exec": "Evaluates internal build path instead of waiting"
+    },
+    {
+      "signal": "Evidence of metrics or trade-offs",
+      "junior": "Mentions on-time ship vs later integration",
+      "senior": "Uses revenue impact to drive priority",
+      "exec": "Shows neutral net customer impact after deferrals"
+    }
+  ],
+  "kind": "lp"
+}

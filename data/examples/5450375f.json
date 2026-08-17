@@ -1,0 +1,201 @@
+{
+  "question": "Tell me about the smallest valuable thing you shipped in order to get feedback.",
+  "principle": "Iteration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about the smallest valuable thing you shipped in order to get feedback."
+        },
+        {
+          "role": "candidate",
+          "text": "I was on a dashboard feature and noticed users were confused by the default sort. I added a one-line tooltip with the top three sort options and shipped it behind a flag to 5% of users."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn and what happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support tickets on sorting dropped 40% in that cohort. I rolled it to 100% the next week and added a follow-up filter based on the same feedback."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the smallest valuable thing you shipped in order to get feedback.",
+        "Candidate: added tooltip to dashboard sort after noticing confusion",
+        "Shipped to 5% cohort, support tickets down 40%",
+        "Quote: \"I rolled it to 100% the next week\"",
+        "Follow-up: What did you learn? Tickets dropped and added filter next."
+      ],
+      "raiseFeedback": "Raises the bar on Iteration. The candidate identified a narrow pain point, shipped a minimal change to a small cohort, and used the resulting data to decide next steps. The quote about rolling out after seeing the 40% drop shows they treated the release as an experiment rather than a final product. Scope stayed appropriately individual for a junior role while still closing the feedback loop quickly. The main strength is the clear before-and-after metric tied directly to the small ship.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about the smallest valuable thing you shipped in order to get feedback."
+        },
+        {
+          "role": "candidate",
+          "text": "I built a whole new reporting page because the team wanted better visibility. It took three weeks and we launched it to everyone."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you test anything smaller first?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just wanted to get it done and then fix issues after launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the smallest valuable thing you shipped in order to get feedback.",
+        "Candidate: built full reporting page over three weeks",
+        "Launched to 100% at once",
+        "Quote: \"we just wanted to get it done and then fix issues after launch\"",
+        "Follow-up: Did you test anything smaller? No, full build first."
+      ],
+      "lowerFeedback": "Lowers the bar on Iteration. The candidate chose a multi-week feature instead of a minimal slice and shipped it broadly without prior validation. The follow-up answer confirms they planned to iterate only after the big release rather than using a small ship to gather data first. This shows limited understanding of how to de-risk work through early feedback. The gap is treating iteration as post-launch cleanup instead of a way to validate direction early."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about the smallest valuable thing you shipped in order to get feedback."
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams were debating a new API contract. I proposed a thin proxy layer that only handled the top three endpoints and shipped it to one internal service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that influence the larger decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "Usage data showed the proxy handled 85% of calls with far less complexity. Both teams agreed on the simpler contract within two weeks and we deprecated the proxy."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the smallest valuable thing you shipped in order to get feedback.",
+        "Candidate: thin proxy for debated API contract to one service",
+        "85% of calls covered, teams aligned on simpler design",
+        "Quote: \"Both teams agreed on the simpler contract within two weeks\"",
+        "Follow-up: How did that influence the larger decision? Data drove alignment and deprecation."
+      ],
+      "raiseFeedback": "Raises the bar on Iteration. The candidate used a minimal proxy to resolve a cross-team disagreement with measurable usage data instead of prolonged discussion. The outcome of alignment in two weeks demonstrates influence without authority through a shipped artifact. Scope shows senior-level thinking by addressing ambiguity with the smallest possible experiment that still produced a decision. The strength is turning a stalled debate into a data-driven resolution quickly.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about the smallest valuable thing you shipped in order to get feedback."
+        },
+        {
+          "role": "candidate",
+          "text": "I led a six-month platform migration. We shipped in phases but the first phase was still a full quarter of work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there anything smaller you could have shipped earlier?"
+        },
+        {
+          "role": "candidate",
+          "text": "The teams involved needed the full context so we had to do the big pieces first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the smallest valuable thing you shipped in order to get feedback.",
+        "Candidate: six-month platform migration shipped in quarterly phases",
+        "First phase still required full quarter",
+        "Quote: \"The teams involved needed the full context so we had to do the big pieces first\"",
+        "Follow-up: Was there anything smaller? No, full context required upfront."
+      ],
+      "lowerFeedback": "Lowers the bar on Iteration. The candidate defaulted to large phases over three months instead of finding a narrow slice that could validate assumptions earlier. The follow-up response shows resistance to breaking the work down further due to perceived team needs. This misses the senior expectation of using small ships to create alignment and reduce risk across teams. The gap is prioritizing completeness over early feedback that could have informed the larger plan."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about the smallest valuable thing you shipped in order to get feedback."
+        },
+        {
+          "role": "candidate",
+          "text": "We were considering a major pricing change. I had the finance team expose a single new price point to 2% of customers via a hidden toggle and tracked churn and support volume for two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Churn stayed flat while revenue per user rose 6% in the test cohort. That single data point shifted the board discussion from debate to approval of a phased rollout."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the smallest valuable thing you shipped in order to get feedback.",
+        "Candidate: exposed one new price point to 2% of customers",
+        "Churn flat, revenue per user +6%",
+        "Quote: \"That single data point shifted the board discussion from debate to approval\"",
+        "Follow-up: What was the business outcome? Data enabled phased rollout approval."
+      ],
+      "raiseFeedback": "Raises the bar on Iteration. The candidate reduced a high-stakes strategic decision to a two-week experiment affecting only 2% of customers, producing a clear metric that changed board-level direction. This shows executive judgment in using minimal scope to resolve ambiguity at the business level. The outcome of moving from debate to phased approval illustrates leverage through data rather than heroics. The strength is strategic use of iteration to de-risk a company-wide change.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about the smallest valuable thing you shipped in order to get feedback."
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a full pricing study with consultants over four months and then launched the new model to the entire customer base."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you test any element of the pricing before the full study?"
+        },
+        {
+          "role": "candidate",
+          "text": "We felt the study needed to be comprehensive so we avoided partial tests that might have biased the results."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the smallest valuable thing you shipped in order to get feedback.",
+        "Candidate: four-month pricing study then full launch",
+        "No partial tests before comprehensive study",
+        "Quote: \"We felt the study needed to be comprehensive so we avoided partial tests\"",
+        "Follow-up: Did you test any element before? No, to avoid bias."
+      ],
+      "lowerFeedback": "Lowers the bar on Iteration. The candidate opted for a lengthy comprehensive study followed by a full launch instead of a narrow test that could have informed direction earlier. The follow-up answer reveals a preference for completeness over early signals, which is the opposite of executive-level iteration under ambiguity. This approach delayed learning and increased risk at the business level. The gap is missing the opportunity to use small ships for strategic validation."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of the shipped item",
+      "junior": "Single UI element to 5% users",
+      "senior": "Thin proxy resolving cross-team API debate",
+      "exec": "One price point to 2% customers shifting board decision"
+    },
+    {
+      "signal": "Speed of feedback loop",
+      "junior": "One week from ship to rollout",
+      "senior": "Two weeks to team alignment and deprecation",
+      "exec": "Two weeks to board approval for phased rollout"
+    },
+    {
+      "signal": "Use of data to decide next step",
+      "junior": "40% ticket drop drove 100% release",
+      "senior": "85% call coverage drove simpler contract",
+      "exec": "Flat churn +6% RPU drove rollout approval"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Addressed user confusion on sort",
+      "senior": "Resolved stalled API debate between teams",
+      "exec": "Moved pricing debate from discussion to decision"
+    },
+    {
+      "signal": "Evidence of raising bar on iteration",
+      "junior": "Learned and added follow-up filter",
+      "senior": "Influenced two teams without authority",
+      "exec": "Used minimal test to de-risk org-level change"
+    }
+  ],
+  "kind": "value"
+}

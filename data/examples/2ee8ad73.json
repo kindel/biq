@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about someone you developed. What did you actually do?",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I worked with a new hire on my team who was struggling with our testing framework. I set up weekly 1:1s, walked through examples from our codebase, and reviewed their first two PRs in detail."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for them over time?"
+        },
+        {
+          "role": "candidate",
+          "text": "After six weeks their PR cycle time dropped from two days to a few hours and they started mentoring the next intern. I still check in with them monthly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about someone you developed. What did you actually do?",
+        "Role: helped new hire on testing framework via weekly 1:1s and PR reviews",
+        "Situation: new hire struggling with cycle time",
+        "Actions: concrete sessions + ongoing check-ins",
+        "Outcome: PR time dropped, new hire now mentors intern",
+        "Quote: \"I still check in with them monthly\"",
+        "Follow-up: What changed for them over time? -> six-week improvement and sustained contact"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Principle is Hire and Develop the Best. Story centers on a new hire struggling with the testing framework; candidate ran weekly 1:1s and detailed PR reviews. Quote: \"I still check in with them monthly.\" This shows ownership of individual development work and follow-through beyond the initial task. It meets the bar because the scope stays local yet demonstrates coachability and measurable local impact. Biggest strength is the sustained check-in habit rather than one-off help.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once gave a teammate some tips on how to write better commit messages after they asked."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just moved on to the next ticket."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about someone you developed. What did you actually do?",
+        "Role: gave one-off tips on commit messages",
+        "Situation: teammate asked for advice",
+        "Actions: shared tips once",
+        "Outcome: no follow-up or visible change",
+        "Quote: \"we just moved on to the next ticket\"",
+        "Follow-up: Did anything change after that? -> no measurable outcome"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Principle is Hire and Develop the Best. Story reduces to giving commit-message tips once when asked. Quote: \"we just moved on to the next ticket.\" This shows no ownership or repeated investment. It lowers because even at junior level the expectation is some evidence of deliberate help and learning from the interaction. Biggest gap is absence of any follow-up or outcome tracking."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I mentored a mid-level engineer on another team who wanted to move into platform work. We created a six-month plan with stretch projects, bi-weekly reviews, and I connected them to two skip-level stakeholders."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They led their first platform migration and were promoted six months later. Two other engineers on their team later asked for similar coaching."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about someone you developed. What did you actually do?",
+        "Role: mentored cross-team mid-level engineer on platform track",
+        "Situation: wanted stretch into platform work",
+        "Actions: six-month plan, bi-weekly reviews, stakeholder intros",
+        "Outcome: led migration, promoted, two others sought coaching",
+        "Quote: \"Two other engineers on their team later asked for similar coaching\"",
+        "Follow-up: What was the result? -> promotion and organic spread"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Principle is Hire and Develop the Best. Story describes a cross-team mid-level engineer; candidate built a six-month plan with bi-weekly reviews and stakeholder connections. Quote: \"Two other engineers on their team later asked for similar coaching.\" This shows influence without authority and measurable raise-the-bar effect. It meets senior expectations because impact extended beyond one person. Biggest strength is the organic spread of coaching requests.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I gave career advice to someone on my team who was thinking about leaving."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they stay or grow?"
+        },
+        {
+          "role": "candidate",
+          "text": "They ended up transferring to another team but I didn't track what happened after."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about someone you developed. What did you actually do?",
+        "Role: gave career advice to team member considering exit",
+        "Situation: retention risk",
+        "Actions: one conversation on career options",
+        "Outcome: transfer occurred with no follow-up",
+        "Quote: \"I didn't track what happened after\"",
+        "Follow-up: Did they stay or grow? -> no visibility into result"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Principle is Hire and Develop the Best. Story reduces to one career-advice conversation with a retention-risk teammate. Quote: \"I didn't track what happened after.\" This shows no structured investment or cross-team leverage. It lowers because senior-level development requires evidence of sustained plans and visible outcomes. Biggest gap is lack of any plan or measured follow-through."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I launched a high-potential leadership program for 12 directors across two orgs. We paired them with exec sponsors, ran quarterly business reviews, and tracked promotion rates."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Eight of the twelve were promoted within 18 months and three moved into roles that reduced our external hire spend by 40 percent in those bands."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about someone you developed. What did you actually do?",
+        "Role: built org-level high-potential program for 12 directors",
+        "Situation: need for internal leadership pipeline",
+        "Actions: exec sponsors, quarterly reviews, tracked promotions",
+        "Outcome: 8/12 promoted, 40% reduction in external hires",
+        "Quote: \"three moved into roles that reduced our external hire spend by 40 percent\"",
+        "Follow-up: What was the business impact? -> quantified pipeline and cost savings"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Principle is Hire and Develop the Best. Story describes launching a high-potential program for 12 directors with exec sponsors and quarterly reviews. Quote: \"three moved into roles that reduced our external hire spend by 40 percent.\" This demonstrates strategic leverage and org-level trade-offs. It meets exec expectations because development produced measurable business outcomes. Biggest strength is tying people development directly to reduced external spend.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I encouraged my directs to spend time mentoring their teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that play out at scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "I don't have specific numbers but I think a few people got promoted."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about someone you developed. What did you actually do?",
+        "Role: told directs to mentor their teams",
+        "Situation: general leadership expectation",
+        "Actions: verbal encouragement only",
+        "Outcome: vague belief that some promotions happened",
+        "Quote: \"I don't have specific numbers but I think a few people got promoted\"",
+        "Follow-up: How did that play out at scale? -> no metrics or visibility"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Principle is Hire and Develop the Best. Story reduces to telling directs to mentor their teams. Quote: \"I don't have specific numbers but I think a few people got promoted.\" This shows no strategic program or accountability. It lowers because exec-level development requires building scalable mechanisms with clear outcomes. Biggest gap is absence of any program design or tracked results."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of investment",
+      "junior": "Weekly 1:1s and PR reviews vs one-off tips",
+      "senior": "Six-month plan with bi-weekly reviews vs single conversation",
+      "exec": "Formal program with sponsors and quarterly reviews vs verbal encouragement"
+    },
+    {
+      "signal": "Cross-boundary impact",
+      "junior": "Local to own team",
+      "senior": "Cross-team with stakeholder intros",
+      "exec": "Two-org program affecting hiring spend"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "PR cycle time drop and sustained check-ins",
+      "senior": "Promotion plus organic coaching requests",
+      "exec": "8/12 promoted and 40% external-hire reduction"
+    },
+    {
+      "signal": "Follow-through habit",
+      "junior": "Still checking in monthly",
+      "senior": "Tracked promotion and spread",
+      "exec": "Tracked pipeline metrics over 18 months"
+    },
+    {
+      "signal": "Scope of ambition",
+      "junior": "Helping one new hire",
+      "senior": "Moving one person across teams",
+      "exec": "Building repeatable leadership pipeline"
+    }
+  ],
+  "kind": "lp"
+}

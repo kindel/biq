@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+  "principle": "Transparency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After a code review on a new feature flag, I wrote a short decision log in the wiki explaining why we chose the default value and rollout criteria so the on-call team could handle incidents without me."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you include exactly?"
+        },
+        {
+          "role": "candidate",
+          "text": "The trade-off on performance vs safety, the rollback steps, and who to ping if it went wrong. Two engineers used it the next week."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+        "Role: junior dev on feature flag rollout",
+        "Situation: post-review, wrote wiki entry with defaults, trade-offs, rollback",
+        "Action: included performance/safety reasoning and escalation path",
+        "Outcome: on-call used it twice without needing clarification",
+        "Quote: 'Two engineers used it the next week.'",
+        "Follow-up: What did you include exactly? -> detailed the trade-off and steps"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency for the question. Junior candidate documented a feature-flag default decision in the wiki with trade-offs, rollback steps, and escalation so on-call engineers could act independently. Quote: 'Two engineers used it the next week.' This shows ownership of making individual work reusable by others. The detail level matches junior scope while demonstrating coachability through written artifacts rather than verbal handoff. Biggest strength is the concrete, low-scope artifact that reduced follow-up questions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the team in standup what we decided on the flag default."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did people who missed standup know what to do?"
+        },
+        {
+          "role": "candidate",
+          "text": "They could ask me or check the PR comments."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+        "Role: junior dev",
+        "Situation: flag default decision shared in standup",
+        "Action: verbal update only",
+        "Outcome: relied on PR comments or direct asks",
+        "Quote: 'They could ask me or check the PR comments.'",
+        "Follow-up: How did people who missed standup know what to do? -> no written decision record"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency for the question. Junior candidate shared the flag default only verbally in standup and pointed to PR comments for anyone absent. Quote: 'They could ask me or check the PR comments.' No durable written decision exists for people outside the room. This keeps scope individual but fails to make the reasoning reusable. Biggest gap is absence of any artifact that allows independent action."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After a cross-team API change, I wrote a one-pager on the deprecation timeline and migration steps, posted it to the shared doc site, and linked it from the service catalog so other teams could plan without attending our syncs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What feedback did you get?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams adjusted their roadmaps early; one asked for an extension which we granted based on the documented criteria."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+        "Role: senior on cross-team API deprecation",
+        "Situation: wrote one-pager on timeline and migration",
+        "Action: posted to doc site and service catalog",
+        "Outcome: two teams adjusted roadmaps; one extension request handled via criteria",
+        "Quote: 'Two teams adjusted their roadmaps early.'",
+        "Follow-up: What feedback did you get? -> measurable downstream planning"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency for the question. Senior candidate produced a one-pager on API deprecation timeline and migration steps, published to the service catalog so absent teams could act. Quote: 'Two teams adjusted their roadmaps early.' Shows influence across teams through written artifacts. The outcome demonstrates reduced coordination overhead. Biggest strength is the measurable cross-team impact from a documented decision rather than meetings.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent an email to the affected teams about the API change timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did teams outside the original group use it to plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple replied with questions, so I answered in the thread."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+        "Role: senior",
+        "Situation: API change shared via email",
+        "Action: one-time email",
+        "Outcome: questions answered in thread",
+        "Quote: 'A couple replied with questions, so I answered in the thread.'",
+        "Follow-up: Did teams outside the original group use it to plan? -> no evidence of independent action"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency for the question. Senior candidate sent a single email on API timeline and handled questions in the thread. Quote: 'A couple replied with questions, so I answered in the thread.' No persistent, findable record exists for future teams. This shows cross-team intent but lacks the durable artifact needed for influence without authority. Biggest gap is reliance on synchronous or threaded follow-up instead of a reusable decision document."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After deciding to sunset a product line, I wrote a memo covering the business rationale, customer migration plan, and 18-month timeline, then posted it to the company wiki and presented the link at the all-hands so every org could align their plans."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it affect long-term decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "Three divisions reallocated headcount based on the published criteria; we avoided two redundant investment proposals."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+        "Role: exec on product sunsetting",
+        "Situation: wrote memo with rationale, migration, timeline",
+        "Action: published to wiki and referenced at all-hands",
+        "Outcome: three divisions reallocated headcount; avoided redundant proposals",
+        "Quote: 'Three divisions reallocated headcount based on the published criteria.'",
+        "Follow-up: How did it affect long-term decisions? -> org-level resource shifts"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency for the question. Exec candidate authored a memo on product sunsetting with rationale, migration plan, and timeline, published to the wiki and referenced company-wide. Quote: 'Three divisions reallocated headcount based on the published criteria.' Demonstrates strategic judgment through a written artifact that enabled org-level trade-offs. The result shows leverage by preventing misaligned investments. Biggest strength is the long-term, high-ambiguity impact from a single documented decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I announced the product sunsetting in the quarterly business review."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did other orgs use the information to make decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "They came to me with questions afterward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a decision you wrote down so that people who were not in the room could act on it.",
+        "Role: exec",
+        "Situation: sunsetting announced in QBR",
+        "Action: verbal presentation only",
+        "Outcome: questions routed back to leader",
+        "Quote: 'They came to me with questions afterward.'",
+        "Follow-up: How did other orgs use the information to make decisions? -> no written record for independent planning"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency for the question. Exec candidate announced product sunsetting only in the QBR and fielded follow-up questions directly. Quote: 'They came to me with questions afterward.' No durable written decision exists for absent or future stakeholders. This keeps impact dependent on the leader rather than enabling org-wide leverage. Biggest gap is absence of a strategic artifact that supports long-term alignment without repeated clarification."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Written artifact created",
+      "junior": "Short wiki entry on flag default",
+      "senior": "One-pager on API deprecation in service catalog",
+      "exec": "Memo on product sunsetting in company wiki"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual team on-call reuse",
+      "senior": "Cross-team roadmap adjustments",
+      "exec": "Org-level headcount and investment shifts"
+    },
+    {
+      "signal": "Independent action enabled",
+      "junior": "Two engineers acted without clarification",
+      "senior": "Teams planned migrations without attending syncs",
+      "exec": "Divisions reallocated resources using published criteria"
+    },
+    {
+      "signal": "Follow-up reduced",
+      "junior": "No escalation needed for incidents",
+      "senior": "Extension request handled via documented rules",
+      "exec": "Avoided two redundant investment proposals"
+    },
+    {
+      "signal": "Findability",
+      "junior": "Wiki page linked from feature",
+      "senior": "Posted to service catalog",
+      "exec": "Referenced at all-hands with wiki link"
+    }
+  ],
+  "kind": "value"
+}

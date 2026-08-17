@@ -1,0 +1,191 @@
+{
+  "question": "Tell me about a time you could have used your title to win an argument. What did you do?",
+  "principle": "Stay Humble",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was a new SWE on a small team and we were debating whether to refactor a module or just patch the bug. I had just been promoted from intern so my title was still junior engineer, but the team lead was pushing for the quick fix. I could have said 'as the one who owns this code now' but instead I pulled the data from the last three incidents and asked what the others thought."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "We went with the refactor after two other engineers agreed the long-term cost was higher. The bug came back once more but was fixed cleanly after that."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about not using your ownership title?"
+        },
+        {
+          "role": "candidate",
+          "text": "A little nervous at first because I wanted to show I could lead, but it felt better when the decision was actually stronger because everyone bought in."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you could have used your title to win an argument. What did you do?",
+        "Role: new SWE on small team, bug vs refactor debate",
+        "Actions: chose data + open question instead of 'I own this now'",
+        "Outcome: team picked refactor, one more incident then clean fix",
+        "Quote: 'it felt better when the decision was actually stronger because everyone bought in'",
+        "Follow-up: Asked how they felt not using title; candidate admitted nerves but valued the result"
+      ],
+      "raiseFeedback": "The story stays within individual scope and shows the candidate chose not to lean on their new title. They described pulling incident data and asking for input instead of declaring ownership. The outcome was a team decision that held up after one more incident. This matches Stay Humble because the candidate explicitly weighed the option to use title and rejected it for a better process. The follow-up revealed self-awareness about initial nerves without claiming credit for the win. Biggest gap is lack of any cross-team element, which is acceptable at junior level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Once I had the title I told the other engineer we were doing it my way because I was now responsible for the module."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back a bit but we went with my approach. It worked okay but they stopped bringing ideas after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you could have used your title to win an argument. What did you do?",
+        "Candidate described directly invoking new title to end debate",
+        "Actions: told peer 'we are doing it my way because I own it now'",
+        "Outcome: short-term compliance, teammate disengaged afterward",
+        "Quote: 'they stopped bringing ideas after that'",
+        "Follow-up: Asked about result; candidate noted it 'worked okay' without addressing the disengagement"
+      ],
+      "lowerFeedback": "The candidate used their title explicitly to close the discussion rather than engaging the other engineer's input. They reported compliance but teammate withdrawal, which shows the cost of the approach. The principle Stay Humble is directly violated by choosing authority over merit. The candidate framed the result as acceptable without reflecting on the side effect. At junior level this signals limited coachability on collaborative norms. Biggest gap is absence of any alternative considered."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As the senior on two teams I was in a roadmap argument where my title could have ended it. Instead I asked the other team to walk through their constraints and we mapped both options on a whiteboard."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after you did that?"
+        },
+        {
+          "role": "candidate",
+          "text": "The other team surfaced a dependency we had missed. We adjusted the plan and both teams signed off without me having to escalate."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you could have used your title to win an argument. What did you do?",
+        "Role: senior across two teams, roadmap conflict",
+        "Actions: invited constraints walkthrough and joint whiteboard instead of title",
+        "Outcome: missed dependency found, joint sign-off without escalation",
+        "Quote: 'we adjusted the plan and both teams signed off without me having to escalate'",
+        "Follow-up: Asked what changed; candidate highlighted the dependency discovery"
+      ],
+      "raiseFeedback": "The candidate described a cross-team roadmap dispute where their senior title could have forced a decision. They instead ran a joint constraints session that surfaced a missed dependency. Both teams reached agreement without escalation. This demonstrates Stay Humble through deliberate choice to use process over authority. The outcome shows measurable influence without authority. Biggest strength is the explicit contrast between the easy title path and the chosen path.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was the senior so I told the other team we had already decided and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they accept that?"
+        },
+        {
+          "role": "candidate",
+          "text": "They complained to their manager but we shipped on time so it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you could have used your title to win an argument. What did you do?",
+        "Candidate invoked senior title to declare decision final",
+        "Actions: stated 'we had already decided' and moved on",
+        "Outcome: other team escalated to their manager, shipped anyway",
+        "Quote: 'they complained to their manager but we shipped on time so it was fine'",
+        "Follow-up: Asked if they accepted it; candidate focused only on on-time metric"
+      ],
+      "lowerFeedback": "The candidate chose to close the argument with their senior title rather than engage the other team's input. The other team escalated, indicating damaged trust. The candidate judged success solely by the on-time shipment metric. This directly contradicts Stay Humble by preferring authority over collaboration. At senior level the lack of any attempt to influence without authority is a clear gap. Biggest gap is treating escalation as acceptable collateral damage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As VP I sat in a planning meeting where two directors were deadlocked on org structure. My title could have settled it instantly. I asked each to present their model to the room and then stepped out for twenty minutes so the group could debate without me."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They landed on a hybrid that neither had proposed. I endorsed it and we re-orged once instead of twice."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you could have used your title to win an argument. What did you do?",
+        "Role: VP in director-level org structure deadlock",
+        "Actions: had both present then left the room to remove title pressure",
+        "Outcome: hybrid model emerged, single re-org instead of two",
+        "Quote: 'I endorsed it and we re-orged once instead of twice'",
+        "Follow-up: Asked result; candidate noted the hybrid solution and reduced churn"
+      ],
+      "raiseFeedback": "The candidate faced an org-structure deadlock at director level where their VP title could have ended discussion. They structured the meeting to surface both models then removed themselves so the group could decide without authority bias. The resulting hybrid avoided a second re-org. This shows Stay Humble at executive scope by trading short-term control for long-term organizational clarity. The decision leveraged the room rather than the title. Biggest strength is the deliberate step of leaving the room as a repeatable mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was the VP so I made the call on the org structure and told them to align."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the directors respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "One of them left six months later but the structure held for the quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you could have used your title to win an argument. What did you do?",
+        "Candidate used VP title to dictate org structure",
+        "Actions: made the call and directed alignment",
+        "Outcome: one director exited after six months, structure lasted one quarter",
+        "Quote: 'one of them left six months later but the structure held for the quarter'",
+        "Follow-up: Asked about director response; candidate noted departure but defended short-term stability"
+      ],
+      "lowerFeedback": "The candidate resolved the org deadlock by invoking VP authority rather than facilitating a durable decision. One director departed six months later, indicating downstream cost. The candidate measured success only by the structure lasting a quarter. This violates Stay Humble at the executive level where the expectation is to build systems that outlast personal authority. The story shows no attempt to create conditions for the team to own the outcome. Biggest gap is acceptance of talent loss as a neutral side effect."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Choice to forgo title",
+      "junior": "Explicitly weighed 'I own this' option then chose data",
+      "senior": "Ran joint session instead of declaring decision",
+      "exec": "Left the room to remove authority bias"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single module decision within team",
+      "senior": "Cross-team roadmap with no escalation",
+      "exec": "Org structure affecting multiple directors"
+    },
+    {
+      "signal": "Reflection on alternative",
+      "junior": "Admitted initial nerves about not leading visibly",
+      "senior": "Named the dependency that would have been missed",
+      "exec": "Noted single re-org versus repeated churn"
+    },
+    {
+      "signal": "Handling of resistance",
+      "junior": "Team converged after input",
+      "senior": "Both teams signed off jointly",
+      "exec": "Group produced hybrid model"
+    },
+    {
+      "signal": "Metric used",
+      "junior": "One more incident then clean fix",
+      "senior": "No escalation required",
+      "exec": "Re-org once instead of twice"
+    }
+  ],
+  "kind": "lp"
+}

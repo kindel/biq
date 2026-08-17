@@ -1,0 +1,185 @@
+{
+  "question": "Tell me about a time you committed fully to a decision you had argued against.",
+  "principle": "Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first team project we debated using a simpler ORM versus writing raw queries. I pushed for the ORM to ship faster but the team chose raw queries for performance."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stopped arguing, paired with the senior dev to learn the query patterns, and owned the migration script. We hit the deadline and I documented the approach for the next intern."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it feel to switch?"
+        },
+        {
+          "role": "candidate",
+          "text": "Frustrating at first but once I owned the work the results spoke for themselves."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you committed fully to a decision you had argued against.",
+        "Situation: First internship project, ORM vs raw SQL debate",
+        "Action: Stopped pushing, paired to learn, owned migration script",
+        "Outcome: Hit deadline, created doc for future interns",
+        "Quote: 'Once I owned the work the results spoke for themselves'",
+        "Follow-up: Asked how it felt to switch; candidate described initial frustration then focus on delivery"
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit for a junior. The candidate described arguing for the ORM then immediately shifting to full ownership of the raw-query path without lingering resistance. The concrete action of pairing and producing documentation shows coachability and local ownership. The quote about results speaking for themselves illustrates the principle in action rather than lip service. The story stays within individual scope which is appropriate for 0-2 years. Biggest strength is the clean handoff from disagreement to execution without needing further prompting.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We disagreed on using a new framework. I said it would be risky but the lead decided to go ahead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you end up supporting the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I did the tasks assigned but I still thought it was a bad call and mentioned that in standups a few times."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you committed fully to a decision you had argued against.",
+        "Situation: Framework choice on small project",
+        "Action: Completed assigned tasks but continued voicing doubts in standups",
+        "Outcome: Not stated; focus remained on original disagreement",
+        "Quote: 'I still thought it was a bad call'",
+        "Follow-up: Probe on support; candidate described continued public skepticism"
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit. The candidate completed tasks yet kept restating their original position in meetings, showing incomplete commitment. No evidence of shifting energy to making the chosen path succeed. The story remains at the level of individual preference rather than demonstrating ownership after the decision. The repeated voicing of doubts is the clearest signal of the gap. Biggest gap is lack of any action that shows they moved past the argument."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams disagreed on API versioning strategy. I advocated for semantic versioning but the broader group chose date-based. After the call I took the lead on updating our service catalog and migration guides."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence adoption?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran two cross-team workshops to walk through the date-based approach and collected feedback that improved the rollout plan. Three teams adopted early because of the extra docs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you committed fully to a decision you had argued against.",
+        "Situation: Platform API versioning debate across two teams",
+        "Action: After loss, led catalog updates and ran adoption workshops",
+        "Outcome: Improved rollout plan; three teams adopted early",
+        "Quote: 'I ran two cross-team workshops'",
+        "Follow-up: How influence happened; candidate described concrete workshops and early adopters"
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit at senior level. The candidate moved from advocating semantic versioning to driving adoption through workshops and documentation that helped other teams. Cross-team scope and measurable early adoption show influence without authority. The decision to improve the chosen path rather than undermine it aligns directly with the principle. Story includes clear metrics on adoption. Biggest strength is turning personal disagreement into leverage for the wider org.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a debate on service ownership boundaries. I preferred a different split but the director chose the other model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I updated my team's charter as required but I didn't push the new model with partner teams because I still had concerns."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you committed fully to a decision you had argued against.",
+        "Situation: Service ownership boundary decision",
+        "Action: Updated own charter but withheld advocacy from partners",
+        "Outcome: Minimal cross-team movement",
+        "Quote: 'I didn't push the new model with partner teams'",
+        "Follow-up: Asked about next steps; candidate admitted withholding support"
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit for a senior. The candidate performed the minimum required update but chose not to advocate the decision to partner teams. This shows compliance rather than commitment and limits cross-team impact. The withheld advocacy is the key signal that the principle was not followed. Story stays narrow to own team despite the decision having broader implications. Biggest gap is absence of any action to make the chosen model succeed outside their immediate scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The exec team debated entering a new vertical. I argued against due to margin risk but the CEO decided to proceed. I then re-allocated two product teams and personally sponsored the GTM plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paused two other bets and moved headcount, accepting a six-month delay on the core roadmap. We hit $4M ARR in the new vertical within nine months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you committed fully to a decision you had argued against.",
+        "Situation: Strategic vertical expansion decision at exec level",
+        "Action: Re-allocated teams, sponsored GTM, accepted roadmap delay",
+        "Outcome: $4M ARR in nine months despite original concerns",
+        "Quote: 'I paused two other bets and moved headcount'",
+        "Follow-up: Trade-offs discussed; candidate described explicit six-month delay and resulting revenue"
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit at exec level. The candidate described arguing against the vertical entry then making concrete resource trade-offs including pausing other bets to ensure success. Org-level scope and willingness to accept a six-month core roadmap delay demonstrate strategic judgment and long-term thinking. The $4M ARR outcome provides a clear metric tied to the commitment. Story shows leverage through reallocation rather than heroics. Biggest strength is the explicit acceptance of personal and organizational cost to honor the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We debated a major re-org. I recommended against it but the decision went forward."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you support execution?"
+        },
+        {
+          "role": "candidate",
+          "text": "I communicated the change but kept my original concerns on the table during leadership offsites for the next two quarters."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you committed fully to a decision you had argued against.",
+        "Situation: Company re-org debate",
+        "Action: Communicated change while continuing to surface original concerns in offsites",
+        "Outcome: Prolonged internal debate",
+        "Quote: 'kept my original concerns on the table during leadership offsites for the next two quarters'",
+        "Follow-up: Asked about support; candidate described ongoing advocacy of prior position"
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit at exec level. The candidate communicated the re-org but kept raising the original objections in leadership settings for months afterward. This sustained dissent at the highest level undermines alignment and shows failure to commit. The story lacks any evidence of resource trade-offs or strategic pivots to make the decision work. Prolonged internal debate is the direct result. Biggest gap is the absence of any action that demonstrates the candidate accepted and advanced the chosen path."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Moves from argument to ownership after decision",
+      "junior": "Raises: paired to learn and delivered doc",
+      "senior": "Raises: ran workshops that drove cross-team adoption",
+      "exec": "Raises: re-allocated teams and accepted roadmap delay"
+    },
+    {
+      "signal": "Stops restating disagreement publicly",
+      "junior": "Raises: quote shows focus shifted to results",
+      "senior": "Raises: no mention of continued advocacy for lost position",
+      "exec": "Raises: no ongoing objections in leadership settings"
+    },
+    {
+      "signal": "Produces measurable follow-through",
+      "junior": "Raises: hit deadline with new artifacts",
+      "senior": "Raises: three teams adopted early",
+      "exec": "Raises: $4M ARR outcome tied to commitment"
+    },
+    {
+      "signal": "Scope matches level",
+      "junior": "Individual project tasks",
+      "senior": "Cross-team workshops and influence",
+      "exec": "Org resource trade-offs and multi-quarter bets"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,213 @@
+{
+  "question": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+  "principle": "Own It",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project I was asked to patch a flaky test suite so we could ship on time. I pushed to rewrite the core test harness instead even though it meant missing the original deadline by two weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you raised it?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager was worried about the delay. I showed the data on how often the flakiness was blocking other devs and we agreed to do the rewrite in a branch. It cut our CI failures by 70 percent and the team still hits the quarterly goals now."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+        "Role: new engineer on first team project",
+        "Situation: asked to patch flaky tests to ship",
+        "Action: proposed full harness rewrite, showed data to manager",
+        "Outcome: 70% drop in CI failures, team still met later goals",
+        "Quote: \"I showed the data on how often the flakiness was blocking other devs\"",
+        "Follow-up: What happened after you raised it? -> Manager agreed after seeing data"
+      ],
+      "raiseFeedback": "The candidate owned a local quality issue by trading a short-term ship date for a longer-term reduction in team friction. They used data to influence their manager rather than just escalating. The story stays within individual scope and shows they accepted the two-week delay as their responsibility. It demonstrates coachability when the manager pushed back. The outcome metric is credible for a junior role. Biggest gap is lack of evidence they drove the rewrite themselves versus just proposing it.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter."
+        },
+        {
+          "role": "candidate",
+          "text": "My lead told me to just add a workaround so we could close the ticket. I did it even though I knew it would cause problems later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you say anything about the long-term cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once in standup but the team was under pressure so I moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+        "Role: junior engineer",
+        "Situation: asked for quick workaround on known tech debt",
+        "Action: implemented the workaround after one mention in standup",
+        "Outcome: ticket closed on time, no follow-up on debt",
+        "Quote: \"I mentioned it once in standup but the team was under pressure so I moved on\"",
+        "Follow-up: Did you say anything about the long-term cost? -> One comment, then dropped it"
+      ],
+      "lowerFeedback": "The candidate defaulted to the short-term fix and only voiced the concern once without ownership. They did not take steps to quantify the future cost or propose an alternative path. The story shows they treated the decision as someone else's call. No evidence of learning or follow-up after the fact. This lowers the bar on Own It because the candidate did not own the outcome beyond the immediate ticket."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter."
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams needed the same new service. The other team wanted a minimal shared library we could ship in six weeks. I argued for a proper platform service with clear ownership even though it would take four months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week prototype and showed the support burden numbers from similar past shortcuts. We aligned on the longer timeline and I took the on-call rotation for the first six months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+        "Role: senior engineer influencing adjacent team",
+        "Situation: pressure for quick shared library vs durable platform service",
+        "Action: built prototype, surfaced support cost data, took initial on-call",
+        "Outcome: four-month build, reduced future support load across teams",
+        "Quote: \"I ran a two-week prototype and showed the support burden numbers\"",
+        "Follow-up: How did you get the other team to agree? -> Prototype plus data plus personal ownership of on-call"
+      ],
+      "raiseFeedback": "The candidate took ownership of a cross-team decision by investing personal time in a prototype and on-call. They used concrete past data to move the conversation from speed to sustainability. The story shows influence without authority and a willingness to absorb short-term pain. Scope is appropriate for senior level with measurable downstream impact. The biggest strength is the candidate personally owning the on-call rotation rather than delegating it.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter."
+        },
+        {
+          "role": "candidate",
+          "text": "We needed to pick between a fast integration and a cleaner shared component. I voted for the cleaner one in the design doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after the vote?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team went with the fast path anyway. I moved on to my next project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+        "Role: senior engineer in design review",
+        "Situation: fast integration vs cleaner shared component",
+        "Action: wrote a vote in the design doc",
+        "Outcome: team chose fast path, candidate moved on",
+        "Quote: \"The team went with the fast path anyway. I moved on to my next project.\"",
+        "Follow-up: What changed after the vote? -> Accepted outcome and disengaged"
+      ],
+      "lowerFeedback": "The candidate expressed a preference but did not own driving the better long-term choice once the team decided otherwise. There is no evidence of follow-through or personal investment to change the outcome. The story stays at the level of opinion rather than ownership. Scope is limited to one design doc with no cross-team leverage shown. This lowers the bar because the candidate treated the decision as final once their vote lost."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a chance to land a large enterprise deal that would have hit this quarter's target but required us to deprioritize the self-serve product. I chose to pass on the deal and double down on self-serve even though it meant missing the number."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the revenue pressure?"
+        },
+        {
+          "role": "candidate",
+          "text": "I laid out the unit economics showing self-serve would scale to three times the revenue in 18 months and took the miss in the quarterly forecast. We re-forecasted with the board and I personally briefed the sales team on the new priority."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+        "Role: exec choosing between enterprise deal and self-serve roadmap",
+        "Situation: large deal would hit quarter but derail self-serve focus",
+        "Action: passed on deal, showed unit economics to board, briefed sales",
+        "Outcome: missed quarter but self-serve scaled as projected",
+        "Quote: \"I laid out the unit economics showing self-serve would scale to three times the revenue in 18 months\"",
+        "Follow-up: How did you handle the revenue pressure? -> Took the miss publicly and aligned sales"
+      ],
+      "raiseFeedback": "The candidate owned a high-stakes trade-off that affected both the current quarter and the company's direction. They used unit economics to justify the decision to the board and absorbed the personal accountability for the miss. The story demonstrates strategic judgment and the willingness to reset expectations across sales and finance. Scope is org-level with clear long-term leverage. The single biggest strength is the candidate personally owning the re-forecast and sales briefing instead of delegating the communication.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose the option that was right in two years over the one that was right this quarter."
+        },
+        {
+          "role": "candidate",
+          "text": "We had competing asks from sales and product. I asked the teams to work it out and supported whatever they decided."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final call and your role in it?"
+        },
+        {
+          "role": "candidate",
+          "text": "They picked the short-term path. I noted it in the OKR review."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the option that was right in two years over the one that was right this quarter.",
+        "Role: exec overseeing sales and product tension",
+        "Situation: competing asks between short-term revenue and long-term product",
+        "Action: asked teams to work it out and supported their decision",
+        "Outcome: short-term path chosen, noted in OKR review",
+        "Quote: \"They picked the short-term path. I noted it in the OKR review.\"",
+        "Follow-up: What was the final call and your role in it? -> Delegated and recorded outcome"
+      ],
+      "lowerFeedback": "The candidate delegated the trade-off without providing direction or owning the long-term consequences. They recorded the decision but did not shape or defend the better path. The story shows no evidence of strategic framing or willingness to take a miss to protect the two-year outcome. Scope appears reactive rather than proactive. This lowers the bar on Own It at the exec level because the leader did not set the direction or absorb accountability for the choice."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual task or small feature",
+      "senior": "Cross-team service or component",
+      "exec": "Business or org-level trade-off with board visibility"
+    },
+    {
+      "signal": "Personal ownership shown",
+      "junior": "Took extra work and accepted delay",
+      "senior": "Built prototype and took on-call",
+      "exec": "Took revenue miss and briefed sales/board"
+    },
+    {
+      "signal": "Use of data to influence",
+      "junior": "Showed CI failure stats to manager",
+      "senior": "Prototype plus historical support burden",
+      "exec": "Unit economics presented to board"
+    },
+    {
+      "signal": "Handling of pushback",
+      "junior": "Agreed to branch after manager discussion",
+      "senior": "Aligned other team via data and personal commitment",
+      "exec": "Reset forecast publicly and aligned sales"
+    },
+    {
+      "signal": "Evidence of long-term outcome",
+      "junior": "70% CI failure drop",
+      "senior": "Reduced future support load across teams",
+      "exec": "Self-serve scaled to 3x revenue in 18 months"
+    }
+  ],
+  "kind": "lp"
+}

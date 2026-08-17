@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a problem you found only because you went into the details yourself.",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a latency spike in our checkout service and noticed one endpoint was slower than the others even after the obvious fixes. I pulled the logs myself and traced it to a single database query that was missing an index on a new filter column we added last sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added the index in a small PR, latency dropped 40ms on that path, and I updated the onboarding doc so the team checks indexes on new filters. My manager later used it as an example in our retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you found only because you went into the details yourself.",
+        "Role: Junior dev on checkout team, individual task to fix latency.",
+        "Situation: Latency spike after recent change; surface metrics looked fine.",
+        "Actions: Pulled raw logs, found missing index on new column, shipped fix and doc update.",
+        "Outcome: 40ms improvement; used as retro example.",
+        "Quote: \"I pulled the logs myself and traced it to a single database query.\"",
+        "Follow-up: Asked what happened next; candidate described PR and doc update."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at the junior level. The candidate owned an individual task and chose to inspect logs rather than stop at the initial dashboard view. The story shows they located a concrete root cause (missing index) that only appeared after manual tracing. They also closed the loop by updating documentation so others would not repeat the issue. This matches the expectation that juniors demonstrate ownership of their own work and learn from the details they uncover. The main gap is that impact stayed within one service; that is acceptable for 0-2 years but would need to grow for senior roles.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on a bug where the UI showed wrong totals. I asked the backend team to check their numbers and they said it was fine so I closed the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any data yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the ticket was assigned to backend so I waited for them to respond."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you found only because you went into the details yourself.",
+        "Role: Junior dev, assigned UI totals bug.",
+        "Situation: Wrong totals reported; surface claim from backend was \"fine\".",
+        "Actions: Deferred to another team without inspecting data or logs.",
+        "Outcome: Closed ticket without resolution.",
+        "Quote: \"I asked the backend team to check their numbers and they said it was fine.\"",
+        "Follow-up: Asked if candidate looked at data; they confirmed they did not."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at the junior level. The candidate stopped at the first external answer instead of examining logs or data themselves. No evidence of personal investigation or ownership of the root cause. This directly contradicts the principle that requires going into details to surface hidden problems. The behavior also shows low coachability because the follow-up did not prompt any reflection on what they could have checked. Biggest gap is absence of any individual action to dive deeper."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our migration to the new catalog service showed higher error rates in one region. Dashboards were green so I pulled raw request samples and found a 2% subset failing on a legacy attribute that only existed in that region's data set."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive resolution across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a small analyzer, shared the failing samples with the owning team, and we added a data-cleanup step before cutover. Error rate fell to zero and the same pattern was prevented in two other regions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you found only because you went into the details yourself.",
+        "Role: Senior engineer leading catalog migration.",
+        "Situation: Regional error spike invisible on aggregate dashboards.",
+        "Actions: Sampled raw requests, built analyzer, shared findings, added cleanup step.",
+        "Outcome: Zero errors; pattern prevented in other regions.",
+        "Quote: \"I pulled raw request samples and found a 2% subset failing on a legacy attribute.\"",
+        "Follow-up: Asked how resolution was driven; candidate described cross-team coordination and prevention."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at the senior level. The candidate did not accept green dashboards and instead sampled raw data to expose a hidden 2% failure mode. They influenced the owning team without authority by producing concrete samples and a fix that was adopted. The result extended beyond one region, showing measurable cross-team impact. This meets the expectation that seniors surface systemic issues through personal investigation. The story is grounded in specific data rather than vague claims. Biggest strength is the combination of deep analysis with follow-through that raised the quality bar for the migration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had elevated errors after a config change. I flagged it in the standup and the on-call person investigated."
+        },
+        {
+          "role": "interviewer",
+          "text": "What details did you examine?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at the high-level metrics and assumed the on-call would handle the root cause."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you found only because you went into the details yourself.",
+        "Role: Senior engineer on config rollout.",
+        "Situation: Elevated errors post-change; metrics showed the issue at high level.",
+        "Actions: Flagged in standup and handed off; no personal data dive.",
+        "Outcome: On-call resolved it; candidate did not learn or prevent recurrence.",
+        "Quote: \"I looked at the high-level metrics and assumed the on-call would handle the root cause.\"",
+        "Follow-up: Asked what details were examined; candidate confirmed only aggregate metrics."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at the senior level. The candidate relied on high-level metrics and delegated investigation instead of personally examining samples or logs. No evidence of cross-team influence or prevention of similar issues elsewhere. This falls short of the expectation that seniors drive resolution through their own detailed analysis. The story shows limited ownership and no measurable impact beyond reporting the symptom. Biggest gap is absence of any personal dive that produced actionable insight."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Revenue in one product line was flat despite strong top-of-funnel growth. I asked finance for the raw cohort data and discovered that a small but growing segment of enterprise customers had churned at 3x the rate because of a billing change introduced six months earlier."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paused the next billing experiment, worked with product and finance to model the long-term revenue impact, and shifted the roadmap to prioritize retention fixes for that segment. We recovered 8% of the at-risk revenue within two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you found only because you went into the details yourself.",
+        "Role: Exec overseeing product line P&L.",
+        "Situation: Flat revenue despite growth metrics; surface reports looked healthy.",
+        "Actions: Requested raw cohort data, identified enterprise churn segment, paused experiment, modeled impact, shifted roadmap.",
+        "Outcome: 8% revenue recovery in two quarters.",
+        "Quote: \"I asked finance for the raw cohort data and discovered that a small but growing segment of enterprise customers had churned at 3x the rate.\"",
+        "Follow-up: Asked about trade-offs; candidate described pausing work and roadmap change."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at the exec level. The candidate rejected aggregate growth numbers and personally requested raw cohort data to surface a hidden churn problem. They made a clear strategic trade-off by pausing an experiment to protect long-term revenue. The decision affected roadmap priorities across product and finance teams. This demonstrates the high-ambiguity judgment and org-level leverage expected at the executive level. The outcome is tied to a concrete revenue metric rather than activity metrics. Biggest strength is using personal detail work to change direction at the business level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our growth numbers were soft so I asked the team to run more experiments."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any underlying data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed the summary slides and trusted the product leads to dig in."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you found only because you went into the details yourself.",
+        "Role: Exec responsible for growth.",
+        "Situation: Soft growth numbers; no obvious red flags in summaries.",
+        "Actions: Directed team to run more experiments without personal data review.",
+        "Outcome: No identified root cause; experiments continued without focus.",
+        "Quote: \"I reviewed the summary slides and trusted the product leads to dig in.\"",
+        "Follow-up: Asked if underlying data was examined; candidate confirmed reliance on summaries."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at the exec level. The candidate accepted summary slides and delegated investigation instead of examining raw data themselves. No strategic trade-offs or roadmap changes resulted from personal insight. This contradicts the expectation that executives apply judgment in ambiguous situations by diving into details. The approach shows limited leverage and no evidence of long-term thinking. Biggest gap is absence of any personal analysis that altered business direction."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Personal data inspection vs delegation",
+      "junior": "Inspected logs themselves before handing off",
+      "senior": "Sampled raw requests and built analyzer",
+      "exec": "Requested raw cohort data and modeled impact"
+    },
+    {
+      "signal": "Scope of uncovered problem",
+      "junior": "Single query in one service",
+      "senior": "Regional data issue affecting migration",
+      "exec": "Enterprise churn segment impacting revenue"
+    },
+    {
+      "signal": "Evidence of follow-through",
+      "junior": "Shipped index and updated doc",
+      "senior": "Coordinated fix and prevented recurrence elsewhere",
+      "exec": "Paused experiment and shifted roadmap"
+    },
+    {
+      "signal": "Use of metrics",
+      "junior": "40ms latency improvement",
+      "senior": "Zero errors after 2% failure found",
+      "exec": "8% revenue recovery"
+    },
+    {
+      "signal": "Strategic trade-off shown",
+      "junior": "Not expected at this level",
+      "senior": "Shared findings to influence owning team",
+      "exec": "Paused work to protect long-term revenue"
+    }
+  ],
+  "kind": "lp"
+}

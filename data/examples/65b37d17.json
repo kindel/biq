@@ -1,0 +1,225 @@
+{
+  "question": "Tell me about a time your team could have won at the wider group's expense. What did you do?",
+  "principle": "Own It",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project, our squad could have kept a shared test environment for ourselves to hit our sprint goals faster, but other teams were blocked. I flagged it in standup and we rotated access instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with your own delivery?"
+        },
+        {
+          "role": "candidate",
+          "text": "We slipped two days but the other team shipped on time. My manager later said it was the right call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel about the trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "At first I was annoyed, but after we talked through it I saw why it mattered for the whole group."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team could have won at the wider group's expense. What did you do?",
+        "Role: new grad on first project; situation: shared test env conflict",
+        "Action: raised in standup, agreed to rotate access instead of hoarding",
+        "Outcome: own sprint slipped 2 days, other team hit date; manager affirmed",
+        "Quote: \"At first I was annoyed, but after we talked through it I saw why it mattered\"",
+        "Follow-up: Why did you think that way? -> Recognized group impact after discussion"
+      ],
+      "raiseFeedback": "The candidate described a concrete, low-scope example of choosing shared resources over local speed. They owned the short-term cost to their sprint after a manager conversation. The story shows basic recognition that their team is not the only customer. Follow-up revealed they needed prompting to see the trade-off initially, which is acceptable at junior level. The action stayed inside their immediate team and did not require influence beyond it. Biggest strength is willingness to accept a personal delivery hit once coached.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We really needed the test env to hit our deadline so we just kept it booked and told the other team to wait."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone push back?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, our PM said we had to deliver so we did."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "They missed their date but ours went out on time so it worked out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team could have won at the wider group's expense. What did you do?",
+        "Role: new grad; situation: test env conflict",
+        "Action: kept env booked, deferred to PM directive",
+        "Outcome: own team shipped, other team missed date",
+        "Quote: \"They missed their date but ours went out on time so it worked out\"",
+        "Follow-up: Did anyone push back? -> No, followed PM"
+      ],
+      "lowerFeedback": "The candidate defaulted to their team's local goal without questioning the wider impact. They treated the PM's direction as sufficient cover rather than owning the decision themselves. No evidence of raising the conflict or exploring alternatives. The outcome metric cited is only their own delivery date. At junior level this shows limited ownership beyond immediate task list. Biggest gap is absence of any reflection on the cost to the wider group."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team could have taken an extra headcount slot that another org needed for a critical migration. I wrote up the trade-off and took it to the directors so the slot went where the business needed it most."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your own team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were frustrated at first but we reprioritized work and still met our quarterly goals by dropping lower-value items."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metric showed this was the right call?"
+        },
+        {
+          "role": "candidate",
+          "text": "The migration unblocked two other teams' roadmaps and reduced overall incident load by 18 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team could have won at the wider group's expense. What did you do?",
+        "Role: senior on platform team; situation: headcount allocation conflict",
+        "Action: documented trade-off, escalated to directors, accepted slot going elsewhere",
+        "Outcome: migration succeeded, incident load down 18 percent; own team reprioritized successfully",
+        "Quote: \"They were frustrated at first but we reprioritized work and still met our quarterly goals\"",
+        "Follow-up: What metric showed this was the right call? -> Cross-team roadmap and incident impact"
+      ],
+      "raiseFeedback": "Candidate surfaced a resource decision that favored the wider organization and drove it to the right level. They absorbed team pushback and adjusted scope to protect their own commitments. The result included measurable benefit outside their team. Story demonstrates influence without authority and willingness to trade local wins for group outcomes. Follow-up confirmed they tracked the downstream effect rather than stopping at their own metrics. Biggest strength is the proactive escalation combined with protecting team delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed the headcount so we made the case internally and got the slot approved before the other org could respond."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you discuss it with the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly, our leadership handled it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Their migration slipped but we hit our OKRs so leadership was happy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team could have won at the wider group's expense. What did you do?",
+        "Role: senior; situation: headcount slot",
+        "Action: secured slot quickly before other team could object",
+        "Outcome: own OKRs hit, other migration delayed",
+        "Quote: \"Their migration slipped but we hit our OKRs so leadership was happy\"",
+        "Follow-up: Did you discuss it with the other team? -> No, leadership handled"
+      ],
+      "lowerFeedback": "The candidate treated the headcount win as a competition to be won quickly rather than a shared resource decision. They did not engage the other team directly or surface the trade-off themselves. Outcome focus stayed on their own OKRs. No evidence of adjusting their plans to mitigate the downstream delay. At senior level this shows limited cross-team ownership. Biggest gap is lack of proactive visibility into the wider impact."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two business units were competing for the same large budget line. I recommended splitting the funds and sequencing the initiatives so the higher-ROI project went first even though my own unit would launch later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the internal reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I spent time with my leadership team explaining the three-year revenue model and we adjusted our roadmap accordingly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The first initiative generated $12M incremental revenue that funded the second one, and both units met their multi-year targets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team could have won at the wider group's expense. What did you do?",
+        "Role: exec; situation: competing BU budget requests",
+        "Action: recommended sequencing based on ROI, accepted later launch for own unit",
+        "Outcome: $12M revenue funded second initiative; both units hit multi-year targets",
+        "Quote: \"I spent time with my leadership team explaining the three-year revenue model\"",
+        "Follow-up: What was the business result? -> Quantified revenue and long-term target achievement"
+      ],
+      "raiseFeedback": "The candidate made a strategic sequencing decision that delayed their own unit for greater overall return. They invested time aligning their leadership team to the longer-term model. The outcome produced measurable business value that benefited multiple units. Story shows comfort with ambiguity and trade-offs at the org level. Follow-up confirmed they used a multi-year lens rather than quarterly optics. Biggest strength is the ability to drive alignment on a decision that was locally suboptimal.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We fought hard for the full budget and won it for our unit because our proposal looked stronger on paper."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the other unit's initiative?"
+        },
+        {
+          "role": "candidate",
+          "text": "They had to scale it back and it underperformed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you revisit the decision later?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, we were focused on executing our plan."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team could have won at the wider group's expense. What did you do?",
+        "Role: exec; situation: BU budget competition",
+        "Action: secured full budget for own unit",
+        "Outcome: other unit scaled back and underperformed",
+        "Quote: \"No, we were focused on executing our plan\"",
+        "Follow-up: Did you revisit the decision later? -> No"
+      ],
+      "lowerFeedback": "The candidate framed the budget as a zero-sum win for their unit without exploring sequencing or shared upside. They did not revisit the decision after seeing the downstream underperformance. Focus remained on executing their own plan rather than optimizing total business outcome. No evidence of long-term modeling or cross-unit alignment. At exec level this reflects narrow ownership. Biggest gap is absence of strategic trade-off thinking beyond immediate unit goals."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognizes wider impact",
+      "junior": "Raises issue but needs coaching to see trade-off",
+      "senior": "Surfaces and escalates proactively",
+      "exec": "Models multi-year ROI for org sequencing"
+    },
+    {
+      "signal": "Accepts local cost",
+      "junior": "Accepts 2-day slip after discussion",
+      "senior": "Reprioritizes to protect quarterly goals",
+      "exec": "Delays own launch to enable higher total return"
+    },
+    {
+      "signal": "Influences beyond team",
+      "junior": "Stays inside team and manager",
+      "senior": "Drives director-level decision",
+      "exec": "Aligns multiple leadership teams"
+    },
+    {
+      "signal": "Tracks group outcome",
+      "junior": "Notes other team hit date",
+      "senior": "Cites 18 percent incident reduction",
+      "exec": "$12M revenue and multi-year targets met"
+    }
+  ],
+  "kind": "lp"
+}

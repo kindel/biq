@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+  "principle": "Diversity, Inclusion & Belonging",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate in India kept missing key decisions because our standups were at 9am our time, which was 11:30pm for her. I started recording the meetings and posting a 5-bullet summary in the channel within an hour, plus I scheduled one async check-in question for her each day."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed for her contributions?"
+        },
+        {
+          "role": "candidate",
+          "text": "She started adding comments on the recordings and her PRs got reviewed faster. After two weeks she said she felt caught up for the first time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+        "Junior candidate described adjusting daily standup process for India teammate by recording and summarizing",
+        "Outcome: teammate began commenting on recordings and PR velocity improved",
+        "Quote: 'She said she felt caught up for the first time.'",
+        "Follow-up: How did you decide what to include in the summary? Candidate: Asked teammate what decisions mattered most to her work."
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question. The candidate identified a concrete participation gap caused by time zone and took ownership of an individual process change. Quote: 'She started adding comments on the recordings and her PRs got reviewed faster.' This shows local ownership and responsiveness to feedback from the teammate. At junior level the scope is appropriately individual rather than org-wide. The single biggest strength is the direct follow-through that produced a measurable change in the teammate's ability to contribute.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had someone in London who couldn't make our morning meetings. I just sent her the notes after the fact like we always do."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that let her contribute at the same level?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, she still had to ask questions the next day. I didn't have time to do more."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+        "Candidate described sending standard meeting notes to London teammate",
+        "Outcome: teammate still had follow-up questions the next day",
+        "Quote: 'I didn't have time to do more.'",
+        "Follow-up: What options did you consider? Candidate: None, assumed notes were sufficient."
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question. The candidate recognized the time-zone issue but applied the existing default process without adaptation. Quote: 'I didn't have time to do more.' This shows limited ownership and no attempt to verify whether the teammate could actually participate equally. At junior level we expect evidence of adjusting one's own work to help a teammate succeed. The single biggest gap is the absence of any follow-up action or learning from the teammate's experience."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our EU team was consistently left out of roadmap decisions because planning meetings ran at 8am PT. I worked with two other team leads to shift the core sync to 10am PT twice a month and created a shared async doc for the other sessions, including decision criteria and open questions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "EU team members began owning two features in the next quarter and their input changed the priority of one dependency we had missed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+        "Senior candidate drove cross-team change to meeting cadence and async docs for EU partners",
+        "Outcome: EU team owned two features and influenced a dependency decision",
+        "Quote: 'EU team members began owning two features in the next quarter.'",
+        "Follow-up: How did you get buy-in from other leads? Candidate: Showed data on missed input and proposed a trial for one quarter."
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question. The candidate influenced peers without authority to adjust a recurring process that affected multiple teams. Quote: 'EU team members began owning two features in the next quarter.' This demonstrates cross-team impact and use of metrics to track contribution. At senior level the expectation is influence beyond one's own team and evidence that others' output improved. The single biggest strength is the combination of process change and visible ownership shift to the previously excluded group.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we record the planning meetings so the EU team could watch later, but the PM said it would take too long so we kept the original time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything else?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the PM owns the calendar so I moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+        "Candidate proposed recording but accepted pushback without further action",
+        "Outcome: No change to participation for EU team",
+        "Quote: 'The PM owns the calendar so I moved on.'",
+        "Follow-up: What data did you bring to the PM? Candidate: None, just made the suggestion."
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question. The candidate surfaced a time-zone barrier but stopped at the first objection without using influence or data. Quote: 'The PM owns the calendar so I moved on.' This shows limited cross-team impact and no persistence. At senior level we look for evidence of driving change across boundaries. The single biggest gap is the quick retreat instead of iterating on the proposal or enlisting others."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Global product reviews were scheduled for US morning, which meant APAC leaders joined at midnight or sent delegates. I reset the cadence to a rotating 24-hour window with pre-reads and written feedback required from every region, and tied it to promotion criteria for directors."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "APAC leaders began driving two of our top-five initiatives the following year and attrition in that region dropped 18 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+        "Exec candidate changed global review process and linked it to promotion expectations",
+        "Outcome: APAC leaders drove two top initiatives and regional attrition fell",
+        "Quote: 'APAC leaders began driving two of our top-five initiatives the following year.'",
+        "Follow-up: How did you handle resistance from US leaders? Candidate: Shared retention data and framed it as talent leverage."
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question. The candidate made a structural change at org level that altered how decisions were made across time zones. Quote: 'APAC leaders began driving two of our top-five initiatives the following year.' This reflects strategic judgment and long-term leverage through policy and incentives. At exec level the scope should include business-level impact and trade-offs. The single biggest strength is tying the process change to both contribution metrics and retention outcomes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We added a global all-hands at a friendlier time once a quarter, but most important decisions still happened in the US morning meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that close the gap for APAC leaders?"
+        },
+        {
+          "role": "candidate",
+          "text": "It helped a bit with visibility, but the real decisions stayed the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you made it possible for someone in a different time zone to contribute as fully as anyone else.",
+        "Candidate added quarterly all-hands but left core decision meetings unchanged",
+        "Outcome: Limited improvement in APAC influence",
+        "Quote: 'The real decisions stayed the same.'",
+        "Follow-up: Why not adjust the decision forums? Candidate: US leaders needed the morning slot for their own teams."
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question. The candidate implemented a visible but low-impact change while preserving the status quo for high-stakes decisions. Quote: 'The real decisions stayed the same.' This shows absence of strategic trade-offs or willingness to shift power structures. At exec level we expect org-level redesign, not incremental gestures. The single biggest gap is the lack of leverage applied to the actual decision-making process."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change",
+      "junior": "Individual process tweak (recording + summary)",
+      "senior": "Cross-team meeting cadence and async docs",
+      "exec": "Org-wide review process with promotion linkage"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Teammate felt caught up; PRs faster",
+      "senior": "EU team owned features and changed priority",
+      "exec": "APAC drove initiatives; attrition down 18%"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "N/A (individual action)",
+      "senior": "Got peer leads to trial new cadence",
+      "exec": "Tied change to director promotion criteria"
+    },
+    {
+      "signal": "Learning from feedback",
+      "junior": "Asked teammate what decisions mattered",
+      "senior": "Used missed-input data to build case",
+      "exec": "Used retention data to address resistance"
+    },
+    {
+      "signal": "Trade-offs considered",
+      "junior": "None shown",
+      "senior": "Balanced US and EU meeting times",
+      "exec": "Balanced US convenience against global talent retention"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Short-term fix for one person",
+      "senior": "Sustained for a quarter with ownership shift",
+      "exec": "Embedded in promotion system and sustained into next year"
+    }
+  ],
+  "kind": "value"
+}

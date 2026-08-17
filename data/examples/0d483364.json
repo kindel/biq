@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about information you decided not to share. How did you handle the boundary?",
+  "principle": "Transparency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I found a small performance issue in my module that only affected internal test data. I fixed it but didn't email the whole team since it wasn't customer-facing. I told my manager in our 1:1 and asked if I should document it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide the boundary?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked the team wiki and saw similar fixes stayed in the sprint notes. My manager said it was fine but asked me to add a one-line note in the commit."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about information you decided not to share. How did you handle the boundary?",
+        "Situation: Junior dev found minor perf issue in test data only",
+        "Action: Fixed it, skipped team email, told manager in 1:1 and asked about documentation",
+        "Outcome: Manager confirmed boundary and requested one-line commit note",
+        "Quote: \"I checked the team wiki and saw similar fixes stayed in the sprint notes\"",
+        "Follow-up: Asked what made the boundary decision; candidate referenced existing patterns and accepted feedback"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency. The candidate described a local scope decision to withhold a non-customer issue and proactively checked the boundary with their manager. They quoted checking the team wiki for precedent and accepted the request to add a commit note. This shows early judgment on information boundaries plus coachability when feedback arrived. The story stayed within individual work as expected for 0-2 years. Biggest strength is the willingness to ask rather than assume.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once had some customer data that looked off but I didn't tell anyone because I wasn't sure. Later it turned out to be nothing so I was glad I stayed quiet."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide who needed to know?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just figured if it wasn't broken I shouldn't raise noise."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about information you decided not to share. How did you handle the boundary?",
+        "Situation: Candidate saw odd customer data but kept quiet",
+        "Action: Did nothing and waited to see if it resolved",
+        "Outcome: Issue was non-existent so felt justified",
+        "Quote: \"I just figured if it wasn't broken I shouldn't raise noise\"",
+        "Follow-up: Probe on decision process; candidate gave no evidence of checking with anyone or documenting the choice"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency. The candidate withheld customer-related data without consulting anyone and treated silence as the default. No evidence of checking existing processes or confirming the boundary with a manager. The outcome was lucky rather than deliberate. For a junior this shows missing the basic step of raising uncertainty to a senior. Biggest gap is lack of any proactive boundary check."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "While leading a cross-team migration I learned that one partner team's timeline was at risk but their lead asked me not to escalate yet. I shared only the aggregate status with my director and kept the detail internal until they had a mitigation plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the follow-up with the partner team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set a two-week check-in and asked them to own the update. When they were ready I helped them write the note to both directors."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about information you decided not to share. How did you handle the boundary?",
+        "Situation: Partner team timeline risk during cross-team migration; lead requested temporary hold on detail",
+        "Action: Shared only aggregate status upward; set two-week check-in and helped craft joint update",
+        "Outcome: Partner team owned the communication; directors received coordinated note",
+        "Quote: \"I set a two-week check-in and asked them to own the update\"",
+        "Follow-up: Asked about follow-up process; candidate described clear time-box and joint ownership"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency. The senior candidate navigated a cross-team boundary by sharing only aggregate status while time-boxing the hold and later enabling the partner team to own the update. The story shows influence without authority and a concrete two-week check-in. Results extended beyond one team. Biggest strength is turning a secrecy request into coordinated communication rather than permanent withholding.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a reorg I knew some teams would lose headcount but I didn't tell my reports because leadership hadn't announced it yet. A few people heard from other channels and were upset."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you raise the issue with leadership?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just waited for the official note."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about information you decided not to share. How did you handle the boundary?",
+        "Situation: Knew about upcoming headcount changes affecting own reports",
+        "Action: Stayed silent until official announcement",
+        "Outcome: Reports learned through unofficial channels and were upset",
+        "Quote: \"I just waited for the official note\"",
+        "Follow-up: Probe on escalation; candidate took no action to clarify or influence the communication boundary"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency. The candidate withheld org-level information from their own team without attempting to influence the communication plan or check the boundary with leadership. The result was loss of trust through unofficial channels. For a senior this shows missing the expectation to manage information flow across teams. Biggest gap is passive handling instead of proactive boundary setting."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Before the last funding round I decided not to share early term-sheet details with the broader leadership team even though several VPs asked. I kept the information to the CEO, CFO, and board until we had a signed term and a communication plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage the requests from VPs?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told each one the same message: we were in active discussions and would share once terms were final. I also scheduled a joint briefing the day after signing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about information you decided not to share. How did you handle the boundary?",
+        "Situation: Early term-sheet details during funding round; multiple VPs requesting access",
+        "Action: Restricted to CEO/CFO/board only; gave consistent holding message and scheduled post-signing briefing",
+        "Outcome: Terms finalized and coordinated briefing delivered to leadership",
+        "Quote: \"I told each one the same message: we were in active discussions and would share once terms were final\"",
+        "Follow-up: Asked how VP requests were managed; candidate used consistent message and planned joint briefing"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency. The exec candidate made a deliberate org-level decision to withhold term-sheet details until signed, applied the same boundary message to all VPs, and scheduled a single coordinated briefing. The approach balanced strategic ambiguity with eventual transparency. Long-term thinking is visible in the planned communication step. Biggest strength is consistent boundary enforcement at scale without creating information asymmetry among peers.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept the details of a potential acquisition quiet from the exec team for months because the board wanted it that way. When it leaked the other execs were surprised and some relationships were damaged."
+        },
+        {
+          "role": "interviewer",
+          "text": "What steps did you take to prepare the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed the board would handle it and focused on the deal itself."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about information you decided not to share. How did you handle the boundary?",
+        "Situation: Months-long acquisition talks kept from exec peers",
+        "Action: Deferred entirely to board; no internal prep or boundary communication",
+        "Outcome: Leak caused surprise and damaged relationships",
+        "Quote: \"I assumed the board would handle it and focused on the deal itself\"",
+        "Follow-up: Probe on team preparation; candidate showed no proactive steps or trade-off analysis"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency. The exec candidate deferred boundary decisions entirely to the board and provided no advance signaling or preparation for peer execs. The leak exposed the lack of a communication strategy. At this level the expectation is strategic judgment on when and how to widen the circle. Biggest gap is treating information control as someone else's problem rather than an executive responsibility."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Boundary decision process",
+      "junior": "Checks wiki or asks manager",
+      "senior": "Sets time-box and enables partner ownership",
+      "exec": "Applies consistent message across VPs with planned rollout"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual module or sprint note",
+      "senior": "Cross-team migration or reorg comms",
+      "exec": "Funding round or acquisition affecting entire leadership"
+    },
+    {
+      "signal": "Handling of requests for info",
+      "junior": "Asks manager what to document",
+      "senior": "Time-boxes and helps partner craft update",
+      "exec": "Gives uniform holding statement then coordinates briefing"
+    },
+    {
+      "signal": "Outcome when boundary held",
+      "junior": "Manager requests one-line note",
+      "senior": "Partner team owns communication",
+      "exec": "Signed terms followed by joint briefing"
+    },
+    {
+      "signal": "Risk if boundary mishandled",
+      "junior": "Minor noise or missed note",
+      "senior": "Team upset via unofficial channels",
+      "exec": "Damaged peer relationships and surprise at exec level"
+    }
+  ],
+  "kind": "value"
+}

@@ -1,0 +1,168 @@
+{
+  "question": "Tell me about a time you had to make an intimidating goal feel real to your team.",
+  "principle": "Aim High and Find a Way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had a tight deadline to ship a new search feature that felt way over our heads. I broke it into weekly milestones and showed how each small win stacked up to the big goal. We hit the date with room to spare."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the goal feel intimidating?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM said it would double our query volume, but no one had done it before. I mapped the unknowns to tasks we could estimate."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react at first?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were quiet in the first meeting, so I asked each person what one piece they could own and we adjusted the plan together."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to make an intimidating goal feel real to your team.",
+        "Role: Junior dev on 4-person feature team; Situation: 6-week search perf target seen as impossible; Actions: Broke into weekly milestones, ran 1:1s to assign ownership, tracked visible progress; Outcome: Shipped on time, team hit 1.8x query volume; Quote: 'I asked each person what one piece they could own and we adjusted together.'",
+        "Follow-up: What made it intimidating? Mapped unknowns to estimable tasks.",
+        "Follow-up: Team reaction? Quiet at first, then engaged after ownership discussion."
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way. The candidate took an ambitious performance target and turned it into a sequence of owned tasks. Quote shows direct action: 'I asked each person what one piece they could own.' This demonstrates ownership of making the goal feel real at the individual-contributor level. The story stays within one team and one project, which matches junior scope. Biggest gap is limited evidence of sustaining the approach beyond this single feature.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a big goal to improve search speed and I told the team we just needed to work harder and believe in it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What steps did you take to make it feel achievable?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reminded them of past wins and said if we stayed positive we would figure it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to make an intimidating goal feel real to your team.",
+        "Role: Junior dev; Situation: Same search perf goal; Actions: Gave motivational talk about past wins and staying positive; Outcome: Team shipped but missed the stretch target by 30%; Quote: 'I reminded them of past wins and said if we stayed positive we would figure it out.'",
+        "Follow-up: Concrete steps? Only encouragement, no breakdown or ownership assignment."
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way. The candidate relied on encouragement without breaking the goal into concrete, ownable pieces. No evidence of adjusting the plan when the team stayed quiet. Story shows good intent but stays at the level of 'believe in it' rather than finding a way. Biggest gap is absence of any mechanism that made the intimidating target feel actionable to the team."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed to deliver a shared platform migration that everyone viewed as too risky. I created a joint roadmap with clear checkpoints and ran weekly demos so both sides could see progress."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle resistance from the other team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Their lead was worried about capacity, so I proposed we share one engineer temporarily and tracked the shared metric in one dashboard."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to make an intimidating goal feel real to your team.",
+        "Role: Senior eng leading two-team migration; Situation: Platform move seen as high-risk with unclear ownership; Actions: Built joint roadmap, weekly demos, shared one engineer, single dashboard; Outcome: Migration completed in 10 weeks, both teams adopted the process for later work; Quote: 'I proposed we share one engineer temporarily and tracked the shared metric in one dashboard.'",
+        "Follow-up: Resistance? Addressed capacity concern with concrete resource swap and visible metric."
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way. The candidate turned a cross-team risky migration into a visible, checkpointed plan with shared ownership. Quote shows influence without authority through the resource swap and dashboard. Story includes measurable outcome and reuse by other teams, fitting senior scope. Biggest strength is the mechanism that made progress feel real across boundaries rather than within one team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set the migration goal and told both teams it was important for the company."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the teams pushed back?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated to the managers and asked them to align the teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to make an intimidating goal feel real to your team.",
+        "Role: Senior eng; Situation: Same cross-team migration; Actions: Stated importance and escalated to managers; Outcome: Migration slipped two months, teams worked in silos; Quote: 'I escalated to the managers and asked them to align the teams.'",
+        "Follow-up: Concrete actions? No roadmap or shared visibility created by candidate."
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way. The candidate stated the goal and escalated rather than creating mechanisms for the teams to see progress. No evidence of breaking the work into checkpoints or addressing capacity directly. Story shows reliance on hierarchy instead of influence. Biggest gap is lack of any artifact that made the intimidating goal feel achievable across teams."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The company needed to move from on-prem to cloud within 18 months or face scaling limits. I framed the goal as three phases with clear business outcomes and had each org present their phase-one risks in a single forum."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you sustain momentum over 18 months?"
+        },
+        {
+          "role": "candidate",
+          "text": "We published a monthly 'wayfinder' metric that combined cost, reliability, and feature velocity so every team could see the same north star."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to make an intimidating goal feel real to your team.",
+        "Role: VP Engineering; Situation: 18-month cloud migration viewed as existential risk; Actions: Three-phase framing, joint risk forum, monthly wayfinder metric across cost/reliability/velocity; Outcome: Completed in 16 months, org reused the metric process for later initiatives; Quote: 'We published a monthly wayfinder metric that combined cost, reliability, and feature velocity.'",
+        "Follow-up: Sustaining momentum? Single shared metric kept visibility high across orgs."
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way. The candidate made an 18-month org-level migration feel real through phased framing and a persistent shared metric. Quote illustrates strategic leverage: the wayfinder metric aligned multiple teams without heroics. Story shows long-term thinking and reuse of the approach. Biggest strength is turning ambiguity into a repeatable mechanism rather than a one-time push.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I announced the cloud migration goal at the all-hands and said every leader needed to own their part."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when progress stalled at six months?"
+        },
+        {
+          "role": "candidate",
+          "text": "I held more all-hands and reminded leaders of the original deadline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to make an intimidating goal feel real to your team.",
+        "Role: VP Engineering; Situation: Same 18-month cloud migration; Actions: Announced goal and held repeated all-hands; Outcome: Migration took 24 months with repeated resets; Quote: 'I held more all-hands and reminded leaders of the original deadline.'",
+        "Follow-up: Addressing stalls? Only repeated announcements, no new mechanisms or metrics introduced."
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way. The candidate relied on announcements and reminders without creating durable mechanisms for visibility or trade-off decisions. No evidence of adapting the approach when progress stalled. Story stays at the level of stating ambition rather than finding repeatable ways to make it real. Biggest gap is absence of any strategic artifact that survived the first six months."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Breaking intimidating goal into visible steps",
+      "junior": "Owns personal task breakdown and weekly check-ins",
+      "senior": "Creates joint roadmap and shared dashboard across teams",
+      "exec": "Defines multi-phase framing plus persistent org-level metric"
+    },
+    {
+      "signal": "Handling resistance or stalls",
+      "junior": "Adjusts plan after 1:1 ownership talks",
+      "senior": "Proposes resource swap and single metric to align teams",
+      "exec": "Introduces wayfinder metric that surfaces trade-offs over 18 months"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single feature team, local results",
+      "senior": "Two-team migration with reuse by others",
+      "exec": "Org-wide migration with reusable process"
+    },
+    {
+      "signal": "Evidence of finding a way vs stating the goal",
+      "junior": "Milestones and ownership assignment",
+      "senior": "Checkpoints and shared visibility artifacts",
+      "exec": "Long-term metric and phase structure that survives resets"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you had to change the shape of a team to raise its level.",
+  "principle": "Raise the Bar",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to change the shape of a team to raise its level."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project after onboarding, our four-person squad had one member who kept missing deadlines on shared components. I flagged it in standup with data on delays, then met my manager to suggest reassigning that person's tasks to the stronger two devs and adding a part-time senior reviewer from another team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you handle the conversation with the underperforming teammate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't directly; my manager did. I focused on documenting the impact so the change stuck and the project shipped on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to change the shape of a team to raise its level.",
+        "Role: new grad on 4-person squad; situation: repeated missed deadlines on shared work",
+        "Action: gathered delay data, proposed task reassign + borrowed senior reviewer to manager",
+        "Outcome: project shipped on time; teammate moved to different work",
+        "Quote: 'I focused on documenting the impact so the change stuck'",
+        "Follow-up: How did you handle the conversation with the underperforming teammate? -> Manager handled it; candidate stuck to data"
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar for a junior. The candidate identified a performance gap early, used concrete delay data to influence the manager, and accepted limited scope by letting the manager own the direct conversation. This shows ownership of the outcome without overstepping. The story stayed local to one project yet produced a measurable ship date win. Biggest strength is the willingness to surface the issue with evidence instead of hoping it resolved itself.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to change the shape of a team to raise its level."
+        },
+        {
+          "role": "candidate",
+          "text": "Our team felt slow so I suggested we add more meetings to sync better. My manager said no, so we kept the same people and just worked harder."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to change the shape of a team to raise its level.",
+        "Role: new grad; situation: team felt slow",
+        "Action: suggested more meetings; manager declined",
+        "Outcome: no structural change, just worked harder",
+        "Quote: 'we kept the same people and just worked harder'",
+        "Follow-up: What data did you bring to the manager? -> None; stayed at suggestion level"
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar for a junior. The candidate proposed only process tweaks with no data and accepted the status quo when the manager pushed back, showing no ownership of driving a real change. The story never moved beyond a feeling that the team was slow. Biggest gap is lack of evidence or persistence to actually reshape the team even at a small scale."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to change the shape of a team to raise its level."
+        },
+        {
+          "role": "candidate",
+          "text": "Our platform team of eight had two engineers whose code reviews were consistently late and low-quality, blocking three other squads. I ran a skills audit, presented retention risk and velocity data to my director, and proposed moving one to a support rotation while backfilling with a stronger hire from another org."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did the moved engineer react and what was the velocity lift?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were initially defensive but the new role fit their strengths better. Cross-team velocity improved 30% within two quarters as measured by PR merge time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to change the shape of a team to raise its level.",
+        "Role: senior IC leading platform team of 8; situation: two weak reviewers blocking multiple squads",
+        "Action: skills audit + velocity data to director; moved one to support role, backfilled with stronger hire",
+        "Outcome: 30% faster PR merge time in two quarters",
+        "Quote: 'Cross-team velocity improved 30% within two quarters'",
+        "Follow-up: How did the moved engineer react and what was the velocity lift? -> Defensive but better fit; clear metric lift"
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar for a senior. The candidate used cross-team impact data to justify a structural move, influenced the director without authority, and delivered a quantified velocity gain. The story shows both the difficult people decision and the follow-through on hiring. Biggest strength is treating team shape as a lever for multiple squads rather than just internal team hygiene.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to change the shape of a team to raise its level."
+        },
+        {
+          "role": "candidate",
+          "text": "I noticed one person on my team wasn't contributing much so I asked my manager to give them feedback. Nothing changed so we just assigned them less critical work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to change the shape of a team to raise its level.",
+        "Role: senior; situation: one low contributor",
+        "Action: asked manager for feedback; later reduced scope",
+        "Outcome: no hiring or role change, just lower expectations",
+        "Quote: 'we just assigned them less critical work'",
+        "Follow-up: Did you consider a backfill or role change? -> No; stayed within existing headcount"
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar for a senior. The candidate deferred entirely to the manager and settled for scope reduction instead of pursuing a team shape change that would have lifted overall output. No metrics or cross-team view appears. Biggest gap is treating the problem as an individual performance issue rather than a structural one that a senior should own."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to change the shape of a team to raise its level."
+        },
+        {
+          "role": "candidate",
+          "text": "When I took over the 120-person infrastructure org, two divisions were duplicating platform work with different standards. I merged them into a single platform group, created a new principal engineering track, and let go three directors whose teams had missed reliability targets for two years."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: What was the business impact and how did you handle the director exits?"
+        },
+        {
+          "role": "candidate",
+          "text": "Incident rate dropped 40% in nine months; we redirected the saved headcount into a new SRE rotation. The directors received severance and outplacement; two later joined partner companies."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to change the shape of a team to raise its level.",
+        "Role: new VP of 120-person org; situation: duplicated platform work + missed reliability targets",
+        "Action: merged two divisions, added principal track, exited three directors",
+        "Outcome: 40% lower incident rate; headcount redirected to SRE",
+        "Quote: 'Incident rate dropped 40% in nine months'",
+        "Follow-up: What was the business impact and how did you handle the director exits? -> Clear metric; professional exits with outplacement"
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar for an exec. The candidate made an org-level structural decision that eliminated duplication, introduced a new career track, and removed underperforming leaders with clear business metrics attached. The story balances the human element of exits with long-term leverage on reliability. Biggest strength is using team shape as a strategic tool at scale rather than incremental fixes.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to change the shape of a team to raise its level."
+        },
+        {
+          "role": "candidate",
+          "text": "Our org was growing so I asked HR to run a calibration and we adjusted some levels. A few people left but we didn't replace the open roles right away."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to change the shape of a team to raise its level.",
+        "Role: exec; situation: org growing",
+        "Action: asked HR for calibration; adjusted levels",
+        "Outcome: some attrition; open roles not backfilled",
+        "Quote: 'we didn't replace the open roles right away'",
+        "Follow-up: What org-level problem were you solving? -> None stated beyond growth"
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar for an exec. The candidate relied on HR process and passive attrition without a deliberate plan to reshape the org for higher performance. No strategic trade-offs or long-term metrics are shown. Biggest gap is absence of ownership over the final team composition and business outcome."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change",
+      "junior": "Project-level task reassign with manager support",
+      "senior": "Team-level role move + backfill with cross-team data",
+      "exec": "Org-level merge + leadership exits with business metrics"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Data to manager; accepts manager owns conversation",
+      "senior": "Skills audit presented to director; drives outcome",
+      "exec": "Strategic proposal to peers and directs; owns exits"
+    },
+    {
+      "signal": "Metrics shown",
+      "junior": "On-time ship (local)",
+      "senior": "30% PR velocity lift across squads",
+      "exec": "40% incident reduction at org level"
+    },
+    {
+      "signal": "People decisions",
+      "junior": "Avoids direct conversation",
+      "senior": "Moves one, hires stronger",
+      "exec": "Exits three directors; creates new track"
+    },
+    {
+      "signal": "Follow-through",
+      "junior": "Documents impact after change",
+      "senior": "Tracks velocity post-change",
+      "exec": "Redirects headcount and monitors long-term reliability"
+    }
+  ],
+  "kind": "lp"
+}

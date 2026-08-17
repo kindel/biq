@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you shipped a smaller version to get value out sooner.",
+  "principle": "Deliver Value Fast",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a dashboard for our support team. Instead of waiting for the full filtering and export features, I shipped just the basic list view with search in week three so they could start using it immediately."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and how did you decide the scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "Usage went from zero to 40 tickets a day in the first week. My manager suggested cutting the export button, which I agreed to after seeing they mostly copied rows manually anyway."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shipped a smaller version to get value out sooner.",
+        "Role: New grad on internal tools team, individual contributor",
+        "Situation: Full dashboard scoped for 6 weeks; cut to basic list + search",
+        "Actions: Pushed for early deploy, took feedback on export",
+        "Outcome: 40 daily users in week one; learned to validate scope with users",
+        "Quote: 'I realized waiting for perfect meant zero value for a month.'",
+        "Follow-up: How did you handle pushback from the PM who wanted exports? Said I would add it after seeing real usage data."
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Value Fast. The candidate described shipping a basic list view instead of a full dashboard and saw 40 daily users within a week. They explicitly credited a manager's suggestion to drop the export button after observing actual usage. This shows ownership of their own scope and quick incorporation of feedback at the junior level. The decision was local but directly tied to delivering value earlier. Biggest strength is the willingness to cut scope based on real signals rather than assumptions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to add a simple report but I built the full backend with caching and multiple formats because I thought that was what they needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it ship on time?"
+        },
+        {
+          "role": "candidate",
+          "text": "It took three extra weeks and the team only used the basic CSV output in the end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shipped a smaller version to get value out sooner.",
+        "Role: New grad on internal tools team",
+        "Situation: Simple report request turned into full-featured backend",
+        "Actions: Built caching and multiple formats without checking usage",
+        "Outcome: Three-week delay; only CSV was used",
+        "Quote: 'I wanted to make it complete so they wouldn't have to ask again.'",
+        "Follow-up: What would you do differently? Would talk to the user first next time."
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Value Fast. The candidate expanded a simple report into a multi-week project with caching and formats that were never used. The only output that mattered was the basic CSV, yet they shipped three weeks late. At junior level this shows lack of ownership over scope and missing the habit of validating assumptions early. No evidence of adjusting based on feedback during the project. Biggest gap is treating completeness as the goal instead of speed to value."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed a shared notification service. I proposed shipping only the email channel first so marketing could launch their campaign while we built SMS in parallel."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the marketing team a prototype in two days and got them to commit to using it immediately, which pressured the other team to deprioritize their extra requirements."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shipped a smaller version to get value out sooner.",
+        "Role: Senior engineer leading shared service across two teams",
+        "Situation: Full notification service scoped for 8 weeks; split into email then SMS",
+        "Actions: Built email prototype in 2 days, secured marketing commitment",
+        "Outcome: Campaign launched 5 weeks early; SMS added later without blocking",
+        "Quote: 'The cross-team dependency was the real blocker, not the code.'",
+        "Follow-up: What metrics did you track? Weekly active campaigns and time-to-first-send."
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Value Fast. The candidate cut a shared notification service to email-only so marketing could launch five weeks earlier while SMS was still in progress. They used a two-day prototype to gain cross-team commitment without authority. This produced measurable early value and influenced the other team's priorities. Scope reduction was driven by business impact rather than just engineering preference. Biggest strength is using early delivery to create leverage across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a dependency on another team for the full notification system so we waited until they finished their part before integrating."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any way to deliver something sooner?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, their roadmap was fixed and we didn't want to build something they might change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shipped a smaller version to get value out sooner.",
+        "Role: Senior engineer on platform team",
+        "Situation: Blocked on another team's full notification service",
+        "Actions: Waited for their complete implementation",
+        "Outcome: Feature delayed by six weeks with no interim value",
+        "Quote: 'Their roadmap was fixed so we just aligned to it.'",
+        "Follow-up: Did you explore building a thin email version yourself? No, we assumed it would cause duplication."
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Value Fast. The candidate accepted a six-week delay because of a cross-team dependency instead of exploring an email-only slice they could own. No attempt was made to influence the other team's scope or ship partial value. At senior level this shows limited ability to drive outcomes without waiting for perfect alignment. The story lacks evidence of metrics or trade-off decisions. Biggest gap is treating external roadmaps as immovable rather than negotiating for faster value."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our new self-serve onboarding was blocking revenue for enterprise deals. I directed the team to ship a manual concierge flow in three weeks that let sales close four deals while the automated version was still in design."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Those four deals gave us the data to simplify the automated flow, which we shipped two quarters later and reduced time-to-value by 60 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shipped a smaller version to get value out sooner.",
+        "Role: Director of product/engineering, org-level decision",
+        "Situation: Automated onboarding delayed; enterprise revenue at risk",
+        "Actions: Authorized manual concierge process for three weeks",
+        "Outcome: Four deals closed; data used to simplify final product",
+        "Quote: 'We needed revenue signal before investing in the full automation.'",
+        "Follow-up: How did you handle the team that wanted to stay on the original plan? Re-prioritized their OKRs to support the interim process."
+      ],
+      "raiseFeedback": "Raises the bar for Deliver Value Fast. The candidate made an org-level call to ship a manual concierge onboarding flow in three weeks, enabling four enterprise deals while the automated product was still being designed. The interim solution directly informed the final automation, cutting time-to-value by 60 percent two quarters later. This reflects strategic judgment on trade-offs between short-term revenue and long-term build. Scope decisions were made at the business outcome level. Biggest strength is using early value delivery to de-risk a multi-quarter initiative.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We kept the full automated onboarding on the roadmap because customers said they wanted self-serve."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any revenue get delayed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, a few enterprise prospects walked away during the six-month build, but we stayed true to the original vision."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shipped a smaller version to get value out sooner.",
+        "Role: Director-level leader",
+        "Situation: Enterprise deals blocked by missing automated onboarding",
+        "Actions: Stayed committed to six-month full automation",
+        "Outcome: Several deals lost with no interim solution",
+        "Quote: 'Customers asked for self-serve so we didn't want to build a manual crutch.'",
+        "Follow-up: What data did you have on deal size versus build time? None collected until after the losses."
+      ],
+      "lowerFeedback": "Lowers the bar for Deliver Value Fast. The candidate refused to ship any manual or partial onboarding because it conflicted with the self-serve vision, resulting in lost enterprise deals over six months. No attempt was made to gather revenue impact data or test a smaller version. At exec level this demonstrates poor strategic judgment on when to accept short-term trade-offs. The decision prioritized internal vision over business outcomes. Biggest gap is lack of willingness to use interim solutions to capture value and learn."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope reduction decision",
+      "junior": "Cuts own feature based on quick feedback",
+      "senior": "Negotiates cross-team scope cut using prototype",
+      "exec": "Authorizes org-level manual process to unlock revenue"
+    },
+    {
+      "signal": "Evidence of value delivered",
+      "junior": "Local usage metric (40 daily users)",
+      "senior": "Cross-team launch 5 weeks early",
+      "exec": "Four deals closed plus 60% later improvement"
+    },
+    {
+      "signal": "Handling of dependencies",
+      "junior": "Accepts manager suggestion",
+      "senior": "Uses early ship to influence other team",
+      "exec": "Re-prioritizes team OKRs around interim flow"
+    },
+    {
+      "signal": "Learning loop",
+      "junior": "Observes actual usage before adding more",
+      "senior": "Prototype validates assumption quickly",
+      "exec": "Interim data directly shapes final product"
+    }
+  ],
+  "kind": "lp"
+}

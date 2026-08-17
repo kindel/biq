@@ -1,0 +1,225 @@
+{
+  "question": "Tell me about the most ambitious target you have set for a team.",
+  "principle": "Raise the Bar",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I set a goal for our 3-person team to reduce our feature's p99 latency from 800ms to under 200ms within one quarter, even though the team lead thought 400ms was realistic."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit 180ms by rewriting the hot path and adding caching. I owned the measurement and weekly reviews. We missed the original deadline by two weeks but shipped the improvement."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the target was achievable?"
+        },
+        {
+          "role": "candidate",
+          "text": "I benchmarked against two similar services in the company and talked to the owners about what actually moved the needle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most ambitious target you have set for a team.",
+        "Candidate set 4x latency reduction target for 3-person team vs lead's 2x suggestion",
+        "Owned measurement and weekly reviews; hit 180ms (original goal 200ms)",
+        "Quote: \"I benchmarked against two similar services\"",
+        "Follow-up: How did you decide achievable? Benchmarked and talked to owners"
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar for a junior. The candidate chose a stretch target beyond what the lead proposed and took ownership of tracking it. Quote: \"I benchmarked against two similar services in the company.\" This shows the candidate pushed for higher standards on their own work rather than accepting the first suggested goal. They delivered close to the ambitious number and learned from the owners of comparable systems. Biggest strength is taking initiative on the target itself instead of waiting for direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once set a goal for my team to finish all the tickets in the sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made it ambitious?"
+        },
+        {
+          "role": "candidate",
+          "text": "We usually finished 80 percent so I wanted 100 percent. We got to 95 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you choose that target?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager said we should try to complete everything."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most ambitious target you have set for a team.",
+        "Candidate set goal to finish 100% of sprint tickets vs usual 80%",
+        "Outcome 95%; no personal ownership described",
+        "Quote: \"My manager said we should try to complete everything\"",
+        "Follow-up: How did you choose that target? Manager suggested it"
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar for a junior. The candidate describes a target that came from the manager rather than one they set themselves. Quote: \"My manager said we should try to complete everything.\" There is no evidence the candidate pushed beyond what was already expected or learned how to raise standards. They accepted a modest improvement goal without showing why it was the right stretch. Biggest gap is lack of personal ownership in defining an ambitious target."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a target for the two teams I influenced to move our shared service from 99.5% to 99.95% availability within six months while adding two new major features."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you land on that number?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at customer impact data and saw that the current SLO was causing 12 escalations per month. I got the other team leads to agree by showing the cost of each escalation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reached 99.92% and cut escalations by 70%. One team adopted the same review process for their next project."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most ambitious target you have set for a team.",
+        "Candidate set 99.95% availability target across two teams while shipping features",
+        "Used customer escalation data to gain buy-in from other leads",
+        "Quote: \"I got the other team leads to agree by showing the cost of each escalation\"",
+        "Follow-up: How did you land on that number? Customer impact data and escalation cost"
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar for a senior. The candidate defined a cross-team availability goal that required influence without authority and backed it with customer data. Quote: \"I got the other team leads to agree by showing the cost of each escalation.\" They achieved most of the target and one team copied the process, showing they raised standards beyond their direct team. The goal balanced reliability with feature work rather than treating them as trade-offs. Biggest strength is using concrete customer impact to drive alignment on a higher bar.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed my team to adopt a new deployment process that other teams were already using."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made the target ambitious?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was new to us so adoption felt like a stretch. We finished the rollout in four months."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams help set the goal?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just told them we needed to match what everyone else was doing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most ambitious target you have set for a team.",
+        "Candidate set goal to adopt existing deployment process from other teams",
+        "Outcome: rollout in four months; no cross-team influence shown",
+        "Quote: \"I just told them we needed to match what everyone else was doing\"",
+        "Follow-up: Did other teams help set the goal? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar for a senior. The candidate describes copying an existing process rather than defining a new, higher standard. Quote: \"I just told them we needed to match what everyone else was doing.\" There is no evidence of setting an ambitious target that required trade-off decisions or raising the level for peer teams. The story stays inside one team's scope. Biggest gap is absence of influence or data-driven justification for a stretch goal."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I joined I set an org-level target to improve our top-line growth from 8% to 25% year-over-year by shifting 40% of engineering capacity to a new product line within 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide on 25%?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled three scenarios using market data and customer win rates; 25% was the only path that kept us competitive against the two fastest-growing peers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused two existing products and reallocated 120 engineers. Growth hit 22% and we later acquired one of the paused product's customers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most ambitious target you have set for a team.",
+        "Candidate set 25% YoY growth target requiring 40% capacity shift to new product line",
+        "Used market modeling vs peers to justify the number",
+        "Quote: \"25% was the only path that kept us competitive against the two fastest-growing peers\"",
+        "Follow-up: What trade-offs did you make? Paused two products and moved 120 engineers"
+      ],
+      "raiseFeedback": "Raises the bar on Raise the Bar for an exec. The candidate defined an org-wide growth target that required reallocating significant capacity and accepting product trade-offs. Quote: \"25% was the only path that kept us competitive against the two fastest-growing peers.\" They achieved 22% growth and created a follow-on acquisition opportunity, showing long-term strategic impact. The story demonstrates setting a bar based on external benchmarks rather than internal comfort. Biggest strength is willingness to make hard portfolio decisions to reach a competitive target.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the teams to improve customer satisfaction scores by 10 points."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this ambitious at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "Scores had been flat for two years so any movement felt meaningful."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you choose the target and handle trade-offs?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set the number based on what felt achievable without changing headcount or priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most ambitious target you have set for a team.",
+        "Candidate set 10-point CSAT improvement goal after two years of flat scores",
+        "No capacity shifts or external benchmarks described",
+        "Quote: \"I set the number based on what felt achievable without changing headcount or priorities\"",
+        "Follow-up: How did you choose the target? Based on what felt achievable"
+      ],
+      "lowerFeedback": "Lowers the bar on Raise the Bar for an exec. The candidate chose a modest improvement target that avoided any resource trade-offs. Quote: \"I set the number based on what felt achievable without changing headcount or priorities.\" There is no evidence of using competitive or market data to set a higher bar or making portfolio-level decisions. The goal stayed incremental rather than transformative. Biggest gap is lack of strategic ambition or willingness to reallocate resources for a bigger outcome."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Target source",
+      "junior": "Candidate proposes vs accepts manager suggestion",
+      "senior": "Cross-team data-driven goal vs copying existing process",
+      "exec": "Org-level modeled target vs incremental without trade-offs"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Own team metrics and learning",
+      "senior": "Influences peer teams and process adoption",
+      "exec": "Portfolio reallocation and competitive positioning"
+    },
+    {
+      "signal": "Evidence of stretch",
+      "junior": "Beyond lead's initial suggestion",
+      "senior": "Requires influence and measurable customer outcome",
+      "exec": "External benchmark and hard resource decisions"
+    },
+    {
+      "signal": "Ownership of definition",
+      "junior": "Owns measurement and reviews",
+      "senior": "Secures buy-in from other leads",
+      "exec": "Sets and defends number with scenario modeling"
+    },
+    {
+      "signal": "Result framing",
+      "junior": "Close to target plus learning",
+      "senior": "Near-miss with secondary adoption",
+      "exec": "Near-miss with follow-on business impact"
+    }
+  ],
+  "kind": "lp"
+}

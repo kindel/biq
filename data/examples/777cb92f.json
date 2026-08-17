@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time you supported a colleague who was having a hard time.",
+  "principle": "Bring Good Vibes",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported a colleague who was having a hard time."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project, a new hire on my team was overwhelmed by the onboarding docs and kept missing standup updates. I offered to pair with them for 30 minutes each morning to walk through tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They started contributing to PRs within two weeks and later thanked me in a retro. I learned to check in early when someone seems quiet."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you supported a colleague who was having a hard time.",
+        "Role: new grad on first project; Situation: teammate overwhelmed by onboarding; Actions: offered daily 30-min pairing; Outcome: teammate shipping PRs in 2 weeks; Quote: 'I learned to check in early when someone seems quiet.'",
+        "Follow-up: What was the outcome? -> They started contributing and thanked me in retro."
+      ],
+      "raiseFeedback": "Raises the bar for Bring Good Vibes at junior level. The candidate described a local, individual-scope action of offering daily pairing to a struggling teammate. Quote: 'I offered to pair with them for 30 minutes each morning.' This shows ownership of their immediate workspace and coachability by reflecting on the need to check in early. The result stayed small but measurable within the team. Biggest strength is the simple, repeatable habit of proactive support without overclaiming impact.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported a colleague who was having a hard time."
+        },
+        {
+          "role": "candidate",
+          "text": "A teammate was stressed about a deadline so I just focused on my own work to not add more noise."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything else?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured they would ask if they needed help."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you supported a colleague who was having a hard time.",
+        "Role: individual contributor; Situation: teammate stressed on deadline; Actions: stayed out of the way and focused on own tasks; Outcome: none described; Quote: 'I figured they would ask if they needed help.'",
+        "Follow-up: Did you do anything else? -> Not really."
+      ],
+      "lowerFeedback": "Lowers the bar for Bring Good Vibes at junior level. The candidate chose to stay silent and focus only on personal work when a teammate was visibly stressed. Quote: 'I figured they would ask if they needed help.' This shows limited ownership of team atmosphere and misses the opportunity to demonstrate basic support. No follow-through or reflection appears. Biggest gap is absence of any proactive action at the individual scope expected for this level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported a colleague who was having a hard time."
+        },
+        {
+          "role": "candidate",
+          "text": "A peer on another team was burned out after leading a migration and their manager was absent. I looped in their skip and helped redistribute two of their critical tickets across three squads."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a quick sync with the other leads, shared the load, and followed up weekly until the peer was back at steady state. The migration finished on time and the peer took a planned PTO."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you supported a colleague who was having a hard time.",
+        "Role: senior on cross-team migration; Situation: peer burned out with absent manager; Actions: escalated to skip, redistributed tickets across squads; Outcome: migration on time, peer took PTO; Quote: 'I ran a quick sync with the other leads and followed up weekly.'",
+        "Follow-up: How did you influence without authority? -> Shared load and weekly check-ins."
+      ],
+      "raiseFeedback": "Raises the bar for Bring Good Vibes at senior level. The candidate used influence across teams to redistribute work for a burned-out peer. Quote: 'I ran a quick sync with the other leads, shared the load.' This produced cross-team impact and helped the peer recover without heroics. The story includes clear follow-through and a positive team outcome. Biggest strength is the combination of empathy with measurable coordination across squads.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported a colleague who was having a hard time."
+        },
+        {
+          "role": "candidate",
+          "text": "I noticed someone on my team seemed down so I sent them a Slack message saying 'hope you're okay'."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it change anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "They replied thanks but I didn't follow up further."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you supported a colleague who was having a hard time.",
+        "Role: senior; Situation: teammate seemed down; Actions: sent one Slack message; Outcome: no further action; Quote: 'They replied thanks but I didn't follow up further.'",
+        "Follow-up: Did it change anything? -> No further action."
+      ],
+      "lowerFeedback": "Lowers the bar for Bring Good Vibes at senior level. The candidate limited support to a single Slack message with no follow-up or cross-team coordination. Quote: 'They replied thanks but I didn't follow up further.' This shows minimal influence and no evidence of raising the team environment. The story stays entirely local and passive. Biggest gap is lack of sustained action or leverage expected at senior scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported a colleague who was having a hard time."
+        },
+        {
+          "role": "candidate",
+          "text": "After a re-org, two directors were struggling with new scope and team morale dropped. I created a bi-weekly leadership circle where they could surface issues and paired each with a peer mentor from another org."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Retention in those teams improved 15% over the next two quarters and the practice spread to three other orgs. I later made it part of the standard onboarding for new directors."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you supported a colleague who was having a hard time.",
+        "Role: exec post re-org; Situation: directors struggling with scope and morale; Actions: launched bi-weekly leadership circle and peer mentoring; Outcome: 15% retention lift, spread to other orgs; Quote: 'I later made it part of the standard onboarding for new directors.'",
+        "Follow-up: What was the longer-term effect? -> Retention improved and practice scaled."
+      ],
+      "raiseFeedback": "Raises the bar for Bring Good Vibes at exec level. The candidate built an org-level support mechanism that scaled beyond the initial two directors. Quote: 'I later made it part of the standard onboarding for new directors.' This reflects strategic judgment and long-term leverage rather than one-off help. The result includes measurable retention impact and adoption across multiple orgs. Biggest strength is turning a support need into a durable program.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported a colleague who was having a hard time."
+        },
+        {
+          "role": "candidate",
+          "text": "I told my directs to watch for burnout on their teams and to reach out if needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any follow-up from you personally?"
+        },
+        {
+          "role": "candidate",
+          "text": "I left it to them to handle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you supported a colleague who was having a hard time.",
+        "Role: exec; Situation: general burnout risk; Actions: delegated to directs with no personal involvement; Outcome: none described; Quote: 'I left it to them to handle.'",
+        "Follow-up: Any follow-up from you personally? -> Left it to them."
+      ],
+      "lowerFeedback": "Lowers the bar for Bring Good Vibes at exec level. The candidate delegated the issue entirely without personal engagement or structural change. Quote: 'I left it to them to handle.' This shows no strategic judgment or org-level leverage. No evidence of trade-offs or long-term thinking appears. Biggest gap is absence of any visible executive ownership or scaling mechanism."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of support",
+      "junior": "Individual teammate pairing",
+      "senior": "Cross-team ticket redistribution",
+      "exec": "Org-wide leadership circle and onboarding program"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Direct help offered",
+      "senior": "Sync with leads without authority",
+      "exec": "Created repeatable process adopted broadly"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Teammate shipping in 2 weeks",
+      "senior": "Migration on time, peer PTO taken",
+      "exec": "15% retention lift, scaled to 3+ orgs"
+    },
+    {
+      "signal": "Reflection shown",
+      "junior": "Learned to check in early",
+      "senior": "Followed up weekly until steady state",
+      "exec": "Institutionalized into director onboarding"
+    },
+    {
+      "signal": "Passivity risk",
+      "junior": "Waiting for teammate to ask",
+      "senior": "Single message with no follow-up",
+      "exec": "Fully delegated without personal involvement"
+    }
+  ],
+  "kind": "lp"
+}

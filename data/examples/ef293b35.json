@@ -1,0 +1,171 @@
+{
+  "question": "Tell me about the most ambitious goal you have set. Did you reach it?",
+  "principle": "Aim High and Find a Way",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My most ambitious goal was to reduce the bug backlog in my team's service by 40% in one quarter while also shipping two new features. I reached it by creating a daily triage process and pairing with a senior engineer on the hardest items."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the starting state and what specifically did you do when blockers appeared?"
+        },
+        {
+          "role": "candidate",
+          "text": "We started at 120 open bugs. When the first feature slipped, I reprioritized the bug list with the PM and asked for two days of dedicated time from another team member. We closed 52 bugs and shipped both features."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most ambitious goal you have set. Did you reach it?",
+        "Role: new grad on backend team; Situation: 120-bug backlog + two feature commitments; Actions: daily triage, paired reviews, reprioritized with PM; Outcome: 52 bugs closed, both features shipped; Quote: 'I asked for two days from another team member'",
+        "Follow-up: What happened when the feature slipped? -> Reprioritized and negotiated help"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way for a junior candidate. The candidate chose a goal that combined quality and delivery under their direct control. They described concrete steps taken when the original plan broke, including asking for help. The outcome was measured and tied to the original target. Biggest strength is the willingness to adjust tactics without lowering the goal.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a goal to finish all my onboarding tasks in the first month. I reached most of them but some docs took longer than expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this ambitious and what did you do when it slipped?"
+        },
+        {
+          "role": "candidate",
+          "text": "It felt ambitious because I was new. When things slipped I just worked late a few nights but didn't ask anyone for help on the unclear parts."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most ambitious goal you have set. Did you reach it?",
+        "Role: new grad; Situation: onboarding checklist; Actions: worked late; Outcome: most items done; Quote: 'It felt ambitious because I was new'",
+        "Follow-up: Did you adjust the goal or seek help? -> No, just worked longer hours"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way. The goal stayed within routine onboarding and lacked any stretch beyond normal expectations. When friction appeared the candidate defaulted to extra hours instead of finding a different approach. No evidence of raising the target or measuring impact. Biggest gap is absence of an ambitious target from the start."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a goal to cut p99 latency by 40% across two services owned by different teams within six months. We reached 37% by creating a shared performance review board and getting the other team to adopt our profiling tools."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to participate without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a joint demo showing their service was the bottleneck and offered to do the first two profiling sessions myself. After they saw the data they assigned one engineer part-time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most ambitious goal you have set. Did you reach it?",
+        "Role: senior engineer; Situation: cross-team latency goal of 40%; Actions: joint review board, offered to do initial work, shared tools; Outcome: 37% reduction; Quote: 'I ran a joint demo showing their service was the bottleneck'",
+        "Follow-up: How did you influence the other team? -> Offered to lead first sessions and shared data"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way at the senior level. The goal required cross-team coordination and a clear numeric target. The candidate used data and incremental help to gain traction without formal authority. They came close to the original target and can articulate the trade-offs. Biggest strength is the combination of ambitious scope with concrete influence tactics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to improve our service uptime from 99.5% to 99.9%. We got to 99.7% after adding more alerts and one new runbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why was this the most ambitious goal and what cross-team work was involved?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was ambitious for our team. The other teams were busy so we focused on what we could control with alerts and docs."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most ambitious goal you have set. Did you reach it?",
+        "Role: senior engineer; Situation: internal uptime improvement; Actions: added alerts and runbook; Outcome: reached 99.7%; Quote: 'The other teams were busy so we focused on what we could control'",
+        "Follow-up: Did you try to expand scope or involve others? -> Stayed within own team"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way. The goal remained inside a single team and the result fell short of the stated target with no attempt to adjust scope upward. Influence was not exercised beyond the candidate's immediate group. Biggest gap is lack of evidence that the candidate pushed for a meaningfully harder target or found ways around organizational friction."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My most ambitious goal was to move our company from a single-product to a platform model serving three new customer segments within 18 months. We achieved two segments and 22% of revenue from the new platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make and how did you handle internal resistance?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deprioritized two existing features that were requested by the core segment. I created a steering committee with the heads of product and sales and ran monthly reviews that forced explicit decisions on resource allocation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most ambitious goal you have set. Did you reach it?",
+        "Role: VP; Situation: platform transformation affecting three segments; Actions: deprioritized core features, formed steering committee, monthly resource reviews; Outcome: two segments live, 22% revenue; Quote: 'I created a steering committee with the heads of product and sales'",
+        "Follow-up: How did you manage the deprioritization decision? -> Monthly reviews forced explicit trade-offs"
+      ],
+      "raiseFeedback": "Raises the bar on Aim High and Find a Way at the exec level. The goal required a fundamental business model shift with clear revenue metrics. The candidate made visible trade-offs and built a governance structure to sustain momentum. They delivered partial but substantial results and can discuss the strategic choices. Biggest strength is the ability to translate an ambitious vision into organizational mechanisms.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a goal to grow our main product revenue by 15% in a year. We hit 12% by hiring two new account managers and running a pricing test."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this goal ambitious relative to the business and what strategic choices were required?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was above the board target. We mostly stayed focused on the existing product and did not pursue new segments because the sales team was already stretched."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most ambitious goal you have set. Did you reach it?",
+        "Role: VP; Situation: 15% revenue growth on core product; Actions: hired account managers, ran pricing test; Outcome: 12% growth; Quote: 'We did not pursue new segments because the sales team was already stretched'",
+        "Follow-up: What trade-offs or new bets were considered? -> Stayed with existing product and team"
+      ],
+      "lowerFeedback": "Lowers the bar on Aim High and Find a Way. The goal was an incremental stretch on the current business with no structural change or new market entry. When capacity constraints appeared the candidate accepted the limit rather than creating new leverage. Biggest gap is absence of strategic ambition or mechanisms to unlock larger outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of goal",
+      "junior": "Individual task with measurable stretch",
+      "senior": "Cross-team numeric target",
+      "exec": "Business model or multi-segment change"
+    },
+    {
+      "signal": "Persistence after setback",
+      "junior": "Adjusted tactics and asked for help",
+      "senior": "Used data and offers of help to gain traction",
+      "exec": "Built governance to force ongoing trade-off decisions"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asked teammate directly",
+      "senior": "Joint demo and shared tooling",
+      "exec": "Steering committee with explicit resource reviews"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Bugs closed and features shipped",
+      "senior": "37% of 40% latency target",
+      "exec": "Two of three segments, 22% revenue"
+    },
+    {
+      "signal": "Willingness to deprioritize",
+      "junior": "Reprioritized bug list with PM",
+      "senior": "Offered to do initial work to reduce load on others",
+      "exec": "Explicitly dropped core feature requests"
+    },
+    {
+      "signal": "Learning from result",
+      "junior": "Recognized value of asking early",
+      "senior": "Continued using joint review board after project",
+      "exec": "Used steering committee for subsequent planning cycles"
+    }
+  ],
+  "kind": "lp"
+}

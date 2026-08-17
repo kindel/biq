@@ -1,0 +1,201 @@
+{
+  "question": "Tell me about a time you were wrong in public. What did you do?",
+  "principle": "Learn Voraciously",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship, I presented a dashboard metric that I had calculated wrong during a team sync. I realized the error two days later after rechecking the query."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a follow-up email to the whole team with the corrected numbers and explained the source of the mistake in the join condition. My manager later asked me to document the fix in our runbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple people thanked me for the update; no one called it out in the next meeting. I started double-checking joins on every new query after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were wrong in public. What did you do?",
+        "Intern presented wrong dashboard metric in team sync",
+        "Realized error after rechecking query; sent correction email to team",
+        "Quote: 'I started double-checking joins on every new query after that'",
+        "Follow-up: How did the team react? \u2192 Quiet thanks, added to runbook, changed personal process"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously for a junior candidate. The candidate owned a calculation error made during a team presentation and sent a public correction with the root cause. The story shows immediate application of the lesson by changing their query-checking habit. This matches the expected scope of individual work and coachability at 0-2 years. The follow-up confirmed the team accepted the update without drama. Biggest strength is the clear link from mistake to changed personal process.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once gave the wrong estimate for a small feature during standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you realized it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just updated the ticket quietly and moved on. The PM noticed later but it didn't affect much."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were wrong in public. What did you do?",
+        "Gave wrong estimate in standup",
+        "Updated ticket quietly after realizing",
+        "Quote: 'The PM noticed later but it didn't affect much'",
+        "Follow-up: Did you tell anyone? \u2192 No public correction, no documented learning"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate described realizing an estimate was wrong yet chose to update the ticket silently instead of correcting publicly. No evidence of sharing the mistake or adjusting their approach going forward. At junior level we expect visible ownership of their own work and quick adoption of feedback. The outcome stayed local with no learning loop. Biggest gap is absence of any action that would prevent the same error or help teammates."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Last year I told two partner teams that a new API contract would support their use case. In the design review I discovered the pagination model broke one of their flows."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the correction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I opened the next cross-team sync by walking through the exact limitation, proposed two alternatives, and asked the affected teams which one fit their roadmap. We landed on a v2 endpoint that both could use."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any lasting change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a required 'consumer review' step to our API design checklist and have run three sessions with other teams on it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were wrong in public. What did you do?",
+        "Told partner teams an API contract would work; later found pagination broke one flow",
+        "Opened cross-team sync, presented limitation, ran options, added consumer review step to checklist",
+        "Quote: 'I added a required consumer review step to our API design checklist'",
+        "Follow-up: Any lasting change? \u2192 Three sessions run, checklist adopted beyond own team"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously for a senior candidate. The candidate publicly corrected an API promise in a cross-team forum and drove a process change that now protects other teams. The story shows influence without authority through the new checklist and teaching sessions. Metrics are modest but grounded in three sessions and checklist adoption. This meets the 3-7 year expectation of cross-team impact and raising the bar for others. Biggest strength is turning a personal mistake into a durable team safeguard.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I misjudged how long a migration would take in a planning meeting with two other teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you correct it publicly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I updated the plan in our internal doc and let the leads know one-on-one. It slipped a couple weeks but we recovered."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were wrong in public. What did you do?",
+        "Misjudged migration timeline in cross-team planning",
+        "Updated internal doc and told leads privately",
+        "Quote: 'It slipped a couple weeks but we recovered'",
+        "Follow-up: Any process change? \u2192 None described beyond private updates"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate avoided a public correction and handled the timeline miss through private channels only. No evidence of sharing the misjudgment more broadly or creating any safeguard for future planning. At senior level we look for influence that extends beyond the immediate team. The outcome stayed contained with no visible learning transferred to others. Biggest gap is lack of any mechanism that would help peer teams avoid the same error."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two quarters ago I committed the company to a new market entry based on early customer signals. Six weeks in, churn data showed the segment was far smaller than modeled."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with that information?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the revised TAM to the full leadership team and board, recommended we pause the build-out, and redirected the team to a narrower pilot that could still validate the original thesis. We later published the corrected model and the decision criteria we used."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect the organization?"
+        },
+        {
+          "role": "candidate",
+          "text": "The pause freed two engineering teams for a higher-priority initiative and we now require a second data source before any market-commitment slide goes to the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were wrong in public. What did you do?",
+        "Committed company to new market entry; six weeks later churn data showed segment far smaller",
+        "Presented revised TAM to leadership and board, paused build-out, redirected to narrower pilot, published corrected model",
+        "Quote: 'We now require a second data source before any market-commitment slide goes to the board'",
+        "Follow-up: How did that affect the organization? \u2192 Two teams freed, new data requirement institutionalized"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously at the executive level. The candidate publicly reversed a market-entry commitment after new data contradicted the model and redirected resources while codifying a new review requirement for the board. The story demonstrates strategic judgment under ambiguity and long-term leverage through the second-data-source rule. Impact is org-level: two teams reallocated and a durable process change. This matches the 10+ year expectation of trading off short-term optics for better long-term decisions. Biggest strength is institutionalizing the lesson rather than treating it as a one-time correction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I green-lit a product expansion that later missed its revenue target by a wide margin."
+        },
+        {
+          "role": "interviewer",
+          "text": "How visible was the correction?"
+        },
+        {
+          "role": "candidate",
+          "text": "We adjusted the forecast in the next quarterly review and moved resources quietly. The team learned a lot from it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were wrong in public. What did you do?",
+        "Green-lit product expansion that missed revenue target",
+        "Adjusted forecast in quarterly review and moved resources quietly",
+        "Quote: 'The team learned a lot from it'",
+        "Follow-up: Any org-level change? \u2192 None described beyond internal forecast adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate described a significant strategic miss yet kept the correction inside routine quarterly processes with no public reversal or broader sharing. No evidence of new guardrails or decision criteria being adopted at the org or board level. At executive scope we expect visible trade-offs and mechanisms that protect the company from repeated errors. The outcome remained tactical with no lasting leverage. Biggest gap is absence of any institutionalized learning from the mistake."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Public admission and correction",
+      "junior": "Explicit email to team with root cause",
+      "senior": "Opened cross-team sync with limitation and options",
+      "exec": "Presented revised TAM to leadership and board with pause recommendation"
+    },
+    {
+      "signal": "Evidence of learning applied",
+      "junior": "Started double-checking joins on every query",
+      "senior": "Added consumer review step to API checklist",
+      "exec": "New second-data-source requirement for board market slides"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual habit change",
+      "senior": "Cross-team process plus three teaching sessions",
+      "exec": "Org resource reallocation and board-level process change"
+    },
+    {
+      "signal": "Ownership without defensiveness",
+      "junior": "Owned calculation error in follow-up email",
+      "senior": "Walked through exact limitation in joint forum",
+      "exec": "Recommended pause after data contradicted model"
+    },
+    {
+      "signal": "Raising others",
+      "junior": "None expected",
+      "senior": "Checklist adopted beyond own team",
+      "exec": "Institutionalized decision criteria for entire leadership"
+    }
+  ],
+  "kind": "lp"
+}

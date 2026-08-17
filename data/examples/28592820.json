@@ -1,0 +1,180 @@
+{
+  "question": "Tell me about a cheap decision that cost more later. What did you learn?",
+  "principle": "Hate Waste",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I picked a free open-source library for a feature to avoid licensing fees. Two weeks later it had a breaking change and no support, so I spent three days rewriting the integration."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a quick checklist for dependencies: docs, last commit, and one paid alternative to compare."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a cheap decision that cost more later. What did you learn?",
+        "Chose free OSS lib to skip license cost",
+        "Broke after two weeks; three days rewrite",
+        "Added personal checklist for future deps",
+        "Quote: \"I now compare one paid option every time\"",
+        "Follow-up: Asked how they changed process; described checklist"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste for junior level. Story shows an individual decision on tool choice that created rework. Candidate owned the outcome and described a repeatable check they now use. The learning is local but actionable. Biggest strength is turning the incident into a personal process change without needing manager direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We used the cheapest cloud instance and it kept crashing during load tests so we had to upgrade later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn from that?"
+        },
+        {
+          "role": "candidate",
+          "text": "That sometimes you just have to spend more money."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a cheap decision that cost more later. What did you learn?",
+        "Cheapest instance kept crashing",
+        "Had to upgrade after load tests",
+        "Learning stated as \"sometimes spend more\"",
+        "Follow-up: Pressed on personal action; no process change described"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. Candidate identified a cost-saving choice that failed but offered no ownership of the decision or concrete learning applied afterward. The takeaway remained generic. Biggest gap is absence of any forward action or reflection on how to evaluate trade-offs next time."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team chose a low-cost vendor for a shared service used by three other teams to save $40k annually. Six months later reliability issues forced a migration that cost $120k and delayed two roadmaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the cross-team impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a post-mortem with the actual TCO numbers and got the other teams to agree on a joint evaluation rubric before the next vendor decision."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a cheap decision that cost more later. What did you learn?",
+        "Low-cost vendor for shared service saved $40k but migration cost $120k",
+        "Impacted three other teams' roadmaps",
+        "Created post-mortem and joint evaluation rubric",
+        "Quote: \"We now run TCO reviews with all consumers\"",
+        "Follow-up: How cross-team coordination worked; described rubric adoption"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste for senior level. Decision had measurable cross-team cost and schedule impact. Candidate drove a post-mortem and established a shared process that prevents repeat mistakes. Learning moved beyond the immediate team. Biggest strength is converting the failure into an influence mechanism across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We picked a cheaper analytics tool and later had to buy add-ons that made it more expensive than the original option."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple teams complained but we just switched back."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a cheap decision that cost more later. What did you learn?",
+        "Cheaper analytics tool required expensive add-ons",
+        "Switched back after complaints",
+        "No quantified impact or process change",
+        "Follow-up: Asked about influence on others; no evidence of coordination"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. Story stayed within one team's tool choice and ended with a simple reversal rather than systemic learning. No metrics on total cost or downstream effects were shared. Biggest gap is lack of any attempt to influence or prevent similar decisions elsewhere."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We approved a low-cost offshore support contract to cut $2M from the P&L. Within nine months support tickets tripled and customer NPS dropped four points, requiring an on-shore team rebuild that cost $5M."
+        },
+        {
+          "role": "interviewer",
+          "text": "What strategic change did you drive?"
+        },
+        {
+          "role": "candidate",
+          "text": "I changed the vendor evaluation framework to require three-year TCO and customer-impact modeling; every new contract now runs through that gate."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a cheap decision that cost more later. What did you learn?",
+        "Offshore support saved $2M but NPS drop and $5M rebuild",
+        "Org-level customer impact",
+        "Instituted three-year TCO and impact modeling gate",
+        "Quote: \"Now every contract runs through that gate\"",
+        "Follow-up: How framework was adopted; described org-wide rollout"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste at exec level. Decision had clear P&L and customer-metric consequences at business scale. Candidate translated the failure into a durable policy change that affects all future contracts. Focus stayed on leverage through process rather than heroics. Biggest strength is embedding long-term cost thinking into operating mechanisms.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We went with a lower-cost data center region and later had latency complaints that hurt some product metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the business do differently afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "We moved the workloads back and updated the runbook."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a cheap decision that cost more later. What did you learn?",
+        "Lower-cost region caused latency issues",
+        "Workloads moved back",
+        "Only runbook update mentioned",
+        "Follow-up: Asked for org-level change; response stayed tactical"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. Story described a cost decision with downstream effects but stayed at the level of a single fix and minor documentation. No evidence of strategic judgment or trade-off frameworks applied to future decisions. Biggest gap is absence of any durable, scalable mechanism to prevent similar waste at business scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of the cheap decision",
+      "junior": "Owns personal tool choice and adds checklist",
+      "senior": "Owns cross-team vendor choice and drives post-mortem",
+      "exec": "Owns org P&L decision and installs policy gate"
+    },
+    {
+      "signal": "Quantified long-term cost",
+      "junior": "Mentions days of rework",
+      "senior": "$40k saved vs $120k migration",
+      "exec": "$2M saved vs $5M rebuild plus NPS drop"
+    },
+    {
+      "signal": "Learning turned into process",
+      "junior": "Personal dependency checklist",
+      "senior": "Joint evaluation rubric across teams",
+      "exec": "Three-year TCO modeling required for all contracts"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Individual next time",
+      "senior": "Multiple teams adopt rubric",
+      "exec": "Org-wide contract gate"
+    },
+    {
+      "signal": "Customer or business metric impact",
+      "junior": "Not mentioned",
+      "senior": "Roadmap delays for three teams",
+      "exec": "NPS drop of four points"
+    }
+  ],
+  "kind": "lp"
+}
