@@ -33,6 +33,18 @@ somewhere else can override them by setting `window.BIQ` in an inline script *be
 </script>
 ```
 
+## Check the search
+
+```
+node scripts/check_search.js
+```
+
+Lifts `norm` and `matches` out of `js/biq.js` rather than restating them, so
+the check cannot drift from what the page runs. It asserts that every name and
+alias finds its own principle, that junk and stop words match nothing, that
+each abbreviation resolves to the one principle it abbreviates, and that near
+misses land.
+
 ## Regenerate examples
 
 Run the **Generate example packs** action. It is manual only, because every
