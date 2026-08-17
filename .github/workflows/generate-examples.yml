@@ -43,8 +43,13 @@ jobs:
       - name: Generate
         env:
           XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
-          BIQ_COMPANY: ${{ inputs.company == 'all' && '' || inputs.company }}
-          BIQ_DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
+          # Passed through verbatim. generate.py understands "all" and the
+          # words a boolean input produces, so there is no expression here to
+          # get wrong. The cond && a || b idiom silently returns b when a is
+          # an empty string, which is how "all" reached the script as a
+          # company name and matched nothing.
+          BIQ_COMPANY: ${{ inputs.company }}
+          BIQ_DRY_RUN: ${{ inputs.dry_run }}
         shell: bash
         run: |
           set -o pipefail
