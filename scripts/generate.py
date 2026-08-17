@@ -19,6 +19,7 @@ WORKERS = 3
 TIMEOUT = 180
 RETRIES = 3
 LEVELS = ("junior", "senior", "exec")
+TRUTHY = ("1", "true", "yes", "on")
 
 SCHEMA = """
 Return JSON only. No markdown. No fence.
@@ -192,15 +193,27 @@ def write_log(payload):
 
 def main():
     # BIQ_DRY_RUN reports what a run would cost and writes nothing, so the
-    # count can be checked before spending. It needs no API key.
-    dry_run = bool((os.environ.get("BIQ_DRY_RUN") or "").strip())
+    # count can be checked before spending. It needs no API key. Accepts the
+    # words a workflow input produces as well as 1, so callers never have to
+    # translate a boolean into a truthy string.
+    dry_run = (os.environ.get("BIQ_DRY_RUN") or "").strip().lower() in TRUTHY
     api_key = os.environ.get("XAI_API_KEY") or ""
 
     os.makedirs(OUT_DIR, exist_ok=True)
     bank = json.load(open(BANK))
+    # Empty and "all" both mean every company, so a caller can pass a company
+    # name straight through without having to turn "all" into an empty string.
     company = (os.environ.get("BIQ_COMPANY") or "").strip().lower()
+    if company == "all":
+        company = ""
     principles = []
     if bank.get("companies"):
+        known = [c.get("id") for c in bank["companies"]]
+        if company and company not in known:
+            raise SystemExit(
+                "BIQ_COMPANY=%r matches no company. Known: %s, or all."
+                % (company, ", ".join(known))
+            )
         for c in bank["companies"]:
             if company and c.get("id") != company:
                 continue
@@ -226,6 +239,16 @@ def main():
             have += 1
         else:
             pending.append(j)
+
+    # A run that matches nothing is a misconfiguration, not a no-op. Failing
+    # here is what turns a silently successful empty run into a visible one.
+    if not jobs:
+        raise SystemExit(
+            "no questions matched (company=%r). The bank has %d."
+            % (company or "all", sum(len(p.get("questions") or [])
+                                     for c in bank.get("companies") or []
+                                     for p in c.get("principles") or []))
+        )
 
     print(f"total={len(jobs)} have={have} pending={len(pending)}", flush=True)
     if dry_run:
