@@ -81,6 +81,13 @@ def slug_for(principle_id, q):
     return f"{h:08x}"
 
 
+def slug_for_job(j):
+    """Return stored qid if present, else compute from principle_id and question."""
+    if j.get("qid"):
+        return j["qid"]
+    return slug_for(j["principle_id"], j["question"])
+
+
 def key_for(principle_id, question):
     return str(principle_id) + "|" + norm(question)
 
@@ -241,13 +248,14 @@ def main():
                     "principle": p.get("name") or "",
                     "question": q.get("text") or "",
                     "kind": p.get("kind") or "lp",
+                    "qid": q.get("id") or "",
                 }
             )
 
     pending = []
     have = 0
     for j in jobs:
-        slug = slug_for(j["principle_id"], j["question"])
+        slug = slug_for_job(j)
         if existing_valid(slug):
             have += 1
         else:
@@ -282,7 +290,7 @@ def main():
         futs = {ex.submit(call, j, sys_prompt, api_key): j for j in pending}
         for fut in as_completed(futs):
             j = futs[fut]
-            slug = slug_for(j["principle_id"], j["question"])
+            slug = slug_for_job(j)
             try:
                 pack = fut.result()
                 pack["principle"] = j["principle"]

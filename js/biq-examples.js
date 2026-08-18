@@ -21,6 +21,7 @@
   var principle = params.get("p") || "";
   var question = params.get("q") || "";
   var company = params.get("c") || "";
+  var qid = params.get("qid") || "";
   var principleEl = document.getElementById("biq-ex-principle");
   var questionEl = document.getElementById("biq-ex-question");
   var statusEl = document.getElementById("biq-ex-status");
@@ -165,7 +166,7 @@
     syncLevelRadios();
     updateUrl();
     if (!loaded) return;
-    var trackSlug = resolvedPrincipleId !== null ? slugFor(resolvedPrincipleId, question) : "";
+    var trackSlug = qid || (resolvedPrincipleId !== null ? slugFor(resolvedPrincipleId, question) : "");
     if (loaded.kind === "pack") {
       var pack = loaded.data;
       var levelSheet = pack.levels && pack.levels[currentLevel];
@@ -308,11 +309,11 @@
   }
 
   function fetchPack() {
-    if (resolvedPrincipleId === null) {
+    var slug = qid || (resolvedPrincipleId !== null ? slugFor(resolvedPrincipleId, question) : null);
+    if (!slug) {
       showMissing();
       return;
     }
-    var slug = slugFor(resolvedPrincipleId, question);
     fetch(examplesData + slug + ".json")
       .then(function (r) {
         if (r.status === 404) return { missing: true };
