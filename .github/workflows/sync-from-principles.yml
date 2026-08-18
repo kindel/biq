@@ -1,0 +1,46 @@
+name: Sync from principles
+
+on:
+  repository_dispatch:
+    types: [cascade]
+  workflow_dispatch:
+
+concurrency:
+  group: cascade-principles
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Add missing company and principle shells
+        run: python3 scripts/sync_from_principles.py
+      - name: Open a pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: cascade/principles
+          delete-branch: true
+          add-paths: |
+            data/questions.json
+            .kindel/last-sync.txt
+          commit-message: Add BIQ shells for new principles.
+          title: Add BIQ shells for new principles
+          body: |
+            Company and principle shells from `kindel/principles`.
+
+            New companies land with `examples: false` and empty question lists.
+            Existing banks are not rewritten. This does not generate example packs
+            and does not spend xAI credits.
+
+            Next, if a new company or principle showed up: write the questions,
+            run **Generate example packs**, review, then set `examples: true`.
+
+            See `.kindel/last-sync.txt`.
