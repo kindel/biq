@@ -13,6 +13,11 @@
       <p>A question bank for interviewers who care about only hiring excellent candidates.</p>
     </header>
     <section class="bhiq-app" aria-labelledby="bhiq-input-label">
+      <div class="bhiq-intro">
+        <p>If you already know a listed company's principles, pick that company and use those names. Or type the principle you care about in your own words.</p>
+        <p>The over 200 behavioral interview questions in this tool are the questions I have used and collected over the years. The examples provided were generated based on dozens of real interview notes and debriefs that I anonymized and fed into an LLM with a tuned prompt.</p>
+        <p>Each question includes example answers showing a hire-level answer and a common no-hire answer.</p>
+      </div>
       <p class="bhiq-level-label" id="bhiq-company-label">Company</p>
       <select id="bhiq-company" class="bhiq-select" aria-labelledby="bhiq-company-label"></select>
       <div id="bhiq-level-block">
@@ -29,6 +34,9 @@
       <div id="bhiq-chips" class="bhiq-chip-wrap" aria-label="Leadership principles"></div>
       <div id="bhiq-results" class="bhiq-results" aria-live="polite"></div>
     </section>
+    <footer class="bhiq-footer">
+      <p>To add another company's set, <a href="https://github.com/kindel/principles/issues/new">open an issue on kindel/principles</a>.</p>
+    </footer>
   </main>
   <script src="js/biq.js" defer></script>
 </body>
