@@ -19,6 +19,7 @@ on:
           - coupang
           - delivery-hero
           - gitlab
+          - dawn
       dry_run:
         description: Report what it would cost and write nothing
         required: true
