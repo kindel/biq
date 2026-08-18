@@ -1,18 +1,6 @@
 {
-  "id": "deliver-results",
-  "name": "Deliver Results",
-  "sort": 14,
-  "aliases": [
-    "dr",
-    "results",
-    "deliver",
-    "ship",
-    "delivery",
-    "deliver results",
-    "deadline",
-    "goal"
-  ],
-  "definition": "Leaders focus on the key inputs for their business and deliver them with the right quality and in a timely fashion. Despite setbacks, they rise to the occasion and never settle.",
+  "id": 1014,
+  "slug": "deliver-results",
   "why": [
     "Deliver Results is where the rest of the principles get cashed. {lp:ownership}, {lp:customer-obsession}, and {lp:bias-for-action} are why you deliver. {lp:think-big}, {lp:invent-and-simplify}, {lp:dive-deep}, {lp:are-right-a-lot}, {lp:insist-on-the-highest-standards}, and {lp:frugality} decide what is worth delivering. {lp:hire-and-develop-the-best}, {lp:have-backbone-disagree-and-commit}, and {lp:earn-trust} are how the work actually gets through other people.",
     "Look for commitments that landed, not for a tour of the process. This is not a think tank. A clever theory that never ships is a hobby. Leaders push the thing through to the end. They invent around the obstacle. They do not settle for good enough when the customer still feels the gap.",
@@ -20,78 +8,6 @@
     "Setbacks are part of the job. The principle is what you do next. Rise to the occasion. Do not rewrite the goal so the miss looks like a plan."
   ],
   "calibrationIntro": "Score whether someone finishes the right work, on time, at the right quality, without burning people or the future. Under misses or settles. Over hits a number by breaking trust, quality, or the team.",
-  "rows": [
-    {
-      "id": "quality-and-date",
-      "situation": "When a deadline is real",
-      "under": "Misses the mark and ships a good-enough product.",
-      "justRight": "Hits the date with work that was planned and is actually good.",
-      "over": "Decides on almost no data and cuts other people out in order to hit the date."
-    },
-    {
-      "id": "resources-vs-quality",
-      "situation": "When scoping the effort",
-      "under": "Does not put enough time or people on the work, and quality suffers.",
-      "justRight": "Uses the people on the team well and delivers quality through clear, shared decisions.",
-      "over": "The result is fine, and it consumed far more resource than the thing was worth."
-    },
-    {
-      "id": "metrics-cadence",
-      "situation": "When tracking whether you are on track",
-      "under": "Reviews metrics now and then. Accepts excuses for underperformance.",
-      "justRight": "Reviews the success metrics on a steady cadence and balances the short term with the longer term.",
-      "over": "Pushes results every day with no sense of the structure underneath. The team exhausts and output falls."
-    },
-    {
-      "id": "right-metrics",
-      "situation": "When choosing what to measure",
-      "under": "Lets the team invent new metrics so often that progress cannot be compared week to week.",
-      "justRight": "Keeps a stable set, and still asks whether those metrics are the ones that matter.",
-      "over": "Stares at last week's number and never looks at whether the work will matter next quarter."
-    },
-    {
-      "id": "obstacles",
-      "situation": "When something is in the way",
-      "under": "Is so understanding of every obstacle that no workaround ever appears.",
-      "justRight": "Names the obstacles early and either delivers the goal or delivers a workaround that still serves the customer.",
-      "over": "Gets the result and burns every bridge. Escalates as a habit."
-    },
-    {
-      "id": "goal-tradeoffs",
-      "situation": "When you cannot hit every goal",
-      "under": "Misses the objective and has not lined up the work that would finish it if a dependency opened.",
-      "justRight": "Hits the goals that matter and will trade a lesser one to protect a more important one.",
-      "over": "Hits most of the list by making poor calls, and misses the one that was actually critical."
-    },
-    {
-      "id": "sustainable-pace",
-      "situation": "When the work is heavy",
-      "under": "Loses focus. Is not motivated. The work drifts.",
-      "justRight": "Stays on the long-term result and sets a pace the team can run again next month.",
-      "over": "Piles on work that a team can survive for a short burst and then burns out."
-    },
-    {
-      "id": "schedules",
-      "situation": "When dates are on the calendar",
-      "under": "Treats dates as optional. Slips have no consequence.",
-      "justRight": "Sets a realistic schedule and delivers on it.",
-      "over": "Publishes an unreal schedule to squeeze out more work, then slips anyway."
-    },
-    {
-      "id": "plan-vs-reality",
-      "situation": "When the requirement changes",
-      "under": "So flexible that nothing is fixed. Scope keeps moving and the team wastes the week.",
-      "justRight": "Changes the deliverable when the business really changed, and holds still when it did not.",
-      "over": "Follows the first plan after it has stopped making sense."
-    },
-    {
-      "id": "planning-and-load",
-      "situation": "When the team has to live through the delivery",
-      "under": "Does not deliver. Planning is weak, focus is gone, and nobody is motivated.",
-      "justRight": "Delivers the project and the weekly work with a planned load the team will still accept tomorrow.",
-      "over": "Delivers by forcing long nights until people start to hate the job."
-    }
-  ],
   "examples": [
     {
       "title": "Invent around the blocked path",

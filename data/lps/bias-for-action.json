@@ -1,16 +1,6 @@
 {
-  "id": "bias-for-action",
-  "name": "Bias for Action",
-  "sort": 9,
-  "aliases": [
-    "bfa",
-    "action",
-    "speed",
-    "bias",
-    "bias for action",
-    "move"
-  ],
-  "definition": "Speed matters in business. Many decisions and actions are reversible and do not need extensive study. Leaders value calculated risk taking.",
+  "id": 1009,
+  "slug": "bias-for-action",
   "why": [
     "If you only do the things you already know will work, you leave a lot of opportunity on the table. An experiment is not an experiment if you know the outcome. Some of those bets fail. You often learn more from the miss than you would have from a safe success.",
     "Look for whether someone can tell a two-way door from a one-way door. If the decision is reversible, act. More study after you have enough information is waste. If the decision is irreversible, that is when you {lp:dive-deep} and slow down on purpose.",
@@ -18,64 +8,6 @@
     "It also looks like impatience when a customer is hurting. You join the investigation before anyone proves it is your team's bug. You do the right thing for the customer without waiting for a permission slip. Calculated risk is the point. Motion without a target is not."
   ],
   "calibrationIntro": "Score whether someone moves with calculated risk and then course-corrects. Under is paralysis or passivity. Over is steamrolling, no focus, and a pile of unfinished work.",
-  "rows": [
-    {
-      "id": "team-effectiveness",
-      "situation": "When the team has to move",
-      "under": "Nothing gets done. Customers and peers see the group as ineffective.",
-      "justRight": "Takes calculated risks. Decisions are quick, and course correction is fluid. Other people want to work with them.",
-      "over": "Customers and peers feel steamrolled. Everything is priority one. Deadlines are missed."
-    },
-    {
-      "id": "step-up",
-      "situation": "When work is sitting unowned",
-      "under": "Passes the work up or leaves it sitting.",
-      "justRight": "Moves the work forward. Steps up and owns it.",
-      "over": "Tackles everything and has no sense of priority."
-    },
-    {
-      "id": "follow-through",
-      "situation": "When the group agrees a change is needed",
-      "under": "Talks about the change and never does the action part.",
-      "justRight": "Names the reversible next step, takes it, and checks whether it worked.",
-      "over": "Fixes the local issue in a hurry and never looks at the larger picture."
-    },
-    {
-      "id": "fear-of-wrong",
-      "situation": "When the path is new",
-      "under": "Afraid to be wrong. Overanalyzes. Says we cannot, or we have never done that. Does not roll up sleeves.",
-      "justRight": "Starts on the problem, even if the first move is small. Reaches across teams to learn faster. Title does not mean less work.",
-      "over": "Does the work at any cost. Gets a lot of the wrong things done. Never reflects, and never finishes."
-    },
-    {
-      "id": "motion-vs-progress",
-      "situation": "When the calendar is full",
-      "under": "Bias for thinking, or for doing nothing.",
-      "justRight": "Execution is what matters. Prefers incremental progress in the right direction over waiting for a perfect plan.",
-      "over": "Constant motion with no focus."
-    },
-    {
-      "id": "prototype",
-      "situation": "When the data is incomplete",
-      "under": "Analysis paralysis. Waits for a complete picture that will not arrive.",
-      "justRight": "Reads the data they have, picks a solid next step, and goes forward with a prototype.",
-      "over": "Takes action on a path they cannot even describe."
-    },
-    {
-      "id": "input-and-reversibility",
-      "situation": "When a decision needs input",
-      "under": "Delays for weeks waiting to hear from everyone before acting.",
-      "justRight": "Consults the people who matter, takes an acceptable amount of risk, and moves.",
-      "over": "Acts with no input, and does not stop to ask whether the move is reversible."
-    },
-    {
-      "id": "customer-pain",
-      "situation": "When a customer is hurting",
-      "under": "Waits for a ticket, an assignment, or proof it is their issue.",
-      "justRight": "Joins the investigation early, even when it may not be their team's bug, and does the next right thing for the customer.",
-      "over": "Charges in, breaks a one-way door, and creates a second incident."
-    }
-  ],
   "examples": [
     {
       "title": "Two-way door, then correct",

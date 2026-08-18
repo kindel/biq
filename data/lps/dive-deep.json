@@ -1,17 +1,6 @@
 {
-  "id": "dive-deep",
-  "name": "Dive Deep",
-  "sort": 12,
-  "aliases": [
-    "dd",
-    "deep",
-    "details",
-    "root cause",
-    "metrics",
-    "dive deep",
-    "dig"
-  ],
-  "definition": "Leaders operate at all levels, stay connected to the details, audit frequently, and are skeptical when metrics and anecdote differ. No task is beneath them.",
+  "id": 1012,
+  "slug": "dive-deep",
   "why": [
     "If you do not understand the details of the business, you will fail. Dive Deep is getting to the root cause. Good leaders peel layers. They ask why until they hit something they can fix so it stays fixed. When a senior person does that, the team gets more rigorous, because sloppy stories stop surviving contact with the facts.",
     "Look for skepticism when the metric and the anecdote disagree. Intuition is a starting point. Then you test it. When the data is not sitting in a dashboard, good people go get it. They do not take a deck at face value, and they do not derail a meeting with twelve more cuts that will not change the decision.",
@@ -19,78 +8,6 @@
     "It is not micromanagement. Micromanagement is controlling the minutiae and doing the owner's job for them. Dive Deep is understanding the details, then setting audits that keep your hand on the pulse without living in the spreadsheet. You test the assumption, then you step back and let the owner own it. No task is beneath you. That does not mean every task is yours."
   ],
   "calibrationIntro": "Score whether someone can get to root cause and then let the owner run. Under accepts the slide. Over lives in the data and never decides. Product-line and unit-economics stories count; jargon does not make the answer deeper.",
-  "rows": [
-    {
-      "id": "unit-economics",
-      "situation": "When reviewing contribution or unit economics",
-      "under": "Looks at the category total against last year and never drills into product line, supplier, or cost component.",
-      "justRight": "Reviews the top and bottom product lines on a useful cadence, splits contribution into components (for example, shipping cost), and names both the unit-level actions and the root-cause problem (for example, supplier funding missing on every product from that supplier).",
-      "over": "Daily analysis of the top 1,000 contributors by every component, with a request for the state of each product. The report takes most of the day and leaves no time to fix anything."
-    },
-    {
-      "id": "metrics-review",
-      "situation": "When data is presented in a review",
-      "under": "Takes every number at face value. Does not ask how it was built, or whether it is agenda-free.",
-      "justRight": "Challenges how the number was derived, probes outliers, and tests both the data and the presenter's reading of it.",
-      "over": "Derails the meeting by asking for the same data cut twelve ways, with no story for how the next cut would change the decision."
-    },
-    {
-      "id": "unusual-metric",
-      "situation": "When a key metric looks wrong",
-      "under": "Treats the unusual number as weather and waits until the business is already hurt.",
-      "justRight": "Forms a hypothesis, finds the root cause, and puts a preventative fix in place so the same problem does not return.",
-      "over": "Spins up a crowd and a week of work for a blip with almost no business impact."
-    },
-    {
-      "id": "good-results",
-      "situation": "When a program beats the plan",
-      "under": "Enjoys the good week and learns nothing.",
-      "justRight": "Studies why it worked, then doubles down and replicates the principle wherever it holds.",
-      "over": "Spends the win investigating why last year was bad, because that is what made this year look good, and never uses the time to scale what is working."
-    },
-    {
-      "id": "sleeves",
-      "situation": "When the work needs another pair of hands",
-      "under": "Unwilling to step in. Treats the messy task as beneath them.",
-      "justRight": "Rolls up sleeves when the owner is stuck, follows through, and then hands the work back.",
-      "over": "Jumps in at the slightest deviation and stifles ownership and invention."
-    },
-    {
-      "id": "all-levels",
-      "situation": "When staying connected to the work",
-      "under": "Delegates and only talks to the immediate team.",
-      "justRight": "Stays connected at every level: walks the floor, talks to people who do the work, and still works through the people who lead them.",
-      "over": "Works several levels down and changes direction without telling the leaders in between."
-    },
-    {
-      "id": "drivers-not-minutiae",
-      "situation": "When reading the business metrics",
-      "under": "Treats metrics as a high-level weather report and never learns the drivers.",
-      "justRight": "Knows the underlying drivers, how they have trended, and who owns each one.",
-      "over": "Lives in the minutiae, loses the larger picture, and uses the data pile as a substitute for a decision."
-    },
-    {
-      "id": "symptoms-vs-root",
-      "situation": "When something is broken",
-      "under": "Fixes the symptom. Always delegates the question. Cannot describe the cause in one sentence.",
-      "justRight": "Reviews the metrics, asks why until the cause is specific, and then decides.",
-      "over": "Analysis paralysis. No decision, and no delegation."
-    },
-    {
-      "id": "business-case",
-      "situation": "When a business case or variance lands on the desk",
-      "under": "Skips due diligence. Accepts the projection and creates a controllership risk.",
-      "justRight": "Does enough work to find the blind spots, then improves the proposal so the company is better off.",
-      "over": "Asks for irrelevant detail, blocks momentum, and micromanages the author."
-    },
-    {
-      "id": "facts-not-i-think",
-      "situation": "When making a claim in a room",
-      "under": "Leads with I think. Blames other teams without data. Stays high-level and fakes fluency.",
-      "justRight": "Can get to the supporting fact, or to the person who has it, quickly. Calls a detail only when it changes something larger. Does not fake it.",
-      "over": "Drills every cell with no sense of what matters. Berates people who cannot produce a trivia answer on the spot."
-    }
-  ],
   "examples": [
     {
       "title": "When the metric and the story disagree",

@@ -1,47 +1,34 @@
 # Leadership Principles JSON (kindel/biq data/lps)
 
-User's manual: Under / Just Right / Over for each classic leadership principle.
-One file per principle. The /lps/ pages, the /biq/ site, and agents consume these files.
+Amazon teaching prose only. Name, definition, and rows come from kindel/principles.
 
 ## Files
 
 - `data/lps/index.json` catalog
-- `data/lps/{id}.json` one principle
+- `data/lps/<slug>.json` one principle
 
-Ids match `data/questions.json` (classic 14 only).
+Files are keyed by slug for Hugo: `resources.Get "data/lps/<slug>.json"`. Identity is `(company=amazon, numeric id)`.
 
 ## Cross-refs
 
-When prose mentions another principle, write a token `{lp:<id>}` inline.
+When prose mentions another principle, write a token `{lp:<slug>}` inline.
 
 Example: `That is {lp:ownership}, not heroics.`
 
 Renderers replace the token with a link. Agents treat tokens as hard links.
 
-Every `{lp:id}` token in `definition`, `why`, `calibrationIntro`, `rows`, `examples`, `looksLike`, or `deepen` MUST also appear in `related`. Navigation built from `related` has to see the same IDs the prose links. `related` may include extra principles that are not tokenized in prose.
+Every `{lp:slug}` token in `why`, `calibrationIntro`, `examples`, `looksLike`, or `deepen` MUST also appear in `related`. Navigation built from `related` has to see the same slugs the prose links. `related` may include extra principles that are not tokenized in prose.
 
-Never write the raw company name or product names. Principle names stay.
+Never write raw company names or product names. Principle names stay.
 
 ## Principle object
 
 ```json
 {
-  "id": "customer-obsession",
-  "name": "Customer Obsession",
-  "sort": 1,
-  "aliases": ["customer", "co"],
-  "definition": "Official short definition, company-agnostic, Kindel voice if tightened.",
+  "id": 1001,
+  "slug": "customer-obsession",
   "why": ["Short paragraph.", "Another paragraph."],
   "calibrationIntro": "How to use the rows below.",
-  "rows": [
-    {
-      "id": "decision-making",
-      "situation": "In decision making",
-      "under": "Too little of the principle.",
-      "justRight": "Calibrated.",
-      "over": "Too much of the principle."
-    }
-  ],
   "examples": [
     {"title": "Short title", "body": "Teaching example, company-agnostic."}
   ],
@@ -63,14 +50,16 @@ Never write the raw company name or product names. Principle names stay.
 
 Rules:
 
-- `id` kebab-case, matches filename without `.json`.
-- `sort` 1-14 in teaching order (Customer Obsession first, Deliver Results last).
-- `aliases` copied from questions.json for that id.
+- `id` is the numeric principles id (1001 for Customer Obsession, etc.).
+- `slug` is the kebab-case slug matching the filename without `.json`.
 - `why` is 3-6 short paragraphs. Each array item is one paragraph.
-- `rows` 5-12 real situations. Drop header-only rows (Under/Over/Just right as values). Invent a short `situation` label when the source left it blank. Give each row a kebab `id`.
 - `examples` 2-4 teaching cases. Generalize retail/ops specifics. Drop named-exec anecdotes you cannot restate without the company.
 - `deepen` 6-12 questions. Each is a full sentence ending with `?`.
-- `related` is the union of every `{lp:id}` token in the prose fields plus any extra curated links. Ids must exist. Two is a floor, not a cap.
-- `blog` is published tig.log posts that amplify this principle. Same shape on every file. Empty is allowed when there is no real post. `index.json` may have a `blog` list for the set.
+- `related` is the union of every `{lp:slug}` token in the prose fields plus any extra curated links. Slugs must exist in kindel/principles. Two is a floor, not a cap.
+- `blog` is published tig.log posts that amplify this principle. Same shape on every file. Empty is allowed when there is no real post.
 - Every string: no em dash, no `---`, Oxford commas, numbers under 10 spelled out.
 - No source-company names, products, executives, internal tools, or wiki chrome.
+
+## Not in these files
+
+Name, definition, rows, sort, and aliases now come from kindel/principles. This directory carries only the Amazon teaching prose that Porridge renders.
