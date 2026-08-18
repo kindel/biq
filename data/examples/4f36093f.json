@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time someone on your team was only making sure the problem was not in their part of the work. How did you shift them toward owning the whole outcome?",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my last project a backend dev kept saying 'my API returns 200 so it's not me' when the feature broke in staging. I pulled the logs myself, found the mismatch was in how the frontend parsed the response, and asked him to pair with me on the full flow. We fixed it together and he started checking the end-to-end test before closing tickets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say in that first conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said 'the customer sees a broken page, so let's figure out the whole thing even if your piece looks fine.' He agreed after we looked at the actual error together."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone on your team was only making sure the problem was not in their part of the work. How did you shift them toward owning the whole outcome?",
+        "Situation: backend dev blamed API, refused to look further",
+        "Action: candidate reproduced issue, paired on full flow, framed around customer impact",
+        "Outcome: bug fixed, teammate started owning end-to-end checks",
+        "Quote: 'the customer sees a broken page, so let's figure out the whole thing'",
+        "Follow-up: How did you handle pushback? - 'He agreed once we looked at the logs together'"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for a junior. The candidate took personal initiative to reproduce the issue instead of escalating. They used a concrete customer framing rather than authority. The teammate changed behavior after one pairing session. This shows local ownership and basic influence on a peer. Biggest strength is moving from 'not my part' to joint debugging without drama.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone on my team kept saying it wasn't their code. I told my manager and they handled it. Later the bug got fixed in the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to them directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just made sure my part was done so it wouldn't come back to me."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Situation: teammate blamed their component",
+        "Action: escalated to manager, focused on protecting own work",
+        "Outcome: issue resolved by someone else in next sprint",
+        "Quote: 'I just made sure my part was done'",
+        "Follow-up: What was the direct conversation? - 'Not really'"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for a junior. The candidate avoided direct conversation and handed the problem upward. They measured success by protecting their own scope rather than the outcome. No evidence of attempting to influence the teammate. Biggest gap is treating ownership as 'my part is clean' instead of driving the full resolution."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A data engineer on another team kept closing tickets once their pipeline emitted the file, even when downstream reports were broken. I set up a shared on-call rotation across both teams and showed the combined error budget. After two incidents where we both got paged, he started adding validation checks that caught issues before handoff."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as reducing total escalations for both teams and used the error budget numbers to show the cost of the handoff gaps."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Situation: cross-team data engineer limited scope to file emission",
+        "Action: created shared on-call, used error budget data to align incentives",
+        "Outcome: teammate added upstream validation, fewer handoff failures",
+        "Quote: 'reducing total escalations for both teams'",
+        "Follow-up: What resistance did you hit? - 'Used numbers to show cost of gaps'"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for a senior. The candidate created a cross-team mechanism instead of relying on escalation. They used data to align incentives without positional power. The change persisted beyond the initial incidents. Biggest strength is turning a scope dispute into a durable process that both teams adopted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The other team kept throwing issues over the wall. I documented every case and sent a weekly summary to both managers. Eventually leadership asked them to improve."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything in how the teams worked together?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure my team's side was always clean so the blame stayed on them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Situation: cross-team limited ownership at handoff",
+        "Action: documented cases, escalated via managers",
+        "Outcome: leadership eventually intervened",
+        "Quote: 'made sure my team's side was always clean'",
+        "Follow-up: Any direct changes? - 'No, just documented'"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for a senior. The candidate stayed within their team boundary and used documentation as a shield. They relied on management escalation rather than building alignment. No lasting cross-team change resulted from their actions. Biggest gap is absence of influence without authority."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product teams were each optimizing their own metrics while the overall activation funnel dropped. I removed the per-team targets, replaced them with a single shared outcome metric, and restructured the quarterly planning so both leaders reported on the joint number. Within two quarters the funnel recovered and the teams started sharing experiments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some teams lost visibility on their local metrics, which caused short-term discomfort, but the business result justified it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Situation: org-level silo at product team boundaries",
+        "Action: eliminated local metrics, created single shared outcome and joint planning",
+        "Outcome: funnel recovered, teams began collaborating on experiments",
+        "Quote: 'replaced them with a single shared outcome metric'",
+        "Follow-up: How did leaders react to losing local targets? - 'Short-term discomfort but justified by results'"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for an exec. The candidate changed org-level incentives rather than coaching individuals. They accepted short-term friction for long-term business alignment. The structural change produced sustained collaboration. Biggest strength is using metric redesign to drive ownership at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Teams were protecting their own areas. I asked each VP to present their metrics in the staff meeting and highlighted where handoffs were breaking. They eventually started coordinating more."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural change did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't change the metrics; I just made the gaps visible so they would own it themselves."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Situation: org-level limited ownership across teams",
+        "Action: surfaced gaps in meetings, relied on visibility",
+        "Outcome: some increase in coordination",
+        "Quote: 'made the gaps visible so they would own it themselves'",
+        "Follow-up: Any metric or planning changes? - 'No'"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for an exec. The candidate used visibility and social pressure instead of altering incentives or structure. They avoided the harder trade-off of changing targets. Impact remained incremental and dependent on ongoing attention. Biggest gap is lack of leverage through org design."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of intervention",
+      "junior": "Direct conversation or pairing with one peer",
+      "senior": "Cross-team process or shared tooling",
+      "exec": "Org metric or planning redesign"
+    },
+    {
+      "signal": "Use of data vs authority",
+      "junior": "Simple reproduction of the bug",
+      "senior": "Error budgets or shared metrics to align peers",
+      "exec": "Redesigned outcome metrics for entire teams"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "One pairing session after showing logs",
+      "senior": "Incentive framing that reduced total pain",
+      "exec": "Accepted short-term leader discomfort for business result"
+    },
+    {
+      "signal": "Persistence of change",
+      "junior": "Teammate started checking end-to-end tests",
+      "senior": "Shared on-call continued after initial incidents",
+      "exec": "Teams kept sharing experiments quarters later"
+    },
+    {
+      "signal": "Escalation pattern",
+      "junior": "Avoided manager, handled locally",
+      "senior": "Used data instead of escalation",
+      "exec": "Changed system so escalation was unnecessary"
+    }
+  ],
+  "principle_id": 6004,
+  "kind": "lp"
+}

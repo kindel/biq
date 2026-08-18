@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you proactively shared information across teams, locations, or divisions. How did you decide who needed to know?",
+  "principle": "Break down silos",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first feature, I noticed a dependency on another team's API that wasn't documented. After fixing my part I emailed the other team the exact endpoint change and a one-pager on what broke for us."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you pick who to tell?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my manager who owned that service and copied the two engineers whose names were in the repo. Follow-up: Did they respond? Yes, they updated their docs and invited me to their standup."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you proactively shared information across teams... How did you decide who needed to know?",
+        "Role: new grad on first project, noticed undocumented API change",
+        "Action: wrote one-pager and emailed owner + two engineers named in repo",
+        "Outcome: docs updated, invited to their standup",
+        "Quote: \"I asked my manager who owned that service\"",
+        "Follow-up: Did they respond? Yes, they updated their docs."
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos for a junior. The candidate identified an information gap that affected another team and took the step of sending a targeted one-pager. The decision process was simple but explicit: asked manager then copied the two names in the repo. This kept scope local while showing ownership beyond their own ticket. The outcome was small but measurable. Main gap is lack of any repeated pattern or reflection on how to scale the habit.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once found a bug in shared code and fixed it in my branch. I think I mentioned it in the team chat later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone outside your team need the info?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was mostly our problem. Follow-up: How did you decide? I just told my lead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you proactively shared information across teams... How did you decide who needed to know?",
+        "Role: fixed bug in shared code but kept update inside own team",
+        "Action: mentioned in team chat after the fact",
+        "Outcome: no cross-team follow-up described",
+        "Quote: \"It was mostly our problem\"",
+        "Follow-up: How did you decide? I just told my lead."
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos for a junior. The candidate treated a shared-code change as internal and only posted after the fact. No attempt was made to identify who else might be impacted or to reach them directly. Decision criteria were absent; the default was \"tell my lead.\" This shows limited ownership of information flow even at individual scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating work on a metrics pipeline. I pulled the top three stakeholders from each side into a shared doc, wrote the overlap analysis, and ran a 30-minute sync that produced a single owner."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you choose the stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at who had committed in the last quarter and who would feel the pain if we kept duplicating. Follow-up: Did this change anything ongoing? We now route new requests through that doc."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you proactively shared information across teams... How did you decide who needed to know?",
+        "Role: senior IC, spotted duplication between two teams",
+        "Action: identified stakeholders via commit history, wrote overlap analysis, ran sync",
+        "Outcome: single owner assigned and new request routing process created",
+        "Quote: \"I looked at who had committed in the last quarter\"",
+        "Follow-up: Did this change anything ongoing? Yes, new requests now route through the doc."
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos for a senior. The candidate used commit history to deliberately select the right people rather than broadcasting. The action created an ongoing coordination point instead of a one-time share. Influence happened without authority and produced a measurable process change. Scope stayed within two teams but the mechanism has reuse potential. Biggest remaining question is whether this pattern has been applied to larger or more distant groups.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent a weekly email summary to the other team when we changed our API. They usually replied with questions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the distribution list?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used the same list my predecessor had. Follow-up: Did you ever trim or add people? No, it stayed the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you proactively shared information across teams... How did you decide who needed to know?",
+        "Role: senior, sent recurring API change summary",
+        "Action: reused existing distribution list without review",
+        "Outcome: questions came back but no process improvement",
+        "Quote: \"I used the same list my predecessor had\"",
+        "Follow-up: Did you ever trim or add people? No."
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos for a senior. The candidate relied on an inherited list and never validated whether the right people were still on it. No evidence of choosing recipients based on current impact or ownership. The activity remained a broadcast rather than targeted information sharing. This misses the influence-without-authority expectation at this level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When we split the org into two regions, product and infra teams stopped sharing roadmap context. I created a quarterly cross-region review with rotating presenters and required both VPs to pre-read the same deck."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the attendee list and cadence?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mapped which decisions were now blocked by missing context and picked the smallest set of roles that could unblock them. Follow-up: What was the measurable effect? Decision latency on shared dependencies dropped from six weeks to two."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you proactively shared information across teams... How did you decide who needed to know?",
+        "Role: exec, post-org-split information gap between regions",
+        "Action: designed quarterly cross-region review with pre-read requirement",
+        "Outcome: decision latency on shared dependencies reduced from six weeks to two",
+        "Quote: \"I mapped which decisions were now blocked by missing context\"",
+        "Follow-up: What was the measurable effect? Latency dropped to two weeks."
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos at exec level. The candidate diagnosed a structural information problem created by an org change and built a lightweight recurring mechanism. Attendee and cadence decisions were driven by actual blocked decisions rather than hierarchy. The result is a durable process with clear business metric impact. Scope is org-wide and long-term. Only open question is whether the mechanism has been adapted as the org evolved further.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my directs to make sure their teams were aligned with the other division."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do yourself to ensure the right people had context?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in the staff meeting and assumed it would cascade. Follow-up: Did you ever check whether it actually reached the right people? Not directly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you proactively shared information across teams... How did you decide who needed to know?",
+        "Role: exec, delegated cross-division alignment",
+        "Action: mentioned in staff meeting and expected cascade",
+        "Outcome: no verification of reach or impact",
+        "Quote: \"I mentioned it in the staff meeting and assumed it would cascade\"",
+        "Follow-up: Did you ever check whether it actually reached the right people? Not directly."
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos at exec level. The candidate treated information flow as a delegation item without defining recipients or verifying receipt. No personal mapping of who needed context or why. The approach relies on hope rather than designed channels. This fails the strategic judgment expectation for an exec."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision criteria for recipients",
+      "junior": "Asked manager then used names in repo",
+      "senior": "Used commit history to map current owners",
+      "exec": "Mapped blocked decisions to minimal roles"
+    },
+    {
+      "signal": "Proactivity vs. reactive broadcast",
+      "junior": "One-time targeted share after noticing gap",
+      "senior": "Created reusable coordination artifact",
+      "exec": "Built recurring org-level mechanism"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single API dependency, local outcome",
+      "senior": "Two-team duplication, process change",
+      "exec": "Org split, measurable decision latency reduction"
+    },
+    {
+      "signal": "Verification of reach",
+      "junior": "Received reply and invite",
+      "senior": "New requests now route through doc",
+      "exec": "Tracked latency metric over time"
+    },
+    {
+      "signal": "Ownership of information flow",
+      "junior": "Individual action, no pattern repeated",
+      "senior": "Influenced without authority across teams",
+      "exec": "Designed structural solution post-reorg"
+    }
+  ],
+  "principle_id": 6003,
+  "kind": "lp"
+}

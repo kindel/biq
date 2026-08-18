@@ -1,0 +1,214 @@
+{
+  "question": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+  "principle": "Think big, start small",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our 1-year goal was to reduce customer onboarding time by 30%. My sprint tasks were just updating docs, so I sketched a simple table showing how each doc change cut a step in the flow. I shared it in our standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teammates asked for similar maps on their tasks. We ended up with a shared one-pager that the manager used in the next planning meeting."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+        "Role: new grad on docs team",
+        "Situation: 1-year onboarding time reduction goal felt abstract",
+        "Action: built one-page table linking doc updates to specific time savings",
+        "Outcome: teammates adopted format; manager reused in planning",
+        "Quote: 'I just wanted my own work to make sense'",
+        "Follow-up: Asked what happened after; candidate described organic spread and manager reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small. The candidate took an individual task (updating docs) and connected it to the 1-year onboarding goal by creating a simple table. They said the table showed 'how each doc change cut a step.' This stayed within their scope yet helped teammates see the link, leading to reuse in planning. The story demonstrates ownership of their own work and quick learning from the exercise. Biggest strength is turning an abstract goal into a concrete artifact without overstepping their level.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our manager sent out the 1-year OKRs but I mostly focused on finishing my tickets. I didn't really connect them for the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything to make the link clearer?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I assumed the manager would handle that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+        "Role: new grad on docs team",
+        "Situation: received 1-year OKRs",
+        "Action: focused only on own tickets",
+        "Outcome: no team connection attempted",
+        "Quote: 'I assumed the manager would handle that'",
+        "Follow-up: Asked if they tried anything; candidate said no"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small. The candidate received the 1-year OKRs but limited their response to finishing individual tickets and stated they assumed the manager would handle vision connection. No attempt was made to link daily work to the goal. The story shows passive ownership confined to personal tasks. Biggest gap is lack of initiative even at the individual level to make the vision concrete for themselves or immediate teammates."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our org had a 3-year target to expand into two new markets. My team was building internal tooling. I ran a 30-minute session where we mapped each tool's usage to the market entry milestones and created a shared roadmap slide."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the slide with two adjacent teams and they added their own dependencies, which we then reviewed together in the next quarter planning."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+        "Role: senior IC leading tooling",
+        "Situation: 3-year market expansion goal",
+        "Action: ran mapping session linking tools to milestones and produced shared slide",
+        "Outcome: two other teams added dependencies and used it in planning",
+        "Quote: 'We turned the slide into the planning artifact'",
+        "Follow-up: Asked about buy-in; candidate described cross-team addition and reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small. The candidate connected a 3-year market expansion goal to daily tooling work by running a mapping session and producing a slide that other teams adopted. They described turning it into the planning artifact used across teams. This shows influence without authority and measurable cross-team impact. The approach started small with one session yet created leverage. Biggest strength is scaling the concrete artifact beyond their own team while staying grounded in execution.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned the 3-year market goal in a team meeting once but the team kept asking for more details on their sprint work so I dropped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try any follow-up steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it felt like it would take too much time away from delivery."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+        "Role: senior IC leading tooling",
+        "Situation: 3-year market expansion",
+        "Action: mentioned goal once in meeting",
+        "Outcome: dropped effort due to sprint pressure",
+        "Quote: 'It felt like it would take too much time away from delivery'",
+        "Follow-up: Asked about follow-up; candidate said none taken"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small. The candidate mentioned the 3-year goal once but abandoned the effort after teammates asked for sprint details, citing delivery pressure. No concrete mapping or artifact was created. The story shows limited influence and prioritization of short-term work over vision connection. Biggest gap is failure to invest even modest time in making the long-term goal actionable for the team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?"
+        },
+        {
+          "role": "candidate",
+          "text": "We set a 5-year goal to reach $500M in a new vertical. I created a quarterly cascade where each team's OKRs tied to specific milestones and ran a workshop showing how current platform work unlocked the first two years of revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deprioritized two features that didn't map to the vertical so teams could see the direct line from their work to the $500M target."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+        "Role: director owning new vertical",
+        "Situation: 5-year $500M revenue goal",
+        "Action: built quarterly OKR cascade and ran workshop linking platform work to early revenue",
+        "Outcome: deprioritized unrelated features; teams saw clear line to target",
+        "Quote: 'We showed how current work unlocked the first two years'",
+        "Follow-up: Asked about trade-offs; candidate described explicit deprioritization"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small. The candidate translated a 5-year $500M goal into quarterly OKRs and a workshop that connected platform work to early revenue milestones. They made the trade-off of dropping two features explicit so teams could see the direct line. This demonstrates strategic judgment and org-level leverage rather than heroics. The approach started with a focused workshop yet drove prioritization decisions. Biggest strength is using concrete artifacts to align multiple teams around long-term trade-offs.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the 5-year $500M slide in an all-hands and asked teams to align their work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the alignment change any priorities?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the teams kept their existing roadmaps and we tracked progress at the leadership level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+        "Role: director owning new vertical",
+        "Situation: 5-year $500M goal",
+        "Action: presented slide in all-hands",
+        "Outcome: no priority changes; tracking stayed at leadership level",
+        "Quote: 'Teams kept their existing roadmaps'",
+        "Follow-up: Asked if alignment changed priorities; candidate said no"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small. The candidate presented the 5-year goal in an all-hands but did not create any cascade or workshop that altered team priorities. Existing roadmaps remained unchanged and tracking stayed at the leadership level. The story shows an absence of concrete mechanisms to connect daily work to the vision. Biggest gap is reliance on top-down communication without driving actionable trade-offs or team-level clarity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of vision connection",
+      "junior": "Links own tasks to 1-year goal via simple table",
+      "senior": "Maps tooling to 3-year milestones and shares across teams",
+      "exec": "Cascades 5-year revenue goal into quarterly OKRs with explicit trade-offs"
+    },
+    {
+      "signal": "Mechanism for making concrete",
+      "junior": "One-page table created for personal work",
+      "senior": "30-minute mapping session producing reusable slide",
+      "exec": "Quarterly cascade workshop plus deprioritization decisions"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Teammates voluntarily adopt the table",
+      "senior": "Adjacent teams add dependencies and reuse in planning",
+      "exec": "Org-level prioritization shifts follow the workshop"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Focuses on immediate sprint clarity",
+      "senior": "Balances delivery pressure with cross-team alignment",
+      "exec": "Makes long-term trade-offs visible to multiple teams"
+    },
+    {
+      "signal": "Learning and iteration",
+      "junior": "Updates format after teammate feedback",
+      "senior": "Iterates slide based on other teams' input",
+      "exec": "Refines cascade after seeing which milestones unlock revenue"
+    }
+  ],
+  "principle_id": 6001,
+  "kind": "lp"
+}

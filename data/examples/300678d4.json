@@ -1,0 +1,202 @@
+{
+  "question": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+  "principle": "Hire and develop the best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "A new teammate on my team misconfigured a test script that broke our daily build. I pulled them aside one-on-one after standup and walked through the exact config step they missed using a shared screen, then asked them to fix it while I watched."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you make sure it stuck without overloading them?"
+        },
+        {
+          "role": "candidate",
+          "text": "We scheduled a 15-minute follow-up the next day where they explained the fix back to me. They caught a similar issue on their own a week later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+        "Junior dev on team caused build break via test config error",
+        "Candidate took teammate aside privately post-standup, used shared screen to show exact step",
+        "Follow-up 15-min session next day for teach-back; teammate later caught similar issue independently",
+        "Outcome: issue resolved same day, no public callout, teammate gained confidence"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for the question. Junior candidate described privately coaching a teammate on a test config error that broke the build by using a one-on-one shared screen walkthrough followed by a short teach-back session. Quote: 'We scheduled a 15-minute follow-up the next day where they explained the fix back to me.' This shows ownership of developing others at an individual level without adding public pressure or extra workload. The approach stayed scoped to their own team and produced a measurable follow-on behavior. Biggest strength is the deliberate choice of private, low-time-investment coaching that still transferred the skill.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "Someone on my team had a bug in their code. I just fixed it myself so the build would pass and told them about it later in Slack."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they learn anything from it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I think so, because I described what I changed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+        "Candidate noticed teammate code bug breaking build",
+        "Fixed it themselves and sent Slack summary afterward",
+        "Follow-up: Asked if teammate learned; candidate said 'I think so' with no verification",
+        "Outcome: build fixed quickly but no structured learning or confirmation of understanding"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for the question. Junior candidate responded by fixing a teammate's build-breaking bug themselves and sending a Slack summary afterward. Quote: 'I just fixed it myself so the build would pass and told them about it later in Slack.' This shows individual ownership of the result but no active development of the other person and no check for understanding. The action avoided embarrassment but also avoided any real coaching moment. Biggest gap is treating the error as something to be corrected rather than an opportunity to build capability in a teammate."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams had mismatched API assumptions that caused repeated integration failures. I set up a private working session with the lead from the other team and used a shared doc to map the exact mismatch without naming individuals in the meeting invite."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you scale the learning?"
+        },
+        {
+          "role": "candidate",
+          "text": "We turned the doc into a one-page checklist that both teams adopted; three months later cross-team defects in that area dropped by half."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+        "Cross-team API mismatch causing repeated integration failures",
+        "Candidate arranged private working session with other-team lead using neutral shared doc",
+        "Follow-up: Converted notes into shared checklist adopted by both teams; cross-team defects dropped 50% over 3 months",
+        "Outcome: issue resolved with reusable artifact and measurable reduction in defects"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for the question. Senior candidate addressed repeated cross-team integration failures from mismatched API assumptions by holding a private working session with the other lead and turning the output into an adopted checklist. Quote: 'We turned the doc into a one-page checklist that both teams adopted; three months later cross-team defects in that area dropped by half.' This demonstrates influence without authority and raising the capability of multiple teams. The approach created leverage through a reusable artifact rather than one-off fixes. Biggest strength is converting an error into an org-level learning mechanism with clear metrics.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was a recurring integration issue between my team and another. I sent an email to the other team explaining the right way to do it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they kept making the same mistakes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+        "Recurring cross-team integration issue",
+        "Candidate sent explanatory email to other team",
+        "Follow-up: No change observed; other team continued same mistakes",
+        "Outcome: no improvement or learning transfer occurred"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for the question. Senior candidate addressed recurring cross-team integration issues by sending an explanatory email to the other team. Quote: 'I sent an email to the other team explaining the right way to do it.' This avoided direct confrontation but produced no development or behavior change. The candidate showed awareness of the error yet relied on a low-influence method that did not create learning. Biggest gap is lack of follow-through or adaptation when the initial approach failed to raise the other team's capability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "A director promoted someone into a role they were not ready for, leading to delivery slippage. I met with the director privately, framed it as a shared development opportunity, and we created a 90-day support plan with clear checkpoints instead of reversing the promotion."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The person succeeded, the director applied the same support model to two later promotions, and org promotion failure rate dropped from 25% to under 10% over the next year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+        "Director promoted underprepared leader causing delivery slippage",
+        "Candidate held private 1:1, framed as development opportunity, co-created 90-day support plan",
+        "Follow-up: Director reused model for two more promotions; org promotion failure rate fell from 25% to under 10% in one year",
+        "Outcome: individual succeeded, repeatable process created, measurable org-level improvement"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for the question. Exec candidate turned a director's underprepared promotion that caused delivery slippage into a private coaching moment by co-creating a 90-day support plan. Quote: 'The director applied the same support model to two later promotions, and org promotion failure rate dropped from 25% to under 10% over the next year.' This shows strategic judgment and long-term leverage by institutionalizing the learning. The action stayed at the org level while protecting the individuals involved. Biggest strength is converting one error into a scalable process that improved hiring and development outcomes across the organization.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had a bad promotion at the director level. I had HR send the standard feedback template to the promoting manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the process improve afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't track it, so I'm not sure."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+        "Bad director-level promotion occurred",
+        "Candidate delegated to HR to send standard feedback template",
+        "Follow-up: No tracking of whether process improved or repeated",
+        "Outcome: no visible change or learning at org level"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for the question. Exec candidate responded to a bad director-level promotion by having HR send a standard feedback template. Quote: 'I had HR send the standard feedback template to the promoting manager.' This avoided direct embarrassment but created no development or systemic improvement. The candidate showed awareness of the error yet delegated without follow-up or measurement. Biggest gap is absence of personal ownership or strategic action to turn the incident into lasting organizational learning."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Private coaching approach",
+      "junior": "Uses 1:1 walkthrough + teach-back",
+      "senior": "Private cross-team session + reusable artifact",
+      "exec": "Private director conversation + 90-day plan"
+    },
+    {
+      "signal": "Verification of learning",
+      "junior": "Short follow-up session confirms understanding",
+      "senior": "Checklist adoption and defect reduction tracked",
+      "exec": "Repeated use by director and org failure rate drop"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual teammate skill transfer",
+      "senior": "Two-team process improvement",
+      "exec": "Org-wide promotion success rate change"
+    },
+    {
+      "signal": "Handling of resistance or failure",
+      "junior": "N/A at this level",
+      "senior": "Email approach produced no change",
+      "exec": "Delegated without follow-up produced no change"
+    },
+    {
+      "signal": "Leverage created",
+      "junior": "Teammate independently caught similar issue",
+      "senior": "Checklist reused by both teams",
+      "exec": "Support model reused and scaled by director"
+    }
+  ],
+  "principle_id": 6010,
+  "kind": "lp"
+}

@@ -1,0 +1,232 @@
+{
+  "question": "Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+  "principle": "Scrappy, not crappy",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to build a simple internal dashboard for tracking ticket volume. The request came with a tight deadline so I used an existing template and added only the three charts the manager had explicitly asked for."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to leave out?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listed every possible chart we could add and crossed off anything that wasn't mentioned in the original ask. I also checked with my mentor who confirmed we could iterate later if needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The dashboard went live in two days instead of the planned week. My manager used it immediately and later asked for one extra filter which I added in an hour."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+        "Built internal ticket dashboard using existing template; limited to three requested charts",
+        "Decided scope by listing extras and crossing them off; confirmed with mentor",
+        "Quote: 'I crossed off anything that wasn't mentioned in the original ask'",
+        "Follow-up: Asked how they validated the cutoff; candidate described quick check with mentor and willingness to iterate",
+        "Outcome: Live in two days; one follow-up request handled in an hour"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate described scoping a dashboard to exactly the three charts requested and shipping in two days by reusing a template. They explicitly listed possible additions then removed them after confirming with a mentor. This shows early understanding of stopping criteria tied to the original request rather than personal preference. The follow-up request was handled quickly, reinforcing that iteration was acceptable. Biggest strength is the concrete mechanism used to decide what to cut.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a full analytics page with ten different visualizations even though the team only needed volume trends."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why add the extra charts?"
+        },
+        {
+          "role": "candidate",
+          "text": "I thought it would be more useful and I wanted to show what I could do."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone ask for those?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not directly, but I assumed they would want them later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+        "Built ten visualizations when only volume trends were needed",
+        "Added extras because 'it would be more useful' and to demonstrate skills",
+        "Quote: 'I assumed they would want them later'",
+        "Follow-up: Pressed on decision process; candidate had no explicit cutoff criteria",
+        "Outcome: Over-delivered without confirmation; no mention of timeline impact"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate added ten visualizations without being asked and justified it by assuming future need and wanting to showcase skills. No mechanism was described for deciding where to stop. This produced unnecessary work on an individual task. The gap is lack of any scoping discipline tied to the stated request."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our partner team needed a basic integration to pull order status. Instead of a full bidirectional sync I proposed a one-way nightly export that met their SLA."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align on scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a 30-minute meeting with their tech lead, listed three options with effort estimates, and we picked the lightest one that still hit their reporting deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after launch?"
+        },
+        {
+          "role": "candidate",
+          "text": "They went live on schedule. Two months later they asked for real-time updates and we upgraded the integration with the data we had from the first version."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+        "Proposed one-way nightly export instead of bidirectional sync for partner integration",
+        "Ran 30-minute scoping meeting with tech lead; chose lightest option that met SLA",
+        "Quote: 'We picked the lightest one that still hit their reporting deadline'",
+        "Follow-up: How alignment happened; candidate described explicit options and joint decision",
+        "Outcome: On-time launch; later upgrade used data from initial version"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate limited a cross-team integration to a one-way nightly export after running a short scoping meeting that produced three options and a joint decision. Scope was tied directly to the partner's SLA rather than building a full sync. The later upgrade request was handled efficiently because the initial version already existed. Biggest strength is the repeatable process used to align two teams on minimal scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for a full real-time bidirectional sync because I knew it would be better long-term."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the partner ask for real-time?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, but I wanted to avoid technical debt."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "The project slipped by three weeks and the partner had to adjust their launch date."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+        "Pushed full bidirectional sync despite partner only needing status pulls",
+        "Justified extra scope as avoiding future technical debt",
+        "Quote: 'I wanted to avoid technical debt'",
+        "Follow-up: Asked about partner request; candidate admitted real-time was not asked for",
+        "Outcome: Three-week slip and partner launch delay"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate expanded scope to a full bidirectional sync without partner request, citing future technical debt. No joint scoping discussion occurred. The result was a three-week delay that affected the partner team. The gap is prioritizing personal technical preferences over the stated cross-team need."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to enter a new market in six weeks. I approved a stripped-down launch using only the core checkout flow and existing payment providers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the cutoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each function lead for their minimum viable feature list, then removed anything that didn't directly enable the first 100 customers. We documented the trade-offs in a one-page memo to the leadership team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the market window. Revenue started at 60 percent of the full plan but we added the next set of features in the following quarter using actual usage data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+        "Approved minimal checkout flow for new market launch in six weeks",
+        "Collected minimum lists from function leads then cut anything not enabling first 100 customers",
+        "Quote: 'We documented the trade-offs in a one-page memo to the leadership team'",
+        "Follow-up: How trade-offs were communicated; candidate described explicit one-page memo and usage-driven follow-up",
+        "Outcome: Hit market window; later features added from real usage data"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The executive limited a market launch to a core checkout flow by collecting minimum requirements from each function and cutting everything not required for the first 100 customers. Trade-offs were captured in a single memo for leadership visibility. The approach produced an on-time entry with follow-on features guided by actual data. Biggest strength is the org-level scoping process that balanced speed and later iteration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I insisted we launch with the full feature set including advanced recommendations and new payment rails."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why include those on day one?"
+        },
+        {
+          "role": "candidate",
+          "text": "I believed a premium experience was required to compete."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the timeline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We missed the target window by eight weeks and entered after two competitors."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+        "Insisted on full feature set including recommendations and new payment rails for market entry",
+        "Justified extras as necessary for a premium competitive position",
+        "Quote: 'I believed a premium experience was required to compete'",
+        "Follow-up: Pressed on timeline impact; candidate acknowledged eight-week miss and competitor entry",
+        "Outcome: Missed window; entered market after competitors"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The executive required a full feature set including unrequested capabilities for a market launch, citing the need for a premium position. No minimum scoping exercise occurred. The result was an eight-week delay and lost first-mover advantage. The gap is absence of any mechanism to align the organization on the smallest viable entry."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Explicit scoping mechanism",
+      "junior": "Listed extras then removed non-requested items after mentor check",
+      "senior": "Ran 30-minute meeting with options and joint decision with partner lead",
+      "exec": "Collected minimum lists from function leads then cut to first 100 customers with documented memo"
+    },
+    {
+      "signal": "Decision tied to request vs. preference",
+      "junior": "Cut to three explicitly requested charts",
+      "senior": "Chose lightest option that met partner SLA",
+      "exec": "Removed anything not enabling first 100 customers"
+    },
+    {
+      "signal": "Evidence of iteration path",
+      "junior": "Handled follow-up request in one hour",
+      "senior": "Later upgrade used data from initial version",
+      "exec": "Added next features in following quarter from usage data"
+    },
+    {
+      "signal": "Impact scope",
+      "junior": "Individual task completed faster",
+      "senior": "Cross-team integration on time",
+      "exec": "Org-level market entry within window"
+    },
+    {
+      "signal": "Over-scope risk",
+      "junior": "Added unrequested visualizations to demonstrate skills",
+      "senior": "Pushed bidirectional sync to avoid future debt",
+      "exec": "Required full premium set to compete"
+    }
+  ],
+  "principle_id": 6013,
+  "kind": "lp"
+}

@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+  "principle": "Earn trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I committed to finishing a feature by Friday for my team's sprint. Mid-week I realized a dependency was blocked, so I told my manager Thursday morning, explained the risk, and offered to pair with a senior dev after hours. We shipped Saturday instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say to the team when you realized the risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent a quick update in standup and Slack, and asked if anyone could help unblock the dependency sooner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+        "Role: New grad on first team, individual feature work",
+        "Situation: Underestimated dependency on shared service",
+        "Actions: Flagged risk early to manager, proposed mitigation, updated team in standup",
+        "Outcome: Shipped one day late with full visibility; no downstream impact",
+        "Quote: \"I sent a quick update in standup and Slack and asked if anyone could help unblock sooner.\"",
+        "Follow-up: What did you say to the team? -> Candidate described transparent update and ask for help"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate owned the miss on their individual deliverable and surfaced the issue proactively rather than hoping it would resolve. They communicated the risk to both manager and team with a concrete ask for help. The story shows they treated the commitment as shared rather than personal. Follow-up confirmed they did not wait until the deadline. Biggest gap is limited scope; the impact stayed within one sprint and one team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I said I'd finish the onboarding flow by end of week but the designs weren't ready so I couldn't deliver. I told my manager on Monday after the deadline passed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why wait until after the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "I thought the designs would come through any day and didn't want to bother anyone."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+        "Role: Junior dev on individual task",
+        "Situation: Designs delayed, no communication until after miss",
+        "Actions: Waited silently hoping issue would resolve",
+        "Outcome: Missed deadline and surprised manager",
+        "Quote: \"I thought the designs would come through any day and didn't want to bother anyone.\"",
+        "Follow-up: Why wait until after the deadline? -> Candidate cited reluctance to bother others"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate hid the risk until after the deadline rather than raising it early. They framed the miss as external (designs) without describing any attempt to unblock or escalate. The follow-up revealed avoidance of communication. This shows low ownership of their own commitments at the individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I committed our team to deliver a shared API contract by Q2 for two other squads. When a key engineer left, I told the dependent teams in their planning meeting, renegotiated scope to a minimal viable contract, and staffed a temporary bridge with one of my engineers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other teams respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were frustrated at first but appreciated the early notice and the reduced scope we could still hit."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+        "Role: Senior engineer leading cross-team API work",
+        "Situation: Key person left, threatening Q2 commitment to two squads",
+        "Actions: Informed dependent teams early, reduced scope to viable minimum, loaned engineer",
+        "Outcome: Delivered reduced contract on time; maintained trust for future work",
+        "Quote: \"They were frustrated at first but appreciated the early notice and the reduced scope we could still hit.\"",
+        "Follow-up: How did the other teams respond? -> Candidate noted initial frustration but preserved relationship through transparency"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate treated a cross-team commitment as their responsibility and surfaced the issue before it became a surprise. They took concrete steps to protect the dependent teams by offering a reduced but usable deliverable and temporary staffing. The story includes direct communication with stakeholders and a measurable outcome. Follow-up showed awareness of the relationship impact. Biggest gap is that the root cause (attrition) was not prevented.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We promised the API by Q2 but lost an engineer so we missed. I let the other teams know in the retro after the quarter ended."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you consider before the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just assumed the remaining people could cover it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+        "Role: Senior on cross-team initiative",
+        "Situation: Attrition caused Q2 miss on shared API",
+        "Actions: No escalation or scope adjustment until after quarter closed",
+        "Outcome: Surprise to dependent teams and delayed their work",
+        "Quote: \"We just assumed the remaining people could cover it.\"",
+        "Follow-up: What options did you consider before the deadline? -> Candidate described passive assumption"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate allowed a cross-team commitment to slip without early warning or mitigation attempts. They only communicated after the quarter ended, forcing other teams to replan. The follow-up revealed no proactive steps taken despite knowing the risk. This pattern damages trust across teams at the senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I committed the company to a new market expansion in our board plan. Six months in, regulatory changes made the original timeline unrealistic. I briefed the board and leadership team, proposed a phased entry with a smaller initial footprint, and adjusted the P&L forecast publicly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction from the board?"
+        },
+        {
+          "role": "candidate",
+          "text": "They accepted the revised plan once they saw the data and the clear trade-offs we had evaluated."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+        "Role: VP-level exec owning org-level initiative",
+        "Situation: Regulatory shift invalidated market expansion timeline",
+        "Actions: Brought data to board early, offered phased alternative, updated public forecast",
+        "Outcome: Board approved revised plan; no loss of credibility",
+        "Quote: \"They accepted the revised plan once they saw the data and the clear trade-offs we had evaluated.\"",
+        "Follow-up: What was the reaction from the board? -> Candidate described acceptance after transparent trade-off discussion"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate owned an org-level commitment and surfaced a material change to the highest stakeholders with data and options. They made the trade-offs explicit rather than protecting the original narrative. The story shows long-term thinking about credibility with the board. Follow-up confirmed the revised plan preserved trust. Biggest remaining question is how the team below the exec experienced the pivot.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had committed to the board on market entry but regulations changed and we delayed the launch by a year. I updated them in the next quarterly review."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you explore any alternatives before deciding to delay?"
+        },
+        {
+          "role": "candidate",
+          "text": "We looked at it internally but didn't want to change the board narrative mid-year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+        "Role: Exec with P&L ownership",
+        "Situation: Regulatory issue forced year-long delay on board commitment",
+        "Actions: Kept original narrative until quarterly review; no early alternatives presented",
+        "Outcome: Board learned of delay after internal decision",
+        "Quote: \"We looked at it internally but didn't want to change the board narrative mid-year.\"",
+        "Follow-up: Did you explore any alternatives before deciding to delay? -> Candidate prioritized narrative consistency over transparency"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate withheld a material change from the board until the next scheduled update rather than bringing it forward. They explicitly chose narrative consistency over early transparency. The follow-up revealed prioritization of optics. At the exec level this erodes strategic trust with the board."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Early escalation of risk",
+      "junior": "Flags issue to manager before deadline",
+      "senior": "Informs dependent teams and offers mitigation",
+      "exec": "Brings data and options to board proactively"
+    },
+    {
+      "signal": "Ownership vs external blame",
+      "junior": "Owns personal task miss and next steps",
+      "senior": "Owns cross-team impact and staffing solution",
+      "exec": "Owns org-level forecast change and trade-offs"
+    },
+    {
+      "signal": "Transparency with stakeholders",
+      "junior": "Updates team in standup and asks for help",
+      "senior": "Renegotiates scope directly with other squads",
+      "exec": "Revises public P&L and board plan openly"
+    },
+    {
+      "signal": "Learning applied afterward",
+      "junior": "Describes how they now surface risks sooner",
+      "senior": "Institutes better staffing buffers for future commitments",
+      "exec": "Builds scenario planning into annual board process"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual sprint deliverable",
+      "senior": "Multiple teams and quarter timeline",
+      "exec": "Company market entry and board credibility"
+    }
+  ],
+  "principle_id": 6008,
+  "kind": "lp"
+}

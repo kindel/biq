@@ -1,0 +1,232 @@
+{
+  "question": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was on a two-week feature deadline. The quick path was to copy-paste some legacy code that would work for this case but create duplication. I spent an extra three days writing a small shared utility instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We slipped two days. My manager was okay because the next team that needed similar logic reused it and saved a week. I documented the choice in the PR."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the tradeoff was worth it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my mentor what usually happens with duplicated code and she showed me two past incidents where it caused bugs later. That helped me own the call."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+        "Chose to build shared utility instead of copy-paste for feature; slipped deadline by 2 days",
+        "Quote: \"I asked my mentor what usually happens with duplicated code\"",
+        "Outcome: next team reused it, saved a week",
+        "Follow-up: How did you decide? - referenced mentor input and past bugs",
+        "Follow-up: How did you communicate? - noted in PR and told manager upfront"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for a junior. The candidate owned a local decision to invest in a shared utility rather than meet the deadline with duplication. They explicitly traded two days of schedule for future reuse and cited the mentor conversation that informed the call. The story stays within individual scope but shows they sought input and documented the choice. The concrete outcome (next team saved a week) is modest but real. Biggest strength is the willingness to surface the tradeoff to their manager instead of hiding the slip.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "I once pushed back on a quick fix that would have shipped faster because I wanted to do it right."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the actual tradeoff and result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed the feature by a week but I think it was cleaner. My manager wasn't happy at first but later said it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+        "Vague story about pushing back on quick fix; no specifics on scope or code",
+        "Quote: \"I think it was cleaner\"",
+        "Outcome: one-week delay, manager \"wasn't happy at first\"",
+        "Follow-up: What was the actual tradeoff? - still no metrics or reuse evidence",
+        "No mention of how decision was owned or communicated"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for a junior. The answer stays at the level of assertion without describing the concrete choice, the code change, or the measurable long-term benefit. The candidate cannot articulate the tradeoff beyond a one-week delay and offers only that the manager was eventually fine. No evidence of seeking data or documenting the decision. The story never moves past the candidate's preference for doing it right. Biggest gap is lack of ownership language around the actual engineering decision and its downstream impact."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams needed the same integration. My team could have built a narrow version in three weeks to unblock our launch. Instead I spent six weeks building a reusable service with the other team's input."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the extra time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a one-pager showing we would avoid four future integrations and shared it with both managers. We agreed to slip our launch by three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Six months later three other teams used the service. We also reduced our on-call load because the integration bugs were now in one place."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+        "Chose reusable service over narrow integration; 3-week launch slip for own team",
+        "Quote: \"I wrote a one-pager showing we would avoid four future integrations\"",
+        "Cross-team alignment with two managers; 6-month result: 3 teams adopted, lower on-call",
+        "Follow-up: How did you get buy-in? - one-pager and joint decision",
+        "Follow-up: Metrics? - four avoided integrations, reduced on-call load"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for a senior. The candidate took responsibility for a cross-team integration decision that required negotiating schedule with two other teams. They produced a one-pager that quantified future work avoided and secured explicit agreement to slip their own launch. The six-month outcome of three teams adopting the service and reduced on-call load provides clear evidence of long-term value. The story demonstrates influence without authority and willingness to own the short-term cost. Biggest strength is the proactive documentation that made the tradeoff visible to stakeholders.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "I convinced my team to invest in platform work instead of shipping the next feature."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the actual tradeoff and who agreed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed a customer-facing feature by a month. My manager supported it but I had to keep reminding the team why we were doing it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+        "Platform work vs feature; one-month delay",
+        "Quote: \"I had to keep reminding the team why we were doing it\"",
+        "No cross-team scope or quantified benefit mentioned",
+        "Follow-up: Who agreed? - only own manager, ongoing internal selling required",
+        "No evidence of long-term adoption or reduced toil"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for a senior. The candidate describes an internal team decision without showing influence across teams or a documented tradeoff. The only outcome mentioned is having to repeatedly remind their own team, which signals weak buy-in rather than ownership. No metrics on future savings or adoption appear. The story remains local and does not demonstrate the leverage expected at this level. Biggest gap is absence of stakeholder alignment mechanics or measurable long-term results."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had a chance to acquire a small company that would give us a feature our biggest customer wanted in six months. I recommended building it ourselves over two years instead because the acquisition would have locked us into their tech stack."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you make that call under time pressure?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a six-week build-vs-buy analysis with engineering, finance, and the customer team. The model showed the acquisition would cost 3x more in maintenance over five years."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped the in-house version 18 months later. Two years after that we used the same architecture for two additional products and avoided three more potential acquisitions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+        "Declined acquisition to preserve long-term architectural control; 2-year build instead of 6-month acquisition",
+        "Quote: \"The model showed the acquisition would cost 3x more in maintenance over five years\"",
+        "Involved engineering, finance, customer team; 5-year model used",
+        "Follow-up: How was decision framed? - 6-week cross-functional analysis",
+        "Follow-up: Long-term leverage? - same architecture used for two more products, avoided three acquisitions"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership for an exec. The candidate owned a high-stakes build-vs-acquire decision that traded a six-month customer win for five-year architectural flexibility. They drove a cross-functional six-week analysis that produced a concrete 3x maintenance cost model and secured alignment across engineering, finance, and the customer team. The multi-year outcome of reusing the architecture for two additional products and avoiding three future acquisitions shows organizational leverage. The story operates at business-strategy ambiguity with clear long-term thinking. Biggest strength is the willingness to forgo a visible short-term customer win in favor of platform leverage.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stopped us from buying a tool that would have solved an immediate problem because I wanted to invest in our own platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis supported the decision and what was the measured outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team felt it was the right call. We ended up building it ourselves over the next year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+        "Avoided tool purchase to build in-house; one-year delay",
+        "Quote: \"The team felt it was the right call\"",
+        "No cross-org model, no cost comparison, no reuse metrics",
+        "Follow-up: What analysis? - none provided beyond team sentiment",
+        "No evidence of strategic tradeoffs or multi-year leverage"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership for an exec. The answer offers only a high-level preference for building in-house without any financial model, stakeholder process, or quantified long-term result. The outcome is described as \"the team felt it was right\" rather than measurable platform leverage or avoided future spend. No evidence of operating at the ambiguity or scale expected at this level. The story never moves beyond local team sentiment. Biggest gap is lack of strategic analysis or multi-year business impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual code choice with mentor input",
+      "senior": "Cross-team integration with manager alignment",
+      "exec": "Build-vs-acquire with 5-year financial model and org-wide reuse"
+    },
+    {
+      "signal": "Tradeoff articulation",
+      "junior": "Deadline slip vs reuse by one other team",
+      "senior": "3-week launch slip vs 3 teams adopting + lower on-call",
+      "exec": "6-month customer feature vs 3x maintenance cost and avoided future acquisitions"
+    },
+    {
+      "signal": "Evidence of long-term value",
+      "junior": "Anecdotal one-week save for next team",
+      "senior": "Six-month adoption data and on-call reduction",
+      "exec": "Two additional products and three avoided acquisitions over years"
+    },
+    {
+      "signal": "Stakeholder process",
+      "junior": "Asked mentor, noted in PR",
+      "senior": "One-pager shared with two managers",
+      "exec": "Six-week cross-functional analysis with finance and customer team"
+    },
+    {
+      "signal": "Communication of cost",
+      "junior": "Told manager about slip",
+      "senior": "Explicit agreement on schedule slip",
+      "exec": "Quantified 3x model used to secure buy-in"
+    }
+  ],
+  "principle_id": 6004,
+  "kind": "lp"
+}

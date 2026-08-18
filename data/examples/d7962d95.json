@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you fell into analysis paralysis. What pulled you out?",
+  "principle": "Bias for action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a simple reporting script and spent two days comparing three libraries instead of just picking one. I realized the deadline was slipping so I picked the one with the best docs and shipped a working version."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you stop comparing?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked for an update and I had nothing to show, so I forced a choice and moved on."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you fell into analysis paralysis. What pulled you out?",
+        "Situation: individual script task, spent 2 days comparing libs",
+        "Action: picked one with best docs after manager check-in",
+        "Outcome: shipped working version on time",
+        "Quote: 'I realized the deadline was slipping so I picked the one with the best docs'",
+        "Follow-up: What made you stop comparing? -> manager update request forced choice"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at junior level. The candidate owned an individual task where over-analysis delayed progress and used a direct manager prompt as the trigger to decide. The story shows they shipped after selecting the library with the best docs rather than continuing to compare. This matches the principle because the candidate recognized the local deadline risk and acted without needing external escalation. The concrete trigger (manager update request) demonstrates coachability and willingness to move forward on their own work. Biggest strength is the clear before-and-after action that stayed within individual scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was choosing between two approaches for a small feature and kept reading docs for a week until the PM asked why it wasn't done."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the PM asked?"
+        },
+        {
+          "role": "candidate",
+          "text": "I still wasn't sure so I asked my teammate to decide for me."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you fell into analysis paralysis. What pulled you out?",
+        "Situation: individual feature choice, read docs for a week",
+        "Action: waited until PM check-in then asked teammate to decide",
+        "Outcome: no personal decision made",
+        "Quote: 'I still wasn't sure so I asked my teammate to decide for me'",
+        "Follow-up: What did you do after the PM asked? -> deferred entirely"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at junior level. The candidate described a week of individual analysis on a small feature but only moved when the PM intervened and then fully deferred the choice to a teammate. The story shows no evidence of the candidate making their own call or learning how to break the cycle next time. This falls short because the principle expects juniors to own their work and use feedback to act rather than hand off decisions. The deferral after the prompt reveals a gap in taking initiative even at local scope. Biggest gap is the absence of any personal action that resolved the paralysis."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a cross-team migration we had three architecture options and two teams were stuck in endless trade-off meetings. I proposed a two-week timebox with a decision at the end and ran a quick spike to validate the middle option."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other teams respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They agreed once they saw the spike results and we picked the option that unblocked both teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you fell into analysis paralysis. What pulled you out?",
+        "Situation: cross-team migration, three options, endless meetings",
+        "Action: proposed two-week timebox and ran validating spike",
+        "Outcome: teams aligned on middle option that unblocked progress",
+        "Quote: 'I proposed a two-week timebox with a decision at the end and ran a quick spike'",
+        "Follow-up: How did the other teams respond? -> spike results drove agreement"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at senior level. The candidate identified paralysis across teams on a migration and introduced a timebox plus spike to force a decision within two weeks. The story includes measurable influence by getting both teams to align on the validated option. This demonstrates the principle through proactive structure that moved the group forward without authority. The spike provided concrete data that replaced endless discussion. Biggest strength is the cross-team leverage that turned analysis into shipped alignment.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team project had four possible paths and meetings kept getting rescheduled without a decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything to move it forward?"
+        },
+        {
+          "role": "candidate",
+          "text": "I documented the options and waited for leadership to pick one."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you fell into analysis paralysis. What pulled you out?",
+        "Situation: cross-team project, four paths, repeated reschedules",
+        "Action: documented options and waited for leadership",
+        "Outcome: no forward movement from candidate",
+        "Quote: 'I documented the options and waited for leadership to pick one'",
+        "Follow-up: Did you do anything to move it forward? -> passive documentation only"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at senior level. The candidate observed ongoing paralysis on a cross-team project but limited their contribution to documenting options and waiting for leadership. No timebox, experiment, or influence attempt appears in the story. This misses the principle because seniors are expected to drive decisions across teams rather than remain passive. The lack of any personal action to break the cycle shows insufficient ownership at the required scope. Biggest gap is the absence of influence or metrics that would have unblocked progress."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our market entry strategy had six scenarios under review for nine months with no launch date. I set a hard decision deadline, commissioned a single focused analysis on the top two, and committed the org to the winner regardless of remaining unknowns."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched in one region within 90 days and used the data to adjust the other regions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you fell into analysis paralysis. What pulled you out?",
+        "Situation: org-level market entry, six scenarios, nine months stalled",
+        "Action: imposed hard deadline, focused analysis on top two, committed to winner",
+        "Outcome: launched in one region in 90 days, used data for others",
+        "Quote: 'I set a hard decision deadline, commissioned a single focused analysis on the top two'",
+        "Follow-up: What was the business result? -> 90-day launch with iterative rollout"
+      ],
+      "raiseFeedback": "Raises the bar for Bias for Action at exec level. The candidate broke nine months of org-level analysis paralysis on market entry by imposing a hard deadline and narrowing to a focused analysis of two scenarios. The story shows strategic judgment in committing the organization to act despite unknowns and delivering a 90-day regional launch. This aligns with the principle through high-leverage decisions that traded perfect information for speed and learning. The outcome included clear business movement and data-driven iteration. Biggest strength is the long-term org impact achieved by replacing ambiguity with decisive structure.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A major platform decision stayed in review for over a year as teams kept adding scenarios."
+        },
+        {
+          "role": "interviewer",
+          "text": "What action did you take as the leader?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked for one more round of analysis to make sure we had covered everything."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you fell into analysis paralysis. What pulled you out?",
+        "Situation: org platform decision, over a year of added scenarios",
+        "Action: requested one more round of analysis",
+        "Outcome: continued delay with no decision",
+        "Quote: 'I asked for one more round of analysis to make sure we had covered everything'",
+        "Follow-up: What action did you take as the leader? -> extended analysis instead of deciding"
+      ],
+      "lowerFeedback": "Lowers the bar for Bias for Action at exec level. The candidate described a year-long stall on a major platform decision but responded by requesting additional analysis rather than forcing a choice. The story contains no deadline, narrowed scope, or commitment to act amid ambiguity. This falls short of the principle because execs must exercise strategic judgment to trade off completeness for organizational momentum. Extending analysis perpetuated the paralysis at business scale. Biggest gap is the lack of any leverage or trade-off that produced forward movement."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Trigger that ended paralysis",
+      "junior": "Manager check-in or teammate input",
+      "senior": "Self-imposed timebox plus data spike",
+      "exec": "Hard deadline plus narrowed org commitment"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task and local deadline",
+      "senior": "Cross-team alignment and unblock",
+      "exec": "Org-level launch with iterative rollout"
+    },
+    {
+      "signal": "Evidence of personal ownership",
+      "junior": "Candidate picked library after prompt",
+      "senior": "Candidate proposed and ran the spike",
+      "exec": "Candidate set deadline and committed the org"
+    },
+    {
+      "signal": "Use of data vs endless discussion",
+      "junior": "Chose best docs to ship",
+      "senior": "Spike results drove team agreement",
+      "exec": "Focused analysis enabled 90-day launch"
+    },
+    {
+      "signal": "Learning for next time",
+      "junior": "Recognized deadline risk",
+      "senior": "Reused timebox pattern on later work",
+      "exec": "Institutionalized decision deadlines in strategy process"
+    }
+  ],
+  "principle_id": 6007,
+  "kind": "lp"
+}

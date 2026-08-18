@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time someone on your team was hiding a slip or a risk. How did you uncover it and get the team back to no surprises?",
+  "principle": "No surprises",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a teammate wasn't updating the status doc for two days. I asked in standup what was blocking them and they said the API change was bigger than expected. I pulled them aside after and they admitted the estimate was off by a week. We updated the PM together that afternoon."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a daily risk check to our standup template and asked my manager to review it with me for the first week so I'd learn the right level of detail."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone on your team was hiding a slip or a risk.",
+        "Candidate noticed missing updates in status doc",
+        "Follow-up in standup surfaced the slip; updated PM same day",
+        "Quote: \"I added a daily risk check to our standup template\"",
+        "Follow-up: Asked manager to review the new template for a week"
+      ],
+      "raiseFeedback": "Raises the bar on No surprises for junior level. Story shows candidate noticed a missing update on a teammate's task, asked directly in standup, then created a simple daily check after the fact. Quote about adding the template and asking manager to review demonstrates coachability and ownership of their own process. Biggest strength is turning a one-off discovery into a repeatable individual habit without overstepping scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone on my team missed a deadline but didn't tell anyone. I found out when the PM asked me why the task wasn't done."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the PM it wasn't my task so I didn't know. Later the teammate said they were stuck but didn't want to bother anyone."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone on your team was hiding a slip or a risk.",
+        "Candidate learned about slip only when PM asked them",
+        "Did not take any action to surface or prevent future issues",
+        "Quote: \"I told the PM it wasn't my task so I didn't know\"",
+        "No follow-up actions or learning described"
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises for junior level. Candidate only learned of the slip when the PM asked them directly and responded by disclaiming ownership rather than helping surface it. Story ends with the teammate admitting they didn't want to bother anyone but candidate took no steps to change the dynamic. Biggest gap is absence of any personal action or learning after the event."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer team was two weeks behind on a shared dependency but kept saying green in the program sync. I noticed their burndown wasn't moving so I scheduled a 1:1 with their tech lead and asked what was really going on. They had an unstaffed integration risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a joint risk review every Friday and I started sharing the combined status in the program forum so both teams had the same picture."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone on your team was hiding a slip or a risk.",
+        "Noticed peer team's burndown flatlined while status stayed green",
+        "1:1 with their tech lead uncovered unstaffed integration risk",
+        "Quote: \"We added a joint risk review every Friday\"",
+        "Follow-up: Began sharing combined status in program forum"
+      ],
+      "raiseFeedback": "Raises the bar on No surprises for senior level. Candidate spotted a peer team's flat burndown against green status, used a 1:1 to surface the real risk, then created a recurring joint review and shared status publicly. Quote about the Friday review shows influence without authority and cross-team impact. Biggest strength is converting one discovery into a durable operating rhythm that reduced surprises for multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team kept reporting green but their deliverables kept slipping. I mentioned it in the next program sync and they admitted the risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I figured it was their problem to fix so I stopped following up."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone on your team was hiding a slip or a risk.",
+        "Observed repeated slips from another team",
+        "Mentioned once in program sync; risk was acknowledged",
+        "Quote: \"I figured it was their problem to fix\"",
+        "No ongoing mechanism or follow-up created"
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises for senior level. Candidate noticed repeated slips from a peer team and raised it once in a sync but took no further action after the admission. Quote about deciding it was their problem shows lack of sustained influence. Biggest gap is absence of any cross-team mechanism or metric that would prevent future surprises."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two quarters ago a product area was masking a launch delay that would have missed a major customer commitment. I noticed the engineering metrics and customer pilot feedback were diverging so I asked the GM for a private review of the underlying assumptions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reset the launch date publicly, moved two senior engineers to de-risk the critical path, and added a monthly exec risk readout that now covers all major programs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone on your team was hiding a slip or a risk.",
+        "Divergence between metrics and pilot feedback flagged a masked delay",
+        "Private review with GM surfaced the real timeline",
+        "Quote: \"We added a monthly exec risk readout that now covers all major programs\"",
+        "Follow-up: Reset date publicly and reallocated senior staff"
+      ],
+      "raiseFeedback": "Raises the bar on No surprises for exec level. Candidate used diverging metrics and customer feedback to trigger a private GM review that revealed a masked delay against a customer commitment. Quote about the new monthly exec risk readout demonstrates org-level process change and long-term thinking. Biggest strength is turning a single program issue into a durable leadership mechanism that affects multiple programs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "An org was behind on a key initiative but kept saying it was on track. I asked the VP once and they adjusted the date."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change how leadership reviews work?"
+        },
+        {
+          "role": "candidate",
+          "text": "We talked about it in the next staff meeting but didn't formalize anything new."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone on your team was hiding a slip or a risk.",
+        "Asked VP once after noticing behind status",
+        "Date was adjusted but no broader change",
+        "Quote: \"We talked about it in the next staff meeting but didn't formalize anything new\"",
+        "No org-level mechanism or follow-up process created"
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises for exec level. Candidate noticed an org-level slip, raised it once with the VP, and saw a date adjustment but created no lasting process. Quote about only discussing it in staff meeting shows lack of strategic follow-through. Biggest gap is failure to convert the incident into an org-wide operating change."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Uncovering hidden risks",
+      "junior": "Asked teammate directly after noticing missing updates",
+      "senior": "Used burndown data to trigger 1:1 with peer tech lead",
+      "exec": "Used metric divergence to trigger private GM review"
+    },
+    {
+      "signal": "Creating durable process",
+      "junior": "Added daily risk check to own standup template",
+      "senior": "Instituted joint Friday risk review and shared status",
+      "exec": "Added monthly exec risk readout across all programs"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "N/A - stays within individual scope",
+      "senior": "Drove peer team to joint review without direct authority",
+      "exec": "Influenced GM and org to reset date and reallocate staff"
+    },
+    {
+      "signal": "Learning and iteration",
+      "junior": "Asked manager to review new template for a week",
+      "senior": "Continued sharing combined status after initial fix",
+      "exec": "Made risk readout permanent for future programs"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task and personal habit",
+      "senior": "Two teams and program forum",
+      "exec": "Org-wide launch and multiple programs"
+    },
+    {
+      "signal": "Handling ambiguity",
+      "junior": "Simple status doc gap",
+      "senior": "Flat burndown with green status",
+      "exec": "Diverging metrics vs customer pilot feedback"
+    }
+  ],
+  "principle_id": 6005,
+  "kind": "lp"
+}

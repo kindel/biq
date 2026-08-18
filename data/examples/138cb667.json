@@ -1,0 +1,214 @@
+{
+  "question": "Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+  "principle": "Think big, start small",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I started coding a full user dashboard with charts and filters before we had confirmed the data sources. After a week I realized the scope was too big."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you notice that?"
+        },
+        {
+          "role": "candidate",
+          "text": "My mentor asked for a demo of just one chart and I couldn't even run it end to end. I cut it to a single table view using mock data first."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that change the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped the table in two weeks, got feedback, and added one chart later. The full thing took six weeks instead of the three months I originally planned."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+        "Role: new grad on first feature team",
+        "Situation: started full dashboard without data confirmation",
+        "Action: cut to single table with mocks after mentor probe",
+        "Outcome: shipped in 2 weeks vs original 3-month plan",
+        "Quote: \"I couldn't even run it end to end\"",
+        "Follow-up: How did you decide what to keep? - Focused on one table that proved the data pipeline"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for a junior. The candidate described starting a full dashboard then cutting to a single table after realizing the end-to-end flow was broken. Quote: \"I couldn't even run it end to end.\" This shows ownership of their own scope and quick adjustment based on feedback. The result was a 2-week delivery instead of the original three-month estimate. Biggest strength is the willingness to shrink the work without being told the exact cut. Biggest gap is the lack of any cross-team coordination signal, which is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a reporting tool and kept adding more filters because the PM kept asking for them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when you realized it was too big?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just kept working on it until the deadline and we launched late."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+        "Role: junior on reporting feature",
+        "Situation: added filters on request without questioning scope",
+        "Action: continued until deadline, launched late",
+        "Outcome: no scaling back occurred",
+        "Quote: \"I just kept working on it until the deadline\"",
+        "Follow-up: Did anyone suggest cutting scope? - No, I didn't ask"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for a junior. The candidate described adding filters on request and continuing until the deadline with a late launch. Quote: \"I just kept working on it until the deadline.\" No evidence of recognizing the scope problem or taking action to reduce it. The story shows passive execution rather than ownership of their own work. Biggest gap is the complete absence of any adjustment or learning from the over-scope situation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team started a cross-service analytics platform with five services in scope. After two sprints I saw we were blocked on two dependencies."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you scale it back?"
+        },
+        {
+          "role": "candidate",
+          "text": "I proposed we launch only the data ingestion service first and use a simple internal UI. We got the first customer using it in four weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction from other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "The platform team agreed to deprioritize their pieces until we proved value. We later added two more services based on usage data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+        "Role: senior leading cross-team analytics effort",
+        "Situation: five-service platform blocked on dependencies after two sprints",
+        "Action: proposed single ingestion service with internal UI",
+        "Outcome: first customer in four weeks, later expanded based on usage",
+        "Quote: \"We got the first customer using it in four weeks\"",
+        "Follow-up: How did you influence the other teams? - Shared usage metrics and asked them to wait for signal"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for a senior. The candidate reduced a five-service platform to one ingestion service after seeing dependency blocks. Quote: \"We got the first customer using it in four weeks.\" This shows influence without authority by using early usage data to align other teams. The approach delivered measurable value before expanding scope. Biggest strength is the clear metric-driven decision to cut and the later expansion based on real usage. Biggest gap is limited detail on long-term org leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were building a big analytics platform across services and it took longer than expected."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to reduce scope at any point?"
+        },
+        {
+          "role": "candidate",
+          "text": "I raised it in a meeting but the other teams wanted to keep their pieces so we kept going."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+        "Role: senior on multi-service platform",
+        "Situation: scope grew across services with delays",
+        "Action: raised issue in meeting, no change made",
+        "Outcome: continued with original scope",
+        "Quote: \"the other teams wanted to keep their pieces so we kept going\"",
+        "Follow-up: What metrics did you use to argue for cutting? - None, just mentioned it was taking longer"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for a senior. The candidate raised scope concerns in a meeting but took no further action when other teams resisted. Quote: \"the other teams wanted to keep their pieces so we kept going.\" No evidence of using data or influence to drive a smaller start. The story shows awareness without impact. Biggest gap is the lack of any concrete step to scale back despite cross-team involvement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were planning a company-wide experimentation platform that would replace three existing tools. Six months in the roadmap was still growing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paused the full replacement and directed the team to ship a thin layer on top of one existing tool for a single business unit first. We measured adoption for three months before committing to the rest of the roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "The pilot showed 18% lift in one unit. We used that to get exec buy-in to deprecate two tools over the next year instead of building everything upfront."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+        "Role: exec owning experimentation platform strategy",
+        "Situation: six-month roadmap expanding for full replacement of three tools",
+        "Action: paused and shipped thin layer on one tool for single business unit",
+        "Outcome: 18% lift, used data to deprecate two tools over a year",
+        "Quote: \"We measured adoption for three months before committing to the rest\"",
+        "Follow-up: How did you handle the original stakeholders? - Shared pilot results and tied deprecation to measured ROI"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for an exec. The candidate paused a multi-tool replacement and ran a three-month pilot on one business unit. Quote: \"We measured adoption for three months before committing to the rest.\" This demonstrates strategic judgment by trading short-term scope for long-term deprecation leverage. The 18% lift became the signal to align the organization. Biggest strength is the use of a small start to create irreversible business momentum. Biggest gap is light detail on personal time allocation during the pivot.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform replacement effort kept expanding and we ended up with a two-year roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did leadership step in to narrow it?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tried to prioritize but the teams kept adding requirements so the scope stayed large."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+        "Role: exec on platform replacement",
+        "Situation: roadmap grew to two years with ongoing additions",
+        "Action: attempted prioritization, requirements kept coming",
+        "Outcome: scope remained large",
+        "Quote: \"the teams kept adding requirements so the scope stayed large\"",
+        "Follow-up: What trade-offs did you present to the board? - Focused on timeline, not on a smaller initial bet"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for an exec. The candidate allowed a two-year roadmap to persist despite recognizing expansion. Quote: \"the teams kept adding requirements so the scope stayed large.\" No evidence of using a small pilot or clear trade-off decision to create leverage. The story shows reactive prioritization rather than strategic scoping. Biggest gap is the absence of any business-level signal or long-term deprecation outcome."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognition of over-scope",
+      "junior": "Notices own work is too large after feedback",
+      "senior": "Identifies cross-team dependency blocks early",
+      "exec": "Pauses multi-quarter roadmap based on growth signals"
+    },
+    {
+      "signal": "Action to scale back",
+      "junior": "Cuts personal feature to one table",
+      "senior": "Ships single service and aligns partners",
+      "exec": "Directs thin layer pilot on one business unit"
+    },
+    {
+      "signal": "Use of data or feedback",
+      "junior": "Mentor demo revealed broken flow",
+      "senior": "Usage metrics after four weeks",
+      "exec": "18% lift after three-month pilot"
+    },
+    {
+      "signal": "Influence on others",
+      "junior": "N/A at this level",
+      "senior": "Gets other teams to deprioritize",
+      "exec": "Secures exec buy-in for later deprecation"
+    },
+    {
+      "signal": "Long-term outcome",
+      "junior": "Faster local delivery",
+      "senior": "Expanded services based on real usage",
+      "exec": "Deprecates two tools over a year"
+    }
+  ],
+  "principle_id": 6001,
+  "kind": "lp"
+}

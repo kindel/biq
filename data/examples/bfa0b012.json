@@ -1,0 +1,202 @@
+{
+  "question": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+  "principle": "Better than yesterday",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our deployment script had a flaky step that failed 1 in 10 runs. The team said a full CI rewrite was coming in two months so no one touched it. I added a one-line retry with backoff and logged the failures. It cut our flaky rate to under 2% and saved me about two hours a week chasing logs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when the bigger rewrite landed?"
+        },
+        {
+          "role": "candidate",
+          "text": "The rewrite got delayed another quarter. My retry stayed in place and the logs helped the new CI team know what to keep."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+        "Added retry to flaky deploy step while waiting on CI rewrite",
+        "Cut failure rate from 10% to 2%, saved ~2h/week",
+        "Quote: \"The rewrite got delayed another quarter. My retry stayed in place.\"",
+        "Follow-up: Asked about outcome after delay; candidate showed the change persisted and informed later work"
+      ],
+      "raiseFeedback": "Raises the bar on Better than yesterday. The candidate owned a local pain point instead of waiting for the promised rewrite. The one-line retry delivered measurable reduction in flakiness and time spent. Even after the larger project slipped, the change remained useful and informed the replacement. This shows early ownership of incremental quality without overstepping scope. The main gap is that impact stayed within the candidate's own workflow rather than spreading further.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was a slow query in the report I owned. Leadership said the new data platform would fix it in a month so I just added a comment in the ticket and waited."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the platform ship on time?"
+        },
+        {
+          "role": "candidate",
+          "text": "It slipped twice. I kept reminding people in standup until someone else finally optimized the query three months later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+        "Identified slow query but deferred entirely to upcoming platform",
+        "Added comment to ticket and waited; no local action taken",
+        "Quote: \"I just added a comment in the ticket and waited.\"",
+        "Follow-up: Platform slipped twice; candidate only escalated verbally without attempting interim fix"
+      ],
+      "lowerFeedback": "Lowers the bar on Better than yesterday. The candidate recognized a repeatable pain but chose to wait rather than make any local change. No attempt was made to reduce the impact while the larger project was delayed. The story ends with the problem persisting for months until someone else acted. This shows limited ownership of day-to-day quality when a perfect solution is promised later."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two partner teams were duplicating customer-event validation logic. The org roadmap listed a shared service for Q3 so most people stopped maintaining their copies. I spent two days extracting a small shared library with the most common rules and got both teams to adopt it via a short RFC."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in without the full service?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each team their current duplication bugs and ran a one-week pilot that cut validation errors by 40%. The library stayed in use until the shared service replaced it six months later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+        "Extracted shared validation library while waiting on org shared service",
+        "Used pilot data showing 40% error reduction to drive adoption across two teams",
+        "Quote: \"The library stayed in use until the shared service replaced it six months later.\"",
+        "Follow-up: Candidate described lightweight RFC and pilot that secured cross-team adoption without authority"
+      ],
+      "raiseFeedback": "Raises the bar on Better than yesterday. The candidate saw duplicated effort across teams and delivered a lightweight shared library instead of deferring to the distant service. The pilot provided concrete data that influenced two teams without formal authority. The interim solution reduced errors and remained in production for months. This demonstrates influence and incremental progress at a scope beyond a single team. The story could have included longer-term ownership transfer details.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?"
+        },
+        {
+          "role": "candidate",
+          "text": "Other teams were copying our validation code. The architecture group said a shared service was coming so I stopped updating our copy and told teams to wait."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact while you waited?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept seeing the same bugs in three places. I raised it in the monthly sync but nothing changed until the service finally shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+        "Noted duplication across teams but deferred to planned shared service",
+        "Stopped maintaining local copy and directed others to wait",
+        "Quote: \"I stopped updating our copy and told teams to wait.\"",
+        "Follow-up: Bugs persisted in multiple copies; only raised in monthly sync with no interim action"
+      ],
+      "lowerFeedback": "Lowers the bar on Better than yesterday. The candidate identified cross-team duplication yet chose to halt maintenance rather than create any bridging improvement. No attempt was made to reduce repeated bugs while waiting for the architecture deliverable. Influence was limited to verbal escalation in a monthly meeting. The result was sustained duplication and defects across teams for an extended period."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our quarterly planning process had inconsistent risk scoring that caused repeated re-prioritization fights. A full OKR and portfolio system was slated for next year so leaders kept using their own spreadsheets. I introduced a one-page risk rubric and required it for all Q2 proposals, then ran a retro after the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "Planning cycle time dropped 25% and leadership adopted the rubric as the interim standard. It shaped requirements for the new system and reduced re-work in two subsequent quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+        "Created simple risk rubric while waiting on new OKR/portfolio system",
+        "Applied to all Q2 proposals and measured 25% faster planning cycle",
+        "Quote: \"It shaped requirements for the new system and reduced re-work in two subsequent quarters.\"",
+        "Follow-up: Candidate showed how local process change influenced later platform requirements and sustained use"
+      ],
+      "raiseFeedback": "Raises the bar on Better than yesterday. The candidate addressed inconsistent planning at an organizational level instead of waiting for the promised system. The one-page rubric was lightweight yet produced a 25% reduction in cycle time and became the de-facto interim standard. Evidence shows the change informed the eventual platform and delivered value across multiple quarters. This reflects strategic judgment on when to ship incremental process leverage. The account is light on how trade-offs with other priorities were managed.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?"
+        },
+        {
+          "role": "candidate",
+          "text": "Planning risk scoring was inconsistent across teams. Since a new portfolio system was coming next year I told my directs to keep using their current spreadsheets and not invest time in changes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect later planning?"
+        },
+        {
+          "role": "candidate",
+          "text": "We carried the same inconsistencies into the new system rollout and had to clean them up during migration."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+        "Recognized org-level inconsistency in risk scoring",
+        "Directed teams to stay with existing spreadsheets pending new system",
+        "Quote: \"I told my directs to keep using their current spreadsheets and not invest time in changes.\"",
+        "Follow-up: Inconsistencies carried forward and required cleanup during migration"
+      ],
+      "lowerFeedback": "Lowers the bar on Better than yesterday. The leader identified an organizational friction but explicitly discouraged any interim improvement. Directs were instructed to maintain the status quo rather than reduce re-prioritization fights. No leverage was created while waiting for the larger system. The inconsistencies simply propagated into the migration, increasing later cleanup cost."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Acts on local pain without waiting for perfect solution",
+      "junior": "Made one-line retry that persisted after delay",
+      "senior": "Built cross-team library adopted via pilot data",
+      "exec": "Rolled out org rubric that shaped later platform"
+    },
+    {
+      "signal": "Measures impact of incremental change",
+      "junior": "Tracked failure rate drop from 10% to 2%",
+      "senior": "Showed 40% error reduction in pilot",
+      "exec": "Reported 25% planning cycle time reduction"
+    },
+    {
+      "signal": "Influences beyond own immediate work",
+      "junior": "Change stayed within personal workflow",
+      "senior": "Secured adoption from two partner teams",
+      "exec": "Rubric became interim org standard"
+    },
+    {
+      "signal": "Handles delay of larger initiative",
+      "junior": "Interim fix remained useful during slip",
+      "senior": "Library bridged six-month gap",
+      "exec": "Process change informed system requirements"
+    },
+    {
+      "signal": "Avoids deferral when bigger fix slips",
+      "junior": "Did not wait passively for rewrite",
+      "senior": "Did not stop at monthly escalation",
+      "exec": "Did not instruct teams to maintain status quo"
+    }
+  ],
+  "principle_id": 6009,
+  "kind": "lp"
+}

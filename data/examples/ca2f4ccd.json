@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you assessed whether an issue was safety-critical, mission-critical, or just a performance loss you could accept. How did you make the call?",
+  "principle": "Race on the racetrack, walk on ice",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a latency spike in our internal dashboard after a deploy. I checked the logs, saw it was only affecting the staging environment and not production traffic, and decided we could roll back later rather than page the on-call."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm it wasn't safety-critical?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at the affected endpoints and confirmed none touched customer data or payments. I also asked my mentor to review my assessment before closing the ticket."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you assessed whether an issue was safety-critical...",
+        "- Junior dev on dashboard latency spike post-deploy",
+        "- Scoped to staging only, no prod traffic or customer data",
+        "- Outcome: deferred rollback, confirmed with mentor",
+        "Quote: 'I asked my mentor to review my assessment before closing the ticket'",
+        "Follow-up: How did you confirm it wasn't safety-critical? -> checked endpoints, no payments/data"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice for a junior. The candidate correctly scoped a latency issue to staging, verified no customer data or payments were involved, and sought mentor input before deciding to defer action. This shows appropriate caution and coachability without over-escalating. The story demonstrates local ownership of their own assessment rather than heroics. Biggest strength is the explicit check for safety impact before accepting performance loss.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a slow query in our app. I just added an index and moved on because it seemed like a performance thing."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check if the query touched any critical paths?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I assumed it was fine since nothing broke right away."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you assessed whether an issue was safety-critical...",
+        "- Junior dev on slow query",
+        "- Added index without checking critical paths or data impact",
+        "- Outcome: assumed fine because nothing broke immediately",
+        "Quote: 'I assumed it was fine since nothing broke right away'",
+        "Follow-up: Did you check if the query touched any critical paths? -> no, assumed OK"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice for a junior. The candidate made a change to address a slow query without verifying whether it affected customer data or production paths, relying only on the absence of immediate breakage. This shows insufficient risk calibration for even individual scope. The story lacks any evidence of deliberate assessment or seeking feedback. Biggest gap is missing the basic step of confirming safety or mission impact before acting."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service had elevated error rates on one endpoint after a feature flag rollout. I pulled the team together, confirmed it only affected non-critical reporting flows, and we chose to monitor rather than rollback immediately."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the decision across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the error breakdown and traffic split with the owning team and the on-call, then documented the trade-off so we could revisit after the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you assessed whether an issue was safety-critical...",
+        "- Senior on feature flag error rates",
+        "- Confirmed non-critical reporting flows only",
+        "- Outcome: monitored instead of rollback, shared data with owning team",
+        "Quote: 'I shared the error breakdown and traffic split with the owning team and the on-call'",
+        "Follow-up: How did you influence the decision across teams? -> documented trade-off for later revisit"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice for a senior. The candidate assessed an error rate issue as limited to non-critical flows, coordinated with the owning team and on-call without authority, and documented the decision for future review. This shows cross-team influence and clear metrics on impact. The approach balanced speed with documented risk acceptance. Biggest strength is the explicit sharing of data to align multiple teams on the call.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We saw some timeouts in a shared service. I told the team to ignore it because the SLA was still green."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check downstream impact on other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked our metrics but didn't reach out to the dependent services."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you assessed whether an issue was safety-critical...",
+        "- Senior on shared service timeouts",
+        "- Relied only on SLA being green, no downstream check",
+        "- Outcome: told team to ignore without cross-team input",
+        "Quote: 'I checked our metrics but didn't reach out to the dependent services'",
+        "Follow-up: Did you check downstream impact on other teams? -> no"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice for a senior. The candidate dismissed timeouts based solely on internal SLA without verifying downstream effects on dependent teams. This shows limited influence without authority and weak cross-team calibration. The decision lacked any documented trade-off or data sharing. Biggest gap is absence of outreach that would be expected at this level for mission-critical assessment."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a platform migration we identified a potential data consistency risk in one region. I directed the org to pause the rollout, run a controlled canary with explicit safety metrics, and only proceed after the risk was quantified below our threshold."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you weigh at the business level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a two-week delay in the migration timeline to avoid any chance of customer data divergence, then used the extra time to add automated consistency checks for future rollouts."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you assessed whether an issue was safety-critical...",
+        "- Exec on platform migration data consistency risk",
+        "- Paused rollout, ran canary with safety metrics",
+        "- Outcome: accepted two-week delay, added automated checks",
+        "Quote: 'We accepted a two-week delay in the migration timeline to avoid any chance of customer data divergence'",
+        "Follow-up: What trade-offs did you weigh at the business level? -> quantified risk vs. timeline, invested in future safeguards"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice for an exec. The candidate identified a data consistency risk during migration, directed an org-wide pause, and accepted a two-week delay to keep customer data safe while adding long-term automation. This demonstrates strategic judgment and long-term leverage over short-term heroics. The decision explicitly traded timeline for risk reduction at business scale. Biggest strength is the org-level policy change that turned a one-time call into ongoing protection.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a performance regression in the new system. I told the teams to keep shipping because the numbers looked acceptable."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you evaluate if it was acceptable at scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at aggregate dashboards and decided the impact was small enough to move on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you assessed whether an issue was safety-critical...",
+        "- Exec on performance regression in new system",
+        "- Relied on aggregate dashboards only",
+        "- Outcome: told teams to keep shipping without deeper review",
+        "Quote: 'I looked at aggregate dashboards and decided the impact was small enough to move on'",
+        "Follow-up: How did you evaluate if it was acceptable at scale? -> aggregate view only"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice for an exec. The candidate green-lit continued shipping on a performance regression based only on aggregate dashboards without probing for hidden safety or mission-critical exposure. This reflects insufficient strategic caution at org scale. The story shows no long-term thinking or trade-off documentation. Biggest gap is lack of leverage to prevent similar issues in future high-ambiguity decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of assessment",
+      "junior": "Checks own component only",
+      "senior": "Coordinates with owning teams",
+      "exec": "Sets org policy and long-term safeguards"
+    },
+    {
+      "signal": "Risk documentation",
+      "junior": "Asks mentor to review",
+      "senior": "Shares data and trade-offs with peers",
+      "exec": "Accepts timeline cost to protect customer data"
+    },
+    {
+      "signal": "Decision speed vs caution",
+      "junior": "Defers when staging-only",
+      "senior": "Monitors instead of immediate rollback",
+      "exec": "Pauses rollout for controlled canary"
+    },
+    {
+      "signal": "Cross-team influence",
+      "junior": "N/A at this level",
+      "senior": "Documents for later revisit",
+      "exec": "Directs org-wide pause and automation investment"
+    },
+    {
+      "signal": "Learning loop",
+      "junior": "Seeks feedback after assessment",
+      "senior": "Enables future sprint revisit",
+      "exec": "Adds automated checks for future migrations"
+    }
+  ],
+  "principle_id": 6015,
+  "kind": "lp"
+}

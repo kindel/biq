@@ -1,0 +1,198 @@
+{
+  "question": "Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+  "principle": "Rocket engineering, not rocket science",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a recent feature to add basic search to our internal tool, I wanted to evaluate every indexing option but realized the team only needed something that worked for 10k records. I skipped comparing Lucene vs custom regex and just used the built-in DB full-text search."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM said launch was in two weeks and no one had complained about search yet. I checked query logs and saw average result size was tiny."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "Shipped on time, usage went up 15 percent, and later we swapped it when we hit scale."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+        "Situation: internal search feature with tight deadline",
+        "Action: skipped Lucene comparison, used DB full-text",
+        "Outcome: shipped on time, 15% usage lift",
+        "Quote: \"The PM said launch was in two weeks\"",
+        "Follow-up: Asked what drove decision - candidate cited query logs and PM input"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering, not rocket science. The candidate described skipping a full indexing bake-off for an internal tool because launch was two weeks away and logs showed small result sets. They used the existing DB full-text search instead. This kept scope individual and delivered a measurable 15 percent usage increase. The decision was grounded in a direct PM constraint rather than abstract completeness. Biggest strength is the explicit link between the skipped work and the actual ship date.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I started evaluating five different search libraries for the same feature but the deadline slipped because I wanted to be thorough."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you keep going?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just felt like we should know the trade-offs even if we weren't going to use them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+        "Situation: same internal search feature",
+        "Action: evaluated five libraries anyway",
+        "Outcome: deadline slipped",
+        "Quote: \"I just felt like we should know the trade-offs\"",
+        "Follow-up: Asked what drove continuation - candidate cited desire for completeness"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering, not rocket science. The candidate evaluated five search libraries despite a two-week deadline and the feature slipped as a result. They justified continued work by saying they wanted to know the trade-offs even when the team would not use them. No evidence of checking actual usage data or PM priorities before investing the time. The story shows individual scope but without the ability to cut scope based on constraints. Biggest gap is lack of any outcome tied to product value versus completeness."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments service had a 200 ms p99 target but one team kept pushing for custom connection pooling research. I pulled the last six months of metrics, showed that only 3 percent of traffic hit the path, and convinced them to use the standard library pool instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get alignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a quick load test on the existing pool and shared the numbers in the cross-team sync. We agreed to revisit only if volume doubled."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+        "Situation: payments service optimization request",
+        "Action: used existing metrics to show low traffic on hot path, skipped custom pooling research",
+        "Outcome: aligned cross-team on standard library, revisit trigger defined",
+        "Quote: \"Only 3 percent of traffic hit the path\"",
+        "Follow-up: Asked how alignment was reached - candidate cited load test and shared numbers"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering, not rocket science. The candidate used six months of production metrics to demonstrate that only 3 percent of payments traffic would benefit from custom pooling and convinced the owning team to skip the research. They ran one load test on the standard library instead and set a clear revisit trigger if volume doubled. This shows cross-team influence without authority and a clear metric-driven decision. The story directly ties the skipped work to product impact rather than technical purity. Biggest strength is the explicit cross-team alignment step and defined revisit condition.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The same payments team asked for pooling work and I ended up doing a two-week prototype anyway because I thought it might matter later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed your mind about the metrics?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted to be ready in case traffic patterns shifted."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+        "Situation: same payments optimization request",
+        "Action: ran two-week prototype despite low traffic data",
+        "Outcome: work completed without clear need",
+        "Quote: \"I wanted to be ready in case traffic patterns shifted\"",
+        "Follow-up: Asked what changed mind about metrics - candidate cited future-proofing"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering, not rocket science. The candidate ran a two-week custom pooling prototype even after metrics showed only 3 percent of traffic would use it. They justified the work by wanting to be ready for potential future shifts rather than current product needs. No evidence of cross-team pushback or defined success criteria before starting. The story demonstrates technical thoroughness at the expense of focus. Biggest gap is absence of any product or metric outcome tied to the extra work."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When we acquired a smaller payments company I decided against a full architecture audit of their stack. We only needed their transaction volume for the next 18 months so we kept their system as-is and redirected engineering to integration tests instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made that call stick?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the board the 18-month volume projection and the $4M cost of a rewrite. We set a trigger to revisit at 2x volume."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+        "Situation: post-acquisition payments platform decision",
+        "Action: skipped full architecture audit, kept acquired stack, focused on integration",
+        "Outcome: $4M saved, clear 2x volume revisit trigger",
+        "Quote: \"We only needed their transaction volume for the next 18 months\"",
+        "Follow-up: Asked what made the call stick - candidate cited board projection and cost comparison"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering, not rocket science. The candidate chose not to audit the acquired company's payments stack because the 18-month volume projection did not justify it and redirected the team to integration work instead. They presented the $4M rewrite cost and set a 2x volume trigger for the board. This reflects org-level trade-off judgment under acquisition ambiguity. The decision was anchored in concrete business constraints rather than technical completeness. Biggest strength is the explicit linkage of skipped work to both cost and a measurable future trigger.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the same acquisition I commissioned a full six-month architecture review because I wanted to understand every difference before deciding."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ended up rewriting large parts anyway once we saw the gaps."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+        "Situation: post-acquisition payments platform",
+        "Action: commissioned six-month full architecture review",
+        "Outcome: rewrite still happened later",
+        "Quote: \"I wanted to understand every difference before deciding\"",
+        "Follow-up: Asked outcome - candidate noted rewrite occurred anyway"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering, not rocket science. The candidate launched a six-month architecture review of the acquired payments stack despite an 18-month volume window that did not require immediate changes. The review ultimately led to a rewrite anyway. No evidence of using volume projections or cost thresholds to bound the initial scope. The story shows strategic intent but defaults to exhaustive analysis over focused leverage. Biggest gap is lack of any early constraint that would have limited the review to what mattered for the next 18 months."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual feature with PM constraint",
+      "senior": "Cross-team service path with traffic metric",
+      "exec": "Acquired platform with 18-month volume and cost"
+    },
+    {
+      "signal": "Evidence used to skip work",
+      "junior": "Query logs and deadline",
+      "senior": "Six months of p99 metrics plus load test",
+      "exec": "Board volume projection and $4M rewrite cost"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Told PM and shipped",
+      "senior": "Shared numbers in cross-team sync",
+      "exec": "Presented to board with revisit trigger"
+    },
+    {
+      "signal": "Revisit condition defined",
+      "junior": "None stated",
+      "senior": "If volume doubled",
+      "exec": "At 2x volume"
+    },
+    {
+      "signal": "Outcome tied to product",
+      "junior": "15% usage lift, on-time ship",
+      "senior": "Avoided unnecessary research",
+      "exec": "$4M saved, integration focus"
+    },
+    {
+      "signal": "Risk of over-analysis",
+      "junior": "Library comparison would have slipped deadline",
+      "senior": "Prototype would have consumed two weeks",
+      "exec": "Review consumed six months with rewrite still required"
+    }
+  ],
+  "principle_id": 6014,
+  "kind": "lp"
+}

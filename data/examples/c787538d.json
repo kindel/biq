@@ -1,0 +1,208 @@
+{
+  "question": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+  "principle": "Customer success is our success",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were building a reporting dashboard for a small client. Two weeks in, they asked to swap the data source from CSV to their new API. I updated my task list, checked with my mentor on the effort, then emailed the client a revised two-week timeline with the new scope. We delivered on the new date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the customer say when you sent the update?"
+        },
+        {
+          "role": "candidate",
+          "text": "They appreciated the heads-up and the new date. My mentor later told me to always include options next time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+        "Role: Junior dev on 4-week dashboard build",
+        "Situation: Client swapped CSV to API mid-sprint",
+        "Action: Checked effort with mentor, sent email with revised 2-week timeline",
+        "Outcome: Delivered on new date; customer thanked us",
+        "Quote: \"My mentor later told me to always include options next time.\"",
+        "Follow-up: What did the customer say? - Appreciated the heads-up"
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success for a junior. The candidate owned the scope change at an individual level by confirming effort with a mentor before updating the customer. The story shows they adjusted their own plan and sent a clear timeline update. The follow-up reveals coachability when the mentor suggested adding options. Biggest strength is closing the loop with the customer instead of hiding the change.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM told us the customer wanted a new login screen. I just kept coding the old flow and waited for the next sprint to pick it up."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you tell the customer anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the PM handled all that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+        "Role: Junior dev",
+        "Situation: Login screen added mid-build",
+        "Action: Continued on old scope, waited for sprint planning",
+        "Outcome: No direct customer contact",
+        "Quote: \"The PM handled all that.\"",
+        "Follow-up: Did you tell the customer? - No"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success for a junior. The candidate treated the change as someone else's problem and made no attempt to understand or surface impact. There is no evidence of ownership over their own work or willingness to communicate directly. The response shows reliance on the PM rather than learning how customer changes affect delivery."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were delivering a new analytics module for a key account when they changed their data retention policy. I pulled the cross-team leads, modeled the new storage costs, then ran a joint call with the customer to present two options: reduced scope or four-week extension. We chose the extension and hit the revised date with no extra cost to them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a 30-minute working session and had each team bring their delta in writing before we talked to the customer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+        "Role: Senior owning analytics module for key account",
+        "Situation: Customer changed data retention policy mid-delivery",
+        "Action: Modeled costs, aligned three teams on deltas, ran joint options call",
+        "Outcome: Four-week extension chosen; delivered on time with no extra cost",
+        "Quote: \"I had each team bring their delta in writing before we talked to the customer.\"",
+        "Follow-up: How did you get the other teams aligned? - 30-min session with written deltas"
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success for a senior. The candidate drove cross-team alignment and gave the customer clear trade-off options instead of a single revised plan. The story includes measurable impact (on-time delivery, no extra cost) and shows influence without authority by getting written input from teams. Biggest strength is turning a policy change into a controlled negotiation that protected the customer relationship.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "The customer added a new compliance requirement. I updated the internal roadmap and told the account manager to let them know."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on timeline or other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "We absorbed it in the next quarter. I didn't run the numbers."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+        "Role: Senior on compliance feature",
+        "Situation: New compliance requirement added",
+        "Action: Updated internal roadmap, delegated to account manager",
+        "Outcome: Pushed to next quarter with no cost model",
+        "Quote: \"I didn't run the numbers.\"",
+        "Follow-up: What was the impact? - Absorbed next quarter"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success for a senior. The candidate delegated communication and skipped any analysis of trade-offs or cross-team impact. No evidence of influence without authority or providing the customer with options. The story shows the change was treated as an internal scheduling item rather than a customer-success risk."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our largest enterprise customer announced they were moving to a new cloud provider, affecting a multi-year migration program. I convened the account, product, and finance leads, then proposed a phased transition plan that protected their existing SLAs while we rebuilt the pipeline. I personally briefed their CTO on the risks and the two-year investment required from us. We kept the account and signed a renewal."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you present internally?"
+        },
+        {
+          "role": "candidate",
+          "text": "We modeled a 15% margin hit if we accelerated versus spreading the work and accepting a one-quarter delay on another initiative."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+        "Role: Exec overseeing enterprise migration program",
+        "Situation: Largest customer switching cloud providers mid-program",
+        "Action: Convened cross-functional leads, proposed phased plan, briefed CTO directly on risks and investment",
+        "Outcome: Protected SLAs, signed renewal",
+        "Quote: \"We modeled a 15% margin hit if we accelerated versus spreading the work.\"",
+        "Follow-up: What trade-offs did you present internally? - 15% margin vs one-quarter delay on another initiative"
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success for an exec. The candidate made a strategic decision to absorb short-term margin pressure to retain a major account and modeled the long-term business impact. The story shows high-ambiguity leadership by personally engaging the customer's CTO and balancing multiple internal initiatives. Biggest strength is treating the change as a portfolio-level decision rather than a single-project adjustment.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?"
+        },
+        {
+          "role": "candidate",
+          "text": "A customer asked for a different deployment model. We told the account team to handle it and moved the work to the next release cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect any other customers or our roadmap?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't model the broader impact at the time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+        "Role: Exec",
+        "Situation: Customer requested different deployment model",
+        "Action: Delegated to account team, pushed to next cycle",
+        "Outcome: No modeling of broader impact",
+        "Quote: \"We didn't model the broader impact at the time.\"",
+        "Follow-up: Did this affect any other customers? - No modeling done"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success for an exec. The candidate delegated a strategic customer request without assessing org-level or multi-customer implications. There is no evidence of long-term thinking or willingness to make trade-offs at the business level. The response shows the change was treated as a tactical hand-off instead of a potential portfolio risk."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Direct customer communication on scope change",
+      "junior": "Raises: sent own timeline update after checking mentor",
+      "senior": "Raises: ran joint options call after aligning teams",
+      "exec": "Raises: personally briefed CTO on risks and investment"
+    },
+    {
+      "signal": "Trade-off modeling and options presented",
+      "junior": "Meets: confirmed effort with mentor before replying",
+      "senior": "Raises: modeled storage costs and gave two clear choices",
+      "exec": "Raises: modeled 15% margin vs delay across initiatives"
+    },
+    {
+      "signal": "Cross-team or org coordination",
+      "junior": "N/A at this level",
+      "senior": "Raises: 30-min session with written deltas from three teams",
+      "exec": "Raises: convened account, product, and finance leads for phased plan"
+    },
+    {
+      "signal": "Long-term customer or business outcome",
+      "junior": "Meets: delivered on revised date",
+      "senior": "Raises: on-time with no extra cost to customer",
+      "exec": "Raises: kept account and signed renewal despite margin pressure"
+    }
+  ],
+  "principle_id": 6002,
+  "kind": "lp"
+}

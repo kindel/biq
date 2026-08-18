@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+  "principle": "Break down silos",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the backend team and frontend team started avoiding each other in standups and blaming delays on the other side. I asked my manager if I could set up a quick shared Slack channel and a 15-minute weekly sync just for the two devs on each side. We started sharing small wins there and it reduced the finger-pointing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that sync?"
+        },
+        {
+          "role": "candidate",
+          "text": "The channel stayed active and we caught two integration issues early. My manager later asked me to document the format for the next project."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+        "Role: new grad on first project; noticed backend/frontend blame in standups",
+        "Action: asked manager permission, created shared Slack + 15-min weekly sync",
+        "Outcome: channel stayed active, caught two issues early; manager asked to document format",
+        "Quote: 'We started sharing small wins there and it reduced the finger-pointing.'",
+        "Follow-up: What happened after that sync? -> documented for next project"
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos. Junior candidate described an individual-scope action on their first project: requesting permission to create a shared Slack channel and 15-minute sync between backend and frontend. Quote: 'We started sharing small wins there and it reduced the finger-pointing.' The outcome stayed local yet produced measurable early issue detection and the manager asked to reuse the format. Shows ownership of their immediate work and coachability in looping the manager first. Biggest strength: turned a noticed friction into a repeatable micro-process without overstepping scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw the two teams not talking much so I just tried to be friendly and say hi in the hallway. It didn't really change anything but at least I wasn't part of the problem."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything more structured?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured it was above my pay grade so I focused on my own tickets."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+        "Role: new grad; observed teams not talking",
+        "Action: said hi in hallway; decided not to escalate",
+        "Outcome: nothing changed; stayed within own tickets",
+        "Quote: 'I figured it was above my pay grade so I focused on my own tickets.'",
+        "Follow-up: Did you try anything more structured? -> no action beyond hallway greetings"
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos. Junior candidate noticed the dynamic but limited action to hallway greetings and explicitly chose not to act further because 'it was above my pay grade.' No attempt to involve a manager or create even a small shared process. Outcome was zero change. Biggest gap: defaulted to individual scope without testing any low-risk intervention or seeking guidance, missing the coachability signal expected at this level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Marketing and product started treating each other as blockers on a launch. I pulled the two leads into a room and mapped the actual handoff steps on a whiteboard, then volunteered to run a shared retro after the launch. We ended up creating a joint checklist that both teams adopted."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the leads to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as reducing rework for both sides and offered to own the first retro agenda so neither team had extra work upfront."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+        "Role: senior IC; marketing/product treating each other as blockers on launch",
+        "Action: pulled leads into room, mapped handoffs on whiteboard, volunteered to run shared retro",
+        "Outcome: created joint checklist adopted by both teams",
+        "Quote: 'I framed it as reducing rework for both sides and offered to own the first retro agenda.'",
+        "Follow-up: How did you get the leads to agree? -> framed as mutual benefit, owned first agenda"
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos. Senior candidate used influence without authority by convening marketing and product leads, mapping handoffs, and volunteering to run a retro that produced a reusable joint checklist. Quote: 'I framed it as reducing rework for both sides.' Cross-team impact is clear and the fix persisted beyond the single launch. Shows ability to create shared process while keeping ownership light. Biggest strength: turned observed friction into a durable cross-team artifact without needing formal authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I complained to my manager that marketing kept changing requirements and asked them to talk to the product lead. The dynamic stayed the same until the launch was over."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you speak with anyone on the marketing side directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I stayed in my lane and let management handle it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+        "Role: senior IC; marketing changing requirements",
+        "Action: complained to own manager and asked them to intervene",
+        "Outcome: dynamic unchanged until launch ended",
+        "Quote: 'I stayed in my lane and let management handle it.'",
+        "Follow-up: Did you speak with anyone on the marketing side directly? -> no direct contact"
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos. Senior candidate observed the dynamic but delegated entirely to their manager and stayed in their lane, producing no cross-team movement. No attempt at direct influence or lightweight process. Outcome left the silo intact. Biggest gap: expected senior-level influence without authority was absent; candidate defaulted to escalation rather than testing any peer-level intervention."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering and sales had developed separate roadmaps that conflicted on priorities. I created a quarterly joint planning ritual with shared OKRs and asked both VPs to co-present the first one. After two quarters the org stopped maintaining duplicate plans and we reallocated two headcount to a joint initiative."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make to get the VPs aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accepted that the first quarter would have some overlap and focused the OKRs only on the three highest-conflict areas rather than forcing full alignment immediately."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+        "Role: exec; engineering/sales had conflicting roadmaps",
+        "Action: created quarterly joint planning ritual with shared OKRs; asked VPs to co-present",
+        "Outcome: duplicate plans stopped; reallocated two headcount to joint work",
+        "Quote: 'I accepted that the first quarter would have some overlap and focused the OKRs only on the three highest-conflict areas.'",
+        "Follow-up: What trade-offs did you make to get the VPs aligned? -> accepted initial overlap, narrowed scope to top conflicts"
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos. Exec candidate addressed org-level engineering/sales roadmap conflict by instituting a quarterly joint planning ritual and shared OKRs, resulting in elimination of duplicate plans and reallocation of two headcount. Quote shows strategic judgment: 'focused the OKRs only on the three highest-conflict areas.' Long-term thinking is evident in the persistent ritual. Biggest strength: converted a structural silo into a durable cross-org process with measurable resource leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent a note to the two VPs pointing out the roadmap conflict and suggested they sort it out. The teams continued running separate planning cycles for the rest of the year."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up or offer any structure?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed the VPs would handle it once flagged; my focus stayed on my own org's execution."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+        "Role: exec; engineering/sales roadmap conflict",
+        "Action: sent note to VPs suggesting they sort it out",
+        "Outcome: separate planning cycles continued all year",
+        "Quote: 'I assumed the VPs would handle it once flagged.'",
+        "Follow-up: Did you follow up or offer any structure? -> no further involvement"
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos. Exec candidate flagged the org-level conflict to VPs but provided no structure, follow-up, or trade-off framing, leaving duplicate cycles in place for a full year. No evidence of strategic leverage or long-term process change. Biggest gap: treated the issue as a one-time notification rather than an opportunity to redesign cross-org rituals, missing the expected executive-level impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of intervention",
+      "junior": "Individual project; small shared channel",
+      "senior": "Two-team ritual with shared checklist",
+      "exec": "Org-level quarterly planning with OKRs and headcount reallocation"
+    },
+    {
+      "signal": "Use of authority",
+      "junior": "Asked manager first; stayed inside own project",
+      "senior": "Influenced peer leads without authority",
+      "exec": "Created ritual that VPs adopted"
+    },
+    {
+      "signal": "Persistence of fix",
+      "junior": "Format reused on next project",
+      "senior": "Checklist adopted beyond single launch",
+      "exec": "Duplicate plans eliminated; ongoing ritual"
+    },
+    {
+      "signal": "Trade-off awareness",
+      "junior": "None shown",
+      "senior": "Offered to own first retro to reduce others' work",
+      "exec": "Accepted initial overlap; narrowed to top three conflicts"
+    },
+    {
+      "signal": "Metric or outcome clarity",
+      "junior": "Caught two issues early",
+      "senior": "Joint checklist created",
+      "exec": "Two headcount reallocated to joint work"
+    }
+  ],
+  "principle_id": 6003,
+  "kind": "lp"
+}

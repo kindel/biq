@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+  "principle": "Rocket engineering, not rocket science",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the team wanted to add a custom caching layer with new algorithms because it sounded novel. I pulled up the support tickets showing customers mostly complained about login latency, not throughput."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I suggested we benchmark the existing Redis setup first. After data showed it met 95% of needs, we dropped the custom work and fixed the auth path instead."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+        "Role: new engineer on small service team",
+        "Situation: teammates pushed custom cache for novelty",
+        "Action: surfaced real support data and proposed benchmark",
+        "Outcome: team shipped auth fix, no new layer",
+        "Quote: 'Support tickets showed login issues, not scale.'",
+        "Follow-up: Asked how they handled pushback; candidate said they asked for data review and deferred to metrics."
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering, not rocket science for the question about steering away from technically interesting problems. The candidate described pulling support tickets on login latency instead of letting the team build a custom cache. They ran a quick benchmark on existing Redis and convinced the group to fix auth instead. This shows early ownership of customer signals over personal technical curiosity. The story stays within individual scope but demonstrates coachability by using data to align the team. Biggest strength is grounding the decision in tickets rather than opinion.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team wanted to try a new graph database for a feature. I mentioned customers might not care but went along since it was interesting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you steer it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't push hard. We built a prototype and later realized it added complexity without customer benefit."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+        "Role: new engineer",
+        "Situation: graph DB idea floated for unclear need",
+        "Action: voiced mild concern then participated",
+        "Outcome: prototype built, later scrapped for complexity",
+        "Quote: 'I mentioned customers might not care but went along.'",
+        "Follow-up: Asked what they would do differently; candidate said they would speak up more but had no concrete example."
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering, not rocket science for the question about steering away from technically interesting problems. The candidate noted a possible mismatch with customers yet still joined the graph database prototype effort. The work was later discarded after complexity surfaced. No evidence of using customer data or metrics to redirect the discussion. The response shows passive participation rather than ownership of the product direction. Biggest gap is lack of any steering action or follow-through on the initial concern."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams wanted to adopt a new streaming framework for a shared pipeline because it had advanced features. I pulled usage data showing 80% of calls came from three simple endpoints."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a cross-team review with the data and proposed extending the current REST layer. We avoided the migration and used the saved cycles to improve error handling that customers actually hit."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+        "Role: senior engineer across two teams",
+        "Situation: streaming framework proposed for novelty",
+        "Action: surfaced usage data and ran cross-team review",
+        "Outcome: extended REST instead, improved error handling",
+        "Quote: '80% of calls came from three simple endpoints.'",
+        "Follow-up: Asked about metrics; candidate shared before/after support ticket reduction on errors."
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering, not rocket science for the question about steering away from technically interesting problems. The candidate used endpoint usage data to show that a new streaming framework was unnecessary for most traffic. They led a cross-team review that resulted in extending the existing REST layer and redirecting effort to error handling. This produced measurable reduction in support tickets. The example demonstrates influence without authority and cross-team impact. Biggest strength is tying the decision directly to usage patterns and downstream customer benefit.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering wanted to move to event sourcing for better auditability. I agreed it was technically clean but noted customers rarely asked for history."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it in a couple meetings. The team decided to prototype anyway and the work stayed in the backlog."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+        "Role: senior engineer",
+        "Situation: event sourcing idea raised for audit features",
+        "Action: raised customer concern in meetings",
+        "Outcome: prototype approved, work lingered in backlog",
+        "Quote: 'Customers rarely asked for history.'",
+        "Follow-up: Asked for any follow-up data or decision; candidate had none beyond the initial discussion."
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering, not rocket science for the question about steering away from technically interesting problems. The candidate flagged that customers did not request audit history yet allowed the event sourcing prototype to proceed after a few meetings. No usage data or customer impact metrics were introduced to change the direction. The outcome left technical work in the backlog without resolution. The story shows awareness of the mismatch but no effective influence or cross-team leverage. Biggest gap is absence of concrete steering actions or results."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership pushed for a new ML inference platform to explore advanced models. I reviewed the three-year roadmap and saw our core growth came from two existing product lines with stable predictions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I redirected the investment to hardening the current inference service and added a small experiments budget instead. This kept reliability high for paying customers while still allowing limited exploration."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+        "Role: director-level",
+        "Situation: ML platform proposed at org level",
+        "Action: reviewed roadmap, limited new spend to experiments budget",
+        "Outcome: hardened existing service, protected core revenue",
+        "Quote: 'Core growth came from two existing product lines.'",
+        "Follow-up: Asked about business impact; candidate cited retained ARR from improved uptime."
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering, not rocket science for the question about steering away from technically interesting problems. The candidate reviewed the three-year roadmap and determined that a new ML inference platform would not serve the two product lines driving growth. They limited the effort to a small experiments budget and redirected resources to hardening the existing service. This protected reliability for the main revenue base. The decision reflects strategic judgment and long-term trade-offs at org scale. Biggest strength is using roadmap data to set boundaries rather than allowing open-ended technical exploration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The org wanted to build a custom orchestration layer for future flexibility. I asked about customer demand but the momentum was strong so we funded a pilot."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it affect the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "The pilot ran for nine months. We later scaled it back after realizing it did not move any key product metrics."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+        "Role: director-level",
+        "Situation: custom orchestration pushed at org level",
+        "Action: questioned demand but approved pilot",
+        "Outcome: nine-month pilot, later scaled back with no metric movement",
+        "Quote: 'Momentum was strong so we funded a pilot.'",
+        "Follow-up: Asked what they would change; candidate said they would require clearer success criteria upfront but offered no example of doing so."
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering, not rocket science for the question about steering away from technically interesting problems. The candidate questioned customer demand for a custom orchestration layer yet still funded a nine-month pilot due to momentum. The effort was later scaled back after showing no impact on product metrics. No evidence of using roadmap or revenue data to set firm boundaries early. The story demonstrates awareness of the mismatch but defaulted to exploratory spend without leverage. Biggest gap is lack of strategic trade-off discipline at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of customer or usage data",
+      "junior": "Raised support tickets to redirect effort",
+      "senior": "Cross-team usage data drove REST extension",
+      "exec": "Roadmap review set limits on ML platform"
+    },
+    {
+      "signal": "Steering action taken",
+      "junior": "Proposed benchmark and dropped custom work",
+      "senior": "Led review that changed team direction",
+      "exec": "Redirected budget to hardening vs new platform"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual project level",
+      "senior": "Cross-team pipeline decision",
+      "exec": "Org roadmap and ARR protection"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Auth fix shipped instead of cache",
+      "senior": "Error handling improved, tickets down",
+      "exec": "Core service reliability maintained"
+    }
+  ],
+  "principle_id": 6014,
+  "kind": "lp"
+}

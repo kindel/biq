@@ -1,0 +1,214 @@
+{
+  "question": "Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+  "principle": "Bias for action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I was building a reporting script that kept crashing on edge cases. The team was pushing to ship daily without checking data quality, so we generated 200 useless reports."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a 15-minute data validation step in the morning standup and showed one example of bad output. It slowed us by half a day total but cut rework by 80%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were annoyed at first but after seeing the fixed output they asked me to own the check going forward."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+        "Role: new grad on first project, individual contributor",
+        "Situation: daily script runs producing bad reports due to no validation",
+        "Action: proposed 15-min data check in standup and showed one bad example",
+        "Outcome: rework dropped 80%, team adopted the step",
+        "Quote: 'They asked me to own the check going forward'",
+        "Follow-up: How did the team react? -> They were annoyed at first but then requested ownership"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a junior. The candidate spotted local useless output and inserted a minimal planning step without stopping the team. Quote shows they used one concrete example rather than a long meeting. This demonstrates ownership of their own work and quick learning from visible failure. The outcome stayed within individual scope yet influenced the immediate workflow. Biggest strength is turning personal frustration into a repeatable check the team kept.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were building features fast and some turned out not to be used."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I kept coding what the PM asked and waited for the next sprint to drop the unused ones."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+        "Role: junior IC",
+        "Situation: features shipped that saw no usage",
+        "Action: continued executing tickets without raising issue",
+        "Outcome: waited for next sprint to remove work",
+        "Quote: 'I kept coding what the PM asked'",
+        "Follow-up: Did you suggest any quick check? -> No, stayed in execution mode"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for a junior. The candidate recognized useless output but took no action to insert even minimal planning. Quote reveals passive execution without ownership of the process. No attempt to influence the immediate team workflow. The result stayed purely reactive. Biggest gap is lack of initiative to surface a lightweight fix while work was still in progress."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were building duplicate analytics pipelines because each moved fast on their own OKRs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the two tech leads into a 30-minute mapping session, documented the overlap, and got them to agree on a shared weekly sync instead of a full design doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Duplicate work stopped within two weeks and both teams reused one pipeline; the sync became the only new process."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+        "Role: senior engineer, cross-team scope",
+        "Situation: two teams duplicating analytics pipelines",
+        "Action: 30-min mapping with leads, agreed on weekly sync instead of heavy docs",
+        "Outcome: duplication ended in two weeks, shared pipeline adopted",
+        "Quote: 'the sync became the only new process'",
+        "Follow-up: How did you get buy-in? -> Showed concrete overlap map and kept process lightweight"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a senior. Candidate identified cross-team duplication and inserted a minimal coordination step that replaced wasted parallel work. Quote highlights choosing a weekly sync over heavier planning. Influence happened without authority through a short concrete session. Result delivered measurable reduction in duplicate effort across teams. Biggest strength is scaling a lightweight fix beyond their own team while preserving speed.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team started building the same feature we had already scoped."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you intervene?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in my next 1:1 with my manager and let them handle the coordination."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+        "Role: senior engineer",
+        "Situation: duplicate feature work across teams",
+        "Action: flagged in 1:1 and deferred to manager",
+        "Outcome: no direct action taken by candidate",
+        "Quote: 'I let them handle the coordination'",
+        "Follow-up: Why not reach out directly? -> Preferred to stay within reporting line"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for a senior. Candidate saw cross-team waste but chose not to act directly. Quote shows reliance on hierarchy instead of using influence without authority. No lightweight planning step was introduced by the candidate. The duplication continued until someone else intervened. Biggest gap is absence of peer-level coordination expected at this level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three product lines were each funding separate data platforms that overlapped 70%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you address it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week discovery with the three GMs, surfaced the overlap cost in headcount, and mandated a single platform team with a lightweight quarterly review instead of new roadmaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Platform spend dropped 25% in the next fiscal year and the review became the only recurring planning touchpoint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+        "Role: exec, org-level scope",
+        "Situation: three product lines funding overlapping data platforms",
+        "Action: two-week discovery with GMs, used cost data to drive single platform team plus quarterly review",
+        "Outcome: 25% spend reduction, review became sole recurring process",
+        "Quote: 'the review became the only recurring planning touchpoint'",
+        "Follow-up: How did you secure GM agreement? -> Presented headcount cost and kept new process to one quarterly checkpoint"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for an exec. Candidate surfaced org-wide duplication and replaced it with a single minimal governance step. Quote shows deliberate choice of one quarterly review over ongoing planning. Decision balanced speed with strategic leverage across multiple teams. Result produced clear business-level metric impact. Biggest strength is converting high ambiguity into a lightweight, scalable process that reduced waste at the portfolio level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had several overlapping platform investments."
+        },
+        {
+          "role": "interviewer",
+          "text": "What action did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked each VP to review their own roadmap and report back in the next quarterly business review."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+        "Role: exec",
+        "Situation: overlapping platform investments",
+        "Action: delegated review to VPs for QBR",
+        "Outcome: no immediate consolidation or new lightweight process",
+        "Quote: 'I asked each VP to review their own roadmap'",
+        "Follow-up: Did you set any shared checkpoint before the QBR? -> No, relied on existing cadence"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for an exec. Candidate recognized portfolio waste but deferred action to existing heavy processes. Quote reveals no attempt to insert a faster, lighter coordination mechanism. No org-level leverage applied to reduce duplication promptly. The problem persisted until the next scheduled review. Biggest gap is missing strategic judgment to create minimal structure that enables faster decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognized useless output quickly",
+      "junior": "Noticed local bad reports in first project",
+      "senior": "Spotted duplicate pipelines across two teams",
+      "exec": "Identified 70% overlap across three product lines"
+    },
+    {
+      "signal": "Inserted minimal planning step",
+      "junior": "Added 15-min validation in standup",
+      "senior": "Created 30-min mapping plus weekly sync",
+      "exec": "Mandated single platform team with quarterly review"
+    },
+    {
+      "signal": "Used influence without authority",
+      "junior": "Showed example and team adopted voluntarily",
+      "senior": "Aligned two tech leads directly",
+      "exec": "Secured GM agreement through cost data"
+    },
+    {
+      "signal": "Kept scope appropriate to level",
+      "junior": "Stayed within own workflow and sprint",
+      "senior": "Cross-team coordination without org change",
+      "exec": "Portfolio-level spend reduction and new team"
+    },
+    {
+      "signal": "Produced measurable outcome",
+      "junior": "80% drop in rework",
+      "senior": "Duplication ended in two weeks",
+      "exec": "25% platform spend reduction next fiscal year"
+    }
+  ],
+  "principle_id": 6007,
+  "kind": "lp"
+}

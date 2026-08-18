@@ -1,0 +1,232 @@
+{
+  "question": "Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+  "principle": "Race on the racetrack, walk on ice",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project with a new client stack, the team was over-testing everything like it was production. I suggested we map the risk areas first and only add rigor where failures would block launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after you spoke up?"
+        },
+        {
+          "role": "candidate",
+          "text": "We cut test time by 30% on low-risk paths and caught two real issues in the high-risk module. My manager later asked me to document the risk matrix for the next onboarding."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the matrix was the right level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the senior engineer what had burned them before and used that to set the thresholds."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+        "Situation: first client project, team testing uniformly",
+        "Action: proposed risk mapping instead of blanket rigor",
+        "Outcome: 30% time saved, two real bugs caught; asked to document for onboarding",
+        "Quote: 'I asked the senior engineer what had burned them before'",
+        "Follow-up: How did you know the matrix was right? Used past burn examples to set thresholds"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice for a junior. The candidate identified that uniform testing was mismatched to the new environment and introduced a simple risk lens that reduced waste while protecting launch. Quote: 'I asked the senior engineer what had burned them before and used that to set the thresholds.' This shows ownership of their own work plus coachability in seeking input. The result stayed local but produced a reusable artifact for onboarding. Biggest strength is translating a vague 'be careful' into a concrete, team-adopted practice without overstepping scope.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We just followed the same checklist we always use because the PM said it was important."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything feel off about that checklist in the new setup?"
+        },
+        {
+          "role": "candidate",
+          "text": "A bit, but I didn't want to change process without approval."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently next time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably flag it in the retro."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+        "Situation: new client, used existing checklist",
+        "Action: none, waited for approval",
+        "Outcome: no adjustment made",
+        "Quote: 'I didn't want to change process without approval'",
+        "Follow-up: What would you do differently? Flag in retro"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice for a junior. The candidate recognized the environment was new yet defaulted to the old checklist without probing risk differences. Quote: 'I didn't want to change process without approval.' This shows limited ownership of their own work and weak initiative to surface a mismatch. No concrete adjustment occurred and learning stayed passive. Biggest gap is absence of any attempt to calibrate rigor even at individual task level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams merged on a new platform with different compliance histories. I ran a joint session to score features by blast radius instead of applying the stricter team's rules everywhere."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed data from the last two releases where over-rigorous checks delayed non-critical paths by weeks. We agreed on three tiers and piloted on one service."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Deployment frequency rose 2x on tier-3 items while audit findings stayed flat. The other team lead later adopted the tiers for their org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+        "Situation: merged teams, mismatched compliance expectations",
+        "Action: joint scoring by blast radius, three-tier model",
+        "Outcome: 2x deploy freq on low-risk items, audit stable; other team adopted",
+        "Quote: 'I showed data from the last two releases where over-rigorous checks delayed non-critical paths by weeks'",
+        "Follow-up: How did you get buy-in? Used release data to align on tiers"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice for a senior. The candidate drove cross-team alignment by replacing blanket rules with blast-radius tiers after a team merge. Quote: 'I showed data from the last two releases where over-rigorous checks delayed non-critical paths by weeks.' Influence without authority is clear through the pilot and eventual adoption by the second team. Metrics stayed grounded and the change scaled beyond the original group. Biggest strength is converting environment mismatch into a repeatable decision framework that raised velocity without adding risk.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the other team their process was too heavy and we should just use ours."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data supported that?"
+        },
+        {
+          "role": "candidate",
+          "text": "It felt slower but I didn't pull numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they adopt anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just kept separate processes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+        "Situation: team merge, compliance mismatch",
+        "Action: asserted own process as better",
+        "Outcome: no adoption, processes stayed separate",
+        "Quote: 'It felt slower but I didn't pull numbers'",
+        "Follow-up: Did they adopt anything? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice for a senior. The candidate attempted to impose one team's rigor without evidence or joint calibration after a merge. Quote: 'It felt slower but I didn't pull numbers.' Lack of data and influence without authority meant no cross-team movement occurred. The outcome preserved the status quo instead of adapting to the new combined environment. Biggest gap is treating the principle as a debate rather than a data-driven calibration exercise."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After acquiring a startup with lighter processes, our org faced audit pressure on one side and velocity complaints on the other. I created an environment-classification model that mapped product maturity to required controls."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive adoption at scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-quarter pilot across three business units, tied it to OKRs, and had the CFO sponsor the risk-acceptance step. We reduced audit prep time 40% while keeping release cadence flat."
+        },
+        {
+          "role": "interviewer",
+          "text": "What long-term change resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "The model became the default for all new acquisitions and was written into the integration playbook."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+        "Situation: post-acquisition, org split between audit and velocity demands",
+        "Action: maturity-based classification model, pilot with CFO sponsor",
+        "Outcome: 40% less audit prep, release cadence flat; adopted into integration playbook",
+        "Quote: 'The model became the default for all new acquisitions'",
+        "Follow-up: How did you drive adoption? Tied to OKRs and secured executive sponsor"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice for an exec. The candidate addressed org-level tension after an acquisition by introducing a maturity-to-controls framework that balanced risk and speed. Quote: 'The model became the default for all new acquisitions and was written into the integration playbook.' Strategic judgment is evident in the pilot design, OKR linkage, and CFO sponsorship that created lasting leverage. Trade-offs were explicit and results scaled beyond the initial scope. Biggest strength is turning an ambiguous post-merger environment into an institutionalized decision system.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We applied the same compliance bar to the acquired team to avoid any risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Releases slowed but we passed the audit."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you revisit the approach later?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the policy stayed as-is."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+        "Situation: acquisition, compliance vs velocity tension",
+        "Action: applied uniform high bar",
+        "Outcome: slower releases, passed audit",
+        "Quote: 'Releases slowed but we passed the audit'",
+        "Follow-up: Did you revisit? No"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice for an exec. The candidate defaulted to the strictest existing standard after acquisition without calibrating to the new environment's maturity. Quote: 'Releases slowed but we passed the audit.' No attempt was made to create leverage or long-term adaptation. The result protected short-term compliance at the cost of sustained velocity. Biggest gap is absence of strategic trade-off thinking or org-level mechanism to handle future environment shifts."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognizes environment mismatch",
+      "junior": "Flags uniform process but waits for permission",
+      "senior": "Uses data to propose tiers across teams",
+      "exec": "Builds classification model adopted org-wide"
+    },
+    {
+      "signal": "Drives calibration with evidence",
+      "junior": "Asks senior for past burn examples",
+      "senior": "Shows release delay data to align teams",
+      "exec": "Pilots with OKRs and executive sponsor"
+    },
+    {
+      "signal": "Produces reusable outcome",
+      "junior": "Documents matrix for onboarding",
+      "senior": "Tiers adopted by second team",
+      "exec": "Written into integration playbook"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Individual task level",
+      "senior": "Cross-team pilot",
+      "exec": "Org policy and future acquisitions"
+    },
+    {
+      "signal": "Handles trade-offs explicitly",
+      "junior": "Reduces test time while protecting launch",
+      "senior": "Raises deploy freq while keeping audits flat",
+      "exec": "Cuts audit prep 40% with no cadence loss"
+    }
+  ],
+  "principle_id": 6015,
+  "kind": "lp"
+}

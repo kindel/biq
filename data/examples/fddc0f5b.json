@@ -1,0 +1,178 @@
+{
+  "question": "Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+  "principle": "Race on the racetrack, walk on ice",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship I spent two days writing unit tests and a full design doc for a one-off script that pulled data for a weekly report. My manager asked why it was late and I realized the script would only run twice before being replaced."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shipped a quick version, then asked my mentor how to judge when to add tests. He said match effort to lifetime of the code. Next task I asked upfront and finished in hours instead of days."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+        "Intern wrote full design doc and tests for a throwaway weekly report script",
+        "Took two days; manager flagged delay",
+        "Quote: 'I realized the script would only run twice before being replaced'",
+        "Follow-up: Asked mentor how to judge effort; now asks upfront on new tasks"
+      ],
+      "raiseFeedback": "Raises the bar on judgment. Candidate owned a clear over-application on an individual task, described the concrete cost (two-day delay on a two-run script), and showed immediate behavior change after feedback. The quote about asking upfront demonstrates coachability at the right scope for a junior. No evidence of repeated mistakes or defensiveness. Biggest strength is linking the lesson to a repeatable question they now ask.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once spent a week building a full requirements doc for a small internal tool because the template said to. It delayed the project but at least everything was documented."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the template is still required so I just follow it now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+        "Spent a week on requirements doc for small internal tool per template",
+        "Delayed project; no change in approach",
+        "Quote: 'the template is still required so I just follow it now'",
+        "Follow-up: No evidence of adapting rigor to context"
+      ],
+      "lowerFeedback": "Lowers the bar on judgment. Candidate describes the over-rigor but shows no ownership or learning, defaulting to 'the template is required.' The story stays at the individual task level with no follow-up action or coachability signal. Biggest gap is absence of any adjustment after the delay, which is the core skill this principle tests for juniors."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was integrating with another squad's API. I pushed for a full RFC, architecture review, and load tests even though the change was a simple field addition. It added three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you course-correct?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the second week I talked to the other lead, realized the risk was low, and we switched to a lightweight review. We shipped in four days and I updated our team checklist to ask 'blast radius?' before choosing process."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+        "Pushed full RFC and load tests for simple API field addition across teams",
+        "Added three weeks; then switched to lightweight review after talking to other lead",
+        "Quote: 'we switched to a lightweight review. We shipped in four days'",
+        "Follow-up: Updated team checklist with 'blast radius?' question"
+      ],
+      "raiseFeedback": "Raises the bar on judgment. Senior candidate recognized cross-team over-rigor, took initiative to adjust mid-stream, and institutionalized a lightweight check for the team. The three-week delay and four-day recovery provide clear before/after metrics. The blast-radius question shows influence without authority. Biggest strength is turning a personal mistake into a team process improvement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We over-engineered a cross-team migration with full reviews and sign-offs. It dragged on but leadership wanted the process so we kept going."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently later?"
+        },
+        {
+          "role": "candidate",
+          "text": "I still recommend the same process because it protects us from surprises."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+        "Over-engineered cross-team migration with full reviews despite low risk",
+        "Dragged on; no adaptation",
+        "Quote: 'I still recommend the same process because it protects us from surprises'",
+        "Follow-up: No evidence of adjusting for context or influencing lighter process"
+      ],
+      "lowerFeedback": "Lowers the bar on judgment. Candidate describes a multi-week delay on a cross-team effort but shows no attempt to calibrate rigor or influence a better path. The response defends the process rather than owning the mismatch. Biggest gap is lack of any learning or adjustment, which is expected at senior level where cross-team calibration matters."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "At company scale we mandated a full security review and threat model for every feature launch. A small marketing site change got caught in the process and delayed a revenue campaign by six weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I worked with security and legal to create a tiered review matrix based on data sensitivity and customer impact. We reduced review time on low-risk work by 80 percent while keeping high-risk items rigorous. The matrix is now used across three product groups."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+        "Mandated full security review for every launch including low-risk marketing site",
+        "Delayed revenue campaign six weeks",
+        "Quote: 'We reduced review time on low-risk work by 80 percent while keeping high-risk items rigorous'",
+        "Follow-up: Created tiered matrix now used across three product groups"
+      ],
+      "raiseFeedback": "Raises the bar on judgment. Executive candidate owned an org-wide over-application that hit revenue, then drove a structural fix (tiered matrix) with measurable impact across multiple groups. The six-week delay and 80 percent reduction give concrete scale. Biggest strength is strategic trade-off thinking that preserved necessary rigor while removing friction at the right places.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We applied heavy compliance reviews to all initiatives after a past incident. Some projects slowed but it was the safe call."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the approach evolve?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the reviews because the risk was too high to change."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+        "Applied heavy compliance reviews org-wide after past incident",
+        "Slowed projects with no adaptation",
+        "Quote: 'We kept the reviews because the risk was too high to change'",
+        "Follow-up: No evidence of strategic recalibration or leverage"
+      ],
+      "lowerFeedback": "Lowers the bar on judgment. Candidate describes an org-level slowdown but offers no strategic re-evaluation or willingness to differentiate risk. The response treats the process as fixed rather than a lever to tune. Biggest gap is absence of long-term thinking or trade-off analysis expected at exec scope."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognition of mismatch between rigor and risk",
+      "junior": "Names specific task and delay",
+      "senior": "Names cross-team impact and timeline",
+      "exec": "Names org/revenue impact and scale"
+    },
+    {
+      "signal": "Ownership of the over-application",
+      "junior": "Takes personal responsibility",
+      "senior": "Takes responsibility and adjusts with peers",
+      "exec": "Takes responsibility and drives org change"
+    },
+    {
+      "signal": "Evidence of learning applied",
+      "junior": "Asks clarifying question on next task",
+      "senior": "Updates team checklist",
+      "exec": "Rolls out tiered matrix across groups"
+    },
+    {
+      "signal": "Adaptation to context",
+      "junior": "Shows coachability after feedback",
+      "senior": "Influences lighter process mid-stream",
+      "exec": "Creates durable policy with measured trade-offs"
+    },
+    {
+      "signal": "Defensiveness or rigidity",
+      "junior": "Blames template, no change",
+      "senior": "Defends process, no adjustment",
+      "exec": "Treats heavy process as fixed despite scale cost"
+    }
+  ],
+  "principle_id": 6015,
+  "kind": "lp"
+}

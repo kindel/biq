@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+  "principle": "No surprises",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our sprint had a dependency slip on a backend change. I flagged it to my manager same day, then drafted two options for the customer: delay the launch by two weeks or ship a reduced scope. I emailed the customer with the trade-offs and a recommended path before the next sync."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and what did you learn?"
+        },
+        {
+          "role": "candidate",
+          "text": "Customer chose reduced scope. They appreciated the heads-up. I now block time on my calendar to surface risks earlier in the sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+        "Role: new grad on product team; situation: backend dependency slipped mid-sprint",
+        "Actions: flagged to manager immediately, prepared two clear options with trade-offs, sent written update before call",
+        "Outcome: customer selected reduced scope; no escalation",
+        "Quote: \"I now block time on my calendar to surface risks earlier\"",
+        "Follow-up: How did you decide which option to recommend? Candidate: weighed dev effort vs customer impact using a simple table."
+      ],
+      "raiseFeedback": "Raises the bar on No surprises for a junior. The candidate owned surfacing the change quickly and gave the customer written options before the meeting. Story shows local ownership and learning from the event. The quote about blocking calendar time demonstrates coachability. Biggest strength is proactive written communication instead of waiting for the next sync. Gap is limited scope; no evidence of influencing others yet.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The launch got pushed because of a bug we found late. I told the customer on the call that we needed more time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you give them options?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just said we would update them when we knew more."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+        "Role: junior dev; situation: late bug found in release",
+        "Actions: waited until scheduled call to mention delay, offered no options or timeline",
+        "Outcome: customer surprised and asked for escalation",
+        "Quote: \"I just said we would update them when we knew more\"",
+        "Follow-up: What would you do differently next time? Candidate: probably tell my manager sooner."
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises. Candidate surfaced the change only during the customer call and provided no options or written notice. Story shows reactive behavior rather than ownership of communication. The follow-up answer still defers to manager instead of taking individual action. Biggest gap is absence of proactive expectation management at even the individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams had conflicting priorities on a shared service, risking a customer migration deadline. I ran a quick options workshop with both teams, then sent the customer three paths with effort, risk, and revenue impact. I also pre-briefed the account team so no one was blindsided on the call."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed this worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Migration completed on revised date; NPS for that cohort stayed flat instead of dropping. Two other teams later adopted the options template."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+        "Role: senior engineer leading cross-team migration; situation: conflicting priorities between platform and app teams",
+        "Actions: facilitated options workshop, produced written paths with clear trade-offs, pre-briefed account team",
+        "Outcome: on-time revised delivery and stable NPS; template reused by others",
+        "Quote: \"NPS for that cohort stayed flat instead of dropping\"",
+        "Follow-up: How did you influence the other team without authority? Candidate: used data on customer impact to align priorities in the workshop."
+      ],
+      "raiseFeedback": "Raises the bar on No surprises at senior level. Candidate drove cross-team alignment and gave the customer written options while also protecting internal stakeholders. Concrete metrics (flat NPS) and reuse of the template show influence beyond one team. Story demonstrates proactive management of expectations at the boundary of multiple teams. Biggest strength is the pre-brief plus written options that prevented internal surprises. Gap is still mostly delivery-focused rather than org-level strategy.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The customer wanted a feature we had deprioritized. I updated the roadmap slide and presented it in the quarterly review."
+        },
+        {
+          "role": "interviewer",
+          "text": "When did the customer first hear about the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "During the review. They asked why it was delayed and I explained the new priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+        "Role: senior PM; situation: deprioritized customer-requested feature",
+        "Actions: updated slide and presented change only at quarterly review",
+        "Outcome: customer pushed back in the meeting; required follow-up calls",
+        "Quote: \"They asked why it was delayed and I explained the new priorities\"",
+        "Follow-up: Did you share options? Candidate: we offered to revisit in the next planning cycle."
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises for a senior. Change was communicated only in a formal review with no prior notice or options. Story shows lack of influence across teams and no attempt to manage expectations early. The follow-up reveals a passive \"revisit later\" stance instead of proactive trade-off discussion. Biggest gap is treating the customer as a recipient of news rather than a partner in options."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to shift investment from one product line to another mid-year due to market signals. I briefed the customer advisory board with three scenarios, including revenue and support implications, two weeks before the all-hands. I also set up a recurring exec sync with key accounts so future shifts had a standing channel."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two largest customers renewed early; we created an internal \"change comms\" playbook now used across the division."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+        "Role: VP product; situation: mid-year investment shift affecting multiple products",
+        "Actions: briefed advisory board with scenarios two weeks early, created standing exec sync channel, published internal playbook",
+        "Outcome: early renewals from top customers; playbook adopted division-wide",
+        "Quote: \"we created an internal 'change comms' playbook now used across the division\"",
+        "Follow-up: What trade-offs did you weigh? Candidate: balanced short-term revenue risk against long-term platform health using customer lifetime value data."
+      ],
+      "raiseFeedback": "Raises the bar on No surprises at exec level. Candidate treated the change as an org-level communication problem and built repeatable infrastructure (standing sync and playbook). Early briefings and concrete outcomes (early renewals) show strategic judgment and leverage. Story moves beyond heroics to systemic prevention of surprises. Biggest strength is the creation of a reusable channel and playbook that scales beyond the single event. Gap is light on personal ownership details.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Market conditions forced us to pause a major initiative. I sent an email to the sales team with the updated plan and asked them to cascade to customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the largest accounts?"
+        },
+        {
+          "role": "candidate",
+          "text": "We handled them case-by-case after the email went out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+        "Role: director/VP; situation: paused initiative due to market shift",
+        "Actions: sent internal email and delegated customer communication",
+        "Outcome: several key accounts escalated to exec team",
+        "Quote: \"We handled them case-by-case after the email went out\"",
+        "Follow-up: What options did you prepare? Candidate: the email listed the pause date and said more details would follow."
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises at exec level. Communication was delegated via a single internal email with no preemptive customer options or dedicated channel. Story shows absence of strategic judgment on how to protect key relationships during ambiguity. The case-by-case follow-up indicates reactive firefighting rather than planned expectation management. Biggest gap is lack of leverage; the leader created more work for others instead of building a scalable approach."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Timing of first communication",
+      "junior": "Flags same day and writes customer before next sync",
+      "senior": "Runs workshop then pre-briefs internal team before customer call",
+      "exec": "Briefs advisory board two weeks early and stands up recurring channel"
+    },
+    {
+      "signal": "Provision of options",
+      "junior": "Two clear options with trade-offs sent in writing",
+      "senior": "Three paths with effort, risk, and revenue impact",
+      "exec": "Three scenarios plus new standing sync for future changes"
+    },
+    {
+      "signal": "Internal coordination",
+      "junior": "Tells manager immediately",
+      "senior": "Facilitates cross-team workshop and pre-briefs account team",
+      "exec": "Builds division-wide playbook and recurring exec sync"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Customer chose option; candidate added calendar block for risks",
+      "senior": "NPS flat; template reused by other teams",
+      "exec": "Early renewals; playbook adopted division-wide"
+    },
+    {
+      "signal": "Reactive vs proactive stance",
+      "junior": "Waits for scheduled call vs surfaces early",
+      "senior": "Presents change only in quarterly review vs pre-workshop",
+      "exec": "Delegates via email vs builds reusable communication infrastructure"
+    }
+  ],
+  "principle_id": 6005,
+  "kind": "lp"
+}

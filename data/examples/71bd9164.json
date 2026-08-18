@@ -1,0 +1,178 @@
+{
+  "question": "Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+  "principle": "Better than yesterday",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my last project I noticed our onboarding checklist had duplicate steps that were wasting 15 minutes per new hire. I rewrote it during a slow afternoon between sprints and tested it on two new teammates without touching the release deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide it wouldn't affect your main work?"
+        },
+        {
+          "role": "candidate",
+          "text": "I only edited the doc after my daily tickets were done and asked my manager first. She said it was fine as long as I didn't miss standup."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+        "Candidate rewrote duplicate onboarding checklist after finishing daily tickets",
+        "Tested on two new hires; kept changes local and asked manager first",
+        "Quote: \"I only edited after my daily tickets were done\"",
+        "Follow-up: How did you decide it wouldn't affect your main work? - Confirmed with manager and stayed within sprint boundaries"
+      ],
+      "raiseFeedback": "The candidate described a small-scope process tweak on the onboarding checklist that was completed after regular tickets. They explicitly checked with their manager before starting and limited testing to two hires. This shows ownership of their immediate workspace and awareness of not impacting the sprint. The story stays local and does not claim broader influence. Biggest strength is the clear sequencing of work before improvement; the gap is lack of any metric on time saved or follow-up iteration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to clean up our shared drive folders but the team lead said we had a big release coming so I never got around to it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any smaller change you could have made?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, everything felt blocked by the deadline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+        "Candidate wanted to clean shared drive but was told release took priority",
+        "No smaller change attempted; cited deadline as blocker",
+        "Quote: \"everything felt blocked by the deadline\"",
+        "Follow-up: Was there any smaller change you could have made? - Candidate said no"
+      ],
+      "lowerFeedback": "The candidate identified a possible improvement but treated the upcoming release as an absolute barrier and made no attempt at a smaller version. They did not propose any low-effort action or ask how the work could be sequenced. This shows limited ownership of their own environment. The response lowers the bar on Better than yesterday because the improvement never happened and no learning or partial progress is described."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our cross-team handoff doc was causing repeated questions in Slack. I added a one-page checklist and ran a 30-minute brown-bag to walk two partner teams through it during a two-week lull between major launches."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Slack questions on that topic dropped from roughly eight per week to two. I tracked it for four weeks and handed the doc to the new-hire onboarding owner so it would stay current."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+        "Candidate created cross-team handoff checklist and ran brown-bag between launches",
+        "Tracked Slack volume drop from 8 to 2 per week over four weeks",
+        "Quote: \"I tracked it for four weeks and handed the doc to the new-hire onboarding owner\"",
+        "Follow-up: What was the measurable effect? - Provided before/after numbers and sustainment step"
+      ],
+      "raiseFeedback": "The candidate improved a cross-team handoff process by adding a checklist and running a short session between launches. They measured the reduction in Slack volume and ensured sustainment by transferring ownership. This demonstrates influence without authority and attention to metrics. The timing shows deliberate scheduling around deliverables. Biggest strength is the follow-through on measurement and handoff; the gap is that impact stayed within two partner teams rather than scaling further.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I cleaned up some old wiki pages on my own team but never got data on whether anyone used them."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you involve any other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I kept it inside my squad to avoid extra coordination."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+        "Candidate cleaned wiki pages inside own team only",
+        "No usage metrics collected; avoided cross-team coordination",
+        "Quote: \"I kept it inside my squad to avoid extra coordination\"",
+        "Follow-up: Did you involve any other teams? - Explicitly avoided coordination"
+      ],
+      "lowerFeedback": "The candidate performed a solo wiki cleanup but collected no usage data and deliberately avoided other teams. Without measurement or broader reach the improvement cannot be shown to have mattered. This lowers the bar on Better than yesterday because senior-level expectations include cross-team impact and evidence of results. The story remains purely local with no attempt at leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had recurring launch delays from late-stage security reviews. I sponsored a quarterly pre-review with the security team that ran in parallel to feature work and reduced average delay from three weeks to four days across two quarters."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you protect the main roadmap?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shifted two security engineers into the planning cycle rather than adding headcount and tied the change to an existing OKR so it did not require new budget approval."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+        "Candidate sponsored quarterly security pre-review running in parallel to feature work",
+        "Reduced launch delay from 3 weeks to 4 days over two quarters",
+        "Quote: \"I shifted two security engineers into the planning cycle rather than adding headcount\"",
+        "Follow-up: How did you protect the main roadmap? - Tied change to existing OKR and reused headcount"
+      ],
+      "raiseFeedback": "The candidate addressed a systemic launch-delay issue by instituting parallel security pre-reviews. They achieved a clear reduction in delay time and protected the roadmap by reusing existing headcount and linking to an approved OKR. This reflects strategic judgment on trade-offs and long-term process leverage. The change operated at the org level across multiple quarters. Biggest strength is the resource-neutral implementation; the gap is limited visibility into whether the improvement continued after the candidate moved on.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my staff to run a one-time process audit but it never became recurring because the next re-org took priority."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "We decided not to push it because leadership attention was on the re-org."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+        "Candidate requested one-time process audit that was dropped after re-org",
+        "No attempt to embed the change or protect it strategically",
+        "Quote: \"We decided not to push it because leadership attention was on the re-org\"",
+        "Follow-up: What trade-offs did you consider? - Defaulted to re-org priority without alternatives"
+      ],
+      "lowerFeedback": "The candidate initiated a process audit but allowed it to be dropped when a re-org appeared. No alternative framing or minimal viable version was pursued. This lowers the bar on Better than yesterday at the exec level because the expectation is strategic persistence and finding leverage even amid ambiguity. The story shows reactive prioritization rather than long-term thinking or trade-off creativity."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of improvement",
+      "junior": "Local checklist edit after own tickets",
+      "senior": "Cross-team handoff with metrics and handoff",
+      "exec": "Org-level launch process tied to OKR and reused headcount"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Anecdotal testing on two hires",
+      "senior": "Tracked Slack volume drop over four weeks",
+      "exec": "Reduced delay from 3 weeks to 4 days across two quarters"
+    },
+    {
+      "signal": "Fitting work in",
+      "junior": "Asked manager; stayed after daily work",
+      "senior": "Scheduled between launches; no new headcount",
+      "exec": "Parallel cycle and existing OKR to avoid new budget"
+    },
+    {
+      "signal": "Sustainment",
+      "junior": "None described",
+      "senior": "Transferred ownership to onboarding owner",
+      "exec": "Quarterly cadence embedded in planning"
+    },
+    {
+      "signal": "Response to blockers",
+      "junior": "Stopped when told release came first",
+      "senior": "Avoided extra coordination",
+      "exec": "Defaulted to re-org without alternatives"
+    }
+  ],
+  "principle_id": 6009,
+  "kind": "lp"
+}

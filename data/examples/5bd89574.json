@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+  "principle": "Think big, start small",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing small bugs in the checkout flow for a few weeks. During a team retro I stepped back and checked against our mission of making shopping frictionless for first-time users. Most bugs were edge cases for power users, not the core group."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged it to my manager, shifted two of my tickets to onboarding flows, and the conversion rate for new users ticked up 3% in the next sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+        "Role: junior dev on checkout bugs",
+        "Situation: noticed fixes targeted power users, not new-user mission",
+        "Action: raised to manager, reprioritized tickets to onboarding",
+        "Outcome: 3% new-user conversion lift",
+        "Quote: \"I stepped back and checked against our mission of making shopping frictionless for first-time users.\"",
+        "Follow-up: What did you do next? -> Shifted own work, told manager"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for a junior. The candidate described an individual-scope check during a retro that revealed mismatch between bug fixes and the new-user mission. They adjusted their own tickets after a short conversation with their manager. Quote shows they explicitly referenced the mission to reprioritize. This demonstrates ownership and coachability without overclaiming. Biggest strength is the quick pivot from observation to changing their daily work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was just doing the tickets assigned to me in the checkout area."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever check if those aligned with the bigger mission?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured the PM had already done that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+        "Role: junior dev",
+        "Situation: stayed in assigned tickets",
+        "Action: none",
+        "Outcome: no change",
+        "Quote: \"I figured the PM had already done that.\"",
+        "Follow-up: Did you ever check if those aligned with the bigger mission? -> Deferred to PM"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for a junior. Candidate stayed inside assigned tickets and assumed someone else owned mission alignment. No evidence of personal zoom-out or adjustment. Quote shows passive hand-off of thinking. Biggest gap is lack of ownership over even their own work's connection to the mission."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was shipping dashboard widgets while the org mission shifted toward enterprise data governance. I pulled usage data across three partner teams and saw our work was mostly used by internal analysts, not the enterprise customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence the direction?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a one-pager, ran it by two other team leads, and we moved two quarters of roadmap to governance features. Cross-team adoption of the new primitives rose 40%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+        "Role: senior on dashboard team",
+        "Situation: org mission moved to enterprise governance",
+        "Action: analyzed cross-team data, wrote one-pager, influenced two other leads",
+        "Outcome: roadmap shift, 40% adoption of new primitives",
+        "Quote: \"I pulled usage data across three partner teams.\"",
+        "Follow-up: How did you influence the direction? -> One-pager and cross-team alignment"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for a senior. Candidate used cross-team data to surface misalignment between widget work and the new enterprise mission. They influenced without authority by sharing a one-pager with peer leads and shifting roadmap. Quote references concrete usage analysis. Result shows measurable adoption lift. Biggest strength is combining personal zoom-out with influence that affected multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our widgets didn't match the new governance focus but kept shipping because the sprint was already planned."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you raise it with anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a team meeting but the PM said we had committed work so we stayed the course."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+        "Role: senior",
+        "Situation: noticed mismatch with governance mission",
+        "Action: mentioned in team meeting only",
+        "Outcome: no change, stayed on committed work",
+        "Quote: \"the PM said we had committed work so we stayed the course.\"",
+        "Follow-up: Did you raise it with anyone? -> Limited to one meeting, accepted status quo"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for a senior. Candidate identified misalignment but took no further action beyond a single mention. Quote shows deference to existing commitments without pushing for trade-offs. No cross-team data or influence attempted. Biggest gap is absence of leverage or follow-through at the senior scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the company mission pivoted to AI safety, I reviewed our three-year product bets and saw two of them were still optimized for engagement metrics that could conflict with safety goals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I led a six-week review with the other VPs, killed one bet, and redirected $8M to safety tooling. We published new success metrics that balanced growth and safety; six months later our safety incident rate dropped 25% while revenue stayed flat."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+        "Role: exec reviewing product bets",
+        "Situation: mission shift to AI safety vs engagement bets",
+        "Action: six-week VP review, killed one bet, redirected $8M",
+        "Outcome: new metrics, 25% safety improvement, revenue flat",
+        "Quote: \"I reviewed our three-year product bets and saw two of them were still optimized for engagement metrics.\"",
+        "Follow-up: What trade-offs did you make? -> Killed bet, changed org metrics"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for an exec. Candidate performed an org-level review after a mission pivot and identified conflicting bets. They drove a multi-VP process that made hard trade-offs including killing a bet and reallocating capital. Quote shows long-term strategic lens. Outcome includes both safety gains and revenue protection. Biggest strength is demonstrating judgment on ambiguity and multi-year leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked my teams to review their roadmaps against the new safety mission but left the decisions to them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of teams adjusted their OKRs but the larger bets stayed the same because of existing commitments."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+        "Role: exec",
+        "Situation: new safety mission",
+        "Action: delegated review to teams",
+        "Outcome: minor OKR tweaks, larger bets unchanged",
+        "Quote: \"the larger bets stayed the same because of existing commitments.\"",
+        "Follow-up: What changed at the org level? -> No material trade-offs made"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for an exec. Candidate delegated the zoom-out without driving org-level decisions or trade-offs. Quote reveals acceptance of status-quo commitments. No evidence of personal strategic judgment or capital reallocation. Biggest gap is lack of executive ownership over mission alignment at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of zoom-out",
+      "junior": "Individual tickets or features",
+      "senior": "Team plus 1-2 peer teams",
+      "exec": "Multi-year org bets and capital"
+    },
+    {
+      "signal": "Action after finding misalignment",
+      "junior": "Adjusted own work after manager input",
+      "senior": "Influenced peers via one-pager or data",
+      "exec": "Led cross-VP review and killed/redirected bets"
+    },
+    {
+      "signal": "Evidence of metrics",
+      "junior": "Small local lift (e.g. 3%)",
+      "senior": "Cross-team adoption or usage numbers",
+      "exec": "Business-level outcomes with trade-offs"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Minimal, mostly upward to manager",
+      "senior": "Peer leads and roadmap input",
+      "exec": "Org-wide process and resource shifts"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Simple observation during retro",
+      "senior": "Data-driven check against shifting mission",
+      "exec": "Long-term strategic review after pivot"
+    }
+  ],
+  "principle_id": 6001,
+  "kind": "lp"
+}

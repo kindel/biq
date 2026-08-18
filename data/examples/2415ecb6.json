@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+  "principle": "Invent and simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my last project I kept coming up with extra features for the dashboard we were building. After two weeks my manager flagged we were at risk of the launch date. I listed the three ideas, picked the one that saved the most clicks, and parked the rest in a doc for later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the parked ideas?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped on time and the one we kept reduced support tickets by 15 percent in the first month. The other two went into the next quarter's backlog."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+        "Role: IC on dashboard project",
+        "Situation: extra feature ideas threatened launch date",
+        "Action: listed ideas, selected one high-impact change, parked rest",
+        "Outcome: shipped on time, 15% ticket reduction",
+        "Quote: \"I listed the three ideas, picked the one that saved the most clicks, and parked the rest\"",
+        "Follow-up: What happened with the parked ideas? -> added to next quarter backlog"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a junior. The candidate described an individual-scope case where they generated ideas but quickly narrowed scope after a manager signal. They chose one change that delivered measurable value and explicitly deferred the rest rather than dropping everything. The concrete outcome (on-time ship plus 15% ticket drop) shows they understood the trade-off between invention and delivery. Biggest strength is the quick pivot from exploration to execution once the constraint was clear.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a bunch of ideas for the dashboard and kept adding them because they seemed cool. We ended up missing the launch by a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to keep or cut?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just kept working on what felt most interesting until my manager told me to stop."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+        "Role: IC on dashboard project",
+        "Situation: added multiple ideas and missed date",
+        "Action: continued on interesting items until told to stop",
+        "Outcome: one-week slip",
+        "Quote: \"I just kept working on what felt most interesting until my manager told me to stop\"",
+        "Follow-up: How did you decide what to keep or cut? -> no explicit prioritization process"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for a junior. The story shows idea generation without any self-correction until external intervention. There is no evidence of the candidate simplifying their own work or making a deliberate trade-off to protect the date. The outcome is a missed deadline with no compensating value delivered. Biggest gap is absence of ownership over scope decisions at the individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My team was exploring three different automation approaches while we still had a hard commit to deliver a new reporting pipeline. I ran a two-day spike with clear success criteria, picked the simplest path that met 80 percent of needs, and moved the other two ideas into a separate innovation track."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react to dropping the other approaches?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers wanted to keep exploring; I had them own the innovation track as 20 percent time and made the main track the priority for the quarter. We hit the pipeline date and later reused one of the spike ideas in a different service."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+        "Role: senior leading reporting pipeline team",
+        "Situation: three automation approaches vs hard delivery commit",
+        "Action: time-boxed spike, chose simplest 80% solution, moved rest to 20% track",
+        "Outcome: hit date; one idea reused later",
+        "Quote: \"I ran a two-day spike with clear success criteria, picked the simplest path that met 80 percent of needs\"",
+        "Follow-up: How did the team react? -> created separate innovation track with clear priority"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a senior. The candidate used a structured spike to limit exploration, made an explicit simplicity choice, and created a parallel track so invention continued without jeopardizing delivery. Cross-team reuse of a deferred idea shows longer-term leverage. The 20 percent allocation demonstrates influence without authority. Biggest strength is protecting the commit date while still giving the team an outlet for ideas.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had too many ideas floating around the reporting project so I told everyone to focus on the main task and stop exploring. We shipped but two people were unhappy they couldn't finish their prototypes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What criteria did you use to decide what stayed in scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just picked the ones that looked quickest and told the team to move on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+        "Role: senior on reporting project",
+        "Situation: multiple ideas threatened delivery",
+        "Action: told team to stop exploring without process",
+        "Outcome: shipped but team morale hit",
+        "Quote: \"I just picked the ones that looked quickest and told the team to move on\"",
+        "Follow-up: What criteria did you use? -> no documented decision framework"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for a senior. The candidate shut down exploration by fiat rather than using a lightweight mechanism to evaluate ideas. No evidence of simplifying the chosen path or creating space for future invention. The only outcome cited is delivery with negative team impact. Biggest gap is lack of a repeatable way to balance invention against commitments."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org was funding four parallel experiments while the core product had a six-month revenue commitment. I consolidated the experiments into two, required each to have a clear path to the revenue goal, and moved the other two into a separate incubation fund with quarterly reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the revenue target two weeks early. One incubation project later became a $4M new offering. The key was making the decision criteria visible so teams could self-prioritize instead of me having to say no repeatedly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+        "Role: exec with org-level experiments vs revenue commit",
+        "Situation: four experiments competing with six-month revenue goal",
+        "Action: consolidated to two, tied to revenue, created separate incubation fund",
+        "Outcome: hit target early; one project became $4M offering",
+        "Quote: \"I consolidated the experiments into two, required each to have a clear path to the revenue goal\"",
+        "Follow-up: What was the business impact? -> revenue hit early and new offering created"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify at exec level. The candidate made a portfolio-level decision that protected a major business commitment while preserving invention through a funded incubation track. The $4M outcome and early revenue delivery show strategic judgment on trade-offs. Making decision criteria visible created leverage so teams could self-filter. Biggest strength is turning a potential resource conflict into a repeatable mechanism for balancing exploration and delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had too many experiments running so I canceled two of them to focus on the revenue work. The teams were frustrated and we still barely made the target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you choose which experiments to keep?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at which ones the loudest voices were behind and kept those."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+        "Role: exec managing experiments vs revenue",
+        "Situation: multiple experiments vs six-month revenue goal",
+        "Action: canceled two based on vocal support",
+        "Outcome: barely hit target with team frustration",
+        "Quote: \"I looked at which ones the loudest voices were behind and kept those\"",
+        "Follow-up: How did you choose? -> no strategic criteria or future path"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify at exec level. The decision was driven by politics rather than business linkage or simplification. No mechanism was created to protect future invention or to make prioritization transparent. The outcome shows minimal delivery success with damaged team trust. Biggest gap is absence of long-term thinking or leverage in how the trade-off was handled."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of prioritization decision",
+      "junior": "Individual task list or small feature set",
+      "senior": "Team backlog with parallel tracks",
+      "exec": "Org portfolio with separate funding streams"
+    },
+    {
+      "signal": "Mechanism for reining in ideas",
+      "junior": "Simple list and deferral after manager input",
+      "senior": "Time-boxed spike plus 20% allocation",
+      "exec": "Consolidation criteria plus quarterly incubation reviews"
+    },
+    {
+      "signal": "Evidence of simplification",
+      "junior": "Chose one change that reduced support tickets",
+      "senior": "Picked 80% solution to protect date",
+      "exec": "Tied experiments directly to revenue goal"
+    },
+    {
+      "signal": "Handling of team reaction",
+      "junior": "Not applicable at IC level",
+      "senior": "Created outlet for continued exploration",
+      "exec": "Made criteria visible so teams self-prioritized"
+    },
+    {
+      "signal": "Long-term leverage",
+      "junior": "Parked ideas entered backlog",
+      "senior": "One idea reused in another service",
+      "exec": "Incubation project became $4M offering"
+    }
+  ],
+  "principle_id": 6006,
+  "kind": "lp"
+}

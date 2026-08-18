@@ -1,0 +1,208 @@
+{
+  "question": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was on the frontend team and noticed our build was failing because of a missing dependency in the backend service. I didn't own the backend, but I cloned their repo, found the config issue, and opened a PR with the fix plus tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the backend team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They merged it quickly and asked me to review their next change. I followed up in standup to make sure it didn't break again."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+        "Candidate: frontend dev spotted backend build failure",
+        "Action: cloned repo, diagnosed config, submitted PR with tests",
+        "Outcome: merged, backend team invited ongoing review",
+        "Quote: 'I followed up in standup to make sure it didn't break again'",
+        "Follow-up: Asked how team reacted; candidate described continued ownership"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. The candidate identified a cross-area failure and drove it to resolution without being asked. Quote: 'I cloned their repo, found the config issue, and opened a PR with the fix plus tests.' This shows initiative on an individual task plus follow-through to prevent recurrence. The action stayed within junior scope yet demonstrated willingness to step outside formal boundaries. Biggest strength is the proactive close-the-loop behavior rather than handing it off.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our tests were flaky because of an external API. I told my manager and the other team about it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. They said they would look into it but I was busy with my own tickets so I moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+        "Candidate: flagged flaky tests caused by external API",
+        "Action: told manager and owning team",
+        "Outcome: no follow-up; moved on to own work",
+        "Quote: 'I was busy with my own tickets so I moved on'",
+        "Follow-up: Asked if anything changed; candidate confirmed no further action"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. The candidate identified an issue outside their area but stopped at notification without driving resolution. Quote: 'I told my manager and the other team about it.' This reflects the expected junior scope of raising problems, but lacks any evidence of personal follow-through or learning from the outcome. The decision to deprioritize once busy with own tickets shows limited ownership mindset. Biggest gap is absence of any attempt to unblock the result themselves."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "A partner team's service was dropping 5% of our shared events, blocking a launch. I mapped the data flow across three teams, wrote a temporary shim in our layer, and coordinated a fix with their on-call."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics improved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Event loss dropped to zero within two weeks. The launch happened on time and we kept the shim until their permanent change landed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+        "Candidate: partner service dropping events, blocking launch",
+        "Action: mapped flow across teams, built temporary shim, coordinated fix",
+        "Outcome: loss to zero, launch on schedule",
+        "Quote: 'I mapped the data flow across three teams, wrote a temporary shim'",
+        "Follow-up: Asked for metrics; candidate cited zero loss and on-time launch"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. The candidate stepped into a multi-team dependency problem and delivered a measurable result. Quote: 'I mapped the data flow across three teams, wrote a temporary shim in our layer, and coordinated a fix with their on-call.' This demonstrates influence without authority and cross-team impact expected at senior level. The temporary shim plus permanent handoff shows pragmatic long-term thinking. Biggest strength is converting an external blocker into a shipped outcome with clear metrics.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had a launch blocked by another team's latency. I escalated in the weekly sync and asked them to prioritize it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They fixed it a month later. We slipped the launch by two weeks but eventually shipped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+        "Candidate: launch blocked by partner latency",
+        "Action: escalated in weekly sync",
+        "Outcome: fix arrived late, launch slipped two weeks",
+        "Quote: 'I escalated in the weekly sync and asked them to prioritize it'",
+        "Follow-up: Asked for result; candidate accepted the delay without further intervention"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. The candidate treated an external blocker as someone else's problem after a single escalation. Quote: 'I escalated in the weekly sync and asked them to prioritize it.' At senior level we expect active coordination and interim solutions rather than waiting. The two-week slip shows the cost of limited ownership. Biggest gap is reliance on escalation without evidence of driving cross-team progress."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our new market entry was at risk because the payments platform lacked required compliance features. I pulled in legal, product, and two external vendors, re-prioritized platform roadmap, and personally sponsored the compliance workstream until launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We met the regulatory deadline, avoided a six-month delay, and the market launch contributed 12% of quarterly revenue in its first full quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+        "Candidate: payments platform missing compliance for new market",
+        "Action: aligned legal/product/vendors, re-prioritized roadmap, sponsored workstream",
+        "Outcome: met deadline, 12% quarterly revenue",
+        "Quote: 'I pulled in legal, product, and two external vendors, re-prioritized platform roadmap'",
+        "Follow-up: Asked for business impact; candidate tied to revenue and avoided delay"
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. The candidate assumed responsibility for an org-level blocker outside their direct remit and drove it to a revenue outcome. Quote: 'I pulled in legal, product, and two external vendors, re-prioritized platform roadmap, and personally sponsored the compliance workstream.' This reflects strategic judgment and leverage at exec level rather than heroics. The decision to own the workstream until resolution shows long-term accountability. Biggest strength is translating ambiguity into a clear business result with measurable impact.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "The infrastructure team was behind on a migration that affected our product. I raised it with their VP and asked for a revised timeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it resolve?"
+        },
+        {
+          "role": "candidate",
+          "text": "They delivered six weeks late. We adjusted our plans accordingly and the business accepted the delay."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+        "Candidate: infrastructure migration behind, affecting product",
+        "Action: raised with VP for revised timeline",
+        "Outcome: six-week delay accepted",
+        "Quote: 'I raised it with their VP and asked for a revised timeline'",
+        "Follow-up: Asked how resolved; candidate accepted delay without further action"
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. The candidate escalated an org-level risk but did not intervene to change the trajectory. Quote: 'I raised it with their VP and asked for a revised timeline.' At exec level we look for strategic ownership that prevents or mitigates business impact, not just visibility. The acceptance of a six-week delay without alternatives shows limited leverage. Biggest gap is absence of any attempt to create options or accelerate resolution."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership taken",
+      "junior": "Individual task outside team boundary",
+      "senior": "Cross-team coordination with interim solution",
+      "exec": "Org-level blocker with roadmap and external parties"
+    },
+    {
+      "signal": "Follow-through after identification",
+      "junior": "Submitted PR and verified in standup",
+      "senior": "Built shim and tracked until permanent fix",
+      "exec": "Sponsored workstream to regulatory deadline"
+    },
+    {
+      "signal": "Use of metrics or business outcome",
+      "junior": "Build fixed, no recurrence",
+      "senior": "Event loss to zero, launch on time",
+      "exec": "Avoided delay, 12% quarterly revenue"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Asked for review from owning team",
+      "senior": "Coordinated on-call across teams",
+      "exec": "Re-prioritized platform roadmap with multiple VPs"
+    },
+    {
+      "signal": "Handling of resistance or delay",
+      "junior": "Continued follow-up in standup",
+      "senior": "Provided temporary fix while waiting",
+      "exec": "Personally sponsored until launch"
+    }
+  ],
+  "principle_id": 6004,
+  "kind": "lp"
+}

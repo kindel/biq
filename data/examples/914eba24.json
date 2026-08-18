@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+  "principle": "Scrappy, not crappy",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was formatting a weekly status report for my manager, spending hours on charts and alignment when the data was straightforward. I caught myself adding extra colors and notes that weren't asked for."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you stop?"
+        },
+        {
+          "role": "candidate",
+          "text": "My teammate pinged that the team sync was moved up 30 minutes. I realized the report only needed the raw numbers and one summary line, so I sent the simple version and moved on."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+        "Individual contributor polishing weekly status report with extra charts and formatting",
+        "Stopped after teammate noted sync moved up 30 min",
+        "Sent raw numbers plus one line instead",
+        "Quote: 'I realized it only needed the raw numbers and one summary line'",
+        "Follow-up: Asked about time spent; said roughly 3 hours total before stopping"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate described an individual task where extra formatting was added to a status report. They stopped when a teammate flagged a time change and shipped the minimal version. This shows early recognition of scope creep on their own work and quick adjustment based on new information. The story is small but matches junior scope. Biggest gap is limited evidence of applying the lesson beyond this single report.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I spent a full day tweaking the layout of an internal wiki page for my onboarding notes because the default template looked messy."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone ask for changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, but I wanted it to look professional. I only stopped when my manager asked why the page wasn't published yet."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+        "Polished internal wiki page layout for onboarding notes",
+        "Added multiple edits without request",
+        "Stopped only after manager asked why it wasn't live",
+        "Quote: 'I wanted it to look professional'",
+        "Follow-up: Confirmed no stakeholder input was given before polishing"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate continued refining a wiki page layout after no one requested changes and only stopped when the manager intervened. The trigger was external pressure rather than self-correction. This shows limited ownership of deciding when done is good enough. The story stays within junior scope but does not demonstrate learning to set scope independently."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was building a shared dashboard for two partner teams. I kept iterating on pixel-perfect filters and animations that the initial requirements didn't call for."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed your approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "A cross-team sync showed one partner needed the data next week for a planning cycle. I cut the extras, shipped a basic version using existing components, and the other team reused it without rework."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+        "Senior building shared dashboard for two partner teams with extra filters and animations",
+        "Shifted after cross-team sync revealed one partner needed data in one week",
+        "Cut scope to basic version using existing components",
+        "Quote: 'I cut the extras, shipped a basic version'",
+        "Follow-up: Confirmed the reused version saved the second team two weeks of work"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate recognized over-investment in a cross-team dashboard and adjusted after learning of a partner deadline. They shipped a minimal version that the second team could reuse directly. This shows influence across teams and willingness to trade polish for speed. The outcome includes a concrete reuse benefit. Biggest strength is tying the decision to downstream team impact rather than personal preference.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I refined the UI components for an internal tool across multiple sprints even after the core functionality was working."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the partner teams respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They used it but mentioned they would have preferred faster delivery. I stopped once the PM set a hard cutoff for the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+        "Continued UI refinements on internal tool over multiple sprints",
+        "Only stopped after PM imposed a hard cutoff",
+        "Partner teams noted preference for faster delivery",
+        "Quote: 'They would have preferred faster delivery'",
+        "Follow-up: No evidence of proactively seeking partner input before cutting scope"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate kept refining an internal tool UI after core functionality shipped and only stopped when the PM forced a deadline. Feedback from partners came after the fact rather than being used to adjust scope early. This shows weak cross-team influence and reliance on external direction. The story reaches senior scope but lacks proactive trade-off decisions."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "While preparing the annual product strategy deck I kept adding scenario models and competitive deep-dives that went beyond what the leadership team needed for the budget decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "What forced the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "A finance sync showed the board meeting was moved forward by three weeks. I stripped the deck to the three investment options with clear trade-offs and the models were moved to an appendix that was never opened."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+        "Exec preparing annual product strategy deck with extra scenario models",
+        "Shifted after finance noted board meeting moved forward three weeks",
+        "Reduced to three investment options with trade-offs; models moved to unused appendix",
+        "Quote: 'The models were moved to an appendix that was never opened'",
+        "Follow-up: Confirmed the simplified deck enabled budget approval in the new timeline"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate identified over-preparation in an annual strategy deck and adjusted when the board timeline compressed. They reduced content to the three options needed for the budget decision. This demonstrates strategic judgment at org level and comfort removing work that no longer served the goal. The outcome directly supported the accelerated timeline. Biggest strength is treating the deck as a lever for decision speed rather than completeness.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I kept expanding the QBR presentation with additional slides on long-term vision even after the core metrics were covered."
+        },
+        {
+          "role": "interviewer",
+          "text": "What ended the expansion?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CFO asked for a shorter version two days before the meeting. I cut the extra slides but still felt the full version would have been stronger."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+        "Expanded QBR presentation with long-term vision slides beyond core metrics",
+        "Stopped only after CFO requested shorter version",
+        "Quote: 'I still felt the full version would have been stronger'",
+        "Follow-up: No indication of testing deck length with stakeholders in advance"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate expanded a QBR deck past the core metrics and only trimmed it after the CFO demanded a shorter version. They expressed preference for the longer version afterward. This shows limited strategic judgment on what level of detail drives decisions at exec level. The story reaches org scope but lacks evidence of anticipating stakeholder constraints early."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognizes over-investment early",
+      "junior": "Stops after external time cue on personal report",
+      "senior": "Adjusts after cross-team deadline signal on shared dashboard",
+      "exec": "Trims strategy deck after board timeline shift"
+    },
+    {
+      "signal": "Uses external input to reset scope",
+      "junior": "Teammate sync note triggers change",
+      "senior": "Partner planning cycle info drives cut",
+      "exec": "Finance sync on board date forces reduction"
+    },
+    {
+      "signal": "Outcome tied to downstream impact",
+      "junior": "Report delivered on time",
+      "senior": "Second team reuses basic version",
+      "exec": "Budget decision enabled in new timeline"
+    },
+    {
+      "signal": "Relies on authority to stop",
+      "junior": "Manager intervention ends polishing",
+      "senior": "PM cutoff ends refinements",
+      "exec": "CFO request ends expansion"
+    },
+    {
+      "signal": "Evidence of learning for future",
+      "junior": "Limited beyond this report",
+      "senior": "Mentions reuse benefit for next time",
+      "exec": "Frames as decision-speed lever"
+    },
+    {
+      "signal": "Scope of story",
+      "junior": "Single individual deliverable",
+      "senior": "Cross-team tool with reuse",
+      "exec": "Org-level strategy deck"
+    }
+  ],
+  "principle_id": 6013,
+  "kind": "lp"
+}

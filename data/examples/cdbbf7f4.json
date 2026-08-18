@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+  "principle": "Hire and develop the best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team, a peer was solid on tickets but avoided edge cases in reviews. I waited until after a calm sprint, asked if they wanted input on a recent PR, then shared one specific example of a missed null check and suggested a checklist they could try."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was their reaction and did you follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "They thanked me and added the check. Two weeks later I asked how the checklist went and they said it caught two issues, so I noted it in my own retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+        "Situation: peer solid on tickets but skipped edge cases in reviews",
+        "Action: waited for calm moment, picked one concrete PR example, offered checklist idea",
+        "Outcome: peer added check, later confirmed it caught issues; candidate tracked in retro",
+        "Quote: 'I asked if they wanted input on a recent PR, then shared one specific example'",
+        "Follow-up: Asked about reaction and two-week check-in; candidate described peer's update and own retro note"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and develop the best for the question. Junior candidate described giving targeted input to a peer on edge-case coverage after a PR. Quote: 'I asked if they wanted input on a recent PR, then shared one specific example of a missed null check.' They chose a low-pressure time, kept it to one item, and followed up later to confirm the checklist worked. This shows ownership of their own work and willingness to help a teammate improve without authority. Biggest strength is the concrete follow-up that turned feedback into a repeatable habit.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told a teammate they could be more proactive in meetings but didn't have a specific example ready."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did they respond and what changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "They said okay and I moved on. I didn't check back."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+        "Situation: teammate seemed fine but could speak up more",
+        "Action: gave vague advice about being proactive without example or timing",
+        "Outcome: teammate said okay; no follow-up or visible change",
+        "Quote: 'I once told a teammate they could be more proactive in meetings but didn't have a specific example ready'",
+        "Follow-up: Asked for response and outcome; candidate admitted no check-in"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and develop the best for the question. Junior candidate offered only a vague suggestion that a teammate be more proactive, with no example or timing. Quote: 'I once told a teammate they could be more proactive in meetings but didn't have a specific example ready.' They did not follow up, so impact stayed at zero. This shows limited ownership of developing others even at an individual level. Biggest gap is absence of any structure or measurement that would turn feedback into growth."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A cross-team engineer delivered reliable work but their handoff docs were thin, causing repeated questions from my squad. I scheduled a 1:1, showed two recent tickets where missing details added days of delay, and proposed a short template we could both use."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics or follow-up did you track?"
+        },
+        {
+          "role": "candidate",
+          "text": "We measured question volume on the next three handoffs; it dropped from eight to two. I shared the template with two other teams and the pattern repeated."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+        "Situation: cross-team engineer reliable but thin handoff docs caused delays",
+        "Action: used 1:1, cited two specific tickets with delay numbers, suggested shared template",
+        "Outcome: question volume fell from 8 to 2 on next three handoffs; template spread to two other teams",
+        "Quote: 'I showed two recent tickets where missing details added days of delay'",
+        "Follow-up: Asked for metrics and spread; candidate gave concrete drop and cross-team adoption"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and develop the best for the question. Senior candidate gave feedback to a peer in another team on handoff quality using ticket data. Quote: 'I showed two recent tickets where missing details added days of delay.' They tied the input to measurable delay, co-created a template, and tracked a drop from eight to two questions. The template later spread beyond the original pair. Biggest strength is turning one conversation into cross-team leverage without formal authority.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I mentioned to a peer on another team that their updates could be clearer but didn't pull data or suggest a format."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change or did you follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "They nodded and we continued as before; I never measured impact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+        "Situation: peer on another team had unclear updates",
+        "Action: casual mention that updates could be clearer, no data or format offered",
+        "Outcome: peer nodded; no change tracked or followed up",
+        "Quote: 'I mentioned to a peer on another team that their updates could be clearer but didn't pull data or suggest a format'",
+        "Follow-up: Asked for change or measurement; candidate confirmed none"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and develop the best for the question. Senior candidate gave only a casual suggestion to a cross-team peer about clearer updates. Quote: 'I mentioned to a peer on another team that their updates could be clearer but didn't pull data or suggest a format.' No example, no metric, and no follow-up occurred. Influence stayed local and temporary. Biggest gap is missing the data-driven or repeatable step expected at senior scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our mid-level manager group was delivering steady results but promotion rates lagged peers by 15 percent. I ran a skip-level round, surfaced that feedback quality was the common gap, then ran a two-hour workshop on specific, timely input with role-play."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result and any trade-offs?"
+        },
+        {
+          "role": "candidate",
+          "text": "Six months later promotion rates matched the company average. I reduced my own 1:1 load by delegating the next two workshops to the managers who improved fastest."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+        "Situation: mid-level managers steady but promotion rates 15 percent behind",
+        "Action: skip-levels identified feedback quality gap, designed workshop with role-play, taught specific timely input",
+        "Outcome: promotion rates reached company average in six months; delegated follow-on workshops",
+        "Quote: 'I ran a two-hour workshop on specific, timely input with role-play'",
+        "Follow-up: Asked for long-term result and trade-offs; candidate cited rate parity and delegation"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and develop the best for the question. Exec candidate addressed an org-level promotion gap by teaching managers how to give better feedback. Quote: 'I ran a two-hour workshop on specific, timely input with role-play.' They used skip-level data, measured promotion parity after six months, and delegated the next workshops to create leverage. This shows strategic scaling of development rather than one-off heroics. Biggest strength is turning a single insight into sustained org capability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told my leadership team they should give more developmental feedback but left the how and measurement to them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few managers tried it; overall promotion rates stayed flat and I did not revisit the topic."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+        "Situation: leadership team needed better developmental feedback",
+        "Action: high-level directive without workshop, examples, or metrics",
+        "Outcome: a few managers experimented; promotion rates unchanged; no follow-up",
+        "Quote: 'I told my leadership team they should give more developmental feedback but left the how and measurement to them'",
+        "Follow-up: Asked for org-level change; candidate confirmed flat rates and no revisit"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and develop the best for the question. Exec candidate issued a high-level directive to leaders about giving more feedback. Quote: 'I told my leadership team they should give more developmental feedback but left the how and measurement to them.' No workshop, data, or accountability loop followed. Promotion metrics stayed flat. Biggest gap is absence of the strategic structure and leverage expected at executive scope."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Specificity of example",
+      "junior": "Uses one PR null-check case",
+      "senior": "Uses two tickets with delay numbers",
+      "exec": "Uses skip-level data on 15 percent promotion gap"
+    },
+    {
+      "signal": "Follow-up and measurement",
+      "junior": "Two-week check-in with peer",
+      "senior": "Tracked question volume drop from 8 to 2",
+      "exec": "Six-month promotion parity and delegation"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual peer",
+      "senior": "Cross-team template adoption",
+      "exec": "Org-wide manager capability"
+    },
+    {
+      "signal": "Approach to resistance or scale",
+      "junior": "Kept low-pressure and optional",
+      "senior": "Co-created template for shared use",
+      "exec": "Workshop plus delegation to rising managers"
+    },
+    {
+      "signal": "Ownership of development",
+      "junior": "Tracked in own retro",
+      "senior": "Spread beyond original pair",
+      "exec": "Reduced own load by building others"
+    }
+  ],
+  "principle_id": 6010,
+  "kind": "lp"
+}

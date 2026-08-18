@@ -1,0 +1,202 @@
+{
+  "question": "Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+  "principle": "Hire and develop the best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a two-week sprint I paired with a new hire on a critical bug fix. I spent the first three days walking through root cause instead of fixing it myself so they could own the resolution."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delivered one day late but the fix held in prod and the new hire handled the next two similar issues solo."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the tradeoff was worth it?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager had flagged the new hire needed ramp-up support; the bug was high-severity but not customer-blocking that day."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+        "Role: IC on sprint team; Situation: paired with new hire on high-severity bug",
+        "Actions: spent first 3 days coaching instead of solo-fixing; Outcome: 1-day delay but new hire owned follow-ups",
+        "Quote: \"We delivered one day late but the fix held and they handled the next two issues solo\"",
+        "Follow-up: impact on deadline? -> acknowledged 1-day slip and manager context"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Principle tested is Hire and Develop the Best. Candidate described choosing to invest three days coaching a new hire on a bug fix rather than closing it alone. The story shows awareness of both the sprint deadline and the teammate's ramp-up need, with a clear decision criterion from the manager. Tradeoff resulted in a one-day slip but produced reusable skill. Biggest strength is explicit linkage between short-term cost and longer-term ownership gain.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a tight deadline so I just fixed the bug myself and sent the new hire the PR link to review later."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the new hire learn anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they were still ramping and I needed to ship."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+        "Role: IC; Situation: high-severity bug with new hire on team",
+        "Actions: fixed solo and shared PR link; Outcome: met deadline",
+        "Quote: \"I needed to ship\"",
+        "Follow-up: did new hire learn? -> no evidence of development"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Principle tested is Hire and Develop the Best. Candidate defaulted to solo execution with no active development step, citing only the deadline. No tradeoff was weighed and no outcome for the new hire was tracked. The decision shows no ownership for team capability growth at this level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team had a launch in four weeks but two engineers needed to level up on observability. I carved out a parallel workstream where they owned the instrumentation while I reviewed daily and absorbed the risk on the core path."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed the tradeoff worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Launch slipped two days but post-launch MTTR dropped 40 percent and both engineers now run their own on-call rotations."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from the launch owner?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the PM the on-call coverage gap and proposed the two-day buffer explicitly."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+        "Role: senior on platform team; Situation: 4-week launch vs observability skill gap",
+        "Actions: split workstream, daily reviews, absorbed risk; Outcome: 2-day slip, 40% MTTR drop, engineers own rotations",
+        "Quote: \"I showed the PM the on-call coverage gap and proposed the two-day buffer\"",
+        "Follow-up: metrics? -> concrete MTTR and ownership gains; Follow-up: buy-in? -> explicit PM conversation"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Principle tested is Hire and Develop the Best. Candidate created a parallel workstream that let two engineers own observability while protecting the launch path. Tradeoff was negotiated with the PM using coverage data and produced measurable MTTR improvement plus sustained ownership. Shows influence without authority and clear metrics at team scale. Biggest strength is the explicit risk absorption and post-launch outcome tracking.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I assigned the observability tickets to the two engineers but still had to jump in the last week to finish them because the launch was at risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they end up owning the area?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not fully; the launch pressure meant I drove most of the decisions."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+        "Role: senior; Situation: launch deadline vs skill gap",
+        "Actions: assigned tickets then took over; Outcome: launch on time",
+        "Quote: \"the launch pressure meant I drove most of the decisions\"",
+        "Follow-up: ownership? -> no sustained ownership"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Principle tested is Hire and Develop the Best. Candidate assigned work but reclaimed ownership under pressure, leaving no lasting capability gain. Tradeoff was not structured and produced no measurable development result. Shows lack of cross-team influence and failure to protect development time."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org had a re-platforming deadline in Q3 but only two teams had production-grade incident response skills. I funded a six-week rotation program that pulled senior engineers from three other teams into shadowing, accepting a one-month delay on two non-critical services."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the org-level outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Incident response coverage went from two teams to six within a quarter and we reduced escalations to execs by 35 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you defend the delay to the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled the cost of continued exec escalations versus the one-month slip and got the COO to approve the buffer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+        "Role: exec; Situation: Q3 re-platform vs org-wide incident skill shortage",
+        "Actions: funded rotation program across three teams, accepted 1-month delay on non-critical services; Outcome: coverage from 2 to 6 teams, 35% fewer exec escalations",
+        "Quote: \"I modeled the cost of continued exec escalations versus the one-month slip\"",
+        "Follow-up: org outcome? -> coverage and escalation metrics; Follow-up: business defense? -> COO approval via modeling"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Principle tested is Hire and Develop the Best. Candidate traded a one-month delay on non-critical services for an org-wide rotation program that expanded incident ownership from two to six teams. Decision used explicit cost modeling presented to the COO. Result delivered sustained reduction in escalations and broader capability distribution. Biggest strength is strategic leverage through structural program design rather than heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the teams to prioritize the re-platform and handle skill gaps in their spare time after launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to incident coverage?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed concentrated in the original two teams and escalations remained high."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+        "Role: exec; Situation: Q3 re-platform vs skill shortage",
+        "Actions: deferred development to spare time; Outcome: no change in coverage",
+        "Quote: \"handle skill gaps in their spare time\"",
+        "Follow-up: coverage result? -> remained concentrated"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Principle tested is Hire and Develop the Best. Candidate deferred development entirely to meet the deadline with no structural tradeoff. No org-level capability growth occurred and escalation volume stayed unchanged. Shows absence of long-term strategic judgment on talent leverage."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Tradeoff framing",
+      "junior": "Explicit short-term cost vs teammate ownership",
+      "senior": "Negotiated buffer with PM using coverage data",
+      "exec": "Modeled exec-escalation cost vs delay for COO"
+    },
+    {
+      "signal": "Development outcome",
+      "junior": "New hire owned next two bugs",
+      "senior": "Engineers run own rotations, MTTR -40%",
+      "exec": "Coverage expanded from 2 to 6 teams, escalations -35%"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual teammate",
+      "senior": "Cross-team workstream",
+      "exec": "Org-wide rotation program"
+    },
+    {
+      "signal": "Decision ownership",
+      "junior": "Used manager guidance",
+      "senior": "Influenced PM directly",
+      "exec": "Secured COO approval via modeling"
+    },
+    {
+      "signal": "Risk handling",
+      "junior": "Accepted 1-day slip",
+      "senior": "Absorbed risk on core path",
+      "exec": "Delayed only non-critical services"
+    }
+  ],
+  "principle_id": 6010,
+  "kind": "lp"
+}

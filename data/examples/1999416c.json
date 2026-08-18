@@ -1,0 +1,181 @@
+{
+  "question": "Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+  "principle": "Scrappy, not crappy",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I needed to size a cache for a new endpoint. Instead of running a full load test I did a quick back-of-envelope: average request size times expected QPS gave me 2GB, so I picked a 4GB instance. I knew it was enough because the traffic was capped by an upstream service we already monitored."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you have done if the number had been close?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have added 50% headroom and flagged it for a real test after launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+        "- Junior dev on first project, cache sizing for endpoint",
+        "- Used request size x QPS estimate instead of load test",
+        "- Outcome: picked 4GB instance, launched on time",
+        "- Quote: \"traffic was capped by an upstream service we already monitored\"",
+        "Follow-up: What if number had been close? -> would add headroom and schedule real test"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate described using request size times QPS to size a cache instead of a full load test. They knew the estimate was sufficient because upstream traffic was already monitored and capped. This shows appropriate judgment for an individual-contributor scope and willingness to add headroom if needed. The story stayed within their own work and demonstrated learning from the constraint. Biggest strength is the clear decision rule tied to existing data rather than heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once skipped a full regression suite and just spot-checked a few cases by hand for a small bug fix. It worked out."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the spot checks were enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was a low-risk change so I figured it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+        "- Junior dev, spot-checked bug fix instead of regression",
+        "- Reason given: \"low-risk change\"",
+        "- No metrics or decision criteria described",
+        "Follow-up: How did you decide spot checks were enough? -> repeated \"low-risk\" without specifics"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate described skipping regression for a bug fix but offered only \"low-risk change\" as justification with no observable criteria. The story lacks any calculation or data used to confirm sufficiency. Without a decision rule the action reads as shortcutting rather than deliberate scrappiness. Biggest gap is absence of how they would have known the approach was insufficient before launch."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were debating a new aggregation service. I did a quick calc on existing log volumes and average event size to show the service would need roughly 12 instances at peak. That let us agree to a phased rollout instead of building the full fleet upfront."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other team react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They accepted the phased plan once they saw the numbers matched their own logs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+        "- Senior, cross-team aggregation service debate",
+        "- Used log volumes x event size to estimate 12 instances",
+        "- Outcome: phased rollout agreed without full fleet",
+        "- Quote: \"numbers matched their own logs\"",
+        "Follow-up: How did the other team react? -> accepted phased plan"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate used existing log volumes and event size to estimate instance needs and avoid over-provisioning across two teams. They knew the estimate was sufficient because the numbers aligned with the other team's own data, enabling a phased rollout. The story shows influence without authority and a concrete metric that changed the decision. Scope extended beyond their own team. Biggest strength is turning a quick calc into cross-team alignment on resource trade-offs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sometimes estimate query costs in spreadsheets instead of running the full optimizer when the team is in a hurry."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you know the spreadsheet is accurate enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "It usually gets within 20 percent so we just move forward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+        "- Senior, spreadsheet estimates for query costs",
+        "- Reason: \"usually within 20 percent\"",
+        "- No cross-team impact or decision change described",
+        "Follow-up: How do you know the spreadsheet is accurate enough? -> vague tolerance without validation step"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate mentioned using spreadsheets for query costs but justified the approach only with a generic \"usually within 20 percent\" tolerance. No evidence of how the estimate influenced a real decision or aligned other teams. The story stays at the level of personal habit rather than measurable impact. Biggest gap is lack of a stopping criterion or feedback loop that would confirm sufficiency before committing resources."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were deciding whether to acquire a data platform or build. I took last quarter's pipeline volumes and growth rate, multiplied by per-GB processing cost, and showed the build option would break even only after 18 months. The board chose to acquire based on that single-page model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What assumptions did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listed the three biggest ones and noted we would revisit in six months if volumes deviated more than 30 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+        "- Exec, build-vs-acquire decision for data platform",
+        "- Used pipeline volumes x growth x per-GB cost for 18-month break-even",
+        "- Outcome: board chose acquire on single-page model",
+        "- Quote: \"revisit in six months if volumes deviated more than 30 percent\"",
+        "Follow-up: What assumptions did you surface? -> listed three biggest with revisit trigger"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate used last quarter's volumes and growth rate to produce an 18-month break-even model that drove a board-level acquisition decision. They knew the model was sufficient because they explicitly listed the three largest assumptions and set a 30 percent deviation trigger for re-evaluation. The story demonstrates strategic judgment under ambiguity and long-term leverage rather than detailed analysis. Scope is org-level with clear business outcome. Biggest strength is pairing the quick calc with an explicit monitoring rule that protected the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "For annual planning I often use rough order-of-magnitude estimates on headcount instead of full modeling."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you decide when the rough estimate is good enough for the board?"
+        },
+        {
+          "role": "candidate",
+          "text": "If the number feels directionally right we go with it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+        "- Exec, rough headcount estimates for annual planning",
+        "- Reason: \"feels directionally right\"",
+        "- No explicit assumptions or revisit criteria",
+        "Follow-up: How do you decide when the rough estimate is good enough for the board? -> subjective feeling without trigger"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate described using rough headcount estimates for planning but justified sufficiency only with \"feels directionally right.\" No concrete assumptions, metrics, or re-evaluation triggers were defined. The story lacks evidence of how the estimate altered a high-stakes decision or protected against downside. Biggest gap is absence of a clear stopping rule or feedback mechanism at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision criteria for sufficiency",
+      "junior": "Tied to existing monitored data",
+      "senior": "Aligned with other team's logs",
+      "exec": "Explicit deviation trigger for re-evaluation"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Own feature launch",
+      "senior": "Cross-team resource plan",
+      "exec": "Board acquisition choice"
+    },
+    {
+      "signal": "Evidence of judgment under ambiguity",
+      "junior": "Added headroom if close",
+      "senior": "Phased rollout instead of full build",
+      "exec": "Single-page model with monitoring rule"
+    },
+    {
+      "signal": "Risk of over-engineering",
+      "junior": "Chose simple calc over load test",
+      "senior": "Avoided full fleet upfront",
+      "exec": "Skipped detailed modeling for break-even"
+    },
+    {
+      "signal": "Follow-up handling",
+      "junior": "Proposed validation step",
+      "senior": "Used shared data to gain alignment",
+      "exec": "Defined revisit criteria upfront"
+    }
+  ],
+  "principle_id": 6013,
+  "kind": "lp"
+}

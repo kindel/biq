@@ -1,0 +1,214 @@
+{
+  "question": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+  "principle": "Invent and simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was building a data cleanup script for our logs. It was getting slow so I added more filters, but then I paused and wondered if parsing everything first was even needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked with my mentor, realized we only needed recent errors, and switched to a streaming approach that cut runtime by half. I documented the change so others could reuse it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+        "Role: Individual contributor on log cleanup script",
+        "Situation: Script slowing down, added filters without questioning core design",
+        "Actions: Paused, asked mentor, switched to streaming for recent errors only",
+        "Outcome: Runtime halved, shared doc for reuse",
+        "Quote: \"I paused and wondered if parsing everything first was even needed.\"",
+        "Follow-up: What prompted the pause? Candidate: Saw runtime growing and recalled a team retro note on over-processing."
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for junior level. The candidate described an individual task where they questioned a filtering-heavy script after noticing slowdowns and switched to streaming recent errors only after checking with a mentor. This produced a concrete halving of runtime and a reusable doc. The story shows ownership of their own work and coachability without overclaiming scope. It meets the principle by simplifying rather than adding complexity. Biggest strength is the clear before-and-after change tied to a specific trigger.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was writing a report generator and it was taking too long so I kept optimizing the queries."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever question the overall approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just made the queries faster and it eventually worked."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+        "Role: Individual contributor on report generator",
+        "Situation: Report taking too long",
+        "Actions: Kept optimizing queries without stepping back",
+        "Outcome: Eventually worked but no simplification described",
+        "Quote: \"I just made the queries faster and it eventually worked.\"",
+        "Follow-up: What made you consider a different structure? Candidate: Could not recall a specific moment of questioning the approach."
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for junior level. The candidate stayed inside query optimization on a report generator without ever questioning whether a different structure or scope reduction would be better. No evidence of pausing to invent a simpler path or learning from that reflection. The outcome remained incremental tuning rather than a change in approach. Biggest gap is absence of any deliberate step-back moment or resulting simplification."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our team was building separate dashboards for each service. I realized the duplication across teams and proposed a shared component library instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get others on board?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week audit showing 60% overlap, got design and three other teams to adopt the library, and we cut new dashboard work by a third."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+        "Role: Senior on cross-team dashboards",
+        "Situation: Multiple teams building duplicate service dashboards",
+        "Actions: Audited overlap, proposed shared library, influenced design and peer teams",
+        "Outcome: 60% reuse identified, new work reduced by a third",
+        "Quote: \"I realized the duplication across teams and proposed a shared component library instead.\"",
+        "Follow-up: What metric convinced the other teams? Candidate: Showed build-time savings and maintenance hours in the audit."
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for senior level. The candidate identified duplicate dashboard work across teams, stepped back from per-service builds, and drove adoption of a shared component library after a quick overlap audit. Influence without authority produced measurable reuse and reduced new work by a third. The story demonstrates cross-team impact and a clear simplification trade-off. Biggest strength is the concrete influence and metrics attached to the change.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had three similar internal tools and I suggested we merge two of them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the suggestion?"
+        },
+        {
+          "role": "candidate",
+          "text": "The teams discussed it but kept their own versions because of different requirements."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+        "Role: Senior on internal tools",
+        "Situation: Three similar tools existed",
+        "Actions: Suggested merging two",
+        "Outcome: Teams discussed but no change occurred",
+        "Quote: \"The teams discussed it but kept their own versions because of different requirements.\"",
+        "Follow-up: Did you try any further steps to simplify? Candidate: Stopped after initial discussion."
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for senior level. The candidate noticed tool duplication but only made a one-time suggestion that produced no actual simplification or cross-team alignment. No evidence of driving influence, measuring overlap, or iterating on trade-offs. The outcome stayed at discussion level without measurable change. Biggest gap is lack of follow-through or leverage to achieve the simplification."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our org was investing heavily in custom analytics pipelines. I questioned whether building more internal capability was the right long-term direction versus partnering."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you evaluate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled three-year cost and talent impact, shifted two teams to a vendor platform, and freed headcount for core product work while keeping only a small integration group."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+        "Role: Exec on analytics investment",
+        "Situation: Heavy spend on custom pipelines",
+        "Actions: Questioned build-vs-partner, modeled multi-year costs, shifted teams to vendor",
+        "Outcome: Two teams redirected, headcount freed for core product",
+        "Quote: \"I questioned whether building more internal capability was the right long-term direction versus partnering.\"",
+        "Follow-up: How did you handle the talent transition? Candidate: Created a small retained integration team and moved the rest to product features."
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for exec level. The candidate stepped back from continued heavy investment in custom analytics pipelines, evaluated build-versus-partner trade-offs over a three-year horizon, and redirected two teams to a vendor platform. This produced org-level leverage by freeing headcount for core product work while retaining only minimal integration ownership. The decision reflects strategic judgment on long-term simplification. Biggest strength is the clear linkage between the pause, the model, and the resulting org reallocation.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were scaling our data platform and I asked the team to review whether we needed every feature we had planned."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actually changed at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed a couple of features but kept the overall roadmap and investment level the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+        "Role: Exec on data platform scaling",
+        "Situation: Scaling data platform with large feature list",
+        "Actions: Asked team to review planned features",
+        "Outcome: Delayed a couple of items, no shift in investment or direction",
+        "Quote: \"We delayed a couple of features but kept the overall roadmap and investment level the same.\"",
+        "Follow-up: Did the review lead to any structural simplification? Candidate: No, scope stayed largely intact."
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for exec level. The candidate initiated a feature review during data platform scaling but produced only minor delays without altering investment levels, roadmap direction, or org structure. No evidence of strategic trade-off evaluation or long-term simplification at business scale. The outcome remained incremental rather than a directional change. Biggest gap is absence of leverage or reallocation resulting from the step-back."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Questioning own approach",
+      "junior": "Shows pause after seeing local slowdown and seeks mentor input",
+      "senior": "Identifies cross-team duplication and runs audit before proposing change",
+      "exec": "Models multi-year cost and talent before shifting org investment"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual script change with reuse doc",
+      "senior": "Library adopted by design plus three teams, measurable work reduction",
+      "exec": "Redirects two teams and frees headcount for core product"
+    },
+    {
+      "signal": "Evidence of simplification",
+      "junior": "Switches from full parse to streaming recent errors",
+      "senior": "Moves from per-service builds to shared components",
+      "exec": "Replaces custom pipelines with vendor platform plus minimal integration"
+    },
+    {
+      "signal": "Follow-through",
+      "junior": "Documents for others after change",
+      "senior": "Secures adoption and tracks reuse metric",
+      "exec": "Executes team reallocation with retained ownership model"
+    },
+    {
+      "signal": "Learning orientation",
+      "junior": "Uses mentor feedback to adjust approach",
+      "senior": "Uses overlap data to influence peers",
+      "exec": "Uses three-year model to decide build-versus-partner"
+    }
+  ],
+  "principle_id": 6006,
+  "kind": "lp"
+}
