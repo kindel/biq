@@ -24,7 +24,8 @@
             "customer obsessed",
             "customer-obsession",
             "obsession",
-            "customer experience"
+            "customer experience",
+            "customer advocacy"
           ],
           "questions": [
             {
@@ -76,7 +77,9 @@
             "owners",
             "owned",
             "outside your area",
-            "languishing"
+            "languishing",
+            "acts like an owner",
+            "takes responsibility"
           ],
           "questions": [
             {
@@ -197,7 +200,8 @@
             "judgement",
             "right",
             "decision quality",
-            "good judgment"
+            "good judgment",
+            "makes wise decisions"
           ],
           "questions": [
             {
@@ -253,7 +257,10 @@
             "curiosity",
             "learn",
             "learning",
-            "learn and be curious"
+            "learn and be curious",
+            "always learning",
+            "growth mindset",
+            "intellectual curiosity"
           ],
           "questions": [
             {
@@ -368,7 +375,8 @@
             "highest standards",
             "bar",
             "insist on the highest standards",
-            "high bar"
+            "high bar",
+            "strive for excellence"
           ],
           "questions": [
             {
@@ -484,7 +492,8 @@
             "speed",
             "bias",
             "bias for action",
-            "move"
+            "move",
+            "move fast"
           ],
           "questions": [
             {
@@ -536,7 +545,8 @@
             "waste",
             "resources",
             "constraints",
-            "no extra budget"
+            "no extra budget",
+            "do more with less"
           ],
           "questions": [
             {
@@ -754,7 +764,8 @@
             "delivery",
             "deliver results",
             "deadline",
-            "goal"
+            "goal",
+            "get it done"
           ],
           "questions": [
             {
@@ -817,7 +828,9 @@
             "passion",
             "mission",
             "care deeply",
-            "internalize the strategy"
+            "internalize the strategy",
+            "passion for the mission",
+            "the mission"
           ],
           "kind": "factor",
           "questions": [
@@ -847,7 +860,9 @@
           "aliases": [
             "one arm",
             "beyond your function",
-            "not always consensus"
+            "not always consensus",
+            "deliver as one arm",
+            "collaboration is not always consensus"
           ],
           "kind": "factor",
           "questions": [
@@ -878,7 +893,8 @@
             "extraordinary teams",
             "high bar",
             "candid feedback",
-            "inclusive teams"
+            "inclusive teams",
+            "greater than the sum of their parts"
           ],
           "kind": "factor",
           "questions": [
@@ -909,7 +925,8 @@
             "challenge",
             "independent thinking",
             "back yourself",
-            "drive the decision"
+            "drive the decision",
+            "challenge skillfully"
           ],
           "kind": "factor",
           "questions": [
@@ -940,7 +957,8 @@
             "inefficiencies",
             "simplify",
             "laser focused",
-            "unmoveable constraints"
+            "unmoveable constraints",
+            "root out inefficiencies"
           ],
           "kind": "factor",
           "questions": [
@@ -971,7 +989,9 @@
             "push boundaries",
             "how can this be better",
             "how will we win",
-            "delivery vs perfection"
+            "delivery vs perfection",
+            "10x",
+            "balance delivery with perfection"
           ],
           "kind": "factor",
           "questions": [
@@ -1003,7 +1023,8 @@
             "find a way",
             "bias for action",
             "speed",
-            "unexpected"
+            "unexpected",
+            "comfortable with uncertainty"
           ],
           "kind": "factor",
           "questions": [
@@ -1034,7 +1055,10 @@
             "own it",
             "accountable",
             "do not wait",
-            "solutions not problems"
+            "solutions not problems",
+            "accountable for the outcome",
+            "bring solutions",
+            "do not wait for instructions"
           ],
           "kind": "factor",
           "questions": [
@@ -1066,7 +1090,10 @@
             "ambiguity",
             "vague ideas",
             "execution plan",
-            "create focus"
+            "create focus",
+            "decisive in ambiguity",
+            "ambiguity and change",
+            "concrete execution plans"
           ],
           "kind": "factor",
           "questions": [
@@ -1098,7 +1125,9 @@
             "resilience",
             "energy",
             "sustainable pace",
-            "long term"
+            "long term",
+            "sustain momentum",
+            "energy levels"
           ],
           "kind": "factor",
           "questions": [
@@ -2003,7 +2032,10 @@
           "name": "Think big, start small",
           "aliases": [
             "think big, start small",
-            "think big start small"
+            "think big start small",
+            "start small",
+            "think big",
+            "zoom out"
           ],
           "kind": "lp",
           "questions": [
@@ -2030,7 +2062,11 @@
           "slug": "customer-success-is-our-success",
           "name": "Customer success is our success",
           "aliases": [
-            "customer success is our success"
+            "customer success is our success",
+            "customer success",
+            "customer obsession",
+            "work backwards from the customer",
+            "internal customer"
           ],
           "kind": "lp",
           "questions": [
@@ -2057,7 +2093,11 @@
           "slug": "break-down-silos",
           "name": "Break down silos",
           "aliases": [
-            "break down silos"
+            "break down silos",
+            "silos",
+            "us and them",
+            "work across teams",
+            "default to open"
           ],
           "kind": "lp",
           "questions": [
@@ -2084,7 +2124,10 @@
           "slug": "ownership",
           "name": "Ownership",
           "aliases": [
-            "ownership"
+            "ownership",
+            "own it",
+            "acts like an owner",
+            "think long term"
           ],
           "kind": "lp",
           "questions": [
@@ -2111,7 +2154,10 @@
           "slug": "no-surprises",
           "name": "No surprises",
           "aliases": [
-            "no surprises"
+            "no surprises",
+            "dates for dates",
+            "deliver when you say",
+            "manage expectations"
           ],
           "kind": "lp",
           "questions": [
@@ -2138,7 +2184,11 @@
           "slug": "invent-and-simplify",
           "name": "Invent and simplify",
           "aliases": [
-            "invent and simplify"
+            "invent and simplify",
+            "love every idea for at least five minutes",
+            "not invented here",
+            "innovate",
+            "simplify"
           ],
           "kind": "lp",
           "questions": [
@@ -2165,7 +2215,11 @@
           "slug": "bias-for-action",
           "name": "Bias for action",
           "aliases": [
-            "bias for action"
+            "bias for action",
+            "bfa",
+            "speed matters",
+            "move fast",
+            "calculated risk"
           ],
           "kind": "lp",
           "questions": [
@@ -2192,7 +2246,10 @@
           "slug": "earn-trust",
           "name": "Earn trust",
           "aliases": [
-            "earn trust"
+            "earn trust",
+            "do what we say",
+            "speak candidly",
+            "listen attentively"
           ],
           "kind": "lp",
           "questions": [
@@ -2219,7 +2276,10 @@
           "slug": "better-than-yesterday",
           "name": "Better than yesterday",
           "aliases": [
-            "better than yesterday"
+            "better than yesterday",
+            "one percent better",
+            "continuous improvement",
+            "highest standards"
           ],
           "kind": "lp",
           "questions": [
@@ -2246,7 +2306,11 @@
           "slug": "hire-and-develop-the-best",
           "name": "Hire and develop the best",
           "aliases": [
-            "hire and develop the best"
+            "hire and develop the best",
+            "raise the bar",
+            "career choice",
+            "develop leaders",
+            "coach others"
           ],
           "kind": "lp",
           "questions": [
@@ -2274,7 +2338,11 @@
           "name": "Have Backbone; Disagree and commit",
           "aliases": [
             "have backbone; disagree and commit",
-            "have backbone disagree and commit"
+            "have backbone disagree and commit",
+            "have backbone",
+            "disagree and commit",
+            "challenge decisions",
+            "social cohesion"
           ],
           "kind": "lp",
           "questions": [
@@ -2301,7 +2369,10 @@
           "slug": "respect-time",
           "name": "Respect time",
           "aliases": [
-            "respect time"
+            "respect time",
+            "most constrained resource",
+            "spend money to save time",
+            "punctual"
           ],
           "kind": "lp",
           "questions": [
@@ -2329,7 +2400,11 @@
           "name": "Scrappy, not crappy",
           "aliases": [
             "scrappy, not crappy",
-            "scrappy not crappy"
+            "scrappy not crappy",
+            "scrappy",
+            "fit for purpose",
+            "frugality",
+            "lean"
           ],
           "kind": "lp",
           "questions": [
@@ -2357,7 +2432,10 @@
           "name": "Rocket engineering, not rocket science",
           "aliases": [
             "rocket engineering, not rocket science",
-            "rocket engineering not rocket science"
+            "rocket engineering not rocket science",
+            "rocket engineering",
+            "product company",
+            "keep the customer in mind"
           ],
           "kind": "lp",
           "questions": [
@@ -2385,7 +2463,10 @@
           "name": "Race on the racetrack, walk on ice",
           "aliases": [
             "race on the racetrack, walk on ice",
-            "race on the racetrack walk on ice"
+            "race on the racetrack walk on ice",
+            "walk on ice",
+            "right level of rigor",
+            "agile and adaptable"
           ],
           "kind": "lp",
           "questions": [

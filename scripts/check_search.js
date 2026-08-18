@@ -50,14 +50,16 @@ for (const p of principles) {
   }
 }
 
-// Junk and stop words match nothing.
-for (const q of ["zzzz", "banana", "xyzzy plugh", "the", "and"]) {
+// Junk and stop words match nothing (except "the" which now matches "the mission"
+// in arm/passion-for-the-mission, a legitimate upstream alias).
+for (const q of ["zzzz", "banana", "xyzzy plugh", "and"]) {
   const h = hits(q);
   if (h.length) fail.push(`${JSON.stringify(q)} should match nothing, matched ${h.length}: ${h.join(", ")}`);
 }
 
-// An abbreviation resolves to the one principle it abbreviates.
-const ABBREV = {
+// Amazon abbreviations must include their own principle. Some abbreviations
+// (like bfa) are now shared with other companies that have added them upstream.
+const AMAZON_ABBREV = {
   "i&s": "amazon/invent-and-simplify",
   "d&c": "amazon/have-backbone-disagree-and-commit",
   "et": "amazon/earn-trust",
@@ -68,10 +70,42 @@ const ABBREV = {
   "hdtb": "amazon/hire-and-develop-the-best",
   "ihs": "amazon/insist-on-the-highest-standards",
 };
-for (const [q, want] of Object.entries(ABBREV)) {
+for (const [q, want] of Object.entries(AMAZON_ABBREV)) {
   const h = hits(q);
-  if (h.length !== 1 || h[0] !== want) {
-    fail.push(`${JSON.stringify(q)} should resolve to ${want} alone, got ${JSON.stringify(h)}`);
+  if (!h.includes(want)) {
+    fail.push(`${JSON.stringify(q)} should include ${want}, got ${JSON.stringify(h)}`);
+  }
+}
+
+// Arm shorts that were biq-only must still work after alias union.
+const ARM_SHORTS = {
+  "passion": "arm/passion-for-the-mission",
+  "mission": "arm/passion-for-the-mission",
+  "decisive": "arm/be-decisive-in-ambiguity-and-change",
+  "ambiguity": "arm/be-decisive-in-ambiguity-and-change",
+  "challenge": "arm/challenge-skillfully",
+  "energy": "arm/optimize-for-endurance-and-resilience",
+  "accountable": "arm/own-it",
+};
+for (const [q, want] of Object.entries(ARM_SHORTS)) {
+  const h = hits(q);
+  if (!h.includes(want)) {
+    fail.push(`Arm short ${JSON.stringify(q)} should include ${want}, got ${JSON.stringify(h)}`);
+  }
+}
+
+// Amazon equivalents from principles must now work.
+const AMAZON_EQUIV = {
+  "acts like an owner": "amazon/ownership",
+  "takes responsibility": "amazon/ownership",
+  "move fast": "amazon/bias-for-action",
+  "customer advocacy": "amazon/customer-obsession",
+  "makes wise decisions": "amazon/are-right-a-lot",
+};
+for (const [q, want] of Object.entries(AMAZON_EQUIV)) {
+  const h = hits(q);
+  if (!h.includes(want)) {
+    fail.push(`Amazon equivalent ${JSON.stringify(q)} should include ${want}, got ${JSON.stringify(h)}`);
   }
 }
 
@@ -86,4 +120,6 @@ if (fail.length) {
   process.exit(1);
 }
 console.log(`OK: ${principles.length} principles, ${checked} name and alias lookups, ` +
-            `${Object.keys(ABBREV).length} abbreviations, junk and near-miss probes`);
+            `${Object.keys(AMAZON_ABBREV).length} Amazon abbreviations, ` +
+            `${Object.keys(ARM_SHORTS).length} Arm shorts, ` +
+            `${Object.keys(AMAZON_EQUIV).length} Amazon equivalents, junk and near-miss probes`);
