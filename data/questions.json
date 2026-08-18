@@ -2006,7 +2006,24 @@
             "think big start small"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you caught yourself or your team building something too big too soon. What did you do to scale back?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you zoomed out to check whether your day-to-day work still aligned with the mission. What did you find?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to help your team connect their immediate work to the 1-year, 5-year, or 10-year vision. How did you make it concrete?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6002,
@@ -2016,7 +2033,24 @@
             "customer success is our success"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you identified your internal or external customer and set clear expectations at a milestone like a PDR or CDR. How did that shape your work?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time a major change occurred mid-project. How did you communicate with the customer and adjust the plan?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6003,
@@ -2026,7 +2060,24 @@
             "break down silos"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you proactively shared information across teams, locations, or divisions. How did you decide who needed to know?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you noticed an us-and-them dynamic forming. What did you do to break it down?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to connect groups that were not communicating. How did you get them working together?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6004,
@@ -2036,7 +2087,24 @@
             "ownership"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you took responsibility for getting a result, even though it was outside your immediate area. What did you do?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you chose long-term value over a short-term win. What was the tradeoff?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time someone on your team was only making sure the problem was not in their part of the work. How did you shift them toward owning the whole outcome?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6005,
@@ -2046,7 +2114,24 @@
             "no surprises"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to commit to a date when you did not have full information. How did you give a date, or a date for the date?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time a plan changed and you had to present the customer with options. How did you manage expectations?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time someone on your team was hiding a slip or a risk. How did you uncover it and get the team back to no surprises?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6006,
@@ -2056,7 +2141,24 @@
             "invent and simplify"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you adopted an idea from outside your team or company, even though it was not invented here. How did you convince others?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you stepped back and asked whether your current approach was the best way to solve the problem. What did you change?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to rein in idea-chasing so your team could still hit its deliverables. How did you strike that balance?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6007,
@@ -2066,7 +2168,24 @@
             "bias for action"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you fell into analysis paralysis. What pulled you out?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time your team was moving without thinking and producing useless work. How did you get them to add just enough planning?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6008,
@@ -2076,7 +2195,24 @@
             "earn trust"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you committed to something and then could not deliver. How did you handle it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6009,
@@ -2086,7 +2222,24 @@
             "better than yesterday"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a small improvement you made even though a bigger fix was supposedly just around the corner. Why did you act anyway?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you improved a product, process, or workspace without jeopardizing a key deliverable. How did you fit it in?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you celebrated a colleague's small win. Why did it matter?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time your team was spending so much time improving that deadlines were slipping. How did you restore the balance?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6010,
@@ -2096,7 +2249,24 @@
             "hire and develop the best"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you gave feedback to someone who was doing fine but could still grow. How did you approach it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about an error you turned into a learning moment without embarrassing or overloading the person involved. What happened?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+              "manager": true
+            },
+            {
+              "text": "Tell me about a time you balanced immediate project needs with longer-term staff development. How did you make the tradeoff?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6011,
@@ -2107,7 +2277,24 @@
             "have backbone disagree and commit"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6012,
@@ -2117,7 +2304,24 @@
             "respect time"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you noticed someone on your team consistently wasting others' time in meetings or with unclear requests. How did you address it?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6013,
@@ -2128,7 +2332,24 @@
             "scrappy not crappy"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you delivered work that was fit for purpose and nothing more. How did you decide where to stop?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you used a quick hand calculation instead of a complex analysis because that was sufficient. How did you know it was enough?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you caught yourself over-polishing something that did not need to be perfect. What snapped you out of it?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time someone on your team was cutting corners and the work was not meeting the customer's real needs. How did you course-correct?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6014,
@@ -2139,7 +2360,24 @@
             "rocket engineering not rocket science"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you resisted the urge to do a deep dive into every detail and instead focused only on what mattered for the product. What did you skip?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you kept the customer and the product in mind when others wanted to chase a technically interesting problem. How did you steer the conversation?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+              "manager": true
+            }
+          ]
         },
         {
           "id": 6015,
@@ -2150,7 +2388,24 @@
             "race on the racetrack walk on ice"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [
+            {
+              "text": "Tell me about a time you assessed whether an issue was safety-critical, mission-critical, or just a performance loss you could accept. How did you make the call?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you applied more rigor than a situation needed and slowed things down unnecessarily. What did you learn?",
+              "manager": false
+            },
+            {
+              "text": "Tell me about a time you had to help your team calibrate the right level of rigor for a new environment. How did you make it click?",
+              "manager": true
+            }
+          ]
         }
       ]
     }
