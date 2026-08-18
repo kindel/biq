@@ -50,9 +50,8 @@ for (const p of principles) {
   }
 }
 
-// Junk and stop words match nothing (except "the" which now matches "the mission"
-// in arm/passion-for-the-mission, a legitimate upstream alias).
-for (const q of ["zzzz", "banana", "xyzzy plugh", "and"]) {
+// Junk and stop words match nothing.
+for (const q of ["zzzz", "banana", "xyzzy plugh", "the", "and"]) {
   const h = hits(q);
   if (h.length) fail.push(`${JSON.stringify(q)} should match nothing, matched ${h.length}: ${h.join(", ")}`);
 }
