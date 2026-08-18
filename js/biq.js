@@ -15,7 +15,7 @@
     window.gtag("event", name, clean);
   }
 
-  function examplesHref(principle, question, level) {
+  function examplesHref(principle, question, level, qid) {
     // Resolve against the current document, not the origin root, so a relative
     // examplesPage still works when the site is served from a subdirectory.
     var u = new URL(examplesPage, document.baseURI || window.location.href);
@@ -23,6 +23,7 @@
     if (question) u.searchParams.set("q", question);
     u.searchParams.set("l", level);
     if (currentCompany && currentCompany.id) u.searchParams.set("c", currentCompany.id);
+    if (qid) u.searchParams.set("qid", qid);
     if (u.origin !== window.location.origin) return u.href;
     return u.pathname + u.search;
   }
@@ -203,7 +204,8 @@
         var u = new URL(links[i].href, document.baseURI || window.location.href);
         var q = u.searchParams.get("q") || "";
         var pr = u.searchParams.get("p") || "";
-        links[i].href = examplesHref(pr, q, level);
+        var qid = u.searchParams.get("qid") || "";
+        links[i].href = examplesHref(pr, q, level, qid);
       } catch (e) {}
     }
   }
@@ -419,7 +421,7 @@
           var ex = document.createElement("a");
           ex.className = "bhiq-examples-btn";
           ex.textContent = "Examples";
-          ex.href = examplesHref(p.name, q.text, level);
+          ex.href = examplesHref(p.name, q.text, level, q.id);
           row.appendChild(ex);
         }
         li.appendChild(row);
