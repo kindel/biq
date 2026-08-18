@@ -1,6 +1,36 @@
-principles 36de6384c063367b10749082e9d901b9a79fd9c9
+principles ae17f44aa8c522a781dcadc98a763c73d8db1fd3
 
-new companies (examples: false, empty questions):
-  dawn
-
-Write the bank, run Generate example packs, then flip examples to true by hand.
+alias updates from upstream terms:
+  amazon/customer-obsession: +['customer advocacy']
+  amazon/ownership: +['acts like an owner', 'takes responsibility']
+  amazon/are-right-a-lot: +['makes wise decisions']
+  amazon/learn-and-be-curious: +['always learning', 'growth mindset', 'intellectual curiosity']
+  amazon/insist-on-the-highest-standards: +['strive for excellence']
+  amazon/bias-for-action: +['move fast']
+  amazon/frugality: +['do more with less']
+  amazon/deliver-results: +['get it done']
+  arm/passion-for-the-mission: +['passion for the mission', 'the mission']
+  arm/deliver-as-one-arm: +['deliver as one arm', 'collaboration is not always consensus']
+  arm/build-extraordinary-teams: +['greater than the sum of their parts']
+  arm/challenge-skillfully: +['challenge skillfully']
+  arm/root-out-inefficiencies: +['root out inefficiencies']
+  arm/relentlessly-push-boundaries: +['10x', 'balance delivery with perfection']
+  arm/move-with-urgency-and-find-a-way: +['comfortable with uncertainty']
+  arm/own-it: +['accountable for the outcome', 'bring solutions', 'do not wait for instructions']
+  arm/be-decisive-in-ambiguity-and-change: +['decisive in ambiguity', 'ambiguity and change', 'concrete execution plans']
+  arm/optimize-for-endurance-and-resilience: +['sustain momentum', 'energy levels']
+  dawn/think-big-start-small: +['start small', 'think big', 'zoom out']
+  dawn/customer-success-is-our-success: +['customer success', 'customer obsession', 'work backwards from the customer', 'internal customer']
+  dawn/break-down-silos: +['silos', 'us and them', 'work across teams', 'default to open']
+  dawn/ownership: +['own it', 'acts like an owner', 'think long term']
+  dawn/no-surprises: +['dates for dates', 'deliver when you say', 'manage expectations']
+  dawn/invent-and-simplify: +['love every idea for at least five minutes', 'not invented here', 'innovate', 'simplify']
+  dawn/bias-for-action: +['bfa', 'speed matters', 'move fast', 'calculated risk']
+  dawn/earn-trust: +['do what we say', 'speak candidly', 'listen attentively']
+  dawn/better-than-yesterday: +['one percent better', 'continuous improvement', 'highest standards']
+  dawn/hire-and-develop-the-best: +['raise the bar', 'career choice', 'develop leaders', 'coach others']
+  dawn/have-backbone-disagree-and-commit: +['have backbone', 'disagree and commit', 'challenge decisions', 'social cohesion']
+  dawn/respect-time: +['most constrained resource', 'spend money to save time', 'punctual']
+  dawn/scrappy-not-crappy: +['scrappy', 'fit for purpose', 'frugality', 'lean']
+  dawn/rocket-engineering-not-rocket-science: +['rocket engineering', 'product company', 'keep the customer in mind']
+  dawn/race-on-the-racetrack-walk-on-ice: +['walk on ice', 'right level of rigor', 'agile and adaptable']

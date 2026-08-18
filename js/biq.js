@@ -282,6 +282,10 @@
 
   function matches(principle, query) {
     if (!query) return false;
+    // A query that is only stop words matches nothing. This prevents "the"
+    // from matching aliases like "the mission" via substring.
+    var queryWords = query.split(" ").filter(function (t) { return t.length > 0; });
+    if (queryWords.length && queryWords.every(function (t) { return STOP[t]; })) return false;
     var names = [principle.name].concat(principle.aliases || []).map(norm);
     if (names.indexOf(query) !== -1) return true;
     for (var i = 0; i < names.length; i++) {
