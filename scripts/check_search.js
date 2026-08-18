@@ -36,7 +36,7 @@ const bank = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "questions.json"
 const principles = bank.companies.flatMap((c) =>
   c.principles.map((p) => Object.assign({}, p, { company: c.id })));
 const hits = (q) => principles.filter((p) => m.matches(p, m.norm(q)))
-                              .map((p) => p.company + "/" + p.id);
+                              .map((p) => p.company + "/" + p.slug);
 
 const fail = [];
 
@@ -46,7 +46,7 @@ let checked = 0;
 for (const p of principles) {
   for (const s of [p.name].concat(p.aliases || [])) {
     checked++;
-    if (!m.matches(p, m.norm(s))) fail.push(`${p.company}/${p.id} does not match its own ${JSON.stringify(s)}`);
+    if (!m.matches(p, m.norm(s))) fail.push(`${p.company}/${p.slug} does not match its own ${JSON.stringify(s)}`);
   }
 }
 

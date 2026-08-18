@@ -66,8 +66,14 @@ def norm(s):
     return " ".join("".join(ch.lower() if ch.isalnum() else " " for ch in (s or "")).split())
 
 
-def slug_for(p, q):
-    key = norm(p) + "|" + norm(q)
+def slug_for(principle_id, q):
+    """Compute the pack filename from numeric principle id and question text.
+
+    The key is str(id) + "|" + norm(question), hashed with FNV-1a. This makes
+    each pack unique by construction, with no company component needed, and
+    survives principle renames.
+    """
+    key = str(principle_id) + "|" + norm(q)
     h = 2166136261
     for c in key.encode("ascii"):
         h ^= c
@@ -75,8 +81,8 @@ def slug_for(p, q):
     return f"{h:08x}"
 
 
-def key_for(principle, question):
-    return norm(principle) + "|" + norm(question)
+def key_for(principle_id, question):
+    return str(principle_id) + "|" + norm(question)
 
 
 def is_level_sheet(d):
@@ -222,9 +228,16 @@ def main():
         principles = bank.get("principles") or []
     jobs = []
     for p in principles:
+        pid = p.get("id")
+        if not isinstance(pid, int):
+            raise SystemExit(
+                f"principle {p.get('name')!r} has non-numeric id {pid!r}. "
+                "Run scripts/migrate_to_v3.py first."
+            )
         for q in p.get("questions") or []:
             jobs.append(
                 {
+                    "principle_id": pid,
                     "principle": p.get("name") or "",
                     "question": q.get("text") or "",
                     "kind": p.get("kind") or "lp",
@@ -234,7 +247,7 @@ def main():
     pending = []
     have = 0
     for j in jobs:
-        slug = slug_for(j["principle"], j["question"])
+        slug = slug_for(j["principle_id"], j["question"])
         if existing_valid(slug):
             have += 1
         else:
@@ -269,10 +282,11 @@ def main():
         futs = {ex.submit(call, j, sys_prompt, api_key): j for j in pending}
         for fut in as_completed(futs):
             j = futs[fut]
-            slug = slug_for(j["principle"], j["question"])
+            slug = slug_for(j["principle_id"], j["question"])
             try:
                 pack = fut.result()
                 pack["principle"] = j["principle"]
+                pack["principle_id"] = j["principle_id"]
                 pack["kind"] = j["kind"]
                 json.dump(pack, open(os.path.join(OUT_DIR, slug + ".json"), "w"), indent=2)
                 ok += 1
@@ -280,6 +294,7 @@ def main():
                 fail.append(
                     {
                         "principle": j["principle"],
+                        "principle_id": j["principle_id"],
                         "question": j["question"],
                         "slug": slug,
                         "error": str(e),
