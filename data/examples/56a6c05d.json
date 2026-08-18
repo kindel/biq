@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time someone on your team was cutting corners and the work was not meeting the customer's real needs. How did you course-correct?",
+  "principle": "Scrappy, not crappy",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project a teammate skipped writing unit tests for a new feature to hit the deadline. I noticed the feature didn't handle an edge case that would affect users uploading files. I pulled them aside after standup and asked what the customer pain point was."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "They said they were told to ship fast. I offered to pair on the tests that afternoon and we caught two bugs. The feature went out two days late but with no customer issues in the first month."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone on your team was cutting corners...",
+        "Role: new grad on small feature team",
+        "Situation: teammate skipped tests to meet deadline",
+        "Action: pulled teammate aside, offered to pair, focused on customer edge case",
+        "Outcome: shipped 2 days late, zero customer issues reported",
+        "Quote: \"I offered to pair on the tests that afternoon\"",
+        "Follow-up: Asked how they knew it was a real customer need; they said they checked the original ticket and talked to the PM"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The candidate owned spotting a quality gap on their own small feature and used direct conversation plus pairing to fix it without escalation. Quote shows they tied the fix to a specific customer edge case rather than abstract \"best practices.\" This demonstrates early ownership and coachability at the individual-contributor level. The two-day delay was accepted because customer impact stayed at zero. Biggest strength is turning a shortcut into a quick learning moment instead of ignoring it or escalating immediately.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A teammate was rushing a feature and left out validation logic. I just fixed it myself over the weekend so we wouldn't miss the date."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to them or the team about why it was cut?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I didn't want to cause drama. I just made sure the work was done right."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone on your team was cutting corners...",
+        "Role: junior IC",
+        "Situation: teammate omitted validation",
+        "Action: fixed it alone over the weekend",
+        "Outcome: work met date but no discussion of root cause",
+        "Quote: \"I just fixed it myself so we wouldn't miss the date\"",
+        "Follow-up: Candidate avoided conversation to prevent drama"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate chose silent heroics over addressing the corner-cutting directly, missing an opportunity to influence a teammate at the individual level. Quote reveals avoidance of conversation rather than any attempt to understand trade-offs or customer needs. No evidence of learning or coachability because the root cause was never discussed. The fix was local and invisible, so the team did not improve. Biggest gap is lack of ownership over team behavior even when scope is small."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our mobile team was shipping a new checkout flow without real user testing to meet a quarterly goal. I noticed the drop-off rates in the prototype didn't match what support tickets were saying about payment friction."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the PM and two engineers into a 30-minute session to replay three recent support calls. We added a simple A/B test for the final screen and delayed launch by one sprint. Conversion improved 8% and support tickets on checkout dropped 40%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone on your team was cutting corners...",
+        "Role: senior on cross-team feature",
+        "Situation: mobile checkout rushed without user validation",
+        "Action: surfaced support data, ran quick replay session, drove A/B test",
+        "Outcome: 8% conversion lift, 40% fewer tickets",
+        "Quote: \"I pulled the PM and two engineers into a 30-minute session to replay three recent support calls\"",
+        "Follow-up: Asked how they influenced without authority; they used data from support instead of mandate"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The senior candidate used existing support data to surface a customer-need mismatch and influenced two other teams with a low-cost replay session rather than adding process. Quote shows they kept the intervention small and focused on real tickets instead of abstract quality gates. One-sprint delay produced measurable conversion and ticket reduction. This shows influence without authority plus clear customer linkage at the senior scope. Biggest strength is converting a corner-cut into a data-driven experiment that benefited multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team was skipping localization for a new market launch. I escalated to the director that we needed more time and resources."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the team change how they worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. The launch happened and we had to fix translations afterward."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone on your team was cutting corners...",
+        "Role: senior",
+        "Situation: localization skipped for market launch",
+        "Action: escalated to director for more time",
+        "Outcome: launch proceeded, fixes done post-launch",
+        "Quote: \"I escalated to the director that we needed more time and resources\"",
+        "Follow-up: No evidence of direct influence or customer validation"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The candidate defaulted to escalation instead of attempting to influence the team directly with customer evidence. Quote shows reliance on hierarchy rather than cross-team leverage or quick experiments. Post-launch fixes indicate the corner-cutting was never course-corrected during development. No metrics were gathered to show customer impact before the decision. Biggest gap is treating the issue as a resource problem instead of a judgment and influence opportunity at the senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two product lines were racing to launch similar features with minimal customer validation to hit annual targets. I saw that both were solving the same surface problem while ignoring deeper workflow pain reported in enterprise renewals."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you course-correct at org scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week joint review with the two GMs using renewal data and three customer calls. We merged the efforts into one platform initiative, accepted a Q3 slip on one line, and set a shared customer-success metric. Renewals in that segment rose 12 points the next year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone on your team was cutting corners...",
+        "Role: exec overseeing two product lines",
+        "Situation: parallel rushed launches ignoring enterprise feedback",
+        "Action: forced joint review with renewal data and calls, merged roadmaps",
+        "Outcome: one initiative, Q3 slip accepted, 12-point renewal lift",
+        "Quote: \"I ran a two-week joint review with the two GMs using renewal data and three customer calls\"",
+        "Follow-up: Asked about the trade-off decision; they owned the slip and tied it to renewal metric"
+      ],
+      "raiseFeedback": "Raises the bar on Scrappy, not crappy. The exec used renewal data and direct customer calls to expose that two teams were cutting corners on the same underlying need, then made a strategic merge decision with clear long-term metrics. Quote demonstrates they absorbed short-term delivery pain for org-level customer impact. The 12-point renewal improvement shows the course-correction scaled beyond a single team. This reflects strategic judgment under ambiguity and willingness to trade quarterly optics for durable results. Biggest strength is converting duplicated corner-cutting into a single leveraged initiative with measurable business outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering teams were shipping without full compliance reviews to hit revenue targets. I sent a note reminding everyone of the review process and asked for better planning next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in the launches?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple of teams still shipped and we handled the issues in the next release cycle."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone on your team was cutting corners...",
+        "Role: exec",
+        "Situation: compliance skipped for revenue",
+        "Action: sent reminder note about process",
+        "Outcome: some teams still shipped, fixes deferred",
+        "Quote: \"I sent a note reminding everyone of the review process\"",
+        "Follow-up: No evidence of direct engagement or metric trade-offs"
+      ],
+      "lowerFeedback": "Lowers the bar on Scrappy, not crappy. The exec relied on a broadcast reminder instead of engaging GMs with customer or renewal data to drive a real decision. Quote reveals passive communication that failed to prevent continued corner-cutting. Deferred fixes show the org continued to prioritize short-term revenue over customer needs. No strategic trade-off or leverage was created. Biggest gap is absence of judgment or cross-org influence when ambiguity and business pressure were high."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of course-correction",
+      "junior": "Raises: paired to fix and learn; Lowers: fixed alone, no discussion",
+      "senior": "Raises: used data to drive A/B test across teams; Lowers: escalated without influencing",
+      "exec": "Raises: merged initiatives with shared metric; Lowers: sent note, no decision made"
+    },
+    {
+      "signal": "Customer-need linkage",
+      "junior": "Raises: tied fix to specific edge case from ticket; Lowers: no validation of need",
+      "senior": "Raises: replayed support calls for real friction; Lowers: no customer evidence used",
+      "exec": "Raises: used renewal data + calls for deeper pain; Lowers: process reminder only"
+    },
+    {
+      "signal": "Trade-off comfort",
+      "junior": "Raises: accepted 2-day delay for zero issues; Lowers: avoided any delay or talk",
+      "senior": "Raises: took one-sprint slip for 8% lift; Lowers: launch happened unchanged",
+      "exec": "Raises: accepted Q3 slip for 12-pt renewal gain; Lowers: deferred fixes post-launch"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Raises: direct 1:1 + pairing; Lowers: silent heroics",
+      "senior": "Raises: 30-min data session with PMs/engineers; Lowers: director escalation",
+      "exec": "Raises: two-week joint GM review; Lowers: broadcast note"
+    }
+  ],
+  "principle_id": 6013,
+  "kind": "lp"
+}

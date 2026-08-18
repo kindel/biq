@@ -1,0 +1,232 @@
+{
+  "question": "Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+  "principle": "Respect time",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I needed to parse large log files daily. Instead of writing a script from scratch I bought a $50 license for a parsing tool that cut my analysis time from 3 hours to 20 minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you justify the $50 spend?"
+        },
+        {
+          "role": "candidate",
+          "text": "I calculated it would pay for itself after two uses and showed my manager the time savings would let me finish the feature two days early."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "Manager approved it the same day and I delivered early. I now keep a small budget line for similar tools."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+        "Role: new grad on first project, individual logs analysis",
+        "Action: bought $50 parsing tool after quick calc",
+        "Outcome: 3h to 20min, delivered feature 2 days early",
+        "Quote: \"It would pay for itself after two uses\"",
+        "Follow-up: Asked about justification; candidate showed manager the math and got approval"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for a junior. The candidate identified a repetitive individual task and spent a small amount after a simple payback calculation. Quote: \"It would pay for itself after two uses.\" The manager approved quickly because the time savings translated directly to earlier delivery. This shows ownership of personal productivity and basic tradeoff reasoning at the expected scope. Biggest strength is the clear before-and-after metric tied to delivery.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once paid for a faster laptop because the old one was slow."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you justify the cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "It just felt worth it to me."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you measure any time saved or check with your manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just wanted the new one."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+        "Role: individual contributor on early project",
+        "Action: bought faster laptop without data",
+        "Outcome: no measured impact reported",
+        "Quote: \"It just felt worth it to me\"",
+        "Follow-up: Pressed on justification; candidate had no metrics or manager discussion"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for a junior. The candidate spent money on hardware but provided no calculation or discussion with their manager. Quote: \"It just felt worth it to me.\" No evidence of time saved or link to work outcomes. At this level we expect at least basic ownership of the decision and willingness to quantify the benefit. Biggest gap is absence of any tradeoff reasoning or coachability signal."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was spending 10 hours a week on manual QA regression. I proposed buying an automation platform for $8k annual instead of hiring a contractor."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot with metrics showing 70% time reduction and shared the dashboard with the platform and infra leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We cut regression time to 3 hours, freed two engineers for feature work, and the platform team adopted the same tool."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+        "Role: senior on cross-team QA process",
+        "Action: ran pilot, gathered metrics, influenced platform team",
+        "Outcome: 10h to 3h weekly, two engineers freed",
+        "Quote: \"Shared the dashboard with the platform and infra leads\"",
+        "Follow-up: Asked about cross-team buy-in; candidate used data to drive adoption"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for a senior. The candidate quantified a recurring team cost, ran a measurable pilot, and influenced adjacent teams without authority. Quote: \"Shared the dashboard with the platform and infra leads.\" The result freed engineering hours and created reuse. This demonstrates cross-team impact and clear metric-driven justification at the senior scope. Biggest strength is turning a local time sink into broader leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I approved a tool subscription to save the team some testing time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the time impact and how did you decide?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team said it was helpful but I did not track hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams benefit or was there any review?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it stayed within my team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+        "Role: senior owning a tool decision",
+        "Action: approved subscription based on team request",
+        "Outcome: no tracked hours or cross-team effect",
+        "Quote: \"The team said it was helpful but I did not track hours\"",
+        "Follow-up: Pressed on measurement and influence; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for a senior. The candidate spent budget on a tool but collected no metrics and created no influence beyond the immediate team. Quote: \"I did not track hours.\" At this level we look for measurable impact and some evidence of raising the bar for others. Biggest gap is missing data and lack of broader leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were burning 40 engineering hours per week on internal compliance reporting. I approved a $120k annual vendor contract after modeling the org-wide time savings."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you weigh this against other priorities?"
+        },
+        {
+          "role": "candidate",
+          "text": "I compared the cost to the fully loaded cost of three engineers and showed the board it would free capacity for two new product bets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened over the next year?"
+        },
+        {
+          "role": "candidate",
+          "text": "Reporting time dropped 85 percent, we avoided two headcount requests, and the saved capacity contributed to launching one new vertical."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+        "Role: exec facing org-level compliance burden",
+        "Action: modeled vendor vs headcount, presented to board",
+        "Outcome: 85% time reduction, avoided two hires, enabled new vertical",
+        "Quote: \"Compared the cost to the fully loaded cost of three engineers\"",
+        "Follow-up: Asked about tradeoffs; candidate tied spend to product bets and headcount"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for an exec. The candidate treated time as a scarce org resource, ran a full economic model, and secured board approval by linking spend to strategic capacity. Quote: \"Compared the cost to the fully loaded cost of three engineers.\" The outcome avoided headcount and enabled a new vertical. This shows strategic judgment and long-term leverage at the executive scope. Biggest strength is converting a recurring time tax into measurable business optionality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We bought an enterprise reporting tool to reduce some manual work."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the scale of time saved and the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "It helped a few teams but I did not model it against headcount or product roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the spend was the right use of capital?"
+        },
+        {
+          "role": "candidate",
+          "text": "Operations asked for it and the price seemed reasonable."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to spend money in order to save time. How did you justify the tradeoff?",
+        "Role: exec approving enterprise tool",
+        "Action: approved based on ops request",
+        "Outcome: helped a few teams, no org modeling",
+        "Quote: \"Operations asked for it and the price seemed reasonable\"",
+        "Follow-up: Pressed on scale and capital allocation; candidate had no model or roadmap link"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for an exec. The candidate approved a sizable spend without linking it to headcount tradeoffs or product outcomes. Quote: \"Operations asked for it and the price seemed reasonable.\" At this level we expect clear strategic framing and quantified leverage. Biggest gap is absence of any org-level tradeoff analysis."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Quantifies time saved",
+      "junior": "Shows personal payback calc",
+      "senior": "Runs team pilot with metrics",
+      "exec": "Models org-wide vs headcount"
+    },
+    {
+      "signal": "Influences others",
+      "junior": "Gets manager approval",
+      "senior": "Shares data with adjacent teams",
+      "exec": "Secures board buy-in"
+    },
+    {
+      "signal": "Links to business outcome",
+      "junior": "Delivers feature early",
+      "senior": "Frees engineers for feature work",
+      "exec": "Enables new vertical launch"
+    },
+    {
+      "signal": "Avoids heroics",
+      "junior": "Uses small tool budget",
+      "senior": "Chooses vendor over contractor",
+      "exec": "Replaces recurring cost with capacity"
+    },
+    {
+      "signal": "Shows ongoing discipline",
+      "junior": "Keeps personal tool budget",
+      "senior": "Drives reuse across teams",
+      "exec": "Avoids future headcount requests"
+    }
+  ],
+  "principle_id": 6012,
+  "kind": "lp"
+}

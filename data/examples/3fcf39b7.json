@@ -1,0 +1,238 @@
+{
+  "question": "Tell me about a time you had to connect groups that were not communicating. How did you get them working together?",
+  "principle": "Break down silos",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to connect groups that were not communicating."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project, the backend and frontend teams weren't sharing API specs, so my changes kept breaking. I set up a shared doc and weekly 15-min sync after asking my mentor for advice."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We caught issues early and my feature shipped two weeks ahead of schedule. The teams kept the sync going."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback on the extra meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "One engineer said it was overhead, so I kept it to 15 minutes and shared notes; after two weeks they saw value."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to connect groups that were not communicating.",
+        "Role: new grad on first project; backend/frontend not sharing API specs",
+        "Action: created shared doc + 15-min weekly sync after mentor input",
+        "Outcome: feature shipped 2 weeks early; sync continued",
+        "Quote: \"I kept it to 15 minutes and shared notes; after two weeks they saw value\"",
+        "Follow-up: How did you handle pushback? -> Kept scope small and showed value quickly"
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos. The candidate identified a local communication gap between backend and frontend on their first project and created a lightweight shared doc plus 15-minute sync after checking with their mentor. Quote: \"I kept it to 15 minutes and shared notes; after two weeks they saw value.\" This shows ownership of their immediate work and coachability rather than heroics. The outcome was concrete: the feature shipped two weeks early and the sync stuck. Biggest strength is quick learning from feedback and keeping the fix minimal so it was adopted.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to connect groups that were not communicating."
+        },
+        {
+          "role": "candidate",
+          "text": "The two teams on my project weren't talking much, so I just focused on my tasks and waited for the PM to fix it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in standup once but nothing changed so I moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to connect groups that were not communicating.",
+        "Role: new grad; noticed backend/frontend not aligned",
+        "Action: mentioned issue in standup once then waited for PM",
+        "Outcome: no change; candidate moved on",
+        "Quote: \"I mentioned it in standup once but nothing changed so I moved on\"",
+        "Follow-up: Did you try anything yourself? -> Limited to one mention, no follow-through"
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos. The candidate noticed the backend and frontend teams were not aligned on their project but only mentioned it once in standup and then waited for the PM. Quote: \"I mentioned it in standup once but nothing changed so I moved on.\" This shows passive behavior and lack of ownership even at the individual-contributor level. No attempt was made to propose a small fix or seek guidance. Biggest gap is absence of initiative or learning from the situation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to connect groups that were not communicating."
+        },
+        {
+          "role": "candidate",
+          "text": "Marketing and product were using different customer data sources, causing conflicting roadmaps. I ran a joint workshop, aligned on a single source of truth, and tracked adoption weekly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics improved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Roadmap conflicts dropped 60 percent and launch delays from misaligned priorities fell from four to one per quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started with one-on-ones to surface pain, then invited both leads to co-own the workshop agenda."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to connect groups that were not communicating.",
+        "Role: senior IC; marketing and product using different customer data",
+        "Action: ran joint workshop, aligned on single source, tracked weekly",
+        "Outcome: roadmap conflicts down 60%, launch delays from 4 to 1 per quarter",
+        "Quote: \"I started with one-on-ones to surface pain, then invited both leads to co-own the workshop agenda\"",
+        "Follow-up: What metrics improved? -> 60% drop in conflicts; Follow-up: How did you influence without authority? -> One-on-ones then shared ownership"
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos. The candidate bridged marketing and product teams that relied on separate customer data sets, running a workshop and establishing a shared source of truth with weekly tracking. Quote: \"I started with one-on-ones to surface pain, then invited both leads to co-own the workshop agenda.\" This produced measurable cross-team impact: roadmap conflicts fell 60 percent and quarterly launch delays dropped from four to one. Influence without authority is shown through incremental steps rather than mandates. Biggest strength is pairing a concrete process fix with sustained metrics that outlasted the initial effort.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to connect groups that were not communicating."
+        },
+        {
+          "role": "candidate",
+          "text": "Marketing and product disagreed on priorities so I escalated to my director and asked them to set up a meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "They aligned on paper but data sources stayed separate and conflicts continued."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to connect groups that were not communicating.",
+        "Role: senior IC; marketing/product priority misalignment",
+        "Action: escalated to director and requested a meeting",
+        "Outcome: one-time alignment on paper; data sources unchanged, conflicts persisted",
+        "Quote: \"They aligned on paper but data sources stayed separate and conflicts continued\"",
+        "Follow-up: What happened after the meeting? -> No sustained mechanism created"
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos. The candidate escalated a marketing-product data conflict to their director and requested a single meeting, after which priorities were discussed but separate data sources remained. Quote: \"They aligned on paper but data sources stayed separate and conflicts continued.\" No ongoing structure or metrics were introduced to maintain alignment. Influence stayed within the candidate's own chain rather than building cross-team habits. Biggest gap is reliance on hierarchy instead of creating durable cross-team processes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to connect groups that were not communicating."
+        },
+        {
+          "role": "candidate",
+          "text": "Two business units were duplicating platform investments because their roadmaps never intersected. I created a shared platform steering group with rotating leads and tied 20 percent of each unit's OKRs to joint outcomes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Duplicate spend fell 35 percent over 18 months and one unit's time-to-market improved by nine months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle resistance from unit heads?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as protecting their autonomy on features while reducing shared infra cost, then let them co-define the OKRs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to connect groups that were not communicating.",
+        "Role: exec; two business units duplicating platform spend",
+        "Action: launched steering group with rotating leads + 20% joint OKRs",
+        "Outcome: duplicate spend down 35% in 18 months; one unit time-to-market improved 9 months",
+        "Quote: \"I framed it as protecting their autonomy on features while reducing shared infra cost, then let them co-define the OKRs\"",
+        "Follow-up: What was the long-term impact? -> 35% spend reduction; Follow-up: How did you handle resistance? -> Autonomy framing + co-owned OKRs"
+      ],
+      "raiseFeedback": "Raises the bar on Break down silos. The candidate addressed two business units duplicating platform investments by forming a steering group with rotating leads and linking 20 percent of OKRs to joint results. Quote: \"I framed it as protecting their autonomy on features while reducing shared infra cost, then let them co-define the OKRs.\" This produced org-level leverage: 35 percent reduction in duplicate spend over 18 months and a nine-month improvement in one unit's time-to-market. Strategic judgment is visible in preserving unit autonomy while creating shared accountability. Biggest strength is designing a durable governance mechanism that scaled beyond any single project.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to connect groups that were not communicating."
+        },
+        {
+          "role": "candidate",
+          "text": "Two units were duplicating work so I sent an email asking them to coordinate and followed up in the quarterly business review."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did coordination improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "They acknowledged the issue but each unit continued its own roadmap with no shared metrics."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to connect groups that were not communicating.",
+        "Role: exec; two units duplicating platform investments",
+        "Action: sent email request and raised in quarterly review",
+        "Outcome: verbal acknowledgment only; separate roadmaps continued, no shared metrics",
+        "Quote: \"They acknowledged the issue but each unit continued its own roadmap with no shared metrics\"",
+        "Follow-up: Did coordination improve? -> No structural change or accountability"
+      ],
+      "lowerFeedback": "Lowers the bar on Break down silos. The candidate observed two business units duplicating platform work and responded with an email request plus a mention in the quarterly review. Quote: \"They acknowledged the issue but each unit continued its own roadmap with no shared metrics.\" No governance, incentives, or tracking mechanisms were introduced. The approach stayed at the level of communication rather than structural change. Biggest gap is absence of strategic leverage or long-term accountability design at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initiative identifying the silo",
+      "junior": "Raises: proactively created sync after mentor input",
+      "senior": "Raises: ran workshop after one-on-ones",
+      "exec": "Raises: built steering group with OKRs"
+    },
+    {
+      "signal": "Sustained mechanism vs one-off",
+      "junior": "Raises: sync continued after project",
+      "senior": "Raises: weekly tracking kept conflicts low",
+      "exec": "Raises: 18-month spend reduction via governance"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Raises: kept meeting short to gain buy-in",
+      "senior": "Raises: co-owned agenda with leads",
+      "exec": "Raises: preserved autonomy while tying OKRs"
+    },
+    {
+      "signal": "Use of metrics or outcomes",
+      "junior": "Raises: shipped 2 weeks early",
+      "senior": "Raises: 60% conflict drop, delays from 4 to 1",
+      "exec": "Raises: 35% spend cut, 9-month time-to-market gain"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Raises: showed value quickly",
+      "senior": "Raises: started with pain-point conversations",
+      "exec": "Raises: framed around autonomy and co-definition"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Raises: local project level",
+      "senior": "Raises: cross-team roadmaps",
+      "exec": "Raises: org-level duplicate spend"
+    }
+  ],
+  "principle_id": 6003,
+  "kind": "lp"
+}

@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+  "principle": "Rocket engineering, not rocket science",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I had to integrate a logging library into our service. I didn't fully understand the async flush behavior so I just used the default settings and moved on. I knew the team was planning a logging overhaul in two months so I documented the assumption in the ticket and asked my mentor to review the config. It worked for the deadline and the later change replaced it cleanly."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the default was good enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked the error rate in staging for 30 minutes and saw no issues. My mentor said that was sufficient for a short-term spike."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+        "Role: new grad on first project, logging integration",
+        "Situation: async flush details unclear, knew logging overhaul coming in 2 months",
+        "Actions: used defaults, documented assumption, asked mentor to review, checked staging errors 30 min",
+        "Outcome: met deadline, later change replaced it cleanly",
+        "Quote: 'I checked the error rate in staging for 30 minutes and saw no issues'",
+        "Follow-up: How did you decide the default was good enough? -> staging check + mentor sign-off"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering for a junior. The candidate described using defaults on a logging integration while documenting the assumption and confirming with a mentor before checking staging metrics for 30 minutes. This shows appropriate scope for 0-2 years experience by focusing on local ownership and coachability rather than deep research. The decision criteria were tied directly to the known future refactor, avoiding over-investment. The story stays grounded without claiming broad impact. Biggest strength is the explicit handoff to the planned overhaul instead of heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to pick a database for a feature. I didn't understand indexes well so I just copied what was in the existing schema and shipped it. Later we had performance issues but the team fixed it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide the copy was good enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was told to ship fast so I didn't dig deeper."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+        "Role: new grad, database choice for feature",
+        "Situation: unclear on indexes, copied existing schema",
+        "Actions: shipped without deeper check because told to move fast",
+        "Outcome: performance issues later, team fixed it",
+        "Quote: 'I was told to ship fast so I didn't dig deeper'",
+        "Follow-up: What made you decide the copy was good enough? -> external instruction only, no personal criteria"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering for a junior. The candidate copied an existing schema for a database choice without understanding indexes and only cited being told to ship fast as the decision rule. No evidence of personal judgment on what was good enough or any documentation of assumptions. The outcome relied on others to fix resulting issues rather than planned future work. This shows weak ownership even at the individual-contributor level. Biggest gap is absence of any criteria or verification step before accepting the shortcut."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team needed a quick auth token refresh for a partner integration. I didn't dive into the full OAuth spec because we had a planned migration to a centralized identity service in Q3. I chose a 15-minute token lifetime based on existing partner SLAs and added a retry wrapper. I aligned with the identity team lead on the approach and measured P99 latency during the two-week window."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide 15 minutes was good enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "It matched the partner's stated tolerance and kept our error budget under 0.1 percent until the migration."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+        "Role: senior, partner auth integration",
+        "Situation: OAuth details not fully explored, centralized identity migration in Q3",
+        "Actions: picked 15-min lifetime from partner SLAs, added retry, aligned with identity lead, tracked P99",
+        "Outcome: stayed within error budget for two weeks until migration",
+        "Quote: 'It matched the partner's stated tolerance and kept our error budget under 0.1 percent'",
+        "Follow-up: How did you decide 15 minutes was good enough? -> SLA match + error budget metric"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering for a senior. The candidate accepted limited OAuth depth for a partner token refresh by selecting a 15-minute lifetime from existing SLAs and confirming alignment with the identity team before tracking P99 latency. The choice was explicitly bounded by the Q3 migration and a 0.1 percent error budget target. This demonstrates cross-team influence and metric-driven scope decisions expected at 3-7 years. The story avoids over-engineering while showing clear leverage through the planned replacement. Biggest strength is the quantified guardrail tied to partner tolerance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed a quick auth fix for a partner. I skipped most of the OAuth details because a bigger identity project was coming. I just set a short timeout and hoped it worked until then."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the timeout was good enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "The bigger project would fix it so I didn't spend time measuring."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+        "Role: senior, partner auth fix",
+        "Situation: limited OAuth exploration due to future identity project",
+        "Actions: set short timeout without measurement",
+        "Outcome: assumed future project would resolve issues",
+        "Quote: 'The bigger project would fix it so I didn't spend time measuring'",
+        "Follow-up: How did you decide the timeout was good enough? -> no criteria, only future project assumption"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering for a senior. The candidate set a short timeout for a partner auth fix while citing only the future identity project as justification and performed no measurement. No alignment with other teams or error-budget framing appears in the story. The approach relies on hope rather than explicit trade-off criteria. This falls short of the cross-team coordination and metric use expected at this level. Biggest gap is the missing verification step that would make the shortcut defensible."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We faced a regulatory reporting requirement with a 6-week deadline. I decided against building a full data lineage system because a platform-wide data mesh was already funded for the next fiscal year. I approved a temporary CSV export process scoped to the three critical fields, with a documented sunset date and weekly compliance check. I reviewed the risk with legal and finance leads and set a 2 percent manual review sample size."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the CSV approach and sample size were good enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "The legal team confirmed the fields met the immediate rule and the 2 percent sample kept audit risk below our accepted threshold until the mesh launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+        "Role: exec, regulatory reporting deadline",
+        "Situation: 6-week deadline, full lineage system deferred to funded data mesh next year",
+        "Actions: approved temporary CSV export on 3 fields, set sunset date, weekly checks, 2 percent manual sample",
+        "Outcome: met rule with legal sign-off and risk below threshold",
+        "Quote: 'The legal team confirmed the fields met the immediate rule and the 2 percent sample kept audit risk below our accepted threshold'",
+        "Follow-up: How did you decide the CSV approach and sample size were good enough? -> legal confirmation + explicit risk threshold"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering for an exec. The candidate accepted a temporary CSV export for a regulatory deadline by limiting scope to three fields and a 2 percent manual sample while securing legal and finance alignment and a documented sunset. The decision used an explicit audit-risk threshold tied to the funded data mesh launch. This reflects org-level trade-off judgment and leverage through existing investments rather than new builds. The story shows strategic scoping under ambiguity. Biggest strength is the quantified risk acceptance linked to a multi-quarter plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a regulatory deadline so I told the team to do the minimum to pass the audit. A bigger data project was coming so we didn't build anything lasting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the minimum was good enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "I trusted the team to figure out the details and focused on the bigger platform work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to accept a lack of deep understanding on a short-term challenge because you knew you would solve it another way later. How did you decide what was good enough?",
+        "Role: exec, regulatory deadline",
+        "Situation: minimum effort for audit due to future data project",
+        "Actions: delegated without defined scope or checks",
+        "Outcome: relied on team to handle details",
+        "Quote: 'I trusted the team to figure out the details and focused on the bigger platform work'",
+        "Follow-up: How did you decide the minimum was good enough? -> no criteria, pure delegation"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering for an exec. The candidate directed a minimum-effort approach for a regulatory deadline while providing no scope boundaries, risk thresholds, or alignment steps and simply delegated details. No evidence of trade-off analysis or connection to the future project beyond assumption. This lacks the strategic judgment and explicit guardrails required at the org level. The approach appears reactive rather than leveraged. Biggest gap is absence of any measurable decision criteria or cross-functional review."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision criteria tied to future work",
+      "junior": "staging check + mentor input",
+      "senior": "SLA match + error budget",
+      "exec": "legal confirmation + audit risk threshold"
+    },
+    {
+      "signal": "Scope of shortcut",
+      "junior": "single config choice",
+      "senior": "token lifetime with cross-team alignment",
+      "exec": "CSV export scoped to 3 fields with sunset"
+    },
+    {
+      "signal": "Verification step",
+      "junior": "30-min staging run",
+      "senior": "P99 tracking for 2 weeks",
+      "exec": "weekly compliance + 2% sample"
+    },
+    {
+      "signal": "Ownership vs delegation",
+      "junior": "asked mentor, documented assumption",
+      "senior": "aligned with identity lead",
+      "exec": "reviewed risk with legal/finance"
+    },
+    {
+      "signal": "Outcome framing",
+      "junior": "met deadline, later change replaced it",
+      "senior": "stayed under error budget until migration",
+      "exec": "met rule with risk below threshold"
+    }
+  ],
+  "principle_id": 6014,
+  "kind": "lp"
+}

@@ -1,0 +1,192 @@
+{
+  "question": "Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+  "principle": "Earn trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed our latency numbers looked off because the query excluded weekend traffic. I waited until after the team sync then pulled my manager aside with the raw logs and a small script showing the gap."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "She asked me to share it in the next retro. The team adjusted the dashboard and I got feedback to speak up in the room sooner."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+        "Role: new grad on first project, noticed latency query skipped weekends",
+        "Action: waited for 1:1 with manager, brought raw logs + small script",
+        "Outcome: dashboard fixed, received feedback to raise in room next time",
+        "Quote: 'I didn't want to derail the meeting so I pulled her aside'",
+        "Follow-up: How did you decide timing? - Said they were still learning when to speak up vs. wait for manager"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate owned a local flaw in their own project's analysis and escalated to their manager with concrete data rather than staying silent. They quote 'I didn't want to derail the meeting so I pulled her aside' shows awareness of team dynamics while still surfacing the issue. The follow-up reveals coachability when they accepted feedback to speak earlier next time. Scope is appropriately individual for junior level. Biggest gap is limited evidence of independent judgment on timing.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw the numbers didn't match what we expected but the senior engineer said it was fine so I didn't push it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever mention it to anyone?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the project shipped and later we found out the metric was wrong but by then it was too late."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+        "Role: junior contributor on team project",
+        "Situation: noticed metric mismatch but deferred to senior engineer",
+        "Action: stayed silent, no data or escalation",
+        "Outcome: shipped with error, discovered post-launch",
+        "Follow-up: Why didn't you raise it? - Said they assumed the senior knew better"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate suspected an issue in the analysis yet chose not to raise it at all, deferring entirely to the senior engineer. The story ends with a shipped error that was found after launch, showing lack of ownership even at the individual level. No attempt to verify with data or seek guidance on how to surface concerns. The follow-up answer reveals they default to assuming others are correct rather than checking their own judgment. This pattern would erode trust on a team that needs juniors to flag issues early."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our partner team's forecast had a 30% error on Q3 volume because they used last year's seasonality without the new product launch. I ran a quick sensitivity check, shared it with their lead in a private doc, and offered to co-present a revised model."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did they respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They updated the plan and the joint roadmap shifted by two weeks. We now run a monthly cross-team review to catch similar assumptions early."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+        "Role: senior on cross-team initiative",
+        "Situation: partner forecast ignored new product launch impact",
+        "Action: built sensitivity model, shared privately with lead, offered to co-present",
+        "Outcome: plan updated, two-week shift, added monthly review cadence",
+        "Quote: 'I wanted them to own the fix so I didn't blindside in the big meeting'",
+        "Follow-up: What was the measurable impact? - Two-week roadmap adjustment and new process"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate identified a flaw in a partner team's analysis that affected joint delivery and escalated with data plus a collaborative fix rather than public criticism. The quote about not blindsiding shows judgment on influence without authority. They drove a lasting process change (monthly review) that raised the bar for both teams. Scope shows cross-team impact expected at senior level. Biggest strength is turning a potential conflict into a repeatable mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I flagged the bad assumption in the shared Slack channel but the other team didn't respond so I moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up with the lead or bring data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once and assumed they would handle it since it was their forecast."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+        "Role: senior supporting partner team",
+        "Situation: noticed seasonality flaw in forecast",
+        "Action: one Slack message, no data or 1:1 follow-up",
+        "Outcome: no change, issue persisted",
+        "Follow-up: Why stop after one message? - Said it was their ownership area"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate surfaced a cross-team flaw only once in a low-visibility channel and took no further action when ignored. No attempt to influence the partner lead directly or provide supporting analysis, which is the minimum expected at senior level. The outcome left the flawed forecast in place. Follow-up shows they defaulted to 'their ownership' instead of using influence without authority. This behavior would erode trust with partner teams that rely on seniors to drive alignment."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The finance model for our new market entry assumed 18-month payback but used pre-pandemic churn rates. I asked the CFO for a private walk-through, showed the sensitivity on churn doubling, and we jointly decided to stage the launch with a smaller initial bet."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "We avoided a $40M over-commit and the board now requires scenario analysis on all new market models. I also started quarterly risk reviews with finance."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+        "Role: exec sponsoring market expansion",
+        "Situation: finance model used outdated churn assumptions at org-level decision",
+        "Action: private 1:1 with CFO, shared sensitivity, co-decided staged launch",
+        "Outcome: avoided $40M risk, board adopted new requirement, quarterly reviews started",
+        "Quote: 'I treated it as a strategic assumption risk, not a numbers error'",
+        "Follow-up: How did you weigh speaking up vs. moving fast? - Balanced speed with downside protection at board level"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate spotted a flawed assumption in a high-ambiguity, org-level financial model and escalated directly to the CFO with clear trade-off framing rather than forcing a public debate. They quote treating it as 'a strategic assumption risk' shows long-term judgment. The result was both immediate risk avoidance and a durable process change adopted by the board. Scope is appropriately executive. Biggest strength is converting a single concern into org-wide leverage on decision quality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The model looked optimistic but the team had already presented to the board so I didn't want to reopen it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you raise it with finance or leadership afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "I noted it in my prep but the launch proceeded and we later had to write down the investment."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you suspected a major flaw in someone else's analysis. How and when did you raise the concern?",
+        "Role: exec on market entry decision",
+        "Situation: optimistic model presented to board",
+        "Action: stayed silent to avoid reopening discussion",
+        "Outcome: launch proceeded, later write-down required",
+        "Follow-up: What trade-off did you consider? - Prioritized momentum over re-examination"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate recognized an optimistic assumption in a high-stakes board-level model yet chose not to surface it, citing momentum concerns. No private escalation or alternative framing was attempted, resulting in a write-down. At executive level this shows poor strategic judgment on when to apply leverage. The follow-up reveals a bias toward speed that ignored downside protection. This pattern would damage trust with finance and the board on future capital decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Timing of escalation",
+      "junior": "Raises when they use 1:1 and accept feedback on earlier raise",
+      "senior": "Raises when they use private channel plus offer to co-own fix",
+      "exec": "Raises when they frame as strategic risk and drive org process change"
+    },
+    {
+      "signal": "Use of data vs. opinion",
+      "junior": "Raises with small script or logs; lowers with no verification",
+      "senior": "Raises with sensitivity model shared directly; lowers with single Slack note",
+      "exec": "Raises with sensitivity tied to capital risk; lowers when they defer to board momentum"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "N/A at this level",
+      "senior": "Raises by offering co-present and creating joint process; lowers by assuming 'their area'",
+      "exec": "Raises by partnering with CFO on staged decision and board-level change; lowers by staying silent"
+    },
+    {
+      "signal": "Long-term leverage",
+      "junior": "Raises by learning to speak earlier; lowers by repeated deference",
+      "senior": "Raises by adding monthly cross-team review; lowers by no follow-up",
+      "exec": "Raises by embedding scenario analysis into board requirement; lowers by allowing write-down"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual project dashboard fix",
+      "senior": "Cross-team roadmap and process",
+      "exec": "Org-level capital decision and governance"
+    },
+    {
+      "signal": "Ownership of concern",
+      "junior": "Owns local flaw and seeks manager guidance",
+      "senior": "Owns cross-team risk and drives alignment",
+      "exec": "Owns strategic assumption risk and protects downside"
+    }
+  ],
+  "principle_id": 6008,
+  "kind": "lp"
+}

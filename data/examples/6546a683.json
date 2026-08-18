@@ -1,0 +1,192 @@
+{
+  "question": "Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+  "principle": "Race on the racetrack, walk on ice",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In our lab prototype for a sensor array, I skipped full regression testing and used a quick Python hack to bypass the safety interlock so we could iterate 3x faster on data collection. We logged it and reverted before any hardware handoff."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made that the right call here?"
+        },
+        {
+          "role": "candidate",
+          "text": "The prototype was isolated, no flight software involved, and the risk was just our own time. We hit the milestone two weeks early and the team learned the failure modes faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you decide the boundary?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked with my lead first and we agreed it stayed in the lab only."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+        "Role: new grad on prototype sensor team",
+        "Situation: lab interlock bypass to speed iteration",
+        "Action: quick script + logging + lead check",
+        "Outcome: 3x faster data runs, milestone hit early",
+        "Quote: \"The prototype was isolated, no flight software involved\"",
+        "Follow-up: How did you decide the boundary? -> checked with lead, stayed in lab"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice. Candidate described using a Python interlock bypass on an isolated lab prototype that they explicitly would never ship. They checked with their lead and logged the change, which kept the shortcut contained. This shows early understanding that R&D speed is acceptable only when risk is local and reversible. The story stayed at individual scope, which is appropriate for 0-2 years. Biggest strength is the clear boundary they drew between lab and flight without needing external prompting.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We once skipped a full code review on a lab script because the deadline was tight."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was this something you would do on flight hardware?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably not, but the manager wanted it done fast so we just did it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+        "Role: new grad on prototype sensor team",
+        "Situation: skipped review on lab script for deadline",
+        "Action: followed manager direction without pushback",
+        "Outcome: script worked but no discussion of risk boundary",
+        "Quote: \"the manager wanted it done fast so we just did it\"",
+        "Follow-up: Was this something you would do on flight hardware? -> vague \"probably not\""
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice. The candidate described skipping a review under deadline pressure but gave no evidence they understood why the shortcut was safe only in R&D. They attributed the decision to the manager rather than owning the risk judgment. No concrete boundary or learning was articulated. At junior level this shows weak ownership of the principle. Biggest gap is the absence of any personal reasoning about when speed is appropriate versus when it is not."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a cross-team R&D demo for a new actuator controller, I green-lit a one-off wiring harness that bypassed two harness connectors to hit a customer showing. We documented it as non-flight and tore it down the next week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a quick risk table in the shared doc and got the safety and firmware leads to sign off in one meeting. Everyone knew it stayed in the lab."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+        "Role: senior engineer leading cross-team demo",
+        "Situation: one-off harness bypass for customer demo",
+        "Action: risk table, one meeting sign-off from safety and firmware",
+        "Outcome: demo succeeded, harness removed immediately after",
+        "Quote: \"Everyone knew it stayed in the lab\"",
+        "Follow-up: How did you get the other teams aligned? -> shared risk table and explicit lab-only scope"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice. Candidate used a temporary harness bypass on an R&D demo and drove alignment across safety and firmware teams with a one-page risk table. They kept the change explicitly non-flight and reversed it the following week. This demonstrates the principle at senior scope where influence without authority is required. The story includes measurable speed gain for the demo without long-term risk. Biggest strength is the proactive cross-team coordination that prevented the shortcut from leaking into production thinking.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We used a quick-and-dirty harness in the lab once to get a demo out the door."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams know it was non-flight?"
+        },
+        {
+          "role": "candidate",
+          "text": "I think so, we told them verbally."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+        "Role: senior engineer leading cross-team demo",
+        "Situation: quick harness for demo",
+        "Action: verbal notice to other teams",
+        "Outcome: demo happened but no written boundary",
+        "Quote: \"we told them verbally\"",
+        "Follow-up: Did other teams know it was non-flight? -> relied on verbal communication"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice. The candidate mentioned a harness shortcut for a demo but provided no evidence of formal risk communication or cross-team alignment. Verbal notice alone is insufficient at senior level where influence across teams is expected. The story lacks any reversal plan or documentation. Biggest gap is treating the principle as an individual decision rather than a coordinated boundary that protects downstream teams."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When our R&D group was six months behind on a new propulsion concept, I authorized a parallel bench test that used commercial off-the-shelf controllers instead of our flight-grade stack. We isolated it to one lab bay and required weekly reviews with the flight safety team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the org-level trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a six-week slip on the main program to buy optionality on the new architecture. The bench data let us kill the concept early instead of carrying technical debt into flight development."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+        "Role: director of propulsion R&D",
+        "Situation: parallel COTS bench test to de-risk new architecture",
+        "Action: isolated lab bay, weekly safety reviews, explicit program slip",
+        "Outcome: killed weak concept early, protected flight program from debt",
+        "Quote: \"The bench data let us kill the concept early\"",
+        "Follow-up: What was the org-level trade-off? -> accepted schedule slip for optionality and early kill decision"
+      ],
+      "raiseFeedback": "Raises the bar on Race on the racetrack, walk on ice. The candidate authorized a COTS controller shortcut in an isolated R&D bench test while maintaining weekly safety oversight and accepting a deliberate program slip. This produced an early kill decision that protected the flight program from carrying technical debt. At exec level the story shows strategic judgment on when to trade schedule for learning. The boundary was enforced at organizational scale. Biggest strength is the explicit linkage between the R&D shortcut and downstream flight risk reduction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We let the R&D team use some commercial parts in the lab to move faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you ensure it did not affect the flight program?"
+        },
+        {
+          "role": "candidate",
+          "text": "We told the teams to keep them separate."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you moved fast and took a scrappy shortcut in an R&D environment that you would never do on a flight system. Why was it the right call?",
+        "Role: director of propulsion R&D",
+        "Situation: allowed COTS parts in lab",
+        "Action: told teams to keep separate",
+        "Outcome: no documented controls or strategic rationale",
+        "Quote: \"We told the teams to keep them separate\"",
+        "Follow-up: How did you ensure it did not affect the flight program? -> relied on verbal separation"
+      ],
+      "lowerFeedback": "Lowers the bar on Race on the racetrack, walk on ice. The candidate described allowing commercial parts in R&D but offered only verbal separation as the control. No org-level mechanism, review cadence, or strategic rationale was provided. At exec level this shows insufficient leverage and governance. Biggest gap is the absence of any framework that scales the principle beyond individual teams."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Risk boundary ownership",
+      "junior": "Checks with lead before acting",
+      "senior": "Drives cross-team sign-off in writing",
+      "exec": "Institutes org-level isolation and review cadence"
+    },
+    {
+      "signal": "Scope of shortcut impact",
+      "junior": "Individual prototype only",
+      "senior": "Cross-team demo with reversal plan",
+      "exec": "Program-level optionality and early kill decision"
+    },
+    {
+      "signal": "Documentation of non-flight status",
+      "junior": "Logs change and reverts",
+      "senior": "One-page risk table shared",
+      "exec": "Weekly safety reviews plus program trade-off record"
+    },
+    {
+      "signal": "Learning extracted",
+      "junior": "Faster iteration on own work",
+      "senior": "Protects downstream teams from leakage",
+      "exec": "Avoids carrying technical debt into flight programs"
+    }
+  ],
+  "principle_id": 6015,
+  "kind": "lp"
+}

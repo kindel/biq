@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+  "principle": "Customer success is our success",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my last project I noticed the team was building features based on what the PM said without talking to the actual support tickets. I pulled the last 50 tickets, grouped them by theme, and walked the team through the top three customer pain points in our retro."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "We changed the next sprint to fix the login flow issue that 60 percent of tickets mentioned. Follow-up: How did you confirm it was the right customer? I checked with the support lead who owns the account and got her to confirm the top issues matched what she was hearing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+        "Pulled 50 support tickets and grouped themes",
+        "Walked team through top three pain points in retro",
+        "Changed sprint to fix login flow mentioned in 60% of tickets",
+        "Quote: \"I checked with the support lead who owns the account\"",
+        "Follow-up: Confirmed with support lead that issues matched what she was hearing"
+      ],
+      "raiseFeedback": "Raises the bar for Customer success is our success on this question. The candidate described pulling raw support tickets themselves and running a retro to surface the top three pain points, then shifting the sprint to address the login issue that appeared in 60 percent of tickets. They followed up by confirming the themes directly with the support lead who owned the account. This shows individual ownership of connecting the team to real customer data even at the junior level. The action stayed local to their project but demonstrated clear coachability by using existing artifacts rather than waiting for direction. Biggest strength is the concrete step of grouping tickets and closing the loop with the support owner instead of assuming the PM summary was sufficient.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I think the customer is whoever the PM tells us about so I just made sure everyone read the PRD."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to anyone outside the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we were heads down on the deadline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+        "Relied only on PM and PRD",
+        "No outreach to support or customers",
+        "Quote: \"we were heads down on the deadline\"",
+        "Follow-up: Did not seek external confirmation"
+      ],
+      "lowerFeedback": "Lowers the bar for Customer success is our success on this question. The candidate stated they ensured clarity simply by having the team read the PRD and deferred entirely to the PM without any direct validation. When probed they admitted no outreach occurred because the team was focused on the deadline. This shows no ownership of customer context and treats customer needs as someone else's problem to hand off. The story stays entirely inside the team boundary with zero attempt to close the loop. Biggest gap is the absence of any action to connect artifacts to actual customer voices even when given the opportunity in follow-up."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team was optimizing for latency numbers that didn't match what enterprise customers actually complained about in renewal calls. I set up a monthly shadow session where two engineers joined customer success calls and we mapped the top renewal blockers back to our roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the team to act on it?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reprioritized two cross-team projects that quarter and tracked a 15 percent drop in those specific renewal objections. Follow-up: How did you influence without authority? I got the CS director to co-own the metric and present it in the quarterly business review so it became a shared goal."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+        "Noticed latency metrics mismatched renewal complaints",
+        "Created monthly shadow sessions with CS calls",
+        "Mapped blockers to roadmap and reprioritized two projects",
+        "Tracked 15% drop in renewal objections",
+        "Quote: \"got the CS director to co-own the metric\"",
+        "Follow-up: Used QBR to make it a shared goal across teams"
+      ],
+      "raiseFeedback": "Raises the bar for Customer success is our success on this question. The candidate identified that platform latency work did not address the actual renewal objections raised in CS calls and created recurring shadow sessions so engineers heard customers directly. They then drove reprioritization of two cross-team projects and measured a 15 percent reduction in those objections. The influence step of getting the CS director to co-own the metric in the QBR shows senior-level ability to create shared accountability without direct authority. The outcome stayed grounded in renewal metrics rather than internal velocity. Biggest strength is turning one-off listening into an ongoing cross-team process that changed roadmap priorities.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent the team the latest NPS report and asked them to review it in their next planning meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the priorities actually change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not immediately, the roadmap was already locked for the quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+        "Forwarded NPS report and asked team to review",
+        "No direct customer exposure created",
+        "Quote: \"the roadmap was already locked\"",
+        "Follow-up: No mechanism to drive reprioritization"
+      ],
+      "lowerFeedback": "Lowers the bar for Customer success is our success on this question. The candidate limited their action to forwarding an NPS report and requesting the team review it in planning, with no follow-through mechanism. When asked about impact they noted the roadmap stayed locked, showing no attempt to create cross-team clarity or influence. The story contains no evidence of connecting the team to live customer input or adjusting work based on what was heard. This reflects a passive, one-way information pass rather than active ownership of customer success. Biggest gap is the lack of any measurable change or shared accountability created beyond the initial email."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When we acquired a new vertical the org kept optimizing for the original SMB segment even though the new enterprise deals were 4x larger. I created a customer council with the top 10 accounts and required every VP to present their QBR metrics against what those accounts actually said in the last renewal cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We paused three platform initiatives that scored high internally but low with the enterprise council and redirected 20 percent of engineering to vertical-specific integrations. Follow-up: How did you handle resistance from teams protecting their original roadmap? I tied the new council metrics directly to the annual operating plan so leaders could not hit their goals without addressing them."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+        "Noticed org still optimizing for SMB after enterprise acquisition",
+        "Formed customer council with top 10 accounts",
+        "Required VPs to map QBRs to renewal feedback",
+        "Paused three internal initiatives and shifted 20% engineering to vertical integrations",
+        "Quote: \"tied the new council metrics directly to the annual operating plan\"",
+        "Follow-up: Used AOP to create accountability for leaders"
+      ],
+      "raiseFeedback": "Raises the bar for Customer success is our success on this question. The candidate recognized that post-acquisition the organization continued optimizing for the legacy SMB segment while new enterprise deals were materially larger, then stood up a customer council of the top 10 accounts and required every VP to align their QBR metrics to actual renewal feedback. They made the explicit trade-off of pausing three high-internal-score platform projects and moving 20 percent of engineering capacity to vertical integrations. By embedding the council metrics into the annual operating plan they created durable accountability at the leadership level. The approach shows strategic judgment on segment clarity and long-term leverage rather than one-time heroics. Biggest strength is converting customer input into an operating mechanism that changed resource allocation across the org.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each business unit to include a customer slide in their quarterly update."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that change investment decisions?"
+        },
+        {
+          "role": "candidate",
+          "text": "It surfaced some issues but the existing roadmaps stayed largely intact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to ensure your team knew who the customer was and what that customer actually needed. How did you establish that clarity?",
+        "Requested customer slide in quarterly updates",
+        "No new governance or council formed",
+        "Quote: \"existing roadmaps stayed largely intact\"",
+        "Follow-up: Did not drive resource reallocation"
+      ],
+      "lowerFeedback": "Lowers the bar for Customer success is our success on this question. The candidate described adding a customer slide requirement to quarterly updates with no further structure or accountability. When probed they confirmed that roadmaps remained largely unchanged, indicating the mechanism did not produce strategic clarity or trade-offs. The story lacks any evidence of identifying segment mismatch or creating org-level levers such as tying metrics to the operating plan. This approach stays at the level of reporting rather than driving the business to reallocate resources based on who the actual high-value customers are. Biggest gap is the absence of any durable change to how leaders make investment decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Connects team to primary customer data source",
+      "junior": "Used support tickets directly",
+      "senior": "Shadowed live CS calls",
+      "exec": "Created customer council tied to AOP"
+    },
+    {
+      "signal": "Drives prioritization change",
+      "junior": "Shifted one sprint item",
+      "senior": "Reprioritized two cross-team projects",
+      "exec": "Paused multiple initiatives and moved 20% capacity"
+    },
+    {
+      "signal": "Creates shared accountability",
+      "junior": "Confirmed with support lead",
+      "senior": "Co-owned metric in QBR",
+      "exec": "Embedded metrics in annual operating plan"
+    },
+    {
+      "signal": "Handles segment mismatch",
+      "junior": "N/A at this scope",
+      "senior": "Aligned platform work to renewal objections",
+      "exec": "Shifted org from SMB to enterprise post-acquisition"
+    },
+    {
+      "signal": "Uses follow-up mechanism",
+      "junior": "One-time retro plus confirmation",
+      "senior": "Monthly sessions plus QBR",
+      "exec": "Council plus AOP linkage"
+    }
+  ],
+  "principle_id": 6002,
+  "kind": "lp"
+}

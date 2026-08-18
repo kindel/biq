@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+  "principle": "Earn trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to tell my manager that a feature I built had a data leak risk after launch. I waited until our next 1:1 instead of Slack because I wanted privacy and time to walk through the fix."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you pick that timing over right after discovery?"
+        },
+        {
+          "role": "candidate",
+          "text": "I needed 30 minutes to prepare the repro steps and proposed mitigation so it felt like a solution, not just a problem."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+        "Role: New grad on backend team, own feature launch",
+        "Situation: Discovered PII exposure in logs post-deploy",
+        "Action: Booked 1:1 next day, prepared repro + fix plan",
+        "Outcome: Manager helped escalate to security; leak contained same week",
+        "Quote: 'I wanted it to feel like bringing a solution, not just dumping a problem'",
+        "Follow-up: Why not Slack? 'Needed privacy and time to think through mitigation'"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate described telling their manager about a data leak in their own feature and chose the next 1:1 to allow privacy and preparation of a mitigation plan. They stated they wanted the conversation to feel like bringing a solution rather than just a problem. This shows early ownership of individual work and thoughtful delivery that preserved trust with their manager. The outcome was contained risk with manager support. Biggest strength is linking timing choice directly to building credibility instead of avoiding discomfort.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I just told my manager in the team standup that the feature had a bug because I didn't want to hide it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react and what happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "It got awkward and we moved on; I fixed it later that week."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+        "Role: New grad, individual contributor",
+        "Situation: Feature bug found after launch",
+        "Action: Raised in public standup without prep or privacy",
+        "Outcome: Awkward silence, no immediate help",
+        "Quote: 'I just didn't want to hide it'",
+        "Follow-up: Why standup? 'Seemed like the soonest chance to be honest'"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate raised a production bug in a public standup without preparation or private setting. They explained the choice only as wanting to be honest quickly rather than considering impact on team trust or their own credibility. No evidence of adjusting delivery for the audience or turning the moment into a constructive discussion. The result was awkwardness and no support. Biggest gap is treating candor as blunt disclosure instead of calibrated honesty that earns ongoing trust."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams had conflicting priorities on a shared service and trust was eroding. I scheduled a private offsite with the other tech lead after a joint planning session to surface the data on missed SLAs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the choice of setting?"
+        },
+        {
+          "role": "candidate",
+          "text": "Neutral location and no direct reports present let us align on trade-offs before bringing teams in, which kept the conversation from turning political."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+        "Role: Senior engineer, cross-team service owner",
+        "Situation: SLA misses between platform and product teams",
+        "Action: Private offsite with peer lead post-planning, shared metrics first",
+        "Outcome: Joint roadmap adjustment, trust restored in 6 weeks",
+        "Quote: 'Neutral space let us align before involving teams so it didn't get political'",
+        "Follow-up: How did you decide timing? 'Right after planning when data was fresh but before commitments locked'"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate addressed eroding trust between two teams by scheduling a private offsite with the peer tech lead after a joint planning session to review SLA data. They chose the neutral setting and timing to allow alignment before involving broader teams. This produced a joint roadmap change and restored collaboration within six weeks. The approach shows influence without authority and deliberate calibration of candor. Biggest strength is using setting to protect relationships while still driving resolution.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I emailed both teams the SLA numbers and said we needed to talk because things were broken."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "People got defensive in the thread and it took a while to recover."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+        "Role: Senior engineer",
+        "Situation: Cross-team SLA issues",
+        "Action: Broadcast email with raw numbers",
+        "Outcome: Defensive replies, delayed recovery",
+        "Quote: 'I just put the facts out there'",
+        "Follow-up: Why email? 'Wanted it documented and fast'"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate sent a broadcast email with SLA numbers calling out broken processes without first speaking to the other lead or choosing a contained setting. They framed the choice only around speed and documentation. The result was defensive replies and slower recovery. No evidence of considering how delivery would affect cross-team relationships. Biggest gap is defaulting to public disclosure that damaged rather than earned trust."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to tell the board that a major market bet was failing and we needed to pivot resources. I scheduled the conversation as a dedicated pre-read plus closed session at the next board meeting rather than in the regular update slot."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why that format?"
+        },
+        {
+          "role": "candidate",
+          "text": "The pre-read gave directors time to absorb the data and the closed session let us discuss trade-offs without leaking strategy or creating unnecessary alarm in the broader org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+        "Role: VP, multi-org strategy",
+        "Situation: Failing market bet requiring resource pivot",
+        "Action: Pre-read + closed board session, not regular update",
+        "Outcome: Board approved pivot with minimal org disruption",
+        "Quote: 'Pre-read let them process data; closed session avoided leaks and alarm'",
+        "Follow-up: How did timing protect trust? 'Regular slot would have forced rushed or public discussion'"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust. The candidate described informing the board of a failing market bet and chose a pre-read plus closed session instead of the regular update slot. They explained the format allowed directors time to absorb data and discuss trade-offs privately, avoiding leaks or org alarm. This produced clean approval for the pivot. The decision reflects long-term strategic judgment on how candor is delivered at the highest level. Biggest strength is linking setting to preserving both board and employee trust during ambiguity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I brought it up in the regular board update because the numbers were clear and we needed to move fast."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the board respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were surprised and asked for a follow-up meeting; it delayed the pivot by a quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to speak candidly about a difficult topic. How did you choose the timing and setting?",
+        "Role: VP level",
+        "Situation: Strategic bet failing",
+        "Action: Raised in standard board update without prep",
+        "Outcome: Surprise, extra meeting, quarter delay",
+        "Quote: 'Numbers were clear so I just shared them'",
+        "Follow-up: Why regular slot? 'Wanted transparency and speed'"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust. The candidate raised a failing strategic bet during the regular board update without a pre-read or dedicated closed session. They justified the choice only by the clarity of the numbers and desire for speed. The board was surprised, requiring an extra meeting and delaying the pivot by a quarter. No evidence of calibrating delivery for high-stakes stakeholders. Biggest gap is treating candor as immediate disclosure instead of structured communication that maintains confidence."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Audience and setting calibration",
+      "junior": "Chose 1:1 over standup for privacy",
+      "senior": "Chose neutral offsite to align leads first",
+      "exec": "Used pre-read + closed session for board absorption"
+    },
+    {
+      "signal": "Link between timing and trust outcome",
+      "junior": "Prepared mitigation so conversation felt solution-oriented",
+      "senior": "Aligned before involving teams to avoid politics",
+      "exec": "Format prevented leaks and preserved org confidence"
+    },
+    {
+      "signal": "Scope of impact considered",
+      "junior": "Individual feature and direct manager",
+      "senior": "Cross-team relationships and roadmap",
+      "exec": "Board, strategy, and broader org stability"
+    },
+    {
+      "signal": "Default to blunt vs calibrated honesty",
+      "junior": "Standup disclosure created awkwardness",
+      "senior": "Email created defensiveness",
+      "exec": "Regular update created surprise and delay"
+    }
+  ],
+  "principle_id": 6008,
+  "kind": "lp"
+}

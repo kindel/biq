@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+  "principle": "Respect time",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "Last sprint I stayed until 9pm three nights fixing a production incident on my own feature. I told my manager the next morning I needed the afternoon off to rest and she approved it. I also blocked my calendar the following week for shorter days."
+        },
+        {
+          "role": "interviewer",
+          "text": "What prompted you to ask for that time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had learned from a previous crunch that skipping recovery made me slower the next week, so I wanted to avoid repeating it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+        "Junior IC on prod fix, 3 late nights",
+        "Asked manager next day for afternoon off + blocked lighter days",
+        "Follow-up: What prompted you to ask? Learned from prior crunch that skipping recovery hurt output"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for a junior. The candidate described staying late on their feature incident and then proactively requesting afternoon off plus calendar blocks. Quote: 'I had learned from a previous crunch that skipping recovery made me slower the next week.' This shows ownership of personal sustainability at the expected individual scope. The example stays local but demonstrates coachability by applying past feedback. Biggest strength is the explicit link between overtime and planned recovery rather than hoping it would happen.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had a release deadline so I worked until midnight a few nights. I was tired the next week but kept going because there was still work to do."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to anyone about taking time back?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just pushed through until the next sprint started."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+        "Junior IC on release, multiple midnight nights",
+        "Felt tired but kept working, no conversation about recovery",
+        "Follow-up: Did you talk to anyone? No, just pushed through"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for a junior. The candidate described multiple late nights on a release but took no action to recover, simply continuing while tired. Quote: 'I was tired the next week but kept going because there was still work to do.' At junior level we expect at least individual ownership of recovery; here the story shows none. The follow-up confirmed no discussion with a manager. Biggest gap is absence of any mechanism to protect future productivity after overtime."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our cross-team migration slipped and I worked late for a week coordinating fixes. I told the other leads I would take two days of focused work time the following week and asked them to shield me from new asks. I also redistributed some of my on-call shifts."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were fine once I explained the recovery was to keep me effective for the handoff."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+        "Senior coordinated cross-team migration, week of late nights",
+        "Negotiated two days focused time + redistributed on-call with other leads",
+        "Follow-up: How did the team respond? Explained recovery kept her effective for handoff"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for a senior. The candidate worked late on a cross-team migration and then secured focused recovery days plus on-call relief by influencing peers. Quote: 'I told the other leads I would take two days of focused work time the following week.' This shows influence without authority and metrics (protecting handoff quality) expected at senior level. The story extends beyond individual scope. Biggest strength is treating recovery as a team coordination item rather than a personal request.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "The migration ran long so our team worked late for a week. I stayed with them but didn't take any time back because the next phase started right away."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you adjust scope or ask other teams for help?"
+        },
+        {
+          "role": "candidate",
+          "text": "We just powered through; I didn't want to push back on the timeline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+        "Senior on cross-team migration, week of late nights",
+        "Stayed with team, no recovery taken, next phase started immediately",
+        "Follow-up: Did you adjust scope or ask other teams? No, powered through to protect timeline"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for a senior. The candidate described leading a migration with overtime but took no recovery and made no attempt to influence timeline or peers. Quote: 'I stayed with them but didn't take any time back because the next phase started right away.' Senior expectations include cross-team impact and raising the bar on sustainable pace; this example shows neither. The follow-up revealed unwillingness to negotiate scope. Biggest gap is modeling burnout as leadership instead of protecting team capacity."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "During a major reorg I worked late for two weeks finalizing org design and risk mitigation. I then blocked the following week for no meetings and delegated all but two decisions to my directs, telling them this was to model sustainable leadership at scale."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two quarters later my directs started doing the same after their own crunch periods, which reduced escalations to me."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+        "Exec on reorg, two weeks late nights on org design",
+        "Blocked full week of no meetings, delegated decisions, explicitly modeled for org",
+        "Follow-up: What was the longer-term effect? Directs began replicating the pattern, reduced escalations"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for an exec. The candidate described two weeks of late nights on reorg work then created a full recovery week by delegating and modeling the behavior. Quote: 'I then blocked the following week for no meetings and delegated all but two decisions to my directs.' This demonstrates org-level leverage and long-term thinking expected at exec level. The outcome shows systemic change two quarters later. Biggest strength is turning personal recovery into an org norm rather than an isolated action.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "The reorg required extra hours for several weeks. I kept my normal schedule afterward because the business needed continued attention from leadership."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change how you operated or asked your team to operate?"
+        },
+        {
+          "role": "candidate",
+          "text": "No changes; we maintained the same pace through the transition."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you worked significant overtime. How did you ensure you had recovery time afterward?",
+        "Exec on reorg, multiple weeks of extra hours",
+        "Returned to normal schedule immediately, no delegation or modeling changes",
+        "Follow-up: Did you change how you operated? No, maintained same pace"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for an exec. The candidate described extended overtime on reorg work but implemented no recovery mechanisms or org-level adjustments. Quote: 'I kept my normal schedule afterward because the business needed continued attention from leadership.' Exec scope requires strategic judgment on sustainable capacity; this story shows continued heroics instead. The follow-up confirmed no delegation or modeling. Biggest gap is absence of leverage, leaving the organization without a scalable approach to recovery."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Proactive recovery planning",
+      "junior": "Asked manager for afternoon off after learning from past crunch",
+      "senior": "Negotiated focused days and on-call relief with peer leads",
+      "exec": "Blocked full recovery week and delegated decisions to model org behavior"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual productivity protection",
+      "senior": "Cross-team coordination and peer influence",
+      "exec": "Org-level norm creation with measurable reduction in escalations"
+    },
+    {
+      "signal": "Evidence of learning or leverage",
+      "junior": "Applied lesson from previous overtime",
+      "senior": "Explained recovery need to peers to protect handoff",
+      "exec": "Directs replicated pattern two quarters later"
+    }
+  ],
+  "principle_id": 6012,
+  "kind": "lp"
+}

@@ -1,0 +1,196 @@
+{
+  "question": "Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+  "principle": "Have Backbone; Disagree and commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a small data validation issue in my module and noticed the input format might break an upstream report, but I assumed the team would catch it in review. It caused a production alert two days later. After that I started flagging any cross-team dependency risks in my daily update and asked my mentor to review them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the specific change in how you raised it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now write a one-line risk note in the ticket and ping the owner directly instead of waiting for the standup."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+        "Role: new grad on data pipeline team",
+        "Situation: spotted possible upstream format mismatch but stayed quiet",
+        "Action: assumed review would catch it; incident followed",
+        "Outcome: wrote risk note in tickets and pinged owners directly",
+        "Quote: \"I now write a one-line risk note in the ticket and ping the owner directly\"",
+        "Follow-up: What was the specific change? -> one-line note + direct ping"
+      ],
+      "raiseFeedback": "Raises the bar for Have Backbone at junior level. The candidate owned a local mistake on their module without blaming the reviewer and described a concrete, repeatable change they still use. The story stayed within individual scope yet showed quick adoption of feedback. The follow-up confirmed the mechanism was actionable rather than aspirational. Biggest gap is lack of any cross-team example, which is acceptable for this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once thought a test might be flaky but didn't say anything and it failed a build later. I learned I should speak up more."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually start doing differently after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I try to mention things in standup now if I remember."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+        "Role: new grad",
+        "Situation: noticed possible flaky test but stayed silent",
+        "Action: none at the time",
+        "Outcome: build failed",
+        "Quote: \"I try to mention things in standup now if I remember\"",
+        "Follow-up: What did you actually start doing? -> vague \"try to mention\" with no process"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate described a minor incident but gave no evidence of a sustained change beyond hoping to remember. The follow-up revealed the adjustment was not repeatable or observable. At junior level we expect clear ownership of the learning and a simple mechanism they can point to in daily work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "While leading a shared service migration, I saw that one partner team's data model would create latency spikes but didn't push back in the planning meeting because the timeline was already tight. The spike showed up in staging and delayed the launch by a week. After that I started sending a short written dissent to the PM and affected teams within 24 hours of any meeting where scope trade-offs were decided."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the written dissent change outcomes on later projects?"
+        },
+        {
+          "role": "candidate",
+          "text": "On the next integration, two teams adjusted their queries early and we avoided the same class of issue."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+        "Role: senior on platform migration",
+        "Situation: saw latency risk from partner data model but stayed silent",
+        "Action: none until after staging failure",
+        "Outcome: one-week delay; introduced written dissent within 24h",
+        "Quote: \"I started sending a short written dissent to the PM and affected teams within 24 hours\"",
+        "Follow-up: How did it change outcomes? -> two teams adjusted queries early on next project"
+      ],
+      "raiseFeedback": "Raises the bar for Have Backbone at senior level. The candidate took responsibility for a cross-team impact and replaced silence with a lightweight, repeatable process that influenced peers without authority. The follow-up showed measurable downstream effect. The mechanism stayed practical rather than bureaucratic. Biggest remaining gap is that the initial dissent was still reactive rather than proactive on the first project.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with a design choice on a service but didn't speak up because the architect was senior. It caused issues later. Now I try to voice concerns earlier."
+        },
+        {
+          "role": "interviewer",
+          "text": "What process did you put in place?"
+        },
+        {
+          "role": "candidate",
+          "text": "I make sure to say something in the next design review if I have doubts."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+        "Role: senior engineer",
+        "Situation: disagreed with design but stayed quiet due to hierarchy",
+        "Action: none until after problems",
+        "Outcome: issues later",
+        "Quote: \"I make sure to say something in the next design review if I have doubts\"",
+        "Follow-up: What process? -> still relies on remembering to speak in the meeting"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate attributed silence to hierarchy rather than owning the choice to withhold input. The follow-up produced no durable mechanism beyond hoping to speak up in the next meeting. At senior level we look for evidence of influence without authority and a change that scales beyond one person remembering to talk."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a company-wide reorg I believed the proposed headcount allocation would underfund the infrastructure reliability org, but I only raised it lightly in the leadership offsite because the CEO had already signaled the decision. Reliability incidents rose 40% the next quarter. I then instituted a standing pre-read dissent channel for any org-level resource decision and required written risk assessments from each affected VP before finalizing budgets."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect on decision quality?"
+        },
+        {
+          "role": "candidate",
+          "text": "The next two budget cycles surfaced three major risks early and two were mitigated before launch; the channel is still used by my successor."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+        "Role: VP of engineering during reorg",
+        "Situation: believed reliability org underfunded but raised only lightly",
+        "Action: waited until after decision",
+        "Outcome: 40% rise in incidents; created pre-read dissent channel + required VP risk assessments",
+        "Quote: \"I instituted a standing pre-read dissent channel for any org-level resource decision\"",
+        "Follow-up: Long-term effect? -> three risks surfaced early in next cycles, process still used"
+      ],
+      "raiseFeedback": "Raises the bar for Have Backbone at exec level. The candidate owned a strategic silence that affected the whole company and replaced it with a structural process that outlived their tenure. The follow-up demonstrated sustained, measurable leverage on future decisions. The change addressed ambiguity and trade-offs at org scale. Biggest gap is that the initial concern was still voiced only lightly rather than with full force.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I thought a product direction would miss our reliability targets but didn't push hard in the exec meeting. We missed the targets. After that I made sure to be more direct in future meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "What mechanism did you create for the org?"
+        },
+        {
+          "role": "candidate",
+          "text": "I remind my directs to speak up and I try to model it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you withheld a concern and later regretted it. What did you change afterward?",
+        "Role: VP",
+        "Situation: saw product direction missing reliability targets",
+        "Action: did not push hard",
+        "Outcome: missed targets",
+        "Quote: \"I remind my directs to speak up and I try to model it\"",
+        "Follow-up: What mechanism for the org? -> no structural change, only personal modeling"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate described an org-level miss but offered only personal modeling and reminders to directs as the fix. The follow-up produced no durable process that would survive leadership changes or scale with ambiguity. At exec level we expect structural changes that create leverage beyond the individual's presence in the room."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of silence",
+      "junior": "Owns personal miss and names simple fix",
+      "senior": "Owns cross-team miss and adds repeatable process",
+      "exec": "Owns org-level miss and adds durable structure"
+    },
+    {
+      "signal": "Evidence of sustained change",
+      "junior": "Daily ticket note still used",
+      "senior": "Written dissent influenced next project",
+      "exec": "Channel used by successor in later cycles"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual module",
+      "senior": "Partner teams and staging",
+      "exec": "Company reliability metrics and budget process"
+    },
+    {
+      "signal": "Mechanism durability",
+      "junior": "Lightweight and local",
+      "senior": "Light process peers can adopt",
+      "exec": "Pre-read requirement that outlives leader"
+    },
+    {
+      "signal": "Handling of hierarchy",
+      "junior": "Not tested at this level",
+      "senior": "Pushed back on architect without authority",
+      "exec": "Challenged CEO-aligned decision with org process"
+    },
+    {
+      "signal": "Learning from feedback",
+      "junior": "Adopted mentor-style review habit",
+      "senior": "Turned regret into cross-team habit",
+      "exec": "Turned regret into required pre-reads"
+    }
+  ],
+  "principle_id": 6011,
+  "kind": "lp"
+}

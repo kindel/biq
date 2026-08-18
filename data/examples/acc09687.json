@@ -1,0 +1,208 @@
+{
+  "question": "Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+  "principle": "Invent and simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate suggested we auto-generate test data from production logs instead of manual fixtures. I spent five minutes sketching how we could strip PII and run it in our CI pipeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "It cut fixture maintenance time by 40% for our squad. We kept it scoped to one service and learned the log volume was manageable after a quick prototype."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you change next time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I would have checked with security earlier instead of assuming the PII strip was enough."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+        "Role: New grad on backend squad; teammate floated log-based test data gen",
+        "Actions: Spent 5 min sketching PII strip + CI integration; built quick prototype on one service",
+        "Outcome: 40% reduction in fixture maintenance; kept scope small",
+        "Quote: \"It cut fixture maintenance time by 40% for our squad.\"",
+        "Follow-up: Asked about changes next time; candidate said would loop in security earlier"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify. The candidate described giving a teammate's odd idea five minutes of structured exploration, resulting in a scoped prototype that delivered a 40% reduction in fixture work. They owned the follow-up by noting they should have involved security sooner, showing coachability on their first project. This matches junior expectations of local ownership and learning from quick experiments without overclaiming impact. The story stayed grounded to one service and avoided heroics. Biggest strength is the explicit five-minute positive exploration step before committing.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone once suggested we rewrite our auth in Rust for speed. I told them it was too risky and we moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you explore it at all?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it sounded like a distraction from our sprint goals."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+        "Role: New grad; teammate proposed Rust rewrite for auth",
+        "Actions: Dismissed immediately as risky and off sprint goals",
+        "Outcome: No exploration; idea dropped",
+        "Quote: \"I told them it was too risky and we moved on.\"",
+        "Follow-up: Asked if any exploration occurred; candidate confirmed none"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify. The candidate described shutting down a suggestion without any positive exploration, citing sprint risk as the reason. No attempt was made to spend even a few minutes testing feasibility or scoping it down. This shows the opposite of the principle at the junior level where we expect openness to quick experiments on individual work. The response lacked any learning or ownership of the decision. Biggest gap is complete absence of the required five-minute positive exploration step."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A PM floated letting customers define their own SLA thresholds in the console. I spent five minutes whiteboarding a simple rules engine that reused our existing alerting primitives."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it land across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a two-week pilot with one customer segment; it reduced support tickets by 25% and the infra team adopted the rules engine for their own use."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you discuss?"
+        },
+        {
+          "role": "candidate",
+          "text": "We agreed to limit it to read-only metrics first to avoid blast radius, then expanded after the pilot."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+        "Role: Senior on platform team; PM suggested customer-defined SLAs",
+        "Actions: 5 min whiteboard of rules engine reusing existing alerts; two-week pilot with one segment",
+        "Outcome: 25% drop in support tickets; infra team adopted the engine",
+        "Quote: \"We ran a two-week pilot with one customer segment; it reduced support tickets by 25%.\"",
+        "Follow-up: Asked about trade-offs; candidate described read-only limit then expansion"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify. The candidate gave a PM's unusual idea five minutes of structured exploration, producing a scoped rules engine that reused existing components and delivered a 25% ticket reduction in a two-week pilot. Cross-team adoption by infra shows influence without authority and measurable impact. The story includes explicit trade-off discussion (read-only first) and remains grounded rather than heroic. This aligns with senior expectations of cross-team leverage from small experiments. Biggest strength is turning the crazy idea into reusable infrastructure with clear metrics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "An engineer wanted to let customers pick their own metrics for alerts. I said it would create too much support load and we skipped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any exploration done?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a quick mental check and decided against it to protect team capacity."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+        "Role: Senior; engineer proposed customer-selected alert metrics",
+        "Actions: Mental check only; rejected to protect capacity",
+        "Outcome: Idea dropped with no pilot or scoping",
+        "Quote: \"I said it would create too much support load and we skipped it.\"",
+        "Follow-up: Asked if any positive exploration; candidate said only mental check"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify. The candidate rejected a cross-team idea after only a mental check, citing support load without attempting any positive exploration or scoping. No pilot or reuse of existing components was considered, missing the opportunity for influence across teams. This falls short of senior expectations for driving measurable impact through quick experiments. The response shows risk aversion without data. Biggest gap is lack of any structured five-minute exploration or cross-team discussion."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A new hire suggested we let customers self-serve data residency choices per region. I spent five minutes mapping it against our existing compliance controls and realized it could unlock two new enterprise verticals."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched a limited beta in one region; it became the foundation for our global compliance product line and influenced our three-year roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the ambiguity?"
+        },
+        {
+          "role": "candidate",
+          "text": "We treated it as a strategic bet with clear kill criteria after the beta rather than committing the full org upfront."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+        "Role: Exec; new hire suggested customer self-serve data residency",
+        "Actions: 5 min mapping to compliance controls; identified two new verticals; limited beta in one region",
+        "Outcome: Became foundation for global compliance product line; shaped 3-year roadmap",
+        "Quote: \"It became the foundation for our global compliance product line and influenced our three-year roadmap.\"",
+        "Follow-up: Asked about ambiguity handling; candidate described kill criteria after beta"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify. The candidate gave a new hire's idea five minutes of strategic exploration, mapping it to existing controls and recognizing it could open two enterprise verticals. A limited beta with kill criteria led to a new product line that shaped the three-year roadmap. This demonstrates org-level impact and long-term leverage from a small experiment under high ambiguity. The approach stayed disciplined with clear boundaries rather than full commitment. Biggest strength is converting an individual suggestion into strategic direction with measurable business leverage.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone proposed letting customers configure their own data residency. I shut it down because compliance was already complex enough."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was any exploration done?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it was clear it would add too much operational risk at our scale."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave a seemingly crazy idea five minutes of positive exploration before deciding whether to pursue it. What happened?",
+        "Role: Exec; proposal for customer-configured data residency",
+        "Actions: Rejected outright due to existing compliance complexity",
+        "Outcome: No exploration or strategic assessment",
+        "Quote: \"I shut it down because compliance was already complex enough.\"",
+        "Follow-up: Asked if any exploration; candidate confirmed none"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify. The candidate dismissed an idea with org-level potential after no exploration, citing operational risk without testing feasibility against existing controls. This misses the opportunity for strategic judgment and long-term thinking expected at the exec level. No attempt was made to scope a small bet or identify new verticals. The response reflects risk aversion rather than leverage. Biggest gap is complete failure to apply the five-minute positive exploration principle at a business-impact scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Positive exploration of unusual idea",
+      "junior": "Explored teammate suggestion with quick sketch and prototype",
+      "senior": "Whiteboarded PM idea then ran scoped pilot with metrics",
+      "exec": "Mapped new-hire idea to controls and launched beta with kill criteria"
+    },
+    {
+      "signal": "Scope and leverage",
+      "junior": "Limited to one service; 40% local efficiency gain",
+      "senior": "Cross-team adoption; 25% ticket reduction",
+      "exec": "New product line shaping 3-year roadmap"
+    },
+    {
+      "signal": "Handling of ambiguity and trade-offs",
+      "junior": "Noted security follow-up as learning",
+      "senior": "Explicit read-only limit before expansion",
+      "exec": "Clear kill criteria after limited beta"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "N/A at this level",
+      "senior": "Infra team voluntarily adopted the engine",
+      "exec": "New verticals unlocked from individual suggestion"
+    },
+    {
+      "signal": "Dismissal without exploration",
+      "junior": "Immediate rejection citing sprint risk",
+      "senior": "Mental check only; protected team capacity",
+      "exec": "Rejected due to compliance complexity at scale"
+    }
+  ],
+  "principle_id": 6006,
+  "kind": "lp"
+}

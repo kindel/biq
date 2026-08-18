@@ -1,0 +1,154 @@
+{
+  "question": "Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+  "principle": "Rocket engineering, not rocket science",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a flaky test suite that kept failing on CI. The team was adding more retries and parallel runs to mask it. I dug into the logs, found a race condition in our data layer, and proposed we fix the root timing issue instead. After the change, flakiness dropped 90% with no extra retries."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when others pushed back on the extra analysis time?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+        "Candidate owned identifying race condition in test suite after retries were added",
+        "Shifted by sharing log analysis and proposing root fix",
+        "Quote: 'I dug into the logs and showed the timing issue was the real cause'",
+        "Follow-up: Asked about pushback; candidate said they ran a small experiment showing fix impact before full change"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering. Junior candidate described taking ownership of a local test flakiness issue by moving from retry hacks to diagnosing the race condition. Quote: 'I dug into the logs and showed the timing issue was the real cause.' This shows coachability and individual results without overstepping scope. The story is grounded in their own work rather than team heroics. Biggest strength is the clear before-and-after on the fix reducing flakiness. Biggest gap is limited evidence of influencing others beyond their immediate task.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our deployment was slow so we just added more servers and caching layers. It helped a bit but we still had issues. I suggested we keep scaling until it was fast enough."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone look at the actual bottleneck?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+        "Candidate described scaling servers for slow deployments without root cause work",
+        "No shift attempted; stayed with brute-force scaling",
+        "Quote: 'I suggested we keep scaling until it was fast enough'",
+        "Follow-up: Probe on bottlenecks revealed no analysis was done"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering. Junior candidate stayed at the level of suggesting more servers for slow deploys instead of seeking understanding. Quote: 'I suggested we keep scaling until it was fast enough.' The story shows no attempt to move from brute force to fundamentals and lacks ownership of driving a better approach. This fits junior scope but demonstrates weak learning from the situation. Biggest gap is absence of any diagnostic step or feedback incorporation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were repeatedly patching a shared service latency issue with workarounds and extra monitoring. I ran a cross-team review, mapped the actual call paths, and showed the core queue design was the bottleneck. We aligned on a redesign that cut p99 by 40% and removed the need for patches across both teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to invest in the redesign?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+        "Candidate drove cross-team review on latency patches",
+        "Shifted by mapping call paths and aligning on queue redesign",
+        "Quote: 'I showed the core queue design was the bottleneck'",
+        "Follow-up: Asked about alignment; candidate described running joint data review and trading off short-term patches for long-term fix"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering. Senior candidate moved two teams from repeated patches to a shared queue redesign after mapping call paths. Quote: 'I showed the core queue design was the bottleneck.' This demonstrates influence without authority and cross-team impact with a clear 40% p99 metric. The approach shows raising the bar by replacing workarounds with fundamental understanding. Biggest strength is the evidence of aligning others on the redesign trade-off. Biggest gap is lighter detail on long-term sustainment after the change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The service had high latency so my team added more instances and alerts. Other teams did the same. We never coordinated on why it kept happening."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there an attempt to find the root cause?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+        "Candidate described adding instances for latency without coordination",
+        "No shift; stayed with per-team scaling",
+        "Quote: 'We never coordinated on why it kept happening'",
+        "Follow-up: Probe showed no cross-team root cause effort was made"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering. Senior candidate described repeated scaling for latency but never moved beyond per-team workarounds. Quote: 'We never coordinated on why it kept happening.' The story lacks cross-team influence or any attempt to build shared understanding, which is expected at this level. This shows local results without raising others or driving a better approach. Biggest gap is absence of metrics or alignment attempts."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The org was scaling headcount to meet growing demand forecasts instead of rethinking capacity models. I sponsored a small tiger team to model true utilization patterns and trade-offs. The analysis led to a new allocation strategy that reduced projected headcount needs by 25% while improving delivery predictability across three business units."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you face on changing the forecasting approach?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+        "Candidate sponsored tiger team on capacity scaling vs modeling",
+        "Shifted by driving utilization analysis and new allocation strategy",
+        "Quote: 'The analysis led to a new allocation strategy that reduced projected headcount needs by 25%'",
+        "Follow-up: Asked about resistance; candidate described trading off short-term headcount growth for data-driven model with exec peers"
+      ],
+      "raiseFeedback": "Raises the bar on Rocket engineering. Exec candidate shifted the org from headcount scaling to utilization modeling, yielding a 25% reduction in projected needs. Quote: 'The analysis led to a new allocation strategy that reduced projected headcount needs by 25%.' This shows strategic judgment at business level with clear trade-offs and org-wide leverage. The story demonstrates long-term thinking over brute-force growth. Biggest strength is the evidence of influencing at scale through a small team. Biggest gap is lighter detail on how the model was sustained post-rollout.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Demand was rising so we approved more hires across teams. It met the numbers but costs kept climbing. We didn't revisit the underlying demand model."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider any structural changes?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time your team was trying to brute-force a core problem instead of building the fundamental understanding needed. How did you shift the approach?",
+        "Candidate described approving hires for rising demand without model changes",
+        "No shift; stayed with headcount brute force",
+        "Quote: 'We didn't revisit the underlying demand model'",
+        "Follow-up: Probe on structural changes showed no org-level analysis occurred"
+      ],
+      "lowerFeedback": "Lowers the bar on Rocket engineering. Exec candidate stayed with headcount approvals for demand instead of questioning the model. Quote: 'We didn't revisit the underlying demand model.' The story shows high ambiguity but defaults to brute force without strategic trade-offs or leverage. This lacks the org-level impact expected at this level. Biggest gap is absence of any attempt to build fundamental understanding or influence peers on a different path."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of shift from brute force",
+      "junior": "Raises: drove local log analysis and fix; Lowers: suggested more scaling only",
+      "senior": "Raises: aligned two teams on redesign; Lowers: no coordination attempted",
+      "exec": "Raises: sponsored tiger team for org model change; Lowers: approved hires without revisiting model"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Raises: shared experiment results; Lowers: none shown",
+      "senior": "Raises: joint data review across teams; Lowers: stayed within own team",
+      "exec": "Raises: traded off with exec peers; Lowers: no peer alignment"
+    },
+    {
+      "signal": "Use of metrics or outcomes",
+      "junior": "Raises: 90% flakiness drop; Lowers: 'helped a bit'",
+      "senior": "Raises: 40% p99 cut; Lowers: no numbers",
+      "exec": "Raises: 25% headcount reduction; Lowers: 'costs kept climbing'"
+    },
+    {
+      "signal": "Scope calibration",
+      "junior": "Raises: individual test fix; Lowers: no root cause on own task",
+      "senior": "Raises: cross-team queue redesign; Lowers: per-team patches only",
+      "exec": "Raises: org allocation strategy; Lowers: team-level hiring only"
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Raises: removed need for retries; Lowers: kept adding retries",
+      "senior": "Raises: eliminated patch cycle; Lowers: repeated workarounds",
+      "exec": "Raises: new forecasting model; Lowers: repeated headcount adds"
+    }
+  ],
+  "principle_id": 6014,
+  "kind": "lp"
+}

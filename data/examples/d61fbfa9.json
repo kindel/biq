@@ -1,0 +1,196 @@
+{
+  "question": "Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+  "principle": "Respect time",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was about to Slack my manager a status update on a bug fix that had a small open question. Instead I spent 10 minutes rereading the ticket and the last two comments, realized the answer was already there, and just closed the item without sending anything."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would have happened if you had sent it?"
+        },
+        {
+          "role": "candidate",
+          "text": "It would have pulled her into a thread she didn't need to be in. She later mentioned she appreciated not getting pings on things already resolved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+        "Role: new team member fixing a tracked bug",
+        "Situation: drafted Slack to manager with open question",
+        "Action: paused 10 min, re-read ticket and comments, realized answer existed",
+        "Outcome: closed item without sending; manager later noted fewer unnecessary pings",
+        "Quote: \"It would have pulled her into a thread she didn't need to be in.\"",
+        "Follow-up: What would have happened if you had sent it? - Candidate described avoided distraction and manager appreciation"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for a junior. The candidate described an individual-scope situation where they chose to spend their own time rereading existing context rather than sending a low-value message. The concrete action was pausing 10 minutes to avoid pulling the manager into an already-resolved thread. This shows ownership of their own communication hygiene without needing external prompting. The outcome was local but measurable: the manager later commented on fewer unnecessary pings. Biggest strength is the willingness to absorb the thinking cost themselves instead of externalizing it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I usually just send quick questions in Slack when I'm stuck so I can keep moving. One time my manager asked me to slow down on pings but I didn't really change much."
+        },
+        {
+          "role": "interviewer",
+          "text": "Can you give a specific example where you paused before sending?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I mostly send and then figure it out if someone replies."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+        "Role: new team member",
+        "Situation: general habit of quick Slack questions when stuck",
+        "Action: none described; sends first then reacts to replies",
+        "Outcome: manager asked to slow down but candidate reports no change",
+        "Quote: \"I mostly send and then figure it out if someone replies.\"",
+        "Follow-up: Can you give a specific example where you paused before sending? - Candidate could not provide one"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for a junior. The candidate described a pattern of sending first and reacting later without any concrete instance of pausing to reduce noise. When asked for an example of deliberate thinking time, they could not supply one and instead reiterated the existing habit. This shows limited ownership of the cost their messages impose on others. The only signal of feedback received was a manager request to slow down, with no evidence of adjustment. Biggest gap is absence of any self-initiated effort to absorb thinking cost before transmitting."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams were about to get a joint update on a dependency change. I drafted a note that would have asked both sides for input on the same three questions. After 20 minutes rewriting, I split it into two separate threads with only the relevant questions per team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did that matter?"
+        },
+        {
+          "role": "candidate",
+          "text": "Each team would have spent time reading and replying to items outside their scope. The split version got answers in one round instead of two."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+        "Role: senior coordinating two platform teams on dependency change",
+        "Situation: drafted joint update asking both teams same three questions",
+        "Action: spent 20 minutes rewriting into two separate targeted threads",
+        "Outcome: each team answered only relevant items; responses closed in one round",
+        "Quote: \"Each team would have spent time reading and replying to items outside their scope.\"",
+        "Follow-up: Why did that matter? - Candidate explained reduced cross-team reading load and faster closure"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for a senior. The candidate identified an upcoming cross-team update that risked pulling two groups into overlapping questions. They invested 20 minutes to split the message so each team only saw items in their scope. This produced a measurable reduction in unnecessary reading and one fewer round of replies. The action demonstrates influence without authority by shaping communication flow for others. Biggest strength is converting personal thinking time into lower coordination cost across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent a note to both teams about the dependency and let them sort out who needed to answer what. It took a couple rounds to get clean answers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider rewriting it first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I figured they could filter it themselves since they're senior too."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+        "Role: senior coordinating two platform teams",
+        "Situation: sent joint note on dependency change",
+        "Action: sent as-is and let recipients filter",
+        "Outcome: required multiple rounds to get clean answers",
+        "Quote: \"I figured they could filter it themselves since they're senior too.\"",
+        "Follow-up: Did you consider rewriting it first? - Candidate viewed filtering as recipients' responsibility"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for a senior. The candidate sent a single message to two teams knowing overlap existed and relied on recipients to self-filter. When probed, they explicitly stated they did not consider rewriting because the other teams were also senior. This shifted the thinking cost outward rather than absorbing it. The result was extra rounds of clarification. Biggest gap is treating communication hygiene as someone else's problem at the senior level where cross-team coordination is expected."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Before the quarterly all-hands I had a draft note about three org initiatives that included open questions on resourcing. I spent an evening reworking it to remove the questions and instead state the decisions we had already made, sending only the factual summary."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove that choice?"
+        },
+        {
+          "role": "candidate",
+          "text": "An open question in an all-hands note would have generated hundreds of side conversations and Slack threads across the org. We needed focus on execution that quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+        "Role: exec preparing quarterly all-hands",
+        "Situation: draft note on three org initiatives with open resourcing questions",
+        "Action: spent evening removing questions and stating only decided items",
+        "Outcome: avoided org-wide side conversations; kept focus on execution",
+        "Quote: \"An open question in an all-hands note would have generated hundreds of side conversations and Slack threads across the org.\"",
+        "Follow-up: What drove that choice? - Candidate cited need to prevent broad distraction during key quarter"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for an exec. The candidate recognized that an all-hands message containing open questions would trigger widespread, low-value discussion across the organization. They chose to spend personal time converting the note into a factual summary of already-made decisions. This protected hundreds of employees from unnecessary context switching during a critical execution period. The decision reflects strategic judgment about organizational attention as a scarce resource. Biggest strength is scaling the principle from individual messages to org-level communication hygiene.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent the all-hands note with the open questions so teams could give input. We got a lot of feedback and had to do a follow-up note to clarify scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "How much time did the follow-up clarification consume across the org?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was noisy for a week or so but we needed the input."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took your own time to think through a message before sending it to avoid creating noise for others. What was the situation?",
+        "Role: exec sending quarterly all-hands",
+        "Situation: included open resourcing questions in org-wide note",
+        "Action: sent as drafted to gather input",
+        "Outcome: generated widespread feedback requiring a clarifying follow-up",
+        "Quote: \"It was noisy for a week or so but we needed the input.\"",
+        "Follow-up: How much time did the follow-up clarification consume across the org? - Candidate accepted the noise as necessary cost"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for an exec. The candidate chose to broadcast open questions to the full organization and accepted the resulting week of side conversations as an acceptable trade-off. No evidence was shown of considering alternatives that would have contained the discussion to smaller groups. This treated org-wide attention as expendable rather than deliberately protected. The outcome required a second broadcast to regain focus. Biggest gap is missing strategic judgment on the scale of distraction an exec-level message can create."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of message impact considered",
+      "junior": "Individual recipient (manager)",
+      "senior": "Two cross-functional teams",
+      "exec": "Entire organization / all-hands"
+    },
+    {
+      "signal": "Time invested in thinking",
+      "junior": "10 minutes to avoid one unnecessary ping",
+      "senior": "20 minutes to prevent cross-team overlap",
+      "exec": "Several hours to prevent org-wide threads"
+    },
+    {
+      "signal": "Evidence of externalized cost awareness",
+      "junior": "Manager later noted fewer pings",
+      "senior": "Teams answered only relevant items in one round",
+      "exec": "Hundreds of side conversations avoided"
+    },
+    {
+      "signal": "Ownership when feedback received",
+      "junior": "Self-adjusted after manager comment",
+      "senior": "Proactively split message without prompting",
+      "exec": "Chose containment before sending at org scale"
+    },
+    {
+      "signal": "Willingness to absorb thinking cost",
+      "junior": "Yes, on a single Slack",
+      "senior": "Yes, to reduce coordination load",
+      "exec": "Yes, to protect org attention as scarce resource"
+    },
+    {
+      "signal": "Default pattern when uncertain",
+      "junior": "Send then react",
+      "senior": "Assume recipients will filter",
+      "exec": "Broadcast open questions and manage fallout"
+    }
+  ],
+  "principle_id": 6012,
+  "kind": "lp"
+}

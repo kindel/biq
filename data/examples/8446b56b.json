@@ -1,0 +1,178 @@
+{
+  "question": "Tell me about a time you noticed someone on your team consistently wasting others' time in meetings or with unclear requests. How did you address it?",
+  "principle": "Respect time",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a teammate sending daily status pings that always lacked the numbers we needed, so meetings dragged while we asked for details. I pulled them aside after standup and showed the exact format our PM used. They started using it and meetings shortened by about ten minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was their reaction when you first brought it up?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were surprised but said they appreciated the example. I offered to review their next request before they sent it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed someone on your team consistently wasting others' time in meetings or with unclear requests. How did you address it?",
+        "Situation: new teammate's vague daily pings",
+        "Action: private chat + shared PM template",
+        "Outcome: 10 min shorter meetings",
+        "Quote: 'They were surprised but appreciated the example'",
+        "Follow-up: reaction to feedback -> offered to review next one"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for junior level. Candidate owned a small, local inefficiency by giving direct, private feedback with a concrete example rather than escalating or ignoring it. Quote shows they modeled the expected format instead of just complaining. This matches junior scope: individual contributor fixing their immediate team friction. The follow-up confirms coachability on both sides. Biggest strength is taking initiative without authority; gap is lack of measurable before/after data that a senior would be expected to track.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was someone whose updates were always missing numbers so meetings ran long. I mentioned it to my manager in our 1:1 and hoped they would fix it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever talk to the person directly?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I didn't want to create conflict on the team."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Situation: vague updates causing long meetings",
+        "Action: escalated to manager only",
+        "Outcome: none reported",
+        "Quote: 'I didn't want to create conflict'",
+        "Follow-up: direct talk? -> avoided due to conflict concern"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for junior. Candidate recognized the time waste but chose escalation over direct ownership, which is the opposite of expected individual accountability at this level. Quote reveals avoidance rather than coachability. No attempt to model better behavior or measure impact. Biggest gap is lack of direct feedback skill; strength is at least surfacing the issue, but that alone does not meet the principle."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer team lead ran weekly syncs that always started with open floor time, eating 20 minutes before we hit priorities. I collected three weeks of agenda data, showed them the pattern, and offered to co-facilitate the first 10 minutes with a tight template."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other lead respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were defensive at first but agreed after seeing the average start time. We ran the new format for a month and cut average meeting length from 45 to 30 minutes across both teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Situation: peer lead's open-floor syncs wasting 20 min",
+        "Action: data collection + offer to co-facilitate",
+        "Outcome: 15 min shorter meetings, cross-team",
+        "Quote: 'They were defensive at first but agreed after seeing the data'",
+        "Follow-up: response -> ran new format for a month"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for senior level. Candidate used influence without authority by bringing data to a peer and offering joint ownership, producing measurable cross-team impact. Quote shows they handled defensiveness professionally. Scope fits senior expectations: not just fixing their own meetings but changing another team's cadence. Biggest strength is the data-driven approach and sustained result; gap is no mention of teaching the skill to others on the peer team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer's meetings always ran over because they didn't set agendas. I started sending my own agenda notes in the chat during their meetings to keep things moving."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever address it with the peer outside the meeting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried once but it didn't stick, so I just worked around it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Situation: peer meetings running over",
+        "Action: in-meeting chat notes as workaround",
+        "Outcome: no lasting change",
+        "Quote: 'I tried once but it didn't stick, so I just worked around it'",
+        "Follow-up: outside conversation? -> single attempt then workaround"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for senior. Candidate defaulted to personal workaround instead of driving lasting cross-team change, which is below senior scope. Quote shows low persistence after initial pushback. No metrics or influence attempt beyond one try. Biggest gap is treating the problem as individual friction rather than a repeatable process issue; strength is at least trying once."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Across three product teams I saw recurring pattern of unclear pre-reads causing 30-minute context setting in every planning meeting. I sponsored a lightweight pre-read rubric, piloted it with two directors, and rolled it out with a 15-minute manager training."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the org-level result?"
+        },
+        {
+          "role": "candidate",
+          "text": "After six weeks average planning meeting length dropped 12 minutes and two directors reported they reused the rubric in their own staff meetings."
+        }
+      ],
+      "raiseNotes": [
+        "Q: same",
+        "Situation: org-wide unclear pre-reads wasting 30 min per meeting",
+        "Action: sponsored rubric + director pilot + training",
+        "Outcome: 12 min shorter meetings, reused by directors",
+        "Quote: 'two directors reported they reused the rubric'",
+        "Follow-up: org result -> 6-week measurement + reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Respect time for exec level. Candidate identified an org-scale pattern, created leverage through a simple rubric and training, and achieved sustained director-level adoption rather than heroics. Quote demonstrates strategic reuse beyond the initial pilot. Scope matches exec expectations: trading short-term effort for long-term time savings across teams. Biggest strength is the leverage model; gap is no mention of how they handled directors who resisted the change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed many teams had bloated meetings so I sent a company-wide note reminding everyone to respect calendars."
+        },
+        {
+          "role": "interviewer",
+          "text": "What follow-up did you do after the note?"
+        },
+        {
+          "role": "candidate",
+          "text": "I left it to the teams to figure out; I had bigger priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: same",
+        "Situation: bloated meetings across teams",
+        "Action: one company-wide reminder email",
+        "Outcome: none measured",
+        "Quote: 'I left it to the teams to figure out'",
+        "Follow-up: after the note? -> no follow-up due to other priorities"
+      ],
+      "lowerFeedback": "Lowers the bar on Respect time for exec level. Candidate used a low-leverage broadcast instead of designing a repeatable system or securing leader ownership, which is the opposite of exec leverage. Quote reveals abdication after the initial signal. No metrics or sustained mechanism. Biggest gap is treating time respect as a communication problem rather than a process and accountability problem; strength is at least noticing the pattern at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Direct vs indirect approach",
+      "junior": "Raises: private 1:1 with example; Lowers: only escalated to manager",
+      "senior": "Raises: data + co-facilitation offer; Lowers: single attempt then workaround",
+      "exec": "Raises: rubric + training + director pilot; Lowers: one broadcast note with no follow-up"
+    },
+    {
+      "signal": "Measurement of impact",
+      "junior": "Raises: 10 min shorter; Lowers: no metric",
+      "senior": "Raises: 15 min shorter across teams; Lowers: no sustained metric",
+      "exec": "Raises: 12 min shorter + reuse by directors; Lowers: no measurement"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Raises: fixes immediate team friction; Lowers: avoids direct ownership",
+      "senior": "Raises: influences peer without authority; Lowers: personal workaround only",
+      "exec": "Raises: org process with leader leverage; Lowers: abdicates after signal"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Raises: offered to review next request; Lowers: avoided due to conflict fear",
+      "senior": "Raises: persisted through defensiveness with data; Lowers: stopped after one try",
+      "exec": "Raises: secured director reuse; Lowers: no mechanism for resistors"
+    }
+  ],
+  "principle_id": 6012,
+  "kind": "lp"
+}

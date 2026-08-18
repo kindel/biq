@@ -1,0 +1,223 @@
+{
+  "question": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+  "principle": "Hire and develop the best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "On my team last year we had a strong engineer who was doing well on our project but wanted to switch to mobile development. I helped connect them with the mobile team lead and supported the transfer even though we were in the middle of a release."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide to support it instead of trying to keep them?"
+        },
+        {
+          "role": "candidate",
+          "text": "They had already shown they could deliver on backend, and I figured the mobile experience would make them stronger overall. I talked to my manager and we agreed the short-term gap was worth it for their growth."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the workload after they left?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shifted some tickets and I took on a couple extra ones myself for two sprints until we hired a replacement."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+        "Candidate described supporting backend-to-mobile transfer mid-release",
+        "Quote: 'the short-term gap was worth it for their growth'",
+        "Handled workload by taking on extra tickets for two sprints",
+        "Follow-up: Asked why support instead of keep; candidate cited long-term skill growth and manager alignment"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for a junior. The candidate described actively supporting a transfer mid-release because they believed the move would strengthen the person's skills long-term. They explicitly weighed the short-term pain against the individual's development and coordinated with their manager before acting. Workload was absorbed personally for two sprints rather than blocking the move. This shows early ownership of developing others even at individual-contributor scope. The main gap is that impact stayed local with no evidence of influencing peers or processes around talent movement.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had someone good on the team but they wanted to leave for another project. I told my manager I didn't think it was a good time because we were already behind."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you end up supporting the move or not?"
+        },
+        {
+          "role": "candidate",
+          "text": "In the end they left anyway, but I didn't really help with the transition. I was focused on keeping the team stable."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+        "Candidate resisted the transfer due to delivery pressure",
+        "Quote: 'I didn't think it was a good time because we were already behind'",
+        "Did not assist with transition; prioritized team stability",
+        "Follow-up: Asked if they supported the move; candidate confirmed they did not help"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for a junior. The candidate prioritized keeping the person to avoid delivery risk and did not support the transfer. They framed the decision around their own team's stability rather than the individual's growth. No evidence of exploring alternatives or discussing long-term development. This reflects a narrow focus on immediate output over developing talent. The core gap is treating the high performer as a resource to retain instead of someone whose career should be advanced."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "Last year my best backend engineer wanted to move into platform work. I sponsored the transfer even though we were two people short on a critical service."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you make the case internally?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with the platform director and my own manager, laid out the skills gap it would create, and proposed a six-week knowledge transfer plan plus backfill request."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for the person and the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped two platform projects in the first quarter and later helped us with a cross-team incident. We hired their replacement in eight weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+        "Sponsored backend-to-platform transfer while two people short",
+        "Created six-week knowledge transfer plan and backfill request",
+        "Quote: 'laid out the skills gap it would create'",
+        "Outcome included later cross-team help from the moved person",
+        "Follow-up: How did you make the case; candidate described proactive planning with both managers"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for a senior. The candidate sponsored the move despite being understaffed and created a concrete six-week transition plan plus backfill request. They coordinated across two managers to surface the skills gap explicitly. The moved engineer later contributed back during an incident, showing the decision created longer-term leverage. This demonstrates influence without authority and measurable cross-team thinking. The remaining gap is limited evidence of scaling this behavior to other leaders or changing team norms around talent mobility.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had a strong engineer who wanted to move teams. I pushed back because we had key milestones and didn't have bandwidth to train anyone new."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the person eventually move?"
+        },
+        {
+          "role": "candidate",
+          "text": "They did after a few months, but I made it clear it wasn't ideal for the team at the time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+        "Resisted move citing key milestones and training bandwidth",
+        "Quote: 'made it clear it wasn't ideal for the team at the time'",
+        "Allowed move only after repeated requests",
+        "Follow-up: Did the person move; candidate confirmed it happened despite their resistance"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for a senior. The candidate actively pushed back on the transfer due to milestone pressure and only relented after months. They framed the decision around their own team's short-term needs without proposing transition support. No cross-manager coordination or development-focused discussion is described. This shows limited willingness to trade local delivery for broader talent growth. The core issue is treating senior scope as protecting headcount rather than enabling org-wide talent movement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two years ago our top engineering manager wanted to run a new product area. I supported the move even though it left a gap in our core org during a reorg."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I modeled the retention risk if we blocked strong leaders from growth opportunities and the downstream impact on hiring if we became known as a place that holds people back."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the leadership gap?"
+        },
+        {
+          "role": "candidate",
+          "text": "I accelerated two internal promotions and created a dotted-line support structure for six months while the new area launched."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+        "Supported top EM move to new product area during reorg",
+        "Modeled retention and hiring brand risk of blocking growth",
+        "Quote: 'retention risk if we blocked strong leaders from growth opportunities'",
+        "Accelerated two promotions and set up six-month dotted support",
+        "Follow-up: What trade-offs at org level; candidate described long-term talent brand and internal promotion acceleration"
+      ],
+      "raiseFeedback": "Raises the bar on Hire and Develop the Best for an exec. The candidate supported the move of a top engineering manager during a reorg after modeling retention risk and external hiring brand damage. They responded by accelerating two promotions and establishing temporary dotted-line structures rather than blocking the opportunity. This reflects strategic judgment on long-term org health over short-term leadership coverage. The decision was framed around scalable talent practices, not individual heroics. The main gap is that the story centers on one high-profile case without evidence of embedding this approach into recurring org processes or metrics.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had a strong director who wanted to move to another org. I tried to keep them because we were in the middle of a major transformation and couldn't afford the loss."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the eventual outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They stayed for another year but eventually left the company. We didn't have a ready successor at the time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you supported moving a high performer to another team, even though you needed them. What drove that decision?",
+        "Attempted to retain director during transformation",
+        "Quote: 'couldn't afford the loss'",
+        "Person stayed one more year then left the company",
+        "No successor ready; no mention of development support",
+        "Follow-up: What was the outcome; candidate noted eventual exit without internal move support"
+      ],
+      "lowerFeedback": "Lowers the bar on Hire and Develop the Best for an exec. The candidate tried to retain the director to protect a transformation and did not facilitate an internal move. The person eventually exited the company with no successor in place. No modeling of broader retention or talent-brand implications is described. This reflects a focus on immediate operational stability rather than long-term talent development at scale. The core gap is treating senior leaders as fixed resources instead of developing mobility as an org capability."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Willingness to trade short-term capacity for individual growth",
+      "junior": "Supported move and absorbed work personally",
+      "senior": "Created transition plan and backfill request proactively",
+      "exec": "Modeled org-level retention and hiring-brand risk before deciding"
+    },
+    {
+      "signal": "Coordination with other leaders",
+      "junior": "Checked with own manager",
+      "senior": "Aligned with both receiving and losing managers",
+      "exec": "Considered org-wide talent mobility patterns"
+    },
+    {
+      "signal": "Response to the resulting gap",
+      "junior": "Took on extra tickets for two sprints",
+      "senior": "Defined six-week knowledge transfer plus hiring",
+      "exec": "Accelerated two promotions and created temporary structure"
+    },
+    {
+      "signal": "Time horizon of decision",
+      "junior": "Individual skill growth over next project",
+      "senior": "Cross-team leverage after the move",
+      "exec": "Multi-year retention and hiring brand effects"
+    }
+  ],
+  "principle_id": 6010,
+  "kind": "lp"
+}

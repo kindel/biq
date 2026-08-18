@@ -1,0 +1,205 @@
+{
+  "question": "Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+  "principle": "Think big, start small",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team\u2019s internal metrics tool I wanted to add trend charts but we only had two weeks and one backend engineer available. I cut it to just a single daily summary endpoint and a basic line chart using existing data, then documented the schema so we could expand to full trends later without rework."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you pick the daily summary over other options?"
+        },
+        {
+          "role": "candidate",
+          "text": "The PM said weekly reports were the most requested so I started there to get quick value and feedback before adding filters."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you confirm it still pointed at the bigger goal?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a short one-pager that mapped the endpoint to the future multi-metric dashboard we eventually wanted."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+        "Junior SWE on metrics tool; 2-week window, 1 backend dev",
+        "Cut full trends to single daily-summary endpoint + basic chart",
+        "Quote: \"I wrote a short one-pager that mapped the endpoint to the future multi-metric dashboard\"",
+        "Follow-up: Why daily summary? \u2192 PM request data drove choice",
+        "Follow-up: How did you keep long-term goal visible? \u2192 One-pager for future expansion"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for a junior. The candidate scoped a single endpoint to fit two weeks and one engineer while explicitly linking it to the future dashboard via a one-pager. Quote: \"I wrote a short one-pager that mapped the endpoint to the future multi-metric dashboard.\" This shows ownership of personal scope and forward planning without overreach. The decision was driven by PM request data rather than personal preference. Biggest gap is that impact stayed within one team and no evidence of seeking feedback mid-project.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to build the full trend dashboard because that was the real goal, but we ran out of time so we just shipped whatever was done at the deadline."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the initial cut?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn\u2019t really cut anything up front; I just started coding the biggest features first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+        "Attempted full dashboard with no upfront cuts",
+        "Shipped partial work at deadline without plan",
+        "Quote: \"I didn\u2019t really cut anything up front; I just started coding the biggest features first\"",
+        "Follow-up: What drove the order? \u2192 No explicit prioritization"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for a junior. The candidate started the full dashboard without any resource-based scoping and delivered an incomplete result at the deadline. Quote: \"I didn\u2019t really cut anything up front; I just started coding the biggest features first.\" No evidence of deliberate first-slice decisions or linking early work to the long-term vision. Biggest gap is absence of scoping discipline even at the individual-contributor level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments service needed fraud signals but the data platform team was backlogged. I scoped a minimal weekly batch export from our service logs into an S3 bucket that the data team could ingest immediately, while keeping the design compatible with the real-time streaming pipeline we planned for Q3."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the data platform team aligned?"
+        },
+        {
+          "role": "candidate",
+          "text": "I walked their lead through the schema and offered to own the backfill script so their sprint capacity stayed untouched."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed the approach worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "Fraud false-positive rate dropped 12% in the first month using the batch data, and the streaming handoff took only two weeks instead of the usual six."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+        "Senior SWE on payments fraud signals; data platform backlog",
+        "Weekly S3 batch export as first slice, schema compatible with future streaming",
+        "Quote: \"offered to own the backfill script so their sprint capacity stayed untouched\"",
+        "Follow-up: Alignment with data platform? \u2192 Schema walkthrough + backfill ownership",
+        "Follow-up: Evidence of success? \u2192 12% false-positive drop, faster streaming handoff"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small for a senior. The candidate scoped a weekly batch export that fit the data platform\u2019s current capacity while preserving the schema for the Q3 streaming goal. Quote: \"offered to own the backfill script so their sprint capacity stayed untouched.\" Cross-team influence produced measurable fraud improvement and accelerated later work. Biggest strength is the explicit resource-aware first slice combined with documented long-term compatibility.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I pushed for the real-time streaming pipeline because that was the strategic direction, but the data platform team couldn\u2019t staff it so the project stalled for two quarters."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider any interim approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it but decided it was better to wait for the full solution rather than build something temporary."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+        "Insisted on full real-time streaming despite data platform capacity",
+        "Project stalled two quarters with no interim",
+        "Quote: \"decided it was better to wait for the full solution rather than build something temporary\"",
+        "Follow-up: Any interim considered? \u2192 No, avoided temporary work"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small for a senior. The candidate refused an interim batch solution and allowed a two-quarter stall rather than deliver partial value. Quote: \"decided it was better to wait for the full solution rather than build something temporary.\" No evidence of influencing the partner team or creating a resource-matched first slice. Biggest gap is lack of pragmatic scoping that still advances the long-term goal."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our marketplace needed seller trust signals at company scale, but analytics headcount was fixed. I approved a four-week pilot that reused existing review data to surface a simple seller rating in the buyer app, while the architecture was designed so the same signals could feed the future machine-learning trust platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you choose the pilot scope across competing org priorities?"
+        },
+        {
+          "role": "candidate",
+          "text": "I required the pilot to show a 3% lift in buyer conversion within 60 days or we would deprioritize it; that forced the team to pick the highest-leverage reuse of current data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term trade-off you accepted?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deferred richer graph features for six months so the pilot stayed within existing headcount and still proved the trust concept to the board."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+        "Exec-level marketplace trust signals; fixed analytics headcount",
+        "4-week pilot reusing review data for seller rating, architecture compatible with future ML platform",
+        "Quote: \"required the pilot to show a 3% lift in buyer conversion within 60 days or we would deprioritize it\"",
+        "Follow-up: How scope chosen across priorities? \u2192 Conversion-lift gate forced high-leverage reuse",
+        "Follow-up: Long-term trade-off accepted? \u2192 Deferred graph features six months to stay within headcount"
+      ],
+      "raiseFeedback": "Raises the bar on Think big, start small at exec level. The candidate authorized a four-week pilot that reused existing review data while preserving architecture for the future ML trust platform. Quote: \"required the pilot to show a 3% lift in buyer conversion within 60 days or we would deprioritize it.\" The scope decision included an explicit success gate and a deliberate six-month deferral of richer features. Biggest strength is strategic judgment that balanced immediate resource constraints against multi-quarter platform vision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I green-lit the full seller trust platform build because leadership wanted a big bet, even though analytics staffing was flat. After nine months we had only a design doc and no shipped value."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any discussion of a smaller first step?"
+        },
+        {
+          "role": "candidate",
+          "text": "The team felt anything smaller wouldn\u2019t move the needle enough to justify the effort."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you scoped a project to match your current resources while keeping the long-term goal in sight. How did you decide what to build first?",
+        "Approved full trust platform despite flat headcount",
+        "Nine months later only a design doc, no shipped value",
+        "Quote: \"The team felt anything smaller wouldn\u2019t move the needle enough to justify the effort\"",
+        "Follow-up: Any smaller first step discussed? \u2192 Team rejected incremental approach"
+      ],
+      "lowerFeedback": "Lowers the bar on Think big, start small at exec level. The candidate approved the full platform build without a resource-constrained first slice, resulting in nine months of design work and zero customer value. Quote: \"The team felt anything smaller wouldn\u2019t move the needle enough to justify the effort.\" No evidence of imposing a measurable pilot gate or protecting long-term optionality through incremental delivery. Biggest gap is absence of strategic scoping judgment under fixed resources."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Resource-aware first slice",
+      "junior": "Chose daily summary to fit 2 weeks/1 dev",
+      "senior": "Weekly batch export fit data-platform capacity",
+      "exec": "4-week pilot gated on 3% conversion lift"
+    },
+    {
+      "signal": "Long-term compatibility",
+      "junior": "One-pager mapped endpoint to future dashboard",
+      "senior": "Schema preserved for Q3 streaming",
+      "exec": "Architecture reusable by future ML platform"
+    },
+    {
+      "signal": "Cross-team influence",
+      "junior": "None demonstrated",
+      "senior": "Owned backfill script to unblock partner",
+      "exec": "Set org-level success gate across analytics and product"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Local feature delivered on time",
+      "senior": "12% fraud drop + faster later handoff",
+      "exec": "Pilot decision protected board-level roadmap"
+    },
+    {
+      "signal": "Trade-off clarity",
+      "junior": "Not shown",
+      "senior": "Interim batch vs full streaming",
+      "exec": "Deferred graph features 6 months to stay within headcount"
+    }
+  ],
+  "principle_id": 6001,
+  "kind": "lp"
+}

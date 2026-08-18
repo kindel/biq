@@ -1,0 +1,193 @@
+{
+  "question": "Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+  "principle": "Bias for action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I had two days to implement a logging fix. I sketched the approach on one page, checked with my mentor for 15 minutes, then started coding. We shipped in four days total."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you stop planning after that sketch?"
+        },
+        {
+          "role": "candidate",
+          "text": "The risk was low and I knew I could iterate once I had working code. My mentor confirmed the main edge case I had missed."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure the planning versus execution split?"
+        },
+        {
+          "role": "candidate",
+          "text": "Planning was maybe 10 percent of the time. I tracked it in my notes because my manager had asked us to be deliberate about it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+        "Candidate described first project logging fix: one-page sketch + 15-min mentor check then coded",
+        "Outcome: shipped in four days, planning ~10 percent",
+        "Quote: 'The risk was low and I knew I could iterate once I had working code'",
+        "Follow-up: What made you stop? Mentor confirmed edge case",
+        "Follow-up: How measured split? Tracked in notes per manager request"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a junior. The candidate limited planning to a one-page sketch plus brief mentor input before coding a low-risk logging fix and shipped in four days. They explicitly tracked the 10 percent planning split because their manager had asked the team to do so. The decision criterion was clear: risk was low and iteration was feasible once code existed. This shows ownership of their own work and coachability from the quick mentor check. The main gap is that the story stays strictly individual with no cross-team element, which is acceptable at this level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "For a small internal tool I spent three days writing requirements and a detailed design doc before touching code. It took a week total."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did planning take three days on a small tool?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted to make sure everything was covered so I wouldn't have to rework later. My manager had stressed thoroughness on the last project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+        "Candidate spent three days on requirements and design doc for small internal tool",
+        "Outcome: one week total, planning roughly half the time",
+        "Quote: 'I wanted to make sure everything was covered so I wouldn't have to rework later'",
+        "Follow-up: Why three days? Manager stressed thoroughness on prior project"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for a junior. The candidate spent three days planning a small internal tool before any execution, making planning roughly half the total time. The stated reason was avoiding rework and responding to a prior manager comment on thoroughness. No clear stopping criterion was described beyond completing the design doc. This shows limited ownership of deciding when enough planning has occurred. The story remains individual but demonstrates the opposite behavior the principle seeks."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams needed a shared retry library. I ran a 45-minute whiteboard session with the other lead, we picked the simplest approach, and I had a working prototype the next day. We iterated in production within a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know 45 minutes was enough?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had already seen the failure pattern in our metrics and the other team had a hard deadline. Any longer and we would have missed their launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+        "Candidate ran 45-minute cross-team whiteboard on shared retry library then built prototype next day",
+        "Outcome: iterated in production within a week",
+        "Quote: 'We had already seen the failure pattern in our metrics and the other team had a hard deadline'",
+        "Follow-up: How know 45 minutes enough? Metrics plus other team's launch date"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action for a senior. The candidate limited a cross-team retry library discussion to 45 minutes because metrics already showed the failure pattern and the partner team had a fixed launch date. They moved to a working prototype the next day and reached production iteration inside a week. The decision was driven by external deadline and existing data rather than exhaustive design. This demonstrates influence without authority and use of clear metrics. The single gap is that the story does not yet show raising the bar for others on the same principle.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I scheduled three alignment meetings across teams before we started on the shared client library. Planning took about two weeks before any code was written."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove the two-week planning window?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted consensus from every stakeholder so there would be no objections once we started building."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+        "Candidate scheduled three alignment meetings across teams for shared client library",
+        "Outcome: two weeks of planning before any code",
+        "Quote: 'I wanted consensus from every stakeholder so there would be no objections once we started building'",
+        "Follow-up: What drove two weeks? Seeking full consensus upfront"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action for a senior. The candidate ran three cross-team alignment meetings over two weeks before writing any code for a shared client library. The explicit goal was full consensus to avoid later objections. No data or deadline was cited as the trigger to stop planning. This shows influence without authority but in the wrong direction, extending planning instead of compressing it. The story has cross-team scope but the outcome works against the principle."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had six weeks to decide on entering a new vertical. I limited the team to one week of market analysis and customer calls, then we ran a two-week prototype with real traffic. We launched the beta after four weeks total."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you cap analysis at one week?"
+        },
+        {
+          "role": "candidate",
+          "text": "The board meeting was fixed and we already had enough signal from three target customers that the problem was real. Further analysis would not have changed the go decision."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+        "Candidate capped market analysis at one week for new vertical entry, then two-week prototype",
+        "Outcome: beta launch after four weeks total",
+        "Quote: 'The board meeting was fixed and we already had enough signal from three target customers that the problem was real'",
+        "Follow-up: Why one week? Fixed board date plus sufficient customer signal"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action at the exec level. The candidate constrained market analysis for a new vertical to one week because a board date was immovable and three target customers already confirmed the problem. They moved to a two-week prototype with real traffic and reached beta in four weeks. The stopping rule combined external constraint with sufficient customer signal rather than exhaustive study. This shows strategic judgment and willingness to trade depth for speed at business scale. The story includes clear long-term leverage through early customer validation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Before committing to the new market we commissioned a full competitive study and financial model that took eight weeks. Only then did we begin any build work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did the study need eight weeks?"
+        },
+        {
+          "role": "candidate",
+          "text": "We wanted a complete view of every competitor and regulatory angle before making the investment case to the board."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept planning time to a small fraction of execution time. How did you decide when to stop planning and start?",
+        "Candidate commissioned eight-week competitive study and financial model before any build on new market",
+        "Outcome: planning consumed majority of timeline before execution began",
+        "Quote: 'We wanted a complete view of every competitor and regulatory angle before making the investment case to the board'",
+        "Follow-up: Why eight weeks? Complete view of competitors and regulatory angles"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action at the exec level. The candidate authorized an eight-week competitive study and financial model before any execution on a new market entry. The rationale was the desire for a complete view of competitors and regulatory angles ahead of the board investment case. No external deadline or minimum viable signal was used to truncate planning. This demonstrates long-term thinking but without the bias toward action required at this scope. The decision traded speed for completeness in a way that delayed business impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision criterion for stopping planning",
+      "junior": "Used risk level + mentor input",
+      "senior": "Used metrics + partner deadline",
+      "exec": "Used board date + minimal customer signal"
+    },
+    {
+      "signal": "Planning-to-execution ratio",
+      "junior": "~10 percent planning",
+      "senior": "45 minutes planning then next-day prototype",
+      "exec": "1 week analysis then 2-week prototype"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task",
+      "senior": "Cross-team library",
+      "exec": "New market entry decision"
+    },
+    {
+      "signal": "Use of external constraints",
+      "junior": "Manager request to track time",
+      "senior": "Partner team's hard launch date",
+      "exec": "Fixed board meeting date"
+    },
+    {
+      "signal": "Evidence of iteration after start",
+      "junior": "Planned to iterate once code existed",
+      "senior": "Iterated in production within a week",
+      "exec": "Reached beta after four weeks total"
+    },
+    {
+      "signal": "Trade-off articulation",
+      "junior": "Low risk justified quick start",
+      "senior": "Longer planning would miss deadline",
+      "exec": "Further analysis would not change go decision"
+    }
+  ],
+  "principle_id": 6007,
+  "kind": "lp"
+}

@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+  "principle": "No surprises",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was building a feature and noticed my estimate was off by two days because of an unexpected API change. I flagged it in our daily standup the same day and asked my manager for help reprioritizing."
+        },
+        {
+          "role": "interviewer",
+          "text": "How early was that relative to the deadline?"
+        },
+        {
+          "role": "candidate",
+          "text": "About ten days out. We shifted scope and hit the original date for the core part."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+        "Situation: individual feature, API change caused slip",
+        "Action: flagged same day in standup, asked manager for reprioritization",
+        "Outcome: scope adjusted, core delivered on time",
+        "Quote: \"I flagged it in our daily standup the same day\"",
+        "Follow-up: Asked how early; candidate said ten days out and described the adjustment"
+      ],
+      "raiseFeedback": "Raises the bar on No surprises. The candidate noticed the slip ten days out on their own task and immediately raised it in standup rather than waiting. Quote: \"I flagged it in our daily standup the same day.\" This shows early detection and ownership of their work at junior level. They sought help instead of trying to recover alone. Biggest strength is the same-day communication that allowed scope trade-offs before the deadline.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was working on a task and it started taking longer than expected. I kept working on it over the weekend to try and catch up."
+        },
+        {
+          "role": "interviewer",
+          "text": "When did you first realize it would miss the date?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably a week before, but I thought I could still make it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+        "Situation: individual task running long",
+        "Action: worked weekends to catch up, no escalation",
+        "Outcome: not stated, implies missed date",
+        "Quote: \"I thought I could still make it\"",
+        "Follow-up: Probing timing; candidate admitted realization a week out but chose solo recovery"
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises. The candidate realized the slip a week before the date yet chose to work weekends alone instead of raising it. Quote: \"I thought I could still make it.\" At junior level this shows lack of coachability and ownership of communicating risk. No evidence of early flag or asking for help. Biggest gap is waiting until recovery was unlikely before any signal."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A dependency team missed their handoff by four days, which would have slipped our launch. I pulled data on the impact, met with their lead the next day, and we agreed on a reduced scope that protected the customer-facing date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the cross-team reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They appreciated the early heads-up and we documented the trade-off for leadership."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+        "Situation: dependency slip affecting launch",
+        "Action: gathered impact data, met lead next day, negotiated reduced scope",
+        "Outcome: protected customer date, documented for leadership",
+        "Quote: \"I pulled data on the impact, met with their lead the next day\"",
+        "Follow-up: Asked about cross-team reaction; candidate noted appreciation and documentation"
+      ],
+      "raiseFeedback": "Raises the bar on No surprises. The candidate detected a dependency slip early enough to meet the other team the next day and negotiate scope with data. Quote: \"I pulled data on the impact, met with their lead the next day.\" At senior level this demonstrates influence without authority and cross-team mitigation. They protected the date while keeping leadership informed. Biggest strength is turning a potential surprise into a controlled trade-off.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A partner team was behind and I sent them a few reminder emails. I updated my status report weekly but didn't escalate further."
+        },
+        {
+          "role": "interviewer",
+          "text": "When did you first know the date would slip?"
+        },
+        {
+          "role": "candidate",
+          "text": "About three weeks out, but I hoped they would recover."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+        "Situation: partner team behind on dependency",
+        "Action: sent reminder emails, weekly status updates only",
+        "Outcome: hoped for recovery, no escalation",
+        "Quote: \"I updated my status report weekly but didn't escalate further\"",
+        "Follow-up: Probing timing; candidate knew three weeks out but relied on hope"
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises. The candidate knew three weeks ahead yet limited action to emails and weekly reports without escalation. Quote: \"I updated my status report weekly but didn't escalate further.\" At senior level this lacks influence and cross-team resolution. No evidence of driving a mitigation plan. Biggest gap is treating the risk as someone else's problem instead of owning the signal."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our quarterly revenue target was at risk due to a platform delay. I modeled three scenarios, presented trade-offs to the exec team two months out, and we chose to deprioritize a lower-ROI initiative to protect the core date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit the revenue number and used the decision as a template for future planning cycles."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+        "Situation: platform delay threatening quarterly revenue",
+        "Action: modeled three scenarios, presented trade-offs two months out",
+        "Outcome: deprioritized lower-ROI work, hit revenue target",
+        "Quote: \"I modeled three scenarios, presented trade-offs to the exec team two months out\"",
+        "Follow-up: Asked long-term impact; candidate noted it became a planning template"
+      ],
+      "raiseFeedback": "Raises the bar on No surprises. The candidate identified the revenue risk two months ahead, built scenario models, and drove a strategic trade-off at exec level. Quote: \"I modeled three scenarios, presented trade-offs to the exec team two months out.\" This shows org-level impact and long-term thinking. The decision created reusable process. Biggest strength is converting early detection into business-level prioritization.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a slip in an infrastructure project. I mentioned it in the monthly business review and asked the teams to work harder on recovery."
+        },
+        {
+          "role": "interviewer",
+          "text": "How far out did you surface it?"
+        },
+        {
+          "role": "candidate",
+          "text": "About six weeks before the quarter end, once it was clear."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized a date was going to slip. How early did you know, and what did you do about it?",
+        "Situation: infrastructure project slip",
+        "Action: mentioned in monthly review, asked teams to work harder",
+        "Outcome: no specific mitigation described",
+        "Quote: \"I mentioned it in the monthly business review\"",
+        "Follow-up: Probing timing; candidate surfaced six weeks out once clear"
+      ],
+      "lowerFeedback": "Lowers the bar on No surprises. The candidate waited until six weeks before quarter end to raise the issue in a monthly review and offered no strategic options. Quote: \"I mentioned it in the monthly business review and asked the teams to work harder.\" At exec level this shows insufficient ambiguity handling and lack of leverage. No evidence of modeling trade-offs or long-term process change. Biggest gap is passive signaling instead of proactive org-level decision making."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Timing of detection",
+      "junior": "Same day vs week-out hope",
+      "senior": "Next-day cross-team action vs weekly reports",
+      "exec": "Two months out with models vs six weeks passive mention"
+    },
+    {
+      "signal": "Communication channel",
+      "junior": "Standup + manager ask",
+      "senior": "Direct peer lead meeting + data",
+      "exec": "Exec presentation with scenarios"
+    },
+    {
+      "signal": "Mitigation ownership",
+      "junior": "Asked for help on own task",
+      "senior": "Negotiated scope across teams",
+      "exec": "Drove org trade-off decision"
+    },
+    {
+      "signal": "Outcome framing",
+      "junior": "Core part delivered",
+      "senior": "Protected customer date",
+      "exec": "Hit revenue + reusable process"
+    },
+    {
+      "signal": "Influence level",
+      "junior": "Local escalation",
+      "senior": "Without authority across teams",
+      "exec": "Strategic judgment at business level"
+    }
+  ],
+  "principle_id": 6005,
+  "kind": "lp"
+}

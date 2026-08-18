@@ -1,0 +1,181 @@
+{
+  "question": "Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+  "principle": "Bias for action",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On a recent project I owned a small dashboard change. We had partial usage data showing users struggled with the filter. I shipped a reversible tweak to the default sort in one day instead of running another week of A/B tests."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the risk if it went wrong?"
+        },
+        {
+          "role": "candidate",
+          "text": "Worst case we could roll it back in minutes and only a few users would notice. It ended up lifting task completion by 12 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+        "Candidate owned a dashboard filter change based on partial data",
+        "Shipped reversible default sort tweak in one day",
+        "Risk framed as quick rollback with minimal user impact",
+        "Outcome: +12% task completion",
+        "Follow-up: Asked about rollback process; candidate described exact monitoring and revert steps they used"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action. The candidate described shipping a small, reversible dashboard change after seeing partial usage data rather than running extra tests. Quote: \"Worst case we could roll it back in minutes.\" The story stayed within individual scope, showed clear ownership of the decision, and included a concrete rollback plan. This matches expectations for a junior who acts on reversible choices without over-analysis. Biggest strength is the explicit risk framing tied to a fast revert.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to update the button color but my manager said to wait for the full quarterly survey so we had more data."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why did you agree to wait?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't want to make the wrong call without approval."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+        "Candidate waited for quarterly survey on a button color change",
+        "Cited manager approval as reason for delay",
+        "No personal ownership or attempt to move forward",
+        "Follow-up: Asked what data they already had; candidate said partial clicks but still deferred"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action. The candidate chose to wait for a full quarterly survey on a trivial button color change instead of testing a reversible update. Quote: \"I didn't want to make the wrong call without approval.\" Story shows no individual ownership and defaults to hierarchy even when risk was low. For a junior this signals weak coachability on taking small actions. Biggest gap is absence of any attempt to quantify or mitigate the reversible risk themselves."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were blocked on an API contract. I proposed we ship a minimal reversible version to staging only and let three partner teams test it live instead of running another month of design reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-day experiment with one team and shared the error logs; the other teams then opted in. We iterated twice before full rollout."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+        "Candidate proposed minimal API contract to staging to unblock two teams",
+        "Limited exposure to three partner teams for live testing",
+        "Secured buy-in via two-day experiment and shared logs",
+        "Outcome: two iterations then full rollout",
+        "Follow-up: Asked about cross-team coordination; candidate named specific owners and how they influenced without authority"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action. The candidate moved a minimal reversible API contract to staging after partial design work, limiting exposure to three teams rather than waiting for full reviews. Quote: \"I ran a two-day experiment with one team and shared the error logs.\" Story demonstrates cross-team influence and clear metrics from the experiment. This meets senior expectations for driving reversible decisions that unlock others. Biggest strength is the concrete coordination mechanism used to gain buy-in.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had an API decision that affected three teams. I scheduled a full design review because I wanted everyone to have more data before we committed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there a way to test a slice first?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't feel comfortable proposing that without the larger group aligned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+        "Candidate defaulted to full design review for multi-team API change",
+        "No attempt to run limited experiment or reversible slice",
+        "Deferred to group alignment instead of driving action",
+        "Follow-up: Asked about possible staging approach; candidate said it felt too risky without consensus"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action. The candidate scheduled a full design review for a multi-team API decision instead of testing a reversible slice. Quote: \"I didn't feel comfortable proposing that without the larger group aligned.\" Story shows no cross-team influence and treats a reversible decision as high-stakes. For a senior this indicates insufficient bias toward action that could unblock others. Biggest gap is lack of any experiment or limited rollout attempt."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had early signals that a new market segment would respond to a lighter product tier. I authorized a reversible pilot in two regions with a 30-day exit clause instead of commissioning a six-month market study."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "We could exit with minimal brand damage and reallocate the team; the pilot showed 8 percent revenue lift and informed the full launch decision."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+        "Candidate authorized reversible pilot for new product tier in two regions",
+        "Used 30-day exit clause instead of six-month study",
+        "Risk framed as minimal brand damage and team reallocation",
+        "Outcome: 8 percent revenue lift and informed launch",
+        "Follow-up: Asked about long-term trade-offs; candidate discussed how the decision affected annual planning and resource allocation"
+      ],
+      "raiseFeedback": "Raises the bar on Bias for Action. The candidate authorized a reversible two-region pilot for a new product tier after early signals rather than a six-month study. Quote: \"We could exit with minimal brand damage and reallocate the team.\" Story shows org-level impact, clear exit criteria, and strategic trade-off between speed and data. This aligns with exec expectations for making high-ambiguity decisions with defined reversibility. Biggest strength is the explicit linkage to annual planning and resource decisions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We saw early interest in a new segment but I asked for a full market study before any pilot because the investment was large."
+        },
+        {
+          "role": "interviewer",
+          "text": "Could any part have been tested reversibly?"
+        },
+        {
+          "role": "candidate",
+          "text": "The leadership team preferred complete data before committing any resources."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you moved fast on a reversible decision rather than waiting for more data. What was the risk, and how did it turn out?",
+        "Candidate defaulted to full market study for new segment",
+        "No exploration of limited reversible pilot",
+        "Cited leadership preference for complete data",
+        "Follow-up: Asked about possible staged approach; candidate said investment size made any partial test unacceptable"
+      ],
+      "lowerFeedback": "Lowers the bar on Bias for Action. The candidate commissioned a full market study for a new segment instead of testing a reversible pilot. Quote: \"The leadership team preferred complete data before committing any resources.\" Story shows no strategic judgment on reversibility and defaults to exhaustive analysis even when scope could be limited. For an exec this signals weak long-term thinking on time-to-learning. Biggest gap is absence of any defined exit criteria or staged investment approach."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Decision speed on reversible choice",
+      "junior": "Shipped small tweak in one day after partial data",
+      "senior": "Moved API contract to staging after two-day experiment",
+      "exec": "Authorized two-region pilot with 30-day exit instead of six-month study"
+    },
+    {
+      "signal": "Risk framing and mitigation",
+      "junior": "Rollback in minutes with minimal user impact",
+      "senior": "Limited exposure to three teams with shared logs",
+      "exec": "Minimal brand damage and team reallocation on exit"
+    },
+    {
+      "signal": "Ownership vs. deference",
+      "junior": "Owned change and described exact revert steps",
+      "senior": "Influenced without authority via experiment results",
+      "exec": "Set exit criteria that informed annual planning"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual dashboard task",
+      "senior": "Unblocked two cross-team efforts",
+      "exec": "Org-level market segment decision"
+    },
+    {
+      "signal": "Learning from outcome",
+      "junior": "Tracked 12 percent task completion lift",
+      "senior": "Iterated twice before full rollout",
+      "exec": "8 percent revenue lift guided launch decision"
+    }
+  ],
+  "principle_id": 6007,
+  "kind": "lp"
+}

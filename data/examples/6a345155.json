@@ -1,0 +1,222 @@
+{
+  "question": "Tell me about a time you adopted an idea from outside your team or company, even though it was not invented here. How did you convince others?",
+  "principle": "Invent and simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my last project I pulled in a logging pattern from an open-source project another team had linked in their wiki. It cut our debug time in half."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get your team to try it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a quick spike, showed the before-and-after on our own data in stand-up, and my manager agreed to switch the next sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One teammate wanted to keep our custom format. I asked him to try it for one week and we could revert. He ended up liking the searchability."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you adopted an idea from outside your team or company...",
+        "Used OSS logging pattern another team had shared in wiki",
+        "Ran personal spike and showed before/after metrics in stand-up",
+        "Quote: \"I asked him to try it for one week and we could revert\"",
+        "Follow-up: Asked about resistance - teammate wanted custom format, agreed to time-boxed trial"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify for a junior. The candidate identified an external logging pattern, ran a low-cost spike, and used a one-week trial to overcome the single point of resistance. The concrete quote shows they treated adoption as an experiment rather than a mandate. Scope stayed within their own work, which matches junior expectations. Biggest strength is the willingness to time-box the trial instead of debating in the abstract.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a similar problem so I built a custom logger because nothing inside the company matched exactly what we needed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look outside the company at all?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, our use case felt unique so we just started coding."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "It worked but took three weeks and we still have to maintain it ourselves."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you adopted an idea from outside your team or company...",
+        "Built custom logger instead of looking externally",
+        "Stated use case felt unique so skipped external search",
+        "Quote: \"It worked but took three weeks and we still have to maintain it ourselves\"",
+        "Follow-up: Asked if they looked outside - response was they did not"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify. The candidate defaulted to building internally without checking external options and accepted the maintenance cost as inevitable. No attempt to influence others toward reuse or simplification. The outcome quote highlights the ongoing cost without any learning or course correction. This shows weak ownership of the simplify part of the principle at the individual-contributor level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout latency was high. I brought in the circuit-breaker pattern from a talk by the payments team at another company and got two other services to adopt it too."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote a one-page doc with their exact metrics, ran a brown-bag, and offered to pair on the first implementation. Two teams shipped within a quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you discuss?"
+        },
+        {
+          "role": "candidate",
+          "text": "We agreed to start with only the payment path and measure error budget impact before expanding."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you adopted an idea from outside your team or company...",
+        "Brought circuit-breaker pattern from external company talk",
+        "Wrote one-page doc with their metrics and ran brown-bag",
+        "Two other teams shipped within a quarter",
+        "Quote: \"We agreed to start with only the payment path and measure error budget impact\"",
+        "Follow-up: Trade-offs discussed - limited initial scope to payment path"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify at senior level. The candidate imported a proven pattern, packaged it with the adopting teams' own data, and drove cross-team adoption through pairing rather than authority. The quote demonstrates clear scoping and measurement, which kept the change lightweight. Cross-team reach and the brown-bag approach show influence without authority. Main gap is that the story stays at the service level rather than broader org tooling.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I suggested we copy a retry library another company open-sourced but my team decided our requirements were different so we kept our existing code."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you push the idea further?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought it up in one planning meeting but didn't have time to build a proof of concept."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped but still have the same retry storms during incidents."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you adopted an idea from outside your team or company...",
+        "Suggested external retry library but team rejected due to perceived differences",
+        "Brought it up once in planning but no POC created",
+        "Quote: \"We shipped but still have the same retry storms during incidents\"",
+        "Follow-up: Asked if they pushed further - only one mention in planning"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify for senior. The candidate surfaced an external library but accepted the first objection without data or a minimal trial. Lack of follow-through meant the org continued paying the retry-storm cost. No evidence of cross-team influence or simplification. The outcome quote directly links the decision to an ongoing operational problem without any learning captured."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were building our own workflow engine. I stopped the project after seeing a competitor's public post-mortem and adopted their open-source approach instead, saving eighteen months of work."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the broader organization?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as a make-vs-buy decision with three-year TCO, ran a two-week spike with two teams, and presented the delta to the VP staff. We redirected the headcount to customer-facing features."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "We contributed two fixes back upstream and the pattern spread to three other orgs inside the company."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you adopted an idea from outside your team or company...",
+        "Halted internal workflow engine after competitor post-mortem",
+        "Used three-year TCO framing and two-week spike to align VPs",
+        "Redirected headcount to customer features",
+        "Quote: \"We contributed two fixes back upstream and the pattern spread to three other orgs\"",
+        "Follow-up: Long-term effect - upstream contributions and internal spread"
+      ],
+      "raiseFeedback": "Raises the bar on Invent and Simplify at exec level. The candidate used a public post-mortem to kill an internal build, quantified the decision with multi-year TCO, and redirected resources at the org level. The quote shows both external contribution and internal leverage, which is the highest form of simplification. Strategic judgment is visible in the choice to run a short spike rather than a long debate. Primary strength is treating the decision as a portfolio trade-off rather than a technical preference.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We evaluated an external workflow tool but decided our scale and compliance needs required a custom build so we continued the internal project."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data drove that call?"
+        },
+        {
+          "role": "candidate",
+          "text": "Engineering leads felt the external option would need too many extensions."
+        },
+        {
+          "role": "interviewer",
+          "text": "How has that played out?"
+        },
+        {
+          "role": "candidate",
+          "text": "We are two years in and still adding core features; other teams have started building their own lighter versions."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you adopted an idea from outside your team or company...",
+        "Chose custom workflow build over external tool due to scale concerns",
+        "Decision driven by engineering leads' qualitative view",
+        "Quote: \"We are two years in and still adding core features; other teams have started building their own lighter versions\"",
+        "Follow-up: Asked about data - no quantitative comparison performed"
+      ],
+      "lowerFeedback": "Lowers the bar on Invent and Simplify at exec level. The candidate allowed a build-versus-buy decision to rest on qualitative concerns without a measured spike or TCO model. Two years later the org is still funding the original project plus shadow efforts, showing failure to simplify at scale. No evidence of strategic trade-off analysis or long-term leverage. The outcome quote illustrates duplicated work across teams as the direct result."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Willingness to adopt external idea",
+      "junior": "Junior raise: ran spike on OSS pattern; lower: skipped search entirely",
+      "senior": "Senior raise: imported circuit-breaker across teams; lower: dropped idea after one objection",
+      "exec": "Exec raise: killed internal project after competitor post-mortem; lower: accepted qualitative concerns without data"
+    },
+    {
+      "signal": "Convincing others with evidence",
+      "junior": "Junior raise: showed before/after in stand-up and offered time-boxed trial; lower: no data shared",
+      "senior": "Senior raise: one-page doc with adopting teams' metrics plus brown-bag; lower: no POC attempted",
+      "exec": "Exec raise: three-year TCO and two-week spike presented to VP staff; lower: no quantitative comparison"
+    },
+    {
+      "signal": "Scope and leverage",
+      "junior": "Junior raise: individual task level with manager agreement; lower: stayed within own team",
+      "senior": "Senior raise: two other teams shipped within quarter; lower: no cross-team movement",
+      "exec": "Exec raise: headcount redirected and pattern spread to three orgs; lower: shadow builds emerged elsewhere"
+    },
+    {
+      "signal": "Handling resistance or trade-offs",
+      "junior": "Junior raise: accepted one-week revert clause; lower: accepted custom build as final",
+      "senior": "Senior raise: limited initial scope to payment path with error budget check; lower: accepted first objection",
+      "exec": "Exec raise: framed as portfolio decision and measured delta; lower: no measured spike performed"
+    }
+  ],
+  "principle_id": 6006,
+  "kind": "lp"
+}

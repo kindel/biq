@@ -1,0 +1,205 @@
+{
+  "question": "Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+  "principle": "Have Backbone; Disagree and commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I thought we should use a simpler library for the data parser instead of the heavier one the team picked. I pulled benchmarks showing 30% faster runtime and shared them in the design doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The lead decided to stick with the heavier one for long-term support. I stopped pushing, updated the ticket to use it, and spent the next sprint optimizing the integration so it still met our latency target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you shift your energy?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on making the chosen approach work well instead of revisiting the debate in standups."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+        "Candidate: Junior dev, first project, benchmarked lighter library vs heavier one chosen for support",
+        "Argued in design doc with runtime data; decision went the other way",
+        "Shifted by rewriting integration and hitting latency goal",
+        "Quote: 'I stopped pushing and optimized the chosen path instead'",
+        "Follow-up: How did you handle any remaining doubts? - 'I logged the alternative for the next refactor but didn't bring it up again'"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone; Disagree and Commit for a junior. The candidate surfaced data on their individual task, accepted the call without lingering debate, and redirected effort into making the chosen solution succeed. Quote: 'I stopped pushing and optimized the chosen path instead.' This shows the core behavior at the right scope. The main strength is clean energy shift after the decision. Gap is limited evidence of handling repeated pushback.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to use a different testing framework but the team lead said no. I mentioned it once in the PR."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you commit after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I did the tests the way they wanted but kept a side branch with my approach in case we changed later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+        "Candidate: Mentioned preference once in PR review, no data shared",
+        "Decision stood; candidate created side branch instead of fully switching energy",
+        "Quote: 'I kept a side branch with my approach in case we changed later'",
+        "Follow-up: What did you do when asked to drop the side work? - 'I finished the required tests but didn't delete the branch'"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone; Disagree and Commit for a junior. The candidate raised the point only once without evidence and maintained a side branch rather than fully committing. Quote: 'I kept a side branch with my approach in case we changed later.' This shows incomplete energy shift and lingering resistance. Biggest gap is treating the decision as temporary instead of moving forward."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams disagreed on API versioning strategy. I built a short proposal with adoption numbers from three services and argued for a single version bump in the planning meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after leadership decided the other way?"
+        },
+        {
+          "role": "candidate",
+          "text": "They chose incremental versions. I updated our service to match, ran the migration for two dependent teams, and closed the loop in the next cross-team sync without reopening the topic."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you shift your energy?"
+        },
+        {
+          "role": "candidate",
+          "text": "I spent the next two weeks helping the other teams adopt the chosen approach instead of documenting why the alternative was better."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+        "Candidate: Senior, cross-team API versioning debate, shared adoption data",
+        "Argued for single bump; leadership picked incremental",
+        "Shifted by leading migration for two teams and closing in sync",
+        "Quote: 'I spent the next two weeks helping the other teams adopt the chosen approach'",
+        "Follow-up: Did any of your peers continue to push? - 'A couple did; I redirected them to the migration timeline'"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone; Disagree and Commit for a senior. The candidate used data to influence across teams, accepted the outcome, and redirected effort into driving adoption of the chosen path. Quote: 'I spent the next two weeks helping the other teams adopt the chosen approach.' This demonstrates influence without authority and clean commitment. Biggest strength is the measurable cross-team follow-through after the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with the API approach in the meeting and sent a follow-up email with my concerns."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you commit once the call was made?"
+        },
+        {
+          "role": "candidate",
+          "text": "I implemented what was asked but flagged the risks again in the retrospective two months later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+        "Candidate: Sent email after meeting, implemented the decision",
+        "Re-raised concerns in retrospective instead of fully moving on",
+        "Quote: 'I flagged the risks again in the retrospective two months later'",
+        "Follow-up: What was the response to the retrospective comment? - 'We discussed it briefly but didn't change course'"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone; Disagree and Commit for a senior. The candidate voiced disagreement once and later resurfaced concerns instead of fully committing. Quote: 'I flagged the risks again in the retrospective two months later.' This shows incomplete energy shift and reduced cross-team leverage. Biggest gap is failing to model clean commitment for peers."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to choose between two acquisition targets that would shape our five-year platform direction. I presented a model showing one path had higher integration cost and argued against it in the exec review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the decision went the other way?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO picked the higher-cost target for strategic reasons. I reallocated two teams to the integration work, adjusted the OKRs for the year, and stopped any internal debate on the alternative."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you shift your energy?"
+        },
+        {
+          "role": "candidate",
+          "text": "I spent the following quarter personally owning the integration milestones and updated the board on progress using the chosen path only."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+        "Candidate: Exec, acquisition target choice with five-year impact, presented cost model",
+        "Argued against higher-cost option; CEO decided the other way",
+        "Shifted by reallocating teams, resetting OKRs, and owning integration",
+        "Quote: 'I reallocated two teams to the integration work and stopped any internal debate'",
+        "Follow-up: How did you handle continued questions from your directs? - 'I told them the decision was final and focused them on the new milestones'"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone; Disagree and Commit for an exec. The candidate argued with clear strategic trade-offs, accepted the call, and redirected the entire organization by resetting OKRs and personally driving the outcome. Quote: 'I reallocated two teams to the integration work and stopped any internal debate.' This shows long-term leverage and org-level commitment. Biggest strength is the speed and completeness of the energy shift at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with the acquisition choice and laid out the risks in the exec meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you commit once the decision was made?"
+        },
+        {
+          "role": "candidate",
+          "text": "I supported the decision publicly but kept a small team exploring the alternative scenario for the next board update."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you disagreed with a decision, argued your case, and then fully committed once the call was made. How did you shift your energy?",
+        "Candidate: Presented risks in exec meeting, supported publicly",
+        "Maintained parallel exploration instead of full commitment",
+        "Quote: 'I kept a small team exploring the alternative scenario for the next board update'",
+        "Follow-up: Why keep the parallel work? - 'I wanted to be ready if the chosen path ran into issues'"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone; Disagree and Commit for an exec. The candidate voiced disagreement appropriately but sustained parallel work rather than fully committing the organization. Quote: 'I kept a small team exploring the alternative scenario for the next board update.' This shows incomplete strategic commitment. Biggest gap is modeling divided focus at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Energy shift after decision",
+      "junior": "Fully redirects personal work to chosen path",
+      "senior": "Drives adoption across teams",
+      "exec": "Resets org OKRs and owns outcome publicly"
+    },
+    {
+      "signal": "Scope of disagreement",
+      "junior": "Individual task or library choice",
+      "senior": "Cross-team technical direction",
+      "exec": "Business or acquisition strategy"
+    },
+    {
+      "signal": "Evidence of commitment",
+      "junior": "Drops side work and hits targets",
+      "senior": "Leads migration and closes debate in syncs",
+      "exec": "Stops internal discussion and reports only on chosen path"
+    },
+    {
+      "signal": "Handling of lingering doubts",
+      "junior": "Logs idea for later without reopening",
+      "senior": "Redirects peers to new timeline",
+      "exec": "Tells directs decision is final and focuses on milestones"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Shares data in design doc",
+      "senior": "Builds proposal with metrics and drives follow-through",
+      "exec": "Presents trade-offs at exec level then aligns resources"
+    }
+  ],
+  "principle_id": 6011,
+  "kind": "lp"
+}

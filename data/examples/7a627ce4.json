@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+  "principle": "Customer success is our success",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first feature, three customers asked for extra config toggles in the dashboard. I kept adding them until the PM flagged scope creep. I realized I was deferring instead of deciding what actually helped adoption."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after you noticed?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled usage data, saw only one toggle was used, and proposed shipping without the rest. My mentor agreed and I communicated the decision back to the customers with the data."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+        "Situation: First feature, three customers requested config toggles",
+        "Action: Reviewed usage data, proposed cutting unused toggles",
+        "Outcome: Shipped simpler version; customers accepted with data explanation",
+        "Quote: \"I kept adding them until the PM flagged scope creep\"",
+        "Follow-up: How did you handle the customers who asked? \"I emailed each with the usage numbers and offered a future iteration if needed\""
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success. The candidate owned an individual feature and stopped deferring after seeing data. \"I kept adding them until the PM flagged scope creep\" shows self-awareness at junior scope. They used usage metrics to decide, shipped a simpler version, and explained the choice to customers. This demonstrates coachability and local ownership without over-relying on every input. Biggest strength: turned feedback into a data-driven cut rather than endless iteration.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer wanted five new filters so I kept building them into the report. Later we saw low usage but I didn't want to disappoint them so I left the code in."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever decide to remove any?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just asked the customer again and they said they might use them later so I moved on to the next request."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+        "Situation: Customer requested five filters; candidate kept building",
+        "Action: Left low-usage code in to avoid disappointing the customer",
+        "Outcome: No decision made; moved to next request",
+        "Quote: \"I just asked the customer again and they said they might use them later\"",
+        "Follow-up: What data did you look at before deciding? \"I didn't check usage until after the feature shipped\""
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success. The candidate deferred entirely to one customer's request and never made a prioritization call. \"I just asked the customer again and they said they might use them later\" shows no ownership of the decision. Low usage was noticed only after shipping. This reflects passive execution rather than learning to balance input with impact at the individual level. Biggest gap: absence of any attempt to cut scope or use data to drive a choice."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three enterprise accounts pushed for advanced workflow approvals. I kept queuing the requests until cross-team usage showed 4% adoption. I called a meeting with the accounts team and proposed a lighter v1 that met 80% of needs."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the accounts react?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two accepted after seeing the adoption data; the third escalated but I aligned with the product director and we held the line while offering a custom pilot later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+        "Situation: Enterprise accounts requested advanced workflow approvals",
+        "Action: Reviewed cross-team usage (4%), proposed lighter v1",
+        "Outcome: Two accounts accepted; held line on third with director support",
+        "Quote: \"I kept queuing the requests until cross-team usage showed 4% adoption\"",
+        "Follow-up: What influence did you use without authority? \"I brought data to the accounts team and aligned with the product director before responding\""
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success. The candidate recognized repeated deferral to enterprise requests and used cross-team data to decide scope. \"I kept queuing the requests until cross-team usage showed 4% adoption\" shows senior awareness of over-engineering. They influenced without authority by aligning with the product director and held the prioritization decision. This delivered focused value instead of feature bloat. Biggest strength: converted customer input into a scoped release while managing escalations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Multiple customers asked for deeper integrations so the team kept expanding the connector surface. I facilitated every request meeting but never pushed back on priority."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the roadmap change as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added two more integrations that quarter and support load went up, but I didn't revisit the original scope decision."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+        "Situation: Multiple customers requested deeper integrations",
+        "Action: Facilitated all request meetings without pushing back",
+        "Outcome: Added two integrations; support load increased with no scope revisit",
+        "Quote: \"I facilitated every request meeting but never pushed back on priority\"",
+        "Follow-up: What metrics did you track after adding the integrations? \"Support tickets rose but I didn't connect it back to the prioritization choice\""
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success. The candidate facilitated every customer request without exercising prioritization judgment. \"I facilitated every request meeting but never pushed back on priority\" shows lack of influence at the senior level. Two integrations were added with rising support load and no retrospective decision. This reflects coordination without strategic ownership. Biggest gap: no evidence of using data or cross-team alignment to cut scope."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our customer advisory board kept requesting niche vertical features. After two quarters of roadmap drift I commissioned an internal analysis showing these features drove <3% of expansion revenue. I reset the board charter to focus on outcome metrics instead of feature lists."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the org impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We reduced vertical feature commits by 40% that year and reallocated two teams to core retention work, lifting net revenue retention by 6 points."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+        "Situation: Advisory board drove niche vertical features for two quarters",
+        "Action: Commissioned analysis (<3% expansion revenue), reset board charter to outcomes",
+        "Outcome: 40% reduction in vertical commits; 6-point NRR lift",
+        "Quote: \"I reset the board charter to focus on outcome metrics instead of feature lists\"",
+        "Follow-up: How did you handle board pushback? \"I shared the revenue data in the next meeting and tied the new charter to shared success metrics\""
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success. The candidate identified org-level roadmap drift from advisory input and made a structural change. \"I reset the board charter to focus on outcome metrics instead of feature lists\" demonstrates executive judgment. They used revenue analysis to reallocate teams and delivered measurable NRR improvement. This shows long-term leverage over reactive feature addition. Biggest strength: converted repeated customer input into a governance shift with clear business results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Enterprise customers on the advisory board requested several industry-specific modules. We incorporated most of them into the annual plan to keep them engaged."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect focus or results?"
+        },
+        {
+          "role": "candidate",
+          "text": "Engineering capacity shifted toward those modules and core platform work slowed, but we kept the board satisfied and renewed the accounts."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you realized you were over-engineering a product because you kept deferring to customer input rather than making a call yourself. What did you do?",
+        "Situation: Advisory board requested industry-specific modules",
+        "Action: Incorporated most requests into annual plan",
+        "Outcome: Engineering shifted to modules; core work slowed but renewals held",
+        "Quote: \"We incorporated most of them into the annual plan to keep them engaged\"",
+        "Follow-up: Did you review the revenue impact of those modules? \"We tracked renewals but not expansion or core velocity trade-offs\""
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success. The candidate deferred to advisory requests at the expense of core focus. \"We incorporated most of them into the annual plan to keep them engaged\" shows absence of strategic prioritization. Core platform work slowed with no review of expansion or velocity impact. This reflects short-term relationship management over long-term value. Biggest gap: no evidence of using business metrics to override or reshape customer input."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of prioritization decision",
+      "junior": "Made data-driven cut on own feature after PM flag",
+      "senior": "Used cross-team data and director alignment to hold scope",
+      "exec": "Reset advisory board charter based on revenue analysis"
+    },
+    {
+      "signal": "Handling of customer pushback",
+      "junior": "Explained decision with usage data to individual customers",
+      "senior": "Held line on one escalated account while offering future pilot",
+      "exec": "Tied new charter to shared outcome metrics in board meeting"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature; local usage data",
+      "senior": "Cross-team roadmap; influenced without direct authority",
+      "exec": "Org-level governance change; reallocated teams and lifted NRR"
+    },
+    {
+      "signal": "Use of data vs. relationship preservation",
+      "junior": "Checked usage after PM feedback and cut scope",
+      "senior": "Paused on 4% adoption before committing resources",
+      "exec": "Commissioned revenue analysis before changing board process"
+    },
+    {
+      "signal": "Evidence of learning from deferral",
+      "junior": "Recognized pattern after first feature and acted",
+      "senior": "Stopped queuing requests once data surfaced",
+      "exec": "Identified two-quarter drift and implemented structural fix"
+    }
+  ],
+  "principle_id": 6002,
+  "kind": "lp"
+}

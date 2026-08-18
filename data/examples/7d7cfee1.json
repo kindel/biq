@@ -1,0 +1,256 @@
+{
+  "question": "Tell me about a time you identified your internal or external customer and set clear expectations at a milestone like a PDR or CDR. How did that shape your work?",
+  "principle": "Customer success is our success",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR."
+        },
+        {
+          "role": "candidate",
+          "text": "For my first feature, I realized the downstream test team was my customer. Before the CDR I scheduled a 15-minute sync to walk through the interface contract and asked what success looked like for them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you agree on?"
+        },
+        {
+          "role": "candidate",
+          "text": "They wanted the error codes documented and a sample payload by Friday. I delivered that and added it to the CDR slide. The test pass rate on first run went from 60% to 95%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that change how you worked after?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started asking the same question before every handoff instead of assuming."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR.",
+        "- Identified test team as customer for first feature",
+        "- Pre-CDR sync to confirm interface contract and success criteria",
+        "Quote: 'They wanted error codes documented and sample payload by Friday'",
+        "Follow-up: What changed after? Started asking same question before every handoff",
+        "Outcome: test pass rate 60% to 95% on first run"
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success. The candidate treated the test team as the customer and used the CDR milestone to lock a concrete deliverable. Quote: 'They wanted the error codes documented and a sample payload by Friday.' This produced a measurable lift in first-run pass rate and prompted the candidate to repeat the pattern on later handoffs. At junior level the scope stayed within one feature yet showed clear ownership of their output and coachability from the feedback loop. The single biggest strength is converting an internal customer need into an explicit checkpoint rather than assuming alignment.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR."
+        },
+        {
+          "role": "candidate",
+          "text": "I just built the feature and presented at CDR. The reviewer asked why the error handling was missing so I added it after."
+        },
+        {
+          "role": "interviewer",
+          "text": "Who did you consider your customer?"
+        },
+        {
+          "role": "candidate",
+          "text": "I guess the manager who assigned the ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check with anyone before the review?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured the CDR would surface any gaps."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR.",
+        "- Built feature then presented at CDR; gaps found during review",
+        "- Viewed manager as sole customer",
+        "Quote: 'I figured the CDR would surface any gaps'",
+        "Follow-up: Did you check with anyone beforehand? No",
+        "Outcome: error handling added post-review"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success. The candidate treated the CDR as the discovery moment rather than a confirmation milestone and had no pre-alignment with downstream teams. Quote: 'I figured the CDR would surface any gaps.' At junior level this shows passive ownership limited to the assigned ticket and little evidence of learning to define success criteria upfront. The single biggest gap is absence of proactive customer identification, leaving the work shaped by reviewer feedback instead of agreed expectations."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR."
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams depended on our service change. I mapped the platform team as primary customer and ran a joint pre-PDR to agree on latency SLOs and rollback criteria."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive alignment across teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wrote the shared success criteria into the PDR deck and got written sign-off from both leads before the review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The change shipped on schedule with zero customer incidents; the platform team later reused our template for their own reviews."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR.",
+        "- Mapped platform team as primary customer for cross-team service change",
+        "- Pre-PDR joint session to lock latency SLOs and rollback criteria",
+        "Quote: 'I got written sign-off from both leads before the review'",
+        "Follow-up: What happened after? Platform team reused the template",
+        "Outcome: on-schedule ship with zero incidents"
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success. The candidate identified the platform team as the customer and used the PDR to secure cross-team written commitments on SLOs and rollback. Quote: 'I got written sign-off from both leads before the review.' This produced a clean launch and later adoption of the approach by another team, showing influence without authority. At senior level the scope crossed team boundaries and the candidate turned a milestone into a durable alignment mechanism. The single biggest strength is converting customer needs into documented, reusable criteria rather than one-off coordination.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR."
+        },
+        {
+          "role": "candidate",
+          "text": "I sent the PDR deck to the platform team the day before and asked for comments."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they respond in time?"
+        },
+        {
+          "role": "candidate",
+          "text": "They flagged the latency number at the review itself so we adjusted the plan afterward."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the misalignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a follow-up ticket to revisit the SLO after launch."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR.",
+        "- Sent deck to platform team day before PDR",
+        "- Latency concern raised during review, adjusted post-meeting",
+        "Quote: 'We added a follow-up ticket to revisit the SLO after launch'",
+        "Follow-up: Did they respond in time? No, surfaced at review",
+        "Outcome: post-launch ticket created"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success. The candidate notified the platform team late and treated the PDR as the first real discussion point. Quote: 'We added a follow-up ticket to revisit the SLO after launch.' At senior level this shows insufficient cross-team influence and leaves success criteria open after the milestone. The single biggest gap is reactive rather than proactive expectation setting, resulting in downstream work instead of a clean, aligned delivery."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR."
+        },
+        {
+          "role": "candidate",
+          "text": "For a new product line I defined the sales and support orgs as the customers and created a joint success framework before the CDR that included revenue ramp and support ticket volume targets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you secure commitment at that level?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a pre-CDR workshop with the VP of Sales and Director of Support; we signed a one-page RACI and metric dashboard that went into the CDR packet."
+        },
+        {
+          "role": "interviewer",
+          "text": "What long-term effect did this have?"
+        },
+        {
+          "role": "candidate",
+          "text": "The framework became the template for two subsequent product launches and reduced first-quarter support tickets by 40%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR.",
+        "- Defined sales and support orgs as customers for new product line",
+        "- Pre-CDR workshop with VP Sales and Director Support to lock RACI and metrics",
+        "Quote: 'We signed a one-page RACI and metric dashboard that went into the CDR packet'",
+        "Follow-up: Long-term effect? Became template for two more launches, 40% fewer support tickets",
+        "Outcome: org-level alignment and reusable process"
+      ],
+      "raiseFeedback": "Raises the bar on Customer success is our success. The candidate elevated sales and support organizations as the customers and embedded their success metrics into the CDR through a VP-level workshop. Quote: 'We signed a one-page RACI and metric dashboard that went into the CDR packet.' This produced both immediate ticket reduction and an org-wide template used on later launches, demonstrating strategic leverage. At exec level the scope is business-outcome oriented with clear trade-off decisions captured in the framework. The single biggest strength is institutionalizing customer expectations into a repeatable governance artifact rather than a one-time alignment.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR."
+        },
+        {
+          "role": "candidate",
+          "text": "We focused the CDR on engineering milestones and invited support as observers."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did support have input on the success criteria?"
+        },
+        {
+          "role": "candidate",
+          "text": "They raised ticket volume concerns after the CDR when they saw the rollout plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "How was that resolved?"
+        },
+        {
+          "role": "candidate",
+          "text": "We created a separate support-readiness workstream that ran in parallel."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about identifying your customer and setting expectations at a milestone like PDR or CDR.",
+        "- Treated support as observers rather than customers at CDR",
+        "- Ticket volume issues surfaced post-CDR",
+        "Quote: 'We created a separate support-readiness workstream that ran in parallel'",
+        "Follow-up: Did support shape criteria upfront? No",
+        "Outcome: parallel workstream added after milestone"
+      ],
+      "lowerFeedback": "Lowers the bar on Customer success is our success. The candidate kept the CDR engineering-centric and brought support in only as observers. Quote: 'We created a separate support-readiness workstream that ran in parallel.' At exec level this reflects limited strategic judgment on who the true customers are and fails to embed their needs into the primary milestone. The single biggest gap is treating customer alignment as a downstream activity instead of a core input to the review, creating avoidable parallel effort."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of customer identified",
+      "junior": "Single downstream team",
+      "senior": "Cross-team stakeholders",
+      "exec": "Org-level functions with business metrics"
+    },
+    {
+      "signal": "Timing of expectation setting",
+      "junior": "Before own milestone",
+      "senior": "Pre-milestone with written sign-off",
+      "exec": "Workshop-driven framework before CDR"
+    },
+    {
+      "signal": "Evidence of shaping own work",
+      "junior": "Added one deliverable to CDR",
+      "senior": "Zero-incident launch and template reuse",
+      "exec": "40% ticket reduction and org template"
+    },
+    {
+      "signal": "Follow-through after milestone",
+      "junior": "Repeated pattern on next tasks",
+      "senior": "Adopted by another team",
+      "exec": "Institutionalized into future launches"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Direct ask to peer team",
+      "senior": "Written cross-team agreement",
+      "exec": "VP-level RACI and dashboard"
+    }
+  ],
+  "principle_id": 6002,
+  "kind": "lp"
+}

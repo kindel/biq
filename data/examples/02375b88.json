@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+  "principle": "Ownership",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed my teammate was stuck on writing unit tests for their module. I asked if they wanted to walk through their approach together instead of me reviewing their code."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually do in the session?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked guiding questions like 'what edge cases are you worried about?' They ended up fixing three tests themselves and we shipped on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+        "Role: IC on same team, peer stuck on tests",
+        "Action: Offered to pair with questions only, no fixes",
+        "Outcome: Peer resolved issues themselves, on-time ship",
+        "Quote: 'I asked guiding questions like what edge cases are you worried about?'",
+        "Follow-up: How did you decide not to just write the tests? Candidate: Wanted them to own the learning for next time."
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. Candidate described offering targeted questions to a peer stuck on unit tests rather than taking the work. Quote: 'I asked guiding questions like what edge cases are you worried about?' This kept ownership with the peer while still delivering on-time. The approach shows early understanding that helping does not mean owning the output. Biggest strength is recognizing the difference between support and takeover at the individual contributor level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate was behind on their feature so I just finished the last two components for them after they asked for help."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they learn anything from it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, they were just happy it was done and I moved on to my own work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+        "Role: Same team IC, peer behind on feature",
+        "Action: Completed two components themselves",
+        "Outcome: Work shipped but no learning mentioned",
+        "Quote: 'I just finished the last two components for them'",
+        "Follow-up: What happened on the next similar task? Candidate: They asked for help again."
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. Candidate took over the remaining components instead of coaching the peer through the work. Quote: 'I just finished the last two components for them.' No evidence the peer gained capability or ownership. The follow-up showed repeated requests for help, indicating the approach created dependency. Biggest gap is defaulting to execution rather than enabling the other person at the junior level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "An engineer on another team was blocked on a shared service API. I offered to review their integration plan over a couple of sessions instead of implementing the client code."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped their feature two weeks later and later used the same pattern on a second service, reducing cross-team tickets by about 30% that quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+        "Role: Senior IC helping cross-team engineer on API integration",
+        "Action: Multiple review sessions focused on their plan",
+        "Outcome: Feature shipped, 30% drop in similar tickets",
+        "Quote: 'They later used the same pattern on a second service'",
+        "Follow-up: How did you get their manager aligned? Candidate: Shared the plan and time estimate with both managers upfront."
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. Candidate chose to coach across teams on an API integration rather than writing the code. Quote: 'They later used the same pattern on a second service.' Result included a 30% reduction in related tickets. This shows influence without authority and measurable leverage. Biggest strength is scaling the help beyond the single instance while staying in an IC role.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw a junior engineer on my team struggling with a deployment script so I rewrote it over the weekend and handed it back."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change for the team after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "They used the new script but similar issues kept coming up on other projects."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+        "Role: Senior helping junior on deployment script",
+        "Action: Rewrote the script themselves over weekend",
+        "Outcome: Script used but recurring issues on other projects",
+        "Quote: 'I rewrote it over the weekend and handed it back'",
+        "Follow-up: Why not involve them in the rewrite? Candidate: It was faster to just do it."
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. Candidate completed the deployment script rewrite rather than guiding the junior engineer. Quote: 'I rewrote it over the weekend and handed it back.' No sustained improvement occurred on similar projects. The choice prioritized speed over building capability. Biggest gap is missing the opportunity to raise the team's overall ownership at the senior level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed one product org was consistently missing their reliability targets. I offered to spend time with their engineering leads on a monthly review cadence instead of assigning my team to fix their incidents."
+        },
+        {
+          "role": "interviewer",
+          "text": "What org-level change resulted?"
+        },
+        {
+          "role": "candidate",
+          "text": "After four months their on-call load dropped 40% and they adopted the review process in two adjacent teams without my involvement."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+        "Role: Exec offering monthly reviews to another org's leads",
+        "Action: Structured reviews focused on their ownership of fixes",
+        "Outcome: 40% on-call reduction, process adopted by two other teams",
+        "Quote: 'They adopted the review process in two adjacent teams without my involvement'",
+        "Follow-up: What trade-off did you accept on your own org's roadmap? Candidate: Delayed one initiative by a quarter to free the time."
+      ],
+      "raiseFeedback": "Raises the bar on Ownership. Candidate provided monthly reviews to another org's leads rather than directing fixes from their own team. Quote: 'They adopted the review process in two adjacent teams without my involvement.' Produced 40% on-call reduction and organic spread. Demonstrates strategic leverage and long-term thinking at the executive level. Biggest strength is creating self-sustaining change across organizational boundaries.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another org was behind on a key migration so I pulled two of my best engineers to run the migration for them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect both organizations long term?"
+        },
+        {
+          "role": "candidate",
+          "text": "The migration completed but my team missed two of their own milestones and the other org still relies on us for maintenance."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you saw a colleague struggling and offered to help as an individual contributor rather than stepping in and taking over. How did that turn out?",
+        "Role: Exec lending engineers to another org's migration",
+        "Action: Assigned own engineers to execute the work",
+        "Outcome: Migration done but own milestones missed and dependency created",
+        "Quote: 'The other org still relies on us for maintenance'",
+        "Follow-up: What was the original intent? Candidate: Thought it would be a one-time handoff."
+      ],
+      "lowerFeedback": "Lowers the bar on Ownership. Candidate directed their own engineers to execute another org's migration. Quote: 'The other org still relies on us for maintenance.' This created ongoing dependency and caused missed milestones on the candidate's team. The approach treated the symptom rather than building the other org's capability. Biggest gap is lack of strategic judgment on leverage versus direct intervention at the executive level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Choice to coach vs execute",
+      "junior": "Asked guiding questions instead of fixing tests",
+      "senior": "Ran review sessions on integration plan instead of writing code",
+      "exec": "Monthly reviews instead of assigning own team to incidents"
+    },
+    {
+      "signal": "Evidence of sustained impact",
+      "junior": "Peer resolved their own issues and met deadline",
+      "senior": "30% drop in cross-team tickets after peer applied pattern elsewhere",
+      "exec": "Process adopted by two additional teams with 40% on-call reduction"
+    },
+    {
+      "signal": "Handling of trade-offs",
+      "junior": "Prioritized peer learning over immediate speed",
+      "senior": "Aligned managers on time investment upfront",
+      "exec": "Accepted one-quarter delay on own roadmap to enable org change"
+    },
+    {
+      "signal": "Avoidance of dependency",
+      "junior": "Peer did not ask for repeated help",
+      "senior": "Other team reused pattern independently",
+      "exec": "No ongoing maintenance requests after reviews ended"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Same-team peer",
+      "senior": "Cross-team engineer with measurable team benefit",
+      "exec": "Org-to-org with self-spreading process"
+    }
+  ],
+  "principle_id": 6004,
+  "kind": "lp"
+}

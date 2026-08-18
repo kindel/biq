@@ -1,0 +1,205 @@
+{
+  "question": "Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+  "principle": "Break down silos",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team we had a private channel for our sprint metrics. I suggested making it public after a teammate from another squad asked for visibility into our velocity trends."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you opened it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two other teams started using the same format and shared their own numbers. I added a note that anyone could join but we kept the write access to our squad leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide on the access rules?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager reviewed the membership list first and we limited posting rights to avoid noise."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+        "Candidate opened private sprint metrics channel after cross-team request",
+        "Added note on membership and limited write access to squad leads",
+        "Outcome: two other teams adopted the format",
+        "Quote: \"I added a note that anyone could join but we kept the write access to our squad leads.\"",
+        "Follow-up: What happened after you opened it? Two teams reused the format",
+        "Follow-up: How did you decide on the access rules? Manager reviewed list first"
+      ],
+      "raiseFeedback": "Raises the bar for junior. Principle tested is Break down silos. Candidate described moving a private sprint metrics channel to public after another squad requested velocity data. Quote: \"I added a note that anyone could join but we kept the write access to our squad leads.\" Manager review step shows coachability and ownership of own work. Two teams adopted the format shows local but measurable cross-team visibility. Biggest strength is clear, low-scope decision with explicit access guardrails.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a private channel for bug reports and I made it public so everyone could see the issues."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change any access settings?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just changed the channel type and let it stay that way."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+        "Candidate opened bug report channel with no access changes",
+        "No follow-up actions or review mentioned",
+        "Outcome: channel opened but no described impact",
+        "Quote: \"I just changed the channel type and let it stay that way.\"",
+        "Follow-up: Did you change any access settings? No changes made"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Principle tested is Break down silos. Candidate opened a bug channel but made no access adjustments and could not describe any resulting cross-team use. Quote: \"I just changed the channel type and let it stay that way.\" Missing steps around review or guardrails shows weak ownership of the change. No learning or iteration captured. Biggest gap is absence of any balancing action between transparency and access."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payment service metrics lived in a private Looker folder. I moved the key dashboards to a shared space after two partner teams asked for the same numbers during quarterly planning."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle access?"
+        },
+        {
+          "role": "candidate",
+          "text": "I created a viewer group that included the partner teams and kept editor rights to our service owners. I also posted the change in the platform channel with a one-pager on how to read the data."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "The partner teams reduced duplicate queries by 40 percent and one of them contributed a new filter we adopted."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+        "Moved payment metrics from private Looker folder to shared space after partner requests",
+        "Created viewer group for partners, kept editor rights internal, posted one-pager",
+        "Outcome: 40 percent drop in duplicate queries plus contributed filter",
+        "Quote: \"I created a viewer group that included the partner teams and kept editor rights to our service owners.\"",
+        "Follow-up: How did you handle access? Viewer group plus internal editors",
+        "Follow-up: What was the result? Reduced duplicate work and external contribution"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Principle tested is Break down silos. Candidate moved payment metrics out of private Looker folder after partner teams requested access during planning. Quote: \"I created a viewer group that included the partner teams and kept editor rights to our service owners.\" Cross-team metric reuse and contributed filter demonstrate influence without authority. One-pager posting shows deliberate transparency step. Biggest strength is measurable reduction in duplicate work with controlled access expansion.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I opened a data folder that a few teams wanted access to."
+        },
+        {
+          "role": "interviewer",
+          "text": "What access model did you use?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just made the folder public and told people to request access if needed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+        "Opened data folder after team requests",
+        "Made folder public with no structured groups or documentation",
+        "Outcome: no metrics or follow-on impact described",
+        "Quote: \"I just made the folder public and told people to request access if needed.\"",
+        "Follow-up: What access model did you use? Public with ad-hoc requests"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Principle tested is Break down silos. Candidate opened a data folder but used a fully public model without groups or documentation. Quote: \"I just made the folder public and told people to request access if needed.\" No evidence of cross-team influence or reduced duplication. Ad-hoc access approach shows lack of scalable thinking. Biggest gap is absence of structured access controls or measured outcomes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our customer data warehouse had many private datasets that slowed partner teams. I sponsored a default-shared policy with exception-based private folders and required every new dataset to justify privacy in the data council."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you manage the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I worked with legal and security to define the exception criteria and had each org assign a data steward. We tracked adoption weekly and after six months private datasets dropped from 65 percent to 22 percent."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you face?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some teams worried about exposing unreviewed models so we added a staging area and review SLA that kept velocity steady."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+        "Sponsored default-shared policy for customer data warehouse with exception-based private folders",
+        "Defined criteria with legal/security, assigned stewards, tracked adoption to 22 percent private",
+        "Added staging area and review SLA to protect velocity",
+        "Quote: \"I sponsored a default-shared policy with exception-based private folders and required every new dataset to justify privacy in the data council.\"",
+        "Follow-up: How did you manage the change? Stewards plus weekly tracking",
+        "Follow-up: What trade-offs did you face? Added staging and SLA"
+      ],
+      "raiseFeedback": "Raises the bar for exec. Principle tested is Break down silos. Candidate sponsored org-wide default-shared data policy reducing private datasets from 65 percent to 22 percent. Quote: \"I sponsored a default-shared policy with exception-based private folders and required every new dataset to justify privacy in the data council.\" Cross-org stewards and legal alignment show strategic leverage. Staging area and SLA demonstrate long-term trade-off management. Biggest strength is durable policy change with measured reduction in hidden data.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told teams they should share more data openly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What structural change did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent an email and asked managers to remind their teams."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose to make a Slack channel or a data system open rather than private. How did you balance transparency with the right level of access?",
+        "Sent email encouraging open data sharing",
+        "No policy, stewards, or tracking implemented",
+        "Outcome: no adoption metrics or process change",
+        "Quote: \"I sent an email and asked managers to remind their teams.\"",
+        "Follow-up: What structural change did you make? Email and manager reminders"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. Principle tested is Break down silos. Candidate relied on an email request without policy or governance changes. Quote: \"I sent an email and asked managers to remind their teams.\" No org-level mechanisms or metrics captured. Absence of trade-off handling or long-term levers shows limited strategic judgment. Biggest gap is lack of structural ownership at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Access control design",
+      "junior": "Defined viewer vs editor split after manager review",
+      "senior": "Created targeted viewer groups and posted usage guidance",
+      "exec": "Established exception-based policy with legal and stewards"
+    },
+    {
+      "signal": "Cross-team impact evidence",
+      "junior": "Two squads reused format locally",
+      "senior": "40 percent reduction in duplicate queries plus external contribution",
+      "exec": "Org-wide private datasets fell from 65 percent to 22 percent"
+    },
+    {
+      "signal": "Trade-off handling",
+      "junior": "Manager review step before opening access",
+      "senior": "Balanced access with one-pager and internal editor rights",
+      "exec": "Added staging area and review SLA to protect velocity"
+    },
+    {
+      "signal": "Sustainability mechanism",
+      "junior": "None beyond initial change",
+      "senior": "Documented one-pager for ongoing use",
+      "exec": "Weekly tracking and data council justification requirement"
+    }
+  ],
+  "principle_id": 6003,
+  "kind": "lp"
+}

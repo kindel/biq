@@ -1,0 +1,208 @@
+{
+  "question": "Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+  "principle": "Earn trust",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was reviewing a teammate's PR for a new API endpoint and spotted that error handling was missing for a rate-limit case. It could have caused a 500 at the design review demo. I messaged them privately on Slack with the exact line and a suggested test case."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "They thanked me, added the test, and we shipped clean. Later they asked me to review another change."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide to go private instead of commenting on the PR?"
+        },
+        {
+          "role": "candidate",
+          "text": "I figured a public comment might feel like showing them up in front of the team, so I kept it between us."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+        "Role: new grad on small team, spotted missing rate-limit handling in peer PR",
+        "Action: sent private Slack note with line number and test suggestion instead of PR comment",
+        "Outcome: fixed before review; peer later asked for more reviews",
+        "Quote: \"I figured a public comment might feel like showing them up\"",
+        "Follow-up: How did you decide private vs public? Candidate explained intent to protect teammate's reputation"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for this question. Junior candidate described noticing a missing rate-limit case in a peer's PR that risked a 500 at review. They chose a private Slack note with the exact line and a test suggestion rather than a public comment. The change was made before the review and the peer later requested more input from them. This shows early ownership of their own review work plus awareness of how public feedback lands. Biggest strength is the deliberate choice to protect the teammate's standing while still driving the fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw a teammate's design had a missing auth check that would have failed at review. I left a comment on the doc and also mentioned it in the team channel so everyone could see."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why the public channel?"
+        },
+        {
+          "role": "candidate",
+          "text": "I wanted to make sure it got fixed and didn't want to risk it being missed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+        "Role: new grad, spotted missing auth in design doc",
+        "Action: left doc comment plus posted in team channel",
+        "Outcome: issue fixed but teammate felt called out",
+        "Quote: \"I wanted to make sure it got fixed\"",
+        "Follow-up: Why public? Candidate said they were worried about it being missed"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for this question. Junior candidate identified a missing auth check that would fail at review yet chose to post in the team channel in addition to the doc comment. They stated the goal was simply to ensure it got fixed. The teammate later felt called out. This shows the candidate prioritized visibility over the relationship and did not consider how public escalation affects trust. Biggest gap is lack of reflection on the impact of the channel chosen."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "While reviewing cross-team API specs I found an inconsistency in how retries were defined that would surface as a latency spike in the design review. I scheduled a 15-minute 1:1 with the owning engineer and walked through the numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They updated the spec, the review went smoothly, and the two teams later adopted a shared retry library I suggested."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you frame the conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started by saying I had seen the same pattern cause issues on my prior team and wanted to save them the same pain."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+        "Role: senior, cross-team API review, found retry inconsistency risking latency spike",
+        "Action: booked private 1:1, shared prior-team data, proposed shared library",
+        "Outcome: spec updated, review clean, teams adopted common library",
+        "Quote: \"I started by saying I had seen the same pattern cause issues on my prior team\"",
+        "Follow-up: How did you frame it? Candidate led with shared pain rather than blame"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for this question. Senior candidate spotted a retry-definition inconsistency across teams that would appear as a latency spike at design review. They requested a private 1:1, led with data from a prior team, and offered a shared library solution. The owning team updated the spec and both teams later converged on the library. This demonstrates influence without authority and concrete cross-team impact. Biggest strength is converting a private correction into lasting shared tooling.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I found a retry mismatch in another team's spec that would look bad at review. I emailed their manager and asked them to have the engineer fix it before the meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to the engineer first?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I wanted to make sure it was addressed quickly through the right chain."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+        "Role: senior, cross-team spec, retry mismatch",
+        "Action: emailed the other team's manager directly",
+        "Outcome: fix happened but relationship with the engineer cooled",
+        "Quote: \"I wanted to make sure it was addressed quickly through the right chain\"",
+        "Follow-up: Did you talk to the engineer first? Candidate skipped the direct conversation"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for this question. Senior candidate identified a retry mismatch across teams yet escalated straight to the other team's manager without speaking to the engineer. They explained the choice as wanting speed through the proper chain. The fix occurred but the direct working relationship suffered. This shows the candidate defaulted to hierarchy instead of building trust through direct, private conversation. Biggest gap is missing the step of attempting a low-authority, peer-level discussion first."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a quarterly planning review I noticed two product teams had conflicting assumptions on data retention that would have created a compliance risk at the architecture review. I pulled the two GMs into a private meeting before the larger forum."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "We agreed on a 90-day retention policy with a clear exception process; both teams accepted the short-term scope cut to avoid a later audit finding."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you keep it from becoming political?"
+        },
+        {
+          "role": "candidate",
+          "text": "I framed it as protecting the company's regulatory standing rather than picking a winner between the teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+        "Role: exec, quarterly planning, conflicting retention policies across two product teams",
+        "Action: private GM meeting, framed around regulatory risk, agreed 90-day policy with exceptions",
+        "Outcome: scope adjusted, avoided audit exposure, policy became org standard",
+        "Quote: \"I framed it as protecting the company's regulatory standing rather than picking a winner\"",
+        "Follow-up: How did you keep it from becoming political? Candidate kept focus on shared compliance exposure"
+      ],
+      "raiseFeedback": "Raises the bar on Earn Trust for this question. Exec candidate identified conflicting data-retention assumptions between two product teams that would surface as a compliance issue at architecture review. They convened a private meeting with both GMs, framed the discussion around protecting company regulatory standing, and secured agreement on a 90-day policy plus exception process. Both teams accepted a short-term scope trade-off. This shows strategic judgment at org level and long-term risk mitigation. Biggest strength is converting a potential public conflict into an adopted org-wide policy.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw two teams had different retention rules that would fail compliance at review. I raised it in the architecture review itself so the right people could weigh in publicly."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why not handle it beforehand?"
+        },
+        {
+          "role": "candidate",
+          "text": "I thought the broader group needed to see the disagreement to make the right call."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed an issue in someone's work that could have blown up at a design review. How did you raise it early and in private?",
+        "Role: exec, conflicting retention rules across teams",
+        "Action: surfaced the issue live in the architecture review",
+        "Outcome: public disagreement, delayed decision, teams felt blindsided",
+        "Quote: \"I thought the broader group needed to see the disagreement\"",
+        "Follow-up: Why not handle it beforehand? Candidate chose visibility over pre-alignment"
+      ],
+      "lowerFeedback": "Lowers the bar on Earn Trust for this question. Exec candidate recognized conflicting retention rules that would fail compliance yet chose to raise the issue live in the architecture review. They stated the broader group needed to see the disagreement. The result was a public debate, delayed decision, and both teams feeling blindsided. This shows the candidate valued transparency over the trust required for senior leaders to resolve sensitive issues privately first. Biggest gap is absence of strategic pre-work to protect organizational relationships."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Channel choice for sensitive feedback",
+      "junior": "Private Slack vs public comment",
+      "senior": "1:1 vs manager escalation",
+      "exec": "Private GM meeting vs live architecture review"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single PR / teammate reputation",
+      "senior": "Cross-team spec and shared library",
+      "exec": "Org-wide retention policy and compliance risk"
+    },
+    {
+      "signal": "Framing used",
+      "junior": "Protect teammate from embarrassment",
+      "senior": "Shared prior pain + concrete solution",
+      "exec": "Regulatory standing over team politics"
+    },
+    {
+      "signal": "Outcome beyond the fix",
+      "junior": "Peer requested more reviews",
+      "senior": "Teams converged on common tooling",
+      "exec": "Policy became org standard"
+    },
+    {
+      "signal": "Evidence of long-term thinking",
+      "junior": "Minimal",
+      "senior": "Library adoption",
+      "exec": "Avoided future audit exposure"
+    }
+  ],
+  "principle_id": 6008,
+  "kind": "lp"
+}

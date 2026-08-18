@@ -1,0 +1,160 @@
+{
+  "question": "Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+  "principle": "Have Backbone; Disagree and commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team we decided to switch our build tool from Maven to Gradle. One engineer kept bringing it up in standups with the same points about learning curve. I pulled him aside after the third time, restated the decision criteria we had used, asked if he had new data, and when he didn't I asked what he needed to feel confident moving ahead. He said he wanted a 30-minute pair session on a small task, so we did that and he stopped raising it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say in that 1:1 to close the loop?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+        "Situation: build tool switch on small team, peer kept repeating same objections in standup",
+        "Action: private 1:1, restated criteria, checked for new info, offered concrete help (pair session)",
+        "Outcome: peer stopped raising it after the session",
+        "Quote: 'I asked what he needed to feel confident moving ahead'",
+        "Follow-up: Asked how the pair session addressed his concern; candidate said it gave him a low-risk way to try the new tool and he could see the benefits directly"
+      ],
+      "raiseFeedback": "Raises the bar. Principle tested is Have Backbone; Disagree and commit. Candidate described a peer repeatedly surfacing the same points about a Gradle migration. They scheduled a short private conversation, restated the original decision criteria, confirmed no new information existed, and offered a concrete next step in the form of a 30-minute pairing session. After that the objections stopped. The approach shows ownership of keeping team momentum without escalation. Biggest strength is the direct, low-drama way they closed the loop while still addressing the person's need for hands-on experience.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Someone on my project kept emailing about changing the API design after we had already chosen one. I told them the decision was made and we had to move on. They kept sending the same emails so I just stopped replying after a while."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever check what was driving the repeated emails?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+        "Situation: repeated emails about already-made API design choice",
+        "Action: told them decision was final then stopped replying",
+        "Outcome: emails eventually stopped but no commitment achieved",
+        "Quote: 'I just stopped replying after a while'",
+        "Follow-up: Asked if they understood the root cause; candidate said they assumed the person was just resistant to change"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle tested is Have Backbone; Disagree and commit. Candidate faced repeated emails questioning an API decision but responded by declaring the decision final and then ignoring further messages. No attempt was made to surface the underlying concern or create a path to commitment. The result was silence rather than alignment. Biggest gap is lack of any mechanism to help the other person move forward, leaving the disagreement unresolved."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams disagreed on a shared logging standard. One team kept reopening the topic in steering meetings with the same performance concerns. I scheduled a 20-minute sync with their tech lead, walked through the original evaluation matrix, and confirmed nothing new had surfaced. Then I proposed they own a small pilot on one service with a two-week check-in; after that they agreed to commit and we closed the item in the next steering review."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to own the pilot?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+        "Situation: cross-team logging standard debate reopened multiple times in steering meetings",
+        "Action: 1:1 with opposing tech lead, reviewed original matrix, proposed time-boxed pilot they would own",
+        "Outcome: pilot accepted, item closed in steering review",
+        "Quote: 'proposed they own a small pilot on one service with a two-week check-in'",
+        "Follow-up: Asked what happened at the two-week check-in; candidate said metrics showed parity and the team stopped raising objections"
+      ],
+      "raiseFeedback": "Raises the bar. Principle tested is Have Backbone; Disagree and commit. Candidate handled repeated reopening of a logging standard by a peer team in steering forums. They held a targeted 1:1, reviewed the prior decision data, and gave the dissenting team ownership of a short pilot with a clear deadline. This produced commitment without forcing the issue in a larger meeting. Biggest strength is using influence and a concrete experiment to convert disagreement into ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A sister team kept pushing back on our shared auth decision in every architecture review. I kept presenting the same security rationale each time. Eventually leadership stepped in and told them to stop."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do between the reviews to address their concerns?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+        "Situation: repeated pushback on auth decision in architecture reviews",
+        "Action: restated security rationale in meetings until leadership intervened",
+        "Outcome: leadership forced closure",
+        "Quote: 'Eventually leadership stepped in and told them to stop'",
+        "Follow-up: Asked if they ever met 1:1 with the other team; candidate said they relied on the review forum"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle tested is Have Backbone; Disagree and commit. Candidate allowed a cross-team disagreement on auth to persist across multiple architecture reviews by simply repeating the original rationale. No proactive outreach or mechanism for the other team to gain confidence was created. Closure came only through escalation. Biggest gap is absence of personal influence or structured path to commitment, relying instead on hierarchy."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After we chose a vendor for our new CRM, one business unit leader kept surfacing the same cost concerns in quarterly planning without new data. I met with them one-on-one, reviewed the original TCO model and risk trade-offs, and asked what single experiment would give them enough signal to move forward. They proposed a limited rollout to one region; we ran it for six weeks, the results matched the model, and they publicly supported the decision in the next planning cycle."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the fact that this was a senior leader?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+        "Situation: business unit leader repeatedly questioned vendor choice in planning forums",
+        "Action: 1:1, reviewed TCO model, co-defined a limited experiment the leader proposed",
+        "Outcome: six-week rollout validated the model and leader publicly supported it",
+        "Quote: 'asked what single experiment would give them enough signal to move forward'",
+        "Follow-up: Asked how the experiment scope was kept small enough to be decisive; candidate said they capped it to one region and one quarter"
+      ],
+      "raiseFeedback": "Raises the bar. Principle tested is Have Backbone; Disagree and commit. Candidate addressed a business unit leader who continued to question a CRM vendor decision in quarterly planning. They held a private conversation, walked through the original model, and invited the leader to define a contained experiment. The results produced public commitment. Biggest strength is treating the re-litigation as a signal for missing confidence rather than resistance, and converting it into a jointly owned validation step at org scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A VP kept bringing up the same concerns about our platform consolidation in exec reviews. I sent the original decision memo again and asked them to add any new data. They never did, so the item stayed on the agenda for three more quarters until priorities shifted."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever meet directly with the VP outside the reviews?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time someone kept re-litigating a decision without new information. How did you help them commit and move forward?",
+        "Situation: VP repeatedly raised same concerns in exec reviews about platform consolidation",
+        "Action: resent decision memo and requested new data",
+        "Outcome: topic lingered for three quarters until priorities changed",
+        "Quote: 'the item stayed on the agenda for three more quarters until priorities shifted'",
+        "Follow-up: Asked why no direct conversation occurred; candidate said they preferred to keep it in the formal review process"
+      ],
+      "lowerFeedback": "Lowers the bar. Principle tested is Have Backbone; Disagree and commit. Candidate responded to a VP's repeated questions on platform consolidation by recirculating the original memo and waiting for new data. No direct engagement or structured path to resolution was created. The issue persisted across multiple quarters until external priorities intervened. Biggest gap is treating senior disagreement as something to outlast rather than actively resolve through influence and joint ownership."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of disagreement handled",
+      "junior": "Peer on own team",
+      "senior": "Peer team in steering forum",
+      "exec": "Business unit leader in quarterly planning"
+    },
+    {
+      "signal": "Mechanism used to reach commitment",
+      "junior": "Private 1:1 plus short pairing session",
+      "senior": "1:1 plus time-boxed pilot owned by other team",
+      "exec": "1:1 plus jointly defined regional experiment"
+    },
+    {
+      "signal": "Evidence of backbone without escalation",
+      "junior": "Direct conversation, no manager involved",
+      "senior": "Closed in steering after pilot, no escalation",
+      "exec": "Public support obtained without forcing via hierarchy"
+    },
+    {
+      "signal": "Handling of missing new information",
+      "junior": "Explicitly asked for new data then offered help",
+      "senior": "Reviewed matrix, confirmed no new data, proposed experiment",
+      "exec": "Reviewed TCO model, invited leader to define validation step"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Objections stopped after pairing",
+      "senior": "Item closed in next steering review",
+      "exec": "Leader publicly endorsed in next planning cycle"
+    }
+  ],
+  "principle_id": 6011,
+  "kind": "lp"
+}

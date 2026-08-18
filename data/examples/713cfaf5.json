@@ -1,0 +1,186 @@
+{
+  "question": "Tell me about a time you celebrated a colleague's small win. Why did it matter?",
+  "principle": "Better than yesterday",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed a new hire fixed a flaky test that had been blocking us for days. I sent a quick Slack note calling it out and bought them coffee the next day."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you do that instead of just moving on?"
+        },
+        {
+          "role": "candidate",
+          "text": "I remembered how lost I felt my first month and how one 'good catch' note from my mentor helped me keep going. The test fix was small but it unblocked three people."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any follow-up after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "They started sharing their fixes more openly after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you celebrated a colleague's small win. Why did it matter?",
+        "Situation: new hire fixed flaky test blocking team",
+        "Action: sent Slack note + bought coffee",
+        "Outcome: unblocked 3 people; new hire shared fixes more",
+        "Quote: 'I remembered how lost I felt my first month'",
+        "Follow-up: 'What made you do that instead of moving on?' -> tied to own early experience"
+      ],
+      "raiseFeedback": "Raises the bar on Better than yesterday. The candidate connected a small individual action to sustaining momentum for a newer teammate. Quote about remembering their own first month shows self-awareness and why recognition matters at this level. Story stays within individual scope yet demonstrates proactive ownership of team climate. Biggest strength is linking the gesture directly to observable behavior change in the new hire.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I usually just say 'nice job' in standup when someone finishes a ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "Can you give a specific example where it was a small win?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I mostly focus on hitting my own deliverables so the team stays on track."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you celebrated a colleague's small win. Why did it matter?",
+        "Candidate defaults to generic standup comment",
+        "No specific example or motivation provided",
+        "Follow-up: 'Give a specific example' -> pivots back to own deliverables"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate treats recognition as an afterthought and immediately redirects to personal output. No evidence of noticing or acting on incremental progress in others. The response shows limited awareness that small wins compound over time. Biggest gap is absence of any concrete action or reflection on why recognition supports continuous improvement."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team had a quiet win when an engineer reduced p99 latency by 8% on a non-critical path. I asked the manager to include it in the next all-hands slide and sent the engineer a note explaining the downstream impact on two other teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why invest time on something so small?"
+        },
+        {
+          "role": "candidate",
+          "text": "Because those 8% gains were the kind of steady progress we needed to build trust that the platform was getting better every week, not just during big launches."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you celebrated a colleague's small win. Why did it matter?",
+        "Situation: 8% p99 reduction on non-critical path",
+        "Action: pushed inclusion in all-hands + sent impact note",
+        "Outcome: reinforced steady platform improvement across teams",
+        "Quote: 'steady progress we needed to build trust'",
+        "Follow-up: 'Why invest time on something so small?' -> tied to cross-team trust"
+      ],
+      "raiseFeedback": "Raises the bar. Candidate used influence to surface a modest technical improvement so it reached multiple teams. The explanation links the action to building ongoing trust rather than one-off praise. Story shows cross-team visibility without claiming credit. Biggest strength is framing small wins as a mechanism for sustained platform credibility.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I usually wait for quarterly reviews to highlight wins so they feel more substantial."
+        },
+        {
+          "role": "interviewer",
+          "text": "What about smaller day-to-day progress?"
+        },
+        {
+          "role": "candidate",
+          "text": "Those usually get handled inside the team; I focus on the bigger bets that move the OKRs."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you celebrated a colleague's small win. Why did it mattered?",
+        "Candidate defers to quarterly reviews",
+        "No example of elevating small wins",
+        "Follow-up: 'What about smaller day-to-day progress?' -> redirects to OKRs"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate views small wins as noise best handled inside teams and reserves public recognition for large OKR moves. This approach misses the opportunity to reinforce daily improvement habits across boundaries. No evidence of using influence to normalize incremental progress. Biggest gap is treating recognition as a quarterly event rather than a continuous signal."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When we restructured the org I noticed a director quietly stabilized two teams during the transition by running weekly office hours. I asked the VP to include a short segment in the next leadership offsite so other leaders saw the pattern."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why surface something that small at the leadership level?"
+        },
+        {
+          "role": "candidate",
+          "text": "Because after a reorg people watch for signals of what 'good' looks like. Celebrating the quiet stabilization told everyone that steady leadership during ambiguity was valued, not just the flashy integration work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you celebrated a colleague's small win. Why did it matter?",
+        "Situation: director ran office hours to stabilize teams post-reorg",
+        "Action: surfaced at leadership offsite via VP",
+        "Outcome: set signal that steady leadership in ambiguity is valued",
+        "Quote: 'people watch for signals of what good looks like'",
+        "Follow-up: 'Why surface something that small at leadership level?' -> org culture signal"
+      ],
+      "raiseFeedback": "Raises the bar. Candidate deliberately amplified a low-visibility behavior so it became a cultural signal at the leadership layer. The reasoning shows strategic judgment about what leaders observe after major change. Story operates at org scale while remaining grounded in one person's actions. Biggest strength is using recognition as a lever for long-term behavioral norms rather than short-term morale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I focus recognition budgets on the top 10% performers each quarter so the organization sees clear winners."
+        },
+        {
+          "role": "interviewer",
+          "text": "How do you handle the incremental progress that keeps teams running?"
+        },
+        {
+          "role": "candidate",
+          "text": "That work is expected; we celebrate when someone exceeds the baseline significantly."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you celebrated a colleague's small win. Why did it matter?",
+        "Candidate ties recognition to top 10% only",
+        "No example of elevating incremental wins",
+        "Follow-up: 'How do you handle incremental progress?' -> calls it expected baseline"
+      ],
+      "lowerFeedback": "Lowers the bar. Candidate reserves visible recognition for top performers and treats steady incremental work as the unremarkable baseline. This framing discourages the very habit of daily improvement the principle requires. No evidence of using executive visibility to reinforce small, repeated gains. Biggest gap is absence of any mechanism for making 'better than yesterday' culturally visible at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of recognition",
+      "junior": "Individual teammate",
+      "senior": "Cross-team visibility",
+      "exec": "Org-level signal setting"
+    },
+    {
+      "signal": "Link to continuous improvement",
+      "junior": "Personal motivation tied to own early experience",
+      "senior": "Builds trust in steady platform gains",
+      "exec": "Shapes what leaders model after change"
+    },
+    {
+      "signal": "Use of influence",
+      "junior": "Direct gesture (note + coffee)",
+      "senior": "Pushed inclusion in existing forum",
+      "exec": "Asked VP to feature at offsite"
+    },
+    {
+      "signal": "Why it mattered",
+      "junior": "Unblocked people and encouraged sharing",
+      "senior": "Reinforced weekly progress habit",
+      "exec": "Defined valued behavior during ambiguity"
+    },
+    {
+      "signal": "Follow-up response quality",
+      "junior": "Connects to own learning",
+      "senior": "Explains cross-team trust effect",
+      "exec": "Strategic culture reasoning"
+    }
+  ],
+  "principle_id": 6009,
+  "kind": "lp"
+}

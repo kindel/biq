@@ -1,0 +1,190 @@
+{
+  "question": "Tell me about a time you had to commit to a date when you did not have full information. How did you give a date, or a date for the date?",
+  "principle": "No surprises",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to finish a feature migration by end of month but the legacy data schema was unclear. I told my manager I could commit to a date for the date in two days after a spike, and gave a provisional target of three weeks with a 50% buffer."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the spike?"
+        },
+        {
+          "role": "candidate",
+          "text": "The spike showed two extra edge cases so I updated the team in standup and moved the date out by a week. No one was surprised at delivery."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about committing to a date without full info",
+        "Role: new grad on backend team, task was data migration for one service",
+        "Situation: unclear legacy schema, asked for firm date in standup",
+        "Action: proposed date-for-date in 48h, added buffer, updated in daily standup after spike",
+        "Outcome: delivered within revised window, manager had visibility",
+        "Quote: \"I moved the date out by a week and no one was surprised\"",
+        "Follow-up: How did you decide the buffer size? Said learned from previous task that underestimated by 30%"
+      ],
+      "raiseFeedback": "Raises the bar for No surprises at junior level. The candidate proactively offered a date-for-date and updated the team once new information surfaced instead of waiting until the deadline. Quote shows clear handoff of uncertainty to the manager. This matches the expected scope of owning individual task communication and learning from prior underestimates. Biggest strength is the immediate escalation of the revised date rather than hoping it would work out.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager wanted the migration done by end of month. I said sure and worked on it but the schema took longer than I thought so I missed the date."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you tell anyone before the date slipped?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I thought I could catch up over the weekend."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about committing to a date without full info",
+        "Role: new grad, same migration task",
+        "Situation: asked for end-of-month date in standup",
+        "Action: said yes without spike or buffer, worked silently",
+        "Outcome: missed date, no prior update",
+        "Quote: \"I thought I could catch up over the weekend\"",
+        "Follow-up: What would you do differently? Said next time ask for more time upfront"
+      ],
+      "lowerFeedback": "Lowers the bar for No surprises at junior level. The candidate accepted a date without surfacing unknowns and only realized the slip after the fact. The weekend catch-up plan kept the manager in the dark until it was too late. This shows the core gap in communicating uncertainty early even at individual task scope. Biggest gap is treating the date as a private commitment rather than a shared expectation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams needed a shared reporting service by Q2. Dependencies on the data platform were still in flux so I ran a joint planning session and committed to a phased date: core schema by mid-March, full integration by end of April, with a risk callout to both leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other teams react?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back on April so we added a weekly sync and I owned the risk log. We hit the March milestone and adjusted April by one week with no downstream surprises."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about committing to a date without full info",
+        "Role: senior on platform team, cross-team reporting service",
+        "Situation: data platform changes still landing, two consuming teams wanted firm Q2 date",
+        "Action: joint planning session, offered phased dates plus risk callout, weekly sync and risk log",
+        "Outcome: March hit, April slipped one week with all leads aligned",
+        "Quote: \"We added a weekly sync and I owned the risk log\"",
+        "Follow-up: How did you influence without authority? Used data from prior integration to show realistic velocity"
+      ],
+      "raiseFeedback": "Raises the bar for No surprises at senior level. The candidate surfaced dependency uncertainty to multiple teams and replaced a single date with phased milestones plus an explicit risk process. Quote demonstrates ownership of the communication channel across teams. This meets the expectation of cross-team influence and measurable risk handling. Biggest strength is turning an ambiguous ask into a shared, updated plan rather than a unilateral promise.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The two teams wanted the reporting service in Q2. I checked with my manager and gave the date. One dependency slipped but I kept working and told the teams at the end of the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "When did you first flag the dependency risk?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in the monthly status report but didn't set up any joint check-ins."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about committing to a date without full info",
+        "Role: senior, same cross-team service",
+        "Situation: data platform changes in flight",
+        "Action: checked only with own manager, gave single Q2 date, mentioned risk only in monthly report",
+        "Outcome: slip discovered late, teams surprised",
+        "Quote: \"I mentioned it in the monthly status report\"",
+        "Follow-up: What changed after the slip? Said next time will escalate earlier to director"
+      ],
+      "lowerFeedback": "Lowers the bar for No surprises at senior level. The candidate limited communication to their own manager and used a passive monthly report instead of proactive cross-team updates. Quote reveals the risk was known but not actively managed with the consuming teams. This falls short of the expected influence without authority and clear metrics on dependency tracking. Biggest gap is waiting for the slip rather than creating a shared visibility mechanism."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to launch a new market expansion by end of year but regulatory approval timelines were uncertain. I committed to the board on a date-for-date in six weeks after we modeled three scenarios and set a go/no-go checkpoint with finance and legal."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome with the board?"
+        },
+        {
+          "role": "candidate",
+          "text": "They accepted the checkpoint model. We hit the six-week date with a recommended Q3 launch window and clear trade-offs on revenue versus compliance risk. No surprises in the final quarter planning."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about committing to a date without full info",
+        "Role: VP, new market expansion",
+        "Situation: regulatory approval timelines unknown, board wanted year-end commitment",
+        "Action: modeled three scenarios, proposed date-for-date plus go/no-go checkpoint with finance/legal",
+        "Outcome: board accepted model, Q3 window chosen with explicit trade-offs",
+        "Quote: \"No surprises in the final quarter planning\"",
+        "Follow-up: How did you handle the ambiguity at org level? Tied checkpoint to annual planning cycle and headcount decisions"
+      ],
+      "raiseFeedback": "Raises the bar for No surprises at exec level. The candidate replaced a binary year-end date with a structured checkpoint and scenario modeling that aligned multiple org functions. Quote shows the outcome was integrated into broader planning without downstream shock. This demonstrates strategic judgment under high ambiguity and long-term leverage. Biggest strength is converting regulatory uncertainty into a decision framework the board could act on.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board wanted a year-end launch date for the new market. I reviewed the regulatory risks and told them we would target December with a stretch goal. We missed and had to explain the delay in the next board meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you propose any alternative approach?"
+        },
+        {
+          "role": "candidate",
+          "text": "I flagged the risk in the pre-read but still gave the December target to keep momentum."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about committing to a date without full info",
+        "Role: VP, same market expansion",
+        "Situation: regulatory timelines unknown",
+        "Action: reviewed risks internally, gave December target anyway, flagged in pre-read only",
+        "Outcome: missed date, explained at next board meeting",
+        "Quote: \"I flagged the risk in the pre-read but still gave the December target\"",
+        "Follow-up: What would you change for the next initiative? Said would push for more buffer in the plan"
+      ],
+      "lowerFeedback": "Lowers the bar for No surprises at exec level. The candidate gave a firm date to maintain momentum while only documenting risk in a pre-read instead of forcing a structured decision. Quote shows the tension between speed and transparency was resolved in favor of the original target. This misses the expectation of strategic trade-off clarity at org level. Biggest gap is treating the board commitment as a one-time statement rather than an ongoing risk-managed plan."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Surfaces uncertainty proactively",
+      "junior": "Offers date-for-date within 48h",
+      "senior": "Runs joint planning session with risk log",
+      "exec": "Models scenarios and proposes checkpoint tied to planning cycle"
+    },
+    {
+      "signal": "Updates stakeholders before slip",
+      "junior": "Updates in daily standup after spike",
+      "senior": "Sets weekly sync across teams",
+      "exec": "Integrates checkpoint into board and annual planning"
+    },
+    {
+      "signal": "Uses buffers or phasing",
+      "junior": "Adds 50% buffer based on prior task",
+      "senior": "Phased milestones with explicit April risk",
+      "exec": "Three scenarios plus go/no-go decision point"
+    },
+    {
+      "signal": "Avoids heroics or silent recovery",
+      "junior": "Does not rely on weekend catch-up",
+      "senior": "Does not limit updates to own manager",
+      "exec": "Does not keep momentum at expense of transparency"
+    },
+    {
+      "signal": "Creates shared visibility",
+      "junior": "Tells manager and team in standup",
+      "senior": "Owns cross-team risk log",
+      "exec": "Aligns finance, legal, and board on trade-offs"
+    }
+  ],
+  "principle_id": 6005,
+  "kind": "lp"
+}

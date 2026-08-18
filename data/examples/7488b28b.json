@@ -1,0 +1,184 @@
+{
+  "question": "Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+  "principle": "Have Backbone; Disagree and commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project, I noticed our error logging was inconsistent and suggested switching to structured logs during standup. The team wanted to move on but I asked for two minutes to show a quick example of how it would cut debugging time. We discussed it briefly and the lead said we'd try it on the next ticket."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and how did you follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "It got adopted after one ticket showed faster root causes. I logged the change in our wiki so others could see it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+        "Junior dev suggested structured logging in standup",
+        "Asked for two minutes to demo example when team tried to move on",
+        "Outcome: adopted after one ticket; added to wiki",
+        "Quote: 'I asked for two minutes to show a quick example'",
+        "Follow-up: Asked what happened next; candidate described tracking the small win"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone; Disagree and Commit for the question. The candidate described raising structured logging in standup and explicitly asking for two minutes when the team wanted to move on. This shows early ownership of surfacing an improvement and ensuring brief airtime. The follow-up confirmed they tracked the small adoption without claiming broad impact. Biggest strength is the concrete ask for time rather than dropping the idea.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once thought we should use a different library for dates but the team was busy so I just mentioned it quickly and we kept going."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to get any discussion time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was just one sentence and then we moved to the next ticket."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+        "Suggested different date library but only in one sentence",
+        "No follow-up push when conversation moved on",
+        "Outcome: nothing changed",
+        "Quote: 'it was just one sentence and then we moved'",
+        "Follow-up: Confirmed no attempt to secure discussion time"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone; Disagree and Commit for the question. The candidate mentioned a date library idea only as one sentence and immediately let the team move on without asking for time. No evidence of ownership to get the idea heard. The follow-up confirmed they did not push at all. Biggest gap is treating the principle as optional mention rather than active advocacy even at junior scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our two teams were duplicating API calls for user profiles. I proposed a shared service in a joint planning meeting. When the other lead pushed back on timeline I asked for five minutes to walk through the duplication metrics and a minimal integration path. We agreed to a pilot on one endpoint."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the disagreement after the pilot?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the pilot cut latency 15 percent we committed to the shared approach even though my team had to take on extra initial work."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+        "Senior suggested shared user profile service across teams",
+        "Secured five minutes in joint meeting by citing duplication metrics",
+        "Pilot showed 15 percent latency drop; committed despite extra work",
+        "Quote: 'I asked for five minutes to walk through the duplication metrics'",
+        "Follow-up: Explored post-pilot commitment and cross-team trade-off"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone; Disagree and Commit for the question. The candidate secured five minutes in a cross-team meeting to present duplication metrics and later committed to the shared service despite added work. This demonstrates influence without authority and willingness to absorb short-term cost for the agreed outcome. The follow-up showed they treated the decision as binding. Biggest strength is linking the advocacy directly to measurable duplication data rather than opinion.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I brought up the idea of a shared profile service in a joint meeting but the other team said they were too busy so we dropped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you push for any discussion time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once and when they pushed back I moved on to avoid conflict."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+        "Suggested shared profile service in joint meeting",
+        "Dropped idea immediately after one pushback",
+        "No metrics or time request presented",
+        "Quote: 'when they pushed back I moved on to avoid conflict'",
+        "Follow-up: Confirmed avoidance rather than securing airtime"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone; Disagree and Commit for the question. The candidate raised the shared service idea once, received pushback, and immediately dropped it without requesting discussion time or data. No evidence of cross-team influence or commitment to an outcome. The follow-up revealed conflict avoidance over advocacy. Biggest gap is failing to use senior-level persistence to get the idea heard."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were debating whether to sunset a legacy product line or invest in a new platform. I raised the option of a phased migration in the quarterly offsite. When the room wanted to decide quickly I asked for ten minutes to present retention data and cannibalization risk. The group agreed to a six-month pilot on one segment."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you commit to after the pilot?"
+        },
+        {
+          "role": "candidate",
+          "text": "We committed to sunsetting the legacy line on schedule even though it meant short-term revenue pressure in two regions, because the data showed long-term platform health."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+        "Exec proposed phased migration in quarterly offsite",
+        "Secured ten minutes by flagging retention data and cannibalization risk",
+        "Pilot led to commitment to sunset legacy despite regional revenue hit",
+        "Quote: 'I asked for ten minutes to present retention data'",
+        "Follow-up: Covered long-term trade-off and org-level commitment"
+      ],
+      "raiseFeedback": "Raises the bar on Have Backbone; Disagree and Commit for the question. The candidate secured ten minutes in a high-ambiguity quarterly offsite to surface retention data and later committed the organization to sunsetting the legacy line despite short-term regional revenue pressure. This shows strategic judgment and willingness to enforce a decision after disagreement. The follow-up confirmed they accepted the business trade-off. Biggest strength is treating the idea as an org-level choice with measurable long-term impact rather than a quick win.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "In an offsite I suggested we consider a phased migration but the team wanted a fast decision so I let it go after one comment."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you request any dedicated time?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the agenda was tight and I didn't want to derail the meeting."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you raised a new idea and made sure it was heard for at least a few minutes before moving on. What happened?",
+        "Suggested phased migration in offsite",
+        "Dropped after single comment due to tight agenda",
+        "No data or time request made",
+        "Quote: 'I didn't want to derail the meeting'",
+        "Follow-up: Confirmed deference to schedule over advocacy"
+      ],
+      "lowerFeedback": "Lowers the bar on Have Backbone; Disagree and Commit for the question. The candidate floated a phased migration idea once in an offsite and immediately deferred to the tight agenda without requesting time or data. No evidence of strategic persistence or org-level trade-off framing. The follow-up showed schedule deference over backbone. Biggest gap is missing the exec expectation to force airtime on ambiguous, high-stakes decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Securing discussion time",
+      "junior": "Asked for two minutes with example",
+      "senior": "Asked for five minutes with metrics",
+      "exec": "Asked for ten minutes with retention data"
+    },
+    {
+      "signal": "Handling pushback",
+      "junior": "Continued after initial move-on attempt",
+      "senior": "Negotiated pilot despite cross-team resistance",
+      "exec": "Enforced sunset decision after pilot disagreement"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Local team process change",
+      "senior": "Cross-team duplication reduction",
+      "exec": "Org-level product line decision"
+    },
+    {
+      "signal": "Post-decision commitment",
+      "junior": "Added change to wiki",
+      "senior": "Absorbed extra work for agreed outcome",
+      "exec": "Accepted regional revenue pressure for long-term health"
+    },
+    {
+      "signal": "Data used to advocate",
+      "junior": "Quick example shown",
+      "senior": "Duplication metrics presented",
+      "exec": "Retention and cannibalization data presented"
+    }
+  ],
+  "principle_id": 6011,
+  "kind": "lp"
+}
