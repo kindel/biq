@@ -4,8 +4,9 @@
 Supports principles index v3, where a principle's id is a number and the
 kebab name lives in slug. A company's id is still its directory name.
 
-Also syncs aliases from upstream term labels (kind: alias or equivalent)
-as a union with existing aliases so search cannot get worse.
+Also syncs aliases from upstream term labels (kind: alias, equivalent, or
+facet) and facet labels from facets.json as a union with existing aliases
+so search cannot get worse.
 """
 
 from __future__ import annotations
@@ -25,6 +26,10 @@ INDEX_URL = os.environ.get(
 PRINCIPLE_URL_TEMPLATE = os.environ.get(
     "PRINCIPLES_DATA_URL",
     "https://raw.githubusercontent.com/kindel/principles/main/data/{company}/{slug}.json",
+)
+FACETS_URL = os.environ.get(
+    "PRINCIPLES_FACETS_URL",
+    "https://raw.githubusercontent.com/kindel/principles/main/data/facets.json",
 )
 SHA_URL = os.environ.get(
     "PRINCIPLES_SHA_URL",
@@ -51,6 +56,16 @@ def normalize_for_uniqueness(s: str) -> str:
     return s
 
 
+def fetch_facets() -> dict:
+    """Fetch facets.json and return a dict mapping facet id to label."""
+    try:
+        with urllib.request.urlopen(FACETS_URL, timeout=30) as r:
+            data = json.load(r)
+        return {f["id"]: f["label"] for f in data.get("facets", [])}
+    except Exception:
+        return {}
+
+
 def fetch_principle_detail(company: str, slug: str) -> dict | None:
     """Fetch a single principle's full record from kindel/principles."""
     url = PRINCIPLE_URL_TEMPLATE.format(company=company, slug=slug)
@@ -62,11 +77,11 @@ def fetch_principle_detail(company: str, slug: str) -> dict | None:
 
 
 def extract_alias_labels(principle_detail: dict) -> list[str]:
-    """Extract labels from terms with kind alias or equivalent (not facet)."""
+    """Extract labels from terms with kind alias, equivalent, or facet."""
     labels = []
     for term in principle_detail.get("terms", []):
         kind = term.get("kind", "")
-        if kind in ("alias", "equivalent"):
+        if kind in ("alias", "equivalent", "facet"):
             label = term.get("label", "")
             if label:
                 labels.append(label)
@@ -101,25 +116,47 @@ def union_aliases(existing: list[str], upstream: list[str]) -> list[str]:
 def sync_aliases(bank: dict, dry_run: bool = False) -> list[str]:
     """Sync aliases from kindel/principles for all companies.
 
-    For each principle, fetches the full record from upstream and unions
-    alias/equivalent term labels with existing aliases. Only modifies the
-    aliases array; questions and other fields are untouched.
+    For each principle, fetches the full record from upstream and unions:
+    - alias/equivalent/facet term labels from the principle detail
+    - facet labels from facets.json for facets listed in index.json v4
+
+    Only modifies the aliases array; questions and other fields are untouched.
 
     Returns a list of changes made (or that would be made in dry_run mode).
     """
+    # Build a lookup of principle id -> facet ids from index.json v4
+    idx = load_index()
+    pid_to_facet_ids: dict[int, list[str]] = {}
+    for c in idx.get("companies", []):
+        for p in c.get("principles", []):
+            pid = p.get("id")
+            if isinstance(pid, int) and p.get("facets"):
+                pid_to_facet_ids[pid] = p["facets"]
+
+    # Fetch facet id -> label mapping
+    facet_labels = fetch_facets()
+
     changes = []
     for company in bank.get("companies", []):
         cid = company.get("id", "")
         for principle in company.get("principles", []):
             slug = principle.get("slug", "")
+            pid = principle.get("id")
             if not slug:
                 continue
 
             detail = fetch_principle_detail(cid, slug)
-            if not detail:
-                continue
 
-            upstream_labels = extract_alias_labels(detail)
+            # Collect upstream labels from term details
+            upstream_labels = extract_alias_labels(detail) if detail else []
+
+            # Add facet labels from facets.json based on index.json facets array
+            if isinstance(pid, int) and pid in pid_to_facet_ids:
+                for facet_id in pid_to_facet_ids[pid]:
+                    label = facet_labels.get(facet_id)
+                    if label and label not in upstream_labels:
+                        upstream_labels.append(label)
+
             if not upstream_labels:
                 continue
 

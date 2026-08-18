@@ -25,7 +25,10 @@
             "customer-obsession",
             "obsession",
             "customer experience",
-            "customer advocacy"
+            "customer advocacy",
+            "voice of the customer",
+            "user empathy",
+            "working backwards from the customer"
           ],
           "questions": [
             {
@@ -88,7 +91,8 @@
             "outside your area",
             "languishing",
             "acts like an owner",
-            "takes responsibility"
+            "takes responsibility",
+            "end to end responsibility"
           ],
           "questions": [
             {
@@ -162,7 +166,11 @@
             "innovative",
             "invent-and-simplify",
             "simple",
-            "novel"
+            "novel",
+            "creates simple solutions",
+            "thinks different",
+            "reduces complexity",
+            "original thinking"
           ],
           "questions": [
             {
@@ -231,7 +239,11 @@
             "right",
             "decision quality",
             "good judgment",
-            "makes wise decisions"
+            "makes wise decisions",
+            "good instincts",
+            "seeks diverse perspectives",
+            "seeks disconfirming evidence",
+            "sound judgment under uncertainty"
           ],
           "questions": [
             {
@@ -300,7 +312,8 @@
             "learn and be curious",
             "always learning",
             "growth mindset",
-            "intellectual curiosity"
+            "intellectual curiosity",
+            "self improvement"
           ],
           "questions": [
             {
@@ -363,7 +376,10 @@
             "develop the best",
             "talent",
             "coaching",
-            "hire and develop"
+            "hire and develop",
+            "grows people",
+            "talent development",
+            "hire and develop the best"
           ],
           "questions": [
             {
@@ -436,7 +452,10 @@
             "bar",
             "insist on the highest standards",
             "high bar",
-            "strive for excellence"
+            "strive for excellence",
+            "better every day",
+            "continuous improvement",
+            "high expectations"
           ],
           "questions": [
             {
@@ -497,7 +516,10 @@
             "vision",
             "think big",
             "big bet",
-            "risk"
+            "risk",
+            "bold vision",
+            "strategic thinking",
+            "long term bets"
           ],
           "questions": [
             {
@@ -574,7 +596,10 @@
             "bias",
             "bias for action",
             "move",
-            "move fast"
+            "move fast",
+            "sense of urgency",
+            "calculated risk taking",
+            "decisiveness"
           ],
           "questions": [
             {
@@ -636,7 +661,10 @@
             "resources",
             "constraints",
             "no extra budget",
-            "do more with less"
+            "do more with less",
+            "resourcefulness",
+            "scrappy",
+            "cost consciousness"
           ],
           "questions": [
             {
@@ -692,7 +720,12 @@
             "credibility",
             "earn trust",
             "feedback",
-            "morale"
+            "morale",
+            "listens openly",
+            "speaks candidly",
+            "acts with integrity",
+            "builds relationships",
+            "bad news travels fast"
           ],
           "questions": [
             {
@@ -759,7 +792,11 @@
             "root cause",
             "metrics",
             "dive deep",
-            "dig"
+            "dig",
+            "data driven",
+            "hands on",
+            "audits the details",
+            "detail oriented"
           ],
           "questions": [
             {
@@ -828,7 +865,12 @@
             "disagree and commit",
             "commit",
             "have backbone",
-            "unpopular"
+            "unpopular",
+            "respectfully challenge",
+            "push back",
+            "speak up",
+            "commit once decided",
+            "have backbone, disagree and commit"
           ],
           "questions": [
             {
@@ -892,7 +934,10 @@
             "deliver results",
             "deadline",
             "goal",
-            "get it done"
+            "get it done",
+            "focus on outcomes",
+            "honors commitments",
+            "rise to the occasion"
           ],
           "questions": [
             {
@@ -1221,7 +1266,8 @@
             "solutions not problems",
             "accountable for the outcome",
             "bring solutions",
-            "do not wait for instructions"
+            "do not wait for instructions",
+            "acts like an owner"
           ],
           "kind": "factor",
           "questions": [
@@ -1350,7 +1396,9 @@
             "wow",
             "wow the customer",
             "customer obsession",
-            "customer first"
+            "customer first",
+            "working backwards from the customer",
+            "customer trust"
           ],
           "kind": "lp",
           "questions": [
@@ -1384,7 +1432,9 @@
             "ruthless prioritization",
             "laser focus",
             "focus",
-            "say no"
+            "say no",
+            "stack ranking work",
+            "killing projects"
           ],
           "kind": "lp",
           "questions": [
@@ -1418,7 +1468,9 @@
             "company-wide perspective",
             "not my job",
             "think like an owner",
-            "global optimization"
+            "global optimization",
+            "upstream and downstream",
+            "cross-team problems"
           ],
           "kind": "lp",
           "questions": [
@@ -1452,7 +1504,9 @@
             "dive deep",
             "hands-on",
             "get into the details",
-            "go and see"
+            "go and see",
+            "auditing the numbers",
+            "root cause"
           ],
           "kind": "lp",
           "questions": [
@@ -1486,7 +1540,9 @@
             "think systematically",
             "mechanisms",
             "build the system, not the fix",
-            "prevention over correction"
+            "prevention over correction",
+            "feedback loops",
+            "scalable process"
           ],
           "kind": "lp",
           "questions": [
@@ -1520,7 +1576,9 @@
             "simplify",
             "complexity",
             "reduce complexity",
-            "make it simpler"
+            "make it simpler",
+            "removing steps",
+            "simple explanations"
           ],
           "kind": "lp",
           "questions": [
@@ -1554,7 +1612,9 @@
             "disagree and commit",
             "constructive confrontation",
             "speak up",
-            "have backbone"
+            "have backbone",
+            "committing after the decision",
+            "challenging openly"
           ],
           "kind": "lp",
           "questions": [
@@ -1588,7 +1648,9 @@
             "hire and develop the best",
             "raise the bar",
             "talent",
-            "grow people"
+            "grow people",
+            "hiring decisions",
+            "internal rotation"
           ],
           "kind": "lp",
           "questions": [
@@ -1622,7 +1684,9 @@
             "deliver results with grit",
             "grit",
             "get it done",
-            "no excuses"
+            "no excuses",
+            "working around blockers",
+            "finishing"
           ],
           "kind": "lp",
           "questions": [
@@ -1656,7 +1720,9 @@
             "influence without authority",
             "knowledge trumps position",
             "bring people with you",
-            "align through data"
+            "align through data",
+            "written proposals",
+            "cross-team alignment"
           ],
           "kind": "lp",
           "questions": [
@@ -1690,7 +1756,9 @@
             "aim high and find a way",
             "jaw-dropping",
             "think big",
-            "work backwards"
+            "work backwards",
+            "goal setting",
+            "changing the conditions"
           ],
           "kind": "lp",
           "questions": [
@@ -1724,7 +1792,9 @@
             "learn voraciously",
             "ego is the enemy",
             "stay curious",
-            "vocally self-critical"
+            "vocally self-critical",
+            "learning from outside",
+            "admitting mistakes"
           ],
           "kind": "lp",
           "questions": [
@@ -1758,7 +1828,9 @@
             "demand excellence",
             "mediocrity",
             "high standards",
-            "raise the bar perpetually"
+            "raise the bar perpetually",
+            "reviewing work",
+            "accepting good enough"
           ],
           "kind": "lp",
           "questions": [
@@ -1792,7 +1864,9 @@
             "move with urgency",
             "sense of crisis",
             "bias for action",
-            "speed"
+            "speed",
+            "reversible decisions",
+            "learn by doing"
           ],
           "kind": "lp",
           "questions": [
@@ -1826,7 +1900,9 @@
             "hate waste",
             "save not cut",
             "frugality",
-            "do more with less"
+            "do more with less",
+            "cost decisions",
+            "wasted time"
           ],
           "kind": "lp",
           "questions": [
@@ -1876,7 +1952,10 @@
             "own it",
             "ownership",
             "act like an owner",
-            "think long term"
+            "think long term",
+            "using resources well",
+            "going the extra mile",
+            "acts like an owner"
           ],
           "kind": "lp",
           "questions": [
@@ -1910,7 +1989,9 @@
             "dive deep",
             "hands-on",
             "challenge the data",
-            "get into the details"
+            "get into the details",
+            "questioning numbers",
+            "understanding the mechanism"
           ],
           "kind": "lp",
           "questions": [
@@ -1944,7 +2025,9 @@
             "deliver value fast",
             "speed",
             "bias for action",
-            "focus on what matters"
+            "focus on what matters",
+            "prioritization",
+            "adapting to change"
           ],
           "kind": "lp",
           "questions": [
@@ -1978,7 +2061,9 @@
             "bring good vibes",
             "good vibes",
             "positive energy",
-            "support each other"
+            "support each other",
+            "celebrating wins",
+            "staying positive under pressure"
           ],
           "kind": "lp",
           "questions": [
@@ -2012,7 +2097,9 @@
             "raise the bar",
             "high bar",
             "high standards",
-            "ambitious goals"
+            "ambitious goals",
+            "giving feedback",
+            "building the team"
           ],
           "kind": "lp",
           "questions": [
@@ -2046,7 +2133,9 @@
             "stay humble",
             "humility",
             "no entitlement",
-            "open minded"
+            "open minded",
+            "admitting you were wrong",
+            "gratitude for success"
           ],
           "kind": "lp",
           "questions": [
@@ -2096,7 +2185,9 @@
             "collaboration",
             "short toes",
             "help others",
-            "assume good intent"
+            "assume good intent",
+            "asking for help",
+            "working across teams"
           ],
           "kind": "value",
           "questions": [
@@ -2130,7 +2221,9 @@
             "results for customers",
             "results",
             "customer success",
-            "outcomes"
+            "outcomes",
+            "ambitious goals",
+            "customer impact"
           ],
           "kind": "value",
           "questions": [
@@ -2164,7 +2257,9 @@
             "efficiency",
             "boring solutions",
             "do more with less",
-            "global optimization"
+            "global optimization",
+            "choosing the boring option",
+            "write it once"
           ],
           "kind": "value",
           "questions": [
@@ -2198,7 +2293,9 @@
             "diversity, inclusion & belonging",
             "dib",
             "inclusion",
-            "belonging"
+            "belonging",
+            "inclusive meetings",
+            "bias in decisions"
           ],
           "kind": "value",
           "questions": [
@@ -2232,7 +2329,9 @@
             "iteration",
             "mvc",
             "smallest valuable thing",
-            "ship small"
+            "ship small",
+            "scoping down",
+            "acting on feedback"
           ],
           "kind": "value",
           "questions": [
@@ -2266,7 +2365,9 @@
             "transparency",
             "public by default",
             "be open",
-            "work out loud"
+            "work out loud",
+            "handbook first",
+            "saying the hard thing"
           ],
           "kind": "value",
           "questions": [
@@ -2594,7 +2695,8 @@
             "better than yesterday",
             "one percent better",
             "continuous improvement",
-            "highest standards"
+            "highest standards",
+            "better every day"
           ],
           "kind": "lp",
           "questions": [
