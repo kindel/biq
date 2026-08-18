@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Add missing BIQ company and principle shells from kindel/principles."""
+"""Add missing BIQ company and principle shells from kindel/principles.
+
+Supports principles index v3, where a principle's id is a number and the
+kebab name lives in slug. A company's id is still its directory name.
+"""
 
 from __future__ import annotations
 
@@ -65,13 +69,21 @@ def kind_for(item: str) -> str:
 
 
 def principle_shell(p: dict, item: str) -> dict:
+    """Build a new principle shell from upstream v3 data.
+
+    In v3, p["id"] is a number and p["slug"] is the kebab name. Aliases derive
+    from name and slug, never from the numeric id.
+    """
     name = p["name"]
     pid = p["id"]
+    slug = p.get("slug", "")
     aliases = [name.lower()]
-    if pid.replace("-", " ") not in aliases:
-        aliases.append(pid.replace("-", " "))
+    slug_as_words = slug.replace("-", " ")
+    if slug_as_words and slug_as_words not in aliases:
+        aliases.append(slug_as_words)
     shell = {
         "id": pid,
+        "slug": slug,
         "name": name,
         "aliases": aliases,
         "kind": kind_for(item),
@@ -113,13 +125,27 @@ def main() -> int:
             added_companies.append(cid)
             continue
         existing = by_id[cid]
-        have = {p["id"] for p in existing.get("principles", [])}
         item = existing.get("item") or item_for(c["set"])
+
+        have_by_id = {}
+        have_by_slug = {}
+        for ep in existing.get("principles", []):
+            if isinstance(ep.get("id"), int):
+                have_by_id[ep["id"]] = ep
+            if ep.get("slug"):
+                have_by_slug[ep["slug"]] = ep
+            elif isinstance(ep.get("id"), str):
+                have_by_slug[ep["id"]] = ep
+
         for p in c.get("principles", []):
-            if p["id"] in have:
+            pid = p["id"]
+            slug = p.get("slug", "")
+            if pid in have_by_id:
+                continue
+            if slug in have_by_slug:
                 continue
             existing.setdefault("principles", []).append(principle_shell(p, item))
-            added_principles.append(f"{cid}/{p['id']}")
+            added_principles.append(f"{cid}/{slug or pid}")
 
     lines = [f"principles {sha}", ""]
     if added_companies:

@@ -14,7 +14,7 @@
       ],
       "principles": [
         {
-          "id": "customer-obsession",
+          "id": 1001,
           "name": "Customer Obsession",
           "aliases": [
             "customer",
@@ -64,10 +64,11 @@
               "manager": true
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "customer-obsession"
         },
         {
-          "id": "ownership",
+          "id": 1002,
           "name": "Ownership",
           "aliases": [
             "own",
@@ -123,10 +124,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "ownership"
         },
         {
-          "id": "invent-and-simplify",
+          "id": 1003,
           "name": "Invent and Simplify",
           "aliases": [
             "invent",
@@ -181,10 +183,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "invent-and-simplify"
         },
         {
-          "id": "are-right-a-lot",
+          "id": 1004,
           "name": "Are Right, A Lot",
           "aliases": [
             "aral",
@@ -238,10 +241,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "are-right-a-lot"
         },
         {
-          "id": "learn-and-be-curious",
+          "id": 1005,
           "name": "Learn and Be Curious",
           "aliases": [
             "labc",
@@ -289,10 +293,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "learn-and-be-curious"
         },
         {
-          "id": "hire-and-develop-the-best",
+          "id": 1006,
           "name": "Hire and Develop the Best",
           "aliases": [
             "hdtb",
@@ -350,10 +355,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "hire-and-develop-the-best"
         },
         {
-          "id": "insist-on-the-highest-standards",
+          "id": 1007,
           "name": "Insist on the Highest Standards",
           "aliases": [
             "ihs",
@@ -402,10 +408,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "insist-on-the-highest-standards"
         },
         {
-          "id": "think-big",
+          "id": 1008,
           "name": "Think Big",
           "aliases": [
             "tb",
@@ -465,10 +472,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "think-big"
         },
         {
-          "id": "bias-for-action",
+          "id": 1009,
           "name": "Bias for Action",
           "aliases": [
             "bfa",
@@ -516,10 +524,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "bias-for-action"
         },
         {
-          "id": "frugality",
+          "id": 1010,
           "name": "Frugality",
           "aliases": [
             "frugal",
@@ -563,10 +572,11 @@
               "manager": true
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "frugality"
         },
         {
-          "id": "earn-trust",
+          "id": 1011,
           "name": "Earn Trust",
           "aliases": [
             "et",
@@ -618,10 +628,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "earn-trust"
         },
         {
-          "id": "dive-deep",
+          "id": 1012,
           "name": "Dive Deep",
           "aliases": [
             "dd",
@@ -674,10 +685,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "dive-deep"
         },
         {
-          "id": "have-backbone-disagree-and-commit",
+          "id": 1013,
           "name": "Have Backbone; Disagree and Commit",
           "aliases": [
             "dac",
@@ -728,10 +740,11 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "have-backbone-disagree-and-commit"
         },
         {
-          "id": "deliver-results",
+          "id": 1014,
           "name": "Deliver Results",
           "aliases": [
             "dr",
@@ -777,7 +790,8 @@
               "manager": false
             }
           ],
-          "kind": "lp"
+          "kind": "lp",
+          "slug": "deliver-results"
         }
       ],
       "examples": true,
@@ -796,7 +810,7 @@
       ],
       "principles": [
         {
-          "id": "passion-for-the-mission",
+          "id": 2001,
           "name": "Passion for the mission",
           "group": "one-arm",
           "aliases": [
@@ -823,10 +837,11 @@
               "text": "Tell me about a time you cared more about the outcome than your function's local goal. What did you give up?",
               "manager": false
             }
-          ]
+          ],
+          "slug": "passion-for-the-mission"
         },
         {
-          "id": "deliver-as-one-arm",
+          "id": 2002,
           "name": "Deliver as One Arm",
           "group": "one-arm",
           "aliases": [
@@ -852,10 +867,11 @@
               "text": "Tell me about a time you were the connection between two groups that did not share a plan. How did you make one plan?",
               "manager": false
             }
-          ]
+          ],
+          "slug": "deliver-as-one-arm"
         },
         {
-          "id": "build-extraordinary-teams",
+          "id": 2003,
           "name": "Build extraordinary teams",
           "group": "one-arm",
           "aliases": [
@@ -882,10 +898,11 @@
               "text": "Tell me about a time you built a team that was stronger than the individuals. What did you actually do?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "build-extraordinary-teams"
         },
         {
-          "id": "challenge-skillfully",
+          "id": 2004,
           "name": "Challenge skillfully",
           "group": "one-arm",
           "aliases": [
@@ -912,10 +929,11 @@
               "text": "Tell me about a time independent thinking was unwelcome. What did you do anyway?",
               "manager": false
             }
-          ]
+          ],
+          "slug": "challenge-skillfully"
         },
         {
-          "id": "root-out-inefficiencies",
+          "id": 2005,
           "name": "Root out inefficiencies",
           "group": "one-arm",
           "aliases": [
@@ -942,10 +960,11 @@
               "text": "Tell me about a time your team was busy and not effective. What did you stop?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "root-out-inefficiencies"
         },
         {
-          "id": "relentlessly-push-boundaries",
+          "id": 2006,
           "name": "Relentlessly push boundaries",
           "group": "accelerate-impact",
           "aliases": [
@@ -972,10 +991,11 @@
               "text": "Tell me about a time the team was satisfied and you were not. What did you push, and what broke?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "relentlessly-push-boundaries"
         },
         {
-          "id": "move-with-urgency-and-find-a-way",
+          "id": 2007,
           "name": "Move with urgency and find a way",
           "group": "accelerate-impact",
           "aliases": [
@@ -1003,10 +1023,11 @@
               "text": "Tell me about a time the unexpected hit your plan mid-flight. What did you change that week?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "move-with-urgency-and-find-a-way"
         },
         {
-          "id": "own-it",
+          "id": 2008,
           "name": "Own it",
           "group": "accelerate-impact",
           "aliases": [
@@ -1033,10 +1054,11 @@
               "text": "Tell me about a time a miss was yours. How did you tell the room, and what did you own next?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "own-it"
         },
         {
-          "id": "be-decisive-in-ambiguity-and-change",
+          "id": 2009,
           "name": "Be decisive in ambiguity and change",
           "group": "accelerate-impact",
           "aliases": [
@@ -1064,10 +1086,11 @@
               "text": "Tell me about a time you made a call with incomplete information. How did you revisit it?",
               "manager": false
             }
-          ]
+          ],
+          "slug": "be-decisive-in-ambiguity-and-change"
         },
         {
-          "id": "optimize-for-endurance-and-resilience",
+          "id": 2010,
           "name": "Optimize for endurance and resilience",
           "group": "accelerate-impact",
           "aliases": [
@@ -1095,7 +1118,8 @@
               "text": "Tell me about a time you planned for a long grind, not a sprint. What did you put in place in week one?",
               "manager": false
             }
-          ]
+          ],
+          "slug": "optimize-for-endurance-and-resilience"
         }
       ],
       "examples": true,
@@ -1116,7 +1140,7 @@
       "item": "Leadership principle",
       "principles": [
         {
-          "id": "wow-the-customer",
+          "id": 3001,
           "name": "Wow the Customer",
           "aliases": [
             "wow",
@@ -1142,10 +1166,11 @@
               "text": "Tell me about a time your team argued about what the customer wanted without any evidence. How did you settle it?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "wow-the-customer"
         },
         {
-          "id": "ruthless-prioritization",
+          "id": 3002,
           "name": "Ruthless Prioritization",
           "aliases": [
             "ruthless prioritization",
@@ -1171,10 +1196,11 @@
               "text": "Tell me about a time your team was working on too many things at once. What did you cut, and how did you decide?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "ruthless-prioritization"
         },
         {
-          "id": "company-wide-perspective",
+          "id": 3003,
           "name": "Company-wide Perspective",
           "aliases": [
             "company-wide perspective",
@@ -1200,10 +1226,11 @@
               "text": "Tell me about a time two teams had goals that worked against each other. How did you resolve it?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "company-wide-perspective"
         },
         {
-          "id": "dive-deep",
+          "id": 3004,
           "name": "Dive Deep",
           "aliases": [
             "dive deep",
@@ -1229,10 +1256,11 @@
               "text": "Tell me about a time you had to stay close to the detail without taking the work away from the person who owned it.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "dive-deep"
         },
         {
-          "id": "think-systematically",
+          "id": 3005,
           "name": "Think Systematically",
           "aliases": [
             "think systematically",
@@ -1258,10 +1286,11 @@
               "text": "Tell me about a process that only worked because one person was watching it. What did you change?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "think-systematically"
         },
         {
-          "id": "simplify",
+          "id": 3006,
           "name": "Simplify",
           "aliases": [
             "simplify",
@@ -1287,10 +1316,11 @@
               "text": "Tell me about a time you had to explain complex work to someone outside it.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "simplify"
         },
         {
-          "id": "disagree-and-commit",
+          "id": 3007,
           "name": "Disagree and Commit",
           "aliases": [
             "disagree and commit",
@@ -1316,10 +1346,11 @@
               "text": "Tell me about a time someone junior disagreed with you. What did you do?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "disagree-and-commit"
         },
         {
-          "id": "hire-and-develop-the-best",
+          "id": 3008,
           "name": "Hire and Develop the Best",
           "aliases": [
             "hire and develop the best",
@@ -1345,10 +1376,11 @@
               "text": "Tell me about a time you backed a strong performer moving off your team.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "hire-and-develop-the-best"
         },
         {
-          "id": "deliver-results-with-grit",
+          "id": 3009,
           "name": "Deliver Results with Grit",
           "aliases": [
             "deliver results with grit",
@@ -1374,10 +1406,11 @@
               "text": "Tell me about a time your team worked very hard and still did not deliver. What did you change?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "deliver-results-with-grit"
         },
         {
-          "id": "influence-without-authority",
+          "id": 3010,
           "name": "Influence without Authority",
           "aliases": [
             "influence without authority",
@@ -1403,10 +1436,11 @@
               "text": "Tell me about something you wrote that had to carry the argument without you in the room.",
               "manager": false
             }
-          ]
+          ],
+          "slug": "influence-without-authority"
         },
         {
-          "id": "aim-high-and-find-a-way",
+          "id": 3011,
           "name": "Aim High and Find a Way",
           "aliases": [
             "aim high and find a way",
@@ -1432,10 +1466,11 @@
               "text": "Tell me about a time you had to make an intimidating goal feel real to your team.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "aim-high-and-find-a-way"
         },
         {
-          "id": "learn-voraciously",
+          "id": 3012,
           "name": "Learn Voraciously",
           "aliases": [
             "learn voraciously",
@@ -1461,10 +1496,11 @@
               "text": "Tell me about the most uncomfortable thing you have had to become good at.",
               "manager": false
             }
-          ]
+          ],
+          "slug": "learn-voraciously"
         },
         {
-          "id": "demand-excellence",
+          "id": 3013,
           "name": "Demand Excellence",
           "aliases": [
             "demand excellence",
@@ -1490,10 +1526,11 @@
               "text": "Tell me about a time you noticed the standard on your team had quietly dropped.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "demand-excellence"
         },
         {
-          "id": "move-with-urgency",
+          "id": 3014,
           "name": "Move with Urgency",
           "aliases": [
             "move with urgency",
@@ -1519,10 +1556,11 @@
               "text": "Tell me about a decision that had been open too long. How did you force it?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "move-with-urgency"
         },
         {
-          "id": "hate-waste",
+          "id": 3015,
           "name": "Hate Waste",
           "aliases": [
             "hate waste",
@@ -1548,7 +1586,8 @@
               "text": "Tell me about a time you drove cost per unit down while volume was growing.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "hate-waste"
         }
       ]
     },
@@ -1567,7 +1606,7 @@
       "item": "Leadership principle",
       "principles": [
         {
-          "id": "own-it",
+          "id": 4001,
           "name": "Own It",
           "aliases": [
             "own it",
@@ -1593,10 +1632,11 @@
               "text": "Tell me about a time your team could have won at the wider group's expense. What did you do?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "own-it"
         },
         {
-          "id": "dive-deep",
+          "id": 4002,
           "name": "Dive Deep",
           "aliases": [
             "dive deep",
@@ -1622,10 +1662,11 @@
               "text": "Tell me about a time you stayed close to the detail without taking over from the person who owned it.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "dive-deep"
         },
         {
-          "id": "deliver-value-fast",
+          "id": 4003,
           "name": "Deliver Value Fast",
           "aliases": [
             "deliver value fast",
@@ -1651,10 +1692,11 @@
               "text": "Tell me about a time everything was a priority. How did you decide what mattered most?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "deliver-value-fast"
         },
         {
-          "id": "bring-good-vibes",
+          "id": 4004,
           "name": "Bring Good Vibes",
           "aliases": [
             "bring good vibes",
@@ -1680,10 +1722,11 @@
               "text": "Tell me about a time you had to deliver bad news to people who worked for you.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "bring-good-vibes"
         },
         {
-          "id": "raise-the-bar",
+          "id": 4005,
           "name": "Raise the Bar",
           "aliases": [
             "raise the bar",
@@ -1709,10 +1752,11 @@
               "text": "Tell me about a time you had to change the shape of a team to raise its level.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "raise-the-bar"
         },
         {
-          "id": "stay-humble",
+          "id": 4006,
           "name": "Stay Humble",
           "aliases": [
             "stay humble",
@@ -1738,7 +1782,8 @@
               "text": "Tell me about a time you could have used your title to win an argument. What did you do?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "stay-humble"
         }
       ]
     },
@@ -1757,7 +1802,7 @@
       "item": "CREDIT value",
       "principles": [
         {
-          "id": "collaboration",
+          "id": 5001,
           "name": "Collaboration",
           "aliases": [
             "collaboration",
@@ -1783,10 +1828,11 @@
               "text": "Tell me about a time you gave critical feedback and kept the relationship intact.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "collaboration"
         },
         {
-          "id": "results-for-customers",
+          "id": 5002,
           "name": "Results for Customers",
           "aliases": [
             "results for customers",
@@ -1812,10 +1858,11 @@
               "text": "Tell me about a time customer results conflicted with another priority. How did you decide?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "results-for-customers"
         },
         {
-          "id": "efficiency",
+          "id": 5003,
           "name": "Efficiency",
           "aliases": [
             "efficiency",
@@ -1841,10 +1888,11 @@
               "text": "Tell me about a process you removed because it bought consistency and nothing else.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "efficiency"
         },
         {
-          "id": "diversity-inclusion-and-belonging",
+          "id": 5004,
           "name": "Diversity, Inclusion & Belonging",
           "aliases": [
             "diversity, inclusion & belonging",
@@ -1870,10 +1918,11 @@
               "text": "Tell me about a time you noticed the visible, career-making work going to the same people.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "diversity-inclusion-and-belonging"
         },
         {
-          "id": "iteration",
+          "id": 5005,
           "name": "Iteration",
           "aliases": [
             "iteration",
@@ -1899,10 +1948,11 @@
               "text": "Tell me about work you argued genuinely could not be broken down.",
               "manager": true
             }
-          ]
+          ],
+          "slug": "iteration"
         },
         {
-          "id": "transparency",
+          "id": 5006,
           "name": "Transparency",
           "aliases": [
             "transparency",
@@ -1928,7 +1978,179 @@
               "text": "Tell me about information you decided not to share. How did you handle the boundary?",
               "manager": true
             }
-          ]
+          ],
+          "slug": "transparency"
+        }
+      ]
+    },
+    {
+      "id": "dawn",
+      "name": "Dawn Aerospace",
+      "set": "Company Tenets",
+      "source": "Dawn Aerospace Company Tenets, Dawn's internal wiki, published with Dawn's permission",
+      "howTo": [
+        "Pick two or three questions per assigned Company Tenet.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "Company Tenet",
+      "principles": [
+        {
+          "id": 6001,
+          "slug": "think-big-start-small",
+          "name": "Think big, start small",
+          "aliases": [
+            "think big, start small",
+            "think big start small"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6002,
+          "slug": "customer-success-is-our-success",
+          "name": "Customer success is our success",
+          "aliases": [
+            "customer success is our success"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6003,
+          "slug": "break-down-silos",
+          "name": "Break down silos",
+          "aliases": [
+            "break down silos"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6004,
+          "slug": "ownership",
+          "name": "Ownership",
+          "aliases": [
+            "ownership"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6005,
+          "slug": "no-surprises",
+          "name": "No surprises",
+          "aliases": [
+            "no surprises"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6006,
+          "slug": "invent-and-simplify",
+          "name": "Invent and simplify",
+          "aliases": [
+            "invent and simplify"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6007,
+          "slug": "bias-for-action",
+          "name": "Bias for action",
+          "aliases": [
+            "bias for action"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6008,
+          "slug": "earn-trust",
+          "name": "Earn trust",
+          "aliases": [
+            "earn trust"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6009,
+          "slug": "better-than-yesterday",
+          "name": "Better than yesterday",
+          "aliases": [
+            "better than yesterday"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6010,
+          "slug": "hire-and-develop-the-best",
+          "name": "Hire and develop the best",
+          "aliases": [
+            "hire and develop the best"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6011,
+          "slug": "have-backbone-disagree-and-commit",
+          "name": "Have Backbone; Disagree and commit",
+          "aliases": [
+            "have backbone; disagree and commit",
+            "have backbone disagree and commit"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6012,
+          "slug": "respect-time",
+          "name": "Respect time",
+          "aliases": [
+            "respect time"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6013,
+          "slug": "scrappy-not-crappy",
+          "name": "Scrappy, not crappy",
+          "aliases": [
+            "scrappy, not crappy",
+            "scrappy not crappy"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6014,
+          "slug": "rocket-engineering-not-rocket-science",
+          "name": "Rocket engineering, not rocket science",
+          "aliases": [
+            "rocket engineering, not rocket science",
+            "rocket engineering not rocket science"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 6015,
+          "slug": "race-on-the-racetrack-walk-on-ice",
+          "name": "Race on the racetrack, walk on ice",
+          "aliases": [
+            "race on the racetrack, walk on ice",
+            "race on the racetrack walk on ice"
+          ],
+          "kind": "lp",
+          "questions": []
         }
       ]
     }

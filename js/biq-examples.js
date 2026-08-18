@@ -1,5 +1,6 @@
 (function () {
   var cfg = window.BIQ || {};
+  var questionsUrl = cfg.questions || "/data/questions.json";
   var examplesData = cfg.examplesData || "/data/examples/";
   if (examplesData.slice(-1) !== "/") examplesData += "/";
   var examplesFallback = cfg.examplesFallback || "/data/biq-examples.json";
@@ -19,6 +20,7 @@
   var params = new URLSearchParams(window.location.search);
   var principle = params.get("p") || "";
   var question = params.get("q") || "";
+  var company = params.get("c") || "";
   var principleEl = document.getElementById("biq-ex-principle");
   var questionEl = document.getElementById("biq-ex-question");
   var statusEl = document.getElementById("biq-ex-status");
@@ -100,12 +102,12 @@
     return;
   }
 
-  // slug = 8-char hex FNV-1a of norm(principle) + "|" + norm(question)
+  // slug = 8-char hex FNV-1a of str(principle_id) + "|" + norm(question)
   // JS and the Python regen must match. Python equivalent:
   //   def norm(s):
   //       return " ".join("".join(ch.lower() if ch.isalnum() else " " for ch in (s or "")).split())
-  //   def slug_for(p, q):
-  //       key = norm(p) + "|" + norm(q)
+  //   def slug_for(principle_id, q):
+  //       key = str(principle_id) + "|" + norm(q)
   //       h = 2166136261
   //       for c in key.encode("ascii"):
   //           h ^= c
@@ -115,8 +117,8 @@
     return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
   }
 
-  function slugFor(p, q) {
-    var key = norm(p) + "|" + norm(q);
+  function slugFor(principleId, q) {
+    var key = String(principleId) + "|" + norm(q);
     var h = 2166136261;
     for (var i = 0; i < key.length; i++) {
       h ^= key.charCodeAt(i);
@@ -125,9 +127,11 @@
     return ("00000000" + h.toString(16)).slice(-8);
   }
 
-  function keyFor(p, q) {
-    return norm(p) + "|" + norm(q);
+  function keyFor(principleId, q) {
+    return String(principleId) + "|" + norm(q);
   }
+
+  var resolvedPrincipleId = null;
 
   function findSheet(bank) {
     var sheets = (bank && bank.sheets) || {};
@@ -161,6 +165,7 @@
     syncLevelRadios();
     updateUrl();
     if (!loaded) return;
+    var trackSlug = resolvedPrincipleId !== null ? slugFor(resolvedPrincipleId, question) : "";
     if (loaded.kind === "pack") {
       var pack = loaded.data;
       var levelSheet = pack.levels && pack.levels[currentLevel];
@@ -172,7 +177,7 @@
           biq_principle: principle,
           biq_question: question,
           biq_level: currentLevel,
-          biq_slug: slugFor(principle, question),
+          biq_slug: trackSlug,
           biq_status: "missing_level"
         });
         return;
@@ -183,7 +188,7 @@
         biq_principle: principle,
         biq_question: question,
         biq_level: currentLevel,
-        biq_slug: slugFor(principle, question),
+        biq_slug: trackSlug,
         biq_status: "ok"
       });
       renderSheet({
@@ -272,30 +277,80 @@
       });
   }
 
-  fetch(examplesData + slugFor(principle, question) + ".json")
-    .then(function (r) {
-      if (r.status === 404) return { missing: true };
-      if (!r.ok) throw new Error("bad pack");
-      return r.json().then(function (pack) { return { pack: pack }; });
-    })
-    .then(function (result) {
-      if (result.missing) {
+  function resolvePrincipleId(bank) {
+    var companies = (bank && bank.companies) || [];
+    var targetCompany = company ? company.toLowerCase() : "";
+    for (var i = 0; i < companies.length; i++) {
+      var c = companies[i];
+      if (targetCompany && c.id !== targetCompany) continue;
+      var principles = c.principles || [];
+      for (var j = 0; j < principles.length; j++) {
+        var p = principles[j];
+        if (norm(p.name) === norm(principle)) {
+          return typeof p.id === "number" ? p.id : null;
+        }
+        if (p.slug && norm(p.slug.replace(/-/g, " ")) === norm(principle)) {
+          return typeof p.id === "number" ? p.id : null;
+        }
+      }
+    }
+    for (var k = 0; k < companies.length; k++) {
+      var c2 = companies[k];
+      var principles2 = c2.principles || [];
+      for (var m = 0; m < principles2.length; m++) {
+        var p2 = principles2[m];
+        if (norm(p2.name) === norm(principle)) {
+          return typeof p2.id === "number" ? p2.id : null;
+        }
+      }
+    }
+    return null;
+  }
+
+  function fetchPack() {
+    if (resolvedPrincipleId === null) {
+      showMissing();
+      return;
+    }
+    var slug = slugFor(resolvedPrincipleId, question);
+    fetch(examplesData + slug + ".json")
+      .then(function (r) {
+        if (r.status === 404) return { missing: true };
+        if (!r.ok) throw new Error("bad pack");
+        return r.json().then(function (pack) { return { pack: pack }; });
+      })
+      .then(function (result) {
+        if (result.missing) {
+          return loadFallback().then(function (found) {
+            if (!found) showMissing();
+          }).catch(function () {
+            showLoadError();
+          });
+        }
+        var pack = result.pack;
+        loaded = pack.levels ? { kind: "pack", data: pack } : { kind: "sheet", data: pack };
+        showCurrent();
+      })
+      .catch(function () {
         return loadFallback().then(function (found) {
-          if (!found) showMissing();
+          if (!found) showLoadError();
         }).catch(function () {
           showLoadError();
         });
-      }
-      var pack = result.pack;
-      loaded = pack.levels ? { kind: "pack", data: pack } : { kind: "sheet", data: pack };
-      showCurrent();
+      });
+  }
+
+  fetch(questionsUrl)
+    .then(function (r) {
+      if (!r.ok) throw new Error("bank missing");
+      return r.json();
+    })
+    .then(function (bank) {
+      resolvedPrincipleId = resolvePrincipleId(bank);
+      fetchPack();
     })
     .catch(function () {
-      return loadFallback().then(function (found) {
-        if (!found) showLoadError();
-      }).catch(function () {
-        showLoadError();
-      });
+      showLoadError();
     });
 
   function renderSheet(b) {

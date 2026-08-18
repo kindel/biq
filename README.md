@@ -71,4 +71,8 @@ BIQ_DRY_RUN=1 BIQ_COMPANY=gitlab python3 scripts/generate.py
 buttons on: `"examples": true` in `data/questions.json` is a separate,
 deliberate edit.
 
-The slug is an 8-character FNV-1a of `norm(principle)|norm(question)`. The generator reads `prompt.md` and calls xAI `grok-4.3`.
+The slug is an 8-character FNV-1a of `str(principle_id)|norm(question)`. The numeric
+principle id is unique across all companies (Amazon 1000s, Arm 2000s, Coupang 3000s,
+Delivery Hero 4000s, GitLab 5000s, Dawn 6000s), so pack filenames cannot collide
+even when two companies share a principle name. The generator reads `prompt.md`
+and calls xAI `grok-4.3`.
