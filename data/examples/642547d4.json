@@ -1,0 +1,225 @@
+{
+  "question": "Tell me about an ambitious goal you set and then had to report honestly against.",
+  "principle": "Results for Customers",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a goal to cut support tickets on my feature by 40% in Q3 by improving the onboarding flow. At the end I only hit 15% reduction and had to report that in the team review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did the actual customer data show?"
+        },
+        {
+          "role": "candidate",
+          "text": "The drop was real but smaller because new users still hit one specific error path we hadn't instrumented. I added that to the next sprint and the follow-up quarter showed another 12%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your manager react to the miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "She asked what I learned about goal setting. I said I should have broken the 40% into two smaller experiments first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an ambitious goal you set and then had to report honestly against.",
+        "Junior dev on checkout page; goal 40% ticket reduction via onboarding changes",
+        "Hit only 15%; reported exact number and root cause in team review",
+        "Quote: 'I added the missing error path to the next sprint'",
+        "Follow-up: Asked about manager reaction; candidate described concrete adjustment to goal-setting approach"
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers for a junior. The candidate owned a clear individual metric, reported the shortfall without softening, and used the miss to change the next quarter's work. The quote about instrumenting the error path shows they connected the honest report directly to customer impact. This level of transparency on their own scope is exactly what we want early-career engineers to demonstrate. Biggest strength is the willingness to adjust their own process after the report rather than defending the original number.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted to get our page load under 2 seconds. We got to 2.3 and I still told the team we were close."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did leadership actually see in the dashboard?"
+        },
+        {
+          "role": "candidate",
+          "text": "They saw the same 2.3 number. I just framed it as progress toward the goal."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did customers notice any difference?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but we were still iterating so I didn't want to call it a miss yet."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an ambitious goal you set and then had to report honestly against.",
+        "Junior set page-load target of 2s; landed at 2.3s",
+        "Reported as 'close' instead of stating the gap",
+        "Quote: 'I just framed it as progress'",
+        "Follow-up: Pressed on customer impact; candidate could not cite any measured improvement"
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate avoided stating the actual result and instead softened language to leadership. No evidence they connected the miss to customer experience or changed their approach afterward. The framing of 'close' shows they prioritized perception over clear data. Biggest gap is the absence of any ownership of the honest reporting step the question asked for."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set a cross-team goal to lift trial-to-paid conversion by 25% through a new self-serve flow. After launch we only saw 9% and I presented the full funnel drop-off numbers to the directors."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other teams respond when you shared the miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teams wanted to pause their work. I showed them the segment that did convert and we ran a targeted experiment that recovered another 6%."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how you set goals after this?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now require each team to define their own leading indicator before we commit to the outcome metric."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an ambitious goal you set and then had to report honestly against.",
+        "Senior set 25% conversion lift across three teams; delivered 9%",
+        "Presented full funnel data in directors meeting without softening",
+        "Quote: 'I showed them the segment that did convert'",
+        "Follow-up: Asked about team reaction; candidate described how they used the honest data to restart experiments"
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers at senior level. The candidate set an ambitious cross-team metric, reported the 9% shortfall with full data, and then used that transparency to drive a follow-up experiment that added measurable lift. The detail about requiring leading indicators from each team shows they turned the honest report into a repeatable process. This demonstrates both ownership of results and influence without authority. Biggest strength is converting the miss into continued customer impact rather than stopping at the report.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We aimed for 30% adoption of a new dashboard across two teams. We hit 18% but I highlighted the 18% as a solid start in the QBR."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the customer teams actually use the dashboard for their workflows?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some did, but usage was lower than we modeled."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the QBR?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the same target for the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an ambitious goal you set and then had to report honestly against.",
+        "Senior targeted 30% adoption; achieved 18%",
+        "Highlighted the 18% positively in QBR without noting gap to goal",
+        "Quote: 'I highlighted the 18% as a solid start'",
+        "Follow-up: Asked about downstream usage; candidate had no plan to adjust after the report"
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate set a cross-team goal but presented the shortfall as positive without context or next actions. No evidence they used the honest reporting moment to drive changes that would improve customer adoption. The decision to keep the same target shows lack of learning from the miss. Biggest gap is treating the report as a communication exercise rather than a customer-results checkpoint."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I set an org-level target to raise customer NPS by 15 points through a new support model. We moved the needle 4 points in year one and I reported the full cohort analysis to the board including the segments that did not improve."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make after seeing the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shifted 40% of the investment to the high-value segment that responded and accepted a slower overall NPS ramp in exchange for protecting revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the team react to the public miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made the cohort data the single source of truth so no one could claim success on vanity metrics."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an ambitious goal you set and then had to report honestly against.",
+        "Exec set 15-point NPS org goal; delivered 4 points",
+        "Presented full cohort breakdown to board with no softening",
+        "Quote: 'We shifted 40% of the investment to the high-value segment'",
+        "Follow-up: Asked about investment trade-off; candidate described explicit reallocation based on the honest data"
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers at exec level. The candidate set an ambitious org-wide NPS goal, reported the 4-point result with granular cohort data, and then made a clear investment trade-off to protect revenue. The decision to make the cohort analysis the single source of truth shows strategic judgment under ambiguity. This level of long-term thinking and willingness to slow headline metrics for better customer outcomes is what we expect from senior leaders. Biggest strength is the explicit link between honest reporting and capital reallocation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We targeted a 20-point NPS lift across the company. We achieved 7 points and I reported the aggregate number as 'directionally positive' in the all-hands."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any customer segments move negatively?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, enterprise customers dropped, but the overall number was still up."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in the following year?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the same 20-point target and added more programs."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an ambitious goal you set and then had to report honestly against.",
+        "Exec set 20-point company NPS goal; delivered 7",
+        "Reported aggregate as 'directionally positive' while hiding segment drops",
+        "Quote: 'We kept the same 20-point target'",
+        "Follow-up: Pressed on negative segments; candidate had no plan to adjust investment"
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate set a high-ambiguity org goal but masked the real result with positive language and ignored negative enterprise movement. No evidence of strategic trade-offs or learning after the honest reporting opportunity. Repeating the same target without adjustment shows absence of long-term judgment. Biggest gap is prioritizing narrative over customer-segment reality."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Honest reporting of miss",
+      "junior": "States exact shortfall and next sprint change",
+      "senior": "Presents full funnel data to directors and restarts experiments",
+      "exec": "Shows cohort analysis to board and reallocates 40% investment"
+    },
+    {
+      "signal": "Connection to customer impact",
+      "junior": "Links miss to one error path customers hit",
+      "senior": "Uses data to target converting segment",
+      "exec": "Protects high-value revenue segment over headline NPS"
+    },
+    {
+      "signal": "Learning applied after report",
+      "junior": "Changes own goal-setting process",
+      "senior": "Requires leading indicators from each team",
+      "exec": "Makes cohort data the single source of truth"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual feature metric",
+      "senior": "Cross-team conversion goal",
+      "exec": "Org-wide NPS and capital allocation"
+    },
+    {
+      "signal": "Avoidance behavior",
+      "junior": "Frames as 'close' without measured improvement",
+      "senior": "Highlights partial number positively with no next step",
+      "exec": "Uses aggregate positive language while hiding segment drops"
+    }
+  ],
+  "kind": "value"
+}

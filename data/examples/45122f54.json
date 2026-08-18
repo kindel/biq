@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you got something done through people who did not report to you.",
+  "principle": "Influence without Authority",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I needed data from two other teams for my project report. I reached out to the owners, explained my deadline and how their input would help the shared goal, and offered to format it their way. They sent it over in time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when one person didn't respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I followed up once with a shorter note and copied my manager for visibility, then offered to pull the numbers myself if they gave me access."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you got something done through people who did not report to you.",
+        "Situation: Needed cross-team data for individual project report",
+        "Actions: Explained shared goal, offered flexible format, polite follow-up with manager visibility",
+        "Outcome: Data arrived on time, report completed",
+        "Quote: 'I offered to format it their way.'",
+        "Follow-up: Response delay - candidate sent shorter note and offered to self-serve data"
+      ],
+      "raiseFeedback": "Raises the bar for Influence without Authority at the junior level. The candidate described a clear individual-scope situation where they secured data from two non-reporting teams by framing a shared goal and offering flexibility on format. When one contact went silent the candidate followed up once and proposed a self-serve workaround rather than escalating immediately. This shows ownership of their own deliverable and basic persistence without authority. The story stays local and appropriately scoped for 0-2 years of experience. The single biggest strength is the willingness to adapt their ask to reduce friction for others.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me to get a sign-off from another team so I emailed them and waited. They didn't reply so I told my manager it wasn't done."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything else before going back to your manager?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent one email and then just waited for them to respond."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you got something done through people who did not report to you.",
+        "Situation: Needed sign-off from another team per manager request",
+        "Actions: Sent single email, waited, escalated to manager when no reply",
+        "Outcome: Task stalled, handed back to manager",
+        "Quote: 'I sent one email and then just waited.'",
+        "Follow-up: Any other attempts - candidate confirms only one email was sent"
+      ],
+      "lowerFeedback": "Lowers the bar for Influence without Authority at the junior level. The candidate treated the request as a simple hand-off and stopped after one unanswered email rather than exploring alternatives or adjusting the ask. When the other team did not respond the candidate immediately returned the problem to their manager instead of owning a follow-up or workaround. This shows limited ownership and little evidence of adapting to influence others. The story remains local but demonstrates passive behavior instead of proactive attempts. The single biggest gap is the absence of any persistence or reframing to get the needed input."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two platform teams were blocking a feature rollout because each wanted the other to own the integration work. I set up a short working session, mapped the overlap, and proposed a split where each team took the part closest to their roadmap. Both leads agreed and we shipped two weeks later."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get them to the table?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each lead the revenue impact of the delay and offered to run the meeting so they didn't have to drive it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you got something done through people who did not report to you.",
+        "Situation: Platform teams blocking feature due to ownership dispute",
+        "Actions: Convened working session, mapped overlap, proposed split aligned to roadmaps, offered to run meeting",
+        "Outcome: Agreement reached, feature shipped two weeks later",
+        "Quote: 'I showed each lead the revenue impact of the delay.'",
+        "Follow-up: Getting them to the table - candidate used business impact and offered to facilitate"
+      ],
+      "raiseFeedback": "Raises the bar for Influence without Authority at the senior level. The candidate identified a cross-team deadlock that was delaying a feature and used a concrete revenue impact number to bring both leads into a working session they did not have to run. They then proposed a pragmatic split that aligned with each team's existing roadmap priorities rather than forcing a new mandate. The outcome was measurable: the feature shipped two weeks sooner. This demonstrates cross-team influence and the ability to create leverage without direct authority. The single biggest strength is the use of business framing combined with facilitation to reduce friction for the other teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I needed another team to change their API for my project. I sent them the spec and asked for a meeting but they said they were busy so the project slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What options did you consider besides waiting?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mostly waited and escalated once to my director to see if they could push."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you got something done through people who did not report to you.",
+        "Situation: Needed API change from another team for own project",
+        "Actions: Sent spec, requested meeting, waited when busy, escalated to director",
+        "Outcome: Project delayed",
+        "Quote: 'I mostly waited and escalated once.'",
+        "Follow-up: Other options - candidate relied on escalation rather than alternatives"
+      ],
+      "lowerFeedback": "Lowers the bar for Influence without Authority at the senior level. The candidate relied on sending a spec and a single meeting request then defaulted to waiting and one escalation to their director when the other team declined. No attempt was made to understand the other team's constraints or to offer a lower-cost path for them. The result was a slipped project with no evidence of cross-team leverage or alternative framing. This behavior is more consistent with junior-level expectations than the cross-team impact expected at senior. The single biggest gap is the absence of any proactive reframing or facilitation to move the other team."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two business units were duplicating tooling spend because neither would adopt the other's platform. I created a joint steering group with P&L owners, surfaced the combined $4M annual cost, and let them decide on a single platform with shared funding. Both units agreed within a quarter and we redirected the savings to new initiatives."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed each unit the migration cost versus ongoing duplication and let them pick the timeline that fit their budgets."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you got something done through people who did not report to you.",
+        "Situation: Duplicate tooling spend across two business units",
+        "Actions: Formed joint steering group, quantified $4M cost, let units decide platform and timeline",
+        "Outcome: Agreement in one quarter, savings redirected",
+        "Quote: 'I let them decide on a single platform with shared funding.'",
+        "Follow-up: Trade-offs surfaced - candidate showed migration cost vs duplication and allowed unit-driven timeline"
+      ],
+      "raiseFeedback": "Raises the bar for Influence without Authority at the exec level. The candidate addressed an org-level duplication problem by forming a steering group of P&L owners and using a clear $4M annual cost figure to create shared accountability. They deliberately avoided mandating a solution and instead let the units choose the platform and migration timeline, which produced agreement within a quarter and redirected savings. This shows strategic judgment in structuring a high-ambiguity decision and creating leverage through joint ownership rather than top-down direction. The story reflects long-term thinking about cost and resource allocation. The single biggest strength is the ability to surface trade-offs and let stakeholders own the outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I wanted the sales and marketing teams to use the same CRM. I presented the idea in a staff meeting and asked them to align but nothing changed after the meeting."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you follow up on the lack of progress?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it again in the next staff meeting and then moved on to other priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you got something done through people who did not report to you.",
+        "Situation: Wanted sales and marketing alignment on single CRM",
+        "Actions: Presented idea in staff meeting, asked for alignment, repeated once then dropped",
+        "Outcome: No change",
+        "Quote: 'I mentioned it again in the next staff meeting and then moved on.'",
+        "Follow-up: Follow-up actions - candidate repeated mention once then deprioritized"
+      ],
+      "lowerFeedback": "Lowers the bar for Influence without Authority at the exec level. The candidate raised a cross-org tooling alignment topic in a staff meeting and followed up with a single additional mention before moving on, producing no measurable change. No attempt was made to quantify cost, create joint accountability structures, or surface trade-offs that would allow the units to own a decision. The approach stayed at the level of suggestion rather than strategic orchestration expected at exec. This leaves the duplication problem unaddressed and shows limited long-term leverage. The single biggest gap is the lack of structured follow-through or stakeholder-driven trade-off discussion."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual project deliverable",
+      "senior": "Cross-team feature or process",
+      "exec": "Org-level cost or duplication"
+    },
+    {
+      "signal": "Use of data or metrics",
+      "junior": "Minimal or none",
+      "senior": "Revenue or timeline impact cited",
+      "exec": "Clear $ cost and savings quantified"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "One follow-up or self-serve offer",
+      "senior": "Facilitated session with business framing",
+      "exec": "Joint steering group with trade-off ownership"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Completed own task",
+      "senior": "Shipped feature on time",
+      "exec": "Redirected savings to new work"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Polite request plus workaround",
+      "senior": "Reduced friction for others",
+      "exec": "Stakeholders chose solution themselves"
+    }
+  ],
+  "kind": "lp"
+}

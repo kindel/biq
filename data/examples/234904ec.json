@@ -1,0 +1,177 @@
+{
+  "question": "Tell me about a time you changed something inside someone else's area.",
+  "principle": "Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I updated the formatting in a shared onboarding doc owned by another new grad on my team. I noticed inconsistencies that were confusing for new hires, so I proposed changes in a comment thread and asked for their input before editing."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was their reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were initially protective but agreed after I showed the data from two recent hires who had questions. We iterated together and I only made the edit once they approved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed something inside someone else's area.",
+        "Role: new grad on team, situation: shared onboarding doc had confusing formatting",
+        "Actions: posted comment with proposed edits + examples from recent hires, waited for approval",
+        "Outcome: doc updated, owner became collaborator on future changes",
+        "Quote: 'I only made the edit once they approved.'",
+        "Follow-up: What was their reaction? -> showed data, iterated together"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate described editing a shared onboarding document owned by a peer. They posted proposed changes in comments with examples from recent hires and only edited after receiving approval. This shows early awareness of boundaries and basic respect for ownership. The follow-up revealed they used data rather than opinion to build agreement. Biggest strength is the explicit step of waiting for approval instead of assuming permission.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I just went in and fixed the formatting on a doc another teammate owned because it looked wrong to me."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to them first?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured it was obvious. They complained later but the doc was better so it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed something inside someone else's area.",
+        "Role: new grad, situation: noticed bad formatting in teammate's doc",
+        "Actions: edited directly without discussion",
+        "Outcome: teammate complained afterward",
+        "Quote: 'They complained later but the doc was better so it was fine.'",
+        "Follow-up: Did you talk to them first? -> no, assumed it was obvious"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The candidate edited a teammate-owned document without any prior discussion. When asked, they admitted they did not check first and dismissed the owner's complaint by saying the change was obviously better. This reflects a pattern of acting first and handling relationships second. The core gap is lack of recognition that ownership matters even on small shared items."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team owned the billing retry logic that was causing customer support tickets. I mapped the impact, wrote a one-pager with proposed changes, and scheduled time with their lead to review before touching any code."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "They worried about risk. I offered to run a small A/B test in their staging environment and let their on-call own the rollout. We ended up shipping together and support tickets dropped 18%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed something inside someone else's area.",
+        "Role: senior engineer, situation: billing retry logic owned by adjacent team causing tickets",
+        "Actions: wrote impact one-pager, met with their lead, proposed A/B test they would own",
+        "Outcome: joint rollout, 18% drop in tickets",
+        "Quote: 'I offered to run a small A/B test in their staging environment and let their on-call own the rollout.'",
+        "Follow-up: How did you handle pushback? -> addressed risk concern with test they controlled"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate identified a cross-team issue in billing retries and prepared a one-pager before approaching the owning team. They addressed risk concerns by offering an A/B test that the other team would run and own. This produced a measurable reduction in support tickets. The approach demonstrates influence through preparation and shared ownership rather than unilateral change. Biggest strength is giving the owning team control of the rollout.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I refactored the retry logic in another team's service because it was inefficient. I sent a PR and tagged them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the owning team?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were annoyed at first and asked for a revert. We eventually merged after some meetings but it took extra work to calm things down."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed something inside someone else's area.",
+        "Role: senior engineer, situation: inefficient retry logic in another team's service",
+        "Actions: refactored and opened PR without prior discussion",
+        "Outcome: owning team requested revert, required meetings to resolve",
+        "Quote: 'They were annoyed at first and asked for a revert.'",
+        "Follow-up: What happened with the owning team? -> extra meetings needed to recover relationship"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The candidate refactored code in another team's service and opened a PR without advance discussion. The owning team reacted negatively and requested a revert, requiring follow-up meetings to repair the relationship. This shows a pattern of prioritizing technical improvement over cross-team coordination. The main gap is treating the PR as sufficient communication instead of securing buy-in first."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We needed to standardize the incident management tool across three product orgs that each had their own process. I ran a two-week discovery with representatives from each org, surfaced the trade-offs in a leadership forum, and secured agreement on a single tool with a phased migration plan they co-owned."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some orgs valued deep customization while others wanted simplicity. We chose the simpler tool and gave the customization-heavy orgs extra migration support and a six-month exception window for legacy incidents."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed something inside someone else's area.",
+        "Role: director/VP, situation: three orgs using different incident tools",
+        "Actions: two-week discovery with reps, leadership forum on trade-offs, phased migration co-owned by orgs",
+        "Outcome: single tool adopted with exception window for one org",
+        "Quote: 'We chose the simpler tool and gave the customization-heavy orgs extra migration support and a six-month exception window.'",
+        "Follow-up: What trade-offs did you surface? -> customization vs simplicity, addressed with support and exception"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate drove standardization of an incident tool across three separate organizations by conducting discovery with representatives and presenting trade-offs at a leadership forum. They preserved autonomy for the most affected group through a six-month exception and extra support. This produced org-wide alignment without top-down mandate. Biggest strength is the explicit handling of differing priorities through structured negotiation and phased ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I decided we should move everyone to one incident tool to reduce costs and just announced the decision in the all-hands."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other orgs respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two orgs pushed back hard and we had to delay the rollout six months while we negotiated exceptions. It created friction that took a while to unwind."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed something inside someone else's area.",
+        "Role: director/VP, situation: multiple orgs on different incident tools",
+        "Actions: announced single-tool decision in all-hands without prior alignment",
+        "Outcome: two orgs resisted, six-month delay and ongoing friction",
+        "Quote: 'Two orgs pushed back hard and we had to delay the rollout six months while we negotiated exceptions.'",
+        "Follow-up: How did the other orgs respond? -> resistance led to delay and friction"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The candidate announced a company-wide tool change in an all-hands without prior engagement with the affected organizations. Two groups resisted, forcing a six-month delay and extended negotiation. This created unnecessary friction at the organizational level. The core gap is relying on announcement instead of early, structured alignment with stakeholders who owned their own processes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Securing buy-in before change",
+      "junior": "Posted comment and waited for approval on shared doc",
+      "senior": "One-pager plus A/B test owned by the other team",
+      "exec": "Two-week discovery with reps plus leadership forum and exception window"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Used recent-hire examples to address concern",
+      "senior": "Offered test and on-call ownership to reduce risk",
+      "exec": "Provided migration support and six-month exception for customization needs"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single shared document within team",
+      "senior": "Billing logic affecting support tickets across teams",
+      "exec": "Incident tooling standardized across three product organizations"
+    },
+    {
+      "signal": "Ownership transfer",
+      "junior": "Owner approved final edit",
+      "senior": "Owning team ran the rollout and on-call",
+      "exec": "Orgs co-owned phased migration plan"
+    }
+  ],
+  "kind": "value"
+}

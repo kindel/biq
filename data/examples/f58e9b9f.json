@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about an issue that kept coming back until you traced it to its real cause.",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an issue that kept coming back until you traced it to its real cause."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a recurring timeout in our service dashboard every Monday morning. I first tried restarting the server, but it came back. After checking logs for two cycles I noticed it only happened when a particular batch job ran overnight. I added more tracing to the job and found it was holding a DB connection pool open too long."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change after finding that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I updated the job to release connections explicitly and added a pool size alert. It stopped happening after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an issue that kept coming back until you traced it to its real cause.",
+        "Role: new grad on dashboard team; situation: weekly timeout; actions: restarted, then added tracing after two cycles; outcome: found DB pool leak in batch job; quote: \"I added more tracing to the job and found it was holding a DB connection pool open too long.\"",
+        "Follow-up: Asked what changed; candidate described explicit release + alert and confirmed fix."
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for a junior. The candidate rejected the initial restart fix and kept digging through two cycles until they isolated the batch job as the trigger. They then added targeted tracing that revealed the connection pool leak rather than guessing at symptoms. The concrete change (explicit release plus alert) directly addressed the root cause and ended the recurrence. This shows appropriate ownership of their own work and willingness to go past the obvious surface fix. Biggest strength: moved from symptom to root cause with clear follow-through on their individual scope.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an issue that kept coming back until you traced it to its real cause."
+        },
+        {
+          "role": "candidate",
+          "text": "Our login page kept failing on Fridays. I increased the timeout setting twice and it worked for a while but came back. Eventually the team lead found a network issue and fixed it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What steps did you take to find the network issue?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't look into the network myself; I just kept adjusting the timeout until someone else handled it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an issue that kept coming back until you traced it to its real cause.",
+        "Role: new grad; situation: Friday login failures; actions: increased timeout twice; outcome: handed off; quote: \"I just kept adjusting the timeout until someone else handled it.\"",
+        "Follow-up: Asked for their investigation steps; candidate admitted no network tracing or root cause work on their part."
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for a junior. The candidate applied the same surface-level timeout increase multiple times without investigating why the failures recurred on Fridays. They did not add logging or examine dependencies themselves and waited for someone else to identify the network root cause. This shows acceptance of recurring symptoms rather than pushing to the underlying issue within their own work. Biggest gap: no evidence of personal effort to trace beyond the first obvious fix."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an issue that kept coming back until you traced it to its real cause."
+        },
+        {
+          "role": "candidate",
+          "text": "Customer support tickets for order export failures kept spiking every quarter. I coordinated with the billing and inventory teams to pull their logs alongside ours. After mapping the full flow we found the export job was using stale cache keys from a billing schema change two quarters earlier."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to share data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I set up a shared dashboard with the failing queries and invited their on-call engineers to review it together. That got us the schema history we needed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an issue that kept coming back until you traced it to its real cause.",
+        "Role: senior on ordering platform; situation: quarterly export ticket spikes; actions: pulled cross-team logs, mapped flow, identified stale cache from schema change; outcome: fixed cache invalidation; quote: \"I set up a shared dashboard... That got us the schema history we needed.\"",
+        "Follow-up: Asked how they influenced other teams; candidate described shared dashboard and joint review that surfaced the real cause."
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for a senior. The candidate refused to treat the ticket spikes as isolated incidents and instead orchestrated cross-team log analysis to map the full order export path. They identified the stale cache keys caused by an earlier billing schema change that had been missed for two quarters. The shared dashboard approach influenced teams without authority and produced the root cause data. This delivered measurable reduction in recurring support load. Biggest strength: combined technical depth with cross-team coordination to reach the true source of the problem.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an issue that kept coming back until you traced it to its real cause."
+        },
+        {
+          "role": "candidate",
+          "text": "We saw the same export failures every quarter. I increased the job retry count and the tickets went down for a while. Later the platform team found a schema mismatch and fixed the cache."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you investigate the schema change yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I focused on making our retries more resilient until the other team resolved it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an issue that kept coming back until you traced it to its real cause.",
+        "Role: senior; situation: quarterly export failures; actions: increased retries; outcome: deferred to platform team; quote: \"I focused on making our retries more resilient until the other team resolved it.\"",
+        "Follow-up: Asked about personal investigation; candidate confirmed they did not trace the schema or cache root cause."
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for a senior. The candidate applied a retry increase that only masked the quarterly failures instead of investigating the underlying data flow. They did not initiate cross-team log review or pursue the schema change that was the actual root cause. This left the problem recurring until another team stepped in. Biggest gap: relied on symptom mitigation rather than driving to the real cause across team boundaries."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an issue that kept coming back until you traced it to its real cause."
+        },
+        {
+          "role": "candidate",
+          "text": "Our North America fulfillment costs kept exceeding forecast by 8-12% every quarter despite new capacity projects. I pulled 18 months of cost, volume, and carrier contract data across three regions and ran a cohort analysis that showed the variance was driven by a single legacy carrier contract in the Midwest that had volume-based penalties no one had modeled."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make to act on this?"
+        },
+        {
+          "role": "candidate",
+          "text": "We renegotiated that contract and shifted 30% of volume to a national carrier, accepting a short-term integration cost to remove the recurring penalty exposure. The variance dropped below 3% within two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about an issue that kept coming back until you traced it to its real cause.",
+        "Role: VP of operations; situation: persistent quarterly fulfillment cost overruns; actions: 18-month cohort analysis across regions, isolated legacy Midwest contract penalties; outcome: renegotiated contract and shifted volume; quote: \"the variance was driven by a single legacy carrier contract in the Midwest that had volume-based penalties no one had modeled.\"",
+        "Follow-up: Asked about trade-offs; candidate described short-term integration cost accepted for long-term removal of penalty exposure."
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for an exec. The candidate rejected repeated capacity additions as the solution and instead conducted an 18-month multi-region cohort analysis that isolated a single legacy contract's volume penalties as the true driver of recurring overruns. They made an explicit strategic trade-off (short-term integration cost for volume shift) that eliminated the root cause. The result was sustained variance reduction at the business level. Biggest strength: used deep data analysis at org scale to surface and resolve a hidden structural issue rather than treating symptoms.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about an issue that kept coming back until you traced it to its real cause."
+        },
+        {
+          "role": "candidate",
+          "text": "Fulfillment costs were over forecast every quarter. We kept adding regional capacity and the numbers improved temporarily but the gap returned. Finance eventually identified a contract issue and we adjusted it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What analysis did you personally drive?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed the high-level forecasts and approved the capacity adds; the contract details were handled at the director level."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about an issue that kept coming back until you traced it to its real cause.",
+        "Role: VP; situation: quarterly cost overruns; actions: approved repeated capacity adds; outcome: deferred contract work; quote: \"the contract details were handled at the director level.\"",
+        "Follow-up: Asked about personal analysis; candidate confirmed they stayed at forecast level and did not trace to contract root cause."
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for an exec. The candidate continued approving capacity expansions that only temporarily masked the cost variance instead of personally driving analysis to the contract structure. They delegated the root cause investigation and did not surface the volume-penalty mechanism themselves. This allowed the structural issue to persist across multiple quarters. Biggest gap: operated at symptom level with repeated tactical fixes rather than strategic root-cause resolution."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of tracing",
+      "junior": "Adds targeted logging after initial symptom fix",
+      "senior": "Coordinates cross-team logs to map full flow",
+      "exec": "Runs multi-quarter cohort analysis across regions"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Own code or single service",
+      "senior": "Cross-team data sharing and joint review",
+      "exec": "Org-level contract and volume trade-offs"
+    },
+    {
+      "signal": "Recurrence handling",
+      "junior": "Stops after one root cause fix",
+      "senior": "Prevents recurrence via shared dashboard",
+      "exec": "Removes structural penalty via renegotiation"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "N/A (individual work)",
+      "senior": "Shared dashboard to pull in other teams",
+      "exec": "Explicit strategic trade-off decision"
+    },
+    {
+      "signal": "Metric clarity",
+      "junior": "Issue no longer happens",
+      "senior": "Reduced support ticket spikes",
+      "exec": "Variance dropped below 3% for two quarters"
+    }
+  ],
+  "kind": "lp"
+}

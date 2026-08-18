@@ -1,0 +1,240 @@
+{
+  "question": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+  "principle": "Ruthless Prioritization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was finishing two small dashboard tweaks when my manager asked me to fix a P1 data sync bug that appeared after a partner integration. I dropped the lower-priority tweak that only affected internal reporting and focused on the bug. I finished the fix in three days and the sync was stable."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to drop?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at the original list with my manager and we ranked impact. The internal report tweak had no customer tickets so it went off."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to that dropped item?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed in the backlog and got picked up next quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+        "Role: individual contributor on small tasks",
+        "Situation: P1 bug after partner integration, two dashboard tweaks in flight",
+        "Action: dropped internal reporting tweak after quick ranking with manager",
+        "Outcome: bug fixed in three days, dropped item moved to backlog",
+        "Quote: \"I looked at the original list with my manager and we ranked impact.\"",
+        "Follow-up: How did you decide what to drop? -> used manager input and ticket volume",
+        "Follow-up: What happened to that dropped item? -> moved to next quarter"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for a junior candidate. The story shows the candidate recognized a new high-impact item and removed a low-impact task rather than stretching scope. Quote: \"I looked at the original list with my manager and we ranked impact.\" The decision was made with explicit manager input, which fits junior scope. The outcome was local but clean: the bug was resolved and the dropped item was tracked. Biggest strength is coachability in using the ranking conversation to make the call.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?"
+        },
+        {
+          "role": "candidate",
+          "text": "A new customer request came in for an export feature. I tried to keep my original two tasks and just worked longer hours to fit it in."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything actually get removed from your list?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I finished everything by the end of the quarter but it was tight."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+        "Role: individual contributor",
+        "Situation: new export feature request added to two existing tasks",
+        "Action: kept all items and added hours",
+        "Outcome: completed everything but described as tight",
+        "Quote: \"I tried to keep my original two tasks and just worked longer hours.\"",
+        "Follow-up: Did anything actually get removed? -> no"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for a junior candidate. The candidate added scope without removing anything and relied on extra hours instead of making a trade-off. Quote: \"I tried to keep my original two tasks and just worked longer hours.\" No evidence of prioritization mechanics or discussion with a manager. The outcome was completion under pressure rather than deliberate de-scoping. Biggest gap is absence of any item actually coming off the list."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?"
+        },
+        {
+          "role": "candidate",
+          "text": "A partner team needed a new API endpoint for their launch. I was already leading two cross-team projects. I deprioritized the internal tooling migration that only had internal users and shifted two engineers to the API work."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from the tooling stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "I met with the two team leads, showed the partner launch date, and we agreed the migration could slip six weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Partner launched on time and we avoided two weeks of firefighting later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+        "Role: senior leading cross-team projects",
+        "Situation: partner API request while owning two projects",
+        "Action: removed internal tooling migration, shifted two engineers",
+        "Outcome: partner on time, avoided later firefighting",
+        "Quote: \"I met with the two team leads, showed the partner launch date, and we agreed the migration could slip six weeks.\"",
+        "Follow-up: How did you get buy-in? -> stakeholder meeting with date evidence",
+        "Follow-up: What was the measurable impact? -> on-time launch and reduced firefighting"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for a senior candidate. The candidate removed a cross-team project to accommodate a higher-priority partner request and influenced without authority to secure the trade-off. Quote: \"I met with the two team leads, showed the partner launch date, and we agreed the migration could slip six weeks.\" The decision involved explicit stakeholder alignment and produced a clear timeline benefit. Biggest strength is the ability to negotiate scope across teams rather than absorbing the new work.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?"
+        },
+        {
+          "role": "candidate",
+          "text": "The partner team asked for an API change. I added it to my two existing projects and asked the team to work in parallel."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any work get deprioritized?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the original roadmap and the partner item was treated as an add-on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+        "Role: senior",
+        "Situation: partner API request added to existing projects",
+        "Action: kept all items and ran in parallel",
+        "Outcome: no explicit removal",
+        "Quote: \"We kept the original roadmap and the partner item was treated as an add-on.\"",
+        "Follow-up: Did any work get deprioritized? -> no"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for a senior candidate. The candidate added the partner request without removing any existing cross-team work. Quote: \"We kept the original roadmap and the partner item was treated as an add-on.\" No evidence of influence or trade-off discussion. The result was an overloaded roadmap rather than a deliberate reallocation. Biggest gap is lack of cross-team scope adjustment."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mid-quarter the business shifted investment to a new vertical after a competitor move. I paused the entire self-serve analytics initiative that was consuming 40 percent of engineering capacity and redirected the teams to the new vertical launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the analytics stakeholders?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the competitor data and revenue projection to the exec team and we agreed to a six-month deferral with a smaller pilot retained."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The new vertical hit its revenue target and analytics was relaunched the following year with clearer priorities."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+        "Role: exec with org-level scope",
+        "Situation: competitor-driven vertical shift mid-quarter",
+        "Action: paused self-serve analytics (40% capacity), redirected teams",
+        "Outcome: new vertical hit revenue target, analytics relaunched later",
+        "Quote: \"I presented the competitor data and revenue projection to the exec team and we agreed to a six-month deferral.\"",
+        "Follow-up: How did you handle stakeholders? -> exec presentation with data",
+        "Follow-up: What was the long-term effect? -> revenue hit and later relaunch"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for an exec candidate. The candidate made an org-level trade-off by pausing a major initiative consuming 40 percent capacity in response to a market shift. Quote: \"I presented the competitor data and revenue projection to the exec team and we agreed to a six-month deferral with a smaller pilot retained.\" The decision was grounded in revenue data and produced a clear business outcome. Biggest strength is strategic judgment on where to apply leverage rather than incremental adjustments.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time something new arrived mid-quarter. What came off the list to make room?"
+        },
+        {
+          "role": "candidate",
+          "text": "A new market opportunity appeared. I asked the teams to explore it while continuing the current roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was any major initiative paused or removed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added exploration capacity but kept the original plans intact."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something new arrived mid-quarter. What came off the list to make room?",
+        "Role: exec",
+        "Situation: new market opportunity mid-quarter",
+        "Action: added exploration while keeping roadmap",
+        "Outcome: no major removal",
+        "Quote: \"We added exploration capacity but kept the original plans intact.\"",
+        "Follow-up: Was any major initiative paused? -> no"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for an exec candidate. The candidate layered new work on top of the existing roadmap without removing any large initiative. Quote: \"We added exploration capacity but kept the original plans intact.\" No evidence of org-level trade-off or long-term strategic adjustment. The result was diffused focus rather than concentrated leverage. Biggest gap is absence of visible prioritization at the business level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Individual task swap with manager input",
+      "senior": "Cross-team project removal with stakeholder alignment",
+      "exec": "Org-level initiative pause based on market data"
+    },
+    {
+      "signal": "Evidence of actual removal",
+      "junior": "One small task moved to backlog",
+      "senior": "Tooling migration slipped six weeks",
+      "exec": "Self-serve analytics paused for six months"
+    },
+    {
+      "signal": "Influence mechanism",
+      "junior": "Quick ranking conversation with manager",
+      "senior": "Stakeholder meeting with launch date evidence",
+      "exec": "Exec presentation with competitor and revenue data"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Bug fixed, dropped item tracked",
+      "senior": "Partner on time, reduced later firefighting",
+      "exec": "New vertical hit revenue target"
+    },
+    {
+      "signal": "Trade-off language",
+      "junior": "Used ticket volume to rank impact",
+      "senior": "Agreed on explicit slip with two team leads",
+      "exec": "Presented data and agreed on deferral"
+    }
+  ],
+  "kind": "lp"
+}

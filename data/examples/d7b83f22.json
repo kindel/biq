@@ -1,0 +1,177 @@
+{
+  "question": "Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was onboarding to a new service and the runbook said the queue drained in under 30 seconds, but I wanted to see it. I set up a test with real traffic and watched the logs and dashboard live. It actually took 4 minutes under load because of a hidden retry loop."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I updated the runbook with the observed numbers and added a note on the retry config. My manager had me walk two other new hires through the same check."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+        "Junior candidate described onboarding to a queue service; runbook claimed <30s drain.",
+        "Set up live test with real traffic, observed 4min due to retry loop.",
+        "Quote: 'I updated the runbook with the observed numbers and added a note on the retry config.'",
+        "Follow-up: Asked what happened next; candidate updated docs and trained two peers."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at the junior level. The candidate moved past the documented description by running a live test and surfaced the actual 4-minute drain time caused by the retry loop. They then owned fixing the runbook and coaching peers, which shows ownership of their own work and coachability. The story stays within individual scope but demonstrates learning from direct observation rather than accepting the spec. Biggest strength is closing the loop from observation to shared artifact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The team told me the deployment took 10 minutes so I just trusted that and moved on."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever check the logs yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured the senior engineer already knew."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+        "Candidate accepted team statement that deployment took 10 minutes without verification.",
+        "Did not review logs or run own test.",
+        "Quote: 'I figured the senior engineer already knew.'",
+        "Follow-up: Confirmed no personal observation; stayed at surface description."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at the junior level. The candidate relied entirely on what others described and made no attempt to observe the deployment process directly. When probed, they deferred to a senior engineer instead of taking ownership of verifying the claim. This shows limited curiosity and no evidence of learning from direct data. Biggest gap is absence of any personal action to go deeper than the verbal description."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our partner team claimed the shared cache hit rate was 95 percent based on their metrics. I asked to sit with their on-call and watch the actual request path during peak. We saw the rate drop to 60 percent because of a key-prefix collision in one microservice."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I worked with their lead to add a second metric and we rolled out a fix that lifted the real hit rate to 88 percent across both teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+        "Senior candidate challenged partner team's 95 percent cache claim by observing live request path.",
+        "Discovered key-prefix collision dropping rate to 60 percent.",
+        "Quote: 'I worked with their lead to add a second metric and we rolled out a fix that lifted the real hit rate to 88 percent across both teams.'",
+        "Follow-up: Confirmed cross-team coordination and measurable improvement."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at the senior level. The candidate did not accept the partner team's reported 95 percent hit rate and instead observed the live request path, uncovering the key-prefix collision. They influenced the partner team without authority to add a second metric and drove a fix that improved the observed rate to 88 percent. The story shows cross-team impact and clear before-and-after metrics. Biggest strength is turning direct observation into a joint, measurable outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the partner team for their cache metrics and used the numbers they sent me in my review."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever look at the actual traffic?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, their dashboard was the source of truth."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+        "Senior candidate accepted partner team's reported metrics without verification.",
+        "No direct observation of traffic or request path.",
+        "Quote: 'Their dashboard was the source of truth.'",
+        "Follow-up: Confirmed reliance on second-hand data only."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at the senior level. The candidate accepted the partner team's dashboard numbers at face value and performed no independent observation of the cache behavior. When asked about looking at actual traffic, they deferred to the existing dashboard. This shows no evidence of cross-team influence or uncovering hidden issues. Biggest gap is treating reported metrics as sufficient without going to the underlying system."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our growth forecasts assumed the new market would behave like the prior two launches. I spent a week embedded with the local ops team watching fulfillment during the soft launch. We discovered that delivery windows were 3x longer due to regulatory checks that never appeared in the model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do with that insight?"
+        },
+        {
+          "role": "candidate",
+          "text": "I paused the full rollout, adjusted the financial model with the observed delays, and reset the board target to a slower ramp that still hit profitability in year two."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+        "Exec candidate rejected model assumptions by embedding with local ops during soft launch.",
+        "Observed 3x longer delivery due to regulatory checks absent from forecast.",
+        "Quote: 'I paused the full rollout, adjusted the financial model with the observed delays, and reset the board target to a slower ramp that still hit profitability in year two.'",
+        "Follow-up: Confirmed strategic trade-off and org-level decision."
+      ],
+      "raiseFeedback": "Raises the bar for Dive Deep at the exec level. The candidate rejected growth model assumptions and spent time embedded in operations to observe actual fulfillment delays caused by regulatory checks. They used that ground truth to pause the rollout and reset board-level targets to a slower but profitable path. The story demonstrates strategic judgment under ambiguity and long-term leverage over heroics. Biggest strength is converting direct observation into a material change in company direction.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I reviewed the launch model with the finance team and approved the growth targets they presented."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you observe any part of the actual operation?"
+        },
+        {
+          "role": "candidate",
+          "text": "The model had already been validated by the regional leads."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you went and watched how something actually worked, rather than how it was described.",
+        "Exec candidate accepted finance and regional model without personal observation.",
+        "No time spent in the field or with ops.",
+        "Quote: 'The model had already been validated by the regional leads.'",
+        "Follow-up: Confirmed reliance on aggregated reports only."
+      ],
+      "lowerFeedback": "Lowers the bar for Dive Deep at the exec level. The candidate approved growth targets based solely on the model presented by finance and regional leads without any direct observation of the operation. When probed, they cited validation by others rather than seeking ground truth themselves. This shows no strategic use of first-hand data to challenge assumptions. Biggest gap is absence of personal engagement with the actual system at the point of execution."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Went beyond documented or reported description",
+      "junior": "Ran personal test to measure actual queue drain",
+      "senior": "Observed live request path with partner team",
+      "exec": "Embedded in ops to watch fulfillment during soft launch"
+    },
+    {
+      "signal": "Uncovered root cause through observation",
+      "junior": "Found retry loop causing 4min vs 30s",
+      "senior": "Identified key-prefix collision",
+      "exec": "Discovered regulatory checks adding 3x delay"
+    },
+    {
+      "signal": "Drove action from observation",
+      "junior": "Updated runbook and trained peers",
+      "senior": "Added metric and rolled out fix across teams",
+      "exec": "Paused rollout and reset board targets"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual and immediate team",
+      "senior": "Cross-team metrics and outcome",
+      "exec": "Org-level financial model and board decision"
+    },
+    {
+      "signal": "Evidence of trade-offs or leverage",
+      "junior": "Minimal; focused on local fix",
+      "senior": "Joint fix with measurable lift",
+      "exec": "Chose slower ramp for long-term profitability"
+    }
+  ],
+  "kind": "lp"
+}

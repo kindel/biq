@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+  "principle": "Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I had to add a new report. Instead of hard-coding the query in three places I spent an extra day building a small shared query builder class. My teammates later reused it for two other reports without duplicating logic."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made that the harder path for you?"
+        },
+        {
+          "role": "candidate",
+          "text": "Writing the class took more time up front and I had to learn how to write unit tests for it. The quick way would have been copy-paste."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it helped downstream?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two other engineers told me they copied the class instead of writing new queries. My manager later asked me to document it so new hires could use it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+        "Intern added report; built shared query builder class instead of copy-paste in three spots",
+        "Action: spent extra day writing class + tests",
+        "Outcome: two teammates reused it; manager asked for docs",
+        "Quote: 'The quick way would have been copy-paste.'",
+        "Follow-up: What made that harder? -> upfront time and learning tests; Follow-up: How did you know impact? -> direct reuse + doc request"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify. The candidate, a junior, chose to invest extra time in a reusable query builder rather than duplicating code for a single report. They explicitly said the quick path was copy-paste and later saw two teammates reuse the class. This shows early ownership of their own work and awareness of downstream effort even at individual scope. The story stays local but demonstrates the principle without prompting. Biggest gap is lack of any metric on time saved.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I just wrote the report query directly in the controller like the ticket asked. It worked and shipped on time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone else need similar logic later?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yeah, another engineer ended up writing almost the same query two weeks later. I didn't think about sharing it at the time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+        "Candidate wrote report query directly in controller",
+        "Action: followed ticket exactly, shipped on time",
+        "Outcome: another engineer duplicated the query two weeks later",
+        "Quote: 'I didn't think about sharing it at the time.'",
+        "Follow-up: Did anyone else need similar logic? -> yes, duplication happened"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify. The candidate followed the ticket literally and shipped, but never considered downstream duplication even when another engineer repeated the work. They only noticed the repetition after the fact and took no action. At junior level this misses the basic expectation of thinking beyond the immediate task. The story shows no ownership of simplification and no learning applied to future work."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were each building their own CSV export feature. I proposed and built a shared export service with a simple config interface even though it meant more design reviews and an extra two weeks of work on my part."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed both teams the duplicated code they had already written and ran a short spike that proved the shared service would cut their effort in half. Both leads agreed to adopt it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measured impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "After launch the other teams stopped writing new export code and two more teams adopted the service within a quarter. We removed four duplicated classes across the org."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+        "Senior saw two teams duplicating CSV export; built shared service instead",
+        "Action: ran spike, got buy-in via data on duplicated code",
+        "Outcome: four duplicated classes removed; four teams adopted within a quarter",
+        "Quote: 'I showed both teams the duplicated code they had already written.'",
+        "Follow-up: How did you get buy-in? -> spike proving half the effort; Follow-up: measured impact? -> four classes removed, adoption by four teams"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify. The senior identified cross-team duplication and invested extra time in a shared export service rather than letting each team continue building independently. They used a spike and data on existing duplication to influence without authority. The outcome included removal of four duplicated classes and adoption by four teams. This demonstrates the expected senior scope of cross-team impact and measurable simplification. Biggest strength is the clear before-and-after evidence.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built the export feature my team needed and handed it off. The other team built their own version separately."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there an opportunity to share the work?"
+        },
+        {
+          "role": "candidate",
+          "text": "There was some overlap but my roadmap didn't have time to coordinate so we just did our own thing."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+        "Built export for own team only",
+        "Action: handed off without coordination despite overlap",
+        "Outcome: other team built duplicate version",
+        "Quote: 'my roadmap didn't have time to coordinate'",
+        "Follow-up: Was there an opportunity to share? -> yes but deprioritized for own roadmap"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify. The candidate recognized overlap with another team but chose not to invest in a shared solution because it was outside their immediate roadmap. The result was continued duplication. At senior level this shows insufficient influence without authority and no attempt to reduce downstream work for others. The story lacks any cross-team leverage or long-term thinking."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had three product lines each maintaining their own data pipeline and schema. I sponsored a six-month platform migration to a single simplified data model even though it delayed two revenue features."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make explicit?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the business leads we would miss two quarters of new feature revenue but would reduce pipeline maintenance cost by 60 percent and cut onboarding time for new analysts from months to weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term result?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the migration the org retired eight separate ETL jobs and new teams could launch analytics in under a month instead of six. The cost savings funded two additional platform engineers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+        "Exec sponsored migration to single data model across three product lines",
+        "Action: delayed two revenue features for six-month platform effort",
+        "Outcome: retired eight ETL jobs; new team onboarding from 6 months to <1 month; funded two more engineers",
+        "Quote: 'we would miss two quarters of new feature revenue but would reduce pipeline maintenance cost by 60 percent'",
+        "Follow-up: What trade-off did you make explicit? -> revenue delay vs 60% cost cut; Follow-up: long-term result? -> eight jobs retired, onboarding time cut, headcount funded"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify. The executive made a deliberate, high-ambiguity trade-off to consolidate three separate data pipelines into one model, accepting short-term revenue delays for org-wide simplification. They clearly communicated the cost and benefit to stakeholders and achieved measurable outcomes including retirement of eight ETL jobs and drastically reduced onboarding time. This reflects the expected executive scope of business-level impact and long-term leverage. Biggest strength is the explicit strategic framing of the decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Each product line kept its own pipeline because the teams had different requirements. We focused on shipping features instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the duplication create ongoing cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, we ended up hiring more data engineers to maintain the separate systems but that was accepted as the cost of speed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the harder thing to build so that everyone downstream had it easier.",
+        "Kept three separate pipelines due to differing requirements",
+        "Action: prioritized feature shipping over consolidation",
+        "Outcome: hired more data engineers to maintain duplication",
+        "Quote: 'that was accepted as the cost of speed'",
+        "Follow-up: Did the duplication create ongoing cost? -> yes but accepted for speed"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify. The executive accepted ongoing duplication across product lines as the price of speed and hired additional headcount rather than addressing the root complexity. No strategic trade-off was evaluated or communicated. At executive level this shows absence of long-term thinking and failure to create leverage for the broader organization. The story demonstrates local optimization at the expense of systemic simplification."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of simplification",
+      "junior": "Individual task reuse",
+      "senior": "Cross-team shared service",
+      "exec": "Org-wide platform migration"
+    },
+    {
+      "signal": "Evidence of trade-off",
+      "junior": "Extra day of work",
+      "senior": "Two weeks plus design reviews",
+      "exec": "Two quarters of revenue delay"
+    },
+    {
+      "signal": "Downstream impact measurement",
+      "junior": "Anecdotal reuse by two peers",
+      "senior": "Four classes removed, four teams adopted",
+      "exec": "Eight ETL jobs retired, onboarding time cut from months to weeks"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Built it themselves",
+      "senior": "Spike + data to gain voluntary adoption",
+      "exec": "Sponsored and secured business-leader alignment on cost/benefit"
+    },
+    {
+      "signal": "Learning applied",
+      "junior": "Manager requested documentation for future use",
+      "senior": "Service expanded to additional teams",
+      "exec": "Savings reinvested in platform headcount"
+    }
+  ],
+  "kind": "lp"
+}

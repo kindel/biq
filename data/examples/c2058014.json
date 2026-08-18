@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time something you owned failed. What did you do?",
+  "principle": "Own It",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I owned a feature flag rollout for our checkout flow. It caused a 2% conversion drop in the first hour because of a misconfigured audience rule. I rolled it back immediately, wrote a post-mortem, and added a checklist for future flags. My manager reviewed it and suggested adding automated canary checks, which I implemented."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you learn from the rollback process?"
+        },
+        {
+          "role": "candidate",
+          "text": "That owning the metric end-to-end meant I should have monitored conversion, not just error rates."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something you owned failed. What did you do?",
+        "Owned checkout flag rollout; 2% conversion drop from audience rule error",
+        "Rolled back in first hour, wrote post-mortem, added checklist",
+        "Implemented manager's suggestion for automated canary checks",
+        "Quote: 'owning the metric end-to-end meant I should have monitored conversion, not just error rates'",
+        "Follow-up: What did you learn from the rollback process? -> Learned to expand monitoring scope"
+      ],
+      "raiseFeedback": "The candidate described owning a feature flag that caused a conversion drop and immediately rolled it back. They wrote a post-mortem and added a checklist after their manager suggested automated canary checks. This shows clear personal responsibility for a local feature without blaming the team. The follow-up revealed they expanded their monitoring approach after the incident. The story stays within individual scope but demonstrates coachability and concrete follow-through on feedback. Biggest strength is linking the failure directly to an expanded ownership habit rather than external factors.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A task I was assigned missed the deadline because requirements kept changing. I flagged it early but the PM didn't prioritize it so the launch slipped."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the slip?"
+        },
+        {
+          "role": "candidate",
+          "text": "I moved on to the next ticket once the PM took over."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something you owned failed. What did you do?",
+        "Missed deadline due to changing requirements from PM",
+        "Flagged issue but launch slipped anyway",
+        "After slip, moved on to next ticket once PM took over",
+        "Quote: 'I flagged it early but the PM didn't prioritize it'",
+        "Follow-up: What did you do after the slip? -> Handed off and moved on"
+      ],
+      "lowerFeedback": "The candidate attributed the missed deadline to changing requirements from the PM without describing actions they took to mitigate or recover. After the slip they handed off responsibility and moved to the next ticket. This shows limited ownership of the outcome and no evidence of learning or preventing recurrence. The follow-up confirmed they did not drive any fix or reflection. The story lowers the bar for Own It because responsibility stayed with another person rather than the candidate."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I owned migration of our payments service to a new provider. Two teams had integration issues that caused a three-day delay in go-live. I created a shared runbook, pulled in the dependent teams for daily syncs, and adjusted the cutover plan to include parallel runs. We launched with zero customer impact and reduced latency by 15%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to adopt the runbook?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed them their own error logs from the prior attempt and let them own sections of the new plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something you owned failed. What did you do?",
+        "Owned payments migration; integration issues caused three-day delay",
+        "Created shared runbook, daily syncs, parallel runs",
+        "Launched with zero customer impact and 15% latency reduction",
+        "Quote: 'showed them their own error logs... let them own sections of the new plan'",
+        "Follow-up: How did you get the other teams to adopt the runbook? -> Used their data to drive ownership"
+      ],
+      "raiseFeedback": "The candidate owned a payments migration that hit integration delays across teams and responded by building a shared runbook and daily syncs. They adjusted the plan to include parallel runs and delivered zero customer impact plus latency gains. The follow-up showed they influenced without authority by using the other teams' own data. This demonstrates cross-team impact and raising the bar on process for multiple groups. The story includes clear metrics and long-term tooling improvements rather than one-time heroics. Biggest strength is turning a failure into a repeatable coordination mechanism.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service migration slipped because upstream teams didn't deliver on time. I escalated in the steering meeting and the timeline was pushed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change anything in how the teams worked together?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the next migration used the same process."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something you owned failed. What did you do?",
+        "Service migration slipped due to upstream teams missing dates",
+        "Escalated in steering meeting; timeline pushed",
+        "No changes to team coordination process afterward",
+        "Quote: 'the next migration used the same process'",
+        "Follow-up: Did you change anything in how the teams worked together? -> No process change"
+      ],
+      "lowerFeedback": "The candidate described a migration slip attributed to upstream teams and responded only by escalating in a meeting. No adjustments were made to coordination or tooling, and the same process was repeated for the next migration. The follow-up confirmed absence of any lasting influence or prevention steps. This lowers the bar for Own It at senior level because there is no evidence of cross-team impact or raising standards. The outcome remained a schedule push rather than a recovered or improved delivery."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I owned the decision to sunset a product line that was draining 20% of engineering capacity. The initial pivot attempt failed to gain traction and we lost two quarters of growth. I led the wind-down, reallocated the team to a higher-priority area, and set up a customer transition program that retained 85% of revenue. Two years later that reallocated team launched the current core offering."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make in the reallocation?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted short-term revenue dip to free capacity for the platform that became our main growth driver."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something you owned failed. What did you do?",
+        "Owned product sunsetting after failed pivot; lost two quarters of growth",
+        "Led wind-down, reallocated team, built customer transition retaining 85% revenue",
+        "Reallocated team later launched core offering",
+        "Quote: 'accepted short-term revenue dip to free capacity for the platform that became our main growth driver'",
+        "Follow-up: What trade-offs did you make in the reallocation? -> Short-term dip for long-term platform growth"
+      ],
+      "raiseFeedback": "The candidate owned the decision to sunset a product line after a failed pivot that cost two quarters of growth. They drove the wind-down, protected 85% of revenue through customer transition, and reallocated the team to what became the company's core offering. The follow-up revealed a deliberate strategic trade-off between short-term revenue and long-term capacity. This shows org-level impact and long-term thinking under ambiguity. The story includes clear business metrics and leverage through team reallocation rather than personal heroics. Biggest strength is connecting the failure to a multi-year positive outcome.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "A major initiative I sponsored missed its targets because market conditions shifted. We adjusted the OKRs and continued with a revised scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change in the organization after that miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "We updated the planning calendar for that quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something you owned failed. What did you do?",
+        "Initiative missed targets due to market shift",
+        "Adjusted OKRs and revised scope",
+        "Only change was updating the planning calendar",
+        "Quote: 'We updated the planning calendar for that quarter'",
+        "Follow-up: What did you change in the organization after that miss? -> Calendar update only"
+      ],
+      "lowerFeedback": "The candidate attributed the missed initiative to market conditions and responded by adjusting OKRs and scope without deeper organizational changes. The follow-up showed only a minor calendar update as the lasting action. This lowers the bar for Own It at exec level because there is no evidence of strategic judgment or leverage from the failure. The outcome stayed at scope revision rather than building new capability or preventing similar misses at business scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Personal responsibility vs external blame",
+      "junior": "Owns local bug or task outcome",
+      "senior": "Owns cross-team delivery outcome",
+      "exec": "Owns org-level decision and trade-offs"
+    },
+    {
+      "signal": "Action after failure",
+      "junior": "Fixes and adds checklist",
+      "senior": "Builds shared runbook and syncs",
+      "exec": "Drives wind-down and reallocation"
+    },
+    {
+      "signal": "Evidence of learning or prevention",
+      "junior": "Expands monitoring after feedback",
+      "senior": "Creates repeatable coordination process",
+      "exec": "Frees capacity for multi-year growth"
+    },
+    {
+      "signal": "Influence on others",
+      "junior": "Asks manager for input",
+      "senior": "Gets teams to own sections using their data",
+      "exec": "Aligns org on strategic pivot"
+    },
+    {
+      "signal": "Scope of metrics",
+      "junior": "Conversion or error rate on one feature",
+      "senior": "Latency and zero customer impact across teams",
+      "exec": "Revenue retention and platform growth over years"
+    }
+  ],
+  "kind": "lp"
+}

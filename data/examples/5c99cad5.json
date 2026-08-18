@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+  "principle": "Think Systematically",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our deployment script kept failing on the same env var mismatch every few weeks. I added a pre-flight check script that ran on every commit and failed fast with the exact mismatch. After that the issue stopped recurring because we caught it in CI instead of after merge."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the before-and-after time from commit to detection?"
+        },
+        {
+          "role": "candidate",
+          "text": "Before it was 2-3 days until the nightly deploy; after it was under 10 minutes in the PR build."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+        "Role: junior dev on single service",
+        "Situation: recurring env-var mismatch in deploys",
+        "Action: wrote pre-flight check in CI",
+        "Outcome: detection from days to <10 min",
+        "Quote: \"caught it in CI instead of after merge\"",
+        "Follow-up: Asked for before/after metric; candidate gave clear numbers"
+      ],
+      "raiseFeedback": "Raises the bar on Think Systematically for a junior. The candidate identified a recurring local failure mode and inserted an automated check that moved detection from post-merge to pre-merge. Quote: \"caught it in CI instead of after merge\" shows they focused on the loop rather than just fixing the symptom once. The before/after metric (days to minutes) is concrete and appropriate for individual scope. This demonstrates ownership of their own workflow and learning from repeated incidents. Biggest strength is the direct link between the change and reduced recurrence time.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The same test kept failing in staging. I just ran it locally a few more times before pushing and it stopped happening as much."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you make sure the root cause was addressed for the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told the other devs to also run it locally."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+        "Role: junior",
+        "Situation: flaky test in staging",
+        "Action: ran test more locally and told others to do the same",
+        "Outcome: \"stopped happening as much\"",
+        "Quote: \"told the other devs to also run it locally\"",
+        "Follow-up: Probe on team/systemic fix; candidate stayed at personal habit level"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Systematically for a junior. The candidate addressed a recurring test failure only by adding personal steps and asking others to copy the same manual process. Quote: \"told the other devs to also run it locally\" shows no attempt to create a repeatable, automated signal. No measurement of loop time or root-cause removal is provided. This keeps the fix at the level of individual discipline rather than a systematic change. Biggest gap is absence of any mechanism that would prevent recurrence without ongoing human effort."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three teams kept hitting the same data-pipeline back-pressure issue every release. I instrumented the producer lag metric in our shared dashboard and added an alert that fired within five minutes of threshold breach. Cross-team incidents dropped from monthly to zero over the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to adopt the alert?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot on my team, published the dashboard link and incident reduction data, then asked the platform team to make it default for all pipelines."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+        "Role: senior on platform-adjacent work",
+        "Situation: recurring back-pressure across three teams",
+        "Action: added shared metric + alert, piloted then drove adoption",
+        "Outcome: incidents from monthly to zero",
+        "Quote: \"published the dashboard link and incident reduction data\"",
+        "Follow-up: Asked how influence worked; candidate described pilot + data-driven handoff"
+      ],
+      "raiseFeedback": "Raises the bar on Think Systematically for a senior. The candidate moved detection of a cross-team recurring failure from monthly post-release to five-minute alert by adding observable metrics. Quote: \"published the dashboard link and incident reduction data\" illustrates influence without authority through evidence. The outcome (zero incidents in a quarter) is scoped appropriately and shows they considered adoption mechanics. This reflects both root-cause focus and the ability to create leverage beyond their immediate team. Biggest strength is the combination of technical signal and organizational rollout.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The same latency spike happened every quarter. I wrote a runbook that told on-call to check the queue size first."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the recurrence rate change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but at least people knew what to look at."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+        "Role: senior",
+        "Situation: quarterly latency spikes",
+        "Action: wrote a runbook pointing to queue size",
+        "Outcome: \"not really\" change in recurrence",
+        "Quote: \"at least people knew what to look at\"",
+        "Follow-up: Asked for recurrence impact; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Systematically for a senior. The candidate produced documentation rather than an automated or preventive signal. Quote: \"at least people knew what to look at\" reveals the loop remained human-dependent and unchanged in speed or frequency. No metrics on detection time or incident reduction are offered despite cross-team scope. This approach does not remove the recurring trigger or shorten detection. Biggest gap is treating a systemic problem with a knowledge artifact instead of a process or observability change."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer-reported outages from config drift were recurring every few months across the company. I sponsored a \"config-as-code\" mandate plus automated drift detection that ran hourly and blocked production changes on mismatch. Mean time to detect dropped from weeks to under an hour and executive escalations fell by 70% year-over-year."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you accept?"
+        },
+        {
+          "role": "candidate",
+          "text": "We slowed initial rollout velocity by two weeks while teams migrated, but the reduction in emergency work more than paid for it within the first quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+        "Role: exec",
+        "Situation: company-wide config-drift outages",
+        "Action: sponsored config-as-code + hourly automated detection",
+        "Outcome: MTTD weeks to <1h; escalations -70%",
+        "Quote: \"slowed initial rollout velocity by two weeks while teams migrated\"",
+        "Follow-up: Asked for trade-offs; candidate named velocity cost vs long-term leverage"
+      ],
+      "raiseFeedback": "Raises the bar on Think Systematically for an exec. The candidate addressed a recurring, high-cost org-level failure by mandating a preventive system with hourly detection. Quote: \"slowed initial rollout velocity by two weeks while teams migrated\" shows explicit trade-off judgment. The 70% reduction in escalations demonstrates business-level impact and long-term leverage over heroics. Scope spans multiple teams and includes rollout mechanics. Biggest strength is the strategic framing of short-term cost against sustained reduction in recurrence.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Config issues kept causing outages. I asked each team to add a monthly config review to their retro."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable impact on recurrence?"
+        },
+        {
+          "role": "candidate",
+          "text": "We still saw a couple of big incidents, but teams felt more ownership."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you shortened the feedback loop on a problem that kept recurring.",
+        "Role: exec",
+        "Situation: recurring config outages",
+        "Action: asked teams to add monthly retro item",
+        "Outcome: \"still saw a couple of big incidents\"",
+        "Quote: \"teams felt more ownership\"",
+        "Follow-up: Asked for metrics; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Systematically for an exec. The candidate delegated a recurring org problem to a monthly human process with no automation or enforcement. Quote: \"teams felt more ownership\" indicates focus on sentiment rather than measurable loop compression. Recurrence continued and no trade-off analysis or adoption tracking is described. This keeps the solution at the level of suggestion instead of systemic control. Biggest gap is lack of leverage or structural change at the scale expected for the role."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Root-cause vs symptom focus",
+      "junior": "Strong: added automated pre-check; Weak: manual local runs",
+      "senior": "Strong: shared metric + alert; Weak: runbook only",
+      "exec": "Strong: config-as-code mandate + detection; Weak: monthly retro item"
+    },
+    {
+      "signal": "Loop time measurement",
+      "junior": "Strong: days to minutes; Weak: none provided",
+      "senior": "Strong: monthly to 5 min + zero incidents; Weak: none",
+      "exec": "Strong: weeks to <1h and 70% escalation drop; Weak: none"
+    },
+    {
+      "signal": "Adoption / influence",
+      "junior": "N/A at level",
+      "senior": "Strong: pilot then platform default; Weak: told others",
+      "exec": "Strong: sponsored mandate with migration plan; Weak: asked teams to add item"
+    },
+    {
+      "signal": "Trade-off awareness",
+      "junior": "N/A at level",
+      "senior": "N/A at level",
+      "exec": "Strong: named 2-week velocity cost vs long-term gain; Weak: none"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Strong: own service CI; Weak: personal habit",
+      "senior": "Strong: three teams via shared platform; Weak: single runbook",
+      "exec": "Strong: company-wide with exec metric; Weak: per-team suggestion"
+    }
+  ],
+  "kind": "lp"
+}

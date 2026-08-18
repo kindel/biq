@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about a time you had to explain complex work to someone outside it.",
+  "principle": "Simplify",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to explain complex work to someone outside it."
+        },
+        {
+          "role": "candidate",
+          "text": "I was on a team building a new checkout flow with async payment retries. My PM asked why we couldn't just show a success screen immediately. I walked her through the retry logic using a simple timeline diagram on a whiteboard, showing failure points and customer impact."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did she say after?"
+        },
+        {
+          "role": "candidate",
+          "text": "She understood the risk and helped adjust the launch comms. I learned to always draw the sequence first."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to explain complex work to someone outside it.",
+        "Role: New grad on payments team, explained retry logic to PM",
+        "Action: Used whiteboard timeline to map failure points and customer impact",
+        "Outcome: PM adjusted launch messaging; candidate learned to visualize first",
+        "Quote: 'I learned to always draw the sequence first.'",
+        "Follow-up: Asked what she said after; candidate described immediate alignment and personal takeaway"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify for a junior. The candidate broke async retries into a visual sequence for a non-technical PM and directly linked it to adjusted launch messaging. The follow-up shows the candidate internalized the technique. This matches junior expectations of clear individual communication and coachability. Biggest strength is the concrete artifact (whiteboard timeline) that produced a usable outcome rather than abstract explanation.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to explain complex work to someone outside it."
+        },
+        {
+          "role": "candidate",
+          "text": "I had to explain our database schema to a designer. I sent them the ERD and walked through each table."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that go?"
+        },
+        {
+          "role": "candidate",
+          "text": "They still had questions so I explained it again with more detail."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to explain complex work to someone outside it.",
+        "Role: Junior dev explaining DB schema to designer",
+        "Action: Sent ERD then added more detail on second try",
+        "Outcome: Designer still had questions; no visible simplification",
+        "Quote: 'I explained it again with more detail.'",
+        "Follow-up: How did that go; candidate defaulted to repeating with added complexity"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify for a junior. The candidate defaulted to sharing the full ERD and then layering on more detail instead of distilling the relevant parts for a designer. No evidence of adapting the explanation or checking understanding. This falls short of even junior expectations for making work accessible outside the team. Biggest gap is treating the audience as needing more data rather than less."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to explain complex work to someone outside it."
+        },
+        {
+          "role": "candidate",
+          "text": "Marketing needed to understand why our new search ranking change would temporarily drop some category pages. I created a one-page impact model showing query volume, conversion lift, and the three-month recovery curve, then ran a 30-minute session with their leads."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed after?"
+        },
+        {
+          "role": "candidate",
+          "text": "They rewrote the launch email and delayed a promo, avoiding customer confusion. Two other teams later asked for the same model."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to explain complex work to someone outside it.",
+        "Role: Senior on search team, explained ranking change to Marketing",
+        "Action: Built one-page impact model with volume, lift, and recovery curve; ran targeted session",
+        "Outcome: Marketing adjusted email and timing; model reused by two other teams",
+        "Quote: 'They rewrote the launch email and delayed a promo.'",
+        "Follow-up: What changed after; candidate cited cross-team reuse and avoided confusion"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify for a senior. The candidate reduced a ranking algorithm change to a single-page model focused on business metrics and recovery timeline, enabling Marketing to change their launch plan. Cross-team reuse shows influence without authority. This aligns with senior scope of cross-functional clarity and measurable downstream impact. Biggest strength is the reusable artifact that scaled beyond the original request.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to explain complex work to someone outside it."
+        },
+        {
+          "role": "candidate",
+          "text": "Finance asked about our new caching layer costs. I forwarded the architecture doc and highlighted the relevant sections."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they understand the trade-offs?"
+        },
+        {
+          "role": "candidate",
+          "text": "They came back with more questions so I pointed them to the metrics dashboard."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to explain complex work to someone outside it.",
+        "Role: Senior explaining caching costs to Finance",
+        "Action: Forwarded architecture doc then pointed to dashboard",
+        "Outcome: Finance returned with more questions; no simplification occurred",
+        "Quote: 'I pointed them to the metrics dashboard.'",
+        "Follow-up: Did they understand the trade-offs; candidate relied on raw docs and data"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify for a senior. The candidate treated the architecture document as sufficient explanation and escalated to a dashboard when questions persisted, without synthesizing cost trade-offs for a finance audience. No evidence of cross-team influence or adapted communication. This falls short of senior expectations for driving alignment outside engineering. Biggest gap is absence of any distilled view that changed decisions."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to explain complex work to someone outside it."
+        },
+        {
+          "role": "candidate",
+          "text": "The board needed to understand why we were investing in a multi-year platform migration instead of feature work. I framed it as a risk-adjusted ROI story: current tech debt would cap growth at 12% while migration unlocked 25% efficiency and new segments, with a two-year payback shown on a single slide."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the conversation land?"
+        },
+        {
+          "role": "candidate",
+          "text": "They approved the full budget and asked me to present the same framing to the all-hands."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to explain complex work to someone outside it.",
+        "Role: Exec leading platform migration, explained to board",
+        "Action: Reduced multi-year migration to single-slide risk-adjusted ROI with growth cap vs. efficiency unlock",
+        "Outcome: Board approved full budget and requested all-hands version",
+        "Quote: 'They approved the full budget and asked me to present the same framing to the all-hands.'",
+        "Follow-up: How did the conversation land; candidate cited budget approval and broader reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Simplify at exec level. The candidate distilled a complex platform migration into a one-slide risk-adjusted ROI comparison that directly addressed board concerns on growth and payback. The outcome (full budget approval plus all-hands request) shows strategic judgment and leverage. This meets exec expectations for translating technical work into business trade-offs at the highest ambiguity level. Biggest strength is the durable framing that influenced both the immediate decision and broader org communication.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you had to explain complex work to someone outside it."
+        },
+        {
+          "role": "candidate",
+          "text": "Investors asked about our microservices rollout. I walked them through the service count and deployment frequency improvements."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was their reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "They wanted the high-level business case so I scheduled a follow-up with more slides."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to explain complex work to someone outside it.",
+        "Role: Exec on microservices rollout, explained to investors",
+        "Action: Shared service count and deployment metrics then scheduled follow-up",
+        "Outcome: Investors asked for business case; candidate added more slides",
+        "Quote: 'I scheduled a follow-up with more slides.'",
+        "Follow-up: What was their reaction; candidate defaulted to volume over synthesis"
+      ],
+      "lowerFeedback": "Lowers the bar on Simplify at exec level. The candidate led with operational metrics (service count, deployment frequency) and responded to a request for business context by adding more slides rather than reframing. No evidence of strategic trade-off clarity or long-term leverage. This falls short of exec expectations for high-ambiguity audiences. Biggest gap is the inability to reduce the story to the single decision-relevant frame on the first attempt."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Distills to audience-relevant frame",
+      "junior": "Used timeline diagram for PM",
+      "senior": "One-page impact model for Marketing",
+      "exec": "Single-slide ROI for board"
+    },
+    {
+      "signal": "Produces downstream action",
+      "junior": "PM adjusted launch comms",
+      "senior": "Marketing changed email and timing; model reused",
+      "exec": "Board approved budget and requested all-hands version"
+    },
+    {
+      "signal": "Adapts when initial explanation falls short",
+      "junior": "Drew sequence after first attempt",
+      "senior": "Built model instead of forwarding docs",
+      "exec": "Led with business trade-offs instead of metrics"
+    },
+    {
+      "signal": "Avoids adding complexity on follow-up",
+      "junior": "Stopped at visual sequence",
+      "senior": "Kept model to one page",
+      "exec": "Resisted extra slides"
+    },
+    {
+      "signal": "Shows reuse or scaling of explanation",
+      "junior": "Personal learning applied next time",
+      "senior": "Two other teams requested model",
+      "exec": "Framing used for all-hands"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,195 @@
+{
+  "question": "Tell me about something you learned from a smaller or less resourced competitor",
+  "principle": "Stay Humble",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about something you learned from a smaller or less resourced competitor."
+        },
+        {
+          "role": "candidate",
+          "text": "At my last internship our team was building a checkout flow. A two-person startup had a much simpler form that asked for less upfront. I copied their approach in my own task and cut our abandonment rate by 8 percent on the test branch."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you find out about their form?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was just testing competitors during downtime. My manager later asked me to share the observation in the next retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you learned from a smaller or less resourced competitor.",
+        "Candidate tested a small startup's checkout form during personal time",
+        "Applied the simpler flow to their own task and saw 8% drop in test abandonment",
+        "Quote: 'I copied their approach in my own task'",
+        "Follow-up: How did you find out? - Found during downtime testing; shared in retro after manager prompt"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble. The candidate openly tested a smaller competitor and directly applied one of their ideas to their individual task. The quote 'I copied their approach in my own task' shows they did not assume their team already had the best answer. This fits the junior expectation of coachability and ownership of personal work. The learning stayed local but was acted on quickly. Biggest strength is the willingness to look outside their own team without prompting.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about something you learned from a smaller or less resourced competitor."
+        },
+        {
+          "role": "candidate",
+          "text": "We looked at a small startup once but their product was much simpler so we didn't take much from it. Our team already had more features planned."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try any of their ideas anyway?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the scope was already set by the time I joined the project."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you learned from a smaller or less resourced competitor.",
+        "Candidate reviewed a small startup but dismissed it due to simpler scope",
+        "No action taken; cited pre-set team scope as reason",
+        "Quote: 'their product was much simpler so we didn't take much from it'",
+        "Follow-up: Did you try any of their ideas? - No, scope already locked when they joined"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble. The candidate reviewed a smaller competitor yet immediately discounted their approach because it was simpler. The quote 'their product was much simpler so we didn't take much from it' shows an assumption that more features equal better without testing. No personal action followed. This misses the junior bar for learning from external signals and owning small improvements. Biggest gap is lack of curiosity once the initial comparison was made."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about something you learned from a smaller or less resourced competitor."
+        },
+        {
+          "role": "candidate",
+          "text": "A small regional player used a lightweight alerting system that surfaced issues to on-call engineers in under two minutes. I ran a two-week experiment on my service, then wrote up the pattern and got two other teams to adopt the same lightweight approach."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mean time to detect dropped from 12 minutes to 4 across the three teams. I presented the results at the monthly ops review."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you learned from a smaller or less resourced competitor.",
+        "Observed small player's fast alerting; ran personal experiment then influenced two peer teams",
+        "MTTD improved from 12 min to 4 min across three teams",
+        "Quote: 'I wrote up the pattern and got two other teams to adopt'",
+        "Follow-up: What metrics changed? - Shared results in monthly ops review; cross-team adoption achieved"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble. The candidate borrowed a simple idea from a smaller competitor and drove adoption beyond their own team without formal authority. The quote 'I wrote up the pattern and got two other teams to adopt' demonstrates influence and willingness to credit an outside source. Results are concrete and measurable. This meets the senior expectation of cross-team impact from external learning. Biggest strength is turning a humble observation into shared tooling.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about something you learned from a smaller or less resourced competitor."
+        },
+        {
+          "role": "candidate",
+          "text": "We benchmarked a couple of smaller companies but their tooling was too basic for our scale. I recommended we stay with the enterprise solution we already had."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any part of their approach get tested?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, the decision was made at the architecture review before I could run a spike."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you learned from a smaller or less resourced competitor.",
+        "Benchmarked smaller companies but rejected due to perceived scale mismatch",
+        "No experiment run; decision deferred to architecture review",
+        "Quote: 'their tooling was too basic for our scale'",
+        "Follow-up: Did any part get tested? - No, pre-decided at architecture review"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble. The candidate reviewed smaller competitors yet quickly concluded their tools were too basic without testing. The quote 'their tooling was too basic for our scale' reflects an assumption of superiority rather than curiosity. No experiment occurred. This falls short of the senior bar for cross-team influence and measurable learning. Biggest gap is the absence of any attempt to validate the external idea."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about something you learned from a smaller or less resourced competitor."
+        },
+        {
+          "role": "candidate",
+          "text": "A niche startup had built a self-serve onboarding flow that let customers activate without sales involvement. I used that insight to shift our enterprise sales motion: we launched a low-touch tier that now accounts for 18 percent of new logos and freed up our field team for larger deals."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the organization to change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the competitive data and a six-month pilot plan to the exec team; after seeing early results we adjusted quota and comp for the affected reps."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you learned from a smaller or less resourced competitor.",
+        "Noticed small startup's self-serve onboarding; drove org-level change to low-touch tier",
+        "Low-touch tier now 18% of new logos; field team refocused on larger deals",
+        "Quote: 'I presented the competitive data and a six-month pilot plan to the exec team'",
+        "Follow-up: How did you get the organization to change? - Adjusted quota and comp after pilot results"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble. The candidate took a simple idea from a smaller player and used it to reshape the company's go-to-market motion at the business level. The quote 'I presented the competitive data and a six-month pilot plan to the exec team' shows strategic judgment and willingness to credit an outside source. Trade-offs around sales capacity and compensation were addressed. This meets the exec expectation of org-level impact and long-term leverage. Biggest strength is converting a humble observation into a durable business model adjustment.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about something you learned from a smaller or less resourced competitor."
+        },
+        {
+          "role": "candidate",
+          "text": "We track smaller competitors in our quarterly strategy deck but their models don't apply because we sell to enterprises with complex procurement. We continue to invest in our direct sales force."
+        },
+        {
+          "role": "interviewer",
+          "text": "Has any element been tested at smaller scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not yet; the strategic priority remains full-service enterprise deals."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you learned from a smaller or less resourced competitor.",
+        "Tracked smaller competitors in quarterly deck but dismissed due to enterprise focus",
+        "No tests run; priority remains direct sales force",
+        "Quote: 'their models don't apply because we sell to enterprises'",
+        "Follow-up: Has any element been tested? - No, strategic priority unchanged"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble. The candidate acknowledged smaller competitors in strategy reviews yet dismissed their relevance without any experiment. The quote 'their models don't apply because we sell to enterprises' shows a fixed view of the business model. No pilot or trade-off analysis occurred. This misses the exec bar for strategic judgment under ambiguity. Biggest gap is the lack of willingness to test external signals at any scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Credits external source without ego",
+      "junior": "Mentions copying a simple form from a startup",
+      "senior": "Writes up pattern and drives peer-team adoption",
+      "exec": "Uses insight to change enterprise sales motion and comp structure"
+    },
+    {
+      "signal": "Takes concrete action on learning",
+      "junior": "Applies change to own task and measures locally",
+      "senior": "Runs experiment then influences two other teams",
+      "exec": "Launches low-touch tier and adjusts quotas after pilot"
+    },
+    {
+      "signal": "Shows openness to being outpaced",
+      "junior": "Tests competitor during downtime without prompting",
+      "senior": "Presents competitive data to ops review",
+      "exec": "Brings data to exec team and accepts pilot risk"
+    },
+    {
+      "signal": "Avoids scale-based dismissal",
+      "junior": "Does not claim 'we are already bigger'",
+      "senior": "Tests idea despite initial scope concerns",
+      "exec": "Runs six-month pilot before rejecting model"
+    }
+  ],
+  "kind": "lp"
+}

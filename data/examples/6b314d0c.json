@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about a time you backed a strong performer moving off your team.",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you backed a strong performer moving off your team."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project I had a teammate who wanted to switch to the mobile squad because they were interested in iOS work. I helped them document their current contributions so the handoff was clean and told our manager it made sense for their growth."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do when the manager pushed back on losing the headcount?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the list of tasks I could pick up and offered to pair with the new hire for two weeks."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you backed a strong performer moving off your team.",
+        "Role: new grad on backend squad; teammate wanted mobile move for skill growth.",
+        "Actions: documented handoff, supported manager conversation, volunteered to cover gaps and onboard replacement.",
+        "Outcome: teammate moved, squad stayed on track, candidate learned handoff process.",
+        "Quote: \"I told our manager it made sense for their growth.\"",
+        "Follow-up: Manager pushback? Candidate offered to absorb tasks and pair with replacement."
+      ],
+      "raiseFeedback": "Raises the bar for Hire and Develop the Best on this question. The candidate described supporting a peer's internal move by preparing a clean handoff and volunteering to backfill work after the manager objected. The story stayed within individual scope but showed willingness to prioritize development over short-term retention. This matches junior expectations around coachability and ownership of own deliverables. The concrete action of documenting contributions and offering to pair demonstrates learning from the situation. Biggest strength is the follow-through on coverage rather than just agreeing the move was good.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you backed a strong performer moving off your team."
+        },
+        {
+          "role": "candidate",
+          "text": "We had a strong engineer who wanted to join another team. I told them I needed them to finish the current sprint first and didn't really push for the move with my manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they eventually move?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yeah but it took an extra month and they were frustrated by the end."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you backed a strong performer moving off your team.",
+        "Role: new grad; strong teammate wanted to switch squads.",
+        "Actions: asked them to finish sprint work, did not advocate upward.",
+        "Outcome: delayed move, teammate left unhappy.",
+        "Quote: \"I told them I needed them to finish the current sprint first.\"",
+        "Follow-up: Did they move? Candidate confirmed delay and frustration."
+      ],
+      "lowerFeedback": "Lowers the bar for Hire and Develop the Best on this question. The candidate focused on protecting sprint capacity instead of enabling the move and did not engage the manager to support the person's development. The outcome left the teammate frustrated, showing limited ownership beyond immediate task completion. This is below junior expectations where we look for basic willingness to support growth even when it creates short-term work. The story stayed entirely local with no evidence of learning from the delay. Biggest gap is treating the request as an obstacle rather than an opportunity to practice handoff skills."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you backed a strong performer moving off your team."
+        },
+        {
+          "role": "candidate",
+          "text": "My top IC wanted to move into platform because they were tired of feature work. I connected them with the platform manager, helped write a transition plan that included knowledge transfer to two juniors, and tracked the impact on our delivery metrics for the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the metrics look after they left?"
+        },
+        {
+          "role": "candidate",
+          "text": "Velocity dipped 15% for one sprint then recovered once the juniors ramped; I used the data to get an extra headcount approved."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you backed a strong performer moving off your team.",
+        "Role: senior on feature team; top IC sought platform role for new challenges.",
+        "Actions: facilitated intro to platform manager, created transition plan with junior coverage, measured delivery impact.",
+        "Outcome: clean move, temporary dip recovered, extra headcount secured.",
+        "Quote: \"I used the data to get an extra headcount approved.\"",
+        "Follow-up: Metrics after departure? Candidate shared 15% dip then recovery and staffing win."
+      ],
+      "raiseFeedback": "Raises the bar for Hire and Develop the Best on this question. The candidate proactively enabled a high performer\u2019s move to another team by brokering the connection and building a transition plan that developed two juniors. They measured the short-term impact and used it to secure replacement capacity, showing cross-team influence and leverage. This aligns with senior expectations of raising the bar for others and driving org-level staffing outcomes. The data-driven follow-up on velocity demonstrates strategic judgment rather than heroics. Biggest strength is turning a departure into a net positive for team capacity.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you backed a strong performer moving off your team."
+        },
+        {
+          "role": "candidate",
+          "text": "One of my strong engineers wanted to move to another org. I gave them a good reference but didn't get involved in the transition details."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone on the team pick up their work?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had to push a couple of features by a month while we backfilled."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you backed a strong performer moving off your team.",
+        "Role: senior; strong engineer requested org move.",
+        "Actions: provided reference, stayed hands-off on transition.",
+        "Outcome: feature delays during backfill.",
+        "Quote: \"I gave them a good reference but didn't get involved in the transition details.\"",
+        "Follow-up: Work coverage? Candidate reported month-long feature slips."
+      ],
+      "lowerFeedback": "Lowers the bar for Hire and Develop the Best on this question. The candidate limited involvement to a reference and did not drive any transition or development planning, resulting in delivery slippage. This falls short of senior expectations around influence without authority and raising others through structured knowledge transfer. The story shows passive support rather than active enablement of the move. No metrics or follow-up actions were mentioned to mitigate impact. Biggest gap is absence of leverage\u2014treating the departure as someone else\u2019s problem instead of an opportunity to improve team processes."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you backed a strong performer moving off your team."
+        },
+        {
+          "role": "candidate",
+          "text": "Our director of product wanted to run a new business unit. I sponsored the move with the CEO, built a succession plan that promoted two directs into expanded scopes, and used the re-org to consolidate two overlapping teams, improving our overall decision velocity by 30%."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make on the succession choices?"
+        },
+        {
+          "role": "candidate",
+          "text": "One promotion carried higher risk so I paired them with a strong peer and set quarterly reviews; the other was ready immediately."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you backed a strong performer moving off your team.",
+        "Role: exec; director sought new business unit leadership.",
+        "Actions: secured CEO sponsorship, designed succession with two promotions, consolidated teams during re-org.",
+        "Outcome: director moved, org velocity improved 30%, two leaders grew scope.",
+        "Quote: \"I used the re-org to consolidate two overlapping teams.\"",
+        "Follow-up: Trade-offs on succession? Candidate described risk mitigation via pairing and reviews."
+      ],
+      "raiseFeedback": "Raises the bar for Hire and Develop the Best on this question. The candidate treated a key leader\u2019s departure as a strategic re-org opportunity, sponsoring the move while engineering promotions and team consolidation that lifted decision speed. This demonstrates exec-level judgment on long-term org leverage and trade-offs rather than simple retention. The succession plan with explicit risk handling shows thoughtful development of multiple people. The 30% velocity gain provides concrete evidence of business impact. Biggest strength is using the event to reduce org overlap instead of backfilling in place.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you backed a strong performer moving off your team."
+        },
+        {
+          "role": "candidate",
+          "text": "A high-performing VP asked to move to another division. I approved the transfer but kept the same org structure and hired a replacement at the same level."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the move change anything for the broader organization?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just swapped in someone new."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you backed a strong performer moving off your team.",
+        "Role: exec; VP requested division transfer.",
+        "Actions: approved move, hired replacement at same level, no structural changes.",
+        "Outcome: status quo restored with new hire.",
+        "Quote: \"I approved the transfer but kept the same org structure.\"",
+        "Follow-up: Broader org impact? Candidate stated no change beyond the swap."
+      ],
+      "lowerFeedback": "Lowers the bar for Hire and Develop the Best on this question. The candidate approved the transfer but made no attempt to use it for org improvement or deeper development, simply replacing the role. This misses exec expectations of strategic judgment and long-term leverage during leadership moves. The story shows transactional handling with no evidence of trade-offs or succession thinking. No metrics or structural outcomes were pursued. Biggest gap is treating a senior departure as a one-for-one replacement instead of an opportunity to reshape the organization."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Prioritizing development over retention",
+      "junior": "Supported peer move and covered gaps after manager objection",
+      "senior": "Brokered cross-team move and measured delivery impact to secure headcount",
+      "exec": "Sponsored move and used it to consolidate teams and improve velocity"
+    },
+    {
+      "signal": "Evidence of raising others",
+      "junior": "Volunteered to pair with replacement during transition",
+      "senior": "Built transition plan that developed two juniors",
+      "exec": "Promoted two directs into expanded scopes with risk mitigation"
+    },
+    {
+      "signal": "Use of data or metrics",
+      "junior": "None beyond task coverage",
+      "senior": "Tracked 15% velocity dip then recovery",
+      "exec": "30% decision velocity gain after re-org"
+    },
+    {
+      "signal": "Handling of pushback or trade-offs",
+      "junior": "Offered to absorb work when manager resisted",
+      "senior": "Used data to justify replacement capacity",
+      "exec": "Paired riskier promotee and set reviews while consolidating teams"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task handoff",
+      "senior": "Cross-team influence and staffing outcome",
+      "exec": "Org-level re-org and leadership development"
+    }
+  ],
+  "kind": "lp"
+}

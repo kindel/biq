@@ -1,0 +1,210 @@
+{
+  "question": "Tell me about a time the numbers were bad. How did you handle the team?",
+  "principle": "Bring Good Vibes",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our sprint velocity dropped 30% after a key dependency slipped. I owned my tickets, hit every deadline I controlled, and started a quick daily standup note sharing one win from the day to keep energy up."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened when a teammate was visibly down?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked them to pair on a small task and we got it done; later they thanked me for the push."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did leadership respond to the miss?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager said the note helped the room stay focused instead of spiraling."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the numbers were bad. How did you handle the team?",
+        "Junior IC on sprint; velocity -30% due to dep slip",
+        "Owned own tickets, added daily win note in standup",
+        "Paired with down teammate on small task",
+        "Quote: 'the note helped the room stay focused instead of spiraling'",
+        "Follow-up: Asked about teammate mood \u2192 described pairing and thanks received"
+      ],
+      "raiseFeedback": "Raises the bar on Bring Good Vibes for a junior. The candidate kept their own output steady and added a lightweight ritual that visibly lifted the room without overstepping scope. Quote about the standup note shows they noticed team energy and took a small action that leadership later credited. Follow-up on the down teammate reveals coachability and willingness to help locally rather than complain. Biggest gap is limited evidence of sustained impact beyond one sprint; still appropriate for 0-2 years.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The metrics tanked and everyone was stressed. I just put my head down and tried not to get blamed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to the team at all?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured the manager would handle it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the numbers were bad. How did you handle the team?",
+        "Junior IC; velocity miss blamed on external dep",
+        "Candidate withdrew and avoided teammates",
+        "Quote: 'I just put my head down and tried not to get blamed'",
+        "Follow-up: Asked about team interaction \u2192 admitted no outreach"
+      ],
+      "lowerFeedback": "Lowers the bar on Bring Good Vibes. The candidate retreated instead of maintaining any positive presence, which is the opposite of what the principle expects even at junior level. Story shows no ownership of team energy and no attempt to learn from the situation. Follow-up confirms avoidance rather than coachability. Single biggest gap is lack of any proactive micro-action that could have helped the immediate team climate."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Q3 revenue missed target by 18% across two teams I partnered with. I ran a blameless retro, surfaced two process fixes, and started a weekly 'green dot' update that highlighted one cross-team win to keep momentum."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the other team leads react?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead copied the format; the director later used it in the all-hands to reset tone."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable follow-through?"
+        },
+        {
+          "role": "candidate",
+          "text": "Next quarter we hit 92% of target and attrition in those teams stayed flat instead of rising."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the numbers were bad. How did you handle the team?",
+        "Senior; 18% revenue miss across two partnered teams",
+        "Blameless retro + weekly green-dot win update",
+        "One peer lead adopted format; director reused in all-hands",
+        "Quote: 'next quarter we hit 92% and attrition stayed flat'",
+        "Follow-up: Peer reaction \u2192 adoption and director reuse; Follow-up: Outcome \u2192 92% target, flat attrition"
+      ],
+      "raiseFeedback": "Raises the bar on Bring Good Vibes at senior level. Candidate used influence without authority to introduce a lightweight ritual that peers voluntarily copied and leadership amplified. Quote tying the ritual to both results recovery and stable attrition shows clear team-level impact. Follow-ups confirm the behavior spread beyond their direct scope. Biggest strength is turning a negative metric moment into a repeatable positive signal without claiming heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The numbers were off so I told the team we just had to work harder and scheduled extra meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the extra meetings help morale?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but at least we had visibility."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the numbers were bad. How did you handle the team?",
+        "Senior; revenue miss",
+        "Responded with 'work harder' mandate and more meetings",
+        "Quote: 'at least we had visibility'",
+        "Follow-up: Morale impact \u2192 admitted meetings did not help"
+      ],
+      "lowerFeedback": "Lowers the bar on Bring Good Vibes. The candidate defaulted to pressure tactics that increased load without addressing energy or psychological safety. Story contains no evidence of creating positive signals or helping the team reframe the miss. Follow-up shows awareness that the approach hurt morale yet no adjustment was made. Single biggest gap is treating the principle as optional when numbers are poor."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Company missed annual plan by 12% after macro shift. I reset the leadership offsite around three realistic scenarios, publicly owned the forecast error, and launched a 'customer wins' thread that every VP contributed to weekly to keep the org oriented forward."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the board and skip-levels respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Board asked for the same format next quarter; two VPs later told me the thread stopped the rumor mill."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect on culture?"
+        },
+        {
+          "role": "candidate",
+          "text": "Voluntary exit rate in the following two quarters dropped 3 points versus prior year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the numbers were bad. How did you handle the team?",
+        "Exec; company missed annual plan 12%",
+        "Reset offsite with scenarios, owned forecast error, launched VP-level customer wins thread",
+        "Board adopted format; VPs credited thread with stopping rumors",
+        "Quote: 'voluntary exit rate dropped 3 points'",
+        "Follow-up: Board reaction \u2192 asked for same format; Follow-up: Culture signal \u2192 3pt exit drop"
+      ],
+      "raiseFeedback": "Raises the bar on Bring Good Vibes at exec level. Candidate modeled ownership at the top while creating scalable rituals that reached the whole org and measurably protected retention. Quote linking the thread to reduced exits shows business-level impact from the positive framing choice. Follow-ups confirm the behavior was adopted upward by the board and sideways by VPs. Biggest strength is using the principle as a deliberate lever during high-ambiguity downturn rather than a side activity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We missed the plan so I told the company we were tightening belts and cut all non-essential travel and events."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate the reason?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sent one all-hands note and let managers cascade."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the numbers were bad. How did you handle the team?",
+        "Exec; company plan miss",
+        "Responded with cost cuts and minimal communication",
+        "Quote: 'I sent one all-hands note and let managers cascade'",
+        "Follow-up: Communication depth \u2192 single note, no further framing"
+      ],
+      "lowerFeedback": "Lowers the bar on Bring Good Vibes. The candidate treated the miss as purely a cost problem and provided almost no positive framing or visible leadership presence. Story shows no attempt to create forward momentum or protect org energy. Follow-up confirms communication was minimal and delegated. Single biggest gap is absence of any strategic use of tone or ritual at the scale expected of an executive."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Owns team energy when metrics dip",
+      "junior": "Adds personal ritual and helps one peer",
+      "senior": "Creates cross-team ritual peers adopt",
+      "exec": "Scales ritual to org and protects retention"
+    },
+    {
+      "signal": "Avoids blame or withdrawal",
+      "junior": "Still owns own work and reaches out locally",
+      "senior": "Runs blameless process and surfaces fixes",
+      "exec": "Publicly owns forecast error at top level"
+    },
+    {
+      "signal": "Creates positive signals vs pressure",
+      "junior": "Daily win note instead of silence",
+      "senior": "Green-dot update replaces extra meetings",
+      "exec": "Customer wins thread replaces rumor mill"
+    },
+    {
+      "signal": "Evidence of spread or adoption",
+      "junior": "One teammate thanks them",
+      "senior": "Peer lead copies format",
+      "exec": "Board reuses format and VPs credit it"
+    },
+    {
+      "signal": "Link to measurable team outcome",
+      "junior": "Sprint focus maintained",
+      "senior": "92% recovery + flat attrition",
+      "exec": "3pt voluntary exit drop"
+    },
+    {
+      "signal": "Coachability on follow-up",
+      "junior": "Describes pairing after prompt",
+      "senior": "Shows peer adoption after prompt",
+      "exec": "Shows board adoption after prompt"
+    }
+  ],
+  "kind": "lp"
+}

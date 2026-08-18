@@ -1,0 +1,213 @@
+{
+  "question": "Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+  "principle": "Hire and Develop the Best",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first team I pushed to keep a junior backend role open for eight weeks instead of taking the only other candidate we interviewed. The team had to split their on-call load while we waited."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the actual cost to the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "We slipped a small internal tool launch by about ten days. Once the new hire started they fixed two recurring bugs in their first month that the previous candidate would have struggled with."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you convince your manager to wait?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the interview feedback scores and said the weaker candidate would need more mentoring than we had bandwidth for."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+        "Role: new grad backend engineer on 6-person team",
+        "Situation: only one marginal candidate after four weeks of search",
+        "Action: compiled interview scores, convinced manager to extend search",
+        "Outcome: hired stronger candidate; 10-day slip on internal tool",
+        "Quote: \"the weaker candidate would need more mentoring than we had bandwidth for\"",
+        "Follow-up: What was the actual cost? \u2192 10-day delay, new hire fixed two bugs quickly"
+      ],
+      "raiseFeedback": "Raises the bar for junior on Hire and Develop the Best. The candidate described keeping a single junior role open eight weeks and accepting a ten-day delay on an internal tool. They quoted the interview scorecard they brought to their manager and noted the eventual hire fixed two recurring bugs in the first month. This shows ownership of their own hiring decision at the individual-contributor level and willingness to own the short-term cost. The story stays local and realistic for 0-2 years experience. Biggest strength is linking the decision directly to reduced future mentoring load.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We kept a role open for a month but then took the next person because the team was getting behind."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with that hire?"
+        },
+        {
+          "role": "candidate",
+          "text": "They were okay but needed a lot of help. I ended up reviewing most of their PRs for the first quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+        "Role: junior engineer",
+        "Situation: kept role open one month then filled it",
+        "Action: eventually took the available candidate",
+        "Outcome: hire required heavy PR reviews for a quarter",
+        "Quote: \"They were okay but needed a lot of help\"",
+        "Follow-up: What happened with that hire? \u2192 heavy review load for three months"
+      ],
+      "lowerFeedback": "Lowers the bar for junior on Hire and Develop the Best. The candidate described keeping the role open only one month before filling it with someone who then required heavy code review support for a full quarter. They did not show any attempt to quantify the cost or push back on the decision. The story ends with ongoing extra work rather than a clear trade-off that paid off. Biggest gap is lack of ownership over the hiring outcome at even the individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As tech lead I blocked filling a senior engineer role on the payments team for three months while we ran a second search. Two partner teams had to absorb some of our on-call rotation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metric showed the cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We missed one quarterly OKR target on fraud detection by two weeks. The person we eventually hired reduced our false-positive rate by 18 percent in their first six months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the interview rubric and the projected impact on shared metrics before asking them to cover the gap."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+        "Role: senior tech lead on payments team",
+        "Situation: kept senior role open three months after first search failed",
+        "Action: aligned two partner teams on on-call coverage using shared metrics",
+        "Outcome: missed one OKR by two weeks; new hire improved false-positive rate 18 percent",
+        "Quote: \"I shared the interview rubric and the projected impact on shared metrics\"",
+        "Follow-up: What metric showed the cost? \u2192 one OKR slipped two weeks, clear downstream improvement"
+      ],
+      "raiseFeedback": "Raises the bar for senior on Hire and Develop the Best. The candidate kept a senior role open three months, secured on-call help from two partner teams, and accepted a two-week slip on one quarterly OKR. They quoted the rubric and projected impact numbers they used to gain alignment. The eventual hire delivered an 18 percent improvement on a shared fraud metric. Story shows cross-team influence and concrete metrics without claiming heroic results. Biggest strength is the explicit trade-off between short-term delivery and long-term team quality.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I tried to keep a senior role open but after six weeks the manager told us to hire the remaining candidate."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact on the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "The person we hired never really owned any major projects. We had to split their work across the rest of the team for the next year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+        "Role: senior engineer",
+        "Situation: kept role open six weeks then filled under pressure",
+        "Action: accepted the remaining candidate",
+        "Outcome: hire never owned major work; team split responsibilities for a year",
+        "Quote: \"We had to split their work across the rest of the team for the next year\"",
+        "Follow-up: What was the impact on the team? \u2192 sustained extra load for twelve months"
+      ],
+      "lowerFeedback": "Lowers the bar for senior on Hire and Develop the Best. The candidate kept the role open only six weeks before yielding to pressure and hiring a candidate who never owned major projects. The described cost was sustained extra work for the rest of the team over a full year. No evidence of influence on the final decision or attempt to quantify downstream impact. Biggest gap is absence of cross-team leverage or clear metrics tied to the hiring choice."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "As VP I kept a director-level platform role open for five months while the company was scaling from 400 to 700 engineers. Two product teams delayed their Q3 launches by three weeks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accepted a two-point miss on the annual engineering hiring plan target. The director we hired later built a platform team that reduced infra spend by 12 percent year-over-year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you defend the decision to the CEO?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the projected runway impact of a weak platform leader versus the short-term launch delays."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+        "Role: VP Engineering at ~400-person company",
+        "Situation: kept director platform role open five months during rapid scaling",
+        "Action: aligned CEO on runway trade-off using hiring-plan and spend metrics",
+        "Outcome: two-point miss on annual hiring target; new director cut infra spend 12 percent YoY",
+        "Quote: \"I showed the projected runway impact of a weak platform leader versus the short-term launch delays\"",
+        "Follow-up: What was the business trade-off? \u2192 hiring-plan miss traded for measurable cost reduction"
+      ],
+      "raiseFeedback": "Raises the bar for exec on Hire and Develop the Best. The candidate kept a director role open five months during headcount growth from 400 to 700, accepted a two-point miss on the annual hiring plan, and secured CEO alignment by showing runway impact. The eventual hire delivered a 12 percent year-over-year reduction in infrastructure spend. Story operates at org-level ambiguity with clear strategic trade-offs. Biggest strength is linking the hiring decision to measurable long-term business leverage rather than short-term heroics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We kept a director role open for a quarter but then had to fill it because the board was asking about headcount velocity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the hire?"
+        },
+        {
+          "role": "candidate",
+          "text": "The person we brought in did not scale the platform organization. We ended up creating a new org two years later to fix the gaps."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you kept a role open rather than lower the bar. What did that cost?",
+        "Role: VP Engineering",
+        "Situation: kept director role open one quarter then filled due to board pressure",
+        "Action: accepted available candidate to show velocity",
+        "Outcome: later created new org to fix platform gaps two years later",
+        "Quote: \"We ended up creating a new org two years later to fix the gaps\"",
+        "Follow-up: What happened after the hire? \u2192 structural fix required after two years"
+      ],
+      "lowerFeedback": "Lowers the bar for exec on Hire and Develop the Best. The candidate kept the director role open only one quarter before yielding to board pressure on headcount velocity. The described outcome was the need to create an entirely new organization two years later to address the gaps. No evidence of strategic framing or long-term trade-off analysis with the CEO or board. Biggest gap is absence of org-level leverage or willingness to absorb short-term scrutiny for long-term quality."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Trade-off quantification",
+      "junior": "Mentions days of delay and bug fixes",
+      "senior": "Links to OKR slip and 18 percent metric improvement",
+      "exec": "Ties to hiring-plan miss and 12 percent infra reduction"
+    },
+    {
+      "signal": "Influence scope",
+      "junior": "Convinces own manager with scorecard",
+      "senior": "Aligns two partner teams on coverage",
+      "exec": "Frames runway impact for CEO"
+    },
+    {
+      "signal": "Time horizon of cost",
+      "junior": "Short-term project slip",
+      "senior": "Quarterly OKR and six-month ramp",
+      "exec": "Annual plan and multi-year spend impact"
+    },
+    {
+      "signal": "Ownership of decision",
+      "junior": "Brings data to manager",
+      "senior": "Uses rubric to gain cross-team buy-in",
+      "exec": "Defends choice against board velocity pressure"
+    },
+    {
+      "signal": "Evidence of bar-raising outcome",
+      "junior": "New hire fixes two bugs quickly",
+      "senior": "New hire improves shared false-positive rate",
+      "exec": "New director delivers 12 percent cost reduction"
+    }
+  ],
+  "kind": "lp"
+}

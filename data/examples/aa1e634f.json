@@ -1,0 +1,177 @@
+{
+  "question": "Tell me about a time you had to deliver bad news to people who worked for you.",
+  "principle": "Bring Good Vibes",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My first project as a new engineer lead, we missed a key deadline on a feature our two direct reports had worked on. I scheduled a 1:1 with each, explained the root cause was under-scoping on my part, shared the new timeline, and asked what support they needed to stay motivated."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did they say back?"
+        },
+        {
+          "role": "candidate",
+          "text": "One was frustrated but appreciated the heads-up early. The other suggested a way to de-risk the next sprint. We adjusted and hit the revised date."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to deliver bad news to people who worked for you.",
+        "Junior IC promoted to first lead role; missed feature deadline due to own under-scoping",
+        "Told each report in 1:1, owned the scoping error, shared revised timeline and asked for input",
+        "Quote: \"I explained it was my call on scope, not their execution\"",
+        "Follow-up: Asked how they reacted \u2013 one frustrated, one offered de-risk idea; both stayed engaged and hit new date"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The story shows ownership of the bad news itself rather than blaming the team. Candidate owned the scoping mistake in the moment and invited input on the path forward. This kept the team engaged instead of defensive. Follow-up confirmed the news landed without eroding motivation. Biggest strength is transparent delivery at the first level of people leadership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to push a release. I sent a Slack message to the two people on the feature saying the date moved and that leadership decided."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle their reaction?"
+        },
+        {
+          "role": "candidate",
+          "text": "One replied with a thumbs up. I didn't follow up further since the decision was already made."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to deliver bad news to people who worked for you.",
+        "Missed release; sent group Slack update blaming leadership decision",
+        "No 1:1s or ownership stated",
+        "Quote: \"Leadership decided\"",
+        "Follow-up: No further conversation after thumbs-up reaction"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. Delivery was passive and avoided ownership by pointing to leadership. No attempt to gauge impact or offer support in person. The follow-up showed zero curiosity about how the reports felt. Core gap is treating bad news as a one-way announcement instead of a conversation that preserves energy."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "During a reorg I had to tell two teams their roadmap priorities were cut. I ran a joint session, explained the business constraint, showed which work would move to other groups, and spent time in breakouts hearing concerns."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics showed it landed well?"
+        },
+        {
+          "role": "candidate",
+          "text": "Attrition in those teams stayed flat for the next two quarters and three people later volunteered for stretch work on the new priorities."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to deliver bad news to people who worked for you.",
+        "Senior scope: reorg cut roadmap items across two teams",
+        "Joint session + breakout to explain constraint and next steps",
+        "Quote: \"I showed exactly which work moved and why\"",
+        "Follow-up: Attrition flat for two quarters; three people later stepped up on new priorities"
+      ],
+      "raiseFeedback": "Raises the bar for senior. Candidate scaled the conversation beyond their direct reports and created space for questions across teams. They connected the bad news to a clear business constraint rather than abstract reasons. Follow-up data on stable attrition and later volunteering shows the vibe stayed productive. Biggest strength is turning a demotivating announcement into continued engagement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had to cancel two team roadmaps after a reorg. I sent an email with the new priorities and offered to answer questions in office hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone come to office hours?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few did but most just asked for clarification on their new owners. I didn't track whether energy recovered."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to deliver bad news to people who worked for you.",
+        "Roadmap cuts after reorg sent via email with offer of office hours",
+        "No joint session or visible ownership of impact",
+        "Quote: \"I offered office hours\"",
+        "Follow-up: Low attendance; no tracking of downstream energy or attrition"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. The candidate defaulted to broadcast communication instead of live dialogue at team scale. Lack of follow-through on sentiment left the outcome unknown. No evidence of helping people process the change or find new purpose. Core gap is missing the influence-without-authority expectation at this level."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had to reduce headcount by 18% due to a market shift. I personally briefed every director, gave them talking points and severance details, then held an all-hands where I explained the financial reality and the plan to rebuild in 18 months."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you measure whether the org stayed healthy?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tracked eNPS and voluntary attrition; both recovered to pre-reduction levels within four months and we retained 92% of the remaining key talent through the rebuild."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you had to deliver bad news to people who worked for you.",
+        "Exec scope: 18% headcount reduction from market shift",
+        "Briefed every director first, then all-hands with 18-month rebuild narrative",
+        "Quote: \"I explained the financial reality and the plan to rebuild\"",
+        "Follow-up: eNPS and voluntary attrition recovered in four months; 92% key-talent retention"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate treated the news as an org-level leadership moment rather than a cascade of one-offs. They equipped directors first and paired the cut with a credible long-term plan. Recovery metrics on eNPS and key-talent retention show the vibe was preserved at scale. Biggest strength is strategic framing that turned a painful cut into a shared forward story.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Finance told us we needed cuts. I announced the 15% reduction in an all-hands and directed people to HR for details."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to morale afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "It dipped but we hit our numbers the next quarter so it was fine."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you had to deliver bad news to people who worked for you.",
+        "15% reduction announced in all-hands with HR handoff",
+        "No director prep or long-term narrative",
+        "Quote: \"Finance told us we needed cuts\"",
+        "Follow-up: Morale dip acknowledged but dismissed because numbers recovered"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. The delivery was transactional and lacked any strategic framing or preparation for the next layer of leaders. No attempt to own the decision or provide a rebuild path. The follow-up showed indifference to long-term org health. Core gap is absence of the leverage and long-term thinking required at this level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Owns the message vs delegates blame",
+      "junior": "Raises: owns scoping error",
+      "senior": "Raises: owns reorg constraint",
+      "exec": "Raises: owns market decision"
+    },
+    {
+      "signal": "Creates space for reaction",
+      "junior": "Raises: 1:1s + input",
+      "senior": "Raises: joint session + breakouts",
+      "exec": "Raises: director briefings first"
+    },
+    {
+      "signal": "Connects to forward path",
+      "junior": "Meets: revised timeline",
+      "senior": "Raises: new priorities with volunteers",
+      "exec": "Raises: 18-month rebuild story"
+    },
+    {
+      "signal": "Tracks downstream energy",
+      "junior": "Meets: stayed engaged",
+      "senior": "Raises: flat attrition + later steps up",
+      "exec": "Raises: eNPS recovery + 92% retention"
+    },
+    {
+      "signal": "Scale of audience handled",
+      "junior": "Individual reports",
+      "senior": "Two teams",
+      "exec": "Full org + directors"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,213 @@
+{
+  "question": "Tell me about a time moving fast produced a defect. What did you change?",
+  "principle": "Move with Urgency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time moving fast produced a defect. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was building a feature for our internal dashboard and rushed the validation logic to hit a two-week deadline. A null input slipped through and caused a crash in production the next day. I owned the fix and added a unit test plus a quick code review checklist for myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently on the next task?"
+        },
+        {
+          "role": "candidate",
+          "text": "I started blocking 30 minutes before any deploy to run a manual checklist I made from that incident."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time moving fast produced a defect. What did you change?",
+        "Role: Individual contributor on internal dashboard feature",
+        "Situation: Rushed validation to meet 2-week deadline; null input caused prod crash",
+        "Actions: Owned fix, added unit test and personal pre-deploy checklist",
+        "Outcome: No repeat on next release; used checklist on following task",
+        "Quote: \"I started blocking 30 minutes before any deploy to run a manual checklist I made from that incident.\"",
+        "Follow-up: What did you do differently on the next task? - Added personal checklist and time block"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a junior. The candidate directly links rushing to a concrete defect (null input crash) and shows personal ownership by creating and using a checklist afterward. The story stays within individual scope yet demonstrates learning from feedback without external blame. The follow-up confirms the change became repeatable behavior rather than a one-off. Biggest strength is the clear before-and-after action on their own process.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time moving fast produced a defect. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had to ship a page quickly and the API call failed for some users because we skipped edge-case testing. The team lead said we could fix it later."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how you work now?"
+        },
+        {
+          "role": "candidate",
+          "text": "I try to test more but deadlines are still tight so it depends."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time moving fast produced a defect. What did you change?",
+        "Role: IC on page feature",
+        "Situation: Skipped edge-case testing to meet deadline; API failed for some users",
+        "Actions: Mentioned team lead would fix later",
+        "Outcome: No personal process change described",
+        "Quote: \"I try to test more but deadlines are still tight so it depends.\"",
+        "Follow-up: What changed in how you work now? - Vague response, no concrete adjustment"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency for a junior. The candidate describes a defect but attributes follow-up to the team lead instead of taking personal ownership. No specific change to their own workflow is stated after the incident. The follow-up answer remains conditional on deadlines rather than showing a repeatable adjustment. Biggest gap is absence of individual learning or process ownership."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time moving fast produced a defect. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our team pushed a config update across two services in one day to unblock a partner launch. The change missed a dependency flag and caused 15-minute latency spikes for shared customers. I ran a post-mortem with the partner team, then introduced a cross-team staging gate that required both services to validate together before any fast-follow change."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the gate affect later releases?"
+        },
+        {
+          "role": "candidate",
+          "text": "The next three fast-follow updates went out without incidents; the gate added only four hours but caught two similar flags."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time moving fast produced a defect. What did you change?",
+        "Role: Senior on cross-service config update for partner launch",
+        "Situation: One-day push missed dependency flag; 15-min latency for shared customers",
+        "Actions: Led post-mortem with partner team; created cross-team staging gate",
+        "Outcome: Three subsequent releases clean; gate caught two issues with only four-hour delay",
+        "Quote: \"The next three fast-follow updates went out without incidents; the gate added only four hours but caught two similar flags.\"",
+        "Follow-up: How did the gate affect later releases? - Quantified impact on three releases"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Ururgency for a senior. The candidate owns a cross-team defect from a fast config change and converts the lesson into a shared staging gate that other teams adopted. Metrics are modest and believable (15-minute spike, four-hour gate, three clean releases). The follow-up shows the change scaled beyond the original incident. Biggest strength is turning individual speed into a repeatable cross-team safeguard without slowing overall velocity.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time moving fast produced a defect. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We moved fast on a new endpoint and a downstream team hit a schema mismatch. I sent them the updated docs the same afternoon."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change in how the team ships fast changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We email updates quicker now."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time moving fast produced a defect. What did you change?",
+        "Role: Senior on new endpoint",
+        "Situation: Fast endpoint caused schema mismatch for downstream team",
+        "Actions: Sent updated docs same afternoon",
+        "Outcome: No process or cross-team mechanism added",
+        "Quote: \"We email updates quicker now.\"",
+        "Follow-up: Did anything change in how the team ships fast changes? - Only faster email, no structural fix"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency for a senior. The candidate describes a cross-team defect but the only adjustment is faster email of docs rather than a durable process change. No evidence of influence on other teams or measurable improvement in subsequent releases. The follow-up confirms the response stayed tactical instead of systemic. Biggest gap is lack of lasting cross-team impact from the incident."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time moving fast produced a defect. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We accelerated a market expansion by six weeks and launched with an incomplete billing reconciliation flow. Customers in two regions saw duplicate charges for ten days. I paused the remaining regional rollouts, created a dedicated war-room with finance and legal, and shifted the org to a two-track model: fast customer-facing features behind a kill switch and slower financial systems behind mandatory dual-control reviews."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect on release speed?"
+        },
+        {
+          "role": "candidate",
+          "text": "Customer features continued at the accelerated cadence while financial defects dropped 80 percent; the dual-track model became the standard for all new market entries."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time moving fast produced a defect. What did you change?",
+        "Role: Exec accelerating market expansion",
+        "Situation: Six-week acceleration caused duplicate charges in two regions for ten days",
+        "Actions: Paused rollouts, stood up cross-functional war-room, introduced two-track release model with kill switches and dual-control",
+        "Outcome: Customer features stayed fast; financial defects fell 80 percent; model adopted for future markets",
+        "Quote: \"Customer features continued at the accelerated cadence while financial defects dropped 80 percent; the dual-track model became the standard for all new market entries.\"",
+        "Follow-up: What was the long-term effect on release speed? - Sustained speed with 80 percent defect reduction"
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for an exec. The candidate links an aggressive timeline directly to a visible customer defect and responds with an org-level structural change (two-track model) rather than slowing everything down. The outcome preserves speed for customer work while protecting financial integrity, with an 80 percent defect reduction that scaled to future markets. The follow-up confirms the trade-off became permanent policy. Biggest strength is strategic judgment that balances urgency with risk without reverting to slower overall pace.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time moving fast produced a defect. What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "We launched early in a new region and had some billing issues. We added more sign-offs for future launches."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that affect overall speed and defect rates?"
+        },
+        {
+          "role": "candidate",
+          "text": "Sign-offs slowed things a bit but we had fewer issues."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time moving fast produced a defect. What did you change?",
+        "Role: Exec on regional launch",
+        "Situation: Early launch caused billing issues",
+        "Actions: Added more sign-offs",
+        "Outcome: Slower releases, fewer issues mentioned but no metrics or structural model",
+        "Quote: \"Sign-offs slowed things a bit but we had fewer issues.\"",
+        "Follow-up: How did that affect overall speed and defect rates? - Generic slowdown, no quantified or scalable change"
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency for an exec. The candidate describes a business-level defect but responds with generic additional sign-offs that simply slow the process without preserving speed elsewhere. No evidence of strategic trade-offs, org redesign, or measurable long-term impact on either velocity or quality. The follow-up lacks concrete metrics or scalable policy. Biggest gap is absence of leverage that maintains urgency while addressing root risk."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of defect cause",
+      "junior": "Owns personal code change and creates checklist",
+      "senior": "Owns cross-team config change and builds shared gate",
+      "exec": "Owns market-level timeline decision and redesigns release model"
+    },
+    {
+      "signal": "Learning turned into repeatable process",
+      "junior": "Personal pre-deploy checklist used on next task",
+      "senior": "Cross-team staging gate used on three later releases",
+      "exec": "Two-track model adopted as standard for all new markets"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual feature and own workflow",
+      "senior": "Two services and partner team",
+      "exec": "Multiple regions and org-wide policy"
+    },
+    {
+      "signal": "Quantified outcome",
+      "junior": "No repeat crash on next release",
+      "senior": "Three clean releases, two flags caught",
+      "exec": "80 percent drop in financial defects while keeping speed"
+    },
+    {
+      "signal": "Trade-off judgment",
+      "junior": "Adds 30-minute personal block",
+      "senior": "Adds four-hour gate that prevents incidents",
+      "exec": "Separates fast customer track from controlled financial track"
+    }
+  ],
+  "kind": "lp"
+}

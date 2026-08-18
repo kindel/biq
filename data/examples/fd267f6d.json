@@ -1,0 +1,159 @@
+{
+  "question": "Tell me about a time customer results conflicted with another priority. How did you decide?",
+  "principle": "Results for Customers",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was fixing a bug in our checkout flow that was causing 5% of orders to fail for new users. My manager wanted me to ship a new feature by Friday, but fixing the bug meant delaying it. I pulled the error logs, saw it affected real paying customers, and told my manager I needed two extra days. We shipped the fix first and the feature the next week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say to your manager when you pushed back?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time customer results conflicted with another priority. How did you decide?",
+        "Situation: checkout bug vs feature deadline",
+        "Action: checked logs showing 5% order failures, escalated to manager with data",
+        "Outcome: delayed feature by one week, bug fixed first",
+        "Quote: 'I needed two extra days'",
+        "Follow-up: Asked how they communicated the trade-off; said they showed the error rate and customer tickets"
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers. The candidate described an individual-scope conflict between a checkout bug and a feature deadline. They reviewed logs showing 5% order failures, then told their manager they needed two extra days to fix it first. This kept customer impact front and center without overstepping scope. The approach shows ownership of their work and willingness to surface data before deciding. Biggest strength is using concrete customer signals to resolve the priority clash rather than defaulting to the deadline.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a customer complaining about slow load times but I was told to focus on the new dashboard. I just finished the dashboard and figured support would handle the customer."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you look at any data on how many customers were affected?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time customer results conflicted with another priority. How did you decide?",
+        "Situation: slow load times vs dashboard work",
+        "Action: ignored customer issue and finished assigned task",
+        "Outcome: dashboard shipped, customer complaint left to support",
+        "Quote: 'I just finished the dashboard'",
+        "Follow-up: Probe on data review; candidate said no, just followed the task list"
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate faced a conflict between a reported load-time issue and a dashboard deadline but chose to complete the assigned task without checking impact. They left the customer complaint to support instead of surfacing it. No data was reviewed to understand scope. This shows limited ownership when customer results directly competed with a priority. Biggest gap is defaulting to the internal task list without attempting to quantify or escalate the customer effect."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was asked to cut costs by moving to a cheaper storage tier, but it would increase latency for 20% of our top customers. I ran a quick analysis showing the revenue risk, then worked with the finance team to phase the change only for non-paying tiers first. We kept the original tier for paid users and still hit most of the savings target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get finance to agree?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time customer results conflicted with another priority. How did you decide?",
+        "Situation: cost cut via cheaper storage vs customer latency",
+        "Action: analyzed revenue risk, partnered with finance to phase rollout by tier",
+        "Outcome: protected paid users, achieved majority of savings",
+        "Quote: 'phase the change only for non-paying tiers first'",
+        "Follow-up: Asked about cross-team influence; candidate shared the revenue model they built and walked through it with finance"
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers. The candidate handled a cross-team conflict between a cost-reduction mandate and latency for top customers. They quantified revenue risk, then influenced finance to limit the change to non-paying tiers. This protected 20% of paying customers while still delivering most savings. The decision used data to balance the two priorities instead of accepting the cost target outright. Biggest strength is the cross-team coordination that produced a customer-aware compromise.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Leadership wanted faster release cycles but customers kept reporting bugs in production. I told them we needed more QA but they said no, so we just shipped faster and fixed issues after."
+        },
+        {
+          "role": "interviewer",
+          "text": "What metrics did you track on the customer side?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time customer results conflicted with another priority. How did you decide?",
+        "Situation: faster releases vs production bugs",
+        "Action: requested more QA, accepted the no, and shipped anyway",
+        "Outcome: bugs fixed reactively after release",
+        "Quote: 'we just shipped faster and fixed issues after'",
+        "Follow-up: Asked about customer metrics; candidate had none beyond anecdotal reports"
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate encountered a conflict between a release-speed goal and rising production bugs but accepted the mandate without pushing for data or alternatives. They shipped faster and handled bugs reactively. No customer impact metrics were tracked to inform the decision. This reflects limited influence when customer results were at stake. Biggest gap is treating the priority conflict as non-negotiable instead of seeking a measurable middle path."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a board push to double revenue in 18 months, which meant deprioritizing some enterprise features our largest customers relied on. I built a model showing churn risk would erase half the projected gains, then proposed a split roadmap that kept core enterprise SLAs while accelerating the growth features for SMB. We kept enterprise churn flat and still grew revenue 70%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the board?"
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time customer results conflicted with another priority. How did you decide?",
+        "Situation: board revenue goal vs enterprise feature support",
+        "Action: modeled churn risk, proposed split roadmap protecting SLAs for largest accounts",
+        "Outcome: churn flat, 70% revenue growth",
+        "Quote: 'kept core enterprise SLAs while accelerating the growth features for SMB'",
+        "Follow-up: Asked about long-term trade-offs; candidate described quarterly reviews with the board using the same model"
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers. The candidate faced an org-level tension between a board-mandated revenue target and support for enterprise customers. They quantified churn risk that would offset gains, then drove a split roadmap that protected SLAs for top accounts. Revenue still grew 70% with flat churn. The approach shows strategic judgment on long-term customer leverage versus short-term targets. Biggest strength is using a business model to change the priority at the board level rather than executing the mandate as given.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The company needed to cut support costs so we reduced our enterprise support team. Some big customers complained but we hit the cost target and revenue was still up that quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term impact on those accounts?"
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time customer results conflicted with another priority. How did you decide?",
+        "Situation: support cost cut vs enterprise customer needs",
+        "Action: reduced team to hit cost target, noted complaints but moved on",
+        "Outcome: cost target met, quarterly revenue up",
+        "Quote: 'we hit the cost target and revenue was still up that quarter'",
+        "Follow-up: Probe on downstream effects; candidate had no follow-up data on churn or renewals"
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate supported a support-cost reduction that directly affected enterprise accounts but focused only on the immediate cost and quarterly revenue numbers. Customer complaints were noted without further analysis or mitigation. No long-term retention data was reviewed to weigh the trade-off. This shows short-term execution without strategic customer judgment. Biggest gap is missing the multi-quarter customer impact when setting org priorities."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Uses customer data to decide",
+      "junior": "Pulls error logs and tickets before escalating",
+      "senior": "Builds revenue-risk model to influence partner team",
+      "exec": "Models churn impact to shift board-level roadmap"
+    },
+    {
+      "signal": "Balances competing priorities",
+      "junior": "Delays feature one week after manager discussion",
+      "senior": "Phases rollout by customer tier with finance",
+      "exec": "Splits roadmap to protect SLAs while pursuing growth"
+    },
+    {
+      "signal": "Escalates appropriately",
+      "junior": "Surfaces issue to manager with specifics",
+      "senior": "Coordinates across teams with shared model",
+      "exec": "Changes direction at board level using data"
+    },
+    {
+      "signal": "Considers long-term effects",
+      "junior": "Focuses on immediate bug fix",
+      "senior": "Tracks revenue protection over one quarter",
+      "exec": "Holds churn flat across 18-month horizon"
+    },
+    {
+      "signal": "Avoids defaulting to internal priority",
+      "junior": "Pushes back on deadline with evidence",
+      "senior": "Rejects pure cost cut without customer analysis",
+      "exec": "Rejects pure revenue target without retention math"
+    }
+  ],
+  "kind": "value"
+}

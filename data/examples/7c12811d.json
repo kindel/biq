@@ -1,0 +1,213 @@
+{
+  "question": "Tell me about a mistake you admitted publicly.",
+  "principle": "Transparency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a mistake you admitted publicly."
+        },
+        {
+          "role": "candidate",
+          "text": "I shipped a feature with a null pointer bug that broke the checkout flow for 5% of users. After the incident review I posted the root cause, my code review miss, and the fix in our team Slack channel with the on-call log attached."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you posted it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two engineers replied with similar past misses and we added a pre-deploy checklist. My next PRs got reviewed faster because people trusted the transparency."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a mistake you admitted publicly.",
+        "Role: new grad on checkout team",
+        "Situation: null pointer bug hit 5% of users",
+        "Action: posted root cause + own code review miss in public Slack with logs",
+        "Outcome: checklist created, PR reviews improved",
+        "Quote: \"I posted the root cause and my miss so others wouldn't repeat it.\"",
+        "Follow-up: Asked what happened after; candidate described checklist and faster reviews"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency for a junior. The candidate publicly posted the root cause and their own code review miss in the team Slack channel after a checkout bug. They then described teammates adding a pre-deploy checklist as a direct result. This shows ownership of individual work and coachability through visible learning. The follow-up confirmed measurable team process change rather than just personal reflection. Biggest strength is linking the public admission to faster PR reviews from increased trust.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a mistake you admitted publicly."
+        },
+        {
+          "role": "candidate",
+          "text": "I once forgot to update a doc and mentioned it in standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone outside your immediate team see it?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, it stayed in our daily meeting notes."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a mistake you admitted publicly.",
+        "Role: new grad",
+        "Situation: forgot to update internal doc",
+        "Action: mentioned in standup",
+        "Outcome: stayed within team meeting",
+        "Quote: \"I mentioned it in standup.\"",
+        "Follow-up: Asked about audience; candidate confirmed no cross-team visibility"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency for a junior. The candidate only mentioned a documentation miss inside a private standup with no external audience. No evidence of broader visibility or resulting team learning. The follow-up confirmed the admission stayed local. This meets basic ownership but fails to demonstrate public accountability expected even at entry level. Biggest gap is lack of any observable impact from the admission."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a mistake you admitted publicly."
+        },
+        {
+          "role": "candidate",
+          "text": "I greenlit a shared service migration that missed a dependency with the billing team, causing invoice delays for two days. I wrote a post-mortem visible to all engineering orgs, tagged the affected teams, and presented the timeline in our monthly all-hands."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did other teams respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Billing added a contract test we now run in CI; two other service owners copied the post-mortem template for their own incidents."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a mistake you admitted publicly.",
+        "Role: senior on platform team",
+        "Situation: migration broke billing invoices for two days",
+        "Action: public post-mortem to entire org, presented in all-hands",
+        "Outcome: billing added contract test; other teams adopted template",
+        "Quote: \"I presented the timeline in monthly all-hands.\"",
+        "Follow-up: Asked about response; candidate cited contract test and template reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency for a senior. The candidate published a post-mortem to the full engineering org and presented it in all-hands after a billing dependency miss. Cross-team adoption of the template and new CI tests followed directly. This shows influence without authority through visible accountability. The follow-up confirmed concrete process changes beyond the immediate team. Biggest strength is scaling the admission into reusable tooling for multiple teams.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a mistake you admitted publicly."
+        },
+        {
+          "role": "candidate",
+          "text": "I sent an email to my manager about a delayed launch."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was this visible to the partner teams impacted?"
+        },
+        {
+          "role": "candidate",
+          "text": "I think my manager forwarded it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a mistake you admitted publicly.",
+        "Role: senior",
+        "Situation: delayed launch",
+        "Action: emailed manager privately",
+        "Outcome: possible forwarding",
+        "Quote: \"I sent an email to my manager.\"",
+        "Follow-up: Asked about visibility; candidate uncertain if partners saw it"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency for a senior. The candidate only emailed their manager about a delayed launch with no confirmation of partner visibility. The follow-up revealed uncertainty about whether impacted teams ever saw the admission. This lacks the cross-team influence expected at senior level. No metrics or follow-on process changes were described. Biggest gap is reliance on private channels instead of public accountability."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a mistake you admitted publicly."
+        },
+        {
+          "role": "candidate",
+          "text": "I approved a market expansion that underestimated regulatory risk, leading to a six-month delay and $4M in compliance work. I presented the full decision timeline and my misjudgment of legal velocity to the board and then to the entire company in a recorded Q&A."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed in how the company operates?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a regulatory checkpoint to every new market review and the legal team now sits in quarterly planning; both practices are still in place two years later."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a mistake you admitted publicly.",
+        "Role: VP entering new market",
+        "Situation: expansion delayed 6 months, $4M extra cost",
+        "Action: presented decision timeline and own misjudgment to board then full company Q&A",
+        "Outcome: regulatory checkpoint added to all reviews; legal in quarterly planning",
+        "Quote: \"I presented the full decision timeline and my misjudgment to the board and company.\"",
+        "Follow-up: Asked about lasting change; candidate confirmed practices still active after two years"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency for an exec. The candidate presented their own misjudgment of regulatory velocity to both the board and the full company after a costly market delay. Lasting structural changes including a regulatory checkpoint and legal participation in planning were implemented. The follow-up confirmed these practices persisted for two years. This demonstrates strategic judgment and long-term leverage through public accountability. Biggest strength is converting a high-ambiguity error into durable org process.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a mistake you admitted publicly."
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned a product pivot miss in a leadership offsite."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the broader organization hear the details or see your reasoning?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed within the leadership group."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a mistake you admitted publicly.",
+        "Role: exec",
+        "Situation: product pivot miss",
+        "Action: discussed in leadership offsite",
+        "Outcome: limited to leadership group",
+        "Quote: \"It stayed within the leadership group.\"",
+        "Follow-up: Asked about broader reach; candidate confirmed no org-wide visibility"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency for an exec. The candidate limited discussion of a product pivot miss to a closed leadership offsite. The follow-up confirmed no details reached the broader organization. This fails to model the strategic openness required at executive level. No evidence of org-wide learning or structural change. Biggest gap is treating the admission as an internal leadership matter rather than a company-wide signal."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of admission",
+      "junior": "Team Slack channel",
+      "senior": "Full engineering org + all-hands",
+      "exec": "Board + entire company recorded Q&A"
+    },
+    {
+      "signal": "Evidence of follow-on impact",
+      "junior": "Checklist created inside team",
+      "senior": "Cross-team template adoption and CI test",
+      "exec": "Regulatory checkpoint still active after two years"
+    },
+    {
+      "signal": "Ownership language",
+      "junior": "\"my code review miss\"",
+      "senior": "\"my greenlit migration\"",
+      "exec": "\"my misjudgment of legal velocity\""
+    },
+    {
+      "signal": "Audience reach",
+      "junior": "Immediate team",
+      "senior": "Multiple partner teams",
+      "exec": "Company-wide and board"
+    },
+    {
+      "signal": "Learning mechanism",
+      "junior": "Faster personal PR reviews",
+      "senior": "Reusable post-mortem template",
+      "exec": "Durable planning process change"
+    }
+  ],
+  "kind": "value"
+}

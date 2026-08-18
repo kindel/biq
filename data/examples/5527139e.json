@@ -1,0 +1,171 @@
+{
+  "question": "Tell me about a manual workaround you replaced with something that held on its own.",
+  "principle": "Think Systematically",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was manually copying weekly sales numbers into a spreadsheet every Monday, which took 45 minutes and had typos. I wrote a simple Python script using our API to pull the data automatically and email a formatted report."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you built it?"
+        },
+        {
+          "role": "candidate",
+          "text": "It ran for six months with zero issues. My manager asked me to document it so the next intern could maintain it. I learned to add error logging after the first silent failure."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a manual workaround you replaced with something that held on its own.",
+        "Junior IC owned weekly sales copy-paste; built Python API pull + email report.",
+        "Outcome: ran 6 months error-free; documented for handoff after first silent failure.",
+        "Quote: 'I learned to add error logging after the first silent failure.'",
+        "Follow-up: How did you decide on the scope? 'Kept it to my own workflow first, then asked manager if others needed it.'"
+      ],
+      "raiseFeedback": "Raises the bar on Think Systematically for a junior. The candidate identified a repeatable personal task and replaced it with an automated script that ran reliably for months. They owned the initial failure by adding logging and documented the work for future owners. This shows early systems thinking at individual scope. The story is local but demonstrates learning from feedback and basic maintainability. Biggest strength is turning a one-off fix into something that held without ongoing intervention.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I used to email my boss every time a customer complained so she could log it. After a while I just started logging them myself in a shared doc."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that last?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yeah, until the doc got messy and someone else took it over. It saved me a few emails a week."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a manual workaround you replaced with something that held on its own.",
+        "Candidate shifted from emailing boss to logging complaints in shared doc.",
+        "Outcome: doc became messy; handed off without further ownership.",
+        "Quote: 'It saved me a few emails a week.'",
+        "Follow-up: What made it stop working? 'Other people started editing it differently and it fell apart.'"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Systematically for a junior. The change was a simple handoff of effort rather than building a repeatable system. No automation, no error handling, and the solution degraded once ownership changed. The candidate focused only on personal time saved without considering long-term reliability. This reflects a workaround mindset instead of systematic replacement. Biggest gap is lack of any mechanism that could hold without continued manual attention."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our support team was manually tagging tickets for routing across three products. I worked with the platform team to add a lightweight rules engine in the ticketing system that used existing metadata."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot on one product line that reduced misroutes by 70 percent. The other teams adopted it after seeing the metrics. I trained two support leads to adjust the rules themselves."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a manual workaround you replaced with something that held on its own.",
+        "Senior drove cross-team rules engine for ticket routing using existing metadata.",
+        "Pilot showed 70% reduction in misroutes; other teams adopted; trained support leads on rule changes.",
+        "Quote: 'I trained two support leads to adjust the rules themselves.'",
+        "Follow-up: What trade-offs did you make? 'Kept rules simple instead of full ML so support could own changes.'"
+      ],
+      "raiseFeedback": "Raises the bar on Think Systematically for a senior. The candidate replaced a cross-team manual process with a lightweight, maintainable rules engine that others could tune. They used a pilot with clear metrics to drive adoption without authority. Training support leads created ongoing ownership instead of central dependency. The approach balanced scope and sustainability. Biggest strength is turning a recurring workaround into a self-sustaining system with measurable impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed two teams were duplicating a monthly report so I started sending them my version instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "It worked until the data sources changed and I had to keep fixing it. Eventually they went back to their own versions."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a manual workaround you replaced with something that held on its own.",
+        "Senior tried to centralize a duplicated report by sharing their version.",
+        "Outcome: broke when data changed; teams reverted; no durable mechanism created.",
+        "Quote: 'Eventually they went back to their own versions.'",
+        "Follow-up: Why didn't it last? 'I didn't build anything that updated automatically.'"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Systematically for a senior. The candidate attempted to reduce duplication through manual sharing rather than creating an automated or governed solution. When data sources changed, the workaround collapsed and teams reverted. No metrics, no cross-team process change, and no lasting ownership model. This shows influence limited to personal output without building something that holds. Biggest gap is absence of any systematic replacement that survived beyond the candidate's direct involvement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had regional ops teams each maintaining their own exception lists for compliance checks. I sponsored a central policy service that ingested the lists and exposed a single API with audit trails."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle regional differences?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a six-month migration with parallel runs and let each region keep veto power on rules for the first quarter. After launch, exception volume dropped 40% and audit prep time fell by half. The service now runs with a small platform team and quarterly reviews by compliance."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a manual workaround you replaced with something that held on its own.",
+        "Exec sponsored central policy service replacing regional exception lists with API and audit trails.",
+        "Six-month migration with parallel runs and regional veto; 40% drop in exceptions, 50% less audit prep; now owned by small platform team with quarterly reviews.",
+        "Quote: 'The service now runs with a small platform team and quarterly reviews by compliance.'",
+        "Follow-up: What was the biggest risk you accepted? 'Giving regions temporary veto power slowed rollout but prevented shadow processes.'"
+      ],
+      "raiseFeedback": "Raises the bar on Think Systematically for an exec. The candidate replaced fragmented regional workarounds with a governed central service that included auditability and regional input. They managed ambiguity through parallel runs and temporary veto rights to ensure adoption. Post-launch ownership shifted to a small team with lightweight governance. The result delivered sustained operational leverage at org scale. Biggest strength is designing a system that reduced manual effort while preserving necessary local control.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told all the regions to stop maintaining their own lists and use the one the compliance team published."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Most complied for a few months but a couple kept private spreadsheets. We had to do another cleanup project the next year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a manual workaround you replaced with something that held on its own.",
+        "Exec directed regions to adopt a single compliance list from central team.",
+        "Outcome: partial adoption followed by shadow spreadsheets; required repeat cleanup project.",
+        "Quote: 'We had to do another cleanup project the next year.'",
+        "Follow-up: Why did regions revert? 'They didn't trust the central list covered their edge cases.'"
+      ],
+      "lowerFeedback": "Lowers the bar on Think Systematically for an exec. The directive approach ignored underlying regional variation and produced only temporary compliance. Shadow processes re-emerged because no durable mechanism or feedback loop was created. The need for a follow-up cleanup project shows the original workaround was not replaced by something that held. This reflects top-down control rather than systemic design. Biggest gap is failure to build a solution that accounted for local needs and sustained itself without repeated intervention."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual workflow automated and documented",
+      "senior": "Cross-team process replaced with rules engine others can tune",
+      "exec": "Org-wide regional workarounds consolidated into governed central service"
+    },
+    {
+      "signal": "Evidence of durability",
+      "junior": "Ran 6 months with logging added after first failure",
+      "senior": "Pilot metrics drove adoption; support leads trained on changes",
+      "exec": "40% exception drop; now owned by platform team with quarterly reviews"
+    },
+    {
+      "signal": "Handling of feedback/ambiguity",
+      "junior": "Added logging after silent failure; asked manager about broader need",
+      "senior": "Used pilot data and kept rules simple for maintainability",
+      "exec": "Allowed temporary regional veto to prevent shadow systems"
+    },
+    {
+      "signal": "Ownership transfer",
+      "junior": "Documented for next intern",
+      "senior": "Trained support leads to own rule adjustments",
+      "exec": "Shifted to small platform team with lightweight governance"
+    }
+  ],
+  "kind": "lp"
+}

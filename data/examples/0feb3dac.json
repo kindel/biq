@@ -1,0 +1,197 @@
+{
+  "question": "Tell me about a defect you had to fix twice. What did you do differently the second time?",
+  "principle": "Think Systematically",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I shipped a feature that crashed on certain user inputs. First fix was a quick null check that passed review. It broke again two weeks later on a different edge case."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed the second time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a unit test for the input parser and wrote a small script to replay production logs locally. That caught two more cases before merge."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide what to test?"
+        },
+        {
+          "role": "candidate",
+          "text": "I looked at the error logs from the second incident and listed every field that could be missing or malformed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a defect you had to fix twice. What did you do differently the second time?",
+        "- Fixed crash with null check first time; recurred on different malformed input",
+        "- Second time added unit test and local log replay script",
+        "- Quote: \"I listed every field that could be missing or malformed\"",
+        "Follow-up: How did you decide what to test? -> enumerated input fields from logs"
+      ],
+      "raiseFeedback": "Raises the bar for Think Systematically at junior level. Candidate owned the recurrence instead of blaming data. They moved from one-off patch to adding a test that covered the class of inputs. The log replay step shows they built a repeatable way to reproduce the issue. This demonstrates learning from the second failure rather than repeating the same fix. Biggest strength is turning the second incident into a small preventive check instead of another patch.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The same validation bug came back because the data team sent bad values again."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change the second time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added another if-statement for that exact value and asked the data team to be more careful."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a defect you had to fix twice. What did you do differently the second time?",
+        "- Blamed data team for sending bad values",
+        "- Second fix was another if-statement plus request for better data",
+        "Follow-up: Did the same pattern recur later? -> candidate had no further incidents to share"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Systematically at junior level. Candidate treated the recurrence as an external data problem rather than a gap in their own code. The second fix was another narrow conditional instead of a broader input check. No evidence of using logs or tests to understand the full input space. They did not own preventing the same class of defect. Biggest gap is absence of any systematic step after the second failure."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A checkout timeout defect hit two services after a shared library change. First fix patched the timeout in one service."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened the second time?"
+        },
+        {
+          "role": "candidate",
+          "text": "It surfaced in the payments service. I ran a cross-service trace, found the library default was too low, and updated the library with a new default plus migration guide."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you prevent it from happening elsewhere?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a canary check in our deployment pipeline that fails on any service using the old default and wrote a short runbook for other teams."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a defect you had to fix twice. What did you do differently the second time?",
+        "- First patch limited to one service; second incident in payments",
+        "- Used distributed trace to identify shared library default",
+        "- Quote: \"updated the library with a new default plus migration guide\"",
+        "Follow-up: How did you prevent it elsewhere? -> added pipeline canary and runbook for other teams"
+      ],
+      "raiseFeedback": "Raises the bar for Think Systematically at senior level. Candidate recognized the defect crossed service boundaries instead of treating it as isolated. They used tracing to locate the root configuration issue and changed the shared library rather than patching callers. The pipeline canary and runbook show influence on other teams without direct authority. This moved the fix from reactive patches to a preventive mechanism at the platform level. Biggest strength is converting a repeated incident into a cross-team guardrail.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The timeout bug returned in another service after we increased traffic."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed the second time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I raised the timeout value higher in that service and filed a ticket for the owning team to review their config."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a defect you had to fix twice. What did you do differently the second time?",
+        "- Second occurrence treated as traffic increase in one service",
+        "- Raised timeout again and filed ticket for other team",
+        "Follow-up: Did you look at the shared library? -> no, focused on local config change"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Systematically at senior level. Candidate continued applying local timeout increases instead of investigating the shared dependency. The ticket to another team shows no attempt to drive a systemic change. No evidence of tracing or configuration analysis across services. The pattern of repeated fixes remained unaddressed. Biggest gap is lack of leverage beyond the immediate service."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A data inconsistency defect reappeared in two product lines after a backend migration."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently the second time?"
+        },
+        {
+          "role": "candidate",
+          "text": "After the second incident I commissioned a review of our migration playbook across all teams. We introduced mandatory data reconciliation steps and a post-migration health dashboard owned by platform."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Migration-related incidents dropped 70% over the next year and the dashboard became the standard for any large data move."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a defect you had to fix twice. What did you do differently the second time?",
+        "- Second incident triggered org-wide migration playbook review",
+        "- Added mandatory reconciliation and platform-owned health dashboard",
+        "- Quote: \"dashboard became the standard for any large data move\"",
+        "Follow-up: What was the longer-term impact? -> 70% drop in migration incidents"
+      ],
+      "raiseFeedback": "Raises the bar for Think Systematically at exec level. Candidate treated the recurrence as a signal of missing organizational process rather than a one-off technical issue. They drove a cross-org playbook change that included mandatory steps and a shared dashboard. The 70% reduction shows measurable, sustained impact at business scale. This reflects strategic judgment on where to invest in prevention instead of repeated firefighting. Biggest strength is institutionalizing the fix so future teams inherit the safeguard.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The inconsistency showed up again after another migration."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do differently the second time?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the migration team to add more logging and reminded product teams to monitor their own data."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a defect you had to fix twice. What did you do differently the second time?",
+        "- Second fix was request for more logging plus reminder to product teams",
+        "Follow-up: Did you change any shared process? -> no, stayed at team-level reminders"
+      ],
+      "lowerFeedback": "Lowers the bar for Think Systematically at exec level. Candidate responded with local logging requests instead of examining the migration process itself. The reminder to product teams shows no attempt to create org-level accountability or tooling. No trade-off analysis or long-term mechanism was introduced. The same class of defect stayed possible for future migrations. Biggest gap is absence of systemic leverage or measurable prevention at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Root cause depth after recurrence",
+      "junior": "Moves from patch to input enumeration and test",
+      "senior": "Uses tracing to locate shared library default",
+      "exec": "Commissions org-wide playbook and dashboard"
+    },
+    {
+      "signal": "Scope of second fix",
+      "junior": "Adds local test coverage",
+      "senior": "Updates shared library plus cross-team runbook",
+      "exec": "Standardizes process for all future migrations"
+    },
+    {
+      "signal": "Ownership of prevention",
+      "junior": "Owns adding the test themselves",
+      "senior": "Influences other teams via pipeline guardrail",
+      "exec": "Creates platform-owned asset used broadly"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Lists fields from logs before coding",
+      "senior": "Avoids repeated local patches",
+      "exec": "Measures 70% incident reduction over year"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Focuses on reproducible cases",
+      "senior": "Investigates across service boundaries",
+      "exec": "Treats repeated defect as process gap"
+    }
+  ],
+  "kind": "lp"
+}

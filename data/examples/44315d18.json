@@ -1,0 +1,177 @@
+{
+  "question": "Tell me about a time you were the only person in the room who disagreed.",
+  "principle": "Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the team wanted to hardcode config values for a quick launch. I thought it would cause maintenance issues later, so I raised it in standup with a one-page note on the risks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you spoke up?"
+        },
+        {
+          "role": "candidate",
+          "text": "They still decided to hardcode it for the deadline. I committed, finished the task, and later when we refactored I documented the exact change so the next person wouldn't repeat it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were the only person in the room who disagreed.",
+        "Junior dev on config decision for launch",
+        "Raised risk in standup with short note; team chose speed anyway",
+        "Quote: 'I committed and documented the exact change for the refactor'",
+        "Follow-up: Asked what happened after; candidate described finishing the task and handing off cleanly"
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit for a junior. The candidate surfaced a technical concern on a small scope item without derailing the team. They accepted the outcome and added a useful artifact for the next iteration. The story shows basic ownership of their own work and learning from the decision. Biggest strength is the clean handoff after committing rather than lingering disagreement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with the PM on the priority of a bug fix but everyone else agreed so I just did the work."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share your reasoning at the time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I mentioned it once in chat but didn't push because it was my first month."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were the only person in the room who disagreed.",
+        "Candidate mentions a bug priority call",
+        "Only noted disagreement in chat, did not elaborate",
+        "Quote: 'I mentioned it once in chat but didn't push'",
+        "Follow-up: Asked if reasoning was shared; candidate admits minimal effort due to tenure"
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit. The candidate did not actually voice disagreement in the room or provide data. They defaulted to silent execution without attempting to influence or learn from the outcome. For a junior this shows insufficient ownership of surfacing concerns even at small scope. Biggest gap is lack of any follow-through or reflection after the fact."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were aligned on a shared service design that I believed would create scaling debt. I wrote a short counter-proposal and scheduled a joint review."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They went with the original design. I staffed one of my engineers to help implement it and we added an explicit deprecation plan for the next quarter so the debt stayed visible."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were the only person in the room who disagreed.",
+        "Senior on shared service design across two teams",
+        "Wrote counter-proposal and ran joint review",
+        "Quote: 'I staffed one of my engineers to help implement it and added a deprecation plan'",
+        "Follow-up: Asked about outcome; candidate describes resourcing the chosen path plus forward mitigation"
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit at senior level. The candidate used written artifacts to surface disagreement across teams and then committed resources to the decided path while protecting future flexibility. The deprecation plan demonstrates influence without authority and measurable long-term thinking. Biggest strength is turning a lost disagreement into a controlled outcome with clear ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with another team on API contracts but they had more headcount so we went their way."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on my team's work and let them own the integration issues."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were the only person in the room who disagreed.",
+        "Senior mentions API contract disagreement",
+        "Yielded due to headcount without further action",
+        "Quote: 'I focused on my team's work and let them own the integration issues'",
+        "Follow-up: Asked about post-decision behavior; candidate shows no cross-team mitigation"
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit for a senior. The candidate treated the disagreement as a power issue rather than a technical one and made no attempt to document risks or support the outcome. No evidence of raising the other team or creating visibility into future costs. Biggest gap is absence of any influence or commitment mechanism after the decision."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The exec team was set on acquiring a capability that my analysis showed would dilute focus for two years. I presented a build-versus-buy model with three-year P&L impact in the offsite."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final decision and your role?"
+        },
+        {
+          "role": "candidate",
+          "text": "They acquired anyway. I re-sequenced two roadmaps to absorb the new team, set quarterly integration reviews, and later used the actuals to adjust our M&A criteria for the next cycle."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you were the only person in the room who disagreed.",
+        "Exec on capability acquisition decision",
+        "Presented three-year model in offsite; acquisition still approved",
+        "Quote: 'I re-sequenced two roadmaps, set quarterly reviews, and adjusted M&A criteria'",
+        "Follow-up: Asked about role after decision; candidate describes org-level mitigation and updated process"
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit at exec level. The candidate brought quantified long-term trade-offs into a high-ambiguity acquisition call and then executed the decision while improving the organization's future decision framework. The roadmap re-sequencing and criteria update show strategic leverage rather than heroics. Biggest strength is converting a lost argument into durable process change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I disagreed with the acquisition but the board had already signaled support so I didn't block it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you support the integration?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assigned a program manager and moved on to my other priorities."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you were the only person in the room who disagreed.",
+        "Exec on acquisition",
+        "Did not surface concerns due to board signal",
+        "Quote: 'I assigned a program manager and moved on to my other priorities'",
+        "Follow-up: Asked about post-decision support; candidate shows minimal personal engagement"
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit at exec level. The candidate withheld strategic input based on perceived politics and provided only token support after the decision. No evidence of shaping the outcome or updating org judgment for future bets. Biggest gap is treating disagreement as something to avoid rather than a lever for better long-term decisions."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "How disagreement was surfaced",
+      "junior": "Raised in standup with short note",
+      "senior": "Written counter-proposal and joint review",
+      "exec": "Quantified model presented at offsite"
+    },
+    {
+      "signal": "Post-decision commitment",
+      "junior": "Finished task and documented for refactor",
+      "senior": "Resourced the path and added deprecation plan",
+      "exec": "Re-sequenced roadmaps and updated M&A criteria"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single project handoff",
+      "senior": "Cross-team visibility and staffing",
+      "exec": "Org-level process change"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Basic documentation for next person",
+      "senior": "Forward mitigation visible to teams",
+      "exec": "Updated decision framework for future cycles"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Minimal; relied on team decision",
+      "senior": "Used artifacts and resourcing",
+      "exec": "Shaped criteria after the fact"
+    }
+  ],
+  "kind": "lp"
+}

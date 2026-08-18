@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about waste you removed that was other people's time rather than budget.",
+  "principle": "Hate Waste",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I noticed the team spent 30 minutes every morning copying data between two spreadsheets. I wrote a 20-line script that automated it and shared it in our standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two teammates started using it and saved about 4 hours a week combined. My manager asked me to document it so new hires could use it too."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about waste you removed that was other people's time rather than budget.",
+        "Junior IC noticed daily spreadsheet copy-paste eating 30 min each morning",
+        "Built simple script, shared in standup, two teammates adopted it",
+        "Outcome: ~4 hrs/week saved for the team",
+        "Quote: 'My manager asked me to document it so new hires could use it too'",
+        "Follow-up: Asked how they got others to adopt; said they demoed it live and offered to tweak it if needed"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste for a junior. The candidate identified a repeatable time sink affecting teammates and removed it with a lightweight script rather than waiting for someone else. Quote: 'two teammates started using it and saved about 4 hours a week combined' shows local but real impact beyond their own work. They demonstrated ownership by documenting the solution for future hires, which aligns with coachability expectations at this level. The story stays within individual scope and does not claim cross-team influence. Biggest gap is lack of measurement before the change, but the action still meets the bar for 0-2 years experience.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once saw that our weekly status report took a long time to fill out so I stopped doing the detailed version and just put high-level bullets."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that save anyone else time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, my manager just asked me to add the details back in the next week."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about waste you removed that was other people's time rather than budget.",
+        "Candidate reduced effort on their own status report",
+        "Change did not affect or benefit anyone else",
+        "Outcome: manager reverted the change",
+        "Quote: 'my manager just asked me to add the details back in the next week'",
+        "Follow-up: Probe on whether they asked teammates first; candidate said they decided unilaterally"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. The candidate only reduced their personal effort on a required report and the change created no time savings for others. Quote: 'Not really, my manager just asked me to add the details back' shows the attempt stayed inside their own workflow and was rejected. At junior level we expect ownership of small improvements that help the immediate team; this example shows neither. The action also bypassed any attempt to understand why the report existed. Single biggest gap is absence of customer or teammate focus before making the change."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three teams were each running the same manual regression suite before every release, taking 6-8 engineer hours per cycle. I proposed a shared test harness and convinced the other leads to adopt it."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot on my team, measured 70% reduction in runtime, then presented the numbers in the monthly tech sync. Two teams migrated within the quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about waste you removed that was other people's time rather than budget.",
+        "Senior identified duplicate manual regression across three teams",
+        "Built shared harness after pilot on own team",
+        "Outcome: 70% runtime reduction, two teams adopted in one quarter",
+        "Quote: 'I ran a two-week pilot on my team, measured 70% reduction in runtime'",
+        "Follow-up: Asked about resistance; candidate said one lead worried about maintenance so they added on-call rotation for the harness"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste for a senior. The candidate removed duplicated effort across teams by creating a shared test harness instead of optimizing only their own work. Quote: 'three teams were each running the same manual regression suite' plus the measured 70% reduction shows clear cross-team time savings with metrics. They used influence without authority by running a pilot first and presenting data in the tech sync. The story includes a concrete trade-off (added on-call rotation) to gain adoption. Biggest strength is the combination of measurement and follow-through that produced sustained change rather than a one-off fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our build times were long so I added more parallel jobs on our CI system."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that affect other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "A little, but mostly it helped my squad. Other teams still complained about queue times so we just asked for more agents."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about waste you removed that was other people's time rather than budget.",
+        "Candidate scaled CI resources to reduce their team's build time",
+        "No coordination with other teams using the same system",
+        "Outcome: other teams continued to experience delays",
+        "Quote: 'mostly it helped my squad'",
+        "Follow-up: Asked why they did not propose a shared improvement; candidate said they focused on their delivery deadline"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste for a senior. The candidate addressed only their squad's build pain by consuming more shared resources instead of removing the underlying duplication. Quote: 'mostly it helped my squad' and the decision to request more agents rather than coordinate shows limited scope and no influence across teams. At senior level we expect removal of waste that benefits multiple groups and some evidence of raising the bar for others; this example stays local and creates potential new waste for the platform team. The single biggest gap is lack of systems thinking about shared infrastructure."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had six product lines each maintaining separate release processes that consumed roughly 15% of engineering time in coordination overhead. I consolidated them into one release council and a single tooling stack."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some teams lost custom steps they liked. I gave them a six-month transition window and let each line keep one domain-specific gate if they documented the cost. Overall engineering time on releases dropped 40% in the first year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about waste you removed that was other people's time rather than budget.",
+        "Exec consolidated six product lines' separate release processes",
+        "Created single release council and tooling stack",
+        "Outcome: 40% reduction in release-related engineering time",
+        "Quote: 'I gave them a six-month transition window and let each line keep one domain-specific gate if they documented the cost'",
+        "Follow-up: Asked how they handled the team that resisted most; candidate said they assigned that lead to own the new shared tooling for six months"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste at exec level. The candidate eliminated duplicated release overhead across six product lines, a clear org-scale time sink. Quote: 'six product lines each maintaining separate release processes that consumed roughly 15% of engineering time' plus the 40% measured reduction shows strategic leverage rather than heroics. They made explicit trade-offs by allowing limited custom gates while requiring cost documentation, demonstrating long-term thinking. The transition plan and assignment of a resister to own the new process show judgment in change management. Biggest strength is turning a coordination tax into sustained productivity gain without adding headcount.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told all teams to stop doing detailed release notes because they took too much time."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that play out across the org?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support teams pushed back hard so we ended up keeping a lighter version. It saved some time but not as much as I hoped."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about waste you removed that was other people's time rather than budget.",
+        "Exec directed removal of detailed release notes org-wide",
+        "Change met resistance from support teams",
+        "Outcome: lighter version kept, modest time savings only",
+        "Quote: 'Support teams pushed back hard so we ended up keeping a lighter version'",
+        "Follow-up: Asked what analysis was done before the directive; candidate said they acted on anecdotal feedback from engineering leads"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste for an exec. The candidate issued a top-down directive without first quantifying the waste or understanding downstream impact. Quote: 'Support teams pushed back hard so we ended up keeping a lighter version' shows the change was neither strategic nor durable. At exec level we look for removal of systemic waste through leverage and trade-off decisions that stick; this example produced only marginal savings and required rollback. The single biggest gap is absence of data or stakeholder alignment before acting at scale."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of time saved",
+      "junior": "Individual or immediate team",
+      "senior": "Cross-team or multi-squad",
+      "exec": "Org or multi-org process"
+    },
+    {
+      "signal": "Use of measurement",
+      "junior": "Simple before/after observation",
+      "senior": "Pilot with quantified results shared",
+      "exec": "Baseline metrics and sustained org-level tracking"
+    },
+    {
+      "signal": "Influence method",
+      "junior": "Shared with teammates, asked for feedback",
+      "senior": "Pilot then data-driven persuasion",
+      "exec": "Mandate with explicit trade-offs and transition plan"
+    },
+    {
+      "signal": "Handling of resistance",
+      "junior": "Adjusted based on manager input",
+      "senior": "Negotiated adoption details (e.g., on-call)",
+      "exec": "Assigned resister ownership role during transition"
+    },
+    {
+      "signal": "Sustainability",
+      "junior": "Documented for new hires",
+      "senior": "Adopted by other teams within quarter",
+      "exec": "40% reduction sustained after one year"
+    }
+  ],
+  "kind": "lp"
+}

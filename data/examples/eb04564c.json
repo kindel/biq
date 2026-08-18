@@ -1,0 +1,177 @@
+{
+  "question": "Tell me about a time a customer asked for the wrong thing. What did you do?",
+  "principle": "Results for Customers",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A customer wanted a feature that would have broken our mobile app for 30% of users. I explained the data and suggested an alternative that met their core need."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "They agreed after I showed a quick prototype. We shipped the alternative and they renewed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a customer asked for the wrong thing. What did you do?",
+        "Situation: Customer requested feature that would break mobile app for 30% of users",
+        "Action: Explained data, proposed alternative that met core need, built quick prototype",
+        "Outcome: Customer agreed, shipped alternative, renewed contract",
+        "Quote: \"I showed the data and said here's what would happen instead.\"",
+        "Follow-up: How did you know it was the wrong thing? - Looked at usage logs and crash reports from similar changes."
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers. The candidate owned identifying the mismatch between request and actual customer outcome at an individual scope. They described spotting the risk from usage data, offering a concrete alternative, and validating it with a prototype before committing. Quote: \"I showed the data and said here's what would happen instead.\" This shows early ownership and learning from signals rather than just executing the ask. Biggest strength is the quick pivot to a better result without escalation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "They asked for a new report format so I built exactly what they described and handed it over."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did it solve their problem?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but that was what they asked for so I moved on."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a customer asked for the wrong thing. What did you do?",
+        "Situation: Customer requested specific report format",
+        "Action: Built exactly to spec and delivered",
+        "Outcome: Did not solve underlying problem; moved on",
+        "Quote: \"That was what they asked for so I moved on.\"",
+        "Follow-up: Did you check usage after delivery? - No, it was a one-off request."
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate treated the request as the requirement and stopped at delivery without checking whether it produced the intended customer result. Quote: \"That was what they asked for so I moved on.\" At junior level this misses the basic expectation of owning the outcome and learning from feedback. The gap is lack of any follow-through or curiosity about actual impact."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A key customer wanted us to rebuild a workflow that would have duplicated work across three teams. I ran a short discovery with their team and ours, then influenced the product roadmap to solve the root need instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get alignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "Shared usage metrics and customer quotes showing the duplication; two teams adjusted their plans and we measured 25% faster task completion for that customer."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a customer asked for the wrong thing. What did you do?",
+        "Situation: Customer requested workflow rebuild that duplicated effort across teams",
+        "Action: Ran joint discovery, used metrics and quotes to influence roadmap",
+        "Outcome: Two teams shifted plans; 25% faster completion measured",
+        "Quote: \"I shared the duplication data and customer quotes to shift the roadmap.\"",
+        "Follow-up: What trade-offs did you surface? - Short-term feature delay vs long-term efficiency gain for the customer."
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers. The senior candidate drove cross-team impact by surfacing duplicated work and using data to change the roadmap. Quote: \"I shared the duplication data and customer quotes to shift the roadmap.\" They influenced without authority and tied the change to a measurable customer outcome. Biggest strength is the combination of discovery and follow-through metrics rather than heroically building the requested feature.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The customer wanted a custom integration. I pushed the request to the integrations team and followed up once."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the customer get value?"
+        },
+        {
+          "role": "candidate",
+          "text": "They got the integration but it didn't address the process issue they were having."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a customer asked for the wrong thing. What did you do?",
+        "Situation: Customer asked for custom integration",
+        "Action: Routed request to integrations team and followed up once",
+        "Outcome: Integration delivered but process issue remained unsolved",
+        "Quote: \"They got the integration but it didn't address the process issue.\"",
+        "Follow-up: Did you try to influence scope? - No, it was outside my direct ownership."
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The candidate handed off the request without attempting to diagnose or influence a better outcome across teams. Quote: \"They got the integration but it didn't address the process issue.\" At senior level this shows insufficient drive to connect the ask to actual customer results or to use influence to adjust direction. The gap is treating the request as someone else's problem."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Enterprise customers kept asking for on-prem deployment while our strategy was cloud-only. I led a multi-quarter analysis of churn risk versus platform investment and decided to sunset on-prem support while doubling investment in migration tooling and customer success."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We lost two accounts short-term but reduced support costs 40% and saw net retention improve 8 points as customers adopted the cloud path."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time a customer asked for the wrong thing. What did you do?",
+        "Situation: Repeated enterprise requests for on-prem while strategy was cloud-only",
+        "Action: Led analysis of churn vs investment, chose to sunset on-prem and fund migration tooling",
+        "Outcome: Short-term churn of two accounts; 40% support cost reduction, +8pt net retention",
+        "Quote: \"We accepted short-term revenue risk to align the business on the scalable path.\"",
+        "Follow-up: How did you handle the board and sales pushback? - Presented retention modeling and total cost of ownership data showing cloud path was better long-term."
+      ],
+      "raiseFeedback": "Raises the bar on Results for Customers. The executive made a strategic trade-off between customer requests and long-term business sustainability. Quote: \"We accepted short-term revenue risk to align the business on the scalable path.\" They used data to decide on sunsetting while investing in customer migration support, producing measurable retention gains. Biggest strength is the org-level judgment and willingness to absorb short-term pain for durable customer and business results.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customers asked for on-prem so we kept maintaining a small on-prem offering to keep them happy."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Support costs kept rising and we never fully committed to the cloud strategy."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time a customer asked for the wrong thing. What did you do?",
+        "Situation: Repeated requests for on-prem deployment",
+        "Action: Continued maintaining separate on-prem offering to satisfy customers",
+        "Outcome: Rising support costs and diluted cloud strategy",
+        "Quote: \"We kept maintaining a small on-prem offering to keep them happy.\"",
+        "Follow-up: Did you model the cost trajectory? - We tracked it but chose not to force a change."
+      ],
+      "lowerFeedback": "Lowers the bar on Results for Customers. The executive avoided a strategic decision and allowed customer requests to fragment resources without addressing the underlying direction. Quote: \"We kept maintaining a small on-prem offering to keep them happy.\" At exec level this shows weak judgment on trade-offs and an inability to drive long-term customer value through clear prioritization. The gap is lack of leverage on the business model."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of outcome vs request",
+      "junior": "Raises when they check data before building; lowers when they deliver exactly as asked",
+      "senior": "Raises when they influence other teams with evidence; lowers when they hand off without follow-up",
+      "exec": "Raises when they make explicit trade-offs with org-level metrics; lowers when they maintain parallel paths indefinitely"
+    },
+    {
+      "signal": "Use of data and metrics",
+      "junior": "Raises with simple usage or crash data; lowers with none",
+      "senior": "Raises with cross-team impact numbers; lowers with no measurement",
+      "exec": "Raises with retention and cost modeling; lowers with cost tracking only"
+    },
+    {
+      "signal": "Handling of pushback",
+      "junior": "Raises with quick alternative prototype; lowers with compliance only",
+      "senior": "Raises with roadmap influence; lowers with no attempt to adjust scope",
+      "exec": "Raises with willingness to accept short-term churn for strategy; lowers with perpetual maintenance of misaligned offering"
+    },
+    {
+      "signal": "Learning and iteration",
+      "junior": "Raises when they describe what they would do differently; lowers with no reflection",
+      "senior": "Raises when they show follow-up metrics after change; lowers when outcome is unmeasured",
+      "exec": "Raises when they tie decision to multi-quarter business results; lowers when decision is avoided"
+    }
+  ],
+  "kind": "value"
+}

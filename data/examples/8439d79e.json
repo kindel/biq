@@ -1,0 +1,180 @@
+{
+  "question": "Tell me about a time something was documented but still not understood. What did you do?",
+  "principle": "Transparency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the onboarding wiki had steps for setting up the dev environment but missed a dependency flag. I spent two days stuck, then asked my mentor who clarified it in five minutes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added the missing flag to the wiki and told the other new hire on my team so they wouldn't hit the same issue."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something was documented but still not understood. What did you do?",
+        "Junior dev, wiki missed dev-env flag",
+        "Asked mentor after two days stuck",
+        "Added flag to wiki and told new hire",
+        "Quote: 'I didn't want the next person to waste time'",
+        "Follow-up: Asked how they verified the update; they checked with mentor and confirmed it worked"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency. The candidate owned a local documentation gap instead of working around it. They escalated to their mentor for clarification then closed the loop by updating the wiki and sharing with a peer. Quote shows intent to prevent repeat issues for others. This fits junior scope where individual ownership and quick learning from feedback matter most. Biggest strength is turning personal friction into a small but durable fix without being prompted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The runbook said to restart the service but it never worked for me so I just asked in Slack every time."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you update anything?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I figured someone else would fix the doc eventually."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something was documented but still not understood. What did you do?",
+        "Runbook restart step didn't work",
+        "Asked in Slack repeatedly",
+        "No update to doc",
+        "Follow-up: Asked why they didn't edit; candidate said they weren't sure they had permission"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency. The candidate treated unclear documentation as someone else's problem and created repeated Slack noise instead of fixing the source. No attempt to edit the runbook even after multiple incidents. Quote reveals passive expectation that others would maintain shared knowledge. Biggest gap is lack of ownership over a fix that was fully within junior scope."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our cross-team API spec was published but teams kept misinterpreting the error codes. I ran a brown-bag, collected examples from three teams, then rewrote the error section with concrete payloads."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the PM the support tickets dropping 30 percent after the update and asked the other leads to review before publishing."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something was documented but still not understood. What did you do?",
+        "Cross-team API spec had ambiguous error codes",
+        "Ran brown-bag and collected real examples",
+        "Rewrote section, got peer review, showed metric drop",
+        "Quote: 'Support tickets fell because teams finally stopped guessing'",
+        "Follow-up: Asked about resistance; candidate said one team lead pushed back on wording but accepted after seeing their own examples included"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency. The candidate identified repeated cross-team confusion from published docs and drove a fix that required influence without authority. They gathered concrete examples, ran a session, and used data to get reviews. Quote ties the change to measurable reduction in support load. This matches senior expectations of improving shared understanding beyond their immediate team. Biggest strength is closing the loop with metrics and peer validation.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The design doc was vague on rollout steps so my team just asked the author in meetings every sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the doc ever improve?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, the author was busy and we didn't want to bother them."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something was documented but still not understood. What did you do?",
+        "Design doc rollout steps unclear",
+        "Kept asking author in meetings",
+        "No attempt to edit or escalate",
+        "Follow-up: Asked about impact on other teams; candidate said only their team was affected"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency. The candidate accepted ongoing ambiguity in a cross-team document and created recurring meeting overhead instead of driving clarity. No effort to propose edits or involve the right stakeholders. Quote shows deference that prevented a durable fix. Biggest gap is treating documentation as outside their influence when senior scope expects them to improve it."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our quarterly OKR process had a public template that teams followed but exec reviews showed inconsistent definitions of 'done.' I added a one-page rubric with examples from each org and required it in the template."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider?"
+        },
+        {
+          "role": "candidate",
+          "text": "I weighed the risk of seeming bureaucratic against the cost of misaligned priorities; after testing with two orgs we kept it lightweight and let teams add their own examples."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time something was documented but still not understood. What did you do?",
+        "OKR template produced inconsistent 'done' definitions",
+        "Created one-page rubric with org examples",
+        "Piloted, kept lightweight, mandated in template",
+        "Quote: 'We traded a bit of process for clearer strategic alignment'",
+        "Follow-up: Asked how they handled pushback from orgs that liked ambiguity; candidate said they showed misaligned OKRs from the prior quarter"
+      ],
+      "raiseFeedback": "Raises the bar on Transparency. The candidate spotted systemic misalignment in a company-wide process and introduced a minimal standard that improved shared understanding at the org level. They tested the change, balanced bureaucracy concerns, and used prior-quarter evidence to gain adoption. Quote reflects strategic judgment on process versus clarity trade-offs. This fits exec scope where the impact is durable and organization-wide. Biggest strength is treating documentation as a lever for strategic alignment rather than a one-time fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The strategy doc was too high-level so teams kept asking for clarification in every all-hands."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We eventually hired a comms person to rewrite it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time something was documented but still not understood. What did you do?",
+        "Strategy doc caused repeated all-hands questions",
+        "No direct action taken by leader",
+        "Solution was to delegate to new hire",
+        "Follow-up: Asked about timeline; candidate said it took two quarters"
+      ],
+      "lowerFeedback": "Lowers the bar on Transparency. The candidate recognized repeated org-level confusion but did not personally drive a fix, instead waiting for a new role to be created. No evidence of testing lightweight changes or using existing levers. Quote shows reliance on headcount rather than leadership action. Biggest gap is missing the opportunity to model transparency at the scale expected of an exec."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of fix",
+      "junior": "Updated wiki after asking mentor",
+      "senior": "Rewrote API section and got peer review",
+      "exec": "Added rubric to OKR template after pilot"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Helped one new hire",
+      "senior": "Reduced tickets across three teams",
+      "exec": "Improved alignment across orgs"
+    },
+    {
+      "signal": "Use of data or evidence",
+      "junior": "None",
+      "senior": "Showed 30% ticket drop",
+      "exec": "Used prior-quarter misaligned OKRs"
+    },
+    {
+      "signal": "Handling ambiguity",
+      "junior": "Escalated to mentor quickly",
+      "senior": "Ran brown-bag to surface examples",
+      "exec": "Tested lightweight version before mandating"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "N/A at this level",
+      "senior": "Got leads to review changes",
+      "exec": "Balanced process concerns with org leaders"
+    }
+  ],
+  "kind": "value"
+}

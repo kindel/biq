@@ -1,0 +1,180 @@
+{
+  "question": "Tell me about a process you removed because it bought consistency and nothing else.",
+  "principle": "Efficiency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my team we had a weekly status email that everyone copied to a shared folder. I noticed no one read the archives and it took 30 minutes each week. I proposed dropping it and switching to a 5-minute standup note instead. My manager agreed after I showed the last three months had zero lookups."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the follow-up? How did you measure impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tracked open rates on the new notes for a month and asked the team if anything was missed. Zero issues, so we kept it gone."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a process you removed because it bought consistency and nothing else.",
+        "Candidate identified weekly status email archive that no one used.",
+        "Measured by checking folder access logs over 3 months (zero reads).",
+        "Replaced with lighter standup note after manager sign-off.",
+        "Quote: \"Zero lookups in the last three months.\"",
+        "Follow-up: Tracked new note engagement for a month and confirmed no gaps."
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency. The candidate owned removal of an unused weekly archive process at the individual level. They checked access logs for three months showing zero reads before proposing the change and validated the replacement for a month. Quote: \"Zero lookups in the last three months.\" This shows basic bias for action and measurement within their own workflow. The main gap is lack of any cross-team coordination or longer-term tracking beyond one month.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a daily standup that sometimes felt repetitive but it kept everyone aligned so I never suggested removing it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever look at whether anyone actually used the notes or if meetings overlapped with other syncs?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just assumed it was needed for consistency."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a process you removed because it bought consistency and nothing else.",
+        "Candidate kept daily standup due to assumed consistency value.",
+        "No data collected on usage or overlap.",
+        "Quote: \"I just assumed it was needed for consistency.\"",
+        "Follow-up: Candidate had not reviewed notes access or meeting overlap."
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency. The candidate retained a daily standup without checking whether it delivered value beyond consistency. They had not reviewed access logs or looked for overlaps. Quote: \"I just assumed it was needed for consistency.\" This reflects passive acceptance of process rather than any attempt to measure or remove waste, even at the individual level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Across three teams we had a monthly compliance checklist that duplicated our existing CI checks. I pulled usage data showing 95% auto-pass rate and ran a two-week pilot removing it for one team. After no incidents we rolled it out and saved roughly 40 hours per month."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from the other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the pilot metrics in a shared doc and let each team lead decide. Two adopted immediately, the third after seeing the first month of results."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a process you removed because it bought consistency and nothing else.",
+        "Identified monthly compliance checklist duplicating CI across three teams.",
+        "95% auto-pass rate from data pull; 40 hours/month saved after rollout.",
+        "Pilot on one team then shared metrics for voluntary adoption.",
+        "Quote: \"Let each team lead decide.\"",
+        "Follow-up: Two teams adopted right away, third after seeing results."
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency. The candidate removed a redundant monthly checklist that duplicated CI across three teams after pulling 95% auto-pass data. They ran a pilot, shared results, and allowed voluntary adoption rather than mandating change. Quote: \"Let each team lead decide.\" This demonstrates influence without authority and measurable cross-team impact. The remaining gap is that long-term sustainment metrics were not mentioned.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once suggested removing a quarterly review form but compliance said it was required so we kept it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check whether the form was actually reviewed by anyone outside compliance?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked my manager and they said better not to push it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a process you removed because it bought consistency and nothing else.",
+        "Suggested removing quarterly review form but stopped at compliance pushback.",
+        "No attempt to measure actual usage beyond compliance.",
+        "Quote: \"Better not to push it.\"",
+        "Follow-up: Candidate deferred entirely to manager without data."
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency. The candidate identified a quarterly review form as potentially redundant but abandoned the idea after a single compliance objection without gathering usage data. Quote: \"Better not to push it.\" This shows no cross-team influence attempt or measurement, only deference, which is below senior expectations for removing low-value process."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "At the org level we had a quarterly planning ritual that required every team to produce 20-slide decks even though leadership only used the top three metrics. I ran an analysis showing 1200 hours spent annually and replaced it with a 2-page template plus optional deep-dive sessions. Adoption reached 85% within two quarters and planning cycle time dropped 30%."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you consider with the teams that resisted?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept an opt-in deep-dive track for complex programs and tracked whether any missed items surfaced in the first two cycles. None did."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a process you removed because it bought consistency and nothing else.",
+        "Replaced org-wide 20-slide quarterly planning with 2-page template.",
+        "1200 hours annual spend identified; 30% cycle time reduction post-change.",
+        "85% adoption in two quarters with opt-in deep-dive track for resistors.",
+        "Quote: \"Tracked whether any missed items surfaced in the first two cycles.\"",
+        "Follow-up: No missed items found, confirming the heavier format added no value."
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency. The candidate eliminated an org-wide quarterly planning ritual consuming 1200 hours that only used three metrics. They introduced a lighter template with an opt-in track for complex work and measured 30% cycle time reduction at 85% adoption. Quote: \"Tracked whether any missed items surfaced in the first two cycles.\" This reflects strategic judgment on process leverage and long-term thinking. The main gap is limited detail on how the freed capacity was redirected.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We looked at simplifying our annual strategy offsite but decided the consistency across regions was worth keeping the full format."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you have on whether the offsite actually drove decisions versus other channels?"
+        },
+        {
+          "role": "candidate",
+          "text": "We didn't run any specific analysis; the regional leads felt it was valuable for alignment."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a process you removed because it bought consistency and nothing else.",
+        "Kept full annual strategy offsite format for regional consistency.",
+        "No usage or decision-impact data collected.",
+        "Quote: \"The regional leads felt it was valuable for alignment.\"",
+        "Follow-up: Decision made without analysis of whether offsite drove unique outcomes."
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency. The candidate retained a full annual strategy offsite across regions purely for consistency without any data on decision impact or alternative channels. Quote: \"The regional leads felt it was valuable for alignment.\" This demonstrates absence of strategic measurement or willingness to test lighter formats at the org level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Data collection before removal",
+      "junior": "Checked folder access logs for 3 months",
+      "senior": "Pulled 95% auto-pass rate across teams",
+      "exec": "Analyzed 1200 hours org-wide spend"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single team workflow",
+      "senior": "Three teams with voluntary adoption",
+      "exec": "Org-wide planning cycle with 30% time reduction"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Manager sign-off only",
+      "senior": "Shared metrics and let leads decide",
+      "exec": "Opt-in track plus two-cycle validation"
+    },
+    {
+      "signal": "Measurement of outcome",
+      "junior": "One-month engagement check",
+      "senior": "Pilot results shared for adoption",
+      "exec": "85% adoption and cycle time tracked over quarters"
+    },
+    {
+      "signal": "Ownership vs deference",
+      "junior": "Proposed and validated replacement",
+      "senior": "Influenced without authority",
+      "exec": "Made structural change with trade-off design"
+    }
+  ],
+  "kind": "value"
+}

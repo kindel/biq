@@ -1,0 +1,177 @@
+{
+  "question": "Tell me about something you wrote down once instead of explaining repeatedly.",
+  "principle": "Efficiency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project I kept getting the same three questions from new hires about our build setup. After the fourth time I wrote a short internal wiki page with screenshots and commands."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you posted it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The next two people used it and only asked me one clarifying question. I updated it once based on their feedback."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you wrote down once instead of explaining repeatedly.",
+        "Junior IC documented build FAQs after repeated questions from new hires.",
+        "Posted wiki with screenshots; next two hires only needed one follow-up.",
+        "Quote: \"I updated it once based on their feedback.\"",
+        "Follow-up: How did you decide what to include? - Kept it to the three most common questions only."
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency. The candidate recognized repeated explanations as a signal and created a lightweight wiki entry that reduced follow-up questions for subsequent teammates. Story shows they acted on their own work without waiting for a mandate. Quote about updating based on feedback demonstrates coachability. Scope stays appropriately individual for a junior level. Biggest strength is turning a personal pain point into a reusable artifact. Main gap is no mention of measuring how many people actually used it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I usually just explain things in Slack when people ask."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever try writing it down so you wouldn't have to repeat it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was faster to just answer each time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you wrote down once instead of explaining repeatedly.",
+        "Candidate defaults to repeated Slack explanations.",
+        "No attempt to document even after multiple asks.",
+        "Quote: \"It was faster to just answer each time.\"",
+        "Follow-up: What would have made you write it down? - No clear trigger identified."
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency. Candidate chose repeated verbal answers over any form of documentation despite clear repetition. Story shows no ownership of turning a recurring question into a one-time artifact. Quote reveals they viewed documentation as extra work rather than leverage. Scope is purely individual with no evidence of learning from the pattern. Biggest gap is absence of any attempt to reduce future effort. Would need to see stronger initiative on small documentation habits to meet junior bar."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our cross-team API review process kept getting the same three questions in every meeting. I wrote a one-page decision log with examples and shared it in the engineering handbook."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Review meetings dropped from 45 minutes to 20 on average across three teams. Two teams started using the log without me attending."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you wrote down once instead of explaining repeatedly.",
+        "Senior engineer created API decision log after repeated cross-team questions.",
+        "Meetings shortened from 45 to 20 minutes; two teams adopted independently.",
+        "Quote: \"Two teams started using the log without me attending.\"",
+        "Follow-up: How did you get buy-in? - Posted in handbook and let teams discover it first."
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency. Candidate identified a recurring cross-team friction and produced a reusable decision log that reduced meeting time by more than half. Story demonstrates influence without authority as other teams adopted it voluntarily. Quote highlights leverage created beyond their own involvement. Metrics are concrete though modest. Biggest strength is turning repeated explanations into a self-serve artifact with measurable time savings. Main gap is limited evidence of teaching others how to create similar logs.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent a long email to the team about our deployment steps after the third outage."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did other teams or new people still ask you the same questions later?"
+        },
+        {
+          "role": "candidate",
+          "text": "A few did. I just answered them again."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you wrote down once instead of explaining repeatedly.",
+        "Sent one email after an outage but did not create lasting reference.",
+        "Continued answering follow-up questions individually.",
+        "Quote: \"I just answered them again.\"",
+        "Follow-up: Why didn't the email stick? - No follow-up mechanism or updates."
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency. Candidate produced a one-time email that failed to prevent repeated questions from other teams. Story shows no iteration or placement in a durable, discoverable location. Quote indicates acceptance of ongoing explanation work rather than fixing the root cause. Cross-team opportunity was visible but not leveraged. Biggest gap is lack of measurable or sustained reduction in repeated asks. Would need clearer evidence of creating scalable artifacts to meet senior bar."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were spending leadership time re-explaining our incident response priorities every quarter. I wrote a short principles document and embedded it into the quarterly planning template."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "New directors started using the same language in their own roadmaps without escalation. Leadership review time on incidents dropped 30 percent over two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about something you wrote down once instead of explaining repeatedly.",
+        "Exec created incident principles doc embedded in planning templates.",
+        "Directors adopted language independently; review time down 30 percent.",
+        "Quote: \"New directors started using the same language in their own roadmaps without escalation.\"",
+        "Follow-up: How did you ensure it stayed current? - Assigned ownership to a rotating director each quarter."
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency. Candidate addressed repeated leadership explanations by embedding a principles document into existing planning processes. Story shows strategic leverage as adoption happened without ongoing personal involvement. Quote illustrates reduced escalation and consistent language across directors. Org-level impact is visible through the 30 percent time reduction. Biggest strength is turning a recurring executive discussion into a self-reinforcing system. Main gap is light detail on how trade-offs were handled when priorities shifted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I gave a presentation to the leadership team about our OKR process."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did leaders still need repeated explanations afterward?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, we ended up having the same conversation in the next two offsites."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about something you wrote down once instead of explaining repeatedly.",
+        "Delivered one presentation on OKRs with no lasting artifact.",
+        "Same discussion repeated in following offsites.",
+        "Quote: \"We ended up having the same conversation in the next two offsites.\"",
+        "Follow-up: What prevented a written version? - No clear ownership or follow-through."
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency. Candidate relied on a single presentation that failed to stop repeated leadership discussions. Story shows no attempt to create a durable, embedded artifact that would scale beyond the room. Quote confirms the pattern continued across multiple offsites. Org-level leverage opportunity was missed. Biggest gap is absence of any mechanism to reduce future explanation cycles. Would need evidence of strategic documentation that persists without the leader's presence to meet exec bar."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual wiki entry used by new hires on same team",
+      "senior": "Cross-team decision log adopted by two teams",
+      "exec": "Org-wide principles embedded in planning templates and used by directors"
+    },
+    {
+      "signal": "Evidence of leverage",
+      "junior": "Reduced questions for next two people",
+      "senior": "Meeting time cut in half; adoption without author present",
+      "exec": "30 percent reduction in leadership review time; consistent language without escalation"
+    },
+    {
+      "signal": "Iteration after initial write",
+      "junior": "Updated once based on feedback",
+      "senior": "Posted and let teams discover; minor updates implied",
+      "exec": "Assigned rotating ownership to keep current"
+    },
+    {
+      "signal": "Measurement",
+      "junior": "Anecdotal reduction in questions",
+      "senior": "Average meeting length from 45 to 20 minutes",
+      "exec": "30 percent drop in review time over two quarters"
+    },
+    {
+      "signal": "Habit formation",
+      "junior": "Acted on repeated personal questions",
+      "senior": "Created reusable reference after pattern observed",
+      "exec": "Embedded into existing process so it persists without leader"
+    }
+  ],
+  "kind": "value"
+}

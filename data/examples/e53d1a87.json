@@ -1,0 +1,194 @@
+{
+  "question": "Tell me about a problem you raised that was outside your own area.",
+  "principle": "Company-wide Perspective",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project I noticed the onboarding docs for new hires had outdated links to our internal tools, which was slowing ramp-up for the whole org. I flagged it in the weekly team sync even though docs weren't my responsibility."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reached out to the onboarding owner, shared the broken links, and they updated the page. New hires after that started contributing code two days earlier on average."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know it was a real problem?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked two new teammates how long it took them and compared to what the docs said."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you raised that was outside your own area.",
+        "Candidate spotted outdated onboarding links affecting new-hire ramp.",
+        "Raised in team sync, followed up with docs owner, shared data from two new hires.",
+        "Outcome: page updated; new hires contributing two days earlier.",
+        "Quote: \"I asked two new teammates how long it took them.\"",
+        "Follow-up: Asked how they validated the impact; candidate described simple comparison."
+      ],
+      "raiseFeedback": "Raises the bar on Company-wide Perspective for a junior. The candidate identified a friction point in onboarding documentation that sat outside their immediate coding tasks and took the step of surfacing it in a team sync. They followed up with the actual owner and gathered a small data point from two new hires to confirm the delay. The result was a concrete, if modest, improvement in ramp time. This shows early awareness that their work touches other teams and willingness to act on it. The story stays appropriately scoped for 0-2 years of experience while demonstrating ownership beyond assigned tickets. Biggest strength is the initiative to close the loop with the docs owner instead of stopping at the flag.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told my manager that our build was slow and it was affecting my productivity."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you raise it outside your immediate team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just mentioned it in our 1:1 and then focused on my own tasks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you raised that was outside your own area.",
+        "Candidate described a slow build affecting only their own work.",
+        "Raised only to manager in 1:1; no follow-up outside team.",
+        "No evidence of impact or cross-area action.",
+        "Follow-up: Clarified scope; candidate confirmed it stayed within personal productivity."
+      ],
+      "lowerFeedback": "Lowers the bar on Company-wide Perspective for a junior. The candidate framed the issue strictly as a personal productivity blocker and raised it only with their manager. No attempt was made to check whether other engineers or teams experienced the same slowdown. The story never leaves the candidate's own tasks, which signals limited awareness of how their environment affects the broader organization. Even at junior level we expect at least an attempt to verify if the problem is shared. Biggest gap is the absence of any outreach beyond the 1:1."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our payments service was returning inconsistent error codes that downstream teams were handling differently, causing customer support tickets to spike. I raised it in the monthly platform review even though payments wasn't my service."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do after raising it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the last 30 days of support tickets, mapped them to the error codes, and shared the one-pager with the payments and support leads. They aligned on a single error taxonomy and cut duplicate tickets by roughly 40 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you raised that was outside your own area.",
+        "Candidate identified inconsistent payments error codes affecting support.",
+        "Raised in platform review; followed up with data pull and one-pager to two other teams.",
+        "Outcome: aligned taxonomy, 40% reduction in duplicate tickets.",
+        "Quote: \"I pulled the last 30 days of support tickets and mapped them.\"",
+        "Follow-up: Asked for cross-team coordination steps; candidate described sharing the one-pager and joint decision."
+      ],
+      "raiseFeedback": "Raises the bar on Company-wide Perspective for a senior. The candidate noticed an inconsistency in a payments service outside their ownership and used an existing platform review forum to surface it. They invested time collecting ticket data and produced a one-pager that two other teams could act on. The result was a measurable drop in duplicate support volume. This demonstrates influence without authority and the ability to connect a technical inconsistency to a customer-facing metric. The scope and follow-through are appropriate for 3-7 years of experience. Biggest strength is turning an observation into a shared artifact that drove alignment across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed the payments team was using a different logging format and mentioned it to my manager."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not that I know of; I stayed focused on my own service roadmap after that."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you raised that was outside your own area.",
+        "Candidate noted different logging format in payments.",
+        "Raised only to manager; no further action or data shared.",
+        "No measurable outcome or cross-team coordination.",
+        "Follow-up: Checked for follow-through; candidate confirmed they moved on to their own roadmap."
+      ],
+      "lowerFeedback": "Lowers the bar on Company-wide Perspective for a senior. The candidate identified a cross-team inconsistency but limited their action to a single mention with their manager. No data was gathered and no attempt was made to engage the payments or support teams directly. At senior level we expect evidence of influence across boundaries and at least an attempt to drive a concrete outcome. The story shows awareness but no follow-through, which keeps the impact strictly local. Biggest gap is the lack of any artifact or coordination that could have produced change."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were seeing rising customer churn in one region tied to inconsistent feature parity across our product lines. I raised it in the quarterly business review even though regional operations sat outside my product org."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive resolution?"
+        },
+        {
+          "role": "candidate",
+          "text": "I commissioned a small cross-functional working group with sales, support, and product leads, set a 60-day charter to quantify the parity gap, and presented a phased rollout plan to the ELT. The plan was adopted and regional churn dropped 18 percent over the next two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you raised that was outside your own area.",
+        "Candidate linked regional churn to feature parity across product lines.",
+        "Raised in QBR; formed cross-functional group with 60-day charter.",
+        "Presented phased plan to ELT; regional churn fell 18%.",
+        "Quote: \"I commissioned a small cross-functional working group.\"",
+        "Follow-up: Asked about trade-offs considered; candidate described balancing speed of rollout against engineering capacity."
+      ],
+      "raiseFeedback": "Raises the bar on Company-wide Perspective for an executive. The candidate connected a regional churn signal to a product-line parity issue that crossed organizational boundaries and used the quarterly business review to elevate it. They created a time-boxed working group, produced a phased plan, and secured ELT adoption. The outcome was an 18 percent reduction in regional churn sustained over two quarters. This shows strategic judgment in spotting a systemic issue, building leverage through others, and making trade-offs visible to leadership. Scope and ambiguity handling are consistent with 10+ years of experience. Biggest strength is the ability to translate an external signal into an adopted company plan without owning the day-to-day work.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I flagged in an exec offsite that one region seemed to have higher support costs but didn't have the data to prove it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you pursue it further?"
+        },
+        {
+          "role": "candidate",
+          "text": "It stayed as a note; my focus remained on the product areas I directly owned."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you raised that was outside your own area.",
+        "Candidate noted higher regional support costs without data.",
+        "Raised once in offsite; no working group or follow-up plan created.",
+        "No outcome or ELT decision secured.",
+        "Follow-up: Checked for escalation; candidate confirmed it remained an unowned note."
+      ],
+      "lowerFeedback": "Lowers the bar on Company-wide Perspective for an executive. The candidate observed a potential regional cost issue but presented it without supporting data and took no further action. At exec level we look for ownership of ambiguous, cross-org problems and the willingness to create structure that drives decisions. The story ends at the initial flag with no attempt to build alignment or quantify impact. This keeps the perspective inside the candidate's direct product ownership rather than company-wide. Biggest gap is the absence of any mechanism to convert the observation into an organizational response."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of problem identified",
+      "junior": "Individual tool friction with quick local fix",
+      "senior": "Cross-team inconsistency with data and alignment",
+      "exec": "Regional business metric tied to org-wide parity gap"
+    },
+    {
+      "signal": "Action beyond own team",
+      "junior": "Raised in sync and followed up with owner",
+      "senior": "Produced one-pager and coordinated two leads",
+      "exec": "Formed working group and presented to ELT"
+    },
+    {
+      "signal": "Evidence of impact",
+      "junior": "Two-day faster ramp for new hires",
+      "senior": "40% drop in duplicate tickets",
+      "exec": "18% regional churn reduction over two quarters"
+    },
+    {
+      "signal": "Use of existing forums",
+      "junior": "Weekly team sync",
+      "senior": "Monthly platform review",
+      "exec": "Quarterly business review"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Simple comparison of two new hires",
+      "senior": "30-day ticket pull to quantify",
+      "exec": "60-day charter with trade-off discussion"
+    },
+    {
+      "signal": "Ownership style",
+      "junior": "Personal initiative on shared asset",
+      "senior": "Influence without direct authority",
+      "exec": "Created structure for others to execute"
+    }
+  ],
+  "kind": "lp"
+}

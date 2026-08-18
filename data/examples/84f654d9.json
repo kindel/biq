@@ -1,0 +1,237 @@
+{
+  "question": "Tell me about a time you said no to someone senior. How did you handle it?",
+  "principle": "Ruthless Prioritization",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you said no to someone senior. How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked me to add a new reporting feature to the dashboard right before a deadline. I told him I couldn't because it would push the core bug fixes out of scope."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you say exactly?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said the fixes were the top customer pain point from last quarter's tickets and adding the report would mean missing the release. I offered to put the report in the next sprint if we could drop one lower-priority item."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it land?"
+        },
+        {
+          "role": "candidate",
+          "text": "He agreed after I showed the ticket counts. We shipped the fixes on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you said no to someone senior. How did you handle it?",
+        "Role: individual contributor on dashboard team",
+        "Situation: manager pushed new report feature pre-release",
+        "Action: cited ticket volume data, proposed scope trade-off",
+        "Outcome: manager accepted; fixes shipped on time",
+        "Quote: 'I said the fixes were the top customer pain point... offered to put the report in the next sprint'",
+        "Follow-up: Asked for exact wording; candidate repeated the trade-off framing and data point"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for this question. The candidate pushed back on their own manager using ticket volume as the decision input rather than opinion. They offered a concrete alternative instead of a flat refusal. The outcome stayed within their individual scope and did not require escalation. Biggest strength is the willingness to surface the tradeoff immediately instead of silently absorbing the work.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you said no to someone senior. How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "A director asked me to help with a side project. I said I was too busy with my current tasks."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did they accept that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. They kept asking so I eventually did some of it after hours."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you said no to someone senior. How did you handle it?",
+        "Role: individual contributor",
+        "Situation: director requested help on side project",
+        "Action: said too busy then worked extra hours anyway",
+        "Outcome: did the work after initial refusal",
+        "Quote: 'They kept asking so I eventually did some of it after hours'",
+        "Follow-up: Asked what happened after refusal; candidate described giving in without further data or escalation"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for this question. The candidate's initial refusal carried no supporting data or alternative and collapsed under follow-up pressure. They absorbed the extra work rather than clarifying priorities with their actual manager. The story shows no ownership of the outcome or learning from the interaction. Biggest gap is treating the refusal as a one-time statement instead of a prioritization conversation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you said no to someone senior. How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "A VP asked my team to take on a new integration that would have delayed two platform migrations by six weeks. I declined and laid out the customer impact numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the VP respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "They pushed back in the meeting. I scheduled a follow-up with the two migration owners and shared the revised timeline risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the final call?"
+        },
+        {
+          "role": "candidate",
+          "text": "We kept the migrations on track and the VP took the integration to another team that had capacity."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you said no to someone senior. How did you handle it?",
+        "Role: senior engineer leading platform migrations",
+        "Situation: VP requested new integration mid-migration",
+        "Action: declined with customer impact data, looped in migration owners",
+        "Outcome: VP reassigned work; migrations stayed on track",
+        "Quote: 'I declined and laid out the customer impact numbers... shared the revised timeline risk'",
+        "Follow-up: Asked how disagreement was handled; candidate described scheduling cross-team discussion instead of escalating immediately"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for this question. The candidate protected two cross-team migrations using customer impact data rather than personal bandwidth. They involved the affected owners before the decision was final. The VP ultimately reassigned the work, showing influence without authority. Biggest strength is treating the request as a portfolio decision instead of a single-team issue.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you said no to someone senior. How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "A director wanted my team to support a new initiative. I told them our roadmap was already full."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did that resolve it?"
+        },
+        {
+          "role": "candidate",
+          "text": "They went to my manager. My manager told me to help anyway so we split the difference and delayed one item."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you said no to someone senior. How did you handle it?",
+        "Role: senior engineer",
+        "Situation: director requested support for new initiative",
+        "Action: cited full roadmap then accepted delay after manager intervention",
+        "Outcome: split the difference and delayed existing work",
+        "Quote: 'They went to my manager... we split the difference and delayed one item'",
+        "Follow-up: Asked what data was shared; candidate had none beyond 'roadmap was full'"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for this question. The candidate's refusal rested on a generic claim of capacity and required manager intervention to override. No customer or business metrics were used to defend the existing work. The final result was a compromise that delayed committed items without clear trade-off analysis. Biggest gap is lack of proactive cross-team alignment before the pushback reached their manager."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you said no to someone senior. How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO wanted to accelerate a new market launch by pulling resources from two existing product lines. I said no and showed the three-year revenue model."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a two-week analysis with finance and the product leads. The model showed the new market would cannibalize 18 percent of current revenue in year two."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it end?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO agreed to keep the original timelines and funded the new market from a separate headcount pool."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you said no to someone senior. How did you handle it?",
+        "Role: VP product with P&L responsibility",
+        "Situation: CEO pushed accelerated market launch at expense of existing lines",
+        "Action: declined with three-year revenue model, ran joint analysis with finance",
+        "Outcome: CEO approved separate funding; original timelines protected",
+        "Quote: 'I said no and showed the three-year revenue model... showed the new market would cannibalize 18 percent'",
+        "Follow-up: Asked about the analysis process; candidate described two-week cross-functional review before final decision"
+      ],
+      "raiseFeedback": "Raises the bar on Ruthless Prioritization for this question. The candidate used a multi-year revenue model to reject a CEO request that would have damaged the core business. They converted the refusal into a structured analysis involving finance and product leads rather than a direct confrontation. The outcome preserved long-term P&L while still enabling the new initiative through alternative funding. Biggest strength is framing the decision around sustained business value instead of short-term speed.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you said no to someone senior. How did you handle it?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO asked to fast-track a new feature. I pushed back because it didn't align with our strategy."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly qualitative. We discussed it in staff meeting and the CEO decided to do it anyway."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you said no to someone senior. How did you handle it?",
+        "Role: VP product",
+        "Situation: CEO requested fast-track of new feature",
+        "Action: cited strategy misalignment in staff meeting",
+        "Outcome: CEO overrode; feature moved forward",
+        "Quote: 'Mostly qualitative. We discussed it in staff meeting and the CEO decided to do it anyway'",
+        "Follow-up: Asked for specific metrics used; candidate had none beyond qualitative alignment"
+      ],
+      "lowerFeedback": "Lowers the bar on Ruthless Prioritization for this question. The candidate offered only qualitative strategy alignment against a CEO request and was overridden without further analysis. No financial or customer impact model was prepared to support the refusal. The decision stayed at the level of opinion rather than quantified trade-offs. Biggest gap is absence of long-term business framing or alternative paths presented to the CEO."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of data in refusal",
+      "junior": "Ticket volume counts",
+      "senior": "Customer impact and timeline risk",
+      "exec": "Multi-year revenue model with cannibalization %"
+    },
+    {
+      "signal": "Scope of impact protected",
+      "junior": "Own release deadline",
+      "senior": "Two cross-team migrations",
+      "exec": "Core product line P&L over three years"
+    },
+    {
+      "signal": "Handling of pushback",
+      "junior": "Offered sprint trade-off",
+      "senior": "Scheduled owners discussion",
+      "exec": "Ran two-week finance analysis"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Work shipped on time",
+      "senior": "VP reassigned to another team",
+      "exec": "Separate funding approved"
+    },
+    {
+      "signal": "Level of authority engaged",
+      "junior": "Direct manager",
+      "senior": "VP-level request",
+      "exec": "CEO request"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about work you argued genuinely could not be broken down.",
+  "principle": "Iteration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was asked to build a simple internal reporting script. I pushed back saying the data pulls and formatting were one indivisible chunk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager asked me to ship just the data pull first. I did it in two days, got feedback, then added formatting. It shipped faster than I expected."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about work you argued genuinely could not be broken down.",
+        "Junior dev on internal reporting script; argued data + formatting were atomic",
+        "Pushed back once, then accepted manager's split into data pull then formatting",
+        "Outcome: delivered data in 2 days, iterated on feedback",
+        "Quote: 'It shipped faster than I expected.'",
+        "Follow-up: How did you feel about the initial feedback? Said it felt uncomfortable but saw the value after the first slice."
+      ],
+      "raiseFeedback": "The candidate described a small-scope task and initially resisted breaking it down. After direct manager input they accepted the split and shipped the first slice quickly. They explicitly noted the outcome was better than expected. This shows basic coachability on iteration for a junior. The story stays local to their own work with no heroics. Biggest strength is willingness to change approach after feedback rather than digging in.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had a bug fix that touched three files. I told my lead it had to be done all at once or nothing would compile."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try any smaller steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I just explained why it couldn't be broken up and eventually got it done in one big change after two weeks."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about work you argued genuinely could not be broken down.",
+        "Junior on bug fix touching three files; claimed atomic due to compile issues",
+        "Refused to explore smaller steps despite lead question",
+        "Outcome: two-week big-bang change with no iteration",
+        "Quote: 'It had to be done all at once or nothing would compile.'",
+        "Follow-up: Any learnings afterward? Candidate said the approach was justified and would do the same again."
+      ],
+      "lowerFeedback": "The candidate described a modest task and maintained it could not be broken down even after a lead probed for options. They delivered in one large change over two weeks with no intermediate steps. No evidence of adjusting based on feedback. The story shows resistance to iteration on individual work. Biggest gap is lack of openness to trying smaller slices when prompted."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team needed to migrate a shared service used by three other teams. I initially argued the cutover had to be all-or-nothing to avoid version skew."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the cross-team concern?"
+        },
+        {
+          "role": "candidate",
+          "text": "After talking to the dependent teams I proposed a phased rollout with a compatibility layer first. We shipped the layer in one sprint, then migrated one team per sprint."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about work you argued genuinely could not be broken down.",
+        "Senior on shared service migration affecting three teams; initially claimed all-or-nothing cutover",
+        "Shifted after cross-team input to compatibility layer then phased migration",
+        "Outcome: one sprint for layer, then one team per sprint",
+        "Quote: 'We shipped the layer in one sprint, then migrated one team per sprint.'",
+        "Follow-up: What metrics showed it worked? Reduced migration incidents to zero across teams."
+      ],
+      "raiseFeedback": "The candidate started with a strong stance against breaking down a cross-team migration. After consulting dependent teams they introduced a compatibility layer and phased approach. The change produced measurable reduction in incidents. This demonstrates influence without authority and iteration at senior scope. The story includes concrete cross-team coordination. Biggest strength is adapting the plan based on stakeholder input rather than forcing a big cutover.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I led a platform upgrade that touched five services. I maintained it had to ship together because partial states would break everything."
+        },
+        {
+          "role": "interviewer",
+          "text": "What pushback did you get?"
+        },
+        {
+          "role": "candidate",
+          "text": "Other teams wanted smaller steps but I held the line. We did one big release after three months of prep."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about work you argued genuinely could not be broken down.",
+        "Senior on five-service platform upgrade; insisted on single coordinated release",
+        "Resisted team requests for phased steps",
+        "Outcome: three-month prep followed by one big release",
+        "Quote: 'I held the line.'",
+        "Follow-up: Any downstream issues? Candidate noted two hotfixes in the first week but defended the approach."
+      ],
+      "lowerFeedback": "The candidate described a multi-service effort and maintained an all-at-once requirement despite input from other teams. They delivered after three months of preparation in a single release. Limited evidence of adjusting plans based on feedback. The story shows senior scope but weak iteration. Biggest gap is prioritizing a single coordinated release over exploring incremental options with stakeholders."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a company-wide re-architecture of the core data platform. I initially argued the new model required a full cutover on one date."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed your view?"
+        },
+        {
+          "role": "candidate",
+          "text": "After modeling risk with finance and product I shifted to a two-year dual-write strategy. We ran both systems in parallel, measured data parity weekly, and migrated workloads gradually."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about work you argued genuinely could not be broken down.",
+        "Exec on core data platform re-architecture; initially pushed for single-date cutover",
+        "Changed to two-year dual-write after cross-org risk modeling",
+        "Outcome: weekly parity metrics, gradual workload migration",
+        "Quote: 'We ran both systems in parallel, measured data parity weekly.'",
+        "Follow-up: What was the business impact? Cut migration risk exposure by roughly 70 percent per finance model."
+      ],
+      "raiseFeedback": "The candidate described an org-level platform change and initially resisted breaking it down. After engaging finance and product they adopted a multi-year dual-write approach with ongoing measurement. The decision incorporated explicit trade-offs between speed and risk. This shows strategic judgment on iteration at executive scope. The story includes long-term leverage through parallel systems. Biggest strength is willingness to revise a high-stakes position based on cross-functional data.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our org needed to replace the billing system. I argued the complexity meant we had to do a single big-bang replacement."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you address concerns from finance and support?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the risks of partial states and we proceeded with the full replacement after nine months of work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about work you argued genuinely could not be broken down.",
+        "Exec on billing system replacement; maintained single big-bang was required",
+        "Did not adjust after input from finance and support",
+        "Outcome: nine-month effort ending in one replacement event",
+        "Quote: 'We proceeded with the full replacement after nine months of work.'",
+        "Follow-up: Any post-launch issues? Candidate acknowledged extended stabilization period but said it was unavoidable."
+      ],
+      "lowerFeedback": "The candidate described a business-critical system replacement and held to a single big-bang approach despite input from other functions. They executed after nine months with no phased elements. The story shows limited adaptation at executive scope. No evidence of long-term risk mitigation through iteration. Biggest gap is treating the effort as indivisible rather than exploring dual-run or incremental options."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Initial resistance to breaking down work",
+      "junior": "Argued against split on small task but accepted feedback",
+      "senior": "Argued against phased migration then adapted after stakeholder input",
+      "exec": "Argued against dual-run then shifted to multi-year parallel strategy"
+    },
+    {
+      "signal": "Evidence of iteration after pushback",
+      "junior": "Shipped first slice in two days once prompted",
+      "senior": "Introduced compatibility layer and one-team-per-sprint rollout",
+      "exec": "Adopted weekly parity metrics and gradual workload moves"
+    },
+    {
+      "signal": "Scope and leverage",
+      "junior": "Individual task with manager guidance",
+      "senior": "Cross-team coordination with influence",
+      "exec": "Org-level risk modeling with finance and product"
+    },
+    {
+      "signal": "Learning and adjustment",
+      "junior": "Noted outcome was better than expected",
+      "senior": "Reduced incidents through phased approach",
+      "exec": "Cut risk exposure via long-term dual-write"
+    },
+    {
+      "signal": "Response to disagreement",
+      "junior": "Changed approach after direct feedback",
+      "senior": "Revised plan after cross-team discussion",
+      "exec": "Revised strategy after cross-org modeling"
+    }
+  ],
+  "kind": "value"
+}

@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about a time you finished the unglamorous last part of a project that everyone else had moved on from.",
+  "principle": "Deliver Results with Grit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After our team launched the new reporting dashboard, everyone moved to the next feature. I still had to migrate 200 legacy reports and fix the broken export filters. I stayed late for two weeks to finish it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you decide to keep going instead of handing it off?"
+        },
+        {
+          "role": "candidate",
+          "text": "My manager had already moved on, but the reports were still used by finance. I didn't want them to break in production."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you track progress on something that wasn't in the sprint?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made a simple checklist and updated my manager weekly even though it wasn't assigned."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you finished the unglamorous last part...",
+        "Role: New grad on reporting dashboard team",
+        "Situation: Post-launch migration of 200 legacy reports and export fixes",
+        "Actions: Stayed late 2 weeks, created personal checklist, weekly updates to manager",
+        "Outcome: Reports migrated without production issues",
+        "Quote: \"I didn't want them to break in production\"",
+        "Follow-up: What made you decide to keep going? - Didn't want finance reports to break"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit. The candidate described completing legacy report migration after the team shifted to new work. Quote: \"I didn't want them to break in production.\" They created their own checklist and sent weekly updates even without sprint coverage. This shows individual ownership of unglamorous work at the expected junior scope. The story is local but demonstrates follow-through without prompting. Biggest strength is self-initiated tracking of the remaining tasks.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After launch the team moved on and the last few reports were still broken. I flagged it in standup but no one picked it up so I moved to the next ticket too."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you follow up with anyone after flagging it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once more in a retro but then the sprint ended."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you finished the unglamorous last part...",
+        "Role: New grad on reporting dashboard team",
+        "Situation: Post-launch broken reports left behind",
+        "Actions: Flagged in standup and retro, then moved on",
+        "Outcome: Work remained incomplete",
+        "Quote: \"No one picked it up so I moved to the next ticket\"",
+        "Follow-up: Did you follow up after flagging? - Mentioned once more then stopped"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit. The candidate flagged incomplete reports but stopped after two mentions once the team moved on. Quote: \"No one picked it up so I moved to the next ticket.\" No evidence of personal follow-through or ownership of the remaining work. At junior level this shows lack of persistence on assigned scope. The gap is treating the unglamorous work as someone else's problem rather than completing it."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the platform migration, the infra team moved to the next quarter's goals. I still had to deprecate three old services and update 15 dependent teams' configs. I created a shared runbook and drove the changes through weekly office hours."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the dependent teams to prioritize this?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mapped the risk to each team and scheduled 1:1s with their leads to agree on timelines."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome on the old services?"
+        },
+        {
+          "role": "candidate",
+          "text": "All three were fully deprecated with zero incidents in the following quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you finished the unglamorous last part...",
+        "Role: Senior on platform migration",
+        "Situation: Post-migration deprecation of 3 services and config updates for 15 teams",
+        "Actions: Created runbook, ran office hours, mapped risks and held 1:1s with leads",
+        "Outcome: Zero incidents after full deprecation",
+        "Quote: \"I mapped the risk to each team and scheduled 1:1s\"",
+        "Follow-up: How did you get dependent teams to prioritize? - Risk mapping and 1:1s"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit. The candidate drove deprecation of three services after the core team shifted focus, using runbooks and cross-team 1:1s. Quote: \"I mapped the risk to each team and scheduled 1:1s with their leads.\" This produced zero incidents and shows influence without authority at senior scope. The work was unglamorous cleanup with measurable cross-team impact. Biggest strength is turning individual cleanup into coordinated execution across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the platform migration the infra team moved on. I documented the remaining deprecation steps in a wiki and told the dependent teams to reach out if they needed help."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any teams reach out and what happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple did but I was already on the next project so I pointed them to the wiki."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you finished the unglamorous last part...",
+        "Role: Senior on platform migration",
+        "Situation: Post-migration deprecation steps left behind",
+        "Actions: Wrote wiki doc and told teams to self-serve",
+        "Outcome: Partial adoption, candidate moved on",
+        "Quote: \"I pointed them to the wiki\"",
+        "Follow-up: Did any teams reach out? - Pointed to wiki and disengaged"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit. The candidate documented remaining work but did not drive completion once teams moved on. Quote: \"I pointed them to the wiki.\" At senior level this lacks the cross-team influence needed to finish unglamorous work. The story shows passive handoff rather than ownership. The gap is absence of follow-through or metrics on whether the deprecation actually landed."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the company-wide reorg, most leaders focused on new org design. I still had to close out the old cost-center cleanup across three regions, including vendor contract terminations that no one owned. I assigned a small tiger team and tracked it as a quarterly OKR until complete."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide this was worth your time at exec level?"
+        },
+        {
+          "role": "candidate",
+          "text": "The contracts had $4M in potential auto-renewals and no one was tracking them after the reorg."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make to resource this?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled two people from my staff for six weeks and delayed a hiring plan by one quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you finished the unglamorous last part...",
+        "Role: Exec post-reorg",
+        "Situation: Closing cost-center cleanup and $4M vendor contracts across regions",
+        "Actions: Formed tiger team, tracked as OKR, pulled staff and delayed hiring",
+        "Outcome: Contracts terminated without auto-renewal spend",
+        "Quote: \"The contracts had $4M in potential auto-renewals\"",
+        "Follow-up: How did you decide this was worth exec time? - $4M risk after reorg"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Results with Grit. The candidate owned regional contract cleanup after a reorg when no leader remained accountable. Quote: \"The contracts had $4M in potential auto-renewals.\" They made explicit trade-offs by reallocating staff and delaying hiring to finish the work. This demonstrates long-term strategic judgment at exec scope. The outcome was concrete financial risk avoided. Biggest strength is treating unglamorous cleanup as a business-level priority with resourcing decisions.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "After the reorg I asked my directs to close out the remaining vendor contracts and cost centers. I checked in once at the end of the quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened with the contracts?"
+        },
+        {
+          "role": "candidate",
+          "text": "Most were handled but two auto-renewed because the owners had left in the reorg."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you finished the unglamorous last part...",
+        "Role: Exec post-reorg",
+        "Situation: Vendor contracts and cost centers after reorg",
+        "Actions: Delegated to directs and checked once at quarter end",
+        "Outcome: Two contracts auto-renewed due to ownership gaps",
+        "Quote: \"Most were handled but two auto-renewed\"",
+        "Follow-up: What happened with the contracts? - Two slipped through"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Results with Grit. The candidate delegated cleanup but only checked once, allowing two contracts to auto-renew. Quote: \"Most were handled but two auto-renewed.\" At exec level this shows insufficient ownership of high-ambiguity, cross-org work after structural change. The story lacks strategic follow-through or trade-off decisions. The gap is treating unglamorous closeout as a one-time delegation rather than sustained priority."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Persistence on low-visibility work",
+      "junior": "Created personal checklist and updated manager weekly",
+      "senior": "Ran office hours and 1:1s to drive adoption",
+      "exec": "Tracked as OKR and reallocated staff for 6 weeks"
+    },
+    {
+      "signal": "Handling of ownership gaps",
+      "junior": "Finished reports without sprint assignment",
+      "senior": "Mapped risks across 15 teams post-migration",
+      "exec": "Owned $4M contract cleanup after reorg with no owner"
+    },
+    {
+      "signal": "Trade-off decisions",
+      "junior": "Stayed late two weeks on individual tasks",
+      "senior": "Coordinated timelines via influence without authority",
+      "exec": "Delayed hiring plan to resource tiger team"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "Zero production issues on migrated reports",
+      "senior": "Zero incidents after full deprecation",
+      "exec": "Avoided $4M auto-renewal spend across regions"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,180 @@
+{
+  "question": "Tell me about a time everything was a priority. How did you decide what mattered most?",
+  "principle": "Deliver Value Fast",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project we had three bugs and a feature request all marked P0. I listed them out, estimated effort, and asked my manager which one would unblock the most users if done today."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "She pointed to the login bug. I fixed it in two days, shipped, and the other items got reprioritized after the release."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time everything was a priority. How did you decide what mattered most?",
+        "- Junior dev, first project, three bugs + feature all P0",
+        "- Listed items, estimated effort, asked manager for tie-breaker",
+        "- Focused on login bug, shipped in 2 days, others reprioritized after",
+        "Quote: \"which one would unblock the most users if done today\"",
+        "Follow-up: Asked how they handled the remaining work; said they updated the list and took next item"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast. Candidate described a clear individual situation where multiple P0s existed and sought manager input to pick the highest immediate impact item rather than attempting all at once. The quote about unblocking users shows early focus on value over volume. They delivered one item quickly and allowed the rest to be re-evaluated post-release. This matches junior scope expectations around ownership of own work and coachability. Biggest strength is the explicit step of asking for prioritization help instead of guessing or multitasking.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Everything was marked urgent so I just started working on the first thing in my inbox and kept switching when new messages came in."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide which one to finish?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't really decide. I tried to make progress on all of them until the sprint ended."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time everything was a priority. How did you decide what mattered most?",
+        "- Junior, multiple urgent items, started with inbox order",
+        "- Switched tasks on new messages, no explicit decision rule",
+        "- Attempted progress on everything, sprint ended without clear delivery",
+        "Follow-up: Asked what they learned; said next time they would ask sooner but no specific method described"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast. The candidate defaulted to inbox order and task switching without any prioritization framework or attempt to clarify value. No evidence of seeking input or focusing on a single deliverable to create momentum. The outcome was diffuse effort across items with nothing clearly shipped. This shows weak ownership even at junior scope. Biggest gap is absence of any decision criteria or reflection on impact."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three teams needed API changes at once. I pulled usage data, ranked by customer impact, and ran a quick sync with the leads to align on the top two."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped the highest-impact change in three weeks, the other teams adjusted their timelines, and we reduced cross-team thrash by about 30 percent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time everything was a priority. How did you decide what mattered most?",
+        "- Senior, three teams pulling for API work simultaneously",
+        "- Used usage data to rank by customer impact, aligned leads on top two",
+        "- Shipped top item in 3 weeks, reduced thrash 30 percent",
+        "Quote: \"ranked by customer impact\"",
+        "Follow-up: Asked how they influenced without authority; described sharing data in the sync and letting leads adjust their own plans"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast. Candidate used data to create a shared view of impact across teams and drove alignment on the top two items rather than attempting everything. The three-week delivery and 30 percent thrash reduction provide concrete cross-team metrics. Influence happened through data and a short sync instead of authority. This fits senior expectations for cross-team impact and metrics. Biggest strength is turning conflicting priorities into a focused plan that others adopted.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I created a spreadsheet with all the requests and tried to negotiate a fair split of my time across the three teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did any single item ship faster as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. We spread effort and everything moved a little but nothing stood out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time everything was a priority. How did you decide what mattered most?",
+        "- Senior, three teams with API requests",
+        "- Built spreadsheet and negotiated time split",
+        "- Effort spread, nothing shipped with clear acceleration",
+        "Follow-up: Asked for metrics on impact; none provided beyond \"moved a little\""
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast. The candidate defaulted to equal time allocation without using data or customer impact to create focus. No single high-value item was accelerated. The result was incremental movement across items rather than a fast win that could unblock others. This misses senior expectations for cross-team influence and measurable value delivery. Biggest gap is treating prioritization as workload balancing instead of impact sequencing."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering, sales, and marketing all had competing top priorities for the quarter. I reviewed the revenue forecast and customer churn data, then proposed we deprioritize two marketing campaigns to fund a reliability fix that protected 8 percent of ARR."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the organization respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "Leadership agreed after seeing the churn correlation. We shipped the fix in six weeks and churn dropped measurably in the affected segment."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time everything was a priority. How did you decide what mattered most?",
+        "- Exec, three orgs with competing Q priorities",
+        "- Reviewed revenue and churn data, proposed dropping two campaigns to fund reliability fix protecting 8 percent ARR",
+        "- Fix shipped in 6 weeks, churn dropped in segment",
+        "Quote: \"protected 8 percent of ARR\"",
+        "Follow-up: Asked about long-term trade-offs; said they adjusted next-quarter roadmap to restore marketing capacity"
+      ],
+      "raiseFeedback": "Raises the bar on Deliver Value Fast. Candidate used revenue and churn data to make a strategic trade-off at org level, choosing a reliability fix over marketing campaigns. The six-week delivery protected 8 percent ARR and produced measurable churn reduction. Trade-offs were explicit and long-term roadmap adjustments were considered. This demonstrates exec-level strategic judgment and business impact. Biggest strength is linking prioritization directly to ARR protection rather than internal velocity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked each leader to rank their requests and then tried to sequence them based on who shouted loudest at the time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delivered pieces of most requests but nothing moved the key metrics noticeably that quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time everything was a priority. How did you decide what mattered most?",
+        "- Exec, multiple org leaders with top priorities",
+        "- Asked for rankings then sequenced by volume of requests",
+        "- Delivered pieces of most items, no measurable metric movement",
+        "Follow-up: Asked for specific trade-off decisions; none described beyond sequencing"
+      ],
+      "lowerFeedback": "Lowers the bar on Deliver Value Fast. The candidate relied on request volume instead of data-driven business impact to sequence work. No clear trade-offs were made and no single initiative delivered measurable results. The outcome was broad but shallow progress without protecting or growing key metrics. This falls short of exec expectations for strategic judgment under ambiguity. Biggest gap is absence of any revenue or customer-outcome anchor in the decision process."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Uses data or customer impact to rank",
+      "junior": "Asks manager for tie-breaker on user unblock",
+      "senior": "Pulls usage data and aligns leads on impact",
+      "exec": "Reviews revenue/churn to protect ARR"
+    },
+    {
+      "signal": "Makes explicit trade-offs",
+      "junior": "Ships one item then re-evaluates rest",
+      "senior": "Aligns on top two, others adjust timelines",
+      "exec": "Drops marketing campaigns to fund reliability"
+    },
+    {
+      "signal": "Delivers measurable fast value",
+      "junior": "Login bug fixed in 2 days",
+      "senior": "Top change shipped in 3 weeks, 30 percent less thrash",
+      "exec": "Fix in 6 weeks, churn drop in segment"
+    },
+    {
+      "signal": "Influences without authority",
+      "junior": "Seeks manager input",
+      "senior": "Shares data in sync, lets leads adjust plans",
+      "exec": "Proposes org-level shift accepted by leadership"
+    },
+    {
+      "signal": "Avoids equal-effort distribution",
+      "junior": "Does not attempt all tasks simultaneously",
+      "senior": "Rejects fair-split approach",
+      "exec": "Rejects sequencing by request volume"
+    }
+  ],
+  "kind": "lp"
+}

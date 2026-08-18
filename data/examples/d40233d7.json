@@ -1,0 +1,243 @@
+{
+  "question": "Tell me about feedback that was uncomfortable to give. How did you give it?",
+  "principle": "Raise the Bar",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed a senior engineer on my team had a habit of closing tickets without updating the docs, which slowed down the next person. I waited until after a sprint retro and asked if I could share an observation."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you actually say?"
+        },
+        {
+          "role": "candidate",
+          "text": "I said 'I've been stuck a couple times because the README didn't match the code you shipped. Can we pair on keeping it current?' They thanked me and we updated it together."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that feel and what happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was awkward at first but they started reminding the team in standups. My own PRs got reviewed faster after that."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about feedback that was uncomfortable to give. How did you give it?",
+        "Role: new grad on 6-person team, first real job",
+        "Situation: senior closing tickets without doc updates, blocking others",
+        "Action: waited for retro, framed as personal blocker + offer to pair",
+        "Outcome: senior changed behavior, docs improved, candidate's reviews sped up",
+        "Quote: 'I said I've been stuck because the README didn't match the code you shipped. Can we pair?'",
+        "Follow-up: Asked if they had ever received pushback; candidate described asking their manager for a code review rubric after first negative review"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate owned a local process gap and delivered feedback to someone more senior by tying it to their own blocked work and offering to pair. Quote shows they made the issue concrete rather than abstract. They followed up by seeking a rubric from their manager, demonstrating coachability. The result stayed within individual scope but shows early ownership of raising standards. Biggest strength is framing the feedback around shared success instead of blame.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw a teammate's code had a bug but didn't say anything because they had more experience."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the bug ship?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, it caused an incident the next week. My manager asked why no one spoke up."
+        },
+        {
+          "role": "interviewer",
+          "text": "What would you do differently?"
+        },
+        {
+          "role": "candidate",
+          "text": "Probably mention it in the PR comments next time if I'm sure."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about feedback that was uncomfortable to give. How did you give it?",
+        "Role: new grad",
+        "Situation: spotted bug in senior's code",
+        "Action: stayed silent",
+        "Outcome: incident occurred, manager questioned silence",
+        "Quote: 'I didn't say anything because they had more experience'",
+        "Follow-up: Asked what stopped them; candidate said fear of being wrong"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate chose not to raise a clear quality issue because of hierarchy, allowing an incident. The story shows no attempt to surface the concern even after the fact. Quote reveals the decision was driven by deference rather than any calculation of impact. No evidence of learning how to give upward feedback. Biggest gap is absence of ownership over team output at even the individual-contributor level."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams were duplicating work on a shared service because ownership was unclear. I scheduled 1:1s with both leads and brought data on duplicated effort."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you frame the feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told each lead 'Your teams are solving the same problem in parallel. Here's the ticket overlap. Can we agree on a single owner and split the remaining work?' One lead pushed back but we landed on a joint plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "Duplication dropped 60% in the next quarter and both teams cited the agreement in their retros."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about feedback that was uncomfortable to give. How did you give it?",
+        "Role: senior on platform team, 3 years exp",
+        "Situation: two teams duplicating a shared service",
+        "Action: gathered ticket data, ran 1:1s with both leads, proposed single owner",
+        "Outcome: 60% reduction in duplicated work, joint plan adopted",
+        "Quote: 'Your teams are solving the same problem in parallel. Here's the ticket overlap.'",
+        "Follow-up: Asked how they handled the pushback; candidate described offering to staff the transition work themselves"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate used concrete data to surface duplicated effort across teams and proposed a structural fix rather than a one-off request. They absorbed some of the transition cost themselves to reduce friction. Quote shows direct language without softening the problem. Result included measurable reduction and adoption by both teams. Biggest strength is turning an uncomfortable cross-team conversation into a durable ownership agreement.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I emailed a peer team that their API changes were breaking us but never followed up when they didn't reply."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had to add workarounds for two releases. Eventually my manager escalated."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why not a direct conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I thought the email was enough and didn't want to create tension."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about feedback that was uncomfortable to give. How did you give it?",
+        "Role: senior engineer",
+        "Situation: peer team's API changes breaking downstream",
+        "Action: sent one email, no follow-up",
+        "Outcome: workarounds required, manager had to escalate",
+        "Quote: 'I thought the email was enough and didn't want to create tension'",
+        "Follow-up: Asked what they learned; candidate said they now prefer Slack over email"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate relied on a single low-effort channel and avoided direct conversation despite repeated breakage. No attempt to influence without authority or to quantify impact for the other team. Quote shows the decision was driven by desire to avoid tension rather than any assessment of leverage. Escalation was left to the manager. Biggest gap is lack of persistence or creative framing when initial outreach failed."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our sales org was consistently over-promising on a feature that engineering had deprioritized. I brought the mismatch to the CEO and proposed we either staff it or change the messaging."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you deliver that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the revenue at risk if we kept promising what we couldn't deliver, plus the engineering cost to do it right. I recommended we publicly adjust the roadmap and retrain the sales team on realistic timelines."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you discuss?"
+        },
+        {
+          "role": "candidate",
+          "text": "We chose to cut three smaller bets to free two engineers. Sales hit their number but with a smaller pipeline the following quarter. I owned the decision in the all-hands."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about feedback that was uncomfortable to give. How did you give it?",
+        "Role: VP Engineering, 12 years exp",
+        "Situation: sales over-promising on deprioritized feature",
+        "Action: presented revenue risk and engineering cost to CEO, recommended roadmap adjustment and sales retraining",
+        "Outcome: cut three smaller bets, sales hit number with adjusted pipeline, candidate owned decision publicly",
+        "Quote: 'I showed the revenue at risk if we kept promising what we couldn't deliver'",
+        "Follow-up: Asked about long-term effect on sales culture; candidate described quarterly joint planning sessions they instituted"
+      ],
+      "raiseFeedback": "Raises the bar. The candidate surfaced a systemic misalignment between sales commitments and engineering capacity at the company level and forced a resource trade-off decision. They accepted short-term pipeline impact in exchange for credible delivery. Quote demonstrates they led with business impact rather than engineering frustration. They publicly owned the decision, modeling the standard. Biggest strength is treating the uncomfortable feedback as a strategic choice with measurable downstream effects.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I told the CEO our sales forecasts were unrealistic but didn't push when they disagreed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened?"
+        },
+        {
+          "role": "candidate",
+          "text": "We missed the quarter and had to lay off 8% of the company. I raised it again in the post-mortem."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why not escalate earlier?"
+        },
+        {
+          "role": "candidate",
+          "text": "I assumed the CEO had more context on revenue."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about feedback that was uncomfortable to give. How did you give it?",
+        "Role: VP Engineering",
+        "Situation: unrealistic sales forecasts",
+        "Action: mentioned once, dropped after disagreement",
+        "Outcome: missed quarter, 8% layoff, raised again only in post-mortem",
+        "Quote: 'I assumed the CEO had more context on revenue'",
+        "Follow-up: Asked what they would change; candidate said they would document the risk in writing"
+      ],
+      "lowerFeedback": "Lowers the bar. The candidate raised a critical business risk once and accepted the CEO's disagreement without further data or escalation. Quote reveals they deferred to hierarchy instead of treating the mismatch as an org-level problem they owned. The layoff occurred before any second attempt. No evidence of strategic framing or willingness to force a trade-off discussion. Biggest gap is treating the feedback as a one-time statement rather than a leadership obligation."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Directness of language",
+      "junior": "Uses 'Can we pair?' instead of blame",
+      "senior": "Names duplicated effort with ticket data",
+      "exec": "Frames revenue risk and required cuts"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual PR velocity improves",
+      "senior": "Cross-team duplication reduced 60%",
+      "exec": "Company roadmap and headcount trade-off"
+    },
+    {
+      "signal": "Handling pushback",
+      "junior": "Offers to pair when senior resists",
+      "senior": "Absorbs transition work to close deal",
+      "exec": "Publicly owns decision after cutting bets"
+    },
+    {
+      "signal": "Persistence after initial resistance",
+      "junior": "Seeks rubric from manager",
+      "senior": "Schedules 1:1s instead of one email",
+      "exec": "Forces resource decision at CEO level"
+    },
+    {
+      "signal": "Ownership of outcome",
+      "junior": "Links feedback to own blocked work",
+      "senior": "Measures duplication drop in next quarter",
+      "exec": "Accepts short-term pipeline hit"
+    },
+    {
+      "signal": "Learning from the moment",
+      "junior": "Asks for review rubric afterward",
+      "senior": "Institutes joint planning sessions",
+      "exec": "Changes sales-engineering cadence"
+    }
+  ],
+  "kind": "lp"
+}

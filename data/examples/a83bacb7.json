@@ -1,0 +1,204 @@
+{
+  "question": "Tell me about a time you drove cost per unit down while volume was growing.",
+  "principle": "Hate Waste",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first role on the ops team I noticed our nightly data export job was running the same queries on growing volumes without any caching. I added a simple Redis layer for repeated lookups and tuned the query batch sizes."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the volume growth and cost impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Volume doubled over six months. Cost per exported record dropped from 0.8 cents to 0.3 cents on the affected pipeline."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anyone else use the change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I documented it and two other teammates copied the pattern on their jobs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you drove cost per unit down while volume was growing.",
+        "Junior ops role, noticed export job waste on growing data",
+        "Added Redis cache + query tuning",
+        "Volume 2x, cost/record 0.8c -> 0.3c",
+        "Quote: 'I documented it and two teammates copied it'",
+        "Follow-up: Asked about cross-use; candidate had shared the pattern"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste for junior level. The candidate identified waste in their own daily work, measured the per-unit impact, and saw the change reused by peers. Quote: 'I documented it and two teammates copied the pattern.' This shows ownership of their scope plus coachability in sharing the fix. The metrics are modest but tied directly to volume growth. Biggest strength is the clear before/after cost per unit with evidence of learning applied beyond their task.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team switched to a cheaper cloud instance type last quarter and that lowered our bill."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you drive the change and what happened to volume?"
+        },
+        {
+          "role": "candidate",
+          "text": "The manager told us to use the new type. Volume stayed flat because the project was winding down."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you drove cost per unit down while volume was growing.",
+        "Candidate credits manager for instance change",
+        "No personal ownership or measurement of per-unit cost",
+        "Volume did not grow",
+        "Follow-up: Clarified volume stayed flat"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. The candidate did not own the decision or measure cost per unit; they simply followed a manager directive. Volume was flat, so the core condition of the question was not met. Quote: 'The manager told us to use the new type.' No evidence of identifying waste themselves or learning from the outcome. Biggest gap is lack of individual ownership and absence of volume growth."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout service was seeing 40% higher traffic year-over-year. I led a cross-team effort to replace per-request database calls with a materialized view refreshed every minute."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measured impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Cost per checkout dropped 28% even as traffic grew 42%. Two other services adopted the same pattern after we published the metrics."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to adopt it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a brown-bag and shared the CloudWatch dashboard showing the savings."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you drove cost per unit down while volume was growing.",
+        "Senior, checkout service, 40% traffic growth",
+        "Drove materialized view project across teams",
+        "28% cost per checkout drop at 42% volume increase",
+        "Quote: 'I ran a brown-bag and shared the CloudWatch dashboard'",
+        "Follow-up: How adoption happened; candidate influenced via data"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste for senior level. The candidate drove a measurable reduction in cost per transaction while volume grew substantially and influenced two other teams without authority. Quote: 'I ran a brown-bag and shared the CloudWatch dashboard showing the savings.' Story shows cross-team scope and clear metrics tied to the principle. The follow-up confirms influence came from data rather than mandate. Biggest strength is the combination of personal ownership and reuse by others.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We moved some workloads to spot instances and saved money."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did volume change and what was your role?"
+        },
+        {
+          "role": "candidate",
+          "text": "Volume grew on the main service but the spot change was only on a side pipeline I maintained. Savings were about 15% on that pipeline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you drove cost per unit down while volume was growing.",
+        "Candidate points to spot instances on side pipeline",
+        "Volume growth was on main service, not the changed area",
+        "No cross-team influence mentioned",
+        "Follow-up: Confirmed limited scope"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. The change was isolated to a side pipeline the candidate already owned and did not address the area where volume was actually growing. No evidence of influencing other teams or measuring true cost per unit at the service level. Quote: 'Volume grew on the main service but the spot change was only on a side pipeline.' Biggest gap is narrow scope that fails to demonstrate senior-level impact or leverage."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When we scaled the marketplace business from 2M to 8M orders, infrastructure cost per order was rising faster than revenue. I sponsored a program to renegotiate reserved capacity deals and shift non-customer workloads to cheaper regions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What were the results and trade-offs?"
+        },
+        {
+          "role": "candidate",
+          "text": "Cost per order fell 22% while orders grew 4x. The main trade-off was a 6-week migration window that delayed one new feature launch by a month."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you decide the trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "I reviewed the projected savings against the feature delay with the product and finance teams and we agreed the long-term margin impact justified it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you drove cost per unit down while volume was growing.",
+        "Exec, marketplace scale 2M to 8M orders",
+        "Sponsored capacity renegotiation + region shift",
+        "22% cost/order reduction at 4x volume",
+        "Quote: 'I reviewed the projected savings against the feature delay with product and finance'",
+        "Follow-up: Trade-off decision process; candidate showed strategic judgment"
+      ],
+      "raiseFeedback": "Raises the bar on Hate Waste at exec level. The leader identified rising cost-per-order at business scale, drove a multi-quarter program with clear metrics, and made an explicit trade-off decision involving product impact. Quote: 'I reviewed the projected savings against the feature delay with product and finance.' Story demonstrates org-level leverage and long-term thinking rather than heroics. The follow-up confirms the candidate weighed business trade-offs. Biggest strength is connecting waste reduction directly to margin and growth strategy.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We told teams to turn off unused resources and that helped the cloud bill."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the per-unit impact at business scale?"
+        },
+        {
+          "role": "candidate",
+          "text": "The bill went down but we didn't track cost per order. Volume kept growing so the savings were temporary."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you drove cost per unit down while volume was growing.",
+        "Candidate gave a general 'turn off unused resources' directive",
+        "No per-unit metric tracked",
+        "Savings described as temporary",
+        "Follow-up: Confirmed lack of sustained measurement"
+      ],
+      "lowerFeedback": "Lowers the bar on Hate Waste. The approach was a one-time directive without sustained per-unit measurement or strategic framing at business scale. Quote: 'We didn't track cost per order.' No evidence of trade-off analysis or long-term leverage. Biggest gap is absence of executive judgment; the story stays at tactical cost control rather than linking waste reduction to growth economics."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task with reuse by peers",
+      "senior": "Cross-team service change with adoption",
+      "exec": "Business-level program with product trade-offs"
+    },
+    {
+      "signal": "Measurement of cost per unit",
+      "junior": "Clear before/after on own pipeline",
+      "senior": "Tracked at service level with volume growth",
+      "exec": "Tracked at order level across 4x scale"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Shared documentation",
+      "senior": "Brown-bag + dashboard drove adoption",
+      "exec": "Sponsored program with finance/product alignment"
+    },
+    {
+      "signal": "Handling of trade-offs",
+      "junior": "Not required at this level",
+      "senior": "Minor coordination cost",
+      "exec": "Explicit 1-month feature delay vs margin gain"
+    },
+    {
+      "signal": "Sustained impact",
+      "junior": "Pattern reused by others",
+      "senior": "Other services adopted the approach",
+      "exec": "Cost per order reduction held at 4x volume"
+    }
+  ],
+  "kind": "lp"
+}

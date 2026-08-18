@@ -1,0 +1,201 @@
+{
+  "question": "Tell me about feedback you disagreed with. What did you do with it?",
+  "principle": "Learn Voraciously",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager said my PR descriptions were too brief and missed context for reviewers. I disagreed because I thought the code changes were self-explanatory."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tried writing one detailed description on the next PR even though it felt unnecessary. Reviewers caught an edge case I had overlooked. After that I started including a short summary plus risks section."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did that change your reviews?"
+        },
+        {
+          "role": "candidate",
+          "text": "Turnaround time dropped by about a day on average and I got fewer clarification questions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about feedback you disagreed with. What did you do with it?",
+        "Junior dev received feedback on PR descriptions being too brief",
+        "Tried one detailed version despite disagreement, saw reviewers catch an edge case",
+        "Quote: \"Turnaround time dropped by about a day on average\"",
+        "Follow-up: How did that change your reviews? - Adopted summary + risks section going forward"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously. The candidate received feedback on PR descriptions being too brief, initially disagreed, then tested one detailed version anyway and observed reviewers catching an edge case. The concrete outcome was turnaround time dropping by about a day. This shows coachability at the individual contributor level expected for junior roles. The story stays grounded in their own work rather than claiming broad process change. Biggest strength is the willingness to experiment with the feedback before rejecting it.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My manager told me my estimates were too optimistic. I disagreed because I had already padded them."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you change how you estimated after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I kept estimating the same way and just told the team the dates were aggressive."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about feedback you disagreed with. What did you do with it?",
+        "Received feedback that estimates were too optimistic",
+        "Disagreed and continued with same approach",
+        "Quote: \"I kept estimating the same way\"",
+        "Follow-up: Did you change how you estimated after that? - No adjustment made"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate received feedback that estimates were too optimistic, disagreed, and made no change to their approach. They continued using the same method without testing the input. This shows limited openness to feedback at the individual level expected for juniors. The response lacks any evidence of trying the suggestion or reflecting on outcomes. Biggest gap is absence of any learning action after disagreement."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A peer team lead said our service's API design would create too much operational load for them. I thought the design was clean and the load was manageable."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a working session to map their actual on-call pain points. We adjusted two endpoints and added a bulk operation. Their incident rate on our service dropped 40% over the next quarter."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect how you handle cross-team feedback now?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, I now default to a 30-minute mapping call before pushing back on design feedback."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about feedback you disagreed with. What did you do with it?",
+        "Senior received cross-team feedback on API design creating operational load",
+        "Ran working session, adjusted endpoints, added bulk op",
+        "Quote: \"Their incident rate on our service dropped 40%\"",
+        "Follow-up: Did this affect how you handle cross-team feedback now? - Now defaults to mapping call before pushing back"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously. The candidate received cross-team feedback that their API design would increase operational load, initially disagreed, then ran a working session to map pain points and made targeted changes. The result was a 40% drop in incidents for the other team. This demonstrates influence without authority and measurable cross-team impact appropriate for senior scope. The follow-up shows the learning became a repeatable practice. Biggest strength is turning disagreement into a concrete process adjustment that benefited another team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Another team complained our API was hard to integrate with. I felt their integration was just poorly written."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you make any changes?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a few docs but kept the design the same. Their issues continued."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about feedback you disagreed with. What did you do with it?",
+        "Received cross-team feedback on API integration difficulty",
+        "Added docs but no design changes",
+        "Quote: \"We added a few docs but kept the design the same\"",
+        "Follow-up: Did you make any changes? - Minimal action, issues persisted"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate received feedback from another team on API integration difficulty, disagreed, and made only superficial documentation changes without addressing the core design. No measurable improvement occurred. This shows limited willingness to learn from cross-team input at the senior level where influence across teams is expected. The story stays defensive rather than exploratory. Biggest gap is lack of any real adaptation or follow-through after disagreement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "The board questioned our heavy investment in a new market vertical given flat early traction. I initially believed the long-term data justified the spend."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked for a six-week data deep-dive with the finance and sales teams to test three alternative scenarios. We reduced headcount in the vertical by 25% while keeping the core bet but with clearer milestones. Two quarters later the vertical hit its revised targets and the board approved continued funding."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change in how you evaluate bets after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I now require explicit kill criteria on every major initiative before the first dollar is spent."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about feedback you disagreed with. What did you do with it?",
+        "Exec received board feedback questioning heavy market vertical investment",
+        "Ran six-week data deep-dive, reduced headcount 25%, set clearer milestones",
+        "Quote: \"The vertical hit its revised targets and the board approved continued funding\"",
+        "Follow-up: What did you change in how you evaluate bets after that? - Now requires explicit kill criteria upfront"
+      ],
+      "raiseFeedback": "Raises the bar on Learn Voraciously. The candidate received high-stakes feedback from the board on a major investment, initially disagreed, then ran a structured data deep-dive that led to a 25% headcount reduction and clearer milestones. The vertical later met revised targets and secured continued funding. This reflects strategic judgment and org-level impact expected at exec scope. The follow-up shows the learning was institutionalized. Biggest strength is using disagreement as a prompt for rigorous re-evaluation rather than defense of the original plan.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Investors pushed back on our pricing strategy being too aggressive. I believed the data supported it."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actions followed?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran a few more internal models but ultimately kept the original pricing. Growth slowed and we had to revisit it six months later."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about feedback you disagreed with. What did you do with it?",
+        "Received investor feedback on aggressive pricing strategy",
+        "Ran internal models but no change to approach",
+        "Quote: \"We kept the original pricing. Growth slowed\"",
+        "Follow-up: What actions followed? - Delayed revisit after six months of underperformance"
+      ],
+      "lowerFeedback": "Lowers the bar on Learn Voraciously. The candidate received feedback from investors on pricing strategy, disagreed, and made no material change after internal modeling. Growth slowed and the decision had to be revisited months later. This shows limited strategic openness to external input at the exec level where long-term trade-offs matter. The response lacks evidence of testing the feedback in a timely way. Biggest gap is absence of proactive learning or adjustment before negative outcomes materialized."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Willingness to test feedback despite disagreement",
+      "junior": "Tried one instance and observed result",
+      "senior": "Ran cross-team session and measured impact",
+      "exec": "Structured multi-week data exercise with trade-off decisions"
+    },
+    {
+      "signal": "Scope of learning applied",
+      "junior": "Changed personal PR process",
+      "senior": "Shifted cross-team design review habit",
+      "exec": "Institutionalized kill criteria for all major bets"
+    },
+    {
+      "signal": "Evidence of outcome",
+      "junior": "Day reduction in review time",
+      "senior": "40% incident drop for peer team",
+      "exec": "Board re-approved funding after revised targets met"
+    },
+    {
+      "signal": "Handling of pushback",
+      "junior": "Individual coachability shown",
+      "senior": "Influence without authority demonstrated",
+      "exec": "Strategic re-evaluation under ambiguity"
+    },
+    {
+      "signal": "Defensiveness level",
+      "junior": "Low in strong example, high in weak",
+      "senior": "Moderate in strong, persistent in weak",
+      "exec": "Minimal in strong, delayed action in weak"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+  "principle": "Wow the Customer",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I was on support for a SaaS tool. A customer had a billing glitch that charged them twice. Fixing it meant refunding immediately, which cut our monthly revenue by $800 for that account. I did it anyway because the contract allowed it and they were already frustrated."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "They stayed and renewed at a higher tier six months later. My manager later used the case in training."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+        "Role: L2 support rep, situation: double-billing error on $800 account",
+        "Action: Issued refund same day despite revenue target pressure, escalated only for process fix",
+        "Outcome: Customer renewed +20% ARR; case reused in onboarding",
+        "Quote: 'I knew the numbers would look bad that month but the trust mattered more'",
+        "Follow-up: How did you decide? - 'Talked to my lead first, then checked the contract and past tickets'"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer. Junior candidate described refunding a double-billed customer despite monthly revenue pressure. Quote: 'I knew the numbers would look bad that month but the trust mattered more.' They owned the decision after a quick lead check and saw renewal six months later. The story stays within individual scope yet shows clear customer-first judgment. Biggest strength is linking the short-term hit directly to a measurable renewal. No evidence of pushing the problem elsewhere.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Once a customer wanted an early refund on a subscription. I told them the policy was no refunds after 30 days so we kept the revenue."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you consider any exception?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, policy is policy and my metrics were already tight that quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+        "Role: Support rep, situation: refund request after 30-day window",
+        "Action: Strictly followed policy, no exception granted",
+        "Outcome: Revenue retained but no follow-up on customer reaction",
+        "Quote: 'Policy is policy and my metrics were already tight'",
+        "Follow-up: Any later impact? - 'Not that I tracked'"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer. The candidate enforced a 30-day refund cutoff to protect quarterly metrics with no exploration of an exception. Quote: 'Policy is policy and my metrics were already tight.' They showed no ownership beyond the rule and did not track whether the customer left or complained publicly. The story stays local but demonstrates zero willingness to trade short-term numbers for trust. Biggest gap is absence of any customer outcome or learning from the interaction."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team was about to ship a new upsell feature that would have added 12% to Q3 bookings. Two pilot customers flagged data-privacy concerns that would require a six-week delay to fix properly."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled the feature from the release, briefed the sales team, and worked with the two accounts directly. We launched a stripped-down version later and those customers expanded 30% within a year."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+        "Role: Senior PM, situation: privacy issue in upsell feature worth 12% Q3 target",
+        "Action: Pulled feature, aligned sales, fixed with two pilot customers",
+        "Outcome: Delayed revenue but two accounts expanded 30% the next year",
+        "Quote: 'I told leadership the short-term miss was cheaper than losing the logos'",
+        "Follow-up: How did you influence the roadmap? - 'Ran a cross-team review with legal and support, then updated the launch criteria'"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer. Senior PM delayed a feature projected at 12% of quarterly bookings after two pilots raised privacy flags. Quote: 'I told leadership the short-term miss was cheaper than losing the logos.' They coordinated across sales, legal, and support, then saw 30% expansion from the same accounts. The decision shows cross-team influence and clear metrics. Biggest strength is tying the delay to a concrete renewal outcome rather than heroics. Still room to show how they prevented similar issues at scale.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a feature customers loved in beta but it had a scaling bug. I pushed to ship anyway because the bookings target was aggressive."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did customers react?"
+        },
+        {
+          "role": "candidate",
+          "text": "A couple complained but support handled it and we fixed it in the next sprint. Revenue came in on target."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+        "Role: Senior PM, situation: scaling bug in revenue feature",
+        "Action: Shipped on schedule despite known issue",
+        "Outcome: Bookings hit, support absorbed complaints",
+        "Quote: 'Support handled it and we fixed it in the next sprint'",
+        "Follow-up: Any customer loss? - 'Not that I recall'"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer. Senior candidate shipped a feature with a known scaling bug to protect bookings targets. Quote: 'Support handled it and we fixed it in the next sprint.' They delegated fallout to support and showed no proactive mitigation or customer communication. The story includes cross-team elements but frames them as hand-offs rather than influence. Biggest gap is lack of any evidence that customer trust was preserved or measured after the decision."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a major enterprise renewal at risk because our pricing model no longer matched their usage pattern. Honoring their request would have meant walking away from $4M in near-term ARR."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-off did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "I approved a custom pricing amendment for that account and used it to redesign the packaging for the entire segment. The single renewal closed and the new model lifted segment retention by 18% over two years."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+        "Role: VP Product, situation: $4M renewal threatened by outdated pricing",
+        "Action: Approved custom deal, drove packaging redesign for whole segment",
+        "Outcome: Renewal closed; segment retention +18% over 24 months",
+        "Quote: 'We absorbed the short-term hit to protect the relationship and the broader book'",
+        "Follow-up: How did the board react? - 'Presented the retention math and they backed the change'"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer. Exec approved a custom pricing amendment that sacrificed $4M in near-term ARR to save a strategic renewal. Quote: 'We absorbed the short-term hit to protect the relationship and the broader book.' They converted the exception into a segment-wide packaging change that delivered 18% retention lift. The decision reflects org-level impact and long-term strategic judgment. Biggest strength is linking one customer action to measurable portfolio health. Minor gap is limited detail on how they handled internal resistance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "An important customer asked for pricing relief to renew. I held the line on list price to protect margins."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened to the account?"
+        },
+        {
+          "role": "candidate",
+          "text": "They renewed at full price after some negotiation. We protected the revenue target for the year."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you gave up a short-term gain in order to keep customer trust.",
+        "Role: VP, situation: renewal negotiation on large account",
+        "Action: Refused custom pricing, held to list",
+        "Outcome: Renewal at full price, annual target protected",
+        "Quote: 'We protected the revenue target for the year'",
+        "Follow-up: Any downstream effects? - 'Churn in that segment stayed flat'"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer. Exec held firm on list pricing during a major renewal to protect annual revenue targets. Quote: 'We protected the revenue target for the year.' They secured the renewal but provided no evidence of broader customer impact or strategic learning. The story operates at org scale yet treats the decision as a one-off negotiation win. Biggest gap is absence of any trade-off consideration or long-term trust metric."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of customer outcome",
+      "junior": "Owns refund decision after quick check with lead",
+      "senior": "Coordinates across sales/legal to own delay decision",
+      "exec": "Converts one renewal into segment packaging change"
+    },
+    {
+      "signal": "Willingness to trade short-term metrics",
+      "junior": "Accepts monthly revenue dip for renewal",
+      "senior": "Accepts quarterly booking miss for two accounts",
+      "exec": "Accepts $4M ARR delay for 18% retention lift"
+    },
+    {
+      "signal": "Evidence of influence beyond own team",
+      "junior": "Shares case in team training (limited)",
+      "senior": "Aligns sales and updates launch criteria",
+      "exec": "Drives board-approved packaging redesign"
+    },
+    {
+      "signal": "Use of concrete metrics",
+      "junior": "Links refund to +20% renewal ARR",
+      "senior": "Links delay to 30% expansion",
+      "exec": "Links amendment to 18% segment retention"
+    },
+    {
+      "signal": "Learning or prevention mindset",
+      "junior": "Case reused for onboarding",
+      "senior": "Updates future launch criteria",
+      "exec": "Redesigns entire segment model"
+    }
+  ],
+  "kind": "lp"
+}

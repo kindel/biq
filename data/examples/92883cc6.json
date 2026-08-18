@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time iterating would have made the user experience worse. What did you do?",
+  "principle": "Iteration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first feature, we planned three quick UI tweaks after launch based on early feedback. After the second tweak, session times dropped because the menu kept moving. I flagged it in standup, pulled the third change, and we shipped the current version."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did your manager say?"
+        },
+        {
+          "role": "candidate",
+          "text": "They agreed and asked me to write a short note on the decision for the next retro."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time iterating would have made the user experience worse. What did you do?",
+        "Role: new grad on small web feature",
+        "Situation: third planned tweak after two changes hurt metrics",
+        "Action: raised in standup, stopped the change, documented decision",
+        "Outcome: kept current UX stable",
+        "Quote: \"I flagged it in standup and pulled the third change\"",
+        "Follow-up: What did your manager say? -> They agreed and asked for a retro note"
+      ],
+      "raiseFeedback": "The candidate described a concrete case where stopping iteration protected the experience. They owned identifying the drop in session time and acted within their individual scope by raising it in standup. The story shows they weighed continued changes against observed user impact rather than following the original plan. Manager feedback reinforced the decision, which the candidate then documented. This meets the bar for junior level on Iteration by demonstrating local ownership and responsiveness to data. The main gap is that the example stays within one feature and does not yet show cross-team coordination.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We kept shipping small updates every sprint. After a while users said the flow felt inconsistent but we still had more ideas so we kept going."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you measure any impact before the fourth change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we just assumed more changes would help."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time iterating would have made the user experience worse. What did you do?",
+        "Role: new grad on small web feature",
+        "Situation: kept adding tweaks despite user complaints on inconsistency",
+        "Action: continued with original plan without new data",
+        "Outcome: flow remained inconsistent",
+        "Quote: \"we just assumed more changes would help\"",
+        "Follow-up: Did you measure any impact before the fourth change? -> No measurement, kept going"
+      ],
+      "lowerFeedback": "The candidate described continued iteration even after users reported inconsistency, without checking metrics. They defaulted to the original plan rather than adjusting based on signals. No evidence of ownership in deciding to stop or change course. The example shows lack of judgment on when iteration stops adding value. This lowers the bar for a junior on Iteration because the candidate did not demonstrate learning from feedback or protecting the experience."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our team had a roadmap of five incremental search improvements. After the third release, internal A/B data showed conversion flattening and support tickets rising on discoverability. I convinced the PM and two partner teams to pause the remaining items, run a focused study, and ship a single consolidated change instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you align the other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I shared the A/B drop and ticket trends in a joint review, then proposed the study as the next step."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time iterating would have made the user experience worse. What did you do?",
+        "Role: senior on search platform",
+        "Situation: five planned increments; third release showed flattening conversion and rising tickets",
+        "Action: shared data with PM and two partner teams, proposed pause and consolidated study",
+        "Outcome: remaining increments canceled, single change shipped",
+        "Quote: \"I convinced the PM and two partner teams to pause\"",
+        "Follow-up: How did you align the other teams? -> Joint review with A/B data and ticket trends"
+      ],
+      "raiseFeedback": "The candidate identified that further small iterations would degrade the experience and used data to influence two partner teams to change course. They showed cross-team impact by running a joint review and securing agreement to pause. The decision protected conversion and support load while still delivering a consolidated improvement. This raises the bar for senior on Iteration because the candidate exercised influence without authority and tied the choice to measurable user outcomes. The story is grounded in platform-level scope rather than a single feature.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had a list of search tweaks. After a few releases some metrics dipped but the team wanted to keep the cadence so we finished the list."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to change the plan with the other teams?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in a meeting but the roadmap stayed the same."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time iterating would have made the user experience worse. What did you do?",
+        "Role: senior on search platform",
+        "Situation: metrics dipped mid-roadmap but cadence continued",
+        "Action: mentioned concern in one meeting",
+        "Outcome: roadmap unchanged",
+        "Quote: \"I mentioned it in a meeting but the roadmap stayed the same\"",
+        "Follow-up: Did you try to change the plan with the other teams? -> Single mention, no follow-through"
+      ],
+      "lowerFeedback": "The candidate observed a metric dip yet allowed the iteration plan to continue without pushing for adjustment. Influence was limited to a single mention rather than sustained cross-team effort. No evidence of using data to drive a different outcome or protecting the user experience. This lowers the bar for senior on Iteration because the candidate did not demonstrate the expected level of influence or willingness to alter plans when signals indicated harm."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "At the org level we had a multi-quarter program of successive product refinements. Six months in, retention in the top cohort began declining while support costs rose. I recommended to the leadership team that we halt the remaining increments, reallocate the headcount to a new discovery track, and communicate the pivot to customers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact of stopping?"
+        },
+        {
+          "role": "candidate",
+          "text": "We avoided an estimated 8% further retention drop and freed two teams for higher-ROI work the following quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time iterating would have made the user experience worse. What did you do?",
+        "Role: exec owning multi-quarter product program",
+        "Situation: successive refinements caused top-cohort retention decline and rising support costs",
+        "Action: recommended halt to leadership, reallocate to discovery, customer communication",
+        "Outcome: avoided further retention drop, two teams freed for higher-ROI work",
+        "Quote: \"I recommended to the leadership team that we halt the remaining increments\"",
+        "Follow-up: What was the business impact of stopping? -> Avoided 8% further drop, reallocated teams"
+      ],
+      "raiseFeedback": "The candidate recognized at the program level that continued iteration was harming retention and support costs and made the strategic call to stop. They influenced the leadership team to reallocate resources and communicated the change externally. The decision traded short-term roadmap completion for long-term customer and business health. This raises the bar for exec on Iteration by showing org-level judgment, clear trade-offs, and leverage through resource reallocation rather than heroic fixes. The example is calibrated to high ambiguity and long-term thinking.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The program kept delivering refinements every quarter. Some retention signals softened but we stayed the course to hit the original milestones."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you escalate the retention trend?"
+        },
+        {
+          "role": "candidate",
+          "text": "It came up in QBRs but the milestones took priority."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time iterating would have made the user experience worse. What did you do?",
+        "Role: exec owning multi-quarter product program",
+        "Situation: retention softened during refinement program",
+        "Action: continued to protect original milestones",
+        "Outcome: program completed as planned",
+        "Quote: \"the milestones took priority\"",
+        "Follow-up: Did you escalate the retention trend? -> Mentioned in QBRs, no change"
+      ],
+      "lowerFeedback": "The candidate allowed the iteration program to continue despite softening retention signals because milestones took priority. No evidence of strategic trade-off or willingness to alter direction at the org level. Escalation stayed at the status-quo level without driving a different outcome. This lowers the bar for exec on Iteration because the candidate did not demonstrate the long-term judgment or leverage expected when iteration begins to harm the business."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Recognizes when iteration harms UX",
+      "junior": "Flags metric drop within feature and stops planned change",
+      "senior": "Uses A/B and ticket data to pause cross-team roadmap",
+      "exec": "Halts org program based on retention and cost trends"
+    },
+    {
+      "signal": "Acts on data vs plan",
+      "junior": "Raises in standup after seeing session time drop",
+      "senior": "Runs joint review and secures pause",
+      "exec": "Recommends reallocation to leadership"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Individual feature and standup",
+      "senior": "PM plus two partner teams",
+      "exec": "Leadership team and resource reallocation"
+    },
+    {
+      "signal": "Outcome ownership",
+      "junior": "Documents decision for retro",
+      "senior": "Consolidated change ships",
+      "exec": "Avoids further retention drop and frees teams"
+    },
+    {
+      "signal": "Trade-off clarity",
+      "junior": "Stops third tweak to protect current UX",
+      "senior": "Trades remaining increments for study",
+      "exec": "Trades milestone completion for higher-ROI work"
+    }
+  ],
+  "kind": "value"
+}

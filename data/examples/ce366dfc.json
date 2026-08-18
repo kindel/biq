@@ -1,0 +1,207 @@
+{
+  "question": "Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+  "principle": "Efficiency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project I wanted to build a custom parser for logs but my mentor suggested using the existing open-source library we already had in the repo. I switched to that and finished in two days instead of a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made you switch?"
+        },
+        {
+          "role": "candidate",
+          "text": "The library was already tested in production and I could reuse the error handling. My change only needed a 40-line wrapper."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "We shipped on time and the on-call team didn't get new alerts. I learned to check what already exists before starting from scratch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+        "Role: new grad on first team project; Situation: log parsing task with tight deadline",
+        "Action: dropped custom parser after mentor feedback, used existing library with thin wrapper",
+        "Outcome: shipped two days early, no new on-call alerts, reused tested code",
+        "Quote: \"I learned to check what already exists before starting from scratch.\"",
+        "Follow-up: Asked why switched; candidate cited production testing and reuse"
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency for a junior. The candidate described choosing an existing library over a custom parser after receiving feedback from their mentor. They delivered two days early with a 40-line wrapper and avoided new alerts for on-call. This shows local ownership and quick incorporation of input on a single task. The story is small in scope but demonstrates the right instinct to favor known solutions. Biggest strength is the explicit learning point about checking existing code first.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I built a new parser because the existing one didn't have the exact fields I needed. It took longer but the code was cleaner."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you check how much time that would add?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just wanted to learn how parsers work."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+        "Role: new grad; Situation: log parsing task",
+        "Action: built custom parser anyway because existing one lacked exact fields",
+        "Outcome: took longer, no mention of shipping impact or reuse",
+        "Quote: \"I just wanted to learn how parsers work.\"",
+        "Follow-up: Asked about time check; candidate admitted they did not evaluate effort"
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency for a junior. The candidate chose to build a new parser instead of adapting the existing library because it lacked a few fields and they wanted to learn. They did not measure the added time or production risk. The story shows preference for novelty over reuse even after the interviewer probed. No evidence of adjusting based on feedback. Biggest gap is lack of ownership over the delivery timeline."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams wanted to build a new workflow engine. I pushed to extend the existing one we used in three other services instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get alignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week spike comparing both options and shared latency and maintenance numbers with the leads. We agreed on extension and saved four engineer-months."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "The other teams adopted the same extension pattern and we cut similar work in two more services last quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+        "Role: senior on platform team; Situation: two teams proposing new workflow engine",
+        "Action: ran spike comparing options, shared metrics, influenced leads to extend existing engine",
+        "Outcome: saved four engineer-months; other teams later reused the pattern",
+        "Quote: \"We agreed on extension and saved four engineer-months.\"",
+        "Follow-up: Asked how alignment happened; candidate cited shared metrics and cross-team discussion"
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency for a senior. The candidate influenced two teams to extend an existing workflow engine rather than build a new one by running a short spike and sharing concrete metrics. This avoided four engineer-months of work and created a reusable pattern adopted by additional services. The story shows influence without authority and measurable cross-team impact. The decision was driven by maintenance and latency data. Biggest strength is the follow-on reuse that multiplied the efficiency gain.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I let the teams build their own workflow engine because they said the existing one was too limiting."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you quantify the difference?"
+        },
+        {
+          "role": "candidate",
+          "text": "We discussed it but didn't run a comparison. They really wanted to try the new approach."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+        "Role: senior; Situation: teams wanted new workflow engine",
+        "Action: allowed new build after discussion without metrics",
+        "Outcome: no quantified savings or reuse mentioned",
+        "Quote: \"They really wanted to try the new approach.\"",
+        "Follow-up: Asked about quantification; candidate said no comparison was run"
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency for a senior. The candidate allowed two teams to build a new workflow engine without running a comparison or pushing for reuse of the existing solution. They deferred to team preference rather than driving a data-backed decision. No evidence of cross-team leverage or later standardization. The story lacks measurable trade-off analysis. Biggest gap is absence of influence to protect overall engineering time."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We were considering a company-wide migration to a new data platform. I chose to invest in hardening the current one instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What drove that call?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our reliability data showed the current platform met 99.95% after targeted fixes, while the new one would require 18 months and 30 people. We redirected those resources to two product bets."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the business respond?"
+        },
+        {
+          "role": "candidate",
+          "text": "We hit our reliability target and launched the two bets three months earlier than the original migration timeline."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+        "Role: exec; Situation: company-wide data platform migration debate",
+        "Action: used reliability metrics to reject new platform, redirected 30 people to product work",
+        "Outcome: met 99.95% target and launched two bets three months early",
+        "Quote: \"We redirected those resources to two product bets.\"",
+        "Follow-up: Asked what drove the call; candidate cited 18-month cost and reliability data"
+      ],
+      "raiseFeedback": "Raises the bar on Efficiency at the exec level. The candidate used reliability data to reject a company-wide migration to a new data platform and instead hardened the existing system. This freed 30 people to accelerate two product launches by three months. The decision reflects strategic trade-off judgment under high ambiguity and long-term resource allocation. The outcome ties directly to business delivery metrics. Biggest strength is the clear linkage between the technical choice and product velocity.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "We started the new data platform migration because the team was excited about the modern architecture."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the cost comparison?"
+        },
+        {
+          "role": "candidate",
+          "text": "We estimated it would take two years but felt the long-term benefits justified it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you chose the boring, well-understood solution over the interesting one.",
+        "Role: exec; Situation: data platform migration decision",
+        "Action: approved new platform based on team excitement",
+        "Outcome: two-year estimate with no quantified business trade-offs",
+        "Quote: \"The long-term benefits justified it.\"",
+        "Follow-up: Asked about cost comparison; candidate gave only high-level estimate"
+      ],
+      "lowerFeedback": "Lowers the bar on Efficiency at the exec level. The candidate approved a multi-year data platform migration primarily because the team was excited about modern architecture. They did not present a rigorous comparison of reliability gains versus the 30-person, 18-month cost of the alternative. No evidence of redirecting resources to higher-value product work. The decision lacks strategic prioritization under resource constraints. Biggest gap is missing linkage between the technical choice and measurable business outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of decision",
+      "junior": "Single task or small feature",
+      "senior": "Cross-team or multi-service",
+      "exec": "Company or org-wide resource allocation"
+    },
+    {
+      "signal": "Use of data/metrics",
+      "junior": "Mentions time saved on own work",
+      "senior": "Shares latency or effort numbers with peers",
+      "exec": "Ties reliability and headcount to product launches"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Responds to mentor feedback",
+      "senior": "Runs spike and shares data to align leads",
+      "exec": "Sets direction that redirects large teams"
+    },
+    {
+      "signal": "Long-term leverage",
+      "junior": "Personal learning point",
+      "senior": "Pattern reused by other teams",
+      "exec": "Frees capacity for multiple product bets"
+    },
+    {
+      "signal": "Trade-off clarity",
+      "junior": "Simple reuse vs custom",
+      "senior": "Maintenance cost vs new features",
+      "exec": "Reliability target vs migration timeline"
+    }
+  ],
+  "kind": "value"
+}

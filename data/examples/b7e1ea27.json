@@ -1,0 +1,255 @@
+{
+  "question": "Tell me about a time you disagreed with someone significantly more senior than you.",
+  "principle": "Disagree and Commit",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you disagreed with someone significantly more senior than you."
+        },
+        {
+          "role": "candidate",
+          "text": "My manager wanted to ship a feature with a hardcoded config. I thought it would break in production for some users. I pulled the data on similar past issues and showed her the risk during our 1:1."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "She still wanted to ship fast. I said I would implement it her way but asked if we could add a quick toggle. We did, and it went out on time. Later she thanked me for the flag idea."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you feel committing to something you thought was risky?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was okay because we had the toggle as a safety net. I learned to bring options instead of just objections."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you disagreed with someone significantly more senior than you.",
+        "Junior dev vs manager on hardcoded config",
+        "Brought usage data to 1:1, proposed toggle as compromise",
+        "Shipped on time, later thanked for flag idea",
+        "Quote: \"I learned to bring options instead of just objections.\"",
+        "Follow-up: How did you feel committing? Said okay due to safety net and learned from it."
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit. The candidate described a local disagreement with their manager over a hardcoded config. They brought data, offered a toggle compromise, and fully committed once the decision was made. Quote: \"I learned to bring options instead of just objections.\" This shows ownership of their own work and coachability without overstepping scope. The outcome stayed within one feature and one relationship. Biggest strength is the clean close after committing.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you disagreed with someone significantly more senior than you."
+        },
+        {
+          "role": "candidate",
+          "text": "My manager wanted to use a new library. I told him it was a bad idea because I read online it had bugs."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you share any data or alternatives?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just said we should stick with what we had. He went ahead anyway and I kind of checked out on that part of the code."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did it turn out?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was fine, but I still think my way was better."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you disagreed with someone significantly more senior than you.",
+        "Disagreed on new library choice with manager",
+        "Cited online bugs but no data or alternatives offered",
+        "Checked out after decision, still believes own view was superior",
+        "Quote: \"I still think my way was better.\"",
+        "Follow-up: Did you share data? No, just stated preference and disengaged."
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit. The candidate described pushing back on a library choice with only a vague online reference and no alternatives. After the manager decided, they disengaged from the work. Quote: \"I still think my way was better.\" This shows limited ownership and weak commitment once overruled. The story stays at the level of personal preference rather than evidence-based discussion. Biggest gap is the absence of any learning or follow-through after the decision."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you disagreed with someone significantly more senior than you."
+        },
+        {
+          "role": "candidate",
+          "text": "A director wanted my team to take on a platform migration that would pull us off our OKRs for two quarters. I gathered cross-team impact numbers and met with her to lay out the trade-offs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome?"
+        },
+        {
+          "role": "candidate",
+          "text": "She still chose to move forward. I committed the team, renegotiated our quarterly goals with stakeholders, and we delivered the migration while hitting 70% of the original OKRs through parallel work."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in from your peers?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a short sync with the other leads to surface their concerns and folded two of their asks into the migration plan."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you disagreed with someone significantly more senior than you.",
+        "Senior vs director on platform migration pulling team off OKRs",
+        "Brought cross-team impact data and trade-off options",
+        "Committed after decision, hit 70% OKRs via parallel work",
+        "Quote: \"I ran a short sync with the other leads to surface their concerns.\"",
+        "Follow-up: How did you get peer buy-in? Ran sync and incorporated asks."
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit. The candidate disagreed with a director on a migration that would derail OKRs, using cross-team data to surface trade-offs. After the decision they committed fully, adjusted goals, and delivered 70% of original targets. Quote: \"I ran a short sync with the other leads to surface their concerns.\" This demonstrates influence without authority and measurable results across teams. The story shows clear ownership of the outcome rather than the decision itself. Biggest strength is the combination of data-driven pushback and post-decision execution.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you disagreed with someone significantly more senior than you."
+        },
+        {
+          "role": "candidate",
+          "text": "A director pushed for a big reorg. I told her in the meeting it would slow us down and most people disagreed."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you bring?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just team sentiment from a few conversations. She went ahead and I focused on protecting my team from the change."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the reorg happen?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes, and I spent the next quarter helping my team navigate around it instead of fully participating."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you disagreed with someone significantly more senior than you.",
+        "Senior vs director on reorg impact",
+        "Cited team sentiment only, no metrics or alternatives",
+        "Protected own team post-decision instead of committing",
+        "Quote: \"I spent the next quarter helping my team navigate around it.\"",
+        "Follow-up: What data? Only informal conversations, then disengaged from broader effort."
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit. The candidate disagreed with a director on a reorg using only informal team sentiment. After the decision they focused on shielding their own team rather than driving the outcome. Quote: \"I spent the next quarter helping my team navigate around it.\" This reflects limited cross-team influence and incomplete commitment. The story lacks evidence of raising the broader organization. Biggest gap is the retreat into local protection instead of execution after the call."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you disagreed with someone significantly more senior than you."
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO wanted to acquire a company that would double our burn rate. I built a three-year scenario model showing we would need an earlier round and shared it in the exec offsite."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO still wanted to proceed. I committed the finance and product teams to the integration plan, reset investor expectations, and we closed the deal with a smaller cash component to preserve runway."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the long-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two quarters later the acquisition contributed 18% of revenue and we raised at a higher valuation than the model had assumed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you disagreed with someone significantly more senior than you.",
+        "Exec vs CEO on acquisition doubling burn",
+        "Presented three-year model with runway implications in offsite",
+        "Committed fully, adjusted deal structure and investor messaging",
+        "Quote: \"We closed the deal with a smaller cash component to preserve runway.\"",
+        "Follow-up: What was the long-term effect? 18% revenue contribution and better raise."
+      ],
+      "raiseFeedback": "Raises the bar on Disagree and Commit. The candidate disagreed with the CEO on an acquisition using a three-year financial model. After the decision they committed the org, restructured the deal to protect runway, and delivered 18% revenue contribution. Quote: \"We closed the deal with a smaller cash component to preserve runway.\" This shows strategic judgment and org-level leverage under high ambiguity. The outcome includes both short-term commitment and longer-term business results. Biggest strength is the ability to influence at the highest level while owning the execution.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you disagreed with someone significantly more senior than you."
+        },
+        {
+          "role": "candidate",
+          "text": "The CEO wanted to enter a new market. I told the exec team it was too early and we lacked the right GTM motion."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "They moved ahead. I assigned minimal resources to the effort and focused my teams on core products instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did the market entry go?"
+        },
+        {
+          "role": "candidate",
+          "text": "It underperformed and we pulled back six months later. I still think we should have waited."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you disagreed with someone significantly more senior than you.",
+        "Exec vs CEO on new market entry timing",
+        "Stated opinion on GTM readiness without detailed model or options",
+        "Allocated minimal resources post-decision and stayed focused on core",
+        "Quote: \"I still think we should have waited.\"",
+        "Follow-up: What happened after? Minimal support led to underperformance and pullback."
+      ],
+      "lowerFeedback": "Lowers the bar on Disagree and Commit. The candidate disagreed with the CEO on market entry timing using a high-level opinion. After the decision they provided only minimal resources and continued prioritizing core work. Quote: \"I still think we should have waited.\" This reflects incomplete org commitment and limited strategic ownership. The story ends with validation of their original view rather than business leverage. Biggest gap is the failure to fully align teams behind the chosen direction at the executive level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Use of data or models in disagreement",
+      "junior": "Brings usage data or simple metrics",
+      "senior": "Cross-team impact numbers and trade-off analysis",
+      "exec": "Multi-year financial models with scenario planning"
+    },
+    {
+      "signal": "Scope of commitment after decision",
+      "junior": "Owns personal task and adds small safeguard",
+      "senior": "Renegotiates team goals and coordinates peers",
+      "exec": "Resets org plans, investor messaging, and deal structure"
+    },
+    {
+      "signal": "Evidence of raising others",
+      "junior": "Shares learning with manager after the fact",
+      "senior": "Runs sync with peer leads to incorporate concerns",
+      "exec": "Aligns multiple functions and resets expectations broadly"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Focuses on one feature risk with a toggle",
+      "senior": "Balances OKR impact against platform needs",
+      "exec": "Models long-term runway and valuation effects"
+    },
+    {
+      "signal": "Post-decision ownership",
+      "junior": "Delivers on time with the compromise",
+      "senior": "Hits partial original targets through parallel work",
+      "exec": "Delivers revenue contribution and improved raise"
+    }
+  ],
+  "kind": "lp"
+}

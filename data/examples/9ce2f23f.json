@@ -1,0 +1,197 @@
+{
+  "question": "Tell me about a time you changed someone's mind with data or evidence.",
+  "principle": "Influence without Authority",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first project, the PM wanted to ship a feature based on gut feel. I pulled usage logs from the last release and showed a 40% drop-off at the same step. We ran a quick A/B test and the data flipped the decision."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the PM to look at the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I booked a 15-minute slot, shared a one-slide summary, and asked what else would convince them. They agreed after seeing the drop-off numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed someone's mind with data or evidence.",
+        "Junior IC on first project, PM wanted to ship on gut feel",
+        "Pulled usage logs showing 40% drop-off, ran quick A/B test",
+        "Booked 15-min slot with one-slide summary, asked what else would help",
+        "Outcome: decision flipped without escalation",
+        "Quote: \"I asked what else would convince them\"",
+        "Follow-up: How did you get the PM to look at the data? -> Shared summary and iterated on request"
+      ],
+      "raiseFeedback": "Raises the bar for junior. The candidate used their own project data to surface a clear signal and secured a short meeting without authority. The one-slide summary plus the direct question \"what else would convince them\" shows basic influence mechanics. The outcome stayed local to one feature decision but demonstrates ownership of evidence over opinion. Biggest strength is the willingness to test the PM's openness rather than assuming resistance.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once told my manager that the metrics looked bad so we shouldn't launch. They didn't listen at first but later changed their mind."
+        },
+        {
+          "role": "interviewer",
+          "text": "What data did you show and how did you present it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just mentioned the numbers in standup. I didn't make a slide or anything."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed someone's mind with data or evidence.",
+        "Vague story about telling manager metrics looked bad",
+        "No specific data, no format, mentioned in standup only",
+        "No follow-up action or test shown",
+        "Outcome attributed to later change but candidate not connected",
+        "Quote: \"I just mentioned the numbers in standup\"",
+        "Follow-up: What data did you show and how? -> No slide or structured presentation"
+      ],
+      "lowerFeedback": "Lowers the bar for junior. The story lacks any concrete data point or structured attempt to influence. Mentioning numbers in standup without preparation shows no real effort to change a decision. The candidate cannot articulate their own role in the outcome. Biggest gap is absence of ownership over the evidence or the conversation."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two teams disagreed on whether to invest in a shared retry library. I pulled latency and error data across both services, built a simple model showing 18% reduction in p99 if we shared the lib, and walked each lead through their own numbers."
+        },
+        {
+          "role": "interviewer",
+          "text": "What resistance did you hit?"
+        },
+        {
+          "role": "candidate",
+          "text": "One lead said their service was different. I offered to run their traffic through the model with their thresholds and they agreed after seeing the delta."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed someone's mind with data or evidence.",
+        "Senior IC, two teams debating shared retry library investment",
+        "Pulled cross-service latency/error data, built model showing 18% p99 gain",
+        "Walked each lead through their own numbers individually",
+        "One lead pushed back on uniqueness; offered custom model run",
+        "Outcome: both teams aligned on shared approach",
+        "Quote: \"I offered to run their traffic through the model\"",
+        "Follow-up: What resistance did you hit? -> Custom model run for the skeptic"
+      ],
+      "raiseFeedback": "Raises the bar for senior. The candidate bridged two teams by translating shared data into each team's local view without formal authority. The 18% p99 model plus the willingness to customize the analysis for the resistant lead shows calibrated influence. Impact stayed within the two teams but produced a concrete engineering decision. Biggest strength is treating data as a negotiation tool rather than a hammer.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent an email with some dashboard links to the other team when they wanted to build their own thing. They eventually stopped."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you meet with them or tailor the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, just the links. I figured the numbers would speak for themselves."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed someone's mind with data or evidence.",
+        "Sent dashboard links via email to opposing team",
+        "No meetings, no tailoring, no follow-up conversation",
+        "Assumed numbers would be self-evident",
+        "Outcome described as \"they eventually stopped\" with no link to action",
+        "Quote: \"I figured the numbers would speak for themselves\"",
+        "Follow-up: Did you meet with them or tailor the data? -> No, just links"
+      ],
+      "lowerFeedback": "Lowers the bar for senior. Sending links without context or conversation demonstrates no active influence attempt. The candidate shows no effort to understand the other team's concerns or adapt the evidence. Cross-team impact is claimed but not evidenced. Biggest gap is passivity in the face of disagreement."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Engineering and finance disagreed on whether to sunset a low-usage product line. I commissioned a six-week analysis across revenue, support cost, and opportunity cost, then ran a two-hour working session where each side presented their interpretation of the same dataset."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the differing interpretations?"
+        },
+        {
+          "role": "candidate",
+          "text": "I had them jointly define the decision criteria before seeing the final numbers. Once criteria were locked, the data made the sunset decision clear to both groups."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed someone's mind with data or evidence.",
+        "Exec-level, Eng vs Finance on sunsetting product line",
+        "Commissioned six-week cross-functional analysis on revenue/support/opportunity cost",
+        "Ran joint working session where each side presented their view of same data",
+        "Pre-locked decision criteria before final numbers shown",
+        "Outcome: aligned on sunset without escalation to CEO",
+        "Quote: \"I had them jointly define the decision criteria before seeing the final numbers\"",
+        "Follow-up: How did you handle the differing interpretations? -> Criteria locked first"
+      ],
+      "raiseFeedback": "Raises the bar for exec. The candidate used a structured process to neutralize bias by forcing joint criteria definition before data review. The six-week analysis plus the two-hour session produced org-level alignment on a product decision. Leverage came from designing the decision architecture rather than presenting findings. Biggest strength is turning data into a forcing function for two functions with opposing incentives.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had my team put together a deck with the numbers and presented it to the leadership team. They agreed to the recommendation."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you address Finance's counter-data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't meet with them separately. The deck covered the main points."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed someone's mind with data or evidence.",
+        "Deck presented to leadership on product decision",
+        "No separate engagement with Finance or joint criteria setting",
+        "Assumed one presentation would resolve disagreement",
+        "Outcome claimed as agreement but no process details",
+        "Quote: \"The deck covered the main points\"",
+        "Follow-up: How did you address Finance's counter-data? -> No separate meeting"
+      ],
+      "lowerFeedback": "Lowers the bar for exec. A single deck presentation without engaging the dissenting function shows no strategic use of data for alignment. The candidate did not create mechanisms to surface or resolve conflicting interpretations. Org-level impact is asserted but the actions remain tactical. Biggest gap is lack of process design to drive cross-functional convergence."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Specific data artifact created",
+      "junior": "One-slide summary of logs",
+      "senior": "Cross-service model with 18% p99",
+      "exec": "Six-week analysis + joint criteria session"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Asked what else would convince",
+      "senior": "Offered custom model run for skeptic",
+      "exec": "Locked criteria before numbers shown"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Single feature decision",
+      "senior": "Two-team engineering alignment",
+      "exec": "Org product-line sunset"
+    },
+    {
+      "signal": "Active vs passive approach",
+      "junior": "Booked meeting vs standup mention",
+      "senior": "Walked leads through numbers vs sent links",
+      "exec": "Designed working session vs sent deck"
+    },
+    {
+      "signal": "Use of authority",
+      "junior": "None, used own project data",
+      "senior": "None, used cross-team data",
+      "exec": "None, used process design"
+    },
+    {
+      "signal": "Evidence of learning",
+      "junior": "Iterated on PM request",
+      "senior": "Adapted analysis for pushback",
+      "exec": "Pre-work on criteria to avoid bias"
+    }
+  ],
+  "kind": "lp"
+}

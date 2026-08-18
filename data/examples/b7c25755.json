@@ -1,0 +1,171 @@
+{
+  "question": "Tell me about the most unglamorous work you have done to understand how something really worked.",
+  "principle": "Dive Deep",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I spent three days parsing raw access logs from our internal tool after a feature flag rollout caused intermittent timeouts. I wrote a small script to correlate timestamps with user sessions because the dashboards didn't show the pattern."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you find and how did you use it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Turned out the flag was evaluating twice per request on mobile clients. I fixed the client-side check and added a unit test. My manager had me walk the team through the log query so others could reuse it."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most unglamorous work you have done to understand how something really worked.",
+        "Candidate parsed raw logs for three days after feature flag caused timeouts",
+        "Wrote script to correlate sessions; found double evaluation on mobile",
+        "Quote: \"Dashboards didn't show the pattern so I went to the source\"",
+        "Follow-up: How did you know when to stop digging? - Stopped once the root cause was isolated and reproducible in test"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for a junior. The candidate owned the unglamorous log parsing themselves rather than escalating immediately. Story shows they moved past dashboards to raw data and produced a reusable query for the team. Concrete outcome was a client-side fix plus test coverage. Biggest strength is willingness to stay in the data until the pattern emerged instead of guessing at causes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I usually just ask the senior engineer on the team to look at the logs or metrics when something is broken."
+        },
+        {
+          "role": "interviewer",
+          "text": "Can you give an example where you did the digging yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I focus on the feature work and let others handle the deep debugging."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most unglamorous work you have done to understand how something really worked.",
+        "Candidate defaults to asking seniors for log analysis",
+        "No personal example of diving into raw data",
+        "Quote: \"I focus on the feature work and let others handle the deep debugging\"",
+        "Follow-up: What happens when the senior is unavailable? - Would escalate to manager or wait"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for a junior. The candidate shows no evidence of personally doing unglamorous data work and instead routes it to others. Story lacks any concrete example of staying with raw inputs until understanding emerged. Biggest gap is absence of ownership over the details of how their own code or feature behaves under the hood."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our checkout service had 2% unexplained cart abandonment. I pulled three months of raw request logs and payment gateway responses across two teams' systems because the aggregated dashboards hid the retry patterns."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make to get the data?"
+        },
+        {
+          "role": "candidate",
+          "text": "I negotiated read-only access from the payments team and wrote a one-off ETL job that ran overnight. Found that a specific card processor returned ambiguous decline codes on mobile web only. Worked with their team to add logging and reduced abandonment by 0.8%."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most unglamorous work you have done to understand how something really worked.",
+        "Pulled and ETL'd three months of raw logs across checkout and payments teams",
+        "Identified card processor decline code issue on mobile web",
+        "Quote: \"Dashboards hid the retry patterns so I went to raw responses\"",
+        "Follow-up: How did you influence the payments team without authority? - Shared the ETL query and offered to maintain the new logging"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for a senior. Candidate crossed team boundaries to obtain raw payment responses and built temporary infrastructure to surface the signal. Story includes a measurable 0.8% abandonment drop tied directly to the insight. Biggest strength is combining personal data work with influence to get the other team to improve observability.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I asked the payments team for a summary of decline codes and used their dashboard numbers to estimate the problem."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you ever look at the raw responses yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, their team owns that data and I didn't want to duplicate effort."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most unglamorous work you have done to understand how something really worked.",
+        "Relied on payments team's summary and dashboard",
+        "No direct access or analysis of raw gateway responses",
+        "Quote: \"Their team owns that data and I didn't want to duplicate effort\"",
+        "Follow-up: What was the actual root cause? - Never isolated it beyond the high-level summary"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for a senior. Candidate accepted summarized data from another team instead of obtaining and analyzing raw responses. Story shows no personal unglamorous work and no attempt to influence better data sharing. Biggest gap is lack of cross-team data ownership when the answer required it."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Before deciding whether to sunset a legacy billing product, I spent two weeks manually reviewing 400 customer contracts and support tickets because the CRM export was incomplete and the finance model assumed uniform churn."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did that level of detail change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Discovered 18% of revenue came from custom clauses that our model ignored. Used the findings to adjust the sunset timeline and renegotiate two key accounts instead of a full cutover."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about the most unglamorous work you have done to understand how something really worked.",
+        "Manually reviewed 400 contracts and tickets for legacy billing decision",
+        "Found 18% revenue tied to custom clauses missed by models",
+        "Quote: \"The CRM export was incomplete so I went to the source documents\"",
+        "Follow-up: How did you decide 400 was enough? - Sampled until no new clause patterns appeared and validated with finance"
+      ],
+      "raiseFeedback": "Raises the bar on Dive Deep for an exec. Candidate personally performed the tedious contract review at business-critical scale rather than delegating or trusting incomplete exports. Story produced a concrete strategic adjustment that protected 18% of revenue. Biggest strength is using unglamorous primary-source work to correct a flawed financial model before a major decision.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I had the finance team pull a churn report and used that plus a few customer calls to decide on the sunset."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you review any contracts yourself?"
+        },
+        {
+          "role": "candidate",
+          "text": "Only a handful of the largest ones; the rest I trusted the aggregated report."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about the most unglamorous work you have done to understand how something really worked.",
+        "Delegated to finance report and limited customer calls",
+        "Reviewed only a handful of contracts personally",
+        "Quote: \"I trusted the aggregated report\"",
+        "Follow-up: What edge cases surfaced later? - Two mid-market accounts had custom terms that delayed the project"
+      ],
+      "lowerFeedback": "Lowers the bar on Dive Deep for an exec. Candidate relied on aggregated reports and delegated the bulk of primary-source review. Story shows limited personal engagement with the actual contracts that later caused delays. Biggest gap is absence of direct verification at the scale needed for a strategic product decision."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Personal data access vs delegation",
+      "junior": "Raises when they parse logs themselves; lowers when they ask seniors",
+      "senior": "Raises when they negotiate cross-team raw access; lowers when they accept summaries",
+      "exec": "Raises when they manually review hundreds of primary docs; lowers when they trust reports"
+    },
+    {
+      "signal": "Scope of unglamorous effort",
+      "junior": "Individual feature or bug",
+      "senior": "Cross-team system behavior",
+      "exec": "Business model or portfolio decision"
+    },
+    {
+      "signal": "Outcome linkage",
+      "junior": "Local fix plus reusable artifact",
+      "senior": "Measurable customer metric improvement",
+      "exec": "Strategic timeline or revenue adjustment"
+    },
+    {
+      "signal": "Follow-up depth shown",
+      "junior": "Knows when to stop digging",
+      "senior": "Influences others to improve data",
+      "exec": "Validates sample sufficiency before acting"
+    }
+  ],
+  "kind": "lp"
+}

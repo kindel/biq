@@ -1,0 +1,195 @@
+{
+  "question": "Tell me about a time you took the option that was worse for your team and better for the company.",
+  "principle": "Company-wide Perspective",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took the option that was worse for your team and better for the company."
+        },
+        {
+          "role": "candidate",
+          "text": "On my first project I was asked to pause work on a dashboard my team needed so I could fix a data pipeline bug that was blocking the finance team from closing the quarter. I stayed late to hand off my tasks and spent two days on the pipeline instead."
+        },
+        {
+          "role": "interviewer",
+          "text": "What made this worse for your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our dashboard launch slipped two weeks and my manager had to explain the delay to stakeholders. I learned to check cross-team dependencies earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took the option that was worse for your team and better for the company.",
+        "Junior IC on data team; paused own dashboard to fix finance pipeline bug",
+        "Outcome: quarter close unblocked, own launch slipped 2 weeks",
+        "Quote: 'I learned to check cross-team dependencies earlier'",
+        "Follow-up: What made this worse for your team? -> acknowledged manager had to explain delay, focused on personal learning"
+      ],
+      "raiseFeedback": "The candidate described a clear trade-off where they paused their own work to unblock finance quarter close. They owned the two-week slip on their dashboard and the need to explain it to their manager. The story stayed within individual scope, which is appropriate for junior level. They showed they understood the company impact outweighed their team's timeline. The follow-up revealed they reflected on the dependency check rather than defending the original plan. Biggest strength is willingness to accept local cost for broader outcome without prompting.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took the option that was worse for your team and better for the company."
+        },
+        {
+          "role": "candidate",
+          "text": "We once had to share our staging environment with another team because the company only had one. It slowed us down but I guess it helped them."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you personally handle the trade-off?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just waited until they were done and complained to my teammates about the wait."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took the option that was worse for your team and better for the company.",
+        "Shared staging env; slowed own work but helped other team",
+        "No personal action or ownership shown",
+        "Quote: 'I just waited until they were done and complained'",
+        "Follow-up: How did you personally handle the trade-off? -> passive, focused on complaint"
+      ],
+      "lowerFeedback": "The candidate offered a situation created by limited resources rather than an active choice they made. They took no steps to mitigate the impact on their team or accelerate the shared work. The follow-up showed they defaulted to complaining instead of problem-solving or seeking context on why the company priority mattered. This lowers the bar on Company-wide Perspective because the story lacks evidence of understanding or accepting the trade-off. The candidate treated the delay as something that happened to them rather than a decision they supported."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took the option that was worse for your team and better for the company."
+        },
+        {
+          "role": "candidate",
+          "text": "My team was three weeks from launching a new search feature when leadership asked us to contribute engineers to a company-wide reliability program. I volunteered two people, which pushed our launch to six weeks and required me to renegotiate commitments with three partner teams."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get your team to support it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I walked them through the incident data showing the reliability gap would eventually block all new features including ours, then we split the work so the remaining three could still deliver a reduced scope on time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took the option that was worse for your team and better for the company.",
+        "Senior engineer volunteered two people to company reliability program, delaying own launch 3 weeks",
+        "Renegotiated with three partner teams; reduced scope to protect partial delivery",
+        "Quote: 'walked them through the incident data showing the reliability gap would eventually block all new features'",
+        "Follow-up: How did you get your team to support it? -> used data to show long-term impact, adjusted scope"
+      ],
+      "raiseFeedback": "The candidate chose to delay their team's launch to staff a company reliability effort that would unblock future work across products. They personally renegotiated commitments with three partner teams and adjusted scope to limit damage. The follow-up showed they used data to explain the trade-off to their team rather than issuing a top-down order. This meets the bar for senior level because the impact crossed team boundaries and required influence without authority. The story demonstrates they weighed short-term team cost against longer-term company benefit. Biggest gap is limited evidence of how they handled pushback from their own manager.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took the option that was worse for your team and better for the company."
+        },
+        {
+          "role": "candidate",
+          "text": "Leadership decided to move our best engineer to another org for a company priority. I supported the move even though it hurt our velocity."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do to make the decision or mitigate the impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told my team it was a company decision and we would have to work harder until we could backfill."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took the option that was worse for your team and better for the company.",
+        "Supported moving top engineer to another org",
+        "No personal action beyond communicating the decision",
+        "Quote: 'I told my team it was a company decision and we would have to work harder'",
+        "Follow-up: What did you do to make the decision or mitigate the impact? -> passive communication, no mitigation steps"
+      ],
+      "lowerFeedback": "The candidate described a decision made by leadership rather than one they influenced or initiated. They provided no evidence of weighing the trade-off themselves or helping their team adapt beyond restating the company mandate. The follow-up confirmed they took a passive role, which lowers the bar for a senior candidate expected to drive cross-team outcomes. The story lacks any metric or concrete action that shows they owned the company-wide perspective. This reads as compliance rather than leadership on the principle."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took the option that was worse for your team and better for the company."
+        },
+        {
+          "role": "candidate",
+          "text": "As VP I chose to shut down our internal tooling platform and move to a third-party solution even though it meant laying off 18 people on my team and losing control over our roadmap. The decision saved $12M annually and let product teams ship 30% faster."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the org impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "I spent six weeks meeting every person one-on-one, created a transition plan that placed 14 of the 18 into other roles inside the company, and absorbed the remaining four into my own staff for six months while they found new positions."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you took the option that was worse for your team and better for the company.",
+        "VP shut down internal tooling platform for $12M savings and faster shipping",
+        "18-person layoff risk; placed 14 internally, absorbed 4 temporarily",
+        "Quote: 'I spent six weeks meeting every person one-on-one'",
+        "Follow-up: How did you handle the org impact? -> detailed transition plan and personal outreach"
+      ],
+      "raiseFeedback": "The candidate made a strategic decision to sunset an internal platform that directly reduced their own org size and control in exchange for company-wide cost and speed gains. They personally owned the transition work, including one-on-one meetings and placement of 14 people. The story shows long-term thinking and willingness to absorb short-term org pain for measurable business leverage. This raises the bar at exec level because the trade-off was at the org and P&L scale with clear metrics. The follow-up confirms they treated the human impact as their responsibility rather than delegating it entirely. Biggest strength is the combination of strategic judgment and concrete execution on the downside.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you took the option that was worse for your team and better for the company."
+        },
+        {
+          "role": "candidate",
+          "text": "We had to cut our marketing budget to fund a company-wide rebrand that the CEO wanted. My team lost two campaigns but the company got better brand consistency."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your role in the decision?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the numbers showing the impact and then executed the cut as directed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you took the option that was worse for your team and better for the company.",
+        "Cut marketing budget for company rebrand",
+        "Presented impact numbers then executed as directed",
+        "Quote: 'I presented the numbers showing the impact and then executed the cut as directed'",
+        "Follow-up: What was your role in the decision? -> reactive, no ownership of trade-off"
+      ],
+      "lowerFeedback": "The candidate framed the decision as something the CEO wanted rather than a choice they advocated for or shaped. They took no visible steps to find alternatives or reduce the downside for their team beyond presenting numbers. The follow-up shows they viewed their role as execution rather than strategic ownership of the company-wide outcome. This lowers the bar for an exec because the story lacks evidence of independent judgment or long-term leverage thinking. The candidate did not demonstrate they would make similar hard calls without top-down direction."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Active choice vs passive acceptance",
+      "junior": "Raises when candidate volunteers own work; lowers when they only complain or wait",
+      "senior": "Raises when candidate influences other teams and adjusts scope; lowers when they only communicate leadership decision",
+      "exec": "Raises when candidate initiates org-level change with personal transition ownership; lowers when they execute someone else's mandate"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual task or small delay",
+      "senior": "Cross-team roadmap and partner commitments",
+      "exec": "Org structure, P&L, and multi-quarter strategy"
+    },
+    {
+      "signal": "Handling downside",
+      "junior": "Accepts personal learning and manager explanation",
+      "senior": "Renegotiates commitments and protects partial delivery",
+      "exec": "One-on-ones, placement plans, and temporary absorption of people"
+    },
+    {
+      "signal": "Evidence of weighing trade-off",
+      "junior": "Simple recognition that company need mattered more",
+      "senior": "Uses data to explain long-term benefit to own team",
+      "exec": "Quantifies savings/speed and owns human cost personally"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a process that only worked because one person was watching it. What did you change?",
+  "principle": "Think Systematically",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "On my first team we had a nightly data export that only succeeded because Sarah manually checked the logs every morning and reran the job if the SFTP connection dropped. I noticed it was happening two or three times a week."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I added a simple retry with exponential backoff and wrote a one-page runbook so anyone on the team could restart it. After two weeks the manual checks dropped to zero."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the change actually worked?"
+        },
+        {
+          "role": "candidate",
+          "text": "I tracked the failure count in a shared spreadsheet for a month. It went from 12 incidents to none."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a process that only worked because one person was watching it. What did you change?",
+        "Role: new engineer on data export job; Situation: nightly SFTP job failed 2-3x/week, Sarah reran manually; Actions: added retry logic + backoff, wrote short runbook; Outcome: failures dropped to zero, tracked for a month; Quote: \"I tracked the failure count in a shared spreadsheet for a month.\"",
+        "Follow-up: How did you know the change worked? -> showed one-month tracking data"
+      ],
+      "raiseFeedback": "The candidate described a clear single-point-of-failure process and replaced manual monitoring with a lightweight automated fix plus documentation. The story stays within individual scope yet shows ownership by measuring the result after the change. The follow-up answer demonstrates they closed the loop with data rather than assuming success. This raises the bar for Think Systematically at the junior level because the candidate moved from hero-dependent to repeatable without expanding scope beyond their own work. Biggest strength is the simple measurement step that confirmed the fix.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was this deployment script that kept failing and only worked when our lead was around to fix the permissions each time."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I just asked the lead to always be available during deploys so it didn't break."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a process that only worked because one person was watching it. What did you change?",
+        "Role: junior engineer; Situation: deployment script failed on permissions; Actions: asked lead to be available during deploys; Outcome: no process change; Quote: \"I just asked the lead to always be available during deploys so it didn't break.\"",
+        "Follow-up: Did the failures stop? -> candidate said they still happened but lead fixed them faster"
+      ],
+      "lowerFeedback": "The candidate identified a dependency on one person but responded by institutionalizing that dependency instead of removing it. No attempt was made to understand root cause or add guardrails. The follow-up revealed the underlying failures continued. This lowers the bar for Think Systematically because the candidate accepted a single point of failure as the solution rather than eliminating it. The single biggest gap is absence of any systemic change or measurement."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our release pipeline for the payments service relied on one SRE who manually validated checksums after every deploy because the artifact signing step was flaky across regions."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I worked with the security and infra teams to move signing into the build pipeline with automated verification and added a canary check that failed the deploy if signatures didn't match. We also created a shared on-call rotation so the knowledge wasn't concentrated."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the measurable impact?"
+        },
+        {
+          "role": "candidate",
+          "text": "Manual interventions dropped from roughly eight per month to zero over the next quarter, and two other teams adopted the same pattern."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a process that only worked because one person was watching it. What did you change?",
+        "Role: senior engineer on payments; Situation: release pipeline depended on one SRE for checksum validation; Actions: moved signing into CI, added automated verification and canary, created shared rotation; Outcome: interventions fell to zero, two other teams copied it; Quote: \"two other teams adopted the same pattern.\"",
+        "Follow-up: What was the measurable impact? -> cited quarterly drop to zero and cross-team adoption"
+      ],
+      "raiseFeedback": "The candidate surfaced a cross-team dependency on a single expert and drove changes that removed the manual step while distributing knowledge. The story shows influence without authority by aligning security and infra teams on a shared solution. Cross-team adoption provides evidence of broader impact. The quantified reduction in interventions demonstrates systematic thinking rather than local heroics. Biggest strength is turning a single-person process into a reusable pattern that scaled beyond the original team.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "The billing reconciliation job only ran cleanly when our ops lead watched the overnight logs and kicked off the right sequence."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I documented the exact steps the lead followed so the rest of the team could do it when he was out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a process that only worked because one person was watching it. What did you change?",
+        "Role: senior on billing; Situation: reconciliation job needed ops lead oversight; Actions: wrote documentation of the lead's steps; Outcome: process still required a person to execute the sequence; Quote: \"I documented the exact steps the lead followed so the rest of the team could do it when he was out.\"",
+        "Follow-up: Did the need for manual watching go away? -> candidate said someone still had to run it each night"
+      ],
+      "lowerFeedback": "The candidate recognized the single-person dependency but responded only with documentation that preserved the manual process. No attempt was made to automate, add checks, or redesign the workflow. The follow-up confirmed the underlying fragility remained. This lowers the bar for Think Systematically at the senior level because the change stayed at the level of tribal knowledge transfer rather than eliminating the need for human oversight. The core gap is lack of leverage or cross-team coordination to make the process robust."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "When I joined, our quarterly forecasting process across finance, sales, and product only produced usable numbers because one director manually reconciled every spreadsheet the night before the exec review."
+        },
+        {
+          "role": "interviewer",
+          "text": "What systemic change did you drive?"
+        },
+        {
+          "role": "candidate",
+          "text": "I sponsored a six-week project to replace the manual reconciliation with a single source-of-truth data model and automated variance checks. We also shifted the review cadence to monthly with lighter prep so the process didn't collapse under its own weight."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the longer-term effect?"
+        },
+        {
+          "role": "candidate",
+          "text": "Forecast accuracy improved from 62% to 89% within two quarters. The same director's time on reconciliation went from 20 hours per quarter to under two, and three other business units asked to adopt the model."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a process that only worked because one person was watching it. What did you change?",
+        "Role: new exec; Situation: forecasting depended on one director's overnight reconciliation; Actions: sponsored data model project, added automated checks, changed to monthly cadence; Outcome: accuracy rose to 89%, director time dropped sharply, three units adopted; Quote: \"three other business units asked to adopt the model.\"",
+        "Follow-up: What was the longer-term effect? -> cited accuracy lift, time savings, and adoption"
+      ],
+      "raiseFeedback": "The candidate identified an org-level process held together by one person's heroics and replaced it with structural changes including data model, automation, and cadence adjustment. The story shows strategic judgment by addressing both the technical fragility and the unsustainable review rhythm. Cross-org adoption and measurable accuracy gains demonstrate leverage at scale. This raises the bar for Think Systematically at the exec level because the candidate treated the single point of failure as a symptom of deeper process and incentive issues rather than a staffing problem. Biggest strength is the combination of automation with operating rhythm changes that produced sustained business impact.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our headcount planning only stayed accurate because one finance manager manually adjusted the model every time leadership changed priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I asked the manager to train two analysts on the adjustments so coverage improved when she was out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a process that only worked because one person was watching it. What did you change?",
+        "Role: exec on headcount planning; Situation: model needed constant manual tweaks by one manager; Actions: trained two analysts on the tweaks; Outcome: dependency reduced but process unchanged; Quote: \"I asked the manager to train two analysts on the adjustments so coverage improved when she was out.\"",
+        "Follow-up: Did the manual adjustments stop? -> candidate said adjustments still happened, just distributed"
+      ],
+      "lowerFeedback": "The candidate saw the single-person dependency but addressed it only by spreading the same manual work rather than questioning why the model required constant intervention. No structural redesign or automation was pursued. The follow-up confirmed the underlying process fragility persisted. This lowers the bar for Think Systematically at the exec level because the response stayed at the level of load balancing instead of driving systemic simplification or better tooling. The primary gap is absence of strategic trade-offs or long-term process redesign."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Identifies single point of failure",
+      "junior": "Recognizes individual heroics in own work",
+      "senior": "Surfaces cross-team dependency",
+      "exec": "Frames as org-level process risk"
+    },
+    {
+      "signal": "Type of change made",
+      "junior": "Adds retry + runbook for own task",
+      "senior": "Automates + distributes knowledge across teams",
+      "exec": "Redesigns data model and operating cadence"
+    },
+    {
+      "signal": "Measurement of success",
+      "junior": "Tracks own incidents for one month",
+      "senior": "Shows quarterly drop plus adoption by two teams",
+      "exec": "Reports accuracy lift and time savings at scale"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Stays within own code and docs",
+      "senior": "Aligns security and infra without authority",
+      "exec": "Sponsors cross-org project with business impact"
+    },
+    {
+      "signal": "Common lower-bar pattern",
+      "junior": "Asks hero to stay available",
+      "senior": "Writes docs but keeps manual steps",
+      "exec": "Trains backups instead of removing need"
+    }
+  ],
+  "kind": "lp"
+}

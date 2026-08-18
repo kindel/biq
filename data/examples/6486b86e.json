@@ -1,0 +1,165 @@
+{
+  "question": "Tell me about a big win. How much of it was the plan and how much was luck?",
+  "principle": "Stay Humble",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I shipped a feature that cut support tickets by 15% on my first project. The plan was solid from the spec, but we hit a lucky break when a dependency update fixed a performance issue we hadn't planned for."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle that lucky break?"
+        },
+        {
+          "role": "candidate",
+          "text": "I documented it so the next person wouldn't have to rediscover it, and I gave credit in the retro to the engineer who suggested the update."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a big win. How much of it was the plan and how much was luck?",
+        "Candidate described first project win with 15% ticket reduction",
+        "Plan covered core spec work; luck came from unplanned dependency fix",
+        "Quote: 'I documented it so the next person wouldn't have to rediscover it'",
+        "Follow-up: Asked how they handled the break - they credited teammate and shared learnings"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble for a junior. The candidate described a local win but explicitly split credit between plan and an external dependency fix, then documented the outcome for others. Quote shows they avoided claiming full ownership. This meets the level expectation of owning their work while acknowledging luck and sharing credit. The gap is narrow scope, which is appropriate for 0-2 years. Biggest strength is the follow-through on documentation instead of personal credit.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "My feature launch was a big win that reduced tickets 20%. I planned every step and executed it perfectly with no help from anyone else."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was there any luck involved?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I just worked harder than the others and made sure it succeeded."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a big win. How much of it was the plan and how much was luck?",
+        "Candidate claimed sole credit for 20% ticket reduction",
+        "Insisted plan and personal effort were 100% of the outcome",
+        "Quote: 'I just worked harder than the others'",
+        "Follow-up: Pressed on luck - doubled down on individual effort"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble for a junior. The candidate presented an individual win and rejected any role for luck or teammates, stating they simply worked harder. This signals low coachability and poor credit-sharing, which are core expectations at this level. The story stays local but the framing is self-focused rather than learning-oriented. Biggest gap is unwillingness to acknowledge external factors."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I led a cross-team migration that improved latency 30% across two services. The original plan got us 70% there, but a lucky alignment with another team's unrelated refactor gave us the rest."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the alignment?"
+        },
+        {
+          "role": "candidate",
+          "text": "I made sure their team got named in the launch notes and used the retro to surface how the unplanned overlap happened so we could look for similar patterns."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a big win. How much of it was the plan and how much was luck?",
+        "Candidate led cross-team migration with 30% latency gain",
+        "Plan delivered 70%; remaining 30% from lucky alignment with another refactor",
+        "Quote: 'I made sure their team got named in the launch notes'",
+        "Follow-up: Asked about handling the alignment - they shared credit and looked for repeatable patterns"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble for a senior. The candidate framed a cross-team impact story and split the result between planned work and an external refactor they did not control. They actively shared credit in launch notes and used the retro to extract learning. This shows influence without authority and the expected level of humility. Biggest strength is turning the lucky break into a repeatable signal for the org instead of claiming it as personal foresight.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I drove a cross-team migration that cut latency 40%. The plan was mine from start to finish and the execution went exactly as I laid it out."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any external factors?"
+        },
+        {
+          "role": "candidate",
+          "text": "We had some timing luck but it was mostly because I pushed the other teams to align with my timeline."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a big win. How much of it was the plan and how much was luck?",
+        "Candidate claimed ownership of cross-team migration with 40% latency win",
+        "Attributed success primarily to their plan and execution",
+        "Quote: 'it was mostly because I pushed the other teams'",
+        "Follow-up: Pressed on external factors - reframed luck as result of their pressure"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble for a senior. The candidate described cross-team work but centered the win on their own plan and pressure on others, minimizing external contributions. This misses the expectation of influence without authority and credit sharing. The story has the right scope but the framing is hero-oriented. Biggest gap is treating luck as something they engineered rather than acknowledging it openly."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We shifted the entire org to a new deployment model that improved release frequency 4x. The initial plan set the direction, but a lucky vendor timing change and an unrelated platform investment from another org supplied the last 40% of the lift."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you communicate that to the business?"
+        },
+        {
+          "role": "candidate",
+          "text": "I highlighted the vendor and platform teams in the quarterly review and used the outcome to argue for more cross-org planning forums so we could catch similar alignments earlier."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a big win. How much of it was the plan and how much was luck?",
+        "Candidate described org-level deployment model shift with 4x release frequency",
+        "Plan set direction; 40% of lift from vendor timing and unrelated platform investment",
+        "Quote: 'I highlighted the vendor and platform teams in the quarterly review'",
+        "Follow-up: Asked how they communicated to the business - they shared credit and pushed for structural changes"
+      ],
+      "raiseFeedback": "Raises the bar on Stay Humble for an exec. The candidate described an org-level outcome and explicitly attributed 40% of the result to external timing and another org's investment. They used the quarterly review to give credit and converted the story into a recommendation for better cross-org mechanisms. This demonstrates strategic judgment and long-term leverage. Biggest strength is treating the win as an opportunity to improve org processes rather than personal narrative.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I drove an org-wide deployment model change that delivered 5x release frequency. The strategy was mine and the results followed the roadmap we set."
+        },
+        {
+          "role": "interviewer",
+          "text": "What role did external timing play?"
+        },
+        {
+          "role": "candidate",
+          "text": "We got some tailwinds but the core was disciplined execution of the plan I put in place."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a big win. How much of it was the plan and how much was luck?",
+        "Candidate claimed org-wide deployment change with 5x frequency gain",
+        "Attributed outcome to their strategy and disciplined execution",
+        "Quote: 'the core was disciplined execution of the plan I put in place'",
+        "Follow-up: Pressed on external timing - minimized it as tailwinds"
+      ],
+      "lowerFeedback": "Lowers the bar on Stay Humble for an exec. The candidate presented an org-level result but framed it as the direct outcome of their strategy and execution, downplaying external timing. This misses the expectation of strategic judgment that accounts for ambiguity and trade-offs. The story has the right scope but the attribution is self-centric. Biggest gap is failure to use the win to surface systemic improvements or share credit at the business level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Attributes portion of win to luck or external factors",
+      "junior": "Raises when they document and share the learning",
+      "senior": "Raises when they share credit across teams and extract patterns",
+      "exec": "Raises when they convert the story into org process changes"
+    },
+    {
+      "signal": "Claims full ownership of outcome",
+      "junior": "Lowers - signals low coachability",
+      "senior": "Lowers - misses influence without authority",
+      "exec": "Lowers - misses strategic humility on ambiguity"
+    },
+    {
+      "signal": "Uses win to help others or improve process",
+      "junior": "Raises when they document for the next person",
+      "senior": "Raises when they name other teams publicly",
+      "exec": "Raises when they recommend structural forums"
+    }
+  ],
+  "kind": "lp"
+}

@@ -1,0 +1,198 @@
+{
+  "question": "Tell me about a time you treated something as urgent when nobody else did.",
+  "principle": "Move with Urgency",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first internship, our team was prepping a demo for a client but the test data pipeline kept failing intermittently. No one else flagged it as blocking because it passed most runs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I stayed late, isolated the flaky test to a race condition in the data loader, and fixed it before the demo. The client meeting went smoothly and my manager asked me to document the fix for the team."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you decide it was worth your time versus waiting for someone senior?"
+        },
+        {
+          "role": "candidate",
+          "text": "I checked with my mentor first; she said it was low priority. But the failure rate was 20% on my local runs so I treated it as urgent anyway."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you treated something as urgent when nobody else did.",
+        "Intern noticed flaky test data pipeline before client demo; others saw it as non-blocking.",
+        "Isolated race condition, fixed overnight, demo succeeded.",
+        "Quote: \"My mentor said low priority but failure rate was 20% so I fixed it anyway.\"",
+        "Follow-up: Checked with mentor first then acted on own data.",
+        "Outcome: Documented fix for team."
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a junior candidate. The candidate owned an individual-scope issue by collecting their own evidence on the 20% failure rate and shipping a fix without waiting for senior direction. Story shows clear ownership of their work and quick learning from the mentor conversation rather than deferring entirely. This matches the expected level where results are local but initiative on personal deliverables is valued. Biggest strength is the concrete metric they gathered before acting, which grounds the urgency claim.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Once a teammate missed a deadline on a shared doc so I reminded them in the group chat a few times."
+        },
+        {
+          "role": "interviewer",
+          "text": "Was that treated as urgent by others?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, but I kept pinging until they updated it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you treated something as urgent when nobody else did.",
+        "Candidate sent repeated group chat reminders about a missed shared doc deadline.",
+        "No personal action taken beyond pinging.",
+        "Quote: \"I kept pinging until they updated it.\"",
+        "Follow-up: Asked why this was urgent; response stayed at surface level of \"it was due.\""
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate describes only passive reminders rather than taking ownership or gathering data to show why the delay mattered. At junior level we expect evidence of learning to act on their own work; here the story stays at coordination without impact or follow-through. The lack of any personal metric or outcome makes the urgency feel ungrounded. Biggest gap is absence of individual ownership."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our platform team was deprecating an old API but downstream teams in two other orgs were still using it heavily for a Q3 launch. Leadership viewed the deprecation as low risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "What actions did you take?"
+        },
+        {
+          "role": "candidate",
+          "text": "I pulled usage telemetry across teams, showed a 40% traffic spike projected for their launch, and ran a two-week migration workshop that unblocked both teams without delaying the deprecation."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I presented the data in their planning meeting and offered to pair on the migration scripts; two engineers volunteered after seeing the numbers."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you treated something as urgent when nobody else did.",
+        "Senior spotted downstream API usage spike before deprecation; leadership saw low risk.",
+        "Pulled cross-team telemetry showing 40% projected increase, ran migration workshop.",
+        "Quote: \"Presented data in their planning meeting and two engineers volunteered.\"",
+        "Follow-up: Influenced by offering to pair rather than mandate.",
+        "Outcome: Both teams migrated before deprecation, no launch delay."
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for a senior candidate. The story demonstrates cross-team impact by using telemetry to surface hidden risk and then driving a workshop that delivered measurable coordination without formal authority. Evidence of raising the bar for others appears in the two engineers who volunteered after the data session. This aligns with senior expectations of influence and clearer metrics like the 40% spike. Biggest strength is the proactive data collection that turned a dismissed deprecation into a coordinated win.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I sent an email to two other teams warning them about an upcoming API change and asked if they needed help."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change as a result?"
+        },
+        {
+          "role": "candidate",
+          "text": "One team replied they would look at it later; we deprecated on schedule."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you treated something as urgent when nobody else did.",
+        "Candidate emailed two teams about API deprecation after leadership downplayed risk.",
+        "No follow-up actions or data shared beyond the initial note.",
+        "Quote: \"One team replied they would look at it later.\"",
+        "Follow-up: Asked about metrics used to convince others; none were collected."
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate limited action to a single email without gathering usage data or driving any cross-team outcome. At senior level we look for influence that produces results across teams; here the story ends with no migration and no measurable impact. The absence of metrics or follow-through makes the urgency claim unsupported. Biggest gap is lack of leverage beyond notification."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Six months before a major product pivot, internal forecasts showed flat growth but external signals pointed to a competitor gaining share in an adjacent segment. The exec team had prioritized the pivot."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you create urgency?"
+        },
+        {
+          "role": "candidate",
+          "text": "I commissioned a quick competitive tear-down and customer interview sprint, then presented a scenario where delaying the pivot by one quarter to address the segment would protect 15% of revenue. The board approved the adjusted roadmap."
+        },
+        {
+          "role": "interviewer",
+          "text": "Follow-up: What trade-offs did you surface?"
+        },
+        {
+          "role": "candidate",
+          "text": "We traded short-term feature velocity for a defensive market move; I owned the communication that this was a deliberate delay, not a miss."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you treated something as urgent when nobody else did.",
+        "Exec identified competitor share gain six months pre-pivot while internal forecasts stayed flat.",
+        "Ran competitive tear-down and customer sprint, surfaced 15% revenue risk.",
+        "Quote: \"Board approved adjusted roadmap after the scenario.\"",
+        "Follow-up: Owned communication of the deliberate one-quarter delay.",
+        "Outcome: Pivot delayed strategically; revenue protected."
+      ],
+      "raiseFeedback": "Raises the bar on Move with Urgency for an exec candidate. The candidate operated at business-level ambiguity by converting external signals into a quantified revenue scenario that changed board-level direction. Evidence of long-term thinking shows in the explicit trade-off of velocity for market defense and the ownership of communicating the delay. This fits exec expectations of strategic judgment rather than heroics. Biggest strength is the clear leverage created through a small, targeted data sprint that shifted an entire roadmap.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I flagged in a staff meeting that we should watch a new competitor but the team decided to stay on the current plan."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you take further steps?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it again in the next QBR but priorities did not shift."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you treated something as urgent when nobody else did.",
+        "Exec noted competitor risk in staff meeting; team stayed on plan.",
+        "Repeated mention in QBR with no additional action or data.",
+        "Quote: \"Priorities did not shift.\"",
+        "Follow-up: Asked about trade-offs considered; none were prepared or presented."
+      ],
+      "lowerFeedback": "Lowers the bar on Move with Urgency. The candidate stayed at the level of verbal flags without building a strategic case or driving any org-level outcome. At exec level we expect high-ambiguity judgment that produces trade-offs and leverage; here the story shows no data, no scenario, and no roadmap change. The repeated mentions without escalation highlight a gap in long-term thinking. Biggest gap is absence of business-level impact."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Data-driven urgency",
+      "junior": "Gathered local failure-rate metric before acting",
+      "senior": "Pulled cross-team telemetry to show 40% spike",
+      "exec": "Commissioned tear-down yielding 15% revenue scenario"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Acted after mentor input but on own evidence",
+      "senior": "Offered pairing; engineers volunteered after data",
+      "exec": "Board changed roadmap after presented trade-off"
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual deliverable and team documentation",
+      "senior": "Two downstream teams migrated on time",
+      "exec": "Org roadmap adjusted for market defense"
+    },
+    {
+      "signal": "Trade-off communication",
+      "junior": "N/A at this level",
+      "senior": "N/A at this level",
+      "exec": "Owned messaging of deliberate one-quarter delay"
+    }
+  ],
+  "kind": "lp"
+}

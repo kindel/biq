@@ -1,0 +1,213 @@
+{
+  "question": "Tell me about a time work fell between two teams. What did you do?",
+  "principle": "Company-wide Perspective",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time work fell between two teams. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was on the backend team and a feature needed frontend changes from another squad. I flagged it in our standup and reached out to their lead to split the tasks."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome and how did you follow up?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delivered on time. I learned to check the other team's roadmap earlier next time."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time work fell between two teams. What did you do?",
+        "Role: new grad on backend squad; noticed API handoff gap with frontend team",
+        "Action: flagged in standup, messaged their lead to split tickets",
+        "Outcome: shipped on schedule; noted to check roadmaps proactively",
+        "Quote: \"I just wanted to make sure nothing slipped.\"",
+        "Follow-up: Asked about next time - candidate said they would loop in manager sooner"
+      ],
+      "raiseFeedback": "Raises the bar on Company-wide Perspective for the question Tell me about a time work fell between two teams. The candidate described noticing an API handoff gap between their backend squad and the frontend team. They flagged it in standup and messaged the other lead to split tickets, resulting in on-time delivery. This shows early ownership of cross-team coordination at the individual level. The follow-up revealed they would involve their manager sooner next time, indicating coachability. Biggest strength is taking initiative on a local gap instead of waiting for others.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time work fell between two teams. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "The other team just didn't finish their part so we missed the date."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try to reach out or escalate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it once in my update but figured it was their problem."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time work fell between two teams. What did you do?",
+        "Situation: feature blocked by dependency on adjacent team",
+        "Action: mentioned once in update, took no further steps",
+        "Outcome: missed date, blamed the other team",
+        "Quote: \"I figured it was their problem.\"",
+        "Follow-up: Confirmed no escalation or coordination attempt"
+      ],
+      "lowerFeedback": "Lowers the bar on Company-wide Perspective for the question Tell me about a time work fell between two teams. The candidate described a missed date due to an unaddressed dependency on another team. They mentioned it once in their update and stopped, assuming it was not their responsibility. This reflects narrow individual scope without any attempt to bridge the gap. The follow-up confirmed zero escalation or coordination. Biggest gap is lack of ownership when work crossed team boundaries."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time work fell between two teams. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "Marketing and product had conflicting priorities on a launch. I set up a joint sync, aligned on shared metrics, and drove a compromise that both teams adopted."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you influence without authority?"
+        },
+        {
+          "role": "candidate",
+          "text": "I used launch data to show the impact and got both leads to agree on a phased rollout."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time work fell between two teams. What did you do?",
+        "Situation: marketing and product conflict on launch priorities",
+        "Action: initiated joint sync, aligned on shared metrics, proposed phased rollout",
+        "Outcome: both teams adopted the plan; improved launch velocity",
+        "Quote: \"I used the data to get them to agree.\"",
+        "Follow-up: Confirmed cross-team metrics moved 15%"
+      ],
+      "raiseFeedback": "Raises the bar on Company-wide Perspective for the question Tell me about a time work fell between two teams. The candidate described a priority conflict between marketing and product teams on a launch. They initiated a joint sync, aligned both sides on shared metrics, and drove a phased rollout that was adopted. This demonstrates influence without authority and measurable cross-team impact. The follow-up tied the outcome to a 15% improvement in launch velocity. Biggest strength is using data to create alignment rather than escalating upward.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time work fell between two teams. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I escalated to my manager and let them sort it out with the other team."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was your direct involvement after that?"
+        },
+        {
+          "role": "candidate",
+          "text": "I focused on my own deliverables and waited for direction."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time work fell between two teams. What did you do?",
+        "Situation: conflicting priorities between two teams",
+        "Action: escalated to manager and stepped back",
+        "Outcome: waited for direction, stayed within own scope",
+        "Quote: \"I let them sort it out.\"",
+        "Follow-up: No evidence of personal influence or metrics"
+      ],
+      "lowerFeedback": "Lowers the bar on Company-wide Perspective for the question Tell me about a time work fell between two teams. The candidate described a priority conflict and immediately escalated to their manager without further involvement. They focused only on their own deliverables while waiting for direction. This shows limited cross-team influence at the senior level. The follow-up revealed no attempt to align the teams directly. Biggest gap is reliance on hierarchy instead of driving alignment themselves."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time work fell between two teams. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two orgs were duplicating infrastructure work. I created a joint steering group, defined shared OKRs, and shifted both roadmaps to a single platform strategy."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed one org's feature by a quarter to fund the shared platform, which paid off in reduced long-term costs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time work fell between two teams. What did you do?",
+        "Situation: duplication across two orgs on infrastructure",
+        "Action: formed steering group, set shared OKRs, aligned roadmaps",
+        "Outcome: single platform strategy; one quarter delay traded for cost savings",
+        "Quote: \"We accepted the delay to fund the common platform.\"",
+        "Follow-up: Confirmed org-level cost reduction over 18 months"
+      ],
+      "raiseFeedback": "Raises the bar on Company-wide Perspective for the question Tell me about a time work fell between two teams. The candidate described duplication between two organizations and formed a joint steering group with shared OKRs. They aligned both roadmaps to one platform and accepted a one-quarter feature delay in exchange for long-term cost reduction. This reflects strategic trade-offs and org-level leverage. The follow-up linked the decision to sustained cost savings over 18 months. Biggest strength is making an explicit business trade-off rather than optimizing locally.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time work fell between two teams. What did you do?"
+        },
+        {
+          "role": "candidate",
+          "text": "I told both teams to coordinate better and moved on to my own priorities."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you set any structure or track outcomes?"
+        },
+        {
+          "role": "candidate",
+          "text": "No, I assumed they would figure it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time work fell between two teams. What did you do?",
+        "Situation: duplication between organizations",
+        "Action: told teams to coordinate and disengaged",
+        "Outcome: no structure or tracking put in place",
+        "Quote: \"I assumed they would figure it out.\"",
+        "Follow-up: No evidence of org-level OKRs or trade-offs"
+      ],
+      "lowerFeedback": "Lowers the bar on Company-wide Perspective for the question Tell me about a time work fell between two teams. The candidate described duplication between organizations and simply told the teams to coordinate better before moving on. No steering structure, shared goals, or outcome tracking was established. This reflects a lack of strategic ownership at the executive level. The follow-up confirmed zero follow-through on alignment. Biggest gap is absence of long-term thinking or business trade-offs."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Noticing cross-boundary gaps",
+      "junior": "Flags locally and coordinates directly",
+      "senior": "Initiates alignment meetings with metrics",
+      "exec": "Creates steering structures and shared OKRs"
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Asks for help from peer leads",
+      "senior": "Uses data to drive compromise",
+      "exec": "Sets joint governance across orgs"
+    },
+    {
+      "signal": "Handling trade-offs",
+      "junior": "Learns to check roadmaps earlier",
+      "senior": "Phases work to satisfy both sides",
+      "exec": "Accepts short-term delay for org cost savings"
+    },
+    {
+      "signal": "Scope of ownership",
+      "junior": "Individual task handoff",
+      "senior": "Team-to-team launch impact",
+      "exec": "Org-level duplication and platform strategy"
+    },
+    {
+      "signal": "Escalation vs direct action",
+      "junior": "Mentions in standup before escalating",
+      "senior": "Drives sync before manager involvement",
+      "exec": "Builds process instead of escalating"
+    },
+    {
+      "signal": "Outcome measurement",
+      "junior": "On-time delivery noted",
+      "senior": "Launch velocity improved 15%",
+      "exec": "18-month cost reduction tracked"
+    }
+  ],
+  "kind": "lp"
+}

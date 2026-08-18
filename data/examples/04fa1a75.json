@@ -1,0 +1,189 @@
+{
+  "question": "Tell me about a time the same few people were doing all the talking. What did you change?",
+  "principle": "Diversity, Inclusion & Belonging",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "In my first project standup, only the two senior devs spoke. I waited two meetings then asked my manager if we could try a round-robin for updates."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you asked?"
+        },
+        {
+          "role": "candidate",
+          "text": "We tried it once. Two quiet teammates shared blockers they hadn't mentioned before. I kept it going for the rest of the project."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the same few people were doing all the talking. What did you change?",
+        "Role: new team member on 4-person project",
+        "Situation: standups dominated by two seniors",
+        "Action: asked manager for round-robin after observing twice",
+        "Outcome: two quieter teammates surfaced blockers",
+        "Quote: \"I kept it going for the rest of the project.\"",
+        "Follow-up: How did the seniors react? They were fine once we explained it was to surface issues faster."
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question. Candidate noticed uneven airtime in standups and proposed a simple round-robin to their manager. Quote: \"two quieter teammates shared blockers they hadn't mentioned before.\" The change stayed within their own small team and produced a local result. Shows ownership of their immediate environment and willingness to try a fix after minimal observation. Biggest strength is acting on an observation rather than staying silent; gap is limited scope and no measurement of the change.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Yeah the same two people always talked in meetings. I just waited until they finished and then gave my update."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you try anything to include others?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured it was their call since they had more experience."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the same few people were doing all the talking. What did you change?",
+        "Role: new team member",
+        "Situation: standups dominated by seniors",
+        "Action: waited for turn, did nothing else",
+        "Outcome: no change",
+        "Quote: \"I figured it was their call since they had more experience.\"",
+        "Follow-up: What would you do differently now? Still not sure it was my place to say anything."
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question. Candidate observed the pattern but took no action beyond waiting their turn and deferred to perceived hierarchy. Quote: \"I figured it was their call since they had more experience.\" Shows passive acceptance rather than any attempt to improve participation. Biggest gap is absence of ownership or coachability on an inclusion issue; no evidence they would surface or address the problem."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Three teams shared a weekly sync and the same four voices dominated every time. I proposed a rotating facilitator and pre-shared prompt list so anyone could add topics."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get buy-in?"
+        },
+        {
+          "role": "candidate",
+          "text": "I ran a two-week pilot, showed that cross-team issues surfaced earlier, and the other leads adopted it. We tracked topic diversity and saw a 40% increase in first-time contributors over two months."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the same few people were doing all the talking. What did you change?",
+        "Role: senior engineer coordinating three teams",
+        "Situation: weekly sync dominated by four voices",
+        "Action: proposed rotating facilitator plus pre-shared prompts, ran pilot",
+        "Outcome: 40% increase in first-time contributors, adopted by other leads",
+        "Quote: \"We tracked topic diversity and saw a 40% increase.\"",
+        "Follow-up: What resistance did you hit? One lead worried it would slow decisions; data from the pilot changed their mind."
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question. Senior candidate identified a cross-team meeting pattern and drove a lightweight process change with rotating facilitation. Quote: \"40% increase in first-time contributors over two months.\" Demonstrates influence without authority and use of data to sustain the change. Biggest strength is measurable cross-team impact; gap is that the fix stayed at the meeting-process level rather than addressing deeper team dynamics.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Same issue in our big syncs. I started speaking up more so at least my team's view got airtime."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the pattern change for others?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really. I just made sure we weren't ignored."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the same few people were doing all the talking. What did you change?",
+        "Role: senior engineer",
+        "Situation: multi-team syncs dominated by few voices",
+        "Action: spoke up more for own team",
+        "Outcome: own team heard, no broader change",
+        "Quote: \"I just made sure we weren't ignored.\"",
+        "Follow-up: Any attempt to include quieter teams? No, focused on protecting my team's priorities."
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question. Senior candidate addressed the symptom by advocating harder for their own team instead of changing participation norms. Quote: \"I just made sure we weren't ignored.\" Shows no attempt to influence the broader group or raise quieter voices. Biggest gap is zero evidence of raising the bar for others or creating sustainable process change."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "After acquisition, our all-hands Q&A was always the same ten leaders. I introduced anonymous topic submission and assigned exec sponsors to surface questions from their orgs."
+        },
+        {
+          "role": "interviewer",
+          "text": "What scale did this reach?"
+        },
+        {
+          "role": "candidate",
+          "text": "Within six months we had questions from 18% of the company versus 4% before. We also saw promotion rates for underrepresented groups in those orgs rise 12% over the next year, which we tied partly to better visibility."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time the same few people were doing all the talking. What did you change?",
+        "Role: VP post-acquisition",
+        "Situation: all-hands Q&A dominated by ten leaders",
+        "Action: anonymous submissions plus exec sponsors for org questions",
+        "Outcome: participation from 4% to 18% of company; 12% lift in promo rates for underrepresented groups",
+        "Quote: \"We tied partly to better visibility.\"",
+        "Follow-up: How did you handle exec resistance? Some worried about hard questions; we framed it as early signal and kept sponsors accountable for response quality."
+      ],
+      "raiseFeedback": "Raises the bar on Diversity, Inclusion & Belonging for the question. Exec candidate redesigned company-wide all-hands to increase participation after an acquisition. Quote: \"participation from 4% to 18% of the company\" with downstream promo impact. Shows strategic judgment on culture at scale and use of sponsorship to create accountability. Biggest strength is linking inclusion mechanism to business outcome metrics; gap is reliance on anonymity rather than building psychological safety directly.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Post-acquisition the same voices dominated town halls. I told my directs to make sure their teams felt heard in smaller meetings."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did company-wide participation change?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not measurably. We focused on local team health instead."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time the same few people were doing all the talking. What did you change?",
+        "Role: VP",
+        "Situation: post-acquisition town halls dominated by few",
+        "Action: told directs to handle in smaller meetings",
+        "Outcome: no measurable company-wide change",
+        "Quote: \"We focused on local team health instead.\"",
+        "Follow-up: Any org-level mechanism? No, left it to each director's discretion."
+      ],
+      "lowerFeedback": "Lowers the bar on Diversity, Inclusion & Belonging for the question. Exec candidate delegated the issue to directs without creating any org-level mechanism or measurement. Quote: \"We focused on local team health instead.\" Shows no strategic leverage or accountability at scale. Biggest gap is absence of systemic thinking or visible ownership of the cultural signal at the company level."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of change",
+      "junior": "Local team meeting",
+      "senior": "Cross-team process with metrics",
+      "exec": "Company-wide mechanism with business outcome link"
+    },
+    {
+      "signal": "Use of data or measurement",
+      "junior": "None",
+      "senior": "Tracked contributor %",
+      "exec": "Linked to promotion rates"
+    },
+    {
+      "signal": "Influence approach",
+      "junior": "Asked manager once",
+      "senior": "Pilot + data to peers",
+      "exec": "Assigned exec sponsors + accountability"
+    },
+    {
+      "signal": "Evidence of raising others",
+      "junior": "Helped two teammates in own standup",
+      "senior": "40% more first-time contributors across teams",
+      "exec": "Broader visibility tied to promo lift for underrepresented groups"
+    },
+    {
+      "signal": "Handling resistance",
+      "junior": "Not tested",
+      "senior": "Used pilot data",
+      "exec": "Reframed as early signal, kept sponsors accountable"
+    }
+  ],
+  "kind": "value"
+}

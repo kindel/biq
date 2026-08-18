@@ -1,0 +1,183 @@
+{
+  "question": "Tell me about a problem you took on that had no owner.",
+  "principle": "Own It",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A test script kept failing intermittently on our build server but no one owned the infra side. I logged the failures, narrowed it to a timing issue in our setup script, and rewrote the retry logic."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened after you fixed it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Builds stabilized and the team stopped ignoring the alerts. My manager asked me to document the change for the next rotation."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you took on that had no owner.",
+        "Junior dev noticed flaky test in personal project area",
+        "Debugged timing issue in setup script and added retry logic",
+        "Outcome: builds stabilized, documented for team",
+        "Quote: 'I just kept digging until the failures stopped.'",
+        "Follow-up: Asked about follow-through; candidate shared doc link and rotation handoff"
+      ],
+      "raiseFeedback": "Raises the bar on Own It for junior level. The candidate described spotting an unowned flaky test in their build area and fixing the timing issue in the setup script. Quote: 'I just kept digging until the failures stopped.' This shows local ownership and follow-through by documenting for the next rotation. It meets junior expectations for taking initiative on work touching their deliverables without waiting for assignment. The single biggest strength is the clear handoff that prevented recurrence.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "There was a failing test but the infra team was supposed to look at it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything with it?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in standup a couple times but nothing changed so I moved on to my assigned stories."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you took on that had no owner.",
+        "Candidate identified flaky test but assumed infra ownership",
+        "Only raised in standup, no further action",
+        "Outcome: moved on to assigned work",
+        "Quote: 'I mentioned it in standup a couple times but nothing changed.'",
+        "Follow-up: Asked for details on escalation; candidate had none"
+      ],
+      "lowerFeedback": "Lowers the bar on Own It for junior level. The candidate saw a failing test with no owner yet only mentioned it in standup and then dropped it to focus on assigned stories. Quote: 'I mentioned it in standup a couple times but nothing changed.' This shows the expected junior scope was treated as someone else's problem rather than an opportunity to own the immediate impact on their own builds. The single biggest gap is lack of any attempt to investigate or escalate beyond the first mention."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our onboarding docs were outdated across three teams and causing repeated support tickets. No one owned the docs so I pulled the common questions, created a shared runbook, and got the other teams to review and link it from their wikis."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to participate?"
+        },
+        {
+          "role": "candidate",
+          "text": "I scheduled a 30-minute sync, showed the ticket volume drop after my initial draft, and they each assigned one person to keep their section current."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you took on that had no owner.",
+        "Senior engineer saw cross-team onboarding friction",
+        "Created shared runbook from support tickets and drove reviews",
+        "Outcome: ticket volume dropped, teams committed to maintenance",
+        "Quote: 'I showed the ticket volume drop and they each assigned one person.'",
+        "Follow-up: Asked about influence method; candidate described data-driven 30-min sync"
+      ],
+      "raiseFeedback": "Raises the bar on Own It for senior level. The candidate identified outdated onboarding docs causing cross-team tickets with no owner and built a shared runbook that other teams adopted. Quote: 'I showed the ticket volume drop and they each assigned one person.' This demonstrates influence without authority and measurable impact beyond their immediate team. The single biggest strength is the sustainable handoff that created ongoing ownership across teams.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Docs were out of date but that was the technical writer's job."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the tickets affect your team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Yes but I focused on my roadmap items and let the writer know the volume was high."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you took on that had no owner.",
+        "Senior saw cross-team doc issue but deferred to writer role",
+        "Only notified writer, no further action",
+        "Outcome: continued high ticket volume",
+        "Quote: 'I focused on my roadmap items and let the writer know.'",
+        "Follow-up: Asked about impact on own team; candidate acknowledged but did not act"
+      ],
+      "lowerFeedback": "Lowers the bar on Own It for senior level. The candidate recognized outdated docs driving cross-team tickets yet treated it as the technical writer's responsibility and only sent a notification. Quote: 'I focused on my roadmap items and let the writer know.' This misses the senior expectation of stepping into unowned problems that affect multiple teams. The single biggest gap is the absence of any attempt to drive coordination or reduce the measurable ticket impact."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "We had no clear owner for customer data retention after a regulatory change, creating legal exposure across regions. I formed a small working group, defined retention policies, and secured exec alignment to embed the process into product and legal roadmaps."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed one feature launch by six weeks to avoid dual compliance tracks and accepted a temporary 15% increase in storage costs for the transition quarter."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a problem you took on that had no owner.",
+        "Exec identified regulatory gap with org-wide risk",
+        "Formed working group, set policies, aligned roadmaps",
+        "Outcome: policies embedded, feature delay accepted for compliance",
+        "Quote: 'We delayed one feature launch by six weeks to avoid dual compliance tracks.'",
+        "Follow-up: Asked about trade-offs; candidate detailed timeline and cost decisions"
+      ],
+      "raiseFeedback": "Raises the bar on Own It for exec level. The candidate took on an unowned regulatory data retention gap that created legal exposure and drove policy definition plus roadmap integration. Quote: 'We delayed one feature launch by six weeks to avoid dual compliance tracks.' This shows strategic judgment and willingness to make business trade-offs at org scale. The single biggest strength is the long-term leverage created by embedding ownership into existing processes rather than one-off fixes.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Regulatory flagged a data gap but it sat between legal and product so I asked them to resolve ownership."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the business impact while it remained open?"
+        },
+        {
+          "role": "candidate",
+          "text": "We carried some risk for two quarters until they sorted it out."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a problem you took on that had no owner.",
+        "Exec saw regulatory gap between teams",
+        "Delegated ownership question without driving resolution",
+        "Outcome: risk carried for two quarters",
+        "Quote: 'I asked them to resolve ownership.'",
+        "Follow-up: Asked about personal involvement; candidate had none beyond initial ask"
+      ],
+      "lowerFeedback": "Lowers the bar on Own It for exec level. The candidate identified a regulatory data gap between legal and product yet only asked the teams to resolve ownership themselves. Quote: 'I asked them to resolve ownership.' This falls short of exec expectations for stepping into high-ambiguity business risks and making trade-off decisions. The single biggest gap is treating the problem as a delegation exercise rather than driving org-level clarity and mitigation."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Scope of ownership taken",
+      "junior": "Fixed own build script",
+      "senior": "Drove cross-team runbook adoption",
+      "exec": "Set org-wide retention policy with roadmap trade-offs"
+    },
+    {
+      "signal": "Evidence of influence",
+      "junior": "Shared doc with rotation",
+      "senior": "Secured reviewer commitments via data",
+      "exec": "Aligned exec stakeholders on delays"
+    },
+    {
+      "signal": "Handling of ambiguity",
+      "junior": "Investigated until resolved",
+      "senior": "Created process where none existed",
+      "exec": "Accepted short-term cost for long-term compliance"
+    },
+    {
+      "signal": "Metrics or outcomes",
+      "junior": "Builds stabilized",
+      "senior": "Ticket volume dropped",
+      "exec": "Risk closed with explicit trade-offs"
+    },
+    {
+      "signal": "Learning or handoff",
+      "junior": "Documented for next person",
+      "senior": "Teams assigned ongoing owners",
+      "exec": "Embedded into product and legal processes"
+    }
+  ],
+  "kind": "lp"
+}

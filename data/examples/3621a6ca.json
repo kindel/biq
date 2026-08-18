@@ -1,0 +1,225 @@
+{
+  "question": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+  "principle": "Wow the Customer",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "I was building a dashboard for internal users and had planned a set of filters based on what the PM asked for. During a quick user test with two analysts I learned they needed date-range presets instead because they ran the same reports weekly. I swapped the filter UI in the last sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did that swap actually cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "It pushed back the release by two days and I had to drop one nice-to-have chart. My manager was fine with it once I showed the test notes."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you know the change actually helped?"
+        },
+        {
+          "role": "candidate",
+          "text": "The two analysts said it saved them time in the follow-up chat and the PM logged fewer support questions after launch."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+        "Candidate was building internal dashboard; learned date presets mattered more than custom filters from two analysts",
+        "Swapped UI in final sprint, slipped release 2 days and dropped one chart",
+        "Quote: 'The two analysts said it saved them time'",
+        "Follow-up: How did you know it helped? - showed reduced support questions after launch"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer for a junior. The candidate identified a concrete customer friction during their own work, adjusted scope, and accepted a small delivery cost without escalation. The story stays local to one feature yet shows clear ownership of the outcome. Quote about analysts confirming time savings ties the change directly to customer value. Biggest strength is willingness to trade a chart for usability instead of defending the original plan.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We got feedback that the login flow was confusing but the team decided the current plan was already locked so we shipped it."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you do anything with that feedback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I mentioned it in the retro and the PM said we would look at it next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+        "Candidate heard login feedback but did not change plan",
+        "Team kept original scope; feedback deferred to next quarter",
+        "Quote: 'the team decided the current plan was already locked'",
+        "Follow-up: Did you do anything with that feedback? - only raised in retro"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer. The candidate surfaced customer pain but treated the plan as fixed and took no ownership of driving a change. No cost was accepted or even evaluated. Quote about the plan being locked shows the candidate viewed their role as purely execution. Biggest gap is absence of any attempt to quantify or advocate for the customer insight they received."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "Our team was building a self-service reporting tool for three partner teams. After shadowing two power users I realized they needed bulk export before the fancy viz builder we had prioritized. I convinced the other two teams to deprioritize their custom viz requests so we could ship exports first."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did that shift actually cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We delayed two partner integrations by six weeks and one team had to keep using manual reports longer. I tracked the extra support tickets during that period and it was about 12 per week."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other teams to agree?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed the usage data from the shadow sessions and offered to help them with a workaround until the viz work resumed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+        "Shadowed power users on self-service tool; learned bulk export was higher value than viz builder",
+        "Convinced two partner teams to delay their features; cost was 6-week delay and 12 extra tickets/week",
+        "Quote: 'I showed the usage data from the shadow sessions'",
+        "Follow-up: How did you get the other teams to agree? - offered workaround and shared data"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer for a senior. The candidate used direct customer observation to reprioritize across three teams and accepted measurable downstream cost in the form of delayed integrations. The story demonstrates influence without authority through data rather than mandate. Quote about sharing shadow-session data shows how the candidate made the trade-off transparent. Biggest strength is quantifying the temporary support burden to justify the customer-driven change.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We heard from one customer that they wanted a new filter. I added it to the backlog but the roadmap stayed the same because the other stakeholders had already committed."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the single customer insight change any scope?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, we were already behind on the original plan so we kept it."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+        "Heard filter request from one customer but left roadmap unchanged",
+        "No scope change due to existing commitments",
+        "Quote: 'we were already behind on the original plan'",
+        "Follow-up: Did the single customer insight change any scope? - no change made"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer. The candidate recorded a customer request but allowed prior commitments to override any adjustment. No cost was evaluated or traded because no change occurred. Quote about being behind on the original plan reveals the candidate defaulted to the existing plan rather than advocating for the customer signal. Biggest gap is lack of cross-team influence or willingness to surface trade-offs."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We were six months into a platform migration that would consolidate three legacy products. Customer interviews in month four showed that mid-market buyers valued integration with their existing stack far more than the unified UI we had promised the board. I recommended we pause the migration and instead build a lightweight integration layer on top of the legacy systems."
+        },
+        {
+          "role": "interviewer",
+          "text": "What did pausing the migration cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We wrote off roughly four million in sunk migration work, delayed the org-wide cost savings target by nine months, and had to reset expectations with the board. In exchange we kept 80 percent of the mid-market revenue that was at risk."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the board conversation?"
+        },
+        {
+          "role": "candidate",
+          "text": "I brought the raw interview clips and revenue-at-risk model so the discussion stayed on customer retention rather than internal optics."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+        "Paused six-month platform migration after interviews showed mid-market buyers needed integrations more than unified UI",
+        "Cost: 4M sunk work, 9-month delay on savings target, board reset; kept 80% of at-risk revenue",
+        "Quote: 'I brought the raw interview clips and revenue-at-risk model'",
+        "Follow-up: How did you handle the board conversation? - kept focus on retention data"
+      ],
+      "raiseFeedback": "Raises the bar on Wow the Customer at the exec level. The candidate used direct customer interviews to reverse a board-committed migration and accepted a multi-million-dollar write-off plus timeline reset. The decision protected a clear revenue segment rather than optimizing for internal milestones. Quote about bringing interview clips shows the candidate grounded the strategic reversal in customer evidence. Biggest strength is willingness to absorb org-level cost to retain mid-market revenue instead of defending the original plan.",
+      "lowerTranscript": [
+        {
+          "role": "interviewer",
+          "text": "Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?"
+        },
+        {
+          "role": "candidate",
+          "text": "We ran customer interviews that surfaced some concerns about the migration timeline. We kept the original plan because the board had already approved the savings target."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did the interview findings alter any investment?"
+        },
+        {
+          "role": "candidate",
+          "text": "We added a few more training sessions for customers but the migration scope stayed fixed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you changed a plan because of something you learned about the customer. What did the change cost?",
+        "Heard timeline concerns in interviews but kept migration on track",
+        "Only added training sessions; no scope or investment change",
+        "Quote: 'the board had already approved the savings target'",
+        "Follow-up: Did the interview findings alter any investment? - only minor training added"
+      ],
+      "lowerFeedback": "Lowers the bar on Wow the Customer. The candidate treated board-approved targets as immovable despite customer signals and made only cosmetic adjustments. No meaningful cost was traded to address the insight. Quote about the board approval shows the candidate prioritized internal commitments over customer-driven strategy. Biggest gap is absence of strategic judgment or willingness to revisit org-level plans based on customer evidence."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Depth of customer learning",
+      "junior": "Direct user test with two analysts",
+      "senior": "Shadow sessions across partner teams",
+      "exec": "Structured interviews tied to revenue segment"
+    },
+    {
+      "signal": "Willingness to accept cost",
+      "junior": "2-day slip and dropped chart",
+      "senior": "6-week delay plus tracked support tickets",
+      "exec": "4M write-off and 9-month savings delay"
+    },
+    {
+      "signal": "Scope of influence",
+      "junior": "Own sprint",
+      "senior": "Three partner teams",
+      "exec": "Board-level migration reversal"
+    },
+    {
+      "signal": "Evidence used to drive change",
+      "junior": "Post-launch support questions",
+      "senior": "Usage data from shadow sessions",
+      "exec": "Raw interview clips plus revenue model"
+    },
+    {
+      "signal": "Outcome clarity",
+      "junior": "Analysts reported time savings",
+      "senior": "Reduced partner friction quantified",
+      "exec": "Retained 80% of at-risk revenue"
+    }
+  ],
+  "kind": "lp"
+}

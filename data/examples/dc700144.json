@@ -1,0 +1,197 @@
+{
+  "question": "Tell me about a time you noticed the standard on your team had quietly dropped.",
+  "principle": "Demand Excellence",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed our code review comments were getting shorter and we started merging with only one approval instead of two. I flagged it in standup and asked the team to stick to the checklist."
+        },
+        {
+          "role": "interviewer",
+          "text": "What happened next?"
+        },
+        {
+          "role": "candidate",
+          "text": "Two people pushed back saying deadlines were tight, but I offered to review extra that week and we restored the two-review rule. Bugs in the next release dropped by about 15%."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you handle the pushback?"
+        },
+        {
+          "role": "candidate",
+          "text": "I listened, then showed the last three bugs that slipped through because reviews were rushed."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed the standard on your team had quietly dropped.",
+        "Role: new team member on small feature squad",
+        "Situation: code reviews shortened, one-approval merges creeping in",
+        "Action: raised in standup, offered extra reviews, showed bug data",
+        "Outcome: restored two-review rule, 15% fewer bugs",
+        "Quote: \"I showed the last three bugs that slipped through because reviews were rushed.\"",
+        "Follow-up: How did you handle the pushback? Candidate tied response to concrete examples."
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence. The candidate owned a local drop in review standards without waiting for a manager. They used a simple data point (three recent bugs) to push back on deadline pressure. The fix stayed within their individual scope yet produced a measurable result. They stayed coachable by listening first before countering. Biggest strength: they treated the standard as their responsibility rather than someone else's problem.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "Reviews were getting sloppy so I just started doing more of them myself."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did you talk to the team about it?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, I figured it would slow us down and people were already stressed."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed the standard on your team had quietly dropped.",
+        "Role: individual contributor",
+        "Situation: reviews getting sloppy",
+        "Action: compensated by doing more reviews personally",
+        "Outcome: none reported",
+        "Quote: \"I figured it would slow us down and people were already stressed.\"",
+        "Follow-up: Did you talk to the team about it? Candidate avoided conflict."
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence. The candidate noticed the issue but chose silent compensation over raising it. No attempt was made to restore the team standard or involve others. The response shows good personal ownership but zero drive to address the root drop. Biggest gap: treated excellence as an individual workaround instead of a team expectation to defend."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Our service's on-call error budget was being burned faster each quarter but no one owned fixing the pattern. I pulled data across two teams and ran a retro that set a new SLO target."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the other team to change?"
+        },
+        {
+          "role": "candidate",
+          "text": "I showed their on-call load had doubled and proposed a shared runbook plus one joint project. Both teams adopted it and error budget burn rate fell 40% over two quarters."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed the standard on your team had quietly dropped.",
+        "Role: senior engineer spanning two teams",
+        "Situation: on-call error budget burn accelerating with no owner",
+        "Action: aggregated data, ran cross-team retro, proposed shared runbook",
+        "Outcome: 40% reduction in burn rate over two quarters",
+        "Quote: \"I showed their on-call load had doubled and proposed a shared runbook.\"",
+        "Follow-up: How did you get the other team to change? Candidate used influence and shared metrics."
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence. The candidate spotted a quiet erosion of reliability standards across teams and used data to create a new shared expectation. They influenced without authority by tying the issue to the other team's pain. The result was sustained and measurable. They raised the bar for peers rather than just fixing their own slice. Biggest strength: turned an observed drop into a cross-team standard with clear ownership.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I saw the on-call pages increasing so I added more alerts and stayed late a few times."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did anything change for the team?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was just me handling it until the next quarter."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed the standard on your team had quietly dropped.",
+        "Role: senior engineer",
+        "Situation: rising on-call load",
+        "Action: added alerts and worked extra hours personally",
+        "Outcome: no team-level change",
+        "Quote: \"It was just me handling it until the next quarter.\"",
+        "Follow-up: Did anything change for the team? Candidate stayed local and temporary."
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence. The candidate addressed symptoms with personal effort instead of confronting the declining standard. No attempt to reset expectations or involve peers. The outcome stayed invisible to the broader team. Biggest gap: senior scope requires lifting the team standard, not absorbing the shortfall alone."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Customer NPS had slipped 8 points over six months with no single incident called out. I launched a quarterly excellence review that tied every org to a small set of outcome metrics and reset promotion criteria around them."
+        },
+        {
+          "role": "interviewer",
+          "text": "What trade-offs did you make?"
+        },
+        {
+          "role": "candidate",
+          "text": "We deprioritized two feature bets and accepted a one-quarter delay on a new market launch. NPS recovered 6 points in nine months and attrition in the top performer cohort dropped."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you noticed the standard on your team had quietly dropped.",
+        "Role: director-level leader",
+        "Situation: NPS erosion without acute trigger",
+        "Action: created org-wide excellence reviews, tied to promotion criteria",
+        "Outcome: 6-point NPS recovery, lower top-performer attrition",
+        "Quote: \"We deprioritized two feature bets and accepted a one-quarter delay on a new market launch.\"",
+        "Follow-up: What trade-offs did you make? Candidate showed strategic prioritization."
+      ],
+      "raiseFeedback": "Raises the bar on Demand Excellence. The candidate treated a gradual standards decline as an org-level problem and introduced structural mechanisms to enforce higher expectations. They made explicit trade-offs that affected roadmap and timeline. The changes produced both customer and internal retention gains. They operated at the level of systems and incentives rather than individual fixes. Biggest strength: converted an invisible drop into durable, measurable org expectations.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I noticed quality metrics were off and asked my directs to pay more attention in their 1:1s."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed at the org level?"
+        },
+        {
+          "role": "candidate",
+          "text": "We saw some improvement in the next review cycle but nothing structural."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you noticed the standard on your team had quietly dropped.",
+        "Role: director",
+        "Situation: quality metrics declining",
+        "Action: delegated to directs via 1:1s",
+        "Outcome: minor improvement, no structural change",
+        "Quote: \"We saw some improvement in the next review cycle but nothing structural.\"",
+        "Follow-up: What changed at the org level? Candidate stayed at delegation without redesign."
+      ],
+      "lowerFeedback": "Lowers the bar on Demand Excellence. The candidate delegated the problem without creating new mechanisms or making trade-offs. No org-level reset of expectations occurred. The response stayed at the level of reminders rather than structural change. Biggest gap: at exec scope, excellence requires redesigning incentives and priorities, not passing the observation down."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Ownership of standard",
+      "junior": "Raises when candidate personally restores local process; lowers when they absorb the gap silently.",
+      "senior": "Raises when they drive cross-team reset with metrics; lowers when effort stays individual.",
+      "exec": "Raises when they redesign org incentives; lowers when they delegate without structural change."
+    },
+    {
+      "signal": "Influence without authority",
+      "junior": "Not expected; focus on coachability when challenged.",
+      "senior": "Raises when they use data to align peers; lowers when they avoid conflict.",
+      "exec": "Raises when they trade off roadmap items; lowers when no hard choices are named."
+    },
+    {
+      "signal": "Long-term thinking",
+      "junior": "Shows up as learning from the fix; not primary signal.",
+      "senior": "Shows up as sustained metric improvement over quarters.",
+      "exec": "Shows up as changed promotion criteria and org rhythm."
+    },
+    {
+      "signal": "Scope of impact",
+      "junior": "Individual team process and personal output.",
+      "senior": "Two or more teams with shared ownership.",
+      "exec": "Org-wide metrics and incentives."
+    },
+    {
+      "signal": "Handling pushback",
+      "junior": "Raises when they respond with evidence; lowers when they stay silent.",
+      "senior": "Raises when they surface shared pain; lowers when they accept status quo.",
+      "exec": "Raises when they accept timeline delays; lowers when they avoid trade-offs."
+    }
+  ],
+  "kind": "lp"
+}

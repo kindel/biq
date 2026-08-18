@@ -1,0 +1,225 @@
+{
+  "question": "Tell me about a time you helped someone when it did nothing for your own goals.",
+  "principle": "Collaboration",
+  "levels": {
+    "junior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "My teammate on the same squad was stuck on a deployment script issue that was blocking their feature. I spent an afternoon walking through logs with them even though my own ticket was due the next day and this wasn't assigned to me."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the outcome for you?"
+        },
+        {
+          "role": "candidate",
+          "text": "I finished my ticket late that night but the teammate shipped on time. No one mentioned it in my review."
+        },
+        {
+          "role": "interviewer",
+          "text": "Why do it if it didn't help you?"
+        },
+        {
+          "role": "candidate",
+          "text": "They would have had to escalate and it would have slowed the whole squad."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you helped someone when it did nothing for your own goals.",
+        "Role: new grad on squad of 6; situation: teammate blocked on deploy script",
+        "Action: spent afternoon on logs and fix despite own deadline",
+        "Outcome: teammate shipped, candidate finished late; no credit in review",
+        "Quote: 'They would have had to escalate and it would have slowed the whole squad.'",
+        "Follow-up: Why do it if it didn't help you? -> squad-level impact over personal credit"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate described helping a peer on a shared squad deploy issue with no personal upside or recognition. They explicitly traded their own delivery date to keep the squad unblocked. This shows early ownership of team velocity rather than individual tickets. The choice to help without escalation demonstrates coachability and awareness of local dependencies. Biggest strength is treating squad success as the default scope even at the junior level.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once helped a new hire set up their laptop because the IT ticket was taking too long."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this affect your own work?"
+        },
+        {
+          "role": "candidate",
+          "text": "Not really, it was only 20 minutes and I was between tasks anyway."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any other examples?"
+        },
+        {
+          "role": "candidate",
+          "text": "Mostly just that one time."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you helped someone when it did nothing for your own goals.",
+        "Role: new grad; situation: helped new hire with laptop setup",
+        "Action: spent 20 minutes on IT workaround",
+        "Outcome: no impact to own work; no further examples",
+        "Quote: 'it was only 20 minutes and I was between tasks anyway.'",
+        "Follow-up: Any other examples? -> only low-cost, zero-tradeoff case"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The example was a 20-minute laptop setup that occurred between tasks and carried no personal cost. No evidence of trading off their own deliverables or goals. The candidate could not surface any other instances when probed. This shows basic politeness rather than deliberate collaboration under pressure. Biggest gap is lack of willingness to absorb real cost for someone else's outcome."
+    },
+    "senior": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "A sister team was missing a dependency we had already built. I spent two weeks documenting and handing it off even though it meant pushing my own roadmap item by a sprint."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did you get the time approved?"
+        },
+        {
+          "role": "candidate",
+          "text": "I didn't ask; I just reprioritized and told my manager after the fact that the other team could now unblock two features."
+        },
+        {
+          "role": "interviewer",
+          "text": "What was the result?"
+        },
+        {
+          "role": "candidate",
+          "text": "They shipped two quarters early and my own team later reused the improved docs."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you helped someone when it did nothing for your own goals.",
+        "Role: senior on platform team; situation: sister team blocked on internal dependency",
+        "Action: spent two weeks on docs and handoff, delayed own roadmap",
+        "Outcome: sister team unblocked two features; no direct credit to candidate",
+        "Quote: 'I just reprioritized and told my manager after the fact.'",
+        "Follow-up: How did you get the time approved? -> acted without authority, accepted delay"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate chose to delay their own roadmap by a full sprint to unblock a sister team with no formal ask or credit. They acted without waiting for manager approval and absorbed the schedule impact personally. This demonstrates influence without authority at the cross-team level expected of seniors. The outcome directly benefited another team while the candidate's own work was deprioritized. Biggest strength is treating cross-team enablement as a valid use of senior time.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I gave some advice to a junior on another team about how we structure our PRs."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this take time away from your work?"
+        },
+        {
+          "role": "candidate",
+          "text": "It was just a quick Slack thread during standup."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any bigger examples?"
+        },
+        {
+          "role": "candidate",
+          "text": "I usually focus on my own team's deliverables first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you helped someone when it did nothing for your own goals.",
+        "Role: senior; situation: gave PR advice via Slack to another team",
+        "Action: quick thread, no time cost",
+        "Outcome: no measurable impact; stayed within own team scope",
+        "Quote: 'I usually focus on my own team's deliverables first.'",
+        "Follow-up: Any bigger examples? -> defaults to protecting own roadmap"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The only example was a low-effort Slack thread that required no trade-off. When asked for larger cases the candidate defaulted to protecting their own team's deliverables. No evidence of cross-team investment that carried personal cost. This reflects a senior who stays within lane rather than influencing without authority. Biggest gap is absence of willingness to absorb roadmap impact for others."
+    },
+    "exec": {
+      "raiseTranscript": [
+        {
+          "role": "candidate",
+          "text": "Two orgs were duplicating work on a shared infra problem. I spent several weeks aligning their roadmaps and creating a joint steering group even though it had zero direct tie to my own org's OKRs that year."
+        },
+        {
+          "role": "interviewer",
+          "text": "How did your org react?"
+        },
+        {
+          "role": "candidate",
+          "text": "Some of my directs questioned the time sink. I told them the duplication would eventually hit us anyway."
+        },
+        {
+          "role": "interviewer",
+          "text": "What changed long-term?"
+        },
+        {
+          "role": "candidate",
+          "text": "The two orgs merged their efforts and freed up 12 engineers; my org later adopted the same model for other overlaps."
+        }
+      ],
+      "raiseNotes": [
+        "Q: Tell me about a time you helped someone when it did nothing for your own goals.",
+        "Role: exec overseeing one org; situation: two peer orgs duplicating infra work",
+        "Action: created joint steering group and aligned roadmaps over weeks",
+        "Outcome: 12 engineers freed; no OKR credit for candidate's org that year",
+        "Quote: 'the duplication would eventually hit us anyway.'",
+        "Follow-up: How did your org react? -> pushed back on directs to protect the investment"
+      ],
+      "raiseFeedback": "Raises the bar on Collaboration. The candidate invested multiple weeks building alignment between two peer orgs with no direct OKR benefit to their own organization. They absorbed internal pushback from their directs and framed the work as long-term prevention rather than short-term heroics. This shows strategic judgment about org-level duplication and the willingness to spend personal leverage on problems outside their scope. The downstream adoption by their own org validates the bet. Biggest strength is treating cross-org efficiency as an executive responsibility even when it carries no immediate credit.",
+      "lowerTranscript": [
+        {
+          "role": "candidate",
+          "text": "I once advised another VP on a headcount model we had used."
+        },
+        {
+          "role": "interviewer",
+          "text": "Did this require ongoing time?"
+        },
+        {
+          "role": "candidate",
+          "text": "Just one conversation; I didn't follow up."
+        },
+        {
+          "role": "interviewer",
+          "text": "Any cases where you took on cost for another org?"
+        },
+        {
+          "role": "candidate",
+          "text": "My priority is always my own org's results first."
+        }
+      ],
+      "lowerNotes": [
+        "Q: Tell me about a time you helped someone when it did nothing for your own goals.",
+        "Role: exec; situation: one-off advice to another VP on headcount model",
+        "Action: single conversation, no follow-up",
+        "Outcome: no measurable cross-org impact; stayed within own org",
+        "Quote: 'My priority is always my own org's results first.'",
+        "Follow-up: Any cases where you took on cost for another org? -> defaults to protecting own org"
+      ],
+      "lowerFeedback": "Lowers the bar on Collaboration. The example was a single conversation with no follow-through or cost. When probed for instances requiring real executive time or trade-offs the candidate explicitly prioritized their own org's results. No evidence of using positional leverage to solve problems outside their direct scope. This reflects an exec who stays within org boundaries rather than driving org-level efficiency. Biggest gap is lack of strategic investment in cross-org outcomes."
+    }
+  },
+  "diagnostic": [
+    {
+      "signal": "Willingness to absorb personal or team cost",
+      "junior": "Raises: delayed own ticket to unblock squad; Lowers: only helped when zero cost",
+      "senior": "Raises: delayed own roadmap by sprint for sister team; Lowers: stayed inside own deliverables",
+      "exec": "Raises: spent weeks on cross-org alignment with no OKR tie; Lowers: single conversation, protected own org first"
+    },
+    {
+      "signal": "Scope of collaboration",
+      "junior": "Raises: squad-level unblock; Lowers: individual peer setup",
+      "senior": "Raises: cross-team handoff; Lowers: within-team advice",
+      "exec": "Raises: org-to-org roadmap alignment; Lowers: VP-to-VP one-off"
+    },
+    {
+      "signal": "Evidence of influence without authority",
+      "junior": "Raises: acted without escalation; Lowers: none shown",
+      "senior": "Raises: reprioritized without asking; Lowers: defaulted to manager approval",
+      "exec": "Raises: created steering group on own initiative; Lowers: no ongoing ownership"
+    },
+    {
+      "signal": "Long-term thinking vs short-term credit",
+      "junior": "Raises: accepted no review credit; Lowers: only low-effort cases",
+      "senior": "Raises: accepted sprint delay for future reuse; Lowers: focused on immediate own OKRs",
+      "exec": "Raises: prevented future duplication for 12 engineers; Lowers: no follow-up investment"
+    }
+  ],
+  "kind": "value"
+}
