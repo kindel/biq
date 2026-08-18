@@ -1,0 +1,24 @@
+name: Notify site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping kindelwww
+        env:
+          GH_TOKEN: ${{ secrets.CASCADE_TOKEN }}
+          SOURCE_REPO: ${{ github.repository }}
+          SOURCE_SHA: ${{ github.sha }}
+        run: |
+          if [ -z "${GH_TOKEN}" ]; then
+            echo "CASCADE_TOKEN is not set. Skipping site ping."
+            exit 0
+          fi
+          gh api --method POST repos/kindel/kindelwww/dispatches --input - <<JSON
+          {"event_type":"pin-modules","client_payload":{"source":"${SOURCE_REPO}","sha":"${SOURCE_SHA}"}}
+          JSON
