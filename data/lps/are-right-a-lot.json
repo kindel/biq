@@ -1,18 +1,6 @@
 {
-  "id": "are-right-a-lot",
-  "name": "Are Right, A Lot",
-  "sort": 4,
-  "aliases": [
-    "aral",
-    "right a lot",
-    "are right a lot",
-    "judgment",
-    "judgement",
-    "right",
-    "decision quality",
-    "good judgment"
-  ],
-  "definition": "Leaders are right a lot. They have strong judgment and good instincts. They seek diverse perspectives and work to disconfirm their beliefs.",
+  "id": 1004,
+  "slug": "are-right-a-lot",
   "why": [
     "The culture stalls if every decision has to travel up the chain. Sound judgment at the lowest level that can own the call is how you keep moving. Bring a vetted recommendation, not a pile of options and a request that someone else decide.",
     "This is not \"Are Right, All The Time.\" Even people who are right a lot are wrong a lot. The ones who stay right train their intuition by admitting the miss fast, taking the better path, and not getting trapped in being consistent with their last opinion.",
@@ -20,85 +8,6 @@
     "The other principles keep this one honest. {lp:dive-deep} so the recommendation is sound. {lp:earn-trust} so people will tell you that you are wrong. {lp:have-backbone-disagree-and-commit} so you do not fold for social comfort, and so you commit when the call goes against you. {lp:learn-and-be-curious} is how the next judgment gets better."
   ],
   "calibrationIntro": "Look for how someone changed their mind, and what disconfirmed them. A streak of correct calls with no dissent in the story is a warning. So is a person who cannot decide without a committee, or who cannot let anyone else be right.",
-  "rows": [
-    {
-      "id": "using-data",
-      "situation": "Using data to set direction",
-      "under": "Analysis paralysis. Does not deliver.",
-      "justRight": "Keeps gathering the relevant data and still sets direction.",
-      "over": "Treats today's right answer as permanent. Does not notice when the facts have moved."
-    },
-    {
-      "id": "committing-under-uncertainty",
-      "situation": "Committing when the picture is incomplete",
-      "under": "Vacillates. Cannot commit.",
-      "justRight": "Stays current on the business. Uses trends and evidence to make a consistent, informed call.",
-      "over": "Charges ahead with a blind spot. Ignores {lp:invent-and-simplify}. Optimizes the company at the cost of the people who have to live with the call."
-    },
-    {
-      "id": "recommending-under-ambiguity",
-      "situation": "Making a recommendation under ambiguity",
-      "under": "May not be right, but fakes a recommendation anyway.",
-      "justRight": "Drives to a resolution despite uncertainty. Says what is known, what is a guess, and why this path.",
-      "over": "May be right, and browbeats the room. Needs to be the smartest person present."
-    },
-    {
-      "id": "guiding-without-freezing",
-      "situation": "Guiding a team without taking the work",
-      "under": "Does not guide enough. The team makes expensive wrong calls or invents a costly process.",
-      "justRight": "Sets a clear direction, simplifies the work, and generates the same behavior downstream.",
-      "over": "Freezes the team with too much direction. Kills {lp:ownership}."
-    },
-    {
-      "id": "listening-then-deciding",
-      "situation": "Hearing the team, then calling it",
-      "under": "Does not use data. Makes a hasty call that sends the team down the wrong path.",
-      "justRight": "Takes input and data from the team and regularly makes the right call.",
-      "over": "Makes every decision. Will not listen. Unaware of blind spots. Disempowers the people closest to the work."
-    },
-    {
-      "id": "always-right-trap",
-      "situation": "Confusing this principle with always being right",
-      "under": "Undervalues their own experience. Never establishes respect.",
-      "justRight": "Knows \"a lot\" is not \"always.\" Seeks input. Applies experience. Champions the best path even when it was not theirs.",
-      "over": "Mistakes this principle for always being right. Will not integrate an outside view."
-    },
-    {
-      "id": "calculated-risks",
-      "situation": "How much you need to know before you act",
-      "under": "Decides on insufficient or flawed knowledge.",
-      "justRight": "Knows enough to take a well-informed, calculated risk.",
-      "over": "Gets paralyzed by the need to know everything. Unable to act."
-    },
-    {
-      "id": "letting-others-be-right",
-      "situation": "When the team should own the call",
-      "under": "Not in tune with whether the team is making right decisions.",
-      "justRight": "Knows when the team is on or off track. Lets them act without micromanaging.",
-      "over": "Unable to let others be right."
-    },
-    {
-      "id": "owning-the-call",
-      "situation": "Standing behind a decision you made",
-      "under": "Decides from third-party information they do not actually understand.",
-      "justRight": "Makes conscientious, well-considered decisions they can explain from first principles.",
-      "over": "Rationalizes when challenged. Or avoids deciding so they cannot be wrong."
-    },
-    {
-      "id": "long-term-vs-short-term",
-      "situation": "Balancing the long term and the short term",
-      "under": "Uses fuzzy long-term language to excuse a badly thought-out project, or optimizes this month and leaves the root cause in place.",
-      "justRight": "Balances long-term and short-term on purpose, and can say which one this call is for.",
-      "over": "Will not make a reasonable judgment call because they are hunting the perfect long-term solution."
-    },
-    {
-      "id": "seeking-dissent",
-      "situation": "Working to disconfirm your belief",
-      "under": "Seeks too much collaboration and affirmation before they will move.",
-      "justRight": "Invites challenge. Comfortable deciding with directional data. Stays accountable when they miss.",
-      "over": "Gets defensive when shown an opposing view. Lacks humility."
-    }
-  ],
   "examples": [
     {
       "title": "The junior person has the fact",

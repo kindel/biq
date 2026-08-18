@@ -1,16 +1,6 @@
 {
-  "id": "frugality",
-  "name": "Frugality",
-  "sort": 10,
-  "aliases": [
-    "frugal",
-    "cost",
-    "waste",
-    "resources",
-    "constraints",
-    "no extra budget"
-  ],
-  "definition": "Accomplish more with less. Constraints breed resourcefulness, self-sufficiency, and invention. There are no extra points for growing headcount, budget size, or fixed expense.",
+  "id": 1010,
+  "slug": "frugality",
   "why": [
     "Frugality is not being cheap. It is spending on what matters to customers and to the long-term health of the business. The cheapest move is to turn the product off. That saves a lot of money, and it kills the company. Most spending decisions are less dramatic than that, and they still have the same shape: spend where it makes you faster, better, or more useful to the customer.",
     "Look for resourcefulness, not deprivation. Buying junk hardware that slows every builder is not frugality. It is being cheap in a way that costs more later. Skipping the trip that keeps a builder from building is the same mistake. Constraints should force invention, not chew through the two-by-fours.",
@@ -18,64 +8,6 @@
     "Frugality also means you will take a five million dollar hit now for a $50 million payout later, and you will not spend the leftover budget in December so nobody cuts you next year. The budget is an input. It is not the decision."
   ],
   "calibrationIntro": "Score whether someone invents under constraint and still invests in what matters. Under is waste and entitlement. Over is penny-pinching that starves builders, customers, or the long term.",
-  "rows": [
-    {
-      "id": "invent-around-spend",
-      "situation": "When the obvious path is to buy the thing",
-      "under": "Spends too much and treats money as the first solution.",
-      "justRight": "Understands the cost, then looks for a way to get the outcome without the spend, or with much less of it.",
-      "over": "Refuses to spend on anything and starves the chance to invent."
-    },
-    {
-      "id": "owner-mindset",
-      "situation": "When the team talks about resources",
-      "under": "No controls. A sense of entitlement. People spend as if the money is free.",
-      "justRight": "Builds a habit of asking how the work uses time, people, and money, and what return that spend should earn. That is {lp:ownership}.",
-      "over": "Skips needed investment. Refuses to pay people as a meritocracy in the name of saving money."
-    },
-    {
-      "id": "people-in-trouble",
-      "situation": "When someone on the team is hurt or stuck far from home",
-      "under": "Pays for first class on a routine trip and calls it taking care of people.",
-      "justRight": "Gets the person the care they need and the next available commercial flight home. Spends what the situation requires, not what looks generous.",
-      "over": "Forces the person to wait for a cheaper routing while they are hurt or unable to finish the work."
-    },
-    {
-      "id": "infrastructure",
-      "situation": "When capacity is growing",
-      "under": "Buys all the hardware the team might need and never re-engineers the service to be cheaper to run.",
-      "justRight": "Sets an aggressive infrastructure target that forces invention in how the service is built and run.",
-      "over": "Cuts hardware so hard that availability and the customer experience break."
-    },
-    {
-      "id": "near-vs-long",
-      "situation": "When a spend looks good this quarter",
-      "under": "Big spends on things that do not last.",
-      "justRight": "Balances near-term benefit with long-term sustainability.",
-      "over": "Penny-pinches to hit this quarter's number and damages the next three years."
-    },
-    {
-      "id": "budget-as-input",
-      "situation": "When the budget becomes the argument",
-      "under": "Spends the maximum so the budget is not cut next year.",
-      "justRight": "Uses the budget as an input to the decision, not the final arbiter.",
-      "over": "Manages to the budget rather than to the right thing for the customer or the employee."
-    },
-    {
-      "id": "travel",
-      "situation": "When someone has to travel for the work",
-      "under": "Books business or first class as a habit.",
-      "justRight": "Travels coach with as few connections as will keep the person ready to do the job on arrival.",
-      "over": "Books the cheapest routing with extra connections to save a little money and burns the person's next two days."
-    },
-    {
-      "id": "builder-tools",
-      "situation": "When the spend is for the people who build",
-      "under": "Buys luxury that does not make anyone faster or more inventive.",
-      "justRight": "Spends on the tools, time, and environment that make builders faster, then is tight everywhere else.",
-      "over": "Cheaps out on the tools builders use every day, then wonders why the work is slow."
-    }
-  ],
   "examples": [
     {
       "title": "Do not chew the two-by-fours",

@@ -1,18 +1,6 @@
 {
-  "id": "customer-obsession",
-  "name": "Customer Obsession",
-  "sort": 1,
-  "aliases": [
-    "customer",
-    "customers",
-    "co",
-    "customer first",
-    "customer obsessed",
-    "customer-obsession",
-    "obsession",
-    "customer experience"
-  ],
-  "definition": "Leaders start with the customer and work backwards. They work hard to earn and keep customer trust. They watch competitors. They obsess over customers.",
+  "id": 1001,
+  "slug": "customer-obsession",
   "why": [
     "Customer Obsession is where the energy comes from. You can invent impressive technology, solve hard problems, and still fail if you are not meeting a real customer need. Competitor-watching is limiting. Learn from competitors. Live for customers.",
     "At every meeting, the customer is the person who is not in the room. Someone has to advocate for them. If you do not, the room will optimize for the people who showed up.",
@@ -20,57 +8,6 @@
     "Mature teams get arrogant. They start believing they know better than the people they depend on. The habit that prevents that: in every decision, ask how this affects the customer."
   ],
   "calibrationIntro": "Look for a named customer and a real tradeoff. A story that starts with an internal plan and retrofits a customer line is not this principle. Neither is making a process exception for every loud person, or ignoring a complaint because it is only one.",
-  "rows": [
-    {
-      "id": "decision-making",
-      "situation": "In decision making",
-      "under": "Optimizes for internal convenience. Does not put the customer experience first.",
-      "justRight": "Starts with the customer and works backwards. Seeks feedback and uses it to improve.",
-      "over": "Makes too many exceptions to a sound process because one customer asked."
-    },
-    {
-      "id": "collecting-and-responding-to-feedback",
-      "situation": "Collecting and responding to feedback",
-      "under": "Asks customers too late, or not at all, when building something new.",
-      "justRight": "Looks for feedback on a cadence. Builds service metrics. Seeks input before the plan is frozen.",
-      "over": "Changes the plan with every single comment. Loses the greater customer good."
-    },
-    {
-      "id": "setting-priorities-and-delivering-results",
-      "situation": "Setting priorities and delivering results",
-      "under": "The wrong work gets done. No customer feels heard. The people doing the work are on a death march.",
-      "justRight": "Customers understand the vision. Even when their request is not first, they can see why the current work is best for the collective good. You listen, then push back so the long-term right thing ships.",
-      "over": "Promises too much to keep every customer happy. Cannot rank requests. Deadlines slip and the team burns out from churn."
-    },
-    {
-      "id": "responding-to-a-complaint",
-      "situation": "A customer complains about a product they bought",
-      "under": "Ignores the complaint because it is only one customer.",
-      "justRight": "Investigates. Confirms the product is described accurately and is not defective. Fixes it if it is faulty. Tells the customer what you found. Replaces it when that is the honest fix.",
-      "over": "Pulls the entire listing because one person complained."
-    },
-    {
-      "id": "accidental-overcharge",
-      "situation": "You discover an accidental overcharge",
-      "under": "Ignores it if the amount is small.",
-      "justRight": "Refunds the exact overcharge without being asked. If you caused extra fees (an overdraft, a penalty), you cover those too.",
-      "over": "Sends a gift certificate well above the error and calls that the process."
-    },
-    {
-      "id": "responding-to-customer-comments",
-      "situation": "Responding to customer comments",
-      "under": "Feedback arrives only through escalations. It is not part of weekly measurement.",
-      "justRight": "Customer need is a regular part of the week. You know whether they had a good week, and whether the work ahead will help them in a significant way.",
-      "over": "Treats every comment as an urgent daily priority. Rewrites the plan weekly for feedback that is not researched or understood."
-    },
-    {
-      "id": "product-design",
-      "situation": "On product design",
-      "under": "Builds it and hopes they will come. Falls in love with the technology.",
-      "justRight": "Works backwards from the end-user need. Delivers value in increments. Rechecks whether the product is meeting the need.",
-      "over": "Tries to build the perfect product that meets every demand at once."
-    }
-  ],
   "examples": [
     {
       "title": "Keep a broken promise in person",

@@ -1,16 +1,6 @@
 {
-  "id": "ownership",
-  "name": "Ownership",
-  "sort": 2,
-  "aliases": [
-    "own",
-    "owner",
-    "owners",
-    "owned",
-    "outside your area",
-    "languishing"
-  ],
-  "definition": "Leaders are owners. They think long term and do not sacrifice long-term value for short-term results. They act on behalf of the whole company, not just their own team. They never say \"that's not my job.\"",
+  "id": 1002,
+  "slug": "ownership",
   "why": [
     "Renters pay the bills and call someone when something breaks. Owners fix the problem, or they bring in an expert and stay until the work is done to a high standard.",
     "You own what you own. You take responsibility for your area, you own your mistakes, and you deliver on your commitments. You do not put a bucket under a leak. You find the leak and seal it, even if that means replacing the roof.",
@@ -19,64 +9,6 @@
     "In some ways Ownership is the other principles applied. {lp:customer-obsession} tells you what is worth owning. {lp:deliver-results} is what ownership looks like when the date arrives. {lp:have-backbone-disagree-and-commit} is how you fight for the long-term fix when it is unpopular."
   ],
   "calibrationIntro": "Look for what someone did when the work sat outside their job description, and what they did when a dependency failed. \"I flagged it\" is not ownership. Neither is annexing someone else's area so you can be the hero.",
-  "rows": [
-    {
-      "id": "knowing-what-you-own",
-      "situation": "Knowing what you own",
-      "under": "Gives up ownership without asking whether the customer or the company is better served. Fine as long as \"someone\" is on the hook.",
-      "justRight": "Knows what they own and what they do not. Inventories it. Looks for ways to make it better, including giving it to a better owner.",
-      "over": "Never lets go of anything, even when another owner would be better for customers. Treats other groups as threats."
-    },
-    {
-      "id": "credit-and-blame",
-      "situation": "Credit and blame",
-      "under": "Passes the blame. Steals the credit.",
-      "justRight": "Everything they put their name next to, they are proud of.",
-      "over": "Acts like a sole proprietor. Owns everything. Cannot delegate."
-    },
-    {
-      "id": "unowned-blockers",
-      "situation": "Something blocks you and has no clear owner",
-      "under": "Blames the blocker. Avoids owning anything that is not already theirs.",
-      "justRight": "Takes responsibility for the unowned blocker and drives it to a real owner or a real fix.",
-      "over": "Takes over work that already has an owner, just because it is in the way."
-    },
-    {
-      "id": "holding-responsibility",
-      "situation": "Holding responsibility",
-      "under": "Avoids responsibility by blaming others.",
-      "justRight": "Works until the items they are responsible for are actually taken care of.",
-      "over": "Micromanages everyone else's work to make sure they are being good owners."
-    },
-    {
-      "id": "owning-dependencies",
-      "situation": "A dependency is late or broken",
-      "under": "Lets the dependency derail the work. Blames them. Does not try to fix what is broken.",
-      "justRight": "Owns the dependency. Follows up. Escalates when needed. Still responsible for the outcome.",
-      "over": "Never gives the dependency the benefit of the doubt. Micromanages their work instead of setting an audit and letting them do the job."
-    },
-    {
-      "id": "tough-decisions",
-      "situation": "A tough decision with a local vs company tradeoff",
-      "under": "Does not make the tough call. Lets what happens happen.",
-      "justRight": "Makes the call that is in the long-term interest of the customer, and therefore the company.",
-      "over": "Makes the short-term call that optimizes their team and hurts customers or other teams."
-    },
-    {
-      "id": "long-term-bets",
-      "situation": "Investing in the future",
-      "under": "Never thinks about the future. Downplays problems that will show up later.",
-      "justRight": "Makes big bets they believe will pay off long term. Examines the risks. Moves when they have enough information.",
-      "over": "Protects what they have. Treats any suggested change as a threat."
-    },
-    {
-      "id": "problems-outside-your-area",
-      "situation": "You see a problem outside your area",
-      "under": "Assumes someone else will take care of it.",
-      "justRight": "Points out the problem and stays until a fix is in place, in their area or not. Makes sure the problem stays solved.",
-      "over": "Points out other people's problems to gain control of their space. Cares more about enlarging what they own than solving it."
-    }
-  ],
   "examples": [
     {
       "title": "The leaky roof",

@@ -1,19 +1,6 @@
 {
-  "id": "invent-and-simplify",
-  "name": "Invent and Simplify",
-  "sort": 3,
-  "aliases": [
-    "invent",
-    "simplify",
-    "i&s",
-    "ias",
-    "innovation",
-    "innovative",
-    "invent-and-simplify",
-    "simple",
-    "novel"
-  ],
-  "definition": "Leaders expect invention from their teams and always find ways to simplify. They look for new ideas from everywhere and are not limited by \"not invented here.\" When they do new things, they accept that they may be misunderstood for a long time.",
+  "id": 1003,
+  "slug": "invent-and-simplify",
   "why": [
     "Textbook solutions will not get you there. Sometimes the problem has no parallel. Sometimes last year's solution will not scale. Invention imagines a future that is markedly different, then figures out how to get there. Innovation blows apart the constraints that make today's process behave the way it does.",
     "Invention without Simplify is decoration. Teams add features to a thing that is already too hard to use. They keep a step because \"that is how we have always done it.\" Simplifying an existing process often frees more time than a new feature ever will.",
@@ -22,71 +9,6 @@
     "Inventing well means being stubborn and flexible at the same time. Stubborn, or you quit the experiment too soon. Flexible, or you pound the wall and miss the other solution."
   ],
   "calibrationIntro": "Look for a simpler path that still solved the customer problem. \"We added a feature\" is not this principle. Neither is rewriting a working system so someone could feel clever. Look for experiments, pilots, and a willingness to use someone else's idea.",
-  "rows": [
-    {
-      "id": "complexity-vs-novelty",
-      "situation": "Living with complexity vs changing what works",
-      "under": "Lets complexity live. Lets past output drive future thinking.",
-      "justRight": "Creates room to find new ways of thinking, with the customer outcome always in mind.",
-      "over": "Changes things that are working well. Discards a sound decision so they can propose something brand new."
-    },
-    {
-      "id": "scalability-thinking",
-      "situation": "Deciding whether the current approach will scale",
-      "under": "Accepts the status quo because growth is easy right now. Does not understand the underlying numbers.",
-      "justRight": "Pushes a thought process that asks whether the idea still works at the next order of scale.",
-      "over": "Makes the change too fast, in the interest of change itself."
-    },
-    {
-      "id": "product-simplicity",
-      "situation": "Software or product design",
-      "under": "The product works and is too complex. Bugs take a long time to fix. Every new engineer wants to rewrite it.",
-      "justRight": "The result meets the goal. It is simple enough to maintain.",
-      "over": "Sacrifices the goal or the needed features for elegance."
-    },
-    {
-      "id": "team-independence",
-      "situation": "How product teams are organized",
-      "under": "Teams are too interdependent. New work is blocked too often.",
-      "justRight": "Teams are relatively independent and fast. They know their roles. They still share what they learn.",
-      "over": "Teams are siloed. Lots of \"not invented here\" and duplicated work."
-    },
-    {
-      "id": "maintainable-features",
-      "situation": "Shipping a new feature",
-      "under": "Ships a complex solution with a high operational burden.",
-      "justRight": "Delivers features that solve the customer problem and stay maintainable and reliable.",
-      "over": "Simplifies so far that the customer problem is no longer solved."
-    },
-    {
-      "id": "build-vs-buy",
-      "situation": "Build, buy, or reuse",
-      "under": "Re-implements the same solution without moving forward.",
-      "justRight": "Builds when the customer problem is new. Reuses or buys when a good solution already exists.",
-      "over": "Builds new technology where there is no need."
-    },
-    {
-      "id": "simplifying-a-process",
-      "situation": "A process has become a maze",
-      "under": "Crosses out one box, claims genius, and leaves the maze in place.",
-      "justRight": "Reduces the maze to a small, correct path. People in the room say it cannot be that easy. It is.",
-      "over": "Reduces it to two steps on their laptop, then tells someone else to implement it without talking to the people in the process or plotting where it can go wrong."
-    },
-    {
-      "id": "bureaucracy-vs-novelty",
-      "situation": "Waste, policy, and new ideas",
-      "under": "Adds layers of policy and hierarchy. Argues why you cannot change.",
-      "justRight": "Finds ways to cut waste and bureaucracy. Endorses good ideas from inside and outside. Balances both sources.",
-      "over": "Rejects anything that is not new. Tries any new thing even when the data says no."
-    },
-    {
-      "id": "purpose-of-innovation",
-      "situation": "Why you are inventing",
-      "under": "No innovation.",
-      "justRight": "Builds new things that have a purpose and improve the customer experience.",
-      "over": "Innovates for innovation's sake. Not solving a problem."
-    }
-  ],
   "examples": [
     {
       "title": "The whiteboard in the corner",
