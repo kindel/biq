@@ -108,6 +108,27 @@ for (const [q, want] of Object.entries(AMAZON_EQUIV)) {
   }
 }
 
+// Facet labels from facets.json must hit all principles mapped to that facet.
+// Search is company-scoped at runtime, but these tests verify the alias exists.
+const FACET_LABELS = [
+  { label: "acts like an owner", want: ["amazon/ownership", "dawn/ownership"] },
+  { label: "customer obsession", want: ["amazon/customer-obsession", "dawn/customer-success-is-our-success"] },
+  { label: "bias for action", want: ["amazon/bias-for-action", "dawn/bias-for-action"] },
+  { label: "invent and simplify", want: ["amazon/invent-and-simplify", "dawn/invent-and-simplify"] },
+  { label: "earn trust", want: ["amazon/earn-trust", "dawn/earn-trust"] },
+  { label: "hire and develop the best", want: ["amazon/hire-and-develop-the-best", "dawn/hire-and-develop-the-best"] },
+];
+let facetChecked = 0;
+for (const { label, want } of FACET_LABELS) {
+  const h = hits(label);
+  for (const w of want) {
+    facetChecked++;
+    if (!h.includes(w)) {
+      fail.push(`Facet label ${JSON.stringify(label)} should include ${w}, got ${JSON.stringify(h)}`);
+    }
+  }
+}
+
 // Near misses reach the right principle.
 for (const [q, want] of [["frugalty", "amazon/frugality"], ["works backwards", "coupang/aim-high-and-find-a-way"]]) {
   if (!hits(q).includes(want)) fail.push(`${JSON.stringify(q)} should reach ${want}, got ${JSON.stringify(hits(q))}`);
@@ -121,4 +142,5 @@ if (fail.length) {
 console.log(`OK: ${principles.length} principles, ${checked} name and alias lookups, ` +
             `${Object.keys(AMAZON_ABBREV).length} Amazon abbreviations, ` +
             `${Object.keys(ARM_SHORTS).length} Arm shorts, ` +
-            `${Object.keys(AMAZON_EQUIV).length} Amazon equivalents, junk and near-miss probes`);
+            `${Object.keys(AMAZON_EQUIV).length} Amazon equivalents, ` +
+            `${facetChecked} facet label lookups, junk and near-miss probes`);
