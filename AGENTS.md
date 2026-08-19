@@ -2,6 +2,12 @@
 
 PR-only. Never push to main.
 
+## Writing style
+
+No em dashes in repo copy, docs, commit messages, or PR text. Use commas, semicolons, parentheses, or periods. Oxford commas. Numbers under 10 spelled out.
+
+Before writing any copy, read Tig's voice guide: https://github.com/kindel/blog/blob/master/docs/writing-in-tigs-voice.md. Do not duplicate it here.
+
 ## Attribution
 
 MIT. Copyright (c) 2026 Kindel, LLC. Keep the copyright notice and permission notice in all copies.
