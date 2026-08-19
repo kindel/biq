@@ -167,9 +167,31 @@ h1, h2, h3 {
 }
 
 .bhiq-level-hint {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.35rem;
   color: var(--biq-muted);
   font-size: 0.9rem;
+}
+
+.bhiq-level-hint:last-child {
+  margin-bottom: 0;
+}
+
+.bhiq-level-breakdown {
+  margin: 0 0 1.25rem;
+}
+
+.bhiq-followup-note {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1rem;
+  background: var(--biq-wash);
+  border: 1px solid var(--biq-line);
+  border-left: 3px solid var(--biq-accent);
+  font-size: 0.95rem;
+}
+
+.bhiq-followup-note p {
+  margin: 0;
+  color: var(--biq-ink);
 }
 
 .bhiq-ex-table-wrap {
@@ -472,6 +494,7 @@ h1, h2, h3 {
   padding: 0 1.25rem;
   color: var(--biq-muted);
   font-size: 0.95rem;
+  text-align: center;
 }
 
 .bhiq-footer p {
