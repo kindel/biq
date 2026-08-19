@@ -16,7 +16,7 @@
       <div class="bhiq-intro">
         <p>If you already know a listed company's principles, pick that company and use those names. Or type the principle you care about in your own words.</p>
         <p>The over 200 behavioral interview questions in this tool are the questions I have used and collected over the years. The examples provided were generated based on dozens of real interview notes and debriefs that I anonymized and fed into an LLM with a tuned prompt.</p>
-        <p>Each question includes example answers showing a hire-level answer and a common no-hire answer.</p>
+        <p>Each question includes example answers showing a hire-level answer and a common no-hire answer. Examples change by level on scope, impact metrics, and influence.</p>
       </div>
       <p class="bhiq-level-label" id="bhiq-company-label">Company</p>
       <select id="bhiq-company" class="bhiq-select" aria-labelledby="bhiq-company-label"></select>
@@ -27,7 +27,11 @@
         <label><input type="radio" name="bhiq-level" value="senior" checked> Senior</label>
         <label><input type="radio" name="bhiq-level" value="exec"> Exec</label>
       </div>
-      <p class="bhiq-level-hint">Example answers are written for this level.</p>
+      <div class="bhiq-level-breakdown">
+        <p class="bhiq-level-hint"><strong>Junior:</strong> Their own work, local scope, impact in the room they sit in.</p>
+        <p class="bhiq-level-hint"><strong>Senior:</strong> Owns the outcome end to end, cites numbers, moves peers and partners.</p>
+        <p class="bhiq-level-hint"><strong>Exec:</strong> Sets the bar across orgs, multiplies through other people, the numbers are org-level.</p>
+      </div>
       </div>
       <label id="bhiq-input-label" for="bhiq-input">Principle</label>
       <input id="bhiq-input" type="search" autocomplete="off" spellcheck="false" placeholder="Customer Obsession, Earn Trust, BFA">
