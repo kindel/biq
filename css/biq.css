@@ -77,6 +77,23 @@ h1, h2, h3 {
   font-size: 1.45rem;
 }
 
+.biq-ex-head {
+  margin: 0 0 1.5rem;
+}
+
+.biq-ex-principle {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--biq-ink);
+}
+
+.biq-ex-sub {
+  margin: 0.5rem 0 0;
+  color: var(--biq-muted);
+  font-size: 0.95rem;
+}
+
 .bhiq-page {
   padding-bottom: 4rem;
 }

@@ -22,11 +22,22 @@
   var question = params.get("q") || "";
   var company = params.get("c") || "";
   var qid = params.get("qid") || "";
+  var contextEl = document.getElementById("biq-ex-context");
   var principleEl = document.getElementById("biq-ex-principle");
   var questionEl = document.getElementById("biq-ex-question");
   var statusEl = document.getElementById("biq-ex-status");
   var sheetEl = document.getElementById("biq-ex-sheet");
+  var backEl = document.getElementById("biq-ex-back");
   if (!questionEl || !statusEl || !sheetEl) return;
+
+  // Keep the company scope on the way back, so ?c=arm returns to Arm's bank.
+  if (backEl && company) {
+    try {
+      var backUrl = new URL(backEl.getAttribute("href"), document.baseURI || window.location.href);
+      backUrl.searchParams.set("c", company);
+      backEl.setAttribute("href", backUrl.pathname + backUrl.search + backUrl.hash);
+    } catch (e) {}
+  }
 
   var LEVELS = ["junior", "senior", "exec"];
   var LEVEL_KEY = "bhiq-level";
@@ -57,8 +68,12 @@
 
   var currentLevel = setLevel(params.get("l") || readStoredLevel());
 
-  if (principleEl) principleEl.textContent = principle || "Behavioral question";
+  if (principleEl && principle) {
+    principleEl.textContent = principle;
+    principleEl.hidden = false;
+  }
   questionEl.textContent = question || "No question was passed.";
+  if (question) document.title = question + " — example answers";
 
   function syncLevelRadios() {
     var inputs = document.querySelectorAll('input[name="bhiq-level"]');
@@ -278,20 +293,22 @@
       });
   }
 
-  function resolvePrincipleId(bank) {
+  function resolveContext(bank) {
     var companies = (bank && bank.companies) || [];
     var targetCompany = company ? company.toLowerCase() : "";
+    var fallbackCompany = null;
     for (var i = 0; i < companies.length; i++) {
       var c = companies[i];
+      if (targetCompany && c.id === targetCompany) fallbackCompany = c;
       if (targetCompany && c.id !== targetCompany) continue;
       var principles = c.principles || [];
       for (var j = 0; j < principles.length; j++) {
         var p = principles[j];
         if (norm(p.name) === norm(principle)) {
-          return typeof p.id === "number" ? p.id : null;
+          return { company: c, principle: p };
         }
         if (p.slug && norm(p.slug.replace(/-/g, " ")) === norm(principle)) {
-          return typeof p.id === "number" ? p.id : null;
+          return { company: c, principle: p };
         }
       }
     }
@@ -301,11 +318,39 @@
       for (var m = 0; m < principles2.length; m++) {
         var p2 = principles2[m];
         if (norm(p2.name) === norm(principle)) {
-          return typeof p2.id === "number" ? p2.id : null;
+          return { company: c2, principle: p2 };
         }
       }
     }
+    return { company: fallbackCompany, principle: null };
+  }
+
+  function findQuestion(p) {
+    if (!p || !p.questions) return null;
+    var qn = norm(question);
+    for (var i = 0; i < p.questions.length; i++) {
+      var q = p.questions[i];
+      if (qid && q.id === qid) return q;
+      if (norm(q.text) === qn) return q;
+    }
     return null;
+  }
+
+  function renderHeader(ctx) {
+    if (contextEl && ctx.company) {
+      contextEl.textContent = ctx.company.name + " · " + (ctx.company.item || "Principle");
+    }
+    if (principleEl && ctx.principle) {
+      principleEl.textContent = ctx.principle.name;
+      principleEl.hidden = false;
+    }
+    var q = findQuestion(ctx.principle);
+    if (q && q.manager && questionEl && !questionEl.querySelector(".bhiq-manager")) {
+      var tag = document.createElement("span");
+      tag.className = "bhiq-manager";
+      tag.textContent = "Manager";
+      questionEl.appendChild(tag);
+    }
   }
 
   function fetchPack() {
@@ -347,7 +392,9 @@
       return r.json();
     })
     .then(function (bank) {
-      resolvedPrincipleId = resolvePrincipleId(bank);
+      var ctx = resolveContext(bank);
+      resolvedPrincipleId = ctx.principle && typeof ctx.principle.id === "number" ? ctx.principle.id : null;
+      renderHeader(ctx);
       fetchPack();
     })
     .catch(function () {
