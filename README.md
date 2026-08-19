@@ -80,3 +80,7 @@ principle id is unique across all companies (Amazon 1000s, Arm 2000s, Coupang 30
 Delivery Hero 4000s, GitLab 5000s, Dawn 6000s), so pack filenames cannot collide
 even when two companies share a principle name. The generator reads `prompt.md`
 and calls xAI `grok-4.3`.
+
+## License
+
+MIT. Copyright (c) 2026 Kindel, LLC. Keep the copyright notice and permission notice in all copies.
