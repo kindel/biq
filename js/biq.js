@@ -87,6 +87,26 @@
     }
   }
 
+  function urlPrinciple() {
+    try {
+      return new URL(window.location.href).searchParams.get("p") || "";
+    } catch (e) {
+      return "";
+    }
+  }
+
+  // The URL carries the search too, so the examples page's back link can
+  // return to the same results instead of a reset bank.
+  function syncUrlPrinciple() {
+    try {
+      var u = new URL(window.location.href);
+      var raw = String(input.value || "").trim();
+      if (raw) u.searchParams.set("p", raw);
+      else u.searchParams.delete("p");
+      window.history.replaceState({}, "", u.pathname + u.search + u.hash);
+    } catch (e) {}
+  }
+
   function getCompanyId() {
     var fromUrl = urlCompany();
     if (fromUrl && companyById(fromUrl)) return companyById(fromUrl).id;
@@ -167,6 +187,7 @@
     syncCompanySelect();
     if (!rerender) return;
     if (input) input.value = "";
+    syncUrlPrinciple();
     renderSelects(principles());
     renderResults([], "");
   }
@@ -448,12 +469,19 @@
       renderSelects(principles());
       renderResults([], "");
       var searchTimer = null;
-      input.addEventListener("input", function () {
+      function applySearch() {
         var list = principles();
         var q = norm(input.value);
         var hits = q ? list.filter(function (p) { return matches(p, q); }) : [];
         syncSelects(list);
         renderResults(hits, q);
+        return { query: q, hits: hits };
+      }
+      input.addEventListener("input", function () {
+        var found = applySearch();
+        var q = found.query;
+        var hits = found.hits;
+        syncUrlPrinciple();
         clearTimeout(searchTimer);
         if (!q) return;
         searchTimer = setTimeout(function () {
@@ -467,6 +495,13 @@
           });
         }, 600);
       });
+      // Restore a search carried back from the examples page. A restore is
+      // not a new search, so it renders without tracking.
+      var restored = urlPrinciple();
+      if (restored) {
+        input.value = restored;
+        applySearch();
+      }
       results.addEventListener("click", function (e) {
         var a = e.target.closest ? e.target.closest(".bhiq-examples-btn") : null;
         if (!a) return;

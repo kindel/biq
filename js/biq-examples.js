@@ -30,11 +30,13 @@
   var backEl = document.getElementById("biq-ex-back");
   if (!questionEl || !statusEl || !sheetEl) return;
 
-  // Keep the company scope on the way back, so ?c=arm returns to Arm's bank.
-  if (backEl && company) {
+  // Keep the company and principle on the way back, so the bank restores the
+  // same search results instead of resetting to an empty page.
+  if (backEl && (company || principle)) {
     try {
       var backUrl = new URL(backEl.getAttribute("href"), document.baseURI || window.location.href);
-      backUrl.searchParams.set("c", company);
+      if (company) backUrl.searchParams.set("c", company);
+      if (principle) backUrl.searchParams.set("p", principle);
       backEl.setAttribute("href", backUrl.pathname + backUrl.search + backUrl.hash);
     } catch (e) {}
   }
