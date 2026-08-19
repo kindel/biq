@@ -78,7 +78,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "customer-obsession"
+          "slug": "customer-obsession",
+          "facets": [
+            "customer-obsession"
+          ]
         },
         {
           "id": 1002,
@@ -152,7 +155,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "ownership"
+          "slug": "ownership",
+          "facets": [
+            "acts-like-an-owner"
+          ]
         },
         {
           "id": 1003,
@@ -225,7 +231,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "invent-and-simplify"
+          "slug": "invent-and-simplify",
+          "facets": [
+            "invent-and-simplify"
+          ]
         },
         {
           "id": 1004,
@@ -439,7 +448,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "hire-and-develop-the-best"
+          "slug": "hire-and-develop-the-best",
+          "facets": [
+            "hire-and-develop-the-best"
+          ]
         },
         {
           "id": 1007,
@@ -505,7 +517,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "insist-on-the-highest-standards"
+          "slug": "insist-on-the-highest-standards",
+          "facets": [
+            "better-every-day"
+          ]
         },
         {
           "id": 1008,
@@ -584,7 +599,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "think-big"
+          "slug": "think-big",
+          "facets": [
+            "think-big"
+          ]
         },
         {
           "id": 1009,
@@ -649,7 +667,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "bias-for-action"
+          "slug": "bias-for-action",
+          "facets": [
+            "bias-for-action"
+          ]
         },
         {
           "id": 1010,
@@ -780,7 +801,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "earn-trust"
+          "slug": "earn-trust",
+          "facets": [
+            "earn-trust"
+          ]
         },
         {
           "id": 1012,
@@ -851,7 +875,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "dive-deep"
+          "slug": "dive-deep",
+          "facets": [
+            "dive-deep"
+          ]
         },
         {
           "id": 1013,
@@ -920,7 +947,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "have-backbone-disagree-and-commit"
+          "slug": "have-backbone-disagree-and-commit",
+          "facets": [
+            "have-backbone-disagree-and-commit"
+          ]
         },
         {
           "id": 1014,
@@ -1292,7 +1322,10 @@
               "id": "55964db2"
             }
           ],
-          "slug": "own-it"
+          "slug": "own-it",
+          "facets": [
+            "acts-like-an-owner"
+          ]
         },
         {
           "id": 2009,
@@ -1423,7 +1456,10 @@
               "id": "dbe9486d"
             }
           ],
-          "slug": "wow-the-customer"
+          "slug": "wow-the-customer",
+          "facets": [
+            "customer-obsession"
+          ]
         },
         {
           "id": 3002,
@@ -1531,7 +1567,10 @@
               "id": "f578385b"
             }
           ],
-          "slug": "dive-deep"
+          "slug": "dive-deep",
+          "facets": [
+            "dive-deep"
+          ]
         },
         {
           "id": 3005,
@@ -1675,7 +1714,10 @@
               "id": "7b053a88"
             }
           ],
-          "slug": "hire-and-develop-the-best"
+          "slug": "hire-and-develop-the-best",
+          "facets": [
+            "hire-and-develop-the-best"
+          ]
         },
         {
           "id": 3009,
@@ -1980,7 +2022,10 @@
               "id": "191ac69d"
             }
           ],
-          "slug": "own-it"
+          "slug": "own-it",
+          "facets": [
+            "acts-like-an-owner"
+          ]
         },
         {
           "id": 4002,
@@ -2016,7 +2061,10 @@
               "id": "7b395dbd"
             }
           ],
-          "slug": "dive-deep"
+          "slug": "dive-deep",
+          "facets": [
+            "dive-deep"
+          ]
         },
         {
           "id": 4003,
@@ -2478,6 +2526,9 @@
               "manager": true,
               "id": "08c20155"
             }
+          ],
+          "facets": [
+            "customer-obsession"
           ]
         },
         {
@@ -2547,6 +2598,9 @@
               "manager": true,
               "id": "4f36093f"
             }
+          ],
+          "facets": [
+            "acts-like-an-owner"
           ]
         },
         {
@@ -2616,6 +2670,9 @@
               "manager": true,
               "id": "2415ecb6"
             }
+          ],
+          "facets": [
+            "invent-and-simplify"
           ]
         },
         {
@@ -2651,6 +2708,9 @@
               "manager": true,
               "id": "62f14933"
             }
+          ],
+          "facets": [
+            "bias-for-action"
           ]
         },
         {
@@ -2685,6 +2745,9 @@
               "manager": true,
               "id": "e4e4c7c1"
             }
+          ],
+          "facets": [
+            "earn-trust"
           ]
         },
         {
@@ -2720,6 +2783,9 @@
               "manager": true,
               "id": "7d9b72ac"
             }
+          ],
+          "facets": [
+            "better-every-day"
           ]
         },
         {
@@ -2755,6 +2821,9 @@
               "manager": true,
               "id": "6d55bb82"
             }
+          ],
+          "facets": [
+            "hire-and-develop-the-best"
           ]
         },
         {
@@ -2791,6 +2860,9 @@
               "manager": true,
               "id": "3f049880"
             }
+          ],
+          "facets": [
+            "have-backbone-disagree-and-commit"
           ]
         },
         {
@@ -2931,6 +3003,115 @@
               "manager": true,
               "id": "340cbd3d"
             }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "toyota",
+      "name": "Toyota",
+      "set": "The Toyota Way",
+      "source": "https://www.toyota-global.com/pages/contents/investors/ir_library/annual/pdf/2018/ar18_3_en.pdf",
+      "howTo": [
+        "Pick two or three questions per assigned keyword.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "keyword",
+      "principles": [
+        {
+          "id": 7001,
+          "slug": "challenge",
+          "name": "Challenge",
+          "group": "continuous-improvement",
+          "aliases": [
+            "challenge",
+            "long term vision",
+            "take on challenges",
+            "form a long term vision",
+            "courage and creativity",
+            "think big"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "think-big"
+          ]
+        },
+        {
+          "id": 7002,
+          "slug": "kaizen",
+          "name": "Kaizen",
+          "group": "continuous-improvement",
+          "aliases": [
+            "kaizen",
+            "continuous improvement",
+            "always improve",
+            "better every day",
+            "never satisfied"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "better-every-day"
+          ]
+        },
+        {
+          "id": 7003,
+          "slug": "genchi-genbutsu",
+          "name": "Genchi Genbutsu",
+          "group": "continuous-improvement",
+          "aliases": [
+            "genchi genbutsu",
+            "go and see",
+            "gemba",
+            "go to the source",
+            "dive deep",
+            "find the facts"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "dive-deep"
+          ]
+        },
+        {
+          "id": 7004,
+          "slug": "respect",
+          "name": "Respect",
+          "group": "respect-for-people",
+          "aliases": [
+            "respect",
+            "mutual trust",
+            "understand each other",
+            "take responsibility",
+            "earn trust"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "earn-trust"
+          ]
+        },
+        {
+          "id": 7005,
+          "slug": "teamwork",
+          "name": "Teamwork",
+          "group": "respect-for-people",
+          "aliases": [
+            "teamwork",
+            "develop people",
+            "share opportunities",
+            "grow the person",
+            "team performance",
+            "hire and develop the best"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "hire-and-develop-the-best"
           ]
         }
       ]
