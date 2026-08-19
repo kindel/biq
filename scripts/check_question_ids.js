@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
  * Verifies question id integrity:
- * 1. Every question in a company with examples:true has an id
+ * 1. Every question in an examples-enabled company has an id (a company is
+ *    enabled unless it carries examples: false, matching the runtime)
  * 2. That id's pack file exists in data/examples/
  * 3. Ids are eight hex chars and globally unique across the bank
  *

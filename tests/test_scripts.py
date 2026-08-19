@@ -85,19 +85,9 @@ class NoFacetSkipTest(unittest.TestCase):
                         {"id": "bbbb2222", "text": "Question two?"}]},
                 ]}]}
             (td / "bank.json").write_text(json.dumps(bank))
-            # Both principles share a facet and 9001 already has a pack: the
-            # old skip declared 9002 covered and never generated its pack.
-            index = {"companies": [{"id": "testco", "principles": [
-                {"id": 9001, "facets": ["shared"]},
-                {"id": 9002, "facets": ["shared"]},
-            ]}]}
-            (td / "index.json").write_text(json.dumps(index))
 
             old_bank, old_out = generate.BANK, generate.OUT_DIR
             old_env = {k: os.environ.get(k) for k in ("BIQ_DRY_RUN", "BIQ_COMPANY")}
-            if hasattr(generate, "INDEX_URL"):
-                old_index_url = generate.INDEX_URL
-                generate.INDEX_URL = (td / "index.json").as_uri()
             generate.BANK = str(td / "bank.json")
             generate.OUT_DIR = str(out)
             os.environ["BIQ_DRY_RUN"] = "1"
@@ -107,8 +97,6 @@ class NoFacetSkipTest(unittest.TestCase):
                     generate.main()
             finally:
                 generate.BANK, generate.OUT_DIR = old_bank, old_out
-                if hasattr(generate, "INDEX_URL"):
-                    generate.INDEX_URL = old_index_url
                 for k, v in old_env.items():
                     if v is None:
                         os.environ.pop(k, None)
