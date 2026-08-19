@@ -8,10 +8,14 @@
 </head>
 <body>
   <main class="bhiq-page">
-    <p class="biq-back"><a href="index.html">Back to questions</a></p>
+    <p class="biq-back"><a id="biq-ex-back" href="index.html">Back to questions</a></p>
     <section class="bhiq-app" id="biq-examples-app">
-      <p class="bhiq-kind" id="biq-ex-principle"></p>
-      <h2 id="biq-ex-question">Loading question...</h2>
+      <header class="biq-ex-head">
+        <p class="bhiq-kind" id="biq-ex-context">Behavioral question</p>
+        <p class="biq-ex-principle" id="biq-ex-principle" hidden></p>
+        <h2 id="biq-ex-question">Loading question...</h2>
+        <p class="biq-ex-sub">Hire and no-hire example answers for this question, with interviewer notes and a scorecard.</p>
+      </header>
       <p class="bhiq-level-label" id="bhiq-level-label">Level</p>
       <div class="bhiq-level" role="radiogroup" aria-labelledby="bhiq-level-label">
         <label><input type="radio" name="bhiq-level" value="junior"> Junior</label>
