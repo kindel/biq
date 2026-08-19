@@ -36,7 +36,6 @@
   var lpSelect = null;
   var LEVELS = ["junior", "senior", "exec"];
   var LEVEL_KEY = "bhiq-level";
-  var COMPANY_KEY = "bhiq-company";
   var companies = [];
   var currentCompany = null;
 
@@ -95,10 +94,10 @@
   }
 
   function setCompany(id) {
+    // The URL is the only carrier of company state: getCompanyId() reads ?c
+    // and nothing else, so nothing is stored that could go stale and
+    // override it.
     currentCompany = companyById(id) || companies[0];
-    try {
-      sessionStorage.setItem(COMPANY_KEY, currentCompany.id);
-    } catch (e) {}
     try {
       var u = new URL(window.location.href);
       if (currentCompany.id === (companies[0] && companies[0].id)) u.searchParams.delete("c");

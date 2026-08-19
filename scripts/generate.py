@@ -3,6 +3,7 @@
 
 import json
 import os
+import re
 import time
 import urllib.error
 import urllib.request
@@ -20,15 +21,6 @@ TIMEOUT = 180
 RETRIES = 3
 LEVELS = ("junior", "senior", "exec")
 TRUTHY = ("1", "true", "yes", "on")
-
-INDEX_URL = os.environ.get(
-    "PRINCIPLES_INDEX_URL",
-    "https://raw.githubusercontent.com/kindel/principles/main/data/index.json",
-)
-FACETS_URL = os.environ.get(
-    "PRINCIPLES_FACETS_URL",
-    "https://raw.githubusercontent.com/kindel/principles/main/data/facets.json",
-)
 
 SCHEMA = """
 Return JSON only. No markdown. No fence.
@@ -72,7 +64,11 @@ Manager is optional. Always include junior, senior, and exec when generating all
 
 
 def norm(s):
-    return " ".join("".join(ch.lower() if ch.isalnum() else " " for ch in (s or "")).split())
+    # Must match js/biq-examples.js norm() byte for byte: only ASCII [a-z0-9]
+    # survives, so the key slug_for hashes is the same string the browser
+    # hashes. Anything wider (Unicode isalnum, say) diverges from the JS and
+    # breaks key.encode("ascii") below.
+    return " ".join(re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).split())
 
 
 def slug_for(principle_id, q):
@@ -213,61 +209,6 @@ def write_log(payload):
     json.dump(payload, open(LOG, "w"), indent=2)
 
 
-def fetch_facet_map():
-    """Build a mapping of principle_id -> [facet_ids] from upstream data.
-
-    Returns a dict where each key is a principle id (int) and each value is
-    a list of facet ids that principle belongs to.
-    """
-    pid_to_facets = {}
-    try:
-        with urllib.request.urlopen(INDEX_URL, timeout=30) as r:
-            idx = json.load(r)
-        for c in idx.get("companies", []):
-            for p in c.get("principles", []):
-                pid = p.get("id")
-                facets = p.get("facets", [])
-                if isinstance(pid, int) and facets:
-                    pid_to_facets[pid] = facets
-    except Exception:
-        pass
-    return pid_to_facets
-
-
-def scan_existing_packs_from_bank(bank):
-    """Determine which principles have at least one valid pack.
-
-    Uses the bank to iterate principles and their questions, checking if each
-    question has a valid pack file. Returns a set of principle_ids (int) that
-    have at least one valid pack.
-    """
-    pids_with_packs = set()
-    for c in bank.get("companies", []):
-        for p in c.get("principles", []):
-            pid = p.get("id")
-            if not isinstance(pid, int):
-                continue
-            for q in p.get("questions", []):
-                qid = q.get("id") or ""
-                slug = qid if qid else slug_for(pid, q.get("text") or "")
-                if existing_valid(slug):
-                    pids_with_packs.add(pid)
-                    break
-    return pids_with_packs
-
-
-def build_covered_facets(pid_to_facets, pids_with_packs):
-    """Build a set of facet ids that are covered by pack-bearing principles.
-
-    A facet is covered if at least one principle mapped to it has packs.
-    """
-    covered = set()
-    for pid, facets in pid_to_facets.items():
-        if pid in pids_with_packs:
-            covered.update(facets)
-    return covered
-
-
 def main():
     # BIQ_DRY_RUN reports what a run would cost and writes nothing, so the
     # count can be checked before spending. It needs no API key. Accepts the
@@ -316,46 +257,16 @@ def main():
                 }
             )
 
-    # Facet-based skip: avoid generating packs for a principle that shares a
-    # facet with another principle that already has packs. The existing packs
-    # for the facet provide the same hire/no-hire examples.
-    pid_to_facets = fetch_facet_map()
-    pids_with_packs = scan_existing_packs_from_bank(bank)
-    covered_facets = build_covered_facets(pid_to_facets, pids_with_packs)
-
-    # Group jobs by principle_id to check if the principle has any existing packs
-    jobs_by_pid = {}
-    for j in jobs:
-        jobs_by_pid.setdefault(j["principle_id"], []).append(j)
-
+    # Every question in scope gets its own pack. There is no facet-based
+    # skip: the examples page fetches a pack by this question's own id, so
+    # a sibling principle's packs answer different questions and a skipped
+    # question is a dead Examples button, not shared coverage.
     pending = []
     have = 0
-    skipped_facet = 0
-    skipped_principles = set()
     for j in jobs:
-        slug = slug_for_job(j)
-        pid = j["principle_id"]
-        if existing_valid(slug):
+        if existing_valid(slug_for_job(j)):
             have += 1
             continue
-
-        # If this principle has no existing packs at all and shares a facet
-        # with a principle that already has packs, skip to avoid duplicate
-        # facet coverage. Only check if the principle has zero packs.
-        if pid not in pids_with_packs:
-            principle_facets = pid_to_facets.get(pid, [])
-            covered_by = [f for f in principle_facets if f in covered_facets]
-            if covered_by:
-                skipped_facet += 1
-                if pid not in skipped_principles:
-                    skipped_principles.add(pid)
-                    print(
-                        f"skip {j['principle']!r} (id={pid}): facets {covered_by} "
-                        f"already covered by pack-bearing principles",
-                        flush=True,
-                    )
-                continue
-
         pending.append(j)
 
     # A run that matches nothing is a misconfiguration, not a no-op. Failing
@@ -368,11 +279,10 @@ def main():
                                      for p in c.get("principles") or []))
         )
 
-    print(f"total={len(jobs)} have={have} pending={len(pending)} skipped_facet={skipped_facet}", flush=True)
+    print(f"total={len(jobs)} have={have} pending={len(pending)}", flush=True)
     if dry_run:
         print(
-            f"dry run: {len(pending)} api calls would be made, "
-            f"{skipped_facet} skipped (facet already covered), nothing written",
+            f"dry run: {len(pending)} api calls would be made, nothing written",
             flush=True,
         )
         return

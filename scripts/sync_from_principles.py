@@ -113,19 +113,22 @@ def union_aliases(existing: list[str], upstream: list[str]) -> list[str]:
     return result
 
 
-def sync_aliases(bank: dict, dry_run: bool = False) -> list[str]:
+def sync_aliases(bank: dict, idx: dict, dry_run: bool = False) -> list[str]:
     """Sync aliases from kindel/principles for all companies.
 
     For each principle, fetches the full record from upstream and unions:
     - alias/equivalent/facet term labels from the principle detail
     - facet labels from facets.json for facets listed in index.json v4
 
+    idx is the already-fetched index.json, the same one main() built shells
+    from. Fetching it again here could observe a different upstream commit
+    mid-run, so shells and aliases in one PR would disagree.
+
     Only modifies the aliases array; questions and other fields are untouched.
 
     Returns a list of changes made (or that would be made in dry_run mode).
     """
     # Build a lookup of principle id -> facet ids from index.json v4
-    idx = load_index()
     pid_to_facet_ids: dict[int, list[str]] = {}
     for c in idx.get("companies", []):
         for p in c.get("principles", []):
@@ -290,7 +293,7 @@ def main() -> int:
             added_principles.append(f"{cid}/{slug or pid}")
 
     # Sync aliases from upstream term labels (alias + equivalent kinds)
-    alias_changes = sync_aliases(bank)
+    alias_changes = sync_aliases(bank, idx)
 
     lines = [f"principles {sha}", ""]
     if added_companies:

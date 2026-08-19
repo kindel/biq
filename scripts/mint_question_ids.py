@@ -20,23 +20,10 @@ BANK = os.path.join(ROOT, "data", "questions.json")
 EXAMPLES_DIR = os.path.join(ROOT, "data", "examples")
 
 
-def norm(s):
-    """Normalise text for hashing. Must match generate.py exactly."""
-    return " ".join("".join(ch.lower() if ch.isalnum() else " " for ch in (s or "")).split())
-
-
-def slug_for(principle_id, q):
-    """Compute the pack filename from numeric principle id and question text.
-
-    Copy of generate.py slug_for. The key is str(id) + "|" + norm(question),
-    hashed with FNV-1a. This makes each pack unique by construction.
-    """
-    key = str(principle_id) + "|" + norm(q)
-    h = 2166136261
-    for c in key.encode("ascii"):
-        h ^= c
-        h = (h * 16777619) & 0xFFFFFFFF
-    return f"{h:08x}"
+# One hash, one owner. Importing from generate.py is what keeps a minted id
+# identical to the filename generate.py writes; a copy here drifted once.
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from generate import norm, slug_for  # noqa: E402
 
 
 def main():
