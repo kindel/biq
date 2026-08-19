@@ -75,6 +75,38 @@
   questionEl.textContent = question || "No question was passed.";
   if (question) document.title = question + " · example answers";
 
+  // Shared packs keep the donor question id. When the selected principle
+  // is not the one the pack was written for, say so rather than presenting
+  // donor-named guidance as this company's.
+  function examplesNote(selectedPrinciple, packPrinciple) {
+    function n(s) {
+      return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+    }
+    if (!selectedPrinciple || !packPrinciple) return "";
+    if (n(selectedPrinciple) === n(packPrinciple)) return "";
+    return "These examples were written for " + packPrinciple +
+      ". The question is shared through a common facet.";
+  }
+
+  function showDonorNote(pack) {
+    var note = examplesNote(principle, pack && pack.principle);
+    var el = document.getElementById("biq-ex-note");
+    if (!el && principleEl && principleEl.parentNode) {
+      el = document.createElement("p");
+      el.id = "biq-ex-note";
+      el.className = "bhiq-ex-note";
+      principleEl.parentNode.insertBefore(el, principleEl.nextSibling);
+    }
+    if (!el) return;
+    if (note) {
+      el.hidden = false;
+      el.textContent = note;
+    } else {
+      el.hidden = true;
+      el.textContent = "";
+    }
+  }
+
   function syncLevelRadios() {
     var inputs = document.querySelectorAll('input[name="bhiq-level"]');
     for (var i = 0; i < inputs.length; i++) {
@@ -181,6 +213,7 @@
     syncLevelRadios();
     updateUrl();
     if (!loaded) return;
+    showDonorNote(loaded.data);
     var trackSlug = qid || (resolvedPrincipleId !== null ? slugFor(resolvedPrincipleId, question) : "");
     if (loaded.kind === "pack") {
       var pack = loaded.data;
@@ -249,6 +282,7 @@
   }
 
   function showMissing() {
+    showDonorNote(null);
     statusEl.hidden = false;
     sheetEl.hidden = true;
     statusEl.textContent = "No saved examples for this question yet.";
@@ -261,6 +295,7 @@
   }
 
   function showLoadError() {
+    showDonorNote(null);
     statusEl.hidden = false;
     sheetEl.hidden = true;
     statusEl.textContent = "Could not load the example bank.";

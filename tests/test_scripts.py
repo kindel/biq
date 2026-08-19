@@ -126,5 +126,65 @@ class SyncSingleFetchTest(unittest.TestCase):
         self.assertEqual([], fetched)
 
 
+class StampFacetsTest(unittest.TestCase):
+    """stamp_facets copies, replaces, or removes facet ids from the index.
+
+    Inheritance at runtime is keyed on these ids. A silent stamp bug would
+    attach the wrong donor questions, or none.
+    """
+
+    def test_copy_facets_onto_a_bank_principle_that_has_none(self):
+        bank = {"companies": [{"principles": [{"id": 7001}]}]}
+        idx = {"companies": [{"principles": [{"id": 7001, "facets": ["think-big"]}]}]}
+        n = sync.stamp_facets(bank, idx)
+        self.assertEqual(1, n)
+        self.assertEqual(
+            ["think-big"], bank["companies"][0]["principles"][0]["facets"])
+
+    def test_replace_stale_facets_with_the_index(self):
+        bank = {"companies": [{"principles": [
+            {"id": 7001, "facets": ["old-facet"]}]}]}
+        idx = {"companies": [{"principles": [
+            {"id": 7001, "facets": ["think-big"]}]}]}
+        n = sync.stamp_facets(bank, idx)
+        self.assertEqual(1, n)
+        self.assertEqual(
+            ["think-big"], bank["companies"][0]["principles"][0]["facets"])
+
+    def test_remove_facets_when_the_index_has_none(self):
+        bank = {"companies": [{"principles": [
+            {"id": 7001, "facets": ["think-big"]}]}]}
+        idx = {"companies": [{"principles": [{"id": 7001}]}]}
+        n = sync.stamp_facets(bank, idx)
+        self.assertEqual(1, n)
+        self.assertNotIn("facets", bank["companies"][0]["principles"][0])
+
+    def test_remove_facets_when_the_index_lists_an_empty_array(self):
+        bank = {"companies": [{"principles": [
+            {"id": 7001, "facets": ["think-big"]}]}]}
+        idx = {"companies": [{"principles": [{"id": 7001, "facets": []}]}]}
+        n = sync.stamp_facets(bank, idx)
+        self.assertEqual(1, n)
+        self.assertNotIn("facets", bank["companies"][0]["principles"][0])
+
+    def test_leave_nonnumeric_ids_unchanged(self):
+        bank = {"companies": [{"principles": [
+            {"id": "challenge", "facets": ["think-big"]}]}]}
+        idx = {"companies": [{"principles": [
+            {"id": 7001, "facets": ["other"]}]}]}
+        n = sync.stamp_facets(bank, idx)
+        self.assertEqual(0, n)
+        self.assertEqual(
+            ["think-big"], bank["companies"][0]["principles"][0]["facets"])
+
+    def test_no_change_when_facets_already_match(self):
+        bank = {"companies": [{"principles": [
+            {"id": 7001, "facets": ["think-big"]}]}]}
+        idx = {"companies": [{"principles": [
+            {"id": 7001, "facets": ["think-big"]}]}]}
+        n = sync.stamp_facets(bank, idx)
+        self.assertEqual(0, n)
+
+
 if __name__ == "__main__":
     unittest.main()

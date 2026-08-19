@@ -88,6 +88,12 @@ h1, h2, h3 {
   color: var(--biq-ink);
 }
 
+.bhiq-ex-note {
+  margin: 0.35rem 0 0;
+  color: var(--biq-muted);
+  font-size: 0.95rem;
+}
+
 .biq-ex-sub {
   margin: 0.5rem 0 0;
   color: var(--biq-muted);

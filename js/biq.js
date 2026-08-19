@@ -111,8 +111,47 @@
     return (currentCompany && currentCompany.principles) || [];
   }
 
+  // The question list is a fixed bank. A later company inherits those
+  // questions through shared facets; empty questions on a faceted
+  // principle is the correct stored form.
+  function attachFacetQuestions(list) {
+    var donor = {};
+    list.forEach(function (c) {
+      (c.principles || []).forEach(function (p) {
+        var qs = p.questions || [];
+        if (!qs.length) return;
+        (p.facets || []).forEach(function (f) {
+          if (!donor[f]) donor[f] = qs;
+        });
+      });
+    });
+    list.forEach(function (c) {
+      (c.principles || []).forEach(function (p) {
+        if ((p.questions || []).length) return;
+        var seen = {};
+        var out = [];
+        (p.facets || []).forEach(function (f) {
+          (donor[f] || []).forEach(function (q) {
+            var k = q.id || q.text;
+            if (seen[k]) return;
+            seen[k] = true;
+            out.push(q);
+          });
+        });
+        p.questions = out;
+      });
+    });
+  }
+
   function hasExamples() {
-    return !!(currentCompany && currentCompany.examples !== false);
+    var list = principles();
+    for (var i = 0; i < list.length; i++) {
+      var qs = list[i].questions || [];
+      for (var j = 0; j < qs.length; j++) {
+        if (qs[j].id) return true;
+      }
+    }
+    return false;
   }
 
   function kindLabel() {
@@ -416,7 +455,7 @@
           text.appendChild(tag);
         }
         row.appendChild(text);
-        if (hasExamples()) {
+        if (q.id) {
           var ex = document.createElement("a");
           ex.className = "bhiq-examples-btn";
           ex.textContent = "Examples";
@@ -443,6 +482,7 @@
     })
     .then(function (bank) {
       companies = normalizeBank(bank);
+      attachFacetQuestions(companies);
       applyCompany(getCompanyId(), false);
       bindCompany();
       renderSelects(principles());

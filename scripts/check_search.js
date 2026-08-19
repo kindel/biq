@@ -115,8 +115,11 @@ const FACET_LABELS = [
   { label: "customer obsession", want: ["amazon/customer-obsession", "dawn/customer-success-is-our-success"] },
   { label: "bias for action", want: ["amazon/bias-for-action", "dawn/bias-for-action"] },
   { label: "invent and simplify", want: ["amazon/invent-and-simplify", "dawn/invent-and-simplify"] },
-  { label: "earn trust", want: ["amazon/earn-trust", "dawn/earn-trust"] },
-  { label: "hire and develop the best", want: ["amazon/hire-and-develop-the-best", "dawn/hire-and-develop-the-best"] },
+  { label: "earn trust", want: ["amazon/earn-trust", "dawn/earn-trust", "toyota/respect"] },
+  { label: "hire and develop the best", want: ["amazon/hire-and-develop-the-best", "dawn/hire-and-develop-the-best", "toyota/teamwork"] },
+  { label: "dive deep", want: ["amazon/dive-deep", "toyota/genchi-genbutsu"] },
+  { label: "better every day", want: ["dawn/better-than-yesterday", "toyota/kaizen"] },
+  { label: "think big", want: ["amazon/think-big", "toyota/challenge"] },
 ];
 let facetChecked = 0;
 for (const { label, want } of FACET_LABELS) {

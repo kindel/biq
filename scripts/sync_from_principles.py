@@ -236,7 +236,39 @@ def principle_shell(p: dict, item: str) -> dict:
     }
     if p.get("group"):
         shell["group"] = p["group"]
+    if p.get("facets"):
+        shell["facets"] = list(p["facets"])
     return shell
+
+
+def stamp_facets(bank: dict, idx: dict) -> int:
+    """Copy facet ids from the principles index onto every bank principle.
+
+    The question list stays the fixed set. Facets are how a later company
+    inherits those questions. Empty questions on a faceted principle is
+    correct; the app resolves them at runtime.
+    """
+    by_pid = {}
+    for c in idx.get("companies", []):
+        for p in c.get("principles", []):
+            pid = p.get("id")
+            if isinstance(pid, int):
+                by_pid[pid] = p.get("facets") or []
+    n = 0
+    for c in bank.get("companies", []):
+        for p in c.get("principles", []):
+            pid = p.get("id")
+            if not isinstance(pid, int):
+                continue
+            want = by_pid.get(pid)
+            if want:
+                if p.get("facets") != want:
+                    p["facets"] = list(want)
+                    n += 1
+            elif "facets" in p:
+                del p["facets"]
+                n += 1
+    return n
 
 
 def company_shell(c: dict) -> dict:
@@ -294,21 +326,22 @@ def main() -> int:
 
     # Sync aliases from upstream term labels (alias + equivalent kinds)
     alias_changes = sync_aliases(bank, idx)
+    facet_stamps = stamp_facets(bank, idx)
 
     lines = [f"principles {sha}", ""]
     if added_companies:
-        lines.append("new companies (examples: false, empty questions):")
+        lines.append("new companies (empty questions; inherit the fixed bank via facets):")
         lines.extend(f"  {x}" for x in added_companies)
-        lines.append("")
-        lines.append("Write the bank, run Generate example packs, then flip examples to true by hand.")
     if added_principles:
         lines.append("new principles (empty questions):")
         lines.extend(f"  {x}" for x in added_principles)
     if alias_changes:
         lines.append("alias updates from upstream terms:")
         lines.extend(f"  {x}" for x in alias_changes)
-    if not added_companies and not added_principles and not alias_changes:
-        lines.append("no missing companies or principles, aliases up to date")
+    if facet_stamps:
+        lines.append("facet ids stamped on %d principles" % facet_stamps)
+    if not added_companies and not added_principles and not alias_changes and not facet_stamps:
+        lines.append("no missing companies or principles, aliases and facets up to date")
         print("\n".join(lines))
         return 0
 
