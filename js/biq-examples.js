@@ -73,7 +73,7 @@
     principleEl.hidden = false;
   }
   questionEl.textContent = question || "No question was passed.";
-  if (question) document.title = question + " — example answers";
+  if (question) document.title = question + " · example answers";
 
   function syncLevelRadios() {
     var inputs = document.querySelectorAll('input[name="bhiq-level"]');
