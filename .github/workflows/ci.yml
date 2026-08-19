@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run the Python tests
+        run: python3 -m unittest discover -s tests -v
+
+      # Question ids stay present, unique, and pack-backed. The script lifts
+      # nothing from the page; it checks the bank the page is served.
+      - name: Check question ids
+        run: node scripts/check_question_ids.js
+
+      # The search matcher against the real bank, lifted from js/biq.js so
+      # the check cannot drift from what the page runs.
+      - name: Check search
+        run: node scripts/check_search.js
