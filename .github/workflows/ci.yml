@@ -29,3 +29,8 @@ jobs:
       # the check cannot drift from what the page runs.
       - name: Check search
         run: node scripts/check_search.js
+
+      # Facet inheritance against the real bank, lifted from js/biq.js so
+      # the check cannot drift from what the page runs.
+      - name: Check facet questions
+        run: node scripts/check_facet_questions.js
