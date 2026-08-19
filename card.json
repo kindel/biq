@@ -5,5 +5,11 @@
   "status": "live",
   "order": 10,
   "icon": "icon.png",
-  "summary": "An interactive tool that lets you pick a principle, get example questions, and compare hire and no-hire answers at Junior, Senior, and Exec. You leave ready to run the interview. Useful when you are writing a loop or prepping for one."
+  "summary": "An interactive tool that lets you pick a principle, get example questions, and compare hire and no-hire answers at Junior, Senior, and Exec. You leave ready to run the interview. Useful when you are writing a loop or prepping for one.",
+  "posts": [
+    {
+      "title": "Interviews are better with Behavioral Questions",
+      "href": "https://blog.kindel.com/2026/08/18/interviews-are-better-with-behavioral-questions/"
+    }
+  ]
 }
