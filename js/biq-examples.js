@@ -72,8 +72,9 @@
     principleEl.textContent = principle;
     principleEl.hidden = false;
   }
-  questionEl.textContent = question || "No question was passed.";
+  questionEl.textContent = question || "Pick a question to see example answers.";
   if (question) document.title = question + " · example answers";
+  var onLevelChange = null;
 
   // Shared packs keep the donor question id. When the selected principle
   // is not the one the pack was written for, say so rather than presenting
@@ -137,6 +138,7 @@
         if (!this.checked) return;
         currentLevel = setLevel(this.value);
         showCurrent();
+        if (onLevelChange) onLevelChange();
         track("biq_level", { biq_level: currentLevel, biq_page: "examples" });
       });
     }
@@ -146,8 +148,139 @@
   updateUrl();
 
   if (!question) {
-    statusEl.textContent = "Open this page from an Examples button on the question bank.";
+    showPicker();
     return;
+  }
+
+  // No question in the URL (a search hit, a shared link, or the sitemap).
+  // Instead of a dead end, list the questions that have examples so the
+  // reader can pick one here.
+  function showPicker() {
+    statusEl.textContent = "Loading questions...";
+    fetch(questionsUrl)
+      .then(function (r) {
+        if (!r.ok) throw new Error("bank missing");
+        return r.json();
+      })
+      .then(function (bank) {
+        var companies = (bank && bank.companies) || [];
+        var target = (company || bank.defaultCompany || "").toLowerCase();
+        var c = companies[0];
+        for (var i = 0; i < companies.length; i++) {
+          if (companies[i].id === target) c = companies[i];
+        }
+        var list = pickable(companies, c);
+        if (!list.length) {
+          statusEl.textContent = "No examples for this set yet. Go back to the questions to pick another company.";
+          return;
+        }
+        renderPicker(c, list);
+      })
+      .catch(function () {
+        statusEl.textContent = "Could not load the question bank.";
+      });
+  }
+
+  // Principles in company c that have at least one question with examples.
+  // A principle with no questions of its own inherits them through shared
+  // facets, the same way the question bank does.
+  function pickable(companies, c) {
+    var donor = {};
+    companies.forEach(function (co) {
+      (co.principles || []).forEach(function (p) {
+        if (!(p.questions || []).length) return;
+        (p.facets || []).forEach(function (f) {
+          if (!donor[f]) donor[f] = p.questions;
+        });
+      });
+    });
+    var out = [];
+    ((c && c.principles) || []).forEach(function (p) {
+      var qs = p.questions || [];
+      if (!qs.length) {
+        var seen = {};
+        qs = [];
+        (p.facets || []).forEach(function (f) {
+          (donor[f] || []).forEach(function (q) {
+            var k = q.id || q.text;
+            if (seen[k]) return;
+            seen[k] = true;
+            qs.push(q);
+          });
+        });
+      }
+      qs = qs.filter(function (q) { return !!q.id; });
+      if (qs.length) out.push({ name: p.name, questions: qs });
+    });
+    return out;
+  }
+
+  function pickHref(c, p, q) {
+    var u = new URL(window.location.href);
+    u.search = "";
+    u.searchParams.set("p", p.name);
+    u.searchParams.set("q", q.text);
+    u.searchParams.set("l", currentLevel);
+    if (c && c.id) u.searchParams.set("c", c.id);
+    u.searchParams.set("qid", q.id);
+    return u.pathname + u.search;
+  }
+
+  function renderPicker(c, list) {
+    statusEl.textContent = "Pick a " + ((c && c.item) || "principle").toLowerCase() +
+      ", then choose Examples next to a question.";
+    sheetEl.innerHTML = "";
+    sheetEl.hidden = false;
+
+    var select = document.createElement("select");
+    select.id = "biq-ex-pick";
+    select.className = "bhiq-select";
+    select.setAttribute("aria-label", (c && c.item) || "Principle");
+    var start = 0;
+    list.forEach(function (p, i) {
+      var o = document.createElement("option");
+      o.value = String(i);
+      o.textContent = p.name;
+      select.appendChild(o);
+      if (principle && norm(p.name) === norm(principle)) start = i;
+    });
+    select.value = String(start);
+
+    var group = document.createElement("section");
+    group.className = "bhiq-group";
+
+    function renderList() {
+      var p = list[Number(select.value) || 0];
+      group.innerHTML = "";
+      var ol = document.createElement("ol");
+      p.questions.forEach(function (q) {
+        var li = document.createElement("li");
+        var row = document.createElement("div");
+        row.className = "bhiq-qrow";
+        var text = document.createElement("div");
+        text.className = "bhiq-qtext";
+        text.textContent = q.text;
+        var ex = document.createElement("a");
+        ex.className = "bhiq-examples-btn";
+        ex.textContent = "Examples";
+        ex.href = pickHref(c, p, q);
+        row.appendChild(text);
+        row.appendChild(ex);
+        li.appendChild(row);
+        ol.appendChild(li);
+      });
+      group.appendChild(ol);
+    }
+
+    select.addEventListener("change", renderList);
+    onLevelChange = renderList;
+    renderList();
+
+    var wrap = document.createElement("div");
+    wrap.className = "bhiq-selects";
+    wrap.appendChild(select);
+    sheetEl.appendChild(wrap);
+    sheetEl.appendChild(group);
   }
 
   // slug = 8-char hex FNV-1a of str(principle_id) + "|" + norm(question)
