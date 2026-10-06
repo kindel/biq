@@ -50,6 +50,46 @@ class FurtherReadingTest(unittest.TestCase):
                     for s in i.values():
                         self.assertNotIn("—", s, "no em dashes")
 
+    def test_external_cites(self):
+        # Tig set these cites. The published heading is sometimes only a
+        # year or a short title, so the list names the author or the source,
+        # and the work. The AWS cite names AWS, not an author.
+        expected = {
+            "https://www.aboutamazon.com/news/company-news/amazons-original-1997-letter-to-shareholders":
+                ("Jeff Bezos's 1997 Letter to Amazon Shareholders", 2),
+            "https://www.sec.gov/Archives/edgar/data/1018724/000119312510082914/dex991.htm":
+                ("Jeff Bezos's 2009 Letter to Amazon Shareholders", 1),
+            "https://ir.aboutamazon.com/files/doc_financials/annual/2015-Letter-to-Shareholders.PDF":
+                ("Jeff Bezos's 2015 Letter to Amazon Shareholders", 2),
+            "https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders":
+                ("Jeff Bezos's 2016 Letter to Amazon Shareholders", 2),
+            "https://www.aboutamazon.com/news/company-news/2017-letter-to-shareholders":
+                ("Jeff Bezos's 2017 Letter to Amazon Shareholders", 1),
+            "https://www.aboutamazon.com/news/company-news/2018-letter-to-shareholders":
+                ("Jeff Bezos's 2018 Letter to Amazon Shareholders", 1),
+            "https://us.macmillan.com/books/9781250267597/workingbackwards/":
+                ("Working Backwards, the book by Colin Bryar and Bill Carr", 3),
+            "https://www.amazon.jobs/content/en/our-workplace/leadership-principles":
+                ("Amazon's Leadership Principles", 1),
+            "https://signalvnoise.com/svn3/some-advice-from-jeff-bezos/":
+                ("Jason Fried: Some Advice from Jeff Bezos", 1),
+            "https://aws.amazon.com/blogs/mt/why-you-should-develop-a-correction-of-error-coe/":
+                ("Why You Should Develop a Correction of Error (COE), from AWS", 1),
+        }
+        seen = {url: 0 for url in expected}
+        for name, items in lists():
+            for item in items or []:
+                url = item["url"]
+                if url not in expected:
+                    continue
+                want, _n = expected[url]
+                with self.subTest(file=name, url=url):
+                    self.assertEqual(item["title"], want)
+                    self.assertNotIn("\u2019", item["title"])
+                seen[url] += 1
+        for url, (want, n) in expected.items():
+            self.assertEqual(seen[url], n, want)
+
     def test_no_duplicate_urls_in_a_list(self):
         for name, items in lists():
             urls = [i["url"] for i in items or []]
