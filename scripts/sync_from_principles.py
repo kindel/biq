@@ -273,7 +273,7 @@ def stamp_facets(bank: dict, idx: dict) -> int:
 
 def company_shell(c: dict) -> dict:
     item = item_for(c["set"])
-    return {
+    shell = {
         "id": c["id"],
         "name": c["name"],
         "set": c["set"],
@@ -283,6 +283,22 @@ def company_shell(c: dict) -> dict:
         "item": item,
         "principles": [principle_shell(p, item) for p in c.get("principles", [])],
     }
+    if c.get("preamble"):
+        shell["preamble"] = c["preamble"]
+    return shell
+
+
+def insert_at(bank: dict, idx: dict, cid: str) -> int:
+    """Index position for a new company, matching the principles manifest."""
+    order = [c["id"] for c in idx.get("companies", [])]
+    existing = [c["id"] for c in bank.get("companies", [])]
+    if cid not in order:
+        return len(existing)
+    at = 0
+    for prev in order[:order.index(cid)]:
+        if prev in existing:
+            at = existing.index(prev) + 1
+    return at
 
 
 def main() -> int:
@@ -297,7 +313,7 @@ def main() -> int:
         cid = c["id"]
         if cid not in by_id:
             shell = company_shell(c)
-            bank["companies"].append(shell)
+            bank["companies"].insert(insert_at(bank, idx, cid), shell)
             by_id[cid] = shell
             added_companies.append(cid)
             continue
@@ -327,6 +343,12 @@ def main() -> int:
     # Sync aliases from upstream term labels (alias + equivalent kinds)
     alias_changes = sync_aliases(bank, idx)
     facet_stamps = stamp_facets(bank, idx)
+    default_change = ""
+    if idx.get("companies"):
+        want_default = idx["companies"][0]["id"]
+        if bank.get("defaultCompany") != want_default:
+            bank["defaultCompany"] = want_default
+            default_change = want_default
 
     lines = [f"principles {sha}", ""]
     if added_companies:
@@ -340,7 +362,9 @@ def main() -> int:
         lines.extend(f"  {x}" for x in alias_changes)
     if facet_stamps:
         lines.append("facet ids stamped on %d principles" % facet_stamps)
-    if not added_companies and not added_principles and not alias_changes and not facet_stamps:
+    if default_change:
+        lines.append(f"default company: {default_change}")
+    if not added_companies and not added_principles and not alias_changes and not facet_stamps and not default_change:
         lines.append("no missing companies or principles, aliases and facets up to date")
         print("\n".join(lines))
         return 0

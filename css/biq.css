@@ -503,6 +503,14 @@ h1, h2, h3 {
   margin: 0 0 1rem;
 }
 
+.bhiq-set-preamble {
+  margin: 0 0 1rem;
+  max-width: 42rem;
+  color: var(--biq-ink);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
 .bhiq-intro {
   margin: 0 0 1.75rem;
   color: var(--biq-ink);

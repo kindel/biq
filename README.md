@@ -6,9 +6,9 @@ A behavioral interview question bank with hire / no-hire example sheets at Junio
 
 This repo ships `card.json` and `icon.png` as the listing for any host (kindel.com, iOS, Android).
 
-Live site: [https://kindel.com/kld/apps/biq/](https://kindel.com/kld/apps/biq/). Amazon is the default. Arm is [https://kindel.com/kld/apps/biq/?c=arm](https://kindel.com/kld/apps/biq/?c=arm).
+Live site: [https://kindel.com/kld/apps/biq/](https://kindel.com/kld/apps/biq/). The default company is `defaultCompany` in `data/questions.json`. Sync sets that from the first company in the principles manifest. Today that is Any Company (id `generic`). Amazon is [https://kindel.com/kld/apps/biq/?c=amazon](https://kindel.com/kld/apps/biq/?c=amazon). Arm is [https://kindel.com/kld/apps/biq/?c=arm](https://kindel.com/kld/apps/biq/?c=arm).
 
-The bank is company-scoped. `data/questions.json` has a `companies` array. Each company has its own principles and questions. The picker writes `?c=arm` (or drops the param for Amazon) so a link without `c` stays Amazon.
+The bank is company-scoped. `data/questions.json` has a `companies` array. Each company has its own principles and questions. The picker writes `?c=arm` (or drops the param for the default company) so a link without `c` stays on that default. A principle with no questions and no shared facet shows no questions.
 
 ## Run
 

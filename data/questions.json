@@ -1,6 +1,175 @@
 {
-  "defaultCompany": "amazon",
+  "defaultCompany": "generic",
   "companies": [
+    {
+      "id": "generic",
+      "name": "Any Company",
+      "set": "Leadership Principles",
+      "source": "https://github.com/kindel/principles/issues/71",
+      "howTo": [
+        "Pick two or three questions per assigned Leadership principle.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "Leadership principle",
+      "principles": [
+        {
+          "id": 8001,
+          "slug": "customer-obsession",
+          "name": "Customer Obsession",
+          "aliases": [
+            "customer obsession"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8002,
+          "slug": "earn-trust",
+          "name": "Earn Trust",
+          "aliases": [
+            "earn trust"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8003,
+          "slug": "ownership",
+          "name": "Ownership",
+          "aliases": [
+            "ownership"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8004,
+          "slug": "are-right-a-lot",
+          "name": "Are Right, A Lot",
+          "aliases": [
+            "are right, a lot",
+            "are right a lot"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8005,
+          "slug": "learn-and-be-curious",
+          "name": "Learn and Be Curious",
+          "aliases": [
+            "learn and be curious"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8006,
+          "slug": "invent-and-simplify",
+          "name": "Invent and Simplify",
+          "aliases": [
+            "invent and simplify"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8007,
+          "slug": "insist-on-high-standards",
+          "name": "Insist on High Standards",
+          "aliases": [
+            "insist on high standards"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8008,
+          "slug": "hire-and-develop-the-best",
+          "name": "Hire and Develop the Best",
+          "aliases": [
+            "hire and develop the best"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8009,
+          "slug": "think-big",
+          "name": "Think Big",
+          "aliases": [
+            "think big"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8010,
+          "slug": "bias-for-action",
+          "name": "Bias for Action",
+          "aliases": [
+            "bias for action"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8011,
+          "slug": "frugality",
+          "name": "Frugality",
+          "aliases": [
+            "frugality"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8012,
+          "slug": "dive-deep",
+          "name": "Dive Deep",
+          "aliases": [
+            "dive deep"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8013,
+          "slug": "have-backbone-disagree-and-commit",
+          "name": "Have Backbone; Disagree and Commit",
+          "aliases": [
+            "have backbone; disagree and commit",
+            "have backbone disagree and commit"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8014,
+          "slug": "deliver-results",
+          "name": "Deliver Results",
+          "aliases": [
+            "deliver results"
+          ],
+          "kind": "lp",
+          "questions": []
+        },
+        {
+          "id": 8015,
+          "slug": "intentional-about-culture",
+          "name": "Intentional About Culture",
+          "aliases": [
+            "intentional about culture"
+          ],
+          "kind": "lp",
+          "questions": []
+        }
+      ],
+      "preamble": "**Everyone is a leader.** These principles apply to every person, not just people managers. They guide judgment rather than replace it. They remain open to revision: *unless you know better.*"
+    },
     {
       "id": "amazon",
       "name": "Amazon",
