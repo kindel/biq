@@ -52,7 +52,8 @@ class FurtherReadingTest(unittest.TestCase):
 
     def test_external_cites(self):
         # Tig set these cites. The published heading is sometimes only a
-        # year or a short title, so the list names the author and the work.
+        # year or a short title, so the list names the author or the source,
+        # and the work. The AWS cite names AWS, not an author.
         expected = {
             "https://www.aboutamazon.com/news/company-news/amazons-original-1997-letter-to-shareholders":
                 ("Jeff Bezos's 1997 Letter to Amazon Shareholders", 2),
