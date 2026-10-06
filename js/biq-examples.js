@@ -72,7 +72,17 @@
     principleEl.textContent = principle;
     principleEl.hidden = false;
   }
-  questionEl.textContent = question || "Pick a question to see example answers.";
+  // The question is a quote from the bank, so render it in a <q> and let the
+  // browser add the curly quotes. The picker prompt is not a quote.
+  questionEl.textContent = "";
+  if (question) {
+    var quoteEl = document.createElement("q");
+    quoteEl.className = "biq-ex-quote";
+    quoteEl.textContent = question;
+    questionEl.appendChild(quoteEl);
+  } else {
+    questionEl.textContent = "Pick a question to see example answers.";
+  }
   if (question) document.title = question + " · example answers";
   var onLevelChange = null;
 
