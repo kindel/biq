@@ -58,9 +58,9 @@ Rules:
 - `deepen` 6-12 questions. Each is a full sentence ending with `?`.
 - `related` is the union of every `{lp:slug}` token in the prose fields plus any extra curated links. Slugs must exist in kindel/principles. Two is a floor, not a cap.
 - `blog` is the Further reading list. It holds published tig.log posts that amplify this principle, plus at least one external source: the published principles, a shareholder letter, a book, or an essay or talk by someone who shaped the practice. Same shape on every file. Empty is not allowed; a principle with no real post still gets its external source.
-- Every `blog` link is real. Never invent a URL or a title, and check that each URL resolves before it lands. External titles stay as published, even when they name the source company or an executive. Notes follow the rules below.
+- Every `blog` link is real. Never invent a URL, and check that each URL resolves before it lands. External titles are the cite on the list. Use the published heading when it already names the work. When it is only a year or a short title, name the author and the work. Titles may name the source company or an executive. Notes follow the rules below.
 - Every string: no em dash, no `---`, Oxford commas, numbers under 10 spelled out.
-- No source-company names, products, executives, internal tools, or wiki chrome.
+- No source-company names, products, executives, internal tools, or wiki chrome in the prose and notes. Further reading titles may name the author, the book, or the source company.
 
 ## Not in these files
 
