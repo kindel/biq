@@ -77,6 +77,11 @@ h1, h2, h3 {
   font-size: 1.45rem;
 }
 
+/* The question is quoted from the bank. Curly quotes, not straight ones. */
+.biq-ex-quote {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
 .biq-ex-head {
   margin: 0 0 1.5rem;
 }
