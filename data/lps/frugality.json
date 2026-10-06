@@ -7,7 +7,7 @@
     "Many problems go away if you throw cash at them. That is why the constraint is useful. If traffic grows 135 percent and you refuse to grow the budget by the same amount, you have to reinvent how you scale, build, and deploy. The invention is the point. Headcount, budget, and fixed expense are not scoreboard categories.",
     "Frugality also means you will take a five million dollar hit now for a $50 million payout later, and you will not spend the leftover budget in December so nobody cuts you next year. The budget is an input. It is not the decision."
   ],
-  "calibrationIntro": "Score whether someone invents under constraint and still invests in what matters. Under is waste and entitlement. Over is penny-pinching that starves builders, customers, or the long term.",
+  "calibrationIntro": "Score whether someone invents under constraint and still invests in what matters. Under looks like waste, and spending as if the budget is owed to you. Over looks like penny-pinching that starves the builders, the customers, or the long term.",
   "examples": [
     {
       "title": "Do not chew the two-by-fours",
@@ -15,7 +15,7 @@
     },
     {
       "title": "Scale without matching the budget to traffic",
-      "body": "Traffic is on a path to grow well over 100 percent. The lazy answer is a matching budget. The frugal answer is a constraint (budget growth capped well below traffic growth) that forces a different architecture, a simpler deploy path, or a cheaper unit of compute. The constraint is the invention brief."
+      "body": "Traffic is on a path to grow well over 100 percent. The lazy answer is a matching budget. The frugal answer is a constraint (budget growth capped well below traffic growth) that forces a different architecture, a simpler deploy path, or a cheaper unit of compute. The constraint is what forces the invention."
     },
     {
       "title": "Take the loss that buys the later payout",

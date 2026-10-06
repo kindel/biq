@@ -7,7 +7,7 @@
     "Bias for Action also looks like initiative. It is walking down the hall when yesterday's message got silence. It is picking up the next useful task while you wait. It is booking the meeting, showing up on time, and not expecting someone else to do the work you can do.",
     "It also looks like impatience when a customer is hurting. You join the investigation before anyone proves it is your team's bug. You do the right thing for the customer without waiting for a permission slip. Calculated risk is the point. Motion without a target is not."
   ],
-  "calibrationIntro": "Score whether someone moves with calculated risk and then course-corrects. Under is paralysis or passivity. Over is steamrolling, no focus, and a pile of unfinished work.",
+  "calibrationIntro": "Score whether someone acts on a calculated risk and then corrects course. Under looks like freezing, or waiting for someone else to move. Over looks like steamrolling people, jumping between priorities, and leaving a pile of unfinished work.",
   "examples": [
     {
       "title": "Two-way door, then correct",
@@ -24,7 +24,7 @@
   ],
   "looksLike": {
     "individual": "An individual with Bias for Action unblocks themselves. They send the note, then they walk over. They keep a next useful task ready for the idle time. They can tell you which recent decision was reversible, what they did with incomplete data, and what they changed when the result came back.",
-    "manager": "A manager with Bias for Action removes the approval theater that turns two-way doors into projects. They expect calculated risk, they do not punish a well-run miss, and they stop the person who is generating motion without finishing. They also know when to force a pause because the door only swings one way."
+    "manager": "A manager with Bias for Action removes the extra approvals that turn two-way door decisions into projects. They expect calculated risk, they do not punish a well-run miss, and they stop the person who is generating motion without finishing. They also know when to force a pause because the door only swings one way."
   },
   "deepen": [
     "Was the last decision you delayed a two-way door, and if so, why did you wait?",

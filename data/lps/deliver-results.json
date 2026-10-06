@@ -2,12 +2,12 @@
   "id": 1014,
   "slug": "deliver-results",
   "why": [
-    "Deliver Results is where the rest of the principles get cashed. {lp:ownership}, {lp:customer-obsession}, and {lp:bias-for-action} are why you deliver. {lp:think-big}, {lp:invent-and-simplify}, {lp:dive-deep}, {lp:are-right-a-lot}, {lp:insist-on-the-highest-standards}, and {lp:frugality} decide what is worth delivering. {lp:hire-and-develop-the-best}, {lp:have-backbone-disagree-and-commit}, and {lp:earn-trust} are how the work actually gets through other people.",
+    "Deliver Results is where the rest of the principles pay off. {lp:ownership}, {lp:customer-obsession}, and {lp:bias-for-action} are why you deliver. {lp:think-big}, {lp:invent-and-simplify}, {lp:dive-deep}, {lp:are-right-a-lot}, {lp:insist-on-the-highest-standards}, and {lp:frugality} decide what is worth delivering. {lp:hire-and-develop-the-best}, {lp:have-backbone-disagree-and-commit}, and {lp:earn-trust} are how the work actually gets through other people.",
     "Look for commitments that landed, not for a tour of the process. This is not a think tank. A clever theory that never ships is a hobby. Leaders push the thing through to the end. They invent around the obstacle. They do not settle for good enough when the customer still feels the gap.",
     "Delivery is not blind activity. It is the right result: the one that helps the customer, hits the date, and does not steal from quality, scale, or the next year. You prioritize. You will trade a lesser goal to protect the one that matters. You will not burn the team to look busy, and you will not treat the date as a nice-to-have.",
     "Setbacks are part of the job. The principle is what you do next. Rise to the occasion. Do not rewrite the goal so the miss looks like a plan."
   ],
-  "calibrationIntro": "Score whether someone finishes the right work, on time, at the right quality, without burning people or the future. Under misses or settles. Over hits a number by breaking trust, quality, or the team.",
+  "calibrationIntro": "Score whether someone finishes the right work, on time, at the right quality, without burning out people or borrowing from next year. Under looks like missing the date or settling for less. Over looks like hitting the number by breaking trust, cutting quality, or wearing out the team.",
   "examples": [
     {
       "title": "Invent around the blocked path",
@@ -15,7 +15,7 @@
     },
     {
       "title": "Hit the date without stealing from quality",
-      "body": "The date is real. Cutting the last week of hardening would make the demo look done and the next month look like an outage. The leader cuts scope that the customer will not feel, keeps the hardening, and ships on time. That is the right quality, in a timely fashion. A heroics week is the other failure mode."
+      "body": "The date is real. Cutting the last week of hardening would make the demo look done and the next month look like an outage. The leader cuts scope that the customer will not feel, keeps the hardening, and ships on time. That is the right quality, in a timely fashion. A week of all-nighters to save the date is the other way to fail."
     },
     {
       "title": "Trade the lesser goal",
@@ -24,7 +24,7 @@
   ],
   "looksLike": {
     "individual": "An individual who delivers can tell you the input they own, the date, the quality bar, and the last obstacle they invented around. Their work is done when the customer can use it, not when the ticket is closed. They do not need a crisis to find another gear, and they do not disappear when the first plan breaks.",
-    "manager": "A manager who delivers keeps a short list of the inputs that matter, reviews them on a cadence, and will trade a lesser goal in public. They set dates the team can believe. They do not accept a theater of excuses, and they do not get the number by burning people or partners. After a setback they raise the energy; they do not rewrite history."
+    "manager": "A manager who delivers keeps a short list of the inputs that matter, reviews them on a cadence, and will trade a lesser goal in public. They set dates the team can believe. They do not accept a parade of excuses, and they do not get the number by burning people or partners. After a setback they raise the energy; they do not rewrite history."
   },
   "deepen": [
     "What result were you on the hook for, and how would a customer have known you delivered it?",
