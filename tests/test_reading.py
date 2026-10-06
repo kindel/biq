@@ -33,7 +33,7 @@ class FurtherReadingTest(unittest.TestCase):
             with self.subTest(file=name):
                 self.assertTrue(items, "blog list is missing or empty")
                 hosts = [urlparse(i["url"]).hostname for i in items]
-                self.assertTrue(any(h != BLOG_HOST for h in hosts),
+                self.assertTrue(any(h and h != BLOG_HOST for h in hosts),
                                 "needs at least one source beyond " + BLOG_HOST)
         self.assertEqual(seen, 15, "14 principles plus index.json")
 
@@ -42,7 +42,9 @@ class FurtherReadingTest(unittest.TestCase):
             for i in items or []:
                 with self.subTest(file=name, title=i.get("title")):
                     self.assertEqual(set(i), {"title", "url", "note"})
-                    self.assertEqual(urlparse(i["url"]).scheme, "https")
+                    u = urlparse(i["url"])
+                    self.assertEqual(u.scheme, "https")
+                    self.assertTrue(u.hostname, "url needs a host")
                     self.assertTrue(i["title"].strip())
                     self.assertTrue(i["note"].strip())
                     for s in i.values():
