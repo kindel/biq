@@ -75,6 +75,11 @@
       "title": "Lead Without Authority",
       "url": "https://blog.kindel.com/2019/06/11/lead-without-authority/",
       "note": "Trust is how you move a room that does not report to you."
+    },
+    {
+      "title": "Why you should develop a correction of error (COE)",
+      "url": "https://aws.amazon.com/blogs/mt/why-you-should-develop-a-correction-of-error-coe/",
+      "note": "Write up what broke, why, and what changes. It is not a process for finding blame."
     }
   ]
 }
