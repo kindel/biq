@@ -77,8 +77,10 @@ h1, h2, h3 {
   font-size: 1.45rem;
 }
 
-/* The question is quoted from the bank. Curly quotes, not straight ones. */
-.biq-ex-quote {
+/* The question and every transcript line are quoted speech. Curly quotes,
+   not straight ones. */
+.biq-ex-quote,
+.bhiq-ex-said {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
 
