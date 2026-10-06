@@ -685,7 +685,13 @@
       who.className = "bhiq-ex-who";
       who.textContent = t.role === "interviewer" ? "Interviewer" : "Candidate";
       line.appendChild(who);
-      line.appendChild(document.createTextNode(" " + (t.text || "")));
+      line.appendChild(document.createTextNode(" "));
+      // What someone says goes in a <q> so speech reads apart from the labels.
+      // A phrase they quote inside it nests as single quotes.
+      var said = document.createElement("q");
+      said.className = "bhiq-ex-said";
+      said.textContent = String(t.text || "").replace(/"([^"]*)"/g, "\u2018$1\u2019");
+      line.appendChild(said);
       wrap.appendChild(line);
     });
     return wrap;
