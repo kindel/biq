@@ -43,7 +43,7 @@ Never write raw company names or product names. Principle names stay.
     {"id": "ownership", "note": "Why they connect, one sentence."}
   ],
   "blog": [
-    {"title": "Post title", "url": "https://blog.kindel.com/...", "note": "Why this post belongs here."},
+    {"title": "Essay title", "url": "https://blog.kindel.com/...", "note": "Why this essay belongs here."},
     {"title": "Book or letter title", "url": "https://...", "note": "Why this source belongs here."}
   ]
 }
@@ -57,7 +57,7 @@ Rules:
 - `examples` 2-4 teaching cases. Generalize retail/ops specifics. Drop named-exec anecdotes you cannot restate without the company.
 - `deepen` 6-12 questions. Each is a full sentence ending with `?`.
 - `related` is the union of every `{lp:slug}` token in the prose fields plus any extra curated links. Slugs must exist in kindel/principles. Two is a floor, not a cap.
-- `blog` is the Further reading list. It holds published tig.log posts that amplify this principle, plus at least one external source: the published principles, a shareholder letter, a book, or an essay or talk by someone who shaped the practice. Same shape on every file. Empty is not allowed; a principle with no real post still gets its external source.
+- `blog` is the Further reading list. It holds published tig.log essays that amplify this principle, plus at least one external source: the published principles, a shareholder letter, a book, or an essay or talk by someone who shaped the practice. Same shape on every file. Empty is not allowed; a principle with no tig.log essay still gets its external source.
 - Every `blog` link is real. Never invent a URL, and check that each URL resolves before it lands. External titles are the cite on the list. Use the published heading when it already names the work. When it is only a year or a short title, name the author or the source, and the work. Titles may name the source company or an executive. Notes follow the rules below.
 - Every string: no em dash, no `---`, Oxford commas, numbers under 10 spelled out.
 - No source-company names, products, executives, internal tools, or wiki chrome in the prose and notes. Further reading titles may name the author, the book, or the source company.
