@@ -10,6 +10,8 @@ Live site: [https://kindel.com/kld/apps/biq/](https://kindel.com/kld/apps/biq/).
 
 The bank is company-scoped. `data/questions.json` has a `companies` array. Each company has its own principles and questions. The picker writes `?c=arm` (or drops the param for the default company) so a link without `c` stays on that default. A principle with no questions and no shared facet shows no questions.
 
+`facetQuestions` maps a facet id to existing question ids, plus any questions written for that facet. The page resolves those onto an empty principle at runtime, so the question text stays on the principle that owns it. Every principle must resolve to at least one question, and at least one of those questions must have an example pack for Junior, Senior, and Exec. `scripts/check_facet_questions.js` fails otherwise.
+
 ## Run
 
 Needs a static file server because the bank is loaded with `fetch`.

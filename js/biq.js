@@ -118,31 +118,63 @@
   }
 
   // The question list is a fixed bank. A later company inherits those
-  // questions through shared facets; empty questions on a faceted
-  // principle is the correct stored form.
-  function attachFacetQuestions(list) {
+  // questions through shared facets. facetQuestions adds specific existing
+  // questions, and any questions written for that facet, without copying
+  // text onto another principle. Empty questions on a faceted principle
+  // is the correct stored form.
+  function attachFacetQuestions(list, facetQuestions) {
     var donor = {};
+    var byId = {};
     list.forEach(function (c) {
       (c.principles || []).forEach(function (p) {
         var qs = p.questions || [];
+        qs.forEach(function (q) {
+          if (q.id && !byId[q.id]) byId[q.id] = q;
+        });
         if (!qs.length) return;
         (p.facets || []).forEach(function (f) {
           if (!donor[f]) donor[f] = qs;
         });
       });
     });
+    function mapped(facet) {
+      var spec = facetQuestions && facetQuestions[facet];
+      if (!spec) return [];
+      var ids = Array.isArray(spec) ? spec : (spec.ids || []);
+      var authored = Array.isArray(spec) ? [] : (spec.authored || []);
+      var out = [];
+      var seen = {};
+      ids.forEach(function (id) {
+        var q = byId[id];
+        if (!q || seen[id]) return;
+        seen[id] = true;
+        out.push(q);
+      });
+      authored.forEach(function (q) {
+        if (!q || !q.text) return;
+        var k = q.id || q.text;
+        if (seen[k]) return;
+        seen[k] = true;
+        out.push(q);
+      });
+      return out;
+    }
+    function add(out, seen, qs) {
+      (qs || []).forEach(function (q) {
+        var k = q.id || q.text;
+        if (seen[k]) return;
+        seen[k] = true;
+        out.push(q);
+      });
+    }
     list.forEach(function (c) {
       (c.principles || []).forEach(function (p) {
         if ((p.questions || []).length) return;
         var seen = {};
         var out = [];
         (p.facets || []).forEach(function (f) {
-          (donor[f] || []).forEach(function (q) {
-            var k = q.id || q.text;
-            if (seen[k]) return;
-            seen[k] = true;
-            out.push(q);
-          });
+          add(out, seen, donor[f]);
+          add(out, seen, mapped(f));
         });
         p.questions = out;
       });
@@ -537,7 +569,7 @@
     .then(function (bank) {
       bankDefault = (bank && bank.defaultCompany) || "";
       companies = normalizeBank(bank);
-      attachFacetQuestions(companies);
+      attachFacetQuestions(companies, bank && bank.facetQuestions);
       applyCompany(getCompanyId(), false);
       bindCompany();
       renderSelects(principles());
