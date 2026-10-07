@@ -1,0 +1,340 @@
+{
+  "category": 448,
+  "source": "https://blog.kindel.com/wp-json/wp/v2/posts?categories=448",
+  "fetched": "2026-10-07",
+  "refresh": "Fetch every page of source with per_page=100. Follow X-WP-TotalPages. Keep id and slug. Sort by slug.",
+  "posts": [
+    {
+      "id": 612,
+      "slug": "90-of-the-decisions-you-make-dont-matter"
+    },
+    {
+      "id": 1266,
+      "slug": "a-faq-on-frequently-asked-questions"
+    },
+    {
+      "id": 1059,
+      "slug": "apps-are-dead-long-live-experiences-powered-by-buddy"
+    },
+    {
+      "id": 1116,
+      "slug": "attention-is-the-currency-of-leadership"
+    },
+    {
+      "id": 1252,
+      "slug": "be-a-great-reader"
+    },
+    {
+      "id": 1630,
+      "slug": "be-a-volunteer"
+    },
+    {
+      "id": 1065,
+      "slug": "be-as-excellent-at-saying-no-as-saying-yes"
+    },
+    {
+      "id": 626,
+      "slug": "be-either-an-app-or-a-platform-not-both"
+    },
+    {
+      "id": 1690,
+      "slug": "biases-and-fallacies-lead-to-smol-thinking"
+    },
+    {
+      "id": 905,
+      "slug": "brand-is-a-critical-part-of-the-end-to-end-experience"
+    },
+    {
+      "id": 1691,
+      "slug": "breaking-down-innovation-invention"
+    },
+    {
+      "id": 1527,
+      "slug": "broken-windows-right-idea-bad-analogy"
+    },
+    {
+      "id": 1099,
+      "slug": "businesses-buy-differently"
+    },
+    {
+      "id": 1251,
+      "slug": "clear-narratives-show-instead-of-tell"
+    },
+    {
+      "id": 1154,
+      "slug": "customer-business-technology-organization-cbto"
+    },
+    {
+      "id": 1405,
+      "slug": "debate-tenets"
+    },
+    {
+      "id": 1250,
+      "slug": "details-matter-in-presenting-narratives"
+    },
+    {
+      "id": 1384,
+      "slug": "dive-deep-micromanaging"
+    },
+    {
+      "id": 1550,
+      "slug": "do-your-job-dont-use-placeholder-text"
+    },
+    {
+      "id": 926,
+      "slug": "dont-build-apis"
+    },
+    {
+      "id": 1081,
+      "slug": "dont-make-your-team-say-no-to-you"
+    },
+    {
+      "id": 1739,
+      "slug": "dont-sell-ideas-debate-them"
+    },
+    {
+      "id": 1700,
+      "slug": "engineer-the-sht-out-of-errors-everywhere"
+    },
+    {
+      "id": 1393,
+      "slug": "everyones-a-leader"
+    },
+    {
+      "id": 1867,
+      "slug": "exorcise-the-ghost-of-mediocrity"
+    },
+    {
+      "id": 907,
+      "slug": "experience-stuff-time"
+    },
+    {
+      "id": 1551,
+      "slug": "find-the-crux-by-debating-excellence"
+    },
+    {
+      "id": 1112,
+      "slug": "find-work-that-does-not-feel-like-work"
+    },
+    {
+      "id": 1408,
+      "slug": "focusing-on-users-is-not-customer-obsession"
+    },
+    {
+      "id": 1399,
+      "slug": "good-intentions-are-never-enough"
+    },
+    {
+      "id": 1100,
+      "slug": "have-a-plan"
+    },
+    {
+      "id": 1390,
+      "slug": "have-a-plan-with-dates"
+    },
+    {
+      "id": 1376,
+      "slug": "have-backbone-disagree-and-commit"
+    },
+    {
+      "id": 1428,
+      "slug": "have-specific-conversations-not-general-conversations"
+    },
+    {
+      "id": 1395,
+      "slug": "have-strong-opinions-weakly-held"
+    },
+    {
+      "id": 2085,
+      "slug": "hiring-first-everything-else-second"
+    },
+    {
+      "id": 1387,
+      "slug": "how-meeting-not-meeting-goals-relates-to-earn-trust-and-insist-on-highest-standards"
+    },
+    {
+      "id": 1596,
+      "slug": "how-to-be-a-secret-agent-of-change"
+    },
+    {
+      "id": 1760,
+      "slug": "how-to-write-a-working-backwards-doc"
+    },
+    {
+      "id": 1748,
+      "slug": "how-we-scaled-alexa-one-problem-one-leader"
+    },
+    {
+      "id": 2274,
+      "slug": "humans-guessing-about-humans"
+    },
+    {
+      "id": 1096,
+      "slug": "james-gosling-screwed-us-write-once-is-anti-customer"
+    },
+    {
+      "id": 1382,
+      "slug": "just-right-porridge-and-leadership-principles"
+    },
+    {
+      "id": 1411,
+      "slug": "lead-without-authority"
+    },
+    {
+      "id": 1920,
+      "slug": "leading-by-fitness-function"
+    },
+    {
+      "id": 2055,
+      "slug": "load-bearing-words"
+    },
+    {
+      "id": 2206,
+      "slug": "locate-yourself"
+    },
+    {
+      "id": 1697,
+      "slug": "make-the-routine-routine-blow-up-dunbars-number"
+    },
+    {
+      "id": 1449,
+      "slug": "mechanisms"
+    },
+    {
+      "id": 1943,
+      "slug": "mechanisms-in-action-how-tech-giants-scale-good-intentions"
+    },
+    {
+      "id": 1417,
+      "slug": "mental-models"
+    },
+    {
+      "id": 1139,
+      "slug": "merit-badges"
+    },
+    {
+      "id": 2005,
+      "slug": "no-look-coding-and-the-five-stages-of-grief"
+    },
+    {
+      "id": 1753,
+      "slug": "no-starving-children-the-shocking-truth-about-prioritization"
+    },
+    {
+      "id": 1418,
+      "slug": "one-way-and-two-way-doors"
+    },
+    {
+      "id": 1300,
+      "slug": "ownership"
+    },
+    {
+      "id": 1442,
+      "slug": "path-to-green"
+    },
+    {
+      "id": 1020,
+      "slug": "paying-developers-is-a-bad-idea"
+    },
+    {
+      "id": 1709,
+      "slug": "people-management-is-not-a-hobby"
+    },
+    {
+      "id": 1947,
+      "slug": "program-you-keep-using-that-word-i-dont-think-you-know-what-it-means"
+    },
+    {
+      "id": 1801,
+      "slug": "send-in-the-wolfes-why-hard-problems-need-fixers-not-just-leaders"
+    },
+    {
+      "id": 1780,
+      "slug": "stop-answering-the-wrong-question-unlock-your-true-work-happiness"
+    },
+    {
+      "id": 1421,
+      "slug": "taxonomy-and-lexicon"
+    },
+    {
+      "id": 1441,
+      "slug": "tenets"
+    },
+    {
+      "id": 2205,
+      "slug": "the-18-month-rule-and-the-small-business-problem"
+    },
+    {
+      "id": 419,
+      "slug": "the-5-ps-achieving-focus-in-any-endeavor"
+    },
+    {
+      "id": 1808,
+      "slug": "the-first-rule-of-skills"
+    },
+    {
+      "id": 933,
+      "slug": "the-job-decision-matrix"
+    },
+    {
+      "id": 1987,
+      "slug": "the-most-dangerous-lie-in-project-plans-well-hire"
+    },
+    {
+      "id": 1730,
+      "slug": "the-secret-to-delivering-outsized-results"
+    },
+    {
+      "id": 1913,
+      "slug": "the-secret-to-giving-feedback-without-triggering-defensiveness"
+    },
+    {
+      "id": 1401,
+      "slug": "the-tension-is-intentional"
+    },
+    {
+      "id": 2220,
+      "slug": "three-confidences-of-a-volunteer"
+    },
+    {
+      "id": 1246,
+      "slug": "tools-to-achieve-clarity-of-thought"
+    },
+    {
+      "id": 1615,
+      "slug": "virtuous-cycles-platforms-flywheels-snowballs-and-tidal-waves"
+    },
+    {
+      "id": 957,
+      "slug": "wanna-compete-with-apple-focus-on-experiences"
+    },
+    {
+      "id": 1117,
+      "slug": "what-it-means-to-be-great-product-manager"
+    },
+    {
+      "id": 1088,
+      "slug": "why-nobody-can-copy-apple"
+    },
+    {
+      "id": 1438,
+      "slug": "work-backwards-from-the-customer"
+    },
+    {
+      "id": 1960,
+      "slug": "you-are-behind-in-using-ai-heres-how-to-catch-up"
+    },
+    {
+      "id": 920,
+      "slug": "you-are-thinking-of-your-career-trajectory-wrong"
+    },
+    {
+      "id": 1892,
+      "slug": "your-leadership-priorities-are-probably-backwards-and-how-to-fix-them"
+    },
+    {
+      "id": 1886,
+      "slug": "your-org-is-sinking-in-silo-gravity-build-a-damn-rocket"
+    }
+  ]
+}
