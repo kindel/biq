@@ -179,7 +179,7 @@
         for (var i = 0; i < companies.length; i++) {
           if (companies[i].id === target) c = companies[i];
         }
-        var list = pickable(companies, c);
+        var list = pickable(companies, c, bank && bank.facetQuestions);
         if (!list.length) {
           statusEl.textContent = "No examples for this set yet. Go back to the questions and pick another principle.";
           return;
@@ -193,17 +193,37 @@
 
   // Principles in company c that have at least one question with examples.
   // A principle with no questions of its own inherits them through shared
-  // facets, the same way the question bank does.
-  function pickable(companies, c) {
+  // facets, the same way the question bank does. facetQuestions is the same
+  // map attachFacetQuestions reads, so a mapped id shows up here too.
+  function pickable(companies, c, facetQuestions) {
     var donor = {};
+    var byId = {};
     companies.forEach(function (co) {
       (co.principles || []).forEach(function (p) {
-        if (!(p.questions || []).length) return;
+        var own = p.questions || [];
+        own.forEach(function (q) {
+          if (q.id && !byId[q.id]) byId[q.id] = q;
+        });
+        if (!own.length) return;
         (p.facets || []).forEach(function (f) {
-          if (!donor[f]) donor[f] = p.questions;
+          if (!donor[f]) donor[f] = own;
         });
       });
     });
+    function mapped(facet) {
+      var spec = facetQuestions && facetQuestions[facet];
+      if (!spec) return [];
+      var ids = Array.isArray(spec) ? spec : (spec.ids || []);
+      var out = [];
+      var seen = {};
+      ids.forEach(function (id) {
+        var q = byId[id];
+        if (!q || seen[id]) return;
+        seen[id] = true;
+        out.push(q);
+      });
+      return out;
+    }
     var out = [];
     ((c && c.principles) || []).forEach(function (p) {
       var qs = p.questions || [];
@@ -212,6 +232,12 @@
         qs = [];
         (p.facets || []).forEach(function (f) {
           (donor[f] || []).forEach(function (q) {
+            var k = q.id || q.text;
+            if (seen[k]) return;
+            seen[k] = true;
+            qs.push(q);
+          });
+          mapped(f).forEach(function (q) {
             var k = q.id || q.text;
             if (seen[k]) return;
             seen[k] = true;

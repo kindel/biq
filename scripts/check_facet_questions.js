@@ -109,9 +109,82 @@ if (noteLift.missing) {
   }
 })();
 
+(function selfTestFacetMap() {
+  const donorQ = { id: "abcd1234", text: "Tell me a time?" };
+  const extraQ = { id: "extra001", text: "Existing fit?" };
+  const list = [
+    { id: "first", principles: [{ name: "Donor", facets: ["shared"], questions: [donorQ, extraQ] }] },
+    { id: "later", principles: [{ name: "Heir", facets: ["only-map"], questions: [] }] },
+    { id: "keeps", principles: [{ name: "Own", facets: ["shared"], questions: [{ id: "ownown01", text: "Own question?" }] }] }
+  ];
+  attachFacetQuestions(list, {
+    "only-map": {
+      ids: ["extra001"],
+      authored: [{ text: "Written for the facet?", manager: false }]
+    }
+  });
+  const heir = list[1].principles[0].questions;
+  if (heir.length !== 2 || heir[0].id !== "extra001" || heir[1].text !== "Written for the facet?") {
+    fail.push("self-test: facetQuestions did not attach the existing id and then the authored question");
+  }
+  if (list[0].principles[0].questions.length !== 2 || list[0].principles[0].questions[1].text !== "Existing fit?") {
+    fail.push("self-test: facetQuestions mutated the donor principle");
+  }
+  if (list[2].principles[0].questions.length !== 1 || list[2].principles[0].questions[0].id !== "ownown01") {
+    fail.push("self-test: facetQuestions overwrote a principle that already has questions");
+  }
+})();
+
 const bank = JSON.parse(fs.readFileSync(BANK_PATH, "utf8"));
 const original = JSON.parse(JSON.stringify(bank.companies || []));
-attachFacetQuestions(bank.companies || []);
+
+function normText(s) {
+  return String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, " ").replace(/\s+/g, " ").trim();
+}
+
+const byId = new Map();
+const seenText = new Set();
+for (const c of original) {
+  for (const p of c.principles || []) {
+    for (const q of p.questions || []) {
+      if (q.id) byId.set(q.id, q);
+      if (q.text) seenText.add(normText(q.text));
+    }
+  }
+}
+
+const facetQuestions = bank.facetQuestions || {};
+for (const [facet, spec] of Object.entries(facetQuestions)) {
+  const ids = Array.isArray(spec) ? spec : (spec.ids || []);
+  const authored = Array.isArray(spec) ? [] : (spec.authored || []);
+  if (!ids.length) {
+    fail.push("facetQuestions." + facet + " maps no existing question ids");
+  }
+  const seenIds = new Set();
+  for (const id of ids) {
+    if (seenIds.has(id)) fail.push("facetQuestions." + facet + " repeats id " + id);
+    seenIds.add(id);
+    if (!byId.has(id)) fail.push("facetQuestions." + facet + " id " + id + " is not in the bank");
+  }
+  for (const q of authored) {
+    const text = (q && q.text) || "";
+    if (!text.endsWith("?")) {
+      fail.push("authored question for " + facet + " does not end with a question mark");
+    }
+    if (text.includes("\u2014") || text.includes("\u2013") || text.includes(" -- ")) {
+      fail.push("authored question for " + facet + " has an em dash");
+    }
+    if (typeof q.manager !== "boolean") {
+      fail.push("authored question for " + facet + " is missing a manager boolean");
+    }
+    const n = normText(text);
+    if (!n) fail.push("authored question for " + facet + " is empty");
+    else if (seenText.has(n)) fail.push("authored question duplicates existing text: " + text.slice(0, 80));
+    else seenText.add(n);
+  }
+}
+
+attachFacetQuestions(bank.companies || [], facetQuestions);
 
 function firstDonor(facet) {
   for (const c of original) {
@@ -125,7 +198,7 @@ function firstDonor(facet) {
 }
 
 // Respect and Teamwork have their own facets. They do not sit on earn-trust
-// or hire-and-develop-the-best, and neither facet has a question donor.
+// or hire-and-develop-the-best. Their questions come from facetQuestions.
 const TOYOTA_MAPPINGS = {
   challenge: "think-big",
   kaizen: "better-every-day",
@@ -138,7 +211,7 @@ const TOYOTA_OWN_FACET = {
 
 // Any Company reuses the Amazon question list for the shared facet.
 // Are Right, A Lot shares are-right-a-lot, so it inherits Amazon's questions.
-// Intentional About Culture has no donor in this corpus.
+// Intentional About Culture is filled from facetQuestions, not from Amazon.
 const GENERIC_FROM_AMAZON = {
   "customer-obsession": "customer-obsession",
   "earn-trust": "earn-trust",
@@ -154,7 +227,7 @@ const GENERIC_FROM_AMAZON = {
   "dive-deep": "dive-deep",
   "have-backbone-disagree-and-commit": "have-backbone-disagree-and-commit",
   "deliver-results": "deliver-results",
-  "intentional-about-culture": null
+  "intentional-about-culture": "facetQuestions"
 };
 
 const toyota = (bank.companies || []).find((c) => c.id === "toyota");
@@ -229,8 +302,21 @@ if (!toyota) {
     if (facs.includes("earn-trust") || facs.includes("hire-and-develop-the-best")) {
       fail.push("toyota/" + slug + " inherited the wrong facet");
     }
-    if ((p.questions || []).length) {
-      fail.push("toyota/" + slug + " should stay empty (no question donor)");
+    const spec = facetQuestions[facet] || {};
+    const wantIds = spec.ids || [];
+    const gotIds = (p.questions || []).map((q) => q.id).filter(Boolean);
+    for (const id of wantIds) {
+      if (!gotIds.includes(id)) {
+        fail.push("toyota/" + slug + " is missing mapped question " + id);
+      }
+    }
+    for (const q of spec.authored || []) {
+      if (!(p.questions || []).some((x) => x.text === q.text)) {
+        fail.push("toyota/" + slug + " is missing an authored question");
+      }
+    }
+    if (!(p.questions || []).length) {
+      fail.push("toyota/" + slug + " resolved to no questions");
     }
   }
 }
@@ -250,16 +336,25 @@ if (!generic) {
       fail.push("generic/" + p.slug + " is not in the Amazon inheritance map");
       continue;
     }
-    const got = (p.questions || []).map((q) => q.id).join(",");
-    if (wantSlug === null) {
-      if (got) {
-        fail.push("generic/" + p.slug + " should have no questions, got " + got);
+    const got = (p.questions || []).map((q) => q.id).filter(Boolean).join(",");
+    if (wantSlug === "facetQuestions") {
+      const facs = (p.facets || []).join(",");
+      if (facs !== "intentional-about-culture") {
+        fail.push("generic/" + p.slug + " facets should be intentional-about-culture, got " + facs);
       }
-      if (p.slug === "intentional-about-culture") {
-        const facs = (p.facets || []).join(",");
-        if (facs !== "intentional-about-culture") {
-          fail.push("generic/" + p.slug + " facets should be intentional-about-culture, got " + facs);
+      const spec = facetQuestions["intentional-about-culture"] || {};
+      for (const id of spec.ids || []) {
+        if (!got.split(",").includes(id)) {
+          fail.push("generic/" + p.slug + " is missing mapped question " + id);
         }
+      }
+      for (const q of spec.authored || []) {
+        if (!(p.questions || []).some((x) => x.text === q.text)) {
+          fail.push("generic/" + p.slug + " is missing an authored question");
+        }
+      }
+      if (!(p.questions || []).length) {
+        fail.push("generic/" + p.slug + " resolved to no questions");
       }
       continue;
     }
@@ -281,9 +376,117 @@ if (!generic) {
   });
 }
 
+// Every principle in every set must show questions, and at least one of
+// those questions must have an example pack at Junior, Senior, and Exec.
+// That is what the level picker loads. A question with no pack does not
+// count for a level.
+const LEVELS = ["junior", "senior", "exec"];
+const LEVEL_NAME = { junior: "Junior", senior: "Senior", exec: "Exec" };
+
+// A level counts only when the examples page can render it. showCurrent
+// treats a falsy sheet as missing. An empty object would pass that check
+// and then render nothing, so this also requires the transcripts and
+// feedback generate.py requires of a level sheet.
+function usableLevel(sheet) {
+  return !!(
+    sheet &&
+    Array.isArray(sheet.raiseTranscript) && sheet.raiseTranscript.length &&
+    Array.isArray(sheet.lowerTranscript) && sheet.lowerTranscript.length &&
+    sheet.raiseFeedback &&
+    sheet.lowerFeedback
+  );
+}
+
+(function selfTestUsableLevel() {
+  if (usableLevel(null) || usableLevel(undefined) || usableLevel({})) {
+    fail.push("a null or empty level sheet must not count as coverage");
+  }
+  const ok = {
+    raiseTranscript: [{ role: "candidate", text: "t" }],
+    lowerTranscript: [{ role: "candidate", text: "t" }],
+    raiseFeedback: "f",
+    lowerFeedback: "f"
+  };
+  if (!usableLevel(ok)) fail.push("a complete level sheet should count as coverage");
+  if (usableLevel({ raiseTranscript: [], lowerTranscript: [{ text: "t" }], raiseFeedback: "f", lowerFeedback: "f" })) {
+    fail.push("a level sheet with an empty transcript must not count");
+  }
+})();
+
+function packLevels(q) {
+  if (!q || !q.id) return [];
+  const packPath = path.join(EXAMPLES_DIR, q.id + ".json");
+  if (!fs.existsSync(packPath)) return [];
+  try {
+    const pack = JSON.parse(fs.readFileSync(packPath, "utf8"));
+    const levels = (pack && pack.levels) || {};
+    return Object.keys(levels).filter((k) => usableLevel(levels[k]));
+  } catch (e) {
+    return [];
+  }
+}
+
+let principlesChecked = 0;
+for (const c of bank.companies || []) {
+  for (const p of c.principles || []) {
+    principlesChecked++;
+    const where = c.id + "/" + (p.slug || p.name);
+    const qs = p.questions || [];
+    if (!qs.length) {
+      fail.push(where + " has no questions");
+      continue;
+    }
+    const covered = {};
+    for (const q of qs) {
+      for (const lv of packLevels(q)) covered[lv] = true;
+    }
+    for (const lv of LEVELS) {
+      if (!covered[lv]) {
+        fail.push(where + " has no question with a " + LEVEL_NAME[lv] + " example");
+      }
+    }
+    for (const facet of p.facets || []) {
+      const spec = facetQuestions[facet];
+      if (!spec) continue;
+      const ids = Array.isArray(spec) ? spec : (spec.ids || []);
+      const authored = Array.isArray(spec) ? [] : (spec.authored || []);
+      const got = new Set(qs.map((q) => q.id).filter(Boolean));
+      for (const id of ids) {
+        if (!got.has(id)) fail.push(where + " is missing mapped id " + id + " from facet " + facet);
+      }
+      for (const q of authored) {
+        if (!qs.some((x) => x.text === q.text)) {
+          fail.push(where + " is missing an authored question for facet " + facet);
+        }
+      }
+    }
+  }
+}
+if (principlesChecked < 1) fail.push("no principles were checked");
+
+const pickLift = lift(path.join(ROOT, "js", "biq-examples.js"), ["pickable"]);
+if (pickLift.missing) {
+  fail.push("could not lift pickable from js/biq-examples.js");
+} else {
+  const pickable = pickLift.fns.pickable;
+  for (const c of original) {
+    const picked = pickable(original, c, facetQuestions);
+    const resolved = (bank.companies || []).find((x) => x.id === c.id);
+    for (const p of (resolved && resolved.principles) || []) {
+      const want = (p.questions || []).map((q) => q.id).filter(Boolean).join(",");
+      const row = picked.find((x) => x.name === p.name);
+      const got = row ? row.questions.map((q) => q.id).join(",") : "";
+      if (want !== got) {
+        fail.push("pickable ids for " + c.id + "/" + (p.slug || p.name) +
+                  " differ from attachFacetQuestions");
+      }
+    }
+  }
+}
+
 if (fail.length) {
   console.log("FAIL (" + fail.length + ")");
   fail.forEach((f) => console.log("  " + f));
   process.exit(1);
 }
-console.log("OK: attachFacetQuestions self-test passed, Toyota and Any Company inheritance resolved, examplesNote names the donor");
+console.log("OK: every principle has questions at Junior, Senior, and Exec; facet map matches the page");

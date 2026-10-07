@@ -1,5 +1,82 @@
 {
   "defaultCompany": "generic",
+  "facetQuestions": {
+    "intentional-about-culture": {
+      "ids": [
+        "fae9b86f",
+        "f901a5ab",
+        "8a9c91e1",
+        "17c7dde6",
+        "537c4a39",
+        "b7e1988d",
+        "300678d4"
+      ],
+      "authored": [
+        {
+          "text": "Tell me about a time a joke in the room landed on one person. What did you do in the moment, and what happened next?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time people were waiting on a program, a survey, or another team to fix how the team worked. What did you change yourself?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you gave feedback on strong work from people at different levels of seniority. How did you keep the standard the same?",
+          "manager": false
+        }
+      ]
+    },
+    "mutual-respect": {
+      "ids": [
+        "8a9c91e1",
+        "d27283ca",
+        "3875c711",
+        "5dbce3fa",
+        "b1cc9fbd",
+        "bc93585d",
+        "f9a74320"
+      ],
+      "authored": [
+        {
+          "text": "Tell me about a time you were ready to decide why someone had missed. What did you ask them before you made that call?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you caused a miss that cost someone their trust in you. What did you own, and what did you follow through on?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time a miss sat between your team and another team. What part did you take, and what did you ask them to take?",
+          "manager": false
+        }
+      ]
+    },
+    "grow-the-team": {
+      "ids": [
+        "b7f9d574",
+        "92a3ef89",
+        "6ce47ccd",
+        "7b053a88",
+        "6d55bb82",
+        "cdbbf7f4",
+        "c0ece807"
+      ],
+      "authored": [
+        {
+          "text": "Tell me about a time someone was ready for harder work than they had been doing. What did you hand them, and how close did you stay?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time one person wanted every hard problem. How did you give the next one to someone who needed the practice, without taking the strong person off the work?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time your team shipped something good. How did you make the real contributions visible, including the unglamorous ones?",
+          "manager": false
+        }
+      ]
+    }
+  },
   "companies": [
     {
       "id": "generic",
