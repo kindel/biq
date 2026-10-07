@@ -501,13 +501,16 @@ h1, h2, h3 {
   margin: 1.25rem 0 1.5rem;
 }
 
-.bhiq-company-prompt {
+/* Beats .bhiq-app label, which small-caps every label in the app. */
+.bhiq-app label.bhiq-company-prompt {
   display: block;
   margin: 0 0 0.5rem;
   color: var(--biq-ink);
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
 }
 
 #bhiq-company {

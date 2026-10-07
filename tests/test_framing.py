@@ -33,6 +33,13 @@ class FramingTest(unittest.TestCase):
         self.assertNotIn(">Company<", page)
         self.assertIn("These are principles that work for any company.", page)
 
+    def test_company_prompt_stays_a_sentence(self):
+        css = read("css", "biq.css")
+        start = css.index(".bhiq-app label.bhiq-company-prompt")
+        block = css[start:css.index("}", start)]
+        self.assertIn("text-transform: none", block)
+        self.assertIn("letter-spacing: normal", block)
+
     def test_the_display_name_is_not_a_company(self):
         bank = json.loads(read("data", "questions.json"))
         generic = [c for c in bank["companies"] if c["id"] == "generic"][0]
