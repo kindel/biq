@@ -38,6 +38,7 @@
   var LEVEL_KEY = "bhiq-level";
   var companies = [];
   var currentCompany = null;
+  var bankDefault = "";
 
   function validLevel(v) {
     v = String(v || "").toLowerCase();
@@ -87,10 +88,15 @@
     }
   }
 
+  function defaultCompanyId() {
+    if (bankDefault && companyById(bankDefault)) return companyById(bankDefault).id;
+    return (companies[0] && companies[0].id) || "";
+  }
+
   function getCompanyId() {
     var fromUrl = urlCompany();
     if (fromUrl && companyById(fromUrl)) return companyById(fromUrl).id;
-    return (companies[0] && companies[0].id) || "amazon";
+    return defaultCompanyId();
   }
 
   function setCompany(id) {
@@ -100,7 +106,7 @@
     currentCompany = companyById(id) || companies[0];
     try {
       var u = new URL(window.location.href);
-      if (currentCompany.id === (companies[0] && companies[0].id)) u.searchParams.delete("c");
+      if (currentCompany.id === defaultCompanyId()) u.searchParams.delete("c");
       else u.searchParams.set("c", currentCompany.id);
       window.history.replaceState({}, "", u.pathname + u.search + u.hash);
     } catch (e) {}
@@ -162,6 +168,15 @@
     return kindLabel();
   }
 
+  // Emphasis only. Escape first so a preamble cannot inject markup.
+  function renderPreamble(md) {
+    var s = String(md || "")
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    s = s.replace(/\*([^*]+)\*/g, "<em>$1</em>");
+    return s;
+  }
+
   function emptyHint() {
     return "Type a name, or pick one from the dropdown.";
   }
@@ -193,6 +208,27 @@
     var sel = document.getElementById("bhiq-company");
     if (sel && currentCompany) sel.value = currentCompany.id;
     if (input) input.setAttribute("placeholder", placeholderFor());
+    var pre = document.getElementById("bhiq-set-preamble");
+    if (!pre) {
+      var companySel = document.getElementById("bhiq-company");
+      if (companySel && companySel.parentNode) {
+        pre = document.createElement("p");
+        pre.id = "bhiq-set-preamble";
+        pre.className = "bhiq-set-preamble";
+        pre.hidden = true;
+        companySel.parentNode.insertBefore(pre, companySel.nextSibling);
+      }
+    }
+    if (pre) {
+      var text = currentCompany && currentCompany.preamble;
+      if (text) {
+        pre.hidden = false;
+        pre.innerHTML = renderPreamble(text);
+      } else {
+        pre.hidden = true;
+        pre.textContent = "";
+      }
+    }
     var chipsEl = document.getElementById("bhiq-chips");
     if (chipsEl) chipsEl.setAttribute("aria-label", currentCompany && currentCompany.set ? currentCompany.set : "Principles");
     var inputLabel = document.getElementById("bhiq-input-label");
@@ -467,8 +503,15 @@
       });
       section.appendChild(k);
       section.appendChild(h2);
-      section.appendChild(count);
-      section.appendChild(ol);
+      if (!(p.questions || []).length) {
+        var empty = document.createElement("p");
+        empty.className = "bhiq-empty";
+        empty.textContent = "No questions for this principle yet.";
+        section.appendChild(empty);
+      } else {
+        section.appendChild(count);
+        section.appendChild(ol);
+      }
       results.appendChild(section);
     });
   }
@@ -481,6 +524,7 @@
       return r.json();
     })
     .then(function (bank) {
+      bankDefault = (bank && bank.defaultCompany) || "";
       companies = normalizeBank(bank);
       attachFacetQuestions(companies);
       applyCompany(getCompanyId(), false);
