@@ -581,7 +581,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "learn-and-be-curious"
+          "slug": "learn-and-be-curious",
+          "facets": [
+            "learn-and-be-curious"
+          ]
         },
         {
           "id": 1006,
@@ -728,7 +731,8 @@
           "kind": "lp",
           "slug": "insist-on-the-highest-standards",
           "facets": [
-            "better-every-day"
+            "better-every-day",
+            "highest-standards"
           ]
         },
         {
@@ -939,7 +943,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "frugality"
+          "slug": "frugality",
+          "facets": [
+            "frugality"
+          ]
         },
         {
           "id": 1011,
@@ -1221,7 +1228,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "deliver-results"
+          "slug": "deliver-results",
+          "facets": [
+            "deliver-results"
+          ]
         }
       ],
       "examples": true,
@@ -1492,7 +1502,10 @@
               "id": "6675e3c0"
             }
           ],
-          "slug": "move-with-urgency-and-find-a-way"
+          "slug": "move-with-urgency-and-find-a-way",
+          "facets": [
+            "bias-for-action"
+          ]
         },
         {
           "id": 2008,
@@ -1887,7 +1900,10 @@
               "id": "5dbce3fa"
             }
           ],
-          "slug": "disagree-and-commit"
+          "slug": "disagree-and-commit",
+          "facets": [
+            "have-backbone-disagree-and-commit"
+          ]
         },
         {
           "id": 3008,
@@ -1962,7 +1978,10 @@
               "id": "4993d270"
             }
           ],
-          "slug": "deliver-results-with-grit"
+          "slug": "deliver-results-with-grit",
+          "facets": [
+            "deliver-results"
+          ]
         },
         {
           "id": 3010,
@@ -2034,7 +2053,10 @@
               "id": "6850346d"
             }
           ],
-          "slug": "aim-high-and-find-a-way"
+          "slug": "aim-high-and-find-a-way",
+          "facets": [
+            "think-big"
+          ]
         },
         {
           "id": 3012,
@@ -2070,7 +2092,10 @@
               "id": "b1107c2c"
             }
           ],
-          "slug": "learn-voraciously"
+          "slug": "learn-voraciously",
+          "facets": [
+            "learn-and-be-curious"
+          ]
         },
         {
           "id": 3013,
@@ -2106,7 +2131,10 @@
               "id": "641c6226"
             }
           ],
-          "slug": "demand-excellence"
+          "slug": "demand-excellence",
+          "facets": [
+            "highest-standards"
+          ]
         },
         {
           "id": 3014,
@@ -2142,7 +2170,10 @@
               "id": "b8526f46"
             }
           ],
-          "slug": "move-with-urgency"
+          "slug": "move-with-urgency",
+          "facets": [
+            "bias-for-action"
+          ]
         },
         {
           "id": 3015,
@@ -2178,7 +2209,10 @@
               "id": "ea10502e"
             }
           ],
-          "slug": "hate-waste"
+          "slug": "hate-waste",
+          "facets": [
+            "frugality"
+          ]
         }
       ]
     },
@@ -3302,10 +3336,7 @@
             "earn trust"
           ],
           "kind": "lp",
-          "questions": [],
-          "facets": [
-            "earn-trust"
-          ]
+          "questions": []
         },
         {
           "id": 7005,
@@ -3321,10 +3352,7 @@
             "hire and develop the best"
           ],
           "kind": "lp",
-          "questions": [],
-          "facets": [
-            "hire-and-develop-the-best"
-          ]
+          "questions": []
         }
       ]
     }
