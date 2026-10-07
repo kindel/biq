@@ -20,7 +20,8 @@ class FramingTest(unittest.TestCase):
         ui = json.loads(read("data", "ui.json"))
         self.assertEqual(PROMPT, ui["companyPrompt"])
         self.assertEqual("Choose a company", ui["companyPlaceholder"])
-        self.assertEqual("Back to principles for any company", ui["backToGeneric"])
+        self.assertEqual("Back to the universal principles", ui["backToGeneric"])
+        self.assertEqual("the universal principles", ui["genericSetLink"])
         self.assertNotIn("\u2014", json.dumps(ui))
         self.assertNotIn("\u2013", json.dumps(ui))
 
@@ -31,7 +32,7 @@ class FramingTest(unittest.TestCase):
         page = read("index.html")
         self.assertIn(PROMPT, page)
         self.assertNotIn(">Company<", page)
-        self.assertIn("These are principles that work for any company.", page)
+        self.assertIn("These are universal leadership principles that work for any company.", page)
 
     def test_company_prompt_stays_a_sentence(self):
         css = read("css", "biq.css")
@@ -46,5 +47,5 @@ class FramingTest(unittest.TestCase):
     def test_the_display_name_is_not_a_company(self):
         bank = json.loads(read("data", "questions.json"))
         generic = [c for c in bank["companies"] if c["id"] == "generic"][0]
-        self.assertEqual("Principles for any company", generic["name"])
+        self.assertEqual("Universal Leadership Principles", generic["name"])
         self.assertEqual("generic", bank["defaultCompany"])
