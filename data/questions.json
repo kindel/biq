@@ -46,7 +46,8 @@
           "slug": "ownership",
           "name": "Ownership",
           "aliases": [
-            "ownership"
+            "ownership",
+            "acts like an owner"
           ],
           "kind": "lp",
           "facets": [
@@ -99,7 +100,9 @@
           "slug": "insist-on-high-standards",
           "name": "Insist on High Standards",
           "aliases": [
-            "insist on high standards"
+            "insist on high standards",
+            "better every day",
+            "highest standards"
           ],
           "kind": "lp",
           "facets": [
@@ -113,11 +116,15 @@
           "slug": "hire-and-develop-the-best",
           "name": "Hire and Develop the Best",
           "aliases": [
-            "hire and develop the best"
+            "hire and develop the best",
+            "best person for the role",
+            "team for the outcome"
           ],
           "kind": "lp",
           "facets": [
-            "hire-and-develop-the-best"
+            "best-person-for-the-role",
+            "hire-and-develop-the-best",
+            "team-for-the-outcome"
           ],
           "questions": []
         },
@@ -205,12 +212,14 @@
           "slug": "intentional-about-culture",
           "name": "Intentional About Culture",
           "aliases": [
-            "intentional about culture"
+            "intentional about culture",
+            "team for the outcome"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "intentional-about-culture"
+            "intentional-about-culture",
+            "team-for-the-outcome"
           ]
         }
       ],
@@ -609,7 +618,9 @@
             "hire and develop",
             "grows people",
             "talent development",
-            "hire and develop the best"
+            "hire and develop the best",
+            "best person for the role",
+            "team for the outcome"
           ],
           "questions": [
             {
@@ -671,7 +682,9 @@
           "kind": "lp",
           "slug": "hire-and-develop-the-best",
           "facets": [
-            "hire-and-develop-the-best"
+            "best-person-for-the-role",
+            "hire-and-develop-the-best",
+            "team-for-the-outcome"
           ]
         },
         {
@@ -907,7 +920,8 @@
             "do more with less",
             "resourcefulness",
             "scrappy",
-            "cost consciousness"
+            "cost consciousness",
+            "frugality"
           ],
           "questions": [
             {
@@ -1268,7 +1282,8 @@
             "care deeply",
             "internalize the strategy",
             "passion for the mission",
-            "the mission"
+            "the mission",
+            "care about the mission"
           ],
           "kind": "factor",
           "questions": [
@@ -1346,7 +1361,10 @@
             "high bar",
             "candid feedback",
             "inclusive teams",
-            "greater than the sum of their parts"
+            "greater than the sum of their parts",
+            "best person for the role",
+            "build extraordinary teams",
+            "team for the outcome"
           ],
           "kind": "factor",
           "questions": [
@@ -1373,7 +1391,9 @@
           ],
           "slug": "build-extraordinary-teams",
           "facets": [
-            "build-extraordinary-teams"
+            "best-person-for-the-role",
+            "build-extraordinary-teams",
+            "team-for-the-outcome"
           ]
         },
         {
@@ -1385,7 +1405,8 @@
             "independent thinking",
             "back yourself",
             "drive the decision",
-            "challenge skillfully"
+            "challenge skillfully",
+            "challenge then decide"
           ],
           "kind": "factor",
           "questions": [
@@ -1424,7 +1445,8 @@
             "simplify",
             "laser focused",
             "unmoveable constraints",
-            "root out inefficiencies"
+            "root out inefficiencies",
+            "cut the waste"
           ],
           "kind": "factor",
           "questions": [
@@ -1464,7 +1486,8 @@
             "how will we win",
             "delivery vs perfection",
             "10x",
-            "balance delivery with perfection"
+            "balance delivery with perfection",
+            "push the boundary"
           ],
           "kind": "factor",
           "questions": [
@@ -1588,7 +1611,8 @@
             "create focus",
             "decisive in ambiguity",
             "ambiguity and change",
-            "concrete execution plans"
+            "concrete execution plans",
+            "make it concrete"
           ],
           "kind": "factor",
           "questions": [
@@ -1629,7 +1653,8 @@
             "sustainable pace",
             "long term",
             "sustain momentum",
-            "energy levels"
+            "energy levels",
+            "sustain the pace"
           ],
           "kind": "factor",
           "questions": [
@@ -1725,7 +1750,8 @@
             "focus",
             "say no",
             "stack ranking work",
-            "killing projects"
+            "killing projects",
+            "ruthless focus"
           ],
           "kind": "lp",
           "questions": [
@@ -1764,7 +1790,8 @@
             "think like an owner",
             "global optimization",
             "upstream and downstream",
-            "cross-team problems"
+            "cross-team problems",
+            "whole company"
           ],
           "kind": "lp",
           "questions": [
@@ -1842,7 +1869,8 @@
             "build the system, not the fix",
             "prevention over correction",
             "feedback loops",
-            "scalable process"
+            "scalable process",
+            "prevent the next one"
           ],
           "kind": "lp",
           "questions": [
@@ -1881,7 +1909,8 @@
             "reduce complexity",
             "make it simpler",
             "removing steps",
-            "simple explanations"
+            "simple explanations",
+            "simplify what you touch"
           ],
           "kind": "lp",
           "questions": [
@@ -1920,7 +1949,8 @@
             "speak up",
             "have backbone",
             "committing after the decision",
-            "challenging openly"
+            "challenging openly",
+            "have backbone, disagree and commit"
           ],
           "kind": "lp",
           "questions": [
@@ -1959,7 +1989,9 @@
             "talent",
             "grow people",
             "hiring decisions",
-            "internal rotation"
+            "internal rotation",
+            "best person for the role",
+            "team for the outcome"
           ],
           "kind": "lp",
           "questions": [
@@ -1986,7 +2018,9 @@
           ],
           "slug": "hire-and-develop-the-best",
           "facets": [
-            "hire-and-develop-the-best"
+            "best-person-for-the-role",
+            "hire-and-develop-the-best",
+            "team-for-the-outcome"
           ]
         },
         {
@@ -1998,7 +2032,8 @@
             "get it done",
             "no excuses",
             "working around blockers",
-            "finishing"
+            "finishing",
+            "deliver results"
           ],
           "kind": "lp",
           "questions": [
@@ -2115,7 +2150,8 @@
             "stay curious",
             "vocally self-critical",
             "learning from outside",
-            "admitting mistakes"
+            "admitting mistakes",
+            "learn and be curious"
           ],
           "kind": "lp",
           "questions": [
@@ -2154,7 +2190,8 @@
             "high standards",
             "raise the bar perpetually",
             "reviewing work",
-            "accepting good enough"
+            "accepting good enough",
+            "highest standards"
           ],
           "kind": "lp",
           "questions": [
@@ -2366,7 +2403,8 @@
             "bias for action",
             "focus on what matters",
             "prioritization",
-            "adapting to change"
+            "adapting to change",
+            "adapt for the customer"
           ],
           "kind": "lp",
           "questions": [
@@ -2444,7 +2482,9 @@
             "high standards",
             "ambitious goals",
             "giving feedback",
-            "building the team"
+            "building the team",
+            "best person for the role",
+            "team for the outcome"
           ],
           "kind": "lp",
           "questions": [
@@ -2471,7 +2511,9 @@
           ],
           "slug": "raise-the-bar",
           "facets": [
-            "raise-the-bar"
+            "best-person-for-the-role",
+            "raise-the-bar",
+            "team-for-the-outcome"
           ]
         },
         {
@@ -2538,7 +2580,8 @@
             "help others",
             "assume good intent",
             "asking for help",
-            "working across teams"
+            "working across teams",
+            "help anyway"
           ],
           "kind": "value",
           "questions": [
@@ -2577,7 +2620,8 @@
             "customer success",
             "outcomes",
             "ambitious goals",
-            "customer impact"
+            "customer impact",
+            "customer obsession"
           ],
           "kind": "value",
           "questions": [
@@ -2616,7 +2660,8 @@
             "do more with less",
             "global optimization",
             "choosing the boring option",
-            "write it once"
+            "write it once",
+            "global efficiency"
           ],
           "kind": "value",
           "questions": [
@@ -2655,7 +2700,9 @@
             "inclusion",
             "belonging",
             "inclusive meetings",
-            "bias in decisions"
+            "bias in decisions",
+            "best person for the role",
+            "team for the outcome"
           ],
           "kind": "value",
           "questions": [
@@ -2682,7 +2729,9 @@
           ],
           "slug": "diversity-inclusion-and-belonging",
           "facets": [
-            "belonging"
+            "belonging",
+            "best-person-for-the-role",
+            "team-for-the-outcome"
           ]
         },
         {
@@ -2694,7 +2743,8 @@
             "smallest valuable thing",
             "ship small",
             "scoping down",
-            "acting on feedback"
+            "acting on feedback",
+            "smallest useful step"
           ],
           "kind": "value",
           "questions": [
@@ -2733,7 +2783,8 @@
             "be open",
             "work out loud",
             "handbook first",
-            "saying the hard thing"
+            "saying the hard thing",
+            "make it public"
           ],
           "kind": "value",
           "questions": [
@@ -3127,7 +3178,9 @@
             "raise the bar",
             "career choice",
             "develop leaders",
-            "coach others"
+            "coach others",
+            "best person for the role",
+            "team for the outcome"
           ],
           "kind": "lp",
           "questions": [
@@ -3153,7 +3206,9 @@
             }
           ],
           "facets": [
-            "hire-and-develop-the-best"
+            "best-person-for-the-role",
+            "hire-and-develop-the-best",
+            "team-for-the-outcome"
           ]
         },
         {
@@ -3280,7 +3335,8 @@
             "rocket engineering not rocket science",
             "rocket engineering",
             "product company",
-            "keep the customer in mind"
+            "keep the customer in mind",
+            "product not the science"
           ],
           "kind": "lp",
           "questions": [
@@ -3318,7 +3374,8 @@
             "race on the racetrack walk on ice",
             "walk on ice",
             "right level of rigor",
-            "agile and adaptable"
+            "agile and adaptable",
+            "match the rigor"
           ],
           "kind": "lp",
           "questions": [
@@ -3429,7 +3486,8 @@
             "mutual trust",
             "understand each other",
             "take responsibility",
-            "earn trust"
+            "earn trust",
+            "mutual respect"
           ],
           "kind": "lp",
           "questions": [],
@@ -3448,7 +3506,8 @@
             "share opportunities",
             "grow the person",
             "team performance",
-            "hire and develop the best"
+            "hire and develop the best",
+            "grow the team"
           ],
           "kind": "lp",
           "questions": [],
