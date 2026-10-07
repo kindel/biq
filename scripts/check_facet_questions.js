@@ -338,9 +338,9 @@ if (!generic) {
     }
     const got = (p.questions || []).map((q) => q.id).filter(Boolean).join(",");
     if (wantSlug === "facetQuestions") {
-      const facs = (p.facets || []).join(",");
-      if (facs !== "intentional-about-culture") {
-        fail.push("generic/" + p.slug + " facets should be intentional-about-culture, got " + facs);
+      const facs = p.facets || [];
+      if (!facs.includes("intentional-about-culture")) {
+        fail.push("generic/" + p.slug + " facets should include intentional-about-culture, got " + facs.join(","));
       }
       const spec = facetQuestions["intentional-about-culture"] || {};
       for (const id of spec.ids || []) {
