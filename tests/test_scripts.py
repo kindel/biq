@@ -186,5 +186,71 @@ class StampFacetsTest(unittest.TestCase):
         self.assertEqual(0, n)
 
 
+class InsertAtTest(unittest.TestCase):
+    """New companies take their place in the principles manifest order."""
+
+    def test_a_new_first_company_lands_at_the_front(self):
+        bank = {"companies": [{"id": "amazon"}, {"id": "arm"}]}
+        idx = {"companies": [
+            {"id": "generic"}, {"id": "amazon"}, {"id": "arm"}]}
+        self.assertEqual(0, sync.insert_at(bank, idx, "generic"))
+
+    def test_several_missing_companies_keep_manifest_order(self):
+        bank = {"companies": [{"id": "amazon"}, {"id": "toyota"}]}
+        idx = {"companies": [
+            {"id": "generic"}, {"id": "amazon"}, {"id": "arm"},
+            {"id": "toyota"}]}
+        bank["companies"].insert(
+            sync.insert_at(bank, idx, "generic"), {"id": "generic"})
+        bank["companies"].insert(
+            sync.insert_at(bank, idx, "arm"), {"id": "arm"})
+        self.assertEqual(
+            ["generic", "amazon", "arm", "toyota"],
+            [c["id"] for c in bank["companies"]])
+
+
+class PreambleSyncTest(unittest.TestCase):
+    def test_company_shell_keeps_a_string_preamble_only(self):
+        base = {
+            "id": "generic",
+            "name": "Any Company",
+            "set": "Leadership Principles",
+            "source": "https://github.com/kindel/principles/issues/71",
+            "principles": [],
+        }
+        good = sync.company_shell(dict(base, preamble="**Everyone is a leader.**"))
+        self.assertEqual("**Everyone is a leader.**", good["preamble"])
+        bad = sync.company_shell(dict(base, preamble=["not", "a", "paragraph"]))
+        self.assertNotIn("preamble", bad)
+
+    def test_an_existing_company_picks_up_a_new_preamble(self):
+        existing = {"id": "generic", "principles": []}
+        self.assertTrue(sync.sync_preamble(existing, {"preamble": "Hello."}))
+        self.assertEqual("Hello.", existing["preamble"])
+
+    def test_an_existing_company_replaces_a_stale_preamble(self):
+        existing = {"preamble": "Old."}
+        self.assertTrue(sync.sync_preamble(existing, {"preamble": "New."}))
+        self.assertEqual("New.", existing["preamble"])
+
+    def test_an_existing_company_drops_a_removed_preamble(self):
+        existing = {"preamble": "Old."}
+        self.assertTrue(sync.sync_preamble(existing, {}))
+        self.assertNotIn("preamble", existing)
+
+    def test_a_matching_preamble_is_left_alone(self):
+        existing = {"preamble": "Hello."}
+        self.assertFalse(sync.sync_preamble(existing, {"preamble": "Hello."}))
+
+    def test_a_questionless_company_is_reported_without_facet_inheritance(self):
+        note = sync.new_company_note({"principles": [{"slug": "ownership"}]})
+        self.assertEqual("empty questions; no facets, so no questions yet", note)
+
+    def test_a_faceted_company_is_reported_as_inheriting_the_bank(self):
+        note = sync.new_company_note(
+            {"principles": [{"slug": "ownership", "facets": ["acts-like-an-owner"]}]})
+        self.assertEqual("empty questions; inherits the fixed bank via facets", note)
+
+
 if __name__ == "__main__":
     unittest.main()

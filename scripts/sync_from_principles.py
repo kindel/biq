@@ -241,6 +241,18 @@ def principle_shell(p: dict, item: str) -> dict:
     return shell
 
 
+def new_company_note(company: dict) -> str:
+    """How a brand new shell relates to the fixed question bank.
+
+    Facets are the only inheritance path. A company with none stays
+    questionless, and the sync report has to say so.
+    """
+    faceted = any(p.get("facets") for p in company.get("principles", []))
+    if faceted:
+        return "empty questions; inherits the fixed bank via facets"
+    return "empty questions; no facets, so no questions yet"
+
+
 def stamp_facets(bank: dict, idx: dict) -> int:
     """Copy facet ids from the principles index onto every bank principle.
 
@@ -283,9 +295,28 @@ def company_shell(c: dict) -> dict:
         "item": item,
         "principles": [principle_shell(p, item) for p in c.get("principles", [])],
     }
-    if c.get("preamble"):
-        shell["preamble"] = c["preamble"]
+    preamble = c.get("preamble")
+    if isinstance(preamble, str) and preamble.strip():
+        shell["preamble"] = preamble
     return shell
+
+
+def sync_preamble(existing: dict, upstream: dict) -> bool:
+    """Copy or remove the opening paragraph on a company that already exists.
+
+    company_shell only runs for a new id. A later edit upstream has to land
+    on the shell that is already in the bank.
+    """
+    want = upstream.get("preamble")
+    if isinstance(want, str) and want.strip():
+        if existing.get("preamble") != want:
+            existing["preamble"] = want
+            return True
+        return False
+    if "preamble" in existing:
+        del existing["preamble"]
+        return True
+    return False
 
 
 def insert_at(bank: dict, idx: dict, cid: str) -> int:
@@ -308,6 +339,7 @@ def main() -> int:
     by_id = {c["id"]: c for c in bank.get("companies", [])}
     added_companies = []
     added_principles = []
+    preamble_changes = []
 
     for c in idx.get("companies", []):
         cid = c["id"]
@@ -318,6 +350,8 @@ def main() -> int:
             added_companies.append(cid)
             continue
         existing = by_id[cid]
+        if sync_preamble(existing, c):
+            preamble_changes.append(cid)
         item = existing.get("item") or item_for(c["set"])
 
         have_by_id = {}
@@ -352,8 +386,9 @@ def main() -> int:
 
     lines = [f"principles {sha}", ""]
     if added_companies:
-        lines.append("new companies (empty questions; inherit the fixed bank via facets):")
-        lines.extend(f"  {x}" for x in added_companies)
+        lines.append("new companies:")
+        lines.extend(
+            f"  {cid} ({new_company_note(by_id[cid])})" for cid in added_companies)
     if added_principles:
         lines.append("new principles (empty questions):")
         lines.extend(f"  {x}" for x in added_principles)
@@ -362,9 +397,13 @@ def main() -> int:
         lines.extend(f"  {x}" for x in alias_changes)
     if facet_stamps:
         lines.append("facet ids stamped on %d principles" % facet_stamps)
+    if preamble_changes:
+        lines.append("preamble updates:")
+        lines.extend(f"  {x}" for x in preamble_changes)
     if default_change:
         lines.append(f"default company: {default_change}")
-    if not added_companies and not added_principles and not alias_changes and not facet_stamps and not default_change:
+    if not any((added_companies, added_principles, alias_changes,
+                facet_stamps, preamble_changes, default_change)):
         lines.append("no missing companies or principles, aliases and facets up to date")
         print("\n".join(lines))
         return 0
