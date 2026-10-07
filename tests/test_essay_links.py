@@ -64,6 +64,27 @@ class EssayLinkTest(unittest.TestCase):
     def test_apex_essay_url_is_not_a_blog_link(self):
         href = "https://kindel.com/essays/ownership/"
         self.assertEqual("", essay_links.essay_slug(href, self.catalog))
+        self.assertEqual([], essay_links.problems_in_text(href, self.catalog))
+
+    def test_apex_essay_url_must_be_canonical(self):
+        for href in (
+            "https://kindel.com/essays/ownership",
+            "http://kindel.com/essays/ownership/",
+            "https://www.kindel.com/essays/ownership/",
+        ):
+            found = essay_links.problems_in_text(href, self.catalog)
+            self.assertEqual([(href, "ownership")], found, href)
+            self.assertIn(
+                "https://kindel.com/essays/ownership/",
+                essay_links.format_problem(href, "ownership"))
+
+    def test_an_unknown_apex_slug_is_rejected(self):
+        href = "https://kindel.com/essays/owneship/"
+        self.assertEqual(
+            [(href, "")], essay_links.problems_in_text(href, self.catalog))
+        self.assertIn(
+            "not in scripts/essay_catalog.json",
+            essay_links.format_problem(href, ""))
 
     def test_other_hosts_do_not_match(self):
         href = "https://example.com/2018/05/27/ownership/"

@@ -7,7 +7,9 @@ that slug or id is in the Essays category. Other blog posts stay put.
 
 The browser script rewrites to /essays/<slug>/ on the apex host. These
 repos are also read off kindel.com, so the link to store is
-https://kindel.com/essays/<slug>/.
+https://kindel.com/essays/<slug>/. An apex link has to be that string
+exactly, and the slug has to be in the catalog. A typo or a missing
+trailing slash fails the same way a blog.kindel.com essay URL does.
 
 scripts/essay_catalog.json is the offline copy of that category
 (WordPress id 448). Refresh it from
@@ -30,6 +32,7 @@ from urllib.parse import parse_qsl, unquote, urljoin, urlparse
 
 _SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 _DATED = re.compile(r"^/(\d{4})/(\d{2})/(\d{2})/([^/]+)/?$")
+_ESSAY_PATH = re.compile(r"^/essays/([^/]+)/?$")
 _INDEX_PHP = re.compile(r"^/index\.php$", re.IGNORECASE)
 _CANDIDATE = re.compile(r"(?:https?:)?//[^\s<>\"']+", re.IGNORECASE)
 _TRAILING = ".,;:)]}>"
@@ -144,9 +147,57 @@ def essay_slug(href, catalog):
     return ""
 
 
+def _kindel_host(hostname):
+    host = (hostname or "").lower()
+    if host.startswith("www."):
+        host = host[4:]
+    return host == "kindel.com"
+
+
+def format_problem(href, slug):
+    """slug is the catalog slug the link should use, or "" when it has none."""
+    if slug:
+        return "essay link %s belongs at %s" % (href, canonical_essay_url(slug))
+    return "essay link %s is not in scripts/essay_catalog.json" % href
+
+
+def _apex_issue(href, catalog):
+    """(href, slug) when an apex /essays/ URL is not the canonical form.
+
+    slug is "" when the path's slug is not in the catalog. A canonical
+    https://kindel.com/essays/<slug>/ link is not an issue. A placeholder
+    such as <slug> fails safe_slug and is left alone.
+    """
+    try:
+        url = urlparse(urljoin("https://kindel.com", href))
+    except ValueError:
+        return None
+    if url.scheme not in ("http", "https"):
+        return None
+    if not _kindel_host(url.hostname):
+        return None
+    match = _ESSAY_PATH.match(url.path)
+    if not match:
+        return None
+    slug = safe_slug(match.group(1))
+    if not slug:
+        return None
+    if slug not in catalog["by_slug"]:
+        return (href, "")
+    if href != canonical_essay_url(slug):
+        return (href, slug)
+    return None
+
+
 def problems_in_text(text, catalog):
-    """(href, slug) pairs for essay links embedded in text."""
-    if not text or "blog.kindel.com" not in text.lower():
+    """(href, slug) pairs for essay links that are not canonical.
+
+    slug is the catalog slug for a blog.kindel.com essay, or for an apex
+    URL that names a catalog slug but is not exactly
+    https://kindel.com/essays/<slug>/. slug is "" for an apex URL whose
+    slug is not in the catalog.
+    """
+    if not text or "kindel.com" not in text.lower():
         return []
     found = []
     seen = set()
@@ -158,6 +209,10 @@ def problems_in_text(text, catalog):
         slug = essay_slug(href, catalog)
         if slug:
             found.append((href, slug))
+            continue
+        issue = _apex_issue(href, catalog)
+        if issue:
+            found.append(issue)
     return found
 
 
@@ -182,8 +237,7 @@ def check_value(obj, where, catalog, errs):
             if href in seen:
                 continue
             seen.add(href)
-            errs.append("%s: essay link %s belongs at %s" % (
-                where, href, canonical_essay_url(slug)))
+            errs.append("%s: %s" % (where, format_problem(href, slug)))
 
 
 def _read_text(path):
@@ -216,8 +270,7 @@ def repo_problems(root, catalog):
                 if href in seen:
                     continue
                 seen.add(href)
-                problems.append("%s: essay link %s belongs at %s" % (
-                    rel, href, canonical_essay_url(slug)))
+                problems.append("%s: %s" % (rel, format_problem(href, slug)))
     problems.sort()
     return problems
 
