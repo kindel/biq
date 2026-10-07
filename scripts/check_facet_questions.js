@@ -383,13 +383,44 @@ if (!generic) {
 const LEVELS = ["junior", "senior", "exec"];
 const LEVEL_NAME = { junior: "Junior", senior: "Senior", exec: "Exec" };
 
+// A level counts only when the examples page can render it. showCurrent
+// treats a falsy sheet as missing. An empty object would pass that check
+// and then render nothing, so this also requires the transcripts and
+// feedback generate.py requires of a level sheet.
+function usableLevel(sheet) {
+  return !!(
+    sheet &&
+    Array.isArray(sheet.raiseTranscript) && sheet.raiseTranscript.length &&
+    Array.isArray(sheet.lowerTranscript) && sheet.lowerTranscript.length &&
+    sheet.raiseFeedback &&
+    sheet.lowerFeedback
+  );
+}
+
+(function selfTestUsableLevel() {
+  if (usableLevel(null) || usableLevel(undefined) || usableLevel({})) {
+    fail.push("a null or empty level sheet must not count as coverage");
+  }
+  const ok = {
+    raiseTranscript: [{ role: "candidate", text: "t" }],
+    lowerTranscript: [{ role: "candidate", text: "t" }],
+    raiseFeedback: "f",
+    lowerFeedback: "f"
+  };
+  if (!usableLevel(ok)) fail.push("a complete level sheet should count as coverage");
+  if (usableLevel({ raiseTranscript: [], lowerTranscript: [{ text: "t" }], raiseFeedback: "f", lowerFeedback: "f" })) {
+    fail.push("a level sheet with an empty transcript must not count");
+  }
+})();
+
 function packLevels(q) {
   if (!q || !q.id) return [];
   const packPath = path.join(EXAMPLES_DIR, q.id + ".json");
   if (!fs.existsSync(packPath)) return [];
   try {
     const pack = JSON.parse(fs.readFileSync(packPath, "utf8"));
-    return Object.keys((pack && pack.levels) || {});
+    const levels = (pack && pack.levels) || {};
+    return Object.keys(levels).filter((k) => usableLevel(levels[k]));
   } catch (e) {
     return [];
   }
