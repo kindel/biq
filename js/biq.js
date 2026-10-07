@@ -195,8 +195,15 @@
   function fillCompanySelect() {
     var sel = document.getElementById("bhiq-company");
     if (!sel) return;
+    var prompt = sel.getAttribute("data-placeholder") || "Choose a company";
+    var skip = defaultCompanyId();
     sel.innerHTML = "";
+    var blank = document.createElement("option");
+    blank.value = "";
+    blank.textContent = prompt;
+    sel.appendChild(blank);
     for (var i = 0; i < companies.length; i++) {
+      if (companies[i].id === skip) continue;
       var o = document.createElement("option");
       o.value = companies[i].id;
       o.textContent = companies[i].name;
@@ -206,7 +213,11 @@
 
   function syncCompanySelect() {
     var sel = document.getElementById("bhiq-company");
-    if (sel && currentCompany) sel.value = currentCompany.id;
+    if (sel && currentCompany) {
+      sel.value = currentCompany.id === defaultCompanyId() ? "" : currentCompany.id;
+    }
+    var back = document.getElementById("bhiq-back");
+    if (back) back.hidden = !currentCompany || currentCompany.id === defaultCompanyId();
     if (input) input.setAttribute("placeholder", placeholderFor());
     var pre = document.getElementById("bhiq-set-preamble");
     if (!pre) {

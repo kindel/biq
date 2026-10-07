@@ -14,13 +14,19 @@
     </header>
     <section class="bhiq-app" aria-labelledby="bhiq-input-label">
       <div class="bhiq-intro">
-        <p>If you already know a listed company's principles, pick that company and use those names. Or type the principle you care about in your own words.</p>
+        <p>These are principles that work for any company. Pick a principle, or type a name.</p>
         <p>The over 200 behavioral interview questions in this app are the questions I have used and collected over the years. The examples provided were generated based on dozens of real interview notes and debriefs that I anonymized and fed into an LLM with a tuned prompt.</p>
         <p>Each question includes example answers showing a hire-level answer and a common no-hire answer. Examples change by level on scope, impact metrics, and influence.</p>
       </div>
-      <p class="bhiq-level-label" id="bhiq-company-label">Company</p>
-      <select id="bhiq-company" class="bhiq-select" aria-labelledby="bhiq-company-label"></select>
       <p id="bhiq-set-preamble" class="bhiq-set-preamble" hidden></p>
+      <label id="bhiq-input-label" for="bhiq-input">Principle</label>
+      <input id="bhiq-input" type="search" autocomplete="off" spellcheck="false" placeholder="Customer Obsession, Earn Trust, BFA">
+      <div id="bhiq-chips" class="bhiq-chip-wrap" aria-label="Leadership principles"></div>
+      <div class="bhiq-company-view">
+        <label class="bhiq-company-prompt" id="bhiq-company-label" for="bhiq-company">Or view a company's principles:</label>
+        <select id="bhiq-company" class="bhiq-select" data-placeholder="Choose a company" aria-labelledby="bhiq-company-label"></select>
+        <p class="bhiq-back" id="bhiq-back" hidden><a href="index.html">Back to principles for any company</a></p>
+      </div>
       <div id="bhiq-level-block">
       <p class="bhiq-level-label" id="bhiq-level-label">Level</p>
       <div class="bhiq-level" role="radiogroup" aria-labelledby="bhiq-level-label">
@@ -34,9 +40,6 @@
         <p class="bhiq-level-hint"><strong>Exec:</strong> Sets the bar across orgs, multiplies through other people, the numbers are org-level.</p>
       </div>
       </div>
-      <label id="bhiq-input-label" for="bhiq-input">Principle</label>
-      <input id="bhiq-input" type="search" autocomplete="off" spellcheck="false" placeholder="Customer Obsession, Earn Trust, BFA">
-      <div id="bhiq-chips" class="bhiq-chip-wrap" aria-label="Leadership principles"></div>
       <div id="bhiq-results" class="bhiq-results" aria-live="polite"></div>
     </section>
     <footer class="bhiq-footer">

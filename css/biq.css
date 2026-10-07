@@ -497,10 +497,32 @@ h1, h2, h3 {
   color: var(--biq-ink);
 }
 
+.bhiq-company-view {
+  margin: 1.25rem 0 1.5rem;
+}
+
+.bhiq-company-prompt {
+  display: block;
+  margin: 0 0 0.5rem;
+  color: var(--biq-ink);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
 #bhiq-company {
   display: block;
   max-width: 22rem;
-  margin: 0 0 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.bhiq-back {
+  margin: 0;
+}
+
+.bhiq-back a {
+  color: var(--biq-raise, #2f5d73);
+  font-weight: 700;
 }
 
 .bhiq-set-preamble {

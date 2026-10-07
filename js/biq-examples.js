@@ -181,7 +181,7 @@
         }
         var list = pickable(companies, c);
         if (!list.length) {
-          statusEl.textContent = "No examples for this set yet. Go back to the questions to pick another company.";
+          statusEl.textContent = "No examples for this set yet. Go back to the questions and pick another principle.";
           return;
         }
         renderPicker(c, list);
