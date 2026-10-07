@@ -1,6 +1,7 @@
-principles 30ddd1357e984231cbad3cd44dfbbc82553705ca
+principles 610bdc0b96303acf905ab97160ac34253667b2c0
 
-facet ids match that index. Question text and aliases were not rewritten.
-generic: empty questions. Facets are stamped, so the fixed bank is inherited at runtime. Are Right, A Lot, and Intentional About Culture have no facet.
-Toyota Respect and Teamwork no longer carry facets. The principles audit skipped both.
+facet ids stamped from that index. Question text and aliases were not rewritten.
+generic: empty stored questions. Are Right, A Lot inherits Amazon's questions through are-right-a-lot.
+Intentional About Culture, Toyota Respect, and Toyota Teamwork have facets and no question donor.
+GitLab Results for Customers is on customer-obsession and keeps its own stored questions. Amazon remains the donor for that facet.
 default company: generic

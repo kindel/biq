@@ -63,7 +63,10 @@
             "are right a lot"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [],
+          "facets": [
+            "are-right-a-lot"
+          ]
         },
         {
           "id": 8005,
@@ -205,7 +208,10 @@
             "intentional about culture"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [],
+          "facets": [
+            "intentional-about-culture"
+          ]
         }
       ],
       "preamble": "**Everyone is a leader.** These principles apply to every person, not just people managers. They guide judgment rather than replace it. They remain open to revision: *unless you know better.*"
@@ -516,7 +522,10 @@
             }
           ],
           "kind": "lp",
-          "slug": "are-right-a-lot"
+          "slug": "are-right-a-lot",
+          "facets": [
+            "are-right-a-lot"
+          ]
         },
         {
           "id": 1005,
@@ -1284,7 +1293,10 @@
               "id": "4735b470"
             }
           ],
-          "slug": "passion-for-the-mission"
+          "slug": "passion-for-the-mission",
+          "facets": [
+            "care-about-the-mission"
+          ]
         },
         {
           "id": 2002,
@@ -1320,7 +1332,10 @@
               "id": "de151067"
             }
           ],
-          "slug": "deliver-as-one-arm"
+          "slug": "deliver-as-one-arm",
+          "facets": [
+            "beyond-your-function"
+          ]
         },
         {
           "id": 2003,
@@ -1356,7 +1371,10 @@
               "id": "c0ece807"
             }
           ],
-          "slug": "build-extraordinary-teams"
+          "slug": "build-extraordinary-teams",
+          "facets": [
+            "build-extraordinary-teams"
+          ]
         },
         {
           "id": 2004,
@@ -1392,7 +1410,10 @@
               "id": "413c32bf"
             }
           ],
-          "slug": "challenge-skillfully"
+          "slug": "challenge-skillfully",
+          "facets": [
+            "challenge-then-decide"
+          ]
         },
         {
           "id": 2005,
@@ -1428,7 +1449,10 @@
               "id": "8297a661"
             }
           ],
-          "slug": "root-out-inefficiencies"
+          "slug": "root-out-inefficiencies",
+          "facets": [
+            "cut-the-waste"
+          ]
         },
         {
           "id": 2006,
@@ -1465,7 +1489,10 @@
               "id": "1751716c"
             }
           ],
-          "slug": "relentlessly-push-boundaries"
+          "slug": "relentlessly-push-boundaries",
+          "facets": [
+            "push-the-boundary"
+          ]
         },
         {
           "id": 2007,
@@ -1586,7 +1613,10 @@
               "id": "0c57921e"
             }
           ],
-          "slug": "be-decisive-in-ambiguity-and-change"
+          "slug": "be-decisive-in-ambiguity-and-change",
+          "facets": [
+            "make-it-concrete"
+          ]
         },
         {
           "id": 2010,
@@ -1624,7 +1654,10 @@
               "id": "57e2b67d"
             }
           ],
-          "slug": "optimize-for-endurance-and-resilience"
+          "slug": "optimize-for-endurance-and-resilience",
+          "facets": [
+            "sustain-the-pace"
+          ]
         }
       ],
       "examples": true,
@@ -1717,7 +1750,10 @@
               "id": "266ed8d2"
             }
           ],
-          "slug": "ruthless-prioritization"
+          "slug": "ruthless-prioritization",
+          "facets": [
+            "ruthless-focus"
+          ]
         },
         {
           "id": 3003,
@@ -1753,7 +1789,10 @@
               "id": "05cb61e6"
             }
           ],
-          "slug": "company-wide-perspective"
+          "slug": "company-wide-perspective",
+          "facets": [
+            "whole-company"
+          ]
         },
         {
           "id": 3004,
@@ -1828,7 +1867,10 @@
               "id": "e78f9916"
             }
           ],
-          "slug": "think-systematically"
+          "slug": "think-systematically",
+          "facets": [
+            "prevent-the-next-one"
+          ]
         },
         {
           "id": 3006,
@@ -1864,7 +1906,10 @@
               "id": "933fe4a0"
             }
           ],
-          "slug": "simplify"
+          "slug": "simplify",
+          "facets": [
+            "simplify-what-you-touch"
+          ]
         },
         {
           "id": 3007,
@@ -2017,7 +2062,10 @@
               "id": "51098b39"
             }
           ],
-          "slug": "influence-without-authority"
+          "slug": "influence-without-authority",
+          "facets": [
+            "influence-without-authority"
+          ]
         },
         {
           "id": 3011,
@@ -2343,7 +2391,10 @@
               "id": "eb9f288e"
             }
           ],
-          "slug": "deliver-value-fast"
+          "slug": "deliver-value-fast",
+          "facets": [
+            "adapt-for-the-customer"
+          ]
         },
         {
           "id": 4004,
@@ -2379,7 +2430,10 @@
               "id": "6ec2270b"
             }
           ],
-          "slug": "bring-good-vibes"
+          "slug": "bring-good-vibes",
+          "facets": [
+            "good-vibes"
+          ]
         },
         {
           "id": 4005,
@@ -2415,7 +2469,10 @@
               "id": "8b637475"
             }
           ],
-          "slug": "raise-the-bar"
+          "slug": "raise-the-bar",
+          "facets": [
+            "raise-the-bar"
+          ]
         },
         {
           "id": 4006,
@@ -2451,7 +2508,10 @@
               "id": "537c4a39"
             }
           ],
-          "slug": "stay-humble"
+          "slug": "stay-humble",
+          "facets": [
+            "stay-humble"
+          ]
         }
       ]
     },
@@ -2503,7 +2563,10 @@
               "id": "d27283ca"
             }
           ],
-          "slug": "collaboration"
+          "slug": "collaboration",
+          "facets": [
+            "help-anyway"
+          ]
         },
         {
           "id": 5002,
@@ -2539,7 +2602,10 @@
               "id": "738b38a8"
             }
           ],
-          "slug": "results-for-customers"
+          "slug": "results-for-customers",
+          "facets": [
+            "customer-obsession"
+          ]
         },
         {
           "id": 5003,
@@ -2575,7 +2641,10 @@
               "id": "4bcf5b33"
             }
           ],
-          "slug": "efficiency"
+          "slug": "efficiency",
+          "facets": [
+            "global-efficiency"
+          ]
         },
         {
           "id": 5004,
@@ -2611,7 +2680,10 @@
               "id": "b7e1988d"
             }
           ],
-          "slug": "diversity-inclusion-and-belonging"
+          "slug": "diversity-inclusion-and-belonging",
+          "facets": [
+            "belonging"
+          ]
         },
         {
           "id": 5005,
@@ -2647,7 +2719,10 @@
               "id": "98e544ab"
             }
           ],
-          "slug": "iteration"
+          "slug": "iteration",
+          "facets": [
+            "smallest-useful-step"
+          ]
         },
         {
           "id": 5006,
@@ -2683,7 +2758,10 @@
               "id": "93b24147"
             }
           ],
-          "slug": "transparency"
+          "slug": "transparency",
+          "facets": [
+            "make-it-public"
+          ]
         }
       ]
     },
@@ -2810,6 +2888,9 @@
               "manager": true,
               "id": "3fcf39b7"
             }
+          ],
+          "facets": [
+            "break-down-silos"
           ]
         },
         {
@@ -2881,6 +2962,9 @@
               "manager": true,
               "id": "b39f0206"
             }
+          ],
+          "facets": [
+            "no-surprises"
           ]
         },
         {
@@ -3143,6 +3227,9 @@
               "manager": true,
               "id": "8446b56b"
             }
+          ],
+          "facets": [
+            "respect-time"
           ]
         },
         {
@@ -3179,6 +3266,9 @@
               "manager": true,
               "id": "56a6c05d"
             }
+          ],
+          "facets": [
+            "scrappy-not-crappy"
           ]
         },
         {
@@ -3214,6 +3304,9 @@
               "manager": true,
               "id": "d974dda6"
             }
+          ],
+          "facets": [
+            "product-not-the-science"
           ]
         },
         {
@@ -3249,6 +3342,9 @@
               "manager": true,
               "id": "340cbd3d"
             }
+          ],
+          "facets": [
+            "match-the-rigor"
           ]
         }
       ]
@@ -3336,7 +3432,10 @@
             "earn trust"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [],
+          "facets": [
+            "mutual-respect"
+          ]
         },
         {
           "id": 7005,
@@ -3352,7 +3451,10 @@
             "hire and develop the best"
           ],
           "kind": "lp",
-          "questions": []
+          "questions": [],
+          "facets": [
+            "grow-the-team"
+          ]
         }
       ]
     }

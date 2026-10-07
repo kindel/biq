@@ -124,23 +124,26 @@ function firstDonor(facet) {
   return null;
 }
 
-// Respect and Teamwork stay unmapped. The principles audit skipped them:
-// earn-trust is candor, and hire-and-develop is the hiring bar.
+// Respect and Teamwork have their own facets. They do not sit on earn-trust
+// or hire-and-develop-the-best, and neither facet has a question donor.
 const TOYOTA_MAPPINGS = {
   challenge: "think-big",
   kaizen: "better-every-day",
   "genchi-genbutsu": "dive-deep"
 };
-const TOYOTA_UNMAPPED = ["respect", "teamwork"];
+const TOYOTA_OWN_FACET = {
+  respect: "mutual-respect",
+  teamwork: "grow-the-team"
+};
 
 // Any Company reuses the Amazon question list for the shared facet.
-// Are Right, A Lot has the same empty facet as Amazon. Intentional About
-// Culture has no counterpart in this corpus.
+// Are Right, A Lot shares are-right-a-lot, so it inherits Amazon's questions.
+// Intentional About Culture has no donor in this corpus.
 const GENERIC_FROM_AMAZON = {
   "customer-obsession": "customer-obsession",
   "earn-trust": "earn-trust",
   ownership: "ownership",
-  "are-right-a-lot": null,
+  "are-right-a-lot": "are-right-a-lot",
   "learn-and-be-curious": "learn-and-be-curious",
   "invent-and-simplify": "invent-and-simplify",
   "insist-on-high-standards": "insist-on-the-highest-standards",
@@ -213,18 +216,21 @@ if (!toyota) {
   if (mapped !== 3) {
     fail.push("expected three Toyota mappings, checked " + mapped);
   }
-  for (let i = 0; i < TOYOTA_UNMAPPED.length; i++) {
-    const slug = TOYOTA_UNMAPPED[i];
+  for (const [slug, facet] of Object.entries(TOYOTA_OWN_FACET)) {
     const p = (toyota.principles || []).find((x) => x.slug === slug);
     if (!p) {
       fail.push("toyota/" + slug + " is missing");
       continue;
     }
-    if ((p.facets || []).length) {
-      fail.push("toyota/" + slug + " should have no facets");
+    const facs = p.facets || [];
+    if (facs.join(",") !== facet) {
+      fail.push("toyota/" + slug + " facets should be " + facet + ", got " + facs.join(","));
+    }
+    if (facs.includes("earn-trust") || facs.includes("hire-and-develop-the-best")) {
+      fail.push("toyota/" + slug + " inherited the wrong facet");
     }
     if ((p.questions || []).length) {
-      fail.push("toyota/" + slug + " should stay empty");
+      fail.push("toyota/" + slug + " should stay empty (no question donor)");
     }
   }
 }
@@ -249,8 +255,11 @@ if (!generic) {
       if (got) {
         fail.push("generic/" + p.slug + " should have no questions, got " + got);
       }
-      if ((p.facets || []).length && p.slug === "intentional-about-culture") {
-        fail.push("generic/" + p.slug + " should have no facets");
+      if (p.slug === "intentional-about-culture") {
+        const facs = (p.facets || []).join(",");
+        if (facs !== "intentional-about-culture") {
+          fail.push("generic/" + p.slug + " facets should be intentional-about-culture, got " + facs);
+        }
       }
       continue;
     }
