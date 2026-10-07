@@ -378,10 +378,27 @@ if (!generic) {
 
 // Every principle in every set must show questions, and at least one of
 // those questions must have an example pack at Junior, Senior, and Exec.
-// That is what the level picker loads. A question with no pack does not
-// count for a level.
+// The examples page switches levels inside that one question. Splitting
+// the three levels across different questions does not count. A question
+// with no pack does not count for a level.
 const LEVELS = ["junior", "senior", "exec"];
 const LEVEL_NAME = { junior: "Junior", senior: "Senior", exec: "Exec" };
+
+function hasCompleteQuestion(levelSets) {
+  return levelSets.some((levels) => LEVELS.every((lv) => levels.includes(lv)));
+}
+
+(function selfTestCompleteQuestion() {
+  if (hasCompleteQuestion([["junior"], ["senior"], ["exec"]])) {
+    fail.push("splitting Junior, Senior, and Exec across questions must not count");
+  }
+  if (!hasCompleteQuestion([["junior", "senior", "exec"]])) {
+    fail.push("one question with all three levels should count");
+  }
+  if (hasCompleteQuestion([["junior", "senior"]])) {
+    fail.push("a question missing Exec must not count as complete");
+  }
+})();
 
 // A level counts only when the examples page can render it. showCurrent
 // treats a falsy sheet as missing. An empty object would pass that check
@@ -437,8 +454,14 @@ for (const c of bank.companies || []) {
       continue;
     }
     const covered = {};
+    const levelSets = [];
     for (const q of qs) {
-      for (const lv of packLevels(q)) covered[lv] = true;
+      const levels = packLevels(q);
+      levelSets.push(levels);
+      for (const lv of levels) covered[lv] = true;
+    }
+    if (!hasCompleteQuestion(levelSets)) {
+      fail.push(where + " has no question with Junior, Senior, and Exec examples");
     }
     for (const lv of LEVELS) {
       if (!covered[lv]) {
@@ -489,4 +512,4 @@ if (fail.length) {
   fail.forEach((f) => console.log("  " + f));
   process.exit(1);
 }
-console.log("OK: every principle has questions at Junior, Senior, and Exec; facet map matches the page");
+console.log("OK: every principle has one question with Junior, Senior, and Exec examples; facet map matches the page");
