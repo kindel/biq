@@ -124,12 +124,37 @@ function firstDonor(facet) {
   return null;
 }
 
+// Respect and Teamwork have their own facets. They do not sit on earn-trust
+// or hire-and-develop-the-best, and neither facet has a question donor.
 const TOYOTA_MAPPINGS = {
   challenge: "think-big",
   kaizen: "better-every-day",
-  "genchi-genbutsu": "dive-deep",
-  respect: "earn-trust",
-  teamwork: "hire-and-develop-the-best"
+  "genchi-genbutsu": "dive-deep"
+};
+const TOYOTA_OWN_FACET = {
+  respect: "mutual-respect",
+  teamwork: "grow-the-team"
+};
+
+// Any Company reuses the Amazon question list for the shared facet.
+// Are Right, A Lot shares are-right-a-lot, so it inherits Amazon's questions.
+// Intentional About Culture has no donor in this corpus.
+const GENERIC_FROM_AMAZON = {
+  "customer-obsession": "customer-obsession",
+  "earn-trust": "earn-trust",
+  ownership: "ownership",
+  "are-right-a-lot": "are-right-a-lot",
+  "learn-and-be-curious": "learn-and-be-curious",
+  "invent-and-simplify": "invent-and-simplify",
+  "insist-on-high-standards": "insist-on-the-highest-standards",
+  "hire-and-develop-the-best": "hire-and-develop-the-best",
+  "think-big": "think-big",
+  "bias-for-action": "bias-for-action",
+  frugality: "frugality",
+  "dive-deep": "dive-deep",
+  "have-backbone-disagree-and-commit": "have-backbone-disagree-and-commit",
+  "deliver-results": "deliver-results",
+  "intentional-about-culture": null
 };
 
 const toyota = (bank.companies || []).find((c) => c.id === "toyota");
@@ -188,9 +213,72 @@ if (!toyota) {
       }
     }
   }
-  if (mapped !== 5) {
-    fail.push("expected five Toyota mappings, checked " + mapped);
+  if (mapped !== 3) {
+    fail.push("expected three Toyota mappings, checked " + mapped);
   }
+  for (const [slug, facet] of Object.entries(TOYOTA_OWN_FACET)) {
+    const p = (toyota.principles || []).find((x) => x.slug === slug);
+    if (!p) {
+      fail.push("toyota/" + slug + " is missing");
+      continue;
+    }
+    const facs = p.facets || [];
+    if (facs.join(",") !== facet) {
+      fail.push("toyota/" + slug + " facets should be " + facet + ", got " + facs.join(","));
+    }
+    if (facs.includes("earn-trust") || facs.includes("hire-and-develop-the-best")) {
+      fail.push("toyota/" + slug + " inherited the wrong facet");
+    }
+    if ((p.questions || []).length) {
+      fail.push("toyota/" + slug + " should stay empty (no question donor)");
+    }
+  }
+}
+
+const generic = (bank.companies || []).find((c) => c.id === "generic");
+const amazonOriginal = original.find((c) => c.id === "amazon");
+if (!generic) {
+  fail.push("generic is missing from the bank");
+} else if (!amazonOriginal) {
+  fail.push("amazon is missing from the bank");
+} else {
+  const seen = {};
+  for (const p of generic.principles || []) {
+    seen[p.slug] = true;
+    const wantSlug = GENERIC_FROM_AMAZON[p.slug];
+    if (wantSlug === undefined) {
+      fail.push("generic/" + p.slug + " is not in the Amazon inheritance map");
+      continue;
+    }
+    const got = (p.questions || []).map((q) => q.id).join(",");
+    if (wantSlug === null) {
+      if (got) {
+        fail.push("generic/" + p.slug + " should have no questions, got " + got);
+      }
+      if (p.slug === "intentional-about-culture") {
+        const facs = (p.facets || []).join(",");
+        if (facs !== "intentional-about-culture") {
+          fail.push("generic/" + p.slug + " facets should be intentional-about-culture, got " + facs);
+        }
+      }
+      continue;
+    }
+    const donor = (amazonOriginal.principles || []).find((x) => x.slug === wantSlug);
+    if (!donor) {
+      fail.push("amazon/" + wantSlug + " is missing");
+      continue;
+    }
+    const want = (donor.questions || []).map((q) => q.id).join(",");
+    if (!want) {
+      fail.push("amazon/" + wantSlug + " has no questions to donate");
+    } else if (got !== want) {
+      fail.push("generic/" + p.slug + " inherited [" + got + "], expected amazon/" +
+                wantSlug + " [" + want + "]");
+    }
+  }
+  Object.keys(GENERIC_FROM_AMAZON).forEach((slug) => {
+    if (!seen[slug]) fail.push("generic/" + slug + " is missing from the bank");
+  });
 }
 
 if (fail.length) {
@@ -198,4 +286,4 @@ if (fail.length) {
   fail.forEach((f) => console.log("  " + f));
   process.exit(1);
 }
-console.log("OK: attachFacetQuestions self-test passed, five Toyota mappings resolved to pack-backed questions, examplesNote names the donor");
+console.log("OK: attachFacetQuestions self-test passed, Toyota and Any Company inheritance resolved, examplesNote names the donor");
