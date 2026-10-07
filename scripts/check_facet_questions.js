@@ -138,7 +138,8 @@ const TOYOTA_OWN_FACET = {
 
 // Any Company reuses the Amazon question list for the shared facet.
 // Are Right, A Lot shares are-right-a-lot, so it inherits Amazon's questions.
-// Intentional About Culture has no donor in this corpus.
+// Intentional About Culture has no Amazon twin. It gets its questions through its
+// shared facets (team-for-the-outcome), since every principle must have BIQ questions.
 const GENERIC_FROM_AMAZON = {
   "customer-obsession": "customer-obsession",
   "earn-trust": "earn-trust",
@@ -252,14 +253,12 @@ if (!generic) {
     }
     const got = (p.questions || []).map((q) => q.id).join(",");
     if (wantSlug === null) {
-      if (got) {
-        fail.push("generic/" + p.slug + " should have no questions, got " + got);
+      if (!got) {
+        fail.push("generic/" + p.slug + " has no questions; every principle needs BIQ questions");
       }
-      if (p.slug === "intentional-about-culture") {
-        const facs = (p.facets || []).join(",");
-        if (facs !== "intentional-about-culture") {
-          fail.push("generic/" + p.slug + " facets should be intentional-about-culture, got " + facs);
-        }
+      const facs = p.facets || [];
+      if (!facs.includes(p.slug)) {
+        fail.push("generic/" + p.slug + " facets should include " + p.slug + ", got " + facs.join(","));
       }
       continue;
     }
