@@ -39,6 +39,9 @@ class FramingTest(unittest.TestCase):
         block = css[start:css.index("}", start)]
         self.assertIn("text-transform: none", block)
         self.assertIn("letter-spacing: normal", block)
+        self.assertIn("var(--biq-muted)", block)
+        page = read("index.html")
+        self.assertLess(page.index("bhiq-company-view"), page.index('id="bhiq-input"'))
 
     def test_the_display_name_is_not_a_company(self):
         bank = json.loads(read("data", "questions.json"))
