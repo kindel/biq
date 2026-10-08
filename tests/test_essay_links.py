@@ -325,6 +325,56 @@ class EssayLinkTest(unittest.TestCase):
         essay_links.check_value(
             {"url": NOT_AN_ESSAY + " extra"}, "card.json", self.catalog, errs)
         self.assertEqual([], errs)
+        padded = " https://kindel.com/essays/ownership/ "
+        errs = []
+        essay_links.check_value(
+            {"href": padded}, "card.json", self.catalog, errs)
+        self.assertTrue(any(padded in e for e in errs), errs)
+        self.assertTrue(
+            any("https://kindel.com/essays/ownership/" in e for e in errs),
+            errs)
+        errs = []
+        essay_links.check_value(
+            {"url": padded}, "card.json", self.catalog, errs)
+        self.assertTrue(any(padded in e for e in errs), errs)
+        errs = []
+        essay_links.check_value(
+            {"href": "https://kindel.com/essays/ownership/"},
+            "card.json", self.catalog, errs)
+        self.assertEqual([], errs)
+        errs = []
+        essay_links.check_value(
+            {"url": " " + NOT_AN_ESSAY + " "}, "card.json", self.catalog, errs)
+        self.assertEqual([], errs)
+
+    def test_a_standalone_markdown_link_is_scanned(self):
+        link = "[Ownership](%s)" % OWNERSHIP
+        errs = []
+        essay_links.check_value(
+            {"note": link}, "note.json", self.catalog, errs)
+        self.assertTrue(any(OWNERSHIP in e for e in errs), errs)
+        errs = []
+        essay_links.check_value(
+            {"note": "See " + link}, "note.json", self.catalog, errs)
+        self.assertTrue(any(OWNERSHIP in e for e in errs), errs)
+        bad = "[Ownership](/essays/owneship/)"
+        errs = []
+        essay_links.check_value(
+            {"note": bad}, "note.json", self.catalog, errs)
+        self.assertTrue(any("/essays/owneship/" in e for e in errs), errs)
+        errs = []
+        essay_links.check_value(
+            {"note": "[Ownership](https://kindel.com/essays/ownership/)"},
+            "note.json", self.catalog, errs)
+        self.assertEqual([], errs)
+        with tempfile.TemporaryDirectory() as root:
+            with open(os.path.join(root, "note.json"), "w", encoding="utf-8") as fh:
+                fh.write('{"note": "%s"}\n' % link)
+            with open(os.path.join(root, "card.json"), "w", encoding="utf-8") as fh:
+                fh.write('{"href": " https://kindel.com/essays/ownership/ "}\n')
+            problems = essay_links.repo_problems(root, self.catalog)
+        self.assertTrue(any("note.json" in p and OWNERSHIP in p for p in problems), problems)
+        self.assertTrue(any("card.json" in p for p in problems), problems)
 
     def test_json_values_keep_prose_periods_and_stored_parens(self):
         prose = '{"note": "See https://kindel.com/essays/ownership/."}\n'

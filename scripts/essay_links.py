@@ -14,9 +14,10 @@ segment, a doubled slash, a dot segment, or an encoded slash fails the
 same way a blog.kindel.com essay URL does. The path is decoded once and
 dot segments are folded before that check. A stored field is judged
 before trailing punctuation is removed. A url or href value is one
-stored link, so extra text in that field fails the same check. JSON
-files are read as decoded values. A sentence in one of those values
-may end with a period.
+stored link, so extra text in that field fails the same check. Space
+around that value fails too. A note that is only a Markdown link is
+still scanned. JSON files are read as decoded values. A sentence in
+one of those values may end with a period.
 
 scripts/essay_catalog.json is the offline copy of that category
 (WordPress id 448). Refresh it from
@@ -365,28 +366,58 @@ def _collect(obj, out):
         out.append((obj, False))
 
 
+def _exact_slug(href, catalog):
+    """Slug when href is the canonical essay URL, else ""."""
+    for slug in catalog["by_slug"]:
+        if href == canonical_essay_url(slug):
+            return slug
+    return ""
+
+
+def _stored_link_problem(text, catalog):
+    """(href, slug) when a url or href value is a non-exact essay link.
+
+    Surrounding whitespace is rejected before the stripped text is
+    classified. Padding cannot turn a canonical URL into an exact match.
+    None means the value is not an essay link.
+    """
+    stripped = text.strip()
+    if stripped != text:
+        verdict = _judge(stripped, catalog)
+        if verdict == _OK:
+            slug = _exact_slug(stripped, catalog)
+            if slug:
+                return (text, slug)
+        elif verdict is not None:
+            return (text, verdict[1])
+    return _classify(stripped, catalog, True)
+
+
 def check_value(obj, where, catalog, errs):
     """Append an error for each essay link in obj that is not canonical.
 
-    A string with no whitespace is a stored field. It is judged whole,
-    punctuation included, before any prose scan. A url or href value is
-    always that kind of field, so a space after the link does not turn
-    it into prose. Other strings are prose, and a sentence may end with
-    a period.
+    A string with no whitespace is judged whole first. When that check
+    finds nothing, the tokens inside are still scanned, so a Markdown
+    link that is the whole note cannot hide an essay URL. A url or href
+    value keeps its surrounding space, and a sentence may end with a
+    period.
     """
     items = []
     _collect(obj, items)
     seen = set()
     for text, as_field in items:
-        whole = text.strip()
-        if as_field or (whole and not any(ch.isspace() for ch in whole)):
-            issue = _classify(whole, catalog, True)
-            if issue and issue[0] not in seen:
-                seen.add(issue[0])
-                errs.append("%s: %s" % (where, format_problem(issue[0], issue[1])))
-                continue
-            if not as_field:
-                continue
+        if as_field:
+            issue = _stored_link_problem(text, catalog)
+        else:
+            issue = None
+            whole = text.strip()
+            if whole and not any(ch.isspace() for ch in whole):
+                issue = _classify(whole, catalog, True)
+        if issue and issue[0] not in seen:
+            seen.add(issue[0])
+            errs.append("%s: %s" % (where, format_problem(issue[0], issue[1])))
+        if issue:
+            continue
         for href, slug in problems_in_text(text, catalog):
             if href in seen:
                 continue
