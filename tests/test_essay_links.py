@@ -376,6 +376,32 @@ class EssayLinkTest(unittest.TestCase):
         self.assertTrue(any("note.json" in p and OWNERSHIP in p for p in problems), problems)
         self.assertTrue(any("card.json" in p for p in problems), problems)
 
+    def test_a_markdown_destination_keeps_its_punctuation(self):
+        period = "https://kindel.com/essays/ownership/."
+        wrapped = "[Ownership](%s)" % period
+        self.assertEqual(
+            [(period, "ownership")],
+            essay_links.problems_in_text(wrapped, self.catalog))
+        rel = "/essays/ownership/."
+        self.assertEqual(
+            [(rel, "ownership")],
+            essay_links.problems_in_text("[Ownership](%s)" % rel, self.catalog))
+        self.assertEqual(
+            [],
+            essay_links.problems_in_text(
+                "See [Ownership](https://kindel.com/essays/ownership/).",
+                self.catalog))
+        errs = []
+        essay_links.check_value(
+            {"note": wrapped}, "note.json", self.catalog, errs)
+        self.assertTrue(any(period in e for e in errs), errs)
+        with tempfile.TemporaryDirectory() as root:
+            with open(os.path.join(root, "note.json"), "w", encoding="utf-8") as fh:
+                fh.write('{"note": "%s"}\n' % wrapped)
+            problems = essay_links.repo_problems(root, self.catalog)
+        self.assertEqual(1, len(problems), problems)
+        self.assertIn(period, problems[0])
+
     def test_json_values_keep_prose_periods_and_stored_parens(self):
         prose = '{"note": "See https://kindel.com/essays/ownership/."}\n'
         paren = "https://kindel.com/essays/ownership/)"

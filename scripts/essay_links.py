@@ -16,7 +16,8 @@ dot segments are folded before that check. A stored field is judged
 before trailing punctuation is removed. A url or href value is one
 stored link, so extra text in that field fails the same check. Space
 around that value fails too. A note that is only a Markdown link is
-still scanned. JSON files are read as decoded values. A sentence in
+still scanned, and punctuation inside that destination stays part of
+the link. JSON files are read as decoded values. A sentence in
 one of those values may end with a period.
 
 scripts/essay_catalog.json is the offline copy of that category
@@ -327,17 +328,20 @@ def problems_in_text(text, catalog):
     """(href, slug) pairs for essay links that are not canonical.
 
     slug is the catalog slug the link should use, or "" when the path
-    does not name one. A token inside quotes is a stored field, so
-    trailing punctuation stays part of the value. Elsewhere it is prose
-    and is dropped only after the raw token has been judged.
+    does not name one. A token inside quotes, or immediately after a
+    Markdown "](", is a stored destination, so trailing punctuation
+    stays part of the value. Elsewhere it is prose and is dropped only
+    after the raw token has been judged.
     """
     if not text or not catalog:
         return []
     found = []
     seen = set()
     for href, end in _tokens(text):
+        start = end - len(href)
         nxt = text[end:end + 1]
-        strict = nxt in ('"', "'")
+        prev = text[start - 2:start] if start >= 2 else ""
+        strict = nxt in ('"', "'") or prev == "]("
         issue = _classify(href, catalog, strict)
         if not issue or issue[0] in seen:
             continue
