@@ -9,8 +9,9 @@ The browser script rewrites to /essays/<slug>/ on the apex host. These
 repos are also read off kindel.com, so the link to store is
 https://kindel.com/essays/<slug>/. That string has to match exactly,
 and the slug has to be in the catalog. A typo, a missing trailing
-slash, a root-relative path, an extra segment, a doubled slash, or an
-encoded slash fails the same way a blog.kindel.com essay URL does.
+slash, a root-relative path, a path with no leading slash, an extra
+segment, a doubled slash, or an encoded slash fails the same way a
+blog.kindel.com essay URL does. A percent-encoded path is decoded once.
 
 scripts/essay_catalog.json is the offline copy of that category
 (WordPress id 448). Refresh it from
@@ -21,8 +22,8 @@ slug. Sort by slug.
   python3 scripts/essay_links.py
 
 Exits non-zero when a product file (everything except tests/) links an
-essay on blog.kindel.com, or uses any /essays/ form other than
-https://kindel.com/essays/<slug>/. Tests plant bad URLs on purpose, so
+essay on blog.kindel.com, or names an essays path in any form other
+than https://kindel.com/essays/<slug>/. Tests plant bad URLs on purpose, so
 they are not scanned. The principles validator checks teaching records
 directly.
 """
@@ -37,10 +38,13 @@ _SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 _DATED = re.compile(r"^/(\d{4})/(\d{2})/(\d{2})/([^/]+)/?$")
 _INDEX_PHP = re.compile(r"^/index\.php$", re.IGNORECASE)
 _CANDIDATE = re.compile(r"(?:https?:)?//[^\s<>\"'`]+", re.IGNORECASE)
-# An absolute URL has a letter before /essays/ (.com), so the path inside
-# it is not matched a second time.
+# Root-relative /essays/ and a path with no leading slash. An absolute
+# URL has a letter or a slash before the path, so it is not matched twice.
+# The pattern is split so this file does not contain a candidate.
 _RELATIVE = re.compile(
     "(?<![A-Za-z0-9])(/essays/" + r"[^\s<>\"'`]+)", re.IGNORECASE)
+_DOC_RELATIVE = re.compile(
+    "(?<![A-Za-z0-9/._-])(essays/" + r"[^\s<>\"'`]+)", re.IGNORECASE)
 _TRAILING = ".,;:)]}>`"
 _ESSAY_INDEX = (
     "https://kindel.com/essays/",
@@ -200,7 +204,8 @@ def _apex_issue(href, catalog):
     """(href, slug) when an essays URL is not the canonical form.
 
     Accepts only https://kindel.com/essays/<slug>/ for a catalog slug.
-    A root-relative /essays/ path is held to that same string. slug is
+    A root-relative path and a path with no leading slash are held to
+    that same string. A percent-encoded path is decoded once. slug is
     the catalog slug the link should use, or "" when it has none. The
     bare essays index is not an essay post. A placeholder such as
     <slug> never forms a candidate, because the scan stops at <.
@@ -231,7 +236,7 @@ def _apex_issue(href, catalog):
 
 
 def _hrefs(text):
-    """URL candidates, scheme-relative and root-relative, trailing junk stripped."""
+    """URL candidates, absolute, root-relative, and document-relative."""
     spans = []
     found = []
     seen = set()
@@ -246,11 +251,12 @@ def _hrefs(text):
     for match in _CANDIDATE.finditer(text):
         spans.append((match.start(), match.end()))
         add(match.group(0))
-    for match in _RELATIVE.finditer(text):
-        start = match.start(1)
-        if any(a <= start < b for a, b in spans):
-            continue
-        add(match.group(1))
+    for pattern in (_RELATIVE, _DOC_RELATIVE):
+        for match in pattern.finditer(text):
+            start = match.start(1)
+            if any(a <= start < b for a, b in spans):
+                continue
+            add(match.group(1))
     return found
 
 
@@ -263,9 +269,6 @@ def problems_in_text(text, catalog):
     does not name a catalog slug.
     """
     if not text:
-        return []
-    lower = text.lower()
-    if "/essays" not in lower and "blog.kindel.com" not in lower:
         return []
     found = []
     for href in _hrefs(text):

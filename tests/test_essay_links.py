@@ -114,6 +114,44 @@ class EssayLinkTest(unittest.TestCase):
             [(href, "ownership")],
             essay_links.problems_in_text(text, self.catalog))
 
+    def test_a_percent_encoded_essay_path_is_rejected(self):
+        href = "https://kindel.com/%65ssays/ownership/"
+        self.assertEqual(
+            [(href, "ownership")],
+            essay_links.problems_in_text(href, self.catalog))
+        self.assertIn(
+            "https://kindel.com/essays/ownership/",
+            essay_links.format_problem(href, "ownership"))
+        href = "https://kindel.com/%65ssays/owneship/"
+        self.assertEqual(
+            [(href, "")], essay_links.problems_in_text(href, self.catalog))
+        self.assertIn(
+            "not in scripts/essay_catalog.json",
+            essay_links.format_problem(href, ""))
+
+    def test_a_document_relative_essay_url_is_rejected(self):
+        canonical = "https://kindel.com/essays/ownership/"
+        for href in ("essays/ownership/", "essays/ownership"):
+            found = essay_links.problems_in_text(href, self.catalog)
+            self.assertEqual([(href, "ownership")], found, href)
+            self.assertIn(
+                canonical, essay_links.format_problem(href, "ownership"))
+
+    def test_a_document_relative_unknown_slug_is_rejected(self):
+        href = "essays/owneship/"
+        self.assertEqual(
+            [(href, "")], essay_links.problems_in_text(href, self.catalog))
+        self.assertIn(
+            "not in scripts/essay_catalog.json",
+            essay_links.format_problem(href, ""))
+
+    def test_a_markdown_document_relative_link_is_found(self):
+        href = "essays/ownership/"
+        text = "See [Ownership](%s) for the essay." % href
+        self.assertEqual(
+            [(href, "ownership")],
+            essay_links.problems_in_text(text, self.catalog))
+
     def test_a_root_relative_essay_url_is_rejected(self):
         canonical = "https://kindel.com/essays/ownership/"
         for href in ("/essays/ownership/", "/essays/ownership"):
@@ -161,6 +199,8 @@ class EssayLinkTest(unittest.TestCase):
         href = "https://example.com/2018/05/27/ownership/"
         self.assertEqual("", essay_links.essay_slug(href, self.catalog))
         href = "https://example.com/essays/ownership/"
+        self.assertEqual([], essay_links.problems_in_text(href, self.catalog))
+        href = "https://example.com/%65ssays/ownership/"
         self.assertEqual([], essay_links.problems_in_text(href, self.catalog))
 
     def test_a_url_inside_a_sentence_is_found(self):
