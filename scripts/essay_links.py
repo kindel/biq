@@ -7,9 +7,10 @@ that slug or id is in the Essays category. Other blog posts stay put.
 
 The browser script rewrites to /essays/<slug>/ on the apex host. These
 repos are also read off kindel.com, so the link to store is
-https://kindel.com/essays/<slug>/. An apex link has to be that string
-exactly, and the slug has to be in the catalog. A typo or a missing
-trailing slash fails the same way a blog.kindel.com essay URL does.
+https://kindel.com/essays/<slug>/. That string has to match exactly,
+and the slug has to be in the catalog. A typo, a missing trailing
+slash, a root-relative path, an extra segment, a doubled slash, or an
+encoded slash fails the same way a blog.kindel.com essay URL does.
 
 scripts/essay_catalog.json is the offline copy of that category
 (WordPress id 448). Refresh it from
@@ -20,8 +21,10 @@ slug. Sort by slug.
   python3 scripts/essay_links.py
 
 Exits non-zero when a product file (everything except tests/) links an
-essay on blog.kindel.com. Tests plant bad URLs on purpose, so they are
-not scanned. The principles validator checks teaching records directly.
+essay on blog.kindel.com, or uses any /essays/ form other than
+https://kindel.com/essays/<slug>/. Tests plant bad URLs on purpose, so
+they are not scanned. The principles validator checks teaching records
+directly.
 """
 
 import json
@@ -32,10 +35,17 @@ from urllib.parse import parse_qsl, unquote, urljoin, urlparse
 
 _SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 _DATED = re.compile(r"^/(\d{4})/(\d{2})/(\d{2})/([^/]+)/?$")
-_ESSAY_PATH = re.compile(r"^/essays/([^/]+)/?$")
 _INDEX_PHP = re.compile(r"^/index\.php$", re.IGNORECASE)
-_CANDIDATE = re.compile(r"(?:https?:)?//[^\s<>\"']+", re.IGNORECASE)
-_TRAILING = ".,;:)]}>"
+_CANDIDATE = re.compile(r"(?:https?:)?//[^\s<>\"'`]+", re.IGNORECASE)
+# An absolute URL has a letter before /essays/ (.com), so the path inside
+# it is not matched a second time.
+_RELATIVE = re.compile(
+    "(?<![A-Za-z0-9])(/essays/" + r"[^\s<>\"'`]+)", re.IGNORECASE)
+_TRAILING = ".,;:)]}>`"
+_ESSAY_INDEX = (
+    "https://kindel.com/essays/",
+    "https://kindel.com/essays",
+)
 
 SKIP_DIRS = {".git", "tests", "__pycache__", "node_modules"}
 BINARY_EXT = {
@@ -107,7 +117,7 @@ def load_catalog(path=None):
 
 
 def canonical_essay_url(slug):
-    return "https://kindel.com/essays/%s/" % slug
+    return "https://kindel.com/essays/" + slug + "/"
 
 
 def essay_slug(href, catalog):
@@ -161,51 +171,104 @@ def format_problem(href, slug):
     return "essay link %s is not in scripts/essay_catalog.json" % href
 
 
-def _apex_issue(href, catalog):
-    """(href, slug) when an apex /essays/ URL is not the canonical form.
+def _essay_path_kind(path):
+    """Return (kind, segment) for a URL path.
 
-    slug is "" when the path's slug is not in the catalog. A canonical
-    https://kindel.com/essays/<slug>/ link is not an issue. A placeholder
-    such as <slug> fails safe_slug and is left alone.
+    kind is "no", "index", "slug", or "bad". segment is the first
+    non-empty piece after the essays prefix. "slug" is exactly one
+    segment, with or without a trailing slash. "bad" is still an essays
+    path: an extra segment, a doubled slash, or a slash that was
+    percent-encoded. Extra leading slashes still count as essays, and
+    they are not the canonical form.
     """
+    stripped = unquote(path or "").lstrip("/")
+    lower = stripped.lower()
+    if lower != "essays" and not lower.startswith("essays/"):
+        return ("no", "")
+    if lower in ("essays", "essays/"):
+        return ("index", "")
+    parts = stripped[len("essays/"):].split("/")
+    if len(parts) == 1 or (len(parts) == 2 and parts[1] == ""):
+        return ("slug", parts[0])
+    for part in parts:
+        if part:
+            return ("bad", part)
+    return ("bad", "")
+
+
+def _apex_issue(href, catalog):
+    """(href, slug) when an essays URL is not the canonical form.
+
+    Accepts only https://kindel.com/essays/<slug>/ for a catalog slug.
+    A root-relative /essays/ path is held to that same string. slug is
+    the catalog slug the link should use, or "" when it has none. The
+    bare essays index is not an essay post. A placeholder such as
+    <slug> never forms a candidate, because the scan stops at <.
+    """
+    original = href.strip()
+    if original in _ESSAY_INDEX:
+        return None
+    root_relative = original.startswith("/") and not original.startswith("//")
     try:
-        url = urlparse(urljoin("https://kindel.com", href))
+        url = urlparse(urljoin("https://kindel.com", original))
     except ValueError:
         return None
     if url.scheme not in ("http", "https"):
         return None
-    if not _kindel_host(url.hostname):
+    if not root_relative and not _kindel_host(url.hostname):
         return None
-    match = _ESSAY_PATH.match(url.path)
-    if not match:
+    kind, segment = _essay_path_kind(url.path)
+    if kind == "no":
         return None
-    slug = safe_slug(match.group(1))
-    if not slug:
+    if kind == "index":
+        return (original, "")
+    slug = safe_slug(segment)
+    if not slug or slug not in catalog["by_slug"]:
+        return (original, "")
+    if kind == "slug" and original == canonical_essay_url(slug):
         return None
-    if slug not in catalog["by_slug"]:
-        return (href, "")
-    if href != canonical_essay_url(slug):
-        return (href, slug)
-    return None
+    return (original, slug)
+
+
+def _hrefs(text):
+    """URL candidates, scheme-relative and root-relative, trailing junk stripped."""
+    spans = []
+    found = []
+    seen = set()
+
+    def add(raw):
+        href = raw.rstrip(_TRAILING)
+        if not href or href in seen:
+            return
+        seen.add(href)
+        found.append(href)
+
+    for match in _CANDIDATE.finditer(text):
+        spans.append((match.start(), match.end()))
+        add(match.group(0))
+    for match in _RELATIVE.finditer(text):
+        start = match.start(1)
+        if any(a <= start < b for a, b in spans):
+            continue
+        add(match.group(1))
+    return found
 
 
 def problems_in_text(text, catalog):
     """(href, slug) pairs for essay links that are not canonical.
 
-    slug is the catalog slug for a blog.kindel.com essay, or for an apex
-    URL that names a catalog slug but is not exactly
-    https://kindel.com/essays/<slug>/. slug is "" for an apex URL whose
-    slug is not in the catalog.
+    slug is the catalog slug for a blog.kindel.com essay, or for an
+    essays URL that names a catalog slug but is not exactly
+    https://kindel.com/essays/<slug>/. slug is "" when the essays path
+    does not name a catalog slug.
     """
-    if not text or "kindel.com" not in text.lower():
+    if not text:
+        return []
+    lower = text.lower()
+    if "/essays" not in lower and "blog.kindel.com" not in lower:
         return []
     found = []
-    seen = set()
-    for match in _CANDIDATE.finditer(text):
-        href = match.group(0).rstrip(_TRAILING)
-        if href in seen:
-            continue
-        seen.add(href)
+    for href in _hrefs(text):
         slug = essay_slug(href, catalog)
         if slug:
             found.append((href, slug))
@@ -228,7 +291,7 @@ def _strings(obj, out):
 
 
 def check_value(obj, where, catalog, errs):
-    """Append an error for each blog.kindel.com essay link in obj."""
+    """Append an error for each essay link in obj that is not canonical."""
     texts = []
     _strings(obj, texts)
     seen = set()

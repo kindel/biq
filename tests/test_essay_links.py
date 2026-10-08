@@ -86,9 +86,82 @@ class EssayLinkTest(unittest.TestCase):
             "not in scripts/essay_catalog.json",
             essay_links.format_problem(href, ""))
 
+    def test_a_noncanonical_essay_path_is_rejected(self):
+        canonical = "https://kindel.com/essays/ownership/"
+        for href in (
+            "https://kindel.com/essays/ownership/extra/",
+            "https://kindel.com//essays/ownership/",
+            "https://kindel.com/essays//ownership/",
+            "https://kindel.com/essays/ownership%2Fextra/",
+        ):
+            found = essay_links.problems_in_text(href, self.catalog)
+            self.assertEqual([(href, "ownership")], found, href)
+            self.assertIn(
+                canonical, essay_links.format_problem(href, "ownership"))
+
+    def test_an_encoded_slash_with_no_slug_is_rejected(self):
+        href = "https://kindel.com/essays/%2F/"
+        self.assertEqual(
+            [(href, "")], essay_links.problems_in_text(href, self.catalog))
+        self.assertIn(
+            "not in scripts/essay_catalog.json",
+            essay_links.format_problem(href, ""))
+
+    def test_a_noncanonical_url_inside_a_sentence_is_found(self):
+        href = "https://kindel.com/essays/ownership/extra/"
+        text = "See %s." % href
+        self.assertEqual(
+            [(href, "ownership")],
+            essay_links.problems_in_text(text, self.catalog))
+
+    def test_a_root_relative_essay_url_is_rejected(self):
+        canonical = "https://kindel.com/essays/ownership/"
+        for href in ("/essays/ownership/", "/essays/ownership"):
+            found = essay_links.problems_in_text(href, self.catalog)
+            self.assertEqual([(href, "ownership")], found, href)
+            self.assertIn(
+                canonical, essay_links.format_problem(href, "ownership"))
+
+    def test_a_root_relative_unknown_slug_is_rejected(self):
+        href = "/essays/owneship/"
+        self.assertEqual(
+            [(href, "")], essay_links.problems_in_text(href, self.catalog))
+
+    def test_a_markdown_root_relative_link_is_found(self):
+        href = "/essays/ownership/"
+        text = "See [Ownership](%s) for the essay." % href
+        self.assertEqual(
+            [(href, "ownership")],
+            essay_links.problems_in_text(text, self.catalog))
+
+    def test_a_canonical_url_inside_a_sentence_is_clean(self):
+        text = "See [Ownership](https://kindel.com/essays/ownership/) today."
+        self.assertEqual([], essay_links.problems_in_text(text, self.catalog))
+
+    def test_a_canonical_url_beside_a_relative_one(self):
+        good = "https://kindel.com/essays/ownership/"
+        bad = "/essays/ownership"
+        text = "Keep %s. Drop %s." % (good, bad)
+        self.assertEqual(
+            [(bad, "ownership")],
+            essay_links.problems_in_text(text, self.catalog))
+
+    def test_the_essay_index_and_placeholder_are_not_links(self):
+        for text in (
+            "https://kindel.com/essays/",
+            "https://kindel.com/essays",
+            "https://kindel.com/essays/<slug>/",
+            "Use /essays/<slug>/ on the apex.",
+            "https://kindel.com/",
+        ):
+            self.assertEqual(
+                [], essay_links.problems_in_text(text, self.catalog), text)
+
     def test_other_hosts_do_not_match(self):
         href = "https://example.com/2018/05/27/ownership/"
         self.assertEqual("", essay_links.essay_slug(href, self.catalog))
+        href = "https://example.com/essays/ownership/"
+        self.assertEqual([], essay_links.problems_in_text(href, self.catalog))
 
     def test_a_url_inside_a_sentence_is_found(self):
         text = "See %s for the essay." % OWNERSHIP
