@@ -308,6 +308,41 @@ class EssayLinkTest(unittest.TestCase):
                 "See [Ownership](https://kindel.com/essays/ownership/) today.",
                 self.catalog))
 
+    def test_a_url_field_with_extra_text_is_rejected(self):
+        spaced = "https://kindel.com/essays/ownership/ extra"
+        errs = []
+        essay_links.check_value(
+            {"blog": [{"url": spaced}]}, "card.json", self.catalog, errs)
+        self.assertTrue(any(spaced in e for e in errs), errs)
+        self.assertTrue(
+            any("https://kindel.com/essays/ownership/" in e for e in errs),
+            errs)
+        blog = OWNERSHIP + " extra"
+        errs = []
+        essay_links.check_value({"url": blog}, "card.json", self.catalog, errs)
+        self.assertTrue(any(OWNERSHIP in e for e in errs), errs)
+        errs = []
+        essay_links.check_value(
+            {"url": NOT_AN_ESSAY + " extra"}, "card.json", self.catalog, errs)
+        self.assertEqual([], errs)
+
+    def test_json_values_keep_prose_periods_and_stored_parens(self):
+        prose = '{"note": "See https://kindel.com/essays/ownership/."}\n'
+        paren = "https://kindel.com/essays/ownership/)"
+        stored = '{"href": "%s"}\n' % paren
+        with tempfile.TemporaryDirectory() as root:
+            with open(os.path.join(root, "note.json"), "w", encoding="utf-8") as fh:
+                fh.write(prose)
+            self.assertEqual([], essay_links.repo_problems(root, self.catalog))
+        with tempfile.TemporaryDirectory() as root:
+            with open(os.path.join(root, "card.json"), "w", encoding="utf-8") as fh:
+                fh.write(stored)
+            problems = essay_links.repo_problems(root, self.catalog)
+        self.assertEqual(1, len(problems), problems)
+        self.assertIn("card.json", problems[0])
+        self.assertIn(paren, problems[0])
+        self.assertIn("https://kindel.com/essays/ownership/", problems[0])
+
     def test_repo_has_no_blog_essay_link(self):
         self.assertEqual([], essay_links.repo_problems(ROOT, self.catalog))
 

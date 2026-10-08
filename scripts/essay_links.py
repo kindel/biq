@@ -13,7 +13,10 @@ slash, a root-relative path, a path with no leading slash, an extra
 segment, a doubled slash, a dot segment, or an encoded slash fails the
 same way a blog.kindel.com essay URL does. The path is decoded once and
 dot segments are folded before that check. A stored field is judged
-before trailing punctuation is removed.
+before trailing punctuation is removed. A url or href value is one
+stored link, so extra text in that field fails the same check. JSON
+files are read as decoded values. A sentence in one of those values
+may end with a period.
 
 scripts/essay_catalog.json is the offline copy of that category
 (WordPress id 448). Refresh it from
@@ -342,33 +345,47 @@ def problems_in_text(text, catalog):
     return found
 
 
-def _strings(obj, out):
-    if isinstance(obj, str):
-        out.append(obj)
-    elif isinstance(obj, dict):
-        for value in obj.values():
-            _strings(value, out)
+# Keys whose value is one link, not prose. The field name has to survive
+# the walk so extra text in that value is judged with the link.
+_LINK_KEYS = {"url", "href"}
+
+
+def _collect(obj, out):
+    """Append (text, as_field). as_field is true for a url or href string."""
+    if isinstance(obj, dict):
+        for key, value in obj.items():
+            if isinstance(value, str) and key in _LINK_KEYS:
+                out.append((value, True))
+            else:
+                _collect(value, out)
     elif isinstance(obj, list):
         for value in obj:
-            _strings(value, out)
+            _collect(value, out)
+    elif isinstance(obj, str):
+        out.append((obj, False))
 
 
 def check_value(obj, where, catalog, errs):
     """Append an error for each essay link in obj that is not canonical.
 
     A string with no whitespace is a stored field. It is judged whole,
-    punctuation included, before any prose scan.
+    punctuation included, before any prose scan. A url or href value is
+    always that kind of field, so a space after the link does not turn
+    it into prose. Other strings are prose, and a sentence may end with
+    a period.
     """
-    texts = []
-    _strings(obj, texts)
+    items = []
+    _collect(obj, items)
     seen = set()
-    for text in texts:
+    for text, as_field in items:
         whole = text.strip()
-        if whole and not any(ch.isspace() for ch in whole):
+        if as_field or (whole and not any(ch.isspace() for ch in whole)):
             issue = _classify(whole, catalog, True)
             if issue and issue[0] not in seen:
                 seen.add(issue[0])
                 errs.append("%s: %s" % (where, format_problem(issue[0], issue[1])))
+                continue
+            if not as_field:
                 continue
         for href, slug in problems_in_text(text, catalog):
             if href in seen:
@@ -385,8 +402,23 @@ def _read_text(path):
         return None
 
 
+def _json_problems(text, rel, catalog):
+    """Errors for one JSON document, using decoded values."""
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError as exc:
+        return ["%s: invalid JSON (%s)" % (rel, exc.msg)]
+    errs = []
+    check_value(data, rel, catalog, errs)
+    return errs
+
+
 def repo_problems(root, catalog):
-    """Essay links under root, skipping tests/ and binary files."""
+    """Essay links under root, skipping tests/ and binary files.
+
+    JSON is parsed and checked as values, so a quote after a sentence
+    is not part of the link. Other files are scanned as text.
+    """
     problems = []
     root = os.path.abspath(root)
     for dirpath, dirnames, filenames in os.walk(root):
@@ -402,6 +434,9 @@ def repo_problems(root, catalog):
             if text is None:
                 continue
             rel = os.path.relpath(path, root)
+            if ext == ".json":
+                problems.extend(_json_problems(text, rel, catalog))
+                continue
             seen = set()
             for href, slug in problems_in_text(text, catalog):
                 if href in seen:
