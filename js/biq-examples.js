@@ -497,6 +497,67 @@
       });
   }
 
+  // Same attachment as the question page. The stored list stays empty; the
+  // header needs the inherited question, including its Manager flag.
+  function attachFacetQuestions(list, facetQuestions) {
+    var donor = {};
+    var byId = {};
+    list.forEach(function (c) {
+      (c.principles || []).forEach(function (p) {
+        var qs = p.questions || [];
+        qs.forEach(function (q) {
+          if (q.id && !byId[q.id]) byId[q.id] = q;
+        });
+        if (!qs.length) return;
+        (p.facets || []).forEach(function (f) {
+          if (!donor[f]) donor[f] = qs;
+        });
+      });
+    });
+    function mapped(facet) {
+      var spec = facetQuestions && facetQuestions[facet];
+      if (!spec) return [];
+      var ids = Array.isArray(spec) ? spec : (spec.ids || []);
+      var authored = Array.isArray(spec) ? [] : (spec.authored || []);
+      var out = [];
+      var seen = {};
+      ids.forEach(function (id) {
+        var q = byId[id];
+        if (!q || seen[id]) return;
+        seen[id] = true;
+        out.push(q);
+      });
+      authored.forEach(function (q) {
+        if (!q || !q.text) return;
+        var k = q.id || q.text;
+        if (seen[k]) return;
+        seen[k] = true;
+        out.push(q);
+      });
+      return out;
+    }
+    function add(out, seen, qs) {
+      (qs || []).forEach(function (q) {
+        var k = q.id || q.text;
+        if (seen[k]) return;
+        seen[k] = true;
+        out.push(q);
+      });
+    }
+    list.forEach(function (c) {
+      (c.principles || []).forEach(function (p) {
+        if ((p.questions || []).length) return;
+        var seen = {};
+        var out = [];
+        (p.facets || []).forEach(function (f) {
+          add(out, seen, donor[f]);
+          add(out, seen, mapped(f));
+        });
+        p.questions = out;
+      });
+    });
+  }
+
   function resolveContext(bank) {
     var companies = (bank && bank.companies) || [];
     var targetCompany = company ? company.toLowerCase() : "";
@@ -596,6 +657,7 @@
       return r.json();
     })
     .then(function (bank) {
+      attachFacetQuestions((bank && bank.companies) || [], bank && bank.facetQuestions);
       var ctx = resolveContext(bank);
       resolvedPrincipleId = ctx.principle && typeof ctx.principle.id === "number" ? ctx.principle.id : null;
       renderHeader(ctx);

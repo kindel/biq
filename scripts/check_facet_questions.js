@@ -48,6 +48,10 @@ if (attachLift.missing) {
   fail.forEach((f) => console.log("  " + f));
   process.exit(1);
 }
+const examplesAttachLift = lift(path.join(ROOT, "js", "biq-examples.js"), ["attachFacetQuestions"]);
+if (examplesAttachLift.missing) {
+  fail.push("could not lift " + examplesAttachLift.missing + " from js/biq-examples.js");
+}
 const attachFacetQuestions = attachLift.fns.attachFacetQuestions;
 
 const noteLift = lift(path.join(ROOT, "js", "biq-examples.js"), ["examplesNote"]);
@@ -503,6 +507,40 @@ if (pickLift.missing) {
         fail.push("pickable ids for " + c.id + "/" + (p.slug || p.name) +
                   " differ from attachFacetQuestions");
       }
+    }
+  }
+}
+
+if (examplesAttachLift.fns) {
+  const examplesSrc = fs.readFileSync(path.join(ROOT, "js", "biq-examples.js"), "utf8");
+  const callAt = examplesSrc.indexOf(
+    "attachFacetQuestions((bank && bank.companies) || [], bank && bank.facetQuestions);");
+  const headerAt = examplesSrc.indexOf("renderHeader(ctx);");
+  if (callAt < 0 || headerAt < 0 || callAt > headerAt) {
+    fail.push("examples page does not attach facet questions before renderHeader");
+  }
+  const fromPage = {
+    companies: JSON.parse(JSON.stringify(original)),
+    facetQuestions: facetQuestions
+  };
+  examplesAttachLift.fns.attachFacetQuestions(fromPage.companies, fromPage.facetQuestions);
+  for (const c of bank.companies || []) {
+    const other = fromPage.companies.find((x) => x.id === c.id);
+    for (const p of c.principles || []) {
+      const q2 = ((other && other.principles) || []).find((x) => x.slug === p.slug || x.id === p.id);
+      const want = (p.questions || []).map((q) => q.id + ":" + (q.manager ? "m" : "n")).join(",");
+      const got = ((q2 && q2.questions) || []).map((q) => q.id + ":" + (q.manager ? "m" : "n")).join(",");
+      if (want !== got) {
+        fail.push("examples attachFacetQuestions drifted for " + c.id + "/" + (p.slug || p.name));
+      }
+    }
+  }
+  const blue = fromPage.companies.find((c) => c.id === "blue-origin");
+  const team = blue && (blue.principles || []).find((p) => p.slug === "embrace-team-blue");
+  for (const id of ["c0ece807", "d27283ca"]) {
+    const q = team && (team.questions || []).find((x) => x.id === id);
+    if (!q || q.manager !== true) {
+      fail.push("embrace-team-blue examples header would miss the Manager flag on " + id);
     }
   }
 }
