@@ -3747,7 +3747,8 @@
           "kind": "lp",
           "questions": [],
           "facets": [
-            "acts-like-an-owner"
+            "acts-like-an-owner",
+            "safety"
           ]
         },
         {
@@ -3761,11 +3762,13 @@
             "defects",
             "stay fixed",
             "prevent the next one",
-            "attention to detail"
+            "attention to detail",
+            "dive deep"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "dive-deep",
             "prevent-the-next-one"
           ]
         },
@@ -3819,12 +3822,14 @@
             "high standards",
             "safety front and center",
             "raising the bar",
-            "relentlessly high standards"
+            "relentlessly high standards",
+            "safety"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "highest-standards"
+            "highest-standards",
+            "safety"
           ]
         },
         {
