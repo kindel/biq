@@ -75,6 +75,13 @@
           "manager": false
         }
       ]
+    },
+    "pull-people-together": {
+      "ids": [
+        "29161f3f",
+        "c0ece807",
+        "d27283ca"
+      ]
     }
   },
   "companies": [
@@ -3593,6 +3600,282 @@
           ]
         }
       ]
+    },
+    {
+      "id": "blue-origin",
+      "name": "Blue Origin",
+      "set": "Leadership Principles",
+      "source": "https://www.blueorigin.com/careers/work-culture",
+      "howTo": [
+        "Pick two or three questions per assigned Leadership principle.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "Leadership principle",
+      "principles": [
+        {
+          "id": 9001,
+          "slug": "passion-for-our-mission",
+          "name": "Passion for our Mission",
+          "aliases": [
+            "passion for our mission",
+            "the mission",
+            "mission first",
+            "mission-driven",
+            "care about the mission"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "care-about-the-mission"
+          ]
+        },
+        {
+          "id": 9002,
+          "slug": "customer-focus",
+          "name": "Customer Focus",
+          "aliases": [
+            "customer focus",
+            "customers",
+            "customer",
+            "work backward",
+            "customer trust",
+            "customer obsession",
+            "working backwards from the customer"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "customer-obsession"
+          ]
+        },
+        {
+          "id": 9003,
+          "slug": "deliver-results",
+          "name": "Deliver Results",
+          "aliases": [
+            "deliver results",
+            "results",
+            "grit",
+            "let's figure it out",
+            "customer commitments",
+            "get it done",
+            "rise to the occasion"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "deliver-results"
+          ]
+        },
+        {
+          "id": 9004,
+          "slug": "embrace-team-blue",
+          "name": "Embrace Team Blue",
+          "aliases": [
+            "embrace team blue",
+            "team blue",
+            "one team",
+            "healthy tension",
+            "pull people together",
+            "critical feedback"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "pull-people-together"
+          ]
+        },
+        {
+          "id": 9005,
+          "slug": "resourceful",
+          "name": "Resourceful",
+          "aliases": [
+            "resourceful",
+            "frugal",
+            "constraints",
+            "more with less",
+            "do more with less",
+            "frugality"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "frugality"
+          ]
+        },
+        {
+          "id": 9006,
+          "slug": "bias-for-action",
+          "name": "Bias for Action",
+          "aliases": [
+            "bias for action",
+            "speed",
+            "calculated risk",
+            "reversible",
+            "move fast",
+            "calculated risk taking"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "bias-for-action"
+          ]
+        },
+        {
+          "id": 9007,
+          "slug": "ownership",
+          "name": "Ownership",
+          "aliases": [
+            "ownership",
+            "owners",
+            "not my job",
+            "long-term",
+            "safety",
+            "acts like an owner",
+            "never compromise safety"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "acts-like-an-owner"
+          ]
+        },
+        {
+          "id": 9008,
+          "slug": "operational-excellence",
+          "name": "Operational Excellence",
+          "aliases": [
+            "operational excellence",
+            "root cause",
+            "mechanisms",
+            "defects",
+            "stay fixed",
+            "prevent the next one",
+            "attention to detail"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "prevent-the-next-one"
+          ]
+        },
+        {
+          "id": 9009,
+          "slug": "earn-the-trust-of-others",
+          "name": "Earn the Trust of Others",
+          "aliases": [
+            "earn the trust of others",
+            "earn trust",
+            "open-minded",
+            "listen",
+            "different viewpoints",
+            "listens openly"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "earn-trust"
+          ]
+        },
+        {
+          "id": 9010,
+          "slug": "hire-and-develop-the-best",
+          "name": "Hire and Develop the Best",
+          "aliases": [
+            "hire and develop the best",
+            "raise the bar",
+            "coaching",
+            "exceptional talent",
+            "people development",
+            "best person for the role",
+            "team for the outcome"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "best-person-for-the-role",
+            "hire-and-develop-the-best",
+            "team-for-the-outcome"
+          ]
+        },
+        {
+          "id": 9011,
+          "slug": "insist-on-the-highest-standards",
+          "name": "Insist on the Highest Standards",
+          "aliases": [
+            "insist on the highest standards",
+            "highest standards",
+            "high standards",
+            "safety front and center",
+            "raising the bar",
+            "relentlessly high standards"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "highest-standards"
+          ]
+        },
+        {
+          "id": 9012,
+          "slug": "technical-ambition-and-simplicity",
+          "name": "Technical Ambition and Simplicity",
+          "aliases": [
+            "technical ambition and simplicity",
+            "technical ambition",
+            "simplify",
+            "not invented here",
+            "high-performance architectures",
+            "invent and simplify"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "invent-and-simplify"
+          ]
+        },
+        {
+          "id": 9013,
+          "slug": "practice-humility",
+          "name": "Practice Humility",
+          "aliases": [
+            "practice humility",
+            "humility",
+            "ask for help",
+            "credit",
+            "humble in execution",
+            "stay humble"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "stay-humble"
+          ]
+        },
+        {
+          "id": 9014,
+          "slug": "have-backbone-disagree-and-commit",
+          "name": "Have Backbone; Disagree and Commit",
+          "aliases": [
+            "have backbone; disagree and commit",
+            "have backbone disagree and commit",
+            "disagree and commit",
+            "backbone",
+            "commit wholly",
+            "social cohesion",
+            "respectfully challenge"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "have-backbone-disagree-and-commit"
+          ]
+        }
+      ],
+      "preamble": "Blue Origin's 14 Leadership Principles exemplify the company's culture and unyielding dedication to mission success."
     }
   ]
 }
