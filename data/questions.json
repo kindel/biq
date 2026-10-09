@@ -82,6 +82,13 @@
         "c0ece807",
         "d27283ca"
       ]
+    },
+    "listens-with-an-open-mind": {
+      "ids": [
+        "3875c711",
+        "4dfacaf7",
+        "c418917e"
+      ]
     }
   },
   "companies": [
@@ -3772,12 +3779,13 @@
             "open-minded",
             "listen",
             "different viewpoints",
-            "listens openly"
+            "listens openly",
+            "listens with an open mind"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "earn-trust"
+            "listens-with-an-open-mind"
           ]
         },
         {
