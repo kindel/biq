@@ -115,6 +115,12 @@
         "73f36f42"
       ]
     },
+    "bold-bet": {
+      "ids": [
+        "a24ba9d7",
+        "ccc7a524"
+      ]
+    },
     "courage": {
       "ids": [
         "f5a5e3e0",
@@ -4106,6 +4112,7 @@
           "kind": "lp",
           "questions": [],
           "facets": [
+            "bold-bet",
             "courage",
             "earn-trust"
           ]
@@ -4290,7 +4297,7 @@
           "kind": "lp",
           "questions": [],
           "facets": [
-            "courage",
+            "bold-bet",
             "uncomfortably-exciting"
           ]
         },
