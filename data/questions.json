@@ -303,10 +303,12 @@
           "slug": "invent-and-simplify",
           "name": "Invent and Simplify",
           "aliases": [
-            "invent and simplify"
+            "invent and simplify",
+            "cut the extra step"
           ],
           "kind": "lp",
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ],
           "questions": []
@@ -616,7 +618,8 @@
             "creates simple solutions",
             "thinks different",
             "reduces complexity",
-            "original thinking"
+            "original thinking",
+            "cut the extra step"
           ],
           "questions": [
             {
@@ -673,6 +676,7 @@
           "kind": "lp",
           "slug": "invent-and-simplify",
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ]
         },
@@ -3245,7 +3249,8 @@
             "love every idea for at least five minutes",
             "not invented here",
             "innovate",
-            "simplify"
+            "simplify",
+            "cut the extra step"
           ],
           "kind": "lp",
           "questions": [
@@ -3271,6 +3276,7 @@
             }
           ],
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ]
         },
@@ -3796,11 +3802,13 @@
             "let's figure it out",
             "customer commitments",
             "get it done",
-            "rise to the occasion"
+            "rise to the occasion",
+            "after a setback"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "after-a-setback",
             "deliver-results"
           ]
         },
@@ -3971,11 +3979,13 @@
             "simplify",
             "not invented here",
             "high-performance architectures",
-            "invent and simplify"
+            "invent and simplify",
+            "cut the extra step"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ]
         },
@@ -4183,11 +4193,13 @@
           "aliases": [
             "resilience",
             "adapt quickly",
-            "hard challenge"
+            "hard challenge",
+            "after a setback"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "after-a-setback",
             "resilience"
           ]
         },
@@ -4230,11 +4242,13 @@
             "people over process",
             "freedom to decide",
             "unusually responsible",
-            "let them decide"
+            "let them decide",
+            "cut the extra step"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "cut-the-extra-step",
             "let-them-decide",
             "people-over-process"
           ]
