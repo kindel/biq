@@ -17,6 +17,11 @@
     window.gtag("event", name, clean);
   }
 
+  function kld(name, params) {
+    if (typeof window.kldTrack !== "function") return;
+    window.kldTrack(name, params);
+  }
+
   var params = new URLSearchParams(window.location.search);
   var principle = params.get("p") || "";
   var question = params.get("q") || "";
@@ -29,6 +34,8 @@
   var sheetEl = document.getElementById("biq-ex-sheet");
   var backEl = document.getElementById("biq-ex-back");
   if (!questionEl || !statusEl || !sheetEl) return;
+
+  kld("app_view", { app: "biq" });
 
   // Keep the company scope on the way back, so ?c=arm returns to Arm's bank.
   if (backEl && company) {
@@ -179,6 +186,7 @@
         for (var i = 0; i < companies.length; i++) {
           if (companies[i].id === target) c = companies[i];
         }
+        if (c && c.id) kld("kld_company", { app: "biq", company: c.id, source: "url" });
         var list = pickable(companies, c, bank && bank.facetQuestions);
         if (!list.length) {
           statusEl.textContent = "No examples for this set yet. Go back to the questions and pick another principle.";
@@ -659,6 +667,9 @@
     .then(function (bank) {
       attachFacetQuestions((bank && bank.companies) || [], bank && bank.facetQuestions);
       var ctx = resolveContext(bank);
+      if (ctx.company && ctx.company.id) {
+        kld("kld_company", { app: "biq", company: ctx.company.id, source: "url" });
+      }
       resolvedPrincipleId = ctx.principle && typeof ctx.principle.id === "number" ? ctx.principle.id : null;
       renderHeader(ctx);
       fetchPack();
