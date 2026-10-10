@@ -202,6 +202,16 @@
         "73f36f42",
         "2b30a0e6"
       ]
+    },
+    "let-them-decide": {
+      "ids": [
+        "0788c8eb"
+      ]
+    },
+    "ask-who-disagrees": {
+      "ids": [
+        "c418917e"
+      ]
     }
   },
   "companies": [
@@ -265,12 +275,14 @@
           "name": "Are Right, A Lot",
           "aliases": [
             "are right, a lot",
-            "are right a lot"
+            "are right a lot",
+            "ask who disagrees"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "are-right-a-lot"
+            "are-right-a-lot",
+            "ask-who-disagrees"
           ]
         },
         {
@@ -680,7 +692,8 @@
             "good instincts",
             "seeks diverse perspectives",
             "seeks disconfirming evidence",
-            "sound judgment under uncertainty"
+            "sound judgment under uncertainty",
+            "ask who disagrees"
           ],
           "questions": [
             {
@@ -737,7 +750,8 @@
           "kind": "lp",
           "slug": "are-right-a-lot",
           "facets": [
-            "are-right-a-lot"
+            "are-right-a-lot",
+            "ask-who-disagrees"
           ]
         },
         {
@@ -4064,12 +4078,14 @@
             "judgment",
             "wise decisions",
             "data and intuition",
-            "are right a lot"
+            "are right a lot",
+            "ask who disagrees"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "are-right-a-lot"
+            "are-right-a-lot",
+            "ask-who-disagrees"
           ]
         },
         {
@@ -4096,12 +4112,14 @@
             "creativity",
             "new ideas",
             "innovative solutions",
-            "listens with an open mind"
+            "listens with an open mind",
+            "for its audience"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
             "creativity",
+            "for-its-audience",
             "listens-with-an-open-mind"
           ]
         },
@@ -4209,11 +4227,13 @@
           "aliases": [
             "people over process",
             "freedom to decide",
-            "unusually responsible"
+            "unusually responsible",
+            "let them decide"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "let-them-decide",
             "people-over-process"
           ]
         },
@@ -4224,12 +4244,14 @@
           "aliases": [
             "context not control",
             "not hands-off",
-            "coach the team"
+            "coach the team",
+            "let them decide"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "context-not-control"
+            "context-not-control",
+            "let-them-decide"
           ]
         },
         {
@@ -4254,11 +4276,13 @@
           "aliases": [
             "farming for dissent",
             "farm for dissent",
-            "seek different opinions"
+            "seek different opinions",
+            "ask who disagrees"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "ask-who-disagrees",
             "farming-for-dissent"
           ]
         },
@@ -4316,12 +4340,14 @@
           "aliases": [
             "artistic expression",
             "the slate",
-            "support the creators"
+            "support the creators",
+            "for its audience"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "artistic-expression"
+            "artistic-expression",
+            "for-its-audience"
           ]
         },
         {
