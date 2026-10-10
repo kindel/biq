@@ -3910,11 +3910,13 @@
             "listen",
             "different viewpoints",
             "listens openly",
-            "listens with an open mind"
+            "listens with an open mind",
+            "ask who disagrees"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "ask-who-disagrees",
             "listens-with-an-open-mind"
           ]
         },
