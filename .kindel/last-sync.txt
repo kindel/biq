@@ -1,39 +1,83 @@
-principles 5ad87170545b4ce00e4dcc47a73ed2be5425dbb8
+principles 588aad05a93ac59c137fcb4b9872f132f7832d3a
 
+new companies:
+  netflix (empty questions; inherits the fixed bank via facets)
 alias updates from upstream terms:
-  generic/ownership: +['acts like an owner']
-  generic/insist-on-high-standards: +['better every day', 'highest standards']
-  generic/hire-and-develop-the-best: +['best person for the role', 'team for the outcome']
-  generic/intentional-about-culture: +['team for the outcome']
-  amazon/hire-and-develop-the-best: +['best person for the role', 'team for the outcome']
-  amazon/frugality: +['frugality']
-  arm/passion-for-the-mission: +['care about the mission']
-  arm/build-extraordinary-teams: +['best person for the role', 'build extraordinary teams', 'team for the outcome']
-  arm/challenge-skillfully: +['challenge then decide']
-  arm/root-out-inefficiencies: +['cut the waste']
-  arm/relentlessly-push-boundaries: +['push the boundary']
-  arm/be-decisive-in-ambiguity-and-change: +['make it concrete']
-  arm/optimize-for-endurance-and-resilience: +['sustain the pace']
-  coupang/ruthless-prioritization: +['ruthless focus']
-  coupang/company-wide-perspective: +['whole company']
-  coupang/think-systematically: +['prevent the next one']
-  coupang/simplify: +['simplify what you touch']
-  coupang/disagree-and-commit: +['have backbone, disagree and commit']
-  coupang/hire-and-develop-the-best: +['best person for the role', 'team for the outcome']
-  coupang/deliver-results-with-grit: +['deliver results']
-  coupang/learn-voraciously: +['learn and be curious']
-  coupang/demand-excellence: +['highest standards']
-  delivery-hero/deliver-value-fast: +['adapt for the customer']
-  delivery-hero/raise-the-bar: +['best person for the role', 'team for the outcome']
-  gitlab/collaboration: +['help anyway']
-  gitlab/results-for-customers: +['customer obsession']
-  gitlab/efficiency: +['global efficiency']
-  gitlab/diversity-inclusion-and-belonging: +['best person for the role', 'team for the outcome']
-  gitlab/iteration: +['smallest useful step']
-  gitlab/transparency: +['make it public']
-  dawn/hire-and-develop-the-best: +['best person for the role', 'team for the outcome']
-  dawn/rocket-engineering-not-rocket-science: +['product not the science']
-  dawn/race-on-the-racetrack-walk-on-ice: +['match the rigor']
-  toyota/respect: +['mutual respect']
-  toyota/teamwork: +['grow the team']
-facet ids stamped on 8 principles
+  netflix/the-dream-team: +['dream team', 'high performers', 'stunning colleagues']
+  netflix/selflessness: +['best for netflix', 'help others succeed']
+  netflix/judgment: +['wise decisions', 'data and intuition', 'are right a lot']
+  netflix/candor: +['extraordinary candor', 'give and receive feedback', 'earn trust']
+  netflix/creativity: +['new ideas', 'innovative solutions']
+  netflix/courage: +['risk failure', 'challenge the status quo']
+  netflix/inclusion: +['counteract bias', 'best work for everyone', 'belonging']
+  netflix/curiosity: +['learn rapidly', "other people's ideas", 'learn and be curious']
+  netflix/resilience: +['adapt quickly', 'hard challenge']
+  netflix/decency-and-respect: +['decency', 'treat colleagues with respect', 'mutual respect']
+  netflix/the-keeper-test: +['keeper test', 'fight to keep them']
+  netflix/people-over-process: +['freedom to decide', 'unusually responsible']
+  netflix/context-not-control: +['not hands-off', 'coach the team']
+  netflix/informed-captain: +['informed captains', 'highly aligned and loosely coupled']
+  netflix/farming-for-dissent: +['farm for dissent', 'seek different opinions']
+  netflix/disagree-then-commit: +['disagree and commit', 'have backbone, disagree and commit']
+  netflix/almost-no-rules: +['no rules rule', "act in Netflix's best interests"]
+  netflix/uncomfortably-exciting: +['experiment', 'bold and ambitious']
+  netflix/artistic-expression: +['the slate', 'support the creators']
+  netflix/great-and-always-better: +['always better', 'sucks today', 'better every day']
+
+hand edits after sync, matching that principles commit:
+  preamble is the first memo sentence only
+  facetQuestions ids added for 13 new facets (existing question ids only; no new question text)
+
+later hand edit, principles a164be8adbf48fd0188bb93d4904e3c6c53804f0:
+  netflix/selflessness also lists help-anyway, because time-to-help is that behavior
+
+later hand edit, principles 247b9212112f8bd66563c2b1300ee3580ece9c9c:
+  netflix/selflessness alias is "best for Netflix"
+
+later hand edit, principles efccc80fa990a50a6ea611bcc662065a6b58d87d:
+  dream team also lists build-extraordinary-teams and raise-the-bar
+  selflessness also lists stay-humble
+  creativity also lists listens-with-an-open-mind
+  courage also lists earn-trust
+  uncomfortably exciting also lists courage
+
+later hand edit, principles a03b02039eab7700b2481cb32d359356b0c18291:
+  courage and uncomfortably exciting share bold-bet
+  uncomfortably exciting no longer lists courage
+  bold-bet uses a24ba9d7, ccc7a524
+
+later hand edit, aliases for those shared facets:
+  dream team: build extraordinary teams, raise the bar
+  selflessness: help anyway, stay humble
+  creativity: listens with an open mind
+  courage: bold bet, earn trust
+  uncomfortably exciting: bold bet
+
+later hand edit, principles f7be960c538957a26cbd5e16809e1be600dcb061:
+  creativity and artistic expression share for-its-audience
+  people over process and context not control share let-them-decide
+  Amazon, generic, judgment, and farming for dissent share ask-who-disagrees
+  selflessness stays on stay-humble; the duplicate humility row is gone
+
+later hand edit, aliases and existing questions for those slices:
+  creativity and artistic expression: for its audience
+  people over process and context not control: let them decide
+  judgment, farming for dissent, and both Are Right, A Lot principles: ask who disagrees
+  let-them-decide uses 0788c8eb
+  ask-who-disagrees uses c418917e
+  for-its-audience has no existing question about judging work by its audience
+
+later hand edit, principles 6eb82e824a341f315d2c7a14a8db192ad108fc59:
+  Blue Origin earn the trust of others also lists ask-who-disagrees
+  the room of one mind is no longer a generated row on listens-with-an-open-mind
+
+later hand edit, alias for that slice:
+  earn the trust of others: ask who disagrees
+
+later hand edit, principles 472f6474bfb9f59f55512a7ad0fc037b1db2dee4:
+  Blue Origin deliver results and resilience share after-a-setback
+  invent and simplify (Amazon, Dawn, generic, Blue Origin technical ambition) and people over process share cut-the-extra-step
+
+later hand edit, aliases for those slices:
+  deliver results (Blue Origin) and resilience: after a setback
+  invent and simplify (Amazon, Dawn, generic, Blue Origin) and people over process: cut the extra step

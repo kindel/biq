@@ -89,6 +89,129 @@
         "4dfacaf7",
         "c418917e"
       ]
+    },
+    "dream-team": {
+      "ids": [
+        "b5ec3e16",
+        "bf907bc5",
+        "d55f9793",
+        "b7f9d574",
+        "92a3ef89"
+      ]
+    },
+    "selflessness": {
+      "ids": [
+        "fc2a4107",
+        "41603be8",
+        "192b8a6a",
+        "3de6ea90"
+      ]
+    },
+    "creativity": {
+      "ids": [
+        "72fe8953",
+        "2b30a0e6",
+        "a9e5b2d9",
+        "73f36f42"
+      ]
+    },
+    "bold-bet": {
+      "ids": [
+        "a24ba9d7",
+        "ccc7a524"
+      ]
+    },
+    "courage": {
+      "ids": [
+        "f5a5e3e0",
+        "0ed453ee",
+        "c4c248f7",
+        "a24ba9d7",
+        "82218229"
+      ]
+    },
+    "resilience": {
+      "ids": [
+        "85dc5cd5",
+        "95d04d47",
+        "ccc7a524",
+        "efe1cec6"
+      ]
+    },
+    "keeper-test": {
+      "ids": [
+        "bf907bc5",
+        "0f0c4692",
+        "d59e1646",
+        "9d996460"
+      ]
+    },
+    "people-over-process": {
+      "ids": [
+        "0788c8eb",
+        "4bac1a15",
+        "0e07e86c",
+        "e89fa18f"
+      ]
+    },
+    "context-not-control": {
+      "ids": [
+        "cf2dba5d",
+        "0788c8eb",
+        "db715723",
+        "6ba06d3b"
+      ]
+    },
+    "informed-captain": {
+      "ids": [
+        "3de6ea90",
+        "86851599",
+        "4d7cb33a",
+        "fc2a4107"
+      ]
+    },
+    "farming-for-dissent": {
+      "ids": [
+        "c418917e",
+        "f5a5e3e0",
+        "86851599",
+        "0ed453ee"
+      ]
+    },
+    "almost-no-rules": {
+      "ids": [
+        "0e07e86c",
+        "0788c8eb",
+        "efd390d4",
+        "6d1129ab"
+      ]
+    },
+    "uncomfortably-exciting": {
+      "ids": [
+        "a24ba9d7",
+        "ccc7a524",
+        "09c7af08",
+        "eb5a224e",
+        "98441249"
+      ]
+    },
+    "artistic-expression": {
+      "ids": [
+        "78ffe24a",
+        "eb5a224e",
+        "73f36f42",
+        "2b30a0e6"
+      ]
+    },
+    "let-them-decide": {
+      "ids": [
+        "0788c8eb"
+      ]
+    },
+    "ask-who-disagrees": {
+      "ids": [
+        "c418917e"
+      ]
     }
   },
   "companies": [
@@ -152,12 +275,14 @@
           "name": "Are Right, A Lot",
           "aliases": [
             "are right, a lot",
-            "are right a lot"
+            "are right a lot",
+            "ask who disagrees"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
-            "are-right-a-lot"
+            "are-right-a-lot",
+            "ask-who-disagrees"
           ]
         },
         {
@@ -178,10 +303,12 @@
           "slug": "invent-and-simplify",
           "name": "Invent and Simplify",
           "aliases": [
-            "invent and simplify"
+            "invent and simplify",
+            "cut the extra step"
           ],
           "kind": "lp",
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ],
           "questions": []
@@ -491,7 +618,8 @@
             "creates simple solutions",
             "thinks different",
             "reduces complexity",
-            "original thinking"
+            "original thinking",
+            "cut the extra step"
           ],
           "questions": [
             {
@@ -548,6 +676,7 @@
           "kind": "lp",
           "slug": "invent-and-simplify",
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ]
         },
@@ -567,7 +696,8 @@
             "good instincts",
             "seeks diverse perspectives",
             "seeks disconfirming evidence",
-            "sound judgment under uncertainty"
+            "sound judgment under uncertainty",
+            "ask who disagrees"
           ],
           "questions": [
             {
@@ -624,7 +754,8 @@
           "kind": "lp",
           "slug": "are-right-a-lot",
           "facets": [
-            "are-right-a-lot"
+            "are-right-a-lot",
+            "ask-who-disagrees"
           ]
         },
         {
@@ -3118,7 +3249,8 @@
             "love every idea for at least five minutes",
             "not invented here",
             "innovate",
-            "simplify"
+            "simplify",
+            "cut the extra step"
           ],
           "kind": "lp",
           "questions": [
@@ -3144,6 +3276,7 @@
             }
           ],
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ]
         },
@@ -3669,11 +3802,13 @@
             "let's figure it out",
             "customer commitments",
             "get it done",
-            "rise to the occasion"
+            "rise to the occasion",
+            "after a setback"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "after-a-setback",
             "deliver-results"
           ]
         },
@@ -3783,11 +3918,13 @@
             "listen",
             "different viewpoints",
             "listens openly",
-            "listens with an open mind"
+            "listens with an open mind",
+            "ask who disagrees"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "ask-who-disagrees",
             "listens-with-an-open-mind"
           ]
         },
@@ -3842,11 +3979,13 @@
             "simplify",
             "not invented here",
             "high-performance architectures",
-            "invent and simplify"
+            "invent and simplify",
+            "cut the extra step"
           ],
           "kind": "lp",
           "questions": [],
           "facets": [
+            "cut-the-extra-step",
             "invent-and-simplify"
           ]
         },
@@ -3889,6 +4028,362 @@
         }
       ],
       "preamble": "Blue Origin's 14 Leadership Principles exemplify the company's culture and unyielding dedication to mission success."
+    },
+    {
+      "id": "netflix",
+      "name": "Netflix",
+      "set": "Culture Memo",
+      "source": "https://www.jobs.netflix.com/culture",
+      "howTo": [
+        "Pick two or three questions per assigned Culture Memo.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "Culture Memo",
+      "principles": [
+        {
+          "id": 10001,
+          "slug": "the-dream-team",
+          "name": "The Dream Team",
+          "aliases": [
+            "the dream team",
+            "dream team",
+            "high performers",
+            "stunning colleagues",
+            "build extraordinary teams",
+            "raise the bar"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "build-extraordinary-teams",
+            "dream-team",
+            "raise-the-bar"
+          ]
+        },
+        {
+          "id": 10002,
+          "slug": "selflessness",
+          "name": "Selflessness",
+          "aliases": [
+            "selflessness",
+            "best for Netflix",
+            "help others succeed",
+            "help anyway",
+            "stay humble"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "help-anyway",
+            "selflessness",
+            "stay-humble"
+          ]
+        },
+        {
+          "id": 10003,
+          "slug": "judgment",
+          "name": "Judgment",
+          "aliases": [
+            "judgment",
+            "wise decisions",
+            "data and intuition",
+            "are right a lot",
+            "ask who disagrees"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "are-right-a-lot",
+            "ask-who-disagrees"
+          ]
+        },
+        {
+          "id": 10004,
+          "slug": "candor",
+          "name": "Candor",
+          "aliases": [
+            "candor",
+            "extraordinary candor",
+            "give and receive feedback",
+            "earn trust"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "earn-trust"
+          ]
+        },
+        {
+          "id": 10005,
+          "slug": "creativity",
+          "name": "Creativity",
+          "aliases": [
+            "creativity",
+            "new ideas",
+            "innovative solutions",
+            "listens with an open mind",
+            "for its audience"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "creativity",
+            "for-its-audience",
+            "listens-with-an-open-mind"
+          ]
+        },
+        {
+          "id": 10006,
+          "slug": "courage",
+          "name": "Courage",
+          "aliases": [
+            "courage",
+            "risk failure",
+            "challenge the status quo",
+            "bold bet",
+            "earn trust"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "bold-bet",
+            "courage",
+            "earn-trust"
+          ]
+        },
+        {
+          "id": 10007,
+          "slug": "inclusion",
+          "name": "Inclusion",
+          "aliases": [
+            "inclusion",
+            "counteract bias",
+            "best work for everyone",
+            "belonging"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "belonging"
+          ]
+        },
+        {
+          "id": 10008,
+          "slug": "curiosity",
+          "name": "Curiosity",
+          "aliases": [
+            "curiosity",
+            "learn rapidly",
+            "other people's ideas",
+            "learn and be curious"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "learn-and-be-curious"
+          ]
+        },
+        {
+          "id": 10009,
+          "slug": "resilience",
+          "name": "Resilience",
+          "aliases": [
+            "resilience",
+            "adapt quickly",
+            "hard challenge",
+            "after a setback"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "after-a-setback",
+            "resilience"
+          ]
+        },
+        {
+          "id": 10010,
+          "slug": "decency-and-respect",
+          "name": "Decency and Respect",
+          "aliases": [
+            "decency and respect",
+            "decency",
+            "treat colleagues with respect",
+            "mutual respect"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "mutual-respect"
+          ]
+        },
+        {
+          "id": 10011,
+          "slug": "the-keeper-test",
+          "name": "The Keeper Test",
+          "aliases": [
+            "the keeper test",
+            "keeper test",
+            "fight to keep them"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "keeper-test"
+          ]
+        },
+        {
+          "id": 10012,
+          "slug": "people-over-process",
+          "name": "People Over Process",
+          "aliases": [
+            "people over process",
+            "freedom to decide",
+            "unusually responsible",
+            "let them decide",
+            "cut the extra step"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "cut-the-extra-step",
+            "let-them-decide",
+            "people-over-process"
+          ]
+        },
+        {
+          "id": 10013,
+          "slug": "context-not-control",
+          "name": "Context Not Control",
+          "aliases": [
+            "context not control",
+            "not hands-off",
+            "coach the team",
+            "let them decide"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "context-not-control",
+            "let-them-decide"
+          ]
+        },
+        {
+          "id": 10014,
+          "slug": "informed-captain",
+          "name": "Informed Captain",
+          "aliases": [
+            "informed captain",
+            "informed captains",
+            "highly aligned and loosely coupled"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "informed-captain"
+          ]
+        },
+        {
+          "id": 10015,
+          "slug": "farming-for-dissent",
+          "name": "Farming for Dissent",
+          "aliases": [
+            "farming for dissent",
+            "farm for dissent",
+            "seek different opinions",
+            "ask who disagrees"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "ask-who-disagrees",
+            "farming-for-dissent"
+          ]
+        },
+        {
+          "id": 10016,
+          "slug": "disagree-then-commit",
+          "name": "Disagree Then Commit",
+          "aliases": [
+            "disagree then commit",
+            "disagree and commit",
+            "have backbone, disagree and commit"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "have-backbone-disagree-and-commit"
+          ]
+        },
+        {
+          "id": 10017,
+          "slug": "almost-no-rules",
+          "name": "Almost No Rules",
+          "aliases": [
+            "almost no rules",
+            "no rules rule",
+            "act in Netflix's best interests"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "almost-no-rules"
+          ]
+        },
+        {
+          "id": 10018,
+          "slug": "uncomfortably-exciting",
+          "name": "Uncomfortably Exciting",
+          "aliases": [
+            "uncomfortably exciting",
+            "experiment",
+            "bold and ambitious",
+            "bold bet"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "bold-bet",
+            "uncomfortably-exciting"
+          ]
+        },
+        {
+          "id": 10019,
+          "slug": "artistic-expression",
+          "name": "Artistic Expression",
+          "aliases": [
+            "artistic expression",
+            "the slate",
+            "support the creators",
+            "for its audience"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "artistic-expression",
+            "for-its-audience"
+          ]
+        },
+        {
+          "id": 10020,
+          "slug": "great-and-always-better",
+          "name": "Great and Always Better",
+          "aliases": [
+            "great and always better",
+            "always better",
+            "sucks today",
+            "better every day"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "better-every-day"
+          ]
+        }
+      ],
+      "preamble": "At Netflix, we aspire to entertain the world, thrilling audiences everywhere."
     }
   ]
 }
