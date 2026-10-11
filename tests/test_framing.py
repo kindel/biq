@@ -32,7 +32,8 @@ class FramingTest(unittest.TestCase):
         page = read("index.html")
         self.assertIn(PROMPT, page)
         self.assertNotIn(">Company<", page)
-        self.assertIn("These are universal leadership principles that work for any company.", page)
+        self.assertIn("There is a universal set of leadership principles.", page)
+        self.assertIn("Or pick a company and use BIQ", page)
 
     def test_company_prompt_stays_a_sentence(self):
         css = read("css", "biq.css")
