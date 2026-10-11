@@ -15,6 +15,11 @@
     window.gtag("event", name, clean);
   }
 
+  function kld(name, params) {
+    if (typeof window.kldTrack !== "function") return;
+    window.kldTrack(name, params);
+  }
+
   function examplesHref(principle, question, level, qid) {
     // Resolve against the current document, not the origin root, so a relative
     // examplesPage still works when the site is served from a subdirectory.
@@ -32,6 +37,8 @@
   var chips = document.getElementById("bhiq-chips");
   var results = document.getElementById("bhiq-results");
   if (!input || !chips || !results) return;
+
+  kld("app_view", { app: "biq" });
 
   var lpSelect = null;
   var LEVELS = ["junior", "senior", "exec"];
@@ -295,8 +302,17 @@
     var sel = document.getElementById("bhiq-company");
     if (!sel) return;
     sel.addEventListener("change", function () {
+      var prev = currentCompany ? currentCompany.id : "";
       applyCompany(this.value, true);
       track("biq_company", { biq_company: this.value, biq_page: "bank" });
+      if (currentCompany && currentCompany.id && currentCompany.id !== prev) {
+        kld("kld_company", {
+          app: "biq",
+          company: currentCompany.id,
+          previous_company: prev,
+          source: "picker"
+        });
+      }
     });
   }
 
@@ -571,6 +587,9 @@
       companies = normalizeBank(bank);
       attachFacetQuestions(companies, bank && bank.facetQuestions);
       applyCompany(getCompanyId(), false);
+      if (currentCompany && currentCompany.id) {
+        kld("kld_company", { app: "biq", company: currentCompany.id, source: "url" });
+      }
       bindCompany();
       renderSelects(principles());
       renderResults([], "");
