@@ -14,14 +14,14 @@
     </header>
     <section class="bhiq-app" aria-labelledby="bhiq-input-label">
       <div class="bhiq-intro">
-        <p>There is a universal set of leadership principles. BIQ gives you behavioral interview questions for any one of them. Pick a principle, or type a name. Or pick a company and use BIQ on that company's principles.</p>
+        <p>There is a universal set of leadership principles. BIQ gives you behavioral interview questions for any one of them. Pick a principle, or type a name.</p>
         <p>The over 200 behavioral interview questions in this app are the questions I have used and collected over the years. The examples provided were generated based on dozens of real interview notes and debriefs that I anonymized and fed into an LLM with a tuned prompt.</p>
         <p>Each question includes example answers showing a hire-level answer and a common no-hire answer. Examples change by level on scope, impact metrics, and influence.</p>
       </div>
       <p id="bhiq-set-preamble" class="bhiq-set-preamble" hidden></p>
       <div class="bhiq-company-view">
-        <label class="bhiq-company-prompt" id="bhiq-company-label" for="bhiq-company">Or view a company's principles:</label>
-        <select id="bhiq-company" class="bhiq-select" data-placeholder="Choose a company" aria-labelledby="bhiq-company-label"></select>
+        <p class="bhiq-company-prompt" id="bhiq-company-label">Or, you can use BIQ focused on how any of these companies define their principles.</p>
+        <div id="bhiq-company" class="bhiq-tiles" role="radiogroup" aria-labelledby="bhiq-company-label" data-universal-label="Universal principles"></div>
         <p class="bhiq-back" id="bhiq-back" hidden><a href="index.html">Back to the universal principles</a></p>
       </div>
       <label id="bhiq-input-label" for="bhiq-input">Principle</label>

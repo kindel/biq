@@ -8,7 +8,7 @@ This repo ships `card.json` and `icon.png` as the listing for any host (kindel.c
 
 Live site: [https://kindel.com/kld/apps/biq/](https://kindel.com/kld/apps/biq/). The bare URL is the generic set (id `generic`), universal leadership principles that work for any company. `defaultCompany` in `data/questions.json` is that id. Sync sets it from the first company in the principles manifest. A company view is `?c=amazon`. Amazon is [https://kindel.com/kld/apps/biq/?c=amazon](https://kindel.com/kld/apps/biq/?c=amazon). Arm is [https://kindel.com/kld/apps/biq/?c=arm](https://kindel.com/kld/apps/biq/?c=arm).
 
-The bank is company-scoped. `data/questions.json` has a `companies` array. Each company has its own principles and questions. The picker writes `?c=arm` (or drops the param for the default company) so a link without `c` stays on that default. A principle with no questions and no shared facet shows no questions.
+The bank is company-scoped. `data/questions.json` has a `companies` array. Each company has its own principles and questions. The picker is a row of logo tiles (a radio group: arrows, Home, and End move the choice), with the universal tile first. It writes `?c=arm` (or drops the param for the default company) so a link without `c` stays on that default. A principle with no questions and no shared facet shows no questions.
 
 `facetQuestions` maps a facet id to existing question ids, plus any questions written for that facet. The page resolves those onto an empty principle at runtime, so the question text stays on the principle that owns it. Every principle must resolve to at least one question, and at least one of those questions must have an example pack for Junior, Senior, and Exec. `scripts/check_facet_questions.js` fails otherwise.
 
@@ -86,3 +86,18 @@ and calls xAI `grok-4.3`.
 ## License
 
 MIT. Copyright (c) 2026 Kindel, LLC. Keep the copyright notice and permission notice in all copies.
+
+## Company tiles
+
+Logos live in `css/logos/`, with sources and licensing in `css/logos/README.md`. A host can point the tiles at its own copies by setting `window.BIQ` before `js/biq.js` loads:
+
+```html
+<script>
+  window.BIQ = {
+    logoBase: "/css/logos/",
+    logos: { amazon: "amazon.svg", arm: "arm.svg" }
+  };
+</script>
+```
+
+`logoBase` is a string. It defaults to `css/logos/`. `logos` maps a company id to a filename under that base; the default lists amazon, arm, blue-origin, coupang, dawn, delivery-hero, gitlab, and toyota. A company omitted from `logos` gets a name-only tile.

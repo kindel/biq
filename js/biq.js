@@ -231,30 +231,92 @@
     return names.join(", ") || "Name or short form";
   }
 
+  // Company tiles: a radio group, one tile always checked. The default set
+  // gets the universal tile first. Logos come from LOGO_BASE + LOGOS[id]; a
+  // company without an entry gets a name-only tile.
+  var LOGO_BASE = cfg.logoBase || "css/logos/";
+  var LOGOS = cfg.logos || {
+    amazon: "amazon.svg",
+    arm: "arm.svg",
+    "blue-origin": "blue-origin.svg",
+    coupang: "coupang.svg",
+    dawn: "dawn.png",
+    "delivery-hero": "delivery-hero.svg",
+    gitlab: "gitlab.svg",
+    toyota: "toyota.svg"
+  };
+
+  function companyGroup() {
+    var el = document.getElementById("bhiq-company");
+    if (!el) return null;
+    // An older host shell still ships the dropdown. Swap it for the tile group.
+    if (el.tagName === "SELECT") {
+      var div = document.createElement("div");
+      div.id = "bhiq-company";
+      var lab = el.getAttribute("aria-labelledby");
+      if (lab) div.setAttribute("aria-labelledby", lab);
+      el.parentNode.replaceChild(div, el);
+      el = div;
+      // A label can only name a form control. aria-labelledby names the group.
+      var oldLabel = document.querySelector('label[for="bhiq-company"]');
+      if (oldLabel) oldLabel.removeAttribute("for");
+    }
+    return el;
+  }
+
+  function companyTiles() {
+    var group = document.getElementById("bhiq-company");
+    if (!group) return [];
+    return Array.prototype.slice.call(group.querySelectorAll("[data-company]"));
+  }
+
   function fillCompanySelect() {
-    var sel = document.getElementById("bhiq-company");
-    if (!sel) return;
-    var prompt = sel.getAttribute("data-placeholder") || "Choose a company";
-    var skip = defaultCompanyId();
-    sel.innerHTML = "";
-    var blank = document.createElement("option");
-    blank.value = "";
-    blank.textContent = prompt;
-    sel.appendChild(blank);
+    var group = companyGroup();
+    if (!group) return;
+    var def = defaultCompanyId();
+    var universal = group.getAttribute("data-universal-label") || "Universal principles";
+    group.className = "bhiq-tiles";
+    group.setAttribute("role", "radiogroup");
+    group.setAttribute("data-default", def);
+    group.innerHTML = "";
     for (var i = 0; i < companies.length; i++) {
-      if (companies[i].id === skip) continue;
-      var o = document.createElement("option");
-      o.value = companies[i].id;
-      o.textContent = companies[i].name;
-      sel.appendChild(o);
+      var c = companies[i];
+      // Only the generic set is universal. A legacy bank's synthesized
+      // Amazon default keeps its own name and logo.
+      var isDef = c.id === def && c.id === "generic";
+      var logo = isDef ? "" : (LOGOS[c.id] || "");
+      var label = isDef ? universal : c.name;
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "bhiq-tile" + (isDef ? " bhiq-tile--universal" : "") + (!isDef && !logo ? " bhiq-tile--name" : "");
+      b.setAttribute("role", "radio");
+      b.setAttribute("data-company", c.id);
+      b.setAttribute("aria-label", label);
+      b.setAttribute("aria-checked", "false");
+      b.tabIndex = -1;
+      if (logo) {
+        var box = document.createElement("span");
+        box.className = "bhiq-tile-logo";
+        var img = document.createElement("img");
+        img.src = LOGO_BASE + logo;
+        img.alt = c.name + " logo";
+        box.appendChild(img);
+        b.appendChild(box);
+      }
+      var name = document.createElement("span");
+      name.className = "bhiq-tile-name";
+      name.textContent = label;
+      b.appendChild(name);
+      group.appendChild(b);
     }
   }
 
   function syncCompanySelect() {
-    var sel = document.getElementById("bhiq-company");
-    if (sel && currentCompany) {
-      sel.value = currentCompany.id === defaultCompanyId() ? "" : currentCompany.id;
-    }
+    companyTiles().forEach(function (t) {
+      var on = !!currentCompany && t.getAttribute("data-company") === currentCompany.id;
+      t.setAttribute("aria-checked", on ? "true" : "false");
+      t.tabIndex = on ? 0 : -1;
+    });
     var back = document.getElementById("bhiq-back");
     if (back) back.hidden = !currentCompany || currentCompany.id === defaultCompanyId();
     if (input) input.setAttribute("placeholder", placeholderFor());
@@ -299,12 +361,14 @@
   function bindCompany() {
     fillCompanySelect();
     syncCompanySelect();
-    var sel = document.getElementById("bhiq-company");
-    if (!sel) return;
-    sel.addEventListener("change", function () {
+    var tiles = companyTiles();
+    function choose(id) {
       var prev = currentCompany ? currentCompany.id : "";
-      applyCompany(this.value, true);
-      track("biq_company", { biq_company: this.value, biq_page: "bank" });
+      if (!id) id = defaultCompanyId();
+      if (id === prev) return;
+      applyCompany(id, true);
+      // Same payload the dropdown sent: an empty value for the default set.
+      track("biq_company", { biq_company: id === defaultCompanyId() ? "" : id, biq_page: "bank" });
       if (currentCompany && currentCompany.id && currentCompany.id !== prev) {
         kld("kld_company", {
           app: "biq",
@@ -313,6 +377,23 @@
           source: "picker"
         });
       }
+    }
+    tiles.forEach(function (t, i) {
+      t.addEventListener("click", function () {
+        choose(t.getAttribute("data-company"));
+      });
+      // Radio group keys: arrows move and select, Home and End jump.
+      t.addEventListener("keydown", function (e) {
+        var n = -1;
+        if (e.key === "ArrowRight" || e.key === "ArrowDown") n = (i + 1) % tiles.length;
+        else if (e.key === "ArrowLeft" || e.key === "ArrowUp") n = (i - 1 + tiles.length) % tiles.length;
+        else if (e.key === "Home") n = 0;
+        else if (e.key === "End") n = tiles.length - 1;
+        if (n < 0) return;
+        e.preventDefault();
+        tiles[n].focus();
+        choose(tiles[n].getAttribute("data-company"));
+      });
     });
   }
 
