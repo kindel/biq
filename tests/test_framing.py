@@ -33,7 +33,8 @@ class FramingTest(unittest.TestCase):
         self.assertIn('track("biq_company"', js)
         for logo in ["amazon", "arm", "blue-origin", "coupang", "delivery-hero", "gitlab", "toyota"]:
             self.assertTrue(os.path.exists(os.path.join(ROOT, "css", "logos", logo + ".svg")), logo)
-        self.assertIn("Dawn Aerospace has a name-only tile", read("css", "logos", "README.md"))
+        self.assertTrue(os.path.exists(os.path.join(ROOT, "css", "logos", "dawn.png")))
+        self.assertIn("used with permission of dawn aerospace", read("css", "logos", "README.md").lower())
         page = read("index.html")
         self.assertIn(PROMPT, page)
         self.assertNotIn(">Company<", page)

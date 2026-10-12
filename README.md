@@ -100,4 +100,4 @@ Logos live in `css/logos/`, with sources and licensing in `css/logos/README.md`.
 </script>
 ```
 
-`logoBase` is a string. It defaults to `css/logos/`. `logos` maps a company id to a filename under that base; the default lists amazon, arm, blue-origin, coupang, delivery-hero, gitlab, and toyota. A company omitted from `logos` gets a name-only tile.
+`logoBase` is a string. It defaults to `css/logos/`. `logos` maps a company id to a filename under that base; the default lists amazon, arm, blue-origin, coupang, dawn, delivery-hero, gitlab, and toyota. A company omitted from `logos` gets a name-only tile.

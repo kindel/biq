@@ -8,11 +8,10 @@ Served from this repo so the page never hotlinks. Each mark is a trademark of it
 | Arm | arm.svg | https://commons.wikimedia.org/wiki/File:Arm_logo_2025.svg | Public domain (text logo) |
 | Blue Origin | blue-origin.svg | https://commons.wikimedia.org/wiki/File:Blue_Origin_new_logo.svg | Public domain (text logo). viewBox added so it scales. |
 | Coupang | coupang.svg | https://commons.wikimedia.org/wiki/File:Coupang_logo.svg | Public domain (text logo) |
+| Dawn Aerospace | dawn.png | https://www.dawnaerospace.com (site header image, https://static.wixstatic.com/media/cfd301_a7c18752d2674ca2a8b71e0cbe269875~mv2.png, 193×236 original; no SVG is published) | Used with permission of Dawn Aerospace (Tig Kindel, owner) |
 | Delivery Hero | delivery-hero.svg | https://commons.wikimedia.org/wiki/File:Delivery_Hero_Logo.svg | Public domain (text logo) |
 | GitLab | gitlab.svg | https://commons.wikimedia.org/wiki/File:GitLab_logo.svg (from gitlab-org/gitlab-ce `app/assets/images/logo_wordmark.svg`) | MIT, notice below |
 | Toyota | toyota.svg | https://commons.wikimedia.org/wiki/File:Toyota_logo.svg | Public domain (text logo) |
-
-Dawn Aerospace has a name-only tile. The only logo found was the PNG in its site header, with no published press kit or redistribution terms, so it is not bundled.
 
 Amazon's file had no viewBox; one was added so it scales. The same files ship in kindel/porridge `css/logos/`; keep the two in step. To add a company, drop the file here and add it to `LOGOS` in `js/biq.js`. A company with no entry gets a name-only tile.
 
