@@ -280,7 +280,9 @@
     group.innerHTML = "";
     for (var i = 0; i < companies.length; i++) {
       var c = companies[i];
-      var isDef = c.id === def;
+      // Only the generic set is universal. A legacy bank's synthesized
+      // Amazon default keeps its own name and logo.
+      var isDef = c.id === def && c.id === "generic";
       var logo = isDef ? "" : (LOGOS[c.id] || "");
       var label = isDef ? universal : c.name;
       var b = document.createElement("button");
