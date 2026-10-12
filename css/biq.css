@@ -501,7 +501,8 @@ h1, h2, h3 {
   margin: 0 0 1.15rem;
 }
 
-.bhiq-company-prompt {
+/* Beats .bhiq-app label, for a host shell that still uses a label. */
+.bhiq-app .bhiq-company-prompt {
   display: block;
   margin: 0 0 0.35rem;
   color: var(--biq-muted);

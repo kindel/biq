@@ -43,7 +43,7 @@ class FramingTest(unittest.TestCase):
 
     def test_company_prompt_stays_a_sentence(self):
         css = read("css", "biq.css")
-        start = css.index(".bhiq-company-prompt {")
+        start = css.index(".bhiq-app .bhiq-company-prompt {")
         block = css[start:css.index("}", start)]
         self.assertIn("text-transform: none", block)
         self.assertIn("letter-spacing: normal", block)

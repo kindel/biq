@@ -256,6 +256,9 @@
       if (lab) div.setAttribute("aria-labelledby", lab);
       el.parentNode.replaceChild(div, el);
       el = div;
+      // A label can only name a form control. aria-labelledby names the group.
+      var oldLabel = document.querySelector('label[for="bhiq-company"]');
+      if (oldLabel) oldLabel.removeAttribute("for");
     }
     return el;
   }
