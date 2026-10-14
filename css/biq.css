@@ -604,6 +604,43 @@ h1, h2, h3 {
   line-height: 1.55;
 }
 
+.bhiq-further {
+  margin: 0.85rem 0 0;
+  max-width: 42rem;
+}
+
+.bhiq-further-label {
+  margin: 0 0 0.35rem;
+  color: var(--biq-accent);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.bhiq-further ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.bhiq-further li {
+  margin: 0 0 0.55rem;
+}
+
+.bhiq-further li:last-child {
+  margin-bottom: 0;
+}
+
+.bhiq-further a {
+  font-weight: 700;
+}
+
+.bhiq-further-note {
+  display: block;
+  color: var(--biq-muted);
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
 .bhiq-intro {
   margin: 0 0 1.75rem;
   color: var(--biq-ink);

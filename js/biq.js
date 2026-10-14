@@ -207,6 +207,72 @@
     return kindLabel();
   }
 
+  // Further reading is the company catalog (`blog` on the shell), synced from
+  // principles data/teaching/<company>/index.json. Only https links render.
+  function httpsUrl(url) {
+    return /^https:\/\/[^\s<>"'\\]+$/.test(url);
+  }
+
+  function readingItems(company) {
+    var raw = (company && company.blog) || [];
+    var out = [];
+    for (var i = 0; i < raw.length; i++) {
+      var item = raw[i] || {};
+      var title = String(item.title || "").trim();
+      var url = String(item.url || "").trim();
+      var note = String(item.note || "").trim();
+      if (!title || !note || !httpsUrl(url)) continue;
+      out.push({ title: title, url: url, note: note });
+    }
+    return out;
+  }
+
+  function renderReading(host, items) {
+    host.innerHTML = "";
+    if (!items.length) {
+      host.hidden = true;
+      return;
+    }
+    host.hidden = false;
+    var label = document.createElement("p");
+    label.className = "bhiq-further-label";
+    label.id = "bhiq-further-label";
+    label.textContent = "Further reading";
+    host.appendChild(label);
+    host.setAttribute("aria-labelledby", "bhiq-further-label");
+    var ul = document.createElement("ul");
+    items.forEach(function (item) {
+      var li = document.createElement("li");
+      var a = document.createElement("a");
+      a.href = item.url;
+      a.rel = "noopener noreferrer";
+      a.textContent = item.title;
+      li.appendChild(a);
+      var note = document.createElement("span");
+      note.className = "bhiq-further-note";
+      note.textContent = item.note;
+      li.appendChild(note);
+      ul.appendChild(li);
+    });
+    host.appendChild(ul);
+  }
+
+  // An older host shell has no reading container. Place it after the back
+  // link, or after the preamble when that shell has no back link.
+  function ensureReadingHost(pre) {
+    var host = document.getElementById("bhiq-further-reading");
+    if (host) return host;
+    host = document.createElement("section");
+    host.id = "bhiq-further-reading";
+    host.className = "bhiq-further";
+    host.hidden = true;
+    var back = document.getElementById("bhiq-back");
+    var anchor = back && back.parentNode ? back : (pre && pre.parentNode ? pre : document.getElementById("bhiq-company"));
+    if (!anchor || !anchor.parentNode) return null;
+    anchor.parentNode.insertBefore(host, anchor.nextSibling);
+    return host;
+  }
+
   // Emphasis and bare http(s) URLs. Escape first so a preamble cannot inject markup.
   function renderPreamble(md) {
     var s = String(md || "")
@@ -346,6 +412,8 @@
         pre.textContent = "";
       }
     }
+    var reading = ensureReadingHost(pre);
+    if (reading) renderReading(reading, readingItems(currentCompany));
     var chipsEl = document.getElementById("bhiq-chips");
     if (chipsEl) chipsEl.setAttribute("aria-label", currentCompany && currentCompany.set ? currentCompany.set : "Principles");
     var inputLabel = document.getElementById("bhiq-input-label");
