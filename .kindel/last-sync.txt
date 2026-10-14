@@ -1,16 +1,4 @@
-principles 669b1023d8b2789a940b3b7bea817878c9caaa27
+principles 961aa456a8435f01a1a669d63de8b7f415923cef
 
-new companies:
-  usmc (empty questions; inherits the fixed bank via facets)
-alias updates from upstream terms:
-  usmc/know-yourself-and-seek-self-improvement: +['know yourself', 'self-improvement', 'self-assessment']
-  usmc/be-technically-and-tactically-proficient: +['technically proficient', 'know your job']
-  usmc/know-your-marines-and-look-out-for-their-welfare: +['look out for their welfare', 'know your people']
-  usmc/keep-your-marines-informed: +['keep them informed', 'give the why']
-  usmc/set-the-example: +['lead by example', 'personal example']
-  usmc/ensure-the-task-is-understood-supervised-and-accomplished: +['understood, supervised, and accomplished', 'supervise the work']
-  usmc/train-your-marines-as-a-team: +['train as a team', 'teamwork']
-  usmc/make-sound-and-timely-decisions: +['sound and timely', 'are right a lot', 'bias for action']
-  usmc/develop-a-sense-of-responsibility-in-your-subordinates: +['develop subordinates', 'grow the team']
-  usmc/employ-your-unit-in-accordance-with-its-capabilities: +['employ within capabilities', 'know the team limits']
-  usmc/seek-responsibility-and-take-responsibility-for-your-actions: +['seek responsibility', 'take responsibility', 'acts like an owner']
+preamble updates:
+  usmc
