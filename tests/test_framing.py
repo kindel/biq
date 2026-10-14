@@ -58,13 +58,12 @@ class FramingTest(unittest.TestCase):
         self.assertEqual("Universal Leadership Principles", generic["name"])
         self.assertEqual("generic", bank["defaultCompany"])
 
-    def test_usmc_preamble_keeps_the_pinned_traits_url(self):
+    def test_usmc_preamble_points_to_further_reading(self):
+        # The traits link moved to the principles Further reading catalog.
         bank = json.loads(read("data", "questions.json"))
         usmc = [c for c in bank["companies"] if c["id"] == "usmc"][0]
-        self.assertIn(
-            "https://www.mcjrotc.marines.mil/About/Leadership-Traits/",
-            usmc["preamble"],
-        )
+        self.assertIn("JJ DID TIE BUCKLE", usmc["preamble"])
+        self.assertIn("further reading", usmc["preamble"])
         js = read("js", "biq.js")
         self.assertIn("function renderPreamble(md)", js)
         self.assertIn("/https?:\\/\\/[^\\s<]+/g", js)
