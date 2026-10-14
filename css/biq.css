@@ -611,7 +611,7 @@ h1, h2, h3 {
 
 .bhiq-further-label {
   margin: 0 0 0.35rem;
-  color: var(--biq-accent);
+  color: var(--biq-accent-dark);
   font-size: 0.8rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;

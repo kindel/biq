@@ -67,10 +67,14 @@ class FramingTest(unittest.TestCase):
         self.assertIn("JJ DID TIE BUCKLE", usmc["preamble"])
         self.assertIn("further reading", usmc["preamble"])
         self.assertNotIn("http", usmc["preamble"])
-        self.assertIn(traits, [item["url"] for item in usmc["blog"]])
+        self.assertIn(traits, [item["url"] for item in usmc.get("blog") or []])
+        # A new company can land before its teaching catalog exists. The page
+        # hides Further reading when blog is absent, so only a present list
+        # has to be a catalog of https links.
         for company in bank["companies"]:
             blog = company.get("blog")
-            self.assertTrue(blog, company["id"])
+            if not blog:
+                continue
             for item in blog:
                 self.assertEqual(["title", "url", "note"], list(item.keys()))
                 self.assertTrue(item["title"].strip(), company["id"])

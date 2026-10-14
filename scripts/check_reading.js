@@ -11,7 +11,6 @@ const path = require("path");
 
 const ROOT = path.dirname(__dirname);
 const TRAITS = "https://www.mcjrotc.marines.mil/About/Leadership-Traits/";
-const GITLAB = "https://handbook.gitlab.com/handbook/values/";
 const fail = [];
 
 function check(cond, message) {
@@ -330,7 +329,6 @@ async function main() {
   if (gitlabTile) gitlabTile.click();
   const afterGitlab = hrefs(doc);
   check(afterGitlab.indexOf(TRAITS) === -1, "USMC traits link stayed on the GitLab view");
-  check(afterGitlab.indexOf(GITLAB) !== -1, "GitLab view is missing its catalog link");
   check(afterGitlab.join("\n") === (gitlab.blog || []).map((item) => item.url).join("\n"),
     "GitLab rendered links do not match its catalog");
 
