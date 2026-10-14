@@ -57,3 +57,18 @@ class FramingTest(unittest.TestCase):
         generic = [c for c in bank["companies"] if c["id"] == "generic"][0]
         self.assertEqual("Universal Leadership Principles", generic["name"])
         self.assertEqual("generic", bank["defaultCompany"])
+
+    def test_usmc_preamble_keeps_the_pinned_traits_url(self):
+        bank = json.loads(read("data", "questions.json"))
+        usmc = [c for c in bank["companies"] if c["id"] == "usmc"][0]
+        self.assertIn(
+            "https://www.mcjrotc.marines.mil/About/Leadership-Traits/",
+            usmc["preamble"],
+        )
+        js = read("js", "biq.js")
+        self.assertIn("function renderPreamble(md)", js)
+        self.assertIn("/https?:\\/\\/[^\\s<]+/g", js)
+        self.assertIn('rel="noopener noreferrer"', js)
+        report = read(".kindel", "last-sync.txt").splitlines()[0]
+        # The sync writes a SHA, or unknown when the commits API is down.
+        self.assertRegex(report, r"^principles ([0-9a-f]{40}|unknown)$")

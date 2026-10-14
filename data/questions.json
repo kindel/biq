@@ -89,6 +89,74 @@
         "4dfacaf7",
         "c418917e"
       ]
+    },
+    "know-yourself": {
+      "ids": [
+        "0b2dce21",
+        "3875c711",
+        "71e7519a"
+      ]
+    },
+    "technically-proficient": {
+      "ids": [
+        "385d4dc0",
+        "5ccd11fa",
+        "6e9b4e98"
+      ]
+    },
+    "look-out-for-their-welfare": {
+      "ids": [
+        "192b8a6a",
+        "d59e1646",
+        "b7f9d574"
+      ]
+    },
+    "keep-them-informed": {
+      "ids": [
+        "07879af5",
+        "60562a5d",
+        "058a4d94"
+      ]
+    },
+    "set-the-example": {
+      "ids": [
+        "c6d96f7b"
+      ],
+      "authored": [
+        {
+          "text": "Tell me about a time you asked people for a standard you were not keeping yourself. What did you change first?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time people copied a habit of yours that you did not want copied. What did you do?",
+          "manager": false
+        },
+        {
+          "text": "Tell me about a time you wanted an exception you would not have given someone else. What did you do?",
+          "manager": false
+        }
+      ]
+    },
+    "understood-supervised-and-accomplished": {
+      "ids": [
+        "c268ae62",
+        "6bf5fce3",
+        "7d7cfee1"
+      ]
+    },
+    "train-as-a-team": {
+      "ids": [
+        "c0ece807",
+        "b5ec3e16",
+        "73f36f42"
+      ]
+    },
+    "employ-within-capabilities": {
+      "ids": [
+        "196b18a9",
+        "d1f57bda",
+        "9a765043"
+      ]
     }
   },
   "companies": [
@@ -3889,6 +3957,194 @@
         }
       ],
       "preamble": "Blue Origin's 14 Leadership Principles exemplify the company's culture and unyielding dedication to mission success."
+    },
+    {
+      "id": "usmc",
+      "name": "U.S. Marine Corps",
+      "set": "Leadership Principles",
+      "source": "https://www.trngcmd.marines.mil/Portals/207/Site%20Images/TBS/B1X0099XQ%20Officership%20Foundations.pdf",
+      "howTo": [
+        "Pick two or three questions per assigned Leadership principle.",
+        "Prefer tell-me-about-a-time over opinion questions.",
+        "Probe with STAR: Situation, Task, Action (what you did), Result (measure it).",
+        "Items marked Manager are aimed at people-manager candidates."
+      ],
+      "examples": false,
+      "item": "Leadership principle",
+      "principles": [
+        {
+          "id": 10001,
+          "slug": "know-yourself-and-seek-self-improvement",
+          "name": "Know yourself and seek self-improvement",
+          "aliases": [
+            "know yourself and seek self-improvement",
+            "know yourself and seek self improvement",
+            "know yourself",
+            "self-improvement",
+            "self-assessment"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "know-yourself"
+          ]
+        },
+        {
+          "id": 10002,
+          "slug": "be-technically-and-tactically-proficient",
+          "name": "Be technically and tactically proficient",
+          "aliases": [
+            "be technically and tactically proficient",
+            "technically proficient",
+            "know your job"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "technically-proficient"
+          ]
+        },
+        {
+          "id": 10003,
+          "slug": "know-your-marines-and-look-out-for-their-welfare",
+          "name": "Know your Marines and look out for their welfare",
+          "aliases": [
+            "know your marines and look out for their welfare",
+            "look out for their welfare",
+            "know your people"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "look-out-for-their-welfare"
+          ]
+        },
+        {
+          "id": 10004,
+          "slug": "keep-your-marines-informed",
+          "name": "Keep your Marines informed",
+          "aliases": [
+            "keep your marines informed",
+            "keep them informed",
+            "give the why"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "keep-them-informed"
+          ]
+        },
+        {
+          "id": 10005,
+          "slug": "set-the-example",
+          "name": "Set the example",
+          "aliases": [
+            "set the example",
+            "lead by example",
+            "personal example"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "set-the-example"
+          ]
+        },
+        {
+          "id": 10006,
+          "slug": "ensure-the-task-is-understood-supervised-and-accomplished",
+          "name": "Ensure the task is understood, supervised and accomplished",
+          "aliases": [
+            "ensure the task is understood, supervised and accomplished",
+            "ensure the task is understood supervised and accomplished",
+            "understood, supervised, and accomplished",
+            "supervise the work"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "understood-supervised-and-accomplished"
+          ]
+        },
+        {
+          "id": 10007,
+          "slug": "train-your-marines-as-a-team",
+          "name": "Train your Marines as a team",
+          "aliases": [
+            "train your marines as a team",
+            "train as a team",
+            "teamwork"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "train-as-a-team"
+          ]
+        },
+        {
+          "id": 10008,
+          "slug": "make-sound-and-timely-decisions",
+          "name": "Make sound and timely decisions",
+          "aliases": [
+            "make sound and timely decisions",
+            "sound and timely",
+            "are right a lot",
+            "bias for action"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "are-right-a-lot",
+            "bias-for-action"
+          ]
+        },
+        {
+          "id": 10009,
+          "slug": "develop-a-sense-of-responsibility-in-your-subordinates",
+          "name": "Develop a sense of responsibility in your subordinates",
+          "aliases": [
+            "develop a sense of responsibility in your subordinates",
+            "develop subordinates",
+            "grow the team"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "grow-the-team"
+          ]
+        },
+        {
+          "id": 10010,
+          "slug": "employ-your-unit-in-accordance-with-its-capabilities",
+          "name": "Employ your unit in accordance with its capabilities",
+          "aliases": [
+            "employ your unit in accordance with its capabilities",
+            "employ within capabilities",
+            "know the team limits"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "employ-within-capabilities"
+          ]
+        },
+        {
+          "id": 10011,
+          "slug": "seek-responsibility-and-take-responsibility-for-your-actions",
+          "name": "Seek responsibility and take responsibility for your actions",
+          "aliases": [
+            "seek responsibility and take responsibility for your actions",
+            "seek responsibility",
+            "take responsibility",
+            "acts like an owner"
+          ],
+          "kind": "lp",
+          "questions": [],
+          "facets": [
+            "acts-like-an-owner"
+          ]
+        }
+      ],
+      "preamble": "Being of good character is not enough to lead. Marine leaders are guided by 11 leadership principles. The 14 leadership traits, remembered as JJ DID TIE BUCKLE, are the character those principles rest on. They are further reading, not a second set of principles: https://www.mcjrotc.marines.mil/About/Leadership-Traits/"
     }
   ]
 }
