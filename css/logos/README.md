@@ -15,6 +15,8 @@ Served from this repo so the page never hotlinks. Each mark is a trademark of it
 
 Amazon's file had no viewBox; one was added so it scales. The same files ship in kindel/porridge `css/logos/`; keep the two in step. To add a company, drop the file here and add it to `LOGOS` in `js/biq.js`. A company with no entry gets a name-only tile.
 
+U.S. Marine Corps (`usmc`) has no file. The Eagle, Globe, and Anchor is a protected service mark, and no properly licensed public-domain text logo is available. The picker shows a name-only tile.
+
 ## GitLab notice
 
 gitlab.svg is distributed under the MIT (Expat) license:
