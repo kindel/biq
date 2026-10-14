@@ -207,12 +207,17 @@
     return kindLabel();
   }
 
-  // Emphasis only. Escape first so a preamble cannot inject markup.
+  // Emphasis and bare http(s) URLs. Escape first so a preamble cannot inject markup.
   function renderPreamble(md) {
     var s = String(md || "")
-      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
     s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
     s = s.replace(/\*([^*]+)\*/g, "<em>$1</em>");
+    s = s.replace(/https?:\/\/[^\s<]+/g, function (url) {
+      var trimmed = url.replace(/[.,;:!?)]+$/, "");
+      var punct = url.slice(trimmed.length);
+      return '<a href="' + trimmed + '" rel="noopener noreferrer">' + trimmed + "</a>" + punct;
+    });
     return s;
   }
 

@@ -65,5 +65,10 @@ class FramingTest(unittest.TestCase):
             "https://www.mcjrotc.marines.mil/About/Leadership-Traits/",
             usmc["preamble"],
         )
+        js = read("js", "biq.js")
+        self.assertIn("function renderPreamble(md)", js)
+        self.assertIn("/https?:\\/\\/[^\\s<]+/g", js)
+        self.assertIn('rel="noopener noreferrer"', js)
         report = read(".kindel", "last-sync.txt").splitlines()[0]
-        self.assertRegex(report, r"^principles [0-9a-f]{40}$")
+        # The sync writes a SHA, or unknown when the commits API is down.
+        self.assertRegex(report, r"^principles ([0-9a-f]{40}|unknown)$")
