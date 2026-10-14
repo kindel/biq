@@ -252,5 +252,76 @@ class PreambleSyncTest(unittest.TestCase):
         self.assertEqual("empty questions; inherits the fixed bank via facets", note)
 
 
+TRAITS_URL = "https://www.mcjrotc.marines.mil/About/Leadership-Traits/"
+
+
+class ReadingSyncTest(unittest.TestCase):
+    """Further reading is the teaching catalog's blog list, copied as-is."""
+
+    def test_reading_list_keeps_only_https_catalog_entries(self):
+        blog = [
+            {
+                "title": "Leadership Traits",
+                "url": TRAITS_URL,
+                "note": "The 14 traits.",
+                "extra": "drop",
+            },
+            {"title": "Script", "url": "javascript:alert(1)", "note": "no"},
+            {"title": "Plain", "url": "http://example.com/a", "note": "no"},
+            {"title": " ", "url": "https://example.com/b", "note": "no"},
+            "nope",
+        ]
+        self.assertEqual(
+            [{
+                "title": "Leadership Traits",
+                "url": TRAITS_URL,
+                "note": "The 14 traits.",
+            }],
+            sync.reading_list(blog))
+
+    def test_sync_reading_copies_the_catalog_onto_the_shell(self):
+        existing = {"id": "usmc"}
+        blog = [{
+            "title": "Leadership Traits",
+            "url": TRAITS_URL,
+            "note": "The 14 traits.",
+        }]
+        self.assertTrue(sync.sync_reading(existing, blog))
+        self.assertEqual(blog, existing["blog"])
+        self.assertFalse(sync.sync_reading(existing, blog))
+
+    def test_sync_reading_replaces_a_stale_list(self):
+        existing = {"blog": [{
+            "title": "Old",
+            "url": "https://example.com/old",
+            "note": "Stale.",
+        }]}
+        blog = [{
+            "title": "Leadership Traits",
+            "url": TRAITS_URL,
+            "note": "The 14 traits.",
+        }]
+        self.assertTrue(sync.sync_reading(existing, blog))
+        self.assertEqual(blog, existing["blog"])
+
+    def test_an_empty_catalog_removes_stored_reading(self):
+        existing = {"blog": [{
+            "title": "Old",
+            "url": "https://example.com/old",
+            "note": "Stale.",
+        }]}
+        self.assertTrue(sync.sync_reading(existing, []))
+        self.assertNotIn("blog", existing)
+
+    def test_a_failed_fetch_does_not_drop_stored_reading(self):
+        existing = {"blog": [{
+            "title": "Leadership Traits",
+            "url": TRAITS_URL,
+            "note": "The 14 traits.",
+        }]}
+        self.assertFalse(sync.sync_reading(existing, None))
+        self.assertEqual(TRAITS_URL, existing["blog"][0]["url"])
+
+
 if __name__ == "__main__":
     unittest.main()

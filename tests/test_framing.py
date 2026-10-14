@@ -3,6 +3,7 @@
 
 import json
 import os
+import subprocess
 import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -58,17 +59,45 @@ class FramingTest(unittest.TestCase):
         self.assertEqual("Universal Leadership Principles", generic["name"])
         self.assertEqual("generic", bank["defaultCompany"])
 
-    def test_usmc_preamble_keeps_the_pinned_traits_url(self):
+    def test_usmc_preamble_points_to_further_reading(self):
+        # The traits URL lives on the company Further reading catalog.
         bank = json.loads(read("data", "questions.json"))
         usmc = [c for c in bank["companies"] if c["id"] == "usmc"][0]
-        self.assertIn(
-            "https://www.mcjrotc.marines.mil/About/Leadership-Traits/",
-            usmc["preamble"],
-        )
+        traits = "https://www.mcjrotc.marines.mil/About/Leadership-Traits/"
+        self.assertIn("JJ DID TIE BUCKLE", usmc["preamble"])
+        self.assertIn("further reading", usmc["preamble"])
+        self.assertNotIn("http", usmc["preamble"])
+        self.assertIn(traits, [item["url"] for item in usmc.get("blog") or []])
+        # A new company can land before its teaching catalog exists. The page
+        # hides Further reading when blog is absent, so only a present list
+        # has to be a catalog of https links.
+        for company in bank["companies"]:
+            blog = company.get("blog")
+            if not blog:
+                continue
+            for item in blog:
+                self.assertEqual(["title", "url", "note"], list(item.keys()))
+                self.assertTrue(item["title"].strip(), company["id"])
+                self.assertTrue(item["note"].strip(), company["id"])
+                self.assertTrue(item["url"].startswith("https://"), item["url"])
+                self.assertNotIn("\u2014", json.dumps(item, ensure_ascii=False))
+                self.assertNotIn("\u2013", json.dumps(item, ensure_ascii=False))
         js = read("js", "biq.js")
         self.assertIn("function renderPreamble(md)", js)
+        self.assertIn("function renderReading(host, items)", js)
         self.assertIn("/https?:\\/\\/[^\\s<]+/g", js)
         self.assertIn('rel="noopener noreferrer"', js)
+        self.assertIn('id="bhiq-further-reading"', read("index.html"))
         report = read(".kindel", "last-sync.txt").splitlines()[0]
         # The sync writes a SHA, or unknown when the commits API is down.
         self.assertRegex(report, r"^principles ([0-9a-f]{40}|unknown)$")
+
+    def test_the_selected_company_renders_its_further_reading(self):
+        proc = subprocess.run(
+            ["node", os.path.join(ROOT, "scripts", "check_reading.js")],
+            cwd=ROOT,
+            capture_output=True,
+            text=True,
+        )
+        self.assertEqual(0, proc.returncode, proc.stdout + proc.stderr)
+        self.assertIn("usmc traits link rendered", proc.stdout)

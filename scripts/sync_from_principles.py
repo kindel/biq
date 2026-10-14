@@ -7,6 +7,9 @@ kebab name lives in slug. A company's id is still its directory name.
 Also syncs aliases from upstream term labels (kind: alias, equivalent, or
 facet) and facet labels from facets.json as a union with existing aliases
 so search cannot get worse.
+
+Also copies each company's Further reading catalog from
+data/teaching/<company>/index.json. The field name stays `blog`.
 """
 
 from __future__ import annotations
@@ -34,6 +37,10 @@ FACETS_URL = os.environ.get(
 SHA_URL = os.environ.get(
     "PRINCIPLES_SHA_URL",
     "https://api.github.com/repos/kindel/principles/commits/main",
+)
+TEACHING_INDEX_URL = os.environ.get(
+    "PRINCIPLES_TEACHING_INDEX_URL",
+    "https://raw.githubusercontent.com/kindel/principles/main/data/teaching/{company}/index.json",
 )
 
 HOWTO = [
@@ -301,6 +308,76 @@ def company_shell(c: dict) -> dict:
     return shell
 
 
+def https_url(url: object) -> bool:
+    """True for an https URL that can be used as an href."""
+    if not isinstance(url, str) or not url.startswith("https://"):
+        return False
+    if any(ch.isspace() for ch in url):
+        return False
+    return not any(ch in url for ch in "<>\"'\\")
+
+
+def reading_list(blog: object) -> list[dict]:
+    """Keep Further reading entries a visitor can open.
+
+    Each catalog entry is title, url, and note. Anything else is dropped,
+    including a non-https URL, so the shell cannot grow a link the catalog
+    does not already contain.
+    """
+    if not isinstance(blog, list):
+        return []
+    out = []
+    for item in blog:
+        if not isinstance(item, dict):
+            continue
+        title = item.get("title")
+        url = item.get("url")
+        note = item.get("note")
+        if not isinstance(title, str) or not title.strip():
+            continue
+        if not isinstance(note, str) or not note.strip():
+            continue
+        if not https_url(url):
+            continue
+        out.append({"title": title, "url": url, "note": note})
+    return out
+
+
+def sync_reading(existing: dict, blog: object) -> bool:
+    """Copy the company Further reading catalog onto a shell.
+
+    `blog` is the list from the teaching index, or None when that file could
+    not be fetched. None leaves the shell alone so a network miss does not
+    wipe links the last sync stored.
+    """
+    if blog is None:
+        return False
+    want = reading_list(blog)
+    if want:
+        if existing.get("blog") != want:
+            existing["blog"] = want
+            return True
+        return False
+    if "blog" in existing:
+        del existing["blog"]
+        return True
+    return False
+
+
+def fetch_teaching_blog(company: str):
+    """Return the catalog blog list, or None if the file could not be read."""
+    url = TEACHING_INDEX_URL.format(company=company)
+    try:
+        with urllib.request.urlopen(url, timeout=30) as r:
+            data = json.load(r)
+    except Exception:
+        return None
+    if not isinstance(data, dict):
+        return None
+    blog = data.get("blog")
+    return [] if blog is None else blog
+
+
 def sync_preamble(existing: dict, upstream: dict) -> bool:
     """Copy or remove the opening paragraph on a company that already exists.
 
@@ -340,6 +417,7 @@ def main() -> int:
     added_companies = []
     added_principles = []
     preamble_changes = []
+    reading_changes = []
 
     for c in idx.get("companies", []):
         cid = c["id"]
@@ -348,31 +426,35 @@ def main() -> int:
             bank["companies"].insert(insert_at(bank, idx, cid), shell)
             by_id[cid] = shell
             added_companies.append(cid)
-            continue
-        existing = by_id[cid]
-        if sync_preamble(existing, c):
-            preamble_changes.append(cid)
-        item = existing.get("item") or item_for(c["set"])
+            existing = shell
+        else:
+            existing = by_id[cid]
+            if sync_preamble(existing, c):
+                preamble_changes.append(cid)
+            item = existing.get("item") or item_for(c["set"])
 
-        have_by_id = {}
-        have_by_slug = {}
-        for ep in existing.get("principles", []):
-            if isinstance(ep.get("id"), int):
-                have_by_id[ep["id"]] = ep
-            if ep.get("slug"):
-                have_by_slug[ep["slug"]] = ep
-            elif isinstance(ep.get("id"), str):
-                have_by_slug[ep["id"]] = ep
+            have_by_id = {}
+            have_by_slug = {}
+            for ep in existing.get("principles", []):
+                if isinstance(ep.get("id"), int):
+                    have_by_id[ep["id"]] = ep
+                if ep.get("slug"):
+                    have_by_slug[ep["slug"]] = ep
+                elif isinstance(ep.get("id"), str):
+                    have_by_slug[ep["id"]] = ep
 
-        for p in c.get("principles", []):
-            pid = p["id"]
-            slug = p.get("slug", "")
-            if pid in have_by_id:
-                continue
-            if slug in have_by_slug:
-                continue
-            existing.setdefault("principles", []).append(principle_shell(p, item))
-            added_principles.append(f"{cid}/{slug or pid}")
+            for p in c.get("principles", []):
+                pid = p["id"]
+                slug = p.get("slug", "")
+                if pid in have_by_id:
+                    continue
+                if slug in have_by_slug:
+                    continue
+                existing.setdefault("principles", []).append(principle_shell(p, item))
+                added_principles.append(f"{cid}/{slug or pid}")
+
+        if sync_reading(existing, fetch_teaching_blog(cid)):
+            reading_changes.append(cid)
 
     # Sync aliases from upstream term labels (alias + equivalent kinds)
     alias_changes = sync_aliases(bank, idx)
@@ -400,11 +482,14 @@ def main() -> int:
     if preamble_changes:
         lines.append("preamble updates:")
         lines.extend(f"  {x}" for x in preamble_changes)
+    if reading_changes:
+        lines.append("further reading updates:")
+        lines.extend(f"  {x}" for x in reading_changes)
     if default_change:
         lines.append(f"default company: {default_change}")
     if not any((added_companies, added_principles, alias_changes,
-                facet_stamps, preamble_changes, default_change)):
-        lines.append("no missing companies or principles, aliases and facets up to date")
+                facet_stamps, preamble_changes, reading_changes, default_change)):
+        lines.append("no missing companies or principles; aliases, facets, and further reading are up to date")
         print("\n".join(lines))
         return 0
 

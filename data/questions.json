@@ -382,7 +382,49 @@
           ]
         }
       ],
-      "preamble": "**Everyone is a leader.** These principles apply to every person, not just people managers. They guide judgment rather than replace it. They remain open to revision: *unless you know better.*"
+      "preamble": "**Everyone is a leader.** These principles apply to every person, not just people managers. They guide judgment rather than replace it. They remain open to revision: *unless you know better.*",
+      "blog": [
+        {
+          "title": "Just Right Porridge and Leadership Principles",
+          "url": "https://kindel.com/essays/just-right-porridge-and-leadership-principles/",
+          "note": "The under, just right, over idea this manual is built on."
+        },
+        {
+          "title": "The Tension is Intentional",
+          "url": "https://kindel.com/essays/the-tension-is-intentional/",
+          "note": "The principles pull against each other on purpose. That is the work."
+        },
+        {
+          "title": "Amazon's Leadership Principles",
+          "url": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+          "note": "The published source this set is derived from. It lists 16 now. This manual covers the counterparts of the classic 14."
+        },
+        {
+          "title": "Make Your Values Mean Something, Patrick M. Lencioni",
+          "url": "https://hbr.org/2002/07/make-your-values-mean-something",
+          "note": "Values only count when they are specific enough to hire, promote, and fire by."
+        },
+        {
+          "title": "Aligning Action and Values, Jim Collins",
+          "url": "https://www.jimcollins.com/article_topics/articles/aligning-action.html",
+          "note": "A principle set is real only when daily decisions match the words on the wall."
+        },
+        {
+          "title": "Netflix Culture Memo",
+          "url": "https://www.jobs.netflix.com/culture",
+          "note": "A public culture document that names the behaviors the company actually rewards and will not tolerate."
+        },
+        {
+          "title": "Run This Diagnostic to Thoughtfully Build (and Evaluate) Your Startup's Culture",
+          "url": "https://review.firstround.com/run-this-diagnostic-to-thoughtfully-build-and-evaluate-your-startups-culture/",
+          "note": "A practical checklist for building and testing the culture you say you want."
+        },
+        {
+          "title": "10 Things Your Corporate Culture Needs to Get Right, Donald Sull and Charles Sull",
+          "url": "https://sloanreview.mit.edu/article/10-things-your-corporate-culture-needs-to-get-right/",
+          "note": "Ten operating habits that separate a lived culture from a poster."
+        }
+      ]
     },
     {
       "id": "amazon",
@@ -1417,7 +1459,24 @@
         }
       ],
       "examples": true,
-      "item": "Leadership principle"
+      "item": "Leadership principle",
+      "blog": [
+        {
+          "title": "Just Right Porridge and Leadership Principles",
+          "url": "https://kindel.com/essays/just-right-porridge-and-leadership-principles/",
+          "note": "The under, just right, over idea this manual is built on."
+        },
+        {
+          "title": "The Tension is Intentional",
+          "url": "https://kindel.com/essays/the-tension-is-intentional/",
+          "note": "The principles pull against each other on purpose. That is the work."
+        },
+        {
+          "title": "Amazon's Leadership Principles",
+          "url": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+          "note": "The published source. It lists 16 now; this manual covers the classic 14."
+        }
+      ]
     },
     {
       "id": "arm",
@@ -1845,7 +1904,19 @@
         }
       ],
       "examples": true,
-      "item": "10x factor"
+      "item": "10x factor",
+      "blog": [
+        {
+          "title": "Life at Arm",
+          "url": "https://careers.arm.com/life-at-arm",
+          "note": "The published 10x Mindset. Two lenses, 10 principles."
+        },
+        {
+          "title": "Arm Company",
+          "url": "https://www.arm.com/company",
+          "note": "The company page that states the mission those principles serve."
+        }
+      ]
     },
     {
       "id": "coupang",
@@ -2458,6 +2529,13 @@
             "frugality"
           ]
         }
+      ],
+      "blog": [
+        {
+          "title": "Coupang Leadership Principles",
+          "url": "https://www.coupang.jobs/en/coupang-leadership-principles/",
+          "note": "The published set. Fifteen principles, in the company's order."
+        }
       ]
     },
     {
@@ -2713,6 +2791,18 @@
           "facets": [
             "stay-humble"
           ]
+        }
+      ],
+      "blog": [
+        {
+          "title": "Launching Our Leadership Principles, Delivery Hero",
+          "url": "https://careers.deliveryhero.com/delivery-hero/2025-4/launching-our-leadership-principles",
+          "note": "The published announcement of the six principles."
+        },
+        {
+          "title": "Delivery Hero Careers",
+          "url": "https://careers.deliveryhero.com/",
+          "note": "The careers home for the culture those principles describe."
         }
       ]
     },
@@ -2972,6 +3062,13 @@
           "facets": [
             "make-it-public"
           ]
+        }
+      ],
+      "blog": [
+        {
+          "title": "GitLab Values",
+          "url": "https://handbook.gitlab.com/handbook/values/",
+          "note": "The published CREDIT values. Six values, in the order that spells CREDIT."
         }
       ]
     },
@@ -3563,6 +3660,18 @@
             "match-the-rigor"
           ]
         }
+      ],
+      "blog": [
+        {
+          "title": "About Dawn Aerospace",
+          "url": "https://www.dawnaerospace.com/about",
+          "note": "The public mission statement. The tenets are first-party text published with permission."
+        },
+        {
+          "title": "Careers at Dawn Aerospace",
+          "url": "https://www.dawnaerospace.com/careers",
+          "note": "How the company describes the work and the people it hires."
+        }
       ]
     },
     {
@@ -3673,6 +3782,23 @@
           "facets": [
             "grow-the-team"
           ]
+        }
+      ],
+      "blog": [
+        {
+          "title": "Toyota Way 2001",
+          "url": "https://www.toyota-global.com/company/history_of_toyota/75years/data/conditions/philosophy/toyotaway2001.html",
+          "note": "The official page for the two pillars and the five keywords."
+        },
+        {
+          "title": "Toyota Annual Report 2018, the Toyota Way keywords",
+          "url": "https://www.toyota-global.com/pages/contents/investors/ir_library/annual/pdf/2018/ar18_3_en.pdf",
+          "note": "The first-party text that states each keyword. Page 29."
+        },
+        {
+          "title": "Toyota Corporate Philosophy",
+          "url": "https://www.toyota-global.com/company/history_of_toyota/75years/data/conditions/philosophy/index.html",
+          "note": "The philosophy index that places that set next to the Guiding Principles."
         }
       ]
     },
@@ -3956,7 +4082,19 @@
           ]
         }
       ],
-      "preamble": "Blue Origin's 14 Leadership Principles exemplify the company's culture and unyielding dedication to mission success."
+      "preamble": "Blue Origin's 14 Leadership Principles exemplify the company's culture and unyielding dedication to mission success.",
+      "blog": [
+        {
+          "title": "Blue Origin Work Culture",
+          "url": "https://www.blueorigin.com/careers/work-culture",
+          "note": "The published 14 Leadership Principles."
+        },
+        {
+          "title": "About Blue Origin",
+          "url": "https://www.blueorigin.com/about-blue",
+          "note": "The mission those principles are written to serve."
+        }
+      ]
     },
     {
       "id": "usmc",
@@ -4144,7 +4282,54 @@
           ]
         }
       ],
-      "preamble": "Being of good character is not enough to lead. Marine leaders are guided by 11 leadership principles. The 14 leadership traits, remembered as JJ DID TIE BUCKLE, are the character those principles rest on. They are further reading, not a second set of principles: https://www.mcjrotc.marines.mil/About/Leadership-Traits/"
+      "preamble": "Being of good character is not enough to lead. Marine leaders are guided by 11 leadership principles. The 14 leadership traits, remembered as JJ DID TIE BUCKLE, are the character those principles rest on. They are further reading, not a second set of principles.",
+      "blog": [
+        {
+          "title": "Leadership Traits",
+          "url": "https://www.mcjrotc.marines.mil/About/Leadership-Traits/",
+          "note": "The 14 traits, remembered as JJ DID TIE BUCKLE. Character, not a second set of principles."
+        },
+        {
+          "title": "Officership Foundations, The Basic School",
+          "url": "https://www.trngcmd.marines.mil/Portals/207/Site%20Images/TBS/B1X0099XQ%20Officership%20Foundations.pdf",
+          "note": "The published source for the 11 principles, in numbered doctrine order."
+        },
+        {
+          "title": "MCWP 6-10 Leading Marines",
+          "url": "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/899578/mcwp-6-10/",
+          "note": "The warfighting publication on ethos, traits, and the leadership principles."
+        },
+        {
+          "title": "MCDP 6 Command and Control",
+          "url": "https://www.marines.mil/News/Publications/MCPEL/Electronic-Library-Display/Article/898678/mcdp-6/",
+          "note": "The doctrinal publication on deciding and acting faster than an adversary."
+        },
+        {
+          "title": "Leading Marines, Sergeant Major of the Marine Corps",
+          "url": "https://www.smmc.marines.mil/Leading-Marines/",
+          "note": "The official page for the publication meant to be read cover to cover."
+        },
+        {
+          "title": "Lejeune Leadership Institute, Marine Corps University",
+          "url": "https://www.usmcu.edu/LLI",
+          "note": "The institute that writes leadership education for the total force."
+        },
+        {
+          "title": "Marine Leader Development, Marine Corps University",
+          "url": "https://www.usmcu.edu/Academic-Programs/Lejeune-Leadership-Institute/Marine-Leader-Development/",
+          "note": "The framework for teaching, coaching, counseling, and mentoring."
+        },
+        {
+          "title": "Commandant's Professional Reading List",
+          "url": "https://grc-usmcu.libguides.com/cmc-reading-list",
+          "note": "The official reading program. Professional self-study from this list."
+        },
+        {
+          "title": "Commandant's Professional Reading List, Lejeune Leadership Institute",
+          "url": "https://www.usmcu.edu/Academic-Programs/Lejeune-Leadership-Institute/LLI-Professional-Reading-List/",
+          "note": "The institute page that hosts the current list and the archive."
+        }
+      ]
     }
   ]
 }
