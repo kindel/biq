@@ -57,3 +57,17 @@ class FramingTest(unittest.TestCase):
         generic = [c for c in bank["companies"] if c["id"] == "generic"][0]
         self.assertEqual("Universal Leadership Principles", generic["name"])
         self.assertEqual("generic", bank["defaultCompany"])
+
+    def test_usmc_preamble_keeps_the_pinned_traits_url(self):
+        # The pin in .kindel/last-sync.txt is principles 669b1023. That
+        # index preamble includes the traits page. The bank copies it.
+        bank = json.loads(read("data", "questions.json"))
+        usmc = [c for c in bank["companies"] if c["id"] == "usmc"][0]
+        self.assertIn(
+            "https://www.mcjrotc.marines.mil/About/Leadership-Traits/",
+            usmc["preamble"],
+        )
+        self.assertIn(
+            "669b1023d8b2789a940b3b7bea817878c9caaa27",
+            read(".kindel", "last-sync.txt"),
+        )
