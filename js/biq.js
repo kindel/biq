@@ -257,19 +257,27 @@
     host.appendChild(ul);
   }
 
-  // An older host shell has no reading container. Place it after the back
-  // link, or after the preamble when that shell has no back link.
+  // Place Further reading after the principle picker (the chips), or after
+  // the back link or preamble when that shell has no chips. An older host
+  // may already have the node inside the company view; move that node so
+  // it is not left between the company and principle pickers.
   function ensureReadingHost(pre) {
     var host = document.getElementById("bhiq-further-reading");
-    if (host) return host;
-    host = document.createElement("section");
-    host.id = "bhiq-further-reading";
-    host.className = "bhiq-further";
-    host.hidden = true;
+    if (!host) {
+      host = document.createElement("section");
+      host.id = "bhiq-further-reading";
+      host.className = "bhiq-further";
+      host.hidden = true;
+    }
+    var chips = document.getElementById("bhiq-chips");
     var back = document.getElementById("bhiq-back");
-    var anchor = back && back.parentNode ? back : (pre && pre.parentNode ? pre : document.getElementById("bhiq-company"));
-    if (!anchor || !anchor.parentNode) return null;
-    anchor.parentNode.insertBefore(host, anchor.nextSibling);
+    var anchor = chips && chips.parentNode ? chips
+      : back && back.parentNode ? back
+      : (pre && pre.parentNode ? pre : document.getElementById("bhiq-company"));
+    if (!anchor || !anchor.parentNode) return host.parentNode ? host : null;
+    if (anchor.nextSibling !== host) {
+      anchor.parentNode.insertBefore(host, anchor.nextSibling);
+    }
     return host;
   }
 

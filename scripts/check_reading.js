@@ -179,6 +179,31 @@ function findId(root, id) {
   return null;
 }
 
+function countId(root, id) {
+  let n = 0;
+  function walk(node) {
+    if (!node) return;
+    if (node.id === id) n += 1;
+    (node.childNodes || []).forEach(walk);
+  }
+  walk(root);
+  return n;
+}
+
+function makeReadingHost() {
+  const host = createElement("section");
+  host.id = "bhiq-further-reading";
+  host.className = "bhiq-further";
+  host.hidden = true;
+  return host;
+}
+
+function afterChips(host, chips) {
+  return host && chips && host.parentNode
+    && host.parentNode === chips.parentNode
+    && host.parentNode.childNodes.indexOf(host) === host.parentNode.childNodes.indexOf(chips) + 1;
+}
+
 function makeDocument(withHost) {
   const body = createElement("body");
   const main = createElement("main");
@@ -197,13 +222,9 @@ function makeDocument(withHost) {
   back.id = "bhiq-back";
   back.hidden = true;
   view.appendChild(back);
-  if (withHost) {
-    const host = createElement("section");
-    host.id = "bhiq-further-reading";
-    host.className = "bhiq-further";
-    host.hidden = true;
-    view.appendChild(host);
-  }
+  // Older host shells put the reading node inside the company view, between
+  // the company picker and the principle chips.
+  if (withHost === "legacy") view.appendChild(makeReadingHost());
   main.appendChild(view);
   const input = createElement("input");
   input.id = "bhiq-input";
@@ -214,6 +235,7 @@ function makeDocument(withHost) {
   const chips = createElement("div");
   chips.id = "bhiq-chips";
   main.appendChild(chips);
+  if (withHost === true) main.appendChild(makeReadingHost());
   const level = createElement("div");
   level.id = "bhiq-level-block";
   main.appendChild(level);
@@ -291,8 +313,12 @@ function hrefs(document) {
 async function main() {
   const page = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
   check(page.includes('id="bhiq-further-reading"'), "index.html is missing the further reading section");
-  check(page.indexOf('id="bhiq-back"') < page.indexOf('id="bhiq-further-reading"'),
-    "further reading should follow the company picker");
+  check(page.indexOf('id="bhiq-chips"') < page.indexOf('id="bhiq-further-reading"'),
+    "further reading should follow the principle picker");
+  check(page.indexOf('id="bhiq-company"') < page.indexOf('id="bhiq-input"'),
+    "the company picker should come before the principle picker");
+  check(page.indexOf('id="bhiq-further-reading"') < page.indexOf('id="bhiq-level-block"'),
+    "further reading should sit above the level picker");
 
   const bank = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "questions.json"), "utf8"));
   const usmc = bank.companies.find((c) => c.id === "usmc");
@@ -342,7 +368,34 @@ async function main() {
   const older = boot(bank, "?c=usmc", false);
   await flush();
   const created = older.getElementById("bhiq-further-reading");
+  const olderChips = older.getElementById("bhiq-chips");
+  check(afterChips(created, olderChips),
+    "older host shell did not place further reading right after the principle picker");
   check(created && hrefs(older).indexOf(TRAITS) !== -1, "older host shell did not render the traits link");
+
+  // Older host shell that already has the reading node inside the company
+  // view. Move that node after the chips; do not leave it between the
+  // company and principle pickers, and do not create a second node.
+  const legacy = boot(bank, "?c=usmc", "legacy");
+  await flush();
+  const legacyHost = legacy.getElementById("bhiq-further-reading");
+  const legacyChips = legacy.getElementById("bhiq-chips");
+  const legacyView = legacy.querySelector(".bhiq-company-view");
+  check(countId(legacy.body, "bhiq-further-reading") === 1,
+    "legacy host shell created a duplicate reading node");
+  check(afterChips(legacyHost, legacyChips),
+    "legacy host shell did not move further reading to right after the principle picker");
+  check(legacyView && !findId(legacyView, "bhiq-further-reading"),
+    "legacy host shell left further reading inside the company view");
+  check(legacyHost && hrefs(legacy).indexOf(TRAITS) !== -1,
+    "legacy host shell did not render the traits link");
+  const legacyTiles = legacy.getElementById("bhiq-company").querySelectorAll("[data-company]");
+  const legacyGitlab = legacyTiles.find((t) => t.getAttribute("data-company") === "gitlab");
+  if (legacyGitlab) legacyGitlab.click();
+  check(countId(legacy.body, "bhiq-further-reading") === 1,
+    "switching companies duplicated the reading node on a legacy host");
+  check(afterChips(legacy.getElementById("bhiq-further-reading"), legacyChips),
+    "switching companies moved further reading off the chips on a legacy host");
 
   const evil = {
     defaultCompany: "generic",
@@ -372,6 +425,7 @@ async function main() {
   console.log("usmc traits link rendered");
   console.log("gitlab catalog rendered");
   console.log("generic catalog rendered");
+  console.log("legacy host moved after chips");
   console.log("unsafe urls dropped");
 }
 
