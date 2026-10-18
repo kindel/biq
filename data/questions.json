@@ -1444,11 +1444,6 @@
               "text": "It can be difficult to set goals for a team that are challenging, yet achievable. Tell me about a time when you hit the right balance. How did you approach setting the goals? What was the outcome?",
               "manager": true,
               "id": "0cd64aa8"
-            },
-            {
-              "text": "How did you get it shipped? (Probe after a delivery story: constraints, tradeoffs, what you personally owned.)",
-              "manager": false,
-              "id": "8d66464e"
             }
           ],
           "kind": "lp",
