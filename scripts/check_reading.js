@@ -197,13 +197,6 @@ function makeDocument(withHost) {
   back.id = "bhiq-back";
   back.hidden = true;
   view.appendChild(back);
-  if (withHost) {
-    const host = createElement("section");
-    host.id = "bhiq-further-reading";
-    host.className = "bhiq-further";
-    host.hidden = true;
-    view.appendChild(host);
-  }
   main.appendChild(view);
   const input = createElement("input");
   input.id = "bhiq-input";
@@ -214,6 +207,13 @@ function makeDocument(withHost) {
   const chips = createElement("div");
   chips.id = "bhiq-chips";
   main.appendChild(chips);
+  if (withHost) {
+    const host = createElement("section");
+    host.id = "bhiq-further-reading";
+    host.className = "bhiq-further";
+    host.hidden = true;
+    main.appendChild(host);
+  }
   const level = createElement("div");
   level.id = "bhiq-level-block";
   main.appendChild(level);
@@ -291,8 +291,12 @@ function hrefs(document) {
 async function main() {
   const page = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
   check(page.includes('id="bhiq-further-reading"'), "index.html is missing the further reading section");
-  check(page.indexOf('id="bhiq-back"') < page.indexOf('id="bhiq-further-reading"'),
-    "further reading should follow the company picker");
+  check(page.indexOf('id="bhiq-chips"') < page.indexOf('id="bhiq-further-reading"'),
+    "further reading should follow the principle picker");
+  check(page.indexOf('id="bhiq-company"') < page.indexOf('id="bhiq-input"'),
+    "the company picker should come before the principle picker");
+  check(page.indexOf('id="bhiq-further-reading"') < page.indexOf('id="bhiq-level-block"'),
+    "further reading should sit above the level picker");
 
   const bank = JSON.parse(fs.readFileSync(path.join(ROOT, "data", "questions.json"), "utf8"));
   const usmc = bank.companies.find((c) => c.id === "usmc");
@@ -342,6 +346,9 @@ async function main() {
   const older = boot(bank, "?c=usmc", false);
   await flush();
   const created = older.getElementById("bhiq-further-reading");
+  const olderChips = older.getElementById("bhiq-chips");
+  check(created && created.parentNode && created.parentNode.childNodes.indexOf(created) === created.parentNode.childNodes.indexOf(olderChips) + 1,
+    "older host shell did not place further reading right after the principle picker");
   check(created && hrefs(older).indexOf(TRAITS) !== -1, "older host shell did not render the traits link");
 
   const evil = {
