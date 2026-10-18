@@ -179,6 +179,31 @@ function findId(root, id) {
   return null;
 }
 
+function countId(root, id) {
+  let n = 0;
+  function walk(node) {
+    if (!node) return;
+    if (node.id === id) n += 1;
+    (node.childNodes || []).forEach(walk);
+  }
+  walk(root);
+  return n;
+}
+
+function makeReadingHost() {
+  const host = createElement("section");
+  host.id = "bhiq-further-reading";
+  host.className = "bhiq-further";
+  host.hidden = true;
+  return host;
+}
+
+function afterChips(host, chips) {
+  return host && chips && host.parentNode
+    && host.parentNode === chips.parentNode
+    && host.parentNode.childNodes.indexOf(host) === host.parentNode.childNodes.indexOf(chips) + 1;
+}
+
 function makeDocument(withHost) {
   const body = createElement("body");
   const main = createElement("main");
@@ -197,6 +222,9 @@ function makeDocument(withHost) {
   back.id = "bhiq-back";
   back.hidden = true;
   view.appendChild(back);
+  // Older host shells put the reading node inside the company view, between
+  // the company picker and the principle chips.
+  if (withHost === "legacy") view.appendChild(makeReadingHost());
   main.appendChild(view);
   const input = createElement("input");
   input.id = "bhiq-input";
@@ -207,13 +235,7 @@ function makeDocument(withHost) {
   const chips = createElement("div");
   chips.id = "bhiq-chips";
   main.appendChild(chips);
-  if (withHost) {
-    const host = createElement("section");
-    host.id = "bhiq-further-reading";
-    host.className = "bhiq-further";
-    host.hidden = true;
-    main.appendChild(host);
-  }
+  if (withHost === true) main.appendChild(makeReadingHost());
   const level = createElement("div");
   level.id = "bhiq-level-block";
   main.appendChild(level);
@@ -347,9 +369,33 @@ async function main() {
   await flush();
   const created = older.getElementById("bhiq-further-reading");
   const olderChips = older.getElementById("bhiq-chips");
-  check(created && created.parentNode && created.parentNode.childNodes.indexOf(created) === created.parentNode.childNodes.indexOf(olderChips) + 1,
+  check(afterChips(created, olderChips),
     "older host shell did not place further reading right after the principle picker");
   check(created && hrefs(older).indexOf(TRAITS) !== -1, "older host shell did not render the traits link");
+
+  // Older host shell that already has the reading node inside the company
+  // view. Move that node after the chips; do not leave it between the
+  // company and principle pickers, and do not create a second node.
+  const legacy = boot(bank, "?c=usmc", "legacy");
+  await flush();
+  const legacyHost = legacy.getElementById("bhiq-further-reading");
+  const legacyChips = legacy.getElementById("bhiq-chips");
+  const legacyView = legacy.querySelector(".bhiq-company-view");
+  check(countId(legacy.body, "bhiq-further-reading") === 1,
+    "legacy host shell created a duplicate reading node");
+  check(afterChips(legacyHost, legacyChips),
+    "legacy host shell did not move further reading to right after the principle picker");
+  check(legacyView && !findId(legacyView, "bhiq-further-reading"),
+    "legacy host shell left further reading inside the company view");
+  check(legacyHost && hrefs(legacy).indexOf(TRAITS) !== -1,
+    "legacy host shell did not render the traits link");
+  const legacyTiles = legacy.getElementById("bhiq-company").querySelectorAll("[data-company]");
+  const legacyGitlab = legacyTiles.find((t) => t.getAttribute("data-company") === "gitlab");
+  if (legacyGitlab) legacyGitlab.click();
+  check(countId(legacy.body, "bhiq-further-reading") === 1,
+    "switching companies duplicated the reading node on a legacy host");
+  check(afterChips(legacy.getElementById("bhiq-further-reading"), legacyChips),
+    "switching companies moved further reading off the chips on a legacy host");
 
   const evil = {
     defaultCompany: "generic",
@@ -379,6 +425,7 @@ async function main() {
   console.log("usmc traits link rendered");
   console.log("gitlab catalog rendered");
   console.log("generic catalog rendered");
+  console.log("legacy host moved after chips");
   console.log("unsafe urls dropped");
 }
 
